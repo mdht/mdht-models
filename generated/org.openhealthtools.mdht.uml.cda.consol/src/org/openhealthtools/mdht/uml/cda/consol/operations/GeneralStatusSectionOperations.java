@@ -102,7 +102,7 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_STATUS_SECTION__GENERAL_STATUS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralStatusSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("GeneralStatusSectionGeneralStatusSectionTemplateId"),
 					new Object[] { generalStatusSection }));
 			}
 
@@ -163,7 +163,8 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_STATUS_SECTION__GENERAL_STATUS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("GeneralStatusSectionCode"), new Object[] { generalStatusSection }));
+					ConsolPlugin.INSTANCE.getString("GeneralStatusSectionGeneralStatusSectionCode"),
+					new Object[] { generalStatusSection }));
 			}
 
 			return false;
@@ -221,7 +222,8 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_STATUS_SECTION__GENERAL_STATUS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("GeneralStatusSectionCodeP"), new Object[] { generalStatusSection }));
+					ConsolPlugin.INSTANCE.getString("GeneralStatusSectionGeneralStatusSectionCodeP"),
+					new Object[] { generalStatusSection }));
 			}
 
 			return false;
@@ -279,7 +281,8 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_STATUS_SECTION__GENERAL_STATUS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("GeneralStatusSectionTitle"), new Object[] { generalStatusSection }));
+					ConsolPlugin.INSTANCE.getString("GeneralStatusSectionGeneralStatusSectionTitle"),
+					new Object[] { generalStatusSection }));
 			}
 
 			return false;
@@ -337,7 +340,8 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_STATUS_SECTION__GENERAL_STATUS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("GeneralStatusSectionText"), new Object[] { generalStatusSection }));
+					ConsolPlugin.INSTANCE.getString("GeneralStatusSectionGeneralStatusSectionText"),
+					new Object[] { generalStatusSection }));
 			}
 
 			return false;

@@ -108,7 +108,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservationHasTextReference"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusObservationHealthStatusObservationHasTextReference"),
 					new Object[] { healthStatusObservation }));
 			}
 
@@ -166,9 +166,10 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 			healthStatusObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservationTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusObservationHealthStatusObservationTextReferenceValue"),
 					new Object[] { healthStatusObservation }));
 			}
 
@@ -226,9 +227,10 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 			healthStatusObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservationHasTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusObservationHealthStatusObservationHasTextReferenceValue"),
 					new Object[] { healthStatusObservation }));
 			}
 
@@ -287,7 +289,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusObservationHealthStatusObservationTemplateId"),
 					new Object[] { healthStatusObservation }));
 			}
 
@@ -346,7 +348,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusObservationHealthStatusObservationClassCode"),
 					new Object[] { healthStatusObservation }));
 			}
 
@@ -405,7 +407,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusObservationHealthStatusObservationMoodCode"),
 					new Object[] { healthStatusObservation }));
 			}
 
@@ -466,7 +468,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservationCode"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusObservationHealthStatusObservationCode"),
 					new Object[] { healthStatusObservation }));
 			}
 
@@ -525,7 +527,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservationText"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusObservationHealthStatusObservationText"),
 					new Object[] { healthStatusObservation }));
 			}
 
@@ -585,7 +587,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusObservationHealthStatusObservationStatusCode"),
 					new Object[] { healthStatusObservation }));
 			}
 
@@ -646,7 +648,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservationValue"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusObservationHealthStatusObservationValue"),
 					new Object[] { healthStatusObservation }));
 			}
 
@@ -705,7 +707,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservationValueP"),
+					ConsolPlugin.INSTANCE.getString("HealthStatusObservationHealthStatusObservationValueP"),
 					new Object[] { healthStatusObservation }));
 			}
 

@@ -99,26 +99,8 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticImagingReportCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDiagnosticImagingReportCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDiagnosticImagingReportId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportId(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticImagingReportOperations.validateGeneralHeaderConstraintsCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -395,6 +377,26 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 */
 	public DICOMObjectCatalogSection getDICOMObjectCatalogSection() {
 		return DiagnosticImagingReportOperations.getDICOMObjectCatalogSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateGeneralHeaderConstraintsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticImagingReportOperations.validateGeneralHeaderConstraintsCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateGeneralHeaderConstraintsId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticImagingReportOperations.validateGeneralHeaderConstraintsId(this, diagnostics, context);
 	}
 
 	/**

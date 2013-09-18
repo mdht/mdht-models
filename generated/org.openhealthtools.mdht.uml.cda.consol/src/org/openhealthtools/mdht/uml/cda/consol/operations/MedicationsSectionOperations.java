@@ -110,7 +110,8 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationsSectionCode"), new Object[] { medicationsSection }));
+					ConsolPlugin.INSTANCE.getString("MedicationsSectionMedicationsSectionCode"),
+					new Object[] { medicationsSection }));
 			}
 
 			return false;
@@ -168,7 +169,8 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("MedicationsSectionTitle"), new Object[] { medicationsSection }));
+					ConsolPlugin.INSTANCE.getString("MedicationsSectionMedicationsSectionTitle"),
+					new Object[] { medicationsSection }));
 			}
 
 			return false;
@@ -226,7 +228,8 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("MedicationsSectionText"), new Object[] { medicationsSection }));
+					ConsolPlugin.INSTANCE.getString("MedicationsSectionMedicationsSectionText"),
+					new Object[] { medicationsSection }));
 			}
 
 			return false;
@@ -284,7 +287,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_MEDICATION,
-					ConsolPlugin.INSTANCE.getString("MedicationsSectionMedication"),
+					ConsolPlugin.INSTANCE.getString("MedicationsSectionMedicationsSectionMedication"),
 					new Object[] { medicationsSection }));
 			}
 
@@ -392,7 +395,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"MedicationsSectionEntriesOptionalTemplateId",
+								"MedicationsSectionMedicationsSectionEntriesOptionalTemplateId",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicationsSection, context) }),
 					new Object[] { medicationsSection }));
 			}

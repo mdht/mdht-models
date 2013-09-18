@@ -116,7 +116,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DIR,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationCodeCodeSystemDIR"),
+					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationCodeCodeSystemDIR"),
 					new Object[] { quantityMeasurementObservation }));
 			}
 
@@ -178,7 +178,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DICOM,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationCodeCodeSystemDICOM"),
+					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationCodeCodeSystemDICOM"),
 					new Object[] { quantityMeasurementObservation }));
 			}
 
@@ -236,9 +236,10 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 			quantityMeasurementObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationTemplateId"),
 					new Object[] { quantityMeasurementObservation }));
 			}
 
@@ -296,9 +297,10 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 			quantityMeasurementObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationClassCode"),
 					new Object[] { quantityMeasurementObservation }));
 			}
 
@@ -356,9 +358,10 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 			quantityMeasurementObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationMoodCode"),
 					new Object[] { quantityMeasurementObservation }));
 			}
 
@@ -416,9 +419,10 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 			quantityMeasurementObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationCode"),
+					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationCode"),
 					new Object[] { quantityMeasurementObservation }));
 			}
 
@@ -477,9 +481,10 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 			quantityMeasurementObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationEffectiveTime"),
 					new Object[] { quantityMeasurementObservation }));
 			}
 
@@ -537,9 +542,10 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 			quantityMeasurementObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationValue"),
+					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationValue"),
 					new Object[] { quantityMeasurementObservation }));
 			}
 
@@ -601,7 +607,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_SOP_INSTANCE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationSOPInstanceObservation"),
+					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationSOPInstanceObservation"),
 					new Object[] { quantityMeasurementObservation }));
 			}
 

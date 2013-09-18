@@ -112,7 +112,7 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationInformationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MedicationInformationMedicationInformationTemplateId"),
 					new Object[] { medicationInformation }));
 			}
 
@@ -171,7 +171,8 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationInformationId"), new Object[] { medicationInformation }));
+					ConsolPlugin.INSTANCE.getString("MedicationInformationMedicationInformationId"),
+					new Object[] { medicationInformation }));
 			}
 
 			return false;
@@ -229,7 +230,7 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationInformationClassCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationInformationMedicationInformationClassCode"),
 					new Object[] { medicationInformation }));
 			}
 
@@ -287,9 +288,10 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 			medicationInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION,
-					ConsolPlugin.INSTANCE.getString("MedicationInformationManufacturerOrganization"),
+					ConsolPlugin.INSTANCE.getString("MedicationInformationMedicationInformationManufacturerOrganization"),
 					new Object[] { medicationInformation }));
 			}
 
@@ -348,7 +350,7 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_MANUFACTURED_MATERIAL,
-					ConsolPlugin.INSTANCE.getString("MedicationInformationManufacturedMaterial"),
+					ConsolPlugin.INSTANCE.getString("MedicationInformationMedicationInformationManufacturedMaterial"),
 					new Object[] { medicationInformation }));
 			}
 

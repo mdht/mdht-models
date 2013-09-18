@@ -110,7 +110,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionFamilyHistorySectionTemplateId"),
 					new Object[] { familyHistorySection }));
 			}
 
@@ -171,7 +171,8 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionCode"), new Object[] { familyHistorySection }));
+					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionFamilyHistorySectionCode"),
+					new Object[] { familyHistorySection }));
 			}
 
 			return false;
@@ -229,7 +230,8 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionCodeP"), new Object[] { familyHistorySection }));
+					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionFamilyHistorySectionCodeP"),
+					new Object[] { familyHistorySection }));
 			}
 
 			return false;
@@ -287,7 +289,8 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionTitle"), new Object[] { familyHistorySection }));
+					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionFamilyHistorySectionTitle"),
+					new Object[] { familyHistorySection }));
 			}
 
 			return false;
@@ -345,7 +348,8 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionText"), new Object[] { familyHistorySection }));
+					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionFamilyHistorySectionText"),
+					new Object[] { familyHistorySection }));
 			}
 
 			return false;
@@ -403,7 +407,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_FAMILY_HISTORY,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionFamilyHistory"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionFamilyHistorySectionFamilyHistory"),
 					new Object[] { familyHistorySection }));
 			}
 

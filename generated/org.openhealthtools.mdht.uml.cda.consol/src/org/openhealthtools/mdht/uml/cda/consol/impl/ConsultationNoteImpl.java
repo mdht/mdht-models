@@ -129,17 +129,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNoteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConsultationNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteCode(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateGeneralHeaderConstraintsCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -674,6 +665,16 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional() {
 		return ConsultationNoteOperations.getVitalSignsSectionEntriesOptional(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateGeneralHeaderConstraintsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateGeneralHeaderConstraintsCode(this, diagnostics, context);
 	}
 
 	/**

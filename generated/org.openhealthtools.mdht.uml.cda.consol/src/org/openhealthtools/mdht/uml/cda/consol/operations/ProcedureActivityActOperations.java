@@ -150,7 +150,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE_CODE_SYSTEMS,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActCodeCodeSystems"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActCodeCodeSystems"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -209,7 +209,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE_ORIGINAL_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActCodeOriginalText"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActCodeOriginalText"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -269,7 +269,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ORIGINAL_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActOriginalTextReference"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActOriginalTextReference"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -327,9 +327,10 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			procedureActivityAct)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ORIGINAL_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActOriginalTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActOriginalTextReferenceValue"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -388,7 +389,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActReferenceValue"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -447,7 +448,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENCOUNTER_INVERSION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActEncounterInversion"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActEncounterInversion"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -505,9 +506,10 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 			procedureActivityAct)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActServiceDeliveryLocationTypeCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActServiceDeliveryLocationTypeCode"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -567,7 +569,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS_INVERSION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActInstructionsInversion"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActInstructionsInversion"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -626,7 +628,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActTemplateId"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -685,7 +687,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActClassCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActClassCode"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -746,7 +748,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActMoodCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActMoodCode"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -805,7 +807,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActId"), new Object[] { procedureActivityAct }));
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActId"),
+					new Object[] { procedureActivityAct }));
 			}
 
 			return false;
@@ -863,7 +866,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActCode"), new Object[] { procedureActivityAct }));
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActCode"),
+					new Object[] { procedureActivityAct }));
 			}
 
 			return false;
@@ -923,7 +927,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActStatusCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActStatusCode"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -982,7 +986,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActEffectiveTime"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -1041,7 +1045,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActPriorityCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActPriorityCodeP"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -1122,7 +1126,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActPriorityCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActPriorityCode"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -1181,7 +1185,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PERFORMER,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActPerformer"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActPerformer"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -1241,7 +1245,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActServiceDeliveryLocation"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActServiceDeliveryLocation"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -1300,7 +1304,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActInstructions"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActInstructions"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -1359,7 +1363,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INDICATION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActIndication"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActIndication"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -1418,7 +1422,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_MEDICATION_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActMedicationActivity"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActMedicationActivity"),
 					new Object[] { procedureActivityAct }));
 			}
 
@@ -1477,7 +1481,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActEntryRelationship"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActEntryRelationship"),
 					new Object[] { procedureActivityAct }));
 			}
 

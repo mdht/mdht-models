@@ -109,7 +109,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_AND_PLAN_SECTION__ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionAssessmentAndPlanSectionTemplateId"),
 					new Object[] { assessmentAndPlanSection }));
 			}
 
@@ -170,7 +170,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_AND_PLAN_SECTION__ASSESSMENT_AND_PLAN_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionCode"),
+					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionAssessmentAndPlanSectionCode"),
 					new Object[] { assessmentAndPlanSection }));
 			}
 
@@ -229,7 +229,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_AND_PLAN_SECTION__ASSESSMENT_AND_PLAN_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionAssessmentAndPlanSectionCodeP"),
 					new Object[] { assessmentAndPlanSection }));
 			}
 
@@ -288,7 +288,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_AND_PLAN_SECTION__ASSESSMENT_AND_PLAN_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionText"),
+					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionAssessmentAndPlanSectionText"),
 					new Object[] { assessmentAndPlanSection }));
 			}
 
@@ -346,9 +346,10 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 			assessmentAndPlanSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_AND_PLAN_SECTION__ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT,
-					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionPlanOfCareActivityAct"),
+					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionAssessmentAndPlanSectionPlanOfCareActivityAct"),
 					new Object[] { assessmentAndPlanSection }));
 			}
 

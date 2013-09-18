@@ -110,9 +110,10 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 			allergiesSectionEntriesOptional)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalAllergiesSectionEntriesOptionalTemplateId"),
 					new Object[] { allergiesSectionEntriesOptional }));
 			}
 
@@ -172,9 +173,10 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 			allergiesSectionEntriesOptional)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalAllergiesSectionEntriesOptionalCode"),
 					new Object[] { allergiesSectionEntriesOptional }));
 			}
 
@@ -232,9 +234,10 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 			allergiesSectionEntriesOptional)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalAllergiesSectionEntriesOptionalCodeP"),
 					new Object[] { allergiesSectionEntriesOptional }));
 			}
 
@@ -292,9 +295,10 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 			allergiesSectionEntriesOptional)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TITLE,
-					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalTitle"),
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalAllergiesSectionEntriesOptionalTitle"),
 					new Object[] { allergiesSectionEntriesOptional }));
 			}
 
@@ -352,9 +356,10 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 			allergiesSectionEntriesOptional)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEXT,
-					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalText"),
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalAllergiesSectionEntriesOptionalText"),
 					new Object[] { allergiesSectionEntriesOptional }));
 			}
 
@@ -416,7 +421,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT,
-					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalAllergyProblemAct"),
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalAllergiesSectionEntriesOptionalAllergyProblemAct"),
 					new Object[] { allergiesSectionEntriesOptional }));
 			}
 

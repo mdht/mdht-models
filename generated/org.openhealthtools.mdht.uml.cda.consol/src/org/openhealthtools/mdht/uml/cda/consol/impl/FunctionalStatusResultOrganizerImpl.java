@@ -64,70 +64,6 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFunctionalStatusResultOrganizerClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerClassCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultOrganizerMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerMoodCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultOrganizerId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultOrganizerStatusCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerStatusCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultOrganizerStatusCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerStatusCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
@@ -151,6 +87,66 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	@Override
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultOrganizerOperations.validateResultOrganizerClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultOrganizerOperations.validateResultOrganizerMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultOrganizerOperations.validateResultOrganizerId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultOrganizerOperations.validateResultOrganizerCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultOrganizerOperations.validateResultOrganizerStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultOrganizerOperations.validateResultOrganizerStatusCode(this, diagnostics, context);
 	}
 
 	/**

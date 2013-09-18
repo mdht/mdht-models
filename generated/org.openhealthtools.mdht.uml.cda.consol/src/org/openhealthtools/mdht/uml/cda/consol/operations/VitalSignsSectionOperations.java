@@ -40,10 +40,10 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection#validateVitalSignsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection#validateVitalSignsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection#validateVitalSignsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection#validateVitalSignsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection#validateVitalSignsSectionVitalSignsOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Vital Signs Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection#getConsolVitalSignsOrganizers() <em>Get Consol Vital Signs Organizers</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection#validateVitalSignsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection#validateVitalSignsSectionEntriesOptionalTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Title</em>}</li>
  * </ul>
  * </p>
  *
@@ -109,7 +109,8 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionCodeP"), new Object[] { vitalSignsSection }));
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionVitalSignsSectionCodeP"),
+					new Object[] { vitalSignsSection }));
 			}
 
 			if (context != null) {
@@ -189,7 +190,8 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionCode"), new Object[] { vitalSignsSection }));
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionVitalSignsSectionCode"),
+					new Object[] { vitalSignsSection }));
 			}
 
 			return false;
@@ -247,65 +249,8 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionText"), new Object[] { vitalSignsSection }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Title</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Title</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param vitalSignsSection The receiving '<em><b>Vital Signs Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateVitalSignsSectionTitle(VitalSignsSection vitalSignsSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_SECTION);
-			try {
-				VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			vitalSignsSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionTitle"), new Object[] { vitalSignsSection }));
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionVitalSignsSectionText"),
+					new Object[] { vitalSignsSection }));
 			}
 
 			return false;
@@ -363,7 +308,7 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionVitalSignsOrganizer"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionVitalSignsSectionVitalSignsOrganizer"),
 					new Object[] { vitalSignsSection }));
 			}
 
@@ -403,7 +348,7 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.VITAL_SIGNS_SECTION,
-				ConsolPackage.Literals.VITAL_SIGNS_SECTION.getEAllOperations().get(67));
+				ConsolPackage.Literals.VITAL_SIGNS_SECTION.getEAllOperations().get(66));
 			try {
 				GET_CONSOL_VITAL_SIGNS_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_CONSOL_VITAL_SIGNS_ORGANIZERS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -471,8 +416,67 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"VitalSignsSectionEntriesOptionalTemplateId",
+								"VitalSignsSectionVitalSignsSectionEntriesOptionalTemplateId",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSignsSection, context) }),
+					new Object[] { vitalSignsSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateVitalSignsSectionEntriesOptionalTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Title</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateVitalSignsSectionEntriesOptionalTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateVitalSignsSectionEntriesOptionalTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Title</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateVitalSignsSectionEntriesOptionalTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param vitalSignsSection The receiving '<em><b>Vital Signs Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateVitalSignsSectionEntriesOptionalTitle(VitalSignsSection vitalSignsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_SECTION);
+			try {
+				VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			vitalSignsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE,
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionVitalSignsSectionEntriesOptionalTitle"),
 					new Object[] { vitalSignsSection }));
 			}
 

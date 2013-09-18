@@ -134,17 +134,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureNoteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteCode(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateGeneralHeaderConstraintsCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -902,6 +893,16 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public SocialHistorySection getSocialHistorySection() {
 		return ProcedureNoteOperations.getSocialHistorySection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateGeneralHeaderConstraintsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateGeneralHeaderConstraintsCode(this, diagnostics, context);
 	}
 
 	/**

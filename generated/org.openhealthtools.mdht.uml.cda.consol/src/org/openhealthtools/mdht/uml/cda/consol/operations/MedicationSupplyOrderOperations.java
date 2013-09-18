@@ -113,9 +113,10 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 			medicationSupplyOrder)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderInstructionInversionInd"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMedicationSupplyOrderInstructionInversionInd"),
 					new Object[] { medicationSupplyOrder }));
 			}
 
@@ -174,7 +175,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME_HIGH,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderEffectiveTimeHigh"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMedicationSupplyOrderEffectiveTimeHigh"),
 					new Object[] { medicationSupplyOrder }));
 			}
 
@@ -235,7 +236,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_CONTAINS_MEDICATION_OR_IMMUNIZATION,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderContainsMedicationOrImmunization"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMedicationSupplyOrderContainsMedicationOrImmunization"),
 					new Object[] { medicationSupplyOrder }));
 			}
 
@@ -294,7 +295,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMedicationSupplyOrderTemplateId"),
 					new Object[] { medicationSupplyOrder }));
 			}
 
@@ -353,7 +354,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderClassCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMedicationSupplyOrderClassCode"),
 					new Object[] { medicationSupplyOrder }));
 			}
 
@@ -412,7 +413,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMedicationSupplyOrderEffectiveTime"),
 					new Object[] { medicationSupplyOrder }));
 			}
 
@@ -471,7 +472,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMoodCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMedicationSupplyOrderMoodCode"),
 					new Object[] { medicationSupplyOrder }));
 			}
 
@@ -530,7 +531,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderQuantity"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMedicationSupplyOrderQuantity"),
 					new Object[] { medicationSupplyOrder }));
 			}
 
@@ -589,7 +590,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderRepeatNumber"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMedicationSupplyOrderRepeatNumber"),
 					new Object[] { medicationSupplyOrder }));
 			}
 
@@ -648,7 +649,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderStatusCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMedicationSupplyOrderStatusCode"),
 					new Object[] { medicationSupplyOrder }));
 			}
 
@@ -707,7 +708,8 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderId"), new Object[] { medicationSupplyOrder }));
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMedicationSupplyOrderId"),
+					new Object[] { medicationSupplyOrder }));
 			}
 
 			return false;
@@ -765,7 +767,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderAuthor"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMedicationSupplyOrderAuthor"),
 					new Object[] { medicationSupplyOrder }));
 			}
 
@@ -824,7 +826,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_INSTRUCTIONS,
-					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderInstructions"),
+					ConsolPlugin.INSTANCE.getString("MedicationSupplyOrderMedicationSupplyOrderInstructions"),
 					new Object[] { medicationSupplyOrder }));
 			}
 

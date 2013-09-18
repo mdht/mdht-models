@@ -101,9 +101,10 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 			hospitalConsultationsSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionHospitalConsultationsSectionTemplateId"),
 					new Object[] { hospitalConsultationsSection }));
 			}
 
@@ -165,7 +166,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionHospitalConsultationsSectionCode"),
 					new Object[] { hospitalConsultationsSection }));
 			}
 
@@ -225,7 +226,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionHospitalConsultationsSectionCodeP"),
 					new Object[] { hospitalConsultationsSection }));
 			}
 
@@ -285,7 +286,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionText"),
+					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionHospitalConsultationsSectionText"),
 					new Object[] { hospitalConsultationsSection }));
 			}
 
@@ -345,7 +346,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionHospitalConsultationsSectionTitle"),
 					new Object[] { hospitalConsultationsSection }));
 			}
 

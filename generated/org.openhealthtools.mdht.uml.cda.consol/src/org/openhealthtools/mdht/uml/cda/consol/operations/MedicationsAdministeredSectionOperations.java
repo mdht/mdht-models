@@ -109,9 +109,10 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 			medicationsAdministeredSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION__MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionMedicationsAdministeredSectionTemplateId"),
 					new Object[] { medicationsAdministeredSection }));
 			}
 
@@ -171,9 +172,10 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 			medicationsAdministeredSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION__MEDICATIONS_ADMINISTERED_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionMedicationsAdministeredSectionCode"),
 					new Object[] { medicationsAdministeredSection }));
 			}
 
@@ -231,9 +233,10 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 			medicationsAdministeredSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION__MEDICATIONS_ADMINISTERED_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionMedicationsAdministeredSectionCodeP"),
 					new Object[] { medicationsAdministeredSection }));
 			}
 
@@ -291,9 +294,10 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 			medicationsAdministeredSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION__MEDICATIONS_ADMINISTERED_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionText"),
+					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionMedicationsAdministeredSectionText"),
 					new Object[] { medicationsAdministeredSection }));
 			}
 
@@ -351,9 +355,10 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 			medicationsAdministeredSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION__MEDICATIONS_ADMINISTERED_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionMedicationsAdministeredSectionTitle"),
 					new Object[] { medicationsAdministeredSection }));
 			}
 
@@ -415,7 +420,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION__MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionMedicationActivity"),
+					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionMedicationsAdministeredSectionMedicationActivity"),
 					new Object[] { medicationsAdministeredSection }));
 			}
 

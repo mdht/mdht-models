@@ -122,126 +122,6 @@ public class FunctionalStatusProblemObservationImpl extends ProblemObservationIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFunctionalStatusProblemObservationClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationClassCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservationMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationMoodCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservationNegationInd(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationNegationInd(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservationCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservationCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservationText(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationText(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservationStatusCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationStatusCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservationEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationEffectiveTime(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservationValueP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationValueP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservationValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateFunctionalStatusProblemObservationMethodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationMethodCode(
@@ -317,6 +197,121 @@ public class FunctionalStatusProblemObservationImpl extends ProblemObservationIm
 	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusProblemObservationOperations.validateProblemObservationTemplateId(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusProblemObservationOperations.validateProblemObservationClassCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusProblemObservationOperations.validateProblemObservationMoodCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusProblemObservationOperations.validateProblemObservationNegationInd(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusProblemObservationOperations.validateProblemObservationId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusProblemObservationOperations.validateProblemObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusProblemObservationOperations.validateProblemObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusProblemObservationOperations.validateProblemObservationText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusProblemObservationOperations.validateProblemObservationStatusCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusProblemObservationOperations.validateProblemObservationEffectiveTime(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusProblemObservationOperations.validateProblemObservationValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusProblemObservationOperations.validateProblemObservationValue(this, diagnostics, context);
 	}
 
 	/**

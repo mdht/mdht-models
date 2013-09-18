@@ -110,7 +110,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_SECTION__MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionMedicalEquipmentSectionTemplateId"),
 					new Object[] { medicalEquipmentSection }));
 			}
 
@@ -171,7 +171,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_SECTION__MEDICAL_EQUIPMENT_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionCode"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionMedicalEquipmentSectionCode"),
 					new Object[] { medicalEquipmentSection }));
 			}
 
@@ -230,7 +230,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_SECTION__MEDICAL_EQUIPMENT_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionMedicalEquipmentSectionCodeP"),
 					new Object[] { medicalEquipmentSection }));
 			}
 
@@ -289,7 +289,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_SECTION__MEDICAL_EQUIPMENT_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionMedicalEquipmentSectionTitle"),
 					new Object[] { medicalEquipmentSection }));
 			}
 
@@ -348,7 +348,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_SECTION__MEDICAL_EQUIPMENT_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionText"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionMedicalEquipmentSectionText"),
 					new Object[] { medicalEquipmentSection }));
 			}
 
@@ -406,9 +406,10 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 			medicalEquipmentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_EQUIPMENT_SECTION__MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionNonMedicinalSupplyActivity"),
+					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionMedicalEquipmentSectionNonMedicinalSupplyActivity"),
 					new Object[] { medicalEquipmentSection }));
 			}
 

@@ -78,33 +78,6 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProceduresSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProceduresSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProceduresSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionText(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateProceduresSectionProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityProcedure(
@@ -169,6 +142,37 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProceduresSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProceduresSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**

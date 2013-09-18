@@ -54,33 +54,6 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionOperations.validateResultsSectionCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionOperations.validateResultsSectionCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionOperations.validateResultsSectionTitle(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -115,6 +88,36 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResultsSectionOperations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionOperations.validateResultsSectionEntriesOptionalCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionOperations.validateResultsSectionEntriesOptionalCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultsSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionOperations.validateResultsSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**

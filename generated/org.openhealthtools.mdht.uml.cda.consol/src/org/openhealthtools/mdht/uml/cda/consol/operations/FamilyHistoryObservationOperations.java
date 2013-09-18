@@ -115,9 +115,10 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 			familyHistoryObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_AGE_OBSERVATION_INVERSION,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationAgeObservationInversion"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationAgeObservationInversion"),
 					new Object[] { familyHistoryObservation }));
 			}
 
@@ -176,7 +177,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationTemplateId"),
 					new Object[] { familyHistoryObservation }));
 			}
 
@@ -235,7 +236,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationClassCode"),
 					new Object[] { familyHistoryObservation }));
 			}
 
@@ -294,7 +295,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationMoodCode"),
 					new Object[] { familyHistoryObservation }));
 			}
 
@@ -353,7 +354,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationId"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationId"),
 					new Object[] { familyHistoryObservation }));
 			}
 
@@ -412,7 +413,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationCodeP"),
 					new Object[] { familyHistoryObservation }));
 			}
 
@@ -493,7 +494,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationCode"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationCode"),
 					new Object[] { familyHistoryObservation }));
 			}
 
@@ -553,7 +554,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationStatusCode"),
 					new Object[] { familyHistoryObservation }));
 			}
 
@@ -612,7 +613,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationEffectiveTime"),
 					new Object[] { familyHistoryObservation }));
 			}
 
@@ -673,7 +674,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationValue"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationValue"),
 					new Object[] { familyHistoryObservation }));
 			}
 
@@ -732,7 +733,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_AGE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationAgeObservation"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationAgeObservation"),
 					new Object[] { familyHistoryObservation }));
 			}
 
@@ -793,7 +794,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_FAMILY_HISTORY_DEATH_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryDeathObservation"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationFamilyHistoryDeathObservation"),
 					new Object[] { familyHistoryObservation }));
 			}
 

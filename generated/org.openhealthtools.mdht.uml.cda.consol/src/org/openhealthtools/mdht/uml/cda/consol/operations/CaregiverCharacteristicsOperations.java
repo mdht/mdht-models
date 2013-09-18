@@ -113,7 +113,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsValueCodeSystem"),
+					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsValueCodeSystem"),
 					new Object[] { caregiverCharacteristics }));
 			}
 
@@ -172,7 +172,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsTemplateId"),
+					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsTemplateId"),
 					new Object[] { caregiverCharacteristics }));
 			}
 
@@ -231,7 +231,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsClassCode"),
+					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsClassCode"),
 					new Object[] { caregiverCharacteristics }));
 			}
 
@@ -290,7 +290,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsMoodCode"),
+					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsMoodCode"),
 					new Object[] { caregiverCharacteristics }));
 			}
 
@@ -349,7 +349,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_ID,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsId"),
+					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsId"),
 					new Object[] { caregiverCharacteristics }));
 			}
 
@@ -408,7 +408,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_CODE,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCode"),
+					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsCode"),
 					new Object[] { caregiverCharacteristics }));
 			}
 
@@ -468,7 +468,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsStatusCode"),
+					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsStatusCode"),
 					new Object[] { caregiverCharacteristics }));
 			}
 
@@ -527,7 +527,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsStatusCodeP"),
 					new Object[] { caregiverCharacteristics }));
 			}
 
@@ -586,7 +586,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_VALUE,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsValue"),
+					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsValue"),
 					new Object[] { caregiverCharacteristics }));
 			}
 
@@ -645,7 +645,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsParticipant"),
+					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsParticipant"),
 					new Object[] { caregiverCharacteristics }));
 			}
 

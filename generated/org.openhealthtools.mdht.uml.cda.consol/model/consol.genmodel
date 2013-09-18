@@ -2744,26 +2744,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationsSectionEntriesOptional/getMedicationActivities"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ProblemSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemSection/ProblemSectionCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemSection/ProblemSectionCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemSection/ProblemSectionCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemSection/ProblemSectionCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemSection/ProblemSectionCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemSection/ProblemSectionCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemSection/ProblemSectionText">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemSection/ProblemSectionText/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemSection/ProblemSectionText/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemSection/ProblemSectionTitle">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemSection/ProblemSectionTitle/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemSection/ProblemSectionTitle/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemSection/ProblemSectionProblemConcern">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemSection/ProblemSectionProblemConcern/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemSection/ProblemSectionProblemConcern/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemSection/getConsolProblemConcerns"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ProblemSectionEntriesOptional">
@@ -2801,18 +2781,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProceduresSection/ProceduresSectionTitle">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProceduresSection/ProceduresSectionTitle/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProceduresSection/ProceduresSectionTitle/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProceduresSection/ProceduresSectionCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProceduresSection/ProceduresSectionCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProceduresSection/ProceduresSectionCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProceduresSection/ProceduresSectionCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProceduresSection/ProceduresSectionCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProceduresSection/ProceduresSectionCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProceduresSection/ProceduresSectionText">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProceduresSection/ProceduresSectionText/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProceduresSection/ProceduresSectionText/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProceduresSection/ProceduresSectionProcedureActivityProcedure">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProceduresSection/ProceduresSectionProcedureActivityProcedure/diagnostics"/>
@@ -3200,18 +3168,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureActivityAct/getMedicationActivities"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ResultsSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ResultsSection/ResultsSectionCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultsSection/ResultsSectionCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultsSection/ResultsSectionCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ResultsSection/ResultsSectionCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultsSection/ResultsSectionCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultsSection/ResultsSectionCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ResultsSection/ResultsSectionTitle">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultsSection/ResultsSectionTitle/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultsSection/ResultsSectionTitle/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ResultsSection/ResultsSectionText">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultsSection/ResultsSectionText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultsSection/ResultsSectionText/context"/>
@@ -3539,22 +3495,6 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//EncountersSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncountersSection/EncountersSectionCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncountersSection/EncountersSectionCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncountersSection/EncountersSectionCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncountersSection/EncountersSectionCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncountersSection/EncountersSectionCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncountersSection/EncountersSectionCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncountersSection/EncountersSectionText">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncountersSection/EncountersSectionText/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncountersSection/EncountersSectionText/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncountersSection/EncountersSectionTitle">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncountersSection/EncountersSectionTitle/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncountersSection/EncountersSectionTitle/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncountersSection/EncountersSectionEncounterActivities">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncountersSection/EncountersSectionEncounterActivities/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncountersSection/EncountersSectionEncounterActivities/context"/>
@@ -3951,30 +3891,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerCodeCodeSystem/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerCodeCodeSystem/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerClassCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerClassCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerClassCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerMoodCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerMoodCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerMoodCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerStatusCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerStatusCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerStatusCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerStatusCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerStatusCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerStatusCode/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerFunctionalStatusResultObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerFunctionalStatusResultObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerFunctionalStatusResultObservation/context"/>
@@ -3994,57 +3910,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationValueDatatype/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationValueDatatype/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationClassCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationClassCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationClassCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationMoodCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationMoodCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationMoodCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationText">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationText/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationText/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationStatusCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationStatusCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationStatusCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationStatusCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationStatusCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationStatusCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationEffectiveTime">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationEffectiveTime/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationEffectiveTime/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationValue/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationInterpretationCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationInterpretationCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationInterpretationCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationMethodCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationMethodCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationMethodCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationTargetSiteCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationTargetSiteCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationTargetSiteCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultObservation/ResultObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/ResultObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/ResultObservationCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationAuthor">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultObservation/FunctionalStatusResultObservationAuthor/diagnostics"/>
@@ -4274,30 +4142,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerCodeCodeSystem/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerCodeCodeSystem/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerClassCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerClassCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerClassCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerMoodCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerMoodCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerMoodCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerStatusCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerStatusCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerStatusCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerStatusCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerStatusCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerStatusCode/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerCognitiveStatusResultObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerCognitiveStatusResultObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerCognitiveStatusResultObservation/context"/>
@@ -4317,57 +4161,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationValueDatatype/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationValueDatatype/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationClassCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationClassCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationClassCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationMoodCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationMoodCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationMoodCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationText">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationText/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationText/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationStatusCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationStatusCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationStatusCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationStatusCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationStatusCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationStatusCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationEffectiveTime">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationEffectiveTime/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationEffectiveTime/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationValue/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationInterpretationCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationInterpretationCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationInterpretationCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationMethodCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationMethodCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationMethodCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationTargetSiteCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationTargetSiteCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationTargetSiteCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/ResultObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/ResultObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/ResultObservationCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationAuthor">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationAuthor/diagnostics"/>
@@ -4426,50 +4222,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationValueNullFlavor/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationValueNullFlavor/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationClassCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationClassCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationClassCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationMoodCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationMoodCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationMoodCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationNegationInd">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationNegationInd/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationNegationInd/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationText">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationText/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationText/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationStatusCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationStatusCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationStatusCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationEffectiveTime">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationEffectiveTime/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationEffectiveTime/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationValueP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationValueP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationValueP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationValue/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationMethodCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationMethodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusProblemObservation/FunctionalStatusProblemObservationMethodCode/context"/>
@@ -4507,53 +4259,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationHasResolutionDate/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationHasResolutionDate/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationClassCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationClassCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationClassCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationMoodCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationMoodCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationMoodCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationNegationInd">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationNegationInd/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationNegationInd/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationText">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationText/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationText/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationStatusCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationStatusCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationStatusCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationEffectiveTime">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationEffectiveTime/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationEffectiveTime/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationMethodCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationMethodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationMethodCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationValueP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationValueP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationValueP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationValue/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationNonMedicinalSupplyActivity">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusProblemObservation/CognitiveStatusProblemObservationNonMedicinalSupplyActivity/diagnostics"/>
@@ -6060,10 +5768,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//VitalSignsSection/VitalSignsSectionText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//VitalSignsSection/VitalSignsSectionText/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//VitalSignsSection/VitalSignsSectionTitle">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//VitalSignsSection/VitalSignsSectionTitle/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//VitalSignsSection/VitalSignsSectionTitle/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//VitalSignsSection/VitalSignsSectionVitalSignsOrganizer">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//VitalSignsSection/VitalSignsSectionVitalSignsOrganizer/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//VitalSignsSection/VitalSignsSectionVitalSignsOrganizer/context"/>
@@ -7098,26 +6802,6 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//HospitalDischargeMedicationsSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionText">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionText/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionText/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionTitle">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionTitle/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionTitle/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionDischargeMedication">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionDischargeMedication/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionDischargeMedication/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HospitalDischargeMedicationsSection/getConsolDischargeMedications"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//AnesthesiaSection">
@@ -7928,13 +7612,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConsultationNote/ConsultationNoteTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConsultationNote/ConsultationNoteTemplateId/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConsultationNote/ConsultationNoteCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConsultationNote/ConsultationNoteCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConsultationNote/ConsultationNoteCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConsultationNote/ConsultationNoteCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConsultationNote/ConsultationNoteCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConsultationNote/ConsultationNoteCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConsultationNote/GeneralHeaderConstraintsCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConsultationNote/GeneralHeaderConstraintsCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConsultationNote/GeneralHeaderConstraintsCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConsultationNote/ConsultationNoteComponentOf">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConsultationNote/ConsultationNoteComponentOf/diagnostics"/>
@@ -8137,13 +7817,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HistoryAndPhysicalNote/HistoryAndPhysicalNoteTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HistoryAndPhysicalNote/HistoryAndPhysicalNoteTemplateId/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HistoryAndPhysicalNote/HistoryAndPhysicalNoteCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HistoryAndPhysicalNote/HistoryAndPhysicalNoteCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HistoryAndPhysicalNote/HistoryAndPhysicalNoteCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HistoryAndPhysicalNote/HistoryAndPhysicalNoteCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HistoryAndPhysicalNote/HistoryAndPhysicalNoteCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HistoryAndPhysicalNote/HistoryAndPhysicalNoteCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HistoryAndPhysicalNote/GeneralHeaderConstraintsCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HistoryAndPhysicalNote/GeneralHeaderConstraintsCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HistoryAndPhysicalNote/GeneralHeaderConstraintsCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HistoryAndPhysicalNote/HistoryAndPhysicalNoteInFulfillmentOf">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HistoryAndPhysicalNote/HistoryAndPhysicalNoteInFulfillmentOf/diagnostics"/>
@@ -8331,13 +8007,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//OperativeNote/OperativeNoteTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//OperativeNote/OperativeNoteTemplateId/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//OperativeNote/OperativeNoteCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//OperativeNote/OperativeNoteCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//OperativeNote/OperativeNoteCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//OperativeNote/OperativeNoteCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//OperativeNote/OperativeNoteCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//OperativeNote/OperativeNoteCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//OperativeNote/GeneralHeaderConstraintsCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//OperativeNote/GeneralHeaderConstraintsCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//OperativeNote/GeneralHeaderConstraintsCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//OperativeNote/OperativeNoteDocumentationOf">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//OperativeNote/OperativeNoteDocumentationOf/diagnostics"/>
@@ -8493,13 +8165,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteTemplateId/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/ProcedureNoteCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/ProcedureNoteCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/GeneralHeaderConstraintsCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/GeneralHeaderConstraintsCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/GeneralHeaderConstraintsCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureNote/ProcedureNoteComponentOf">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureNote/ProcedureNoteComponentOf/diagnostics"/>
@@ -8743,13 +8411,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProgressNote/ProgressNoteTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProgressNote/ProgressNoteTemplateId/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProgressNote/ProgressNoteCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProgressNote/ProgressNoteCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProgressNote/ProgressNoteCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProgressNote/ProgressNoteCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProgressNote/ProgressNoteCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProgressNote/ProgressNoteCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProgressNote/GeneralHeaderConstraintsCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProgressNote/GeneralHeaderConstraintsCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProgressNote/GeneralHeaderConstraintsCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProgressNote/ProgressNoteDocumentationOf">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProgressNote/ProgressNoteDocumentationOf/diagnostics"/>
@@ -8900,17 +8564,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DiagnosticImagingReport/DiagnosticImagingReportTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DiagnosticImagingReport/DiagnosticImagingReportTemplateId/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DiagnosticImagingReport/DiagnosticImagingReportCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DiagnosticImagingReport/DiagnosticImagingReportCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DiagnosticImagingReport/DiagnosticImagingReportCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DiagnosticImagingReport/DiagnosticImagingReportCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DiagnosticImagingReport/DiagnosticImagingReportCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DiagnosticImagingReport/DiagnosticImagingReportCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DiagnosticImagingReport/DiagnosticImagingReportId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DiagnosticImagingReport/DiagnosticImagingReportId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DiagnosticImagingReport/DiagnosticImagingReportId/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DiagnosticImagingReport/GeneralHeaderConstraintsCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DiagnosticImagingReport/GeneralHeaderConstraintsCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DiagnosticImagingReport/GeneralHeaderConstraintsCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DiagnosticImagingReport/DiagnosticImagingReportInformant">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DiagnosticImagingReport/DiagnosticImagingReportInformant/diagnostics"/>

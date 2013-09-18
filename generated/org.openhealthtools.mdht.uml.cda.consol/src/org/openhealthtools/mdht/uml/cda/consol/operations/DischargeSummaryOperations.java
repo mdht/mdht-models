@@ -195,7 +195,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -254,7 +254,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_CODE_P,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryCodeP"), new Object[] { dischargeSummary }));
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryCodeP"),
+					new Object[] { dischargeSummary }));
 			}
 
 			if (context != null) {
@@ -334,7 +335,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_CODE,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryCode"), new Object[] { dischargeSummary }));
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryCode"),
+					new Object[] { dischargeSummary }));
 			}
 
 			return false;
@@ -394,7 +396,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -452,9 +454,10 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalAdmissionDiagnosisSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalAdmissionDiagnosisSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -512,9 +515,10 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargeDiagnosisSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalDischargeDiagnosisSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -573,7 +577,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DISCHARGE_DIET_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeDietSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryDischargeDietSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -634,7 +638,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -693,7 +697,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_FUNCTIONAL_STATUS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryFunctionalStatusSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryFunctionalStatusSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -753,7 +757,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryHistoryOfPresentIllnessSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHistoryOfPresentIllnessSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -812,7 +816,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_COURSE_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalCourseSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalCourseSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -871,7 +875,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryPlanOfCareSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryPlanOfCareSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -931,7 +935,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryHistoryOfPastIllnessSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHistoryOfPastIllnessSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -990,7 +994,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryComponentOf"), new Object[] { dischargeSummary }));
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryComponentOf"),
+					new Object[] { dischargeSummary }));
 			}
 
 			return false;
@@ -1047,9 +1052,10 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryChiefComplaintAndReasonForVisitSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryChiefComplaintAndReasonForVisitSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1108,7 +1114,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_CHIEF_COMPLAINT_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryChiefComplaintSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryChiefComplaintSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1167,7 +1173,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_FAMILY_HISTORY_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryFamilyHistorySection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryFamilyHistorySection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1227,7 +1233,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_CONSULTATIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalConsultationsSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalConsultationsSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1285,9 +1291,10 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargeInstructionsSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalDischargeInstructionsSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1345,9 +1352,10 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_PHYSICAL_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargePhysicalSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalDischargePhysicalSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1405,9 +1413,10 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargeStudiesSummarySection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalDischargeStudiesSummarySection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1465,9 +1474,10 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryImmunizationsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryImmunizationsSectionEntriesOptional"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1527,7 +1537,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PROBLEM_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryProblemSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryProblemSectionEntriesOptional"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1585,9 +1595,10 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PROCEDURES_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryProceduresSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryProceduresSectionEntriesOptional"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1646,7 +1657,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_REASON_FOR_VISIT_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryReasonForVisitSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryReasonForVisitSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1705,7 +1716,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_REVIEW_OF_SYSTEMS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryReviewOfSystemsSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryReviewOfSystemsSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1764,7 +1775,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_SOCIAL_HISTORY_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummarySocialHistorySection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummarySocialHistorySection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1824,7 +1835,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_ALLERGIES_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryAllergiesSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryAllergiesSectionEntriesOptional"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1882,9 +1893,10 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryVitalSignsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryVitalSignsSectionEntriesOptional"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -3784,9 +3796,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"GeneralHeaderConstraintsTemplateId",
+						"_UI_GenericInvariant_diagnostic", new Object[] {
+								"DischargeSummaryGeneralHeaderConstraintsTemplateId",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dischargeSummary, context) }),
 					new Object[] { dischargeSummary }));
 			}
