@@ -106,7 +106,7 @@ public class EncounterDiagnosisOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisTemplateId"),
+					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisEncounterDiagnosisTemplateId"),
 					new Object[] { encounterDiagnosis }));
 			}
 
@@ -165,7 +165,8 @@ public class EncounterDiagnosisOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisClassCode"), new Object[] { encounterDiagnosis }));
+					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisEncounterDiagnosisClassCode"),
+					new Object[] { encounterDiagnosis }));
 			}
 
 			return false;
@@ -223,7 +224,8 @@ public class EncounterDiagnosisOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisMoodCode"), new Object[] { encounterDiagnosis }));
+					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisEncounterDiagnosisMoodCode"),
+					new Object[] { encounterDiagnosis }));
 			}
 
 			return false;
@@ -281,7 +283,8 @@ public class EncounterDiagnosisOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisCodeP"), new Object[] { encounterDiagnosis }));
+					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisEncounterDiagnosisCodeP"),
+					new Object[] { encounterDiagnosis }));
 			}
 
 			if (context != null) {
@@ -361,7 +364,8 @@ public class EncounterDiagnosisOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_CODE,
-					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisCode"), new Object[] { encounterDiagnosis }));
+					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisEncounterDiagnosisCode"),
+					new Object[] { encounterDiagnosis }));
 			}
 
 			return false;
@@ -419,7 +423,7 @@ public class EncounterDiagnosisOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_PROBLEM_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisProblemObservation"),
+					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisEncounterDiagnosisProblemObservation"),
 					new Object[] { encounterDiagnosis }));
 			}
 

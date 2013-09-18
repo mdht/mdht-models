@@ -114,7 +114,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_CODE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerCodeValue"), new Object[] { resultOrganizer }));
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerResultOrganizerCodeValue"),
+					new Object[] { resultOrganizer }));
 			}
 
 			return false;
@@ -172,7 +173,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_CLASS_CODE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerClassCodeValue"), new Object[] { resultOrganizer }));
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerResultOrganizerClassCodeValue"),
+					new Object[] { resultOrganizer }));
 			}
 
 			return false;
@@ -230,7 +232,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerTemplateId"), new Object[] { resultOrganizer }));
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerResultOrganizerTemplateId"),
+					new Object[] { resultOrganizer }));
 			}
 
 			return false;
@@ -288,7 +291,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerClassCode"), new Object[] { resultOrganizer }));
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerResultOrganizerClassCode"),
+					new Object[] { resultOrganizer }));
 			}
 
 			return false;
@@ -346,7 +350,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerMoodCode"), new Object[] { resultOrganizer }));
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerResultOrganizerMoodCode"),
+					new Object[] { resultOrganizer }));
 			}
 
 			return false;
@@ -403,7 +408,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_ID,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerId"), new Object[] { resultOrganizer }));
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerResultOrganizerId"),
+					new Object[] { resultOrganizer }));
 			}
 
 			return false;
@@ -461,7 +467,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerStatusCodeP"), new Object[] { resultOrganizer }));
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerResultOrganizerStatusCodeP"),
+					new Object[] { resultOrganizer }));
 			}
 
 			if (context != null) {
@@ -541,7 +548,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerStatusCode"), new Object[] { resultOrganizer }));
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerResultOrganizerStatusCode"),
+					new Object[] { resultOrganizer }));
 			}
 
 			return false;
@@ -598,7 +606,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerCode"), new Object[] { resultOrganizer }));
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerResultOrganizerCode"),
+					new Object[] { resultOrganizer }));
 			}
 
 			return false;
@@ -656,7 +665,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_RESULT_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizerResultObservation"),
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerResultOrganizerResultObservation"),
 					new Object[] { resultOrganizer }));
 			}
 

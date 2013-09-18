@@ -128,7 +128,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationTextReference"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationTextReference"),
 					new Object[] { reactionObservation }));
 			}
 
@@ -187,7 +187,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationTextReferenceValue"),
 					new Object[] { reactionObservation }));
 			}
 
@@ -246,7 +246,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationReferenceValue"),
 					new Object[] { reactionObservation }));
 			}
 
@@ -305,7 +305,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_EFFECTIVE_TIME_LOW,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationEffectiveTimeLow"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationEffectiveTimeLow"),
 					new Object[] { reactionObservation }));
 			}
 
@@ -364,7 +364,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_EFFECTIVE_TIME_HIGH,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationEffectiveTimeHigh"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationEffectiveTimeHigh"),
 					new Object[] { reactionObservation }));
 			}
 
@@ -422,9 +422,10 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 			reactionObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationSeverityObservationInversionInd"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationSeverityObservationInversionInd"),
 					new Object[] { reactionObservation }));
 			}
 
@@ -485,7 +486,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationProcedureActivityProcedureInversionInd"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationProcedureActivityProcedureInversionInd"),
 					new Object[] { reactionObservation }));
 			}
 
@@ -543,9 +544,10 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 			reactionObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationMedicationActivityInversionInd"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationMedicationActivityInversionInd"),
 					new Object[] { reactionObservation }));
 			}
 
@@ -604,7 +606,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationTemplateId"),
 					new Object[] { reactionObservation }));
 			}
 
@@ -663,7 +665,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationClassCode"),
 					new Object[] { reactionObservation }));
 			}
 
@@ -722,7 +724,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationMoodCode"),
 					new Object[] { reactionObservation }));
 			}
 
@@ -781,7 +783,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationId"), new Object[] { reactionObservation }));
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationId"),
+					new Object[] { reactionObservation }));
 			}
 
 			return false;
@@ -839,7 +842,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationCode"), new Object[] { reactionObservation }));
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationCode"),
+					new Object[] { reactionObservation }));
 			}
 
 			return false;
@@ -897,7 +901,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationText"), new Object[] { reactionObservation }));
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationText"),
+					new Object[] { reactionObservation }));
 			}
 
 			return false;
@@ -956,7 +961,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationStatusCode"),
 					new Object[] { reactionObservation }));
 			}
 
@@ -1015,7 +1020,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationEffectiveTime"),
 					new Object[] { reactionObservation }));
 			}
 
@@ -1076,7 +1081,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationValue"), new Object[] { reactionObservation }));
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationValue"),
+					new Object[] { reactionObservation }));
 			}
 
 			return false;
@@ -1134,7 +1140,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_SEVERITY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationSeverityObservation"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationSeverityObservation"),
 					new Object[] { reactionObservation }));
 			}
 
@@ -1192,9 +1198,10 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 			reactionObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationProcedureActivityProcedure"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationProcedureActivityProcedure"),
 					new Object[] { reactionObservation }));
 			}
 
@@ -1253,7 +1260,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_MEDICATION_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("ReactionObservationMedicationActivity"),
+					ConsolPlugin.INSTANCE.getString("ReactionObservationReactionObservationMedicationActivity"),
 					new Object[] { reactionObservation }));
 			}
 

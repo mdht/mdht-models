@@ -128,7 +128,8 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionTemplateId"), new Object[] { planOfCareSection }));
+					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareSectionTemplateId"),
+					new Object[] { planOfCareSection }));
 			}
 
 			return false;
@@ -188,7 +189,8 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionCode"), new Object[] { planOfCareSection }));
+					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareSectionCode"),
+					new Object[] { planOfCareSection }));
 			}
 
 			return false;
@@ -246,7 +248,8 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionCodeP"), new Object[] { planOfCareSection }));
+					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareSectionCodeP"),
+					new Object[] { planOfCareSection }));
 			}
 
 			return false;
@@ -304,7 +307,8 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionTitle"), new Object[] { planOfCareSection }));
+					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareSectionTitle"),
+					new Object[] { planOfCareSection }));
 			}
 
 			return false;
@@ -362,7 +366,8 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionText"), new Object[] { planOfCareSection }));
+					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareSectionText"),
+					new Object[] { planOfCareSection }));
 			}
 
 			return false;
@@ -421,7 +426,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ACT,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareActivityAct"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareSectionPlanOfCareActivityAct"),
 					new Object[] { planOfCareSection }));
 			}
 
@@ -481,7 +486,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ENCOUNTER,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareActivityEncounter"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareSectionPlanOfCareActivityEncounter"),
 					new Object[] { planOfCareSection }));
 			}
 
@@ -541,7 +546,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareActivityObservation"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareSectionPlanOfCareActivityObservation"),
 					new Object[] { planOfCareSection }));
 			}
 
@@ -601,7 +606,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareActivityProcedure"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareSectionPlanOfCareActivityProcedure"),
 					new Object[] { planOfCareSection }));
 			}
 
@@ -662,7 +667,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareActivitySubstanceAdministration"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareSectionPlanOfCareActivitySubstanceAdministration"),
 					new Object[] { planOfCareSection }));
 			}
 
@@ -722,7 +727,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUPPLY,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareActivitySupply"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareSectionPlanOfCareActivitySupply"),
 					new Object[] { planOfCareSection }));
 			}
 
@@ -781,7 +786,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_INSTRUCTIONS,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionInstructions"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareSectionInstructions"),
 					new Object[] { planOfCareSection }));
 			}
 

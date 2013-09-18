@@ -5291,52 +5291,52 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_MEDICATION_ACTIVITY = 657;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Code P' of 'Problem Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROBLEM_SECTION__PROBLEM_SECTION_CODE_P = 658;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Code' of 'Problem Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROBLEM_SECTION__PROBLEM_SECTION_CODE = 659;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Text' of 'Problem Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROBLEM_SECTION__PROBLEM_SECTION_TEXT = 660;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Title' of 'Problem Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROBLEM_SECTION__PROBLEM_SECTION_TITLE = 661;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Problem Concern' of 'Problem Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROBLEM_SECTION__PROBLEM_SECTION_PROBLEM_CONCERN = 662;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Template Id' of 'Problem Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 663;
+	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 658;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Code P' of 'Problem Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE_P = 659;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Code' of 'Problem Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE = 660;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Text' of 'Problem Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEXT = 661;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Title' of 'Problem Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_TITLE = 662;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Problem Concern' of 'Problem Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN = 663;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Template Id' of 'Problem Section Entries Optional'.
@@ -5403,36 +5403,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_TITLE = 671;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Code P' of 'Procedures Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_CODE_P = 672;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Code' of 'Procedures Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_CODE = 673;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Text' of 'Procedures Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_TEXT = 674;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Procedure Activity Procedure' of 'Procedures Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE = 675;
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE = 672;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Procedure Activity Observation' of 'Procedures Section'.
@@ -5440,7 +5416,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_OBSERVATION = 676;
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_OBSERVATION = 673;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Procedure Activity Act' of 'Procedures Section'.
@@ -5448,7 +5424,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_ACT = 677;
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_ACT = 674;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Template Id' of 'Procedures Section'.
@@ -5456,7 +5432,31 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 678;
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 675;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Code P' of 'Procedures Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE_P = 676;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Code' of 'Procedures Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE = 677;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Text' of 'Procedures Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEXT = 678;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Template Id' of 'Procedures Section Entries Optional'.
@@ -6163,36 +6163,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER = 766;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Code P' of 'Results Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int RESULTS_SECTION__RESULTS_SECTION_CODE_P = 767;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Code' of 'Results Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int RESULTS_SECTION__RESULTS_SECTION_CODE = 768;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Title' of 'Results Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int RESULTS_SECTION__RESULTS_SECTION_TITLE = 769;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Text' of 'Results Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULTS_SECTION__RESULTS_SECTION_TEXT = 770;
+	public static final int RESULTS_SECTION__RESULTS_SECTION_TEXT = 767;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Result Organizer' of 'Results Section'.
@@ -6200,7 +6176,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULTS_SECTION__RESULTS_SECTION_RESULT_ORGANIZER = 771;
+	public static final int RESULTS_SECTION__RESULTS_SECTION_RESULT_ORGANIZER = 768;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Template Id' of 'Results Section'.
@@ -6208,7 +6184,31 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 772;
+	public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 769;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Code P' of 'Results Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P = 770;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Code' of 'Results Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE = 771;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Title' of 'Results Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TITLE = 772;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Template Id' of 'Results Section Entries Optional'.
@@ -6819,44 +6819,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT = 848;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Code P' of 'Encounters Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_CODE_P = 849;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Code' of 'Encounters Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_CODE = 850;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Text' of 'Encounters Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_TEXT = 851;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Title' of 'Encounters Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_TITLE = 852;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Encounter Activities' of 'Encounters Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENCOUNTER_ACTIVITIES = 853;
+	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENCOUNTER_ACTIVITIES = 849;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Template Id' of 'Encounters Section'.
@@ -6864,7 +6832,39 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 854;
+	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 850;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Code P' of 'Encounters Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P = 851;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Code' of 'Encounters Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE = 852;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Text' of 'Encounters Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT = 853;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Title' of 'Encounters Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE = 854;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Template Id' of 'Encounters Section Entries Optional'.
@@ -7571,60 +7571,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__FUNCTIONAL_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM = 942;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Organizer Class Code' of 'Functional Status Result Organizer'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__FUNCTIONAL_STATUS_RESULT_ORGANIZER_CLASS_CODE = 943;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Organizer Mood Code' of 'Functional Status Result Organizer'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__FUNCTIONAL_STATUS_RESULT_ORGANIZER_MOOD_CODE = 944;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Organizer Id' of 'Functional Status Result Organizer'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__FUNCTIONAL_STATUS_RESULT_ORGANIZER_ID = 945;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Organizer Code' of 'Functional Status Result Organizer'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__FUNCTIONAL_STATUS_RESULT_ORGANIZER_CODE = 946;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Organizer Status Code P' of 'Functional Status Result Organizer'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__FUNCTIONAL_STATUS_RESULT_ORGANIZER_STATUS_CODE_P = 947;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Organizer Status Code' of 'Functional Status Result Organizer'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__FUNCTIONAL_STATUS_RESULT_ORGANIZER_STATUS_CODE = 948;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Organizer Functional Status Result Observation' of 'Functional Status Result Organizer'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__FUNCTIONAL_STATUS_RESULT_ORGANIZER_FUNCTIONAL_STATUS_RESULT_OBSERVATION = 949;
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__FUNCTIONAL_STATUS_RESULT_ORGANIZER_FUNCTIONAL_STATUS_RESULT_OBSERVATION = 943;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Template Id' of 'Functional Status Result Organizer'.
@@ -7632,7 +7584,55 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 950;
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 944;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Class Code' of 'Functional Status Result Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_CLASS_CODE = 945;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Mood Code' of 'Functional Status Result Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_MOOD_CODE = 946;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Id' of 'Functional Status Result Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_ID = 947;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Code' of 'Functional Status Result Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_CODE = 948;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Status Code P' of 'Functional Status Result Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE_P = 949;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Status Code' of 'Functional Status Result Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE = 950;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Text Reference' of 'Functional Status Result Observation'.
@@ -7659,108 +7659,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_VALUE_DATATYPE = 953;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Class Code' of 'Functional Status Result Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code P' of 'Functional Status Result Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_CLASS_CODE = 954;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Mood Code' of 'Functional Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_MOOD_CODE = 955;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Id' of 'Functional Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_ID = 956;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Code P' of 'Functional Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_CODE_P = 957;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Code' of 'Functional Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_CODE = 958;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Text' of 'Functional Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_TEXT = 959;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Status Code P' of 'Functional Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_STATUS_CODE_P = 960;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Status Code' of 'Functional Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_STATUS_CODE = 961;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Effective Time' of 'Functional Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_EFFECTIVE_TIME = 962;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Value' of 'Functional Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_VALUE = 963;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Interpretation Code' of 'Functional Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_INTERPRETATION_CODE = 964;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Method Code' of 'Functional Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_METHOD_CODE = 965;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Target Site Code' of 'Functional Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_TARGET_SITE_CODE = 966;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE_P = 954;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Author' of 'Functional Status Result Observation'.
@@ -7768,7 +7672,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR = 967;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR = 955;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Non Medicinal Supply Activity' of 'Functional Status Result Observation'.
@@ -7776,7 +7680,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY = 968;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY = 956;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Caregiver Characteristics' of 'Functional Status Result Observation'.
@@ -7784,7 +7688,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_CAREGIVER_CHARACTERISTICS = 969;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_CAREGIVER_CHARACTERISTICS = 957;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Assessment Scale Observation' of 'Functional Status Result Observation'.
@@ -7792,7 +7696,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION = 970;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION = 958;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Reference Range' of 'Functional Status Result Observation'.
@@ -7800,7 +7704,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE = 971;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE = 959;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Reference Range Observation Range No Code' of 'Functional Status Result Observation'.
@@ -7808,7 +7712,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE = 972;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE = 960;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Reference Range Observation Range' of 'Functional Status Result Observation'.
@@ -7816,7 +7720,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE = 973;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE = 961;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Template Id' of 'Functional Status Result Observation'.
@@ -7824,7 +7728,103 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 974;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 962;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Class Code' of 'Functional Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CLASS_CODE = 963;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Mood Code' of 'Functional Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_MOOD_CODE = 964;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Id' of 'Functional Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_ID = 965;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code' of 'Functional Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE = 966;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Text' of 'Functional Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT = 967;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Status Code P' of 'Functional Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE_P = 968;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Status Code' of 'Functional Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE = 969;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Effective Time' of 'Functional Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_EFFECTIVE_TIME = 970;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Value' of 'Functional Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_VALUE = 971;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Interpretation Code' of 'Functional Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_INTERPRETATION_CODE = 972;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Method Code' of 'Functional Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_METHOD_CODE = 973;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Target Site Code' of 'Functional Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TARGET_SITE_CODE = 974;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Value Code System' of 'Caregiver Characteristics'.
@@ -8203,60 +8203,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__COGNITIVE_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM = 1021;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Organizer Class Code' of 'Cognitive Status Result Organizer'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__COGNITIVE_STATUS_RESULT_ORGANIZER_CLASS_CODE = 1022;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Organizer Mood Code' of 'Cognitive Status Result Organizer'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__COGNITIVE_STATUS_RESULT_ORGANIZER_MOOD_CODE = 1023;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Organizer Id' of 'Cognitive Status Result Organizer'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__COGNITIVE_STATUS_RESULT_ORGANIZER_ID = 1024;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Organizer Code' of 'Cognitive Status Result Organizer'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__COGNITIVE_STATUS_RESULT_ORGANIZER_CODE = 1025;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Organizer Status Code P' of 'Cognitive Status Result Organizer'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__COGNITIVE_STATUS_RESULT_ORGANIZER_STATUS_CODE_P = 1026;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Organizer Status Code' of 'Cognitive Status Result Organizer'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__COGNITIVE_STATUS_RESULT_ORGANIZER_STATUS_CODE = 1027;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Organizer Cognitive Status Result Observation' of 'Cognitive Status Result Organizer'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION = 1028;
+	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION = 1022;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Template Id' of 'Cognitive Status Result Organizer'.
@@ -8264,7 +8216,55 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 1029;
+	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 1023;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Class Code' of 'Cognitive Status Result Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_CLASS_CODE = 1024;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Mood Code' of 'Cognitive Status Result Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_MOOD_CODE = 1025;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Id' of 'Cognitive Status Result Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_ID = 1026;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Code' of 'Cognitive Status Result Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_CODE = 1027;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Status Code P' of 'Cognitive Status Result Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE_P = 1028;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Status Code' of 'Cognitive Status Result Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE = 1029;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Text Reference' of 'Cognitive Status Result Observation'.
@@ -8291,108 +8291,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_VALUE_DATATYPE = 1032;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Class Code' of 'Cognitive Status Result Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code P' of 'Cognitive Status Result Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_CLASS_CODE = 1033;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Mood Code' of 'Cognitive Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_MOOD_CODE = 1034;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Id' of 'Cognitive Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_ID = 1035;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Code P' of 'Cognitive Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_CODE_P = 1036;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Code' of 'Cognitive Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_CODE = 1037;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Text' of 'Cognitive Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_TEXT = 1038;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Status Code P' of 'Cognitive Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_STATUS_CODE_P = 1039;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Status Code' of 'Cognitive Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_STATUS_CODE = 1040;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Effective Time' of 'Cognitive Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_EFFECTIVE_TIME = 1041;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Value' of 'Cognitive Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_VALUE = 1042;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Interpretation Code' of 'Cognitive Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_INTERPRETATION_CODE = 1043;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Method Code' of 'Cognitive Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_METHOD_CODE = 1044;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Target Site Code' of 'Cognitive Status Result Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_TARGET_SITE_CODE = 1045;
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE_P = 1033;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Author' of 'Cognitive Status Result Observation'.
@@ -8400,7 +8304,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_AUTHOR = 1046;
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_AUTHOR = 1034;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Non Medicinal Supply Activity' of 'Cognitive Status Result Observation'.
@@ -8408,7 +8312,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY = 1047;
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY = 1035;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Caregiver Characteristics' of 'Cognitive Status Result Observation'.
@@ -8416,7 +8320,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_CAREGIVER_CHARACTERISTICS = 1048;
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_CAREGIVER_CHARACTERISTICS = 1036;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Assessment Scale Observation' of 'Cognitive Status Result Observation'.
@@ -8424,7 +8328,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION = 1049;
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION = 1037;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Reference Range' of 'Cognitive Status Result Observation'.
@@ -8432,7 +8336,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE = 1050;
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE = 1038;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Reference Range Observation Range No Code' of 'Cognitive Status Result Observation'.
@@ -8440,7 +8344,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE = 1051;
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE = 1039;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Result Observation Reference Range Observation Range' of 'Cognitive Status Result Observation'.
@@ -8448,7 +8352,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE = 1052;
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE = 1040;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Template Id' of 'Cognitive Status Result Observation'.
@@ -8456,7 +8360,103 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 1053;
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 1041;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Class Code' of 'Cognitive Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CLASS_CODE = 1042;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Mood Code' of 'Cognitive Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_MOOD_CODE = 1043;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Id' of 'Cognitive Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_ID = 1044;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code' of 'Cognitive Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE = 1045;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Text' of 'Cognitive Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT = 1046;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Status Code P' of 'Cognitive Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE_P = 1047;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Status Code' of 'Cognitive Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE = 1048;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Effective Time' of 'Cognitive Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_EFFECTIVE_TIME = 1049;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Value' of 'Cognitive Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_VALUE = 1050;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Interpretation Code' of 'Cognitive Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_INTERPRETATION_CODE = 1051;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Method Code' of 'Cognitive Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_METHOD_CODE = 1052;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Target Site Code' of 'Cognitive Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TARGET_SITE_CODE = 1053;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Has Text Reference' of 'Functional Status Problem Observation'.
@@ -8507,100 +8507,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR = 1059;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Class Code' of 'Functional Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_CLASS_CODE = 1060;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Mood Code' of 'Functional Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_MOOD_CODE = 1061;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Negation Ind' of 'Functional Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_NEGATION_IND = 1062;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Id' of 'Functional Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_ID = 1063;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Code P' of 'Functional Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_CODE_P = 1064;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Code' of 'Functional Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_CODE = 1065;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Text' of 'Functional Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_TEXT = 1066;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Status Code' of 'Functional Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_STATUS_CODE = 1067;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Effective Time' of 'Functional Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_EFFECTIVE_TIME = 1068;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Value P' of 'Functional Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_VALUE_P = 1069;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Value' of 'Functional Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_VALUE = 1070;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Method Code' of 'Functional Status Problem Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_METHOD_CODE = 1071;
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_METHOD_CODE = 1060;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Non Medicinal Supply Activity' of 'Functional Status Problem Observation'.
@@ -8608,7 +8520,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY = 1072;
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY = 1061;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Caregiver Characteristics' of 'Functional Status Problem Observation'.
@@ -8616,7 +8528,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_CAREGIVER_CHARACTERISTICS = 1073;
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_CAREGIVER_CHARACTERISTICS = 1062;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Problem Observation Assessment Scale Observation' of 'Functional Status Problem Observation'.
@@ -8624,7 +8536,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION = 1074;
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION = 1063;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Template Id' of 'Functional Status Problem Observation'.
@@ -8632,7 +8544,95 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 1075;
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 1064;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Class Code' of 'Functional Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CLASS_CODE = 1065;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Mood Code' of 'Functional Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_MOOD_CODE = 1066;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Negation Ind' of 'Functional Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_NEGATION_IND = 1067;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Id' of 'Functional Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_ID = 1068;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Code P' of 'Functional Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE_P = 1069;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Code' of 'Functional Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE = 1070;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Text' of 'Functional Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEXT = 1071;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Status Code' of 'Functional Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_STATUS_CODE = 1072;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Effective Time' of 'Functional Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_EFFECTIVE_TIME = 1073;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Value P' of 'Functional Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_P = 1074;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Value' of 'Functional Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE = 1075;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Has Text Reference' of 'Cognitive Status Problem Observation'.
@@ -8667,100 +8667,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE = 1079;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Class Code' of 'Cognitive Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_CLASS_CODE = 1080;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Mood Code' of 'Cognitive Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_MOOD_CODE = 1081;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Negation Ind' of 'Cognitive Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_NEGATION_IND = 1082;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Id' of 'Cognitive Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_ID = 1083;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Code P' of 'Cognitive Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_CODE_P = 1084;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Code' of 'Cognitive Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_CODE = 1085;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Text' of 'Cognitive Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_TEXT = 1086;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Status Code' of 'Cognitive Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_STATUS_CODE = 1087;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Effective Time' of 'Cognitive Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_EFFECTIVE_TIME = 1088;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Method Code' of 'Cognitive Status Problem Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_METHOD_CODE = 1089;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Value P' of 'Cognitive Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_VALUE_P = 1090;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Value' of 'Cognitive Status Problem Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_VALUE = 1091;
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_METHOD_CODE = 1080;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Non Medicinal Supply Activity' of 'Cognitive Status Problem Observation'.
@@ -8768,7 +8680,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY = 1092;
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY = 1081;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Caregiver Characteristics' of 'Cognitive Status Problem Observation'.
@@ -8776,7 +8688,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_CAREGIVER_CHARACTERISTICS = 1093;
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_CAREGIVER_CHARACTERISTICS = 1082;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Status Problem Observation Assessment Scale Observation' of 'Cognitive Status Problem Observation'.
@@ -8784,7 +8696,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION = 1094;
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION = 1083;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Template Id' of 'Cognitive Status Problem Observation'.
@@ -8792,7 +8704,95 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 1095;
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 1084;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Class Code' of 'Cognitive Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CLASS_CODE = 1085;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Mood Code' of 'Cognitive Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_MOOD_CODE = 1086;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Negation Ind' of 'Cognitive Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_NEGATION_IND = 1087;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Id' of 'Cognitive Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_ID = 1088;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Code P' of 'Cognitive Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE_P = 1089;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Code' of 'Cognitive Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE = 1090;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Text' of 'Cognitive Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEXT = 1091;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Status Code' of 'Cognitive Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_STATUS_CODE = 1092;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Effective Time' of 'Cognitive Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_EFFECTIVE_TIME = 1093;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Value P' of 'Cognitive Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_P = 1094;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Value' of 'Cognitive Status Problem Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE = 1095;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pressure Ulcer Observation Has Text Reference' of 'Pressure Ulcer Observation'.
@@ -11627,20 +11627,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_TEXT = 1449;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Signs Section Title' of 'Vital Signs Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_TITLE = 1450;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Signs Section Vital Signs Organizer' of 'Vital Signs Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER = 1451;
+	public static final int VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER = 1450;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Signs Section Entries Optional Template Id' of 'Vital Signs Section'.
@@ -11648,7 +11640,15 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 1452;
+	public static final int VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 1451;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Signs Section Entries Optional Title' of 'Vital Signs Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE = 1452;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History Of Past Illness Section Template Id' of 'History Of Past Illness Section'.
@@ -13507,52 +13507,52 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE = 1684;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Medications Section Code P' of 'Hospital Discharge Medications Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_CODE_P = 1685;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Medications Section Code' of 'Hospital Discharge Medications Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_CODE = 1686;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Medications Section Text' of 'Hospital Discharge Medications Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEXT = 1687;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Medications Section Title' of 'Hospital Discharge Medications Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TITLE = 1688;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Medications Section Discharge Medication' of 'Hospital Discharge Medications Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_DISCHARGE_MEDICATION = 1689;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Medications Section Entries Optional Template Id' of 'Hospital Discharge Medications Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 1690;
+	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 1685;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Medications Section Entries Optional Code P' of 'Hospital Discharge Medications Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P = 1686;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Medications Section Entries Optional Code' of 'Hospital Discharge Medications Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE = 1687;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Medications Section Entries Optional Text' of 'Hospital Discharge Medications Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT = 1688;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Medications Section Entries Optional Title' of 'Hospital Discharge Medications Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE = 1689;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Medications Section Entries Optional Discharge Medication' of 'Hospital Discharge Medications Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION = 1690;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Anesthesia Section Template Id' of 'Anesthesia Section'.
@@ -15019,20 +15019,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_TEMPLATE_ID = 1873;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Code P' of 'Consultation Note'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code P' of 'Consultation Note'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_CODE_P = 1874;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Code' of 'Consultation Note'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_CODE = 1875;
+	public static final int CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE_P = 1874;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of' of 'Consultation Note'.
@@ -15040,7 +15032,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF = 1876;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF = 1875;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Assessment Section' of 'Consultation Note'.
@@ -15048,7 +15040,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_SECTION = 1877;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_SECTION = 1876;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Assessment And Plan Section' of 'Consultation Note'.
@@ -15056,7 +15048,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION = 1878;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION = 1877;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Plan Of Care Section' of 'Consultation Note'.
@@ -15064,7 +15056,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_PLAN_OF_CARE_SECTION = 1879;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_PLAN_OF_CARE_SECTION = 1878;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note History Of Present Illness' of 'Consultation Note'.
@@ -15072,7 +15064,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS = 1880;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS = 1879;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Physical Exam Section' of 'Consultation Note'.
@@ -15080,7 +15072,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION = 1881;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION = 1880;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Reason For Referral Section' of 'Consultation Note'.
@@ -15088,7 +15080,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION = 1882;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION = 1881;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Reason For Visit Section' of 'Consultation Note'.
@@ -15096,7 +15088,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION = 1883;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION = 1882;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Allergies Section' of 'Consultation Note'.
@@ -15104,7 +15096,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_ALLERGIES_SECTION = 1884;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_ALLERGIES_SECTION = 1883;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Chief Complaint Section' of 'Consultation Note'.
@@ -15112,7 +15104,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION = 1885;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION = 1884;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Chief Complaint And Reason For Visit Section' of 'Consultation Note'.
@@ -15120,7 +15112,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION = 1886;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION = 1885;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Family History Section' of 'Consultation Note'.
@@ -15128,7 +15120,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_FAMILY_HISTORY_SECTION = 1887;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_FAMILY_HISTORY_SECTION = 1886;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note General Status Section' of 'Consultation Note'.
@@ -15136,7 +15128,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_GENERAL_STATUS_SECTION = 1888;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_GENERAL_STATUS_SECTION = 1887;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note History Of Past Illness Section' of 'Consultation Note'.
@@ -15144,7 +15136,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION = 1889;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION = 1888;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Immunizations Section' of 'Consultation Note'.
@@ -15152,7 +15144,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_IMMUNIZATIONS_SECTION = 1890;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_IMMUNIZATIONS_SECTION = 1889;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Medications Section Entries Optional' of 'Consultation Note'.
@@ -15160,7 +15152,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = 1891;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = 1890;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Problem Section Entries Optional' of 'Consultation Note'.
@@ -15168,7 +15160,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL = 1892;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL = 1891;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Procedures Section Entries Optional' of 'Consultation Note'.
@@ -15176,7 +15168,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL = 1893;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL = 1892;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Results Section Entries Optional' of 'Consultation Note'.
@@ -15184,7 +15176,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL = 1894;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL = 1893;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Review Of Systems Section' of 'Consultation Note'.
@@ -15192,7 +15184,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION = 1895;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION = 1894;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Social History Section' of 'Consultation Note'.
@@ -15200,7 +15192,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION = 1896;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION = 1895;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Vital Signs Section Entries Optional' of 'Consultation Note'.
@@ -15208,7 +15200,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL = 1897;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL = 1896;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note In Fulfillment Of' of 'Consultation Note'.
@@ -15216,7 +15208,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF = 1898;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF = 1897;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter2 Responsible Party Assigned Entity Has Person Organization Or Both' of 'Consultation Note'.
@@ -15224,7 +15216,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH = 1899;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH = 1898;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter2 Responsible Party Assigned Entity' of 'Consultation Note'.
@@ -15232,7 +15224,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY = 1900;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY = 1899;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter2 Encounter Participant Assigned Entity Has Person Organization Or Both' of 'Consultation Note'.
@@ -15240,7 +15232,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH = 1901;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH = 1900;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter2 Encounter Participant Assigned Entity' of 'Consultation Note'.
@@ -15248,7 +15240,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY = 1902;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY = 1901;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter2 Effective Time' of 'Consultation Note'.
@@ -15256,7 +15248,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME = 1903;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME = 1902;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter2 Id' of 'Consultation Note'.
@@ -15264,7 +15256,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID = 1904;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID = 1903;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter2 Responsible Party' of 'Consultation Note'.
@@ -15272,7 +15264,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY = 1905;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY = 1904;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter2 Encounter Participant' of 'Consultation Note'.
@@ -15280,7 +15272,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT = 1906;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT = 1905;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note Component Of Encompassing Encounter' of 'Consultation Note'.
@@ -15288,7 +15280,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER = 1907;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER = 1906;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note In Fulfillment Of Order Id' of 'Consultation Note'.
@@ -15296,7 +15288,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID = 1908;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID = 1907;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Consultation Note In Fulfillment Of Order' of 'Consultation Note'.
@@ -15304,7 +15296,15 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER = 1909;
+	public static final int CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER = 1908;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code' of 'Consultation Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE = 1909;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Assessment Section Template Id' of 'Assessment Section'.
@@ -15387,20 +15387,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_TEMPLATE_ID = 1919;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Code P' of 'History And Physical Note'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code P' of 'History And Physical Note'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_CODE_P = 1920;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Code' of 'History And Physical Note'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_CODE = 1921;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE_P = 1920;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note In Fulfillment Of' of 'History And Physical Note'.
@@ -15408,7 +15400,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_IN_FULFILLMENT_OF = 1922;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_IN_FULFILLMENT_OF = 1921;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of' of 'History And Physical Note'.
@@ -15416,7 +15408,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF = 1923;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF = 1922;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Allergies Section Entries Optional' of 'History And Physical Note'.
@@ -15424,7 +15416,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL = 1924;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL = 1923;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Assessment Section' of 'History And Physical Note'.
@@ -15432,7 +15424,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_ASSESSMENT_SECTION = 1925;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_ASSESSMENT_SECTION = 1924;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Plan Of Care Section' of 'History And Physical Note'.
@@ -15440,7 +15432,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_PLAN_OF_CARE_SECTION = 1926;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_PLAN_OF_CARE_SECTION = 1925;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Assessment And Plan Section' of 'History And Physical Note'.
@@ -15448,7 +15440,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_ASSESSMENT_AND_PLAN_SECTION = 1927;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_ASSESSMENT_AND_PLAN_SECTION = 1926;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Chief Complaint Section' of 'History And Physical Note'.
@@ -15456,7 +15448,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_CHIEF_COMPLAINT_SECTION = 1928;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_CHIEF_COMPLAINT_SECTION = 1927;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Chief Complaint And Reason For Visit Section' of 'History And Physical Note'.
@@ -15464,7 +15456,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION = 1929;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION = 1928;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Family History Section' of 'History And Physical Note'.
@@ -15472,7 +15464,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_FAMILY_HISTORY_SECTION = 1930;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_FAMILY_HISTORY_SECTION = 1929;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note General Status Section' of 'History And Physical Note'.
@@ -15480,7 +15472,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_GENERAL_STATUS_SECTION = 1931;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_GENERAL_STATUS_SECTION = 1930;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note History Of Past Illness Section' of 'History And Physical Note'.
@@ -15488,7 +15480,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION = 1932;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION = 1931;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Medications Section Entries Optional' of 'History And Physical Note'.
@@ -15496,7 +15488,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = 1933;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = 1932;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Physical Exam Section' of 'History And Physical Note'.
@@ -15504,7 +15496,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_PHYSICAL_EXAM_SECTION = 1934;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_PHYSICAL_EXAM_SECTION = 1933;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Reason For Visit Section' of 'History And Physical Note'.
@@ -15512,7 +15504,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_REASON_FOR_VISIT_SECTION = 1935;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_REASON_FOR_VISIT_SECTION = 1934;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Results Section Entries Optional' of 'History And Physical Note'.
@@ -15520,7 +15512,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL = 1936;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL = 1935;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Review Of Systems Section' of 'History And Physical Note'.
@@ -15528,7 +15520,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_REVIEW_OF_SYSTEMS_SECTION = 1937;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_REVIEW_OF_SYSTEMS_SECTION = 1936;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Social History Section' of 'History And Physical Note'.
@@ -15536,7 +15528,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_SOCIAL_HISTORY_SECTION = 1938;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_SOCIAL_HISTORY_SECTION = 1937;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note History Of Present Illness Section' of 'History And Physical Note'.
@@ -15544,7 +15536,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION = 1939;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION = 1938;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Immunizations Section Entries Optional' of 'History And Physical Note'.
@@ -15552,7 +15544,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL = 1940;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL = 1939;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Problem Section Entries Optional' of 'History And Physical Note'.
@@ -15560,7 +15552,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL = 1941;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL = 1940;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Procedures Section Entries Optional' of 'History And Physical Note'.
@@ -15568,7 +15560,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL = 1942;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL = 1941;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Vital Signs Section Entries Optional' of 'History And Physical Note'.
@@ -15576,7 +15568,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL = 1943;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL = 1942;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Instructions Section' of 'History And Physical Note'.
@@ -15584,7 +15576,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_INSTRUCTIONS_SECTION = 1944;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_INSTRUCTIONS_SECTION = 1943;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party Assigned Entity Has Person Or Organization' of 'History And Physical Note'.
@@ -15592,7 +15584,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION = 1945;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION = 1944;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party Assigned Entity' of 'History And Physical Note'.
@@ -15600,7 +15592,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY_ASSIGNED_ENTITY = 1946;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY_ASSIGNED_ENTITY = 1945;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant Assigned Entity Has Person Or Organization' of 'History And Physical Note'.
@@ -15608,7 +15600,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION = 1947;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION = 1946;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant Assigned Entity' of 'History And Physical Note'.
@@ -15616,7 +15608,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY = 1948;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY = 1947;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Effective Time' of 'History And Physical Note'.
@@ -15624,7 +15616,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_EFFECTIVE_TIME = 1949;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_EFFECTIVE_TIME = 1948;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Id' of 'History And Physical Note'.
@@ -15632,7 +15624,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ID = 1950;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ID = 1949;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Location' of 'History And Physical Note'.
@@ -15640,7 +15632,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_LOCATION = 1951;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_LOCATION = 1950;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party' of 'History And Physical Note'.
@@ -15648,7 +15640,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY = 1952;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY = 1951;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant' of 'History And Physical Note'.
@@ -15656,7 +15648,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT = 1953;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT = 1952;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate History And Physical Note Component Of Encompassing Encounter' of 'History And Physical Note'.
@@ -15664,7 +15656,15 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER = 1954;
+	public static final int HISTORY_AND_PHYSICAL_NOTE__HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER = 1953;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code' of 'History And Physical Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HISTORY_AND_PHYSICAL_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE = 1954;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Instructions Section Template Id' of 'Instructions Section'.
@@ -15723,20 +15723,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_TEMPLATE_ID = 1961;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Code P' of 'Operative Note'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code P' of 'Operative Note'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_CODE_P = 1962;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Code' of 'Operative Note'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_CODE = 1963;
+	public static final int OPERATIVE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE_P = 1962;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of' of 'Operative Note'.
@@ -15744,7 +15736,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF = 1964;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF = 1963;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Anesthesia Section' of 'Operative Note'.
@@ -15752,7 +15744,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_ANESTHESIA_SECTION = 1965;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_ANESTHESIA_SECTION = 1964;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Complications Section' of 'Operative Note'.
@@ -15760,7 +15752,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_COMPLICATIONS_SECTION = 1966;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_COMPLICATIONS_SECTION = 1965;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Postoperative Diagnosis Section' of 'Operative Note'.
@@ -15768,7 +15760,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_POSTOPERATIVE_DIAGNOSIS_SECTION = 1967;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_POSTOPERATIVE_DIAGNOSIS_SECTION = 1966;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Preoperative Diagnosis Section' of 'Operative Note'.
@@ -15776,7 +15768,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION = 1968;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION = 1967;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Procedure Estimated Blood Loss Section' of 'Operative Note'.
@@ -15784,7 +15776,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION = 1969;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION = 1968;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Procedure Findings Section' of 'Operative Note'.
@@ -15792,7 +15784,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_FINDINGS_SECTION = 1970;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_FINDINGS_SECTION = 1969;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Procedure Specimens Taken Section' of 'Operative Note'.
@@ -15800,7 +15792,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION = 1971;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION = 1970;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Procedure Description Section' of 'Operative Note'.
@@ -15808,7 +15800,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_DESCRIPTION_SECTION = 1972;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_DESCRIPTION_SECTION = 1971;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Procedure Implants Section' of 'Operative Note'.
@@ -15816,7 +15808,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_IMPLANTS_SECTION = 1973;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_IMPLANTS_SECTION = 1972;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Fluid Section' of 'Operative Note'.
@@ -15824,7 +15816,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_FLUID_SECTION = 1974;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_FLUID_SECTION = 1973;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Surgical Procedure Section' of 'Operative Note'.
@@ -15832,7 +15824,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION = 1975;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION = 1974;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Plan Of Care Section' of 'Operative Note'.
@@ -15840,7 +15832,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PLAN_OF_CARE_SECTION = 1976;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PLAN_OF_CARE_SECTION = 1975;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Planned Procedure Section' of 'Operative Note'.
@@ -15848,7 +15840,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PLANNED_PROCEDURE_SECTION = 1977;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PLANNED_PROCEDURE_SECTION = 1976;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Procedure Disposition Section' of 'Operative Note'.
@@ -15856,7 +15848,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_DISPOSITION_SECTION = 1978;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_DISPOSITION_SECTION = 1977;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Procedure Indications Section' of 'Operative Note'.
@@ -15864,7 +15856,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_INDICATIONS_SECTION = 1979;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_INDICATIONS_SECTION = 1978;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Surgical Drains Section' of 'Operative Note'.
@@ -15872,7 +15864,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_SURGICAL_DRAINS_SECTION = 1980;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_SURGICAL_DRAINS_SECTION = 1979;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Primary Performer Assigned Entity Code' of 'Operative Note'.
@@ -15880,7 +15872,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE = 1981;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE = 1980;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Primary Performer Assigned Entity Code P' of 'Operative Note'.
@@ -15888,7 +15880,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE_P = 1982;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE_P = 1981;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Primary Performer Type Code' of 'Operative Note'.
@@ -15896,7 +15888,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE = 1983;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE = 1982;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Primary Performer Assigned Entity' of 'Operative Note'.
@@ -15904,7 +15896,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY = 1984;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY = 1983;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Procedure Codes' of 'Operative Note'.
@@ -15912,7 +15904,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES = 1985;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES = 1984;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Effective Time Has Low' of 'Operative Note'.
@@ -15920,7 +15912,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW = 1986;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW = 1985;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Effective Time Has High When No Width' of 'Operative Note'.
@@ -15928,7 +15920,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH = 1987;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH = 1986;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Effective Time No High If Width' of 'Operative Note'.
@@ -15936,7 +15928,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH = 1988;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH = 1987;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Code' of 'Operative Note'.
@@ -15944,7 +15936,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE = 1989;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE = 1988;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Effective Time' of 'Operative Note'.
@@ -15952,7 +15944,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME = 1990;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME = 1989;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event Primary Performer' of 'Operative Note'.
@@ -15960,7 +15952,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER = 1991;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER = 1990;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Operative Note Documentation Of Service Event' of 'Operative Note'.
@@ -15968,7 +15960,15 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT = 1992;
+	public static final int OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT = 1991;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code' of 'Operative Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OPERATIVE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE = 1992;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Has An Assement And Plan Section Or Individual Assement And Plan Sections' of 'Procedure Note'.
@@ -16011,20 +16011,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_TEMPLATE_ID = 1997;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Code P' of 'Procedure Note'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code P' of 'Procedure Note'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_CODE_P = 1998;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Code' of 'Procedure Note'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_CODE = 1999;
+	public static final int PROCEDURE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE_P = 1998;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of' of 'Procedure Note'.
@@ -16032,7 +16024,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF = 2000;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF = 1999;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Assessment Section' of 'Procedure Note'.
@@ -16040,7 +16032,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ASSESSMENT_SECTION = 2001;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ASSESSMENT_SECTION = 2000;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Plan Of Care Section' of 'Procedure Note'.
@@ -16048,7 +16040,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PLAN_OF_CARE_SECTION = 2002;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PLAN_OF_CARE_SECTION = 2001;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Assessment And Plan Section' of 'Procedure Note'.
@@ -16056,7 +16048,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ASSESSMENT_AND_PLAN_SECTION = 2003;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ASSESSMENT_AND_PLAN_SECTION = 2002;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Complications Section' of 'Procedure Note'.
@@ -16064,7 +16056,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPLICATIONS_SECTION = 2004;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPLICATIONS_SECTION = 2003;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Postprocedure Diagnosis Section' of 'Procedure Note'.
@@ -16072,7 +16064,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_POSTPROCEDURE_DIAGNOSIS_SECTION = 2005;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_POSTPROCEDURE_DIAGNOSIS_SECTION = 2004;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedure Description Section' of 'Procedure Note'.
@@ -16080,7 +16072,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_DESCRIPTION_SECTION = 2006;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_DESCRIPTION_SECTION = 2005;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedure Indications Section' of 'Procedure Note'.
@@ -16088,7 +16080,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_INDICATIONS_SECTION = 2007;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_INDICATIONS_SECTION = 2006;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Allergies Section Entries Optional' of 'Procedure Note'.
@@ -16096,7 +16088,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL = 2008;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL = 2007;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Anesthesia Section' of 'Procedure Note'.
@@ -16104,7 +16096,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ANESTHESIA_SECTION = 2009;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_ANESTHESIA_SECTION = 2008;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Chief Complaint Section' of 'Procedure Note'.
@@ -16112,7 +16104,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_CHIEF_COMPLAINT_SECTION = 2010;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_CHIEF_COMPLAINT_SECTION = 2009;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Chief Complaint And Reason For Visit Section' of 'Procedure Note'.
@@ -16120,7 +16112,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION = 2011;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION = 2010;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Family History Section' of 'Procedure Note'.
@@ -16128,7 +16120,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_FAMILY_HISTORY_SECTION = 2012;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_FAMILY_HISTORY_SECTION = 2011;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note History Of Past Illness Section' of 'Procedure Note'.
@@ -16136,7 +16128,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION = 2013;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION = 2012;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note History Of Present Illness Section' of 'Procedure Note'.
@@ -16144,7 +16136,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION = 2014;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION = 2013;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Medical History Section' of 'Procedure Note'.
@@ -16152,7 +16144,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_MEDICAL_HISTORY_SECTION = 2015;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_MEDICAL_HISTORY_SECTION = 2014;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Medications Section Entries Optional' of 'Procedure Note'.
@@ -16160,7 +16152,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = 2016;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = 2015;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Medications Administered Section' of 'Procedure Note'.
@@ -16168,7 +16160,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_MEDICATIONS_ADMINISTERED_SECTION = 2017;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_MEDICATIONS_ADMINISTERED_SECTION = 2016;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Physical Exam Section' of 'Procedure Note'.
@@ -16176,7 +16168,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PHYSICAL_EXAM_SECTION = 2018;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PHYSICAL_EXAM_SECTION = 2017;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Planned Procedure Section' of 'Procedure Note'.
@@ -16184,7 +16176,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PLANNED_PROCEDURE_SECTION = 2019;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PLANNED_PROCEDURE_SECTION = 2018;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedure Disposition Section' of 'Procedure Note'.
@@ -16192,7 +16184,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_DISPOSITION_SECTION = 2020;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_DISPOSITION_SECTION = 2019;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedure Estimated Blood Loss Section' of 'Procedure Note'.
@@ -16200,7 +16192,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION = 2021;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION = 2020;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedure Findings Section' of 'Procedure Note'.
@@ -16208,7 +16200,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_FINDINGS_SECTION = 2022;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_FINDINGS_SECTION = 2021;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedure Implants Section' of 'Procedure Note'.
@@ -16216,7 +16208,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_IMPLANTS_SECTION = 2023;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_IMPLANTS_SECTION = 2022;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedure Specimens Taken Section' of 'Procedure Note'.
@@ -16224,7 +16216,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION = 2024;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION = 2023;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Procedures Section Entries Optional' of 'Procedure Note'.
@@ -16232,7 +16224,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL = 2025;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL = 2024;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Reason For Visit Section' of 'Procedure Note'.
@@ -16240,7 +16232,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_REASON_FOR_VISIT_SECTION = 2026;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_REASON_FOR_VISIT_SECTION = 2025;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Review Of Systems Section' of 'Procedure Note'.
@@ -16248,7 +16240,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_REVIEW_OF_SYSTEMS_SECTION = 2027;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_REVIEW_OF_SYSTEMS_SECTION = 2026;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Social History Section' of 'Procedure Note'.
@@ -16256,7 +16248,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_SOCIAL_HISTORY_SECTION = 2028;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_SOCIAL_HISTORY_SECTION = 2027;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Participant1' of 'Procedure Note'.
@@ -16264,7 +16256,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PARTICIPANT1 = 2029;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_PARTICIPANT1 = 2028;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Documentation Of' of 'Procedure Note'.
@@ -16272,7 +16264,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF = 2030;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF = 2029;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of Encompassing Encounter5 Location Health Care Facility Id' of 'Procedure Note'.
@@ -16280,7 +16272,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION_HEALTH_CARE_FACILITY_ID = 2031;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION_HEALTH_CARE_FACILITY_ID = 2030;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of Encompassing Encounter5 Location Health Care Facility' of 'Procedure Note'.
@@ -16288,7 +16280,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION_HEALTH_CARE_FACILITY = 2032;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION_HEALTH_CARE_FACILITY = 2031;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of Encompassing Encounter5 Encounter Participant Type Code' of 'Procedure Note'.
@@ -16296,7 +16288,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT_TYPE_CODE = 2033;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT_TYPE_CODE = 2032;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of Encompassing Encounter5 Code' of 'Procedure Note'.
@@ -16304,7 +16296,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_CODE = 2034;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_CODE = 2033;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of Encompassing Encounter5 Location' of 'Procedure Note'.
@@ -16312,7 +16304,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION = 2035;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION = 2034;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of Encompassing Encounter5 Encounter Participant' of 'Procedure Note'.
@@ -16320,7 +16312,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT = 2036;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT = 2035;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Component Of Encompassing Encounter5' of 'Procedure Note'.
@@ -16328,7 +16320,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5 = 2037;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5 = 2036;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Documentation Of Service Event1 Primary Performer Assigned Entity Code P' of 'Procedure Note'.
@@ -16336,7 +16328,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE_P = 2038;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE_P = 2037;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Documentation Of Service Event1 Primary Performer Assigned Entity Code' of 'Procedure Note'.
@@ -16344,7 +16336,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE = 2039;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE = 2038;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Documentation Of Service Event1 Primary Performer Type Code' of 'Procedure Note'.
@@ -16352,7 +16344,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRIMARY_PERFORMER_TYPE_CODE = 2040;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRIMARY_PERFORMER_TYPE_CODE = 2039;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Documentation Of Service Event1 Primary Performer Assigned Entity' of 'Procedure Note'.
@@ -16360,7 +16352,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRIMARY_PERFORMER_ASSIGNED_ENTITY = 2041;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRIMARY_PERFORMER_ASSIGNED_ENTITY = 2040;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Documentation Of Service Event1 Procedure Codes' of 'Procedure Note'.
@@ -16368,7 +16360,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PROCEDURE_CODES = 2042;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PROCEDURE_CODES = 2041;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Documentation Of Service Event1 Effective Time Has Low' of 'Procedure Note'.
@@ -16376,7 +16368,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_EFFECTIVE_TIME_HAS_LOW = 2043;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_EFFECTIVE_TIME_HAS_LOW = 2042;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Documentation Of Service Event1 Effective Time Has High When No Width' of 'Procedure Note'.
@@ -16384,7 +16376,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH = 2044;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH = 2043;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Documentation Of Service Event1 Effective Time No High If Width' of 'Procedure Note'.
@@ -16392,7 +16384,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH = 2045;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH = 2044;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Documentation Of Service Event1 Code' of 'Procedure Note'.
@@ -16400,7 +16392,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_CODE = 2046;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_CODE = 2045;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Documentation Of Service Event1 Effective Time' of 'Procedure Note'.
@@ -16408,7 +16400,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_EFFECTIVE_TIME = 2047;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_EFFECTIVE_TIME = 2046;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Documentation Of Service Event1 Primary Performer' of 'Procedure Note'.
@@ -16416,7 +16408,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRIMARY_PERFORMER = 2048;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRIMARY_PERFORMER = 2047;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Note Documentation Of Service Event1' of 'Procedure Note'.
@@ -16424,7 +16416,15 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1 = 2049;
+	public static final int PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1 = 2048;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code' of 'Procedure Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE = 2049;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Has An Assement And Plan Section Or Individual Assement And Plan Sections' of 'Progress Note'.
@@ -16451,20 +16451,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int PROGRESS_NOTE__PROGRESS_NOTE_TEMPLATE_ID = 2052;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Code P' of 'Progress Note'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code P' of 'Progress Note'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_CODE_P = 2053;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Code' of 'Progress Note'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_CODE = 2054;
+	public static final int PROGRESS_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE_P = 2053;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Documentation Of' of 'Progress Note'.
@@ -16472,7 +16464,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF = 2055;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF = 2054;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Component Of' of 'Progress Note'.
@@ -16480,7 +16472,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF = 2056;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF = 2055;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Assessment Section' of 'Progress Note'.
@@ -16488,7 +16480,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_ASSESSMENT_SECTION = 2057;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_ASSESSMENT_SECTION = 2056;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Plan Of Care Section' of 'Progress Note'.
@@ -16496,7 +16488,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_PLAN_OF_CARE_SECTION = 2058;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_PLAN_OF_CARE_SECTION = 2057;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Assessment And Plan Section' of 'Progress Note'.
@@ -16504,7 +16496,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_ASSESSMENT_AND_PLAN_SECTION = 2059;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_ASSESSMENT_AND_PLAN_SECTION = 2058;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Allergies Section Entries Optional' of 'Progress Note'.
@@ -16512,7 +16504,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL = 2060;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL = 2059;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Chief Complaint Section' of 'Progress Note'.
@@ -16520,7 +16512,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_CHIEF_COMPLAINT_SECTION = 2061;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_CHIEF_COMPLAINT_SECTION = 2060;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Interventions Section' of 'Progress Note'.
@@ -16528,7 +16520,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_INTERVENTIONS_SECTION = 2062;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_INTERVENTIONS_SECTION = 2061;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Medications Section Entries Optional' of 'Progress Note'.
@@ -16536,7 +16528,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = 2063;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL = 2062;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Objective Section' of 'Progress Note'.
@@ -16544,7 +16536,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_OBJECTIVE_SECTION = 2064;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_OBJECTIVE_SECTION = 2063;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Physical Exam Section' of 'Progress Note'.
@@ -16552,7 +16544,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_PHYSICAL_EXAM_SECTION = 2065;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_PHYSICAL_EXAM_SECTION = 2064;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Problem Section Entries Optional' of 'Progress Note'.
@@ -16560,7 +16552,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL = 2066;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL = 2065;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Results Section Entries Optional' of 'Progress Note'.
@@ -16568,7 +16560,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL = 2067;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL = 2066;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Review Of Systems Section' of 'Progress Note'.
@@ -16576,7 +16568,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_REVIEW_OF_SYSTEMS_SECTION = 2068;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_REVIEW_OF_SYSTEMS_SECTION = 2067;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Subjective Section' of 'Progress Note'.
@@ -16584,7 +16576,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_SUBJECTIVE_SECTION = 2069;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_SUBJECTIVE_SECTION = 2068;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Vital Signs Section Entries Optional' of 'Progress Note'.
@@ -16592,7 +16584,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL = 2070;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL = 2069;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Instructions Section' of 'Progress Note'.
@@ -16600,7 +16592,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_INSTRUCTIONS_SECTION = 2071;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_INSTRUCTIONS_SECTION = 2070;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Documentation Of Service Event2 Effective Time Low' of 'Progress Note'.
@@ -16608,7 +16600,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME_LOW = 2072;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME_LOW = 2071;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Documentation Of Service Event2 Effective Time High' of 'Progress Note'.
@@ -16616,7 +16608,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME_HIGH = 2073;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME_HIGH = 2072;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Documentation Of Service Event2 Template Id' of 'Progress Note'.
@@ -16624,7 +16616,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_TEMPLATE_ID = 2074;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_TEMPLATE_ID = 2073;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Documentation Of Service Event2 Class Code' of 'Progress Note'.
@@ -16632,7 +16624,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_CLASS_CODE = 2075;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_CLASS_CODE = 2074;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Documentation Of Service Event2 Effective Time' of 'Progress Note'.
@@ -16640,7 +16632,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME = 2076;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME = 2075;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Documentation Of Service Event2' of 'Progress Note'.
@@ -16648,7 +16640,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2 = 2077;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2 = 2076;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Component Of Encompassing Encounter6 Location Health Care Facility1 Id' of 'Progress Note'.
@@ -16656,7 +16648,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION_HEALTH_CARE_FACILITY1_ID = 2078;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION_HEALTH_CARE_FACILITY1_ID = 2077;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Component Of Encompassing Encounter6 Location Health Care Facility' of 'Progress Note'.
@@ -16664,7 +16656,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION_HEALTH_CARE_FACILITY = 2079;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION_HEALTH_CARE_FACILITY = 2078;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Component Of Encompassing Encounter6 Effective Time' of 'Progress Note'.
@@ -16672,7 +16664,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_EFFECTIVE_TIME = 2080;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_EFFECTIVE_TIME = 2079;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Component Of Encompassing Encounter6 Id' of 'Progress Note'.
@@ -16680,7 +16672,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_ID = 2081;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_ID = 2080;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Component Of Encompassing Encounter6 Location' of 'Progress Note'.
@@ -16688,7 +16680,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION = 2082;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION = 2081;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Progress Note Component Of Encompassing Encounter6' of 'Progress Note'.
@@ -16696,7 +16688,15 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6 = 2083;
+	public static final int PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6 = 2082;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code' of 'Progress Note'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROGRESS_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE = 2083;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Use Diagnostic Imaging Code' of 'Diagnostic Imaging Report'.
@@ -16731,28 +16731,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_TEMPLATE_ID = 2087;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Code P' of 'Diagnostic Imaging Report'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code P' of 'Diagnostic Imaging Report'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_CODE_P = 2088;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Code' of 'Diagnostic Imaging Report'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_CODE = 2089;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Id' of 'Diagnostic Imaging Report'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_ID = 2090;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__GENERAL_HEADER_CONSTRAINTS_CODE_P = 2088;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Informant' of 'Diagnostic Imaging Report'.
@@ -16760,7 +16744,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_INFORMANT = 2091;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_INFORMANT = 2089;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Information Recipient' of 'Diagnostic Imaging Report'.
@@ -16768,7 +16752,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_INFORMATION_RECIPIENT = 2092;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_INFORMATION_RECIPIENT = 2090;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Participant1' of 'Diagnostic Imaging Report'.
@@ -16776,7 +16760,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT1 = 2093;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT1 = 2091;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report In Fulfillment Of' of 'Diagnostic Imaging Report'.
@@ -16784,7 +16768,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_IN_FULFILLMENT_OF = 2094;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_IN_FULFILLMENT_OF = 2092;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Documentation Of' of 'Diagnostic Imaging Report'.
@@ -16792,7 +16776,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF = 2095;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF = 2093;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Related Document' of 'Diagnostic Imaging Report'.
@@ -16800,7 +16784,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_RELATED_DOCUMENT = 2096;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_RELATED_DOCUMENT = 2094;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Component Of' of 'Diagnostic Imaging Report'.
@@ -16808,7 +16792,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF = 2097;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF = 2095;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Findings Section' of 'Diagnostic Imaging Report'.
@@ -16816,7 +16800,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_FINDINGS_SECTION = 2098;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_FINDINGS_SECTION = 2096;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report DICOM Object Catalog Section' of 'Diagnostic Imaging Report'.
@@ -16824,7 +16808,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DICOM_OBJECT_CATALOG_SECTION = 2099;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DICOM_OBJECT_CATALOG_SECTION = 2097;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Participant Associated Entity Person Name' of 'Diagnostic Imaging Report'.
@@ -16832,7 +16816,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY_PERSON_NAME = 2100;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY_PERSON_NAME = 2098;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Participant Associated Entity Associated Person' of 'Diagnostic Imaging Report'.
@@ -16840,7 +16824,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON = 2101;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON = 2099;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Participant Associated Entity' of 'Diagnostic Imaging Report'.
@@ -16848,7 +16832,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY = 2102;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY = 2100;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Documentation Of Service Event4 Class Code' of 'Diagnostic Imaging Report'.
@@ -16856,7 +16840,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_CLASS_CODE = 2103;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_CLASS_CODE = 2101;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Documentation Of Service Event4 Code' of 'Diagnostic Imaging Report'.
@@ -16864,7 +16848,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_CODE = 2104;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_CODE = 2102;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Documentation Of Service Event4 Id' of 'Diagnostic Imaging Report'.
@@ -16872,7 +16856,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_ID = 2105;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_ID = 2103;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Documentation Of Service Event4 Physician Reading Study Performer' of 'Diagnostic Imaging Report'.
@@ -16880,7 +16864,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_PHYSICIAN_READING_STUDY_PERFORMER = 2106;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_PHYSICIAN_READING_STUDY_PERFORMER = 2104;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Documentation Of Service Event3' of 'Diagnostic Imaging Report'.
@@ -16888,7 +16872,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT3 = 2107;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT3 = 2105;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Component Of Encompassing Encounter7 Responsible Party Assigned Entity Has Assign Person Or Represented Organization' of 'Diagnostic Imaging Report'.
@@ -16896,7 +16880,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_ASSIGN_PERSON_OR_REPRESENTED_ORGANIZATION = 2108;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_ASSIGN_PERSON_OR_REPRESENTED_ORGANIZATION = 2106;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Component Of Encompassing Encounter7 Responsible Party Assigned Entity' of 'Diagnostic Imaging Report'.
@@ -16904,7 +16888,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY_ASSIGNED_ENTITY = 2109;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY_ASSIGNED_ENTITY = 2107;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Component Of Encompassing Encounter7 Effective Time' of 'Diagnostic Imaging Report'.
@@ -16912,7 +16896,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_EFFECTIVE_TIME = 2110;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_EFFECTIVE_TIME = 2108;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Component Of Encompassing Encounter7 Id' of 'Diagnostic Imaging Report'.
@@ -16920,7 +16904,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_ID = 2111;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_ID = 2109;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Component Of Encompassing Encounter7 Physicianof Record Participant' of 'Diagnostic Imaging Report'.
@@ -16928,7 +16912,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PHYSICIANOF_RECORD_PARTICIPANT = 2112;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PHYSICIANOF_RECORD_PARTICIPANT = 2110;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Component Of Encompassing Encounter7 Responsible Party' of 'Diagnostic Imaging Report'.
@@ -16936,7 +16920,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY = 2113;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY = 2111;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Imaging Report Component Of Encompassing Encounter' of 'Diagnostic Imaging Report'.
@@ -16944,7 +16928,23 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER = 2114;
+	public static final int DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER = 2112;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code' of 'Diagnostic Imaging Report'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DIAGNOSTIC_IMAGING_REPORT__GENERAL_HEADER_CONSTRAINTS_CODE = 2113;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Id' of 'Diagnostic Imaging Report'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DIAGNOSTIC_IMAGING_REPORT__GENERAL_HEADER_CONSTRAINTS_ID = 2114;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Physician Reading Study Performer Template Id' of 'Physician Reading Study Performer'.
@@ -30223,96 +30223,26 @@ public class ConsolValidator extends EObjectValidator {
 				problemSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemSectionEntriesOptional_validateProblemSectionEntriesOptionalCode(
+			result &= validateProblemSection_validateProblemSectionEntriesOptionalCode(
 				problemSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemSectionEntriesOptional_validateProblemSectionEntriesOptionalCodeP(
+			result &= validateProblemSection_validateProblemSectionEntriesOptionalCodeP(
 				problemSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemSectionEntriesOptional_validateProblemSectionEntriesOptionalTitle(
+			result &= validateProblemSection_validateProblemSectionEntriesOptionalTitle(
 				problemSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemSectionEntriesOptional_validateProblemSectionEntriesOptionalText(
+			result &= validateProblemSection_validateProblemSectionEntriesOptionalText(
 				problemSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemSectionEntriesOptional_validateProblemSectionEntriesOptionalProblemConcern(
+			result &= validateProblemSection_validateProblemSectionEntriesOptionalProblemConcern(
 				problemSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProblemSection_validateProblemSectionCodeP(problemSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProblemSection_validateProblemSectionCode(problemSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProblemSection_validateProblemSectionText(problemSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProblemSection_validateProblemSectionTitle(problemSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProblemSection_validateProblemSectionProblemConcern(problemSection, diagnostics, context);
 		}
 		return result;
-	}
-
-	/**
-	 * Validates the validateProblemSectionCodeP constraint of '<em>Problem Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemSection_validateProblemSectionCodeP(ProblemSection problemSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return problemSection.validateProblemSectionCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProblemSectionCode constraint of '<em>Problem Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemSection_validateProblemSectionCode(ProblemSection problemSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return problemSection.validateProblemSectionCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProblemSectionText constraint of '<em>Problem Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemSection_validateProblemSectionText(ProblemSection problemSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return problemSection.validateProblemSectionText(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProblemSectionTitle constraint of '<em>Problem Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemSection_validateProblemSectionTitle(ProblemSection problemSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return problemSection.validateProblemSectionTitle(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProblemSectionProblemConcern constraint of '<em>Problem Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemSection_validateProblemSectionProblemConcern(ProblemSection problemSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return problemSection.validateProblemSectionProblemConcern(diagnostics, context);
 	}
 
 	/**
@@ -30324,6 +30254,61 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateProblemSection_validateProblemSectionEntriesOptionalTemplateId(
 			ProblemSection problemSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return problemSection.validateProblemSectionEntriesOptionalTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemSectionEntriesOptionalCodeP constraint of '<em>Problem Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemSection_validateProblemSectionEntriesOptionalCodeP(ProblemSection problemSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return problemSection.validateProblemSectionEntriesOptionalCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemSectionEntriesOptionalCode constraint of '<em>Problem Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemSection_validateProblemSectionEntriesOptionalCode(ProblemSection problemSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return problemSection.validateProblemSectionEntriesOptionalCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemSectionEntriesOptionalText constraint of '<em>Problem Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemSection_validateProblemSectionEntriesOptionalText(ProblemSection problemSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return problemSection.validateProblemSectionEntriesOptionalText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemSectionEntriesOptionalTitle constraint of '<em>Problem Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemSection_validateProblemSectionEntriesOptionalTitle(ProblemSection problemSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return problemSection.validateProblemSectionEntriesOptionalTitle(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemSectionEntriesOptionalProblemConcern constraint of '<em>Problem Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemSection_validateProblemSectionEntriesOptionalProblemConcern(
+			ProblemSection problemSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return problemSection.validateProblemSectionEntriesOptionalProblemConcern(diagnostics, context);
 	}
 
 	/**
@@ -30501,11 +30486,11 @@ public class ConsolValidator extends EObjectValidator {
 				proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalCode(
+			result &= validateProceduresSection_validateProceduresSectionEntriesOptionalCode(
 				proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalCodeP(
+			result &= validateProceduresSection_validateProceduresSectionEntriesOptionalCodeP(
 				proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -30513,7 +30498,7 @@ public class ConsolValidator extends EObjectValidator {
 				proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalText(
+			result &= validateProceduresSection_validateProceduresSectionEntriesOptionalText(
 				proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -30534,15 +30519,6 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validateProceduresSection_validateProceduresSectionTitle(proceduresSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProceduresSection_validateProceduresSectionCodeP(proceduresSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProceduresSection_validateProceduresSectionCode(proceduresSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProceduresSection_validateProceduresSectionText(proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateProceduresSection_validateProceduresSectionProcedureActivityProcedure(
@@ -30579,39 +30555,6 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateProceduresSection_validateProceduresSectionTitle(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return proceduresSection.validateProceduresSectionTitle(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProceduresSectionCodeP constraint of '<em>Procedures Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProceduresSection_validateProceduresSectionCodeP(ProceduresSection proceduresSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return proceduresSection.validateProceduresSectionCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProceduresSectionCode constraint of '<em>Procedures Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProceduresSection_validateProceduresSectionCode(ProceduresSection proceduresSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return proceduresSection.validateProceduresSectionCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProceduresSectionText constraint of '<em>Procedures Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProceduresSection_validateProceduresSectionText(ProceduresSection proceduresSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return proceduresSection.validateProceduresSectionText(diagnostics, context);
 	}
 
 	/**
@@ -30656,6 +30599,39 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateProceduresSection_validateProceduresSectionEntriesOptionalTemplateId(
 			ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return proceduresSection.validateProceduresSectionEntriesOptionalTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProceduresSectionEntriesOptionalCodeP constraint of '<em>Procedures Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProceduresSection_validateProceduresSectionEntriesOptionalCodeP(
+			ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return proceduresSection.validateProceduresSectionEntriesOptionalCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProceduresSectionEntriesOptionalCode constraint of '<em>Procedures Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProceduresSection_validateProceduresSectionEntriesOptionalCode(
+			ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return proceduresSection.validateProceduresSectionEntriesOptionalCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProceduresSectionEntriesOptionalText constraint of '<em>Procedures Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProceduresSection_validateProceduresSectionEntriesOptionalText(
+			ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return proceduresSection.validateProceduresSectionEntriesOptionalText(diagnostics, context);
 	}
 
 	/**
@@ -32209,15 +32185,15 @@ public class ConsolValidator extends EObjectValidator {
 				resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultsSectionEntriesOptional_validateResultsSectionEntriesOptionalCode(
+			result &= validateResultsSection_validateResultsSectionEntriesOptionalCode(
 				resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultsSectionEntriesOptional_validateResultsSectionEntriesOptionalCodeP(
+			result &= validateResultsSection_validateResultsSectionEntriesOptionalCodeP(
 				resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultsSectionEntriesOptional_validateResultsSectionEntriesOptionalTitle(
+			result &= validateResultsSection_validateResultsSectionEntriesOptionalTitle(
 				resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -32229,54 +32205,12 @@ public class ConsolValidator extends EObjectValidator {
 				resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultsSection_validateResultsSectionCodeP(resultsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResultsSection_validateResultsSectionCode(resultsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResultsSection_validateResultsSectionTitle(resultsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateResultsSection_validateResultsSectionText(resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateResultsSection_validateResultsSectionResultOrganizer(resultsSection, diagnostics, context);
 		}
 		return result;
-	}
-
-	/**
-	 * Validates the validateResultsSectionCodeP constraint of '<em>Results Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultsSection_validateResultsSectionCodeP(ResultsSection resultsSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return resultsSection.validateResultsSectionCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateResultsSectionCode constraint of '<em>Results Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultsSection_validateResultsSectionCode(ResultsSection resultsSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return resultsSection.validateResultsSectionCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateResultsSectionTitle constraint of '<em>Results Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResultsSection_validateResultsSectionTitle(ResultsSection resultsSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return resultsSection.validateResultsSectionTitle(diagnostics, context);
 	}
 
 	/**
@@ -32310,6 +32244,39 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateResultsSection_validateResultsSectionEntriesOptionalTemplateId(
 			ResultsSection resultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return resultsSection.validateResultsSectionEntriesOptionalTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultsSectionEntriesOptionalCodeP constraint of '<em>Results Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultsSection_validateResultsSectionEntriesOptionalCodeP(ResultsSection resultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return resultsSection.validateResultsSectionEntriesOptionalCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultsSectionEntriesOptionalCode constraint of '<em>Results Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultsSection_validateResultsSectionEntriesOptionalCode(ResultsSection resultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return resultsSection.validateResultsSectionEntriesOptionalCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultsSectionEntriesOptionalTitle constraint of '<em>Results Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultsSection_validateResultsSectionEntriesOptionalTitle(ResultsSection resultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return resultsSection.validateResultsSectionEntriesOptionalTitle(diagnostics, context);
 	}
 
 	/**
@@ -33774,19 +33741,19 @@ public class ConsolValidator extends EObjectValidator {
 				encountersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateEncountersSectionEntriesOptional_validateEncountersSectionEntriesOptionalCode(
+			result &= validateEncountersSection_validateEncountersSectionEntriesOptionalCode(
 				encountersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateEncountersSectionEntriesOptional_validateEncountersSectionEntriesOptionalCodeP(
+			result &= validateEncountersSection_validateEncountersSectionEntriesOptionalCodeP(
 				encountersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateEncountersSectionEntriesOptional_validateEncountersSectionEntriesOptionalTitle(
+			result &= validateEncountersSection_validateEncountersSectionEntriesOptionalTitle(
 				encountersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateEncountersSectionEntriesOptional_validateEncountersSectionEntriesOptionalText(
+			result &= validateEncountersSection_validateEncountersSectionEntriesOptionalText(
 				encountersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -33794,66 +33761,10 @@ public class ConsolValidator extends EObjectValidator {
 				encountersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateEncountersSection_validateEncountersSectionCodeP(encountersSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEncountersSection_validateEncountersSectionCode(encountersSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEncountersSection_validateEncountersSectionText(encountersSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEncountersSection_validateEncountersSectionTitle(encountersSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateEncountersSection_validateEncountersSectionEncounterActivities(
 				encountersSection, diagnostics, context);
 		}
 		return result;
-	}
-
-	/**
-	 * Validates the validateEncountersSectionCodeP constraint of '<em>Encounters Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEncountersSection_validateEncountersSectionCodeP(EncountersSection encountersSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return encountersSection.validateEncountersSectionCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateEncountersSectionCode constraint of '<em>Encounters Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEncountersSection_validateEncountersSectionCode(EncountersSection encountersSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return encountersSection.validateEncountersSectionCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateEncountersSectionText constraint of '<em>Encounters Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEncountersSection_validateEncountersSectionText(EncountersSection encountersSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return encountersSection.validateEncountersSectionText(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateEncountersSectionTitle constraint of '<em>Encounters Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEncountersSection_validateEncountersSectionTitle(EncountersSection encountersSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return encountersSection.validateEncountersSectionTitle(diagnostics, context);
 	}
 
 	/**
@@ -33876,6 +33787,50 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateEncountersSection_validateEncountersSectionEntriesOptionalTemplateId(
 			EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return encountersSection.validateEncountersSectionEntriesOptionalTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateEncountersSectionEntriesOptionalCodeP constraint of '<em>Encounters Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncountersSection_validateEncountersSectionEntriesOptionalCodeP(
+			EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return encountersSection.validateEncountersSectionEntriesOptionalCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateEncountersSectionEntriesOptionalCode constraint of '<em>Encounters Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncountersSection_validateEncountersSectionEntriesOptionalCode(
+			EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return encountersSection.validateEncountersSectionEntriesOptionalCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateEncountersSectionEntriesOptionalText constraint of '<em>Encounters Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncountersSection_validateEncountersSectionEntriesOptionalText(
+			EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return encountersSection.validateEncountersSectionEntriesOptionalText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateEncountersSectionEntriesOptionalTitle constraint of '<em>Encounters Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncountersSection_validateEncountersSectionEntriesOptionalTitle(
+			EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return encountersSection.validateEncountersSectionEntriesOptionalTitle(diagnostics, context);
 	}
 
 	/**
@@ -35532,27 +35487,27 @@ public class ConsolValidator extends EObjectValidator {
 				functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerClassCode(
+			result &= validateFunctionalStatusResultOrganizer_validateResultOrganizerClassCode(
 				functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerMoodCode(
+			result &= validateFunctionalStatusResultOrganizer_validateResultOrganizerMoodCode(
 				functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerId(
+			result &= validateFunctionalStatusResultOrganizer_validateResultOrganizerId(
 				functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerStatusCodeP(
+			result &= validateFunctionalStatusResultOrganizer_validateResultOrganizerStatusCodeP(
 				functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerStatusCode(
+			result &= validateFunctionalStatusResultOrganizer_validateResultOrganizerStatusCode(
 				functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerCode(
+			result &= validateFunctionalStatusResultOrganizer_validateResultOrganizerCode(
 				functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -35561,30 +35516,6 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerCodeCodeSystem(
-				functionalStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerClassCode(
-				functionalStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerMoodCode(
-				functionalStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerId(
-				functionalStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerCode(
-				functionalStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerStatusCodeP(
-				functionalStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerStatusCode(
 				functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -35605,78 +35536,6 @@ public class ConsolValidator extends EObjectValidator {
 			Map<Object, Object> context) {
 		return functionalStatusResultOrganizer.validateFunctionalStatusResultOrganizerCodeCodeSystem(
 			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultOrganizerClassCode constraint of '<em>Functional Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerClassCode(
-			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultOrganizer.validateFunctionalStatusResultOrganizerClassCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultOrganizerMoodCode constraint of '<em>Functional Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerMoodCode(
-			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultOrganizer.validateFunctionalStatusResultOrganizerMoodCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultOrganizerId constraint of '<em>Functional Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerId(
-			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultOrganizer.validateFunctionalStatusResultOrganizerId(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultOrganizerCode constraint of '<em>Functional Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerCode(
-			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultOrganizer.validateFunctionalStatusResultOrganizerCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultOrganizerStatusCodeP constraint of '<em>Functional Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerStatusCodeP(
-			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultOrganizer.validateFunctionalStatusResultOrganizerStatusCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultOrganizerStatusCode constraint of '<em>Functional Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerStatusCode(
-			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultOrganizer.validateFunctionalStatusResultOrganizerStatusCode(diagnostics, context);
 	}
 
 	/**
@@ -35702,6 +35561,78 @@ public class ConsolValidator extends EObjectValidator {
 			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return functionalStatusResultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultOrganizerClassCode constraint of '<em>Functional Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultOrganizer_validateResultOrganizerClassCode(
+			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultOrganizer.validateResultOrganizerClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultOrganizerMoodCode constraint of '<em>Functional Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultOrganizer_validateResultOrganizerMoodCode(
+			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultOrganizer.validateResultOrganizerMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultOrganizerId constraint of '<em>Functional Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultOrganizer_validateResultOrganizerId(
+			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultOrganizer.validateResultOrganizerId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultOrganizerCode constraint of '<em>Functional Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultOrganizer_validateResultOrganizerCode(
+			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultOrganizer.validateResultOrganizerCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultOrganizerStatusCodeP constraint of '<em>Functional Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultOrganizer_validateResultOrganizerStatusCodeP(
+			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultOrganizer.validateResultOrganizerStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultOrganizerStatusCode constraint of '<em>Functional Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultOrganizer_validateResultOrganizerStatusCode(
+			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultOrganizer.validateResultOrganizerStatusCode(diagnostics, context);
 	}
 
 	/**
@@ -35763,51 +35694,51 @@ public class ConsolValidator extends EObjectValidator {
 				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationClassCode(
+			result &= validateFunctionalStatusResultObservation_validateResultObservationClassCode(
 				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationMoodCode(
+			result &= validateFunctionalStatusResultObservation_validateResultObservationMoodCode(
 				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationId(
+			result &= validateFunctionalStatusResultObservation_validateResultObservationId(
 				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationCode(
+			result &= validateFunctionalStatusResultObservation_validateResultObservationCode(
 				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationText(
+			result &= validateFunctionalStatusResultObservation_validateResultObservationText(
 				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationStatusCode(
+			result &= validateFunctionalStatusResultObservation_validateResultObservationStatusCode(
 				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationStatusCodeP(
+			result &= validateFunctionalStatusResultObservation_validateResultObservationStatusCodeP(
 				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationEffectiveTime(
+			result &= validateFunctionalStatusResultObservation_validateResultObservationEffectiveTime(
 				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationValue(
+			result &= validateFunctionalStatusResultObservation_validateResultObservationValue(
 				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationInterpretationCode(
+			result &= validateFunctionalStatusResultObservation_validateResultObservationInterpretationCode(
 				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationMethodCode(
+			result &= validateFunctionalStatusResultObservation_validateResultObservationMethodCode(
 				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationTargetSiteCode(
+			result &= validateFunctionalStatusResultObservation_validateResultObservationTargetSiteCode(
 				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -35823,55 +35754,7 @@ public class ConsolValidator extends EObjectValidator {
 				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationClassCode(
-				functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationMoodCode(
-				functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationId(
-				functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationCodeP(
-				functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationCode(
-				functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationText(
-				functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationStatusCodeP(
-				functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationStatusCode(
-				functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationEffectiveTime(
-				functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationValue(
-				functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationInterpretationCode(
-				functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationMethodCode(
-				functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationTargetSiteCode(
+			result &= validateFunctionalStatusResultObservation_validateResultObservationCodeP(
 				functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -35945,166 +35828,15 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateFunctionalStatusResultObservationClassCode constraint of '<em>Functional Status Result Observation</em>'.
+	 * Validates the validateResultObservationCodeP constraint of '<em>Functional Status Result Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationClassCode(
+	public boolean validateFunctionalStatusResultObservation_validateResultObservationCodeP(
 			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return functionalStatusResultObservation.validateFunctionalStatusResultObservationClassCode(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultObservationMoodCode constraint of '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationMoodCode(
-			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultObservation.validateFunctionalStatusResultObservationMoodCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultObservationId constraint of '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationId(
-			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultObservation.validateFunctionalStatusResultObservationId(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultObservationCodeP constraint of '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationCodeP(
-			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultObservation.validateFunctionalStatusResultObservationCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultObservationCode constraint of '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationCode(
-			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultObservation.validateFunctionalStatusResultObservationCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultObservationText constraint of '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationText(
-			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultObservation.validateFunctionalStatusResultObservationText(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultObservationStatusCodeP constraint of '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationStatusCodeP(
-			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultObservation.validateFunctionalStatusResultObservationStatusCodeP(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultObservationStatusCode constraint of '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationStatusCode(
-			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultObservation.validateFunctionalStatusResultObservationStatusCode(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultObservationEffectiveTime constraint of '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationEffectiveTime(
-			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultObservation.validateFunctionalStatusResultObservationEffectiveTime(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultObservationValue constraint of '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationValue(
-			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultObservation.validateFunctionalStatusResultObservationValue(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultObservationInterpretationCode constraint of '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationInterpretationCode(
-			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultObservation.validateFunctionalStatusResultObservationInterpretationCode(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultObservationMethodCode constraint of '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationMethodCode(
-			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultObservation.validateFunctionalStatusResultObservationMethodCode(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusResultObservationTargetSiteCode constraint of '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationTargetSiteCode(
-			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusResultObservation.validateFunctionalStatusResultObservationTargetSiteCode(
-			diagnostics, context);
+		return functionalStatusResultObservation.validateResultObservationCodeP(diagnostics, context);
 	}
 
 	/**
@@ -36207,6 +35939,150 @@ public class ConsolValidator extends EObjectValidator {
 			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return functionalStatusResultObservation.validateResultObservationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationClassCode constraint of '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservation_validateResultObservationClassCode(
+			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultObservation.validateResultObservationClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationMoodCode constraint of '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservation_validateResultObservationMoodCode(
+			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultObservation.validateResultObservationMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationId constraint of '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservation_validateResultObservationId(
+			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultObservation.validateResultObservationId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationCode constraint of '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservation_validateResultObservationCode(
+			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultObservation.validateResultObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationText constraint of '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservation_validateResultObservationText(
+			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultObservation.validateResultObservationText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationStatusCodeP constraint of '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservation_validateResultObservationStatusCodeP(
+			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultObservation.validateResultObservationStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationStatusCode constraint of '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservation_validateResultObservationStatusCode(
+			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultObservation.validateResultObservationStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationEffectiveTime constraint of '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservation_validateResultObservationEffectiveTime(
+			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultObservation.validateResultObservationEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationValue constraint of '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservation_validateResultObservationValue(
+			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultObservation.validateResultObservationValue(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationInterpretationCode constraint of '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservation_validateResultObservationInterpretationCode(
+			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultObservation.validateResultObservationInterpretationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationMethodCode constraint of '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservation_validateResultObservationMethodCode(
+			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultObservation.validateResultObservationMethodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationTargetSiteCode constraint of '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservation_validateResultObservationTargetSiteCode(
+			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultObservation.validateResultObservationTargetSiteCode(diagnostics, context);
 	}
 
 	/**
@@ -37087,27 +36963,27 @@ public class ConsolValidator extends EObjectValidator {
 				cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerClassCode(
+			result &= validateCognitiveStatusResultOrganizer_validateResultOrganizerClassCode(
 				cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerMoodCode(
+			result &= validateCognitiveStatusResultOrganizer_validateResultOrganizerMoodCode(
 				cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerId(
+			result &= validateCognitiveStatusResultOrganizer_validateResultOrganizerId(
 				cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerStatusCodeP(
+			result &= validateCognitiveStatusResultOrganizer_validateResultOrganizerStatusCodeP(
 				cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerStatusCode(
+			result &= validateCognitiveStatusResultOrganizer_validateResultOrganizerStatusCode(
 				cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerCode(
+			result &= validateCognitiveStatusResultOrganizer_validateResultOrganizerCode(
 				cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -37116,30 +36992,6 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerCodeCodeSystem(
-				cognitiveStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerClassCode(
-				cognitiveStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerMoodCode(
-				cognitiveStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerId(
-				cognitiveStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerCode(
-				cognitiveStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerStatusCodeP(
-				cognitiveStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerStatusCode(
 				cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -37159,78 +37011,6 @@ public class ConsolValidator extends EObjectValidator {
 			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return cognitiveStatusResultOrganizer.validateCognitiveStatusResultOrganizerCodeCodeSystem(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultOrganizerClassCode constraint of '<em>Cognitive Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerClassCode(
-			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultOrganizer.validateCognitiveStatusResultOrganizerClassCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultOrganizerMoodCode constraint of '<em>Cognitive Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerMoodCode(
-			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultOrganizer.validateCognitiveStatusResultOrganizerMoodCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultOrganizerId constraint of '<em>Cognitive Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerId(
-			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultOrganizer.validateCognitiveStatusResultOrganizerId(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultOrganizerCode constraint of '<em>Cognitive Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerCode(
-			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultOrganizer.validateCognitiveStatusResultOrganizerCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultOrganizerStatusCodeP constraint of '<em>Cognitive Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerStatusCodeP(
-			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultOrganizer.validateCognitiveStatusResultOrganizerStatusCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultOrganizerStatusCode constraint of '<em>Cognitive Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerStatusCode(
-			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultOrganizer.validateCognitiveStatusResultOrganizerStatusCode(diagnostics, context);
 	}
 
 	/**
@@ -37256,6 +37036,78 @@ public class ConsolValidator extends EObjectValidator {
 			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return cognitiveStatusResultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultOrganizerClassCode constraint of '<em>Cognitive Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultOrganizer_validateResultOrganizerClassCode(
+			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultOrganizer.validateResultOrganizerClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultOrganizerMoodCode constraint of '<em>Cognitive Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultOrganizer_validateResultOrganizerMoodCode(
+			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultOrganizer.validateResultOrganizerMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultOrganizerId constraint of '<em>Cognitive Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultOrganizer_validateResultOrganizerId(
+			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultOrganizer.validateResultOrganizerId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultOrganizerCode constraint of '<em>Cognitive Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultOrganizer_validateResultOrganizerCode(
+			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultOrganizer.validateResultOrganizerCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultOrganizerStatusCodeP constraint of '<em>Cognitive Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultOrganizer_validateResultOrganizerStatusCodeP(
+			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultOrganizer.validateResultOrganizerStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultOrganizerStatusCode constraint of '<em>Cognitive Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultOrganizer_validateResultOrganizerStatusCode(
+			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultOrganizer.validateResultOrganizerStatusCode(diagnostics, context);
 	}
 
 	/**
@@ -37317,51 +37169,51 @@ public class ConsolValidator extends EObjectValidator {
 				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationClassCode(
+			result &= validateCognitiveStatusResultObservation_validateResultObservationClassCode(
 				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationMoodCode(
+			result &= validateCognitiveStatusResultObservation_validateResultObservationMoodCode(
 				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationId(
+			result &= validateCognitiveStatusResultObservation_validateResultObservationId(
 				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationCode(
+			result &= validateCognitiveStatusResultObservation_validateResultObservationCode(
 				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationText(
+			result &= validateCognitiveStatusResultObservation_validateResultObservationText(
 				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationStatusCode(
+			result &= validateCognitiveStatusResultObservation_validateResultObservationStatusCode(
 				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationStatusCodeP(
+			result &= validateCognitiveStatusResultObservation_validateResultObservationStatusCodeP(
 				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationEffectiveTime(
+			result &= validateCognitiveStatusResultObservation_validateResultObservationEffectiveTime(
 				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationValue(
+			result &= validateCognitiveStatusResultObservation_validateResultObservationValue(
 				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationInterpretationCode(
+			result &= validateCognitiveStatusResultObservation_validateResultObservationInterpretationCode(
 				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationMethodCode(
+			result &= validateCognitiveStatusResultObservation_validateResultObservationMethodCode(
 				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationTargetSiteCode(
+			result &= validateCognitiveStatusResultObservation_validateResultObservationTargetSiteCode(
 				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -37377,55 +37229,7 @@ public class ConsolValidator extends EObjectValidator {
 				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationClassCode(
-				cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationMoodCode(
-				cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationId(
-				cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationCodeP(
-				cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationCode(
-				cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationText(
-				cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationStatusCodeP(
-				cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationStatusCode(
-				cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationEffectiveTime(
-				cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationValue(
-				cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationInterpretationCode(
-				cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationMethodCode(
-				cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationTargetSiteCode(
+			result &= validateCognitiveStatusResultObservation_validateResultObservationCodeP(
 				cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -37499,163 +37303,15 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateCognitiveStatusResultObservationClassCode constraint of '<em>Cognitive Status Result Observation</em>'.
+	 * Validates the validateResultObservationCodeP constraint of '<em>Cognitive Status Result Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationClassCode(
+	public boolean validateCognitiveStatusResultObservation_validateResultObservationCodeP(
 			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return cognitiveStatusResultObservation.validateCognitiveStatusResultObservationClassCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultObservationMoodCode constraint of '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationMoodCode(
-			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultObservation.validateCognitiveStatusResultObservationMoodCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultObservationId constraint of '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationId(
-			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultObservation.validateCognitiveStatusResultObservationId(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultObservationCodeP constraint of '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationCodeP(
-			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultObservation.validateCognitiveStatusResultObservationCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultObservationCode constraint of '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationCode(
-			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultObservation.validateCognitiveStatusResultObservationCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultObservationText constraint of '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationText(
-			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultObservation.validateCognitiveStatusResultObservationText(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultObservationStatusCodeP constraint of '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationStatusCodeP(
-			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultObservation.validateCognitiveStatusResultObservationStatusCodeP(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultObservationStatusCode constraint of '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationStatusCode(
-			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultObservation.validateCognitiveStatusResultObservationStatusCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultObservationEffectiveTime constraint of '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationEffectiveTime(
-			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultObservation.validateCognitiveStatusResultObservationEffectiveTime(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultObservationValue constraint of '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationValue(
-			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultObservation.validateCognitiveStatusResultObservationValue(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultObservationInterpretationCode constraint of '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationInterpretationCode(
-			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultObservation.validateCognitiveStatusResultObservationInterpretationCode(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultObservationMethodCode constraint of '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationMethodCode(
-			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultObservation.validateCognitiveStatusResultObservationMethodCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusResultObservationTargetSiteCode constraint of '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationTargetSiteCode(
-			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusResultObservation.validateCognitiveStatusResultObservationTargetSiteCode(
-			diagnostics, context);
+		return cognitiveStatusResultObservation.validateResultObservationCodeP(diagnostics, context);
 	}
 
 	/**
@@ -37761,6 +37417,150 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
+	 * Validates the validateResultObservationClassCode constraint of '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultObservation_validateResultObservationClassCode(
+			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultObservation.validateResultObservationClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationMoodCode constraint of '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultObservation_validateResultObservationMoodCode(
+			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultObservation.validateResultObservationMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationId constraint of '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultObservation_validateResultObservationId(
+			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultObservation.validateResultObservationId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationCode constraint of '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultObservation_validateResultObservationCode(
+			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultObservation.validateResultObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationText constraint of '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultObservation_validateResultObservationText(
+			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultObservation.validateResultObservationText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationStatusCodeP constraint of '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultObservation_validateResultObservationStatusCodeP(
+			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultObservation.validateResultObservationStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationStatusCode constraint of '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultObservation_validateResultObservationStatusCode(
+			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultObservation.validateResultObservationStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationEffectiveTime constraint of '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultObservation_validateResultObservationEffectiveTime(
+			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultObservation.validateResultObservationEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationValue constraint of '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultObservation_validateResultObservationValue(
+			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultObservation.validateResultObservationValue(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationInterpretationCode constraint of '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultObservation_validateResultObservationInterpretationCode(
+			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultObservation.validateResultObservationInterpretationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationMethodCode constraint of '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultObservation_validateResultObservationMethodCode(
+			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultObservation.validateResultObservationMethodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateResultObservationTargetSiteCode constraint of '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultObservation_validateResultObservationTargetSiteCode(
+			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultObservation.validateResultObservationTargetSiteCode(diagnostics, context);
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -37831,47 +37631,47 @@ public class ConsolValidator extends EObjectValidator {
 				functionalStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationClassCode(
+			result &= validateFunctionalStatusProblemObservation_validateProblemObservationClassCode(
 				functionalStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationMoodCode(
+			result &= validateFunctionalStatusProblemObservation_validateProblemObservationMoodCode(
 				functionalStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationNegationInd(
+			result &= validateFunctionalStatusProblemObservation_validateProblemObservationNegationInd(
 				functionalStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationId(
+			result &= validateFunctionalStatusProblemObservation_validateProblemObservationId(
 				functionalStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationCodeP(
+			result &= validateFunctionalStatusProblemObservation_validateProblemObservationCodeP(
 				functionalStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationCode(
+			result &= validateFunctionalStatusProblemObservation_validateProblemObservationCode(
 				functionalStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationText(
+			result &= validateFunctionalStatusProblemObservation_validateProblemObservationText(
 				functionalStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationStatusCode(
+			result &= validateFunctionalStatusProblemObservation_validateProblemObservationStatusCode(
 				functionalStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationEffectiveTime(
+			result &= validateFunctionalStatusProblemObservation_validateProblemObservationEffectiveTime(
 				functionalStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationValue(
+			result &= validateFunctionalStatusProblemObservation_validateProblemObservationValue(
 				functionalStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationValueP(
+			result &= validateFunctionalStatusProblemObservation_validateProblemObservationValueP(
 				functionalStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -37908,50 +37708,6 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationValueNullFlavor(
-				functionalStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationClassCode(
-				functionalStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationMoodCode(
-				functionalStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationNegationInd(
-				functionalStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationId(
-				functionalStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationCodeP(
-				functionalStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationCode(
-				functionalStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationText(
-				functionalStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationStatusCode(
-				functionalStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationEffectiveTime(
-				functionalStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationValueP(
-				functionalStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationValue(
 				functionalStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -38052,143 +37808,6 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateFunctionalStatusProblemObservationClassCode constraint of '<em>Functional Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationClassCode(
-			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusProblemObservation.validateFunctionalStatusProblemObservationClassCode(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusProblemObservationMoodCode constraint of '<em>Functional Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationMoodCode(
-			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusProblemObservation.validateFunctionalStatusProblemObservationMoodCode(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusProblemObservationNegationInd constraint of '<em>Functional Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationNegationInd(
-			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusProblemObservation.validateFunctionalStatusProblemObservationNegationInd(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusProblemObservationId constraint of '<em>Functional Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationId(
-			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusProblemObservation.validateFunctionalStatusProblemObservationId(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusProblemObservationCodeP constraint of '<em>Functional Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationCodeP(
-			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusProblemObservation.validateFunctionalStatusProblemObservationCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusProblemObservationCode constraint of '<em>Functional Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationCode(
-			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusProblemObservation.validateFunctionalStatusProblemObservationCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusProblemObservationText constraint of '<em>Functional Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationText(
-			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusProblemObservation.validateFunctionalStatusProblemObservationText(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusProblemObservationStatusCode constraint of '<em>Functional Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationStatusCode(
-			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusProblemObservation.validateFunctionalStatusProblemObservationStatusCode(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusProblemObservationEffectiveTime constraint of '<em>Functional Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationEffectiveTime(
-			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusProblemObservation.validateFunctionalStatusProblemObservationEffectiveTime(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusProblemObservationValueP constraint of '<em>Functional Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationValueP(
-			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusProblemObservation.validateFunctionalStatusProblemObservationValueP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateFunctionalStatusProblemObservationValue constraint of '<em>Functional Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateFunctionalStatusProblemObservation_validateFunctionalStatusProblemObservationValue(
-			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return functionalStatusProblemObservation.validateFunctionalStatusProblemObservationValue(diagnostics, context);
-	}
-
-	/**
 	 * Validates the validateFunctionalStatusProblemObservationMethodCode constraint of '<em>Functional Status Problem Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38250,6 +37869,138 @@ public class ConsolValidator extends EObjectValidator {
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return functionalStatusProblemObservation.validateProblemObservationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationClassCode constraint of '<em>Functional Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusProblemObservation_validateProblemObservationClassCode(
+			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusProblemObservation.validateProblemObservationClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationMoodCode constraint of '<em>Functional Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusProblemObservation_validateProblemObservationMoodCode(
+			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusProblemObservation.validateProblemObservationMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationNegationInd constraint of '<em>Functional Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusProblemObservation_validateProblemObservationNegationInd(
+			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusProblemObservation.validateProblemObservationNegationInd(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationId constraint of '<em>Functional Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusProblemObservation_validateProblemObservationId(
+			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusProblemObservation.validateProblemObservationId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationCodeP constraint of '<em>Functional Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusProblemObservation_validateProblemObservationCodeP(
+			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusProblemObservation.validateProblemObservationCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationCode constraint of '<em>Functional Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusProblemObservation_validateProblemObservationCode(
+			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusProblemObservation.validateProblemObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationText constraint of '<em>Functional Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusProblemObservation_validateProblemObservationText(
+			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusProblemObservation.validateProblemObservationText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationStatusCode constraint of '<em>Functional Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusProblemObservation_validateProblemObservationStatusCode(
+			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusProblemObservation.validateProblemObservationStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationEffectiveTime constraint of '<em>Functional Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusProblemObservation_validateProblemObservationEffectiveTime(
+			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusProblemObservation.validateProblemObservationEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationValueP constraint of '<em>Functional Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusProblemObservation_validateProblemObservationValueP(
+			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusProblemObservation.validateProblemObservationValueP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationValue constraint of '<em>Functional Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusProblemObservation_validateProblemObservationValue(
+			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusProblemObservation.validateProblemObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -38323,47 +38074,47 @@ public class ConsolValidator extends EObjectValidator {
 				cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationClassCode(
+			result &= validateCognitiveStatusProblemObservation_validateProblemObservationClassCode(
 				cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationMoodCode(
+			result &= validateCognitiveStatusProblemObservation_validateProblemObservationMoodCode(
 				cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationNegationInd(
+			result &= validateCognitiveStatusProblemObservation_validateProblemObservationNegationInd(
 				cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationId(
+			result &= validateCognitiveStatusProblemObservation_validateProblemObservationId(
 				cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationCodeP(
+			result &= validateCognitiveStatusProblemObservation_validateProblemObservationCodeP(
 				cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationCode(
+			result &= validateCognitiveStatusProblemObservation_validateProblemObservationCode(
 				cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationText(
+			result &= validateCognitiveStatusProblemObservation_validateProblemObservationText(
 				cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationStatusCode(
+			result &= validateCognitiveStatusProblemObservation_validateProblemObservationStatusCode(
 				cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationEffectiveTime(
+			result &= validateCognitiveStatusProblemObservation_validateProblemObservationEffectiveTime(
 				cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationValue(
+			result &= validateCognitiveStatusProblemObservation_validateProblemObservationValue(
 				cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProblemObservation_validateProblemObservationValueP(
+			result &= validateCognitiveStatusProblemObservation_validateProblemObservationValueP(
 				cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -38395,51 +38146,7 @@ public class ConsolValidator extends EObjectValidator {
 				cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationClassCode(
-				cognitiveStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationMoodCode(
-				cognitiveStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationNegationInd(
-				cognitiveStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationId(
-				cognitiveStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationCodeP(
-				cognitiveStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationCode(
-				cognitiveStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationText(
-				cognitiveStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationStatusCode(
-				cognitiveStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationEffectiveTime(
-				cognitiveStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationMethodCode(
-				cognitiveStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationValueP(
-				cognitiveStatusProblemObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationValue(
 				cognitiveStatusProblemObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -38510,118 +38217,6 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateCognitiveStatusProblemObservationClassCode constraint of '<em>Cognitive Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationClassCode(
-			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusProblemObservation.validateCognitiveStatusProblemObservationClassCode(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusProblemObservationMoodCode constraint of '<em>Cognitive Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationMoodCode(
-			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusProblemObservation.validateCognitiveStatusProblemObservationMoodCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusProblemObservationNegationInd constraint of '<em>Cognitive Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationNegationInd(
-			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusProblemObservation.validateCognitiveStatusProblemObservationNegationInd(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusProblemObservationId constraint of '<em>Cognitive Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationId(
-			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusProblemObservation.validateCognitiveStatusProblemObservationId(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusProblemObservationCodeP constraint of '<em>Cognitive Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationCodeP(
-			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusProblemObservation.validateCognitiveStatusProblemObservationCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusProblemObservationCode constraint of '<em>Cognitive Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationCode(
-			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusProblemObservation.validateCognitiveStatusProblemObservationCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusProblemObservationText constraint of '<em>Cognitive Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationText(
-			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusProblemObservation.validateCognitiveStatusProblemObservationText(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusProblemObservationStatusCode constraint of '<em>Cognitive Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationStatusCode(
-			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusProblemObservation.validateCognitiveStatusProblemObservationStatusCode(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusProblemObservationEffectiveTime constraint of '<em>Cognitive Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationEffectiveTime(
-			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusProblemObservation.validateCognitiveStatusProblemObservationEffectiveTime(
-			diagnostics, context);
-	}
-
-	/**
 	 * Validates the validateCognitiveStatusProblemObservationMethodCode constraint of '<em>Cognitive Status Problem Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38632,30 +38227,6 @@ public class ConsolValidator extends EObjectValidator {
 			Map<Object, Object> context) {
 		return cognitiveStatusProblemObservation.validateCognitiveStatusProblemObservationMethodCode(
 			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusProblemObservationValueP constraint of '<em>Cognitive Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationValueP(
-			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusProblemObservation.validateCognitiveStatusProblemObservationValueP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateCognitiveStatusProblemObservationValue constraint of '<em>Cognitive Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservation_validateCognitiveStatusProblemObservationValue(
-			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return cognitiveStatusProblemObservation.validateCognitiveStatusProblemObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -38707,6 +38278,138 @@ public class ConsolValidator extends EObjectValidator {
 			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return cognitiveStatusProblemObservation.validateProblemObservationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationClassCode constraint of '<em>Cognitive Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusProblemObservation_validateProblemObservationClassCode(
+			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusProblemObservation.validateProblemObservationClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationMoodCode constraint of '<em>Cognitive Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusProblemObservation_validateProblemObservationMoodCode(
+			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusProblemObservation.validateProblemObservationMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationNegationInd constraint of '<em>Cognitive Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusProblemObservation_validateProblemObservationNegationInd(
+			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusProblemObservation.validateProblemObservationNegationInd(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationId constraint of '<em>Cognitive Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusProblemObservation_validateProblemObservationId(
+			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusProblemObservation.validateProblemObservationId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationCodeP constraint of '<em>Cognitive Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusProblemObservation_validateProblemObservationCodeP(
+			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusProblemObservation.validateProblemObservationCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationCode constraint of '<em>Cognitive Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusProblemObservation_validateProblemObservationCode(
+			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusProblemObservation.validateProblemObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationText constraint of '<em>Cognitive Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusProblemObservation_validateProblemObservationText(
+			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusProblemObservation.validateProblemObservationText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationStatusCode constraint of '<em>Cognitive Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusProblemObservation_validateProblemObservationStatusCode(
+			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusProblemObservation.validateProblemObservationStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationEffectiveTime constraint of '<em>Cognitive Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusProblemObservation_validateProblemObservationEffectiveTime(
+			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusProblemObservation.validateProblemObservationEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationValueP constraint of '<em>Cognitive Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusProblemObservation_validateProblemObservationValueP(
+			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusProblemObservation.validateProblemObservationValueP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProblemObservationValue constraint of '<em>Cognitive Status Problem Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusProblemObservation_validateProblemObservationValue(
+			CognitiveStatusProblemObservation cognitiveStatusProblemObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusProblemObservation.validateProblemObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -45095,7 +44798,7 @@ public class ConsolValidator extends EObjectValidator {
 				vitalSignsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateVitalSignsSectionEntriesOptional_validateVitalSignsSectionEntriesOptionalTitle(
+			result &= validateVitalSignsSection_validateVitalSignsSectionEntriesOptionalTitle(
 				vitalSignsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -45110,9 +44813,6 @@ public class ConsolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validateVitalSignsSection_validateVitalSignsSectionText(vitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVitalSignsSection_validateVitalSignsSectionTitle(vitalSignsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateVitalSignsSection_validateVitalSignsSectionVitalSignsOrganizer(
@@ -45155,17 +44855,6 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateVitalSignsSectionTitle constraint of '<em>Vital Signs Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateVitalSignsSection_validateVitalSignsSectionTitle(VitalSignsSection vitalSignsSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return vitalSignsSection.validateVitalSignsSectionTitle(diagnostics, context);
-	}
-
-	/**
 	 * Validates the validateVitalSignsSectionVitalSignsOrganizer constraint of '<em>Vital Signs Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -45185,6 +44874,17 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateVitalSignsSection_validateVitalSignsSectionEntriesOptionalTemplateId(
 			VitalSignsSection vitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return vitalSignsSection.validateVitalSignsSectionEntriesOptionalTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateVitalSignsSectionEntriesOptionalTitle constraint of '<em>Vital Signs Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVitalSignsSection_validateVitalSignsSectionEntriesOptionalTitle(
+			VitalSignsSection vitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return vitalSignsSection.validateVitalSignsSectionEntriesOptionalTitle(diagnostics, context);
 	}
 
 	/**
@@ -52191,109 +51891,26 @@ public class ConsolValidator extends EObjectValidator {
 				hospitalDischargeMedicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateHospitalDischargeMedicationsSectionEntriesOptional_validateHospitalDischargeMedicationsSectionEntriesOptionalCode(
+			result &= validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionEntriesOptionalCode(
 				hospitalDischargeMedicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateHospitalDischargeMedicationsSectionEntriesOptional_validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP(
+			result &= validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP(
 				hospitalDischargeMedicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateHospitalDischargeMedicationsSectionEntriesOptional_validateHospitalDischargeMedicationsSectionEntriesOptionalTitle(
+			result &= validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionEntriesOptionalTitle(
 				hospitalDischargeMedicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateHospitalDischargeMedicationsSectionEntriesOptional_validateHospitalDischargeMedicationsSectionEntriesOptionalText(
+			result &= validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionEntriesOptionalText(
 				hospitalDischargeMedicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateHospitalDischargeMedicationsSectionEntriesOptional_validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
-				hospitalDischargeMedicationsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionCodeP(
-				hospitalDischargeMedicationsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionCode(
-				hospitalDischargeMedicationsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionText(
-				hospitalDischargeMedicationsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionTitle(
-				hospitalDischargeMedicationsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionDischargeMedication(
+			result &= validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
 				hospitalDischargeMedicationsSection, diagnostics, context);
 		}
 		return result;
-	}
-
-	/**
-	 * Validates the validateHospitalDischargeMedicationsSectionCodeP constraint of '<em>Hospital Discharge Medications Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionCodeP(
-			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return hospitalDischargeMedicationsSection.validateHospitalDischargeMedicationsSectionCodeP(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateHospitalDischargeMedicationsSectionCode constraint of '<em>Hospital Discharge Medications Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionCode(
-			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return hospitalDischargeMedicationsSection.validateHospitalDischargeMedicationsSectionCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateHospitalDischargeMedicationsSectionText constraint of '<em>Hospital Discharge Medications Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionText(
-			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return hospitalDischargeMedicationsSection.validateHospitalDischargeMedicationsSectionText(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateHospitalDischargeMedicationsSectionTitle constraint of '<em>Hospital Discharge Medications Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionTitle(
-			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return hospitalDischargeMedicationsSection.validateHospitalDischargeMedicationsSectionTitle(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateHospitalDischargeMedicationsSectionDischargeMedication constraint of '<em>Hospital Discharge Medications Section</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionDischargeMedication(
-			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return hospitalDischargeMedicationsSection.validateHospitalDischargeMedicationsSectionDischargeMedication(
-			diagnostics, context);
 	}
 
 	/**
@@ -52306,6 +51923,71 @@ public class ConsolValidator extends EObjectValidator {
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return hospitalDischargeMedicationsSection.validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP constraint of '<em>Hospital Discharge Medications Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP(
+			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return hospitalDischargeMedicationsSection.validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHospitalDischargeMedicationsSectionEntriesOptionalCode constraint of '<em>Hospital Discharge Medications Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionEntriesOptionalCode(
+			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return hospitalDischargeMedicationsSection.validateHospitalDischargeMedicationsSectionEntriesOptionalCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHospitalDischargeMedicationsSectionEntriesOptionalText constraint of '<em>Hospital Discharge Medications Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionEntriesOptionalText(
+			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return hospitalDischargeMedicationsSection.validateHospitalDischargeMedicationsSectionEntriesOptionalText(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHospitalDischargeMedicationsSectionEntriesOptionalTitle constraint of '<em>Hospital Discharge Medications Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionEntriesOptionalTitle(
+			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return hospitalDischargeMedicationsSection.validateHospitalDischargeMedicationsSectionEntriesOptionalTitle(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication constraint of '<em>Hospital Discharge Medications Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
+			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return hospitalDischargeMedicationsSection.validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
 			diagnostics, context);
 	}
 
@@ -56146,7 +55828,7 @@ public class ConsolValidator extends EObjectValidator {
 				consultationNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+			result &= validateConsultationNote_validateGeneralHeaderConstraintsCode(
 				consultationNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -57178,10 +56860,8 @@ public class ConsolValidator extends EObjectValidator {
 				consultationNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateConsultationNote_validateConsultationNoteCodeP(consultationNote, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConsultationNote_validateConsultationNoteCode(consultationNote, diagnostics, context);
+			result &= validateConsultationNote_validateGeneralHeaderConstraintsCodeP(
+				consultationNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateConsultationNote_validateConsultationNoteComponentOf(
@@ -57381,25 +57061,14 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateConsultationNoteCodeP constraint of '<em>Consultation Note</em>'.
+	 * Validates the validateGeneralHeaderConstraintsCodeP constraint of '<em>Consultation Note</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNote_validateConsultationNoteCodeP(ConsultationNote consultationNote,
+	public boolean validateConsultationNote_validateGeneralHeaderConstraintsCodeP(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return consultationNote.validateConsultationNoteCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateConsultationNoteCode constraint of '<em>Consultation Note</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConsultationNote_validateConsultationNoteCode(ConsultationNote consultationNote,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return consultationNote.validateConsultationNoteCode(diagnostics, context);
+		return consultationNote.validateGeneralHeaderConstraintsCodeP(diagnostics, context);
 	}
 
 	/**
@@ -57784,6 +57453,17 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
+	 * Validates the validateGeneralHeaderConstraintsCode constraint of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNote_validateGeneralHeaderConstraintsCode(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return consultationNote.validateGeneralHeaderConstraintsCode(diagnostics, context);
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -57962,7 +57642,7 @@ public class ConsolValidator extends EObjectValidator {
 				historyAndPhysicalNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+			result &= validateHistoryAndPhysicalNote_validateGeneralHeaderConstraintsCode(
 				historyAndPhysicalNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -58994,11 +58674,7 @@ public class ConsolValidator extends EObjectValidator {
 				historyAndPhysicalNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteCodeP(
-				historyAndPhysicalNote, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteCode(
+			result &= validateHistoryAndPhysicalNote_validateGeneralHeaderConstraintsCodeP(
 				historyAndPhysicalNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -59196,25 +58872,14 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateHistoryAndPhysicalNoteCodeP constraint of '<em>History And Physical Note</em>'.
+	 * Validates the validateGeneralHeaderConstraintsCodeP constraint of '<em>History And Physical Note</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteCodeP(
+	public boolean validateHistoryAndPhysicalNote_validateGeneralHeaderConstraintsCodeP(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateHistoryAndPhysicalNoteCode constraint of '<em>History And Physical Note</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHistoryAndPhysicalNote_validateHistoryAndPhysicalNoteCode(
-			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return historyAndPhysicalNote.validateHistoryAndPhysicalNoteCode(diagnostics, context);
+		return historyAndPhysicalNote.validateGeneralHeaderConstraintsCodeP(diagnostics, context);
 	}
 
 	/**
@@ -59597,6 +59262,17 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
+	 * Validates the validateGeneralHeaderConstraintsCode constraint of '<em>History And Physical Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote_validateGeneralHeaderConstraintsCode(
+			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return historyAndPhysicalNote.validateGeneralHeaderConstraintsCode(diagnostics, context);
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -59792,8 +59468,7 @@ public class ConsolValidator extends EObjectValidator {
 				operativeNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-				operativeNote, diagnostics, context);
+			result &= validateOperativeNote_validateGeneralHeaderConstraintsCode(operativeNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
@@ -60807,10 +60482,7 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validateOperativeNote_validateOperativeNoteTemplateId(operativeNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateOperativeNote_validateOperativeNoteCodeP(operativeNote, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateOperativeNote_validateOperativeNoteCode(operativeNote, diagnostics, context);
+			result &= validateOperativeNote_validateGeneralHeaderConstraintsCodeP(operativeNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateOperativeNote_validateOperativeNoteDocumentationOf(operativeNote, diagnostics, context);
@@ -60939,25 +60611,14 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateOperativeNoteCodeP constraint of '<em>Operative Note</em>'.
+	 * Validates the validateGeneralHeaderConstraintsCodeP constraint of '<em>Operative Note</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperativeNote_validateOperativeNoteCodeP(OperativeNote operativeNote,
+	public boolean validateOperativeNote_validateGeneralHeaderConstraintsCodeP(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return operativeNote.validateOperativeNoteCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateOperativeNoteCode constraint of '<em>Operative Note</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateOperativeNote_validateOperativeNoteCode(OperativeNote operativeNote,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return operativeNote.validateOperativeNoteCode(diagnostics, context);
+		return operativeNote.validateGeneralHeaderConstraintsCodeP(diagnostics, context);
 	}
 
 	/**
@@ -61286,6 +60947,17 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
+	 * Validates the validateGeneralHeaderConstraintsCode constraint of '<em>Operative Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNote_validateGeneralHeaderConstraintsCode(OperativeNote operativeNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return operativeNote.validateGeneralHeaderConstraintsCode(diagnostics, context);
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -61353,8 +61025,7 @@ public class ConsolValidator extends EObjectValidator {
 				procedureNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-				procedureNote, diagnostics, context);
+			result &= validateProcedureNote_validateGeneralHeaderConstraintsCode(procedureNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
@@ -62383,10 +62054,7 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validateProcedureNote_validateProcedureNoteTemplateId(procedureNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProcedureNote_validateProcedureNoteCodeP(procedureNote, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureNote_validateProcedureNoteCode(procedureNote, diagnostics, context);
+			result &= validateProcedureNote_validateGeneralHeaderConstraintsCodeP(procedureNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateProcedureNote_validateProcedureNoteComponentOf(procedureNote, diagnostics, context);
@@ -62644,25 +62312,14 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateProcedureNoteCodeP constraint of '<em>Procedure Note</em>'.
+	 * Validates the validateGeneralHeaderConstraintsCodeP constraint of '<em>Procedure Note</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureNote_validateProcedureNoteCodeP(ProcedureNote procedureNote,
+	public boolean validateProcedureNote_validateGeneralHeaderConstraintsCodeP(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return procedureNote.validateProcedureNoteCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProcedureNoteCode constraint of '<em>Procedure Note</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote_validateProcedureNoteCode(ProcedureNote procedureNote,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return procedureNote.validateProcedureNoteCode(diagnostics, context);
+		return procedureNote.validateGeneralHeaderConstraintsCodeP(diagnostics, context);
 	}
 
 	/**
@@ -63226,6 +62883,17 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
+	 * Validates the validateGeneralHeaderConstraintsCode constraint of '<em>Procedure Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote_validateGeneralHeaderConstraintsCode(ProcedureNote procedureNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureNote.validateGeneralHeaderConstraintsCode(diagnostics, context);
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -63293,8 +62961,7 @@ public class ConsolValidator extends EObjectValidator {
 				progressNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-				progressNote, diagnostics, context);
+			result &= validateProgressNote_validateGeneralHeaderConstraintsCode(progressNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
@@ -64316,10 +63983,7 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validateProgressNote_validateProgressNoteTemplateId(progressNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProgressNote_validateProgressNoteCodeP(progressNote, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProgressNote_validateProgressNoteCode(progressNote, diagnostics, context);
+			result &= validateProgressNote_validateGeneralHeaderConstraintsCodeP(progressNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateProgressNote_validateProgressNoteDocumentationOf(progressNote, diagnostics, context);
@@ -64466,25 +64130,14 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateProgressNoteCodeP constraint of '<em>Progress Note</em>'.
+	 * Validates the validateGeneralHeaderConstraintsCodeP constraint of '<em>Progress Note</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProgressNote_validateProgressNoteCodeP(ProgressNote progressNote,
+	public boolean validateProgressNote_validateGeneralHeaderConstraintsCodeP(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return progressNote.validateProgressNoteCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProgressNoteCode constraint of '<em>Progress Note</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProgressNote_validateProgressNoteCode(ProgressNote progressNote,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return progressNote.validateProgressNoteCode(diagnostics, context);
+		return progressNote.validateGeneralHeaderConstraintsCodeP(diagnostics, context);
 	}
 
 	/**
@@ -64809,6 +64462,17 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
+	 * Validates the validateGeneralHeaderConstraintsCode constraint of '<em>Progress Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProgressNote_validateGeneralHeaderConstraintsCode(ProgressNote progressNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return progressNote.validateGeneralHeaderConstraintsCode(diagnostics, context);
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -64874,11 +64538,11 @@ public class ConsolValidator extends EObjectValidator {
 				diagnosticImagingReport, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+			result &= validateDiagnosticImagingReport_validateGeneralHeaderConstraintsId(
 				diagnosticImagingReport, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+			result &= validateDiagnosticImagingReport_validateGeneralHeaderConstraintsCode(
 				diagnosticImagingReport, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -65906,15 +65570,7 @@ public class ConsolValidator extends EObjectValidator {
 				diagnosticImagingReport, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateDiagnosticImagingReport_validateDiagnosticImagingReportCodeP(
-				diagnosticImagingReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDiagnosticImagingReport_validateDiagnosticImagingReportCode(
-				diagnosticImagingReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDiagnosticImagingReport_validateDiagnosticImagingReportId(
+			result &= validateDiagnosticImagingReport_validateGeneralHeaderConstraintsCodeP(
 				diagnosticImagingReport, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -66061,36 +65717,14 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateDiagnosticImagingReportCodeP constraint of '<em>Diagnostic Imaging Report</em>'.
+	 * Validates the validateGeneralHeaderConstraintsCodeP constraint of '<em>Diagnostic Imaging Report</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticImagingReport_validateDiagnosticImagingReportCodeP(
+	public boolean validateDiagnosticImagingReport_validateGeneralHeaderConstraintsCodeP(
 			DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return diagnosticImagingReport.validateDiagnosticImagingReportCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateDiagnosticImagingReportCode constraint of '<em>Diagnostic Imaging Report</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDiagnosticImagingReport_validateDiagnosticImagingReportCode(
-			DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return diagnosticImagingReport.validateDiagnosticImagingReportCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateDiagnosticImagingReportId constraint of '<em>Diagnostic Imaging Report</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDiagnosticImagingReport_validateDiagnosticImagingReportId(
-			DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return diagnosticImagingReport.validateDiagnosticImagingReportId(diagnostics, context);
+		return diagnosticImagingReport.validateGeneralHeaderConstraintsCodeP(diagnostics, context);
 	}
 
 	/**
@@ -66368,6 +66002,28 @@ public class ConsolValidator extends EObjectValidator {
 			DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return diagnosticImagingReport.validateDiagnosticImagingReportComponentOfEncompassingEncounter(
 			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGeneralHeaderConstraintsCode constraint of '<em>Diagnostic Imaging Report</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDiagnosticImagingReport_validateGeneralHeaderConstraintsCode(
+			DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return diagnosticImagingReport.validateGeneralHeaderConstraintsCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGeneralHeaderConstraintsId constraint of '<em>Diagnostic Imaging Report</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDiagnosticImagingReport_validateGeneralHeaderConstraintsId(
+			DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return diagnosticImagingReport.validateGeneralHeaderConstraintsId(diagnostics, context);
 	}
 
 	/**

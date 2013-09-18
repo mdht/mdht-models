@@ -64,70 +64,6 @@ public class CognitiveStatusResultOrganizerImpl extends ResultOrganizerImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCognitiveStatusResultOrganizerClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerClassCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultOrganizerMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerMoodCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultOrganizerId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultOrganizerStatusCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerStatusCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultOrganizerStatusCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerStatusCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(
@@ -151,6 +87,66 @@ public class CognitiveStatusResultOrganizerImpl extends ResultOrganizerImpl impl
 	@Override
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusResultOrganizerOperations.validateResultOrganizerClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusResultOrganizerOperations.validateResultOrganizerMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusResultOrganizerOperations.validateResultOrganizerId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusResultOrganizerOperations.validateResultOrganizerCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusResultOrganizerOperations.validateResultOrganizerStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusResultOrganizerOperations.validateResultOrganizerStatusCode(this, diagnostics, context);
 	}
 
 	/**

@@ -109,7 +109,8 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AllergiesSectionCodeP"), new Object[] { allergiesSection }));
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionAllergiesSectionCodeP"),
+					new Object[] { allergiesSection }));
 			}
 
 			if (context != null) {
@@ -189,7 +190,8 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("AllergiesSectionCode"), new Object[] { allergiesSection }));
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionAllergiesSectionCode"),
+					new Object[] { allergiesSection }));
 			}
 
 			return false;
@@ -247,7 +249,8 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("AllergiesSectionTitle"), new Object[] { allergiesSection }));
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionAllergiesSectionTitle"),
+					new Object[] { allergiesSection }));
 			}
 
 			return false;
@@ -305,7 +308,8 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("AllergiesSectionText"), new Object[] { allergiesSection }));
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionAllergiesSectionText"),
+					new Object[] { allergiesSection }));
 			}
 
 			return false;
@@ -363,7 +367,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT,
-					ConsolPlugin.INSTANCE.getString("AllergiesSectionAllergyProblemAct"),
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionAllergiesSectionAllergyProblemAct"),
 					new Object[] { allergiesSection }));
 			}
 
@@ -470,7 +474,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 					ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"AllergiesSectionEntriesOptionalTemplateId",
+								"AllergiesSectionAllergiesSectionEntriesOptionalTemplateId",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(allergiesSection, context) }),
 					new Object[] { allergiesSection }));
 			}

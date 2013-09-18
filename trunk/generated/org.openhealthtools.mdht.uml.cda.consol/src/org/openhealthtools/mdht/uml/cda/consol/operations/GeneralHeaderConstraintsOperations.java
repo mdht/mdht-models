@@ -364,7 +364,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TYPE_ID_ROOT,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTypeIdRoot"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsTypeIdRoot"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -423,7 +423,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TYPE_ID_EXTENSION,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTypeIdExtension"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsTypeIdExtension"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -481,9 +481,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_SET_ID_VERSION_NUMBER,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsSetIdVersionNumber"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsSetIdVersionNumber"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -541,9 +542,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER_SET_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsVersionNumberSetId"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsVersionNumberSetId"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -602,7 +604,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsTemplateId"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -662,7 +664,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_REALM_CODE,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRealmCode"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsRealmCode"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -721,7 +723,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TYPE_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTypeId"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsTypeId"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -780,7 +782,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsId"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsId"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -839,7 +841,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_CODE,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsCode"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -898,7 +900,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TITLE,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTitle"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsTitle"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -957,7 +959,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsEffectiveTime"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1015,9 +1017,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_CONFIDENTIALITY_CODE_P,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsConfidentialityCodeP"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsConfidentialityCodeP"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1099,9 +1102,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_CONFIDENTIALITY_CODE,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsConfidentialityCode"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsConfidentialityCode"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1162,7 +1166,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsLanguageCode"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsLanguageCode"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1221,7 +1225,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_SET_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsSetId"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsSetId"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1280,7 +1284,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsVersionNumber"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsVersionNumber"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1339,7 +1343,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthor"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsAuthor"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1398,7 +1402,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsDataEnterer"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsDataEnterer"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1457,7 +1461,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_CUSTODIAN,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCustodian"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsCustodian"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1515,9 +1519,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInformationRecipient"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsInformationRecipient"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1575,9 +1580,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsLegalAuthenticator"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticator"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1636,7 +1642,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthenticator"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticator"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1695,7 +1701,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTarget"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTarget"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1754,7 +1760,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsComponentOf"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsComponentOf"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1813,7 +1819,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_INFORMANT,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInformant"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsInformant"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1871,9 +1877,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			generalHeaderConstraints)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_SUPPORT_PARTICIPANT,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsSupportParticipant"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsSupportParticipant"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1932,7 +1939,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_IN_FULFILLMENT_OF,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInFulfillmentOf"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsInFulfillmentOf"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -1991,7 +1998,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsDocumentationOf"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsDocumentationOf"),
 					new Object[] { generalHeaderConstraints }));
 			}
 
@@ -2050,7 +2057,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_AUTHORIZATION,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthorization"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorization"),
 					new Object[] { generalHeaderConstraints }));
 			}
 

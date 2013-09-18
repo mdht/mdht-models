@@ -110,7 +110,7 @@ public class ComplicationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMPLICATIONS_SECTION__COMPLICATIONS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ComplicationsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ComplicationsSectionComplicationsSectionTemplateId"),
 					new Object[] { complicationsSection }));
 			}
 
@@ -171,7 +171,8 @@ public class ComplicationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMPLICATIONS_SECTION__COMPLICATIONS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ComplicationsSectionCode"), new Object[] { complicationsSection }));
+					ConsolPlugin.INSTANCE.getString("ComplicationsSectionComplicationsSectionCode"),
+					new Object[] { complicationsSection }));
 			}
 
 			return false;
@@ -229,7 +230,8 @@ public class ComplicationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMPLICATIONS_SECTION__COMPLICATIONS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ComplicationsSectionCodeP"), new Object[] { complicationsSection }));
+					ConsolPlugin.INSTANCE.getString("ComplicationsSectionComplicationsSectionCodeP"),
+					new Object[] { complicationsSection }));
 			}
 
 			return false;
@@ -287,7 +289,8 @@ public class ComplicationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMPLICATIONS_SECTION__COMPLICATIONS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ComplicationsSectionTitle"), new Object[] { complicationsSection }));
+					ConsolPlugin.INSTANCE.getString("ComplicationsSectionComplicationsSectionTitle"),
+					new Object[] { complicationsSection }));
 			}
 
 			return false;
@@ -345,7 +348,8 @@ public class ComplicationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMPLICATIONS_SECTION__COMPLICATIONS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ComplicationsSectionText"), new Object[] { complicationsSection }));
+					ConsolPlugin.INSTANCE.getString("ComplicationsSectionComplicationsSectionText"),
+					new Object[] { complicationsSection }));
 			}
 
 			return false;
@@ -403,7 +407,7 @@ public class ComplicationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMPLICATIONS_SECTION__COMPLICATIONS_SECTION_PROBLEM_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ComplicationsSectionProblemObservation"),
+					ConsolPlugin.INSTANCE.getString("ComplicationsSectionComplicationsSectionProblemObservation"),
 					new Object[] { complicationsSection }));
 			}
 

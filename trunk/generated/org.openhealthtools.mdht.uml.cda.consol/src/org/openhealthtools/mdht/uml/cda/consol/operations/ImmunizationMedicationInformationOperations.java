@@ -116,7 +116,7 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationImmunizationMedicationInformationTemplateId"),
 					new Object[] { immunizationMedicationInformation }));
 			}
 
@@ -178,7 +178,7 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationClassCode"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationImmunizationMedicationInformationClassCode"),
 					new Object[] { immunizationMedicationInformation }));
 			}
 
@@ -236,9 +236,10 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 			immunizationMedicationInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_ID,
-					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationId"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationImmunizationMedicationInformationId"),
 					new Object[] { immunizationMedicationInformation }));
 			}
 
@@ -300,7 +301,7 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION,
-					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturerOrganization"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationImmunizationMedicationInformationManufacturerOrganization"),
 					new Object[] { immunizationMedicationInformation }));
 			}
 
@@ -362,7 +363,7 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL,
-					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturedMaterial"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterial"),
 					new Object[] { immunizationMedicationInformation }));
 			}
 

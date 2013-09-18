@@ -103,9 +103,10 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 			smokingStatusObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME_LOW,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationEffectiveTimeLow"),
+					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationSmokingStatusObservationEffectiveTimeLow"),
 					new Object[] { smokingStatusObservation }));
 			}
 
@@ -164,7 +165,7 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationSmokingStatusObservationClassCode"),
 					new Object[] { smokingStatusObservation }));
 			}
 
@@ -223,7 +224,7 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationSmokingStatusObservationMoodCode"),
 					new Object[] { smokingStatusObservation }));
 			}
 
@@ -282,7 +283,7 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationSmokingStatusObservationCodeP"),
 					new Object[] { smokingStatusObservation }));
 			}
 
@@ -363,7 +364,7 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationCode"),
+					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationSmokingStatusObservationCode"),
 					new Object[] { smokingStatusObservation }));
 			}
 
@@ -422,7 +423,7 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationSmokingStatusObservationEffectiveTime"),
 					new Object[] { smokingStatusObservation }));
 			}
 
@@ -481,7 +482,7 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationSmokingStatusObservationStatusCodeP"),
 					new Object[] { smokingStatusObservation }));
 			}
 
@@ -562,7 +563,7 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationSmokingStatusObservationStatusCode"),
 					new Object[] { smokingStatusObservation }));
 			}
 
@@ -621,7 +622,7 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationValueP"),
+					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationSmokingStatusObservationValueP"),
 					new Object[] { smokingStatusObservation }));
 			}
 
@@ -702,7 +703,7 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationValue"),
+					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationSmokingStatusObservationValue"),
 					new Object[] { smokingStatusObservation }));
 			}
 
@@ -764,7 +765,7 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
 						"_UI_GenericInvariant_diagnostic",
 						new Object[] {
-								"TobaccoUseTemplateId",
+								"SmokingStatusObservationTobaccoUseTemplateId",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									smokingStatusObservation, context) }), new Object[] { smokingStatusObservation }));
 			}

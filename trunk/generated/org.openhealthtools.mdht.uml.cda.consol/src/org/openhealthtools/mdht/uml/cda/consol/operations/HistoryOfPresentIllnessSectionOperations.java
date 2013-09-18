@@ -102,9 +102,10 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 			historyOfPresentIllnessSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HISTORY_OF_PRESENT_ILLNESS_SECTION__HISTORY_OF_PRESENT_ILLNESS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HistoryOfPresentIllnessSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HistoryOfPresentIllnessSectionHistoryOfPresentIllnessSectionTemplateId"),
 					new Object[] { historyOfPresentIllnessSection }));
 			}
 
@@ -164,9 +165,10 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 			historyOfPresentIllnessSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HISTORY_OF_PRESENT_ILLNESS_SECTION__HISTORY_OF_PRESENT_ILLNESS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HistoryOfPresentIllnessSectionCode"),
+					ConsolPlugin.INSTANCE.getString("HistoryOfPresentIllnessSectionHistoryOfPresentIllnessSectionCode"),
 					new Object[] { historyOfPresentIllnessSection }));
 			}
 
@@ -224,9 +226,10 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 			historyOfPresentIllnessSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HISTORY_OF_PRESENT_ILLNESS_SECTION__HISTORY_OF_PRESENT_ILLNESS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HistoryOfPresentIllnessSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("HistoryOfPresentIllnessSectionHistoryOfPresentIllnessSectionCodeP"),
 					new Object[] { historyOfPresentIllnessSection }));
 			}
 
@@ -284,9 +287,10 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 			historyOfPresentIllnessSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HISTORY_OF_PRESENT_ILLNESS_SECTION__HISTORY_OF_PRESENT_ILLNESS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("HistoryOfPresentIllnessSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("HistoryOfPresentIllnessSectionHistoryOfPresentIllnessSectionTitle"),
 					new Object[] { historyOfPresentIllnessSection }));
 			}
 
@@ -344,9 +348,10 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 			historyOfPresentIllnessSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HISTORY_OF_PRESENT_ILLNESS_SECTION__HISTORY_OF_PRESENT_ILLNESS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("HistoryOfPresentIllnessSectionText"),
+					ConsolPlugin.INSTANCE.getString("HistoryOfPresentIllnessSectionHistoryOfPresentIllnessSectionText"),
 					new Object[] { historyOfPresentIllnessSection }));
 			}
 

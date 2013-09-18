@@ -113,7 +113,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalEncountersSectionEntriesOptionalTemplateId"),
 					new Object[] { encountersSectionEntriesOptional }));
 			}
 
@@ -173,9 +173,10 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 			encountersSectionEntriesOptional)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalEncountersSectionEntriesOptionalCode"),
 					new Object[] { encountersSectionEntriesOptional }));
 			}
 
@@ -233,9 +234,10 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 			encountersSectionEntriesOptional)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalEncountersSectionEntriesOptionalCodeP"),
 					new Object[] { encountersSectionEntriesOptional }));
 			}
 
@@ -293,9 +295,10 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 			encountersSectionEntriesOptional)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE,
-					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalTitle"),
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalEncountersSectionEntriesOptionalTitle"),
 					new Object[] { encountersSectionEntriesOptional }));
 			}
 
@@ -353,9 +356,10 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 			encountersSectionEntriesOptional)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT,
-					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalText"),
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalEncountersSectionEntriesOptionalText"),
 					new Object[] { encountersSectionEntriesOptional }));
 			}
 
@@ -417,7 +421,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES,
-					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalEncounterActivities"),
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalEncountersSectionEntriesOptionalEncounterActivities"),
 					new Object[] { encountersSectionEntriesOptional }));
 			}
 

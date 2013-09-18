@@ -109,7 +109,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_ORIGINAL_TEXT,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationOriginalText"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationSocialHistoryObservationOriginalText"),
 					new Object[] { socialHistoryObservation }));
 			}
 
@@ -168,7 +168,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationReference"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationSocialHistoryObservationReference"),
 					new Object[] { socialHistoryObservation }));
 			}
 
@@ -227,7 +227,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationSocialHistoryObservationReferenceValue"),
 					new Object[] { socialHistoryObservation }));
 			}
 
@@ -286,7 +286,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationSocialHistoryObservationTemplateId"),
 					new Object[] { socialHistoryObservation }));
 			}
 
@@ -345,7 +345,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationSocialHistoryObservationClassCode"),
 					new Object[] { socialHistoryObservation }));
 			}
 
@@ -404,7 +404,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationSocialHistoryObservationMoodCode"),
 					new Object[] { socialHistoryObservation }));
 			}
 
@@ -463,7 +463,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationId"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationSocialHistoryObservationId"),
 					new Object[] { socialHistoryObservation }));
 			}
 
@@ -522,7 +522,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationSocialHistoryObservationCodeP"),
 					new Object[] { socialHistoryObservation }));
 			}
 
@@ -603,7 +603,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationCode"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationSocialHistoryObservationCode"),
 					new Object[] { socialHistoryObservation }));
 			}
 
@@ -663,7 +663,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationSocialHistoryObservationStatusCode"),
 					new Object[] { socialHistoryObservation }));
 			}
 
@@ -722,7 +722,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationValue"),
+					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationSocialHistoryObservationValue"),
 					new Object[] { socialHistoryObservation }));
 			}
 

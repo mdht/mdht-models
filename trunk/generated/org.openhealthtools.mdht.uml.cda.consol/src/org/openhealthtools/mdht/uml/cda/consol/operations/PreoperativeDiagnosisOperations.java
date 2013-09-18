@@ -109,7 +109,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS__PREOPERATIVE_DIAGNOSIS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisPreoperativeDiagnosisTemplateId"),
 					new Object[] { preoperativeDiagnosis }));
 			}
 
@@ -168,7 +168,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS__PREOPERATIVE_DIAGNOSIS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisClassCode"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisPreoperativeDiagnosisClassCode"),
 					new Object[] { preoperativeDiagnosis }));
 			}
 
@@ -229,7 +229,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS__PREOPERATIVE_DIAGNOSIS_CODE,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisCode"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisPreoperativeDiagnosisCode"),
 					new Object[] { preoperativeDiagnosis }));
 			}
 
@@ -288,7 +288,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS__PREOPERATIVE_DIAGNOSIS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisMoodCode"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisPreoperativeDiagnosisMoodCode"),
 					new Object[] { preoperativeDiagnosis }));
 			}
 
@@ -347,7 +347,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS__PREOPERATIVE_DIAGNOSIS_PROBLEM_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisProblemObservation"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisPreoperativeDiagnosisProblemObservation"),
 					new Object[] { preoperativeDiagnosis }));
 			}
 

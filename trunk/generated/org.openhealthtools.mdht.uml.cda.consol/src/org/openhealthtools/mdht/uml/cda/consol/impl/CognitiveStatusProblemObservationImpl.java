@@ -100,129 +100,9 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCognitiveStatusProblemObservationClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationClassCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservationMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationMoodCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservationNegationInd(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationNegationInd(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservationCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservationCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservationText(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationText(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservationStatusCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationStatusCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservationEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationEffectiveTime(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateCognitiveStatusProblemObservationMethodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationMethodCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservationValueP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationValueP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusProblemObservationValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationValue(
 			this, diagnostics, context);
 	}
 
@@ -295,6 +175,121 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusProblemObservationOperations.validateProblemObservationTemplateId(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationClassCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationMoodCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationNegationInd(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationStatusCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationEffectiveTime(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationValue(this, diagnostics, context);
 	}
 
 	/**

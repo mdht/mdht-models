@@ -105,7 +105,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeStudiesSummarySectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeStudiesSummarySectionHospitalDischargeStudiesSummarySectionTemplateId"),
 					new Object[] { hospitalDischargeStudiesSummarySection }));
 			}
 
@@ -169,7 +169,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeStudiesSummarySectionCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeStudiesSummarySectionHospitalDischargeStudiesSummarySectionCode"),
 					new Object[] { hospitalDischargeStudiesSummarySection }));
 			}
 
@@ -231,7 +231,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeStudiesSummarySectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeStudiesSummarySectionHospitalDischargeStudiesSummarySectionCodeP"),
 					new Object[] { hospitalDischargeStudiesSummarySection }));
 			}
 
@@ -293,7 +293,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeStudiesSummarySectionTitle"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeStudiesSummarySectionHospitalDischargeStudiesSummarySectionTitle"),
 					new Object[] { hospitalDischargeStudiesSummarySection }));
 			}
 
@@ -355,7 +355,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeStudiesSummarySectionText"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeStudiesSummarySectionHospitalDischargeStudiesSummarySectionText"),
 					new Object[] { hospitalDischargeStudiesSummarySection }));
 			}
 

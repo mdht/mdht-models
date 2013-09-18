@@ -102,7 +102,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHIEF_COMPLAINT_SECTION__CHIEF_COMPLAINT_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionChiefComplaintSectionTemplateId"),
 					new Object[] { chiefComplaintSection }));
 			}
 
@@ -163,7 +163,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHIEF_COMPLAINT_SECTION__CHIEF_COMPLAINT_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionCode"),
+					ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionChiefComplaintSectionCode"),
 					new Object[] { chiefComplaintSection }));
 			}
 
@@ -222,7 +222,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHIEF_COMPLAINT_SECTION__CHIEF_COMPLAINT_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionChiefComplaintSectionCodeP"),
 					new Object[] { chiefComplaintSection }));
 			}
 
@@ -281,7 +281,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHIEF_COMPLAINT_SECTION__CHIEF_COMPLAINT_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionText"),
+					ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionChiefComplaintSectionText"),
 					new Object[] { chiefComplaintSection }));
 			}
 
@@ -340,7 +340,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHIEF_COMPLAINT_SECTION__CHIEF_COMPLAINT_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionChiefComplaintSectionTitle"),
 					new Object[] { chiefComplaintSection }));
 			}
 

@@ -104,7 +104,7 @@ public class PlanOfCareActivitySubstanceAdministrationOperations extends Substan
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySubstanceAdministrationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySubstanceAdministrationPlanOfCareActivitySubstanceAdministrationTemplateId"),
 					new Object[] { planOfCareActivitySubstanceAdministration }));
 			}
 
@@ -166,7 +166,7 @@ public class PlanOfCareActivitySubstanceAdministrationOperations extends Substan
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySubstanceAdministrationClassCode"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySubstanceAdministrationPlanOfCareActivitySubstanceAdministrationClassCode"),
 					new Object[] { planOfCareActivitySubstanceAdministration }));
 			}
 
@@ -230,7 +230,7 @@ public class PlanOfCareActivitySubstanceAdministrationOperations extends Substan
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySubstanceAdministrationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySubstanceAdministrationPlanOfCareActivitySubstanceAdministrationMoodCode"),
 					new Object[] { planOfCareActivitySubstanceAdministration }));
 			}
 
@@ -292,7 +292,7 @@ public class PlanOfCareActivitySubstanceAdministrationOperations extends Substan
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySubstanceAdministrationId"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySubstanceAdministrationPlanOfCareActivitySubstanceAdministrationId"),
 					new Object[] { planOfCareActivitySubstanceAdministration }));
 			}
 

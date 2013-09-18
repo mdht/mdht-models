@@ -102,7 +102,7 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_HISTORY_SECTION__MEDICAL_HISTORY_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicalHistorySectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MedicalHistorySectionMedicalHistorySectionTemplateId"),
 					new Object[] { medicalHistorySection }));
 			}
 
@@ -163,7 +163,7 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_HISTORY_SECTION__MEDICAL_HISTORY_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicalHistorySectionCode"),
+					ConsolPlugin.INSTANCE.getString("MedicalHistorySectionMedicalHistorySectionCode"),
 					new Object[] { medicalHistorySection }));
 			}
 
@@ -222,7 +222,7 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_HISTORY_SECTION__MEDICAL_HISTORY_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicalHistorySectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("MedicalHistorySectionMedicalHistorySectionCodeP"),
 					new Object[] { medicalHistorySection }));
 			}
 
@@ -281,7 +281,7 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_HISTORY_SECTION__MEDICAL_HISTORY_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("MedicalHistorySectionText"),
+					ConsolPlugin.INSTANCE.getString("MedicalHistorySectionMedicalHistorySectionText"),
 					new Object[] { medicalHistorySection }));
 			}
 
@@ -340,7 +340,7 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICAL_HISTORY_SECTION__MEDICAL_HISTORY_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("MedicalHistorySectionTitle"),
+					ConsolPlugin.INSTANCE.getString("MedicalHistorySectionMedicalHistorySectionTitle"),
 					new Object[] { medicalHistorySection }));
 			}
 
