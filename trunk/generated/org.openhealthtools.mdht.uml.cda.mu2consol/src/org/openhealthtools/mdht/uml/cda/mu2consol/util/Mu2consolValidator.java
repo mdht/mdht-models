@@ -240,27 +240,27 @@ public class Mu2consolValidator extends EObjectValidator {
 	public static final int SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 23;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate MU2CONSOL Smoking Status Observation Value P' of 'Smoking Status Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int SMOKING_STATUS_OBSERVATION__MU2CONSOL_SMOKING_STATUS_OBSERVATION_VALUE_P = 24;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate MU2CONSOL Smoking Status Observation Value' of 'Smoking Status Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int SMOKING_STATUS_OBSERVATION__MU2CONSOL_SMOKING_STATUS_OBSERVATION_VALUE = 25;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Tobacco Use Template Id' of 'Smoking Status Observation'.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SMOKING_STATUS_OBSERVATION__TOBACCO_USE_TEMPLATE_ID = 26;
+	public static final int SMOKING_STATUS_OBSERVATION__TOBACCO_USE_TEMPLATE_ID = 24;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Smoking Status Observation Value P' of 'Smoking Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE_P = 25;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Smoking Status Observation Value' of 'Smoking Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE = 26;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Template Id' of 'Results Section'.
@@ -1693,31 +1693,9 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationEffectiveTime(smokingStatusObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationStatusCodeP(smokingStatusObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationStatusCode(smokingStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationValueP(smokingStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationValue(smokingStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSmokingStatusObservation_validateMU2CONSOLSmokingStatusObservationValueP(smokingStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSmokingStatusObservation_validateMU2CONSOLSmokingStatusObservationValue(smokingStatusObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSmokingStatusObservation_validateSmokingStatusObservationValueP(smokingStatusObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSmokingStatusObservation_validateSmokingStatusObservationValue(smokingStatusObservation, diagnostics, context);
 		return result;
-	}
-
-	/**
-	 * Validates the validateMU2CONSOLSmokingStatusObservationValueP constraint of '<em>Smoking Status Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSmokingStatusObservation_validateMU2CONSOLSmokingStatusObservationValueP(SmokingStatusObservation smokingStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return smokingStatusObservation.validateMU2CONSOLSmokingStatusObservationValueP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateMU2CONSOLSmokingStatusObservationValue constraint of '<em>Smoking Status Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSmokingStatusObservation_validateMU2CONSOLSmokingStatusObservationValue(SmokingStatusObservation smokingStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return smokingStatusObservation.validateMU2CONSOLSmokingStatusObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -1730,6 +1708,26 @@ public class Mu2consolValidator extends EObjectValidator {
 			SmokingStatusObservation smokingStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return smokingStatusObservation.validateTobaccoUseTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSmokingStatusObservationValueP constraint of '<em>Smoking Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSmokingStatusObservation_validateSmokingStatusObservationValueP(SmokingStatusObservation smokingStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return smokingStatusObservation.validateSmokingStatusObservationValueP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSmokingStatusObservationValue constraint of '<em>Smoking Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSmokingStatusObservation_validateSmokingStatusObservationValue(SmokingStatusObservation smokingStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return smokingStatusObservation.validateSmokingStatusObservationValue(diagnostics, context);
 	}
 
 	/**
