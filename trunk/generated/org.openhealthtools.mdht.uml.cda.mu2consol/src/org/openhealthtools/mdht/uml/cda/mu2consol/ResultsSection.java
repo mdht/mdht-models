@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getResultsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MU2CONSOLResultsSectionTemplateId ResultsSectionResultOrganizer' templateId.root='2.16.840.1.113883.10.20.22.2.3.1'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultsSectionEntriesOptionalTemplateId ResultsSectionResultOrganizer' templateId.root='2.16.840.1.113883.10.20.22.2.3.1'"
  * @generated
  */
 public interface ResultsSection extends
@@ -40,9 +40,9 @@ public interface ResultsSection extends
 	EList<ResultOrganizer> getMu2consolResultOrganizers();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public ResultsSection init();
 
 	/**

@@ -8,7 +8,7 @@
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="GeneralHeaderConstraints" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MU2CONSOLGeneralHeaderConstraintsTemplateId MU2CONSOLGeneralHeaderConstraintsCareTeamMembers MU2CONSOLGeneralHeaderConstraintsRecordTarget GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatient MU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole"/>
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId MU2CONSOLGeneralHeaderConstraintsCareTeamMembers MU2CONSOLGeneralHeaderConstraintsRecordTarget GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatient MU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.1"/>
       <details key="constraints.validation.query" value="GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsRecordTargetPatientRolePatient MU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole"/>
       <details key="constraints.validation.dependOn.GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode"
@@ -539,7 +539,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SocialHistorySection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//SocialHistorySection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MU2CONSOLSocialHistorySectionTemplateId MU2CONSOLSocialHistorySectionSmokingStatusObservation"/>
+      <details key="constraints.validation.error" value="SocialHistorySectionTemplateId MU2CONSOLSocialHistorySectionSmokingStatusObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.17"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -593,7 +593,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SmokingStatusObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//SmokingStatusObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MU2CONSOLSmokingStatusObservationTemplateId SmokingStatusObservationValue SmokingStatusObservationValueP"/>
+      <details key="constraints.validation.error" value="TobaccoUseTemplateId SmokingStatusObservationValue SmokingStatusObservationValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.78"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="value.codeSystemName" value="SNOMEDCT"/>
@@ -666,7 +666,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResultsSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MU2CONSOLResultsSectionTemplateId ResultsSectionResultOrganizer"/>
+      <details key="constraints.validation.error" value="ResultsSectionEntriesOptionalTemplateId ResultsSectionResultOrganizer"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.3.1"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -721,7 +721,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResultOrganizer" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultOrganizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MU2CONSOLResultOrganizerTemplateId ResultOrganizerResultObservation"/>
+      <details key="constraints.validation.error" value="ResultOrganizerTemplateId ResultOrganizerResultObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.1"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -776,7 +776,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResultObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MU2CONSOLResultObservationTemplateId"/>
+      <details key="constraints.validation.error" value="ResultObservationTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.2"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -804,7 +804,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ProceduresSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ProceduresSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MU2CONSOLProceduresSectionTemplateId"/>
+      <details key="constraints.validation.error" value="ProceduresSectionEntriesOptionalTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.7.1"/>
       <details key="constraints.validation.info" value="ProceduresSectionProcedureActivityProcedure"/>
     </eAnnotations>
@@ -861,7 +861,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityProcedure" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ProcedureActivityProcedure">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MU2CONSOLProcedureActivityProcedureTemplateId MU2CONSOLProcedureActivityProcedureCodeValue ProcedureActivityProcedureCode"/>
+      <details key="constraints.validation.error" value="ProcedureActivityProcedureTemplateId MU2CONSOLProcedureActivityProcedureCodeValue ProcedureActivityProcedureCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.14"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -1260,7 +1260,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MedicationsAdministeredSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//MedicationsAdministeredSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MU2CONSOLMedicationsAdministeredSectionTemplateId MedicationsAdministeredSectionMedicationActivity"/>
+      <details key="constraints.validation.error" value="MedicationsAdministeredSectionTemplateId MedicationsAdministeredSectionMedicationActivity"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.38"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -1814,7 +1814,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//FunctionalStatusSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MU2CONSOLFunctionalStatusSectionTemplateId"/>
+      <details key="constraints.validation.error" value="FunctionalStatusSectionTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.14"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -1867,7 +1867,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CognitiveStatusResultObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//CognitiveStatusResultObservation #//ResultObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MU2CONSOLCognitiveStatusResultObservationTemplateId"/>
+      <details key="constraints.validation.error" value="ResultObservationTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.74"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -1895,7 +1895,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CognitiveStatusResultOrganizer" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//CognitiveStatusResultOrganizer #//ResultOrganizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MU2CONSOLCognitiveStatusResultOrganizerTemplateId"/>
+      <details key="constraints.validation.error" value="ResultOrganizerTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.75"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -1929,7 +1929,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusResultObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//FunctionalStatusResultObservation #//ResultObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MU2CONSOLFunctionalStatusResultObservationTemplateId"/>
+      <details key="constraints.validation.error" value="ResultObservationTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.67"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -1957,7 +1957,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusResultOrganizer" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//FunctionalStatusResultOrganizer #//ResultOrganizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MU2CONSOLFunctionalStatusResultOrganizerTemplateId"/>
+      <details key="constraints.validation.error" value="ResultOrganizerTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.66"/>
     </eAnnotations>
     <eAnnotations source="duplicates">

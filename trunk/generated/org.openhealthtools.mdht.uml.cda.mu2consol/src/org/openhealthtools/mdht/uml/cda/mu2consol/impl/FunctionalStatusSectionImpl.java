@@ -38,79 +38,79 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.FunctionalStatusSec
  */
 public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.FunctionalStatusSectionImpl implements FunctionalStatusSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected FunctionalStatusSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION;
-	}
+    return Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<CognitiveStatusResultObservation> getMu2consolCognitiveStatusResultObservations() {
-		return FunctionalStatusSectionOperations.getMu2consolCognitiveStatusResultObservations(this);
-	}
+    return FunctionalStatusSectionOperations.getMu2consolCognitiveStatusResultObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<CognitiveStatusResultOrganizer> getMu2consolCognitiveStatusResultOrganizers() {
-		return FunctionalStatusSectionOperations.getMu2consolCognitiveStatusResultOrganizers(this);
-	}
+    return FunctionalStatusSectionOperations.getMu2consolCognitiveStatusResultOrganizers(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<FunctionalStatusResultObservation> getMu2consolFunctionalStatusResultObservations() {
-		return FunctionalStatusSectionOperations.getMu2consolFunctionalStatusResultObservations(this);
-	}
+    return FunctionalStatusSectionOperations.getMu2consolFunctionalStatusResultObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<FunctionalStatusResultOrganizer> getMu2consolFunctionalStatusResultOrganizers() {
-		return FunctionalStatusSectionOperations.getMu2consolFunctionalStatusResultOrganizers(this);
-	}
+    return FunctionalStatusSectionOperations.getMu2consolFunctionalStatusResultOrganizers(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateFunctionalStatusSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionTemplateId(this, diagnostics, context);
-	}
+    return FunctionalStatusSectionOperations.validateFunctionalStatusSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public FunctionalStatusSection init() {
-	    return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
