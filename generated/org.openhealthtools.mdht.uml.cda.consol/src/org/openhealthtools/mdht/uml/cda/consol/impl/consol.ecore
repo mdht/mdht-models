@@ -6417,7 +6417,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ContinuityOfCareDocument" eSuperTypes="#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="ContinuityOfCareDocumentTemplateId ContinuityOfCareDocumentCode ContinuityOfCareDocumentCodeP ContinuityOfCareDocumentLanguageCode ContinuityOfCareDocumentDocumentationOf ContinuityOfCareDocumentAuthor ContinuityOfCareDocumentAllergiesSection ContinuityOfCareDocumentMedicationsSection ContinuityOfCareDocumentProblemSection ContinuityOfCareDocumentProceduresSection ContinuityOfCareDocumentResultsSection ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocumentDocumentationOfServiceEventClassCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEvent ContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization ContinuityOfCareDocumentAuthorAssignedAuthor"/>
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ContinuityOfCareDocumentCode ContinuityOfCareDocumentCodeP ContinuityOfCareDocumentLanguageCode ContinuityOfCareDocumentDocumentationOf ContinuityOfCareDocumentAuthor ContinuityOfCareDocumentAllergiesSection ContinuityOfCareDocumentMedicationsSection ContinuityOfCareDocumentProblemSection ContinuityOfCareDocumentProceduresSection ContinuityOfCareDocumentResultsSection ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocumentDocumentationOfServiceEventClassCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEvent ContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization ContinuityOfCareDocumentAuthorAssignedAuthor"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.2"/>
       <details key="code.code" value="34133-9"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
@@ -6812,7 +6812,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AllergiesSection" eSuperTypes="#//AllergiesSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="AllergiesSectionTemplateId AllergiesSectionCode AllergiesSectionCodeP AllergiesSectionTitle AllergiesSectionText AllergiesSectionAllergyProblemAct"/>
+      <details key="constraints.validation.error" value="AllergiesSectionEntriesOptionalTemplateId AllergiesSectionCode AllergiesSectionCodeP AllergiesSectionTitle AllergiesSectionText AllergiesSectionAllergyProblemAct"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.6.1"/>
       <details key="code.code" value="48765-2"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
@@ -6950,7 +6950,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MedicationsSection" eSuperTypes="#//MedicationsSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MedicationsSectionTemplateId MedicationsSectionCode MedicationsSectionTitle MedicationsSectionText MedicationsSectionMedication"/>
+      <details key="constraints.validation.error" value="MedicationsSectionEntriesOptionalTemplateId MedicationsSectionCode MedicationsSectionTitle MedicationsSectionText MedicationsSectionMedication"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.1.1"/>
       <details key="code.code" value="10160-0"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
@@ -7069,7 +7069,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ProblemSection" eSuperTypes="#//ProblemSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="ProblemSectionTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalCodeP ProblemSectionEntriesOptionalText ProblemSectionEntriesOptionalTitle ProblemSectionEntriesOptionalProblemConcern"/>
+      <details key="constraints.validation.error" value="ProblemSectionEntriesOptionalTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalCodeP ProblemSectionEntriesOptionalText ProblemSectionEntriesOptionalTitle ProblemSectionEntriesOptionalProblemConcern"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.5.1"/>
       <details key="code.code" value="11450-4"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
@@ -7218,7 +7218,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ProceduresSection" eSuperTypes="#//ProceduresSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="ProceduresSectionTemplateId ProceduresSectionHasProcedureActivity ProceduresSectionTitle ProceduresSectionEntriesOptionalCode ProceduresSectionEntriesOptionalCodeP ProceduresSectionEntriesOptionalText"/>
+      <details key="constraints.validation.error" value="ProceduresSectionEntriesOptionalTemplateId ProceduresSectionHasProcedureActivity ProceduresSectionTitle ProceduresSectionEntriesOptionalCode ProceduresSectionEntriesOptionalCodeP ProceduresSectionEntriesOptionalText"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.7.1"/>
       <details key="code.code" value="47519-4"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
@@ -8249,7 +8249,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResultsSection" eSuperTypes="#//ResultsSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="ResultsSectionTemplateId ResultsSectionEntriesOptionalCode ResultsSectionEntriesOptionalCodeP ResultsSectionEntriesOptionalTitle ResultsSectionText ResultsSectionResultOrganizer"/>
+      <details key="constraints.validation.error" value="ResultsSectionEntriesOptionalTemplateId ResultsSectionEntriesOptionalCode ResultsSectionEntriesOptionalCodeP ResultsSectionEntriesOptionalTitle ResultsSectionText ResultsSectionResultOrganizer"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.3.1"/>
       <details key="code.code" value="30954-2"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
@@ -8676,7 +8676,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdvanceDirectivesSection" eSuperTypes="#//AdvanceDirectivesSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="AdvanceDirectivesSectionTemplateId AdvanceDirectivesSectionCode AdvanceDirectivesSectionCodeP AdvanceDirectivesSectionTitle AdvanceDirectivesSectionText AdvanceDirectivesSectionAdvanceDirectiveObservation"/>
+      <details key="constraints.validation.error" value="AdvanceDirectivesSectionEntriesOptionalTemplateId AdvanceDirectivesSectionCode AdvanceDirectivesSectionCodeP AdvanceDirectivesSectionTitle AdvanceDirectivesSectionText AdvanceDirectivesSectionAdvanceDirectiveObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.21.1"/>
       <details key="code.code" value="42348-3"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
@@ -9123,7 +9123,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="EncountersSection" eSuperTypes="#//EncountersSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="EncountersSectionTemplateId EncountersSectionEntriesOptionalCode EncountersSectionEntriesOptionalCodeP EncountersSectionEntriesOptionalText EncountersSectionEntriesOptionalTitle EncountersSectionEncounterActivities"/>
+      <details key="constraints.validation.error" value="EncountersSectionEntriesOptionalTemplateId EncountersSectionEntriesOptionalCode EncountersSectionEntriesOptionalCodeP EncountersSectionEntriesOptionalText EncountersSectionEntriesOptionalTitle EncountersSectionEncounterActivities"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.22.1"/>
       <details key="code.code" value="46240-8"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
@@ -10167,7 +10167,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusResultOrganizer" eSuperTypes="#//ResultOrganizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="FunctionalStatusResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerMoodCode ResultOrganizerId ResultOrganizerCode ResultOrganizerStatusCode ResultOrganizerStatusCodeP FunctionalStatusResultOrganizerFunctionalStatusResultObservation"/>
+      <details key="constraints.validation.error" value="ResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerMoodCode ResultOrganizerId ResultOrganizerCode ResultOrganizerStatusCode ResultOrganizerStatusCodeP FunctionalStatusResultOrganizerFunctionalStatusResultObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.66"/>
       <details key="constraints.validation.warning" value="FunctionalStatusResultOrganizerCodeCodeSystem"/>
       <details key="classCode" value="CLUSTER"/>
@@ -10271,7 +10271,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusResultObservation" eSuperTypes="#//ResultObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="FunctionalStatusResultObservationTemplateId FunctionalStatusResultObservationTextReferenceValue ResultObservationClassCode ResultObservationMoodCode ResultObservationId ResultObservationCodeP ResultObservationStatusCode ResultObservationStatusCodeP ResultObservationEffectiveTime ResultObservationValue FunctionalStatusResultObservationReferenceRangeObservationRangeNoCode FunctionalStatusResultObservationReferenceRangeObservationRange"/>
+      <details key="constraints.validation.error" value="ResultObservationTemplateId FunctionalStatusResultObservationTextReferenceValue ResultObservationClassCode ResultObservationMoodCode ResultObservationId ResultObservationCodeP ResultObservationStatusCode ResultObservationStatusCodeP ResultObservationEffectiveTime ResultObservationValue FunctionalStatusResultObservationReferenceRangeObservationRangeNoCode FunctionalStatusResultObservationReferenceRangeObservationRange"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.67"/>
       <details key="constraints.validation.warning" value="FunctionalStatusResultObservationTextReference FunctionalStatusResultObservationValueDatatype ResultObservationCode ResultObservationText ResultObservationInterpretationCode FunctionalStatusResultObservationReferenceRange"/>
       <details key="classCode" value="OBS"/>
@@ -11009,7 +11009,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CognitiveStatusResultOrganizer" eSuperTypes="#//ResultOrganizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="CognitiveStatusResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerMoodCode ResultOrganizerId ResultOrganizerCode ResultOrganizerStatusCode ResultOrganizerStatusCodeP CognitiveStatusResultOrganizerCognitiveStatusResultObservation"/>
+      <details key="constraints.validation.error" value="ResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerMoodCode ResultOrganizerId ResultOrganizerCode ResultOrganizerStatusCode ResultOrganizerStatusCodeP CognitiveStatusResultOrganizerCognitiveStatusResultObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.75"/>
       <details key="constraints.validation.warning" value="CognitiveStatusResultOrganizerCodeCodeSystem"/>
       <details key="classCode" value="CLUSTER"/>
@@ -11113,7 +11113,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CognitiveStatusResultObservation" eSuperTypes="#//ResultObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="CognitiveStatusResultObservationTemplateId CognitiveStatusResultObservationTextReferenceValue ResultObservationClassCode ResultObservationMoodCode ResultObservationId ResultObservationCodeP ResultObservationStatusCode ResultObservationStatusCodeP ResultObservationEffectiveTime ResultObservationValue CognitiveStatusResultObservationReferenceRangeObservationRangeNoCode CognitiveStatusResultObservationReferenceRangeObservationRange"/>
+      <details key="constraints.validation.error" value="ResultObservationTemplateId CognitiveStatusResultObservationTextReferenceValue ResultObservationClassCode ResultObservationMoodCode ResultObservationId ResultObservationCodeP ResultObservationStatusCode ResultObservationStatusCodeP ResultObservationEffectiveTime ResultObservationValue CognitiveStatusResultObservationReferenceRangeObservationRangeNoCode CognitiveStatusResultObservationReferenceRangeObservationRange"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.74"/>
       <details key="constraints.validation.warning" value="CognitiveStatusResultObservationTextReference CognitiveStatusResultObservationValueDatatype ResultObservationCode ResultObservationText ResultObservationInterpretationCode CognitiveStatusResultObservationReferenceRange"/>
       <details key="classCode" value="OBS"/>
@@ -11382,7 +11382,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusProblemObservation"
       eSuperTypes="#//ProblemObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="FunctionalStatusProblemObservationTemplateId FunctionalStatusProblemObservationHasTextReferenceValue FunctionalStatusProblemObservationHasOnsetDate ProblemObservationClassCode ProblemObservationMoodCode ProblemObservationId ProblemObservationCodeP ProblemObservationStatusCode ProblemObservationValueP"/>
+      <details key="constraints.validation.error" value="ProblemObservationTemplateId FunctionalStatusProblemObservationHasTextReferenceValue FunctionalStatusProblemObservationHasOnsetDate ProblemObservationClassCode ProblemObservationMoodCode ProblemObservationId ProblemObservationCodeP ProblemObservationStatusCode ProblemObservationValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.68"/>
       <details key="constraints.validation.warning" value="FunctionalStatusProblemObservationHasTextReference FunctionalStatusProblemObservationTextReferenceValue FunctionalStatusProblemObservationHasResolutionDate ProblemObservationCode ProblemObservationText ProblemObservationEffectiveTime ProblemObservationValue"/>
       <details key="constraints.validation.info" value="FunctionalStatusProblemObservationValueNullFlavor ProblemObservationNegationInd FunctionalStatusProblemObservationMethodCode FunctionalStatusProblemObservationNonMedicinalSupplyActivity FunctionalStatusProblemObservationCaregiverCharacteristics FunctionalStatusProblemObservationAssessmentScaleObservation"/>
@@ -11623,7 +11623,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CognitiveStatusProblemObservation" eSuperTypes="#//ProblemObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="CognitiveStatusProblemObservationTemplateId CognitiveStatusProblemObservationHasTextReferenceValue CognitiveStatusProblemObservationHasOnsetDate ProblemObservationClassCode ProblemObservationMoodCode ProblemObservationId ProblemObservationCodeP ProblemObservationStatusCode ProblemObservationValueP"/>
+      <details key="constraints.validation.error" value="ProblemObservationTemplateId CognitiveStatusProblemObservationHasTextReferenceValue CognitiveStatusProblemObservationHasOnsetDate ProblemObservationClassCode ProblemObservationMoodCode ProblemObservationId ProblemObservationCodeP ProblemObservationStatusCode ProblemObservationValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.73"/>
       <details key="constraints.validation.warning" value="CognitiveStatusProblemObservationHasTextReference CognitiveStatusProblemObservationHasResolutionDate ProblemObservationCode ProblemObservationText ProblemObservationEffectiveTime ProblemObservationValue"/>
       <details key="classCode" value="OBS"/>
@@ -14998,7 +14998,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SmokingStatusObservation" eSuperTypes="#//TobaccoUse">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="SmokingStatusObservationTemplateId SmokingStatusObservationEffectiveTimeLow SmokingStatusObservationClassCode SmokingStatusObservationMoodCode SmokingStatusObservationCode SmokingStatusObservationCodeP SmokingStatusObservationEffectiveTime SmokingStatusObservationStatusCode SmokingStatusObservationStatusCodeP SmokingStatusObservationValue SmokingStatusObservationValueP"/>
+      <details key="constraints.validation.error" value="TobaccoUseTemplateId SmokingStatusObservationEffectiveTimeLow SmokingStatusObservationClassCode SmokingStatusObservationMoodCode SmokingStatusObservationCode SmokingStatusObservationCodeP SmokingStatusObservationEffectiveTime SmokingStatusObservationStatusCode SmokingStatusObservationStatusCodeP SmokingStatusObservationValue SmokingStatusObservationValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.78"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
@@ -15557,7 +15557,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ImmunizationsSection" eSuperTypes="#//ImmunizationsSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="ImmunizationsSectionTemplateId ImmunizationsSectionCode ImmunizationsSectionCodeP ImmunizationsSectionTitle ImmunizationsSectionText ImmunizationsSectionImmunization"/>
+      <details key="constraints.validation.error" value="ImmunizationsSectionEntriesOptionalTemplateId ImmunizationsSectionCode ImmunizationsSectionCodeP ImmunizationsSectionTitle ImmunizationsSectionText ImmunizationsSectionImmunization"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.2.1"/>
       <details key="code.code" value="11369-6"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
@@ -15627,7 +15627,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="VitalSignsSection" eSuperTypes="#//VitalSignsSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="VitalSignsSectionTemplateId VitalSignsSectionCode VitalSignsSectionCodeP VitalSignsSectionText VitalSignsSectionEntriesOptionalTitle VitalSignsSectionVitalSignsOrganizer"/>
+      <details key="constraints.validation.error" value="VitalSignsSectionEntriesOptionalTemplateId VitalSignsSectionCode VitalSignsSectionCodeP VitalSignsSectionText VitalSignsSectionEntriesOptionalTitle VitalSignsSectionVitalSignsOrganizer"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.4.1"/>
       <details key="code.code" value="8716-3"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
@@ -16870,7 +16870,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DischargeSummary" eSuperTypes="#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="DischargeSummaryTemplateId DischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection DischargeSummaryCode DischargeSummaryCodeP DischargeSummaryHospitalAdmissionDiagnosisSection DischargeSummaryHospitalDischargeDiagnosisSection DischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional DischargeSummaryHospitalCourseSection DischargeSummaryPlanOfCareSection DischargeSummaryComponentOf DischargeSummaryAllergiesSectionEntriesOptional DischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization DischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity DischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow DischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeP DischargeSummaryComponentOfEncompassingEncounter3EffectiveTime DischargeSummaryComponentOfEncompassingEncounter"/>
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId DischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection DischargeSummaryCode DischargeSummaryCodeP DischargeSummaryHospitalAdmissionDiagnosisSection DischargeSummaryHospitalDischargeDiagnosisSection DischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional DischargeSummaryHospitalCourseSection DischargeSummaryPlanOfCareSection DischargeSummaryComponentOf DischargeSummaryAllergiesSectionEntriesOptional DischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization DischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity DischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow DischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeP DischargeSummaryComponentOfEncompassingEncounter3EffectiveTime DischargeSummaryComponentOfEncompassingEncounter"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.8"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -18301,7 +18301,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargeMedicationsSection"
       eSuperTypes="#//HospitalDischargeMedicationsSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="HospitalDischargeMedicationsSectionTemplateId HospitalDischargeMedicationsSectionEntriesOptionalCode HospitalDischargeMedicationsSectionEntriesOptionalCodeP HospitalDischargeMedicationsSectionEntriesOptionalText HospitalDischargeMedicationsSectionEntriesOptionalTitle HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication"/>
+      <details key="constraints.validation.error" value="HospitalDischargeMedicationsSectionEntriesOptionalTemplateId HospitalDischargeMedicationsSectionEntriesOptionalCode HospitalDischargeMedicationsSectionEntriesOptionalCodeP HospitalDischargeMedicationsSectionEntriesOptionalText HospitalDischargeMedicationsSectionEntriesOptionalTitle HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.11.1"/>
       <details key="code.code" value="10183-2"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>

@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsSectionTemplateId MedicationsSectionCode MedicationsSectionTitle MedicationsSectionText MedicationsSectionMedication' templateId.root='2.16.840.1.113883.10.20.22.2.1.1' code.code='10160-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of medication use'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsSectionEntriesOptionalTemplateId MedicationsSectionCode MedicationsSectionTitle MedicationsSectionText MedicationsSectionMedication' templateId.root='2.16.840.1.113883.10.20.22.2.1.1' code.code='10160-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of medication use'"
  * @generated
  */
 public interface MedicationsSection extends MedicationsSectionEntriesOptional {

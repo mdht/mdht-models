@@ -278,12 +278,7 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"CognitiveStatusResultOrganizerResultOrganizerTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									cognitiveStatusResultOrganizer, context) }),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerTemplateId"),
 					new Object[] { cognitiveStatusResultOrganizer }));
 			}
 

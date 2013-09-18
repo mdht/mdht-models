@@ -3792,13 +3792,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"DischargeSummaryGeneralHeaderConstraintsTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dischargeSummary, context) }),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryGeneralHeaderConstraintsTemplateId"),
 					new Object[] { dischargeSummary }));
 			}
 

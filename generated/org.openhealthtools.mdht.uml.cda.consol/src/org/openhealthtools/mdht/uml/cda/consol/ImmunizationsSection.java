@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getImmunizationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationsSectionTemplateId ImmunizationsSectionCode ImmunizationsSectionCodeP ImmunizationsSectionTitle ImmunizationsSectionText ImmunizationsSectionImmunization' templateId.root='2.16.840.1.113883.10.20.22.2.2.1' code.code='11369-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ImmunizationsSectionCode='ImmunizationsSectionCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationsSectionEntriesOptionalTemplateId ImmunizationsSectionCode ImmunizationsSectionCodeP ImmunizationsSectionTitle ImmunizationsSectionText ImmunizationsSectionImmunization' templateId.root='2.16.840.1.113883.10.20.22.2.2.1' code.code='11369-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ImmunizationsSectionCode='ImmunizationsSectionCodeP'"
  * @generated
  */
 public interface ImmunizationsSection extends ImmunizationsSectionEntriesOptional {

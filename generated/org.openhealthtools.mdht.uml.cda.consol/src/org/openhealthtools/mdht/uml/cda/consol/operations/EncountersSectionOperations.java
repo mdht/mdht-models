@@ -211,14 +211,9 @@ public class EncountersSectionOperations extends EncountersSectionEntriesOptiona
 			encountersSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EncountersSectionEncountersSectionEntriesOptionalTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(encountersSection, context) }),
+					ConsolPlugin.INSTANCE.getString("EncountersSectionEncountersSectionEntriesOptionalTemplateId"),
 					new Object[] { encountersSection }));
 			}
 
