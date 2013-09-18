@@ -67,14 +67,12 @@ OR have at least one componentOf/encompassingEncounter/encounterParticipant</bod
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lD5W4PbBEeGulbiehZqi1g" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lD5W4fbBEeGulbiehZqi1g" value="1"/>
-              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_K0rTIErfEd6FXKclYGEDCw"/>
               <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_7Os41CylEeGMXrZ0DiQwGg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_SFkrwfbBEeGulbiehZqi1g" name="raceCode" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lsBG0PbBEeGulbiehZqi1g" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lsBG0fbBEeGulbiehZqi1g" value="1"/>
-              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_INfOcErfEd6FXKclYGEDCw"/>
               <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_7OuuACylEeGMXrZ0DiQwGg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_SFucsvbBEeGulbiehZqi1g" name="languageCommunication" type="__cXXsAeREeK0r-pCA5uczw" association="_SFuctPbBEeGulbiehZqi1g">
@@ -744,8 +742,7 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__5ZLgfwYEeGx4ophOjh2tw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__5ZLgvwYEeGx4ophOjh2tw" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_kh-7c-WQEeGKmvzED_He2w"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_Yz0rNOWQEeGKmvzED_He2w"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_tAOdEAJuEeKIhvHOhwsFvA" name="ResultObservation">

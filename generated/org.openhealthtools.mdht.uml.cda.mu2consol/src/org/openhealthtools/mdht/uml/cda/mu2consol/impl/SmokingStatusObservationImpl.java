@@ -49,24 +49,6 @@ public class SmokingStatusObservationImpl extends org.openhealthtools.mdht.uml.c
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMU2CONSOLSmokingStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateMU2CONSOLSmokingStatusObservationValueP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMU2CONSOLSmokingStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateMU2CONSOLSmokingStatusObservationValue(this, diagnostics, context);
-	}
-
-	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -74,6 +56,26 @@ public class SmokingStatusObservationImpl extends org.openhealthtools.mdht.uml.c
 	public boolean validateTobaccoUseTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateTobaccoUseTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSmokingStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSmokingStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationValue(this, diagnostics, context);
 	}
 
 	/**

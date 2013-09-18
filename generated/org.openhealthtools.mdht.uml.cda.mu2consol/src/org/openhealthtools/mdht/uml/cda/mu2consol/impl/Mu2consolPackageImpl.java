@@ -713,24 +713,6 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
 
         initEClass(smokingStatusObservationEClass, SmokingStatusObservation.class, "SmokingStatusObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-        op = addEOperation(smokingStatusObservationEClass, ecorePackage.getEBoolean(), "validateMU2CONSOLSmokingStatusObservationValueP", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-        op = addEOperation(smokingStatusObservationEClass, ecorePackage.getEBoolean(), "validateMU2CONSOLSmokingStatusObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         initEClass(resultsSectionEClass, ResultsSection.class, "ResultsSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
         addEOperation(resultsSectionEClass, this.getResultOrganizer(), "getMu2consolResultOrganizers", 1, -1, IS_UNIQUE, !IS_ORDERED);
@@ -1193,7 +1175,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            source, 
            new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.mu2consol"
-           });                                                                                                                                                                                                                                               
+           });                                                                                                                                                                                                                                         
     }
 
 	/**
@@ -1232,12 +1214,12 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
           (smokingStatusObservationEClass, 
            source, 
            new String[] {
-             "constraints.validation.error", "MU2CONSOLSmokingStatusObservationTemplateId MU2CONSOLSmokingStatusObservationValue MU2CONSOLSmokingStatusObservationValueP",
+             "constraints.validation.error", "MU2CONSOLSmokingStatusObservationTemplateId SmokingStatusObservationValue SmokingStatusObservationValueP",
              "templateId.root", "2.16.840.1.113883.10.20.22.4.78",
              "value.codeSystem", "2.16.840.1.113883.6.96",
              "value.codeSystemName", "SNOMEDCT",
-             "constraints.validation.dependOn.MU2CONSOLSmokingStatusObservationValue", "MU2CONSOLSmokingStatusObservationValueP"
-           });            
+             "constraints.validation.dependOn.SmokingStatusObservationValue", "SmokingStatusObservationValueP"
+           });      
         addAnnotation
           (resultsSectionEClass, 
            source, 
@@ -1372,7 +1354,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
              "constraints.validation.query", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsRecordTargetPatientRolePatient",
              "constraints.validation.dependOn.GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP",
              "constraints.validation.warning", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication"
-           });                                                                                                                                                                                                                                             
+           });                                                                                                                                                                                                                                       
     }
 
 	/**
@@ -1393,7 +1375,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
              "constraints.validation.query", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication",
              "constraints.validation.dependOn.GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP",
              "constraints.validation.warning", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication"
-           });                                                                                                                                                                                                                                            
+           });                                                                                                                                                                                                                                      
     }
 
 	/**
@@ -1418,7 +1400,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
              "constraints.validation.warning", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication",
              "constraints.validation.query", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode",
              "constraints.validation.dependOn.GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP"
-           });                                                                                                                                                                                                                                           
+           });                                                                                                                                                                                                                                     
     }
 
 	/**
@@ -1434,7 +1416,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            new String[] {
              "constraints.validation.error", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP",
              "constraints.validation.dependOn.GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP"
-           });                                                                                                                                                                                                                                          
+           });                                                                                                                                                                                                                                    
     }
 
 	/**
@@ -1459,7 +1441,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
           (smokingStatusObservationEClass, 
            source, 
            new String[] {
-           });            
+           });      
         addAnnotation
           (resultsSectionEClass, 
            source, 
