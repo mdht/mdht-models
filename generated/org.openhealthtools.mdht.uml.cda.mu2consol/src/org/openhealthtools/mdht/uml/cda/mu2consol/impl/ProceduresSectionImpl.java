@@ -35,57 +35,58 @@ public class ProceduresSectionImpl extends
 		org.openhealthtools.mdht.uml.cda.consol.impl.ProceduresSectionImpl
 		implements ProceduresSection {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	protected ProceduresSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.PROCEDURES_SECTION;
-  }
+		return Mu2consolPackage.Literals.PROCEDURES_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateMU2CONSOLProceduresSectionProcedureActivityProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProceduresSectionOperations.validateMU2CONSOLProceduresSectionProcedureActivityProcedure(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<ProcedureActivityProcedure> getMu2consolProcedureActivityProcedures() {
-    return ProceduresSectionOperations.getMu2consolProcedureActivityProcedures(this);
-  }
+		return ProceduresSectionOperations.getMu2consolProcedureActivityProcedures(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateProceduresSectionEntriesOptionalTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(this, diagnostics, context);
-  }
+		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProceduresSectionProcedureActivityProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityProcedure(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public ProceduresSection init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
