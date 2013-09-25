@@ -202,7 +202,8 @@
     <ownedEnd xmi:id="_6DavkxU6EeGbmN_W114JUw" type="_2LayQBSVEeGGzu7fmW9pXw" association="_6DavkhU6EeGbmN_W114JUw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_2LayXhSVEeGGzu7fmW9pXw" base_Class="_2LayQBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.49" assigningAuthorityName="HL7">
-    <ruleId>CONF:10494</ruleId>
+    <ruleId>CONF:8712</ruleId>
+    <ruleId>CONF:26353</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2Ld1kBSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_2LecoBSVEeGGzu7fmW9pXw" severity="INFO"/>
