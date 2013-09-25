@@ -325,6 +325,9 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
           <ownedComment xmi:id="_S4C08GAoEeGt2doqSDULjA">
             <body>INLINE</body>
           </ownedComment>
+          <ownedComment xmi:id="_L4Wv0CItEeOR8Z0wSpxaPA">
+            <body>If the covered party's name is recorded differently in the health plan and in the registration/medication summary (due to marriage or for other reasons), use the name as it is recorded in the health plan.</body>
+          </ownedComment>
           <ownedRule xmi:id="_nmyn4OWeEeGKmvzED_He2w" name="DateOfBirthInSDTCbirthTime" constrainedElement="_NHNUMGAnEeGt2doqSDULjA">
             <ownedComment xmi:id="__PsY4KebEeKfDZf5OW35UQ">
               <body>UNIMPLEMENTABLE</body>
@@ -338,9 +341,6 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
             <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
           </generalization>
           <ownedAttribute xmi:id="_ctWtMGAoEeGt2doqSDULjA" name="name">
-            <ownedComment xmi:id="_RKsOQOWeEeGKmvzED_He2w">
-              <body>a.	If the member name as recorded by the health plan differs from the patient name as recorded in the registration/medication summary (e.g., due to marriage or for other reasons), then the member name SHALL be recorded in the name element (CONF:8931)</body>
-            </ownedComment>
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
           </ownedAttribute>
         </nestedClassifier>

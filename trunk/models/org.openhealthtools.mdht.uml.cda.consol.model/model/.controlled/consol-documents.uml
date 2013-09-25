@@ -762,8 +762,8 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
             <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_nNMFUEcEEd6besF9iFIJkQ"/>
           </generalization>
           <ownedAttribute xmi:id="_2zRkcCynEeGMXrZ0DiQwGg" name="addr" visibility="private" type="_i4zXgPIPEeGu1M-cCXg0Dg" aggregation="composite">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DjkOgDVYEeGIw7CntkyPQw" value="*"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DjkOgTVYEeGIw7CntkyPQw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MB0RMBsDEeOe7tk-MwWfZQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MB04QBsDEeOe7tk-MwWfZQ" value="1"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_2ikp8EowEd6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_2zSLgCynEeGMXrZ0DiQwGg" name="id" visibility="private" aggregation="composite">
