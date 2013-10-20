@@ -11,6 +11,7 @@
 <section id="knownSubclasses">
 </section>
 <section id="description">
+<p><lines><i>Procedure performed by EMS unit</i></lines></p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.98"</li></ol></li>
@@ -36,7 +37,7 @@ If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</i></lin
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt> (CONF:10499)<tt><b>/@code</b>="Aborted" </tt><i>Aborted</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:10500)
 <ul><li><p><lines><i>NEMSIS Trace: EArrest.15</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> (CONF:10502), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/IVSite.dita">IVSite</xref> 2.16.840.1.113883.17.3.11.56</tt><b> STATIC</b> (CONF:10501)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> (CONF:10502), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/IVSite.dita">IVSite</xref> 2.16.840.1.113883.17.3.11.56</tt><b> STATIC</b> (CONF:10501)
 <ul><li><p><lines><i>NEMSIS Trace: EProcedures.13
 Required conditionally if procedure code is intravenous catheterization (E303)</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10503) <ol><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedurePriorIndicator.dita">Procedure Prior Indicator</xref> (CONF:10515)<ol>
@@ -54,7 +55,7 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10507) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedurePatientResponseObservation.dita">Procedure Patient Response Observation</xref> (CONF:10531)<ol>
 <li>Contains exactly one [1..1] <xref href="../ProcedurePatientResponseObservation.dita">Procedure Patient Response Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.135</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>performer</b></tt> (CONF:10508) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:10536) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10537), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderRole.dita">ProviderRole</xref> 2.16.840.1.113883.17.3.11.46</tt><b> STATIC</b> (CONF:10538)<p><lines><i>NEMSIS Trace: EProcedures.10</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:10539)<p><lines><i>NEMSIS Trace: EProcedures.09, ID equal to the EMS professional's agency ID number</i></lines></p></li></ol> </li></ol>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>performer</b></tt> (CONF:10508) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:10536) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10537), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderRole.dita">ProviderRole</xref> 2.16.840.1.113883.17.3.11.46</tt><b> STATIC</b> (CONF:10538)<p><lines><i>NEMSIS Trace: EProcedures.10</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:10539)<p><lines><i>NEMSIS Trace: EProcedures.09, ID equal to the EMS professional's agency ID number</i></lines></p></li></ol> </li></ol>
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10509) <p><lines><i>NEMSIS Trace: EAirway.04; required if procedure code is airway placement, i.e., 0CHY7BZ</i></lines></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../AirwayConfirmationObservation.dita">Airway Confirmation Observation</xref> (CONF:10540)<ol>
 <li>Contains exactly one [1..1] <xref href="../AirwayConfirmationObservation.dita">Airway Confirmation Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.175</tt>)</li></ol></li></ol>
@@ -67,7 +68,7 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProcedureActivityProcedure.html">Consol Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PROC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7652)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MoodCodeEvnInt.dita">MoodCodeEvnInt</xref> 2.16.840.1.113883.11.20.9.18</tt><b> STATIC</b> 2011-04-03 (CONF:7653)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MoodCodeEvnInt.dita">MoodCodeEvnInt</xref> 2.16.840.1.113883.11.20.9.18</tt><b> STATIC</b> 2011-04-03 (CONF:7653)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt>
 <ul><li><p><lines><i>Required to document a procedure not performed, with required "reason not performed" observation</i></lines></p></li></ul></li>
@@ -89,14 +90,14 @@ and EArrest.03:
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10497)
 <ul><li><p><lines><i>NEMSIS Trace: EProcedures.01 goes in effectiveTime.low
 If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>priorityCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ActPriority.dita">ActPriority</xref> 2.16.840.1.113883.1.11.16866</tt><b> STATIC</b> (CONF:7668)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>priorityCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ActPriority.dita">ActPriority</xref> 2.16.840.1.113883.1.11.16866</tt><b> STATIC</b> (CONF:7668)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF:7670)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> (CONF:10502), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/IVSite.dita">IVSite</xref> 2.16.840.1.113883.17.3.11.56</tt><b> STATIC</b> (CONF:10501)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> (CONF:10502), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/IVSite.dita">IVSite</xref> 2.16.840.1.113883.17.3.11.56</tt><b> STATIC</b> (CONF:10501)
 <ul><li><p><lines><i>NEMSIS Trace: EProcedures.13
 Required conditionally if procedure code is intravenous catheterization (E303)</i></lines></p></li></ul></li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (CONF:7683), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BodySiteValueSet.dita">Body Site Value Set</xref> 2.16.840.1.113883.3.88.12.3221.8.9</tt><b> STATIC</b> 2 (CONF:10122)
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (CONF:7683), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BodySiteValueSet.dita">Body Site Value Set</xref> 2.16.840.1.113883.3.88.12.3221.8.9</tt><b> STATIC</b> 2 (CONF:10122)
 </li>
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>specimen</b></tt> (CONF:7697)
 <ol>
@@ -144,7 +145,7 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10507) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedurePatientResponseObservation.dita">Procedure Patient Response Observation</xref> (CONF:10531)<ol>
 <li>Contains exactly one [1..1] <xref href="../ProcedurePatientResponseObservation.dita">Procedure Patient Response Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.135</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>performer</b></tt> (CONF:10508) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:10536) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10537), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderRole.dita">ProviderRole</xref> 2.16.840.1.113883.17.3.11.46</tt><b> STATIC</b> (CONF:10538)<p><lines><i>NEMSIS Trace: EProcedures.10</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:10539)<p><lines><i>NEMSIS Trace: EProcedures.09, ID equal to the EMS professional's agency ID number</i></lines></p></li></ol> </li></ol>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>performer</b></tt> (CONF:10508) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:10536) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10537), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderRole.dita">ProviderRole</xref> 2.16.840.1.113883.17.3.11.46</tt><b> STATIC</b> (CONF:10538)<p><lines><i>NEMSIS Trace: EProcedures.10</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:10539)<p><lines><i>NEMSIS Trace: EProcedures.09, ID equal to the EMS professional's agency ID number</i></lines></p></li></ol> </li></ol>
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10509) <p><lines><i>NEMSIS Trace: EAirway.04; required if procedure code is airway placement, i.e., 0CHY7BZ</i></lines></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../AirwayConfirmationObservation.dita">Airway Confirmation Observation</xref> (CONF:10540)<ol>
 <li>Contains exactly one [1..1] <xref href="../AirwayConfirmationObservation.dita">Airway Confirmation Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.175</tt>)</li></ol></li></ol>

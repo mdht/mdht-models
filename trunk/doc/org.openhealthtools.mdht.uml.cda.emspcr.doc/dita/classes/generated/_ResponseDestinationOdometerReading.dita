@@ -11,12 +11,13 @@
 <section id="knownSubclasses">
 </section>
 <section id="description">
+<p><lines><i>Odometer reading for the EMS vehicle at patient destination</i></lines></p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.173"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10639)<tt><b>/@code</b>="67486-1" </tt><i>EMS Response odometer destination reading</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10640)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10639)<tt><b>/@code</b>="67486-1" </tt><i>Counter or odometer reading NEMSIS --patient destination</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10640)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:10641)
 <ul><li><p><lines><i>NEMSIS Trace: EResponse.21
@@ -27,7 +28,7 @@ UCUM units SHOULD be "[mi_i]"</i></lines></p></li></ul></li>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10639)<tt><b>/@code</b>="67486-1" </tt><i>EMS Response odometer destination reading</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10640)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10639)<tt><b>/@code</b>="67486-1" </tt><i>Counter or odometer reading NEMSIS --patient destination</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10640)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:10641)
 <ul><li><p><lines><i>NEMSIS Trace: EResponse.21

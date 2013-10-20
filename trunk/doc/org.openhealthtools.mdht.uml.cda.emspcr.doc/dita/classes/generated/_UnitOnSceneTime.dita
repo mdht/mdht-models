@@ -11,12 +11,13 @@
 <section id="knownSubclasses">
 </section>
 <section id="description">
+<p><lines><i>Time the unit arrived at the incident scene</i></lines></p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.41"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10847)<tt><b>/@code</b>="69473-7" </tt><i>Unit on scene time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10846)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10847)<tt><b>/@code</b>="69473-7" </tt><i>Responding unit arrived on the scene [Date and time] Vehicle NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10846)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10848)
 <ul><li><p><lines><i>NEMSIS Trace: ETimes.06</i></lines></p></li></ul></li>
@@ -26,7 +27,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10847)<tt><b>/@code</b>="69473-7" </tt><i>Unit on scene time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10846)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10847)<tt><b>/@code</b>="69473-7" </tt><i>Responding unit arrived on the scene [Date and time] Vehicle NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10846)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10848)
 <ul><li><p><lines><i>NEMSIS Trace: ETimes.06</i></lines></p></li></ul></li>

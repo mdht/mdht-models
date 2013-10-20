@@ -11,16 +11,17 @@
 <section id="knownSubclasses">
 </section>
 <section id="description">
+<p><lines><i>Qualitative assessment of condition of patient's back and spine</i></lines></p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.119"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10394)<tt><b>/@code</b>="67532-2" </tt><i>Back and spine assessment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10393)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10394)<tt><b>/@code</b>="67532-2" </tt><i>Physical findings of Back+Spine NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10393)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10396), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineFindingLocation.dita">BackSpineFindingLocation</xref> 2.16.840.1.113883.17.3.11.35</tt><b> STATIC</b> (CONF:10395)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10396), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineFindingLocation.dita">BackSpineFindingLocation</xref> 2.16.840.1.113883.17.3.11.35</tt><b> STATIC</b> (CONF:10395)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.13</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10397), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineAssessmentFinding.dita">BackSpineAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.34</tt><b> STATIC</b> (CONF:10398)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10397), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineAssessmentFinding.dita">BackSpineAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.34</tt><b> STATIC</b> (CONF:10398)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.14</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
 <ul><li><p><lines><i>NEMSIS Trace: EExam.03</i></lines></p></li></ul></li>
@@ -30,13 +31,13 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10394)<tt><b>/@code</b>="67532-2" </tt><i>Back and spine assessment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10393)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10394)<tt><b>/@code</b>="67532-2" </tt><i>Physical findings of Back+Spine NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10393)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
 <ul><li><p><lines><i>NEMSIS Trace: EExam.03</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10397), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineAssessmentFinding.dita">BackSpineAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.34</tt><b> STATIC</b> (CONF:10398)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10397), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineAssessmentFinding.dita">BackSpineAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.34</tt><b> STATIC</b> (CONF:10398)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.14</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10396), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineFindingLocation.dita">BackSpineFindingLocation</xref> 2.16.840.1.113883.17.3.11.35</tt><b> STATIC</b> (CONF:10395)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10396), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineFindingLocation.dita">BackSpineFindingLocation</xref> 2.16.840.1.113883.17.3.11.35</tt><b> STATIC</b> (CONF:10395)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.13</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
