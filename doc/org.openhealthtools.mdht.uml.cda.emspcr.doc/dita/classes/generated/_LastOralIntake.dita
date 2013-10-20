@@ -11,12 +11,13 @@
 <section id="knownSubclasses">
 </section>
 <section id="description">
+<p><lines><i>Time of patient's last oral intake</i></lines></p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.80"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10423)<tt><b>/@code</b>="67517-3" </tt><i>Last oral intake</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10424)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10423)<tt><b>/@code</b>="67517-3" </tt><i>Last oral intake [Date and time] NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10424)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10425)
 <ul><li><p><lines><i>NEMSIS Trace: EHistory.19</i></lines></p></li></ul></li>
@@ -26,7 +27,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10423)<tt><b>/@code</b>="67517-3" </tt><i>Last oral intake</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10424)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10423)<tt><b>/@code</b>="67517-3" </tt><i>Last oral intake [Date and time] NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10424)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10425)
 <ul><li><p><lines><i>NEMSIS Trace: EHistory.19</i></lines></p></li></ul></li>
