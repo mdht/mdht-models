@@ -14,7 +14,7 @@
       <ownedComment xmi:id="__X_AELu4EeGkEvM80TFRNQ">
         <body>The document definition captures the information represented on the US Facility Worksheet for the Live Birth Certificate, which is used to record and register the birth of a child.  In the United States, registration of vital events is the responsibility of 57 vital records jurisdictions representing 50 states, 5 territories, Washington, DC and New York City.  Vital statistics are reported to the National Center for Health Statistics, a Center within the Centers for Disease Control and Prevention (CDC).  The experience of state and federal vital records officials has been drawn on for the contents of the document.&#xD;
 &#xD;
-A custom header has been used - as compared to the Consolidated US Realm header - because of the substantial differences in the underlying use case.  For vital records purposes, basic identification only of the record target is provided.  We expect that the more detailed demographics information required for Consolidated CDA will not be included within the facilities work sheet which provides the data content of this stream of reporting.</body>
+A custom header has been used - as compared to the Consolidated US Realm header - because of the substantial differences in the underlying use case.  For vital records purposes, basic identification only of the record target is provided.  However, the more detailed demographics information required for Consolidated CDA is not included within the facilities work sheet which provides the data content of this stream of reporting.</body>
       </ownedComment>
       <generalization xmi:id="_euFT47SgEeGhbsXY607ygg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
@@ -126,17 +126,17 @@ information.  Within the II data type, use the root to record the identifying OI
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c_BDkNA3EeGEz9ISu-MpwA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c_BDkdA3EeGEz9ISu-MpwA" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_ff2BkNA3EeGEz9ISu-MpwA" name="history of Infection" type="_eR3SsNAPEeGEP4RKA70UUQ" association="_ff2BktA3EeGEz9ISu-MpwA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hwJ3UNA3EeGEz9ISu-MpwA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hwJ3UdA3EeGEz9ISu-MpwA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_o_ImgNA3EeGEz9ISu-MpwA" name="newborn Delivery Section" type="_-EnHILvNEeGkEvM80TFRNQ" association="_o_ImgtA3EeGEz9ISu-MpwA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rd350NA3EeGEz9ISu-MpwA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rd350dA3EeGEz9ISu-MpwA" value="1"/>
+      <ownedAttribute xmi:id="_P7OoQB8gEeOZzJzWV51ZDg" name="history of Infection - Live Birth Section" type="_eR3SsNAPEeGEP4RKA70UUQ" association="_P7OoQh8gEeOZzJzWV51ZDg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sf6ykB8gEeOZzJzWV51ZDg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Sf6ykR8gEeOZzJzWV51ZDg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_g8EG8NBCEeGEz9ISu-MpwA" name="labor and Delivery Section" type="_1aHcMLvNEeGkEvM80TFRNQ" association="_g8EG8tBCEeGEz9ISu-MpwA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iYclYNBCEeGEz9ISu-MpwA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iYclYdBCEeGEz9ISu-MpwA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_o_ImgNA3EeGEz9ISu-MpwA" name="newborn Delivery Section" type="_-EnHILvNEeGkEvM80TFRNQ" association="_o_ImgtA3EeGEz9ISu-MpwA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rd350NA3EeGEz9ISu-MpwA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rd350dA3EeGEz9ISu-MpwA" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_-kZI4LTGEeGhbsXY607ygg" name="Author">
         <generalization xmi:id="_-kZv8LTGEeGhbsXY607ygg">
@@ -161,7 +161,7 @@ information.  Within the II data type, use the root to record the identifying OI
           </generalization>
           <ownedAttribute xmi:id="_KyNJkLTHEeGhbsXY607ygg" name="id" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_852UQLu5EeGkEvM80TFRNQ">
-              <body>An identifier for the author of the live birth report.  Normally this is the certifying clinician.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</body>
+              <body>An identifier for the author of the live birth report.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7hhBcGQEEeK7gOt5N4Q1gA" value="1"/>
@@ -344,7 +344,7 @@ steward that is entrusted with the care of the document. Every CDA document has 
     <packagedElement xmi:type="uml:Association" xmi:id="_AOvK07THEeGhbsXY607ygg" memberEnd="_AOvK0LTHEeGhbsXY607ygg _AOvK1LTHEeGhbsXY607ygg">
       <ownedEnd xmi:id="_AOvK1LTHEeGhbsXY607ygg" type="_-kZI4LTGEeGhbsXY607ygg" association="_AOvK07THEeGhbsXY607ygg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_LAdH8LvNEeGkEvM80TFRNQ" name="Antenatal Testing and Surveillance Section">
+    <packagedElement xmi:type="uml:Class" xmi:id="_LAdH8LvNEeGkEvM80TFRNQ" name="Prenatal Testing and Surveillance Section">
       <ownedComment xmi:id="_cNIDsLybEeGUNfs_q_VvNQ">
         <body>The section contains information on the prenatal care provided to the mother.   The content is drawn from prenatal care records, mother's medical records, labor and delivery records.  Information recorded for live births differs slightly from that recorded for a fetal death report.</body>
       </ownedComment>
@@ -371,7 +371,7 @@ steward that is entrusted with the care of the document. Every CDA document has 
       </ownedAttribute>
       <ownedAttribute xmi:id="_WJkxcLvNEeGkEvM80TFRNQ" name="code" visibility="private" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_OHQGUMCaEeGP5fduNvI1Qw">
-          <body>A code value that indicates the nature of the section - it captures prenatal care information in the case of a live birth and fetal death.</body>
+          <body>A code value that indicates the nature of the section - it captures prenatal care information in the case of a live birth or of a fetal death.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jdPRwNdqEeG1-9tkL5HU3Q" value="1"/>
@@ -518,7 +518,7 @@ steward that is entrusted with the care of the document. Every CDA document has 
       </ownedAttribute>
       <ownedAttribute xmi:id="_rah0IMCPEeGP5fduNvI1Qw" name="congenital Anomalies" type="_U6FdQL7zEeGdruZFgBKbQw" association="_rah0IsCPEeGP5fduNvI1Qw">
         <ownedComment xmi:id="_H76uAFqAEeKUiPQlmqLrLg">
-          <body>Note, multiple congenital anomaly entries may be included.  Each entry records a single anomaly.</body>
+          <body>There may be multiple congenital anomalies recorded.  At least one observation will be present in the case that none are present.</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t_0bYMCPEeGP5fduNvI1Qw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t_0bYcCPEeGP5fduNvI1Qw" value="1"/>
@@ -537,6 +537,10 @@ steward that is entrusted with the care of the document. Every CDA document has 
       <ownedAttribute xmi:id="_2ZwqUNAQEeGEP4RKA70UUQ" name="newborn's Vital Signs Section" type="_BOedQM9lEeGEP4RKA70UUQ" association="_2ZwqUtAQEeGEP4RKA70UUQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-6X3oAncEeOSQLMpSugQSQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-6X3oQncEeOSQLMpSugQSQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TmAPoB_KEeOYe8LVX7HMMw" name="assessments Section" type="_oJ-owM-KEeGEP4RKA70UUQ" association="_TmAPoh_KEeOYe8LVX7HMMw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZZM9UB_KEeOYe8LVX7HMMw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZZM9UR_KEeOYe8LVX7HMMw" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_Gnc1cLvPEeGkEvM80TFRNQ" name="NewbornSubject">
         <ownedComment xmi:id="_fuO7QNDZEeGkfNsCTn2p_w">
@@ -635,7 +639,7 @@ steward that is entrusted with the care of the document. Every CDA document has 
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_D3ZlILvOEeGkEvM80TFRNQ" name="Fetal Delivery Section">
       <ownedComment xmi:id="_EPvBALycEeGUNfs_q_VvNQ">
-        <body>The section contains information on the delivered fetus.  Note, if there is a multiple delivery, there will be a separate report for each delivered fetus.  The content of the section is drawn from labor and delivery records, patient's medical records.  &#xD;
+        <body>The section contains information on the delivered fetus.  Note, if there is a multiple delivery, there will be a separate report for each delivered fetus.  The content of the section is drawn from labor and delivery records and from the patient's medical record.  &#xD;
 &#xD;
 The reader should note that the subject of this section - the delivered fetus - is different from the overall subject of the clinical document - which is the mother.</body>
       </ownedComment>
@@ -697,6 +701,9 @@ The reader should note that the subject of this section - the delivered fetus - 
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YTS-UddpEeG1-9tkL5HU3Q" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ukOyMFptEeKUiPQlmqLrLg" name="congenital Anomalies" type="_U6FdQL7zEeGdruZFgBKbQw" association="_uki7QFptEeKUiPQlmqLrLg">
+        <ownedComment xmi:id="_i4ETcDA8EeOuyI8soaYkCA">
+          <body>There may be multiple congenital anomalies recorded.  At least one observation will be present in the case that none are present.</body>
+        </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xQXoUFptEeKUiPQlmqLrLg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xQXoUVptEeKUiPQlmqLrLg" value="1"/>
       </ownedAttribute>
@@ -766,7 +773,7 @@ The reader should note that the subject of this section - the delivered fetus - 
             </ownedAttribute>
             <ownedAttribute xmi:id="_jHcvpRAMEeO6h_Vgn8UHWQ" name="name" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_jHcvphAMEeO6h_Vgn8UHWQ">
-                <body>The name provided for the newborn.</body>
+                <body>A name provided for the fetus.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oxuVQBANEeO6h_Vgn8UHWQ" value="1"/>
@@ -818,13 +825,6 @@ The reader should note that the subject of this section - the delivered fetus - 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XGXL8LygEeGUNfs_q_VvNQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGXzALygEeGUNfs_q_VvNQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_pxiLgFqqEeKUiPQlmqLrLg" name="certifierParticipation" type="_WnqXoFqqEeKUiPQlmqLrLg" association="_pxiykVqqEeKUiPQlmqLrLg">
-        <ownedComment xmi:id="_vOT9QFqqEeKUiPQlmqLrLg">
-          <body>Information on the person certifying the birth.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sEynkFqqEeKUiPQlmqLrLg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sE3gEFqqEeKUiPQlmqLrLg" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_EHD4oNfkEeGuJ5Zg5SOl-Q" name="participatingLocation" type="_mOhv4LvaEeGkEvM80TFRNQ" association="_EHEfsNfkEeGuJ5Zg5SOl-Q">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ftyl4NfkEeGuJ5Zg5SOl-Q" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FtzM8NfkEeGuJ5Zg5SOl-Q" value="1"/>
@@ -851,6 +851,9 @@ The reader should note that the subject of this section - the delivered fetus - 
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uI_1cVpyEeKUiPQlmqLrLg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_5pW6QFpyEeKUiPQlmqLrLg" name="risk Factors" type="_30MFIL7yEeGdruZFgBKbQw" association="_5pXhUVpyEeKUiPQlmqLrLg">
+        <ownedComment xmi:id="_NeUqgDBDEeOuyI8soaYkCA">
+          <body>There may be multiple risk factors recorded.  At least one observation will be present in the case that none of cited risk factors are present.</body>
+        </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7ff8gFpyEeKUiPQlmqLrLg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7fgjkFpyEeKUiPQlmqLrLg" value="1"/>
       </ownedAttribute>
@@ -896,17 +899,17 @@ The reader should note that the subject of this section - the delivered fetus - 
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zz5CoLxzEeGUNfs_q_VvNQ" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zz5CobxzEeGUNfs_q_VvNQ"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_cT8aB7xyEeGUNfs_q_VvNQ" name="assignedPerson" visibility="private" type="_q4M-wLygEeGUNfs_q_VvNQ" aggregation="composite" association="_cT8aCrxyEeGUNfs_q_VvNQ">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h5epsLxzEeGUNfs_q_VvNQ" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h5epsbxzEeGUNfs_q_VvNQ" value="1"/>
-          </ownedAttribute>
           <ownedAttribute xmi:id="_pAkoMLxzEeGUNfs_q_VvNQ" name="code" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_3-q_MLxzEeGUNfs_q_VvNQ">
-              <body>An indication of the professional qualification of the birth attendant.  Their title.  If the code - OTHER - is chosen, the original text property is used to record a text value.</body>
+              <body>An indication of the professional qualification of the birth attendant.  Their title.  If the code - 394841004 (other category) - is chosen, the original text property is used to record a text value.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sK52MLxzEeGUNfs_q_VvNQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sK52MbxzEeGUNfs_q_VvNQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_MqzgcDgmEeOMp6Ft_mQoHw" name="attendant" type="_eAs2wLxyEeGUNfs_q_VvNQ" association="_MrD_IDgmEeOMp6Ft_mQoHw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OOPCEDgmEeOMp6Ft_mQoHw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OOPCETgmEeOMp6Ft_mQoHw" value="1"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_eAs2wLxyEeGUNfs_q_VvNQ" name="Attendant">
             <generalization xmi:id="_eAs2wbxyEeGUNfs_q_VvNQ">
@@ -938,9 +941,6 @@ The reader should note that the subject of this section - the delivered fetus - 
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_epTu6bxyEeGUNfs_q_VvNQ" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_epTu6rxyEeGUNfs_q_VvNQ" value="1"/>
             </ownedAttribute>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_q4M-wLygEeGUNfs_q_VvNQ" name="Certifier">
-            <generalization xmi:id="_q4M-wbygEeGUNfs_q_VvNQ" general="_eAs2wLxyEeGUNfs_q_VvNQ"/>
           </nestedClassifier>
         </nestedClassifier>
       </nestedClassifier>
@@ -1076,83 +1076,6 @@ If the birth occurred in international air space or waters, enter &quot;plane&qu
           </nestedClassifier>
         </nestedClassifier>
       </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_WnqXoFqqEeKUiPQlmqLrLg" name="certifierParticipation">
-        <generalization xmi:id="_YTJCAFqqEeKUiPQlmqLrLg">
-          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
-        </generalization>
-        <ownedAttribute xmi:id="_nkP0kFqqEeKUiPQlmqLrLg" name="certifierRole" type="_mmaZcLygEeGUNfs_q_VvNQ" association="_nkQboVqqEeKUiPQlmqLrLg">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6nxv4FqqEeKUiPQlmqLrLg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6n6SwFqqEeKUiPQlmqLrLg" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_xjjUgBlTEeOO3qDQPTfvZw" name="time" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0rLMwBlTEeOO3qDQPTfvZw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0rLMwRlTEeOO3qDQPTfvZw" value="1"/>
-          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vWA0AErdEd6FXKclYGEDCw"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_8HEWkBlTEeOO3qDQPTfvZw" name="typeCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
-          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_BU9XwBlUEeOO3qDQPTfvZw" value="RESP"/>
-        </ownedAttribute>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_mmaZcLygEeGUNfs_q_VvNQ" name="certifierRole">
-          <generalization xmi:id="_mmaZcbygEeGUNfs_q_VvNQ">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
-          </generalization>
-          <ownedAttribute xmi:id="_JxkFwBlWEeOO3qDQPTfvZw" name="classCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JxkFwRlWEeOO3qDQPTfvZw" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JxkFwhlWEeOO3qDQPTfvZw"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_OFIzwBlWEeOO3qDQPTfvZw" value="ASSIGNED"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_pBZZ8FqoEeKUiPQlmqLrLg" name="code" visibility="private" aggregation="composite">
-            <ownedComment xmi:id="_AuF4wFqpEeKUiPQlmqLrLg">
-              <body>An indication of the professional qualification of the certifier.  Their title.  If the code - OTHER - is chosen, the original text property is used to record a text value.</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pBZZ8VqoEeKUiPQlmqLrLg" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pBZZ8lqoEeKUiPQlmqLrLg" value="1"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_MtfrYEreEd6FXKclYGEDCw"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_pBdEUFqoEeKUiPQlmqLrLg" name="playingEntity" visibility="private" type="_dKbWgFqpEeKUiPQlmqLrLg" aggregation="composite" association="_pBdrYFqoEeKUiPQlmqLrLg">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pBdEUVqoEeKUiPQlmqLrLg" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pBdEUlqoEeKUiPQlmqLrLg" value="1"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1ZUk4UoaEd6c3qsAxlFHaQ"/>
-          </ownedAttribute>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_dKbWgFqpEeKUiPQlmqLrLg" name="Certifier">
-            <generalization xmi:id="_dKb9kFqpEeKUiPQlmqLrLg">
-              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
-            </generalization>
-            <ownedAttribute xmi:id="_eFf3oFqpEeKUiPQlmqLrLg" name="classCode" visibility="private" isReadOnly="true">
-              <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eFf3oVqpEeKUiPQlmqLrLg" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eFf3olqpEeKUiPQlmqLrLg" value="1"/>
-              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_SxK9sErhEd6FXKclYGEDCw"/>
-              <defaultValue xmi:type="uml:LiteralString" xmi:id="_c7RhkBlWEeOO3qDQPTfvZw" value="PSN"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_eFgesFqpEeKUiPQlmqLrLg" name="determinerCode" visibility="private" isReadOnly="true">
-              <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoOBUDcEd6xYZuu1VKCVw"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eFgesVqpEeKUiPQlmqLrLg" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eFgeslqpEeKUiPQlmqLrLg" value="1"/>
-              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WSxcMErhEd6FXKclYGEDCw"/>
-              <defaultValue xmi:type="uml:InstanceValue" xmi:id="_eFges1qpEeKUiPQlmqLrLg" name="INSTANCE">
-                <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoOBUDcEd6xYZuu1VKCVw"/>
-                <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoOBkDcEd6xYZuu1VKCVw"/>
-              </defaultValue>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_eFgetVqpEeKUiPQlmqLrLg" name="name" visibility="private" aggregation="composite">
-              <ownedComment xmi:id="_hRvxMFqpEeKUiPQlmqLrLg">
-                <body>The name of the certifying person.</body>
-              </ownedComment>
-              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eFgetlqpEeKUiPQlmqLrLg" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eFget1qpEeKUiPQlmqLrLg" value="1"/>
-              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_OQPJIErhEd6FXKclYGEDCw"/>
-            </ownedAttribute>
-          </nestedClassifier>
-        </nestedClassifier>
-      </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ZJuc0rvaEeGkEvM80TFRNQ" memberEnd="_ZJuc0LvaEeGkEvM80TFRNQ _ZJuc07vaEeGkEvM80TFRNQ">
       <ownedEnd xmi:id="_ZJuc07vaEeGkEvM80TFRNQ" type="_1aHcMLvNEeGkEvM80TFRNQ" association="_ZJuc0rvaEeGkEvM80TFRNQ"/>
@@ -1165,9 +1088,6 @@ If the birth occurred in international air space or waters, enter &quot;plane&qu
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ShwHN7xyEeGUNfs_q_VvNQ" memberEnd="_ShwHNLxyEeGUNfs_q_VvNQ _ShwHOLxyEeGUNfs_q_VvNQ">
       <ownedEnd xmi:id="_ShwHOLxyEeGUNfs_q_VvNQ" type="_Q-Oe8LxyEeGUNfs_q_VvNQ" association="_ShwHN7xyEeGUNfs_q_VvNQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_cT8aCrxyEeGUNfs_q_VvNQ" memberEnd="_cT8aB7xyEeGUNfs_q_VvNQ _cT8aC7xyEeGUNfs_q_VvNQ">
-      <ownedEnd xmi:id="_cT8aC7xyEeGUNfs_q_VvNQ" type="_U0SxkLxyEeGUNfs_q_VvNQ" association="_cT8aCrxyEeGUNfs_q_VvNQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Gv_B8Lx1EeGUNfs_q_VvNQ" memberEnd="_Gv-a5Lx1EeGUNfs_q_VvNQ _Gv_pALx1EeGUNfs_q_VvNQ">
       <ownedEnd xmi:id="_Gv_pALx1EeGUNfs_q_VvNQ" type="_FW6WMLx1EeGUNfs_q_VvNQ" association="_Gv_B8Lx1EeGUNfs_q_VvNQ"/>
@@ -1198,7 +1118,7 @@ fetal death, and three areas have no formal definition of fetal death. (State De
 Live Births, Fetal Deaths, and INduced Terminations of Pregnancy 1997 Revision, US Department of Health and Human&#xD;
 Services, Centers for Disease Control and Prevention, National Center for Health Statistics)&#xD;
 &#xD;
-A custom header has been used - as compared to the Consolidated US Realm header - because of the substantial differences in the underlying use case.  For vital records purposes, basic identification only of the record target is provided.  We expect that the more detailed demographics information required for Consolidated CDA will not be included within the facilities work sheet which provides the data content of this stream of reporting.</body>
+A custom header has been used - as compared to the Consolidated US Realm header - because of the substantial differences in the underlying use case.  For vital records purposes, basic identification only of the record target is provided.  However, the more detailed demographics information required for Consolidated CDA is not included within the facilities work sheet which provides the data content of this stream of reporting.</body>
       </ownedComment>
       <generalization xmi:id="_GbJsgryYEeGUNfs_q_VvNQ">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
@@ -1256,7 +1176,7 @@ information.  Within the II data type, use the root to record the identifying OI
       </ownedAttribute>
       <ownedAttribute xmi:id="_GbJsiLyYEeGUNfs_q_VvNQ" name="code" visibility="private" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_GbJsibyYEeGUNfs_q_VvNQ">
-          <body>The value provided indicates that the document is a live birth report.</body>
+          <body>The value provided indicates that the document is a report of fetal death.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GbJsiryYEeGUNfs_q_VvNQ" value="1"/>
@@ -1295,12 +1215,27 @@ information.  Within the II data type, use the root to record the identifying OI
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6TySEVtIEeKuluv3od9aUg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_dCa-4LyZEeGUNfs_q_VvNQ" name="author" type="_GbJsrryYEeGUNfs_q_VvNQ" association="_dCbl8byZEeGUNfs_q_VvNQ">
+        <ownedComment xmi:id="_MJsCkB8bEeObkflEmglQXA">
+          <body>The author participation contains information about the person who authored the document.  This is the person who verifies/approves the accuracy of the data to be sent to the vital records system.</body>
+        </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eaEHQLyZEeGUNfs_q_VvNQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eaEuULyZEeGUNfs_q_VvNQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_gdohgLyZEeGUNfs_q_VvNQ" name="custodian" type="_GbJs6LyYEeGUNfs_q_VvNQ" association="_gdpIkbyZEeGUNfs_q_VvNQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lL3LMLyZEeGUNfs_q_VvNQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lL3yQLyZEeGUNfs_q_VvNQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_lqTfENA_EeGEz9ISu-MpwA" name="antenatal Testing and Surveillance" type="_LAdH8LvNEeGkEvM80TFRNQ" association="_lqTfEtA_EeGEz9ISu-MpwA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__ogyQB8gEeOZzJzWV51ZDg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__ogyQR8gEeOZzJzWV51ZDg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_nOICQNA_EeGEz9ISu-MpwA" name="pregnancy History" type="_9bzboNAOEeGEP4RKA70UUQ" association="_nOICQtA_EeGEz9ISu-MpwA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_APyNoB8hEeOZzJzWV51ZDg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_APyNoR8hEeOZzJzWV51ZDg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_lCZPQB8gEeOZzJzWV51ZDg" name="history of Infection - Fetal Death Section" type="_FxzMEB8eEeOZzJzWV51ZDg" association="_lCZPQh8gEeOZzJzWV51ZDg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mbqIQB8gEeOZzJzWV51ZDg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mbqIQR8gEeOZzJzWV51ZDg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_1Y1zULydEeGUNfs_q_VvNQ" name="labor and Delivery Section" type="_1aHcMLvNEeGkEvM80TFRNQ" association="_1Y2aYbydEeGUNfs_q_VvNQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3-p_ALydEeGUNfs_q_VvNQ" value="1"/>
@@ -1309,17 +1244,6 @@ information.  Within the II data type, use the root to record the identifying OI
       <ownedAttribute xmi:id="_5KMlELydEeGUNfs_q_VvNQ" name="fetal Delivery Section" type="_D3ZlILvOEeGkEvM80TFRNQ" association="_5KNMILydEeGUNfs_q_VvNQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6c5jELydEeGUNfs_q_VvNQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6c6KILydEeGUNfs_q_VvNQ" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_lqTfENA_EeGEz9ISu-MpwA" name="antenatal Testing and Surveillance" type="_LAdH8LvNEeGkEvM80TFRNQ" association="_lqTfEtA_EeGEz9ISu-MpwA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lqTfEdA_EeGEz9ISu-MpwA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_nOICQNA_EeGEz9ISu-MpwA" name="pregnancy History" type="_9bzboNAOEeGEP4RKA70UUQ" association="_nOICQtA_EeGEz9ISu-MpwA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vL-CkNA_EeGEz9ISu-MpwA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vL-CkdA_EeGEz9ISu-MpwA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_p3bm0NA_EeGEz9ISu-MpwA" name="history of Infection" type="_eR3SsNAPEeGEP4RKA70UUQ" association="_p3bm0tA_EeGEz9ISu-MpwA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsdXoNA_EeGEz9ISu-MpwA" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tsdXodA_EeGEz9ISu-MpwA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_GbJsrryYEeGUNfs_q_VvNQ" name="Author">
         <ownedComment xmi:id="_er4AYFnTEeKYlswSBPrhfQ">
@@ -1357,7 +1281,7 @@ information.  Within the II data type, use the root to record the identifying OI
           </ownedAttribute>
           <ownedAttribute xmi:id="_GbJsubyYEeGUNfs_q_VvNQ" name="id" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_GbJsuryYEeGUNfs_q_VvNQ">
-              <body>An identifier for the author of the live birth report.  Normally this is the certifying clinician.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</body>
+              <body>An identifier for the author of the fetal death report.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mhcrgGQFEeK7gOt5N4Q1gA" value="1"/>
@@ -1525,7 +1449,7 @@ information.  Within the II data type, use the root to record the identifying OI
     <packagedElement xmi:type="uml:Association" xmi:id="_gdpIkbyZEeGUNfs_q_VvNQ" memberEnd="_gdohgLyZEeGUNfs_q_VvNQ _gdpIkryZEeGUNfs_q_VvNQ">
       <ownedEnd xmi:id="_gdpIkryZEeGUNfs_q_VvNQ" type="_GbJsgLyYEeGUNfs_q_VvNQ" association="_gdpIkbyZEeGUNfs_q_VvNQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_BOedQM9lEeGEP4RKA70UUQ" name="Newborn's Vital Signs Section">
+    <packagedElement xmi:type="uml:Class" xmi:id="_BOedQM9lEeGEP4RKA70UUQ" name="Newborns Vital Signs Section">
       <ownedComment xmi:id="_I6bB8NA5EeGEz9ISu-MpwA">
         <body>The vital signs - newborn section contains measurement results of the newborn's vital signs.  The reader should note that the subject of this section - the newborn infant - is different from the overall subject of the clinical document - which is the mother.</body>
       </ownedComment>
@@ -1563,12 +1487,9 @@ information.  Within the II data type, use the root to record the identifying OI
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eVyEYFj-EeKByI4PHyDV6A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eVyEYVj-EeKByI4PHyDV6A" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_9QLrkNA8EeGEz9ISu-MpwA" name="vitalSignsObservation" type="_JLjREMCJEeGP5fduNvI1Qw" association="_9QLrktA8EeGEz9ISu-MpwA">
-        <ownedComment xmi:id="_667k8Fp0EeKUiPQlmqLrLg">
-          <body>The Apgar score is collected at 5 minutes after delivery.  It will also be collected at 10 minutes after delivery if, and only if, the 5 minute score falls below the specified threshold.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AIlQ0AnVEeOSQLMpSugQSQ" value="3"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AIlQ0QnVEeOSQLMpSugQSQ" value="2"/>
+      <ownedAttribute xmi:id="_1Jc4gB_HEeOYe8LVX7HMMw" name="newborn's Vital Signs Observation" type="_JLjREMCJEeGP5fduNvI1Qw" association="_1Jc4gh_HEeOYe8LVX7HMMw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_88EOUB_JEeOYe8LVX7HMMw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_88EOUR_JEeOYe8LVX7HMMw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_mY5mEryZEeGUNfs_q_VvNQ" memberEnd="_mY5mELyZEeGUNfs_q_VvNQ _mY6NILyZEeGUNfs_q_VvNQ">
@@ -1615,21 +1536,21 @@ information.  Within the II data type, use the root to record the identifying OI
       </ownedAttribute>
       <ownedAttribute xmi:id="_x0p44LyzEeGUNfs_q_VvNQ" name="negationInd" visibility="private">
         <ownedComment xmi:id="_KammcL7OEeGdruZFgBKbQw">
-          <body>Value the negation indicator as true if the mother did not receive prenatal care.</body>
+          <body>Value the negation indicator as true if the mother DID receive prenatal care.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x0p44byzEeGUNfs_q_VvNQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x0p44ryzEeGUNfs_q_VvNQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8V0I0B_YEeOYe8LVX7HMMw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8V0I0R_YEeOYe8LVX7HMMw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kqSwYLyzEeGUNfs_q_VvNQ" name="code" visibility="private" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_uAHGUL7OEeGdruZFgBKbQw">
-          <body>A code value that indicates the nature of the observation - it includes information about prenatal care received by the mother.</body>
+          <body>A code value that indicates the nature of the observation - it indicates whether the mother received any prenatal care.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kqSwYbyzEeGUNfs_q_VvNQ" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_4_sZUL7OEeGdruZFgBKbQw">
-          <body>The time interval is used to indicate the date of the first prenatal care visit, and the date of the last visit.</body>
+          <body>The time interval is used to indicate the period of time during which prenatal care was provided.  The date of the first prenatal care visit is recorded as the beginning of the prenatal care time interval.  The date of the last visit is recorded as the end of the prenatal time interval.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kqSwYryzEeGUNfs_q_VvNQ" value="1"/>
@@ -1683,7 +1604,7 @@ information.  Within the II data type, use the root to record the identifying OI
     <packagedElement xmi:type="uml:Association" xmi:id="_tevXRr7REeGdruZFgBKbQw" memberEnd="_tevXQ77REeGdruZFgBKbQw _tevXR77REeGdruZFgBKbQw">
       <ownedEnd xmi:id="_tevXR77REeGdruZFgBKbQw" type="_ry5ggL7REeGdruZFgBKbQw" association="_tevXRr7REeGdruZFgBKbQw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_hWJYUr7SEeGdruZFgBKbQw" memberEnd="_hWJYUL7SEeGdruZFgBKbQw _hWJYU77SEeGdruZFgBKbQw">
+    <packagedElement xmi:type="uml:Association" xmi:id="_hWJYUr7SEeGdruZFgBKbQw" name="prenatal Care" memberEnd="_hWJYUL7SEeGdruZFgBKbQw _hWJYU77SEeGdruZFgBKbQw">
       <ownedEnd xmi:id="_hWJYU77SEeGdruZFgBKbQw" type="_LAdH8LvNEeGkEvM80TFRNQ" association="_hWJYUr7SEeGdruZFgBKbQw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_yy3b8L7UEeGdruZFgBKbQw" name="Number of Births Now Living">
@@ -1796,14 +1717,6 @@ information.  Within the II data type, use the root to record the identifying OI
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_1Try5b7UEeGdruZFgBKbQw" name="value" visibility="private" aggregation="composite">
-        <ownedComment xmi:id="_WnF9ML7pEeGdruZFgBKbQw">
-          <body>Total number of other pregnancy outcomes that did not result in a live birth.  The entry is a non-negative integer within the range from zero to 30.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eePfoL7pEeGdruZFgBKbQw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eePfob7pEeGdruZFgBKbQw" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_K9vUcL7pEeGdruZFgBKbQw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_dsG4EL7pEeGdruZFgBKbQw">
           <body>The date that the last pregnancy that did not result in a live birth ended.    The effective time for the other pregnancy outcomes is the interval between the first such outcome and the latest.  Value the high property of the interval data type.</body>
@@ -1811,6 +1724,14 @@ information.  Within the II data type, use the root to record the identifying OI
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K9vUcb7pEeGdruZFgBKbQw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K9vUcr7pEeGdruZFgBKbQw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_1Try5b7UEeGdruZFgBKbQw" name="value" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_WnF9ML7pEeGdruZFgBKbQw">
+          <body>Total number of other pregnancy outcomes that did not result in a live birth.  The entry is a non-negative integer within the range from zero to 30.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eePfoL7pEeGdruZFgBKbQw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eePfob7pEeGdruZFgBKbQw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_2x2aAL7UEeGdruZFgBKbQw" name="Last Menstrual Period Date">
@@ -1870,9 +1791,9 @@ information.  Within the II data type, use the root to record the identifying OI
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mOR-a77yEeGdruZFgBKbQw" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_nuPVQL7yEeGdruZFgBKbQw" name="Infection Present">
+    <packagedElement xmi:type="uml:Class" xmi:id="_nuPVQL7yEeGdruZFgBKbQw" name="Infection Present - Fetal Death">
       <ownedComment xmi:id="_nuPVQb7yEeGdruZFgBKbQw">
-        <body>Information on whether the mother suffered from one or more of a defined list of infections during pregnancy.</body>
+        <body>Information on infections present and/or treated during the pregnancy.   This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment.</body>
       </ownedComment>
       <generalization xmi:id="_nuPVQr7yEeGdruZFgBKbQw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -1885,9 +1806,9 @@ information.  Within the II data type, use the root to record the identifying OI
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_nuPVSL7yEeGdruZFgBKbQw" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_nuPVRb7yEeGdruZFgBKbQw" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_nuPVRb7yEeGdruZFgBKbQw" name="code" visibility="private" isReadOnly="true" aggregation="composite">
         <ownedComment xmi:id="_nuPVRr7yEeGdruZFgBKbQw">
-          <body>A code value that indicates the nature of the observation - it records nature of the infection about which information is provided.  Note, for live birth reporting refer to the value set: Birth Reporting - Infections Present.  For fetal death reporting refer to the value set: Fetal Death Reporting - Infections Present.</body>
+          <body>A code value that indicates the nature of the observation - it records nature of the infection about which information is provided.  For fetal death reporting refer to the value set: Fetal Death Reporting - Infections Present.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
@@ -1958,8 +1879,8 @@ information.  Within the II data type, use the root to record the identifying OI
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_30MFK77yEeGdruZFgBKbQw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_d7NDAL70EeGdruZFgBKbQw" name="entryRelationship" visibility="private" type="_hF1L8L70EeGdruZFgBKbQw" aggregation="composite" association="_d7NDA770EeGdruZFgBKbQw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d7NDAb70EeGdruZFgBKbQw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d7NDAr70EeGdruZFgBKbQw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rd_R4B_YEeOYe8LVX7HMMw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rd_R4R_YEeOYe8LVX7HMMw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_hF1L8L70EeGdruZFgBKbQw" name="CesareanAssociation">
         <generalization xmi:id="_hF1L8b70EeGdruZFgBKbQw">
@@ -2073,7 +1994,7 @@ information.  Within the II data type, use the root to record the identifying OI
       </ownedAttribute>
       <ownedAttribute xmi:id="_P1wnxb7zEeGdruZFgBKbQw" name="code" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_P1wnxr7zEeGdruZFgBKbQw">
-          <body>A code value that indicates the nature of the observation - it records the nature of the abnormal about which information is provided.</body>
+          <body>A code value that indicates the nature of the observation - it records the fact that abnormal condition information is being provided.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
@@ -2085,7 +2006,7 @@ information.  Within the II data type, use the root to record the identifying OI
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_U6FdQL7zEeGdruZFgBKbQw" name="Congenital Anomaly">
       <ownedComment xmi:id="_U6FdQb7zEeGdruZFgBKbQw">
-        <body>Information on whether the infant or fetus suffered from one or more of a list of known malformations diagnosed prenatally or after delivery.)</body>
+        <body>Information on whether the infant or fetus suffered from one or more of a list of known malformations diagnosed prenatally or after delivery.</body>
       </ownedComment>
       <generalization xmi:id="_U6FdQr7zEeGdruZFgBKbQw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -2234,20 +2155,6 @@ information.  Within the II data type, use the root to record the identifying OI
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_bpBBYFqZEeKUiPQlmqLrLg" name="forcepsAssociation" type="_9vqQAMCdEeGP5fduNvI1Qw" association="_bpBocVqZEeKUiPQlmqLrLg">
-        <ownedComment xmi:id="_88k9AGV_EeK5DM6q0QrKnA">
-          <body>An observation to record whether forceps delivery was attempted but unsucessful.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fPexwFqZEeKUiPQlmqLrLg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fPh1EFqZEeKUiPQlmqLrLg" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_g8CaMFqZEeKUiPQlmqLrLg" name="vacuumExtractionAssociation" type="_MzJk4FqPEeKUiPQlmqLrLg" association="_g8DBQFqZEeKUiPQlmqLrLg">
-        <ownedComment xmi:id="_CEB_AGWAEeK5DM6q0QrKnA">
-          <body>An observation to record whether vacuum extraction was attempted but unsucessful.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iLdasFqZEeKUiPQlmqLrLg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iLhFEFqZEeKUiPQlmqLrLg" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_Qado0FqaEeKUiPQlmqLrLg" name="fetal Presentation" type="_kFeWcL8AEeGhc-Kl_MVNcg" association="_Qado0lqaEeKUiPQlmqLrLg">
         <ownedComment xmi:id="_FosYkGWAEeK5DM6q0QrKnA">
           <body>An observation to record fetal presentation at birth.</body>
@@ -2312,9 +2219,9 @@ information.  Within the II data type, use the root to record the identifying OI
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_oC6z01qNEeKUiPQlmqLrLg" value="COMP"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_oC6z1FqNEeKUiPQlmqLrLg" name="observation" visibility="private" type="_oC6z11qNEeKUiPQlmqLrLg" aggregation="composite">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oC6z1VqNEeKUiPQlmqLrLg" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oC6z1lqNEeKUiPQlmqLrLg" value="1"/>
+          <ownedAttribute xmi:id="_ieRWUDgyEeOMp6Ft_mQoHw" name="trialOfLabor" type="_oC6z11qNEeKUiPQlmqLrLg" association="_ieRWUjgyEeOMp6Ft_mQoHw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kC1gYDgyEeOMp6Ft_mQoHw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kC2HcDgyEeOMp6Ft_mQoHw" value="1"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_oC6z11qNEeKUiPQlmqLrLg" name="TrialOfLabor">
             <generalization xmi:id="_oC6z2FqNEeKUiPQlmqLrLg">
@@ -2343,95 +2250,6 @@ information.  Within the II data type, use the root to record the identifying OI
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oC6z4lqNEeKUiPQlmqLrLg" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
-        </nestedClassifier>
-      </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_9vqQAMCdEeGP5fduNvI1Qw" name="forcepsAssociation">
-        <generalization xmi:id="_9vqQAcCdEeGP5fduNvI1Qw">
-          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
-        </generalization>
-        <ownedAttribute xmi:id="_9vqQAsCdEeGP5fduNvI1Qw" name="typeCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_9vqQA8CdEeGP5fduNvI1Qw" value="COMP"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_N1F-gFqZEeKUiPQlmqLrLg" name="forcepsDelivery" type="_9vqQB8CdEeGP5fduNvI1Qw" association="_N1F-glqZEeKUiPQlmqLrLg">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PFRM8FqZEeKUiPQlmqLrLg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PFU3UFqZEeKUiPQlmqLrLg" value="1"/>
-        </ownedAttribute>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_9vqQB8CdEeGP5fduNvI1Qw" name="ForcepsDelivery">
-          <ownedComment xmi:id="_mmoa8FqYEeKUiPQlmqLrLg">
-            <body>A record of whether forceps delivery was attempted as a method of delivering the infant, but failed.</body>
-          </ownedComment>
-          <generalization xmi:id="_9vqQCMCdEeGP5fduNvI1Qw">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-          </generalization>
-          <ownedAttribute xmi:id="_9vqQCcCdEeGP5fduNvI1Qw" name="classCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_9vqQCsCdEeGP5fduNvI1Qw" value="OBS"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_9vqQC8CdEeGP5fduNvI1Qw" name="code" visibility="private" isReadOnly="true" aggregation="composite">
-            <ownedComment xmi:id="_9vqQDMCdEeGP5fduNvI1Qw">
-              <body>A code value that indicates the nature of the observation - that it indicates whether forceps delivery was attempted as a method of delivering the infant, but failed.</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_9vqQDcCdEeGP5fduNvI1Qw" name="moodCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_9vqQDsCdEeGP5fduNvI1Qw" value="EVN"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_9vqQD8CdEeGP5fduNvI1Qw" name="value" visibility="private" aggregation="composite">
-            <ownedComment xmi:id="_9vqQEMCdEeGP5fduNvI1Qw">
-              <body>Information to identify whether forceps delivery was attempted as a method of delivering the infant, but failed.</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9vqQEcCdEeGP5fduNvI1Qw" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9vqQEsCdEeGP5fduNvI1Qw" value="1"/>
-          </ownedAttribute>
-        </nestedClassifier>
-      </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_MzJk4FqPEeKUiPQlmqLrLg" name="vacuumExtractionAssociation">
-        <generalization xmi:id="_MzJk4VqPEeKUiPQlmqLrLg">
-          <ownedComment xmi:id="_gdzbgFqYEeKUiPQlmqLrLg">
-            <body>A record of whether vacuum extraction was attempted as a method of delivering the infant, but failed.</body>
-          </ownedComment>
-          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
-        </generalization>
-        <ownedAttribute xmi:id="_MzJk4lqPEeKUiPQlmqLrLg" name="typeCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_MzJk41qPEeKUiPQlmqLrLg" value="COMP"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_5Ls4oFqYEeKUiPQlmqLrLg" name="vacuumExtraction" type="_MzJk5lqPEeKUiPQlmqLrLg" association="_5LtfsVqYEeKUiPQlmqLrLg">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7cblIFqYEeKUiPQlmqLrLg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7chrwFqYEeKUiPQlmqLrLg" value="1"/>
-        </ownedAttribute>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_MzJk5lqPEeKUiPQlmqLrLg" name="VacuumExtraction">
-          <ownedComment xmi:id="_jH3OAFqYEeKUiPQlmqLrLg">
-            <body>A record of whether vacuum extraction was attempted as a method of delivering the infant, but failed.</body>
-          </ownedComment>
-          <generalization xmi:id="_MzJk51qPEeKUiPQlmqLrLg">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-          </generalization>
-          <ownedAttribute xmi:id="_MzJk6FqPEeKUiPQlmqLrLg" name="classCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_MzJk6VqPEeKUiPQlmqLrLg" value="OBS"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_MzJk6lqPEeKUiPQlmqLrLg" name="code" visibility="private" isReadOnly="true" aggregation="composite">
-            <ownedComment xmi:id="_MzJk61qPEeKUiPQlmqLrLg">
-              <body>A code value that indicates the nature of the observation - that it indicates whether delivery with vaccum extraction was attempted but unsucessful.</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_MzJk7FqPEeKUiPQlmqLrLg" name="moodCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_MzJk7VqPEeKUiPQlmqLrLg" value="EVN"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_MzJk7lqPEeKUiPQlmqLrLg" name="value" visibility="private" aggregation="composite">
-            <ownedComment xmi:id="_MzJk71qPEeKUiPQlmqLrLg">
-              <body>Information to identify whether vacuum extraction was attempted as a method of delivering the infant, but failed.</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MzJk8FqPEeKUiPQlmqLrLg" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MzJk8VqPEeKUiPQlmqLrLg" value="1"/>
-          </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_OHGgEFqPEeKUiPQlmqLrLg" name="hysterotomyHysterectomyAssociation">
@@ -2528,18 +2346,18 @@ information.  Within the II data type, use the root to record the identifying OI
       </ownedAttribute>
       <ownedAttribute xmi:id="_H3pZOcCJEeGP5fduNvI1Qw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_H3pZOsCJEeGP5fduNvI1Qw">
-          <body>The final estimate of gestation.  The value is to be provided as a number of completed weeks.</body>
+          <body>The final estimate of gestation based on all perinatal factors and assessments, but  not the neonatal exam.  The value is to be provided as a number of completed weeks.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H3pZO8CJEeGP5fduNvI1Qw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H3pZPMCJEeGP5fduNvI1Qw" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_JLjREMCJEeGP5fduNvI1Qw" name="Vital Signs Observation">
+    <packagedElement xmi:type="uml:Class" xmi:id="_JLjREMCJEeGP5fduNvI1Qw" name="Newborns Vital Signs Observation">
       <ownedComment xmi:id="_JLjREcCJEeGP5fduNvI1Qw">
         <body>A systematic measure for evaluating the physical condition of the infant at specific intervals following birth.&#xD;
 &#xD;
-The consolidated CDA Vital Signs Observation template has been used.  The list of valid vital signs for both mother and newborn is defined within the value sets which are used to define possible values for observation code.</body>
+The consolidated CDA Vital Signs Observation template has been used.  The value set for observation.code indicates which vital sign information is collected.</body>
       </ownedComment>
       <generalization xmi:id="_JLjREsCJEeGP5fduNvI1Qw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -2554,7 +2372,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
       </ownedAttribute>
       <ownedAttribute xmi:id="_JLjRFcCJEeGP5fduNvI1Qw" name="code" visibility="private" isUnique="false" aggregation="composite">
         <ownedComment xmi:id="_JLjRFsCJEeGP5fduNvI1Qw">
-          <body>A code value that indicates the nature of the observation.   When the Vital Signs Observation template is used to suport Mother's Vital Signs, the value is drawn from the Maternal Vital Signs value set.   When the template is used to support Newborn Vital Signs, the value is drawn from the Newborn Vital Signs value set.</body>
+          <body>A code value that indicates the nature of the observation.   The value is drawn from the Newborn Vital Signs value set.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
@@ -2678,9 +2496,9 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     <packagedElement xmi:type="uml:Association" xmi:id="_rah0IsCPEeGP5fduNvI1Qw" memberEnd="_rah0IMCPEeGP5fduNvI1Qw _rah0I8CPEeGP5fduNvI1Qw">
       <ownedEnd xmi:id="_rah0I8CPEeGP5fduNvI1Qw" type="_-EnHILvNEeGkEvM80TFRNQ" association="_rah0IsCPEeGP5fduNvI1Qw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_oJ-owM-KEeGEP4RKA70UUQ" name="Mother's Vital Signs Section">
+    <packagedElement xmi:type="uml:Class" xmi:id="_oJ-owM-KEeGEP4RKA70UUQ" name="Assessments Section">
       <ownedComment xmi:id="_HkRuYNA5EeGEz9ISu-MpwA">
-        <body>The section includes vital signs collected for the mother in the context of labor and delivery for this pregnancy.  Items collected include height as well as body weight prior to the pregnancy and at delivery.</body>
+        <body>The section includes assessments, namely Apgar scores, that are recorded for the infant.</body>
       </ownedComment>
       <generalization xmi:id="_oJ-owc-KEeGEP4RKA70UUQ">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -2716,9 +2534,12 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cUgJIFj-EeKByI4PHyDV6A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cUgJIVj-EeKByI4PHyDV6A" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_HejY0AnVEeOSQLMpSugQSQ" name="vital Signs Observation" type="_JLjREMCJEeGP5fduNvI1Qw" association="_HejY0gnVEeOSQLMpSugQSQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LzuCQAnVEeOSQLMpSugQSQ" value="3"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lz3zQAnVEeOSQLMpSugQSQ" value="3"/>
+      <ownedAttribute xmi:id="_UuUGEB_LEeOYe8LVX7HMMw" name="assessments Observation" type="_XG_44B_EEeOYe8LVX7HMMw" association="_UudQAB_LEeOYe8LVX7HMMw">
+        <ownedComment xmi:id="_bSJmgB_LEeOYe8LVX7HMMw">
+          <body>Apgar scores are recorded to assess the condition of the newborn.  In those cases in which the 5 minute Apgar score is less than 6, the 10 minute Apgar score is to be recorded, .</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WIBrAB_LEeOYe8LVX7HMMw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WIBrAR_LEeOYe8LVX7HMMw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_QNV0As-LEeGEP4RKA70UUQ" memberEnd="_QNV0AM-LEeGEP4RKA70UUQ _QNV0A8-LEeGEP4RKA70UUQ">
@@ -2787,7 +2608,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__ZKmkddpEeG1-9tkL5HU3Q" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_eR3SsNAPEeGEP4RKA70UUQ" name="History of Infection Section">
+    <packagedElement xmi:type="uml:Class" xmi:id="_eR3SsNAPEeGEP4RKA70UUQ" name="History of Infection - Live Birth Section">
       <ownedComment xmi:id="_I90JoNA4EeGEz9ISu-MpwA">
         <body>This section SHALL include the infections present at the time of the pregnancy diagnosis or a confirmed diagnosis during the pregnancy with or without documentation of treatment.  If the data is not present or not available within the system no entry is required.  A negative diagnosis SHALL be recorded with the use of the negation indicator attribute.</body>
       </ownedComment>
@@ -2812,17 +2633,10 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
           <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
         </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_gqqWENAPEeGEP4RKA70UUQ" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_gqqWENAPEeGEP4RKA70UUQ" name="code" visibility="private" isReadOnly="true" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bGsdkNdqEeG1-9tkL5HU3Q" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bGsdkddqEeG1-9tkL5HU3Q" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_5VOuYNA7EeGEz9ISu-MpwA" name="infections Present" type="_nuPVQL7yEeGdruZFgBKbQw" association="_5VOuYtA7EeGEz9ISu-MpwA">
-        <ownedComment xmi:id="_0_2xAFqdEeKUiPQlmqLrLg">
-          <body>One or more entries recording the presence of an infection may be recorded.  Each entry contains information for a single infection.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hDIcQNdpEeG1-9tkL5HU3Q" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hDIcQddpEeG1-9tkL5HU3Q" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_dUB30NdqEeG1-9tkL5HU3Q" name="text" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_E4huQFj7EeKByI4PHyDV6A">
@@ -2831,6 +2645,13 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rr0pgFkaEeKByI4PHyDV6A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rr0pgVkaEeKByI4PHyDV6A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_cnDxsB_QEeOYe8LVX7HMMw" name="infection Present - Live Birth" type="_iGAokB8eEeOZzJzWV51ZDg" association="_cnDxsh_QEeOYe8LVX7HMMw">
+        <ownedComment xmi:id="_vcN7EDA9EeOuyI8soaYkCA">
+          <body>There may be multiple infections recorded.  At least one observation will be present in the case that none are present.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ehpPEB_QEeOYe8LVX7HMMw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ehpPER_QEeOYe8LVX7HMMw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_jqH7YNAQEeGEP4RKA70UUQ" name="Labor and Delivery Procedure Section">
@@ -2870,7 +2691,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
       </ownedAttribute>
       <ownedAttribute xmi:id="_LdB54NA_EeGEz9ISu-MpwA" name="obstetric Procedures" type="_xu2ekL7yEeGdruZFgBKbQw" association="_LdB54tA_EeGEz9ISu-MpwA">
         <ownedComment xmi:id="_z9PMUFpvEeKUiPQlmqLrLg">
-          <body>Obstetric procedure information is collected for a live birth certificate, but not for a fetal death report.  One or more entries recording the presence of an obstetric procedure may be recorded.  Each entry contains information for a single infection.</body>
+          <body>Obstetric procedure information is collected for a live birth certificate, but not for a fetal death report.  One or more entries recording the presence of an obstetric procedure may be recorded.  Each entry contains information for a single procedure.  In addition, an observation is provided (for live births only) if none of the indicated procedures were performed.</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_woCLEFpvEeKUiPQlmqLrLg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_woCLEVpvEeKUiPQlmqLrLg"/>
@@ -2892,9 +2713,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     <packagedElement xmi:type="uml:Association" xmi:id="_QaJ00tA3EeGEz9ISu-MpwA" memberEnd="_QaJ00NA3EeGEz9ISu-MpwA _QaJ009A3EeGEz9ISu-MpwA">
       <ownedEnd xmi:id="_QaJ009A3EeGEz9ISu-MpwA" type="_euFT4bSgEeGhbsXY607ygg" association="_QaJ00tA3EeGEz9ISu-MpwA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ff2BktA3EeGEz9ISu-MpwA" memberEnd="_ff2BkNA3EeGEz9ISu-MpwA _ff2Bk9A3EeGEz9ISu-MpwA">
-      <ownedEnd xmi:id="_ff2Bk9A3EeGEz9ISu-MpwA" type="_euFT4bSgEeGhbsXY607ygg" association="_ff2BktA3EeGEz9ISu-MpwA"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_o_ImgtA3EeGEz9ISu-MpwA" memberEnd="_o_ImgNA3EeGEz9ISu-MpwA _o_Img9A3EeGEz9ISu-MpwA">
       <ownedEnd xmi:id="_o_Img9A3EeGEz9ISu-MpwA" type="_euFT4bSgEeGhbsXY607ygg" association="_o_ImgtA3EeGEz9ISu-MpwA"/>
     </packagedElement>
@@ -2913,14 +2731,8 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     <packagedElement xmi:type="uml:Association" xmi:id="_q9GAotA6EeGEz9ISu-MpwA" memberEnd="_q9GAoNA6EeGEz9ISu-MpwA _q9GAo9A6EeGEz9ISu-MpwA">
       <ownedEnd xmi:id="_q9GAo9A6EeGEz9ISu-MpwA" type="_9bzboNAOEeGEP4RKA70UUQ" association="_q9GAotA6EeGEz9ISu-MpwA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_5VOuYtA7EeGEz9ISu-MpwA" memberEnd="_5VOuYNA7EeGEz9ISu-MpwA _5VOuY9A7EeGEz9ISu-MpwA">
-      <ownedEnd xmi:id="_5VOuY9A7EeGEz9ISu-MpwA" type="_eR3SsNAPEeGEP4RKA70UUQ" association="_5VOuYtA7EeGEz9ISu-MpwA"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_xJlGItA8EeGEz9ISu-MpwA" memberEnd="_xJlGINA8EeGEz9ISu-MpwA _xJlGI9A8EeGEz9ISu-MpwA">
       <ownedEnd xmi:id="_xJlGI9A8EeGEz9ISu-MpwA" type="_1aHcMLvNEeGkEvM80TFRNQ" association="_xJlGItA8EeGEz9ISu-MpwA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_9QLrktA8EeGEz9ISu-MpwA" memberEnd="_9QLrkNA8EeGEz9ISu-MpwA _9QLrk9A8EeGEz9ISu-MpwA">
-      <ownedEnd xmi:id="_9QLrk9A8EeGEz9ISu-MpwA" type="_BOedQM9lEeGEP4RKA70UUQ" association="_9QLrktA8EeGEz9ISu-MpwA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_vNCEctA9EeGEz9ISu-MpwA" memberEnd="_vNCEcNA9EeGEz9ISu-MpwA _vNCEc9A9EeGEz9ISu-MpwA">
       <ownedEnd xmi:id="_vNCEc9A9EeGEz9ISu-MpwA" type="_-EnHILvNEeGkEvM80TFRNQ" association="_vNCEctA9EeGEz9ISu-MpwA"/>
@@ -2933,9 +2745,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_nOICQtA_EeGEz9ISu-MpwA" memberEnd="_nOICQNA_EeGEz9ISu-MpwA _nOICQ9A_EeGEz9ISu-MpwA">
       <ownedEnd xmi:id="_nOICQ9A_EeGEz9ISu-MpwA" type="_GbJsgLyYEeGUNfs_q_VvNQ" association="_nOICQtA_EeGEz9ISu-MpwA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_p3bm0tA_EeGEz9ISu-MpwA" memberEnd="_p3bm0NA_EeGEz9ISu-MpwA _p3bm09A_EeGEz9ISu-MpwA">
-      <ownedEnd xmi:id="_p3bm09A_EeGEz9ISu-MpwA" type="_GbJsgLyYEeGUNfs_q_VvNQ" association="_p3bm0tA_EeGEz9ISu-MpwA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_g8EG8tBCEeGEz9ISu-MpwA" memberEnd="_g8EG8NBCEeGEz9ISu-MpwA _g8EG89BCEeGEz9ISu-MpwA">
       <ownedEnd xmi:id="_g8EG89BCEeGEz9ISu-MpwA" type="_euFT4bSgEeGhbsXY607ygg" association="_g8EG8tBCEeGEz9ISu-MpwA"/>
@@ -2972,36 +2781,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_K55lYtBEEeGjwMhvOnViSg" memberEnd="_K55lYNBEEeGjwMhvOnViSg _K55lY9BEEeGjwMhvOnViSg">
       <ownedEnd xmi:id="_K55lY9BEEeGjwMhvOnViSg" type="_-EnHILvNEeGkEvM80TFRNQ" association="_K55lYtBEEeGjwMhvOnViSg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_p0Edl8CYEeGP5fduNvI1Qw" name="Infant Breastfed">
-      <ownedComment xmi:id="_bgSv4NBEEeGjwMhvOnViSg">
-        <body>Information on whether the infant was being breastfed during the period between birth and discharge from the hospital.</body>
-      </ownedComment>
-      <generalization xmi:id="_p0EdmMCYEeGP5fduNvI1Qw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-      </generalization>
-      <ownedAttribute xmi:id="_p0EdmcCYEeGP5fduNvI1Qw" name="classCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_p0EdmsCYEeGP5fduNvI1Qw" value="OBS"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_p0EdncCYEeGP5fduNvI1Qw" name="moodCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_p0EdnsCYEeGP5fduNvI1Qw" value="EVN"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_p0Edm8CYEeGP5fduNvI1Qw" name="code" visibility="private" isReadOnly="true" aggregation="composite">
-        <ownedComment xmi:id="_p0EdnMCYEeGP5fduNvI1Qw">
-          <body>A code value that indicates the nature of the observation - that it indicates whether the infant is being breastfed.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_p0Edn8CYEeGP5fduNvI1Qw" name="value" visibility="private" aggregation="composite">
-        <ownedComment xmi:id="_p0EdoMCYEeGP5fduNvI1Qw">
-          <body>Information to identify whether the infant was being breastfed at discharge.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p0EdocCYEeGP5fduNvI1Qw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p0EdosCYEeGP5fduNvI1Qw" value="1"/>
-      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_jPtSotBEEeGjwMhvOnViSg" memberEnd="_jPtSoNBEEeGjwMhvOnViSg _jPtSo9BEEeGjwMhvOnViSg">
       <ownedEnd xmi:id="_jPtSo9BEEeGjwMhvOnViSg" type="_-EnHILvNEeGkEvM80TFRNQ" association="_jPtSotBEEeGjwMhvOnViSg"/>
@@ -3044,7 +2823,8 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ow01ANBIEeGg_uUX7hH4lg" name="Autopsy Performance">
       <ownedComment xmi:id="_xd1ocNBIEeGg_uUX7hH4lg">
-        <body>Information on whether an autopsy has been performed, is planned, or has not been performed.</body>
+        <body>Information on whether or not an autopsy was  planned or performed, and if the findings of a performed autopsy were&#xD;
+used in completing the medical portion of the fetal death report.</body>
       </ownedComment>
       <generalization xmi:id="_ow01AdBIEeGg_uUX7hH4lg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -3084,11 +2864,11 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
         <ownedAttribute xmi:id="_kr9kMlp7EeKUiPQlmqLrLg" name="typeCode" visibility="private">
           <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
           <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_pjJaIDtaEeOC5d2nIW7v7g" value="COMP"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_kr9kM1p7EeKUiPQlmqLrLg" name="observation" visibility="private" type="_kr9kNlp7EeKUiPQlmqLrLg" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kr9kNFp7EeKUiPQlmqLrLg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kr9kNVp7EeKUiPQlmqLrLg" value="1"/>
-          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <ownedAttribute xmi:id="_sfyKYDtaEeOC5d2nIW7v7g" name="autopsyUse" type="_kr9kNlp7EeKUiPQlmqLrLg" association="_sfyKYjtaEeOC5d2nIW7v7g">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uQIGoDtaEeOC5d2nIW7v7g" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uQIGoTtaEeOC5d2nIW7v7g" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_kr9kNlp7EeKUiPQlmqLrLg" name="AutopsyUse">
           <generalization xmi:id="_kr9kN1p7EeKUiPQlmqLrLg">
@@ -3169,7 +2949,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
       </ownedAttribute>
       <ownedAttribute xmi:id="_QKJySNXPEeGb1t7PnGJ-bA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_QKJySdXPEeGb1t7PnGJ-bA">
-          <body>A Boolean value to indicate whether or not the mother was transferred.</body>
+          <body>A Boolean value to indicate whether or not the mother was transferred to the facility prior to delivery.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QKJyStXPEeGb1t7PnGJ-bA" value="1"/>
@@ -3413,35 +3193,14 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     <packagedElement xmi:type="uml:Association" xmi:id="_CZh7IFqOEeKUiPQlmqLrLg" memberEnd="_CZhUEFqOEeKUiPQlmqLrLg _CZh7IVqOEeKUiPQlmqLrLg">
       <ownedEnd xmi:id="_CZh7IVqOEeKUiPQlmqLrLg" type="_mOyzYL8AEeGhc-Kl_MVNcg" association="_CZh7IFqOEeKUiPQlmqLrLg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_5LtfsVqYEeKUiPQlmqLrLg" memberEnd="_5Ls4oFqYEeKUiPQlmqLrLg _5LtfslqYEeKUiPQlmqLrLg">
-      <ownedEnd xmi:id="_5LtfslqYEeKUiPQlmqLrLg" type="_MzJk4FqPEeKUiPQlmqLrLg" association="_5LtfsVqYEeKUiPQlmqLrLg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_N1F-glqZEeKUiPQlmqLrLg" memberEnd="_N1F-gFqZEeKUiPQlmqLrLg _N1GlkFqZEeKUiPQlmqLrLg">
-      <ownedEnd xmi:id="_N1GlkFqZEeKUiPQlmqLrLg" type="_9vqQAMCdEeGP5fduNvI1Qw" association="_N1F-glqZEeKUiPQlmqLrLg"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_YMt5oFqZEeKUiPQlmqLrLg" memberEnd="_YMtSkFqZEeKUiPQlmqLrLg _YMt5oVqZEeKUiPQlmqLrLg">
       <ownedEnd xmi:id="_YMt5oVqZEeKUiPQlmqLrLg" type="_OHGgEFqPEeKUiPQlmqLrLg" association="_YMt5oFqZEeKUiPQlmqLrLg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_bpBocVqZEeKUiPQlmqLrLg" memberEnd="_bpBBYFqZEeKUiPQlmqLrLg _bpBoclqZEeKUiPQlmqLrLg">
-      <ownedEnd xmi:id="_bpBoclqZEeKUiPQlmqLrLg" type="_mOyzYL8AEeGhc-Kl_MVNcg" association="_bpBocVqZEeKUiPQlmqLrLg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_g8DBQFqZEeKUiPQlmqLrLg" memberEnd="_g8CaMFqZEeKUiPQlmqLrLg _g8DBQVqZEeKUiPQlmqLrLg">
-      <ownedEnd xmi:id="_g8DBQVqZEeKUiPQlmqLrLg" type="_mOyzYL8AEeGhc-Kl_MVNcg" association="_g8DBQFqZEeKUiPQlmqLrLg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_nkn3wVqZEeKUiPQlmqLrLg" memberEnd="_nknQsFqZEeKUiPQlmqLrLg _nkn3wlqZEeKUiPQlmqLrLg">
       <ownedEnd xmi:id="_nkn3wlqZEeKUiPQlmqLrLg" type="_mOyzYL8AEeGhc-Kl_MVNcg" association="_nkn3wVqZEeKUiPQlmqLrLg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Qado0lqaEeKUiPQlmqLrLg" memberEnd="_Qado0FqaEeKUiPQlmqLrLg _Qado01qaEeKUiPQlmqLrLg">
       <ownedEnd xmi:id="_Qado01qaEeKUiPQlmqLrLg" type="_mOyzYL8AEeGhc-Kl_MVNcg" association="_Qado0lqaEeKUiPQlmqLrLg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_pBdrYFqoEeKUiPQlmqLrLg" memberEnd="_pBdEUFqoEeKUiPQlmqLrLg _pBeScFqoEeKUiPQlmqLrLg">
-      <ownedEnd xmi:id="_pBeScFqoEeKUiPQlmqLrLg" type="_mmaZcLygEeGUNfs_q_VvNQ" association="_pBdrYFqoEeKUiPQlmqLrLg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_nkQboVqqEeKUiPQlmqLrLg" memberEnd="_nkP0kFqqEeKUiPQlmqLrLg _nkQbolqqEeKUiPQlmqLrLg">
-      <ownedEnd xmi:id="_nkQbolqqEeKUiPQlmqLrLg" type="_WnqXoFqqEeKUiPQlmqLrLg" association="_nkQboVqqEeKUiPQlmqLrLg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_pxiykVqqEeKUiPQlmqLrLg" memberEnd="_pxiLgFqqEeKUiPQlmqLrLg _pxiyklqqEeKUiPQlmqLrLg">
-      <ownedEnd xmi:id="_pxiyklqqEeKUiPQlmqLrLg" type="_8d_RILvZEeGkEvM80TFRNQ" association="_pxiykVqqEeKUiPQlmqLrLg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Gf6R4ltjEeKuluv3od9aUg" memberEnd="_Gf6R4FtjEeKuluv3od9aUg _Gf648FtjEeKuluv3od9aUg">
       <ownedEnd xmi:id="_Gf648FtjEeKuluv3od9aUg" type="_D3ZlILvOEeGkEvM80TFRNQ" association="_Gf6R4ltjEeKuluv3od9aUg"/>
@@ -3454,9 +3213,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_73VrB2QFEeK7gOt5N4Q1gA" memberEnd="_73VrBGQFEeK7gOt5N4Q1gA _73WSEGQFEeK7gOt5N4Q1gA">
       <ownedEnd xmi:id="_73WSEGQFEeK7gOt5N4Q1gA" type="_664p0GQFEeK7gOt5N4Q1gA" association="_73VrB2QFEeK7gOt5N4Q1gA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_HejY0gnVEeOSQLMpSugQSQ" memberEnd="_HejY0AnVEeOSQLMpSugQSQ _HejY0wnVEeOSQLMpSugQSQ">
-      <ownedEnd xmi:id="_HejY0wnVEeOSQLMpSugQSQ" type="_oJ-owM-KEeGEP4RKA70UUQ" association="_HejY0gnVEeOSQLMpSugQSQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_pukdsgnbEeOSQLMpSugQSQ" memberEnd="_pukdsAnbEeOSQLMpSugQSQ _pukdswnbEeOSQLMpSugQSQ">
       <ownedEnd xmi:id="_pukdswnbEeOSQLMpSugQSQ" type="_U6FdQL7zEeGdruZFgBKbQw" association="_pukdsgnbEeOSQLMpSugQSQ"/>
@@ -3479,6 +3235,251 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     <packagedElement xmi:type="uml:Association" xmi:id="_0nYUoRANEeO6h_Vgn8UHWQ" memberEnd="_0nXtkBANEeO6h_Vgn8UHWQ _0nYUohANEeO6h_Vgn8UHWQ">
       <ownedEnd xmi:id="_0nYUohANEeO6h_Vgn8UHWQ" type="_jHcvihAMEeO6h_Vgn8UHWQ" association="_0nYUoRANEeO6h_Vgn8UHWQ"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FxzMEB8eEeOZzJzWV51ZDg" name="History of Infection - Fetal Death Section">
+      <ownedComment xmi:id="_FxzMER8eEeOZzJzWV51ZDg">
+        <body>This section SHALL include the infections present at the time of the pregnancy diagnosis or a confirmed diagnosis during the pregnancy with or without documentation of treatment.  If the data is not present or not available within the system no entry is required.  A negative diagnosis SHALL be recorded with the use of the negation indicator attribute.</body>
+      </ownedComment>
+      <generalization xmi:id="_FxzMEh8eEeOZzJzWV51ZDg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_FxzMEx8eEeOZzJzWV51ZDg" name="classCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FxzMFB8eEeOZzJzWV51ZDg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FxzMFR8eEeOZzJzWV51ZDg" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_FxzMFh8eEeOZzJzWV51ZDg" name="DOCSECT">
+          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+          <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdhkDcEd6xYZuu1VKCVw"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FxzMFx8eEeOZzJzWV51ZDg" name="moodCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FxzMGB8eEeOZzJzWV51ZDg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FxzMGR8eEeOZzJzWV51ZDg" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_FxzMGh8eEeOZzJzWV51ZDg" name="EVN">
+          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+          <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FxzMGx8eEeOZzJzWV51ZDg" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FxzMHB8eEeOZzJzWV51ZDg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FxzMHR8eEeOZzJzWV51ZDg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TT0EsB_QEeOYe8LVX7HMMw" name="infection Present - Fetal Death" type="_nuPVQL7yEeGdruZFgBKbQw" association="_TT0Esh_QEeOYe8LVX7HMMw">
+        <ownedComment xmi:id="_t1t3UDA9EeOuyI8soaYkCA">
+          <body>There may be multiple infections recorded.  At least one observation will be present in the case that none are present.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yc5eYB_QEeOYe8LVX7HMMw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yc5eYR_QEeOYe8LVX7HMMw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_32eJUB_QEeOYe8LVX7HMMw" name="text" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_7SEGcB_QEeOYe8LVX7HMMw">
+          <body>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_32eJUR_QEeOYe8LVX7HMMw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_32eJUh_QEeOYe8LVX7HMMw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_p0Edl8CYEeGP5fduNvI1Qw" name="Infant Breastfed">
+      <ownedComment xmi:id="_bgSv4NBEEeGjwMhvOnViSg">
+        <body>Information on whether the infant was being breastfed during the period between birth and discharge from the hospital.</body>
+      </ownedComment>
+      <generalization xmi:id="_p0EdmMCYEeGP5fduNvI1Qw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_p0EdmcCYEeGP5fduNvI1Qw" name="classCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_p0EdmsCYEeGP5fduNvI1Qw" value="OBS"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_p0EdncCYEeGP5fduNvI1Qw" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_p0EdnsCYEeGP5fduNvI1Qw" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_p0Edm8CYEeGP5fduNvI1Qw" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+        <ownedComment xmi:id="_p0EdnMCYEeGP5fduNvI1Qw">
+          <body>A code value that indicates the nature of the observation - that it indicates whether the infant is being breastfed.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_p0Edn8CYEeGP5fduNvI1Qw" name="value" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_p0EdoMCYEeGP5fduNvI1Qw">
+          <body>Information to identify whether the infant was being breastfed at discharge.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p0EdocCYEeGP5fduNvI1Qw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p0EdosCYEeGP5fduNvI1Qw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_iGAokB8eEeOZzJzWV51ZDg" name="Infection Present - Live Birth">
+      <ownedComment xmi:id="_iGAokR8eEeOZzJzWV51ZDg">
+        <body>Information on infections present and/or treated during the pregnancy.   This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment.</body>
+      </ownedComment>
+      <generalization xmi:id="_iGAokh8eEeOZzJzWV51ZDg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_iGAokx8eEeOZzJzWV51ZDg" name="classCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iGAolB8eEeOZzJzWV51ZDg" value="OBS"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_iGAolR8eEeOZzJzWV51ZDg" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_iGAolh8eEeOZzJzWV51ZDg" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_iGAolx8eEeOZzJzWV51ZDg" name="code" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_iGAomB8eEeOZzJzWV51ZDg">
+          <body>A code value that indicates the nature of the observation - it records nature of the infection about which information is provided.  Note, for live birth reporting refer to the value set: Birth Reporting - Infections Present.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_iGAomR8eEeOZzJzWV51ZDg" name="value" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_iGAomh8eEeOZzJzWV51ZDg">
+          <body>The content of the observation will be drawn from the appropriate value set: Birth Reporting - Infections Present, or Fetal Death Reporting - Infections persent.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iGAomx8eEeOZzJzWV51ZDg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iGAonB8eEeOZzJzWV51ZDg" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_P7OoQh8gEeOZzJzWV51ZDg" memberEnd="_P7OoQB8gEeOZzJzWV51ZDg _P7OoQx8gEeOZzJzWV51ZDg">
+      <ownedEnd xmi:id="_P7OoQx8gEeOZzJzWV51ZDg" type="_euFT4bSgEeGhbsXY607ygg" association="_P7OoQh8gEeOZzJzWV51ZDg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_lCZPQh8gEeOZzJzWV51ZDg" memberEnd="_lCZPQB8gEeOZzJzWV51ZDg _lCZPQx8gEeOZzJzWV51ZDg">
+      <ownedEnd xmi:id="_lCZPQx8gEeOZzJzWV51ZDg" type="_GbJsgLyYEeGUNfs_q_VvNQ" association="_lCZPQh8gEeOZzJzWV51ZDg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GVS2QB_EEeOYe8LVX7HMMw" name="Mothers Vital Signs Section">
+      <ownedComment xmi:id="_GVS2QR_EEeOYe8LVX7HMMw">
+        <body>The section includes vital signs collected for the mother in the context of labor and delivery for this pregnancy.  Items collected include height, as well as body weight prior to the pregnancy and at delivery.</body>
+      </ownedComment>
+      <generalization xmi:id="_GVS2Qh_EEeOYe8LVX7HMMw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_GVS2Qx_EEeOYe8LVX7HMMw" name="classCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GVS2RB_EEeOYe8LVX7HMMw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GVS2RR_EEeOYe8LVX7HMMw" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_GVS2Rh_EEeOYe8LVX7HMMw" name="DOCSECT">
+          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+          <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdhkDcEd6xYZuu1VKCVw"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_GVS2Rx_EEeOYe8LVX7HMMw" name="moodCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GVS2SB_EEeOYe8LVX7HMMw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GVS2SR_EEeOYe8LVX7HMMw" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_GVS2Sh_EEeOYe8LVX7HMMw" name="EVN">
+          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+          <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_GVS2Sx_EEeOYe8LVX7HMMw" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GVS2TB_EEeOYe8LVX7HMMw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GVS2TR_EEeOYe8LVX7HMMw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_GVS2Th_EEeOYe8LVX7HMMw" name="text" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_GVS2Tx_EEeOYe8LVX7HMMw">
+          <body>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GVS2UB_EEeOYe8LVX7HMMw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GVS2UR_EEeOYe8LVX7HMMw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_e6DzQB_JEeOYe8LVX7HMMw" name="mother's Vital Signs Observation" type="_b1dEsB_HEeOYe8LVX7HMMw" association="_e6DzQh_JEeOYe8LVX7HMMw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hK-F8B_JEeOYe8LVX7HMMw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hK-F8R_JEeOYe8LVX7HMMw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XG_44B_EEeOYe8LVX7HMMw" name="Assessments Observation">
+      <ownedComment xmi:id="_XG_44R_EEeOYe8LVX7HMMw">
+        <body>The section includes assessments, namely Apgar scores, that are recorded for the infant.  A single Apgar score - at 5 minutes after delivery is expected.  A second score - at 10 minutes after birth - is to be provided if the 5 minute score is less than 6.</body>
+      </ownedComment>
+      <generalization xmi:id="_XG_44h_EEeOYe8LVX7HMMw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_XG_44x_EEeOYe8LVX7HMMw" name="classCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XG_45B_EEeOYe8LVX7HMMw" value="OBS"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_XG_45R_EEeOYe8LVX7HMMw" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XG_45h_EEeOYe8LVX7HMMw" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_XG_45x_EEeOYe8LVX7HMMw" name="code" visibility="private" isUnique="false" aggregation="composite">
+        <ownedComment xmi:id="_XG_46B_EEeOYe8LVX7HMMw">
+          <body>A code value that indicates the nature of the observation.   The value is drawn from the Newborn Vital Signs value set.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_XG_46R_EEeOYe8LVX7HMMw" name="value" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_XG_46h_EEeOYe8LVX7HMMw">
+          <body>The measured vital sign amount.  The meaning of the observation is dependent on the value of observation code.  The datatype for assessment value depends on the nature of the assessment.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XG_46x_EEeOYe8LVX7HMMw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XG_47B_EEeOYe8LVX7HMMw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_b1dEsB_HEeOYe8LVX7HMMw" name="Mothers Vital Signs Observation">
+      <ownedComment xmi:id="_b1dEsR_HEeOYe8LVX7HMMw">
+        <body>A systematic measure for evaluating the physical condition of the infant at specific intervals following birth.&#xD;
+&#xD;
+The consolidated CDA Vital Signs Observation template has been used.  The value set for observation.code indicates which vital sign information is collected.</body>
+      </ownedComment>
+      <generalization xmi:id="_b1dEsh_HEeOYe8LVX7HMMw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_b1dEsx_HEeOYe8LVX7HMMw" name="classCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1dEtB_HEeOYe8LVX7HMMw" value="OBS"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_b1dEtR_HEeOYe8LVX7HMMw" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_b1dEth_HEeOYe8LVX7HMMw" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_b1dEtx_HEeOYe8LVX7HMMw" name="code" visibility="private" isUnique="false" aggregation="composite">
+        <ownedComment xmi:id="_b1dEuB_HEeOYe8LVX7HMMw">
+          <body>A code value that indicates the nature of the observation.   The value is drawn from the Maternal Vital Signs value set.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_b1dEuR_HEeOYe8LVX7HMMw" name="value" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_b1dEuh_HEeOYe8LVX7HMMw">
+          <body>The measured vital sign amount.  The meaning of the observation is dependent on the value of observation code.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b1dEux_HEeOYe8LVX7HMMw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1dEvB_HEeOYe8LVX7HMMw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_1Jc4gh_HEeOYe8LVX7HMMw" memberEnd="_1Jc4gB_HEeOYe8LVX7HMMw _1Jc4gx_HEeOYe8LVX7HMMw">
+      <ownedEnd xmi:id="_1Jc4gx_HEeOYe8LVX7HMMw" type="_BOedQM9lEeGEP4RKA70UUQ" association="_1Jc4gh_HEeOYe8LVX7HMMw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_e6DzQh_JEeOYe8LVX7HMMw" memberEnd="_e6DzQB_JEeOYe8LVX7HMMw _e6DzQx_JEeOYe8LVX7HMMw">
+      <ownedEnd xmi:id="_e6DzQx_JEeOYe8LVX7HMMw" type="_GVS2QB_EEeOYe8LVX7HMMw" association="_e6DzQh_JEeOYe8LVX7HMMw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TmAPoh_KEeOYe8LVX7HMMw" memberEnd="_TmAPoB_KEeOYe8LVX7HMMw _TmAPox_KEeOYe8LVX7HMMw">
+      <ownedEnd xmi:id="_TmAPox_KEeOYe8LVX7HMMw" type="_-EnHILvNEeGkEvM80TFRNQ" association="_TmAPoh_KEeOYe8LVX7HMMw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_UudQAB_LEeOYe8LVX7HMMw" memberEnd="_UuUGEB_LEeOYe8LVX7HMMw _UudQAR_LEeOYe8LVX7HMMw">
+      <ownedEnd xmi:id="_UudQAR_LEeOYe8LVX7HMMw" type="_oJ-owM-KEeGEP4RKA70UUQ" association="_UudQAB_LEeOYe8LVX7HMMw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TT0Esh_QEeOYe8LVX7HMMw" memberEnd="_TT0EsB_QEeOYe8LVX7HMMw _TT0Esx_QEeOYe8LVX7HMMw">
+      <ownedEnd xmi:id="_TT0Esx_QEeOYe8LVX7HMMw" type="_FxzMEB8eEeOZzJzWV51ZDg" association="_TT0Esh_QEeOYe8LVX7HMMw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cnDxsh_QEeOYe8LVX7HMMw" memberEnd="_cnDxsB_QEeOYe8LVX7HMMw _cnDxsx_QEeOYe8LVX7HMMw">
+      <ownedEnd xmi:id="_cnDxsx_QEeOYe8LVX7HMMw" type="_eR3SsNAPEeGEP4RKA70UUQ" association="_cnDxsh_QEeOYe8LVX7HMMw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_MrD_IDgmEeOMp6Ft_mQoHw" memberEnd="_MqzgcDgmEeOMp6Ft_mQoHw _MrD_ITgmEeOMp6Ft_mQoHw">
+      <ownedEnd xmi:id="_MrD_ITgmEeOMp6Ft_mQoHw" type="_U0SxkLxyEeGUNfs_q_VvNQ" association="_MrD_IDgmEeOMp6Ft_mQoHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ieRWUjgyEeOMp6Ft_mQoHw" memberEnd="_ieRWUDgyEeOMp6Ft_mQoHw _ieRWUzgyEeOMp6Ft_mQoHw">
+      <ownedEnd xmi:id="_ieRWUzgyEeOMp6Ft_mQoHw" type="_oC6z0FqNEeKUiPQlmqLrLg" association="_ieRWUjgyEeOMp6Ft_mQoHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_sfyKYjtaEeOC5d2nIW7v7g" memberEnd="_sfyKYDtaEeOC5d2nIW7v7g _sfyKYztaEeOC5d2nIW7v7g">
+      <ownedEnd xmi:id="_sfyKYztaEeOC5d2nIW7v7g" type="_kr9kMFp7EeKUiPQlmqLrLg" association="_sfyKYjtaEeOC5d2nIW7v7g"/>
+    </packagedElement>
     <profileApplication xmi:id="_esTLTLSgEeGhbsXY607ygg">
       <eAnnotations xmi:id="_esTLTbSgEeGhbsXY607ygg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -3497,7 +3498,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:PropertyValidation xmi:id="__OvtQLShEeGhbsXY607ygg" base_Property="_2XxFhLShEeGhbsXY607ygg">
     <ruleId>CONF:6</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_AznZULSiEeGhbsXY607ygg" code="68998-4" displayName="U.S. standard certificate of live birth" base_Property="_2XxFhLShEeGhbsXY607ygg">
+  <CDA:CodeSystemConstraint xmi:id="_AznZULSiEeGhbsXY607ygg" code="68998-4" displayName="U.S. standard certificate of live birth - 2003 revision" base_Property="_2XxFhLShEeGhbsXY607ygg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7</ruleId>
   </CDA:CodeSystemConstraint>
@@ -3522,7 +3523,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:PropertyValidation xmi:id="_-xcQwLSiEeGhbsXY607ygg" base_Property="_2XxFk7ShEeGhbsXY607ygg">
     <ruleId>CONF:1</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="__lXBALSiEeGhbsXY607ygg" code="US" base_Property="_2XxFk7ShEeGhbsXY607ygg">
+  <CDA:CodeSystemConstraint xmi:id="__lXBALSiEeGhbsXY607ygg" code="USA" base_Property="_2XxFk7ShEeGhbsXY607ygg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1ZiywKFkEd-dVeaMP0XXQw"/>
     <ruleId>CONF:2</ruleId>
   </CDA:CodeSystemConstraint>
@@ -3548,7 +3549,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:PropertyValidation xmi:id="_hINpQLvNEeGkEvM80TFRNQ" base_Property="_WJbAcLvNEeGkEvM80TFRNQ">
     <ruleId>CONF:38</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_kLtPcLvNEeGkEvM80TFRNQ" code="5707-8" displayName="Antenatal testing and surveillance" base_Property="_WJkxcLvNEeGkEvM80TFRNQ">
+  <CDA:CodeSystemConstraint xmi:id="_kLtPcLvNEeGkEvM80TFRNQ" code="57078-8" displayName="Antenatal testing and surveillance" base_Property="_WJkxcLvNEeGkEvM80TFRNQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:39</ruleId>
   </CDA:CodeSystemConstraint>
@@ -3576,7 +3577,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:PropertyValidation xmi:id="_-EnHMbvNEeGkEvM80TFRNQ" base_Property="_-EnHIrvNEeGkEvM80TFRNQ">
     <ruleId>CONF:51</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_-EnHMrvNEeGkEvM80TFRNQ" code="57075-4" displayName="Newborn delivery information from newborn Narrative" base_Property="_-EnHJrvNEeGkEvM80TFRNQ">
+  <CDA:CodeSystemConstraint xmi:id="_-EnHMrvNEeGkEvM80TFRNQ" code="57075-4" displayName="Newborn delivery information from newborn narrative" base_Property="_-EnHJrvNEeGkEvM80TFRNQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:52</ruleId>
   </CDA:CodeSystemConstraint>
@@ -3655,9 +3656,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:PropertyValidation xmi:id="_VvFwcLxzEeGUNfs_q_VvNQ" base_Property="_epTu4LxyEeGUNfs_q_VvNQ">
     <ruleId>CONF:108</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_Wo0NwLxzEeGUNfs_q_VvNQ" base_Association="_cT8aCrxyEeGUNfs_q_VvNQ">
-    <ruleId>CONF:105</ruleId>
-  </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_gBkF0LxzEeGUNfs_q_VvNQ" severity="WARNING" base_Property="_cT8aBLxyEeGUNfs_q_VvNQ">
     <ruleId>CONF:104</ruleId>
   </CDA:PropertyValidation>
@@ -3708,7 +3706,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:PropertyValidation xmi:id="_GbK6obyYEeGUNfs_q_VvNQ" base_Property="_GbJsiLyYEeGUNfs_q_VvNQ">
     <ruleId>CONF:145</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_GbK6oryYEeGUNfs_q_VvNQ" base_Property="_GbJsiLyYEeGUNfs_q_VvNQ">
+  <CDA:CodeSystemConstraint xmi:id="_GbK6oryYEeGUNfs_q_VvNQ" code="69045-3" displayName="U.S. stanard report of fetal death - 2003 revision" base_Property="_GbJsiLyYEeGUNfs_q_VvNQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:146</ruleId>
   </CDA:CodeSystemConstraint>
@@ -3822,7 +3820,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     <ruleId>CONF:111</ruleId>
   </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_so4XkLyzEeGUNfs_q_VvNQ" base_Class="_dTb3kLyzEeGUNfs_q_VvNQ" templateId="2.16.840.1.113883.10.20.26.42"/>
-  <CDA:PropertyValidation xmi:id="_FIyukL7OEeGdruZFgBKbQw" severity="INFO" base_Property="_x0p44LyzEeGUNfs_q_VvNQ">
+  <CDA:PropertyValidation xmi:id="_FIyukL7OEeGdruZFgBKbQw" base_Property="_x0p44LyzEeGUNfs_q_VvNQ">
     <ruleId>CONF:188</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_heDT8L7OEeGdruZFgBKbQw" base_Property="_kqSJULyzEeGUNfs_q_VvNQ">
@@ -4204,9 +4202,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:AssociationValidation xmi:id="_bDPTYNA3EeGEz9ISu-MpwA" base_Association="_QaJ00tA3EeGEz9ISu-MpwA">
     <ruleId>CONF:17</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_gJNHoNA3EeGEz9ISu-MpwA" base_Association="_ff2BktA3EeGEz9ISu-MpwA">
-    <ruleId>CONF:18</ruleId>
-  </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_pzgCsNA3EeGEz9ISu-MpwA" base_Association="_o_ImgtA3EeGEz9ISu-MpwA">
     <ruleId>CONF:19</ruleId>
   </CDA:AssociationValidation>
@@ -4228,22 +4223,13 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:Entry xmi:id="_syn-4NA6EeGEz9ISu-MpwA" base_Association="_q9GAotA6EeGEz9ISu-MpwA">
     <ruleId>CONF:377</ruleId>
   </CDA:Entry>
-  <CDA:Entry xmi:id="_nZd28NA8EeGEz9ISu-MpwA" base_Association="_5VOuYtA7EeGEz9ISu-MpwA">
-    <ruleId>CONF:378</ruleId>
-  </CDA:Entry>
-  <CDA:Entry xmi:id="_ARI7INA9EeGEz9ISu-MpwA" base_Association="_9QLrktA8EeGEz9ISu-MpwA">
-    <ruleId>CONF:358</ruleId>
-  </CDA:Entry>
   <CDA:Entry xmi:id="_NsmIwNA_EeGEz9ISu-MpwA" severity="INFO" base_Association="_LdB54tA_EeGEz9ISu-MpwA">
     <ruleId>CONF:384</ruleId>
   </CDA:Entry>
-  <CDA:AssociationValidation xmi:id="_rgw8INA_EeGEz9ISu-MpwA" severity="WARNING" base_Association="_p3bm0tA_EeGEz9ISu-MpwA">
-    <ruleId>CONF:159</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_vmmwINA_EeGEz9ISu-MpwA" severity="WARNING" base_Association="_nOICQtA_EeGEz9ISu-MpwA">
+  <CDA:AssociationValidation xmi:id="_vmmwINA_EeGEz9ISu-MpwA" base_Association="_nOICQtA_EeGEz9ISu-MpwA">
     <ruleId>CONF:158</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_xU1zkNA_EeGEz9ISu-MpwA" severity="WARNING" base_Association="_lqTfEtA_EeGEz9ISu-MpwA">
+  <CDA:AssociationValidation xmi:id="_xU1zkNA_EeGEz9ISu-MpwA" base_Association="_lqTfEtA_EeGEz9ISu-MpwA">
     <ruleId>CONF:157</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_21xaoNBBEeGEz9ISu-MpwA" base_Association="_vNCEctA9EeGEz9ISu-MpwA">
@@ -4268,19 +4254,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:Entry xmi:id="_L0EuoNBEEeGjwMhvOnViSg" base_Association="_K55lYtBEEeGjwMhvOnViSg">
     <ruleId>CONF:62</ruleId>
   </CDA:Entry>
-  <CDA:PropertyValidation xmi:id="_p0EdpMCYEeGP5fduNvI1Qw" base_Property="_p0EdmcCYEeGP5fduNvI1Qw">
-    <ruleId>CONF:390</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_p0EdpcCYEeGP5fduNvI1Qw" base_Property="_p0Edm8CYEeGP5fduNvI1Qw">
-    <ruleId>CONF:391</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_p0EdpsCYEeGP5fduNvI1Qw" base_Property="_p0EdncCYEeGP5fduNvI1Qw">
-    <ruleId>CONF:392</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_p0Edp8CYEeGP5fduNvI1Qw" base_Property="_p0Edn8CYEeGP5fduNvI1Qw">
-    <ruleId>CONF:393</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_Uog_wNBEEeGjwMhvOnViSg" base_Class="_p0Edl8CYEeGP5fduNvI1Qw" templateId="2.16.840.1.113883.10.20.26.27"/>
   <CDA:Entry xmi:id="_lqR3oNBEEeGjwMhvOnViSg" base_Association="_jPtSotBEEeGjwMhvOnViSg">
     <ruleId>CONF:63</ruleId>
   </CDA:Entry>
@@ -4322,7 +4295,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:PropertyValidation xmi:id="_9AM4YNBIEeGg_uUX7hH4lg" base_Property="_HHBlBM9lEeGEP4RKA70UUQ">
     <ruleId>CONF:355</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_BfB0INBJEeGg_uUX7hH4lg" code="8716-3" displayName="Vital Signs" base_Property="_qtB0VM-KEeGEP4RKA70UUQ">
+  <CDA:CodeSystemConstraint xmi:id="_BfB0INBJEeGg_uUX7hH4lg" code="51848-0" displayName="Assessment Note" base_Property="_qtB0VM-KEeGEP4RKA70UUQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:361</ruleId>
   </CDA:CodeSystemConstraint>
@@ -4555,9 +4528,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:PropertyValidation xmi:id="_kr-LQlp7EeKUiPQlmqLrLg" base_Property="_kr9kOVp7EeKUiPQlmqLrLg">
     <ruleId>CONF:414</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_v9BBsFp7EeKUiPQlmqLrLg" base_Property="_kr9kM1p7EeKUiPQlmqLrLg">
-    <ruleId>CONF:411</ruleId>
-  </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_0CXtgFp7EeKUiPQlmqLrLg" severity="INFO" base_Association="_yvUKMFp7EeKUiPQlmqLrLg">
     <ruleId>CONF:404</ruleId>
   </CDA:AssociationValidation>
@@ -4600,36 +4570,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:EntryRelationship xmi:id="_EMXxwFqOEeKUiPQlmqLrLg" base_Association="_CZh7IFqOEeKUiPQlmqLrLg" typeCode="COMP">
     <ruleId>CONF:288</ruleId>
   </CDA:EntryRelationship>
-  <CDA:PropertyValidation xmi:id="_9vqQE8CdEeGP5fduNvI1Qw" base_Property="_9vqQAsCdEeGP5fduNvI1Qw">
-    <ruleId>CONF:302</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_9vqQFMCdEeGP5fduNvI1Qw" base_Property="_9vqQCcCdEeGP5fduNvI1Qw">
-    <ruleId>CONF:304</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_9vqQFcCdEeGP5fduNvI1Qw" base_Property="_9vqQC8CdEeGP5fduNvI1Qw">
-    <ruleId>CONF:305</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_9vqQFsCdEeGP5fduNvI1Qw" base_Property="_9vqQDcCdEeGP5fduNvI1Qw">
-    <ruleId>CONF:306</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_9vqQF8CdEeGP5fduNvI1Qw" base_Property="_9vqQD8CdEeGP5fduNvI1Qw">
-    <ruleId>CONF:307</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_MzKL8FqPEeKUiPQlmqLrLg" base_Property="_MzJk4lqPEeKUiPQlmqLrLg">
-    <ruleId>CONF:308</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_MzKL8VqPEeKUiPQlmqLrLg" base_Property="_MzJk6FqPEeKUiPQlmqLrLg">
-    <ruleId>CONF:310</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_MzKL8lqPEeKUiPQlmqLrLg" base_Property="_MzJk6lqPEeKUiPQlmqLrLg">
-    <ruleId>CONF:311</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_MzKL81qPEeKUiPQlmqLrLg" base_Property="_MzJk7FqPEeKUiPQlmqLrLg">
-    <ruleId>CONF:313</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_MzKL9FqPEeKUiPQlmqLrLg" base_Property="_MzJk7lqPEeKUiPQlmqLrLg">
-    <ruleId>CONF:314</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_OHHHJ1qPEeKUiPQlmqLrLg" base_Property="_OHGgElqPEeKUiPQlmqLrLg">
     <ruleId>CONF:315</ruleId>
   </CDA:PropertyValidation>
@@ -4662,27 +4602,11 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     <reference href="vsbr-vocab.uml#_FX7KQLuuEeGkEvM80TFRNQ"/>
     <ruleId>CONF:325</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_qTHTwFqYEeKUiPQlmqLrLg" code="14331002" displayName="Failed vacuum extraction delivery" base_Property="_MzJk6lqPEeKUiPQlmqLrLg">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:312</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_8V4VoFqYEeKUiPQlmqLrLg" base_Association="_5LtfsVqYEeKUiPQlmqLrLg">
-    <ruleId>CONF:309</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_PeCSQFqZEeKUiPQlmqLrLg" base_Association="_N1F-glqZEeKUiPQlmqLrLg">
-    <ruleId>CONF:303</ruleId>
-  </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_ZrN38FqZEeKUiPQlmqLrLg" base_Association="_YMt5oFqZEeKUiPQlmqLrLg">
     <ruleId>CONF:316</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_jJgXUFqZEeKUiPQlmqLrLg" base_Association="_g8DBQFqZEeKUiPQlmqLrLg">
-    <ruleId>CONF:286</ruleId>
-  </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_on9kEFqZEeKUiPQlmqLrLg" severity="INFO" base_Association="_nkn3wVqZEeKUiPQlmqLrLg">
     <ruleId>CONF:289</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_zM7-sFqZEeKUiPQlmqLrLg" base_Association="_bpBocVqZEeKUiPQlmqLrLg">
-    <ruleId>CONF:285</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_5S1l8FqZEeKUiPQlmqLrLg" severity="INFO" base_Property="_oC6zzVqNEeKUiPQlmqLrLg">
     <ruleId>CONF:295</ruleId>
@@ -4696,31 +4620,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:PropertyValidation xmi:id="_bDofkFqdEeKUiPQlmqLrLg" base_Property="_CCLqoNXSEeGb1t7PnGJ-bA">
     <ruleId>CONF:439</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_pBeScVqoEeKUiPQlmqLrLg" base_Association="_pBdrYFqoEeKUiPQlmqLrLg">
-    <ruleId>CONF:135</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_pBaBAFqoEeKUiPQlmqLrLg" base_Property="_pBZZ8FqoEeKUiPQlmqLrLg">
-    <ruleId>CONF:133</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_pBaoEFqoEeKUiPQlmqLrLg" base_Property="_pBZZ8FqoEeKUiPQlmqLrLg">
-    <reference href="vsbr-vocab.uml#_HXRMMFqpEeKUiPQlmqLrLg"/>
-    <ruleId>CONF:134</ruleId>
-  </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_eFf3pFqpEeKUiPQlmqLrLg" base_Property="_eFf3oFqpEeKUiPQlmqLrLg">
-    <ruleId>CONF:136</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_eFgetFqpEeKUiPQlmqLrLg" base_Property="_eFgesFqpEeKUiPQlmqLrLg">
-    <ruleId>CONF:137</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_eFhFwFqpEeKUiPQlmqLrLg" base_Property="_eFgetVqpEeKUiPQlmqLrLg">
-    <ruleId>CONF:138</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_v1n04FqqEeKUiPQlmqLrLg" base_Association="_pxiykVqqEeKUiPQlmqLrLg">
-    <ruleId>CONF:93</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_4vCsoFqqEeKUiPQlmqLrLg" base_Association="_nkQboVqqEeKUiPQlmqLrLg">
-    <ruleId>CONF:131</ruleId>
-  </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_t410UFtIEeKuluv3od9aUg" base_Property="_T1AmcLvQEeGkEvM80TFRNQ">
     <ruleId>CONF:70</ruleId>
   </CDA:PropertyValidation>
@@ -4772,9 +4671,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:PropertyValidation xmi:id="_HI6s8GQGEeK7gOt5N4Q1gA" base_Property="_ARs9gGQGEeK7gOt5N4Q1gA">
     <ruleId>CONF:177</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_CyNBsGWCEeK5DM6q0QrKnA" base_Property="_oC6z1FqNEeKUiPQlmqLrLg">
-    <ruleId>CONF:297</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_CxHbkGWNEeK5DM6q0QrKnA" code="73776-7" displayName="No-prenatal care" base_Property="_kqSwYLyzEeGUNfs_q_VvNQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:185</ruleId>
@@ -4811,7 +4707,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:CodeSystemConstraint xmi:id="_yTghEAXnEeO_frVhN2419A" code="11884-4" displayName="Gestational age Estimated" base_Property="_H3pZNcCJEeGP5fduNvI1Qw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_23BdoAXpEeO_frVhN2419A" base_Property="_nuPVRb7yEeGdruZFgBKbQw">
+  <CDA:CodeSystemConstraint xmi:id="_23BdoAXpEeO_frVhN2419A" code="67188-3" displayName="Infection" base_Property="_nuPVRb7yEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_lhvsgAXsEeO_frVhN2419A" code="57722-1" displayName="Birth plurality" base_Property="_6BNi9cCKEeGP5fduNvI1Qw">
@@ -4830,9 +4726,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_juG5wAXuEeO_frVhN2419A" code="73757-7" displayName="Infant living at time of report" base_Property="_1m13fdBDEeGjwMhvOnViSg">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-  </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_2cLicAXuEeO_frVhN2419A" code="73756-9" displayName="Infant is being breastfed at discharge" base_Property="_p0Edm8CYEeGP5fduNvI1Qw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Xz3FIAZ5EeOFRrPYPAmKMQ" code="57074-7" displayName="Labor and delivery process" base_Property="_EdBkQbvaEeGkEvM80TFRNQ">
@@ -4880,9 +4773,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:ValueSetConstraint xmi:id="_thiZ0AmrEeOSQLMpSugQSQ" base_Property="_DHhamb7zEeGdruZFgBKbQw">
     <reference href="vsbr-vocab.uml#_Uv_ZML8LEeGJd49YTXcCkg"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_2jBzAAmsEeOSQLMpSugQSQ" code="64646001" displayName="Failed forceps delivery" base_Property="_9vqQC8CdEeGP5fduNvI1Qw">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-  </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_NSoXcAmtEeOSQLMpSugQSQ" code="73759-3" displayName="Hysterotomy or hysterectomy was performed at delivery" base_Property="_OHGgGlqPEeKUiPQlmqLrLg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
@@ -4901,7 +4791,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:ValueSetConstraint xmi:id="_HGXI0Am1EeOSQLMpSugQSQ" base_Property="_P1wnyb7zEeGdruZFgBKbQw">
     <reference href="vsbr-vocab.uml#_ROHnEcCOEeGP5fduNvI1Qw"/>
   </CDA:ValueSetConstraint>
-  <CDA:AssociationValidation xmi:id="_JlDLQAnVEeOSQLMpSugQSQ" base_Association="_HejY0gnVEeOSQLMpSugQSQ"/>
   <CDA:CodeSystemConstraint xmi:id="_UMC_IAnVEeOSQLMpSugQSQ" base_Property="_JLjRFcCJEeGP5fduNvI1Qw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
@@ -4963,13 +4852,119 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:CodeSystemConstraint xmi:id="_EIevoBlREeOO3qDQPTfvZw" code="CHILD" base_Property="_B3bTABlREeOO3qDQPTfvZw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_yiyj8BlTEeOO3qDQPTfvZw" base_Property="_xjjUgBlTEeOO3qDQPTfvZw">
-    <ruleId>CONF:129</ruleId>
+  <CDA:CDATemplate xmi:id="_Fx8WAB8eEeOZzJzWV51ZDg" base_Class="_FxzMEB8eEeOZzJzWV51ZDg" templateId="2.16.840.1.113883.10.20.26.5"/>
+  <CDA:CDATemplate xmi:id="_Uog_wNBEEeGjwMhvOnViSg" base_Class="_p0Edl8CYEeGP5fduNvI1Qw" templateId="2.16.840.1.113883.10.20.26.27"/>
+  <CDA:PropertyValidation xmi:id="_p0EdpMCYEeGP5fduNvI1Qw" base_Property="_p0EdmcCYEeGP5fduNvI1Qw">
+    <ruleId>CONF:390</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_848fcBlTEeOO3qDQPTfvZw" base_Property="_8HEWkBlTEeOO3qDQPTfvZw">
-    <ruleId>CONF:130</ruleId>
+  <CDA:PropertyValidation xmi:id="_p0EdpsCYEeGP5fduNvI1Qw" base_Property="_p0EdncCYEeGP5fduNvI1Qw">
+    <ruleId>CONF:392</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_LcYBwBlWEeOO3qDQPTfvZw" base_Property="_JxkFwBlWEeOO3qDQPTfvZw">
-    <ruleId>CONF:132</ruleId>
+  <CDA:PropertyValidation xmi:id="_p0EdpcCYEeGP5fduNvI1Qw" base_Property="_p0Edm8CYEeGP5fduNvI1Qw">
+    <ruleId>CONF:391</ruleId>
   </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2cLicAXuEeO_frVhN2419A" code="73756-9" displayName="Infant is being breastfed at discharge" base_Property="_p0Edm8CYEeGP5fduNvI1Qw">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_p0Edp8CYEeGP5fduNvI1Qw" base_Property="_p0Edn8CYEeGP5fduNvI1Qw">
+    <ruleId>CONF:393</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_iGAonR8eEeOZzJzWV51ZDg" base_Class="_iGAokB8eEeOZzJzWV51ZDg" templateId="2.16.840.1.113883.10.20.26.30"/>
+  <CDA:PropertyValidation xmi:id="_iGAonh8eEeOZzJzWV51ZDg" base_Property="_iGAokx8eEeOZzJzWV51ZDg">
+    <ruleId>CONF:234</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_iGAonx8eEeOZzJzWV51ZDg" base_Property="_iGAolR8eEeOZzJzWV51ZDg">
+    <ruleId>CONF:237</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_iGAooB8eEeOZzJzWV51ZDg" base_Property="_iGAolx8eEeOZzJzWV51ZDg">
+    <ruleId>CONF:235</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_iGAooR8eEeOZzJzWV51ZDg" code="67188-3" displayName="Infection" base_Property="_iGAolx8eEeOZzJzWV51ZDg">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_iGAooh8eEeOZzJzWV51ZDg" base_Property="_iGAomR8eEeOZzJzWV51ZDg">
+    <ruleId>CONF:238</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_S6jgIB8gEeOZzJzWV51ZDg" base_Association="_P7OoQh8gEeOZzJzWV51ZDg"/>
+  <CDA:AssociationValidation xmi:id="_m2SOwB8gEeOZzJzWV51ZDg" base_Association="_lCZPQh8gEeOZzJzWV51ZDg"/>
+  <CDA:CDATemplate xmi:id="_GVcnQB_EEeOYe8LVX7HMMw" base_Class="_GVS2QB_EEeOYe8LVX7HMMw" templateId="2.16.840.1.113883.10.20.26.9"/>
+  <CDA:PropertyValidation xmi:id="_GVcnQR_EEeOYe8LVX7HMMw" base_Property="_GVS2Qx_EEeOYe8LVX7HMMw">
+    <ruleId>CONF:360</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_GVcnQh_EEeOYe8LVX7HMMw" base_Property="_GVS2Rx_EEeOYe8LVX7HMMw">
+    <ruleId>CONF:363</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_GVcnQx_EEeOYe8LVX7HMMw" code="8716-3" displayName="Vital Signs" base_Property="_GVS2Sx_EEeOYe8LVX7HMMw">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:361</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_GVcnRB_EEeOYe8LVX7HMMw" base_Property="_GVS2Sx_EEeOYe8LVX7HMMw">
+    <ruleId>CONF:362</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_GVcnRR_EEeOYe8LVX7HMMw" base_Property="_GVS2Th_EEeOYe8LVX7HMMw">
+    <ruleId>CONF:364</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_XHJC0B_EEeOYe8LVX7HMMw" base_Class="_XG_44B_EEeOYe8LVX7HMMw" templateId="2.16.840.1.113883.10.20.26.46"/>
+  <CDA:PropertyValidation xmi:id="_XHJC0R_EEeOYe8LVX7HMMw" base_Property="_XG_44x_EEeOYe8LVX7HMMw">
+    <ruleId>CONF:334</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_XHJC0h_EEeOYe8LVX7HMMw" base_Property="_XG_45R_EEeOYe8LVX7HMMw">
+    <ruleId>CONF:337</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_XHJC0x_EEeOYe8LVX7HMMw" base_Property="_XG_45x_EEeOYe8LVX7HMMw">
+    <ruleId>CONF:335</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_XHJC1R_EEeOYe8LVX7HMMw" base_Property="_XG_46R_EEeOYe8LVX7HMMw">
+    <ruleId>CONF:339</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_b1dEvR_HEeOYe8LVX7HMMw" base_Class="_b1dEsB_HEeOYe8LVX7HMMw" templateId="2.16.840.1.113883.10.20.26.46"/>
+  <CDA:PropertyValidation xmi:id="_b1dEvh_HEeOYe8LVX7HMMw" base_Property="_b1dEsx_HEeOYe8LVX7HMMw">
+    <ruleId>CONF:334</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_b1dEvx_HEeOYe8LVX7HMMw" base_Property="_b1dEtR_HEeOYe8LVX7HMMw">
+    <ruleId>CONF:337</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_b1dEwB_HEeOYe8LVX7HMMw" base_Property="_b1dEtx_HEeOYe8LVX7HMMw">
+    <ruleId>CONF:335</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_b1dEwR_HEeOYe8LVX7HMMw" base_Property="_b1dEtx_HEeOYe8LVX7HMMw">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_b1dEwh_HEeOYe8LVX7HMMw" base_Property="_b1dEuR_HEeOYe8LVX7HMMw">
+    <ruleId>CONF:339</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_D6WrkB_JEeOYe8LVX7HMMw" base_Property="_JLjRFcCJEeGP5fduNvI1Qw">
+    <reference href="vsbr-vocab.uml#_SRJgEQnSEeOSQLMpSugQSQ"/>
+  </CDA:ValueSetConstraint>
+  <CDA:AssociationValidation xmi:id="_hlcbcB_JEeOYe8LVX7HMMw" base_Association="_e6DzQh_JEeOYe8LVX7HMMw"/>
+  <CDA:ValueSetConstraint xmi:id="_19AKcB_JEeOYe8LVX7HMMw" base_Property="_b1dEtx_HEeOYe8LVX7HMMw">
+    <reference href="vsbr-vocab.uml#_p8ODsAnREeOSQLMpSugQSQ"/>
+  </CDA:ValueSetConstraint>
+  <CDA:AssociationValidation xmi:id="_9SrXgB_JEeOYe8LVX7HMMw" base_Association="_1Jc4gh_HEeOYe8LVX7HMMw"/>
+  <CDA:AssociationValidation xmi:id="_aisU8B_KEeOYe8LVX7HMMw" base_Association="_TmAPoh_KEeOYe8LVX7HMMw"/>
+  <CDA:AssociationValidation xmi:id="_WqF2QB_LEeOYe8LVX7HMMw" base_Association="_UudQAB_LEeOYe8LVX7HMMw"/>
+  <CDA:ValueSetConstraint xmi:id="_vkxLIB_LEeOYe8LVX7HMMw" base_Property="_XG_45x_EEeOYe8LVX7HMMw">
+    <reference href="vsbr-vocab.uml#_6YDEVR_HEeOYe8LVX7HMMw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:AssociationValidation xmi:id="_ZBpKMB_QEeOYe8LVX7HMMw" base_Association="_TT0Esh_QEeOYe8LVX7HMMw"/>
+  <CDA:AssociationValidation xmi:id="_e4jTMB_QEeOYe8LVX7HMMw" base_Association="_cnDxsh_QEeOYe8LVX7HMMw"/>
+  <CDA:ValueSetConstraint xmi:id="_pZBBQB_QEeOYe8LVX7HMMw" base_Property="_nuPVRb7yEeGdruZFgBKbQw">
+    <reference href="vsbr-vocab.uml#_RV75t772EeGdruZFgBKbQw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_vugjsB_QEeOYe8LVX7HMMw" base_Property="_iGAolx8eEeOZzJzWV51ZDg">
+    <reference href="vsbr-vocab.uml#_0MnaIb71EeGdruZFgBKbQw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:AssociationValidation xmi:id="_OpKDgDgmEeOMp6Ft_mQoHw" base_Association="_MrD_IDgmEeOMp6Ft_mQoHw"/>
+  <CDA:ValueSetConstraint xmi:id="_nHt4kDgwEeOMp6Ft_mQoHw" base_Property="_nuPVSb7yEeGdruZFgBKbQw">
+    <reference href="vsbr-vocab.uml#_RV75t772EeGdruZFgBKbQw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_tmFDIDgwEeOMp6Ft_mQoHw" base_Property="_iGAomR8eEeOZzJzWV51ZDg">
+    <reference href="vsbr-vocab.uml#_0MnaIb71EeGdruZFgBKbQw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:AssociationValidation xmi:id="_kp9x0DgyEeOMp6Ft_mQoHw" base_Association="_ieRWUjgyEeOMp6Ft_mQoHw"/>
+  <CDA:CodeSystemConstraint xmi:id="_f09wgDtNEeOC5d2nIW7v7g" code="71459-2" displayName="Infection Panel" base_Property="_FxzMGx8eEeOZzJzWV51ZDg">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_kPolADtNEeOC5d2nIW7v7g" name="LOINC" code="71459-2" displayName="Infection panel" base_Property="_gqqWENAPEeGEP4RKA70UUQ"/>
+  <CDA:AssociationValidation xmi:id="_umuowDtaEeOC5d2nIW7v7g" base_Association="_sfyKYjtaEeOC5d2nIW7v7g"/>
 </xmi:XMI>

@@ -3,7 +3,7 @@
   <uml:Package xmi:id="_esc8MLSgEeGhbsXY607ygg" name="vsbr-vocab">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_pBguULutEeGkEvM80TFRNQ" name="Birth Attendant Titles">
       <ownedComment xmi:id="_d3imYMHmEeGrHfBMjd7c_Q">
-        <body>A list of different titles used by birth attendants to denote professional role.  Note, the codes used are based on the current worksheet, and may be replaced with code values from a widely used code system.</body>
+        <body>A list of different titles used by birth attendants to denote professional role.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_u9s_8LutEeGkEvM80TFRNQ" name="309343006"/>
       <ownedLiteral xmi:id="_2C4S4LutEeGkEvM80TFRNQ" name="76231001"/>
@@ -13,25 +13,25 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_FX6jMLuuEeGkEvM80TFRNQ" name="Fetal Presentations">
       <ownedComment xmi:id="_Fjs9QMLREeGrHfBMjd7c_Q">
-        <body>A list of the different ways a fetus may present at the point of delivery.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+        <body>A list of the different ways a fetus may present at the point of delivery.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
-      <ownedLiteral xmi:id="_HrqHcLuuEeGkEvM80TFRNQ" name="70028003"/>
       <ownedLiteral xmi:id="_JhQ-MLuuEeGkEvM80TFRNQ" name="6096002"/>
       <ownedLiteral xmi:id="_Keh3sLuuEeGkEvM80TFRNQ" name="394841004"/>
+      <ownedLiteral xmi:id="_YAS9wB_XEeOYe8LVX7HMMw" name="70028003"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_OcUi8LuuEeGkEvM80TFRNQ" name="Delivery Routes">
       <ownedComment xmi:id="_ydMusMRKEeGoQ8pWsHTi4g">
-        <body>A list of delivery routes that are relevant.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+        <body>A list of delivery routes that are relevant.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
-      <ownedLiteral xmi:id="_QgTM4LuuEeGkEvM80TFRNQ" name="SNOMED Concept Code (Answer)"/>
+      <ownedLiteral xmi:id="_QgTM4LuuEeGkEvM80TFRNQ" name="48782003"/>
       <ownedLiteral xmi:id="_UZnn0LuuEeGkEvM80TFRNQ" name="302383004"/>
       <ownedLiteral xmi:id="_V7o0MLuuEeGkEvM80TFRNQ" name="11466000"/>
       <ownedLiteral xmi:id="_V-6xsLuuEeGkEvM80TFRNQ" name="61586001"/>
       <ownedLiteral xmi:id="_BAwFYAnJEeOSQLMpSugQSQ" name="261665006"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_5RyFkLuyEeGkEvM80TFRNQ" name="Birth or Delivery Occurred">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_5RyFkLuyEeGkEvM80TFRNQ" name="Birth or Delivery Location">
       <ownedComment xmi:id="_MedmQMRNEeGoQ8pWsHTi4g">
-        <body>A list of different types of place or situations in which the birth or delivery occurred.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+        <body>A list of different types of place or situations in which the birth or delivery occurred.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_EwSJMLuzEeGkEvM80TFRNQ" name="22232009"/>
       <ownedLiteral xmi:id="_GmjuULuzEeGkEvM80TFRNQ" name="91154008"/>
@@ -42,7 +42,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_QY5LELuzEeGkEvM80TFRNQ" name="Fetal Death Time Points">
       <ownedComment xmi:id="_ugGVEMRMEeGoQ8pWsHTi4g">
-        <body>A list of time points during the delivery process at which the fetal death is thought to have occured.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+        <body>A list of time points during the delivery process at which the fetal death is thought to have occured.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_YQojYLuzEeGkEvM80TFRNQ" name="634751000124116"/>
       <ownedLiteral xmi:id="_bgejgLuzEeGkEvM80TFRNQ" name="634741000124118"/>
@@ -51,20 +51,20 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_WfZfULywEeGUNfs_q_VvNQ" name="Delivery Payment Sources">
       <ownedComment xmi:id="_7bArUMHmEeGrHfBMjd7c_Q">
-        <body>A list of different types of payment that may be used to support the expense of labor and delivery.  Note, the codes used are based on the current worksheet, and may be replaced with code values from a widely used code system.</body>
+        <body>A list of different types of payment that may be used to support the expense of labor and delivery.  Note, the Public Health Data Consortium Source of Payment Typology is being used as the primary source for codes within the value set.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_eUBSMLywEeGUNfs_q_VvNQ" name="5"/>
       <ownedLiteral xmi:id="_gP6XILywEeGUNfs_q_VvNQ" name="2"/>
       <ownedLiteral xmi:id="_ioPgcLywEeGUNfs_q_VvNQ" name="81"/>
-      <ownedLiteral xmi:id="_j2qbYLywEeGUNfs_q_VvNQ" name="99"/>
-      <ownedLiteral xmi:id="_7jhY8AnOEeOSQLMpSugQSQ" name="ZZZ"/>
       <ownedLiteral xmi:id="_-rxjUAnOEeOSQLMpSugQSQ" name="33"/>
       <ownedLiteral xmi:id="_CWYz4AnPEeOSQLMpSugQSQ" name="38"/>
       <ownedLiteral xmi:id="_DAVv0AnPEeOSQLMpSugQSQ" name="311"/>
+      <ownedLiteral xmi:id="_j2qbYLywEeGUNfs_q_VvNQ" name="99"/>
+      <ownedLiteral xmi:id="_7jhY8AnOEeOSQLMpSugQSQ" name="ZZZ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_NzhKkL7wEeGdruZFgBKbQw" name="Pregnancy Risk Factors">
       <ownedComment xmi:id="_l3drwL7wEeGdruZFgBKbQw">
-        <body>A list of risk factors for a pregnancy.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+        <body>A list of risk factors for a pregnancy.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_mg0x0L7wEeGdruZFgBKbQw" name="73211009"/>
       <ownedLiteral xmi:id="_X5VkAL7wEeGdruZFgBKbQw" name="11687002"/>
@@ -79,9 +79,9 @@
       <ownedLiteral xmi:id="_GRg8QL7xEeGdruZFgBKbQw" name="200144004"/>
       <ownedLiteral xmi:id="_JPphUL7xEeGdruZFgBKbQw" name="260413007"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0MnaIL71EeGdruZFgBKbQw" name="Infections During Pregnancy - Live Birth">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0MnaIL71EeGdruZFgBKbQw" name="Infections Present Treated - Live Birth">
       <ownedComment xmi:id="_1xzdAL76EeGdruZFgBKbQw">
-        <body>A list of infections which may be present during pregnancy.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+        <body>A list of infections which may be present during pregnancy.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_65PDIL71EeGdruZFgBKbQw" name="1562800"/>
       <ownedLiteral xmi:id="_9a8x8L71EeGdruZFgBKbQw" name="76272004"/>
@@ -90,24 +90,24 @@
       <ownedLiteral xmi:id="_DZvroL72EeGdruZFgBKbQw" name="50711007"/>
       <ownedLiteral xmi:id="_Fx8SEL72EeGdruZFgBKbQw" name="260413007"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_RV75sL72EeGdruZFgBKbQw" name="Infections Present Treated Fetal Death">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_RV75sL72EeGdruZFgBKbQw" name="Infections Present Treated - Fetal Death">
       <ownedComment xmi:id="_4DwRgL76EeGdruZFgBKbQw">
-        <body>A list of infections which may be present during pregnancy. Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+        <body>A list of infections which may be present during pregnancy. Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_RV75sb72EeGdruZFgBKbQw" name="1562800"/>
       <ownedLiteral xmi:id="_RV75sr72EeGdruZFgBKbQw" name="76272004"/>
       <ownedLiteral xmi:id="_RV75s772EeGdruZFgBKbQw" name="105629000"/>
       <ownedLiteral xmi:id="_RV75tL72EeGdruZFgBKbQw" name="4241002"/>
       <ownedLiteral xmi:id="_RV75tb72EeGdruZFgBKbQw" name="426933007"/>
-      <ownedLiteral xmi:id="_RV75tr72EeGdruZFgBKbQw" name="260413007"/>
       <ownedLiteral xmi:id="_gvtgEL72EeGdruZFgBKbQw" name="28944009"/>
       <ownedLiteral xmi:id="_iy7VAL72EeGdruZFgBKbQw" name="186748004"/>
       <ownedLiteral xmi:id="_lFLEcL72EeGdruZFgBKbQw" name="187192000"/>
       <ownedLiteral xmi:id="_nBsbgL72EeGdruZFgBKbQw" name="394841004"/>
+      <ownedLiteral xmi:id="_RV75tr72EeGdruZFgBKbQw" name="260413007"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_t2yHML76EeGdruZFgBKbQw" name="Obstetric Procedures">
       <ownedComment xmi:id="_9wP6QL76EeGdruZFgBKbQw">
-        <body>A list of obstetric procedures which may be performed during pregnancy.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+        <body>A list of obstetric procedures which may be performed during pregnancy.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_-HJ-YL76EeGdruZFgBKbQw" name="265636007"/>
       <ownedLiteral xmi:id="_BUdn4L77EeGdruZFgBKbQw" name="103747003"/>
@@ -117,7 +117,7 @@
     <packagedElement xmi:type="uml:EnumerationLiteral" xmi:id="_XrLX8L8LEeGJd49YTXcCkg" name="TRAN"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_m4J2QL78EeGdruZFgBKbQw" name="Onset Labor">
       <ownedComment xmi:id="_CTzJEMRNEeGoQ8pWsHTi4g">
-        <body>A list of possible onsets of labor.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+        <body>A list of possible onsets of labor.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_rpcbAL78EeGdruZFgBKbQw" name="44223004"/>
       <ownedLiteral xmi:id="_z1kH4L78EeGdruZFgBKbQw" name="51920004"/>
@@ -126,11 +126,10 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_94as4L78EeGdruZFgBKbQw" name="Labor and Delivery Characteristics">
       <ownedComment xmi:id="_BOBz0MRNEeGoQ8pWsHTi4g">
-        <body>A list of relevant characteristics that can affect the labor and delivery process.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+        <body>A list of relevant characteristics that can affect the labor and delivery process.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_CZx_QL79EeGdruZFgBKbQw" name="236958009"/>
       <ownedLiteral xmi:id="_GB3gQL79EeGdruZFgBKbQw" name="237001001"/>
-      <ownedLiteral xmi:id="_H4lxUL79EeGdruZFgBKbQw" name="15028002"/>
       <ownedLiteral xmi:id="_KOstEL79EeGdruZFgBKbQw" name="634621000124113"/>
       <ownedLiteral xmi:id="_NDUJwL79EeGdruZFgBKbQw" name="634771000124114"/>
       <ownedLiteral xmi:id="_P-xOQL79EeGdruZFgBKbQw" name="11612004"/>
@@ -139,9 +138,9 @@
       <ownedLiteral xmi:id="_ZUiDwL79EeGdruZFgBKbQw" name="231064003"/>
       <ownedLiteral xmi:id="_beARsL79EeGdruZFgBKbQw" name="260413007"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ut8x0L8LEeGJd49YTXcCkg" name="Maternal Morbidities">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ut8x0L8LEeGJd49YTXcCkg" name="Maternal Morbiditiy">
       <ownedComment xmi:id="_NlJVQMCOEeGP5fduNvI1Qw">
-        <body>A list of maternal morbidities that may be experienced by the mother during labor and delivery.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+        <body>A list of maternal morbidities that may be experienced by the mother during labor and delivery.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_ga5SUNXOEeGb1t7PnGJ-bA" name="116859006"/>
       <ownedLiteral xmi:id="_bDO44L8LEeGJd49YTXcCkg" name="398019008"/>
@@ -153,7 +152,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ROHnEMCOEeGP5fduNvI1Qw" name="Newborn Abnormal Conditions">
       <ownedComment xmi:id="_h6wjgMCOEeGP5fduNvI1Qw">
-        <body>A list of disorders or significant morbidities experienced by the newborn.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+        <body>A list of disorders or significant morbidities experienced by the newborn.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_VtnJ0MCREeGP5fduNvI1Qw" name="AVI"/>
       <ownedLiteral xmi:id="_9AXiEMCSEeGP5fduNvI1Qw" name="AV6"/>
@@ -166,7 +165,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Wodv4MCOEeGP5fduNvI1Qw" name="Newborn Congenital Anomalies">
       <ownedComment xmi:id="_d5Fd0MCOEeGP5fduNvI1Qw">
-        <body>A list of malformations of the newborn or fetus diagnosed prenatally or after delivery.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.</body>
+        <body>A list of malformations of the newborn or fetus diagnosed prenatally or after delivery.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_s2cN8MCOEeGP5fduNvI1Qw" name="89369001"/>
       <ownedLiteral xmi:id="_vun8AMCOEeGP5fduNvI1Qw" name="67531005"/>
@@ -178,14 +177,13 @@
       <ownedLiteral xmi:id="_9mgR0MCOEeGP5fduNvI1Qw" name="80281008"/>
       <ownedLiteral xmi:id="_AKc1QMCPEeGP5fduNvI1Qw" name="87979003"/>
       <ownedLiteral xmi:id="_GmGaYNXVEeGb1t7PnGJ-bA" name="70156005"/>
-      <ownedLiteral xmi:id="_SQPGQNXVEeGb1t7PnGJ-bA" name="409709004"/>
       <ownedLiteral xmi:id="_TVHqsNXVEeGb1t7PnGJ-bA" name="409709004"/>
       <ownedLiteral xmi:id="_JQdXgMCPEeGP5fduNvI1Qw" name="416010008"/>
       <ownedLiteral xmi:id="_PnpjEMCPEeGP5fduNvI1Qw" name="260413007"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_HXQlIFqpEeKUiPQlmqLrLg" name="Certifier Titles">
       <ownedComment xmi:id="_HXQlIVqpEeKUiPQlmqLrLg">
-        <body>A list of different titles used by birth attendants to denote professional role.  Note, the codes used are based on the current worksheet, and may be replaced with code values from a widely used code system.</body>
+        <body>A list of different titles used by birth attendants to denote professional role.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_HXQlIlqpEeKUiPQlmqLrLg" name="309343006"/>
       <ownedLiteral xmi:id="_HXQlI1qpEeKUiPQlmqLrLg" name="76231001"/>
@@ -196,22 +194,51 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_jRPEUAnPEeOSQLMpSugQSQ" name="Source of Payment Typology"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_p8E5wAnREeOSQLMpSugQSQ" name="Maternal Vital Signs">
-      <ownedLiteral xmi:id="_0c07sAnREeOSQLMpSugQSQ" name="69461-2"/>
-      <ownedLiteral xmi:id="_EXfBkAnSEeOSQLMpSugQSQ" name="56077-1"/>
+      <ownedComment xmi:id="_f1jY8B8KEeObkflEmglQXA">
+        <body>A list of vital sign items captured for a mother.  Note, LOINC is being used as the primary source for codes within the value set.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_0c07sAnREeOSQLMpSugQSQ" name="69461-2">
+        <ownedComment xmi:id="_ojyVkDA7EeOuyI8soaYkCA">
+          <body>The body weight of the mother at the time of delivery.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_EXfBkAnSEeOSQLMpSugQSQ" name="56077-1">
+        <ownedComment xmi:id="_IkstUDA8EeOuyI8soaYkCA">
+          <body>The weight of the mother immediately before this pregnancy.</body>
+        </ownedComment>
+      </ownedLiteral>
       <ownedLiteral xmi:id="_Jq-7gAnSEeOSQLMpSugQSQ" name="3137-7"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_SRJgEAnSEeOSQLMpSugQSQ" name="Newborn Vital Signs">
-      <ownedLiteral xmi:id="_V4okIAnSEeOSQLMpSugQSQ" name="8339-4"/>
-      <ownedLiteral xmi:id="_fMn4AAnSEeOSQLMpSugQSQ" name="9274-2"/>
-      <ownedLiteral xmi:id="_rCB_wAnSEeOSQLMpSugQSQ" name="9271-8"/>
+      <ownedComment xmi:id="_i44nEB8KEeObkflEmglQXA">
+        <body>A list of vital sign information captured for a newborn or delivered fetus.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_V4okIAnSEeOSQLMpSugQSQ" name="8339-4">
+        <ownedComment xmi:id="_XvAQIDBDEeOuyI8soaYkCA">
+          <body>A measure of the weight of the newborn or fetus at the time of delivery.  The preferred unit of measure is grams.</body>
+        </ownedComment>
+      </ownedLiteral>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_f9MfsAnaEeOSQLMpSugQSQ" name="Karyotype Down Syndrome">
+      <ownedComment xmi:id="_cuorUB8KEeObkflEmglQXA">
+        <body>Note, SNOMED is being used as the primary source for codes within the value set.</body>
+      </ownedComment>
       <ownedLiteral xmi:id="_lYSPYAnaEeOSQLMpSugQSQ" name="442124003"/>
       <ownedLiteral xmi:id="_rYkW0AnaEeOSQLMpSugQSQ" name="312948004"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_y1_KoAnaEeOSQLMpSugQSQ" name="Karyotype Suspected Chromosomal Disorder">
+      <ownedComment xmi:id="_dSfmUB8KEeObkflEmglQXA">
+        <body>Note, SNOMED is being used as the primary source for codes within the value set.</body>
+      </ownedComment>
       <ownedLiteral xmi:id="_-YMpkAnaEeOSQLMpSugQSQ" name="442124003"/>
       <ownedLiteral xmi:id="_DKhJEAnbEeOSQLMpSugQSQ" name="312948004"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_6YDEUB_HEeOYe8LVX7HMMw" name="Newborn Assessments">
+      <ownedComment xmi:id="_6YDEUR_HEeOYe8LVX7HMMw">
+        <body>Note, LOINC is being used as the primary source for codes within the value set.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_6YDEUx_HEeOYe8LVX7HMMw" name="9274-2"/>
+      <ownedLiteral xmi:id="_6YDEVB_HEeOYe8LVX7HMMw" name="9271-8"/>
     </packagedElement>
     <profileApplication xmi:id="_esc8MbSgEeGhbsXY607ygg">
       <eAnnotations xmi:id="_esc8MrSgEeGhbsXY607ygg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -220,7 +247,7 @@
       <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
   </uml:Package>
-  <term:ValueSetVersion xmi:id="_pG2hULutEeGkEvM80TFRNQ" identifier="2.16.840.1.114222.4.11.7111" base_Enumeration="_pBguULutEeGkEvM80TFRNQ">
+  <term:ValueSetVersion xmi:id="_pG2hULutEeGkEvM80TFRNQ" identifier="2.16.840.1.114222.4.11.7111" version="December 1, 2013" base_Enumeration="_pBguULutEeGkEvM80TFRNQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_u9u1ILutEeGkEvM80TFRNQ" conceptName="Physician" base_EnumerationLiteral="_u9s_8LutEeGkEvM80TFRNQ">
@@ -238,20 +265,19 @@
   <term:ValueSetCode xmi:id="_Dgsi4LuuEeGkEvM80TFRNQ" conceptName="Other category" base_EnumerationLiteral="_Dgr70LuuEeGkEvM80TFRNQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
-  <term:ValueSetVersion xmi:id="_FX7KQLuuEeGkEvM80TFRNQ" identifier="2.16.840.1.114222.4.11.7113" base_Enumeration="_FX6jMLuuEeGkEvM80TFRNQ">
+  <term:ValueSetVersion xmi:id="_FX7KQLuuEeGkEvM80TFRNQ" identifier="2.16.840.1.114222.4.11.7113" version="December 1, 2013" base_Enumeration="_FX6jMLuuEeGkEvM80TFRNQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_HrqugLuuEeGkEvM80TFRNQ" conceptName="Vertex presentation" usageNote="Fetal Presentation at Birth- Cephalic" base_EnumerationLiteral="_HrqHcLuuEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_JhRlQLuuEeGkEvM80TFRNQ" conceptName="Breech presentation" base_EnumerationLiteral="_JhQ-MLuuEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_KeiewLuuEeGkEvM80TFRNQ" conceptName="Other category" base_EnumerationLiteral="_Keh3sLuuEeGkEvM80TFRNQ"/>
-  <term:ValueSetVersion xmi:id="_OcUi8buuEeGkEvM80TFRNQ" identifier="2.16.840.1.114222.4.11.7118" base_Enumeration="_OcUi8LuuEeGkEvM80TFRNQ">
+  <term:ValueSetVersion xmi:id="_OcUi8buuEeGkEvM80TFRNQ" identifier="2.16.840.1.114222.4.11.7118" version="December 1, 2013" base_Enumeration="_OcUi8LuuEeGkEvM80TFRNQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_QgTz8LuuEeGkEvM80TFRNQ" conceptName="Delivery normal" usageNote="Vaginal/Spontaneous" base_EnumerationLiteral="_QgTM4LuuEeGkEvM80TFRNQ"/>
-  <term:ValueSetCode xmi:id="_UZnn0buuEeGkEvM80TFRNQ" conceptName="Forces delivery" usageNote="Vaginal/Forceps" base_EnumerationLiteral="_UZnn0LuuEeGkEvM80TFRNQ"/>
+  <term:ValueSetCode xmi:id="_UZnn0buuEeGkEvM80TFRNQ" conceptName="Forceps delivery" usageNote="Vaginal/Forceps" base_EnumerationLiteral="_UZnn0LuuEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_V7o0MbuuEeGkEvM80TFRNQ" conceptName="Cesarean section" base_EnumerationLiteral="_V7o0MLuuEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_V-7YwLuuEeGkEvM80TFRNQ" conceptName="Delivery by vacuum extraction" usageNote="Vaginal/Vacuum" base_EnumerationLiteral="_V-6xsLuuEeGkEvM80TFRNQ"/>
-  <term:ValueSetVersion xmi:id="_5RyFkbuyEeGkEvM80TFRNQ" identifier="2.16.840.1.114222.4.11.7124" base_Enumeration="_5RyFkLuyEeGkEvM80TFRNQ">
+  <term:ValueSetVersion xmi:id="_5RyFkbuyEeGkEvM80TFRNQ" identifier="2.16.840.1.114222.4.11.7124" version="December 1, 2013" base_Enumeration="_5RyFkLuyEeGkEvM80TFRNQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_EwSJMbuzEeGkEvM80TFRNQ" conceptName="Hospital" base_EnumerationLiteral="_EwSJMLuzEeGkEvM80TFRNQ"/>
@@ -259,19 +285,19 @@
   <term:ValueSetCode xmi:id="_I4pswbuzEeGkEvM80TFRNQ" conceptName="Home birth" base_EnumerationLiteral="_I4pswLuzEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_KTi9cbuzEeGkEvM80TFRNQ" conceptName="Free-standing clinic" usageNote="Clinic/Doctor's Office" base_EnumerationLiteral="_KTi9cLuzEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_Mrvj4buzEeGkEvM80TFRNQ" conceptName="Other" base_EnumerationLiteral="_Mrvj4LuzEeGkEvM80TFRNQ"/>
-  <term:ValueSetVersion xmi:id="_QY5LEbuzEeGkEvM80TFRNQ" identifier="2.16.840.1.114222.4.11.7112" base_Enumeration="_QY5LELuzEeGkEvM80TFRNQ">
+  <term:ValueSetVersion xmi:id="_QY5LEbuzEeGkEvM80TFRNQ" identifier="2.16.840.1.114222.4.11.7112" version="December 1, 2013" base_Enumeration="_QY5LELuzEeGkEvM80TFRNQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_YQojYbuzEeGkEvM80TFRNQ" conceptName="Death at time of first assessment, no labor ongoing" base_EnumerationLiteral="_YQojYLuzEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_bgejgbuzEeGkEvM80TFRNQ" conceptName="Dead at time of first assessment, labor ongoing" base_EnumerationLiteral="_bgejgLuzEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_e2HCkbuzEeGkEvM80TFRNQ" conceptName="Died during labor, after first assessment" base_EnumerationLiteral="_e2HCkLuzEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_hbskwbuzEeGkEvM80TFRNQ" conceptName="Unknown" usageNote="Unknown time of fetal death" base_EnumerationLiteral="_hbskwLuzEeGkEvM80TFRNQ"/>
-  <term:ValueSetVersion xmi:id="_WfZfUbywEeGUNfs_q_VvNQ" definition="The value set is drawn from the Source of payment typology created by the Public Health Data Consortium" codeSystem="_jRPEUQnPEeOSQLMpSugQSQ" base_Enumeration="_WfZfULywEeGUNfs_q_VvNQ"/>
+  <term:ValueSetVersion xmi:id="_WfZfUbywEeGUNfs_q_VvNQ" version="December 1, 2013" definition="The value set is drawn from the Source of payment typology created by the Public Health Data Consortium" codeSystem="_jRPEUQnPEeOSQLMpSugQSQ" base_Enumeration="_WfZfULywEeGUNfs_q_VvNQ"/>
   <term:ValueSetCode xmi:id="_eUB5QLywEeGUNfs_q_VvNQ" conceptName="Private Health Insurance" base_EnumerationLiteral="_eUBSMLywEeGUNfs_q_VvNQ"/>
   <term:ValueSetCode xmi:id="_gP6-MLywEeGUNfs_q_VvNQ" conceptName="Medicaid" base_EnumerationLiteral="_gP6XILywEeGUNfs_q_VvNQ"/>
   <term:ValueSetCode xmi:id="_ioPgcbywEeGUNfs_q_VvNQ" conceptName="Self Pay" base_EnumerationLiteral="_ioPgcLywEeGUNfs_q_VvNQ"/>
   <term:ValueSetCode xmi:id="_j2rCcLywEeGUNfs_q_VvNQ" conceptName="Other" base_EnumerationLiteral="_j2qbYLywEeGUNfs_q_VvNQ"/>
-  <term:ValueSetVersion xmi:id="_NzhKkb7wEeGdruZFgBKbQw" identifier="2.16.840.1.114222.4.11.7126" base_Enumeration="_NzhKkL7wEeGdruZFgBKbQw">
+  <term:ValueSetVersion xmi:id="_NzhKkb7wEeGdruZFgBKbQw" identifier="2.16.840.1.114222.4.11.7126" version="December 1, 2013" base_Enumeration="_NzhKkL7wEeGdruZFgBKbQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_X5VkAb7wEeGdruZFgBKbQw" conceptName="Gestational diabetes mellitus" base_EnumerationLiteral="_X5VkAL7wEeGdruZFgBKbQw">
@@ -303,7 +329,7 @@
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_JPphUb7xEeGdruZFgBKbQw" conceptName="None" base_EnumerationLiteral="_JPphUL7xEeGdruZFgBKbQw"/>
-  <term:ValueSetVersion xmi:id="_0MnaIb71EeGdruZFgBKbQw" identifier="2.16.840.1.114222.4.11.6070" base_Enumeration="_0MnaIL71EeGdruZFgBKbQw">
+  <term:ValueSetVersion xmi:id="_0MnaIb71EeGdruZFgBKbQw" identifier="2.16.840.1.114222.4.11.6070" version="December 1, 2013" base_Enumeration="_0MnaIL71EeGdruZFgBKbQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_65PDIb71EeGdruZFgBKbQw" conceptName="Gonorrhea" base_EnumerationLiteral="_65PDIL71EeGdruZFgBKbQw">
@@ -324,7 +350,7 @@
   <term:ValueSetCode xmi:id="_Fx8SEb72EeGdruZFgBKbQw" conceptName="None" base_EnumerationLiteral="_Fx8SEL72EeGdruZFgBKbQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
-  <term:ValueSetVersion xmi:id="_RV75t772EeGdruZFgBKbQw" identifier="2.16.840.1.114222.4.11.7135" base_Enumeration="_RV75sL72EeGdruZFgBKbQw">
+  <term:ValueSetVersion xmi:id="_RV75t772EeGdruZFgBKbQw" identifier="2.16.840.1.114222.4.11.7135" version="December 1, 2013" base_Enumeration="_RV75sL72EeGdruZFgBKbQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_RV75uL72EeGdruZFgBKbQw" conceptName="Gonorrhea" base_EnumerationLiteral="_RV75sb72EeGdruZFgBKbQw">
@@ -357,7 +383,7 @@
   <term:ValueSetCode xmi:id="_nBsbgb72EeGdruZFgBKbQw" conceptName="Other category" base_EnumerationLiteral="_nBsbgL72EeGdruZFgBKbQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
-  <term:ValueSetVersion xmi:id="_t2yHMb76EeGdruZFgBKbQw" identifier="2.16.840.1.114222.4.11.7136" base_Enumeration="_t2yHML76EeGdruZFgBKbQw">
+  <term:ValueSetVersion xmi:id="_t2yHMb76EeGdruZFgBKbQw" identifier="2.16.840.1.114222.4.11.7136" version="December 1, 2013" base_Enumeration="_t2yHML76EeGdruZFgBKbQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_-HJ-Yb76EeGdruZFgBKbQw" conceptName="Cerclage of cervix" base_EnumerationLiteral="_-HJ-YL76EeGdruZFgBKbQw">
@@ -372,27 +398,26 @@
   <term:ValueSetCode xmi:id="_L-loQb77EeGdruZFgBKbQw" conceptName="None" base_EnumerationLiteral="_L-loQL77EeGdruZFgBKbQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
-  <term:ValueSetVersion xmi:id="_m4J2Qb78EeGdruZFgBKbQw" identifier="2.16.840.1.114222.4.11.7123" base_Enumeration="_m4J2QL78EeGdruZFgBKbQw">
+  <term:ValueSetVersion xmi:id="_m4J2Qb78EeGdruZFgBKbQw" identifier="2.16.840.1.114222.4.11.7123" version="December 1, 2013" base_Enumeration="_m4J2QL78EeGdruZFgBKbQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_rpcbAb78EeGdruZFgBKbQw" conceptName="Premature rupture of membranes" base_EnumerationLiteral="_rpcbAL78EeGdruZFgBKbQw"/>
   <term:ValueSetCode xmi:id="_z1kH4b78EeGdruZFgBKbQw" conceptName="Precipitate labor" base_EnumerationLiteral="_z1kH4L78EeGdruZFgBKbQw"/>
   <term:ValueSetCode xmi:id="_2Eig4b78EeGdruZFgBKbQw" conceptName="Prolonged labor" base_EnumerationLiteral="_2Eig4L78EeGdruZFgBKbQw"/>
-  <term:ValueSetCode xmi:id="_3yoaYL78EeGdruZFgBKbQw" conceptName="Note of the cited unusual onsets" base_EnumerationLiteral="_3yepYL78EeGdruZFgBKbQw"/>
-  <term:ValueSetVersion xmi:id="_94as4b78EeGdruZFgBKbQw" identifier="2.16.840.1.114222.4.11.7117" base_Enumeration="_94as4L78EeGdruZFgBKbQw">
+  <term:ValueSetCode xmi:id="_3yoaYL78EeGdruZFgBKbQw" conceptName="None of the cited unusual onsets" base_EnumerationLiteral="_3yepYL78EeGdruZFgBKbQw"/>
+  <term:ValueSetVersion xmi:id="_94as4b78EeGdruZFgBKbQw" identifier="2.16.840.1.114222.4.11.7117" version="December 1, 2013" base_Enumeration="_94as4L78EeGdruZFgBKbQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_CZx_Qb79EeGdruZFgBKbQw" conceptName="Induction of labor" base_EnumerationLiteral="_CZx_QL79EeGdruZFgBKbQw"/>
   <term:ValueSetCode xmi:id="_GB3gQb79EeGdruZFgBKbQw" conceptName="Augmentation of labor" base_EnumerationLiteral="_GB3gQL79EeGdruZFgBKbQw"/>
-  <term:ValueSetCode xmi:id="_H4lxUb79EeGdruZFgBKbQw" conceptName="Abnormal fetal presentation" usageNote="Non-vertex Presentation" base_EnumerationLiteral="_H4lxUL79EeGdruZFgBKbQw"/>
   <term:ValueSetCode xmi:id="_KOstEb79EeGdruZFgBKbQw" conceptName="Steroids (glucocorticoids) for fetal lung maturation (procedure)" usageNote="Steroids for Fetal Lung Maturation Received by the Mother Prior to Delivery" base_EnumerationLiteral="_KOstEL79EeGdruZFgBKbQw"/>
   <term:ValueSetCode xmi:id="_NDUJwb79EeGdruZFgBKbQw" conceptName="Antibiotics received during labor" usageNote="Antibiotics Received by the Mother During Labor" base_EnumerationLiteral="_NDUJwL79EeGdruZFgBKbQw"/>
-  <term:ValueSetCode xmi:id="_P-xOQb79EeGdruZFgBKbQw" conceptName="Chorioamnioniti" usageNote="Clnical Chorioamnionitis Diagnosed During Labor or Maternal Temperature GE 38 C (100.4 F)" base_EnumerationLiteral="_P-xOQL79EeGdruZFgBKbQw"/>
+  <term:ValueSetCode xmi:id="_P-xOQb79EeGdruZFgBKbQw" conceptName="Chorioamnionitis" usageNote="Clnical Chorioamnionitis Diagnosed During Labor or Maternal Temperature GE 38 C (100.4 F)" base_EnumerationLiteral="_P-xOQL79EeGdruZFgBKbQw"/>
   <term:ValueSetCode xmi:id="_VSHXMb79EeGdruZFgBKbQw" conceptName="Meconium stained liquor" usageNote="Moderate/Heavy Meconium Staining of the Amniotic Fluid" base_EnumerationLiteral="_VSHXML79EeGdruZFgBKbQw"/>
   <term:ValueSetCode xmi:id="_XO8QQb79EeGdruZFgBKbQw" conceptName="Fetal distress" usageNote="Fetal intolerance of labor such that one or more of the following actions was taken: in-utero resuscitative measures, further fetal assessment, or operative delivery" base_EnumerationLiteral="_XO8QQL79EeGdruZFgBKbQw"/>
   <term:ValueSetCode xmi:id="_ZUiDwb79EeGdruZFgBKbQw" conceptName="Intrathecal injection of local anesthetic agent" usageNote="Epidural or Spinal Anesthesia During Labor" base_EnumerationLiteral="_ZUiDwL79EeGdruZFgBKbQw"/>
   <term:ValueSetCode xmi:id="_beARsb79EeGdruZFgBKbQw" conceptName="None" base_EnumerationLiteral="_beARsL79EeGdruZFgBKbQw"/>
-  <term:ValueSetVersion xmi:id="_Uv_ZML8LEeGJd49YTXcCkg" identifier="2.16.840.1.114222.4.11.7119" base_Enumeration="_Ut8x0L8LEeGJd49YTXcCkg">
+  <term:ValueSetVersion xmi:id="_Uv_ZML8LEeGJd49YTXcCkg" identifier="2.16.840.1.114222.4.11.7119" version="December 1, 2013" base_Enumeration="_Ut8x0L8LEeGJd49YTXcCkg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_bDPf8L8LEeGJd49YTXcCkg" conceptName="Perineal laceration during delivery" usageNote="Third or Fourth Degree Perineal Laceration" base_EnumerationLiteral="_bDO44L8LEeGJd49YTXcCkg"/>
@@ -402,10 +427,10 @@
   <term:ValueSetCode xmi:id="_nDcicb8LEeGJd49YTXcCkg" conceptName="Immediate repair of obstetric laceration" usageNote="Unplanned Operating Room Procedure Following Delivery" base_EnumerationLiteral="_nDcicL8LEeGJd49YTXcCkg"/>
   <term:ValueSetCode xmi:id="_pI9dcb8LEeGJd49YTXcCkg" conceptName="None" base_EnumerationLiteral="_pI9dcL8LEeGJd49YTXcCkg"/>
   <term:ValueSetCode xmi:id="_XrMmEL8LEeGJd49YTXcCkg" conceptName="Maternal Transfusion" base_EnumerationLiteral="_XrLX8L8LEeGJd49YTXcCkg"/>
-  <term:ValueSetVersion xmi:id="_ROHnEcCOEeGP5fduNvI1Qw" identifier="2.16.840.1.114222.4.11.7121" base_Enumeration="_ROHnEMCOEeGP5fduNvI1Qw">
+  <term:ValueSetVersion xmi:id="_ROHnEcCOEeGP5fduNvI1Qw" identifier="2.16.840.1.114222.4.11.7121" version="December 1, 2013" base_Enumeration="_ROHnEMCOEeGP5fduNvI1Qw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_Wodv4cCOEeGP5fduNvI1Qw" identifier="2.16.840.1.114222.4.11.7122" base_Enumeration="_Wodv4MCOEeGP5fduNvI1Qw">
+  <term:ValueSetVersion xmi:id="_Wodv4cCOEeGP5fduNvI1Qw" identifier="2.16.840.1.114222.4.11.7122" version="December 1, 2013" base_Enumeration="_Wodv4MCOEeGP5fduNvI1Qw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_s2cN8cCOEeGP5fduNvI1Qw" conceptName="Anencephalus" usageNote="Anencephaly" base_EnumerationLiteral="_s2cN8MCOEeGP5fduNvI1Qw"/>
@@ -440,9 +465,8 @@
   </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_gdbB4NXOEeGb1t7PnGJ-bA" conceptName="Maternal transfusion" usageNote="Maternal Transfusion" base_EnumerationLiteral="_ga5SUNXOEeGb1t7PnGJ-bA"/>
   <term:ValueSetCode xmi:id="_GmPkUNXVEeGb1t7PnGJ-bA" conceptName="Anomaly of chromosome pair 21" usageNote="Down Syndrome" base_EnumerationLiteral="_GmGaYNXVEeGb1t7PnGJ-bA"/>
-  <term:ValueSetCode xmi:id="_SQPGQdXVEeGb1t7PnGJ-bA" conceptName="Suspected Chromosomal Disorder" base_EnumerationLiteral="_SQPGQNXVEeGb1t7PnGJ-bA"/>
   <term:ValueSetCode xmi:id="_TVHqsdXVEeGb1t7PnGJ-bA" conceptName="Chromosomal disorder" usageNote="Suspected Chromosomal Disorder" base_EnumerationLiteral="_TVHqsNXVEeGb1t7PnGJ-bA"/>
-  <term:ValueSetVersion xmi:id="_HXRMMFqpEeKUiPQlmqLrLg" base_Enumeration="_HXQlIFqpEeKUiPQlmqLrLg">
+  <term:ValueSetVersion xmi:id="_HXRMMFqpEeKUiPQlmqLrLg" version="December 1, 2013" base_Enumeration="_HXQlIFqpEeKUiPQlmqLrLg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_HXRMMVqpEeKUiPQlmqLrLg" conceptName="Physician" base_EnumerationLiteral="_HXQlIlqpEeKUiPQlmqLrLg"/>
@@ -460,28 +484,32 @@
   <term:ValueSetCode xmi:id="_-rxjUQnOEeOSQLMpSugQSQ" conceptName="Indian Health Service" base_EnumerationLiteral="_-rxjUAnOEeOSQLMpSugQSQ"/>
   <term:ValueSetCode xmi:id="_CWYz4QnPEeOSQLMpSugQSQ" conceptName="Other Government" base_EnumerationLiteral="_CWYz4AnPEeOSQLMpSugQSQ"/>
   <term:ValueSetCode xmi:id="_DAVv0QnPEeOSQLMpSugQSQ" conceptName="CHAMPUS/TRICARE" base_EnumerationLiteral="_DAVv0AnPEeOSQLMpSugQSQ"/>
-  <term:CodeSystemVersion xmi:id="_jRPEUQnPEeOSQLMpSugQSQ" identifier="2.16.840.1.113883.221.5" source="Public Health Data Consortium" url="http://phdsc.org/standards/payment-typology-source.asp" base_Enumeration="_jRPEUAnPEeOSQLMpSugQSQ"/>
+  <term:CodeSystemVersion xmi:id="_jRPEUQnPEeOSQLMpSugQSQ" identifier="2.16.840.1.113883.221.5" version="3.0" source="Public Health Data Consortium" url="http://phdsc.org/standards/payment-typology-source.asp" base_Enumeration="_jRPEUAnPEeOSQLMpSugQSQ"/>
   <term:ValueSetCode xmi:id="_gF5UQQnQEeOSQLMpSugQSQ" conceptName="Unknown" base_EnumerationLiteral="_gF5UQAnQEeOSQLMpSugQSQ"/>
-  <term:ValueSetVersion xmi:id="_p8ODsAnREeOSQLMpSugQSQ" definition="The collection of vital sign items that is collected for a mother within a Live Birth or Fetal Death report." base_Enumeration="_p8E5wAnREeOSQLMpSugQSQ">
+  <term:ValueSetVersion xmi:id="_p8ODsAnREeOSQLMpSugQSQ" version="December 1, 2013" definition="The collection of vital sign items that is collected for a mother within a Live Birth or Fetal Death report." base_Enumeration="_p8E5wAnREeOSQLMpSugQSQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_0c07sQnREeOSQLMpSugQSQ" conceptName="Body weight at delivery" usageNote="The preferred unit of measure is grams." base_EnumerationLiteral="_0c07sAnREeOSQLMpSugQSQ"/>
-  <term:ValueSetCode xmi:id="_EXfBkQnSEeOSQLMpSugQSQ" conceptName="Body weight pre current pregnancy" base_EnumerationLiteral="_EXfBkAnSEeOSQLMpSugQSQ"/>
+  <term:ValueSetCode xmi:id="_0c07sQnREeOSQLMpSugQSQ" conceptName="Body weight at delivery" usageNote="The preferred unit of measure is pounds." base_EnumerationLiteral="_0c07sAnREeOSQLMpSugQSQ"/>
+  <term:ValueSetCode xmi:id="_EXfBkQnSEeOSQLMpSugQSQ" conceptName="Body weight pre current pregnancy" usageNote="The preferred unit of measure is pounds." base_EnumerationLiteral="_EXfBkAnSEeOSQLMpSugQSQ"/>
   <term:ValueSetCode xmi:id="_Jq-7gQnSEeOSQLMpSugQSQ" conceptName="Body height" base_EnumerationLiteral="_Jq-7gAnSEeOSQLMpSugQSQ"/>
-  <term:ValueSetVersion xmi:id="_SRJgEQnSEeOSQLMpSugQSQ" base_Enumeration="_SRJgEAnSEeOSQLMpSugQSQ">
+  <term:ValueSetVersion xmi:id="_SRJgEQnSEeOSQLMpSugQSQ" version="December 1, 2013" base_Enumeration="_SRJgEAnSEeOSQLMpSugQSQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_V4okIQnSEeOSQLMpSugQSQ" conceptName="Body weight at birth" base_EnumerationLiteral="_V4okIAnSEeOSQLMpSugQSQ"/>
-  <term:ValueSetCode xmi:id="_fMn4AQnSEeOSQLMpSugQSQ" conceptName="Score 5M post birth" usageNote="Apgar score at 5 minutes" base_EnumerationLiteral="_fMn4AAnSEeOSQLMpSugQSQ"/>
-  <term:ValueSetCode xmi:id="_rCB_wQnSEeOSQLMpSugQSQ" conceptName="Score 10M post birth" usageNote="Apgar score at 10 minutes" base_EnumerationLiteral="_rCB_wAnSEeOSQLMpSugQSQ"/>
-  <term:ValueSetVersion xmi:id="_f9MfsQnaEeOSQLMpSugQSQ" identifier="2.16.840.1.114222.4.11.7116" base_Enumeration="_f9MfsAnaEeOSQLMpSugQSQ">
+  <term:ValueSetVersion xmi:id="_f9MfsQnaEeOSQLMpSugQSQ" identifier="2.16.840.1.114222.4.11.7116" version="December 1, 2013" base_Enumeration="_f9MfsAnaEeOSQLMpSugQSQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_lYSPYQnaEeOSQLMpSugQSQ" conceptName="Karyotype evaluation abnormal" usageNote="Down Syndrome / Karyotype confirmed" base_EnumerationLiteral="_lYSPYAnaEeOSQLMpSugQSQ"/>
   <term:ValueSetCode xmi:id="_rYkW0QnaEeOSQLMpSugQSQ" conceptName="Karyotype determination" usageNote="Down Syndrome / Karyotype pending" base_EnumerationLiteral="_rYkW0AnaEeOSQLMpSugQSQ"/>
-  <term:ValueSetVersion xmi:id="_y1_KoQnaEeOSQLMpSugQSQ" identifier="2.16.840.1.114222.4.11.7115" base_Enumeration="_y1_KoAnaEeOSQLMpSugQSQ">
+  <term:ValueSetVersion xmi:id="_y1_KoQnaEeOSQLMpSugQSQ" identifier="2.16.840.1.114222.4.11.7115" version="December 1, 2013" base_Enumeration="_y1_KoAnaEeOSQLMpSugQSQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_-YVzgAnaEeOSQLMpSugQSQ" conceptName="Karyotype evaluation abnormal" usageNote="Suspected chromosomal disorder / Karyotype confirmed" base_EnumerationLiteral="_-YMpkAnaEeOSQLMpSugQSQ"/>
   <term:ValueSetCode xmi:id="_DKhJEQnbEeOSQLMpSugQSQ" conceptName="Karyotype determination" usageNote="Suspected chromosomal disorder / Karyotype pending" base_EnumerationLiteral="_DKhJEAnbEeOSQLMpSugQSQ"/>
+  <term:ValueSetVersion xmi:id="_6YDEVR_HEeOYe8LVX7HMMw" base_Enumeration="_6YDEUB_HEeOYe8LVX7HMMw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_6YDEVx_HEeOYe8LVX7HMMw" conceptName="Score 5M post birth" usageNote="Apgar score at 5 minutes" base_EnumerationLiteral="_6YDEUx_HEeOYe8LVX7HMMw"/>
+  <term:ValueSetCode xmi:id="_6YDEWB_HEeOYe8LVX7HMMw" conceptName="Score 10M post birth" usageNote="Apgar score at 10 minutes" base_EnumerationLiteral="_6YDEVB_HEeOYe8LVX7HMMw"/>
+  <term:ValueSetCode xmi:id="_YAS9wR_XEeOYe8LVX7HMMw" conceptName="Vertex Presentation" base_EnumerationLiteral="_YAS9wB_XEeOYe8LVX7HMMw"/>
 </xmi:XMI>
