@@ -15,40 +15,39 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.34"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:261)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:264)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MaternalMorbidity.dita">Maternal Morbidity</xref></tt><b> STATIC</b>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:262)<tt><b>/@code</b>="73781-7" </tt><i>Maternal morbidity</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records the nature of the maternal morbidity about which information is provided.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:265), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MaternalMorbiditiy.dita">Maternal Morbiditiy</xref> 2.16.840.1.114222.4.11.7119</tt><b> STATIC</b> December 1, 2013
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:261)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:264)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MaternalMorbidity.dita">Maternal Morbidity</xref></tt><b> STATIC</b>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:262)<tt><b>/@code</b>="73781-7" </tt><i>Maternal morbidity</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records the nature of the maternal morbidity about which information is provided.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:265), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MaternalMorbiditiy.dita">Maternal Morbiditiy</xref> 2.16.840.1.114222.4.11.7119</tt><b> STATIC</b> December 1, 2013
 </li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Maternal Morbidity</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry></entry><entry> ALRT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>BL</entry><entry></entry><entry> </entry></row> 
-<row><entry>maternal Morbidities</entry><entry>maternal Morbidities</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Maternal Morbidity</entry><entry></entry><entry> </entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Maternal Morbidity</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:261</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:264</entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:262</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:265</entry><entry> </entry></row> 
+<row><entry>maternal Morbidities</entry><entry>maternal Morbidities</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Maternal Morbidity</entry><entry>CONF:98</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="351151654"/>
-  <code code="1694293249"/>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="787708515"/>
+  <code code="140788228"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>
   </effectiveTime>
-  <value xsi:type="BL"/>
+  <value xsi:type="CD" code="631207212"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

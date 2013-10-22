@@ -3,7 +3,7 @@
 <topic id="classId" xml:lang="en-us">
 <title>Fetal Presentations</title>
 <prolog id="prolog">
-<resourceid id="not specified"/>
+<resourceid id="2.16.840.1.114222.4.11.7113"/>
 </prolog>
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
@@ -12,8 +12,10 @@
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
-<row><entry>Value Set</entry><entry>Fetal Presentations - (OID not specified)</entry></row>
-<row><entry>Description</entry><entry>A list of the different ways a fetus may present at the point of delivery.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.
+<row><entry>Value Set</entry><entry>Fetal Presentations - 2.16.840.1.114222.4.11.7113</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Version</entry><entry>December 1, 2013</entry></row>
+<row><entry>Description</entry><entry>A list of the different ways a fetus may present at the point of delivery.  Note, SNOMED is being used as the primary source for codes within the value set.
 </entry></row>
 </tbody></tgroup></table>
 <table><tgroup cols="3">
@@ -23,9 +25,9 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>C</entry><entry></entry><entry>Cephalic</entry></row>
-<row><entry>B</entry><entry></entry><entry>Breech</entry></row>
-<row><entry>OTH</entry><entry></entry><entry>Other</entry></row>
+<row><entry>6096002</entry><entry>SNOMEDCT</entry><entry>Breech presentation</entry></row>
+<row><entry>394841004</entry><entry>SNOMEDCT</entry><entry>Other category</entry></row>
+<row><entry>70028003</entry><entry>SNOMEDCT</entry><entry>Vertex Presentation</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

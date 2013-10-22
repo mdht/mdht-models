@@ -11,44 +11,43 @@
 <section id="knownSubclasses">
 </section>
 <section id="description">
-<p><lines><i>Information on whether or not the mother had been transferred to the delivery facility based on maternal medical or fetal indications.</i></lines></p>
+<p><lines><i>Information on whether or not the mother had been transferred to the delivery facility from another facility based on maternal medical or fetal indications.</i></lines></p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.35"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:420)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:422)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
-<ul><li><p><lines><i>A code value that indicates the nature of the observation - it refers to the transfer of the mother prior to delivery.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL
-<ul><li><p><lines><i>A Boolean value to indicate whether or not the mother was transferred.</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> <p><lines><i>Record the source of transfer if the mother has been transferred from another facility.  If the name of the facility is not known, enter "unknown."</i></lines></p><ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="ORG" </tt></li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SDLOC" </tt></li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>scopingEntity</b></tt> <ol><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ORG" </tt></li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt><p><lines><i>The name of the facility the mother was transferred from.</i></lines></p></li></ol> </li></ol> </li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:421)<tt><b>/@code</b>="73763-5" </tt><i>Mother was transferred for maternal medical or fetal indications for delivery</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul><li><p><lines><i>A code value that indicates the nature of the observation - it refers to the transfer of the mother to the facility prior to delivery.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:423)
+<ul><li><p><lines><i>A Boolean value to indicate whether or not the mother was transferred to the facility prior to delivery.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:424) <p><lines><i>Record the source of transfer if the mother has been transferred from another facility.  If the name of the facility is not known, enter "unknown."</i></lines></p><ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="ORG" </tt> (CONF:425)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:426) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SDLOC" </tt> (CONF:427)</li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>scopingEntity</b></tt> (CONF:428) <ol><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ORG" </tt> (CONF:429)</li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:430)</li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:431)<p><lines><i>The name of the facility the mother was transferred from.</i></lines></p></li></ol> </li></ol> </li></ol>
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:420)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:422)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
-<ul><li><p><lines><i>A code value that indicates the nature of the observation - it refers to the transfer of the mother prior to delivery.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL
-<ul><li><p><lines><i>A Boolean value to indicate whether or not the mother was transferred.</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> <p><lines><i>Record the source of transfer if the mother has been transferred from another facility.  If the name of the facility is not known, enter "unknown."</i></lines></p><ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="ORG" </tt></li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SDLOC" </tt></li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>scopingEntity</b></tt> <ol><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ORG" </tt></li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt><p><lines><i>The name of the facility the mother was transferred from.</i></lines></p></li></ol> </li></ol> </li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:421)<tt><b>/@code</b>="73763-5" </tt><i>Mother was transferred for maternal medical or fetal indications for delivery</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul><li><p><lines><i>A code value that indicates the nature of the observation - it refers to the transfer of the mother to the facility prior to delivery.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:423)
+<ul><li><p><lines><i>A Boolean value to indicate whether or not the mother was transferred to the facility prior to delivery.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:424) <p><lines><i>Record the source of transfer if the mother has been transferred from another facility.  If the name of the facility is not known, enter "unknown."</i></lines></p><ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="ORG" </tt> (CONF:425)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:426) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SDLOC" </tt> (CONF:427)</li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>scopingEntity</b></tt> (CONF:428) <ol><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ORG" </tt> (CONF:429)</li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:430)</li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:431)<p><lines><i>The name of the facility the mother was transferred from.</i></lines></p></li></ol> </li></ol> </li></ol>
 </li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Maternal Transfer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry></entry><entry> ALRT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>BL</entry><entry></entry><entry> </entry></row> 
-<row><entry>maternalTransfer</entry><entry>maternalTransfer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Maternal Transfer</entry><entry></entry><entry> </entry></row> 
-<row><entry>participant</entry><entry>participant</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>transferSource</entry><entry></entry><entry> </entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Maternal Transfer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:420</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:422</entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:421</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>BL</entry><entry>CONF:423</entry><entry> </entry></row> 
+<row><entry>maternalTransfer</entry><entry>maternalTransfer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Maternal Transfer</entry><entry>CONF:96</entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>transferSource</entry><entry>CONF:424</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="74294566"/>
-  <code code="845712860"/>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="468090094"/>
+  <code code="862628497"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>

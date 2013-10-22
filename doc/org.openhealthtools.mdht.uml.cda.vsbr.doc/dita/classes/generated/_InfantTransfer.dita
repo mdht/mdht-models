@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
-<title>infant Transfer - conformance rules</title>
+<title>Infant Transfer - conformance rules</title>
 <shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.26.29</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Observation</category></metadata>
@@ -15,40 +15,39 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.29"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:432)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:434)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:433)<tt><b>/@code</b>="73758-5" </tt><i>Infant was transferred within 24 hours of delivery</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 <ul><li><p><lines><i>The code value indicates the observation refers to the transfer of an infant.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:435)
 <ul><li><p><lines><i>A Boolean value to indicate whether or not the infant was transferred within 24 hours of delivery.</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> <p><lines><i>If the infant has been transferred, the name of the facility is collected - if it is known.</i></lines></p><ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DST" </tt></li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> <ol><li> This participantRole <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="SDLOC" </tt></li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>scopingEntity</b></tt> <ol><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ORG" </tt></li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt><p><lines><i>The name of the facility the infant was transferred to.</i></lines></p></li></ol> </li></ol> </li></ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:436) <p><lines><i>If the infant has been transferred, the name of the facility is collected - if it is known.</i></lines></p><ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DST" </tt> (CONF:437)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:438) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SDLOC" </tt> (CONF:439)</li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>scopingEntity</b></tt> (CONF:440) <ol><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ORG" </tt> (CONF:441)</li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:442)</li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:443)<p><lines><i>The name of the facility the infant was transferred to.</i></lines></p></li></ol> </li></ol> </li></ol>
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:432)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:434)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:433)<tt><b>/@code</b>="73758-5" </tt><i>Infant was transferred within 24 hours of delivery</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 <ul><li><p><lines><i>The code value indicates the observation refers to the transfer of an infant.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:435)
 <ul><li><p><lines><i>A Boolean value to indicate whether or not the infant was transferred within 24 hours of delivery.</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> <p><lines><i>If the infant has been transferred, the name of the facility is collected - if it is known.</i></lines></p><ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DST" </tt></li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> <ol><li> This participantRole <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="SDLOC" </tt></li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>scopingEntity</b></tt> <ol><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ORG" </tt></li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt><p><lines><i>The name of the facility the infant was transferred to.</i></lines></p></li></ol> </li></ol> </li></ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:436) <p><lines><i>If the infant has been transferred, the name of the facility is collected - if it is known.</i></lines></p><ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DST" </tt> (CONF:437)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:438) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SDLOC" </tt> (CONF:439)</li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>scopingEntity</b></tt> (CONF:440) <ol><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ORG" </tt> (CONF:441)</li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:442)</li><li> This scopingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:443)<p><lines><i>The name of the facility the infant was transferred to.</i></lines></p></li></ol> </li></ol> </li></ol>
 </li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::infantTransfer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry></entry><entry> ALRT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>BL</entry><entry></entry><entry> </entry></row> 
-<row><entry>infantTransfer</entry><entry>infantTransfer</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>infantTransfer</entry><entry></entry><entry> </entry></row> 
-<row><entry>participant</entry><entry>participant</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>TransferFacility</entry><entry></entry><entry> </entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::InfantTransfer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:432</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:434</entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:433</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>BL</entry><entry>CONF:435</entry><entry> </entry></row> 
+<row><entry>infantTransfer</entry><entry>infantTransfer</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>InfantTransfer</entry><entry>CONF:61</entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>TransferFacility</entry><entry>CONF:436</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="1077624055"/>
-  <code code="127683965"/>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1343697558"/>
+  <code code="2088558330"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>
@@ -60,7 +59,7 @@
 </observation>]]></codeblock>
 <section id="changes">
 </section>
-<p><ph id="classformalname">infant Transfer</ph></p>
+<p><ph id="classformalname">Infant Transfer</ph></p>
 <p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.26.29</tt>]</p>
 </body>
 </topic>

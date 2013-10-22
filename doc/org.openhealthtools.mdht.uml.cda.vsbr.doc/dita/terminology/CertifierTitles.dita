@@ -13,7 +13,9 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Certifier Titles - (OID not specified)</entry></row>
-<row><entry>Description</entry><entry>A list of different titles used by birth attendants to denote professional role.  Note, the codes used are based on the current worksheet, and may be replaced with code values from a widely used code system.
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Version</entry><entry>December 1, 2013</entry></row>
+<row><entry>Description</entry><entry>A list of different titles used by birth attendants to denote professional role.  Note, SNOMED is being used as the primary source for codes within the value set.
 </entry></row>
 </tbody></tgroup></table>
 <table><tgroup cols="3">
@@ -23,12 +25,12 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>MD</entry><entry></entry><entry>Medical Doctor</entry></row>
-<row><entry>DO</entry><entry></entry><entry>Doctor of Osteopathy</entry></row>
-<row><entry>HAD</entry><entry></entry><entry>Hospital Administator or Designee</entry></row>
-<row><entry>CNM/CM</entry><entry></entry><entry>Certified Nurse Midwife/Certified Midwife</entry></row>
-<row><entry>MW</entry><entry></entry><entry>Other Midwife</entry></row>
-<row><entry>OTH</entry><entry></entry><entry>Other</entry></row>
+<row><entry>309343006</entry><entry>SNOMEDCT</entry><entry>Physician</entry></row>
+<row><entry>76231001</entry><entry>SNOMEDCT</entry><entry>Osteopath</entry></row>
+<row><entry>6868009</entry><entry>SNOMEDCT</entry><entry>Hospital administator</entry></row>
+<row><entry>309453006</entry><entry>SNOMEDCT</entry><entry>Registered midwife</entry></row>
+<row><entry>75271001</entry><entry>SNOMEDCT</entry><entry>Professional midwife</entry></row>
+<row><entry>394841004</entry><entry>SNOMEDCT</entry><entry>Other category</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

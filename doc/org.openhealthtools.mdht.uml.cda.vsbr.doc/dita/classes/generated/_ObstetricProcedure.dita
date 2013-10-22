@@ -15,35 +15,34 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.39"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PROC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PROC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:239)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:240)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@negationInd</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@negationInd</b></tt> (CONF:241)
 <ul><li><p><lines><i>The negation indicator defines whether or not the specified procedure was perfomred during the course of delivery.  A  value of true indicates a procedure was NOT performed.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ObstetricProcedures.dita">Obstetric Procedures</xref></tt><b> STATIC</b>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:242), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ObstetricProcedures.dita">Obstetric Procedures</xref> 2.16.840.1.114222.4.11.7136</tt><b> STATIC</b> December 1, 2013 (CONF:243)
 <ul><li><p><lines><i>A code value that indicates the nature of the procedure - it specifies the nature of the obstetric procedure about which information is provided.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PROC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PROC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:239)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:240)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@negationInd</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@negationInd</b></tt> (CONF:241)
 <ul><li><p><lines><i>The negation indicator defines whether or not the specified procedure was perfomred during the course of delivery.  A  value of true indicates a procedure was NOT performed.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ObstetricProcedures.dita">Obstetric Procedures</xref></tt><b> STATIC</b>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:242), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ObstetricProcedures.dita">Obstetric Procedures</xref> 2.16.840.1.114222.4.11.7136</tt><b> STATIC</b> December 1, 2013 (CONF:243)
 <ul><li><p><lines><i>A code value that indicates the nature of the procedure - it specifies the nature of the obstetric procedure about which information is provided.</i></lines></p></li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Obstetric Procedure</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::procedure[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> ACCM</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> APT</entry></row> 
-<row><entry>negationInd</entry><entry>@negationInd</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
-<row><entry>obstetric Procedures</entry><entry>obstetric Procedures</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Obstetric Procedure</entry><entry></entry><entry> </entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Obstetric Procedure</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::procedure[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:239</entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:240</entry><entry> APT</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>Boolean</entry><entry>CONF:241</entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:242</entry><entry> </entry></row> 
+<row><entry>obstetric Procedures</entry><entry>obstetric Procedures</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Obstetric Procedure</entry><entry>CONF:384</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="646437932"/>
-  <code code="1396130840"/>
+<codeblock id="example"><![CDATA[<procedure xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1933880186"/>
+  <code code="323537452"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>

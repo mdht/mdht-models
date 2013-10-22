@@ -41,6 +41,14 @@
 			would draw on a common set of concepts.  This has been done wherever possible, and the Public Health Information
 			Network (PHIN) Vocabulary Access and Distribution System (VADS) is used as the repository and source for
 			 the commonly agreed upon vocabulary items.</p>
+			 
+			 <p>In a nunber of cases, the NCVS edit specifications for data collection allow the entry of "UNKNOWN" to represent
+			 the case in which desired information is not available.  This concept is captured, within this implementation guide,
+			 through use of the nullFlavor - UNK".</p>
+			 
+			 <p>Throughout this Implementation Guide, the bindings between coded attributes and the cited value sets are static, and
+			 the value sets are versioned as of the date of guide publication.  If it proves necessary to make changes to these value
+			 sets, this will be recorded, either through published erata, or through issuing an updated version of the document. </p>
 		</body>
 	</topic>
 </topic>

@@ -11,7 +11,7 @@ medical and key information about the antepartum period, the labor and delivery 
  and health information collected from Electronic Health Record (EHR) and data for the birth certificate and fetal death report
 once gathered, can be provided to public health agencies to track maternal and infant health populations of interest.</p>
 		 
-		 <p>The document has been generated through creation of a UML model specializing that created to support CDA
+		 <p>The document has been generated through creation of a UML model created to support CDA
 		    Release 2.  The model exists within the environment created by the Open Health Tools (OHT) Model-Driven
 		     Health Tools (MDHT) project.  This document was generated from the model using the features of the toolkit.
 			</p>

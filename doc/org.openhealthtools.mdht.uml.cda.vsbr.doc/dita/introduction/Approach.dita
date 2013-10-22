@@ -45,12 +45,19 @@
                       
          <p>It is expected that electronic health record systems that provide data for inclusion within clinical documents
          conformant to this implementation guide, may use the IHE (Interconnecting the Healthcare Enterprise) Birth and Fetal 
-         Death Reporting (BFDR)technical framework supplement as a guide to extracting the data. Therefore, we have sought to 
+         Death Reporting (BFDR) technical framework supplement as a guide to extracting the data. Therefore, we have sought to 
          organize sections within this document, both to reflect the organization of the Facility Worksheets, and to correspond
          to the BFDR document. References to the corresponding IHE data structure will be provided where relevant.
                        </p>
+                       
+                       <p><b>Relationship to C-CDA</b></p>
            
-           <p>Discuss C-CCD and its templates</p>
+           <p>We have also used HL7's consolidated CDA (C-CDA) as a point of reference for developing the templates used within
+           this guide.  However, the focus of the reporting is rather different from that in the C-CDA documents: those provide an open
+           structure to allow clininians to record relevant data for patient care across a wide range of institutional settings, while
+           birth and fetal death reporting address a constrained data set whose content is tailord to the specific needs of vital statistics.
+           As a result, it was only possible to draw upon a few of the templates created for C-CDA.  The descriptions of individual templates
+           touch on their relationship to C-CDA where appropriate.</p>
 
 <p>This guide calls for specific vocabulary standards for managing live birth and fetal death reporting information.
   Use of standard vocabularies is important for a number of reasons.  Use of standard vocabularies allows broad
