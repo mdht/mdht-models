@@ -15,18 +15,20 @@
           </row>
         </thead>
         <tbody>
+          
           <row>
-            <entry>New</entry>
-            <entry>August 2012</entry>
+            <entry>HL7 DSTU</entry>
+            <entry>March 2013</entry>
             <entry>Mead Walker</entry>
-            <entry></entry>
-          </row>
-          <row>
             <entry>Initial package prepared for HL7 Balloting</entry>
-            <entry>February 2012</entry>
+          </row>
+      <row>
+            <entry>DSTU pre-publication</entry>
+            <entry>October 2013</entry>
             <entry>Mead Walker</entry>
             <entry>Revised submission based on ballot comments.</entry>
-          </row>
+          </row>    
+          
         </tbody>
       </tgroup>
     </table>

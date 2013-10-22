@@ -21,10 +21,10 @@
 </li>
 <li>Contains exactly one [1..1] <tt><b>code</b></tt>
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:378)
 <ul><li><p><lines><i>One or more entries recording the presence of an infection may be recorded.  Each entry contains information for a single infection.</i></lines></p></li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../InfectionPresent.dita">Infection Present</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.30</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:379)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -34,25 +34,24 @@
 </li>
 <li>Contains exactly one [1..1] <tt><b>code</b></tt>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:379)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:378)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../InfectionPresent.dita">Infection Present</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.30</tt>)</li></ol><ul><li><p><lines><i>One or more entries recording the presence of an infection may be recorded.  Each entry contains information for a single infection.</i></lines></p></li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::History of Infection Section</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>history of Infection</entry><entry>history of Infection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>History of Infection Section</entry><entry></entry><entry> </entry></row> 
-<row><entry>infections Present</entry><entry>cda:entry/cda:observation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Infection Present</entry><entry></entry><entry> </entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::History of Infection Section</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>history of Infection</entry><entry>history of Infection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>History of Infection Section</entry><entry>CONF:18</entry><entry> </entry></row> 
+<row><entry>infections Present</entry><entry>cda:entry/cda:observation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Infection Present</entry><entry>CONF:378</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:379</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="292176408"/>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="2011625931"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
     <observation>
-      <id root="MDHT" extension="246623616"/>
-      <code code="1419281852"/>
+      <id root="MDHT" extension="636579214"/>
+      <code code="786606219"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>

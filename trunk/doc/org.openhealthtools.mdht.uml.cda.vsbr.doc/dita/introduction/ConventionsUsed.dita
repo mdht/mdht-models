@@ -83,7 +83,7 @@
                   <li><b>SHALL</b> contain [1..1] Reporting Parameters section (templateId:2.16.840.1.113883.10.20.17.2.1) (CONF:4131).</li>
                 </ol></li>
               <li>This component/structuredBody <b>SHALL</b> contain [1..1] component (CONF:4132) such that it <ol>
-                  <li><b>SHALL</b> contain [1..1] Patient data section - NCR (templateId:2.16.840.1.113883.10.20.17.2.5) (CONF:4133).</li>
+                  <li><b>SHALL</b> contain [1..1] Patient data section (templateId:2.16.840.1.113883.10.20.17.2.5) (CONF:4133).</li>
                 </ol></li>
             </ol></li>
         </ol>
