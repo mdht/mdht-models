@@ -445,13 +445,13 @@ steward that is entrusted with the care of the document. Every CDA document has 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CUIO0FpvEeKUiPQlmqLrLg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CUIO0VpvEeKUiPQlmqLrLg"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_QNV0AM-LEeGEP4RKA70UUQ" name="Mother's Vital Signs Section" type="_oJ-owM-KEeGEP4RKA70UUQ" association="_QNV0As-LEeGEP4RKA70UUQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EAEv0GTOEeKI26bPrbGDMw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EAEv0WTOEeKI26bPrbGDMw" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_xJlGINA8EeGEz9ISu-MpwA" name="labor and Delivery Procedures Section" type="_jqH7YNAQEeGEP4RKA70UUQ" association="_xJlGItA8EeGEz9ISu-MpwA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wx23QFpvEeKUiPQlmqLrLg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wx3eUFpvEeKUiPQlmqLrLg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ydPy0DwUEeOIbpmkAR-aPA" name="mothers Vital Signs Section" type="_GVS2QB_EEeOYe8LVX7HMMw" association="_ydV5cDwUEeOIbpmkAR-aPA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2w29EDwUEeOIbpmkAR-aPA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2w29ETwUEeOIbpmkAR-aPA" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_-EnHILvNEeGkEvM80TFRNQ" name="Newborn Delivery Section">
@@ -2545,9 +2545,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WIBrAR_LEeOYe8LVX7HMMw" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_QNV0As-LEeGEP4RKA70UUQ" memberEnd="_QNV0AM-LEeGEP4RKA70UUQ _QNV0A8-LEeGEP4RKA70UUQ">
-      <ownedEnd xmi:id="_QNV0A8-LEeGEP4RKA70UUQ" type="_1aHcMLvNEeGkEvM80TFRNQ" association="_QNV0As-LEeGEP4RKA70UUQ"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_9bzboNAOEeGEP4RKA70UUQ" name="Prior Pregnancy History Section">
       <ownedComment xmi:id="_zku-INA1EeGEz9ISu-MpwA">
         <body>The pregnancy history section contains entries describing the patient's prior pregancy history.</body>
@@ -3483,6 +3480,9 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
     <packagedElement xmi:type="uml:Association" xmi:id="_sfyKYjtaEeOC5d2nIW7v7g" memberEnd="_sfyKYDtaEeOC5d2nIW7v7g _sfyKYztaEeOC5d2nIW7v7g">
       <ownedEnd xmi:id="_sfyKYztaEeOC5d2nIW7v7g" type="_kr9kMFp7EeKUiPQlmqLrLg" association="_sfyKYjtaEeOC5d2nIW7v7g"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ydV5cDwUEeOIbpmkAR-aPA" memberEnd="_ydPy0DwUEeOIbpmkAR-aPA _ydV5cTwUEeOIbpmkAR-aPA">
+      <ownedEnd xmi:id="_ydV5cTwUEeOIbpmkAR-aPA" type="_1aHcMLvNEeGkEvM80TFRNQ" association="_ydV5cDwUEeOIbpmkAR-aPA"/>
+    </packagedElement>
     <profileApplication xmi:id="_esTLTLSgEeGhbsXY607ygg">
       <eAnnotations xmi:id="_esTLTbSgEeGhbsXY607ygg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -4189,9 +4189,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:354</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_Rg8w8M-LEeGEP4RKA70UUQ" base_Association="_QNV0As-LEeGEP4RKA70UUQ">
-    <ruleId>CONF:49</ruleId>
-  </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_CT1FENAQEeGEP4RKA70UUQ" base_Class="_eR3SsNAPEeGEP4RKA70UUQ" templateId="2.16.840.1.113883.10.20.26.5"/>
   <CDA:CDATemplate xmi:id="_EovuANAQEeGEP4RKA70UUQ" base_Class="_9bzboNAOEeGEP4RKA70UUQ" templateId="2.16.840.1.113883.10.20.26.12"/>
   <CDA:CDATemplate xmi:id="_Rd_iINAQEeGEP4RKA70UUQ" base_Class="_oJ-owM-KEeGEP4RKA70UUQ" templateId="2.16.840.1.113883.10.20.26.9"/>
@@ -4970,4 +4967,5 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_kPolADtNEeOC5d2nIW7v7g" name="LOINC" code="71459-2" displayName="Infection panel" base_Property="_gqqWENAPEeGEP4RKA70UUQ"/>
   <CDA:AssociationValidation xmi:id="_umuowDtaEeOC5d2nIW7v7g" base_Association="_sfyKYjtaEeOC5d2nIW7v7g"/>
+  <CDA:AssociationValidation xmi:id="_3kvREDwUEeOIbpmkAR-aPA" base_Association="_ydV5cDwUEeOIbpmkAR-aPA"/>
 </xmi:XMI>

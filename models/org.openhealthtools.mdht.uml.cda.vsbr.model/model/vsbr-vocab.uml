@@ -25,7 +25,7 @@
       </ownedComment>
       <ownedLiteral xmi:id="_QgTM4LuuEeGkEvM80TFRNQ" name="48782003"/>
       <ownedLiteral xmi:id="_UZnn0LuuEeGkEvM80TFRNQ" name="302383004"/>
-      <ownedLiteral xmi:id="_V7o0MLuuEeGkEvM80TFRNQ" name="11466000"/>
+      <ownedLiteral xmi:id="_V7o0MLuuEeGkEvM80TFRNQ" name="200144004"/>
       <ownedLiteral xmi:id="_V-6xsLuuEeGkEvM80TFRNQ" name="61586001"/>
       <ownedLiteral xmi:id="_BAwFYAnJEeOSQLMpSugQSQ" name="261665006"/>
     </packagedElement>
@@ -275,7 +275,7 @@
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_QgTz8LuuEeGkEvM80TFRNQ" conceptName="Delivery normal" usageNote="Vaginal/Spontaneous" base_EnumerationLiteral="_QgTM4LuuEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_UZnn0buuEeGkEvM80TFRNQ" conceptName="Forceps delivery" usageNote="Vaginal/Forceps" base_EnumerationLiteral="_UZnn0LuuEeGkEvM80TFRNQ"/>
-  <term:ValueSetCode xmi:id="_V7o0MbuuEeGkEvM80TFRNQ" conceptName="Cesarean section" base_EnumerationLiteral="_V7o0MLuuEeGkEvM80TFRNQ"/>
+  <term:ValueSetCode xmi:id="_V7o0MbuuEeGkEvM80TFRNQ" conceptName="Deliveries by cesarean" base_EnumerationLiteral="_V7o0MLuuEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_V-7YwLuuEeGkEvM80TFRNQ" conceptName="Delivery by vacuum extraction" usageNote="Vaginal/Vacuum" base_EnumerationLiteral="_V-6xsLuuEeGkEvM80TFRNQ"/>
   <term:ValueSetVersion xmi:id="_5RyFkbuyEeGkEvM80TFRNQ" identifier="2.16.840.1.114222.4.11.7124" version="December 1, 2013" base_Enumeration="_5RyFkLuyEeGkEvM80TFRNQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
