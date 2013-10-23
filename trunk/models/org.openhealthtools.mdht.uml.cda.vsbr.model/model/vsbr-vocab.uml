@@ -122,7 +122,7 @@
       <ownedLiteral xmi:id="_rpcbAL78EeGdruZFgBKbQw" name="44223004"/>
       <ownedLiteral xmi:id="_z1kH4L78EeGdruZFgBKbQw" name="51920004"/>
       <ownedLiteral xmi:id="_2Eig4L78EeGdruZFgBKbQw" name="53443007"/>
-      <ownedLiteral xmi:id="_3yepYL78EeGdruZFgBKbQw" name="60413007"/>
+      <ownedLiteral xmi:id="_3yepYL78EeGdruZFgBKbQw" name="260413007"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_94as4L78EeGdruZFgBKbQw" name="Labor and Delivery Characteristics">
       <ownedComment xmi:id="_BOBz0MRNEeGoQ8pWsHTi4g">
@@ -404,7 +404,7 @@
   <term:ValueSetCode xmi:id="_rpcbAb78EeGdruZFgBKbQw" conceptName="Premature rupture of membranes" base_EnumerationLiteral="_rpcbAL78EeGdruZFgBKbQw"/>
   <term:ValueSetCode xmi:id="_z1kH4b78EeGdruZFgBKbQw" conceptName="Precipitate labor" base_EnumerationLiteral="_z1kH4L78EeGdruZFgBKbQw"/>
   <term:ValueSetCode xmi:id="_2Eig4b78EeGdruZFgBKbQw" conceptName="Prolonged labor" base_EnumerationLiteral="_2Eig4L78EeGdruZFgBKbQw"/>
-  <term:ValueSetCode xmi:id="_3yoaYL78EeGdruZFgBKbQw" conceptName="None of the cited unusual onsets" base_EnumerationLiteral="_3yepYL78EeGdruZFgBKbQw"/>
+  <term:ValueSetCode xmi:id="_3yoaYL78EeGdruZFgBKbQw" conceptName="None" base_EnumerationLiteral="_3yepYL78EeGdruZFgBKbQw"/>
   <term:ValueSetVersion xmi:id="_94as4b78EeGdruZFgBKbQw" identifier="2.16.840.1.114222.4.11.7117" version="December 1, 2013" base_Enumeration="_94as4L78EeGdruZFgBKbQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
