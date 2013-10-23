@@ -4740,7 +4740,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
   <CDA:CodeSystemConstraint xmi:id="_Pb634AZ7EeOFRrPYPAmKMQ" code="73781-7" displayName="Maternal morbidity" base_Property="_DHhalb7zEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_ii-SMAaEEeOFRrPYPAmKMQ" code="7377-9" displayName="Risk factors in this pregnancy" base_Property="_30MFJb7yEeGdruZFgBKbQw">
+  <CDA:CodeSystemConstraint xmi:id="_ii-SMAaEEeOFRrPYPAmKMQ" code="73775-9" displayName="Risk factors in this pregnancy" base_Property="_30MFJb7yEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_5RhiMAaOEeOFRrPYPAmKMQ" code="73762-7" displayName="Final route and method of delivery" base_Property="_oC6zxVqNEeKUiPQlmqLrLg">
