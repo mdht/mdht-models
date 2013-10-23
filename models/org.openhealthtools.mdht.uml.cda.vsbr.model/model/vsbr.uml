@@ -1532,7 +1532,7 @@ information.  Within the II data type, use the root to record the identifying OI
       </ownedAttribute>
       <ownedAttribute xmi:id="_kqSwZLyzEeGUNfs_q_VvNQ" name="moodCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_00PskL7OEeGdruZFgBKbQw" value="DEF"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Jj56QDvyEeOIbpmkAR-aPA" value="EVN"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_x0p44LyzEeGUNfs_q_VvNQ" name="negationInd" visibility="private">
         <ownedComment xmi:id="_KammcL7OEeGdruZFgBKbQw">
@@ -2212,6 +2212,9 @@ information.  Within the II data type, use the root to record the identifying OI
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_42F_kFqZEeKUiPQlmqLrLg"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_oC6z0FqNEeKUiPQlmqLrLg" name="TrialOfLaborAssociation">
+          <ownedComment xmi:id="_ZfMEgDvtEeOIbpmkAR-aPA">
+            <body>INLINE</body>
+          </ownedComment>
           <generalization xmi:id="_oC6z0VqNEeKUiPQlmqLrLg">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
           </generalization>
@@ -2231,15 +2234,15 @@ information.  Within the II data type, use the root to record the identifying OI
               <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
               <defaultValue xmi:type="uml:LiteralString" xmi:id="_oC6z2lqNEeKUiPQlmqLrLg" value="OBS"/>
             </ownedAttribute>
+            <ownedAttribute xmi:id="_oC6z3VqNEeKUiPQlmqLrLg" name="moodCode" visibility="private" isReadOnly="true">
+              <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_oC6z3lqNEeKUiPQlmqLrLg" value="EVN"/>
+            </ownedAttribute>
             <ownedAttribute xmi:id="_oC6z21qNEeKUiPQlmqLrLg" name="code" visibility="private" isReadOnly="true" aggregation="composite">
               <ownedComment xmi:id="_oC6z3FqNEeKUiPQlmqLrLg">
                 <body>Indicates the observation contains information on a trial of labor.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_oC6z3VqNEeKUiPQlmqLrLg" name="moodCode" visibility="private" isReadOnly="true">
-              <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-              <defaultValue xmi:type="uml:LiteralString" xmi:id="_oC6z3lqNEeKUiPQlmqLrLg" value="EVN"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_oC6z31qNEeKUiPQlmqLrLg" name="value" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_oC6z4FqNEeKUiPQlmqLrLg">
@@ -4707,7 +4710,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
   <CDA:CodeSystemConstraint xmi:id="_yTghEAXnEeO_frVhN2419A" code="11884-4" displayName="Gestational age Estimated" base_Property="_H3pZNcCJEeGP5fduNvI1Qw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_23BdoAXpEeO_frVhN2419A" code="67188-3" displayName="Infection" base_Property="_nuPVRb7yEeGdruZFgBKbQw">
+  <CDA:CodeSystemConstraint xmi:id="_23BdoAXpEeO_frVhN2419A" code="72519-2" displayName="Infections present and or treated during this pregnancy for live birth" base_Property="_nuPVRb7yEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_lhvsgAXsEeO_frVhN2419A" code="57722-1" displayName="Birth plurality" base_Property="_6BNi9cCKEeGP5fduNvI1Qw">
@@ -4879,7 +4882,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
   <CDA:PropertyValidation xmi:id="_iGAooB8eEeOZzJzWV51ZDg" base_Property="_iGAolx8eEeOZzJzWV51ZDg">
     <ruleId>CONF:235</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_iGAooR8eEeOZzJzWV51ZDg" code="67188-3" displayName="Infection" base_Property="_iGAolx8eEeOZzJzWV51ZDg">
+  <CDA:CodeSystemConstraint xmi:id="_iGAooR8eEeOZzJzWV51ZDg" code="72519-2" displayName="InfeInfections present and or treated during this pregnancy for live birth" base_Property="_iGAolx8eEeOZzJzWV51ZDg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_iGAooh8eEeOZzJzWV51ZDg" base_Property="_iGAomR8eEeOZzJzWV51ZDg">
