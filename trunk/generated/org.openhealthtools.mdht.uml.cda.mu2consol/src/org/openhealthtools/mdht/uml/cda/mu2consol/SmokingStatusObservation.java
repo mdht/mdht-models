@@ -25,9 +25,9 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  */
 public interface SmokingStatusObservation extends org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public SmokingStatusObservation init();
 
 	/**

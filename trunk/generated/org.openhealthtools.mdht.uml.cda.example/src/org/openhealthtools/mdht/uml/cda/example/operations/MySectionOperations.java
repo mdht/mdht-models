@@ -113,7 +113,7 @@ public class MySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_SECTION__MY_SECTION_TEMPLATE_ID,
-					ExamplePlugin.INSTANCE.getString("MySectionTemplateId"), new Object[] { mySection }));
+					ExamplePlugin.INSTANCE.getString("MySectionMySectionTemplateId"), new Object[] { mySection }));
 			}
 
 			return false;
@@ -172,7 +172,7 @@ public class MySectionOperations extends SectionOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE, ExampleValidator.MY_SECTION__MY_SECTION_CODE,
-					ExamplePlugin.INSTANCE.getString("MySectionCode"), new Object[] { mySection }));
+					ExamplePlugin.INSTANCE.getString("MySectionMySectionCode"), new Object[] { mySection }));
 			}
 
 			return false;
@@ -229,7 +229,8 @@ public class MySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_SECTION__MY_SECTION_CONFIDENTIALITY_CODE,
-					ExamplePlugin.INSTANCE.getString("MySectionConfidentialityCode"), new Object[] { mySection }));
+					ExamplePlugin.INSTANCE.getString("MySectionMySectionConfidentialityCode"),
+					new Object[] { mySection }));
 			}
 
 			return false;
@@ -284,8 +285,8 @@ public class MySectionOperations extends SectionOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
-					ExampleValidator.MY_SECTION__MY_SECTION_TITLE, ExamplePlugin.INSTANCE.getString("MySectionTitle"),
-					new Object[] { mySection }));
+					ExampleValidator.MY_SECTION__MY_SECTION_TITLE,
+					ExamplePlugin.INSTANCE.getString("MySectionMySectionTitle"), new Object[] { mySection }));
 			}
 
 			return false;
@@ -341,7 +342,7 @@ public class MySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_SECTION__MY_SECTION_MY_OBSERVATION,
-					ExamplePlugin.INSTANCE.getString("MySectionMyObservation"), new Object[] { mySection }));
+					ExamplePlugin.INSTANCE.getString("MySectionMySectionMyObservation"), new Object[] { mySection }));
 			}
 
 			return false;
@@ -397,7 +398,7 @@ public class MySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_SECTION__MY_SECTION_MEDICATION,
-					ExamplePlugin.INSTANCE.getString("MySectionMedication"), new Object[] { mySection }));
+					ExamplePlugin.INSTANCE.getString("MySectionMySectionMedication"), new Object[] { mySection }));
 			}
 
 			return false;
@@ -453,7 +454,7 @@ public class MySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_SECTION__MY_SECTION_ENCOUNTER,
-					ExamplePlugin.INSTANCE.getString("MySectionEncounter"), new Object[] { mySection }));
+					ExamplePlugin.INSTANCE.getString("MySectionMySectionEncounter"), new Object[] { mySection }));
 			}
 
 			return false;

@@ -26,9 +26,9 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 public interface ResultObservation extends
 		org.openhealthtools.mdht.uml.cda.consol.ResultObservation {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ResultObservation init();
 
 	/**

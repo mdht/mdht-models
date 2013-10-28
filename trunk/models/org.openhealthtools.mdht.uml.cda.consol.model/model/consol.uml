@@ -1889,13 +1889,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Property href=".controlled/consol-documents.uml#_Cmzu0CymEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_AhJbICysEeGMXrZ0DiQwGg" severity="WARNING">
+    <ruleId>CONF:5326</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_Cm0V4CymEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_BbDeoCysEeGMXrZ0DiQwGg">
-    <reference href="consol-vocab.uml#_X7aBcGiJEeGjoNbQEEZQtw"/>
-    <base_Property href=".controlled/consol-documents.uml#_Cm0V4CymEeGMXrZ0DiQwGg"/>
-    <ruleId>CONF:5326</ruleId>
-  </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_GD6gICysEeGMXrZ0DiQwGg" severity="INFO">
     <base_Property href=".controlled/consol-documents.uml#_Cm088CymEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>

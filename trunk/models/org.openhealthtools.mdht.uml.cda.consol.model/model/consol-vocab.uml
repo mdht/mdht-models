@@ -643,7 +643,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_SIQ9cPweEeGXDIdcQJhgtg" name="T"/>
       <ownedLiteral xmi:id="_TjXpgPweEeGXDIdcQJhgtg" name="W"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfTnoKDqEd-dVeaMP0XXQw" name="Race"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfTnoKDqEd-dVeaMP0XXQw" name="Race Value Set"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ywcy0Gg7Ed-ilOLYnIx0jA" name="INDRoleclassCodes">
       <ownedComment xmi:id="_EE4vEGg8Ed-ilOLYnIx0jA">
         <body>Specific classification codes for further qualifying RoleClass codes.</body>
@@ -1178,6 +1178,16 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_pAHGoPwYEeGXDIdcQJhgtg" name="24028007"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_r9OoIBJKEeKjxqZmTX2rRQ" name="Procedure"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_sxm14Dp4EeOpivxgTh7oFg" name="Responsible Party">
+      <ownedLiteral xmi:id="_t9oHoDp5EeOpivxgTh7oFg" name="RESPRSN"/>
+      <ownedLiteral xmi:id="_z_9dgDp5EeOpivxgTh7oFg" name="EXCEST"/>
+      <ownedLiteral xmi:id="_0e8fkDp5EeOpivxgTh7oFg" name="GUADLTM"/>
+      <ownedLiteral xmi:id="_01cUADp5EeOpivxgTh7oFg" name="GUARD"/>
+      <ownedLiteral xmi:id="_1P6CcDp5EeOpivxgTh7oFg" name="POWATT"/>
+      <ownedLiteral xmi:id="_1jJHgDp5EeOpivxgTh7oFg" name="DPOWATT"/>
+      <ownedLiteral xmi:id="_13RkcDp5EeOpivxgTh7oFg" name="HPOWATT"/>
+      <ownedLiteral xmi:id="_2LBm4Dp5EeOpivxgTh7oFg" name="SPOWATT"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -1441,7 +1451,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_6yjb4T_LEeGXieeKs7NJjA" identifier="2.16.840.1.113883.11.20.8.1" binding="Dynamic" base_Enumeration="_6yjb4D_LEeGXieeKs7NJjA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_0Uo48EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.14914" version="1" fullName="Race Value Set" definition="A Value Set of codes for Classifying data based upon race.&#xD;&#xA;Race is always reported at the discretion of the person for whom this attribute is reported, and reporting must be completed according to Federal guidelines for race reporting. Any code descending from the Race concept (1000-9) in that terminology may be used in the exchange." base_Enumeration="_dfTnoKDqEd-dVeaMP0XXQw">
+  <term:ValueSetVersion xmi:id="_0Uo48EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.14914" version="1" fullName="Race Value Set" definition="A Value Set of codes for Classifying data based upon race.&#xD;&#xA;Race is always reported at the discretion of the person for whom this attribute is reported, and reporting must be completed according to Federal guidelines for race reporting. Any code descending from the Race concept (1000-9) in that terminology may be used in the exchange." binding="Dynamic" base_Enumeration="_dfTnoKDqEd-dVeaMP0XXQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2aTk8EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.19185" version="1" fullName="Religious Affiliation Value Set" definition="This reflects the spiritual faith affiliation" base_Enumeration="_dfhqEKDqEd-dVeaMP0XXQw">
@@ -1477,7 +1487,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_ixlmgV_mEeGt2doqSDULjA" conceptName="Self" base_EnumerationLiteral="_ixlmgF_mEeGt2doqSDULjA"/>
   <term:ValueSetCode xmi:id="_mQAOIV_mEeGt2doqSDULjA" conceptName="Sponsored dependent" base_EnumerationLiteral="_mQAOIF_mEeGt2doqSDULjA"/>
   <term:ValueSetCode xmi:id="_remZ8V_mEeGt2doqSDULjA" conceptName="Student" base_EnumerationLiteral="_remZ8F_mEeGt2doqSDULjA"/>
-  <term:ValueSetVersion xmi:id="_X7aBcGiJEeGjoNbQEEZQtw" identifier="2.16.840.1.113883.1.11.19563" version="1" fullName="Personal Relationship Role Type Value Set" definition="A Personal Relationship records the role of a person in relation to another person. This value set is to be used when recording the relationships between different people who are not necessarily related by family ties, but also includes family relationships" revisionDate="07/23/2009" base_Enumeration="_MrdXMGiJEeGjoNbQEEZQtw">
+  <term:ValueSetVersion xmi:id="_X7aBcGiJEeGjoNbQEEZQtw" identifier="2.16.840.1.113883.1.11.19563" version="1" fullName="Personal Relationship Role Type Value Set" definition="A Personal Relationship records the role of a person in relation to another person. This value set is to be used when recording the relationships between different people who are not necessarily related by family ties, but also includes family relationships" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_MrdXMGiJEeGjoNbQEEZQtw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_K7fHAGiMEeGjoNbQEEZQtw" conceptName="adopted child" base_EnumerationLiteral="_MrdXMWiJEeGjoNbQEEZQtw"/>
@@ -2409,4 +2419,15 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_QJqWIRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_QJqWIBfSEeKlBPC3X0poXg"/>
   <term:ValueSetCode xmi:id="_Rpd8ARfSEeKlBPC3X0poXg" base_EnumerationLiteral="_Rpd8ABfSEeKlBPC3X0poXg"/>
   <term:ValueSetCode xmi:id="_SYe-IRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_SYe-IBfSEeKlBPC3X0poXg"/>
+  <term:ValueSetVersion xmi:id="_sxoEADp4EeOpivxgTh7oFg" identifier="2.16.840.1.113883.1.11.19830" fullName="ValueSet Responsible Party" binding="Dynamic" base_Enumeration="_sxm14Dp4EeOpivxgTh7oFg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_t9ousDp5EeOpivxgTh7oFg" conceptName="responsible party" usageNote="RoleCode" base_EnumerationLiteral="_t9oHoDp5EeOpivxgTh7oFg"/>
+  <term:ValueSetCode xmi:id="_z_-EkDp5EeOpivxgTh7oFg" conceptName="executor of estate" usageNote="RoleCode" base_EnumerationLiteral="_z_9dgDp5EeOpivxgTh7oFg"/>
+  <term:ValueSetCode xmi:id="_0e9GoDp5EeOpivxgTh7oFg" conceptName="guardian ad lidem" usageNote="RoleCode" base_EnumerationLiteral="_0e8fkDp5EeOpivxgTh7oFg"/>
+  <term:ValueSetCode xmi:id="_01cUATp5EeOpivxgTh7oFg" conceptName="guardian" usageNote="RoleCode" base_EnumerationLiteral="_01cUADp5EeOpivxgTh7oFg"/>
+  <term:ValueSetCode xmi:id="_1P6pgDp5EeOpivxgTh7oFg" conceptName="power of attorney" usageNote="RoleCode" base_EnumerationLiteral="_1P6CcDp5EeOpivxgTh7oFg"/>
+  <term:ValueSetCode xmi:id="_1jJukDp5EeOpivxgTh7oFg" conceptName="durable power of attorney" usageNote="RoleCode" base_EnumerationLiteral="_1jJHgDp5EeOpivxgTh7oFg"/>
+  <term:ValueSetCode xmi:id="_13RkcTp5EeOpivxgTh7oFg" conceptName="healthcare power of attorney" usageNote="RoleCode" base_EnumerationLiteral="_13RkcDp5EeOpivxgTh7oFg"/>
+  <term:ValueSetCode xmi:id="_2LBm4Tp5EeOpivxgTh7oFg" conceptName="special power of attorney" usageNote="RoleCode" base_EnumerationLiteral="_2LBm4Dp5EeOpivxgTh7oFg"/>
 </xmi:XMI>
