@@ -101,7 +101,7 @@ public class MyDocumentOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_DOCUMENT__MY_DOCUMENT_TEMPLATE_ID,
-					ExamplePlugin.INSTANCE.getString("MyDocumentTemplateId"), new Object[] { myDocument }));
+					ExamplePlugin.INSTANCE.getString("MyDocumentMyDocumentTemplateId"), new Object[] { myDocument }));
 			}
 
 			return false;
@@ -157,7 +157,7 @@ public class MyDocumentOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_DOCUMENT__MY_DOCUMENT_MY_SECTION,
-					ExamplePlugin.INSTANCE.getString("MyDocumentMySection"), new Object[] { myDocument }));
+					ExamplePlugin.INSTANCE.getString("MyDocumentMyDocumentMySection"), new Object[] { myDocument }));
 			}
 
 			return false;
@@ -198,7 +198,7 @@ public class MyDocumentOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_MY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ExamplePackage.Literals.MY_DOCUMENT, ExamplePackage.Literals.MY_DOCUMENT.getEAllOperations().get(292));
+				ExamplePackage.Literals.MY_DOCUMENT, ExamplePackage.Literals.MY_DOCUMENT.getEAllOperations().get(294));
 			try {
 				GET_MY_SECTION__EOCL_QRY = helper.createQuery(GET_MY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {

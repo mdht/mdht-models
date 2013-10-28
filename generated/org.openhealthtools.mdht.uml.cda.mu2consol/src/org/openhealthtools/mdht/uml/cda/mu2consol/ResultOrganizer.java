@@ -40,9 +40,9 @@ public interface ResultOrganizer extends
 	EList<ResultObservation> getMu2consolResultObservations();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ResultOrganizer init();
 
 	/**

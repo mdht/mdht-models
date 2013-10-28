@@ -228,6 +228,14 @@ element.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rOFvYSy6EeGMXrZ0DiQwGg"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_wfQTkCylEeGMXrZ0DiQwGg" name="Patient">
+          <ownedRule xmi:id="_2yReIDtrEeOukK1fJiZHOA" name="IfSdtcEnforceRaceCode" constrainedElement="_wfQTkCylEeGMXrZ0DiQwGg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_HxR88DtsEeOukK1fJiZHOA">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>If sdtc:raceCode is present, then the patient SHALL contain [1..1] raceCode</body>
+              <body>sDTCRaceCode->notEmpty() implies not raceCode.oclIsUndefined()</body>
+            </specification>
+          </ownedRule>
           <generalization xmi:id="_wfQ6oCylEeGMXrZ0DiQwGg">
             <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mxsCMEALEd6wZe6nFLrjsw"/>
           </generalization>
@@ -284,13 +292,24 @@ element.</body>
           </ownedAttribute>
           <ownedAttribute xmi:id="_d3LCgNBWEeGg9eE98HsYZw" name="sDTCRaceCode" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_dsxL8KbDEeKAJ7JddNoP1Q">
-              <body>The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the raceCode element.</body>
+              <body>Note: The sdtc:raceCode is only used to record additional values when the patient has indicated multiple races or additional race detail beyond the five categories required for Meaningful Use Stage 2. The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the additional raceCode elements.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d3LCgdBWEeGg9eE98HsYZw" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d3LCgtBWEeGg9eE98HsYZw"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_-vjwcCylEeGMXrZ0DiQwGg" name="Guardian">
+            <ownedRule xmi:id="_2G-bEDp-EeOpivxgTh7oFg" name="CodeFromPersonalRelationshipOrResponsibleParty" constrainedElement="_-vjwcCylEeGMXrZ0DiQwGg">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_MXnLkDp_EeOpivxgTh7oFg">
+                <language>Analysis</language>
+                <language>OCL</language>
+                <body>The guardian code, if present, SHALL be selected from ValueSet PersonalRelationshipRoleType 2.16.840.1.113883.1.11.19563 DYNAMIC or ValueSet Responsible Party 2.16.840.1.113883.1.11.19830 DYNAMIC</body>
+                <body>(not code.oclIsUndefined()) and code.isNullFlavorUndefined() implies&#xD;
+(code.oclIsKindOf(datatypes::CE) and &#xD;
+let value : datatypes::CE = code.oclAsType(datatypes::CE) in &#xD;
+value.codeSystem = '2.16.840.1.113883.5.111' and (value.code = 'ADOPT' or value.code = 'AUNT' or value.code = 'CHILD' or value.code = 'CHLDINLAW' or value.code = 'COUSN' or value.code = 'DOMPART' or value.code = 'FAMMEMB' or value.code = 'CHLDFOST' or value.code = 'GRNDCHILD' or value.code = 'GPARNT' or value.code = 'GRPRN' or value.code = 'GGRPRN' or value.code = 'HSIB' or value.code = 'MAUNT' or value.code = 'MCOUSN' or value.code = 'MGRPRN' or value.code = 'MGGRPRN' or value.code = 'MUNCLE' or value.code = 'NCHILD' or value.code = 'NPRN' or value.code = 'NSIB' or value.code = 'NBOR' or value.code = 'NIENEPH' or value.code = 'PRN' or value.code = 'PRNINLAW' or value.code = 'PAUNT' or value.code = 'PCOUSN' or value.code = 'PGRPRN' or value.code = 'PGGRPRN' or value.code = 'PUNCLE' or value.code = 'ROOM' or value.code = 'SIB' or value.code = 'SIBINLAW' or value.code = 'SIGOTHR' or value.code = 'SPS' or value.code = 'STEP' or value.code = 'STPPRN' or value.code = 'STPSIB' or value.code = 'UNCLE' or value.code = 'FRND' or value.code = 'RESPRSN' or value.code = 'EXCEST' or value.code = 'GUADLTM' or value.code = 'GUARD' or value.code = 'POWATT' or value.code = 'DPOWATT' or value.code = 'HPOWATT' or value.code = 'SPOWATT'))</body>
+              </specification>
+            </ownedRule>
             <generalization xmi:id="_-vjwcSylEeGMXrZ0DiQwGg">
               <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_liVJMEcIEd6besF9iFIJkQ"/>
             </generalization>
@@ -571,8 +590,16 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_BEoOQTVVEeGIw7CntkyPQw">
             <language>Analysis</language>
             <language>OCL</language>
-            <body>The id SHALL contain exactly one root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier (CONF:9996)</body>
-            <body>not assignedPerson.oclIsUndefined() implies self.id->exists(id| id.isNullFlavorDefined() or id.root='2.16.840.1.113883.4.6' )</body>
+            <body>The id SHALL contain exactly one root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier</body>
+            <body>(not assignedPerson.oclIsUndefined() and id->size() >= 1) implies self.id->exists(id | id.isNullFlavorDefined() or id.root='2.16.840.1.113883.4.6')</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_OBYPYCoQEeO5Yocx1OgZJg" name="ifHasAssignedPersonEnforceId" constrainedElement="_344-ICymEeGMXrZ0DiQwGg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_bGbaECoQEeO5Yocx1OgZJg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not assignedPerson.oclIsUndefined() implies self.id->size() &lt;= 1</body>
+            <body>If this assignedAuthor is an assignedPerson, the assignedAuthor SHOULD contain zero to one [0..1] id</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_345lMCymEeGMXrZ0DiQwGg">
@@ -5074,7 +5101,7 @@ OIDs SHALL be no more than 64 characters in length..</body>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_do2YYMbvEeGp28IjMvW3Ag" base_Constraint="_wectUErYEeGJpZWiuxRVIw"/>
   <CDA:ConstraintValidation xmi:id="_yT_xwMbvEeGp28IjMvW3Ag" base_Constraint="_gAs2kEraEeGJpZWiuxRVIw"/>
-  <CDA:PropertyValidation xmi:id="_qfj70NBVEeGg9eE98HsYZw" severity="INFO" base_Property="_7OuuACylEeGMXrZ0DiQwGg"/>
+  <CDA:PropertyValidation xmi:id="_qfj70NBVEeGg9eE98HsYZw" severity="WARNING" base_Property="_7OuuACylEeGMXrZ0DiQwGg"/>
   <CDA:ValueSetConstraint xmi:id="_kzAzQNBWEeGg9eE98HsYZw" base_Property="_d3LCgNBWEeGg9eE98HsYZw">
     <reference href="../consol-vocab.uml#_0Uo48EFaEeGFqszUdHc61Q"/>
     <ruleId>CONF:7263</ruleId>
@@ -5410,4 +5437,13 @@ OIDs SHALL be no more than 64 characters in length..</body>
     <ruleId>CONF:5300</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_u3sMYNUREeK3Pt43o0baHw" base_Property="_2DNR6RSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_1i8VICoQEeO5Yocx1OgZJg" severity="WARNING" base_Constraint="_OBYPYCoQEeO5Yocx1OgZJg">
+    <ruleId>CONF:19521</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_zK6iQDsxEeOukK1fJiZHOA" base_Constraint="_2G-bEDp-EeOpivxgTh7oFg">
+    <ruleId>CONF:5326</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="__sUoADtrEeOukK1fJiZHOA" base_Constraint="_2yReIDtrEeOukK1fJiZHOA">
+    <ruleId>CONF:31347</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

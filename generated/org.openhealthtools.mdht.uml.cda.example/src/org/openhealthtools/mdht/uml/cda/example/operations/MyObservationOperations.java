@@ -102,7 +102,8 @@ public class MyObservationOperations extends ProblemObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_OBSERVATION__MY_OBSERVATION_CLASS_CODE,
-					ExamplePlugin.INSTANCE.getString("MyObservationClassCode"), new Object[] { myObservation }));
+					ExamplePlugin.INSTANCE.getString("MyObservationMyObservationClassCode"),
+					new Object[] { myObservation }));
 			}
 
 			return false;
@@ -164,7 +165,7 @@ public class MyObservationOperations extends ProblemObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_OBSERVATION__MY_OBSERVATION_CODE,
-					ExamplePlugin.INSTANCE.getString("MyObservationCode"), new Object[] { myObservation }));
+					ExamplePlugin.INSTANCE.getString("MyObservationMyObservationCode"), new Object[] { myObservation }));
 			}
 
 			return false;
@@ -221,7 +222,8 @@ public class MyObservationOperations extends ProblemObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_OBSERVATION__MY_OBSERVATION_EFFECTIVE_TIME,
-					ExamplePlugin.INSTANCE.getString("MyObservationEffectiveTime"), new Object[] { myObservation }));
+					ExamplePlugin.INSTANCE.getString("MyObservationMyObservationEffectiveTime"),
+					new Object[] { myObservation }));
 			}
 
 			return false;
@@ -259,7 +261,7 @@ public class MyObservationOperations extends ProblemObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_OBSERVATION__MY_OBSERVATION_VALUE,
-					ExamplePlugin.INSTANCE.getString("MyObservationValue"), new Object[] { myObservation }));
+					ExamplePlugin.INSTANCE.getString("MyObservationMyObservationValue"), new Object[] { myObservation }));
 			}
 
 			return false;
@@ -338,7 +340,8 @@ public class MyObservationOperations extends ProblemObservationOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_OBSERVATION__MY_OBSERVATION_TARGET_SITE_CODE,
-					ExamplePlugin.INSTANCE.getString("MyObservationTargetSiteCode"), new Object[] { myObservation }));
+					ExamplePlugin.INSTANCE.getString("MyObservationMyObservationTargetSiteCode"),
+					new Object[] { myObservation }));
 			}
 
 			return false;
@@ -396,9 +399,8 @@ public class MyObservationOperations extends ProblemObservationOperations {
 					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
 					ExampleValidator.MY_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
 					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ProblemObservationTemplateId",
+						"_UI_GenericInvariant_diagnostic", new Object[] {
+								"MyObservationProblemObservationTemplateId",
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(myObservation, context) }),
 					new Object[] { myObservation }));
 			}

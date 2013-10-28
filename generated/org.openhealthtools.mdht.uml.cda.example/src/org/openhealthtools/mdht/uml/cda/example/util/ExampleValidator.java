@@ -512,11 +512,11 @@ public class ExampleValidator extends EObjectValidator {
 				myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(
 				myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(
 				myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -565,6 +565,10 @@ public class ExampleValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
+				myDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientIfSdtcEnforceRaceCode(
 				myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -777,6 +781,10 @@ public class ExampleValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier(
+				myDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorIfHasAssignedPersonEnforceId(
 				myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
