@@ -1236,7 +1236,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 			allergyObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_SEVERITY,
 					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationSeverity"),
 					new Object[] { allergyObservation }));

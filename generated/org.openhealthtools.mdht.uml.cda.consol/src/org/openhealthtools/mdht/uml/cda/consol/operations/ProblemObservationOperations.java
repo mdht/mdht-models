@@ -364,7 +364,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 			problemObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE,
 					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationHasResolutionDate"),
 					new Object[] { problemObservation }));

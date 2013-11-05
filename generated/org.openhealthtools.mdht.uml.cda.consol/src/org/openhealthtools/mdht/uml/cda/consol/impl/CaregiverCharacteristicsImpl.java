@@ -179,6 +179,17 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCaregiverCharacteristicsParticipantTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateCaregiverCharacteristicsParticipantTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantTime(
