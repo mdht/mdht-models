@@ -5777,7 +5777,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AllergyObservationTemplateId AllergyObservationReferenceValue AllergyObservationAllergyStatusInversionIndicator AllergyObservationReactionInversionIndicator AllergyObservationSeverityInversionIndicator AllergyObservationAllergyPlayingEntityCodeSystems AllergyObservationClassCode AllergyObservationMoodCode AllergyObservationId AllergyObservationCode AllergyObservationCodeP AllergyObservationStatusCode AllergyObservationEffectiveTime AllergyObservationValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity AllergyObservationAllergyObservationParticipantTypeCode AllergyObservationAllergyObservationParticipantParticipantRole"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.7"/>
-      <details key="constraints.validation.warning" value="AllergyObservationValueOriginalText AllergyObservationOriginalTextReference AllergyObservationOriginalTextReferenceValue AllergyObservationProblemEntryReactionObservationContainer AllergyObservationSeverity AllergyObservationParticipant AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeOriginalText AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue"/>
+      <details key="constraints.validation.warning" value="AllergyObservationValueOriginalText AllergyObservationOriginalTextReference AllergyObservationOriginalTextReferenceValue AllergyObservationProblemEntryReactionObservationContainer AllergyObservationParticipant AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeOriginalText AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
       <details key="code.code" value="ASSERTION"/>
@@ -5787,7 +5787,7 @@
       <details key="statusCode.code" value="completed"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="value.codeSystemName" value="SNOMEDCT"/>
-      <details key="constraints.validation.info" value="AllergyObservationAllergyStatusObservation AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTranslation"/>
+      <details key="constraints.validation.info" value="AllergyObservationSeverity AllergyObservationAllergyStatusObservation AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTranslation"/>
       <details key="constraints.validation.query" value="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeOriginalText AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTranslation AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity AllergyObservationAllergyObservationParticipantTypeCode AllergyObservationAllergyObservationParticipantParticipantRole"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationAllergyObservationParticipant">
@@ -6862,7 +6862,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SeverityObservationTemplateId SeverityObservationReferenceValue SeverityObservationClassCode SeverityObservationMoodCode SeverityObservationCode SeverityObservationStatusCode SeverityObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.8"/>
-      <details key="constraints.validation.warning" value="SeverityObservationTextReference SeverityObservationTextReferenceValue SeverityObservationText SeverityObservationInterpretationCode"/>
+      <details key="constraints.validation.warning" value="SeverityObservationTextReference SeverityObservationTextReferenceValue SeverityObservationText"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
       <details key="code.code" value="SEV"/>
@@ -6872,8 +6872,6 @@
       <details key="statusCode.code" value="completed"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="value.codeSystemName" value="SNOMEDCT"/>
-      <details key="interpretationCode.codeSystem" value="2.16.840.1.113883.5.83"/>
-      <details key="interpretationCode.codeSystemName" value="ObservationInterpretation"/>
     </eAnnotations>
     <eOperations name="SeverityObservationTextReference" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -7049,25 +7047,6 @@
     <eOperations name="SeverityObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '255604002' or value.code = '371923003' or value.code = '6736007' or value.code = '371924009' or value.code = '24484000' or value.code = '399166001')))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="SeverityObservationInterpretationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (self.interpretationCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xA;value.codeSystem = '2.16.840.1.113883.5.83' and (value.code = 'A' or value.code = 'HX' or value.code = 'LX' or value.code = 'B' or value.code = 'Carrier' or value.code = 'D' or value.code = 'U' or value.code = 'IND' or value.code = 'I' or value.code = 'MS' or value.code = 'NEG' or value.code = 'N' or value.code = 'POS' or value.code = 'R' or value.code = 'S' or value.code = 'VS' or value.code = 'W')))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -11883,8 +11862,8 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProblemObservationTemplateId ProblemObservationTextReferenceValue ProblemObservationHasTextReferenceValue ProblemObservationHasOnsetDate ProblemObservationAgeObservationInversion ProblemObservationClassCode ProblemObservationMoodCode ProblemObservationId ProblemObservationCodeP ProblemObservationStatusCode ProblemObservationValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.4"/>
-      <details key="constraints.validation.warning" value="ProblemObservationHasTextReference ProblemObservationHasResolutionDate ProblemObservationCode ProblemObservationText ProblemObservationEffectiveTime ProblemObservationValue"/>
-      <details key="constraints.validation.info" value="ProblemObservationValueNullFlavor ProblemObservationValueTranslation ProblemObservationValueTranslationCode ProblemObservationNegationInd ProblemObservationAgeObservation ProblemObservationHealthStatusObservation ProblemObservationProblemStatus"/>
+      <details key="constraints.validation.warning" value="ProblemObservationHasTextReference ProblemObservationCode ProblemObservationText ProblemObservationEffectiveTime ProblemObservationValue"/>
+      <details key="constraints.validation.info" value="ProblemObservationHasResolutionDate ProblemObservationValueNullFlavor ProblemObservationValueTranslation ProblemObservationValueTranslationCode ProblemObservationNegationInd ProblemObservationAgeObservation ProblemObservationHealthStatusObservation ProblemObservationProblemStatus"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
@@ -20733,19 +20712,21 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CaregiverCharacteristics" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="CaregiverCharacteristicsTemplateId CaregiverCharacteristicsValueCodeSystem CaregiverCharacteristicsClassCode CaregiverCharacteristicsMoodCode CaregiverCharacteristicsId CaregiverCharacteristicsCode CaregiverCharacteristicsStatusCode CaregiverCharacteristicsStatusCodeP CaregiverCharacteristicsValue CaregiverCharacteristicsParticipant CaregiverCharacteristicsParticipantParticipantRoleClassCode CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantParticipantRole"/>
+      <details key="constraints.validation.error" value="CaregiverCharacteristicsTemplateId CaregiverCharacteristicsValueCodeSystem CaregiverCharacteristicsClassCode CaregiverCharacteristicsMoodCode CaregiverCharacteristicsId CaregiverCharacteristicsCode CaregiverCharacteristicsStatusCode CaregiverCharacteristicsStatusCodeP CaregiverCharacteristicsValue CaregiverCharacteristicsParticipant CaregiverCharacteristicsParticipantParticipantRoleClassCode CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantTypeCode CaregiverCharacteristicsParticipantParticipantRole"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.72"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
       <details key="statusCode.code" value="completed"/>
-      <details key="constraints.validation.query" value="CaregiverCharacteristicsParticipantParticipantRoleClassCode CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantTimeHigh CaregiverCharacteristicsParticipantTime CaregiverCharacteristicsParticipantParticipantRole"/>
+      <details key="constraints.validation.query" value="CaregiverCharacteristicsParticipantParticipantRoleClassCode CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantTimeHigh CaregiverCharacteristicsParticipantTypeCode CaregiverCharacteristicsParticipantTime CaregiverCharacteristicsParticipantParticipantRole"/>
       <details key="constraints.validation.info" value="CaregiverCharacteristicsParticipantTimeHigh CaregiverCharacteristicsParticipantTime"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCaregiverCharacteristicsParticipant">
-      <details key="constraints.validation.error" value="CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantParticipantRole"/>
+      <details key="constraints.validation.error" value="CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantTypeCode CaregiverCharacteristicsParticipantParticipantRole"/>
       <details key="constraints.validation.info" value="CaregiverCharacteristicsParticipantTimeHigh CaregiverCharacteristicsParticipantTime"/>
+      <details key="typeCode" value="IND"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCaregiverCharacteristicsParticipantParticipantRole">
+      <details key="classCode" value="CAREGIVER"/>
       <details key="constraints.validation.error" value="CaregiverCharacteristicsParticipantParticipantRoleClassCode"/>
     </eAnnotations>
     <eOperations name="CaregiverCharacteristicsValueCodeSystem" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -20941,7 +20922,7 @@
     <eOperations name="CaregiverCharacteristicsParticipantParticipantRoleClassCode"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.participant->excluding(null).participantRole->excluding(null)->reject(isDefined('classCode'))"/>
+        <details key="body" value="self.participant->excluding(null).participantRole->excluding(null)->reject(isDefined('classCode') and classCode=vocab::RoleClassRoot::CAREGIVER)"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -20980,6 +20961,25 @@
     <eOperations name="CaregiverCharacteristicsParticipantTimeHigh" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.participant->excluding(null)->reject(not time.oclIsUndefined() implies time.high->size() = 1)"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="CaregiverCharacteristicsParticipantTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.participant->excluding(null)->reject(typeCode=vocab::ParticipationType::IND)"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -36838,7 +36838,7 @@
     </eOperations>
     <eOperations name="SeriesActCodeQualifierValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.code.qualifier.value->one(val | not val.oclIsUndefined() and val.oclIsKindOf(datatypes::ANY))"/>
+        <details key="body" value="self.code.qualifier.value->one(val | not val.oclIsUndefined())"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">

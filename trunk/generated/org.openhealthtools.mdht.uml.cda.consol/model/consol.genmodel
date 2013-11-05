@@ -1385,10 +1385,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SeverityObservation/SeverityObservationValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SeverityObservation/SeverityObservationValue/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SeverityObservation/SeverityObservationInterpretationCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SeverityObservation/SeverityObservationInterpretationCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SeverityObservation/SeverityObservationInterpretationCode/context"/>
-      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ProcedureActivityProcedure">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureCodeCodeSystems">
@@ -4006,6 +4002,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CaregiverCharacteristics/CaregiverCharacteristicsParticipantTimeHigh">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CaregiverCharacteristics/CaregiverCharacteristicsParticipantTimeHigh/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CaregiverCharacteristics/CaregiverCharacteristicsParticipantTimeHigh/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CaregiverCharacteristics/CaregiverCharacteristicsParticipantTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CaregiverCharacteristics/CaregiverCharacteristicsParticipantTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CaregiverCharacteristics/CaregiverCharacteristicsParticipantTypeCode/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CaregiverCharacteristics/CaregiverCharacteristicsParticipantTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CaregiverCharacteristics/CaregiverCharacteristicsParticipantTime/diagnostics"/>
