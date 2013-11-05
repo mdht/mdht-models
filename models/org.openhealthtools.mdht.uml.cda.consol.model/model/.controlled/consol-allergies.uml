@@ -395,7 +395,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
     <ruleId>CONF:7907</ruleId>
     <ruleId>CONF:15955</ruleId>
   </CDA:EntryRelationship>
-  <CDA:EntryRelationship xmi:id="_2EkjYhSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2EkjYBSVEeGGzu7fmW9pXw" typeCode="SUBJ">
+  <CDA:EntryRelationship xmi:id="_2EkjYhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2EkjYBSVEeGGzu7fmW9pXw" typeCode="SUBJ">
     <ruleId>CONF:9961</ruleId>
     <ruleId>CONF:9962</ruleId>
     <ruleId>CONF:15956</ruleId>
@@ -593,11 +593,6 @@ historical purposes.&#xD;
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FGu6hSVEeGGzu7fmW9pXw" name="value" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_6lCXkCnCEeGHDN_aHIiN8Q" name="interpretationCode" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__O6FsCnCEeGHDN_aHIiN8Q" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__O6FsSnCEeGHDN_aHIiN8Q"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_cAAIcBneEeGs5a462vYX5Q" base_Class="_2FGu4hSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.8">
@@ -981,7 +976,7 @@ historical purposes.&#xD;
   <CDA:ValueSetConstraint xmi:id="_DrnMcCnBEeGHDN_aHIiN8Q">
     <reference href="../consol-vocab.uml#_xQv28CXLEeGnSfJ2zNllag"/>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_AIIMsCnDEeGHDN_aHIiN8Q" base_Property="_6lCXkCnCEeGHDN_aHIiN8Q" severity="WARNING">
+  <CDA:ValueSetConstraint xmi:id="_AIIMsCnDEeGHDN_aHIiN8Q" severity="WARNING">
     <reference href="../consol-vocab.uml#_xQv28CXLEeGnSfJ2zNllag"/>
     <ruleId>CONF:9117</ruleId>
     <ruleId>CONF:16038</ruleId>

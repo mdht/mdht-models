@@ -479,8 +479,8 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_pP0joFwUEeG0y_7i0ygc4g">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>This qualifier SHALL contain exactly one [1..1] value with @xsi:type=&quot;ANY&quot;</body>
-        <body>self.code.qualifier.value->one(val | not val.oclIsUndefined() and val.oclIsKindOf(datatypes::ANY))</body>
+        <body>This qualifier SHALL contain exactly one [1..1] value</body>
+        <body>self.code.qualifier.value->one(val | not val.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_sPmHcFwUEeG0y_7i0ygc4g" name="codeQualifierValueCode" constrainedElement="_oCw6oFwUEeG0y_7i0ygc4g">

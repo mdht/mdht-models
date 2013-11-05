@@ -922,6 +922,11 @@ A cognitive problem observation is a finding or medical condition. This is diffe
       <generalization xmi:id="_FxahQeZAEeGINOJ_SD9_dA">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
       </generalization>
+      <ownedAttribute xmi:id="_yp6noEJ8EeOECfdQ4ITPew" name="typeCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_9IjJsEJ8EeOECfdQ4ITPew" value="IND"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_HlUH0OZAEeGINOJ_SD9_dA" name="time" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HlUH0eZAEeGINOJ_SD9_dA" value="1"/>
@@ -943,6 +948,7 @@ A cognitive problem observation is a finding or medical condition. This is diffe
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aVK5MOZAEeGINOJ_SD9_dA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aVK5MeZAEeGINOJ_SD9_dA" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_5K_kcEJ7EeOECfdQ4ITPew" value="CAREGIVER"/>
         </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
@@ -993,4 +999,7 @@ A cognitive problem observation is a finding or medical condition. This is diffe
   <CDA:AssociationValidation xmi:id="_L0h6QOZAEeGINOJ_SD9_dA" base_Association="_GfC4z-Y_EeGINOJ_SD9_dA">
     <ruleId>CONF:14227</ruleId>
   </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_0gKXkEJ8EeOECfdQ4ITPew" base_Property="_yp6noEJ8EeOECfdQ4ITPew">
+    <ruleId>CONF:26451</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

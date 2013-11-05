@@ -369,22 +369,13 @@ historical purposes.&#xD;
     </ownedRule>
     <ownedRule xmi:id="_6nx20CAwEeGetMjKLkqR8g" name="hasResolutionDate">
       <ownedComment xmi:id="_J5q0kOJlEeG3cO7ebC3QuA">
-        <body>This field represents the resolution date (CONF:16883)</body>
+        <body>If the problem is resolved, record the resolution date in effectiveTime/high. If the problem is known to be resolved but the resolution date is not known, use @nullFlavor=&quot;UNK&quot; (CONF:16883)</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_6nx20SAwEeGetMjKLkqR8g">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>effectiveTime, if present, SHOULD contain zero or one [0..1] high</body>
+        <body>effectiveTime, if present, MAY contain zero or one [0..1] high</body>
         <body>not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.high.oclIsUndefined()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_7ZTaYCAwEeGetMjKLkqR8g" name="hasUnknownResolutionDate">
-      <ownedComment xmi:id="_b08kEMbqEeGp28IjMvW3Ag">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_7ZTaYSAwEeGetMjKLkqR8g">
-        <language>Analysis</language>
-        <body>If the problem is known to be resolved, but the date of resolution is not known then the high element SHALL be present, and the nullFlavor attribute SHALL be set to 'UNK'. Therefore, the existence of an high element within a problem does indicate that the problem has been resolved</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_jlZuoCf3EeGO5_JBy9h6BA" name="valueNullFlavor" constrainedElement="_5Ha7ABUyEeGbmN_W114JUw">
@@ -659,11 +650,8 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:ConstraintValidation xmi:id="_c_rxwCBKEeG938evaWkvcA" base_Constraint="_5_4wYCAwEeGetMjKLkqR8g">
     <ruleId>CONF:15603</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_rfOvECBLEeG938evaWkvcA" severity="WARNING" base_Constraint="_6nx20CAwEeGetMjKLkqR8g">
+  <CDA:ConstraintValidation xmi:id="_rfOvECBLEeG938evaWkvcA" severity="INFO" base_Constraint="_6nx20CAwEeGetMjKLkqR8g">
     <ruleId>CONF:15604</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_uSYzMCBLEeG938evaWkvcA" base_Constraint="_7ZTaYCAwEeGetMjKLkqR8g">
-    <ruleId>CONF:16881</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_x4R70CBLEeG938evaWkvcA" severity="WARNING" base_Constraint="_vaH7gCBEEeG938evaWkvcA">
     <ruleId>CONF:15587</ruleId>
