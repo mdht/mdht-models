@@ -2715,20 +2715,12 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_VALUE = 335;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Severity Observation Interpretation Code' of 'Severity Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_INTERPRETATION_CODE = 336;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Code Code Systems' of 'Procedure Activity Procedure'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CODE_CODE_SYSTEMS = 337;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CODE_CODE_SYSTEMS = 336;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Code Original Text' of 'Procedure Activity Procedure'.
@@ -2736,7 +2728,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CODE_ORIGINAL_TEXT = 338;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CODE_ORIGINAL_TEXT = 337;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Original Text Reference' of 'Procedure Activity Procedure'.
@@ -2744,7 +2736,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ORIGINAL_TEXT_REFERENCE = 339;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ORIGINAL_TEXT_REFERENCE = 338;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Original Text Reference Value' of 'Procedure Activity Procedure'.
@@ -2752,7 +2744,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ORIGINAL_TEXT_REFERENCE_VALUE = 340;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ORIGINAL_TEXT_REFERENCE_VALUE = 339;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Reference Value' of 'Procedure Activity Procedure'.
@@ -2760,7 +2752,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_REFERENCE_VALUE = 341;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_REFERENCE_VALUE = 340;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Encounter Inversion' of 'Procedure Activity Procedure'.
@@ -2768,7 +2760,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENCOUNTER_INVERSION = 342;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENCOUNTER_INVERSION = 341;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Product Instance Type Code' of 'Procedure Activity Procedure'.
@@ -2776,7 +2768,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PRODUCT_INSTANCE_TYPE_CODE = 343;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PRODUCT_INSTANCE_TYPE_CODE = 342;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Service Delivery Location Type Code' of 'Procedure Activity Procedure'.
@@ -2784,7 +2776,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_SERVICE_DELIVERY_LOCATION_TYPE_CODE = 344;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_SERVICE_DELIVERY_LOCATION_TYPE_CODE = 343;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Instructions Inversion' of 'Procedure Activity Procedure'.
@@ -2792,7 +2784,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_INSTRUCTIONS_INVERSION = 345;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_INSTRUCTIONS_INVERSION = 344;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Template Id' of 'Procedure Activity Procedure'.
@@ -2800,7 +2792,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID = 346;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID = 345;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Class Code' of 'Procedure Activity Procedure'.
@@ -2808,7 +2800,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CLASS_CODE = 347;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CLASS_CODE = 346;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Mood Code' of 'Procedure Activity Procedure'.
@@ -2816,7 +2808,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_MOOD_CODE = 348;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_MOOD_CODE = 347;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Id' of 'Procedure Activity Procedure'.
@@ -2824,7 +2816,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ID = 349;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ID = 348;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Code' of 'Procedure Activity Procedure'.
@@ -2832,7 +2824,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CODE = 350;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CODE = 349;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Status Code' of 'Procedure Activity Procedure'.
@@ -2840,7 +2832,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_STATUS_CODE = 351;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_STATUS_CODE = 350;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Effective Time' of 'Procedure Activity Procedure'.
@@ -2848,7 +2840,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_EFFECTIVE_TIME = 352;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_EFFECTIVE_TIME = 351;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Priority Code P' of 'Procedure Activity Procedure'.
@@ -2856,7 +2848,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE_P = 353;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE_P = 352;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Priority Code' of 'Procedure Activity Procedure'.
@@ -2864,7 +2856,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE = 354;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE = 353;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Method Code' of 'Procedure Activity Procedure'.
@@ -2872,7 +2864,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_METHOD_CODE = 355;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_METHOD_CODE = 354;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Target Site Code P' of 'Procedure Activity Procedure'.
@@ -2880,7 +2872,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_TARGET_SITE_CODE_P = 356;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_TARGET_SITE_CODE_P = 355;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Target Site Code' of 'Procedure Activity Procedure'.
@@ -2888,7 +2880,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_TARGET_SITE_CODE = 357;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_TARGET_SITE_CODE = 356;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Indication' of 'Procedure Activity Procedure'.
@@ -2896,7 +2888,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_INDICATION = 358;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_INDICATION = 357;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Specimen' of 'Procedure Activity Procedure'.
@@ -2904,7 +2896,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_SPECIMEN = 359;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_SPECIMEN = 358;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Service Delivery Location' of 'Procedure Activity Procedure'.
@@ -2912,7 +2904,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_SERVICE_DELIVERY_LOCATION = 360;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_SERVICE_DELIVERY_LOCATION = 359;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Performer' of 'Procedure Activity Procedure'.
@@ -2920,7 +2912,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PERFORMER = 361;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PERFORMER = 360;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Medication Activity' of 'Procedure Activity Procedure'.
@@ -2928,7 +2920,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_MEDICATION_ACTIVITY = 362;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_MEDICATION_ACTIVITY = 361;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Patient Instruction' of 'Procedure Activity Procedure'.
@@ -2936,7 +2928,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PATIENT_INSTRUCTION = 363;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PATIENT_INSTRUCTION = 362;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Product Instance' of 'Procedure Activity Procedure'.
@@ -2944,7 +2936,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PRODUCT_INSTANCE = 364;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PRODUCT_INSTANCE = 363;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Entry Relationship' of 'Procedure Activity Procedure'.
@@ -2952,7 +2944,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENTRY_RELATIONSHIP = 365;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENTRY_RELATIONSHIP = 364;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Procedure Specimen Specimen Role' of 'Procedure Activity Procedure'.
@@ -2960,7 +2952,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_SPECIMEN_SPECIMEN_ROLE = 366;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_SPECIMEN_SPECIMEN_ROLE = 365;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Procedure Specimen Speciment Role Id' of 'Procedure Activity Procedure'.
@@ -2968,7 +2960,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_SPECIMEN_SPECIMENT_ROLE_ID = 367;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_SPECIMEN_SPECIMENT_ROLE_ID = 366;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Procedure Activity Performer Procedure Activity Assigned Entity Procedure Activity Represented Organization Id' of 'Procedure Activity Procedure'.
@@ -2976,7 +2968,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_PROCEDURE_ACTIVITY_REPRESENTED_ORGANIZATION_ID = 368;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_PROCEDURE_ACTIVITY_REPRESENTED_ORGANIZATION_ID = 367;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Procedure Activity Performer Procedure Activity Assigned Entity Procedure Activity Represented Organization Name' of 'Procedure Activity Procedure'.
@@ -2984,7 +2976,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_PROCEDURE_ACTIVITY_REPRESENTED_ORGANIZATION_NAME = 369;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_PROCEDURE_ACTIVITY_REPRESENTED_ORGANIZATION_NAME = 368;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Procedure Activity Performer Procedure Activity Assigned Entity Procedure Activity Represented Organization Telecom' of 'Procedure Activity Procedure'.
@@ -2992,7 +2984,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_PROCEDURE_ACTIVITY_REPRESENTED_ORGANIZATION_TELECOM = 370;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_PROCEDURE_ACTIVITY_REPRESENTED_ORGANIZATION_TELECOM = 369;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Procedure Activity Performer Procedure Activity Assigned Entity Procedure Activity Represented Organization Addr' of 'Procedure Activity Procedure'.
@@ -3000,7 +2992,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_PROCEDURE_ACTIVITY_REPRESENTED_ORGANIZATION_ADDR = 371;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_PROCEDURE_ACTIVITY_REPRESENTED_ORGANIZATION_ADDR = 370;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Procedure Activity Performer Procedure Activity Assigned Entity Id' of 'Procedure Activity Procedure'.
@@ -3008,7 +3000,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_ID = 372;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_ID = 371;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Procedure Activity Performer Procedure Activity Assigned Entity Addr' of 'Procedure Activity Procedure'.
@@ -3016,7 +3008,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_ADDR = 373;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_ADDR = 372;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Procedure Activity Performer Procedure Activity Assigned Entity Telecom' of 'Procedure Activity Procedure'.
@@ -3024,7 +3016,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_TELECOM = 374;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_TELECOM = 373;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Procedure Activity Performer Procedure Activity Assigned Entity Represented Organization' of 'Procedure Activity Procedure'.
@@ -3032,7 +3024,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION = 375;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_PROCEDURE_ACTIVITY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION = 374;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Procedure Activity Performer Assigned Entity' of 'Procedure Activity Procedure'.
@@ -3040,7 +3032,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_ASSIGNED_ENTITY = 376;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PROCEDURE_ACTIVITY_PERFORMER_ASSIGNED_ENTITY = 375;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Entry Relationship Procedure Activity Encounter Class Code' of 'Procedure Activity Procedure'.
@@ -3048,7 +3040,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENTRY_RELATIONSHIP_PROCEDURE_ACTIVITY_ENCOUNTER_CLASS_CODE = 377;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENTRY_RELATIONSHIP_PROCEDURE_ACTIVITY_ENCOUNTER_CLASS_CODE = 376;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Entry Relationship Procedure Activity Encounter Mood Code' of 'Procedure Activity Procedure'.
@@ -3056,7 +3048,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENTRY_RELATIONSHIP_PROCEDURE_ACTIVITY_ENCOUNTER_MOOD_CODE = 378;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENTRY_RELATIONSHIP_PROCEDURE_ACTIVITY_ENCOUNTER_MOOD_CODE = 377;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Entry Relationship Procedure Activity Encounter Id' of 'Procedure Activity Procedure'.
@@ -3064,7 +3056,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENTRY_RELATIONSHIP_PROCEDURE_ACTIVITY_ENCOUNTER_ID = 379;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENTRY_RELATIONSHIP_PROCEDURE_ACTIVITY_ENCOUNTER_ID = 378;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Entry Relationship Inversion Ind' of 'Procedure Activity Procedure'.
@@ -3072,7 +3064,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENTRY_RELATIONSHIP_INVERSION_IND = 380;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENTRY_RELATIONSHIP_INVERSION_IND = 379;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Entry Relationship Type Code' of 'Procedure Activity Procedure'.
@@ -3080,7 +3072,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENTRY_RELATIONSHIP_TYPE_CODE = 381;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENTRY_RELATIONSHIP_TYPE_CODE = 380;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Entry Relationship Procedure Activity Encounter' of 'Procedure Activity Procedure'.
@@ -3088,7 +3080,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENTRY_RELATIONSHIP_PROCEDURE_ACTIVITY_ENCOUNTER = 382;
+	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENTRY_RELATIONSHIP_PROCEDURE_ACTIVITY_ENCOUNTER = 381;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Indication Code Null Flavor' of 'Indication'.
@@ -3096,7 +3088,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INDICATION__INDICATION_CODE_NULL_FLAVOR = 383;
+	public static final int INDICATION__INDICATION_CODE_NULL_FLAVOR = 382;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Indication Template Id' of 'Indication'.
@@ -3104,7 +3096,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INDICATION__INDICATION_TEMPLATE_ID = 384;
+	public static final int INDICATION__INDICATION_TEMPLATE_ID = 383;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Indication Class Code' of 'Indication'.
@@ -3112,7 +3104,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INDICATION__INDICATION_CLASS_CODE = 385;
+	public static final int INDICATION__INDICATION_CLASS_CODE = 384;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Indication Mood Code' of 'Indication'.
@@ -3120,7 +3112,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INDICATION__INDICATION_MOOD_CODE = 386;
+	public static final int INDICATION__INDICATION_MOOD_CODE = 385;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Indication Id' of 'Indication'.
@@ -3128,7 +3120,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INDICATION__INDICATION_ID = 387;
+	public static final int INDICATION__INDICATION_ID = 386;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Indication Code P' of 'Indication'.
@@ -3136,7 +3128,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INDICATION__INDICATION_CODE_P = 388;
+	public static final int INDICATION__INDICATION_CODE_P = 387;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Indication Code' of 'Indication'.
@@ -3144,7 +3136,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INDICATION__INDICATION_CODE = 389;
+	public static final int INDICATION__INDICATION_CODE = 388;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Indication Status Code' of 'Indication'.
@@ -3152,7 +3144,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INDICATION__INDICATION_STATUS_CODE = 390;
+	public static final int INDICATION__INDICATION_STATUS_CODE = 389;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Indication Effective Time' of 'Indication'.
@@ -3160,7 +3152,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INDICATION__INDICATION_EFFECTIVE_TIME = 391;
+	public static final int INDICATION__INDICATION_EFFECTIVE_TIME = 390;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Indication Value' of 'Indication'.
@@ -3168,7 +3160,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INDICATION__INDICATION_VALUE = 392;
+	public static final int INDICATION__INDICATION_VALUE = 391;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Indication Value P' of 'Indication'.
@@ -3176,7 +3168,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INDICATION__INDICATION_VALUE_P = 393;
+	public static final int INDICATION__INDICATION_VALUE_P = 392;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Delivery Location Has Playing Entity' of 'Service Delivery Location'.
@@ -3184,7 +3176,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY = 394;
+	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY = 393;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Delivery Location Has Playing Entity Class Code' of 'Service Delivery Location'.
@@ -3192,7 +3184,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE = 395;
+	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE = 394;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Delivery Location Has Playing Entity Name' of 'Service Delivery Location'.
@@ -3200,7 +3192,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_NAME = 396;
+	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_NAME = 395;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Delivery Location Template Id' of 'Service Delivery Location'.
@@ -3208,7 +3200,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_TEMPLATE_ID = 397;
+	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_TEMPLATE_ID = 396;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Delivery Location Class Code' of 'Service Delivery Location'.
@@ -3216,7 +3208,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_CLASS_CODE = 398;
+	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_CLASS_CODE = 397;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Delivery Location Code' of 'Service Delivery Location'.
@@ -3224,7 +3216,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_CODE = 399;
+	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_CODE = 398;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Delivery Location Addr' of 'Service Delivery Location'.
@@ -3232,7 +3224,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_ADDR = 400;
+	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_ADDR = 399;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Service Delivery Location Telecom' of 'Service Delivery Location'.
@@ -3240,7 +3232,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_TELECOM = 401;
+	public static final int SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_TELECOM = 400;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Dose Quantityorrate Quantity' of 'Medication Activity'.
@@ -3248,7 +3240,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_QUANTITYORRATE_QUANTITY = 402;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_QUANTITYORRATE_QUANTITY = 401;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Text Reference' of 'Medication Activity'.
@@ -3256,7 +3248,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEXT_REFERENCE = 403;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEXT_REFERENCE = 402;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Reference Value' of 'Medication Activity'.
@@ -3264,7 +3256,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REFERENCE_VALUE = 404;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REFERENCE_VALUE = 403;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Text Reference Value' of 'Medication Activity'.
@@ -3272,7 +3264,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEXT_REFERENCE_VALUE = 405;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEXT_REFERENCE_VALUE = 404;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Effective Time IVLTS' of 'Medication Activity'.
@@ -3280,7 +3272,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLTS = 406;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLTS = 405;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Effective Time Low' of 'Medication Activity'.
@@ -3288,7 +3280,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_LOW = 407;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_LOW = 406;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Effective Time High' of 'Medication Activity'.
@@ -3296,7 +3288,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_HIGH = 408;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_HIGH = 407;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Effective Time PIVLTS' of 'Medication Activity'.
@@ -3304,7 +3296,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_PIVLTS = 409;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_PIVLTS = 408;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Effective Time Operator' of 'Medication Activity'.
@@ -3312,7 +3304,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_OPERATOR = 410;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_OPERATOR = 409;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Dose Quantity Unit' of 'Medication Activity'.
@@ -3320,7 +3312,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_QUANTITY_UNIT = 411;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_QUANTITY_UNIT = 410;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Drug Vehicle Type Code' of 'Medication Activity'.
@@ -3328,7 +3320,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DRUG_VEHICLE_TYPE_CODE = 412;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DRUG_VEHICLE_TYPE_CODE = 411;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Instructions Inversion Ind' of 'Medication Activity'.
@@ -3336,7 +3328,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INSTRUCTIONS_INVERSION_IND = 413;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INSTRUCTIONS_INVERSION_IND = 412;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Precondition Substance Adm Type Code' of 'Medication Activity'.
@@ -3344,7 +3336,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRECONDITION_SUBSTANCE_ADM_TYPE_CODE = 414;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRECONDITION_SUBSTANCE_ADM_TYPE_CODE = 413;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Rate Quantity Unit' of 'Medication Activity'.
@@ -3352,7 +3344,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_RATE_QUANTITY_UNIT = 415;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_RATE_QUANTITY_UNIT = 414;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Template Id' of 'Medication Activity'.
@@ -3360,7 +3352,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEMPLATE_ID = 416;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEMPLATE_ID = 415;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Class Code' of 'Medication Activity'.
@@ -3368,7 +3360,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CLASS_CODE = 417;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CLASS_CODE = 416;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Mood Code' of 'Medication Activity'.
@@ -3376,7 +3368,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MOOD_CODE = 418;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MOOD_CODE = 417;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Id' of 'Medication Activity'.
@@ -3384,7 +3376,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ID = 419;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ID = 418;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Code' of 'Medication Activity'.
@@ -3392,7 +3384,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CODE = 420;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CODE = 419;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Status Code' of 'Medication Activity'.
@@ -3400,7 +3392,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_STATUS_CODE = 421;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_STATUS_CODE = 420;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Route Code P' of 'Medication Activity'.
@@ -3408,7 +3400,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ROUTE_CODE_P = 422;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ROUTE_CODE_P = 421;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Route Code' of 'Medication Activity'.
@@ -3416,7 +3408,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ROUTE_CODE = 423;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ROUTE_CODE = 422;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Approach Site Code P' of 'Medication Activity'.
@@ -3424,7 +3416,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_APPROACH_SITE_CODE_P = 424;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_APPROACH_SITE_CODE_P = 423;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Approach Site Code' of 'Medication Activity'.
@@ -3432,7 +3424,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_APPROACH_SITE_CODE = 425;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_APPROACH_SITE_CODE = 424;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Dose Quantity' of 'Medication Activity'.
@@ -3440,7 +3432,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_QUANTITY = 426;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_QUANTITY = 425;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Rate Quantity' of 'Medication Activity'.
@@ -3448,7 +3440,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_RATE_QUANTITY = 427;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_RATE_QUANTITY = 426;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Max Dose Quantity' of 'Medication Activity'.
@@ -3456,7 +3448,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MAX_DOSE_QUANTITY = 428;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MAX_DOSE_QUANTITY = 427;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Administration Unit Code' of 'Medication Activity'.
@@ -3464,7 +3456,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE = 429;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE = 428;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Text' of 'Medication Activity'.
@@ -3472,7 +3464,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEXT = 430;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEXT = 429;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Repeat Number' of 'Medication Activity'.
@@ -3480,7 +3472,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REPEAT_NUMBER = 431;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REPEAT_NUMBER = 430;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Medication Supply Order' of 'Medication Activity'.
@@ -3488,7 +3480,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_SUPPLY_ORDER = 432;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_SUPPLY_ORDER = 431;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Reaction Observation' of 'Medication Activity'.
@@ -3496,7 +3488,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REACTION_OBSERVATION = 433;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REACTION_OBSERVATION = 432;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Performer' of 'Medication Activity'.
@@ -3504,7 +3496,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PERFORMER = 434;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PERFORMER = 433;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Instructions' of 'Medication Activity'.
@@ -3512,7 +3504,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INSTRUCTIONS = 435;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INSTRUCTIONS = 434;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Indication' of 'Medication Activity'.
@@ -3520,7 +3512,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INDICATION = 436;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INDICATION = 435;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Medication Dispense' of 'Medication Activity'.
@@ -3528,7 +3520,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_DISPENSE = 437;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_DISPENSE = 436;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Precondition' of 'Medication Activity'.
@@ -3536,7 +3528,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRECONDITION = 438;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRECONDITION = 437;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Drug Vehicle' of 'Medication Activity'.
@@ -3544,7 +3536,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DRUG_VEHICLE = 439;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DRUG_VEHICLE = 438;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Consumable' of 'Medication Activity'.
@@ -3552,7 +3544,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CONSUMABLE = 440;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CONSUMABLE = 439;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Activity Consumable Medication Information' of 'Medication Activity'.
@@ -3560,7 +3552,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION = 441;
+	public static final int MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION = 440;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Supply Order Instruction Inversion Ind' of 'Medication Supply Order'.
@@ -3568,7 +3560,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND = 442;
+	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND = 441;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Supply Order Effective Time High' of 'Medication Supply Order'.
@@ -3576,7 +3568,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME_HIGH = 443;
+	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME_HIGH = 442;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Supply Order Contains Medication Or Immunization' of 'Medication Supply Order'.
@@ -3584,7 +3576,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_CONTAINS_MEDICATION_OR_IMMUNIZATION = 444;
+	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_CONTAINS_MEDICATION_OR_IMMUNIZATION = 443;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Supply Order Template Id' of 'Medication Supply Order'.
@@ -3592,7 +3584,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_TEMPLATE_ID = 445;
+	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_TEMPLATE_ID = 444;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Supply Order Class Code' of 'Medication Supply Order'.
@@ -3600,7 +3592,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_CLASS_CODE = 446;
+	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_CLASS_CODE = 445;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Supply Order Effective Time' of 'Medication Supply Order'.
@@ -3608,7 +3600,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME = 447;
+	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME = 446;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Supply Order Mood Code' of 'Medication Supply Order'.
@@ -3616,7 +3608,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_MOOD_CODE = 448;
+	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_MOOD_CODE = 447;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Supply Order Quantity' of 'Medication Supply Order'.
@@ -3624,7 +3616,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_QUANTITY = 449;
+	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_QUANTITY = 448;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Supply Order Repeat Number' of 'Medication Supply Order'.
@@ -3632,7 +3624,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER = 450;
+	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER = 449;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Supply Order Status Code' of 'Medication Supply Order'.
@@ -3640,7 +3632,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_STATUS_CODE = 451;
+	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_STATUS_CODE = 450;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Supply Order Id' of 'Medication Supply Order'.
@@ -3648,7 +3640,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_ID = 452;
+	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_ID = 451;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Supply Order Author' of 'Medication Supply Order'.
@@ -3656,7 +3648,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_AUTHOR = 453;
+	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_AUTHOR = 452;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Supply Order Instructions' of 'Medication Supply Order'.
@@ -3664,7 +3656,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_INSTRUCTIONS = 454;
+	public static final int MEDICATION_SUPPLY_ORDER__MEDICATION_SUPPLY_ORDER_INSTRUCTIONS = 453;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Instructions Text Reference' of 'Instructions'.
@@ -3672,7 +3664,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INSTRUCTIONS__INSTRUCTIONS_TEXT_REFERENCE = 455;
+	public static final int INSTRUCTIONS__INSTRUCTIONS_TEXT_REFERENCE = 454;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Instructions Reference Value' of 'Instructions'.
@@ -3680,7 +3672,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INSTRUCTIONS__INSTRUCTIONS_REFERENCE_VALUE = 456;
+	public static final int INSTRUCTIONS__INSTRUCTIONS_REFERENCE_VALUE = 455;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Instructions Text Reference Value' of 'Instructions'.
@@ -3688,7 +3680,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INSTRUCTIONS__INSTRUCTIONS_TEXT_REFERENCE_VALUE = 457;
+	public static final int INSTRUCTIONS__INSTRUCTIONS_TEXT_REFERENCE_VALUE = 456;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Instructions Template Id' of 'Instructions'.
@@ -3696,7 +3688,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INSTRUCTIONS__INSTRUCTIONS_TEMPLATE_ID = 458;
+	public static final int INSTRUCTIONS__INSTRUCTIONS_TEMPLATE_ID = 457;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Instructions Class Code' of 'Instructions'.
@@ -3704,7 +3696,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INSTRUCTIONS__INSTRUCTIONS_CLASS_CODE = 459;
+	public static final int INSTRUCTIONS__INSTRUCTIONS_CLASS_CODE = 458;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Instructions Mood Code' of 'Instructions'.
@@ -3712,7 +3704,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INSTRUCTIONS__INSTRUCTIONS_MOOD_CODE = 460;
+	public static final int INSTRUCTIONS__INSTRUCTIONS_MOOD_CODE = 459;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Instructions Code P' of 'Instructions'.
@@ -3720,7 +3712,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INSTRUCTIONS__INSTRUCTIONS_CODE_P = 461;
+	public static final int INSTRUCTIONS__INSTRUCTIONS_CODE_P = 460;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Instructions Code' of 'Instructions'.
@@ -3728,7 +3720,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INSTRUCTIONS__INSTRUCTIONS_CODE = 462;
+	public static final int INSTRUCTIONS__INSTRUCTIONS_CODE = 461;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Instructions Text' of 'Instructions'.
@@ -3736,7 +3728,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INSTRUCTIONS__INSTRUCTIONS_TEXT = 463;
+	public static final int INSTRUCTIONS__INSTRUCTIONS_TEXT = 462;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Instructions Status Code' of 'Instructions'.
@@ -3744,7 +3736,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INSTRUCTIONS__INSTRUCTIONS_STATUS_CODE = 464;
+	public static final int INSTRUCTIONS__INSTRUCTIONS_STATUS_CODE = 463;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Contains Medication Or Immunization' of 'Medication Dispense'.
@@ -3752,7 +3744,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_CONTAINS_MEDICATION_OR_IMMUNIZATION = 465;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_CONTAINS_MEDICATION_OR_IMMUNIZATION = 464;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Template Id' of 'Medication Dispense'.
@@ -3760,7 +3752,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_TEMPLATE_ID = 466;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_TEMPLATE_ID = 465;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Class Code' of 'Medication Dispense'.
@@ -3768,7 +3760,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_CLASS_CODE = 467;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_CLASS_CODE = 466;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Effective Time' of 'Medication Dispense'.
@@ -3776,7 +3768,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_EFFECTIVE_TIME = 468;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_EFFECTIVE_TIME = 467;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Id' of 'Medication Dispense'.
@@ -3784,7 +3776,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_ID = 469;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_ID = 468;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Mood Code' of 'Medication Dispense'.
@@ -3792,7 +3784,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_MOOD_CODE = 470;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_MOOD_CODE = 469;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Repeat Number' of 'Medication Dispense'.
@@ -3800,7 +3792,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_REPEAT_NUMBER = 471;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_REPEAT_NUMBER = 470;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Status Code' of 'Medication Dispense'.
@@ -3808,7 +3800,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_STATUS_CODE = 472;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_STATUS_CODE = 471;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Quantity' of 'Medication Dispense'.
@@ -3816,7 +3808,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_QUANTITY = 473;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_QUANTITY = 472;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Medication Supply Order' of 'Medication Dispense'.
@@ -3824,7 +3816,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER = 474;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER = 473;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Performer' of 'Medication Dispense'.
@@ -3832,7 +3824,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER = 475;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER = 474;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address US Realm Address Street' of 'Medication Dispense'.
@@ -3840,7 +3832,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET = 476;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET = 475;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address City' of 'Medication Dispense'.
@@ -3848,7 +3840,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY = 477;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY = 476;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address Country' of 'Medication Dispense'.
@@ -3856,7 +3848,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY = 478;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY = 477;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address Postal Code' of 'Medication Dispense'.
@@ -3864,7 +3856,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE = 479;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE = 478;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address State' of 'Medication Dispense'.
@@ -3872,7 +3864,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE = 480;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE = 479;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address Street Address Line' of 'Medication Dispense'.
@@ -3880,7 +3872,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE = 481;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE = 480;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address Use P' of 'Medication Dispense'.
@@ -3888,7 +3880,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P = 482;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P = 481;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address Use' of 'Medication Dispense'.
@@ -3896,7 +3888,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE = 483;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE = 482;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Performer Medication Dispense Assigned Entity Addr' of 'Medication Dispense'.
@@ -3904,7 +3896,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_ADDR = 484;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_ADDR = 483;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Dispense Performer Medication Dispense Assigned Entity' of 'Medication Dispense'.
@@ -3912,7 +3904,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY = 485;
+	public static final int MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY = 484;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Vehicle Playing Entity Code' of 'Drug Vehicle'.
@@ -3920,7 +3912,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY_CODE = 486;
+	public static final int DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY_CODE = 485;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Vehicle Playing Entity Name' of 'Drug Vehicle'.
@@ -3928,7 +3920,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY_NAME = 487;
+	public static final int DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY_NAME = 486;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Vehicle Template Id' of 'Drug Vehicle'.
@@ -3936,7 +3928,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DRUG_VEHICLE__DRUG_VEHICLE_TEMPLATE_ID = 488;
+	public static final int DRUG_VEHICLE__DRUG_VEHICLE_TEMPLATE_ID = 487;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Vehicle Class Code' of 'Drug Vehicle'.
@@ -3944,7 +3936,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DRUG_VEHICLE__DRUG_VEHICLE_CLASS_CODE = 489;
+	public static final int DRUG_VEHICLE__DRUG_VEHICLE_CLASS_CODE = 488;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Vehicle Code' of 'Drug Vehicle'.
@@ -3952,7 +3944,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DRUG_VEHICLE__DRUG_VEHICLE_CODE = 490;
+	public static final int DRUG_VEHICLE__DRUG_VEHICLE_CODE = 489;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Vehicle Playing Entity' of 'Drug Vehicle'.
@@ -3960,7 +3952,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY = 491;
+	public static final int DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY = 490;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Product Instance Template Id' of 'Product Instance'.
@@ -3968,7 +3960,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PRODUCT_INSTANCE__PRODUCT_INSTANCE_TEMPLATE_ID = 492;
+	public static final int PRODUCT_INSTANCE__PRODUCT_INSTANCE_TEMPLATE_ID = 491;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Product Instance Class Code' of 'Product Instance'.
@@ -3976,7 +3968,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PRODUCT_INSTANCE__PRODUCT_INSTANCE_CLASS_CODE = 493;
+	public static final int PRODUCT_INSTANCE__PRODUCT_INSTANCE_CLASS_CODE = 492;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Product Instance Id' of 'Product Instance'.
@@ -3984,7 +3976,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PRODUCT_INSTANCE__PRODUCT_INSTANCE_ID = 494;
+	public static final int PRODUCT_INSTANCE__PRODUCT_INSTANCE_ID = 493;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Product Instance Scoping Entity' of 'Product Instance'.
@@ -3992,7 +3984,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY = 495;
+	public static final int PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY = 494;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Product Instance Playing Device' of 'Product Instance'.
@@ -4000,7 +3992,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE = 496;
+	public static final int PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE = 495;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Product Instance Scoping Entity Id' of 'Product Instance'.
@@ -4008,7 +4000,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY_ID = 497;
+	public static final int PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY_ID = 496;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Product Instance Playing Device Code' of 'Product Instance'.
@@ -4016,7 +4008,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE_CODE = 498;
+	public static final int PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE_CODE = 497;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Status Observation Template Id' of 'Allergy Status Observation'.
@@ -4024,7 +4016,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_TEMPLATE_ID = 499;
+	public static final int ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_TEMPLATE_ID = 498;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Status Observation Class Code' of 'Allergy Status Observation'.
@@ -4032,7 +4024,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_CLASS_CODE = 500;
+	public static final int ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_CLASS_CODE = 499;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Status Observation Mood Code' of 'Allergy Status Observation'.
@@ -4040,7 +4032,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_MOOD_CODE = 501;
+	public static final int ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_MOOD_CODE = 500;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Status Observation Code' of 'Allergy Status Observation'.
@@ -4048,7 +4040,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_CODE = 502;
+	public static final int ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_CODE = 501;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Status Observation Status Code' of 'Allergy Status Observation'.
@@ -4056,7 +4048,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_STATUS_CODE = 503;
+	public static final int ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_STATUS_CODE = 502;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Status Observation Value' of 'Allergy Status Observation'.
@@ -4064,7 +4056,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_VALUE = 504;
+	public static final int ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_VALUE = 503;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Age Observation Value Units' of 'Age Observation'.
@@ -4072,7 +4064,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AGE_OBSERVATION__AGE_OBSERVATION_VALUE_UNITS = 505;
+	public static final int AGE_OBSERVATION__AGE_OBSERVATION_VALUE_UNITS = 504;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Age Observation Template Id' of 'Age Observation'.
@@ -4080,7 +4072,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AGE_OBSERVATION__AGE_OBSERVATION_TEMPLATE_ID = 506;
+	public static final int AGE_OBSERVATION__AGE_OBSERVATION_TEMPLATE_ID = 505;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Age Observation Class Code' of 'Age Observation'.
@@ -4088,7 +4080,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AGE_OBSERVATION__AGE_OBSERVATION_CLASS_CODE = 507;
+	public static final int AGE_OBSERVATION__AGE_OBSERVATION_CLASS_CODE = 506;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Age Observation Mood Code' of 'Age Observation'.
@@ -4096,7 +4088,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AGE_OBSERVATION__AGE_OBSERVATION_MOOD_CODE = 508;
+	public static final int AGE_OBSERVATION__AGE_OBSERVATION_MOOD_CODE = 507;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Age Observation Code P' of 'Age Observation'.
@@ -4104,7 +4096,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AGE_OBSERVATION__AGE_OBSERVATION_CODE_P = 509;
+	public static final int AGE_OBSERVATION__AGE_OBSERVATION_CODE_P = 508;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Age Observation Code' of 'Age Observation'.
@@ -4112,7 +4104,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AGE_OBSERVATION__AGE_OBSERVATION_CODE = 510;
+	public static final int AGE_OBSERVATION__AGE_OBSERVATION_CODE = 509;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Age Observation Status Code' of 'Age Observation'.
@@ -4120,7 +4112,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AGE_OBSERVATION__AGE_OBSERVATION_STATUS_CODE = 511;
+	public static final int AGE_OBSERVATION__AGE_OBSERVATION_STATUS_CODE = 510;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Age Observation Status Code P' of 'Age Observation'.
@@ -4128,7 +4120,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AGE_OBSERVATION__AGE_OBSERVATION_STATUS_CODE_P = 512;
+	public static final int AGE_OBSERVATION__AGE_OBSERVATION_STATUS_CODE_P = 511;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Age Observation Value' of 'Age Observation'.
@@ -4136,7 +4128,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AGE_OBSERVATION__AGE_OBSERVATION_VALUE = 513;
+	public static final int AGE_OBSERVATION__AGE_OBSERVATION_VALUE = 512;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Observation Has Text Reference' of 'Health Status Observation'.
@@ -4144,7 +4136,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE = 514;
+	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE = 513;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Observation Text Reference Value' of 'Health Status Observation'.
@@ -4152,7 +4144,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE = 515;
+	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE = 514;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Observation Has Text Reference Value' of 'Health Status Observation'.
@@ -4160,7 +4152,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE = 516;
+	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE = 515;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Observation Template Id' of 'Health Status Observation'.
@@ -4168,7 +4160,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_TEMPLATE_ID = 517;
+	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_TEMPLATE_ID = 516;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Observation Class Code' of 'Health Status Observation'.
@@ -4176,7 +4168,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_CLASS_CODE = 518;
+	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_CLASS_CODE = 517;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Observation Mood Code' of 'Health Status Observation'.
@@ -4184,7 +4176,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_MOOD_CODE = 519;
+	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_MOOD_CODE = 518;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Observation Code' of 'Health Status Observation'.
@@ -4192,7 +4184,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_CODE = 520;
+	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_CODE = 519;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Observation Text' of 'Health Status Observation'.
@@ -4200,7 +4192,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_TEXT = 521;
+	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_TEXT = 520;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Observation Status Code' of 'Health Status Observation'.
@@ -4208,7 +4200,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_STATUS_CODE = 522;
+	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_STATUS_CODE = 521;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Observation Value' of 'Health Status Observation'.
@@ -4216,7 +4208,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_VALUE = 523;
+	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_VALUE = 522;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Observation Value P' of 'Health Status Observation'.
@@ -4224,7 +4216,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_VALUE_P = 524;
+	public static final int HEALTH_STATUS_OBSERVATION__HEALTH_STATUS_OBSERVATION_VALUE_P = 523;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Text Reference' of 'Comment Activity'.
@@ -4232,7 +4224,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEXT_REFERENCE = 525;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEXT_REFERENCE = 524;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Text Reference Value' of 'Comment Activity'.
@@ -4240,7 +4232,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEXT_REFERENCE_VALUE = 526;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEXT_REFERENCE_VALUE = 525;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Reference Value' of 'Comment Activity'.
@@ -4248,7 +4240,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_REFERENCE_VALUE = 527;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_REFERENCE_VALUE = 526;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Template Id' of 'Comment Activity'.
@@ -4256,7 +4248,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEMPLATE_ID = 528;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEMPLATE_ID = 527;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Class Code' of 'Comment Activity'.
@@ -4264,7 +4256,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_CLASS_CODE = 529;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_CLASS_CODE = 528;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Mood Code' of 'Comment Activity'.
@@ -4272,7 +4264,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_MOOD_CODE = 530;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_MOOD_CODE = 529;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Code' of 'Comment Activity'.
@@ -4280,7 +4272,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_CODE = 531;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_CODE = 530;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Text' of 'Comment Activity'.
@@ -4288,7 +4280,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEXT = 532;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEXT = 531;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Author' of 'Comment Activity'.
@@ -4296,7 +4288,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR = 533;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR = 532;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address US Realm Address Street' of 'Comment Activity'.
@@ -4304,7 +4296,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET = 534;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET = 533;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address City' of 'Comment Activity'.
@@ -4312,7 +4304,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY = 535;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY = 534;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address Country' of 'Comment Activity'.
@@ -4320,7 +4312,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY = 536;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY = 535;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address Postal Code' of 'Comment Activity'.
@@ -4328,7 +4320,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE = 537;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE = 536;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address State' of 'Comment Activity'.
@@ -4336,7 +4328,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE = 538;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE = 537;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address Street Address Line' of 'Comment Activity'.
@@ -4344,7 +4336,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE = 539;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE = 538;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address Use P' of 'Comment Activity'.
@@ -4352,7 +4344,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P = 540;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P = 539;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address Use' of 'Comment Activity'.
@@ -4360,7 +4352,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE = 541;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE = 540;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Author Assigned Author Has Person Or Organization' of 'Comment Activity'.
@@ -4368,7 +4360,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_HAS_PERSON_OR_ORGANIZATION = 542;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_HAS_PERSON_OR_ORGANIZATION = 541;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Author Assigned Author Assign Person Name' of 'Comment Activity'.
@@ -4376,7 +4368,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ASSIGN_PERSON_NAME = 543;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ASSIGN_PERSON_NAME = 542;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Author Assigned Author Addr' of 'Comment Activity'.
@@ -4384,7 +4376,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ADDR = 544;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ADDR = 543;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Author Assigned Author Id' of 'Comment Activity'.
@@ -4392,7 +4384,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ID = 545;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ID = 544;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Author Time' of 'Comment Activity'.
@@ -4400,7 +4392,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_TIME = 546;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_TIME = 545;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Comment Activity Author Assigned Author' of 'Comment Activity'.
@@ -4408,7 +4400,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR = 547;
+	public static final int COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR = 546;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Non Medicinal Supply Activity Effective Time High' of 'Non Medicinal Supply Activity'.
@@ -4416,7 +4408,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_EFFECTIVE_TIME_HIGH = 548;
+	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_EFFECTIVE_TIME_HIGH = 547;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Non Medicinal Supply Activity Product Instance Type Code' of 'Non Medicinal Supply Activity'.
@@ -4424,7 +4416,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE_TYPE_CODE = 549;
+	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE_TYPE_CODE = 548;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Non Medicinal Supply Activity Template Id' of 'Non Medicinal Supply Activity'.
@@ -4432,7 +4424,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID = 550;
+	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID = 549;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Non Medicinal Supply Activity Class Code' of 'Non Medicinal Supply Activity'.
@@ -4440,7 +4432,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_CLASS_CODE = 551;
+	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_CLASS_CODE = 550;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Non Medicinal Supply Activity Mood Code' of 'Non Medicinal Supply Activity'.
@@ -4448,7 +4440,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_MOOD_CODE = 552;
+	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_MOOD_CODE = 551;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Non Medicinal Supply Activity Id' of 'Non Medicinal Supply Activity'.
@@ -4456,7 +4448,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_ID = 553;
+	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_ID = 552;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Non Medicinal Supply Activity Status Code' of 'Non Medicinal Supply Activity'.
@@ -4464,7 +4456,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE = 554;
+	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE = 553;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Non Medicinal Supply Activity Effective Time' of 'Non Medicinal Supply Activity'.
@@ -4472,7 +4464,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_EFFECTIVE_TIME = 555;
+	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_EFFECTIVE_TIME = 554;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Non Medicinal Supply Activity Quantity' of 'Non Medicinal Supply Activity'.
@@ -4480,7 +4472,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_QUANTITY = 556;
+	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_QUANTITY = 555;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Non Medicinal Supply Activity Product Instance' of 'Non Medicinal Supply Activity'.
@@ -4488,7 +4480,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE = 557;
+	public static final int NON_MEDICINAL_SUPPLY_ACTIVITY__NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE = 556;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Concern Act Effective Time Low' of 'Problem Concern Act'.
@@ -4496,7 +4488,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW = 558;
+	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW = 557;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Concern Act Effective Time High' of 'Problem Concern Act'.
@@ -4504,7 +4496,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH = 559;
+	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH = 558;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Concern Act Template Id' of 'Problem Concern Act'.
@@ -4512,7 +4504,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_TEMPLATE_ID = 560;
+	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_TEMPLATE_ID = 559;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Concern Act Class Code' of 'Problem Concern Act'.
@@ -4520,7 +4512,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_CLASS_CODE = 561;
+	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_CLASS_CODE = 560;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Concern Act Mood Code' of 'Problem Concern Act'.
@@ -4528,7 +4520,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_MOOD_CODE = 562;
+	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_MOOD_CODE = 561;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Concern Act Id' of 'Problem Concern Act'.
@@ -4536,7 +4528,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_ID = 563;
+	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_ID = 562;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Concern Act Code P' of 'Problem Concern Act'.
@@ -4544,7 +4536,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_CODE_P = 564;
+	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_CODE_P = 563;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Concern Act Code' of 'Problem Concern Act'.
@@ -4552,7 +4544,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_CODE = 565;
+	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_CODE = 564;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Concern Act Status Code' of 'Problem Concern Act'.
@@ -4560,7 +4552,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_STATUS_CODE = 566;
+	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_STATUS_CODE = 565;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Concern Act Effective Time' of 'Problem Concern Act'.
@@ -4568,7 +4560,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME = 567;
+	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME = 566;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Concern Act Problem Observation' of 'Problem Concern Act'.
@@ -4576,7 +4568,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION = 568;
+	public static final int PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION = 567;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Has Text Reference' of 'Problem Observation'.
@@ -4584,7 +4576,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE = 569;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE = 568;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Text Reference Value' of 'Problem Observation'.
@@ -4592,7 +4584,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEXT_REFERENCE_VALUE = 570;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEXT_REFERENCE_VALUE = 569;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Has Text Reference Value' of 'Problem Observation'.
@@ -4600,7 +4592,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE = 571;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE = 570;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Has Onset Date' of 'Problem Observation'.
@@ -4608,7 +4600,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_ONSET_DATE = 572;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_ONSET_DATE = 571;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Has Resolution Date' of 'Problem Observation'.
@@ -4616,7 +4608,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE = 573;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE = 572;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Value Null Flavor' of 'Problem Observation'.
@@ -4624,7 +4616,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR = 574;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR = 573;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Age Observation Inversion' of 'Problem Observation'.
@@ -4632,7 +4624,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_AGE_OBSERVATION_INVERSION = 575;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_AGE_OBSERVATION_INVERSION = 574;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Value Translation' of 'Problem Observation'.
@@ -4640,7 +4632,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_TRANSLATION = 576;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_TRANSLATION = 575;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Value Translation Code' of 'Problem Observation'.
@@ -4648,7 +4640,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_TRANSLATION_CODE = 577;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_TRANSLATION_CODE = 576;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Template Id' of 'Problem Observation'.
@@ -4656,7 +4648,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 578;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 577;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Class Code' of 'Problem Observation'.
@@ -4664,7 +4656,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CLASS_CODE = 579;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CLASS_CODE = 578;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Mood Code' of 'Problem Observation'.
@@ -4672,7 +4664,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_MOOD_CODE = 580;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_MOOD_CODE = 579;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Negation Ind' of 'Problem Observation'.
@@ -4680,7 +4672,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_NEGATION_IND = 581;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_NEGATION_IND = 580;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Id' of 'Problem Observation'.
@@ -4688,7 +4680,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_ID = 582;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_ID = 581;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Code P' of 'Problem Observation'.
@@ -4696,7 +4688,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE_P = 583;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE_P = 582;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Code' of 'Problem Observation'.
@@ -4704,7 +4696,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE = 584;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE = 583;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Text' of 'Problem Observation'.
@@ -4712,7 +4704,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEXT = 585;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEXT = 584;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Status Code' of 'Problem Observation'.
@@ -4720,7 +4712,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_STATUS_CODE = 586;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_STATUS_CODE = 585;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Effective Time' of 'Problem Observation'.
@@ -4728,7 +4720,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_EFFECTIVE_TIME = 587;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_EFFECTIVE_TIME = 586;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Value' of 'Problem Observation'.
@@ -4736,7 +4728,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE = 588;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE = 587;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Value P' of 'Problem Observation'.
@@ -4744,7 +4736,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_P = 589;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_P = 588;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Age Observation' of 'Problem Observation'.
@@ -4752,7 +4744,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_AGE_OBSERVATION = 590;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_AGE_OBSERVATION = 589;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Health Status Observation' of 'Problem Observation'.
@@ -4760,7 +4752,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HEALTH_STATUS_OBSERVATION = 591;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HEALTH_STATUS_OBSERVATION = 590;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Problem Status' of 'Problem Observation'.
@@ -4768,7 +4760,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_PROBLEM_STATUS = 592;
+	public static final int PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_PROBLEM_STATUS = 591;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Status Text Reference' of 'Problem Status'.
@@ -4776,7 +4768,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_STATUS__PROBLEM_STATUS_TEXT_REFERENCE = 593;
+	public static final int PROBLEM_STATUS__PROBLEM_STATUS_TEXT_REFERENCE = 592;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Status Reference Value' of 'Problem Status'.
@@ -4784,7 +4776,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_STATUS__PROBLEM_STATUS_REFERENCE_VALUE = 594;
+	public static final int PROBLEM_STATUS__PROBLEM_STATUS_REFERENCE_VALUE = 593;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Status Text Reference Value' of 'Problem Status'.
@@ -4792,7 +4784,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_STATUS__PROBLEM_STATUS_TEXT_REFERENCE_VALUE = 595;
+	public static final int PROBLEM_STATUS__PROBLEM_STATUS_TEXT_REFERENCE_VALUE = 594;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Status Template Id' of 'Problem Status'.
@@ -4800,7 +4792,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_STATUS__PROBLEM_STATUS_TEMPLATE_ID = 596;
+	public static final int PROBLEM_STATUS__PROBLEM_STATUS_TEMPLATE_ID = 595;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Status Class Code' of 'Problem Status'.
@@ -4808,7 +4800,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_STATUS__PROBLEM_STATUS_CLASS_CODE = 597;
+	public static final int PROBLEM_STATUS__PROBLEM_STATUS_CLASS_CODE = 596;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Status Mood Code' of 'Problem Status'.
@@ -4816,7 +4808,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_STATUS__PROBLEM_STATUS_MOOD_CODE = 598;
+	public static final int PROBLEM_STATUS__PROBLEM_STATUS_MOOD_CODE = 597;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Status Code' of 'Problem Status'.
@@ -4824,7 +4816,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_STATUS__PROBLEM_STATUS_CODE = 599;
+	public static final int PROBLEM_STATUS__PROBLEM_STATUS_CODE = 598;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Status Text' of 'Problem Status'.
@@ -4832,7 +4824,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_STATUS__PROBLEM_STATUS_TEXT = 600;
+	public static final int PROBLEM_STATUS__PROBLEM_STATUS_TEXT = 599;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Status Status Code' of 'Problem Status'.
@@ -4840,7 +4832,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_STATUS__PROBLEM_STATUS_STATUS_CODE = 601;
+	public static final int PROBLEM_STATUS__PROBLEM_STATUS_STATUS_CODE = 600;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Status Value' of 'Problem Status'.
@@ -4848,7 +4840,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_STATUS__PROBLEM_STATUS_VALUE = 602;
+	public static final int PROBLEM_STATUS__PROBLEM_STATUS_VALUE = 601;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Code P' of 'Continuity Of Care Document'.
@@ -4856,7 +4848,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_CODE_P = 603;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_CODE_P = 602;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Code' of 'Continuity Of Care Document'.
@@ -4864,7 +4856,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_CODE = 604;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_CODE = 603;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Language Code' of 'Continuity Of Care Document'.
@@ -4872,7 +4864,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_LANGUAGE_CODE = 605;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_LANGUAGE_CODE = 604;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of' of 'Continuity Of Care Document'.
@@ -4880,7 +4872,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF = 606;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF = 605;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Author' of 'Continuity Of Care Document'.
@@ -4888,7 +4880,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_AUTHOR = 607;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_AUTHOR = 606;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Allergies Section' of 'Continuity Of Care Document'.
@@ -4896,7 +4888,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_ALLERGIES_SECTION = 608;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_ALLERGIES_SECTION = 607;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Medications Section' of 'Continuity Of Care Document'.
@@ -4904,7 +4896,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_MEDICATIONS_SECTION = 609;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_MEDICATIONS_SECTION = 608;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Problem Section' of 'Continuity Of Care Document'.
@@ -4912,7 +4904,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_PROBLEM_SECTION = 610;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_PROBLEM_SECTION = 609;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Procedures Section' of 'Continuity Of Care Document'.
@@ -4920,7 +4912,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_PROCEDURES_SECTION = 611;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_PROCEDURES_SECTION = 610;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Results Section' of 'Continuity Of Care Document'.
@@ -4928,7 +4920,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_RESULTS_SECTION = 612;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_RESULTS_SECTION = 611;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Advance Directives Section' of 'Continuity Of Care Document'.
@@ -4936,7 +4928,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_ADVANCE_DIRECTIVES_SECTION = 613;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_ADVANCE_DIRECTIVES_SECTION = 612;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Encounters Section' of 'Continuity Of Care Document'.
@@ -4944,7 +4936,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_ENCOUNTERS_SECTION = 614;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_ENCOUNTERS_SECTION = 613;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Family History Section' of 'Continuity Of Care Document'.
@@ -4952,7 +4944,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_FAMILY_HISTORY_SECTION = 615;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_FAMILY_HISTORY_SECTION = 614;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Functional Status Section' of 'Continuity Of Care Document'.
@@ -4960,7 +4952,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_FUNCTIONAL_STATUS_SECTION = 616;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_FUNCTIONAL_STATUS_SECTION = 615;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Immunizations Section Entries Optional' of 'Continuity Of Care Document'.
@@ -4968,7 +4960,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL = 617;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL = 616;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Medical Equipment Section' of 'Continuity Of Care Document'.
@@ -4976,7 +4968,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_MEDICAL_EQUIPMENT_SECTION = 618;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_MEDICAL_EQUIPMENT_SECTION = 617;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Payers Section' of 'Continuity Of Care Document'.
@@ -4984,7 +4976,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_PAYERS_SECTION = 619;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_PAYERS_SECTION = 618;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Plan Of Care Section' of 'Continuity Of Care Document'.
@@ -4992,7 +4984,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_PLAN_OF_CARE_SECTION = 620;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_PLAN_OF_CARE_SECTION = 619;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Social History Section' of 'Continuity Of Care Document'.
@@ -5000,7 +4992,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_SOCIAL_HISTORY_SECTION = 621;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_SOCIAL_HISTORY_SECTION = 620;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Vital Signs Section Entries Optional' of 'Continuity Of Care Document'.
@@ -5008,7 +5000,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL = 622;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL = 621;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Effective Time High' of 'Continuity Of Care Document'.
@@ -5016,7 +5008,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HIGH = 623;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HIGH = 622;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Effective Time Low' of 'Continuity Of Care Document'.
@@ -5024,7 +5016,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_LOW = 624;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_LOW = 623;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Performer Assigned Entity Has National Provider Identifier' of 'Continuity Of Care Document'.
@@ -5032,7 +5024,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER = 625;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER = 624;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Performer Assigned Entity Code' of 'Continuity Of Care Document'.
@@ -5040,7 +5032,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE = 626;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE = 625;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Performer Assigned Entity Id' of 'Continuity Of Care Document'.
@@ -5048,7 +5040,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID = 627;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID = 626;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Performer Type Code' of 'Continuity Of Care Document'.
@@ -5056,7 +5048,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE = 628;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE = 627;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Performer Assigned Entity' of 'Continuity Of Care Document'.
@@ -5064,7 +5056,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY = 629;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY = 628;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Class Code' of 'Continuity Of Care Document'.
@@ -5072,7 +5064,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE = 630;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE = 629;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Effective Time' of 'Continuity Of Care Document'.
@@ -5080,7 +5072,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME = 631;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME = 630;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event Performer' of 'Continuity Of Care Document'.
@@ -5088,7 +5080,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER = 632;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER = 631;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Documentation Of Service Event' of 'Continuity Of Care Document'.
@@ -5096,7 +5088,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT = 633;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT = 632;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Author Assigned Author Has Assigned Person Or Represented Organization' of 'Continuity Of Care Document'.
@@ -5104,7 +5096,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION = 634;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION = 633;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Author Assigned Author Has Represent Organization' of 'Continuity Of Care Document'.
@@ -5112,7 +5104,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION = 635;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION = 634;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Continuity Of Care Document Author Assigned Author' of 'Continuity Of Care Document'.
@@ -5120,7 +5112,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR = 636;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR = 635;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Template Id' of 'Continuity Of Care Document'.
@@ -5128,7 +5120,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONTINUITY_OF_CARE_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 637;
+	public static final int CONTINUITY_OF_CARE_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 636;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergies Section Code P' of 'Allergies Section'.
@@ -5136,7 +5128,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_SECTION__ALLERGIES_SECTION_CODE_P = 638;
+	public static final int ALLERGIES_SECTION__ALLERGIES_SECTION_CODE_P = 637;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergies Section Code' of 'Allergies Section'.
@@ -5144,7 +5136,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_SECTION__ALLERGIES_SECTION_CODE = 639;
+	public static final int ALLERGIES_SECTION__ALLERGIES_SECTION_CODE = 638;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergies Section Title' of 'Allergies Section'.
@@ -5152,7 +5144,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_SECTION__ALLERGIES_SECTION_TITLE = 640;
+	public static final int ALLERGIES_SECTION__ALLERGIES_SECTION_TITLE = 639;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergies Section Text' of 'Allergies Section'.
@@ -5160,7 +5152,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_SECTION__ALLERGIES_SECTION_TEXT = 641;
+	public static final int ALLERGIES_SECTION__ALLERGIES_SECTION_TEXT = 640;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergies Section Allergy Problem Act' of 'Allergies Section'.
@@ -5168,7 +5160,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_SECTION__ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT = 642;
+	public static final int ALLERGIES_SECTION__ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT = 641;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergies Section Entries Optional Template Id' of 'Allergies Section'.
@@ -5176,7 +5168,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_SECTION__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 643;
+	public static final int ALLERGIES_SECTION__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 642;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergies Section Entries Optional Template Id' of 'Allergies Section Entries Optional'.
@@ -5184,7 +5176,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 644;
+	public static final int ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 643;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergies Section Entries Optional Code' of 'Allergies Section Entries Optional'.
@@ -5192,7 +5184,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE = 645;
+	public static final int ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE = 644;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergies Section Entries Optional Code P' of 'Allergies Section Entries Optional'.
@@ -5200,7 +5192,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE_P = 646;
+	public static final int ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE_P = 645;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergies Section Entries Optional Title' of 'Allergies Section Entries Optional'.
@@ -5208,7 +5200,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TITLE = 647;
+	public static final int ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TITLE = 646;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergies Section Entries Optional Text' of 'Allergies Section Entries Optional'.
@@ -5216,7 +5208,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEXT = 648;
+	public static final int ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEXT = 647;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergies Section Entries Optional Allergy Problem Act' of 'Allergies Section Entries Optional'.
@@ -5224,7 +5216,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT = 649;
+	public static final int ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT = 648;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medications Section Code' of 'Medications Section'.
@@ -5232,7 +5224,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_SECTION__MEDICATIONS_SECTION_CODE = 650;
+	public static final int MEDICATIONS_SECTION__MEDICATIONS_SECTION_CODE = 649;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medications Section Title' of 'Medications Section'.
@@ -5240,7 +5232,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_SECTION__MEDICATIONS_SECTION_TITLE = 651;
+	public static final int MEDICATIONS_SECTION__MEDICATIONS_SECTION_TITLE = 650;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medications Section Text' of 'Medications Section'.
@@ -5248,7 +5240,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_SECTION__MEDICATIONS_SECTION_TEXT = 652;
+	public static final int MEDICATIONS_SECTION__MEDICATIONS_SECTION_TEXT = 651;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medications Section Medication' of 'Medications Section'.
@@ -5256,7 +5248,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_SECTION__MEDICATIONS_SECTION_MEDICATION = 653;
+	public static final int MEDICATIONS_SECTION__MEDICATIONS_SECTION_MEDICATION = 652;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medications Section Entries Optional Template Id' of 'Medications Section'.
@@ -5264,7 +5256,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_SECTION__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 654;
+	public static final int MEDICATIONS_SECTION__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 653;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medications Section Entries Optional Template Id' of 'Medications Section Entries Optional'.
@@ -5272,7 +5264,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 655;
+	public static final int MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 654;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medications Section Entries Optional Code' of 'Medications Section Entries Optional'.
@@ -5280,7 +5272,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE = 656;
+	public static final int MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE = 655;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medications Section Entries Optional Title' of 'Medications Section Entries Optional'.
@@ -5288,7 +5280,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE = 657;
+	public static final int MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE = 656;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medications Section Entries Optional Text' of 'Medications Section Entries Optional'.
@@ -5296,7 +5288,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT = 658;
+	public static final int MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT = 657;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medications Section Entries Optional Medication Activity' of 'Medications Section Entries Optional'.
@@ -5304,7 +5296,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_MEDICATION_ACTIVITY = 659;
+	public static final int MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_MEDICATION_ACTIVITY = 658;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Template Id' of 'Problem Section'.
@@ -5312,7 +5304,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 660;
+	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 659;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Code P' of 'Problem Section'.
@@ -5320,7 +5312,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE_P = 661;
+	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE_P = 660;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Code' of 'Problem Section'.
@@ -5328,7 +5320,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE = 662;
+	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE = 661;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Text' of 'Problem Section'.
@@ -5336,7 +5328,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEXT = 663;
+	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEXT = 662;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Title' of 'Problem Section'.
@@ -5344,7 +5336,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_TITLE = 664;
+	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_TITLE = 663;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Problem Concern' of 'Problem Section'.
@@ -5352,7 +5344,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN = 665;
+	public static final int PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN = 664;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Template Id' of 'Problem Section Entries Optional'.
@@ -5360,7 +5352,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_SECTION_ENTRIES_OPTIONAL__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 666;
+	public static final int PROBLEM_SECTION_ENTRIES_OPTIONAL__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 665;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Code' of 'Problem Section Entries Optional'.
@@ -5368,7 +5360,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_SECTION_ENTRIES_OPTIONAL__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE = 667;
+	public static final int PROBLEM_SECTION_ENTRIES_OPTIONAL__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE = 666;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Code P' of 'Problem Section Entries Optional'.
@@ -5376,7 +5368,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_SECTION_ENTRIES_OPTIONAL__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE_P = 668;
+	public static final int PROBLEM_SECTION_ENTRIES_OPTIONAL__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE_P = 667;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Title' of 'Problem Section Entries Optional'.
@@ -5384,7 +5376,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_SECTION_ENTRIES_OPTIONAL__PROBLEM_SECTION_ENTRIES_OPTIONAL_TITLE = 669;
+	public static final int PROBLEM_SECTION_ENTRIES_OPTIONAL__PROBLEM_SECTION_ENTRIES_OPTIONAL_TITLE = 668;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Text' of 'Problem Section Entries Optional'.
@@ -5392,7 +5384,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_SECTION_ENTRIES_OPTIONAL__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEXT = 670;
+	public static final int PROBLEM_SECTION_ENTRIES_OPTIONAL__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEXT = 669;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Entries Optional Problem Concern' of 'Problem Section Entries Optional'.
@@ -5400,7 +5392,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_SECTION_ENTRIES_OPTIONAL__PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN = 671;
+	public static final int PROBLEM_SECTION_ENTRIES_OPTIONAL__PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN = 670;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Has Procedure Activity' of 'Procedures Section'.
@@ -5408,7 +5400,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_HAS_PROCEDURE_ACTIVITY = 672;
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_HAS_PROCEDURE_ACTIVITY = 671;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Title' of 'Procedures Section'.
@@ -5416,7 +5408,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_TITLE = 673;
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_TITLE = 672;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Procedure Activity Procedure' of 'Procedures Section'.
@@ -5424,7 +5416,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE = 674;
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE = 673;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Procedure Activity Observation' of 'Procedures Section'.
@@ -5432,7 +5424,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_OBSERVATION = 675;
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_OBSERVATION = 674;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Procedure Activity Act' of 'Procedures Section'.
@@ -5440,7 +5432,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_ACT = 676;
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_ACT = 675;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Template Id' of 'Procedures Section'.
@@ -5448,7 +5440,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 677;
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 676;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Code P' of 'Procedures Section'.
@@ -5456,7 +5448,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE_P = 678;
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE_P = 677;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Code' of 'Procedures Section'.
@@ -5464,7 +5456,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE = 679;
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE = 678;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Text' of 'Procedures Section'.
@@ -5472,7 +5464,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEXT = 680;
+	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEXT = 679;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Template Id' of 'Procedures Section Entries Optional'.
@@ -5480,7 +5472,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 681;
+	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 680;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Code' of 'Procedures Section Entries Optional'.
@@ -5488,7 +5480,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE = 682;
+	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE = 681;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Code P' of 'Procedures Section Entries Optional'.
@@ -5496,7 +5488,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE_P = 683;
+	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE_P = 682;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Title' of 'Procedures Section Entries Optional'.
@@ -5504,7 +5496,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TITLE = 684;
+	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TITLE = 683;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Text' of 'Procedures Section Entries Optional'.
@@ -5512,7 +5504,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEXT = 685;
+	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEXT = 684;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Procedure Activity Procedure' of 'Procedures Section Entries Optional'.
@@ -5520,7 +5512,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_PROCEDURE = 686;
+	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_PROCEDURE = 685;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Procedure Acivity Observation' of 'Procedures Section Entries Optional'.
@@ -5528,7 +5520,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACIVITY_OBSERVATION = 687;
+	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACIVITY_OBSERVATION = 686;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Procedure Activity Act' of 'Procedures Section Entries Optional'.
@@ -5536,7 +5528,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_ACT = 688;
+	public static final int PROCEDURES_SECTION_ENTRIES_OPTIONAL__PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_ACT = 687;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Code Code Systems' of 'Procedure Activity Observation'.
@@ -5544,7 +5536,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_CODE_CODE_SYSTEMS = 689;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_CODE_CODE_SYSTEMS = 688;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Code Original Text' of 'Procedure Activity Observation'.
@@ -5552,7 +5544,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_CODE_ORIGINAL_TEXT = 690;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_CODE_ORIGINAL_TEXT = 689;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Original Text Reference' of 'Procedure Activity Observation'.
@@ -5560,7 +5552,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ORIGINAL_TEXT_REFERENCE = 691;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ORIGINAL_TEXT_REFERENCE = 690;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Original Text Reference Value' of 'Procedure Activity Observation'.
@@ -5568,7 +5560,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ORIGINAL_TEXT_REFERENCE_VALUE = 692;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ORIGINAL_TEXT_REFERENCE_VALUE = 691;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Reference Value' of 'Procedure Activity Observation'.
@@ -5576,7 +5568,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_REFERENCE_VALUE = 693;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_REFERENCE_VALUE = 692;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Encounter Inversion' of 'Procedure Activity Observation'.
@@ -5584,7 +5576,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENCOUNTER_INVERSION = 694;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENCOUNTER_INVERSION = 693;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Service Delivery Location Type Code' of 'Procedure Activity Observation'.
@@ -5592,7 +5584,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_SERVICE_DELIVERY_LOCATION_TYPE_CODE = 695;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_SERVICE_DELIVERY_LOCATION_TYPE_CODE = 694;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Instructions Inversion' of 'Procedure Activity Observation'.
@@ -5600,7 +5592,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_INSTRUCTIONS_INVERSION = 696;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_INSTRUCTIONS_INVERSION = 695;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Template Id' of 'Procedure Activity Observation'.
@@ -5608,7 +5600,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_TEMPLATE_ID = 697;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_TEMPLATE_ID = 696;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Class Code' of 'Procedure Activity Observation'.
@@ -5616,7 +5608,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_CLASS_CODE = 698;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_CLASS_CODE = 697;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Mood Code' of 'Procedure Activity Observation'.
@@ -5624,7 +5616,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_MOOD_CODE = 699;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_MOOD_CODE = 698;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Id' of 'Procedure Activity Observation'.
@@ -5632,7 +5624,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ID = 700;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ID = 699;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Code' of 'Procedure Activity Observation'.
@@ -5640,7 +5632,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_CODE = 701;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_CODE = 700;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Status Code' of 'Procedure Activity Observation'.
@@ -5648,7 +5640,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_STATUS_CODE = 702;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_STATUS_CODE = 701;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Value' of 'Procedure Activity Observation'.
@@ -5656,7 +5648,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_VALUE = 703;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_VALUE = 702;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Effective Time' of 'Procedure Activity Observation'.
@@ -5664,7 +5656,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_EFFECTIVE_TIME = 704;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_EFFECTIVE_TIME = 703;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Priority Code P' of 'Procedure Activity Observation'.
@@ -5672,7 +5664,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PRIORITY_CODE_P = 705;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PRIORITY_CODE_P = 704;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Priority Code' of 'Procedure Activity Observation'.
@@ -5680,7 +5672,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PRIORITY_CODE = 706;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PRIORITY_CODE = 705;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Method Code' of 'Procedure Activity Observation'.
@@ -5688,7 +5680,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_METHOD_CODE = 707;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_METHOD_CODE = 706;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Target Site Code P' of 'Procedure Activity Observation'.
@@ -5696,7 +5688,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_TARGET_SITE_CODE_P = 708;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_TARGET_SITE_CODE_P = 707;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Target Site Code' of 'Procedure Activity Observation'.
@@ -5704,7 +5696,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_TARGET_SITE_CODE = 709;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_TARGET_SITE_CODE = 708;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Performer' of 'Procedure Activity Observation'.
@@ -5712,7 +5704,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PERFORMER = 710;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PERFORMER = 709;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Service Delivery Location' of 'Procedure Activity Observation'.
@@ -5720,7 +5712,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_SERVICE_DELIVERY_LOCATION = 711;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_SERVICE_DELIVERY_LOCATION = 710;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Instructions' of 'Procedure Activity Observation'.
@@ -5728,7 +5720,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_INSTRUCTIONS = 712;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_INSTRUCTIONS = 711;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Indication' of 'Procedure Activity Observation'.
@@ -5736,7 +5728,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_INDICATION = 713;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_INDICATION = 712;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Medication Activity' of 'Procedure Activity Observation'.
@@ -5744,7 +5736,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_MEDICATION_ACTIVITY = 714;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_MEDICATION_ACTIVITY = 713;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Entry Relationship' of 'Procedure Activity Observation'.
@@ -5752,7 +5744,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP = 715;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP = 714;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Procedure Observation Performer Procedure Observation Assigned Entity Procedure Observation Represented Organization Id' of 'Procedure Activity Observation'.
@@ -5760,7 +5752,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_ID = 716;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_ID = 715;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Procedure Observation Performer Procedure Observation Assigned Entity Procedure Observation Represented Organization Name' of 'Procedure Activity Observation'.
@@ -5768,7 +5760,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_NAME = 717;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_NAME = 716;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Procedure Observation Performer Procedure Observation Assigned Entity Procedure Observation Represented Organization Telecom' of 'Procedure Activity Observation'.
@@ -5776,7 +5768,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_TELECOM = 718;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_TELECOM = 717;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Procedure Observation Performer Procedure Observation Assigned Entity Procedure Observation Represented Organization Addr' of 'Procedure Activity Observation'.
@@ -5784,7 +5776,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_ADDR = 719;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_ADDR = 718;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Procedure Observation Performer Procedure Observation Assigned Entity Id' of 'Procedure Activity Observation'.
@@ -5792,7 +5784,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_ID = 720;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_ID = 719;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Procedure Observation Performer Procedure Observation Assigned Entity Addr' of 'Procedure Activity Observation'.
@@ -5800,7 +5792,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_ADDR = 721;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_ADDR = 720;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Procedure Observation Performer Procedure Observation Assigned Entity Telecom' of 'Procedure Activity Observation'.
@@ -5808,7 +5800,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_TELECOM = 722;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_TELECOM = 721;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Procedure Observation Performer Procedure Observation Assigned Entity Represented Organization' of 'Procedure Activity Observation'.
@@ -5816,7 +5808,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION = 723;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION = 722;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Procedure Observation Performer Assigned Entity' of 'Procedure Activity Observation'.
@@ -5824,7 +5816,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_ASSIGNED_ENTITY = 724;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_ASSIGNED_ENTITY = 723;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Entry Relationship Procedure Observation Encounter Class Code' of 'Procedure Activity Observation'.
@@ -5832,7 +5824,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER_CLASS_CODE = 725;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER_CLASS_CODE = 724;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Entry Relationship Procedure Observation Encounter Mood Code' of 'Procedure Activity Observation'.
@@ -5840,7 +5832,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER_MOOD_CODE = 726;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER_MOOD_CODE = 725;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Entry Relationship Procedure Observation Encounter Id' of 'Procedure Activity Observation'.
@@ -5848,7 +5840,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER_ID = 727;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER_ID = 726;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Entry Relationship Inversion Ind' of 'Procedure Activity Observation'.
@@ -5856,7 +5848,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_INVERSION_IND = 728;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_INVERSION_IND = 727;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Entry Relationship Type Code' of 'Procedure Activity Observation'.
@@ -5864,7 +5856,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_TYPE_CODE = 729;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_TYPE_CODE = 728;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Observation Entry Relationship Procedure Observation Encounter' of 'Procedure Activity Observation'.
@@ -5872,7 +5864,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER = 730;
+	public static final int PROCEDURE_ACTIVITY_OBSERVATION__PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER = 729;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Code Code Systems' of 'Procedure Activity Act'.
@@ -5880,7 +5872,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE_CODE_SYSTEMS = 731;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE_CODE_SYSTEMS = 730;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Code Original Text' of 'Procedure Activity Act'.
@@ -5888,7 +5880,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE_ORIGINAL_TEXT = 732;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE_ORIGINAL_TEXT = 731;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Original Text Reference' of 'Procedure Activity Act'.
@@ -5896,7 +5888,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ORIGINAL_TEXT_REFERENCE = 733;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ORIGINAL_TEXT_REFERENCE = 732;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Original Text Reference Value' of 'Procedure Activity Act'.
@@ -5904,7 +5896,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ORIGINAL_TEXT_REFERENCE_VALUE = 734;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ORIGINAL_TEXT_REFERENCE_VALUE = 733;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Reference Value' of 'Procedure Activity Act'.
@@ -5912,7 +5904,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_REFERENCE_VALUE = 735;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_REFERENCE_VALUE = 734;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Encounter Inversion' of 'Procedure Activity Act'.
@@ -5920,7 +5912,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENCOUNTER_INVERSION = 736;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENCOUNTER_INVERSION = 735;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Service Delivery Location Type Code' of 'Procedure Activity Act'.
@@ -5928,7 +5920,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION_TYPE_CODE = 737;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION_TYPE_CODE = 736;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Instructions Inversion' of 'Procedure Activity Act'.
@@ -5936,7 +5928,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS_INVERSION = 738;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS_INVERSION = 737;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Template Id' of 'Procedure Activity Act'.
@@ -5944,7 +5936,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_TEMPLATE_ID = 739;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_TEMPLATE_ID = 738;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Class Code' of 'Procedure Activity Act'.
@@ -5952,7 +5944,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CLASS_CODE = 740;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CLASS_CODE = 739;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Mood Code' of 'Procedure Activity Act'.
@@ -5960,7 +5952,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_MOOD_CODE = 741;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_MOOD_CODE = 740;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Id' of 'Procedure Activity Act'.
@@ -5968,7 +5960,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ID = 742;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ID = 741;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Code' of 'Procedure Activity Act'.
@@ -5976,7 +5968,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE = 743;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE = 742;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Status Code' of 'Procedure Activity Act'.
@@ -5984,7 +5976,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_STATUS_CODE = 744;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_STATUS_CODE = 743;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Effective Time' of 'Procedure Activity Act'.
@@ -5992,7 +5984,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_EFFECTIVE_TIME = 745;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_EFFECTIVE_TIME = 744;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Priority Code P' of 'Procedure Activity Act'.
@@ -6000,7 +5992,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE_P = 746;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE_P = 745;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Priority Code' of 'Procedure Activity Act'.
@@ -6008,7 +6000,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE = 747;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE = 746;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Performer' of 'Procedure Activity Act'.
@@ -6016,7 +6008,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PERFORMER = 748;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PERFORMER = 747;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Service Delivery Location' of 'Procedure Activity Act'.
@@ -6024,7 +6016,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION = 749;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION = 748;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Instructions' of 'Procedure Activity Act'.
@@ -6032,7 +6024,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS = 750;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS = 749;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Indication' of 'Procedure Activity Act'.
@@ -6040,7 +6032,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INDICATION = 751;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INDICATION = 750;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Medication Activity' of 'Procedure Activity Act'.
@@ -6048,7 +6040,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_MEDICATION_ACTIVITY = 752;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_MEDICATION_ACTIVITY = 751;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Entry Relationship' of 'Procedure Activity Act'.
@@ -6056,7 +6048,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP = 753;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP = 752;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity' of 'Procedure Activity Act'.
@@ -6064,7 +6056,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY = 754;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY = 753;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Id' of 'Procedure Activity Act'.
@@ -6072,7 +6064,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ID = 755;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ID = 754;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Addr' of 'Procedure Activity Act'.
@@ -6080,7 +6072,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ADDR = 756;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ADDR = 755;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Telecom' of 'Procedure Activity Act'.
@@ -6088,7 +6080,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_TELECOM = 757;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_TELECOM = 756;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org' of 'Procedure Activity Act'.
@@ -6096,7 +6088,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG = 758;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG = 757;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Id' of 'Procedure Activity Act'.
@@ -6104,7 +6096,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ID = 759;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ID = 758;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Name' of 'Procedure Activity Act'.
@@ -6112,7 +6104,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_NAME = 760;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_NAME = 759;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Addr' of 'Procedure Activity Act'.
@@ -6120,7 +6112,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ADDR = 761;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ADDR = 760;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Telecom' of 'Procedure Activity Act'.
@@ -6128,7 +6120,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_TELECOM = 762;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_TELECOM = 761;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Class Code' of 'Procedure Activity Act'.
@@ -6136,7 +6128,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER_CLASS_CODE = 763;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER_CLASS_CODE = 762;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Mood Code' of 'Procedure Activity Act'.
@@ -6144,7 +6136,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER_MOOD_CODE = 764;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER_MOOD_CODE = 763;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Id' of 'Procedure Activity Act'.
@@ -6152,7 +6144,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER_ID = 765;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER_ID = 764;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Entry Relationship Inversion Ind' of 'Procedure Activity Act'.
@@ -6160,7 +6152,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_INVERSION_IND = 766;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_INVERSION_IND = 765;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Entry Relationship Type Code' of 'Procedure Activity Act'.
@@ -6168,7 +6160,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_TYPE_CODE = 767;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_TYPE_CODE = 766;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Entry Relationship Procedure Act Encounter' of 'Procedure Activity Act'.
@@ -6176,7 +6168,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER = 768;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER = 767;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Text' of 'Results Section'.
@@ -6184,7 +6176,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULTS_SECTION__RESULTS_SECTION_TEXT = 769;
+	public static final int RESULTS_SECTION__RESULTS_SECTION_TEXT = 768;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Result Organizer' of 'Results Section'.
@@ -6192,7 +6184,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULTS_SECTION__RESULTS_SECTION_RESULT_ORGANIZER = 770;
+	public static final int RESULTS_SECTION__RESULTS_SECTION_RESULT_ORGANIZER = 769;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Template Id' of 'Results Section'.
@@ -6200,7 +6192,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 771;
+	public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 770;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Code P' of 'Results Section'.
@@ -6208,7 +6200,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P = 772;
+	public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P = 771;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Code' of 'Results Section'.
@@ -6216,7 +6208,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE = 773;
+	public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE = 772;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Title' of 'Results Section'.
@@ -6224,7 +6216,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TITLE = 774;
+	public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TITLE = 773;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Template Id' of 'Results Section Entries Optional'.
@@ -6232,7 +6224,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 775;
+	public static final int RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 774;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Code' of 'Results Section Entries Optional'.
@@ -6240,7 +6232,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE = 776;
+	public static final int RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE = 775;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Code P' of 'Results Section Entries Optional'.
@@ -6248,7 +6240,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P = 777;
+	public static final int RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P = 776;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Title' of 'Results Section Entries Optional'.
@@ -6256,7 +6248,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_TITLE = 778;
+	public static final int RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_TITLE = 777;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Text' of 'Results Section Entries Optional'.
@@ -6264,7 +6256,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_TEXT = 779;
+	public static final int RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_TEXT = 778;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Result Organizer' of 'Results Section Entries Optional'.
@@ -6272,7 +6264,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_RESULT_ORGANIZER = 780;
+	public static final int RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_RESULT_ORGANIZER = 779;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Code Value' of 'Result Organizer'.
@@ -6280,7 +6272,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_CODE_VALUE = 781;
+	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_CODE_VALUE = 780;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Class Code Value' of 'Result Organizer'.
@@ -6288,7 +6280,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_CLASS_CODE_VALUE = 782;
+	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_CLASS_CODE_VALUE = 781;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Template Id' of 'Result Organizer'.
@@ -6296,7 +6288,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 783;
+	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 782;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Class Code' of 'Result Organizer'.
@@ -6304,7 +6296,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_CLASS_CODE = 784;
+	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_CLASS_CODE = 783;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Mood Code' of 'Result Organizer'.
@@ -6312,7 +6304,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_MOOD_CODE = 785;
+	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_MOOD_CODE = 784;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Id' of 'Result Organizer'.
@@ -6320,7 +6312,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_ID = 786;
+	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_ID = 785;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Status Code P' of 'Result Organizer'.
@@ -6328,7 +6320,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE_P = 787;
+	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE_P = 786;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Status Code' of 'Result Organizer'.
@@ -6336,7 +6328,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE = 788;
+	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE = 787;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Code' of 'Result Organizer'.
@@ -6344,7 +6336,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_CODE = 789;
+	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_CODE = 788;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Result Observation' of 'Result Organizer'.
@@ -6352,7 +6344,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_RESULT_OBSERVATION = 790;
+	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_RESULT_OBSERVATION = 789;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Text Reference' of 'Result Observation'.
@@ -6360,7 +6352,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT_REFERENCE = 791;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT_REFERENCE = 790;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Reference Value' of 'Result Observation'.
@@ -6368,7 +6360,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_REFERENCE_VALUE = 792;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_REFERENCE_VALUE = 791;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Text Reference Value' of 'Result Observation'.
@@ -6376,7 +6368,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT_REFERENCE_VALUE = 793;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT_REFERENCE_VALUE = 792;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code Value' of 'Result Observation'.
@@ -6384,7 +6376,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_CODE_VALUE = 794;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_CODE_VALUE = 793;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation No Observation Range Code' of 'Result Observation'.
@@ -6392,7 +6384,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_NO_OBSERVATION_RANGE_CODE = 795;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_NO_OBSERVATION_RANGE_CODE = 794;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Author Multiplicity' of 'Result Observation'.
@@ -6400,7 +6392,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_AUTHOR_MULTIPLICITY = 796;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_AUTHOR_MULTIPLICITY = 795;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Template Id' of 'Result Observation'.
@@ -6408,7 +6400,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 797;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 796;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Class Code' of 'Result Observation'.
@@ -6416,7 +6408,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_CLASS_CODE = 798;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_CLASS_CODE = 797;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Mood Code' of 'Result Observation'.
@@ -6424,7 +6416,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_MOOD_CODE = 799;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_MOOD_CODE = 798;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Id' of 'Result Observation'.
@@ -6432,7 +6424,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_ID = 800;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_ID = 799;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code' of 'Result Observation'.
@@ -6440,7 +6432,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_CODE = 801;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_CODE = 800;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Text' of 'Result Observation'.
@@ -6448,7 +6440,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT = 802;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT = 801;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Status Code' of 'Result Observation'.
@@ -6456,7 +6448,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE = 803;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE = 802;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Status Code P' of 'Result Observation'.
@@ -6464,7 +6456,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE_P = 804;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE_P = 803;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Effective Time' of 'Result Observation'.
@@ -6472,7 +6464,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_EFFECTIVE_TIME = 805;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_EFFECTIVE_TIME = 804;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Value' of 'Result Observation'.
@@ -6480,7 +6472,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_VALUE = 806;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_VALUE = 805;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Interpretation Code' of 'Result Observation'.
@@ -6488,7 +6480,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_INTERPRETATION_CODE = 807;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_INTERPRETATION_CODE = 806;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Method Code' of 'Result Observation'.
@@ -6496,7 +6488,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_METHOD_CODE = 808;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_METHOD_CODE = 807;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Target Site Code' of 'Result Observation'.
@@ -6504,7 +6496,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_TARGET_SITE_CODE = 809;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_TARGET_SITE_CODE = 808;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directives Section Code P' of 'Advance Directives Section'.
@@ -6512,7 +6504,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_CODE_P = 810;
+	public static final int ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_CODE_P = 809;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directives Section Code' of 'Advance Directives Section'.
@@ -6520,7 +6512,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_CODE = 811;
+	public static final int ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_CODE = 810;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directives Section Title' of 'Advance Directives Section'.
@@ -6528,7 +6520,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_TITLE = 812;
+	public static final int ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_TITLE = 811;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directives Section Text' of 'Advance Directives Section'.
@@ -6536,7 +6528,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_TEXT = 813;
+	public static final int ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_TEXT = 812;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directives Section Advance Directive Observation' of 'Advance Directives Section'.
@@ -6544,7 +6536,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE_OBSERVATION = 814;
+	public static final int ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE_OBSERVATION = 813;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directives Section Entries Optional Template Id' of 'Advance Directives Section'.
@@ -6552,7 +6544,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 815;
+	public static final int ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 814;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directives Section Entries Optional Template Id' of 'Advance Directives Section Entries Optional'.
@@ -6560,7 +6552,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 816;
+	public static final int ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 815;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directives Section Entries Optional Code' of 'Advance Directives Section Entries Optional'.
@@ -6568,7 +6560,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE = 817;
+	public static final int ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE = 816;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directives Section Entries Optional Code P' of 'Advance Directives Section Entries Optional'.
@@ -6576,7 +6568,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE_P = 818;
+	public static final int ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE_P = 817;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directives Section Entries Optional Title' of 'Advance Directives Section Entries Optional'.
@@ -6584,7 +6576,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TITLE = 819;
+	public static final int ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TITLE = 818;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directives Section Entries Optional Text' of 'Advance Directives Section Entries Optional'.
@@ -6592,7 +6584,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEXT = 820;
+	public static final int ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEXT = 819;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directives Section Entries Optional Advance Directive Observation' of 'Advance Directives Section Entries Optional'.
@@ -6600,7 +6592,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_ADVANCE_DIRECTIVE_OBSERVATION = 821;
+	public static final int ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_ADVANCE_DIRECTIVE_OBSERVATION = 820;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Has Starting Time' of 'Advance Directive Observation'.
@@ -6608,7 +6600,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_HAS_STARTING_TIME = 822;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_HAS_STARTING_TIME = 821;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Has Ending Time' of 'Advance Directive Observation'.
@@ -6616,7 +6608,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_HAS_ENDING_TIME = 823;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_HAS_ENDING_TIME = 822;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Template Id' of 'Advance Directive Observation'.
@@ -6624,7 +6616,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID = 824;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID = 823;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Class Code' of 'Advance Directive Observation'.
@@ -6632,7 +6624,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CLASS_CODE = 825;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CLASS_CODE = 824;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Mood Code' of 'Advance Directive Observation'.
@@ -6640,7 +6632,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_MOOD_CODE = 826;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_MOOD_CODE = 825;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Id' of 'Advance Directive Observation'.
@@ -6648,7 +6640,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_ID = 827;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_ID = 826;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Code P' of 'Advance Directive Observation'.
@@ -6656,7 +6648,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CODE_P = 828;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CODE_P = 827;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Code' of 'Advance Directive Observation'.
@@ -6664,7 +6656,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CODE = 829;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CODE = 828;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Status Code' of 'Advance Directive Observation'.
@@ -6672,7 +6664,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_STATUS_CODE = 830;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_STATUS_CODE = 829;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Effective Time' of 'Advance Directive Observation'.
@@ -6680,7 +6672,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_EFFECTIVE_TIME = 831;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_EFFECTIVE_TIME = 830;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Verifier' of 'Advance Directive Observation'.
@@ -6688,7 +6680,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER = 832;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER = 831;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Custodian' of 'Advance Directive Observation'.
@@ -6696,7 +6688,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN = 833;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN = 832;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Reference' of 'Advance Directive Observation'.
@@ -6704,7 +6696,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE = 834;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE = 833;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Verifier Time' of 'Advance Directive Observation'.
@@ -6712,7 +6704,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_TIME = 835;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_TIME = 834;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Verifier Type Code' of 'Advance Directive Observation'.
@@ -6720,7 +6712,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_TYPE_CODE = 836;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_TYPE_CODE = 835;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Verifier Participant Role' of 'Advance Directive Observation'.
@@ -6728,7 +6720,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_PARTICIPANT_ROLE = 837;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_PARTICIPANT_ROLE = 836;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Custodian Custodian Role Custodian Entity Name' of 'Advance Directive Observation'.
@@ -6736,7 +6728,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_NAME = 838;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_NAME = 837;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Custodian Custodian Role Addr' of 'Advance Directive Observation'.
@@ -6744,7 +6736,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_ADDR = 839;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_ADDR = 838;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Custodian Custodian Role Class Code' of 'Advance Directive Observation'.
@@ -6752,7 +6744,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_CLASS_CODE = 840;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_CLASS_CODE = 839;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Custodian Custodian Role Telecom' of 'Advance Directive Observation'.
@@ -6760,7 +6752,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_TELECOM = 841;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_TELECOM = 840;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Custodian Custodian Role Playing Entity' of 'Advance Directive Observation'.
@@ -6768,7 +6760,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_PLAYING_ENTITY = 842;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_PLAYING_ENTITY = 841;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Custodian Type Code' of 'Advance Directive Observation'.
@@ -6776,7 +6768,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_TYPE_CODE = 843;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_TYPE_CODE = 842;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Custodian Role' of 'Advance Directive Observation'.
@@ -6784,7 +6776,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE = 844;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE = 843;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Reference External Document Text Media Type' of 'Advance Directive Observation'.
@@ -6792,7 +6784,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_MEDIA_TYPE = 845;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_MEDIA_TYPE = 844;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Reference External Document Text Reference' of 'Advance Directive Observation'.
@@ -6800,7 +6792,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_REFERENCE = 846;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_REFERENCE = 845;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Reference External Document Id' of 'Advance Directive Observation'.
@@ -6808,7 +6800,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_ID = 847;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_ID = 846;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Reference External Document Text' of 'Advance Directive Observation'.
@@ -6816,7 +6808,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT = 848;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT = 847;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Reference Type Code' of 'Advance Directive Observation'.
@@ -6824,7 +6816,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE = 849;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE = 848;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Reference External Document' of 'Advance Directive Observation'.
@@ -6832,7 +6824,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT = 850;
+	public static final int ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT = 849;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Encounter Activities' of 'Encounters Section'.
@@ -6840,7 +6832,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENCOUNTER_ACTIVITIES = 851;
+	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENCOUNTER_ACTIVITIES = 850;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Template Id' of 'Encounters Section'.
@@ -6848,7 +6840,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 852;
+	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 851;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Code P' of 'Encounters Section'.
@@ -6856,7 +6848,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P = 853;
+	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P = 852;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Code' of 'Encounters Section'.
@@ -6864,7 +6856,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE = 854;
+	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE = 853;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Text' of 'Encounters Section'.
@@ -6872,7 +6864,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT = 855;
+	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT = 854;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Title' of 'Encounters Section'.
@@ -6880,7 +6872,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE = 856;
+	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE = 855;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Template Id' of 'Encounters Section Entries Optional'.
@@ -6888,7 +6880,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 857;
+	public static final int ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 856;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Code' of 'Encounters Section Entries Optional'.
@@ -6896,7 +6888,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE = 858;
+	public static final int ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE = 857;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Code P' of 'Encounters Section Entries Optional'.
@@ -6904,7 +6896,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P = 859;
+	public static final int ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P = 858;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Title' of 'Encounters Section Entries Optional'.
@@ -6912,7 +6904,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE = 860;
+	public static final int ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE = 859;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Text' of 'Encounters Section Entries Optional'.
@@ -6920,7 +6912,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT = 861;
+	public static final int ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT = 860;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Encounter Activities' of 'Encounters Section Entries Optional'.
@@ -6928,7 +6920,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES = 862;
+	public static final int ENCOUNTERS_SECTION_ENTRIES_OPTIONAL__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES = 861;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Code Original Text' of 'Encounter Activities'.
@@ -6936,7 +6928,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_CODE_ORIGINAL_TEXT = 863;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_CODE_ORIGINAL_TEXT = 862;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Code Original Text Reference' of 'Encounter Activities'.
@@ -6944,7 +6936,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_CODE_ORIGINAL_TEXT_REFERENCE = 864;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_CODE_ORIGINAL_TEXT_REFERENCE = 863;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Reference Value' of 'Encounter Activities'.
@@ -6952,7 +6944,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_REFERENCE_VALUE = 865;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_REFERENCE_VALUE = 864;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Code Original Text Reference Value' of 'Encounter Activities'.
@@ -6960,7 +6952,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_CODE_ORIGINAL_TEXT_REFERENCE_VALUE = 866;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_CODE_ORIGINAL_TEXT_REFERENCE_VALUE = 865;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Service Delivery Type Code' of 'Encounter Activities'.
@@ -6968,7 +6960,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_SERVICE_DELIVERY_TYPE_CODE = 867;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_SERVICE_DELIVERY_TYPE_CODE = 866;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Template Id' of 'Encounter Activities'.
@@ -6976,7 +6968,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_TEMPLATE_ID = 868;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_TEMPLATE_ID = 867;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Class Code' of 'Encounter Activities'.
@@ -6984,7 +6976,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_CLASS_CODE = 869;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_CLASS_CODE = 868;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Mood Code' of 'Encounter Activities'.
@@ -6992,7 +6984,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_MOOD_CODE = 870;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_MOOD_CODE = 869;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Id' of 'Encounter Activities'.
@@ -7000,7 +6992,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_ID = 871;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_ID = 870;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Code' of 'Encounter Activities'.
@@ -7008,7 +7000,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_CODE = 872;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_CODE = 871;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Effective Time' of 'Encounter Activities'.
@@ -7016,7 +7008,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_EFFECTIVE_TIME = 873;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_EFFECTIVE_TIME = 872;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities SDTC Discharge Disposition Code P' of 'Encounter Activities'.
@@ -7024,7 +7016,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_SDTC_DISCHARGE_DISPOSITION_CODE_P = 874;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_SDTC_DISCHARGE_DISPOSITION_CODE_P = 873;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities SDTC Discharge Disposition Code' of 'Encounter Activities'.
@@ -7032,7 +7024,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_SDTC_DISCHARGE_DISPOSITION_CODE = 875;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_SDTC_DISCHARGE_DISPOSITION_CODE = 874;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Service Delivery Location' of 'Encounter Activities'.
@@ -7040,7 +7032,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_SERVICE_DELIVERY_LOCATION = 876;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_SERVICE_DELIVERY_LOCATION = 875;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Indication' of 'Encounter Activities'.
@@ -7048,7 +7040,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_INDICATION = 877;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_INDICATION = 876;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Encounter Performer' of 'Encounter Activities'.
@@ -7056,7 +7048,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER = 878;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER = 877;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Encounter Diagnosis' of 'Encounter Activities'.
@@ -7064,7 +7056,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_ENCOUNTER_DIAGNOSIS = 879;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_ENCOUNTER_DIAGNOSIS = 878;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Encounter Performer Encounter Performer Assigned Entity Code' of 'Encounter Activities'.
@@ -7072,7 +7064,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE = 880;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE = 879;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Encounter Performer Encounter Performer Assigned Entity' of 'Encounter Activities'.
@@ -7080,7 +7072,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY = 881;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY = 880;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Diagnosis Template Id' of 'Encounter Diagnosis'.
@@ -7088,7 +7080,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_TEMPLATE_ID = 882;
+	public static final int ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_TEMPLATE_ID = 881;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Diagnosis Class Code' of 'Encounter Diagnosis'.
@@ -7096,7 +7088,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_CLASS_CODE = 883;
+	public static final int ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_CLASS_CODE = 882;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Diagnosis Mood Code' of 'Encounter Diagnosis'.
@@ -7104,7 +7096,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_MOOD_CODE = 884;
+	public static final int ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_MOOD_CODE = 883;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Diagnosis Code P' of 'Encounter Diagnosis'.
@@ -7112,7 +7104,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_CODE_P = 885;
+	public static final int ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_CODE_P = 884;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Diagnosis Code' of 'Encounter Diagnosis'.
@@ -7120,7 +7112,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_CODE = 886;
+	public static final int ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_CODE = 885;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Diagnosis Problem Observation' of 'Encounter Diagnosis'.
@@ -7128,7 +7120,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_PROBLEM_OBSERVATION = 887;
+	public static final int ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_PROBLEM_OBSERVATION = 886;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Section Template Id' of 'Family History Section'.
@@ -7136,7 +7128,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_TEMPLATE_ID = 888;
+	public static final int FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_TEMPLATE_ID = 887;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Section Code' of 'Family History Section'.
@@ -7144,7 +7136,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_CODE = 889;
+	public static final int FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_CODE = 888;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Section Code P' of 'Family History Section'.
@@ -7152,7 +7144,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_CODE_P = 890;
+	public static final int FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_CODE_P = 889;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Section Title' of 'Family History Section'.
@@ -7160,7 +7152,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_TITLE = 891;
+	public static final int FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_TITLE = 890;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Section Text' of 'Family History Section'.
@@ -7168,7 +7160,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_TEXT = 892;
+	public static final int FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_TEXT = 891;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Section Family History' of 'Family History Section'.
@@ -7176,7 +7168,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_FAMILY_HISTORY = 893;
+	public static final int FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_FAMILY_HISTORY = 892;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Template Id' of 'Family History Organizer'.
@@ -7184,7 +7176,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID = 894;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID = 893;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Class Code' of 'Family History Organizer'.
@@ -7192,7 +7184,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_CLASS_CODE = 895;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_CLASS_CODE = 894;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Mood Code' of 'Family History Organizer'.
@@ -7200,7 +7192,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_MOOD_CODE = 896;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_MOOD_CODE = 895;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Family History Observation' of 'Family History Organizer'.
@@ -7208,7 +7200,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION = 897;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION = 896;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Subject' of 'Family History Organizer'.
@@ -7216,7 +7208,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT = 898;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT = 897;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Subject Related Subject Subject Person Administrative Gender Code' of 'Family History Organizer'.
@@ -7224,7 +7216,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_ADMINISTRATIVE_GENDER_CODE = 899;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_ADMINISTRATIVE_GENDER_CODE = 898;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Subject Related Subject Subject Person Administrative Gender Code P' of 'Family History Organizer'.
@@ -7232,7 +7224,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_ADMINISTRATIVE_GENDER_CODE_P = 900;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_ADMINISTRATIVE_GENDER_CODE_P = 899;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Subject Related Subject Subject Person Birth Time' of 'Family History Organizer'.
@@ -7240,7 +7232,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_BIRTH_TIME = 901;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_BIRTH_TIME = 900;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Subject Related Subject Subject Person SDTC Deceased Ind' of 'Family History Organizer'.
@@ -7248,7 +7240,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_SDTC_DECEASED_IND = 902;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_SDTC_DECEASED_IND = 901;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Subject Related Subject Subject Person SDTC Deceased Time' of 'Family History Organizer'.
@@ -7256,7 +7248,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_SDTC_DECEASED_TIME = 903;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_SDTC_DECEASED_TIME = 902;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Subject Related Subject Subject Person SDTC Id' of 'Family History Organizer'.
@@ -7264,7 +7256,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_SDTC_ID = 904;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_SDTC_ID = 903;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Subject Related Subject Class Code' of 'Family History Organizer'.
@@ -7272,7 +7264,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_CLASS_CODE = 905;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_CLASS_CODE = 904;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Subject Related Subject Code' of 'Family History Organizer'.
@@ -7280,7 +7272,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_CODE = 906;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_CODE = 905;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Subject Related Subject Code P' of 'Family History Organizer'.
@@ -7288,7 +7280,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_CODE_P = 907;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_CODE_P = 906;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Subject Related Subject Subject' of 'Family History Organizer'.
@@ -7296,7 +7288,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT = 908;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT = 907;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Organizer Subject Related Subject' of 'Family History Organizer'.
@@ -7304,7 +7296,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT = 909;
+	public static final int FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT = 908;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Observation Age Observation Inversion' of 'Family History Observation'.
@@ -7312,7 +7304,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_AGE_OBSERVATION_INVERSION = 910;
+	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_AGE_OBSERVATION_INVERSION = 909;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Observation Template Id' of 'Family History Observation'.
@@ -7320,7 +7312,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID = 911;
+	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID = 910;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Observation Class Code' of 'Family History Observation'.
@@ -7328,7 +7320,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CLASS_CODE = 912;
+	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CLASS_CODE = 911;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Observation Mood Code' of 'Family History Observation'.
@@ -7336,7 +7328,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_MOOD_CODE = 913;
+	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_MOOD_CODE = 912;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Observation Id' of 'Family History Observation'.
@@ -7344,7 +7336,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_ID = 914;
+	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_ID = 913;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Observation Code P' of 'Family History Observation'.
@@ -7352,7 +7344,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CODE_P = 915;
+	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CODE_P = 914;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Observation Code' of 'Family History Observation'.
@@ -7360,7 +7352,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CODE = 916;
+	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CODE = 915;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Observation Status Code' of 'Family History Observation'.
@@ -7368,7 +7360,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_STATUS_CODE = 917;
+	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_STATUS_CODE = 916;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Observation Effective Time' of 'Family History Observation'.
@@ -7376,7 +7368,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_EFFECTIVE_TIME = 918;
+	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_EFFECTIVE_TIME = 917;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Observation Value' of 'Family History Observation'.
@@ -7384,7 +7376,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_VALUE = 919;
+	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_VALUE = 918;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Observation Age Observation' of 'Family History Observation'.
@@ -7392,7 +7384,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_AGE_OBSERVATION = 920;
+	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_AGE_OBSERVATION = 919;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Observation Family History Death Observation' of 'Family History Observation'.
@@ -7400,7 +7392,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_FAMILY_HISTORY_DEATH_OBSERVATION = 921;
+	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_FAMILY_HISTORY_DEATH_OBSERVATION = 920;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Death Observation Template Id' of 'Family History Death Observation'.
@@ -7408,7 +7400,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID = 922;
+	public static final int FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID = 921;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Death Observation Class Code' of 'Family History Death Observation'.
@@ -7416,7 +7408,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_CLASS_CODE = 923;
+	public static final int FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_CLASS_CODE = 922;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Death Observation Mood Code' of 'Family History Death Observation'.
@@ -7424,7 +7416,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE = 924;
+	public static final int FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE = 923;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Death Observation Code' of 'Family History Death Observation'.
@@ -7432,7 +7424,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_CODE = 925;
+	public static final int FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_CODE = 924;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Death Observation Status Code' of 'Family History Death Observation'.
@@ -7440,7 +7432,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE = 926;
+	public static final int FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE = 925;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Death Observation Value' of 'Family History Death Observation'.
@@ -7448,7 +7440,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_VALUE = 927;
+	public static final int FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_VALUE = 926;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Template Id' of 'Functional Status Section'.
@@ -7456,7 +7448,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID = 928;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID = 927;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Code' of 'Functional Status Section'.
@@ -7464,7 +7456,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_CODE = 929;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_CODE = 928;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Title' of 'Functional Status Section'.
@@ -7472,7 +7464,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_TITLE = 930;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_TITLE = 929;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Text' of 'Functional Status Section'.
@@ -7480,7 +7472,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_TEXT = 931;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_TEXT = 930;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Functional Status Result Organizer' of 'Functional Status Section'.
@@ -7488,7 +7480,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER = 932;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER = 931;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Cognitive Status Result Organizer' of 'Functional Status Section'.
@@ -7496,7 +7488,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER = 933;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER = 932;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Functional Status Result Observation' of 'Functional Status Section'.
@@ -7504,7 +7496,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION = 934;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION = 933;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Cognitive Status Result Observation' of 'Functional Status Section'.
@@ -7512,7 +7504,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION = 935;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION = 934;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Functional Status Problem Observation' of 'Functional Status Section'.
@@ -7520,7 +7512,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION = 936;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION = 935;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Cognitive Status Problem Observation' of 'Functional Status Section'.
@@ -7528,7 +7520,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_PROBLEM_OBSERVATION = 937;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_PROBLEM_OBSERVATION = 936;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Caregiver Characteristics' of 'Functional Status Section'.
@@ -7536,7 +7528,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_CAREGIVER_CHARACTERISTICS = 938;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_CAREGIVER_CHARACTERISTICS = 937;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Assessment Scale Observation' of 'Functional Status Section'.
@@ -7544,7 +7536,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_ASSESSMENT_SCALE_OBSERVATION = 939;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_ASSESSMENT_SCALE_OBSERVATION = 938;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Non Medicinal Supply Activity' of 'Functional Status Section'.
@@ -7552,7 +7544,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY = 940;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY = 939;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Pressure Ulcer Observation' of 'Functional Status Section'.
@@ -7560,7 +7552,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_PRESSURE_ULCER_OBSERVATION = 941;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_PRESSURE_ULCER_OBSERVATION = 940;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Number Of Pressure Ulcers Observation' of 'Functional Status Section'.
@@ -7568,7 +7560,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION = 942;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION = 941;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Highest Pressure Ulcer Stage' of 'Functional Status Section'.
@@ -7576,7 +7568,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_HIGHEST_PRESSURE_ULCER_STAGE = 943;
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_HIGHEST_PRESSURE_ULCER_STAGE = 942;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Organizer Code Code System' of 'Functional Status Result Organizer'.
@@ -7584,7 +7576,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__FUNCTIONAL_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM = 944;
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__FUNCTIONAL_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM = 943;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Organizer Functional Status Result Observation' of 'Functional Status Result Organizer'.
@@ -7592,7 +7584,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__FUNCTIONAL_STATUS_RESULT_ORGANIZER_FUNCTIONAL_STATUS_RESULT_OBSERVATION = 945;
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__FUNCTIONAL_STATUS_RESULT_ORGANIZER_FUNCTIONAL_STATUS_RESULT_OBSERVATION = 944;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Template Id' of 'Functional Status Result Organizer'.
@@ -7600,7 +7592,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 946;
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 945;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Class Code' of 'Functional Status Result Organizer'.
@@ -7608,7 +7600,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_CLASS_CODE = 947;
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_CLASS_CODE = 946;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Mood Code' of 'Functional Status Result Organizer'.
@@ -7616,7 +7608,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_MOOD_CODE = 948;
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_MOOD_CODE = 947;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Id' of 'Functional Status Result Organizer'.
@@ -7624,7 +7616,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_ID = 949;
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_ID = 948;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Code' of 'Functional Status Result Organizer'.
@@ -7632,7 +7624,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_CODE = 950;
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_CODE = 949;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Status Code P' of 'Functional Status Result Organizer'.
@@ -7640,7 +7632,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE_P = 951;
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE_P = 950;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Status Code' of 'Functional Status Result Organizer'.
@@ -7648,7 +7640,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE = 952;
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE = 951;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Text Reference' of 'Functional Status Result Observation'.
@@ -7656,7 +7648,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_TEXT_REFERENCE = 953;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_TEXT_REFERENCE = 952;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Text Reference Value' of 'Functional Status Result Observation'.
@@ -7664,7 +7656,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE = 954;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE = 953;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Value Datatype' of 'Functional Status Result Observation'.
@@ -7672,7 +7664,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_VALUE_DATATYPE = 955;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_VALUE_DATATYPE = 954;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code P' of 'Functional Status Result Observation'.
@@ -7680,7 +7672,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE_P = 956;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE_P = 955;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Author' of 'Functional Status Result Observation'.
@@ -7688,7 +7680,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR = 957;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR = 956;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Non Medicinal Supply Activity' of 'Functional Status Result Observation'.
@@ -7696,7 +7688,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY = 958;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY = 957;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Caregiver Characteristics' of 'Functional Status Result Observation'.
@@ -7704,7 +7696,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_CAREGIVER_CHARACTERISTICS = 959;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_CAREGIVER_CHARACTERISTICS = 958;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Assessment Scale Observation' of 'Functional Status Result Observation'.
@@ -7712,7 +7704,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION = 960;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION = 959;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Reference Range' of 'Functional Status Result Observation'.
@@ -7720,7 +7712,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE = 961;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE = 960;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Reference Range Observation Range No Code' of 'Functional Status Result Observation'.
@@ -7728,7 +7720,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE = 962;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE = 961;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Result Observation Reference Range Observation Range' of 'Functional Status Result Observation'.
@@ -7736,7 +7728,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE = 963;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE = 962;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Template Id' of 'Functional Status Result Observation'.
@@ -7744,7 +7736,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 964;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 963;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Class Code' of 'Functional Status Result Observation'.
@@ -7752,7 +7744,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CLASS_CODE = 965;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CLASS_CODE = 964;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Mood Code' of 'Functional Status Result Observation'.
@@ -7760,7 +7752,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_MOOD_CODE = 966;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_MOOD_CODE = 965;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Id' of 'Functional Status Result Observation'.
@@ -7768,7 +7760,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_ID = 967;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_ID = 966;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code' of 'Functional Status Result Observation'.
@@ -7776,7 +7768,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE = 968;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE = 967;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Text' of 'Functional Status Result Observation'.
@@ -7784,7 +7776,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT = 969;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT = 968;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Status Code P' of 'Functional Status Result Observation'.
@@ -7792,7 +7784,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE_P = 970;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE_P = 969;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Status Code' of 'Functional Status Result Observation'.
@@ -7800,7 +7792,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE = 971;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE = 970;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Effective Time' of 'Functional Status Result Observation'.
@@ -7808,7 +7800,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_EFFECTIVE_TIME = 972;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_EFFECTIVE_TIME = 971;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Value' of 'Functional Status Result Observation'.
@@ -7816,7 +7808,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_VALUE = 973;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_VALUE = 972;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Interpretation Code' of 'Functional Status Result Observation'.
@@ -7824,7 +7816,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_INTERPRETATION_CODE = 974;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_INTERPRETATION_CODE = 973;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Method Code' of 'Functional Status Result Observation'.
@@ -7832,7 +7824,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_METHOD_CODE = 975;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_METHOD_CODE = 974;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Target Site Code' of 'Functional Status Result Observation'.
@@ -7840,7 +7832,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TARGET_SITE_CODE = 976;
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TARGET_SITE_CODE = 975;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Value Code System' of 'Caregiver Characteristics'.
@@ -7848,7 +7840,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM = 977;
+	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM = 976;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Template Id' of 'Caregiver Characteristics'.
@@ -7856,7 +7848,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_TEMPLATE_ID = 978;
+	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_TEMPLATE_ID = 977;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Class Code' of 'Caregiver Characteristics'.
@@ -7864,7 +7856,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_CLASS_CODE = 979;
+	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_CLASS_CODE = 978;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Mood Code' of 'Caregiver Characteristics'.
@@ -7872,7 +7864,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_MOOD_CODE = 980;
+	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_MOOD_CODE = 979;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Id' of 'Caregiver Characteristics'.
@@ -7880,7 +7872,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_ID = 981;
+	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_ID = 980;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Code' of 'Caregiver Characteristics'.
@@ -7888,7 +7880,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_CODE = 982;
+	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_CODE = 981;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Status Code' of 'Caregiver Characteristics'.
@@ -7896,7 +7888,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_STATUS_CODE = 983;
+	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_STATUS_CODE = 982;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Status Code P' of 'Caregiver Characteristics'.
@@ -7904,7 +7896,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_STATUS_CODE_P = 984;
+	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_STATUS_CODE_P = 983;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Value' of 'Caregiver Characteristics'.
@@ -7912,7 +7904,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_VALUE = 985;
+	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_VALUE = 984;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Participant' of 'Caregiver Characteristics'.
@@ -7920,7 +7912,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT = 986;
+	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT = 985;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Participant Participant Role Class Code' of 'Caregiver Characteristics'.
@@ -7928,7 +7920,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE = 987;
+	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE = 986;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Participant Time Low' of 'Caregiver Characteristics'.
@@ -7936,7 +7928,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW = 988;
+	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW = 987;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Participant Time High' of 'Caregiver Characteristics'.
@@ -7944,7 +7936,15 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH = 989;
+	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH = 988;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Participant Type Code' of 'Caregiver Characteristics'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_TYPE_CODE = 989;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Caregiver Characteristics Participant Time' of 'Caregiver Characteristics'.
@@ -23358,10 +23358,6 @@ public class ConsolValidator extends EObjectValidator {
 			result &= validateSeverityObservation_validateSeverityObservationValue(
 				severityObservation, diagnostics, context);
 		}
-		if (result || diagnostics != null) {
-			result &= validateSeverityObservation_validateSeverityObservationInterpretationCode(
-				severityObservation, diagnostics, context);
-		}
 		return result;
 	}
 
@@ -23473,17 +23469,6 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateSeverityObservation_validateSeverityObservationValue(
 			SeverityObservation severityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return severityObservation.validateSeverityObservationValue(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateSeverityObservationInterpretationCode constraint of '<em>Severity Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSeverityObservation_validateSeverityObservationInterpretationCode(
-			SeverityObservation severityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return severityObservation.validateSeverityObservationInterpretationCode(diagnostics, context);
 	}
 
 	/**
@@ -36223,6 +36208,10 @@ public class ConsolValidator extends EObjectValidator {
 				caregiverCharacteristics, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateCaregiverCharacteristics_validateCaregiverCharacteristicsParticipantTypeCode(
+				caregiverCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateCaregiverCharacteristics_validateCaregiverCharacteristicsParticipantTime(
 				caregiverCharacteristics, diagnostics, context);
 		}
@@ -36375,6 +36364,17 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateCaregiverCharacteristics_validateCaregiverCharacteristicsParticipantTimeHigh(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return caregiverCharacteristics.validateCaregiverCharacteristicsParticipantTimeHigh(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCaregiverCharacteristicsParticipantTypeCode constraint of '<em>Caregiver Characteristics</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCaregiverCharacteristics_validateCaregiverCharacteristicsParticipantTypeCode(
+			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return caregiverCharacteristics.validateCaregiverCharacteristicsParticipantTypeCode(diagnostics, context);
 	}
 
 	/**

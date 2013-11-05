@@ -21,9 +21,9 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCaregiverCharacteristics()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CaregiverCharacteristicsTemplateId CaregiverCharacteristicsValueCodeSystem CaregiverCharacteristicsClassCode CaregiverCharacteristicsMoodCode CaregiverCharacteristicsId CaregiverCharacteristicsCode CaregiverCharacteristicsStatusCode CaregiverCharacteristicsStatusCodeP CaregiverCharacteristicsValue CaregiverCharacteristicsParticipant CaregiverCharacteristicsParticipantParticipantRoleClassCode CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantParticipantRole' templateId.root='2.16.840.1.113883.10.20.22.4.72' classCode='OBS' moodCode='EVN' statusCode.code='completed' constraints.validation.query='CaregiverCharacteristicsParticipantParticipantRoleClassCode CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantTimeHigh CaregiverCharacteristicsParticipantTime CaregiverCharacteristicsParticipantParticipantRole' constraints.validation.info='CaregiverCharacteristicsParticipantTimeHigh CaregiverCharacteristicsParticipantTime'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCaregiverCharacteristicsParticipant constraints.validation.error='CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantParticipantRole' constraints.validation.info='CaregiverCharacteristicsParticipantTimeHigh CaregiverCharacteristicsParticipantTime'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCaregiverCharacteristicsParticipantParticipantRole constraints.validation.error='CaregiverCharacteristicsParticipantParticipantRoleClassCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CaregiverCharacteristicsTemplateId CaregiverCharacteristicsValueCodeSystem CaregiverCharacteristicsClassCode CaregiverCharacteristicsMoodCode CaregiverCharacteristicsId CaregiverCharacteristicsCode CaregiverCharacteristicsStatusCode CaregiverCharacteristicsStatusCodeP CaregiverCharacteristicsValue CaregiverCharacteristicsParticipant CaregiverCharacteristicsParticipantParticipantRoleClassCode CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantTypeCode CaregiverCharacteristicsParticipantParticipantRole' templateId.root='2.16.840.1.113883.10.20.22.4.72' classCode='OBS' moodCode='EVN' statusCode.code='completed' constraints.validation.query='CaregiverCharacteristicsParticipantParticipantRoleClassCode CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantTimeHigh CaregiverCharacteristicsParticipantTypeCode CaregiverCharacteristicsParticipantTime CaregiverCharacteristicsParticipantParticipantRole' constraints.validation.info='CaregiverCharacteristicsParticipantTimeHigh CaregiverCharacteristicsParticipantTime'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCaregiverCharacteristicsParticipant constraints.validation.error='CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantTypeCode CaregiverCharacteristicsParticipantParticipantRole' constraints.validation.info='CaregiverCharacteristicsParticipantTimeHigh CaregiverCharacteristicsParticipantTime' typeCode='IND'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCaregiverCharacteristicsParticipantParticipantRole classCode='CAREGIVER' constraints.validation.error='CaregiverCharacteristicsParticipantParticipantRoleClassCode'"
  * @generated
  */
 public interface CaregiverCharacteristics extends Observation {
@@ -154,7 +154,7 @@ public interface CaregiverCharacteristics extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null).participantRole->excluding(null)->reject(isDefined(\'classCode\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null).participantRole->excluding(null)->reject(isDefined(\'classCode\') and classCode=vocab::RoleClassRoot::CAREGIVER)'"
 	 * @generated
 	 */
 	boolean validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(DiagnosticChain diagnostics,
@@ -183,6 +183,18 @@ public interface CaregiverCharacteristics extends Observation {
 	 * @generated
 	 */
 	boolean validateCaregiverCharacteristicsParticipantTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null)->reject(typeCode=vocab::ParticipationType::IND)'"
+	 * @generated
+	 */
+	boolean validateCaregiverCharacteristicsParticipantTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

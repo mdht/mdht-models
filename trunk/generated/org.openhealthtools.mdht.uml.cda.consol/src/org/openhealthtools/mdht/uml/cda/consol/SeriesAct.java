@@ -85,7 +85,7 @@ public interface SeriesAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.qualifier.value->one(val | not val.oclIsUndefined() and val.oclIsKindOf(datatypes::ANY))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.qualifier.value->one(val | not val.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateSeriesActCodeQualifierValue(DiagnosticChain diagnostics, Map<Object, Object> context);
