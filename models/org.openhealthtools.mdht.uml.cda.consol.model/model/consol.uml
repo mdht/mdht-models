@@ -2771,6 +2771,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_dfVGQPKwEeGFUPBL8qS7yQ" code="121026" base_Property="_XONtgPKwEeGFUPBL8qS7yQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
+    <ruleId>CONF:9190</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_gep-IPKwEeGFUPBL8qS7yQ" base_Association="_XOXegPKwEeGFUPBL8qS7yQ">
     <ruleId>CONF:9191</ruleId>
