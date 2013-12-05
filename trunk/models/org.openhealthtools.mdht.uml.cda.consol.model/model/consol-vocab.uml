@@ -802,7 +802,8 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_UcKZoD4nEeGtCLm-c2g23Q" name="ProviderType">
       <ownedComment xmi:id="_b_Jp8D4nEeGtCLm-c2g23Q">
-        <body>The Provider type vocabulary classifies providers according to the type of license or accreditation they hold or the service they provide.</body>
+        <body>The Provider type vocabulary classifies providers according to the type of license or accreditation they hold or the service they provide.&#xD;
+http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;Itemid=125</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_oDaAkD7YEeGvOdejHZ7dYg" name="ProcedureNoteDocumentTypeCodes">
@@ -1330,7 +1331,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_dGk9kSBCEeG938evaWkvcA" conceptName="Week" base_EnumerationLiteral="_dGk9kCBCEeG938evaWkvcA"/>
   <term:ValueSetCode xmi:id="_eGosYSBCEeG938evaWkvcA" conceptName="Month" base_EnumerationLiteral="_eGosYCBCEeG938evaWkvcA"/>
   <term:ValueSetCode xmi:id="_fZxIMCBCEeG938evaWkvcA" conceptName="Year" base_EnumerationLiteral="_fZwhICBCEeG938evaWkvcA"/>
-  <term:ValueSetVersion xmi:id="_IzJFYR-ZEeGtfPlBCjHWkw" identifier="2.16.840.1.113883.1.11.20275" binding="Dynamic" base_Enumeration="_IzJFYB-ZEeGtfPlBCjHWkw">
+  <term:ValueSetVersion xmi:id="_IzJFYR-ZEeGtfPlBCjHWkw" identifier="2.16.840.1.113883.1.11.20275" definition="A comprehensive classification of locations and settings where healthcare services are provided. This value set is based on the National Healthcare Safety Network (NHSN) location code system that has been developed over a number of years through CDC's interaction with a variety of healthcare facilities and is intended to serve a variety of reporting needs where coding of healthcare service locations is required." binding="Dynamic" base_Enumeration="_IzJFYB-ZEeGtfPlBCjHWkw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Bro-kWPyEeGskvPNzg7rUw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_xQv28CXLEeGnSfJ2zNllag" identifier="2.16.840.1.113883.1.11.78" version="1" fullName="Observation Interpretation (HL7)" definition="Observation interpretation concepts that are based upon HL7 V3 vocabulary." revisionDate="07/07/2009" base_Enumeration="_xQszoCXLEeGnSfJ2zNllag">
@@ -1562,7 +1563,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_bkwYcW1EEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.19579" version="1" definition="Family Relationships record the familial relationship of a person to another person. This value set is to be used when it is necessary to record family relationships (e.g., next of kin, or blood relations). This is a subset of the value set used for personal relationships" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_bkwYcG1EEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_fgCQUG1GEeGCevFpokwODw" identifier="2.16.840.1.114222.4.11.837" base_Enumeration="_fgBpQG1GEeGCevFpokwODw">
+  <term:ValueSetVersion xmi:id="_fgCQUG1GEeGCevFpokwODw" identifier="2.16.840.1.114222.4.11.837" binding="Dynamic" base_Enumeration="_fgBpQG1GEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_mYW9kG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.23" base_Enumeration="_mYWWgG1HEeGCevFpokwODw">

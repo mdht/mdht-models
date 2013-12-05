@@ -166,7 +166,8 @@ element.</body>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_96a3sEokEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_C-ezsCzBEeGMXrZ0DiQwGg" name="informant" type="_RS-y4CynEeGMXrZ0DiQwGg" association="_C-fawCzBEeGMXrZ0DiQwGg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C-ezsSzBEeGMXrZ0DiQwGg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GTn7wFe-EeOSS41gMnqXhA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GTn7wVe-EeOSS41gMnqXhA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_H0ppsCzHEeGMXrZ0DiQwGg" name="supportParticipant" type="_Zi4mACzHEeGMXrZ0DiQwGg" association="_H0qQwSzHEeGMXrZ0DiQwGg">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KPgikCzHEeGMXrZ0DiQwGg" value="*"/>
@@ -1654,6 +1655,22 @@ The type of consent (e.g., a consent to perform the related serviceEvent) is con
             <body>not self.effectiveTime.high.oclIsUndefined()</body>
           </specification>
         </ownedRule>
+        <ownedRule xmi:id="_j2YAAF1FEeO84_IebRjYkg" name="dischargeDispositionCodeValueSet" constrainedElement="_TeTqkDzEEeGMk58Mp9-wVA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_pKF8YF1FEeO84_IebRjYkg">
+            <language>Analysis</language>
+            <language>OCL</language>
+            <body>dischargeDispositionCode SHOULD be selected from ValueSet NUBC UB-04 FL17-Patient Status 2.16.840.1.113883.6.301.5 STATIC</body>
+            <body>dischargeDispositionCode.oclIsUndefined() or dischargeDispositionCode.isNullFlavorUndefined() implies let value : datatypes::CE = dischargeDispositionCode.oclAsType(datatypes::CE) in value.codeSystem &lt;> '2.16.840.1.113883.12.112' implies value.codeSystem = '2.16.840.1.113883.6.301.5' and not value.code.oclIsUndefined()</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_lGT94F1FEeO84_IebRjYkg" name="dischargeDispositionCodeCodeSystem" constrainedElement="_TeTqkDzEEeGMk58Mp9-wVA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_CM0aAF1GEeO84_IebRjYkg">
+            <language>Analysis</language>
+            <language>OCL</language>
+            <body>dischargeDispositionCode, if access to NUBC is unavailable, MAY be selected from CodeSystem 2.16.840.1.113883.12.112 HL7 Discharge Disposition</body>
+            <body>dischargeDispositionCode.oclIsUndefined() or dischargeDispositionCode.isNullFlavorUndefined() implies let value : datatypes::CE = dischargeDispositionCode.oclAsType(datatypes::CE) in value.codeSystem &lt;> '2.16.840.1.113883.6.301.5' implies value.codeSystem = '2.16.840.1.113883.12.112' and not value.code.oclIsUndefined()</body>
+          </specification>
+        </ownedRule>
         <generalization xmi:id="_liV3wDzEEeGMk58Mp9-wVA">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_j5JZsEAJEd6wZe6nFLrjsw"/>
         </generalization>
@@ -2763,10 +2780,6 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
   <uml:Association xmi:id="_vZAiYjs5EeGXW8k29waQGA" memberEnd="_vZAiYDs5EeGXW8k29waQGA _vZAiYzs5EeGXW8k29waQGA">
     <ownedEnd xmi:id="_vZAiYzs5EeGXW8k29waQGA" type="_Or7FUDsyEeGvzMYhXuqAEA" association="_vZAiYjs5EeGXW8k29waQGA"/>
   </uml:Association>
-  <CDA:ValueSetConstraint xmi:id="_zNL3IDzEEeGMk58Mp9-wVA" base_Property="_tzLskDzEEeGMk58Mp9-wVA" severity="WARNING">
-    <reference href="../consol-vocab.uml#_2L5TYhSVEeGGzu7fmW9pXw"/>
-    <ruleId>CONF:8476</ruleId>
-  </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_5hMWYDzFEeGMk58Mp9-wVA" base_Property="_tzLskzzEEeGMk58Mp9-wVA">
     <ruleId>CONF:8473</ruleId>
     <ruleId>CONF:8475</ruleId>
@@ -5067,7 +5080,9 @@ OIDs SHALL be no more than 64 characters in length..</body>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_8ccgkHK9EeGig5KF4CgPyw" severity="WARNING" base_Property="_nLKckSymEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_Q2rJEHK-EeGig5KF4CgPyw" severity="INFO" base_Property="_ZGMo0CytEeGMXrZ0DiQwGg"/>
-  <CDA:PropertyValidation xmi:id="_fgoHwHT9EeGB7fSw5LjeyA" base_Property="_tzLskDzEEeGMk58Mp9-wVA"/>
+  <CDA:PropertyValidation xmi:id="_fgoHwHT9EeGB7fSw5LjeyA" base_Property="_tzLskDzEEeGMk58Mp9-wVA">
+    <ruleId>CONF:8476</ruleId>
+  </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_j5wYsMUhEeGigaKyc-jgFA" base_Constraint="_BEoOQDVVEeGIw7CntkyPQw">
     <ruleId>CONF:16786</ruleId>
   </CDA:ConstraintValidation>
@@ -5445,5 +5460,11 @@ OIDs SHALL be no more than 64 characters in length..</body>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="__sUoADtrEeOukK1fJiZHOA" base_Constraint="_2yReIDtrEeOukK1fJiZHOA">
     <ruleId>CONF:31347</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_wj_iIF1FEeO84_IebRjYkg" severity="WARNING" base_Constraint="_j2YAAF1FEeO84_IebRjYkg">
+    <ruleId>CONF:8476</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Hk5R8F1GEeO84_IebRjYkg" severity="INFO" base_Constraint="_lGT94F1FEeO84_IebRjYkg">
+    <ruleId>CONF:8476</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>
