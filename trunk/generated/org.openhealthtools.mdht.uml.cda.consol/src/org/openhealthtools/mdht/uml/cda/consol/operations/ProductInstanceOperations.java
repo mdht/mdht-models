@@ -109,8 +109,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceTemplateId"),
-					new Object[] { productInstance }));
+					ConsolPlugin.INSTANCE.getString("ProductInstanceTemplateId"), new Object[] { productInstance }));
 			}
 
 			return false;
@@ -168,8 +167,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceClassCode"),
-					new Object[] { productInstance }));
+					ConsolPlugin.INSTANCE.getString("ProductInstanceClassCode"), new Object[] { productInstance }));
 			}
 
 			return false;
@@ -226,8 +224,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_ID,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceId"),
-					new Object[] { productInstance }));
+					ConsolPlugin.INSTANCE.getString("ProductInstanceId"), new Object[] { productInstance }));
 			}
 
 			return false;
@@ -285,8 +282,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceScopingEntity"),
-					new Object[] { productInstance }));
+					ConsolPlugin.INSTANCE.getString("ProductInstanceScopingEntity"), new Object[] { productInstance }));
 			}
 
 			return false;
@@ -344,8 +340,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstancePlayingDevice"),
-					new Object[] { productInstance }));
+					ConsolPlugin.INSTANCE.getString("ProductInstancePlayingDevice"), new Object[] { productInstance }));
 			}
 
 			return false;

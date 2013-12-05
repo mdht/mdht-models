@@ -119,7 +119,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("SocialHistorySectionTemplateId"),
 					new Object[] { socialHistorySection }));
 			}
 
@@ -180,8 +180,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionCode"),
-					new Object[] { socialHistorySection }));
+					ConsolPlugin.INSTANCE.getString("SocialHistorySectionCode"), new Object[] { socialHistorySection }));
 			}
 
 			return false;
@@ -239,8 +238,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionCodeP"),
-					new Object[] { socialHistorySection }));
+					ConsolPlugin.INSTANCE.getString("SocialHistorySectionCodeP"), new Object[] { socialHistorySection }));
 			}
 
 			return false;
@@ -298,8 +296,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionTitle"),
-					new Object[] { socialHistorySection }));
+					ConsolPlugin.INSTANCE.getString("SocialHistorySectionTitle"), new Object[] { socialHistorySection }));
 			}
 
 			return false;
@@ -357,8 +354,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionText"),
-					new Object[] { socialHistorySection }));
+					ConsolPlugin.INSTANCE.getString("SocialHistorySectionText"), new Object[] { socialHistorySection }));
 			}
 
 			return false;
@@ -415,10 +411,9 @@ public class SocialHistorySectionOperations extends SectionOperations {
 			socialHistorySection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionSocialHistoryObservation"),
+					ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistoryObservation"),
 					new Object[] { socialHistorySection }));
 			}
 
@@ -477,7 +472,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionPregnancyObservation"),
+					ConsolPlugin.INSTANCE.getString("SocialHistorySectionPregnancyObservation"),
 					new Object[] { socialHistorySection }));
 			}
 
@@ -535,10 +530,9 @@ public class SocialHistorySectionOperations extends SectionOperations {
 			socialHistorySection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionSmokingStatusObservation"),
+					ConsolPlugin.INSTANCE.getString("SocialHistorySectionSmokingStatusObservation"),
 					new Object[] { socialHistorySection }));
 			}
 
@@ -597,7 +591,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TOBACCO_USE,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionTobaccoUse"),
+					ConsolPlugin.INSTANCE.getString("SocialHistorySectionTobaccoUse"),
 					new Object[] { socialHistorySection }));
 			}
 

@@ -117,7 +117,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentTemplateId"),
+					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentTemplateId"),
 					new Object[] { unstructuredDocument }));
 			}
 
@@ -176,7 +176,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_RECORD_TARGET,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentRecordTarget"),
+					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentRecordTarget"),
 					new Object[] { unstructuredDocument }));
 			}
 
@@ -235,7 +235,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentAuthor"),
+					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentAuthor"),
 					new Object[] { unstructuredDocument }));
 			}
 
@@ -294,7 +294,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_COMPONENT,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentComponent"),
+					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentComponent"),
 					new Object[] { unstructuredDocument }));
 			}
 
@@ -353,7 +353,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentCustodian"),
+					ConsolPlugin.INSTANCE.getString("UnstructuredDocumentCustodian"),
 					new Object[] { unstructuredDocument }));
 			}
 

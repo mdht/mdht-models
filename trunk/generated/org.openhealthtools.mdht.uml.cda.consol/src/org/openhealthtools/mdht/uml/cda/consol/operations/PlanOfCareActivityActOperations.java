@@ -101,7 +101,7 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_ACT__PLAN_OF_CARE_ACTIVITY_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityActPlanOfCareActivityActTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityActTemplateId"),
 					new Object[] { planOfCareActivityAct }));
 			}
 
@@ -160,7 +160,7 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_ACT__PLAN_OF_CARE_ACTIVITY_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityActPlanOfCareActivityActClassCode"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityActClassCode"),
 					new Object[] { planOfCareActivityAct }));
 			}
 
@@ -221,7 +221,7 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_ACT__PLAN_OF_CARE_ACTIVITY_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityActPlanOfCareActivityActMoodCode"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityActMoodCode"),
 					new Object[] { planOfCareActivityAct }));
 			}
 
@@ -280,8 +280,7 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_ACT__PLAN_OF_CARE_ACTIVITY_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityActPlanOfCareActivityActId"),
-					new Object[] { planOfCareActivityAct }));
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityActId"), new Object[] { planOfCareActivityAct }));
 			}
 
 			return false;

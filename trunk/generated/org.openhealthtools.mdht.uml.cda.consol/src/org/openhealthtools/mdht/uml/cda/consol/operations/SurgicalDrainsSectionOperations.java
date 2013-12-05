@@ -102,7 +102,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionSurgicalDrainsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionTemplateId"),
 					new Object[] { surgicalDrainsSection }));
 			}
 
@@ -163,7 +163,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionSurgicalDrainsSectionCode"),
+					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionCode"),
 					new Object[] { surgicalDrainsSection }));
 			}
 
@@ -222,7 +222,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionSurgicalDrainsSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionCodeP"),
 					new Object[] { surgicalDrainsSection }));
 			}
 
@@ -281,7 +281,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionSurgicalDrainsSectionText"),
+					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionText"),
 					new Object[] { surgicalDrainsSection }));
 			}
 
@@ -340,7 +340,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionSurgicalDrainsSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionTitle"),
 					new Object[] { surgicalDrainsSection }));
 			}
 

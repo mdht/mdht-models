@@ -108,8 +108,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("InstructionsInstructionsTextReference"),
-					new Object[] { instructions }));
+					ConsolPlugin.INSTANCE.getString("InstructionsTextReference"), new Object[] { instructions }));
 			}
 
 			return false;
@@ -167,8 +166,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("InstructionsInstructionsReferenceValue"),
-					new Object[] { instructions }));
+					ConsolPlugin.INSTANCE.getString("InstructionsReferenceValue"), new Object[] { instructions }));
 			}
 
 			return false;
@@ -226,8 +224,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("InstructionsInstructionsTextReferenceValue"),
-					new Object[] { instructions }));
+					ConsolPlugin.INSTANCE.getString("InstructionsTextReferenceValue"), new Object[] { instructions }));
 			}
 
 			return false;
@@ -284,8 +281,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("InstructionsInstructionsTemplateId"),
-					new Object[] { instructions }));
+					ConsolPlugin.INSTANCE.getString("InstructionsTemplateId"), new Object[] { instructions }));
 			}
 
 			return false;
@@ -342,7 +338,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("InstructionsInstructionsClassCode"), new Object[] { instructions }));
+					ConsolPlugin.INSTANCE.getString("InstructionsClassCode"), new Object[] { instructions }));
 			}
 
 			return false;
@@ -399,7 +395,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("InstructionsInstructionsMoodCode"), new Object[] { instructions }));
+					ConsolPlugin.INSTANCE.getString("InstructionsMoodCode"), new Object[] { instructions }));
 			}
 
 			return false;
@@ -456,7 +452,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("InstructionsInstructionsCodeP"), new Object[] { instructions }));
+					ConsolPlugin.INSTANCE.getString("InstructionsCodeP"), new Object[] { instructions }));
 			}
 
 			if (context != null) {
@@ -535,7 +531,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_CODE,
-					ConsolPlugin.INSTANCE.getString("InstructionsInstructionsCode"), new Object[] { instructions }));
+					ConsolPlugin.INSTANCE.getString("InstructionsCode"), new Object[] { instructions }));
 			}
 
 			return false;
@@ -592,7 +588,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_TEXT,
-					ConsolPlugin.INSTANCE.getString("InstructionsInstructionsText"), new Object[] { instructions }));
+					ConsolPlugin.INSTANCE.getString("InstructionsText"), new Object[] { instructions }));
 			}
 
 			return false;
@@ -650,8 +646,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("InstructionsInstructionsStatusCode"),
-					new Object[] { instructions }));
+					ConsolPlugin.INSTANCE.getString("InstructionsStatusCode"), new Object[] { instructions }));
 			}
 
 			return false;

@@ -113,7 +113,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalHospitalDischargeMedicationsSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalTemplateId"),
 					new Object[] { hospitalDischargeMedicationsSectionEntriesOptional }));
 			}
 
@@ -177,7 +177,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalHospitalDischargeMedicationsSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalCode"),
 					new Object[] { hospitalDischargeMedicationsSectionEntriesOptional }));
 			}
 
@@ -239,7 +239,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalHospitalDischargeMedicationsSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalCodeP"),
 					new Object[] { hospitalDischargeMedicationsSectionEntriesOptional }));
 			}
 
@@ -301,7 +301,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalHospitalDischargeMedicationsSectionEntriesOptionalTitle"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalTitle"),
 					new Object[] { hospitalDischargeMedicationsSectionEntriesOptional }));
 			}
 
@@ -363,7 +363,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalHospitalDischargeMedicationsSectionEntriesOptionalText"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalText"),
 					new Object[] { hospitalDischargeMedicationsSectionEntriesOptional }));
 			}
 
@@ -425,7 +425,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication"),
 					new Object[] { hospitalDischargeMedicationsSectionEntriesOptional }));
 			}
 

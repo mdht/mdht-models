@@ -110,7 +110,7 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionTemplateId"),
 					new Object[] { hospitalDischargeDiagnosisSection }));
 			}
 
@@ -170,10 +170,9 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 			hospitalDischargeDiagnosisSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisSectionCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionCode"),
 					new Object[] { hospitalDischargeDiagnosisSection }));
 			}
 
@@ -231,10 +230,9 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 			hospitalDischargeDiagnosisSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionCodeP"),
 					new Object[] { hospitalDischargeDiagnosisSection }));
 			}
 
@@ -292,10 +290,9 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 			hospitalDischargeDiagnosisSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionTitle"),
 					new Object[] { hospitalDischargeDiagnosisSection }));
 			}
 
@@ -353,10 +350,9 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 			hospitalDischargeDiagnosisSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisSectionText"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionText"),
 					new Object[] { hospitalDischargeDiagnosisSection }));
 			}
 
@@ -418,7 +414,7 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_HOSPITAL_DISCHARGE_DIAGNOSIS,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis"),
 					new Object[] { hospitalDischargeDiagnosisSection }));
 			}
 

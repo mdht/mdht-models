@@ -109,10 +109,9 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 			procedureIndicationsSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_INDICATIONS_SECTION__PROCEDURE_INDICATIONS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionProcedureIndicationsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionTemplateId"),
 					new Object[] { procedureIndicationsSection }));
 			}
 
@@ -174,7 +173,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_INDICATIONS_SECTION__PROCEDURE_INDICATIONS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionProcedureIndicationsSectionCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionCode"),
 					new Object[] { procedureIndicationsSection }));
 			}
 
@@ -234,7 +233,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_INDICATIONS_SECTION__PROCEDURE_INDICATIONS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionProcedureIndicationsSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionCodeP"),
 					new Object[] { procedureIndicationsSection }));
 			}
 
@@ -294,7 +293,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_INDICATIONS_SECTION__PROCEDURE_INDICATIONS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionProcedureIndicationsSectionText"),
+					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionText"),
 					new Object[] { procedureIndicationsSection }));
 			}
 
@@ -354,7 +353,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_INDICATIONS_SECTION__PROCEDURE_INDICATIONS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionProcedureIndicationsSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionTitle"),
 					new Object[] { procedureIndicationsSection }));
 			}
 
@@ -412,10 +411,9 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 			procedureIndicationsSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_INDICATIONS_SECTION__PROCEDURE_INDICATIONS_SECTION_INDICATION,
-					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionProcedureIndicationsSectionIndication"),
+					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionIndication"),
 					new Object[] { procedureIndicationsSection }));
 			}
 

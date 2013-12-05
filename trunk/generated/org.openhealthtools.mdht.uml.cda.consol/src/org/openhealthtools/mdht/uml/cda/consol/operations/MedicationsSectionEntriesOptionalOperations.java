@@ -112,7 +112,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalMedicationsSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalTemplateId"),
 					new Object[] { medicationsSectionEntriesOptional }));
 			}
 
@@ -172,10 +172,9 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 			medicationsSectionEntriesOptional)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalMedicationsSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalCode"),
 					new Object[] { medicationsSectionEntriesOptional }));
 			}
 
@@ -233,10 +232,9 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 			medicationsSectionEntriesOptional)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE,
-					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalMedicationsSectionEntriesOptionalTitle"),
+					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalTitle"),
 					new Object[] { medicationsSectionEntriesOptional }));
 			}
 
@@ -294,10 +292,9 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 			medicationsSectionEntriesOptional)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT,
-					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalMedicationsSectionEntriesOptionalText"),
+					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalText"),
 					new Object[] { medicationsSectionEntriesOptional }));
 			}
 
@@ -359,7 +356,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATIONS_SECTION_ENTRIES_OPTIONAL__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_MEDICATION_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalMedicationsSectionEntriesOptionalMedicationActivity"),
+					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalMedicationActivity"),
 					new Object[] { medicationsSectionEntriesOptional }));
 			}
 

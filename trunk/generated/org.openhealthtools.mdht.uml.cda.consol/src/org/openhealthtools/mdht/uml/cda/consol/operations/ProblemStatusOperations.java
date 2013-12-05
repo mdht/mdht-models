@@ -107,8 +107,7 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusTextReference"),
-					new Object[] { problemStatus }));
+					ConsolPlugin.INSTANCE.getString("ProblemStatusTextReference"), new Object[] { problemStatus }));
 			}
 
 			return false;
@@ -166,8 +165,7 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusReferenceValue"),
-					new Object[] { problemStatus }));
+					ConsolPlugin.INSTANCE.getString("ProblemStatusReferenceValue"), new Object[] { problemStatus }));
 			}
 
 			return false;
@@ -225,8 +223,7 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusTextReferenceValue"),
-					new Object[] { problemStatus }));
+					ConsolPlugin.INSTANCE.getString("ProblemStatusTextReferenceValue"), new Object[] { problemStatus }));
 			}
 
 			return false;
@@ -284,8 +281,7 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusTemplateId"),
-					new Object[] { problemStatus }));
+					ConsolPlugin.INSTANCE.getString("ProblemStatusTemplateId"), new Object[] { problemStatus }));
 			}
 
 			return false;
@@ -343,8 +339,7 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusClassCode"),
-					new Object[] { problemStatus }));
+					ConsolPlugin.INSTANCE.getString("ProblemStatusClassCode"), new Object[] { problemStatus }));
 			}
 
 			return false;
@@ -402,8 +397,7 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusMoodCode"),
-					new Object[] { problemStatus }));
+					ConsolPlugin.INSTANCE.getString("ProblemStatusMoodCode"), new Object[] { problemStatus }));
 			}
 
 			return false;
@@ -462,7 +456,7 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusCode"), new Object[] { problemStatus }));
+					ConsolPlugin.INSTANCE.getString("ProblemStatusCode"), new Object[] { problemStatus }));
 			}
 
 			return false;
@@ -519,7 +513,7 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusText"), new Object[] { problemStatus }));
+					ConsolPlugin.INSTANCE.getString("ProblemStatusText"), new Object[] { problemStatus }));
 			}
 
 			return false;
@@ -578,8 +572,7 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusStatusCode"),
-					new Object[] { problemStatus }));
+					ConsolPlugin.INSTANCE.getString("ProblemStatusStatusCode"), new Object[] { problemStatus }));
 			}
 
 			return false;
@@ -638,7 +631,7 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusValue"), new Object[] { problemStatus }));
+					ConsolPlugin.INSTANCE.getString("ProblemStatusValue"), new Object[] { problemStatus }));
 			}
 
 			return false;

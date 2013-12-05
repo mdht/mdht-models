@@ -187,8 +187,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityTemplateId"),
-					new Object[] { policyActivity }));
+					ConsolPlugin.INSTANCE.getString("PolicyActivityTemplateId"), new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -246,8 +245,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityClassCode"),
-					new Object[] { policyActivity }));
+					ConsolPlugin.INSTANCE.getString("PolicyActivityClassCode"), new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -304,8 +302,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCodeP"),
-					new Object[] { policyActivity }));
+					ConsolPlugin.INSTANCE.getString("PolicyActivityCodeP"), new Object[] { policyActivity }));
 			}
 
 			if (context != null) {
@@ -384,8 +381,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_CODE,
-					ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCode"),
-					new Object[] { policyActivity }));
+					ConsolPlugin.INSTANCE.getString("PolicyActivityCode"), new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -442,7 +438,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_ID,
-					ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityId"), new Object[] { policyActivity }));
+					ConsolPlugin.INSTANCE.getString("PolicyActivityId"), new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -500,8 +496,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityMoodCode"),
-					new Object[] { policyActivity }));
+					ConsolPlugin.INSTANCE.getString("PolicyActivityMoodCode"), new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -560,8 +555,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityStatusCode"),
-					new Object[] { policyActivity }));
+					ConsolPlugin.INSTANCE.getString("PolicyActivityStatusCode"), new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -618,8 +612,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER,
-					ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityPayer"),
-					new Object[] { policyActivity }));
+					ConsolPlugin.INSTANCE.getString("PolicyActivityPayer"), new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -677,8 +670,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR,
-					ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityGuarantor"),
-					new Object[] { policyActivity }));
+					ConsolPlugin.INSTANCE.getString("PolicyActivityGuarantor"), new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -736,8 +728,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE,
-					ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCoverage"),
-					new Object[] { policyActivity }));
+					ConsolPlugin.INSTANCE.getString("PolicyActivityCoverage"), new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -794,8 +785,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER,
-					ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityHolder"),
-					new Object[] { policyActivity }));
+					ConsolPlugin.INSTANCE.getString("PolicyActivityHolder"), new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -853,8 +843,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_ENTRY_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityEntryRelationship"),
-					new Object[] { policyActivity }));
+					ConsolPlugin.INSTANCE.getString("PolicyActivityEntryRelationship"), new Object[] { policyActivity }));
 			}
 
 			return false;

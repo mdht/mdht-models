@@ -113,7 +113,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.STUDY_ACT__STUDY_ACT_IDS_HAVE_ROOT,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActIdsHaveRoot"), new Object[] { studyAct }));
+					ConsolPlugin.INSTANCE.getString("StudyActIdsHaveRoot"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -170,7 +170,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.STUDY_ACT__STUDY_ACT_NO_ID_EXTENSION,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActNoIdExtension"), new Object[] { studyAct }));
+					ConsolPlugin.INSTANCE.getString("StudyActNoIdExtension"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -227,7 +227,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActTextReference"), new Object[] { studyAct }));
+					ConsolPlugin.INSTANCE.getString("StudyActTextReference"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -285,7 +285,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActTextReferenceValue"), new Object[] { studyAct }));
+					ConsolPlugin.INSTANCE.getString("StudyActTextReferenceValue"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -342,7 +342,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.STUDY_ACT__STUDY_ACT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActReferenceValue"), new Object[] { studyAct }));
+					ConsolPlugin.INSTANCE.getString("StudyActReferenceValue"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -399,7 +399,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.STUDY_ACT__STUDY_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActTemplateId"), new Object[] { studyAct }));
+					ConsolPlugin.INSTANCE.getString("StudyActTemplateId"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -456,7 +456,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.STUDY_ACT__STUDY_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActClassCode"), new Object[] { studyAct }));
+					ConsolPlugin.INSTANCE.getString("StudyActClassCode"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -513,7 +513,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.STUDY_ACT__STUDY_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActMoodCode"), new Object[] { studyAct }));
+					ConsolPlugin.INSTANCE.getString("StudyActMoodCode"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -568,7 +568,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActId"), new Object[] { studyAct }));
+					ConsolPlugin.INSTANCE.getString("StudyActId"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -626,7 +626,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActCode"), new Object[] { studyAct }));
+					ConsolPlugin.INSTANCE.getString("StudyActCode"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -683,7 +683,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.STUDY_ACT__STUDY_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActEffectiveTime"), new Object[] { studyAct }));
+					ConsolPlugin.INSTANCE.getString("StudyActEffectiveTime"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -739,7 +739,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActText"), new Object[] { studyAct }));
+					ConsolPlugin.INSTANCE.getString("StudyActText"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -796,7 +796,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.STUDY_ACT__STUDY_ACT_SERIES_ACT,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActSeriesAct"), new Object[] { studyAct }));
+					ConsolPlugin.INSTANCE.getString("StudyActSeriesAct"), new Object[] { studyAct }));
 			}
 
 			return false;

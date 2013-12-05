@@ -101,10 +101,9 @@ public class PostoperativeDiagnosisSectionOperations extends SectionOperations {
 			postoperativeDiagnosisSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTOPERATIVE_DIAGNOSIS_SECTION__POSTOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PostoperativeDiagnosisSectionPostoperativeDiagnosisSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PostoperativeDiagnosisSectionTemplateId"),
 					new Object[] { postoperativeDiagnosisSection }));
 			}
 
@@ -166,7 +165,7 @@ public class PostoperativeDiagnosisSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTOPERATIVE_DIAGNOSIS_SECTION__POSTOPERATIVE_DIAGNOSIS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PostoperativeDiagnosisSectionPostoperativeDiagnosisSectionCode"),
+					ConsolPlugin.INSTANCE.getString("PostoperativeDiagnosisSectionCode"),
 					new Object[] { postoperativeDiagnosisSection }));
 			}
 
@@ -226,7 +225,7 @@ public class PostoperativeDiagnosisSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTOPERATIVE_DIAGNOSIS_SECTION__POSTOPERATIVE_DIAGNOSIS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PostoperativeDiagnosisSectionPostoperativeDiagnosisSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("PostoperativeDiagnosisSectionCodeP"),
 					new Object[] { postoperativeDiagnosisSection }));
 			}
 
@@ -286,7 +285,7 @@ public class PostoperativeDiagnosisSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTOPERATIVE_DIAGNOSIS_SECTION__POSTOPERATIVE_DIAGNOSIS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("PostoperativeDiagnosisSectionPostoperativeDiagnosisSectionText"),
+					ConsolPlugin.INSTANCE.getString("PostoperativeDiagnosisSectionText"),
 					new Object[] { postoperativeDiagnosisSection }));
 			}
 
@@ -346,7 +345,7 @@ public class PostoperativeDiagnosisSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTOPERATIVE_DIAGNOSIS_SECTION__POSTOPERATIVE_DIAGNOSIS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("PostoperativeDiagnosisSectionPostoperativeDiagnosisSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("PostoperativeDiagnosisSectionTitle"),
 					new Object[] { postoperativeDiagnosisSection }));
 			}
 

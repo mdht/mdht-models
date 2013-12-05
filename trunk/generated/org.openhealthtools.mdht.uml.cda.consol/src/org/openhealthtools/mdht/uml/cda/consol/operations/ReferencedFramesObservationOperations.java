@@ -105,10 +105,9 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 			referencedFramesObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationTemplateId"),
 					new Object[] { referencedFramesObservation }));
 			}
 
@@ -168,7 +167,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationClassCode"),
 					new Object[] { referencedFramesObservation }));
 			}
 
@@ -228,7 +227,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationMoodCode"),
 					new Object[] { referencedFramesObservation }));
 			}
 
@@ -290,7 +289,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationCode"),
+					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationCode"),
 					new Object[] { referencedFramesObservation }));
 			}
 
@@ -349,10 +348,9 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 			referencedFramesObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationBoundaryObservation"),
+					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationBoundaryObservation"),
 					new Object[] { referencedFramesObservation }));
 			}
 

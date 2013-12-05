@@ -102,7 +102,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REASON_FOR_REFERRAL_SECTION__REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionReasonForReferralSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionTemplateId"),
 					new Object[] { reasonForReferralSection }));
 			}
 
@@ -163,7 +163,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REASON_FOR_REFERRAL_SECTION__REASON_FOR_REFERRAL_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionReasonForReferralSectionCode"),
+					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionCode"),
 					new Object[] { reasonForReferralSection }));
 			}
 
@@ -222,7 +222,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REASON_FOR_REFERRAL_SECTION__REASON_FOR_REFERRAL_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionReasonForReferralSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionCodeP"),
 					new Object[] { reasonForReferralSection }));
 			}
 
@@ -281,7 +281,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REASON_FOR_REFERRAL_SECTION__REASON_FOR_REFERRAL_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionReasonForReferralSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionTitle"),
 					new Object[] { reasonForReferralSection }));
 			}
 
@@ -340,7 +340,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REASON_FOR_REFERRAL_SECTION__REASON_FOR_REFERRAL_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionReasonForReferralSectionText"),
+					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionText"),
 					new Object[] { reasonForReferralSection }));
 			}
 

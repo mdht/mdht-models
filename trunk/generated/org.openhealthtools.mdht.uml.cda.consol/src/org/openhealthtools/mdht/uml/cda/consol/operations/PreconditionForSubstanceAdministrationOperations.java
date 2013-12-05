@@ -105,7 +105,7 @@ public class PreconditionForSubstanceAdministrationOperations extends Preconditi
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_CODE,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationPreconditionForSubstanceAdministrationCriterionCode"),
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationCriterionCode"),
 					new Object[] { preconditionForSubstanceAdministration }));
 			}
 
@@ -167,7 +167,7 @@ public class PreconditionForSubstanceAdministrationOperations extends Preconditi
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_TEXT,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationPreconditionForSubstanceAdministrationCriterionText"),
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationCriterionText"),
 					new Object[] { preconditionForSubstanceAdministration }));
 			}
 
@@ -229,7 +229,7 @@ public class PreconditionForSubstanceAdministrationOperations extends Preconditi
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION_VALUE,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationPreconditionForSubstanceAdministrationCriterionValue"),
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationCriterionValue"),
 					new Object[] { preconditionForSubstanceAdministration }));
 			}
 
@@ -291,7 +291,7 @@ public class PreconditionForSubstanceAdministrationOperations extends Preconditi
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationPreconditionForSubstanceAdministrationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationTemplateId"),
 					new Object[] { preconditionForSubstanceAdministration }));
 			}
 
@@ -353,7 +353,7 @@ public class PreconditionForSubstanceAdministrationOperations extends Preconditi
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CRITERION,
-					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationPreconditionForSubstanceAdministrationCriterion"),
+					ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministrationCriterion"),
 					new Object[] { preconditionForSubstanceAdministration }));
 			}
 

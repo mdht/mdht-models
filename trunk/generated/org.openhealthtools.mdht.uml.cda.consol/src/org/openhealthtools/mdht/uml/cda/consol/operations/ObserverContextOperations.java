@@ -95,8 +95,7 @@ public class ObserverContextOperations extends AuthorOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OBSERVER_CONTEXT__OBSERVER_CONTEXT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ObserverContextObserverContextTemplateId"),
-					new Object[] { observerContext }));
+					ConsolPlugin.INSTANCE.getString("ObserverContextTemplateId"), new Object[] { observerContext }));
 			}
 
 			return false;
@@ -154,8 +153,7 @@ public class ObserverContextOperations extends AuthorOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OBSERVER_CONTEXT__OBSERVER_CONTEXT_ASSIGNED_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("ObserverContextObserverContextAssignedAuthor"),
-					new Object[] { observerContext }));
+					ConsolPlugin.INSTANCE.getString("ObserverContextAssignedAuthor"), new Object[] { observerContext }));
 			}
 
 			return false;

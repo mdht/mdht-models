@@ -109,7 +109,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTPROCEDURE_DIAGNOSIS__POSTPROCEDURE_DIAGNOSIS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisPostprocedureDiagnosisTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisTemplateId"),
 					new Object[] { postprocedureDiagnosis }));
 			}
 
@@ -168,7 +168,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTPROCEDURE_DIAGNOSIS__POSTPROCEDURE_DIAGNOSIS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisPostprocedureDiagnosisClassCode"),
+					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisClassCode"),
 					new Object[] { postprocedureDiagnosis }));
 			}
 
@@ -227,7 +227,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTPROCEDURE_DIAGNOSIS__POSTPROCEDURE_DIAGNOSIS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisPostprocedureDiagnosisMoodCode"),
+					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisMoodCode"),
 					new Object[] { postprocedureDiagnosis }));
 			}
 
@@ -288,7 +288,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTPROCEDURE_DIAGNOSIS__POSTPROCEDURE_DIAGNOSIS_CODE,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisPostprocedureDiagnosisCode"),
+					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisCode"),
 					new Object[] { postprocedureDiagnosis }));
 			}
 
@@ -347,7 +347,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.POSTPROCEDURE_DIAGNOSIS__POSTPROCEDURE_DIAGNOSIS_PROBLEM_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisPostprocedureDiagnosisProblemObservation"),
+					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisProblemObservation"),
 					new Object[] { postprocedureDiagnosis }));
 			}
 

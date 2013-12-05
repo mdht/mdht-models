@@ -110,7 +110,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosisSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionTemplateId"),
 					new Object[] { hospitalAdmissionDiagnosisSection }));
 			}
 
@@ -170,10 +170,9 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 			hospitalAdmissionDiagnosisSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosisSectionCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionCode"),
 					new Object[] { hospitalAdmissionDiagnosisSection }));
 			}
 
@@ -231,10 +230,9 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 			hospitalAdmissionDiagnosisSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosisSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionCodeP"),
 					new Object[] { hospitalAdmissionDiagnosisSection }));
 			}
 
@@ -292,10 +290,9 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 			hospitalAdmissionDiagnosisSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosisSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionTitle"),
 					new Object[] { hospitalAdmissionDiagnosisSection }));
 			}
 
@@ -353,10 +350,9 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 			hospitalAdmissionDiagnosisSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosisSectionText"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionText"),
 					new Object[] { hospitalAdmissionDiagnosisSection }));
 			}
 
@@ -418,7 +414,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_HOSPITAL_ADMISSION_DIAGNOSIS,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis"),
 					new Object[] { hospitalAdmissionDiagnosisSection }));
 			}
 

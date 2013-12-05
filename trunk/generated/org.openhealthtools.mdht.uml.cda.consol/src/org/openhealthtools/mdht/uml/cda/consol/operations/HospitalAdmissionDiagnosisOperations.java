@@ -110,7 +110,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisTemplateId"),
 					new Object[] { hospitalAdmissionDiagnosis }));
 			}
 
@@ -170,7 +170,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisClassCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisClassCode"),
 					new Object[] { hospitalAdmissionDiagnosis }));
 			}
 
@@ -231,7 +231,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisCode"),
 					new Object[] { hospitalAdmissionDiagnosis }));
 			}
 
@@ -291,7 +291,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisMoodCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisMoodCode"),
 					new Object[] { hospitalAdmissionDiagnosis }));
 			}
 
@@ -350,10 +350,9 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 			hospitalAdmissionDiagnosis)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisProblemObservation"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisProblemObservation"),
 					new Object[] { hospitalAdmissionDiagnosis }));
 			}
 

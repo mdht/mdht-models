@@ -101,7 +101,7 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_EFFECTIVE_TIME_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextEffectiveTimeValue"),
+					ConsolPlugin.INSTANCE.getString("ProcedureContextEffectiveTimeValue"),
 					new Object[] { procedureContext }));
 			}
 
@@ -160,8 +160,7 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextTemplateId"),
-					new Object[] { procedureContext }));
+					ConsolPlugin.INSTANCE.getString("ProcedureContextTemplateId"), new Object[] { procedureContext }));
 			}
 
 			return false;
@@ -219,8 +218,7 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextCode"),
-					new Object[] { procedureContext }));
+					ConsolPlugin.INSTANCE.getString("ProcedureContextCode"), new Object[] { procedureContext }));
 			}
 
 			return false;
@@ -278,8 +276,7 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextEffectiveTime"),
-					new Object[] { procedureContext }));
+					ConsolPlugin.INSTANCE.getString("ProcedureContextEffectiveTime"), new Object[] { procedureContext }));
 			}
 
 			return false;

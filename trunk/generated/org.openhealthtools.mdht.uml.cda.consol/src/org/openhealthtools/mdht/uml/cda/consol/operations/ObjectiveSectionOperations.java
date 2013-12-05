@@ -102,8 +102,7 @@ public class ObjectiveSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ObjectiveSectionObjectiveSectionTemplateId"),
-					new Object[] { objectiveSection }));
+					ConsolPlugin.INSTANCE.getString("ObjectiveSectionTemplateId"), new Object[] { objectiveSection }));
 			}
 
 			return false;
@@ -163,8 +162,7 @@ public class ObjectiveSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ObjectiveSectionObjectiveSectionCode"),
-					new Object[] { objectiveSection }));
+					ConsolPlugin.INSTANCE.getString("ObjectiveSectionCode"), new Object[] { objectiveSection }));
 			}
 
 			return false;
@@ -222,8 +220,7 @@ public class ObjectiveSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ObjectiveSectionObjectiveSectionCodeP"),
-					new Object[] { objectiveSection }));
+					ConsolPlugin.INSTANCE.getString("ObjectiveSectionCodeP"), new Object[] { objectiveSection }));
 			}
 
 			return false;
@@ -281,8 +278,7 @@ public class ObjectiveSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ObjectiveSectionObjectiveSectionText"),
-					new Object[] { objectiveSection }));
+					ConsolPlugin.INSTANCE.getString("ObjectiveSectionText"), new Object[] { objectiveSection }));
 			}
 
 			return false;
@@ -340,8 +336,7 @@ public class ObjectiveSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OBJECTIVE_SECTION__OBJECTIVE_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ObjectiveSectionObjectiveSectionTitle"),
-					new Object[] { objectiveSection }));
+					ConsolPlugin.INSTANCE.getString("ObjectiveSectionTitle"), new Object[] { objectiveSection }));
 			}
 
 			return false;

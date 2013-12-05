@@ -103,10 +103,9 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 			purposeofReferenceObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_CODE_CODE_SYSTEM,
-					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationPurposeofReferenceObservationCodeCodeSystem"),
+					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationCodeCodeSystem"),
 					new Object[] { purposeofReferenceObservation }));
 			}
 
@@ -164,10 +163,9 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 			purposeofReferenceObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationPurposeofReferenceObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationTemplateId"),
 					new Object[] { purposeofReferenceObservation }));
 			}
 
@@ -225,10 +223,9 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 			purposeofReferenceObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationPurposeofReferenceObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationClassCode"),
 					new Object[] { purposeofReferenceObservation }));
 			}
 
@@ -288,7 +285,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationPurposeofReferenceObservationCode"),
+					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationCode"),
 					new Object[] { purposeofReferenceObservation }));
 			}
 
@@ -346,10 +343,9 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 			purposeofReferenceObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationPurposeofReferenceObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationMoodCode"),
 					new Object[] { purposeofReferenceObservation }));
 			}
 
@@ -411,7 +407,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationPurposeofReferenceObservationValue"),
+					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationValue"),
 					new Object[] { purposeofReferenceObservation }));
 			}
 

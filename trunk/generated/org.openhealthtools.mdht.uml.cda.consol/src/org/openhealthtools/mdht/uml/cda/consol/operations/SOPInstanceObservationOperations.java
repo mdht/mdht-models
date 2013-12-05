@@ -123,10 +123,9 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			sopInstanceObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME_HAS_VALUE,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationEffectiveTimeHasValue"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationEffectiveTimeHasValue"),
 					new Object[] { sopInstanceObservation }));
 			}
 
@@ -186,7 +185,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME_NO_LOW,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationEffectiveTimeNoLow"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationEffectiveTimeNoLow"),
 					new Object[] { sopInstanceObservation }));
 			}
 
@@ -246,7 +245,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME_NO_HIGH,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationEffectiveTimeNoHigh"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationEffectiveTimeNoHigh"),
 					new Object[] { sopInstanceObservation }));
 			}
 
@@ -305,7 +304,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_TEXT_MEDIA_TYPE,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationTextMediaType"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationTextMediaType"),
 					new Object[] { sopInstanceObservation }));
 			}
 
@@ -364,7 +363,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationTextReference"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationTextReference"),
 					new Object[] { sopInstanceObservation }));
 			}
 
@@ -424,7 +423,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationTextReferenceValue"),
 					new Object[] { sopInstanceObservation }));
 			}
 
@@ -483,7 +482,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationTemplateId"),
 					new Object[] { sopInstanceObservation }));
 			}
 
@@ -542,7 +541,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationClassCode"),
 					new Object[] { sopInstanceObservation }));
 			}
 
@@ -601,7 +600,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationEffectiveTime"),
 					new Object[] { sopInstanceObservation }));
 			}
 
@@ -660,7 +659,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationId"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationId"),
 					new Object[] { sopInstanceObservation }));
 			}
 
@@ -719,7 +718,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationMoodCode"),
 					new Object[] { sopInstanceObservation }));
 			}
 
@@ -778,7 +777,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationText"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationText"),
 					new Object[] { sopInstanceObservation }));
 			}
 
@@ -837,7 +836,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationCodeP"),
 					new Object[] { sopInstanceObservation }));
 			}
 
@@ -918,7 +917,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationCode"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationCode"),
 					new Object[] { sopInstanceObservation }));
 			}
 
@@ -977,8 +976,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservation"),
-					new Object[] { sopInstanceObservation }));
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservation"), new Object[] { sopInstanceObservation }));
 			}
 
 			return false;
@@ -1035,10 +1033,9 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			sopInstanceObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationPurposeofReferenceObservation"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationPurposeofReferenceObservation"),
 					new Object[] { sopInstanceObservation }));
 			}
 
@@ -1096,10 +1093,9 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			sopInstanceObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservationReferencedFramesObservation"),
+					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationReferencedFramesObservation"),
 					new Object[] { sopInstanceObservation }));
 			}
 

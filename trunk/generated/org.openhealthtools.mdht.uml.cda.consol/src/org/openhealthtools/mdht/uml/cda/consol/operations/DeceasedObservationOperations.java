@@ -111,7 +111,7 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION__DECEASED_OBSERVATION_EFFECTIVE_TIME_LOW,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationDeceasedObservationEffectiveTimeLow"),
+					ConsolPlugin.INSTANCE.getString("DeceasedObservationEffectiveTimeLow"),
 					new Object[] { deceasedObservation }));
 			}
 
@@ -170,7 +170,7 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION__DECEASED_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationDeceasedObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("DeceasedObservationTemplateId"),
 					new Object[] { deceasedObservation }));
 			}
 
@@ -229,7 +229,7 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION__DECEASED_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationDeceasedObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("DeceasedObservationClassCode"),
 					new Object[] { deceasedObservation }));
 			}
 
@@ -288,7 +288,7 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION__DECEASED_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationDeceasedObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("DeceasedObservationMoodCode"),
 					new Object[] { deceasedObservation }));
 			}
 
@@ -347,8 +347,7 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION__DECEASED_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationDeceasedObservationId"),
-					new Object[] { deceasedObservation }));
+					ConsolPlugin.INSTANCE.getString("DeceasedObservationId"), new Object[] { deceasedObservation }));
 			}
 
 			return false;
@@ -406,8 +405,7 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION__DECEASED_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationDeceasedObservationCodeP"),
-					new Object[] { deceasedObservation }));
+					ConsolPlugin.INSTANCE.getString("DeceasedObservationCodeP"), new Object[] { deceasedObservation }));
 			}
 
 			if (context != null) {
@@ -487,8 +485,7 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION__DECEASED_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationDeceasedObservationCode"),
-					new Object[] { deceasedObservation }));
+					ConsolPlugin.INSTANCE.getString("DeceasedObservationCode"), new Object[] { deceasedObservation }));
 			}
 
 			return false;
@@ -547,7 +544,7 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION__DECEASED_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationDeceasedObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("DeceasedObservationStatusCode"),
 					new Object[] { deceasedObservation }));
 			}
 
@@ -606,7 +603,7 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION__DECEASED_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationDeceasedObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("DeceasedObservationStatusCodeP"),
 					new Object[] { deceasedObservation }));
 			}
 
@@ -665,7 +662,7 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION__DECEASED_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationDeceasedObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("DeceasedObservationEffectiveTime"),
 					new Object[] { deceasedObservation }));
 			}
 
@@ -726,8 +723,7 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION__DECEASED_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationDeceasedObservationValue"),
-					new Object[] { deceasedObservation }));
+					ConsolPlugin.INSTANCE.getString("DeceasedObservationValue"), new Object[] { deceasedObservation }));
 			}
 
 			return false;
@@ -785,8 +781,7 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION__DECEASED_OBSERVATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationDeceasedObservationValueP"),
-					new Object[] { deceasedObservation }));
+					ConsolPlugin.INSTANCE.getString("DeceasedObservationValueP"), new Object[] { deceasedObservation }));
 			}
 
 			return false;
@@ -844,7 +839,7 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DECEASED_OBSERVATION__DECEASED_OBSERVATION_PROBLEM_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("DeceasedObservationDeceasedObservationProblemObservation"),
+					ConsolPlugin.INSTANCE.getString("DeceasedObservationProblemObservation"),
 					new Object[] { deceasedObservation }));
 			}
 

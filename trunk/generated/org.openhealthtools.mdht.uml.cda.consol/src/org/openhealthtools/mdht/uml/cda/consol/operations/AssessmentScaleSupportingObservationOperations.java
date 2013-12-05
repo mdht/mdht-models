@@ -106,7 +106,7 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE_CODE_SYSTEM,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationAssessmentScaleSupportingObservationCodeCodeSystem"),
+					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationCodeCodeSystem"),
 					new Object[] { assessmentScaleSupportingObservation }));
 			}
 
@@ -168,7 +168,7 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE_TRANSLATION,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationAssessmentScaleSupportingObservationValueTranslation"),
+					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationValueTranslation"),
 					new Object[] { assessmentScaleSupportingObservation }));
 			}
 
@@ -230,7 +230,7 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationAssessmentScaleSupportingObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationTemplateId"),
 					new Object[] { assessmentScaleSupportingObservation }));
 			}
 
@@ -292,7 +292,7 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationAssessmentScaleSupportingObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationClassCode"),
 					new Object[] { assessmentScaleSupportingObservation }));
 			}
 
@@ -354,7 +354,7 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationAssessmentScaleSupportingObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationMoodCode"),
 					new Object[] { assessmentScaleSupportingObservation }));
 			}
 
@@ -415,7 +415,7 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationAssessmentScaleSupportingObservationCode"),
+					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationCode"),
 					new Object[] { assessmentScaleSupportingObservation }));
 			}
 
@@ -476,7 +476,7 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationAssessmentScaleSupportingObservationId"),
+					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationId"),
 					new Object[] { assessmentScaleSupportingObservation }));
 			}
 
@@ -539,7 +539,7 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationAssessmentScaleSupportingObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationStatusCode"),
 					new Object[] { assessmentScaleSupportingObservation }));
 			}
 
@@ -601,7 +601,7 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationAssessmentScaleSupportingObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationStatusCodeP"),
 					new Object[] { assessmentScaleSupportingObservation }));
 			}
 
@@ -663,7 +663,7 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationAssessmentScaleSupportingObservationValue"),
+					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationValue"),
 					new Object[] { assessmentScaleSupportingObservation }));
 			}
 

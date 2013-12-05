@@ -114,7 +114,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW,
-					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActEffectiveTimeLow"),
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActEffectiveTimeLow"),
 					new Object[] { allergyProblemAct }));
 			}
 
@@ -173,7 +173,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_HIGH,
-					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActEffectiveTimeHigh"),
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActEffectiveTimeHigh"),
 					new Object[] { allergyProblemAct }));
 			}
 
@@ -232,8 +232,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActTemplateId"),
-					new Object[] { allergyProblemAct }));
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActTemplateId"), new Object[] { allergyProblemAct }));
 			}
 
 			return false;
@@ -291,8 +290,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActClassCode"),
-					new Object[] { allergyProblemAct }));
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActClassCode"), new Object[] { allergyProblemAct }));
 			}
 
 			return false;
@@ -350,8 +348,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActMoodCode"),
-					new Object[] { allergyProblemAct }));
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActMoodCode"), new Object[] { allergyProblemAct }));
 			}
 
 			return false;
@@ -409,8 +406,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActId"),
-					new Object[] { allergyProblemAct }));
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActId"), new Object[] { allergyProblemAct }));
 			}
 
 			return false;
@@ -470,8 +466,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActCode"),
-					new Object[] { allergyProblemAct }));
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActCode"), new Object[] { allergyProblemAct }));
 			}
 
 			return false;
@@ -531,8 +526,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActStatusCode"),
-					new Object[] { allergyProblemAct }));
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActStatusCode"), new Object[] { allergyProblemAct }));
 			}
 
 			return false;
@@ -590,7 +584,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActEffectiveTime"),
 					new Object[] { allergyProblemAct }));
 			}
 
@@ -649,7 +643,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActAllergyObservation"),
+					ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyObservation"),
 					new Object[] { allergyProblemAct }));
 			}
 

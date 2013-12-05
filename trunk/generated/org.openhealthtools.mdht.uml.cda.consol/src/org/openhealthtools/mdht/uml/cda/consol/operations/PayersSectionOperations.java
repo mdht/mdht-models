@@ -110,8 +110,7 @@ public class PayersSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PayersSectionPayersSectionTemplateId"),
-					new Object[] { payersSection }));
+					ConsolPlugin.INSTANCE.getString("PayersSectionTemplateId"), new Object[] { payersSection }));
 			}
 
 			return false;
@@ -170,7 +169,7 @@ public class PayersSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PayersSectionPayersSectionCode"), new Object[] { payersSection }));
+					ConsolPlugin.INSTANCE.getString("PayersSectionCode"), new Object[] { payersSection }));
 			}
 
 			return false;
@@ -227,7 +226,7 @@ public class PayersSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PayersSectionPayersSectionCodeP"), new Object[] { payersSection }));
+					ConsolPlugin.INSTANCE.getString("PayersSectionCodeP"), new Object[] { payersSection }));
 			}
 
 			return false;
@@ -284,7 +283,7 @@ public class PayersSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("PayersSectionPayersSectionTitle"), new Object[] { payersSection }));
+					ConsolPlugin.INSTANCE.getString("PayersSectionTitle"), new Object[] { payersSection }));
 			}
 
 			return false;
@@ -341,7 +340,7 @@ public class PayersSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("PayersSectionPayersSectionText"), new Object[] { payersSection }));
+					ConsolPlugin.INSTANCE.getString("PayersSectionText"), new Object[] { payersSection }));
 			}
 
 			return false;
@@ -399,8 +398,7 @@ public class PayersSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_COVERAGE_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("PayersSectionPayersSectionCoverageActivity"),
-					new Object[] { payersSection }));
+					ConsolPlugin.INSTANCE.getString("PayersSectionCoverageActivity"), new Object[] { payersSection }));
 			}
 
 			return false;

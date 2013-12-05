@@ -102,7 +102,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionReasonForVisitSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionTemplateId"),
 					new Object[] { reasonForVisitSection }));
 			}
 
@@ -163,7 +163,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionReasonForVisitSectionCode"),
+					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionCode"),
 					new Object[] { reasonForVisitSection }));
 			}
 
@@ -222,7 +222,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionReasonForVisitSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionCodeP"),
 					new Object[] { reasonForVisitSection }));
 			}
 
@@ -281,7 +281,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionReasonForVisitSectionText"),
+					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionText"),
 					new Object[] { reasonForVisitSection }));
 			}
 
@@ -340,7 +340,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionReasonForVisitSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionTitle"),
 					new Object[] { reasonForVisitSection }));
 			}
 

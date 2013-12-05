@@ -167,7 +167,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections"),
+					ConsolPlugin.INSTANCE.getString("ProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections"),
 					new Object[] { progressNote }));
 			}
 
@@ -228,7 +228,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent"),
+					ConsolPlugin.INSTANCE.getString("ProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent"),
 					new Object[] { progressNote }));
 			}
 
@@ -287,8 +287,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteTemplateId"),
-					new Object[] { progressNote }));
+					ConsolPlugin.INSTANCE.getString("ProgressNoteTemplateId"), new Object[] { progressNote }));
 			}
 
 			return false;
@@ -346,8 +345,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteGeneralHeaderConstraintsCodeP"),
-					new Object[] { progressNote }));
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCodeP"), new Object[] { progressNote }));
 			}
 
 			if (context != null) {
@@ -417,8 +415,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteDocumentationOf"),
-					new Object[] { progressNote }));
+					ConsolPlugin.INSTANCE.getString("ProgressNoteDocumentationOf"), new Object[] { progressNote }));
 			}
 
 			return false;
@@ -476,8 +473,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteComponentOf"),
-					new Object[] { progressNote }));
+					ConsolPlugin.INSTANCE.getString("ProgressNoteComponentOf"), new Object[] { progressNote }));
 			}
 
 			return false;
@@ -535,8 +531,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_ASSESSMENT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteAssessmentSection"),
-					new Object[] { progressNote }));
+					ConsolPlugin.INSTANCE.getString("ProgressNoteAssessmentSection"), new Object[] { progressNote }));
 			}
 
 			return false;
@@ -594,8 +589,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_PLAN_OF_CARE_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNotePlanOfCareSection"),
-					new Object[] { progressNote }));
+					ConsolPlugin.INSTANCE.getString("ProgressNotePlanOfCareSection"), new Object[] { progressNote }));
 			}
 
 			return false;
@@ -653,7 +647,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_ASSESSMENT_AND_PLAN_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteAssessmentAndPlanSection"),
+					ConsolPlugin.INSTANCE.getString("ProgressNoteAssessmentAndPlanSection"),
 					new Object[] { progressNote }));
 			}
 
@@ -713,7 +707,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteAllergiesSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("ProgressNoteAllergiesSectionEntriesOptional"),
 					new Object[] { progressNote }));
 			}
 
@@ -772,8 +766,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_CHIEF_COMPLAINT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteChiefComplaintSection"),
-					new Object[] { progressNote }));
+					ConsolPlugin.INSTANCE.getString("ProgressNoteChiefComplaintSection"), new Object[] { progressNote }));
 			}
 
 			return false;
@@ -831,8 +824,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_INTERVENTIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteInterventionsSection"),
-					new Object[] { progressNote }));
+					ConsolPlugin.INSTANCE.getString("ProgressNoteInterventionsSection"), new Object[] { progressNote }));
 			}
 
 			return false;
@@ -891,7 +883,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteMedicationsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("ProgressNoteMedicationsSectionEntriesOptional"),
 					new Object[] { progressNote }));
 			}
 
@@ -950,8 +942,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_OBJECTIVE_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteObjectiveSection"),
-					new Object[] { progressNote }));
+					ConsolPlugin.INSTANCE.getString("ProgressNoteObjectiveSection"), new Object[] { progressNote }));
 			}
 
 			return false;
@@ -1009,8 +1000,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_PHYSICAL_EXAM_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNotePhysicalExamSection"),
-					new Object[] { progressNote }));
+					ConsolPlugin.INSTANCE.getString("ProgressNotePhysicalExamSection"), new Object[] { progressNote }));
 			}
 
 			return false;
@@ -1068,7 +1058,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteProblemSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("ProgressNoteProblemSectionEntriesOptional"),
 					new Object[] { progressNote }));
 			}
 
@@ -1127,7 +1117,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteResultsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("ProgressNoteResultsSectionEntriesOptional"),
 					new Object[] { progressNote }));
 			}
 
@@ -1186,7 +1176,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_REVIEW_OF_SYSTEMS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteReviewOfSystemsSection"),
+					ConsolPlugin.INSTANCE.getString("ProgressNoteReviewOfSystemsSection"),
 					new Object[] { progressNote }));
 			}
 
@@ -1245,8 +1235,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_SUBJECTIVE_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteSubjectiveSection"),
-					new Object[] { progressNote }));
+					ConsolPlugin.INSTANCE.getString("ProgressNoteSubjectiveSection"), new Object[] { progressNote }));
 			}
 
 			return false;
@@ -1305,7 +1294,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteVitalSignsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("ProgressNoteVitalSignsSectionEntriesOptional"),
 					new Object[] { progressNote }));
 			}
 
@@ -1364,8 +1353,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_INSTRUCTIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteInstructionsSection"),
-					new Object[] { progressNote }));
+					ConsolPlugin.INSTANCE.getString("ProgressNoteInstructionsSection"), new Object[] { progressNote }));
 			}
 
 			return false;
@@ -2821,8 +2809,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteGeneralHeaderConstraintsCode"),
-					new Object[] { progressNote }));
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"), new Object[] { progressNote }));
 			}
 
 			return false;

@@ -130,7 +130,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationHasTextReference"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationHasTextReference"),
 					new Object[] { problemObservation }));
 			}
 
@@ -189,7 +189,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationTextReferenceValue"),
 					new Object[] { problemObservation }));
 			}
 
@@ -248,7 +248,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationHasTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationHasTextReferenceValue"),
 					new Object[] { problemObservation }));
 			}
 
@@ -307,7 +307,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_ONSET_DATE,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationHasOnsetDate"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationHasOnsetDate"),
 					new Object[] { problemObservation }));
 			}
 
@@ -366,7 +366,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationHasResolutionDate"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationHasResolutionDate"),
 					new Object[] { problemObservation }));
 			}
 
@@ -425,7 +425,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationValueNullFlavor"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationValueNullFlavor"),
 					new Object[] { problemObservation }));
 			}
 
@@ -485,7 +485,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_AGE_OBSERVATION_INVERSION,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationAgeObservationInversion"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationAgeObservationInversion"),
 					new Object[] { problemObservation }));
 			}
 
@@ -544,7 +544,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_TRANSLATION,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationValueTranslation"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationValueTranslation"),
 					new Object[] { problemObservation }));
 			}
 
@@ -603,7 +603,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_TRANSLATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationValueTranslationCode"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationValueTranslationCode"),
 					new Object[] { problemObservation }));
 			}
 
@@ -662,7 +662,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationTemplateId"),
 					new Object[] { problemObservation }));
 			}
 
@@ -721,8 +721,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationClassCode"),
-					new Object[] { problemObservation }));
+					ConsolPlugin.INSTANCE.getString("ProblemObservationClassCode"), new Object[] { problemObservation }));
 			}
 
 			return false;
@@ -780,8 +779,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationMoodCode"),
-					new Object[] { problemObservation }));
+					ConsolPlugin.INSTANCE.getString("ProblemObservationMoodCode"), new Object[] { problemObservation }));
 			}
 
 			return false;
@@ -839,7 +837,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_NEGATION_IND,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationNegationInd"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationNegationInd"),
 					new Object[] { problemObservation }));
 			}
 
@@ -898,8 +896,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationId"),
-					new Object[] { problemObservation }));
+					ConsolPlugin.INSTANCE.getString("ProblemObservationId"), new Object[] { problemObservation }));
 			}
 
 			return false;
@@ -957,8 +954,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationCodeP"),
-					new Object[] { problemObservation }));
+					ConsolPlugin.INSTANCE.getString("ProblemObservationCodeP"), new Object[] { problemObservation }));
 			}
 
 			if (context != null) {
@@ -1038,8 +1034,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationCode"),
-					new Object[] { problemObservation }));
+					ConsolPlugin.INSTANCE.getString("ProblemObservationCode"), new Object[] { problemObservation }));
 			}
 
 			return false;
@@ -1097,8 +1092,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationText"),
-					new Object[] { problemObservation }));
+					ConsolPlugin.INSTANCE.getString("ProblemObservationText"), new Object[] { problemObservation }));
 			}
 
 			return false;
@@ -1157,7 +1151,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationStatusCode"),
 					new Object[] { problemObservation }));
 			}
 
@@ -1216,7 +1210,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationEffectiveTime"),
 					new Object[] { problemObservation }));
 			}
 
@@ -1277,8 +1271,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationValue"),
-					new Object[] { problemObservation }));
+					ConsolPlugin.INSTANCE.getString("ProblemObservationValue"), new Object[] { problemObservation }));
 			}
 
 			return false;
@@ -1336,8 +1329,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationValueP"),
-					new Object[] { problemObservation }));
+					ConsolPlugin.INSTANCE.getString("ProblemObservationValueP"), new Object[] { problemObservation }));
 			}
 
 			return false;
@@ -1395,7 +1387,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_AGE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationAgeObservation"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationAgeObservation"),
 					new Object[] { problemObservation }));
 			}
 
@@ -1455,7 +1447,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HEALTH_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationHealthStatusObservation"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationHealthStatusObservation"),
 					new Object[] { problemObservation }));
 			}
 
@@ -1514,7 +1506,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_PROBLEM_STATUS,
-					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemObservationProblemStatus"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationProblemStatus"),
 					new Object[] { problemObservation }));
 			}
 

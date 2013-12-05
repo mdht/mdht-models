@@ -109,10 +109,9 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 			resultsSectionEntriesOptional)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalResultsSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalTemplateId"),
 					new Object[] { resultsSectionEntriesOptional }));
 			}
 
@@ -174,7 +173,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalResultsSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalCode"),
 					new Object[] { resultsSectionEntriesOptional }));
 			}
 
@@ -234,7 +233,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalResultsSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalCodeP"),
 					new Object[] { resultsSectionEntriesOptional }));
 			}
 
@@ -294,7 +293,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_TITLE,
-					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalResultsSectionEntriesOptionalTitle"),
+					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalTitle"),
 					new Object[] { resultsSectionEntriesOptional }));
 			}
 
@@ -354,7 +353,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_TEXT,
-					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalResultsSectionEntriesOptionalText"),
+					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalText"),
 					new Object[] { resultsSectionEntriesOptional }));
 			}
 
@@ -416,7 +415,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL__RESULTS_SECTION_ENTRIES_OPTIONAL_RESULT_ORGANIZER,
-					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalResultsSectionEntriesOptionalResultOrganizer"),
+					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalResultOrganizer"),
 					new Object[] { resultsSectionEntriesOptional }));
 			}
 

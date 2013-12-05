@@ -110,7 +110,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionTemplateId"),
 					new Object[] { plannedProcedureSection }));
 			}
 
@@ -171,7 +171,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionCode"),
+					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionCode"),
 					new Object[] { plannedProcedureSection }));
 			}
 
@@ -230,7 +230,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionCodeP"),
 					new Object[] { plannedProcedureSection }));
 			}
 
@@ -289,7 +289,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionText"),
+					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionText"),
 					new Object[] { plannedProcedureSection }));
 			}
 
@@ -348,7 +348,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionTitle"),
 					new Object[] { plannedProcedureSection }));
 			}
 
@@ -409,7 +409,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionPlanOfCareActivityProcedure"),
+					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlanOfCareActivityProcedure"),
 					new Object[] { plannedProcedureSection }));
 			}
 

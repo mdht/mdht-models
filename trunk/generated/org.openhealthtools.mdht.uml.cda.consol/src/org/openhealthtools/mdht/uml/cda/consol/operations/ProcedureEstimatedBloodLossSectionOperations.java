@@ -105,7 +105,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionProcedureEstimatedBloodLossSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionTemplateId"),
 					new Object[] { procedureEstimatedBloodLossSection }));
 			}
 
@@ -168,7 +168,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionProcedureEstimatedBloodLossSectionCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionCode"),
 					new Object[] { procedureEstimatedBloodLossSection }));
 			}
 
@@ -230,7 +230,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionProcedureEstimatedBloodLossSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionCodeP"),
 					new Object[] { procedureEstimatedBloodLossSection }));
 			}
 
@@ -291,7 +291,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionProcedureEstimatedBloodLossSectionText"),
+					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionText"),
 					new Object[] { procedureEstimatedBloodLossSection }));
 			}
 
@@ -352,7 +352,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionProcedureEstimatedBloodLossSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionTitle"),
 					new Object[] { procedureEstimatedBloodLossSection }));
 			}
 

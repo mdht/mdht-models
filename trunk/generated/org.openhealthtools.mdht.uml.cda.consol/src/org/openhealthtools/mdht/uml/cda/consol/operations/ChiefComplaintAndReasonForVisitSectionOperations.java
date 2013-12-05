@@ -105,7 +105,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionChiefComplaintAndReasonForVisitSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionTemplateId"),
 					new Object[] { chiefComplaintAndReasonForVisitSection }));
 			}
 
@@ -169,7 +169,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionChiefComplaintAndReasonForVisitSectionCode"),
+					ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionCode"),
 					new Object[] { chiefComplaintAndReasonForVisitSection }));
 			}
 
@@ -231,7 +231,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionChiefComplaintAndReasonForVisitSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionCodeP"),
 					new Object[] { chiefComplaintAndReasonForVisitSection }));
 			}
 
@@ -293,7 +293,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionChiefComplaintAndReasonForVisitSectionText"),
+					ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionText"),
 					new Object[] { chiefComplaintAndReasonForVisitSection }));
 			}
 
@@ -355,7 +355,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionChiefComplaintAndReasonForVisitSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("ChiefComplaintAndReasonForVisitSectionTitle"),
 					new Object[] { chiefComplaintAndReasonForVisitSection }));
 			}
 

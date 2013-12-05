@@ -126,8 +126,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityTextReference"),
-					new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityTextReference"), new Object[] { commentActivity }));
 			}
 
 			return false;
@@ -185,7 +184,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("CommentActivityTextReferenceValue"),
 					new Object[] { commentActivity }));
 			}
 
@@ -244,8 +243,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityReferenceValue"),
-					new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityReferenceValue"), new Object[] { commentActivity }));
 			}
 
 			return false;
@@ -303,8 +301,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityTemplateId"),
-					new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityTemplateId"), new Object[] { commentActivity }));
 			}
 
 			return false;
@@ -362,8 +359,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityClassCode"),
-					new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityClassCode"), new Object[] { commentActivity }));
 			}
 
 			return false;
@@ -421,8 +417,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityMoodCode"),
-					new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityMoodCode"), new Object[] { commentActivity }));
 			}
 
 			return false;
@@ -481,8 +476,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_CODE,
-					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityCode"),
-					new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityCode"), new Object[] { commentActivity }));
 			}
 
 			return false;
@@ -539,8 +533,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEXT,
-					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityText"),
-					new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityText"), new Object[] { commentActivity }));
 			}
 
 			return false;
@@ -598,8 +591,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthor"),
-					new Object[] { commentActivity }));
+					ConsolPlugin.INSTANCE.getString("CommentActivityAuthor"), new Object[] { commentActivity }));
 			}
 
 			return false;

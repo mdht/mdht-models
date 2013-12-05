@@ -110,7 +110,7 @@ public class InstructionsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS_SECTION__INSTRUCTIONS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("InstructionsSectionInstructionsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("InstructionsSectionTemplateId"),
 					new Object[] { instructionsSection }));
 			}
 
@@ -171,8 +171,7 @@ public class InstructionsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS_SECTION__INSTRUCTIONS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("InstructionsSectionInstructionsSectionCode"),
-					new Object[] { instructionsSection }));
+					ConsolPlugin.INSTANCE.getString("InstructionsSectionCode"), new Object[] { instructionsSection }));
 			}
 
 			return false;
@@ -230,8 +229,7 @@ public class InstructionsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS_SECTION__INSTRUCTIONS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("InstructionsSectionInstructionsSectionCodeP"),
-					new Object[] { instructionsSection }));
+					ConsolPlugin.INSTANCE.getString("InstructionsSectionCodeP"), new Object[] { instructionsSection }));
 			}
 
 			return false;
@@ -289,8 +287,7 @@ public class InstructionsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS_SECTION__INSTRUCTIONS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("InstructionsSectionInstructionsSectionText"),
-					new Object[] { instructionsSection }));
+					ConsolPlugin.INSTANCE.getString("InstructionsSectionText"), new Object[] { instructionsSection }));
 			}
 
 			return false;
@@ -348,8 +345,7 @@ public class InstructionsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS_SECTION__INSTRUCTIONS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("InstructionsSectionInstructionsSectionTitle"),
-					new Object[] { instructionsSection }));
+					ConsolPlugin.INSTANCE.getString("InstructionsSectionTitle"), new Object[] { instructionsSection }));
 			}
 
 			return false;
@@ -407,7 +403,7 @@ public class InstructionsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INSTRUCTIONS_SECTION__INSTRUCTIONS_SECTION_INSTRUCTIONS,
-					ConsolPlugin.INSTANCE.getString("InstructionsSectionInstructionsSectionInstructions"),
+					ConsolPlugin.INSTANCE.getString("InstructionsSectionInstructions"),
 					new Object[] { instructionsSection }));
 			}
 

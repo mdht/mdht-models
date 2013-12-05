@@ -122,7 +122,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerTemplateId"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerTemplateId"),
 					new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -181,7 +181,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerClassCode"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerClassCode"),
 					new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -240,7 +240,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerMoodCode"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerMoodCode"),
 					new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -298,10 +298,9 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 			familyHistoryOrganizer)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerFamilyHistoryObservation"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryObservation"),
 					new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -360,7 +359,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerSubject"),
+					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerSubject"),
 					new Object[] { familyHistoryOrganizer }));
 			}
 
