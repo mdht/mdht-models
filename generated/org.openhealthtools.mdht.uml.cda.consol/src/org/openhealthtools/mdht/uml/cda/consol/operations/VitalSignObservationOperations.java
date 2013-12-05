@@ -115,7 +115,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationTextReference"),
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationTextReference"),
 					new Object[] { vitalSignObservation }));
 			}
 
@@ -174,7 +174,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationReferenceValue"),
 					new Object[] { vitalSignObservation }));
 			}
 
@@ -233,7 +233,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationTextReferenceValue"),
 					new Object[] { vitalSignObservation }));
 			}
 
@@ -292,7 +292,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationTemplateId"),
 					new Object[] { vitalSignObservation }));
 			}
 
@@ -351,7 +351,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationClassCode"),
 					new Object[] { vitalSignObservation }));
 			}
 
@@ -410,7 +410,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationMoodCode"),
 					new Object[] { vitalSignObservation }));
 			}
 
@@ -469,8 +469,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationId"),
-					new Object[] { vitalSignObservation }));
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationId"), new Object[] { vitalSignObservation }));
 			}
 
 			return false;
@@ -528,8 +527,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationCodeP"),
-					new Object[] { vitalSignObservation }));
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationCodeP"), new Object[] { vitalSignObservation }));
 			}
 
 			if (context != null) {
@@ -609,8 +607,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationCode"),
-					new Object[] { vitalSignObservation }));
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationCode"), new Object[] { vitalSignObservation }));
 			}
 
 			return false;
@@ -669,7 +666,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationStatusCode"),
 					new Object[] { vitalSignObservation }));
 			}
 
@@ -728,7 +725,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationEffectiveTime"),
 					new Object[] { vitalSignObservation }));
 			}
 
@@ -787,8 +784,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationValue"),
-					new Object[] { vitalSignObservation }));
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationValue"), new Object[] { vitalSignObservation }));
 			}
 
 			return false;
@@ -846,7 +842,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationInterpretationCode"),
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationInterpretationCode"),
 					new Object[] { vitalSignObservation }));
 			}
 
@@ -905,7 +901,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_METHOD_CODE,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationMethodCode"),
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationMethodCode"),
 					new Object[] { vitalSignObservation }));
 			}
 
@@ -964,7 +960,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_TARGET_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationTargetSiteCode"),
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationTargetSiteCode"),
 					new Object[] { vitalSignObservation }));
 			}
 
@@ -1023,8 +1019,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationText"),
-					new Object[] { vitalSignObservation }));
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationText"), new Object[] { vitalSignObservation }));
 			}
 
 			return false;
@@ -1082,7 +1077,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationAuthor"),
+					ConsolPlugin.INSTANCE.getString("VitalSignObservationAuthor"),
 					new Object[] { vitalSignObservation }));
 			}
 

@@ -126,7 +126,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationCognitiveStatusProblemObservationHasTextReference"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationHasTextReference"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -188,7 +188,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationCognitiveStatusProblemObservationHasTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationHasTextReferenceValue"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -250,7 +250,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_HAS_ONSET_DATE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationCognitiveStatusProblemObservationHasOnsetDate"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationHasOnsetDate"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -312,7 +312,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationCognitiveStatusProblemObservationHasResolutionDate"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationHasResolutionDate"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -374,7 +374,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_METHOD_CODE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationCognitiveStatusProblemObservationMethodCode"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationMethodCode"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -436,7 +436,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationCognitiveStatusProblemObservationNonMedicinalSupplyActivity"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationNonMedicinalSupplyActivity"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -498,7 +498,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_CAREGIVER_CHARACTERISTICS,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationCognitiveStatusProblemObservationCaregiverCharacteristics"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationCaregiverCharacteristics"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -560,7 +560,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationCognitiveStatusProblemObservationAssessmentScaleObservation"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationAssessmentScaleObservation"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -755,7 +755,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationTemplateId"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -815,7 +815,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationClassCode"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -875,7 +875,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationMoodCode"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -935,7 +935,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_NEGATION_IND,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationNegationInd"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationNegationInd"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -995,7 +995,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationId"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationId"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -1055,7 +1055,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationCodeP"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -1138,7 +1138,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationCode"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationCode"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -1198,7 +1198,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationText"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationText"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -1259,7 +1259,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationStatusCode"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -1317,10 +1317,9 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 			cognitiveStatusProblemObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationEffectiveTime"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -1380,7 +1379,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationValueP"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationValueP"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -1463,7 +1462,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationValue"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationValue"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 

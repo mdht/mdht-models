@@ -110,7 +110,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AuthorizationActivityTemplateId"),
 					new Object[] { authorizationActivity }));
 			}
 
@@ -169,7 +169,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityClassCode"),
+					ConsolPlugin.INSTANCE.getString("AuthorizationActivityClassCode"),
 					new Object[] { authorizationActivity }));
 			}
 
@@ -228,8 +228,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ID,
-					ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityId"),
-					new Object[] { authorizationActivity }));
+					ConsolPlugin.INSTANCE.getString("AuthorizationActivityId"), new Object[] { authorizationActivity }));
 			}
 
 			return false;
@@ -287,7 +286,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityMoodCode"),
+					ConsolPlugin.INSTANCE.getString("AuthorizationActivityMoodCode"),
 					new Object[] { authorizationActivity }));
 			}
 
@@ -346,7 +345,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityEntryRelationship"),
+					ConsolPlugin.INSTANCE.getString("AuthorizationActivityEntryRelationship"),
 					new Object[] { authorizationActivity }));
 			}
 

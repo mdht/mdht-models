@@ -116,7 +116,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_HAS_PROCEDURE_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionHasProcedureActivity"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionHasProcedureActivity"),
 					new Object[] { proceduresSection }));
 			}
 
@@ -175,8 +175,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionTitle"),
-					new Object[] { proceduresSection }));
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionTitle"), new Object[] { proceduresSection }));
 			}
 
 			return false;
@@ -235,7 +234,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionProcedureActivityProcedure"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionProcedureActivityProcedure"),
 					new Object[] { proceduresSection }));
 			}
 
@@ -295,7 +294,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionProcedureActivityObservation"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionProcedureActivityObservation"),
 					new Object[] { proceduresSection }));
 			}
 
@@ -354,7 +353,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_ACT,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionProcedureActivityAct"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionProcedureActivityAct"),
 					new Object[] { proceduresSection }));
 			}
 
@@ -548,7 +547,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalTemplateId"),
 					new Object[] { proceduresSection }));
 			}
 
@@ -607,7 +606,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalCodeP"),
 					new Object[] { proceduresSection }));
 			}
 
@@ -689,7 +688,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalCode"),
 					new Object[] { proceduresSection }));
 			}
 
@@ -748,7 +747,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionEntriesOptionalText"),
+					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalText"),
 					new Object[] { proceduresSection }));
 			}
 

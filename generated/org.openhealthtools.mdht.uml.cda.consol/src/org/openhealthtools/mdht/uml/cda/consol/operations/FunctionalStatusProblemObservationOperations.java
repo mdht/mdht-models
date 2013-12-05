@@ -128,7 +128,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationFunctionalStatusProblemObservationHasTextReference"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationHasTextReference"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -190,7 +190,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationFunctionalStatusProblemObservationTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationTextReferenceValue"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -252,7 +252,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationFunctionalStatusProblemObservationHasTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationHasTextReferenceValue"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -314,7 +314,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_HAS_ONSET_DATE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationFunctionalStatusProblemObservationHasOnsetDate"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationHasOnsetDate"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -376,7 +376,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationFunctionalStatusProblemObservationHasResolutionDate"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationHasResolutionDate"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -438,7 +438,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationFunctionalStatusProblemObservationValueNullFlavor"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationValueNullFlavor"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -500,7 +500,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_METHOD_CODE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationFunctionalStatusProblemObservationMethodCode"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationMethodCode"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -562,7 +562,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationFunctionalStatusProblemObservationNonMedicinalSupplyActivity"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationNonMedicinalSupplyActivity"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -624,7 +624,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_CAREGIVER_CHARACTERISTICS,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationFunctionalStatusProblemObservationCaregiverCharacteristics"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationCaregiverCharacteristics"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -686,7 +686,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationFunctionalStatusProblemObservationAssessmentScaleObservation"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationAssessmentScaleObservation"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -881,7 +881,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationProblemObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationTemplateId"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -941,7 +941,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationProblemObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationClassCode"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -1001,7 +1001,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationProblemObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationMoodCode"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -1061,7 +1061,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_NEGATION_IND,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationProblemObservationNegationInd"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationNegationInd"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -1121,7 +1121,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationProblemObservationId"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationId"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -1181,7 +1181,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationProblemObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationCodeP"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -1264,7 +1264,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationProblemObservationCode"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationCode"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -1324,7 +1324,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationProblemObservationText"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationText"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -1385,7 +1385,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationProblemObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationStatusCode"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -1443,10 +1443,9 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 			functionalStatusProblemObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationProblemObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationEffectiveTime"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -1506,7 +1505,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationProblemObservationValueP"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationValueP"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 
@@ -1589,7 +1588,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationProblemObservationValue"),
+					ConsolPlugin.INSTANCE.getString("ProblemObservationValue"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 

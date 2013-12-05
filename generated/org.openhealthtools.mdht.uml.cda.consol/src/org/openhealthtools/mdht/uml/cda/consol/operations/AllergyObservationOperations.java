@@ -142,7 +142,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_VALUE_ORIGINAL_TEXT,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationValueOriginalText"),
+					ConsolPlugin.INSTANCE.getString("AllergyObservationValueOriginalText"),
 					new Object[] { allergyObservation }));
 			}
 
@@ -201,7 +201,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ORIGINAL_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationOriginalTextReference"),
+					ConsolPlugin.INSTANCE.getString("AllergyObservationOriginalTextReference"),
 					new Object[] { allergyObservation }));
 			}
 
@@ -261,7 +261,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ORIGINAL_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationOriginalTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("AllergyObservationOriginalTextReferenceValue"),
 					new Object[] { allergyObservation }));
 			}
 
@@ -320,7 +320,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("AllergyObservationReferenceValue"),
 					new Object[] { allergyObservation }));
 			}
 
@@ -378,10 +378,9 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 			allergyObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_STATUS_INVERSION_INDICATOR,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationAllergyStatusInversionIndicator"),
+					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyStatusInversionIndicator"),
 					new Object[] { allergyObservation }));
 			}
 
@@ -441,7 +440,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_REACTION_INVERSION_INDICATOR,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationReactionInversionIndicator"),
+					ConsolPlugin.INSTANCE.getString("AllergyObservationReactionInversionIndicator"),
 					new Object[] { allergyObservation }));
 			}
 
@@ -501,7 +500,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_SEVERITY_INVERSION_INDICATOR,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationSeverityInversionIndicator"),
+					ConsolPlugin.INSTANCE.getString("AllergyObservationSeverityInversionIndicator"),
 					new Object[] { allergyObservation }));
 			}
 
@@ -559,10 +558,9 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 			allergyObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_PLAYING_ENTITY_CODE_SYSTEMS,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationAllergyPlayingEntityCodeSystems"),
+					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyPlayingEntityCodeSystems"),
 					new Object[] { allergyObservation }));
 			}
 
@@ -621,7 +619,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AllergyObservationTemplateId"),
 					new Object[] { allergyObservation }));
 			}
 
@@ -680,8 +678,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationClassCode"),
-					new Object[] { allergyObservation }));
+					ConsolPlugin.INSTANCE.getString("AllergyObservationClassCode"), new Object[] { allergyObservation }));
 			}
 
 			return false;
@@ -739,8 +736,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationMoodCode"),
-					new Object[] { allergyObservation }));
+					ConsolPlugin.INSTANCE.getString("AllergyObservationMoodCode"), new Object[] { allergyObservation }));
 			}
 
 			return false;
@@ -798,8 +794,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationId"),
-					new Object[] { allergyObservation }));
+					ConsolPlugin.INSTANCE.getString("AllergyObservationId"), new Object[] { allergyObservation }));
 			}
 
 			return false;
@@ -857,8 +852,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationCodeP"),
-					new Object[] { allergyObservation }));
+					ConsolPlugin.INSTANCE.getString("AllergyObservationCodeP"), new Object[] { allergyObservation }));
 			}
 
 			if (context != null) {
@@ -938,8 +932,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationCode"),
-					new Object[] { allergyObservation }));
+					ConsolPlugin.INSTANCE.getString("AllergyObservationCode"), new Object[] { allergyObservation }));
 			}
 
 			return false;
@@ -998,7 +991,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("AllergyObservationStatusCode"),
 					new Object[] { allergyObservation }));
 			}
 
@@ -1057,7 +1050,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("AllergyObservationEffectiveTime"),
 					new Object[] { allergyObservation }));
 			}
 
@@ -1118,8 +1111,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationValue"),
-					new Object[] { allergyObservation }));
+					ConsolPlugin.INSTANCE.getString("AllergyObservationValue"), new Object[] { allergyObservation }));
 			}
 
 			return false;
@@ -1179,7 +1171,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationProblemEntryReactionObservationContainer"),
+					ConsolPlugin.INSTANCE.getString("AllergyObservationProblemEntryReactionObservationContainer"),
 					new Object[] { allergyObservation }));
 			}
 
@@ -1238,8 +1230,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_SEVERITY,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationSeverity"),
-					new Object[] { allergyObservation }));
+					ConsolPlugin.INSTANCE.getString("AllergyObservationSeverity"), new Object[] { allergyObservation }));
 			}
 
 			return false;
@@ -1298,7 +1289,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationAllergyStatusObservation"),
+					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyStatusObservation"),
 					new Object[] { allergyObservation }));
 			}
 
@@ -1357,7 +1348,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT,
-					ConsolPlugin.INSTANCE.getString("AllergyObservationAllergyObservationParticipant"),
+					ConsolPlugin.INSTANCE.getString("AllergyObservationParticipant"),
 					new Object[] { allergyObservation }));
 			}
 

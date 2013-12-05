@@ -151,7 +151,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityTextReference"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityTextReference"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -210,7 +210,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityReferenceValue"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -269,7 +269,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityTextReferenceValue"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -328,7 +328,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_DOSE_QUANTITY_UNIT,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityDoseQuantityUnit"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityDoseQuantityUnit"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -387,7 +387,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_INSTRUCTION_INVERSION,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityInstructionInversion"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityInstructionInversion"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -446,7 +446,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_DRUG_VEHICLE_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityDrugVehicleTypeCode"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityDrugVehicleTypeCode"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -505,7 +505,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityPreconditionTypeCode"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityPreconditionTypeCode"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -564,7 +564,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityTemplateId"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -623,7 +623,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityClassCode"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityClassCode"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -684,7 +684,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityMoodCode"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityMoodCode"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -743,8 +743,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_ID,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityId"),
-					new Object[] { immunizationActivity }));
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityId"), new Object[] { immunizationActivity }));
 			}
 
 			return false;
@@ -802,8 +801,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityCode"),
-					new Object[] { immunizationActivity }));
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityCode"), new Object[] { immunizationActivity }));
 			}
 
 			return false;
@@ -861,7 +859,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityStatusCode"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityStatusCode"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -920,7 +918,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityEffectiveTime"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -979,7 +977,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_ROUTE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityRouteCodeP"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityRouteCodeP"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1060,7 +1058,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_ROUTE_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityRouteCode"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityRouteCode"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1119,7 +1117,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityApproachSiteCodeP"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityApproachSiteCodeP"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1201,7 +1199,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityApproachSiteCode"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityApproachSiteCode"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1260,7 +1258,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_DOSE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityDoseQuantity"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityDoseQuantity"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1319,7 +1317,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_NEGATION_IND,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityNegationInd"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityNegationInd"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1378,8 +1376,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_TEXT,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityText"),
-					new Object[] { immunizationActivity }));
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityText"), new Object[] { immunizationActivity }));
 			}
 
 			return false;
@@ -1437,7 +1434,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_REPEAT_NUMBER,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityRepeatNumber"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityRepeatNumber"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1497,7 +1494,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityAdministrationUnitCodeP"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityAdministrationUnitCodeP"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1581,7 +1578,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityAdministrationUnitCode"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityAdministrationUnitCode"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1640,7 +1637,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_DRUG_VEHICLE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityDrugVehicle"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityDrugVehicle"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1699,7 +1696,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_INDICATION,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityIndication"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityIndication"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1758,7 +1755,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_INSTRUCTIONS,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityInstructions"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityInstructions"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1817,7 +1814,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_MEDICATION_DISPENSE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityMedicationDispense"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityMedicationDispense"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1876,7 +1873,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_REACTION_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityReactionObservation"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityReactionObservation"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1935,7 +1932,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_PRECONDITION,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityPrecondition"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityPrecondition"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1993,10 +1990,9 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			immunizationActivity)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_IMMUNIZATION_REFUSAL_REASON,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityImmunizationRefusalReason"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationRefusalReason"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -2055,7 +2051,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_CONSUMABLE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityConsumable"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityConsumable"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -2114,7 +2110,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_PERFORMER,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityPerformer"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityPerformer"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -2174,7 +2170,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_MEDICATION_SUPPLY_ORDER,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityMedicationSupplyOrder"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityMedicationSupplyOrder"),
 					new Object[] { immunizationActivity }));
 			}
 

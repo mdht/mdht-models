@@ -186,7 +186,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections"),
 					new Object[] { consultationNote }));
 			}
 
@@ -247,7 +247,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent"),
 					new Object[] { consultationNote }));
 			}
 
@@ -308,7 +308,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -366,10 +366,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HAS_REASON_FOR_REFERRAL_OR_REASON_FOR_VISIT,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteHasReasonForReferralOrReasonForVisit"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteHasReasonForReferralOrReasonForVisit"),
 					new Object[] { consultationNote }));
 			}
 
@@ -428,8 +427,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteTemplateId"),
-					new Object[] { consultationNote }));
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteTemplateId"), new Object[] { consultationNote }));
 			}
 
 			return false;
@@ -487,8 +485,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteGeneralHeaderConstraintsCodeP"),
-					new Object[] { consultationNote }));
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCodeP"), new Object[] { consultationNote }));
 			}
 
 			if (context != null) {
@@ -558,8 +555,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOf"),
-					new Object[] { consultationNote }));
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteComponentOf"), new Object[] { consultationNote }));
 			}
 
 			return false;
@@ -617,7 +613,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteAssessmentSection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteAssessmentSection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -677,7 +673,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteAssessmentAndPlanSection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteAssessmentAndPlanSection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -736,7 +732,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PLAN_OF_CARE_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNotePlanOfCareSection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNotePlanOfCareSection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -795,7 +791,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteHistoryOfPresentIllness"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteHistoryOfPresentIllness"),
 					new Object[] { consultationNote }));
 			}
 
@@ -854,7 +850,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNotePhysicalExamSection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNotePhysicalExamSection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -914,7 +910,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteReasonForReferralSection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteReasonForReferralSection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -973,7 +969,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteReasonForVisitSection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteReasonForVisitSection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -1032,7 +1028,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ALLERGIES_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteAllergiesSection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteAllergiesSection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -1091,7 +1087,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteChiefComplaintSection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteChiefComplaintSection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -1149,10 +1145,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteChiefComplaintAndReasonForVisitSection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteChiefComplaintAndReasonForVisitSection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -1211,7 +1206,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_FAMILY_HISTORY_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteFamilyHistorySection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteFamilyHistorySection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -1270,7 +1265,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_GENERAL_STATUS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteGeneralStatusSection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteGeneralStatusSection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -1330,7 +1325,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteHistoryOfPastIllnessSection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteHistoryOfPastIllnessSection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -1389,7 +1384,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IMMUNIZATIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteImmunizationsSection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteImmunizationsSection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -1447,10 +1442,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteMedicationsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteMedicationsSectionEntriesOptional"),
 					new Object[] { consultationNote }));
 			}
 
@@ -1510,7 +1504,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteProblemSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteProblemSectionEntriesOptional"),
 					new Object[] { consultationNote }));
 			}
 
@@ -1568,10 +1562,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteProceduresSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteProceduresSectionEntriesOptional"),
 					new Object[] { consultationNote }));
 			}
 
@@ -1631,7 +1624,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteResultsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteResultsSectionEntriesOptional"),
 					new Object[] { consultationNote }));
 			}
 
@@ -1690,7 +1683,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteReviewOfSystemsSection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteReviewOfSystemsSection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -1749,7 +1742,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteSocialHistorySection"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteSocialHistorySection"),
 					new Object[] { consultationNote }));
 			}
 
@@ -1807,10 +1800,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			consultationNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteVitalSignsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteVitalSignsSectionEntriesOptional"),
 					new Object[] { consultationNote }));
 			}
 
@@ -1869,7 +1861,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteInFulfillmentOf"),
+					ConsolPlugin.INSTANCE.getString("ConsultationNoteInFulfillmentOf"),
 					new Object[] { consultationNote }));
 			}
 
@@ -3533,8 +3525,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteGeneralHeaderConstraintsCode"),
-					new Object[] { consultationNote }));
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"), new Object[] { consultationNote }));
 			}
 
 			return false;

@@ -102,10 +102,9 @@ public class ProcedureSpecimensTakenSectionOperations extends SectionOperations 
 			procedureSpecimensTakenSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_SPECIMENS_TAKEN_SECTION__PROCEDURE_SPECIMENS_TAKEN_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureSpecimensTakenSectionProcedureSpecimensTakenSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProcedureSpecimensTakenSectionTemplateId"),
 					new Object[] { procedureSpecimensTakenSection }));
 			}
 
@@ -165,10 +164,9 @@ public class ProcedureSpecimensTakenSectionOperations extends SectionOperations 
 			procedureSpecimensTakenSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_SPECIMENS_TAKEN_SECTION__PROCEDURE_SPECIMENS_TAKEN_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureSpecimensTakenSectionProcedureSpecimensTakenSectionCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureSpecimensTakenSectionCode"),
 					new Object[] { procedureSpecimensTakenSection }));
 			}
 
@@ -226,10 +224,9 @@ public class ProcedureSpecimensTakenSectionOperations extends SectionOperations 
 			procedureSpecimensTakenSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_SPECIMENS_TAKEN_SECTION__PROCEDURE_SPECIMENS_TAKEN_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureSpecimensTakenSectionProcedureSpecimensTakenSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProcedureSpecimensTakenSectionCodeP"),
 					new Object[] { procedureSpecimensTakenSection }));
 			}
 
@@ -287,10 +284,9 @@ public class ProcedureSpecimensTakenSectionOperations extends SectionOperations 
 			procedureSpecimensTakenSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_SPECIMENS_TAKEN_SECTION__PROCEDURE_SPECIMENS_TAKEN_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProcedureSpecimensTakenSectionProcedureSpecimensTakenSectionText"),
+					ConsolPlugin.INSTANCE.getString("ProcedureSpecimensTakenSectionText"),
 					new Object[] { procedureSpecimensTakenSection }));
 			}
 
@@ -348,10 +344,9 @@ public class ProcedureSpecimensTakenSectionOperations extends SectionOperations 
 			procedureSpecimensTakenSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_SPECIMENS_TAKEN_SECTION__PROCEDURE_SPECIMENS_TAKEN_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ProcedureSpecimensTakenSectionProcedureSpecimensTakenSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("ProcedureSpecimensTakenSectionTitle"),
 					new Object[] { procedureSpecimensTakenSection }));
 			}
 

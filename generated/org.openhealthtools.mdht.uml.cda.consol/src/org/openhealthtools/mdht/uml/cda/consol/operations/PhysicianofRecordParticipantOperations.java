@@ -110,10 +110,9 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 			physicianofRecordParticipant)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantTemplateId"),
 					new Object[] { physicianofRecordParticipant }));
 			}
 
@@ -171,10 +170,9 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 			physicianofRecordParticipant)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantTypeCode"),
+					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantTypeCode"),
 					new Object[] { physicianofRecordParticipant }));
 			}
 
@@ -233,10 +231,9 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 			physicianofRecordParticipant)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY,
-					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntity"),
+					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantAssignedEntity"),
 					new Object[] { physicianofRecordParticipant }));
 			}
 

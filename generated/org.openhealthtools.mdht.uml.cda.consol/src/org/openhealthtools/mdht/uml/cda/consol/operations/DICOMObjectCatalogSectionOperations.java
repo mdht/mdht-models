@@ -109,7 +109,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DICOM_OBJECT_CATALOG_SECTION__DICOM_OBJECT_CATALOG_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionDICOMObjectCatalogSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionTemplateId"),
 					new Object[] { dicomObjectCatalogSection }));
 			}
 
@@ -170,7 +170,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DICOM_OBJECT_CATALOG_SECTION__DICOM_OBJECT_CATALOG_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionDICOMObjectCatalogSectionCode"),
+					ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionCode"),
 					new Object[] { dicomObjectCatalogSection }));
 			}
 
@@ -229,7 +229,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DICOM_OBJECT_CATALOG_SECTION__DICOM_OBJECT_CATALOG_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionDICOMObjectCatalogSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionCodeP"),
 					new Object[] { dicomObjectCatalogSection }));
 			}
 
@@ -289,7 +289,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DICOM_OBJECT_CATALOG_SECTION__DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT,
-					ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionDICOMObjectCatalogSectionStudyAct"),
+					ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionStudyAct"),
 					new Object[] { dicomObjectCatalogSection }));
 			}
 

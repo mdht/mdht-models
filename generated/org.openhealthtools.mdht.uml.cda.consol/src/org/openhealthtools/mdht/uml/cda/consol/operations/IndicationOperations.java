@@ -109,7 +109,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INDICATION__INDICATION_CODE_NULL_FLAVOR,
-					ConsolPlugin.INSTANCE.getString("IndicationIndicationCodeNullFlavor"), new Object[] { indication }));
+					ConsolPlugin.INSTANCE.getString("IndicationCodeNullFlavor"), new Object[] { indication }));
 			}
 
 			return false;
@@ -166,7 +166,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INDICATION__INDICATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("IndicationIndicationTemplateId"), new Object[] { indication }));
+					ConsolPlugin.INSTANCE.getString("IndicationTemplateId"), new Object[] { indication }));
 			}
 
 			return false;
@@ -223,7 +223,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INDICATION__INDICATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("IndicationIndicationClassCode"), new Object[] { indication }));
+					ConsolPlugin.INSTANCE.getString("IndicationClassCode"), new Object[] { indication }));
 			}
 
 			return false;
@@ -280,7 +280,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INDICATION__INDICATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("IndicationIndicationMoodCode"), new Object[] { indication }));
+					ConsolPlugin.INSTANCE.getString("IndicationMoodCode"), new Object[] { indication }));
 			}
 
 			return false;
@@ -336,7 +336,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.INDICATION__INDICATION_ID,
-					ConsolPlugin.INSTANCE.getString("IndicationIndicationId"), new Object[] { indication }));
+					ConsolPlugin.INSTANCE.getString("IndicationId"), new Object[] { indication }));
 			}
 
 			return false;
@@ -392,7 +392,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.INDICATION__INDICATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("IndicationIndicationCodeP"), new Object[] { indication }));
+					ConsolPlugin.INSTANCE.getString("IndicationCodeP"), new Object[] { indication }));
 			}
 
 			if (context != null) {
@@ -470,7 +470,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.INDICATION__INDICATION_CODE,
-					ConsolPlugin.INSTANCE.getString("IndicationIndicationCode"), new Object[] { indication }));
+					ConsolPlugin.INSTANCE.getString("IndicationCode"), new Object[] { indication }));
 			}
 
 			return false;
@@ -528,7 +528,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INDICATION__INDICATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("IndicationIndicationStatusCode"), new Object[] { indication }));
+					ConsolPlugin.INSTANCE.getString("IndicationStatusCode"), new Object[] { indication }));
 			}
 
 			return false;
@@ -585,7 +585,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INDICATION__INDICATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("IndicationIndicationEffectiveTime"), new Object[] { indication }));
+					ConsolPlugin.INSTANCE.getString("IndicationEffectiveTime"), new Object[] { indication }));
 			}
 
 			return false;
@@ -643,8 +643,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.INDICATION__INDICATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("IndicationIndicationValue"), new Object[] { indication }));
+					ConsolValidator.INDICATION__INDICATION_VALUE, ConsolPlugin.INSTANCE.getString("IndicationValue"),
+					new Object[] { indication }));
 			}
 
 			return false;
@@ -701,7 +701,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INDICATION__INDICATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("IndicationIndicationValueP"), new Object[] { indication }));
+					ConsolPlugin.INSTANCE.getString("IndicationValueP"), new Object[] { indication }));
 			}
 
 			return false;

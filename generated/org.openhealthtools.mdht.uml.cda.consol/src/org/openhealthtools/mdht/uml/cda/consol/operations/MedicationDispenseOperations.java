@@ -125,10 +125,9 @@ public class MedicationDispenseOperations extends SupplyOperations {
 			medicationDispense)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE__MEDICATION_DISPENSE_CONTAINS_MEDICATION_OR_IMMUNIZATION,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseMedicationDispenseContainsMedicationOrImmunization"),
+					ConsolPlugin.INSTANCE.getString("MedicationDispenseContainsMedicationOrImmunization"),
 					new Object[] { medicationDispense }));
 			}
 
@@ -187,7 +186,7 @@ public class MedicationDispenseOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE__MEDICATION_DISPENSE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseMedicationDispenseTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MedicationDispenseTemplateId"),
 					new Object[] { medicationDispense }));
 			}
 
@@ -246,8 +245,7 @@ public class MedicationDispenseOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE__MEDICATION_DISPENSE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseMedicationDispenseClassCode"),
-					new Object[] { medicationDispense }));
+					ConsolPlugin.INSTANCE.getString("MedicationDispenseClassCode"), new Object[] { medicationDispense }));
 			}
 
 			return false;
@@ -305,7 +303,7 @@ public class MedicationDispenseOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE__MEDICATION_DISPENSE_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseMedicationDispenseEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("MedicationDispenseEffectiveTime"),
 					new Object[] { medicationDispense }));
 			}
 
@@ -364,8 +362,7 @@ public class MedicationDispenseOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE__MEDICATION_DISPENSE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseMedicationDispenseId"),
-					new Object[] { medicationDispense }));
+					ConsolPlugin.INSTANCE.getString("MedicationDispenseId"), new Object[] { medicationDispense }));
 			}
 
 			return false;
@@ -423,8 +420,7 @@ public class MedicationDispenseOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE__MEDICATION_DISPENSE_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseMedicationDispenseMoodCode"),
-					new Object[] { medicationDispense }));
+					ConsolPlugin.INSTANCE.getString("MedicationDispenseMoodCode"), new Object[] { medicationDispense }));
 			}
 
 			return false;
@@ -482,7 +478,7 @@ public class MedicationDispenseOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE__MEDICATION_DISPENSE_REPEAT_NUMBER,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseMedicationDispenseRepeatNumber"),
+					ConsolPlugin.INSTANCE.getString("MedicationDispenseRepeatNumber"),
 					new Object[] { medicationDispense }));
 			}
 
@@ -543,7 +539,7 @@ public class MedicationDispenseOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE__MEDICATION_DISPENSE_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseMedicationDispenseStatusCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationDispenseStatusCode"),
 					new Object[] { medicationDispense }));
 			}
 
@@ -602,8 +598,7 @@ public class MedicationDispenseOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE__MEDICATION_DISPENSE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseMedicationDispenseQuantity"),
-					new Object[] { medicationDispense }));
+					ConsolPlugin.INSTANCE.getString("MedicationDispenseQuantity"), new Object[] { medicationDispense }));
 			}
 
 			return false;
@@ -661,7 +656,7 @@ public class MedicationDispenseOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE__MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseMedicationDispenseMedicationSupplyOrder"),
+					ConsolPlugin.INSTANCE.getString("MedicationDispenseMedicationSupplyOrder"),
 					new Object[] { medicationDispense }));
 			}
 
@@ -720,8 +715,7 @@ public class MedicationDispenseOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_DISPENSE__MEDICATION_DISPENSE_PERFORMER,
-					ConsolPlugin.INSTANCE.getString("MedicationDispenseMedicationDispensePerformer"),
-					new Object[] { medicationDispense }));
+					ConsolPlugin.INSTANCE.getString("MedicationDispensePerformer"), new Object[] { medicationDispense }));
 			}
 
 			return false;

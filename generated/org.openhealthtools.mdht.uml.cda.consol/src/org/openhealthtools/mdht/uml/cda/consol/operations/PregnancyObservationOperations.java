@@ -111,7 +111,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationTemplateId"),
 					new Object[] { pregnancyObservation }));
 			}
 
@@ -170,7 +170,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationClassCode"),
 					new Object[] { pregnancyObservation }));
 			}
 
@@ -229,7 +229,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationMoodCode"),
 					new Object[] { pregnancyObservation }));
 			}
 
@@ -288,8 +288,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationCodeP"),
-					new Object[] { pregnancyObservation }));
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationCodeP"), new Object[] { pregnancyObservation }));
 			}
 
 			if (context != null) {
@@ -369,8 +368,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationCode"),
-					new Object[] { pregnancyObservation }));
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationCode"), new Object[] { pregnancyObservation }));
 			}
 
 			return false;
@@ -429,7 +427,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationStatusCode"),
 					new Object[] { pregnancyObservation }));
 			}
 
@@ -490,8 +488,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationValue"),
-					new Object[] { pregnancyObservation }));
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationValue"), new Object[] { pregnancyObservation }));
 			}
 
 			return false;
@@ -549,7 +546,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationEffectiveTime"),
 					new Object[] { pregnancyObservation }));
 			}
 
@@ -609,7 +606,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_ESTIMATED_DATE_OF_DELIVERY,
-					ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationEstimatedDateOfDelivery"),
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationEstimatedDateOfDelivery"),
 					new Object[] { pregnancyObservation }));
 			}
 

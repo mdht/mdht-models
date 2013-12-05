@@ -109,7 +109,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_MEDICATION__DISCHARGE_MEDICATION_MEDICATION_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("DischargeMedicationDischargeMedicationMedicationActivity"),
+					ConsolPlugin.INSTANCE.getString("DischargeMedicationMedicationActivity"),
 					new Object[] { dischargeMedication }));
 			}
 
@@ -168,7 +168,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_MEDICATION__DISCHARGE_MEDICATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("DischargeMedicationDischargeMedicationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("DischargeMedicationTemplateId"),
 					new Object[] { dischargeMedication }));
 			}
 
@@ -227,7 +227,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_MEDICATION__DISCHARGE_MEDICATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("DischargeMedicationDischargeMedicationClassCode"),
+					ConsolPlugin.INSTANCE.getString("DischargeMedicationClassCode"),
 					new Object[] { dischargeMedication }));
 			}
 
@@ -286,7 +286,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_MEDICATION__DISCHARGE_MEDICATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("DischargeMedicationDischargeMedicationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("DischargeMedicationMoodCode"),
 					new Object[] { dischargeMedication }));
 			}
 
@@ -347,8 +347,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_MEDICATION__DISCHARGE_MEDICATION_CODE,
-					ConsolPlugin.INSTANCE.getString("DischargeMedicationDischargeMedicationCode"),
-					new Object[] { dischargeMedication }));
+					ConsolPlugin.INSTANCE.getString("DischargeMedicationCode"), new Object[] { dischargeMedication }));
 			}
 
 			return false;

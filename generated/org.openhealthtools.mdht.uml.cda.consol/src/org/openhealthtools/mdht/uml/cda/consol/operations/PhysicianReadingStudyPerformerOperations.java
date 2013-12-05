@@ -111,10 +111,9 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 			physicianReadingStudyPerformer)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER__PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PhysicianReadingStudyPerformerTemplateId"),
 					new Object[] { physicianReadingStudyPerformer }));
 			}
 
@@ -172,10 +171,9 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 			physicianReadingStudyPerformer)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER__PHYSICIAN_READING_STUDY_PERFORMER_TIME,
-					ConsolPlugin.INSTANCE.getString("PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerTime"),
+					ConsolPlugin.INSTANCE.getString("PhysicianReadingStudyPerformerTime"),
 					new Object[] { physicianReadingStudyPerformer }));
 			}
 
@@ -233,10 +231,9 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 			physicianReadingStudyPerformer)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER__PHYSICIAN_READING_STUDY_PERFORMER_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerTypeCode"),
+					ConsolPlugin.INSTANCE.getString("PhysicianReadingStudyPerformerTypeCode"),
 					new Object[] { physicianReadingStudyPerformer }));
 			}
 
@@ -298,7 +295,7 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER__PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY,
-					ConsolPlugin.INSTANCE.getString("PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerAssignedEntity"),
+					ConsolPlugin.INSTANCE.getString("PhysicianReadingStudyPerformerAssignedEntity"),
 					new Object[] { physicianReadingStudyPerformer }));
 			}
 

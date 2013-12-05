@@ -105,8 +105,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TOBACCO_USE__TOBACCO_USE_EFFECTIVE_TIME_LOW,
-					ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseEffectiveTimeLow"),
-					new Object[] { tobaccoUse }));
+					ConsolPlugin.INSTANCE.getString("TobaccoUseEffectiveTimeLow"), new Object[] { tobaccoUse }));
 			}
 
 			return false;
@@ -163,7 +162,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TOBACCO_USE__TOBACCO_USE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseTemplateId"), new Object[] { tobaccoUse }));
+					ConsolPlugin.INSTANCE.getString("TobaccoUseTemplateId"), new Object[] { tobaccoUse }));
 			}
 
 			return false;
@@ -220,7 +219,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TOBACCO_USE__TOBACCO_USE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseClassCode"), new Object[] { tobaccoUse }));
+					ConsolPlugin.INSTANCE.getString("TobaccoUseClassCode"), new Object[] { tobaccoUse }));
 			}
 
 			return false;
@@ -277,7 +276,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TOBACCO_USE__TOBACCO_USE_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseMoodCode"), new Object[] { tobaccoUse }));
+					ConsolPlugin.INSTANCE.getString("TobaccoUseMoodCode"), new Object[] { tobaccoUse }));
 			}
 
 			return false;
@@ -334,7 +333,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TOBACCO_USE__TOBACCO_USE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseCodeP"), new Object[] { tobaccoUse }));
+					ConsolPlugin.INSTANCE.getString("TobaccoUseCodeP"), new Object[] { tobaccoUse }));
 			}
 
 			if (context != null) {
@@ -412,7 +411,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.TOBACCO_USE__TOBACCO_USE_CODE,
-					ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseCode"), new Object[] { tobaccoUse }));
+					ConsolPlugin.INSTANCE.getString("TobaccoUseCode"), new Object[] { tobaccoUse }));
 			}
 
 			return false;
@@ -469,7 +468,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TOBACCO_USE__TOBACCO_USE_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseEffectiveTime"), new Object[] { tobaccoUse }));
+					ConsolPlugin.INSTANCE.getString("TobaccoUseEffectiveTime"), new Object[] { tobaccoUse }));
 			}
 
 			return false;
@@ -527,7 +526,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TOBACCO_USE__TOBACCO_USE_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseStatusCode"), new Object[] { tobaccoUse }));
+					ConsolPlugin.INSTANCE.getString("TobaccoUseStatusCode"), new Object[] { tobaccoUse }));
 			}
 
 			return false;
@@ -584,7 +583,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TOBACCO_USE__TOBACCO_USE_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseStatusCodeP"), new Object[] { tobaccoUse }));
+					ConsolPlugin.INSTANCE.getString("TobaccoUseStatusCodeP"), new Object[] { tobaccoUse }));
 			}
 
 			return false;
@@ -642,8 +641,8 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TOBACCO_USE__TOBACCO_USE_VALUE,
-					ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseValue"), new Object[] { tobaccoUse }));
+					ConsolValidator.TOBACCO_USE__TOBACCO_USE_VALUE, ConsolPlugin.INSTANCE.getString("TobaccoUseValue"),
+					new Object[] { tobaccoUse }));
 			}
 
 			return false;
@@ -700,7 +699,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.TOBACCO_USE__TOBACCO_USE_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseValueP"), new Object[] { tobaccoUse }));
+					ConsolPlugin.INSTANCE.getString("TobaccoUseValueP"), new Object[] { tobaccoUse }));
 			}
 
 			return false;

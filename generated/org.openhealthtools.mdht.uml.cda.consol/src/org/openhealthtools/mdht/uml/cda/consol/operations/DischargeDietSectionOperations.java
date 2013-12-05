@@ -102,7 +102,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_DIET_SECTION__DISCHARGE_DIET_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("DischargeDietSectionDischargeDietSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("DischargeDietSectionTemplateId"),
 					new Object[] { dischargeDietSection }));
 			}
 
@@ -163,8 +163,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_DIET_SECTION__DISCHARGE_DIET_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("DischargeDietSectionDischargeDietSectionCode"),
-					new Object[] { dischargeDietSection }));
+					ConsolPlugin.INSTANCE.getString("DischargeDietSectionCode"), new Object[] { dischargeDietSection }));
 			}
 
 			return false;
@@ -222,8 +221,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_DIET_SECTION__DISCHARGE_DIET_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("DischargeDietSectionDischargeDietSectionCodeP"),
-					new Object[] { dischargeDietSection }));
+					ConsolPlugin.INSTANCE.getString("DischargeDietSectionCodeP"), new Object[] { dischargeDietSection }));
 			}
 
 			return false;
@@ -281,8 +279,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_DIET_SECTION__DISCHARGE_DIET_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("DischargeDietSectionDischargeDietSectionTitle"),
-					new Object[] { dischargeDietSection }));
+					ConsolPlugin.INSTANCE.getString("DischargeDietSectionTitle"), new Object[] { dischargeDietSection }));
 			}
 
 			return false;
@@ -340,8 +337,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_DIET_SECTION__DISCHARGE_DIET_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("DischargeDietSectionDischargeDietSectionText"),
-					new Object[] { dischargeDietSection }));
+					ConsolPlugin.INSTANCE.getString("DischargeDietSectionText"), new Object[] { dischargeDietSection }));
 			}
 
 			return false;

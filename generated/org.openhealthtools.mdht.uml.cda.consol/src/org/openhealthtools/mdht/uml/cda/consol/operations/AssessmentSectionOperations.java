@@ -102,8 +102,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_SECTION__ASSESSMENT_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AssessmentSectionAssessmentSectionTemplateId"),
-					new Object[] { assessmentSection }));
+					ConsolPlugin.INSTANCE.getString("AssessmentSectionTemplateId"), new Object[] { assessmentSection }));
 			}
 
 			return false;
@@ -163,8 +162,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_SECTION__ASSESSMENT_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("AssessmentSectionAssessmentSectionCode"),
-					new Object[] { assessmentSection }));
+					ConsolPlugin.INSTANCE.getString("AssessmentSectionCode"), new Object[] { assessmentSection }));
 			}
 
 			return false;
@@ -222,8 +220,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_SECTION__ASSESSMENT_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AssessmentSectionAssessmentSectionCodeP"),
-					new Object[] { assessmentSection }));
+					ConsolPlugin.INSTANCE.getString("AssessmentSectionCodeP"), new Object[] { assessmentSection }));
 			}
 
 			return false;
@@ -281,8 +278,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_SECTION__ASSESSMENT_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("AssessmentSectionAssessmentSectionText"),
-					new Object[] { assessmentSection }));
+					ConsolPlugin.INSTANCE.getString("AssessmentSectionText"), new Object[] { assessmentSection }));
 			}
 
 			return false;
@@ -340,8 +336,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ASSESSMENT_SECTION__ASSESSMENT_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("AssessmentSectionAssessmentSectionTitle"),
-					new Object[] { assessmentSection }));
+					ConsolPlugin.INSTANCE.getString("AssessmentSectionTitle"), new Object[] { assessmentSection }));
 			}
 
 			return false;

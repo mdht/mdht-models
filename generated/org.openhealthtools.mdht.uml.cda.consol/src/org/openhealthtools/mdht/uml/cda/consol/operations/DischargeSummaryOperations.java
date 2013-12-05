@@ -96,8 +96,9 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Encounter Participant Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Encompassing Encounter Has Effective Time Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Encompassing Encounter Has Effective Time High</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Discharge Disposition Code Value Set</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Discharge Disposition Code Code System</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Discharge Disposition Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Discharge Disposition Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryComponentOfEncompassingEncounter3EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Responsible Party</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary#validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Encounter Participant</em>}</li>
@@ -195,7 +196,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -254,8 +255,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_CODE_P,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryCodeP"),
-					new Object[] { dischargeSummary }));
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryCodeP"), new Object[] { dischargeSummary }));
 			}
 
 			if (context != null) {
@@ -335,8 +335,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_CODE,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryCode"),
-					new Object[] { dischargeSummary }));
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryCode"), new Object[] { dischargeSummary }));
 			}
 
 			return false;
@@ -396,7 +395,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -454,10 +453,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalAdmissionDiagnosisSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalAdmissionDiagnosisSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -515,10 +513,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalDischargeDiagnosisSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargeDiagnosisSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -577,7 +574,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DISCHARGE_DIET_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryDischargeDietSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeDietSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -638,7 +635,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -697,7 +694,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_FUNCTIONAL_STATUS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryFunctionalStatusSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryFunctionalStatusSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -757,7 +754,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHistoryOfPresentIllnessSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryHistoryOfPresentIllnessSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -816,7 +813,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_COURSE_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalCourseSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalCourseSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -875,7 +872,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryPlanOfCareSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryPlanOfCareSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -935,7 +932,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHistoryOfPastIllnessSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryHistoryOfPastIllnessSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -994,8 +991,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryComponentOf"),
-					new Object[] { dischargeSummary }));
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryComponentOf"), new Object[] { dischargeSummary }));
 			}
 
 			return false;
@@ -1052,10 +1048,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryChiefComplaintAndReasonForVisitSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryChiefComplaintAndReasonForVisitSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1114,7 +1109,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_CHIEF_COMPLAINT_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryChiefComplaintSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryChiefComplaintSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1173,7 +1168,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_FAMILY_HISTORY_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryFamilyHistorySection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryFamilyHistorySection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1233,7 +1228,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_CONSULTATIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalConsultationsSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalConsultationsSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1291,10 +1286,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalDischargeInstructionsSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargeInstructionsSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1352,10 +1346,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_PHYSICAL_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalDischargePhysicalSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargePhysicalSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1413,10 +1406,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalDischargeStudiesSummarySection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargeStudiesSummarySection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1474,10 +1466,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryImmunizationsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryImmunizationsSectionEntriesOptional"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1537,7 +1528,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PROBLEM_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryProblemSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryProblemSectionEntriesOptional"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1595,10 +1586,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PROCEDURES_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryProceduresSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryProceduresSectionEntriesOptional"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1657,7 +1647,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_REASON_FOR_VISIT_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryReasonForVisitSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryReasonForVisitSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1716,7 +1706,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_REVIEW_OF_SYSTEMS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryReviewOfSystemsSection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryReviewOfSystemsSection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1775,7 +1765,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_SOCIAL_HISTORY_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummarySocialHistorySection"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummarySocialHistorySection"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1835,7 +1825,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_ALLERGIES_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryAllergiesSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryAllergiesSectionEntriesOptional"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -1893,10 +1883,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			dischargeSummary)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryVitalSignsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("DischargeSummaryVitalSignsSectionEntriesOptional"),
 					new Object[] { dischargeSummary }));
 			}
 
@@ -2296,6 +2285,136 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Discharge Disposition Code Value Set</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(dischargeDispositionCode.oclIsUndefined() or dischargeDispositionCode.isNullFlavorUndefined() implies let value : datatypes::CE = dischargeDispositionCode.oclAsType(datatypes::CE) in value.codeSystem <> '2.16.840.1.113883.12.112' implies value.codeSystem = '2.16.840.1.113883.6.301.5' and not value.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Discharge Disposition Code Value Set</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param dischargeSummary The receiving '<em><b>Discharge Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet(
+			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_VALUE_SET,
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Discharge Disposition Code Code System</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(dischargeDispositionCode.oclIsUndefined() or dischargeDispositionCode.isNullFlavorUndefined() implies let value : datatypes::CE = dischargeDispositionCode.oclAsType(datatypes::CE) in value.codeSystem <> '2.16.840.1.113883.6.301.5' implies value.codeSystem = '2.16.840.1.113883.12.112' and not value.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Discharge Disposition Code Code System</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param dischargeSummary The receiving '<em><b>Discharge Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem(
+			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.INFO,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_CODE_SYSTEM,
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Discharge Disposition Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2303,9 +2422,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((dischargeDispositionCode.oclIsUndefined() or dischargeDispositionCode.isNullFlavorUndefined()) implies (not dischargeDispositionCode.oclIsUndefined() and dischargeDispositionCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = dischargeDispositionCode.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.12.112' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((dischargeDispositionCode.oclIsUndefined() or dischargeDispositionCode.isNullFlavorUndefined()) implies (not dischargeDispositionCode.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Discharge Disposition Code</em>}' invariant operation.
@@ -2349,75 +2466,10 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
+						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE,
 						ConsolPlugin.INSTANCE.getString("DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeP(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Discharge Disposition Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeP(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((dischargeDispositionCode.oclIsUndefined() or dischargeDispositionCode.isNullFlavorUndefined()) implies (not dischargeDispositionCode.oclIsUndefined()))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeP(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary Component Of Encompassing Encounter3 Discharge Disposition Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeP(DischargeSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param dischargeSummary The receiving '<em><b>Discharge Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeP(
-			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeP"),
 						new Object[] { eObject }));
 				}
 
@@ -2718,7 +2770,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(333));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(334));
 			try {
 				GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2761,7 +2813,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(334));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(335));
 			try {
 				GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2804,7 +2856,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(335));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(336));
 			try {
 				GET_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2846,7 +2898,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(336));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(337));
 			try {
 				GET_DISCHARGE_DIET_SECTION__EOCL_QRY = helper.createQuery(GET_DISCHARGE_DIET_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2889,7 +2941,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(337));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(338));
 			try {
 				GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2931,7 +2983,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(338));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(339));
 			try {
 				GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2973,7 +3025,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(339));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(340));
 			try {
 				GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3015,7 +3067,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(340));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(341));
 			try {
 				GET_HOSPITAL_COURSE_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_COURSE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3057,7 +3109,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(341));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(342));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3099,7 +3151,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(342));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(343));
 			try {
 				GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3142,7 +3194,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(343));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(344));
 			try {
 				GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3184,7 +3236,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(344));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(345));
 			try {
 				GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3226,7 +3278,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(345));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(346));
 			try {
 				GET_FAMILY_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3268,7 +3320,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(346));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(347));
 			try {
 				GET_HOSPITAL_CONSULTATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_CONSULTATIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3311,7 +3363,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(347));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(348));
 			try {
 				GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3353,7 +3405,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(348));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(349));
 			try {
 				GET_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3396,7 +3448,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(349));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(350));
 			try {
 				GET_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3439,7 +3491,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(350));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(351));
 			try {
 				GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3481,7 +3533,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(351));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(352));
 			try {
 				GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3523,7 +3575,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(352));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(353));
 			try {
 				GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3565,7 +3617,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(353));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(354));
 			try {
 				GET_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_VISIT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3607,7 +3659,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(354));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(355));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3649,7 +3701,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(355));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(356));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3691,7 +3743,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(356));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(357));
 			try {
 				GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3733,7 +3785,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY,
-				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(357));
+				ConsolPackage.Literals.DISCHARGE_SUMMARY.getEAllOperations().get(358));
 			try {
 				GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3794,7 +3846,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DISCHARGE_SUMMARY__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("DischargeSummaryGeneralHeaderConstraintsTemplateId"),
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
 					new Object[] { dischargeSummary }));
 			}
 

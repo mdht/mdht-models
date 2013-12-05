@@ -115,7 +115,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActEffectiveTimeLow"),
+					ConsolPlugin.INSTANCE.getString("ProblemConcernActEffectiveTimeLow"),
 					new Object[] { problemConcernAct }));
 			}
 
@@ -174,7 +174,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActEffectiveTimeHigh"),
+					ConsolPlugin.INSTANCE.getString("ProblemConcernActEffectiveTimeHigh"),
 					new Object[] { problemConcernAct }));
 			}
 
@@ -233,8 +233,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActTemplateId"),
-					new Object[] { problemConcernAct }));
+					ConsolPlugin.INSTANCE.getString("ProblemConcernActTemplateId"), new Object[] { problemConcernAct }));
 			}
 
 			return false;
@@ -292,8 +291,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActClassCode"),
-					new Object[] { problemConcernAct }));
+					ConsolPlugin.INSTANCE.getString("ProblemConcernActClassCode"), new Object[] { problemConcernAct }));
 			}
 
 			return false;
@@ -351,8 +349,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActMoodCode"),
-					new Object[] { problemConcernAct }));
+					ConsolPlugin.INSTANCE.getString("ProblemConcernActMoodCode"), new Object[] { problemConcernAct }));
 			}
 
 			return false;
@@ -410,8 +407,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActId"),
-					new Object[] { problemConcernAct }));
+					ConsolPlugin.INSTANCE.getString("ProblemConcernActId"), new Object[] { problemConcernAct }));
 			}
 
 			return false;
@@ -469,8 +465,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActCodeP"),
-					new Object[] { problemConcernAct }));
+					ConsolPlugin.INSTANCE.getString("ProblemConcernActCodeP"), new Object[] { problemConcernAct }));
 			}
 
 			if (context != null) {
@@ -550,8 +545,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActCode"),
-					new Object[] { problemConcernAct }));
+					ConsolPlugin.INSTANCE.getString("ProblemConcernActCode"), new Object[] { problemConcernAct }));
 			}
 
 			return false;
@@ -611,8 +605,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActStatusCode"),
-					new Object[] { problemConcernAct }));
+					ConsolPlugin.INSTANCE.getString("ProblemConcernActStatusCode"), new Object[] { problemConcernAct }));
 			}
 
 			return false;
@@ -670,7 +663,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("ProblemConcernActEffectiveTime"),
 					new Object[] { problemConcernAct }));
 			}
 
@@ -729,7 +722,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActProblemObservation"),
+					ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemObservation"),
 					new Object[] { problemConcernAct }));
 			}
 

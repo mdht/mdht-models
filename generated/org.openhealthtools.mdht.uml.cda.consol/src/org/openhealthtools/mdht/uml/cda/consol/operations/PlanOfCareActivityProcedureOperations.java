@@ -100,10 +100,9 @@ public class PlanOfCareActivityProcedureOperations extends ClinicalStatementOper
 			planOfCareActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_PROCEDURE__PLAN_OF_CARE_ACTIVITY_PROCEDURE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityProcedurePlanOfCareActivityProcedureTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityProcedureTemplateId"),
 					new Object[] { planOfCareActivityProcedure }));
 			}
 
@@ -163,7 +162,7 @@ public class PlanOfCareActivityProcedureOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_PROCEDURE__PLAN_OF_CARE_ACTIVITY_PROCEDURE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityProcedurePlanOfCareActivityProcedureClassCode"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityProcedureClassCode"),
 					new Object[] { planOfCareActivityProcedure }));
 			}
 
@@ -225,7 +224,7 @@ public class PlanOfCareActivityProcedureOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_PROCEDURE__PLAN_OF_CARE_ACTIVITY_PROCEDURE_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityProcedurePlanOfCareActivityProcedureMoodCode"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityProcedureMoodCode"),
 					new Object[] { planOfCareActivityProcedure }));
 			}
 
@@ -285,7 +284,7 @@ public class PlanOfCareActivityProcedureOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_PROCEDURE__PLAN_OF_CARE_ACTIVITY_PROCEDURE_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityProcedurePlanOfCareActivityProcedureId"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityProcedureId"),
 					new Object[] { planOfCareActivityProcedure }));
 			}
 

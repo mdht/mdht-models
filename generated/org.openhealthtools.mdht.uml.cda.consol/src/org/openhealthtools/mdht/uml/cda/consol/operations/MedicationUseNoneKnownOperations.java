@@ -108,7 +108,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownTextReference"),
+					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownTextReference"),
 					new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -168,7 +168,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownTextReferenceValue"),
 					new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -227,7 +227,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownReferenceValue"),
 					new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -286,7 +286,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownTemplateId"),
 					new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -345,7 +345,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownClassCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownClassCode"),
 					new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -404,7 +404,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownMoodCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMoodCode"),
 					new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -463,7 +463,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownId"),
+					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownId"),
 					new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -522,7 +522,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownCodeP"),
+					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownCodeP"),
 					new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -603,7 +603,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownCode"),
 					new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -662,7 +662,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownEffectiveTime"),
 					new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -722,7 +722,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownStatusCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownStatusCode"),
 					new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -781,7 +781,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownStatusCodeP"),
 					new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -840,7 +840,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEXT,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownText"),
+					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownText"),
 					new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -901,7 +901,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_VALUE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownValue"),
+					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownValue"),
 					new Object[] { medicationUseNoneKnown }));
 			}
 

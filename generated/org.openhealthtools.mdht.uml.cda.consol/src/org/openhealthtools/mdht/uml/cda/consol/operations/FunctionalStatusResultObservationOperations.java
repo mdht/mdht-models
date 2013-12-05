@@ -130,7 +130,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationFunctionalStatusResultObservationTextReference"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationTextReference"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -192,7 +192,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationFunctionalStatusResultObservationTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationTextReferenceValue"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -254,7 +254,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_VALUE_DATATYPE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationFunctionalStatusResultObservationValueDatatype"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationValueDatatype"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -314,7 +314,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationCodeP"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -384,10 +384,9 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 			functionalStatusResultObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationFunctionalStatusResultObservationAuthor"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationAuthor"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -449,7 +448,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationFunctionalStatusResultObservationNonMedicinalSupplyActivity"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationNonMedicinalSupplyActivity"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -511,7 +510,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_CAREGIVER_CHARACTERISTICS,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationFunctionalStatusResultObservationCaregiverCharacteristics"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationCaregiverCharacteristics"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -573,7 +572,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationFunctionalStatusResultObservationAssessmentScaleObservation"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationAssessmentScaleObservation"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -635,7 +634,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationFunctionalStatusResultObservationReferenceRange"),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationReferenceRange"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -956,7 +955,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationTemplateId"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1016,7 +1015,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationClassCode"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1076,7 +1075,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationMoodCode"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1136,7 +1135,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationId"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationId"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1207,7 +1206,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationCode"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationCode"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1267,7 +1266,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationText"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationText"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1327,7 +1326,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationStatusCodeP"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1409,7 +1408,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationStatusCode"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1469,7 +1468,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationEffectiveTime"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1529,7 +1528,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationValue"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationValue"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1587,10 +1586,9 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 			functionalStatusResultObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_INTERPRETATION_CODE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationInterpretationCode"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationInterpretationCode"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1650,7 +1648,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_METHOD_CODE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationMethodCode"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationMethodCode"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1708,10 +1706,9 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 			functionalStatusResultObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TARGET_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationTargetSiteCode"),
+					ConsolPlugin.INSTANCE.getString("ResultObservationTargetSiteCode"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 

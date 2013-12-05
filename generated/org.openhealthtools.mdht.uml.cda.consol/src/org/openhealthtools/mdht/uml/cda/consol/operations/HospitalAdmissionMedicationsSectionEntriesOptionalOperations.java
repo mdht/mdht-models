@@ -113,7 +113,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId"),
 					new Object[] { hospitalAdmissionMedicationsSectionEntriesOptional }));
 			}
 
@@ -177,7 +177,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalHospitalAdmissionMedicationsSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalCode"),
 					new Object[] { hospitalAdmissionMedicationsSectionEntriesOptional }));
 			}
 
@@ -239,7 +239,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalHospitalAdmissionMedicationsSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalCodeP"),
 					new Object[] { hospitalAdmissionMedicationsSectionEntriesOptional }));
 			}
 
@@ -301,7 +301,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalHospitalAdmissionMedicationsSectionEntriesOptionalText"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalText"),
 					new Object[] { hospitalAdmissionMedicationsSectionEntriesOptional }));
 			}
 
@@ -363,7 +363,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalHospitalAdmissionMedicationsSectionEntriesOptionalTitle"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalTitle"),
 					new Object[] { hospitalAdmissionMedicationsSectionEntriesOptional }));
 			}
 
@@ -425,7 +425,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ADMISSION_MEDICATION,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication"),
+					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication"),
 					new Object[] { hospitalAdmissionMedicationsSectionEntriesOptional }));
 			}
 

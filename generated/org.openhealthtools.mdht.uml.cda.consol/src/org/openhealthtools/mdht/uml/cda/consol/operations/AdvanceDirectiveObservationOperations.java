@@ -131,10 +131,9 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_HAS_STARTING_TIME,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationHasStartingTime"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationHasStartingTime"),
 					new Object[] { advanceDirectiveObservation }));
 			}
 
@@ -193,10 +192,9 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_HAS_ENDING_TIME,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationHasEndingTime"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationHasEndingTime"),
 					new Object[] { advanceDirectiveObservation }));
 			}
 
@@ -254,10 +252,9 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationTemplateId"),
 					new Object[] { advanceDirectiveObservation }));
 			}
 
@@ -317,7 +314,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationClassCode"),
 					new Object[] { advanceDirectiveObservation }));
 			}
 
@@ -377,7 +374,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationMoodCode"),
 					new Object[] { advanceDirectiveObservation }));
 			}
 
@@ -437,7 +434,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationId"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationId"),
 					new Object[] { advanceDirectiveObservation }));
 			}
 
@@ -497,7 +494,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationCodeP"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationCodeP"),
 					new Object[] { advanceDirectiveObservation }));
 			}
 
@@ -579,7 +576,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationCode"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationCode"),
 					new Object[] { advanceDirectiveObservation }));
 			}
 
@@ -638,10 +635,9 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationStatusCode"),
 					new Object[] { advanceDirectiveObservation }));
 			}
 
@@ -699,10 +695,9 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationEffectiveTime"),
 					new Object[] { advanceDirectiveObservation }));
 			}
 
@@ -762,7 +757,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationVerifier"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationVerifier"),
 					new Object[] { advanceDirectiveObservation }));
 			}
 
@@ -822,7 +817,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationCustodian"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationCustodian"),
 					new Object[] { advanceDirectiveObservation }));
 			}
 
@@ -882,7 +877,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationReference"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationReference"),
 					new Object[] { advanceDirectiveObservation }));
 			}
 

@@ -106,10 +106,9 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 			preoperativeDiagnosisSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION__PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionPreoperativeDiagnosisSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionTemplateId"),
 					new Object[] { preoperativeDiagnosisSection }));
 			}
 
@@ -171,7 +170,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION__PREOPERATIVE_DIAGNOSIS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionPreoperativeDiagnosisSectionCode"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionCode"),
 					new Object[] { preoperativeDiagnosisSection }));
 			}
 
@@ -231,7 +230,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION__PREOPERATIVE_DIAGNOSIS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionPreoperativeDiagnosisSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionCodeP"),
 					new Object[] { preoperativeDiagnosisSection }));
 			}
 
@@ -291,7 +290,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION__PREOPERATIVE_DIAGNOSIS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionPreoperativeDiagnosisSectionText"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionText"),
 					new Object[] { preoperativeDiagnosisSection }));
 			}
 
@@ -351,7 +350,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION__PREOPERATIVE_DIAGNOSIS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionPreoperativeDiagnosisSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionTitle"),
 					new Object[] { preoperativeDiagnosisSection }));
 			}
 
@@ -413,7 +412,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION__PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionPreoperativeDiagnosisSectionPreoperativeDiagnosis"),
+					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionPreoperativeDiagnosis"),
 					new Object[] { preoperativeDiagnosisSection }));
 			}
 

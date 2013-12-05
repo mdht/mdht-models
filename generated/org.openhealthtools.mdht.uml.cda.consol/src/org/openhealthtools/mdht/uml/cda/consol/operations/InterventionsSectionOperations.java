@@ -102,7 +102,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INTERVENTIONS_SECTION__INTERVENTIONS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("InterventionsSectionInterventionsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("InterventionsSectionTemplateId"),
 					new Object[] { interventionsSection }));
 			}
 
@@ -163,8 +163,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INTERVENTIONS_SECTION__INTERVENTIONS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("InterventionsSectionInterventionsSectionCode"),
-					new Object[] { interventionsSection }));
+					ConsolPlugin.INSTANCE.getString("InterventionsSectionCode"), new Object[] { interventionsSection }));
 			}
 
 			return false;
@@ -222,8 +221,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INTERVENTIONS_SECTION__INTERVENTIONS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("InterventionsSectionInterventionsSectionCodeP"),
-					new Object[] { interventionsSection }));
+					ConsolPlugin.INSTANCE.getString("InterventionsSectionCodeP"), new Object[] { interventionsSection }));
 			}
 
 			return false;
@@ -281,8 +279,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INTERVENTIONS_SECTION__INTERVENTIONS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("InterventionsSectionInterventionsSectionText"),
-					new Object[] { interventionsSection }));
+					ConsolPlugin.INSTANCE.getString("InterventionsSectionText"), new Object[] { interventionsSection }));
 			}
 
 			return false;
@@ -340,8 +337,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INTERVENTIONS_SECTION__INTERVENTIONS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("InterventionsSectionInterventionsSectionTitle"),
-					new Object[] { interventionsSection }));
+					ConsolPlugin.INSTANCE.getString("InterventionsSectionTitle"), new Object[] { interventionsSection }));
 			}
 
 			return false;

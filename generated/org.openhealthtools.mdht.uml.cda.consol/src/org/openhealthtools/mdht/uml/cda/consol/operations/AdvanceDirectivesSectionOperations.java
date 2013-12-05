@@ -109,7 +109,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionAdvanceDirectivesSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionCodeP"),
 					new Object[] { advanceDirectivesSection }));
 			}
 
@@ -190,7 +190,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionAdvanceDirectivesSectionCode"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionCode"),
 					new Object[] { advanceDirectivesSection }));
 			}
 
@@ -249,7 +249,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionAdvanceDirectivesSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionTitle"),
 					new Object[] { advanceDirectivesSection }));
 			}
 
@@ -308,7 +308,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionAdvanceDirectivesSectionText"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionText"),
 					new Object[] { advanceDirectivesSection }));
 			}
 
@@ -369,7 +369,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionAdvanceDirectivesSectionAdvanceDirectiveObservation"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionAdvanceDirectiveObservation"),
 					new Object[] { advanceDirectivesSection }));
 			}
 
@@ -475,7 +475,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionAdvanceDirectivesSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptionalTemplateId"),
 					new Object[] { advanceDirectivesSection }));
 			}
 

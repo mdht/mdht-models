@@ -217,7 +217,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections"),
 					new Object[] { procedureNote }));
 			}
 
@@ -278,7 +278,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent"),
 					new Object[] { procedureNote }));
 			}
 
@@ -339,7 +339,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -398,8 +398,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_SECTION_TITLES,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteSectionTitles"),
-					new Object[] { procedureNote }));
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteSectionTitles"), new Object[] { procedureNote }));
 			}
 
 			return false;
@@ -457,8 +456,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteTemplateId"),
-					new Object[] { procedureNote }));
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteTemplateId"), new Object[] { procedureNote }));
 			}
 
 			return false;
@@ -516,8 +514,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteGeneralHeaderConstraintsCodeP"),
-					new Object[] { procedureNote }));
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCodeP"), new Object[] { procedureNote }));
 			}
 
 			if (context != null) {
@@ -587,8 +584,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteComponentOf"),
-					new Object[] { procedureNote }));
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteComponentOf"), new Object[] { procedureNote }));
 			}
 
 			return false;
@@ -646,8 +642,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_ASSESSMENT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteAssessmentSection"),
-					new Object[] { procedureNote }));
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteAssessmentSection"), new Object[] { procedureNote }));
 			}
 
 			return false;
@@ -705,8 +700,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PLAN_OF_CARE_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNotePlanOfCareSection"),
-					new Object[] { procedureNote }));
+					ConsolPlugin.INSTANCE.getString("ProcedureNotePlanOfCareSection"), new Object[] { procedureNote }));
 			}
 
 			return false;
@@ -764,7 +758,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_ASSESSMENT_AND_PLAN_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteAssessmentAndPlanSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteAssessmentAndPlanSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -823,7 +817,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_COMPLICATIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteComplicationsSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteComplicationsSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -883,7 +877,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_POSTPROCEDURE_DIAGNOSIS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNotePostprocedureDiagnosisSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNotePostprocedureDiagnosisSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -942,7 +936,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_DESCRIPTION_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteProcedureDescriptionSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureDescriptionSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -1001,7 +995,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_INDICATIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteProcedureIndicationsSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureIndicationsSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -1061,7 +1055,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteAllergiesSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteAllergiesSectionEntriesOptional"),
 					new Object[] { procedureNote }));
 			}
 
@@ -1120,8 +1114,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_ANESTHESIA_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteAnesthesiaSection"),
-					new Object[] { procedureNote }));
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteAnesthesiaSection"), new Object[] { procedureNote }));
 			}
 
 			return false;
@@ -1179,7 +1172,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_CHIEF_COMPLAINT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteChiefComplaintSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteChiefComplaintSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -1237,10 +1230,9 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			procedureNote)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteChiefComplaintAndReasonForVisitSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteChiefComplaintAndReasonForVisitSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -1299,7 +1291,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_FAMILY_HISTORY_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteFamilyHistorySection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteFamilyHistorySection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -1359,7 +1351,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteHistoryOfPastIllnessSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteHistoryOfPastIllnessSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -1419,7 +1411,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteHistoryOfPresentIllnessSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteHistoryOfPresentIllnessSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -1478,7 +1470,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_MEDICAL_HISTORY_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteMedicalHistorySection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteMedicalHistorySection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -1538,7 +1530,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteMedicationsSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteMedicationsSectionEntriesOptional"),
 					new Object[] { procedureNote }));
 			}
 
@@ -1598,7 +1590,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_MEDICATIONS_ADMINISTERED_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteMedicationsAdministeredSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteMedicationsAdministeredSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -1657,8 +1649,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PHYSICAL_EXAM_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNotePhysicalExamSection"),
-					new Object[] { procedureNote }));
+					ConsolPlugin.INSTANCE.getString("ProcedureNotePhysicalExamSection"), new Object[] { procedureNote }));
 			}
 
 			return false;
@@ -1716,7 +1707,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PLANNED_PROCEDURE_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNotePlannedProcedureSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNotePlannedProcedureSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -1775,7 +1766,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_DISPOSITION_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteProcedureDispositionSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureDispositionSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -1835,7 +1826,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteProcedureEstimatedBloodLossSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureEstimatedBloodLossSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -1894,7 +1885,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_FINDINGS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteProcedureFindingsSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureFindingsSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -1953,7 +1944,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_IMPLANTS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteProcedureImplantsSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureImplantsSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -2013,7 +2004,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteProcedureSpecimensTakenSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureSpecimensTakenSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -2073,7 +2064,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteProceduresSectionEntriesOptional"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteProceduresSectionEntriesOptional"),
 					new Object[] { procedureNote }));
 			}
 
@@ -2132,7 +2123,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_REASON_FOR_VISIT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteReasonForVisitSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteReasonForVisitSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -2191,7 +2182,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_REVIEW_OF_SYSTEMS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteReviewOfSystemsSection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteReviewOfSystemsSection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -2250,7 +2241,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_SOCIAL_HISTORY_SECTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteSocialHistorySection"),
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteSocialHistorySection"),
 					new Object[] { procedureNote }));
 			}
 
@@ -2309,8 +2300,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PARTICIPANT1,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteParticipant1"),
-					new Object[] { procedureNote }));
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteParticipant1"), new Object[] { procedureNote }));
 			}
 
 			return false;
@@ -2368,8 +2358,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureNoteDocumentationOf"),
-					new Object[] { procedureNote }));
+					ConsolPlugin.INSTANCE.getString("ProcedureNoteDocumentationOf"), new Object[] { procedureNote }));
 			}
 
 			return false;
@@ -4866,8 +4855,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureNoteGeneralHeaderConstraintsCode"),
-					new Object[] { procedureNote }));
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"), new Object[] { procedureNote }));
 			}
 
 			return false;

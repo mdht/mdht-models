@@ -110,7 +110,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_FINDINGS_SECTION__PROCEDURE_FINDINGS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionProcedureFindingsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionTemplateId"),
 					new Object[] { procedureFindingsSection }));
 			}
 
@@ -171,7 +171,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_FINDINGS_SECTION__PROCEDURE_FINDINGS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionProcedureFindingsSectionCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionCode"),
 					new Object[] { procedureFindingsSection }));
 			}
 
@@ -230,7 +230,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_FINDINGS_SECTION__PROCEDURE_FINDINGS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionProcedureFindingsSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionCodeP"),
 					new Object[] { procedureFindingsSection }));
 			}
 
@@ -289,7 +289,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_FINDINGS_SECTION__PROCEDURE_FINDINGS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionProcedureFindingsSectionText"),
+					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionText"),
 					new Object[] { procedureFindingsSection }));
 			}
 
@@ -348,7 +348,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_FINDINGS_SECTION__PROCEDURE_FINDINGS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionProcedureFindingsSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionTitle"),
 					new Object[] { procedureFindingsSection }));
 			}
 
@@ -406,10 +406,9 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 			procedureFindingsSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_FINDINGS_SECTION__PROCEDURE_FINDINGS_SECTION_PROBLEM_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionProcedureFindingsSectionProblemObservation"),
+					ConsolPlugin.INSTANCE.getString("ProcedureFindingsSectionProblemObservation"),
 					new Object[] { procedureFindingsSection }));
 			}
 

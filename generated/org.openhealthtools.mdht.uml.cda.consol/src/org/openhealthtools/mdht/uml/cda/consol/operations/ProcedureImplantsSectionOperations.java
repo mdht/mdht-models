@@ -102,7 +102,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_IMPLANTS_SECTION__PROCEDURE_IMPLANTS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionProcedureImplantsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionTemplateId"),
 					new Object[] { procedureImplantsSection }));
 			}
 
@@ -163,7 +163,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_IMPLANTS_SECTION__PROCEDURE_IMPLANTS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionProcedureImplantsSectionCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionCode"),
 					new Object[] { procedureImplantsSection }));
 			}
 
@@ -222,7 +222,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_IMPLANTS_SECTION__PROCEDURE_IMPLANTS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionProcedureImplantsSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionCodeP"),
 					new Object[] { procedureImplantsSection }));
 			}
 
@@ -281,7 +281,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_IMPLANTS_SECTION__PROCEDURE_IMPLANTS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionProcedureImplantsSectionText"),
+					ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionText"),
 					new Object[] { procedureImplantsSection }));
 			}
 
@@ -340,7 +340,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_IMPLANTS_SECTION__PROCEDURE_IMPLANTS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionProcedureImplantsSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionTitle"),
 					new Object[] { procedureImplantsSection }));
 			}
 

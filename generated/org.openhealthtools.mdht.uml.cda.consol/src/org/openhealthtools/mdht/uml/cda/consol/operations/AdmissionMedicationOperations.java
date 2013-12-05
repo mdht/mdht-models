@@ -110,7 +110,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_MEDICATION__ADMISSION_MEDICATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AdmissionMedicationAdmissionMedicationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("AdmissionMedicationTemplateId"),
 					new Object[] { admissionMedication }));
 			}
 
@@ -169,7 +169,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_MEDICATION__ADMISSION_MEDICATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("AdmissionMedicationAdmissionMedicationClassCode"),
+					ConsolPlugin.INSTANCE.getString("AdmissionMedicationClassCode"),
 					new Object[] { admissionMedication }));
 			}
 
@@ -228,8 +228,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_MEDICATION__ADMISSION_MEDICATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AdmissionMedicationAdmissionMedicationCodeP"),
-					new Object[] { admissionMedication }));
+					ConsolPlugin.INSTANCE.getString("AdmissionMedicationCodeP"), new Object[] { admissionMedication }));
 			}
 
 			if (context != null) {
@@ -309,8 +308,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_MEDICATION__ADMISSION_MEDICATION_CODE,
-					ConsolPlugin.INSTANCE.getString("AdmissionMedicationAdmissionMedicationCode"),
-					new Object[] { admissionMedication }));
+					ConsolPlugin.INSTANCE.getString("AdmissionMedicationCode"), new Object[] { admissionMedication }));
 			}
 
 			return false;
@@ -368,7 +366,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_MEDICATION__ADMISSION_MEDICATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("AdmissionMedicationAdmissionMedicationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("AdmissionMedicationMoodCode"),
 					new Object[] { admissionMedication }));
 			}
 
@@ -427,7 +425,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADMISSION_MEDICATION__ADMISSION_MEDICATION_MEDICATION_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("AdmissionMedicationAdmissionMedicationMedicationActivity"),
+					ConsolPlugin.INSTANCE.getString("AdmissionMedicationMedicationActivity"),
 					new Object[] { admissionMedication }));
 			}
 

@@ -113,7 +113,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER,
-					ConsolPlugin.INSTANCE.getString("CoverageActivityCoverageActivityRelationshipSequenceNumber"),
+					ConsolPlugin.INSTANCE.getString("CoverageActivityRelationshipSequenceNumber"),
 					new Object[] { coverageActivity }));
 			}
 
@@ -172,8 +172,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CoverageActivityCoverageActivityTemplateId"),
-					new Object[] { coverageActivity }));
+					ConsolPlugin.INSTANCE.getString("CoverageActivityTemplateId"), new Object[] { coverageActivity }));
 			}
 
 			return false;
@@ -231,8 +230,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("CoverageActivityCoverageActivityClassCode"),
-					new Object[] { coverageActivity }));
+					ConsolPlugin.INSTANCE.getString("CoverageActivityClassCode"), new Object[] { coverageActivity }));
 			}
 
 			return false;
@@ -292,8 +290,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_CODE,
-					ConsolPlugin.INSTANCE.getString("CoverageActivityCoverageActivityCode"),
-					new Object[] { coverageActivity }));
+					ConsolPlugin.INSTANCE.getString("CoverageActivityCode"), new Object[] { coverageActivity }));
 			}
 
 			return false;
@@ -350,8 +347,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_ID,
-					ConsolPlugin.INSTANCE.getString("CoverageActivityCoverageActivityId"),
-					new Object[] { coverageActivity }));
+					ConsolPlugin.INSTANCE.getString("CoverageActivityId"), new Object[] { coverageActivity }));
 			}
 
 			return false;
@@ -409,8 +405,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("CoverageActivityCoverageActivityMoodCode"),
-					new Object[] { coverageActivity }));
+					ConsolPlugin.INSTANCE.getString("CoverageActivityMoodCode"), new Object[] { coverageActivity }));
 			}
 
 			return false;
@@ -469,8 +464,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("CoverageActivityCoverageActivityStatusCode"),
-					new Object[] { coverageActivity }));
+					ConsolPlugin.INSTANCE.getString("CoverageActivityStatusCode"), new Object[] { coverageActivity }));
 			}
 
 			return false;
@@ -528,7 +522,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_POLICY_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("CoverageActivityCoverageActivityPolicyActivity"),
+					ConsolPlugin.INSTANCE.getString("CoverageActivityPolicyActivity"),
 					new Object[] { coverageActivity }));
 			}
 

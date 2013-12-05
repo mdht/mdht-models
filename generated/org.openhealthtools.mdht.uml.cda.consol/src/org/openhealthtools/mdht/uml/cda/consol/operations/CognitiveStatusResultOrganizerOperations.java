@@ -111,7 +111,7 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__COGNITIVE_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerCognitiveStatusResultOrganizerCodeCodeSystem"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerCodeCodeSystem"),
 					new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -173,7 +173,7 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerCognitiveStatusResultOrganizerCognitiveStatusResultObservation"),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerCognitiveStatusResultObservation"),
 					new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -278,7 +278,7 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerTemplateId"),
 					new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -338,7 +338,7 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerClassCode"),
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerClassCode"),
 					new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -398,7 +398,7 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerMoodCode"),
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerMoodCode"),
 					new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -457,7 +457,7 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_ID,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerId"),
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerId"),
 					new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -516,7 +516,7 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_CODE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerCode"),
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerCode"),
 					new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -576,7 +576,7 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerStatusCodeP"),
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerStatusCodeP"),
 					new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -658,7 +658,7 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerStatusCode"),
+					ConsolPlugin.INSTANCE.getString("ResultOrganizerStatusCode"),
 					new Object[] { cognitiveStatusResultOrganizer }));
 			}
 

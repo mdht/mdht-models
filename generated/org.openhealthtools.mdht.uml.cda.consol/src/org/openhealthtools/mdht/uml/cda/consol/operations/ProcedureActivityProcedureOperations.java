@@ -160,10 +160,9 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CODE_CODE_SYSTEMS,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureCodeCodeSystems"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureCodeCodeSystems"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -222,10 +221,9 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CODE_ORIGINAL_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureCodeOriginalText"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureCodeOriginalText"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -284,10 +282,9 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ORIGINAL_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureOriginalTextReference"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureOriginalTextReference"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -349,7 +346,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					Diagnostic.WARNING,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ORIGINAL_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureOriginalTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureOriginalTextReferenceValue"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -407,10 +404,9 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureReferenceValue"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -469,10 +465,9 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENCOUNTER_INVERSION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureEncounterInversion"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureEncounterInversion"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -534,7 +529,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PRODUCT_INSTANCE_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureProductInstanceTypeCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProductInstanceTypeCode"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -596,7 +591,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_SERVICE_DELIVERY_LOCATION_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureServiceDeliveryLocationTypeCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureServiceDeliveryLocationTypeCode"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -655,10 +650,9 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_INSTRUCTIONS_INVERSION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureInstructionsInversion"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureInstructionsInversion"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -718,7 +712,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureTemplateId"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -778,7 +772,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureClassCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureClassCode"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -840,7 +834,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureMoodCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureMoodCode"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -899,7 +893,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureId"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureId"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -958,7 +952,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureCode"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -1020,7 +1014,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureStatusCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureStatusCode"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -1078,10 +1072,9 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureEffectiveTime"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -1139,10 +1132,9 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedurePriorityCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedurePriorityCodeP"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -1223,10 +1215,9 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedurePriorityCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedurePriorityCode"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -1286,7 +1277,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_METHOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureMethodCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureMethodCode"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -1345,10 +1336,9 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_TARGET_SITE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureTargetSiteCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureTargetSiteCodeP"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -1430,10 +1420,9 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_TARGET_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureTargetSiteCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureTargetSiteCode"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -1493,7 +1482,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_INDICATION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureIndication"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureIndication"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -1553,7 +1542,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_SPECIMEN,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureSpecimen"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureSpecimen"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -1615,7 +1604,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					Diagnostic.INFO,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_SERVICE_DELIVERY_LOCATION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureServiceDeliveryLocation"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureServiceDeliveryLocation"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -1675,7 +1664,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PERFORMER,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedurePerformer"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedurePerformer"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -1734,10 +1723,9 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_MEDICATION_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureMedicationActivity"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureMedicationActivity"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -1796,10 +1784,9 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PATIENT_INSTRUCTION,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedurePatientInstruction"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedurePatientInstruction"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -1858,10 +1845,9 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PRODUCT_INSTANCE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureProductInstance"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProductInstance"),
 					new Object[] { procedureActivityProcedure }));
 			}
 
@@ -1920,10 +1906,9 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_ENTRY_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureEntryRelationship"),
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureEntryRelationship"),
 					new Object[] { procedureActivityProcedure }));
 			}
 

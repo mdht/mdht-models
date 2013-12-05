@@ -114,8 +114,7 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CodeObservationsCodeObservationsTemplateId"),
-					new Object[] { codeObservations }));
+					ConsolPlugin.INSTANCE.getString("CodeObservationsTemplateId"), new Object[] { codeObservations }));
 			}
 
 			return false;
@@ -173,8 +172,7 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("CodeObservationsCodeObservationsClassCode"),
-					new Object[] { codeObservations }));
+					ConsolPlugin.INSTANCE.getString("CodeObservationsClassCode"), new Object[] { codeObservations }));
 			}
 
 			return false;
@@ -232,8 +230,7 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("CodeObservationsCodeObservationsMoodCode"),
-					new Object[] { codeObservations }));
+					ConsolPlugin.INSTANCE.getString("CodeObservationsMoodCode"), new Object[] { codeObservations }));
 			}
 
 			return false;
@@ -291,8 +288,7 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_CODE,
-					ConsolPlugin.INSTANCE.getString("CodeObservationsCodeObservationsCode"),
-					new Object[] { codeObservations }));
+					ConsolPlugin.INSTANCE.getString("CodeObservationsCode"), new Object[] { codeObservations }));
 			}
 
 			return false;
@@ -350,8 +346,7 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("CodeObservationsCodeObservationsEffectiveTime"),
-					new Object[] { codeObservations }));
+					ConsolPlugin.INSTANCE.getString("CodeObservationsEffectiveTime"), new Object[] { codeObservations }));
 			}
 
 			return false;
@@ -409,8 +404,7 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_VALUE,
-					ConsolPlugin.INSTANCE.getString("CodeObservationsCodeObservationsValue"),
-					new Object[] { codeObservations }));
+					ConsolPlugin.INSTANCE.getString("CodeObservationsValue"), new Object[] { codeObservations }));
 			}
 
 			return false;
@@ -468,7 +462,7 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_SOP_INSTANCE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("CodeObservationsCodeObservationsSOPInstanceObservation"),
+					ConsolPlugin.INSTANCE.getString("CodeObservationsSOPInstanceObservation"),
 					new Object[] { codeObservations }));
 			}
 
@@ -528,7 +522,7 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_QUANTITY_MEASUREMENT_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("CodeObservationsCodeObservationsQuantityMeasurementObservation"),
+					ConsolPlugin.INSTANCE.getString("CodeObservationsQuantityMeasurementObservation"),
 					new Object[] { codeObservations }));
 			}
 

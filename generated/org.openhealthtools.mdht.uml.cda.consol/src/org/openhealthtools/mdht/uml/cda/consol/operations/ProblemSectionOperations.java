@@ -153,7 +153,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProblemSectionProblemSectionEntriesOptionalTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProblemSectionEntriesOptionalTemplateId"),
 					new Object[] { problemSection }));
 			}
 
@@ -212,7 +212,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProblemSectionProblemSectionEntriesOptionalCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProblemSectionEntriesOptionalCodeP"),
 					new Object[] { problemSection }));
 			}
 
@@ -293,7 +293,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemSectionProblemSectionEntriesOptionalCode"),
+					ConsolPlugin.INSTANCE.getString("ProblemSectionEntriesOptionalCode"),
 					new Object[] { problemSection }));
 			}
 
@@ -352,7 +352,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProblemSectionProblemSectionEntriesOptionalText"),
+					ConsolPlugin.INSTANCE.getString("ProblemSectionEntriesOptionalText"),
 					new Object[] { problemSection }));
 			}
 
@@ -411,7 +411,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_TITLE,
-					ConsolPlugin.INSTANCE.getString("ProblemSectionProblemSectionEntriesOptionalTitle"),
+					ConsolPlugin.INSTANCE.getString("ProblemSectionEntriesOptionalTitle"),
 					new Object[] { problemSection }));
 			}
 
@@ -471,7 +471,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN,
-					ConsolPlugin.INSTANCE.getString("ProblemSectionProblemSectionEntriesOptionalProblemConcern"),
+					ConsolPlugin.INSTANCE.getString("ProblemSectionEntriesOptionalProblemConcern"),
 					new Object[] { problemSection }));
 			}
 

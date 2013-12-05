@@ -102,7 +102,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HIGHEST_PRESSURE_ULCER_STAGE__HIGHEST_PRESSURE_ULCER_STAGE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageHighestPressureUlcerStageTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageTemplateId"),
 					new Object[] { highestPressureUlcerStage }));
 			}
 
@@ -162,7 +162,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HIGHEST_PRESSURE_ULCER_STAGE__HIGHEST_PRESSURE_ULCER_STAGE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageHighestPressureUlcerStageClassCode"),
+					ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageClassCode"),
 					new Object[] { highestPressureUlcerStage }));
 			}
 
@@ -222,7 +222,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HIGHEST_PRESSURE_ULCER_STAGE__HIGHEST_PRESSURE_ULCER_STAGE_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageHighestPressureUlcerStageMoodCode"),
+					ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageMoodCode"),
 					new Object[] { highestPressureUlcerStage }));
 			}
 
@@ -281,7 +281,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HIGHEST_PRESSURE_ULCER_STAGE__HIGHEST_PRESSURE_ULCER_STAGE_ID,
-					ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageHighestPressureUlcerStageId"),
+					ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageId"),
 					new Object[] { highestPressureUlcerStage }));
 			}
 
@@ -340,7 +340,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HIGHEST_PRESSURE_ULCER_STAGE__HIGHEST_PRESSURE_ULCER_STAGE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageHighestPressureUlcerStageCodeP"),
+					ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageCodeP"),
 					new Object[] { highestPressureUlcerStage }));
 			}
 
@@ -421,7 +421,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HIGHEST_PRESSURE_ULCER_STAGE__HIGHEST_PRESSURE_ULCER_STAGE_CODE,
-					ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageHighestPressureUlcerStageCode"),
+					ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageCode"),
 					new Object[] { highestPressureUlcerStage }));
 			}
 
@@ -480,7 +480,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HIGHEST_PRESSURE_ULCER_STAGE__HIGHEST_PRESSURE_ULCER_STAGE_VALUE,
-					ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageHighestPressureUlcerStageValue"),
+					ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageValue"),
 					new Object[] { highestPressureUlcerStage }));
 			}
 

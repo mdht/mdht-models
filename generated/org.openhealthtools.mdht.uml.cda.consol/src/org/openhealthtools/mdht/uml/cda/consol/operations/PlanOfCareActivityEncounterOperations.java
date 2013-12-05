@@ -100,10 +100,9 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 			planOfCareActivityEncounter)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_ENCOUNTER__PLAN_OF_CARE_ACTIVITY_ENCOUNTER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityEncounterPlanOfCareActivityEncounterTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityEncounterTemplateId"),
 					new Object[] { planOfCareActivityEncounter }));
 			}
 
@@ -163,7 +162,7 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_ENCOUNTER__PLAN_OF_CARE_ACTIVITY_ENCOUNTER_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityEncounterPlanOfCareActivityEncounterClassCode"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityEncounterClassCode"),
 					new Object[] { planOfCareActivityEncounter }));
 			}
 
@@ -225,7 +224,7 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_ENCOUNTER__PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityEncounterPlanOfCareActivityEncounterMoodCode"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityEncounterMoodCode"),
 					new Object[] { planOfCareActivityEncounter }));
 			}
 
@@ -285,7 +284,7 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_ENCOUNTER__PLAN_OF_CARE_ACTIVITY_ENCOUNTER_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityEncounterPlanOfCareActivityEncounterId"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivityEncounterId"),
 					new Object[] { planOfCareActivityEncounter }));
 			}
 

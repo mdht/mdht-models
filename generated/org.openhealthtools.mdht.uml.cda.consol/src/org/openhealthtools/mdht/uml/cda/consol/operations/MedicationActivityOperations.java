@@ -157,7 +157,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_QUANTITYORRATE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityDoseQuantityorrateQuantity"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityDoseQuantityorrateQuantity"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -216,7 +216,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityTextReference"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityTextReference"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -275,7 +275,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityReferenceValue"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -334,7 +334,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityTextReferenceValue"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -393,7 +393,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLTS,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityEffectiveTimeIVLTS"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityEffectiveTimeIVLTS"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -452,7 +452,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_LOW,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityEffectiveTimeLow"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityEffectiveTimeLow"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -511,7 +511,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_HIGH,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityEffectiveTimeHigh"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityEffectiveTimeHigh"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -570,7 +570,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_PIVLTS,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityEffectiveTimePIVLTS"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityEffectiveTimePIVLTS"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -629,7 +629,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_OPERATOR,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityEffectiveTimeOperator"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityEffectiveTimeOperator"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -688,7 +688,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_QUANTITY_UNIT,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityDoseQuantityUnit"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityDoseQuantityUnit"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -747,7 +747,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DRUG_VEHICLE_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityDrugVehicleTypeCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityDrugVehicleTypeCode"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -807,7 +807,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INSTRUCTIONS_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityInstructionsInversionInd"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityInstructionsInversionInd"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -865,10 +865,9 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 			medicationActivity)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRECONDITION_SUBSTANCE_ADM_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityPreconditionSubstanceAdmTypeCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityPreconditionSubstanceAdmTypeCode"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -927,7 +926,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_RATE_QUANTITY_UNIT,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityRateQuantityUnit"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityRateQuantityUnit"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -986,7 +985,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityTemplateId"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityTemplateId"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -1045,8 +1044,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityClassCode"),
-					new Object[] { medicationActivity }));
+					ConsolPlugin.INSTANCE.getString("MedicationActivityClassCode"), new Object[] { medicationActivity }));
 			}
 
 			return false;
@@ -1106,8 +1104,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityMoodCode"),
-					new Object[] { medicationActivity }));
+					ConsolPlugin.INSTANCE.getString("MedicationActivityMoodCode"), new Object[] { medicationActivity }));
 			}
 
 			return false;
@@ -1165,8 +1162,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityId"),
-					new Object[] { medicationActivity }));
+					ConsolPlugin.INSTANCE.getString("MedicationActivityId"), new Object[] { medicationActivity }));
 			}
 
 			return false;
@@ -1224,8 +1220,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityCode"),
-					new Object[] { medicationActivity }));
+					ConsolPlugin.INSTANCE.getString("MedicationActivityCode"), new Object[] { medicationActivity }));
 			}
 
 			return false;
@@ -1283,7 +1278,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityStatusCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityStatusCode"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -1342,7 +1337,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ROUTE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityRouteCodeP"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityRouteCodeP"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -1423,8 +1418,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ROUTE_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityRouteCode"),
-					new Object[] { medicationActivity }));
+					ConsolPlugin.INSTANCE.getString("MedicationActivityRouteCode"), new Object[] { medicationActivity }));
 			}
 
 			return false;
@@ -1482,7 +1476,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_APPROACH_SITE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityApproachSiteCodeP"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityApproachSiteCodeP"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -1564,7 +1558,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_APPROACH_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityApproachSiteCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityApproachSiteCode"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -1623,7 +1617,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityDoseQuantity"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityDoseQuantity"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -1682,7 +1676,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_RATE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityRateQuantity"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityRateQuantity"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -1741,7 +1735,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MAX_DOSE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityMaxDoseQuantity"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityMaxDoseQuantity"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -1802,7 +1796,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityAdministrationUnitCode"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityAdministrationUnitCode"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -1861,8 +1855,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEXT,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityText"),
-					new Object[] { medicationActivity }));
+					ConsolPlugin.INSTANCE.getString("MedicationActivityText"), new Object[] { medicationActivity }));
 			}
 
 			return false;
@@ -1920,7 +1913,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REPEAT_NUMBER,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityRepeatNumber"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityRepeatNumber"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -1979,7 +1972,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_SUPPLY_ORDER,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityMedicationSupplyOrder"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationSupplyOrder"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -2038,7 +2031,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REACTION_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityReactionObservation"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityReactionObservation"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -2097,8 +2090,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PERFORMER,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityPerformer"),
-					new Object[] { medicationActivity }));
+					ConsolPlugin.INSTANCE.getString("MedicationActivityPerformer"), new Object[] { medicationActivity }));
 			}
 
 			return false;
@@ -2156,7 +2148,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INSTRUCTIONS,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityInstructions"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityInstructions"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -2215,7 +2207,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INDICATION,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityIndication"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityIndication"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -2274,7 +2266,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_DISPENSE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityMedicationDispense"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationDispense"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -2333,7 +2325,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRECONDITION,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityPrecondition"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityPrecondition"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -2392,7 +2384,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DRUG_VEHICLE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityDrugVehicle"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityDrugVehicle"),
 					new Object[] { medicationActivity }));
 			}
 
@@ -2451,7 +2443,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CONSUMABLE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityConsumable"),
+					ConsolPlugin.INSTANCE.getString("MedicationActivityConsumable"),
 					new Object[] { medicationActivity }));
 			}
 
