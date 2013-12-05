@@ -286,7 +286,7 @@ public class FunctionalStatusSectionOperations extends org.openhealthtools.mdht.
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID,
-						 Mu2consolPlugin.INSTANCE.getString("FunctionalStatusSectionFunctionalStatusSectionTemplateId"),
+						 Mu2consolPlugin.INSTANCE.getString("FunctionalStatusSectionTemplateId"),
 						 new Object [] { functionalStatusSection }));
 			}
 			 

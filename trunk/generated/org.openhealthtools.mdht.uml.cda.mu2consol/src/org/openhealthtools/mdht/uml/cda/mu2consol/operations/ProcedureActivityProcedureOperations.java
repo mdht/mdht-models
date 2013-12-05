@@ -99,7 +99,7 @@ public class ProcedureActivityProcedureOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.PROCEDURE_ACTIVITY_PROCEDURE__MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE,
-						 Mu2consolPlugin.INSTANCE.getString("ProcedureActivityProcedureMU2CONSOLProcedureActivityProcedureCodeValue"),
+						 Mu2consolPlugin.INSTANCE.getString("MU2CONSOLProcedureActivityProcedureCodeValue"),
 						 new Object [] { procedureActivityProcedure }));
 			}
 			 
@@ -164,7 +164,7 @@ public class ProcedureActivityProcedureOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID,
-						 Mu2consolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureTemplateId"),
+						 Mu2consolPlugin.INSTANCE.getString("ProcedureActivityProcedureTemplateId"),
 						 new Object [] { procedureActivityProcedure }));
 			}
 			 
@@ -224,7 +224,7 @@ public class ProcedureActivityProcedureOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CODE,
-						 Mu2consolPlugin.INSTANCE.getString("ProcedureActivityProcedureProcedureActivityProcedureCode"),
+						 Mu2consolPlugin.INSTANCE.getString("ProcedureActivityProcedureCode"),
 						 new Object [] { procedureActivityProcedure }));
 			}
 			 

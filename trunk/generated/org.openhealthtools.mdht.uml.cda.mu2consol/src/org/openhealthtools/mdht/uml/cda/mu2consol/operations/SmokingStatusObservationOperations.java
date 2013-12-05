@@ -113,7 +113,7 @@ public class SmokingStatusObservationOperations extends org.openhealthtools.mdht
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.SMOKING_STATUS_OBSERVATION__TOBACCO_USE_TEMPLATE_ID,
-						 Mu2consolPlugin.INSTANCE.getString("SmokingStatusObservationTobaccoUseTemplateId"),
+						 Mu2consolPlugin.INSTANCE.getString("TobaccoUseTemplateId"),
 						 new Object [] { smokingStatusObservation }));
 			}
 			 
@@ -173,7 +173,7 @@ public class SmokingStatusObservationOperations extends org.openhealthtools.mdht
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE_P,
-						 Mu2consolPlugin.INSTANCE.getString("SmokingStatusObservationSmokingStatusObservationValueP"),
+						 Mu2consolPlugin.INSTANCE.getString("SmokingStatusObservationValueP"),
 						 new Object [] { smokingStatusObservation }));
 			}
 			
@@ -253,7 +253,7 @@ public class SmokingStatusObservationOperations extends org.openhealthtools.mdht
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE,
-						 Mu2consolPlugin.INSTANCE.getString("SmokingStatusObservationSmokingStatusObservationValue"),
+						 Mu2consolPlugin.INSTANCE.getString("SmokingStatusObservationValue"),
 						 new Object [] { smokingStatusObservation }));
 			}
 			 

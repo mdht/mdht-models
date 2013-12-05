@@ -108,7 +108,7 @@ public class CognitiveStatusResultOrganizerOperations extends org.openhealthtool
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-						 Mu2consolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerTemplateId"),
+						 Mu2consolPlugin.INSTANCE.getString("ResultOrganizerTemplateId"),
 						 new Object [] { cognitiveStatusResultOrganizer }));
 			}
 			 

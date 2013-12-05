@@ -170,7 +170,7 @@ public class ResultOrganizerOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-						 Mu2consolPlugin.INSTANCE.getString("ResultOrganizerResultOrganizerTemplateId"),
+						 Mu2consolPlugin.INSTANCE.getString("ResultOrganizerTemplateId"),
 						 new Object [] { resultOrganizer }));
 			}
 			 
@@ -230,7 +230,7 @@ public class ResultOrganizerOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_RESULT_OBSERVATION,
-						 Mu2consolPlugin.INSTANCE.getString("ResultOrganizerResultOrganizerResultObservation"),
+						 Mu2consolPlugin.INSTANCE.getString("ResultOrganizerResultObservation"),
 						 new Object [] { resultOrganizer }));
 			}
 			 

@@ -141,7 +141,7 @@ public class SummaryOfCareRecordOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_CARE_PLANNING,
-						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSummaryOfCareRecordCarePlanning"),
+						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordCarePlanning"),
 						 new Object [] { summaryOfCareRecord }));
 			}
 			 
@@ -202,7 +202,7 @@ public class SummaryOfCareRecordOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_VITAL_SIGNS,
-						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSummaryOfCareRecordVitalSigns"),
+						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordVitalSigns"),
 						 new Object [] { summaryOfCareRecord }));
 			}
 			 
@@ -267,7 +267,7 @@ public class SummaryOfCareRecordOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_PROBLEM_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSummaryOfCareRecordProblemSection"),
+						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordProblemSection"),
 						 new Object [] { summaryOfCareRecord }));
 			}
 			 
@@ -333,7 +333,7 @@ public class SummaryOfCareRecordOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_ALLERGIES_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSummaryOfCareRecordAllergiesSection"),
+						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordAllergiesSection"),
 						 new Object [] { summaryOfCareRecord }));
 			}
 			 
@@ -399,7 +399,7 @@ public class SummaryOfCareRecordOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_IMMUNIZATIONS_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSummaryOfCareRecordImmunizationsSection"),
+						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordImmunizationsSection"),
 						 new Object [] { summaryOfCareRecord }));
 			}
 			 
@@ -465,7 +465,7 @@ public class SummaryOfCareRecordOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSummaryOfCareRecordSocialHistorySection"),
+						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSocialHistorySection"),
 						 new Object [] { summaryOfCareRecord }));
 			}
 			 
@@ -531,7 +531,7 @@ public class SummaryOfCareRecordOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_RESULTS_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSummaryOfCareRecordResultsSection"),
+						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordResultsSection"),
 						 new Object [] { summaryOfCareRecord }));
 			}
 			 
@@ -597,7 +597,7 @@ public class SummaryOfCareRecordOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_PROCEDURES_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSummaryOfCareRecordProceduresSection"),
+						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordProceduresSection"),
 						 new Object [] { summaryOfCareRecord }));
 			}
 			 
@@ -663,7 +663,7 @@ public class SummaryOfCareRecordOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_FUNCTIONAL_STATUS_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSummaryOfCareRecordFunctionalStatusSection"),
+						 Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordFunctionalStatusSection"),
 						 new Object [] { summaryOfCareRecord }));
 			}
 			 

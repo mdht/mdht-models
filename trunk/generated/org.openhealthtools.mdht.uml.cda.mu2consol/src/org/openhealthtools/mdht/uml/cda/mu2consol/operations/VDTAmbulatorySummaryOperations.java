@@ -103,7 +103,7 @@ public class VDTAmbulatorySummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.VDT_AMBULATORY_SUMMARY__VDT_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO,
-						 Mu2consolPlugin.INSTANCE.getString("VDTAmbulatorySummaryVDTAmbulatorySummaryProviderNameAndContactInfo"),
+						 Mu2consolPlugin.INSTANCE.getString("VDTAmbulatorySummaryProviderNameAndContactInfo"),
 						 new Object [] { vdtAmbulatorySummary }));
 			}
 			 
@@ -163,7 +163,7 @@ public class VDTAmbulatorySummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.VDT_AMBULATORY_SUMMARY__VDT_AMBULATORY_SUMMARY_MEDICATIONS_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("VDTAmbulatorySummaryVDTAmbulatorySummaryMedicationsSection"),
+						 Mu2consolPlugin.INSTANCE.getString("VDTAmbulatorySummaryMedicationsSection"),
 						 new Object [] { vdtAmbulatorySummary }));
 			}
 			 

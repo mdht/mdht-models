@@ -105,7 +105,7 @@ public class SocialHistorySectionOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.SOCIAL_HISTORY_SECTION__MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION,
-						 Mu2consolPlugin.INSTANCE.getString("SocialHistorySectionMU2CONSOLSocialHistorySectionSmokingStatusObservation"),
+						 Mu2consolPlugin.INSTANCE.getString("MU2CONSOLSocialHistorySectionSmokingStatusObservation"),
 						 new Object [] { socialHistorySection }));
 			}
 			 
@@ -226,7 +226,7 @@ public class SocialHistorySectionOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
-						 Mu2consolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionTemplateId"),
+						 Mu2consolPlugin.INSTANCE.getString("SocialHistorySectionTemplateId"),
 						 new Object [] { socialHistorySection }));
 			}
 			 

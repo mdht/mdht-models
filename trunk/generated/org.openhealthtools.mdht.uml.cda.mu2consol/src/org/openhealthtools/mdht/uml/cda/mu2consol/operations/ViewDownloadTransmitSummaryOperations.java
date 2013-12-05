@@ -119,7 +119,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLANNING,
-						 Mu2consolPlugin.INSTANCE.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryCarePlanning"),
+						 Mu2consolPlugin.INSTANCE.getString("ViewDownloadTransmitSummaryCarePlanning"),
 						 new Object [] { viewDownloadTransmitSummary }));
 			}
 			 
@@ -180,7 +180,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS,
-						 Mu2consolPlugin.INSTANCE.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryVitalSigns"),
+						 Mu2consolPlugin.INSTANCE.getString("ViewDownloadTransmitSummaryVitalSigns"),
 						 new Object [] { viewDownloadTransmitSummary }));
 			}
 			 
@@ -246,7 +246,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryAllergiesSection"),
+						 Mu2consolPlugin.INSTANCE.getString("ViewDownloadTransmitSummaryAllergiesSection"),
 						 new Object [] { viewDownloadTransmitSummary }));
 			}
 			 
@@ -311,7 +311,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryProblemSection"),
+						 Mu2consolPlugin.INSTANCE.getString("ViewDownloadTransmitSummaryProblemSection"),
 						 new Object [] { viewDownloadTransmitSummary }));
 			}
 			 
@@ -377,7 +377,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryProceduresSection"),
+						 Mu2consolPlugin.INSTANCE.getString("ViewDownloadTransmitSummaryProceduresSection"),
 						 new Object [] { viewDownloadTransmitSummary }));
 			}
 			 
@@ -443,7 +443,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryResultsSection"),
+						 Mu2consolPlugin.INSTANCE.getString("ViewDownloadTransmitSummaryResultsSection"),
 						 new Object [] { viewDownloadTransmitSummary }));
 			}
 			 
@@ -509,7 +509,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummarySocialHistorySection"),
+						 Mu2consolPlugin.INSTANCE.getString("ViewDownloadTransmitSummarySocialHistorySection"),
 						 new Object [] { viewDownloadTransmitSummary }));
 			}
 			 
