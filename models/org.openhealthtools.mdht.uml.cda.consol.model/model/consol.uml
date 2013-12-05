@@ -1661,11 +1661,11 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:7827</ruleId>
     <base_Association href=".controlled/consol-discharge.uml#_9GB8UCqAEeGiFpKeZIy4Pg"/>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_EH_ZcCzBEeGMXrZ0DiQwGg" severity="INFO">
+  <CDA:AssociationValidation xmi:id="_EH_ZcCzBEeGMXrZ0DiQwGg" message="Consol General Header Constraints MAY contain zero or more [0..*] informant (CONF:8001) such that it" severity="INFO">
     <ruleId>CONF:8001</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_C-fawCzBEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_JOHXACzHEeGMXrZ0DiQwGg" severity="INFO">
+  <CDA:AssociationValidation xmi:id="_JOHXACzHEeGMXrZ0DiQwGg" message="Consol General Header Constraints MAY contain zero or more [0..*] participant (CONF:10003) such that it" severity="INFO">
     <ruleId>CONF:10003</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_H0qQwSzHEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
@@ -2292,6 +2292,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-documents.uml#_-jXx8kBWEeGXKr6TcG1UOQ"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_TtWi8ECEEeGXKr6TcG1UOQ">
+    <ruleId>CONF:14097</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_8FB1UEBYEeGXKr6TcG1UOQ"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_hZrwEECEEeGXKr6TcG1UOQ">
@@ -2426,7 +2427,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-dicom.uml#_QLNPckrYEeGJpZWiuxRVIw"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_8u_48ErYEeGJpZWiuxRVIw">
-    <ruleId>CONF:8776</ruleId>
+    <ruleId>CONF:9484</ruleId>
     <base_Association href=".controlled/consol-dicom.uml#_50ugMkrYEeGJpZWiuxRVIw"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_C915cErcEeGJpZWiuxRVIw">
