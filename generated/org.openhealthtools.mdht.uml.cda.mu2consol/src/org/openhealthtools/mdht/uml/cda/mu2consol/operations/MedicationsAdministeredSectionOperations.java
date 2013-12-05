@@ -146,7 +146,7 @@ public class MedicationsAdministeredSectionOperations extends org.openhealthtool
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.MEDICATIONS_ADMINISTERED_SECTION__MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID,
-						 Mu2consolPlugin.INSTANCE.getString("MedicationsAdministeredSectionMedicationsAdministeredSectionTemplateId"),
+						 Mu2consolPlugin.INSTANCE.getString("MedicationsAdministeredSectionTemplateId"),
 						 new Object [] { medicationsAdministeredSection }));
 			}
 			 
@@ -207,7 +207,7 @@ public class MedicationsAdministeredSectionOperations extends org.openhealthtool
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.MEDICATIONS_ADMINISTERED_SECTION__MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY,
-						 Mu2consolPlugin.INSTANCE.getString("MedicationsAdministeredSectionMedicationsAdministeredSectionMedicationActivity"),
+						 Mu2consolPlugin.INSTANCE.getString("MedicationsAdministeredSectionMedicationActivity"),
 						 new Object [] { medicationsAdministeredSection }));
 			}
 			 

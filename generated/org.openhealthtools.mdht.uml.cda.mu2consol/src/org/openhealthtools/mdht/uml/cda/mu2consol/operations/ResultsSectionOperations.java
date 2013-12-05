@@ -170,7 +170,7 @@ public class ResultsSectionOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						 Mu2consolPlugin.INSTANCE.getString("ResultsSectionResultsSectionEntriesOptionalTemplateId"),
+						 Mu2consolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalTemplateId"),
 						 new Object [] { resultsSection }));
 			}
 			 
@@ -230,7 +230,7 @@ public class ResultsSectionOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.RESULTS_SECTION__RESULTS_SECTION_RESULT_ORGANIZER,
-						 Mu2consolPlugin.INSTANCE.getString("ResultsSectionResultsSectionResultOrganizer"),
+						 Mu2consolPlugin.INSTANCE.getString("ResultsSectionResultOrganizer"),
 						 new Object [] { resultsSection }));
 			}
 			 

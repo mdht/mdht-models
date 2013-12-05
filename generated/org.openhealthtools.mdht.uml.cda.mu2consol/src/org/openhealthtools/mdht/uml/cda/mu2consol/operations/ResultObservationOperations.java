@@ -108,7 +108,7 @@ public class ResultObservationOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
-						 Mu2consolPlugin.INSTANCE.getString("ResultObservationResultObservationTemplateId"),
+						 Mu2consolPlugin.INSTANCE.getString("ResultObservationTemplateId"),
 						 new Object [] { resultObservation }));
 			}
 			 

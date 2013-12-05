@@ -164,7 +164,7 @@ public class ProceduresSectionOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						 Mu2consolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionEntriesOptionalTemplateId"),
+						 Mu2consolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalTemplateId"),
 						 new Object [] { proceduresSection }));
 			}
 			 
@@ -224,7 +224,7 @@ public class ProceduresSectionOperations
 						(Diagnostic.INFO,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE,
-						 Mu2consolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionProcedureActivityProcedure"),
+						 Mu2consolPlugin.INSTANCE.getString("ProceduresSectionProcedureActivityProcedure"),
 						 new Object [] { proceduresSection }));
 			}
 			 

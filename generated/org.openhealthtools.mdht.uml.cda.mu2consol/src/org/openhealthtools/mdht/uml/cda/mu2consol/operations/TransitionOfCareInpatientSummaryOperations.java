@@ -105,7 +105,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_MEDICATIONS,
-						 Mu2consolPlugin.INSTANCE.getString("TransitionOfCareInpatientSummaryTransitionOfCareInpatientSummaryMedications"),
+						 Mu2consolPlugin.INSTANCE.getString("TransitionOfCareInpatientSummaryMedications"),
 						 new Object [] { transitionOfCareInpatientSummary }));
 			}
 			 
@@ -165,7 +165,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_ENCOUNTER_DIAGNOSES,
-						 Mu2consolPlugin.INSTANCE.getString("TransitionOfCareInpatientSummaryTransitionOfCareInpatientSummaryEncounterDiagnoses"),
+						 Mu2consolPlugin.INSTANCE.getString("TransitionOfCareInpatientSummaryEncounterDiagnoses"),
 						 new Object [] { transitionOfCareInpatientSummary }));
 			}
 			 
@@ -232,7 +232,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("TransitionOfCareInpatientSummaryTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection"),
+						 Mu2consolPlugin.INSTANCE.getString("TransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection"),
 						 new Object [] { transitionOfCareInpatientSummary }));
 			}
 			 

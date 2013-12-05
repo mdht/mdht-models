@@ -117,7 +117,7 @@ public class GeneralHeaderConstraintsOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__MU2CONSOL_GENERAL_HEADER_CONSTRAINTS_CARE_TEAM_MEMBERS,
-						 Mu2consolPlugin.INSTANCE.getString("GeneralHeaderConstraintsMU2CONSOLGeneralHeaderConstraintsCareTeamMembers"),
+						 Mu2consolPlugin.INSTANCE.getString("MU2CONSOLGeneralHeaderConstraintsCareTeamMembers"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			 
@@ -175,7 +175,7 @@ public class GeneralHeaderConstraintsOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__MU2CONSOL_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET,
-						 Mu2consolPlugin.INSTANCE.getString("GeneralHeaderConstraintsMU2CONSOLGeneralHeaderConstraintsRecordTarget"),
+						 Mu2consolPlugin.INSTANCE.getString("MU2CONSOLGeneralHeaderConstraintsRecordTarget"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			 
@@ -423,7 +423,7 @@ public class GeneralHeaderConstraintsOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						 Mu2consolPlugin.INSTANCE.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsTemplateId"),
+						 Mu2consolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			 

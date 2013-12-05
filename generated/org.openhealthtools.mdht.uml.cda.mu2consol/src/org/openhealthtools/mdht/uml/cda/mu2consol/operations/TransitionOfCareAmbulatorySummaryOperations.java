@@ -105,7 +105,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO,
-						 Mu2consolPlugin.INSTANCE.getString("TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo"),
+						 Mu2consolPlugin.INSTANCE.getString("TransitionOfCareAmbulatorySummaryProviderNameAndContactInfo"),
 						 new Object [] { transitionOfCareAmbulatorySummary }));
 			}
 			 
@@ -166,7 +166,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_REASON_FOR_REFERRAL,
-						 Mu2consolPlugin.INSTANCE.getString("TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryReasonForReferral"),
+						 Mu2consolPlugin.INSTANCE.getString("TransitionOfCareAmbulatorySummaryReasonForReferral"),
 						 new Object [] { transitionOfCareAmbulatorySummary }));
 			}
 			 
@@ -226,7 +226,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_ENCOUNTER_DIAGNOSES,
-						 Mu2consolPlugin.INSTANCE.getString("TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryEncounterDiagnoses"),
+						 Mu2consolPlugin.INSTANCE.getString("TransitionOfCareAmbulatorySummaryEncounterDiagnoses"),
 						 new Object [] { transitionOfCareAmbulatorySummary }));
 			}
 			 
@@ -286,7 +286,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_MEDICATIONS_SECTION,
-						 Mu2consolPlugin.INSTANCE.getString("TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryMedicationsSection"),
+						 Mu2consolPlugin.INSTANCE.getString("TransitionOfCareAmbulatorySummaryMedicationsSection"),
 						 new Object [] { transitionOfCareAmbulatorySummary }));
 			}
 			 
