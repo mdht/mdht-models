@@ -35,103 +35,103 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.OtherPregnancyOutcomeOpe
  */
 public class OtherPregnancyOutcomeImpl extends ObservationImpl implements OtherPregnancyOutcome {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected OtherPregnancyOutcomeImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return VsbrPackage.Literals.OTHER_PREGNANCY_OUTCOME;
-	}
+    return VsbrPackage.Literals.OTHER_PREGNANCY_OUTCOME;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOtherPregnancyOutcomeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeTemplateId(this, diagnostics, context);
-	}
+    return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOtherPregnancyOutcomeClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeClassCode(this, diagnostics, context);
-	}
+    return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOtherPregnancyOutcomeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeMoodCode(this, diagnostics, context);
-	}
+    return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOtherPregnancyOutcomeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeCodeP(this, diagnostics, context);
-	}
+    return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOtherPregnancyOutcomeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeCode(this, diagnostics, context);
-	}
+    return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOtherPregnancyOutcomeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeValue(this, diagnostics, context);
-	}
+    return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOtherPregnancyOutcomeEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeEffectiveTime(this, diagnostics, context);
-	}
+    return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeEffectiveTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public OtherPregnancyOutcome init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public OtherPregnancyOutcome init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // OtherPregnancyOutcomeImpl

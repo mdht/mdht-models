@@ -35,94 +35,94 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.VitalSignsObservationOpe
  */
 public class VitalSignsObservationImpl extends ObservationImpl implements VitalSignsObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected VitalSignsObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return VsbrPackage.Literals.VITAL_SIGNS_OBSERVATION;
-	}
+    return VsbrPackage.Literals.VITAL_SIGNS_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateVitalSignsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsObservationOperations.validateVitalSignsObservationTemplateId(this, diagnostics, context);
-	}
+    return VitalSignsObservationOperations.validateVitalSignsObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateVitalSignsObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsObservationOperations.validateVitalSignsObservationClassCode(this, diagnostics, context);
-	}
+    return VitalSignsObservationOperations.validateVitalSignsObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateVitalSignsObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsObservationOperations.validateVitalSignsObservationMoodCode(this, diagnostics, context);
-	}
+    return VitalSignsObservationOperations.validateVitalSignsObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateVitalSignsObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsObservationOperations.validateVitalSignsObservationCodeP(this, diagnostics, context);
-	}
+    return VitalSignsObservationOperations.validateVitalSignsObservationCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateVitalSignsObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsObservationOperations.validateVitalSignsObservationCode(this, diagnostics, context);
-	}
+    return VitalSignsObservationOperations.validateVitalSignsObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateVitalSignsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsObservationOperations.validateVitalSignsObservationValue(this, diagnostics, context);
-	}
+    return VitalSignsObservationOperations.validateVitalSignsObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public VitalSignsObservation init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public VitalSignsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // VitalSignsObservationImpl

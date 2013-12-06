@@ -35,94 +35,94 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.InfectionPresentOperatio
  */
 public class InfectionPresentImpl extends ObservationImpl implements InfectionPresent {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected InfectionPresentImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return VsbrPackage.Literals.INFECTION_PRESENT;
-	}
+    return VsbrPackage.Literals.INFECTION_PRESENT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateInfectionPresentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InfectionPresentOperations.validateInfectionPresentTemplateId(this, diagnostics, context);
-	}
+    return InfectionPresentOperations.validateInfectionPresentTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateInfectionPresentClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InfectionPresentOperations.validateInfectionPresentClassCode(this, diagnostics, context);
-	}
+    return InfectionPresentOperations.validateInfectionPresentClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateInfectionPresentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InfectionPresentOperations.validateInfectionPresentMoodCode(this, diagnostics, context);
-	}
+    return InfectionPresentOperations.validateInfectionPresentMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateInfectionPresentCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InfectionPresentOperations.validateInfectionPresentCodeP(this, diagnostics, context);
-	}
+    return InfectionPresentOperations.validateInfectionPresentCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateInfectionPresentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InfectionPresentOperations.validateInfectionPresentCode(this, diagnostics, context);
-	}
+    return InfectionPresentOperations.validateInfectionPresentCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateInfectionPresentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InfectionPresentOperations.validateInfectionPresentValue(this, diagnostics, context);
-	}
+    return InfectionPresentOperations.validateInfectionPresentValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public InfectionPresent init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public InfectionPresent init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // InfectionPresentImpl

@@ -57,561 +57,565 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  */
 public class LaborandDeliveryProcedureSectionOperations extends SectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected LaborandDeliveryProcedureSectionOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateLaborandDeliveryProcedureSectionTemplateId(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateLaborandDeliveryProcedureSectionTemplateId(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Template Id</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateLaborandDeliveryProcedureSectionTemplateId(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateLaborandDeliveryProcedureSectionTemplateId(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.7')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcedureSectionTemplateId(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcedureSectionTemplateId(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateLaborandDeliveryProcedureSectionTemplateId(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateLaborandDeliveryProcedureSectionTemplateId(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 
 	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param laborandDeliveryProcedureSection The receiving '<em><b>Laborand Delivery Procedure Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param laborandDeliveryProcedureSection The receiving '<em><b>Laborand Delivery Procedure Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 
 	public static boolean validateLaborandDeliveryProcedureSectionTemplateId(
 			LaborandDeliveryProcedureSection laborandDeliveryProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION);
-			try {
-				VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcedureSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcedureSectionTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcedureSection, context) }),
-					new Object[] { laborandDeliveryProcedureSection }));
-			}
-
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION);
+      try
+      {
+        VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(laborandDeliveryProcedureSection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             VsbrValidator.DIAGNOSTIC_SOURCE,
+             VsbrValidator.LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LaborandDeliveryProcedureSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(laborandDeliveryProcedureSection, context) }),
+             new Object [] { laborandDeliveryProcedureSection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateLaborandDeliveryProcedureSectionClassCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Class Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateLaborandDeliveryProcedureSectionClassCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Class Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateLaborandDeliveryProcedureSectionClassCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateLaborandDeliveryProcedureSectionClassCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('classCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcedureSectionClassCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Class Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcedureSectionClassCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Class Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateLaborandDeliveryProcedureSectionClassCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateLaborandDeliveryProcedureSectionClassCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 
 	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param laborandDeliveryProcedureSection The receiving '<em><b>Laborand Delivery Procedure Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param laborandDeliveryProcedureSection The receiving '<em><b>Laborand Delivery Procedure Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 
 	public static boolean validateLaborandDeliveryProcedureSectionClassCode(
 			LaborandDeliveryProcedureSection laborandDeliveryProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION);
-			try {
-				VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcedureSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcedureSectionClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcedureSection, context) }),
-					new Object[] { laborandDeliveryProcedureSection }));
-			}
-
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION);
+      try
+      {
+        VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(laborandDeliveryProcedureSection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             VsbrValidator.DIAGNOSTIC_SOURCE,
+             VsbrValidator.LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LaborandDeliveryProcedureSectionClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(laborandDeliveryProcedureSection, context) }),
+             new Object [] { laborandDeliveryProcedureSection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateLaborandDeliveryProcedureSectionMoodCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateLaborandDeliveryProcedureSectionMoodCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Mood Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateLaborandDeliveryProcedureSectionMoodCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateLaborandDeliveryProcedureSectionMoodCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcedureSectionMoodCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcedureSectionMoodCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Mood Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateLaborandDeliveryProcedureSectionMoodCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateLaborandDeliveryProcedureSectionMoodCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 
 	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param laborandDeliveryProcedureSection The receiving '<em><b>Laborand Delivery Procedure Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param laborandDeliveryProcedureSection The receiving '<em><b>Laborand Delivery Procedure Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 
 	public static boolean validateLaborandDeliveryProcedureSectionMoodCode(
 			LaborandDeliveryProcedureSection laborandDeliveryProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION);
-			try {
-				VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcedureSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcedureSectionMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcedureSection, context) }),
-					new Object[] { laborandDeliveryProcedureSection }));
-			}
-
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION);
+      try
+      {
+        VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(laborandDeliveryProcedureSection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             VsbrValidator.DIAGNOSTIC_SOURCE,
+             VsbrValidator.LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LaborandDeliveryProcedureSectionMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(laborandDeliveryProcedureSection, context) }),
+             new Object [] { laborandDeliveryProcedureSection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateLaborandDeliveryProcedureSectionCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateLaborandDeliveryProcedureSectionCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateLaborandDeliveryProcedureSectionCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateLaborandDeliveryProcedureSectionCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcedureSectionCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcedureSectionCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateLaborandDeliveryProcedureSectionCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateLaborandDeliveryProcedureSectionCode(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 
 	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param laborandDeliveryProcedureSection The receiving '<em><b>Laborand Delivery Procedure Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param laborandDeliveryProcedureSection The receiving '<em><b>Laborand Delivery Procedure Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 
 	public static boolean validateLaborandDeliveryProcedureSectionCode(
 			LaborandDeliveryProcedureSection laborandDeliveryProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION);
-			try {
-				VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcedureSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcedureSectionCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcedureSection, context) }),
-					new Object[] { laborandDeliveryProcedureSection }));
-			}
-
-			return false;
-		}
-		return true;
-	}
+  	  
+    if (VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION);
+      try
+      {
+        VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(laborandDeliveryProcedureSection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             VsbrValidator.DIAGNOSTIC_SOURCE,
+             VsbrValidator.LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_CODE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LaborandDeliveryProcedureSectionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(laborandDeliveryProcedureSection, context) }),
+             new Object [] { laborandDeliveryProcedureSection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateLaborandDeliveryProcedureSectionText(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Text</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateLaborandDeliveryProcedureSectionText(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Text</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateLaborandDeliveryProcedureSectionText(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateLaborandDeliveryProcedureSectionText(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcedureSectionText(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Text</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcedureSectionText(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Text</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateLaborandDeliveryProcedureSectionText(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateLaborandDeliveryProcedureSectionText(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 
 	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param laborandDeliveryProcedureSection The receiving '<em><b>Laborand Delivery Procedure Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param laborandDeliveryProcedureSection The receiving '<em><b>Laborand Delivery Procedure Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 
 	public static boolean validateLaborandDeliveryProcedureSectionText(
 			LaborandDeliveryProcedureSection laborandDeliveryProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION);
-			try {
-				VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcedureSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcedureSectionText",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcedureSection, context) }),
-					new Object[] { laborandDeliveryProcedureSection }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateLaborandDeliveryProcedureSectionObstetricProcedures(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Obstetric Procedures</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateLaborandDeliveryProcedureSectionObstetricProcedures(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(vsbr::ObstetricProcedure) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+  	  
+    if (VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION);
+      try
+      {
+        VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(laborandDeliveryProcedureSection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             VsbrValidator.DIAGNOSTIC_SOURCE,
+             VsbrValidator.LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LaborandDeliveryProcedureSectionText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(laborandDeliveryProcedureSection, context) }),
+             new Object [] { laborandDeliveryProcedureSection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcedureSectionObstetricProcedures(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Obstetric Procedures</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateLaborandDeliveryProcedureSectionObstetricProcedures(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Obstetric Procedures</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateLaborandDeliveryProcedureSectionObstetricProcedures(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateLaborandDeliveryProcedureSectionObstetricProcedures(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(vsbr::Obstetric Procedure) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+
+	/**
+   * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcedureSectionObstetricProcedures(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Obstetric Procedures</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validateLaborandDeliveryProcedureSectionObstetricProcedures(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 
 	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param laborandDeliveryProcedureSection The receiving '<em><b>Laborand Delivery Procedure Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param laborandDeliveryProcedureSection The receiving '<em><b>Laborand Delivery Procedure Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 
 	public static boolean validateLaborandDeliveryProcedureSectionObstetricProcedures(
 			LaborandDeliveryProcedureSection laborandDeliveryProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION);
-			try {
-				VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcedureSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURES,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcedureSectionObstetricProcedures",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcedureSection, context) }),
-					new Object[] { laborandDeliveryProcedureSection }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateLaborandDeliveryProcedureSectionMethodofDelivery(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Methodof Delivery</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateLaborandDeliveryProcedureSectionMethodofDelivery(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_METHODOF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(vsbr::MethodofDelivery) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+  	  
+    if (VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION);
+      try
+      {
+        VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(laborandDeliveryProcedureSection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             VsbrValidator.DIAGNOSTIC_SOURCE,
+             VsbrValidator.LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURES,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LaborandDeliveryProcedureSectionObstetricProcedures", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(laborandDeliveryProcedureSection, context) }),
+             new Object [] { laborandDeliveryProcedureSection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcedureSectionMethodofDelivery(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Methodof Delivery</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateLaborandDeliveryProcedureSectionMethodofDelivery(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Methodof Delivery</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateLaborandDeliveryProcedureSectionMethodofDelivery(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateLaborandDeliveryProcedureSectionMethodofDelivery(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_METHODOF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(vsbr::Method of Delivery) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+
+	/**
+   * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcedureSectionMethodofDelivery(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Methodof Delivery</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validateLaborandDeliveryProcedureSectionMethodofDelivery(LaborandDeliveryProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 
 	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_METHODOF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param laborandDeliveryProcedureSection The receiving '<em><b>Laborand Delivery Procedure Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param laborandDeliveryProcedureSection The receiving '<em><b>Laborand Delivery Procedure Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 
 	public static boolean validateLaborandDeliveryProcedureSectionMethodofDelivery(
 			LaborandDeliveryProcedureSection laborandDeliveryProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_METHODOF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION);
-			try {
-				VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_METHODOF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_METHODOF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_METHODOF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcedureSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_METHODOF_DELIVERY,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcedureSectionMethodofDelivery",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcedureSection, context) }),
-					new Object[] { laborandDeliveryProcedureSection }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getObstetricProceduress(LaborandDeliveryProcedureSection) <em>Get Obstetric Proceduress</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getObstetricProceduress(LaborandDeliveryProcedureSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_OBSTETRIC_PROCEDURESS__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(vsbr::ObstetricProcedure)).oclAsType(vsbr::ObstetricProcedure)";
+  	  
+    if (VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_METHODOF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION);
+      try
+      {
+        VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_METHODOF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_METHODOF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_METHODOF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(laborandDeliveryProcedureSection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             VsbrValidator.DIAGNOSTIC_SOURCE,
+             VsbrValidator.LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_METHODOF_DELIVERY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LaborandDeliveryProcedureSectionMethodofDelivery", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(laborandDeliveryProcedureSection, context) }),
+             new Object [] { laborandDeliveryProcedureSection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL query for the '{@link #getObstetricProceduress(LaborandDeliveryProcedureSection) <em>Get Obstetric Proceduress</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getObstetricProceduress(LaborandDeliveryProcedureSection) <em>Get Obstetric Proceduress</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getObstetricProceduress(LaborandDeliveryProcedureSection)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getObstetricProceduress(LaborandDeliveryProcedureSection)
+   * @generated
+   * @ordered
+   */
+	protected static final String GET_OBSTETRIC_PROCEDURESS__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(vsbr::Obstetric Procedure)).oclAsType(vsbr::Obstetric Procedure)";
+
+	/**
+   * The cached OCL query for the '{@link #getObstetricProceduress(LaborandDeliveryProcedureSection) <em>Get Obstetric Proceduress</em>}' query operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #getObstetricProceduress(LaborandDeliveryProcedureSection)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_OBSTETRIC_PROCEDURESS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 
 	public static EList<ObstetricProcedure> getObstetricProceduress(
 			LaborandDeliveryProcedureSection laborandDeliveryProcedureSection) {
-		if (GET_OBSTETRIC_PROCEDURESS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION,
-				VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION.getEAllOperations().get(62));
-			try {
-				GET_OBSTETRIC_PROCEDURESS__EOCL_QRY = helper.createQuery(GET_OBSTETRIC_PROCEDURESS__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_OBSTETRIC_PROCEDURESS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<ObstetricProcedure> result = (Collection<ObstetricProcedure>) query.evaluate(laborandDeliveryProcedureSection);
-		return new BasicEList.UnmodifiableEList<ObstetricProcedure>(result.size(), result.toArray());
-	}
+    if (GET_OBSTETRIC_PROCEDURESS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION, VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION.getEAllOperations().get(62));
+      try
+      {
+        GET_OBSTETRIC_PROCEDURESS__EOCL_QRY = helper.createQuery(GET_OBSTETRIC_PROCEDURESS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_OBSTETRIC_PROCEDURESS__EOCL_QRY);
+    @SuppressWarnings("unchecked")
+    Collection<ObstetricProcedure> result = (Collection<ObstetricProcedure>) query.evaluate(laborandDeliveryProcedureSection);
+    return new BasicEList.UnmodifiableEList<ObstetricProcedure>(result.size(), result.toArray());
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMethodofDelivery(LaborandDeliveryProcedureSection) <em>Get Methodof Delivery</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #getMethodofDelivery(LaborandDeliveryProcedureSection) <em>Get Methodof Delivery</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMethodofDelivery(LaborandDeliveryProcedureSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_METHODOF_DELIVERY__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(vsbr::MethodofDelivery))->asSequence()->any(true).oclAsType(vsbr::MethodofDelivery)";
+   * @see #getMethodofDelivery(LaborandDeliveryProcedureSection)
+   * @generated
+   * @ordered
+   */
+	protected static final String GET_METHODOF_DELIVERY__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(vsbr::Method of Delivery))->asSequence()->any(true).oclAsType(vsbr::Method of Delivery)";
 
 	/**
-	 * The cached OCL query for the '{@link #getMethodofDelivery(LaborandDeliveryProcedureSection) <em>Get Methodof Delivery</em>}' query operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL query for the '{@link #getMethodofDelivery(LaborandDeliveryProcedureSection) <em>Get Methodof Delivery</em>}' query operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMethodofDelivery(LaborandDeliveryProcedureSection)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #getMethodofDelivery(LaborandDeliveryProcedureSection)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_METHODOF_DELIVERY__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 
 	public static MethodofDelivery getMethodofDelivery(LaborandDeliveryProcedureSection laborandDeliveryProcedureSection) {
-		if (GET_METHODOF_DELIVERY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION,
-				VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION.getEAllOperations().get(63));
-			try {
-				GET_METHODOF_DELIVERY__EOCL_QRY = helper.createQuery(GET_METHODOF_DELIVERY__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_METHODOF_DELIVERY__EOCL_QRY);
-		return (MethodofDelivery) query.evaluate(laborandDeliveryProcedureSection);
-	}
+    if (GET_METHODOF_DELIVERY__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION, VsbrPackage.Literals.LABORAND_DELIVERY_PROCEDURE_SECTION.getEAllOperations().get(63));
+      try
+      {
+        GET_METHODOF_DELIVERY__EOCL_QRY = helper.createQuery(GET_METHODOF_DELIVERY__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_METHODOF_DELIVERY__EOCL_QRY);
+    return (MethodofDelivery) query.evaluate(laborandDeliveryProcedureSection);
+  }
 
 } // LaborandDeliveryProcedureSectionOperations

@@ -35,94 +35,94 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.EstimateofGestationOpera
  */
 public class EstimateofGestationImpl extends ObservationImpl implements EstimateofGestation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected EstimateofGestationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return VsbrPackage.Literals.ESTIMATEOF_GESTATION;
-	}
+    return VsbrPackage.Literals.ESTIMATEOF_GESTATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEstimateofGestationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EstimateofGestationOperations.validateEstimateofGestationTemplateId(this, diagnostics, context);
-	}
+    return EstimateofGestationOperations.validateEstimateofGestationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEstimateofGestationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EstimateofGestationOperations.validateEstimateofGestationClassCode(this, diagnostics, context);
-	}
+    return EstimateofGestationOperations.validateEstimateofGestationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEstimateofGestationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EstimateofGestationOperations.validateEstimateofGestationMoodCode(this, diagnostics, context);
-	}
+    return EstimateofGestationOperations.validateEstimateofGestationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEstimateofGestationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EstimateofGestationOperations.validateEstimateofGestationCodeP(this, diagnostics, context);
-	}
+    return EstimateofGestationOperations.validateEstimateofGestationCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEstimateofGestationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EstimateofGestationOperations.validateEstimateofGestationCode(this, diagnostics, context);
-	}
+    return EstimateofGestationOperations.validateEstimateofGestationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEstimateofGestationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EstimateofGestationOperations.validateEstimateofGestationValue(this, diagnostics, context);
-	}
+    return EstimateofGestationOperations.validateEstimateofGestationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EstimateofGestation init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EstimateofGestation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EstimateofGestationImpl
