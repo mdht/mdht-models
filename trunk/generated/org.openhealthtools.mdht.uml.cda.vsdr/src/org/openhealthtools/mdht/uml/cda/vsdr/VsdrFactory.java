@@ -27,13 +27,13 @@ public interface VsdrFactory extends EFactory
   VsdrFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.vsdr.impl.VsdrFactoryImpl.init();
 
   /**
-   * Returns a new object of class '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Returns a new object of class '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * @return a new object of class '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * @generated
    */
-  Reportingdeathinformationfromaclinicalsettingtovitalrecords createReportingdeathinformationfromaclinicalsettingtovitalrecords();
+  ReportingDeathInformationfromaClinicalSettingtoVitalRecords createReportingDeathInformationfromaClinicalSettingtoVitalRecords();
 
   /**
    * Returns a new object of class '<em>Death Report Document Body</em>'.
@@ -45,13 +45,13 @@ public interface VsdrFactory extends EFactory
   DeathReportDocumentBody createDeathReportDocumentBody();
 
   /**
-   * Returns a new object of class '<em>Timeof Death</em>'.
+   * Returns a new object of class '<em>Dateand Timeof Death</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Timeof Death</em>'.
+   * @return a new object of class '<em>Dateand Timeof Death</em>'.
    * @generated
    */
-  TimeofDeath createTimeofDeath();
+  DateandTimeofDeath createDateandTimeofDeath();
 
   /**
    * Returns a new object of class '<em>Locationof Death</em>'.
@@ -63,13 +63,13 @@ public interface VsdrFactory extends EFactory
   LocationofDeath createLocationofDeath();
 
   /**
-   * Returns a new object of class '<em>Death Certification</em>'.
+   * Returns a new object of class '<em>Certifying Death</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Death Certification</em>'.
+   * @return a new object of class '<em>Certifying Death</em>'.
    * @generated
    */
-  DeathCertification createDeathCertification();
+  CertifyingDeath createCertifyingDeath();
 
   /**
    * Returns a new object of class '<em>Mannerof Death</em>'.
@@ -160,6 +160,15 @@ public interface VsdrFactory extends EFactory
    * @generated
    */
   DeathLocationType createDeathLocationType();
+
+  /**
+   * Returns a new object of class '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Pronouncing Death</em>'.
+   * @generated
+   */
+  PronouncingDeath createPronouncingDeath();
 
   /**
    * Returns the package supported by this factory.

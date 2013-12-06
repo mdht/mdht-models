@@ -105,13 +105,13 @@ public class VsdrSwitch<T>
   {
     switch (classifierID)
     {
-      case VsdrPackage.REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS:
+      case VsdrPackage.REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS:
       {
-        Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords = (Reportingdeathinformationfromaclinicalsettingtovitalrecords)theEObject;
-        T result = caseReportingdeathinformationfromaclinicalsettingtovitalrecords(reportingdeathinformationfromaclinicalsettingtovitalrecords);
-        if (result == null) result = caseClinicalDocument(reportingdeathinformationfromaclinicalsettingtovitalrecords);
-        if (result == null) result = caseAct(reportingdeathinformationfromaclinicalsettingtovitalrecords);
-        if (result == null) result = caseInfrastructureRoot(reportingdeathinformationfromaclinicalsettingtovitalrecords);
+        ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords = (ReportingDeathInformationfromaClinicalSettingtoVitalRecords)theEObject;
+        T result = caseReportingDeathInformationfromaClinicalSettingtoVitalRecords(reportingDeathInformationfromaClinicalSettingtoVitalRecords);
+        if (result == null) result = caseClinicalDocument(reportingDeathInformationfromaClinicalSettingtoVitalRecords);
+        if (result == null) result = caseAct(reportingDeathInformationfromaClinicalSettingtoVitalRecords);
+        if (result == null) result = caseInfrastructureRoot(reportingDeathInformationfromaClinicalSettingtoVitalRecords);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -125,14 +125,14 @@ public class VsdrSwitch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case VsdrPackage.TIMEOF_DEATH:
+      case VsdrPackage.DATEAND_TIMEOF_DEATH:
       {
-        TimeofDeath timeofDeath = (TimeofDeath)theEObject;
-        T result = caseTimeofDeath(timeofDeath);
-        if (result == null) result = caseObservation(timeofDeath);
-        if (result == null) result = caseClinicalStatement(timeofDeath);
-        if (result == null) result = caseAct(timeofDeath);
-        if (result == null) result = caseInfrastructureRoot(timeofDeath);
+        DateandTimeofDeath dateandTimeofDeath = (DateandTimeofDeath)theEObject;
+        T result = caseDateandTimeofDeath(dateandTimeofDeath);
+        if (result == null) result = caseObservation(dateandTimeofDeath);
+        if (result == null) result = caseClinicalStatement(dateandTimeofDeath);
+        if (result == null) result = caseAct(dateandTimeofDeath);
+        if (result == null) result = caseInfrastructureRoot(dateandTimeofDeath);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -147,14 +147,14 @@ public class VsdrSwitch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case VsdrPackage.DEATH_CERTIFICATION:
+      case VsdrPackage.CERTIFYING_DEATH:
       {
-        DeathCertification deathCertification = (DeathCertification)theEObject;
-        T result = caseDeathCertification(deathCertification);
-        if (result == null) result = caseObservation(deathCertification);
-        if (result == null) result = caseClinicalStatement(deathCertification);
-        if (result == null) result = caseAct(deathCertification);
-        if (result == null) result = caseInfrastructureRoot(deathCertification);
+        CertifyingDeath certifyingDeath = (CertifyingDeath)theEObject;
+        T result = caseCertifyingDeath(certifyingDeath);
+        if (result == null) result = caseObservation(certifyingDeath);
+        if (result == null) result = caseClinicalStatement(certifyingDeath);
+        if (result == null) result = caseAct(certifyingDeath);
+        if (result == null) result = caseInfrastructureRoot(certifyingDeath);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -268,22 +268,33 @@ public class VsdrSwitch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case VsdrPackage.PRONOUNCING_DEATH:
+      {
+        PronouncingDeath pronouncingDeath = (PronouncingDeath)theEObject;
+        T result = casePronouncingDeath(pronouncingDeath);
+        if (result == null) result = caseObservation(pronouncingDeath);
+        if (result == null) result = caseClinicalStatement(pronouncingDeath);
+        if (result == null) result = caseAct(pronouncingDeath);
+        if (result == null) result = caseInfrastructureRoot(pronouncingDeath);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       default: return defaultCase(theEObject);
     }
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseReportingdeathinformationfromaclinicalsettingtovitalrecords(Reportingdeathinformationfromaclinicalsettingtovitalrecords object)
+  public T caseReportingDeathInformationfromaClinicalSettingtoVitalRecords(ReportingDeathInformationfromaClinicalSettingtoVitalRecords object)
   {
     return null;
   }
@@ -305,17 +316,17 @@ public class VsdrSwitch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Timeof Death</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Dateand Timeof Death</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Timeof Death</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Dateand Timeof Death</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseTimeofDeath(TimeofDeath object)
+  public T caseDateandTimeofDeath(DateandTimeofDeath object)
   {
     return null;
   }
@@ -337,17 +348,17 @@ public class VsdrSwitch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Death Certification</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Certifying Death</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Death Certification</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Certifying Death</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseDeathCertification(DeathCertification object)
+  public T caseCertifyingDeath(CertifyingDeath object)
   {
     return null;
   }
@@ -508,6 +519,22 @@ public class VsdrSwitch<T>
    * @generated
    */
   public T caseDeathLocationType(DeathLocationType object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Pronouncing Death</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T casePronouncingDeath(PronouncingDeath object)
   {
     return null;
   }

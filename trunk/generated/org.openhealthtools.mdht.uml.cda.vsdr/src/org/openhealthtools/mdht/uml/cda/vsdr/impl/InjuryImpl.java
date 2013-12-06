@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
 
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -168,6 +171,16 @@ public class InjuryImpl extends OrganizerImpl implements Injury
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return InjuryOperations.validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return InjuryOperations.validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc(this, diagnostics, context);
@@ -211,6 +224,16 @@ public class InjuryImpl extends OrganizerImpl implements Injury
   public boolean validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return InjuryOperations.validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return InjuryOperations.validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole(this, diagnostics, context);
   }
 
   /**
@@ -301,6 +324,16 @@ public class InjuryImpl extends OrganizerImpl implements Injury
   public boolean validateInjuryComponentInjuryInformationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return InjuryOperations.validateInjuryComponentInjuryInformationTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateInjuryComponentInjuryInformationInjuryInformation(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return InjuryOperations.validateInjuryComponentInjuryInformationInjuryInformation(this, diagnostics, context);
   }
 
   /**
@@ -438,6 +471,16 @@ public class InjuryImpl extends OrganizerImpl implements Injury
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateInjuryComponentTransportationAssociationTransportationAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return InjuryOperations.validateInjuryComponentTransportationAssociationTransportationAssociation(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateInjuryComponentTransportationRelationshipTransportationRelationshipClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return InjuryOperations.validateInjuryComponentTransportationRelationshipTransportationRelationshipClassCode(this, diagnostics, context);
@@ -488,6 +531,16 @@ public class InjuryImpl extends OrganizerImpl implements Injury
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateInjuryComponentTransportationRelationshipTransportationRelationshipValueP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return InjuryOperations.validateInjuryComponentTransportationRelationshipTransportationRelationshipValueP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateInjuryComponentTransportationRelationshipTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return InjuryOperations.validateInjuryComponentTransportationRelationshipTypeCode(this, diagnostics, context);
@@ -509,7 +562,16 @@ public class InjuryImpl extends OrganizerImpl implements Injury
    * @generated
    */
   public Injury init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public Injury init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //InjuryImpl

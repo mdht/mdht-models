@@ -36,9 +36,9 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationType#validateDeathLocationTypeTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationType#validateDeathLocationTypeClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationType#validateDeathLocationTypeMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationType#validateDeathLocationTypeCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationType#validateDeathLocationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationType#validateDeathLocationTypeMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationType#validateDeathLocationTypeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationType#validateDeathLocationTypeValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Value P</em>}</li>
  * </ul>
@@ -83,7 +83,6 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.8')
    * @param deathLocationType The receiving '<em><b>Death Location Type</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -115,7 +114,7 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
             (Diagnostic.ERROR,
              VsdrValidator.DIAGNOSTIC_SOURCE,
              VsdrValidator.DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_TEMPLATE_ID,
-             VsdrPlugin.INSTANCE.getString("DeathLocationTypeTemplateId"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
              new Object [] { deathLocationType }));
       }
        
@@ -150,7 +149,6 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param deathLocationType The receiving '<em><b>Death Location Type</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -182,7 +180,7 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
             (Diagnostic.ERROR,
              VsdrValidator.DIAGNOSTIC_SOURCE,
              VsdrValidator.DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_CLASS_CODE,
-             VsdrPlugin.INSTANCE.getString("DeathLocationTypeClassCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
              new Object [] { deathLocationType }));
       }
        
@@ -192,32 +190,9 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateDeathLocationTypeCodeP(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Code P</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateDeathLocationTypeCodeP(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_DEATH_LOCATION_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateDeathLocationTypeCodeP(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Code P</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateDeathLocationTypeCodeP(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_DEATH_LOCATION_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param deathLocationType The receiving '<em><b>Death Location Type</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -249,20 +224,8 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
             (Diagnostic.ERROR,
              VsdrValidator.DIAGNOSTIC_SOURCE,
              VsdrValidator.DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_CODE_P,
-             VsdrPlugin.INSTANCE.getString("DeathLocationTypeCodeP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
              new Object [] { deathLocationType }));
-      }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationTypeCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationTypeCodeP", passToken);
-        }
-        passToken.add(deathLocationType);
       }
        
       return false;
@@ -271,36 +234,9 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateDeathLocationTypeCode(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Code</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateDeathLocationTypeCode(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_DEATH_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'LOINC TBD' and value.codeSystem = '2.16.840.1.113883.6.1')";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateDeathLocationTypeCode(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateDeathLocationTypeCode(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_DEATH_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.code = 'LOINC TBD' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param deathLocationType The receiving '<em><b>Death Location Type</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -310,12 +246,6 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
   
   public static  boolean validateDeathLocationTypeCode(DeathLocationType deathLocationType, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationTypeCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(deathLocationType)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
   	  
     if (VALIDATE_DEATH_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -338,7 +268,7 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
             (Diagnostic.ERROR,
              VsdrValidator.DIAGNOSTIC_SOURCE,
              VsdrValidator.DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_CODE,
-             VsdrPlugin.INSTANCE.getString("DeathLocationTypeCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
              new Object [] { deathLocationType }));
       }
        
@@ -367,13 +297,56 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
    */
   
   protected static Constraint VALIDATE_DEATH_LOCATION_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * The cached OCL expression body for the '{@link #validateDeathLocationTypeCodeP(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDeathLocationTypeCodeP(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_DEATH_LOCATION_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateDeathLocationTypeCodeP(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDeathLocationTypeCodeP(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_DEATH_LOCATION_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * The cached OCL expression body for the '{@link #validateDeathLocationTypeCode(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDeathLocationTypeCode(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_DEATH_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '58332-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateDeathLocationTypeCode(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDeathLocationTypeCode(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_DEATH_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
   
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param deathLocationType The receiving '<em><b>Death Location Type</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -405,7 +378,7 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
             (Diagnostic.ERROR,
              VsdrValidator.DIAGNOSTIC_SOURCE,
              VsdrValidator.DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_MOOD_CODE,
-             VsdrPlugin.INSTANCE.getString("DeathLocationTypeMoodCode"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
              new Object [] { deathLocationType }));
       }
        
@@ -422,8 +395,8 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DEATH_LOCATION_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = element.oclAsType(datatypes::CE) in "+
+  protected static final String VALIDATE_DEATH_LOCATION_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
 "value.codeSystem = 'OID TBD' and (value.code = 'H-IN' or value.code = 'H-ER/OP' or value.code = 'H-DOA' or value.code = 'NH' or value.code = 'RES' or value.code = 'OTH')))";
 
   /**
@@ -442,9 +415,6 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
-   * value.codeSystem = 'OID TBD' and (value.code = 'H-IN' or value.code = 'H-ER/OP' or value.code = 'H-DOA' or value.code = 'NH' or value.code = 'RES' or value.code = 'OTH')))
    * @param deathLocationType The receiving '<em><b>Death Location Type</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -476,7 +446,7 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
             (Diagnostic.ERROR,
              VsdrValidator.DIAGNOSTIC_SOURCE,
              VsdrValidator.DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_VALUE,
-             VsdrPlugin.INSTANCE.getString("DeathLocationTypeValue"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
              new Object [] { deathLocationType }));
       }
        
@@ -493,7 +463,7 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DEATH_LOCATION_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CE)))";
+  protected static final String VALIDATE_DEATH_LOCATION_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
   /**
    * The cached OCL invariant for the '{@link #validateDeathLocationTypeValueP(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Value P</em>}' invariant operation.
@@ -511,7 +481,6 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CE)))
    * @param deathLocationType The receiving '<em><b>Death Location Type</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -543,7 +512,7 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
             (Diagnostic.ERROR,
              VsdrValidator.DIAGNOSTIC_SOURCE,
              VsdrValidator.DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_VALUE_P,
-             VsdrPlugin.INSTANCE.getString("DeathLocationTypeValueP"),
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
              new Object [] { deathLocationType }));
       }
        

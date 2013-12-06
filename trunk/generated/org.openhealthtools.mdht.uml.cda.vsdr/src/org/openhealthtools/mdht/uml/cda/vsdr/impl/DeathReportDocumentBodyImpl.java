@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.Observation;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
@@ -20,8 +23,10 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyPerformance;
 import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults;
+import org.openhealthtools.mdht.uml.cda.vsdr.CertifyingDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer;
 import org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral;
+import org.openhealthtools.mdht.uml.cda.vsdr.DateandTimeofDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation;
 import org.openhealthtools.mdht.uml.cda.vsdr.DeathCertification;
 import org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationType;
@@ -30,6 +35,7 @@ import org.openhealthtools.mdht.uml.cda.vsdr.Injury;
 import org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.MannerofDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.PregnancyStatus;
+import org.openhealthtools.mdht.uml.cda.vsdr.PronouncingDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.TimeofDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.TobaccoUse;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
@@ -93,6 +99,16 @@ public class DeathReportDocumentBodyImpl extends SectionImpl implements DeathRep
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateDeathReportDocumentBodyText(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyText(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateDeathReportDocumentBodyCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyCode(this, diagnostics, context);
@@ -123,9 +139,9 @@ public class DeathReportDocumentBodyImpl extends SectionImpl implements DeathRep
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDeathReportDocumentBodyDeathCertification(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateDeathReportDocumentBodyCertifyingDeath(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyDeathCertification(this, diagnostics, context);
+    return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyCertifyingDeath(this, diagnostics, context);
   }
 
   /**
@@ -233,7 +249,17 @@ public class DeathReportDocumentBodyImpl extends SectionImpl implements DeathRep
    * <!-- end-user-doc -->
    * @generated
    */
-  public TimeofDeath getTimeofDeath()
+  public boolean validateDeathReportDocumentBodyPronouncingDeath(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyPronouncingDeath(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public DateandTimeofDeath getTimeofDeath()
   {
     return DeathReportDocumentBodyOperations.getTimeofDeath(this);
   }
@@ -253,9 +279,9 @@ public class DeathReportDocumentBodyImpl extends SectionImpl implements DeathRep
    * <!-- end-user-doc -->
    * @generated
    */
-  public DeathCertification getDeathCertification()
+  public CertifyingDeath getCertifyingDeath()
   {
-    return DeathReportDocumentBodyOperations.getDeathCertification(this);
+    return DeathReportDocumentBodyOperations.getCertifyingDeath(this);
   }
 
   /**
@@ -363,8 +389,27 @@ public class DeathReportDocumentBodyImpl extends SectionImpl implements DeathRep
    * <!-- end-user-doc -->
    * @generated
    */
-  public DeathReportDocumentBody init() {
-    	CDAUtil.init(this);
-    	return this;
+  public PronouncingDeath getPronouncingDeath()
+  {
+    return DeathReportDocumentBodyOperations.getPronouncingDeath(this);
   }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public DeathReportDocumentBody init() {
+      return Initializer.Util.init(this);
+  }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DeathReportDocumentBody init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //DeathReportDocumentBodyImpl

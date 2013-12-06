@@ -34,9 +34,9 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Value</em>}</li>
  * </ul>
@@ -81,7 +81,6 @@ public class LocationofDeathOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.10')
    * @param locationofDeath The receiving '<em><b>Locationof Death</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -148,7 +147,6 @@ public class LocationofDeathOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * isDefined('classCode')
    * @param locationofDeath The receiving '<em><b>Locationof Death</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -190,32 +188,9 @@ public class LocationofDeathOperations extends ClinicalStatementOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateLocationofDeathCodeP(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Code P</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateLocationofDeathCodeP(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_LOCATIONOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined()";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateLocationofDeathCodeP(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Code P</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateLocationofDeathCodeP(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_LOCATIONOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.code.oclIsUndefined()
    * @param locationofDeath The receiving '<em><b>Locationof Death</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -257,36 +232,9 @@ public class LocationofDeathOperations extends ClinicalStatementOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateLocationofDeathCode(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Code</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateLocationofDeathCode(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_LOCATIONOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'LOINC TBD' and value.codeSystem = '2.16.840.1.113883.6.1'";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateLocationofDeathCode(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateLocationofDeathCode(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_LOCATIONOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.code = 'LOINC TBD' and value.codeSystem = '2.16.840.1.113883.6.1'
    * @param locationofDeath The receiving '<em><b>Locationof Death</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -347,13 +295,56 @@ public class LocationofDeathOperations extends ClinicalStatementOperations
    */
   
   protected static Constraint VALIDATE_LOCATIONOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * The cached OCL expression body for the '{@link #validateLocationofDeathCodeP(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateLocationofDeathCodeP(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_LOCATIONOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined()";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateLocationofDeathCodeP(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateLocationofDeathCodeP(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_LOCATIONOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * The cached OCL expression body for the '{@link #validateLocationofDeathCode(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateLocationofDeathCode(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_LOCATIONOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = 'LOINC TBD' and value.codeSystem = '2.16.840.1.113883.6.1'";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateLocationofDeathCode(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateLocationofDeathCode(LocationofDeath, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_LOCATIONOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
   
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * isDefined('moodCode')
    * @param locationofDeath The receiving '<em><b>Locationof Death</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -420,7 +411,6 @@ public class LocationofDeathOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
    * @param locationofDeath The receiving '<em><b>Locationof Death</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -487,7 +477,6 @@ public class LocationofDeathOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::AD)))
    * @param locationofDeath The receiving '<em><b>Locationof Death</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.

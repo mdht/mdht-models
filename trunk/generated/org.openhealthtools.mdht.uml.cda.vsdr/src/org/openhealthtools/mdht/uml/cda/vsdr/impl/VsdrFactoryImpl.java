@@ -68,11 +68,11 @@ public class VsdrFactoryImpl extends EFactoryImpl implements VsdrFactory
   {
     switch (eClass.getClassifierID())
     {
-      case VsdrPackage.REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS: return createReportingdeathinformationfromaclinicalsettingtovitalrecords();
+      case VsdrPackage.REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS: return createReportingDeathInformationfromaClinicalSettingtoVitalRecords();
       case VsdrPackage.DEATH_REPORT_DOCUMENT_BODY: return createDeathReportDocumentBody();
-      case VsdrPackage.TIMEOF_DEATH: return createTimeofDeath();
+      case VsdrPackage.DATEAND_TIMEOF_DEATH: return createDateandTimeofDeath();
       case VsdrPackage.LOCATIONOF_DEATH: return createLocationofDeath();
-      case VsdrPackage.DEATH_CERTIFICATION: return createDeathCertification();
+      case VsdrPackage.CERTIFYING_DEATH: return createCertifyingDeath();
       case VsdrPackage.MANNEROF_DEATH: return createMannerofDeath();
       case VsdrPackage.PREGNANCY_STATUS: return createPregnancyStatus();
       case VsdrPackage.TOBACCO_USE: return createTobaccoUse();
@@ -83,6 +83,7 @@ public class VsdrFactoryImpl extends EFactoryImpl implements VsdrFactory
       case VsdrPackage.CORONER_REFERRAL: return createCoronerReferral();
       case VsdrPackage.CORONER_CASE_TRANSFER: return createCoronerCaseTransfer();
       case VsdrPackage.DEATH_LOCATION_TYPE: return createDeathLocationType();
+      case VsdrPackage.PRONOUNCING_DEATH: return createPronouncingDeath();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -93,10 +94,10 @@ public class VsdrFactoryImpl extends EFactoryImpl implements VsdrFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Reportingdeathinformationfromaclinicalsettingtovitalrecords createReportingdeathinformationfromaclinicalsettingtovitalrecords()
+  public ReportingDeathInformationfromaClinicalSettingtoVitalRecords createReportingDeathInformationfromaClinicalSettingtoVitalRecords()
   {
-    ReportingdeathinformationfromaclinicalsettingtovitalrecordsImpl reportingdeathinformationfromaclinicalsettingtovitalrecords = new ReportingdeathinformationfromaclinicalsettingtovitalrecordsImpl();
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords;
+    ReportingDeathInformationfromaClinicalSettingtoVitalRecordsImpl reportingDeathInformationfromaClinicalSettingtoVitalRecords = new ReportingDeathInformationfromaClinicalSettingtoVitalRecordsImpl();
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords;
   }
 
   /**
@@ -115,10 +116,10 @@ public class VsdrFactoryImpl extends EFactoryImpl implements VsdrFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public TimeofDeath createTimeofDeath()
+  public DateandTimeofDeath createDateandTimeofDeath()
   {
-    TimeofDeathImpl timeofDeath = new TimeofDeathImpl();
-    return timeofDeath;
+    DateandTimeofDeathImpl dateandTimeofDeath = new DateandTimeofDeathImpl();
+    return dateandTimeofDeath;
   }
 
   /**
@@ -137,10 +138,10 @@ public class VsdrFactoryImpl extends EFactoryImpl implements VsdrFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public DeathCertification createDeathCertification()
+  public CertifyingDeath createCertifyingDeath()
   {
-    DeathCertificationImpl deathCertification = new DeathCertificationImpl();
-    return deathCertification;
+    CertifyingDeathImpl certifyingDeath = new CertifyingDeathImpl();
+    return certifyingDeath;
   }
 
   /**
@@ -251,6 +252,17 @@ public class VsdrFactoryImpl extends EFactoryImpl implements VsdrFactory
   {
     DeathLocationTypeImpl deathLocationType = new DeathLocationTypeImpl();
     return deathLocationType;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public PronouncingDeath createPronouncingDeath()
+  {
+    PronouncingDeathImpl pronouncingDeath = new PronouncingDeathImpl();
+    return pronouncingDeath;
   }
 
   /**

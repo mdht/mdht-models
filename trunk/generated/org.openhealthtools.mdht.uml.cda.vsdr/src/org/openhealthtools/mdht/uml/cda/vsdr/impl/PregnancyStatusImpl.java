@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -118,18 +121,17 @@ public class PregnancyStatusImpl extends ObservationImpl implements PregnancySta
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validatePregnancyStatusValueP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return PregnancyStatusOperations.validatePregnancyStatusValueP(this, diagnostics, context);
+  public PregnancyStatus init() {
+      return Initializer.Util.init(this);
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public PregnancyStatus init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PregnancyStatus init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //PregnancyStatusImpl

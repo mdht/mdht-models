@@ -27,8 +27,10 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyPerformance;
 import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults;
+import org.openhealthtools.mdht.uml.cda.vsdr.CertifyingDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer;
 import org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral;
+import org.openhealthtools.mdht.uml.cda.vsdr.DateandTimeofDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation;
 import org.openhealthtools.mdht.uml.cda.vsdr.DeathCertification;
 import org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationType;
@@ -37,6 +39,7 @@ import org.openhealthtools.mdht.uml.cda.vsdr.Injury;
 import org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.MannerofDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.PregnancyStatus;
+import org.openhealthtools.mdht.uml.cda.vsdr.PronouncingDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.TimeofDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.TobaccoUse;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
@@ -52,11 +55,12 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyTimeofDeath(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Timeof Death</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyLocationofDeath(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Locationof Death</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyDeathCertification(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Death Certification</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyCertifyingDeath(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Certifying Death</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyMannerofDeath(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Mannerof Death</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyPregnancyStatus(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Pregnancy Status</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyTobaccoUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Tobacco Use</em>}</li>
@@ -67,9 +71,10 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyCoronerReferral(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Coroner Referral</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyCoronerCaseTransfer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Coroner Case Transfer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyDeathLocationType(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Death Location Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyPronouncingDeath(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Pronouncing Death</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getTimeofDeath() <em>Get Timeof Death</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getLocationofDeath() <em>Get Locationof Death</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getDeathCertification() <em>Get Death Certification</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getCertifyingDeath() <em>Get Certifying Death</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getMannerofDeath() <em>Get Mannerof Death</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getPregnancyStatus() <em>Get Pregnancy Status</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getTobaccoUse() <em>Get Tobacco Use</em>}</li>
@@ -80,6 +85,7 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getCoronerReferral() <em>Get Coroner Referral</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getCoronerCaseTransfer() <em>Get Coroner Case Transfer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getDeathLocationType() <em>Get Death Location Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getPronouncingDeath() <em>Get Pronouncing Death</em>}</li>
  * </ul>
  * </p>
  *
@@ -122,7 +128,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.1')
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -164,32 +169,9 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateDeathReportDocumentBodyCodeP(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Code P</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateDeathReportDocumentBodyCodeP(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined()";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyCodeP(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Code P</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateDeathReportDocumentBodyCodeP(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.code.oclIsUndefined()
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -231,6 +213,50 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   }
 
   /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateDeathReportDocumentBodyText(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
+      try
+      {
+        VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             VsdrValidator.DIAGNOSTIC_SOURCE,
+             VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_TEXT,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+             new Object [] { deathReportDocumentBody }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
    * The cached OCL expression body for the '{@link #validateDeathReportDocumentBodyCode(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Code</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -252,15 +278,54 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    */
   
   protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * The cached OCL expression body for the '{@link #validateDeathReportDocumentBodyCodeP(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDeathReportDocumentBodyCodeP(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined()";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyCodeP(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDeathReportDocumentBodyCodeP(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * The cached OCL expression body for the '{@link #validateDeathReportDocumentBodyText(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Text</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDeathReportDocumentBodyText(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyText(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Text</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDeathReportDocumentBodyText(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
   
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.codeSystem = '2.16.840.1.113883.6.1'
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -309,7 +374,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TIMEOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Time of Death))";
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TIMEOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Date and Time of Death) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
    * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyTimeofDeath(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Timeof Death</em>}' invariant operation.
@@ -327,7 +392,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Time of Death))
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -376,7 +440,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_LOCATIONOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Location of Death))";
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_LOCATIONOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Location of Death) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
    * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyLocationofDeath(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Locationof Death</em>}' invariant operation.
@@ -394,7 +458,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Location of Death))
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -436,32 +499,31 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateDeathReportDocumentBodyDeathCertification(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Death Certification</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateDeathReportDocumentBodyCertifyingDeath(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Certifying Death</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateDeathReportDocumentBodyDeathCertification(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateDeathReportDocumentBodyCertifyingDeath(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_CERTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Death Certification))";
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Certifying Death) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
-   * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyDeathCertification(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Death Certification</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyCertifyingDeath(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Certifying Death</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateDeathReportDocumentBodyDeathCertification(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateDeathReportDocumentBodyCertifyingDeath(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_CERTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Death Certification))
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -469,22 +531,22 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * @generated
    */
   
-  public static  boolean validateDeathReportDocumentBodyDeathCertification(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateDeathReportDocumentBodyCertifyingDeath(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
   	  
-    if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_CERTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
       try
       {
-        VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_CERTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_CERTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_CERTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody))
+    if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody))
     {
       if (diagnostics != null)
       {
@@ -492,8 +554,8 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              VsdrValidator.DIAGNOSTIC_SOURCE,
-             VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_DEATH_CERTIFICATION,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathCertification", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+             VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyCertifyingDeath", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
              new Object [] { deathReportDocumentBody }));
       }
        
@@ -510,7 +572,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_MANNEROF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Manner of Death))";
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_MANNEROF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Manner of Death) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
    * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyMannerofDeath(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Mannerof Death</em>}' invariant operation.
@@ -528,7 +590,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Manner of Death))
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -577,7 +638,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PREGNANCY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Pregnancy Status))";
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PREGNANCY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Pregnancy Status) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
    * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyPregnancyStatus(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Pregnancy Status</em>}' invariant operation.
@@ -595,7 +656,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Pregnancy Status))
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -644,7 +704,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Tobacco Use))";
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Tobacco Use) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
    * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyTobaccoUse(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Tobacco Use</em>}' invariant operation.
@@ -662,7 +722,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Tobacco Use))
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -711,7 +770,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(vsdr::Injury))";
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(vsdr::Injury) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
    * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyInjury(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Injury</em>}' invariant operation.
@@ -729,7 +788,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(vsdr::Injury))
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -778,7 +836,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CAUSEOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(vsdr::Death Causal Information))";
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CAUSEOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(vsdr::Death Causal Information) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
    * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyCauseofDeath(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Causeof Death</em>}' invariant operation.
@@ -796,7 +854,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(vsdr::Death Causal Information))
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -845,7 +902,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_PERFORMANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Autopsy Performance))";
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_PERFORMANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Autopsy Performance) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
    * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyAutopsyPerformance(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Autopsy Performance</em>}' invariant operation.
@@ -863,7 +920,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Autopsy Performance))
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -912,7 +968,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Autopsy Results))";
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Autopsy Results) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
    * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyAutopsyResults(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Autopsy Results</em>}' invariant operation.
@@ -930,7 +986,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Autopsy Results))
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -979,7 +1034,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Coroner Referral))";
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Coroner Referral) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
    * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyCoronerReferral(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Coroner Referral</em>}' invariant operation.
@@ -997,7 +1052,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Coroner Referral))
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1046,7 +1100,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_CASE_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Coroner Case Transfer))";
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_CASE_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Coroner Case Transfer) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
    * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyCoronerCaseTransfer(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Coroner Case Transfer</em>}' invariant operation.
@@ -1064,7 +1118,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Coroner Case Transfer))
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1113,7 +1166,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_LOCATION_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::DeathLocationType))";
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_LOCATION_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Death LocationType) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
    * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyDeathLocationType(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Death Location Type</em>}' invariant operation.
@@ -1131,7 +1184,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::DeathLocationType))
    * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -1173,6 +1225,72 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   }
 
   /**
+   * The cached OCL expression body for the '{@link #validateDeathReportDocumentBodyPronouncingDeath(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Pronouncing Death</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDeathReportDocumentBodyPronouncingDeath(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsdr::Pronouncing Death) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyPronouncingDeath(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Pronouncing Death</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateDeathReportDocumentBodyPronouncingDeath(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateDeathReportDocumentBodyPronouncingDeath(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
+      try
+      {
+        VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             VsdrValidator.DIAGNOSTIC_SOURCE,
+             VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyPronouncingDeath", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+             new Object [] { deathReportDocumentBody }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
    * The cached OCL expression body for the '{@link #getTimeofDeath(DeathReportDocumentBody) <em>Get Timeof Death</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1180,7 +1298,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_TIMEOF_DEATH__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Time of Death))->asSequence()->any(true).oclAsType(vsdr::Time of Death)";
+  protected static final String GET_TIMEOF_DEATH__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Date and Time of Death))->asSequence()->any(true).oclAsType(vsdr::Date and Time of Death)";
 
   /**
    * The cached OCL query for the '{@link #getTimeofDeath(DeathReportDocumentBody) <em>Get Timeof Death</em>}' query operation.
@@ -1195,19 +1313,15 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Time of Death))->asSequence()->any(true).oclAsType(vsdr::Time of Death)
-   * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
-  public static  TimeofDeath getTimeofDeath(DeathReportDocumentBody deathReportDocumentBody)
+  public static  DateandTimeofDeath getTimeofDeath(DeathReportDocumentBody deathReportDocumentBody)
   {
     if (GET_TIMEOF_DEATH__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(71));
+      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(73));
       try
       {
         GET_TIMEOF_DEATH__EOCL_QRY = helper.createQuery(GET_TIMEOF_DEATH__EOCL_EXP);
@@ -1218,7 +1332,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
       }
     }
     OCL.Query query = EOCL_ENV.createQuery(GET_TIMEOF_DEATH__EOCL_QRY);
-    return (TimeofDeath) query.evaluate(deathReportDocumentBody);
+    return (DateandTimeofDeath) query.evaluate(deathReportDocumentBody);
   }
 
   /**
@@ -1244,10 +1358,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Location of Death))->asSequence()->any(true).oclAsType(vsdr::Location of Death)
-   * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1256,7 +1366,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
     if (GET_LOCATIONOF_DEATH__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(72));
+      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(74));
       try
       {
         GET_LOCATIONOF_DEATH__EOCL_QRY = helper.createQuery(GET_LOCATIONOF_DEATH__EOCL_EXP);
@@ -1271,52 +1381,49 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #getDeathCertification(DeathReportDocumentBody) <em>Get Death Certification</em>}' operation.
+   * The cached OCL expression body for the '{@link #getCertifyingDeath(DeathReportDocumentBody) <em>Get Certifying Death</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDeathCertification(DeathReportDocumentBody)
+   * @see #getCertifyingDeath(DeathReportDocumentBody)
    * @generated
    * @ordered
    */
-  protected static final String GET_DEATH_CERTIFICATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Death Certification))->asSequence()->any(true).oclAsType(vsdr::Death Certification)";
+  protected static final String GET_CERTIFYING_DEATH__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Certifying Death))->asSequence()->any(true).oclAsType(vsdr::Certifying Death)";
 
   /**
-   * The cached OCL query for the '{@link #getDeathCertification(DeathReportDocumentBody) <em>Get Death Certification</em>}' query operation.
+   * The cached OCL query for the '{@link #getCertifyingDeath(DeathReportDocumentBody) <em>Get Certifying Death</em>}' query operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDeathCertification(DeathReportDocumentBody)
+   * @see #getCertifyingDeath(DeathReportDocumentBody)
    * @generated
    * @ordered
    */
-  protected static OCLExpression<EClassifier> GET_DEATH_CERTIFICATION__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_CERTIFYING_DEATH__EOCL_QRY;
+
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Death Certification))->asSequence()->any(true).oclAsType(vsdr::Death Certification)
-   * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
-  public static  DeathCertification getDeathCertification(DeathReportDocumentBody deathReportDocumentBody)
+  public static  CertifyingDeath getCertifyingDeath(DeathReportDocumentBody deathReportDocumentBody)
   {
-    if (GET_DEATH_CERTIFICATION__EOCL_QRY == null)
+    if (GET_CERTIFYING_DEATH__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(73));
+      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(75));
       try
       {
-        GET_DEATH_CERTIFICATION__EOCL_QRY = helper.createQuery(GET_DEATH_CERTIFICATION__EOCL_EXP);
+        GET_CERTIFYING_DEATH__EOCL_QRY = helper.createQuery(GET_CERTIFYING_DEATH__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    OCL.Query query = EOCL_ENV.createQuery(GET_DEATH_CERTIFICATION__EOCL_QRY);
-    return (DeathCertification) query.evaluate(deathReportDocumentBody);
+    OCL.Query query = EOCL_ENV.createQuery(GET_CERTIFYING_DEATH__EOCL_QRY);
+    return (CertifyingDeath) query.evaluate(deathReportDocumentBody);
   }
 
   /**
@@ -1342,10 +1449,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Manner of Death))->asSequence()->any(true).oclAsType(vsdr::Manner of Death)
-   * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1354,7 +1457,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
     if (GET_MANNEROF_DEATH__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(74));
+      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(76));
       try
       {
         GET_MANNEROF_DEATH__EOCL_QRY = helper.createQuery(GET_MANNEROF_DEATH__EOCL_EXP);
@@ -1391,10 +1494,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Pregnancy Status))->asSequence()->any(true).oclAsType(vsdr::Pregnancy Status)
-   * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1403,7 +1502,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
     if (GET_PREGNANCY_STATUS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(75));
+      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(77));
       try
       {
         GET_PREGNANCY_STATUS__EOCL_QRY = helper.createQuery(GET_PREGNANCY_STATUS__EOCL_EXP);
@@ -1440,10 +1539,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Tobacco Use))->asSequence()->any(true).oclAsType(vsdr::Tobacco Use)
-   * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1452,7 +1547,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
     if (GET_TOBACCO_USE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(76));
+      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(78));
       try
       {
         GET_TOBACCO_USE__EOCL_QRY = helper.createQuery(GET_TOBACCO_USE__EOCL_EXP);
@@ -1489,10 +1584,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(vsdr::Injury))->asSequence()->any(true).oclAsType(vsdr::Injury)
-   * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1501,7 +1592,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
     if (GET_INJURY__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(77));
+      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(79));
       try
       {
         GET_INJURY__EOCL_QRY = helper.createQuery(GET_INJURY__EOCL_EXP);
@@ -1538,10 +1629,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(vsdr::Death Causal Information))->asSequence()->any(true).oclAsType(vsdr::Death Causal Information)
-   * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1550,7 +1637,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
     if (GET_CAUSEOF_DEATH__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(78));
+      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(80));
       try
       {
         GET_CAUSEOF_DEATH__EOCL_QRY = helper.createQuery(GET_CAUSEOF_DEATH__EOCL_EXP);
@@ -1587,10 +1674,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Autopsy Performance))->asSequence()->any(true).oclAsType(vsdr::Autopsy Performance)
-   * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1599,7 +1682,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
     if (GET_AUTOPSY_PERFORMANCE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(79));
+      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(81));
       try
       {
         GET_AUTOPSY_PERFORMANCE__EOCL_QRY = helper.createQuery(GET_AUTOPSY_PERFORMANCE__EOCL_EXP);
@@ -1636,10 +1719,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Autopsy Results))->asSequence()->any(true).oclAsType(vsdr::Autopsy Results)
-   * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1648,7 +1727,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
     if (GET_AUTOPSY_RESULTS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(80));
+      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(82));
       try
       {
         GET_AUTOPSY_RESULTS__EOCL_QRY = helper.createQuery(GET_AUTOPSY_RESULTS__EOCL_EXP);
@@ -1685,10 +1764,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Coroner Referral))->asSequence()->any(true).oclAsType(vsdr::Coroner Referral)
-   * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1697,7 +1772,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
     if (GET_CORONER_REFERRAL__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(81));
+      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(83));
       try
       {
         GET_CORONER_REFERRAL__EOCL_QRY = helper.createQuery(GET_CORONER_REFERRAL__EOCL_EXP);
@@ -1734,10 +1809,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Coroner Case Transfer))->asSequence()->any(true).oclAsType(vsdr::Coroner Case Transfer)
-   * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1746,7 +1817,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
     if (GET_CORONER_CASE_TRANSFER__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(82));
+      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(84));
       try
       {
         GET_CORONER_CASE_TRANSFER__EOCL_QRY = helper.createQuery(GET_CORONER_CASE_TRANSFER__EOCL_EXP);
@@ -1768,7 +1839,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    * @generated
    * @ordered
    */
-  protected static final String GET_DEATH_LOCATION_TYPE__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::DeathLocationType))->asSequence()->any(true).oclAsType(vsdr::DeathLocationType)";
+  protected static final String GET_DEATH_LOCATION_TYPE__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Death LocationType))->asSequence()->any(true).oclAsType(vsdr::Death LocationType)";
 
   /**
    * The cached OCL query for the '{@link #getDeathLocationType(DeathReportDocumentBody) <em>Get Death Location Type</em>}' query operation.
@@ -1783,10 +1854,6 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::DeathLocationType))->asSequence()->any(true).oclAsType(vsdr::DeathLocationType)
-   * @param deathReportDocumentBody The receiving '<em><b>Death Report Document Body</b></em>' model object.
-   * <!-- end-model-doc -->
    * @generated
    */
   
@@ -1795,7 +1862,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
     if (GET_DEATH_LOCATION_TYPE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(83));
+      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(85));
       try
       {
         GET_DEATH_LOCATION_TYPE__EOCL_QRY = helper.createQuery(GET_DEATH_LOCATION_TYPE__EOCL_EXP);
@@ -1807,6 +1874,52 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
     }
     OCL.Query query = EOCL_ENV.createQuery(GET_DEATH_LOCATION_TYPE__EOCL_QRY);
     return (DeathLocationType) query.evaluate(deathReportDocumentBody);
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #getPronouncingDeath(DeathReportDocumentBody) <em>Get Pronouncing Death</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getPronouncingDeath(DeathReportDocumentBody)
+   * @generated
+   * @ordered
+   */
+  protected static final String GET_PRONOUNCING_DEATH__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsdr::Pronouncing Death))->asSequence()->any(true).oclAsType(vsdr::Pronouncing Death)";
+
+  /**
+   * The cached OCL query for the '{@link #getPronouncingDeath(DeathReportDocumentBody) <em>Get Pronouncing Death</em>}' query operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getPronouncingDeath(DeathReportDocumentBody)
+   * @generated
+   * @ordered
+   */
+  protected static OCLExpression<EClassifier> GET_PRONOUNCING_DEATH__EOCL_QRY;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  
+  public static  PronouncingDeath getPronouncingDeath(DeathReportDocumentBody deathReportDocumentBody)
+  {
+    if (GET_PRONOUNCING_DEATH__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(86));
+      try
+      {
+        GET_PRONOUNCING_DEATH__EOCL_QRY = helper.createQuery(GET_PRONOUNCING_DEATH__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_PRONOUNCING_DEATH__EOCL_QRY);
+    return (PronouncingDeath) query.evaluate(deathReportDocumentBody);
   }
 
 } // DeathReportDocumentBodyOperations
