@@ -23,7 +23,7 @@
 <ul><li><p><lines><i>A code value that indicates the nature of the section - it contains information on the newborn.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:54)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:55) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF:65)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> (CONF:66) <ol><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:67)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:68) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:69)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:70)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>sDTCId</b></tt> (CONF:71)<p><lines><i>An identifier for the newborn.  The medical record number assigned by the delivering institution should be provided.</i></lines></p></li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:72)<p><lines><i>The name provided for the newborn.</i></lines></p></li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:73), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>) (CONF:74)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>birthTime</b></tt> (CONF:75)<p><lines><i>The birth date and time of the newborn.  By the same token, the date and time of delivery.</i></lines></p></li></ol> </li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="CHILD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.111 RoleCode</tt>)</li></ol> </li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:55) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF:65)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> (CONF:66) <ol><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:67)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:68) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:69)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:70)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>sDTCId</b></tt> (CONF:71)<p><lines><i>An identifier assigned to the newborn.  The medical record number assigned by the delivering institution should be provided.</i></lines></p></li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:72)<p><lines><i>The name provided for the newborn.</i></lines></p></li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:73), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>) (CONF:74)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>birthTime</b></tt> (CONF:75)<p><lines><i>The birth date and time of the newborn.  By the same token, the date and time of delivery.</i></lines></p></li></ol> </li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="CHILD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.111 RoleCode</tt>)</li></ol> </li></ol>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:56)
 <ol>
@@ -65,7 +65,7 @@
 <ul><li><p><lines><i>A code value that indicates the nature of the section - it contains information on the newborn.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:54)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:55) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF:65)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> (CONF:66) <ol><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:67)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:68) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:69)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:70)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>sDTCId</b></tt> (CONF:71)<p><lines><i>An identifier for the newborn.  The medical record number assigned by the delivering institution should be provided.</i></lines></p></li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:72)<p><lines><i>The name provided for the newborn.</i></lines></p></li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:73), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>) (CONF:74)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>birthTime</b></tt> (CONF:75)<p><lines><i>The birth date and time of the newborn.  By the same token, the date and time of delivery.</i></lines></p></li></ol> </li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="CHILD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.111 RoleCode</tt>)</li></ol> </li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:55) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF:65)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> (CONF:66) <ol><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:67)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> (CONF:68) <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:69)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:70)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>sDTCId</b></tt> (CONF:71)<p><lines><i>An identifier assigned to the newborn.  The medical record number assigned by the delivering institution should be provided.</i></lines></p></li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:72)<p><lines><i>The name provided for the newborn.</i></lines></p></li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:73), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>) (CONF:74)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>birthTime</b></tt> (CONF:75)<p><lines><i>The birth date and time of the newborn.  By the same token, the date and time of delivery.</i></lines></p></li></ol> </li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="CHILD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.111 RoleCode</tt>)</li></ol> </li></ol>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:56)
 <ol>
@@ -116,7 +116,7 @@
 <row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:54</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="886855027"/>
+  <id root="MDHT" extension="124048568"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <subject typeCode="SBJ">
@@ -129,8 +129,8 @@
   </subject>
   <entry>
     <observation>
-      <id root="MDHT" extension="1974401735"/>
-      <code code="1984615932"/>
+      <id root="MDHT" extension="1226815424"/>
+      <code code="934124451"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>
@@ -143,8 +143,8 @@
   </entry>
   <entry>
     <observation>
-      <id root="MDHT" extension="1193957216"/>
-      <code code="231667789"/>
+      <id root="MDHT" extension="1836540412"/>
+      <code code="791700568"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>
@@ -167,8 +167,8 @@
   </entry>
   <entry>
     <observation>
-      <id root="MDHT" extension="548347065"/>
-      <code code="2045441720"/>
+      <id root="MDHT" extension="181011061"/>
+      <code code="699394539"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>
@@ -178,8 +178,8 @@
   </entry>
   <entry>
     <observation>
-      <id root="MDHT" extension="1430181111"/>
-      <code code="1792710140"/>
+      <id root="MDHT" extension="94133596"/>
+      <code code="863327759"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>
@@ -189,8 +189,8 @@
   </entry>
   <entry>
     <observation>
-      <id root="MDHT" extension="1796975277"/>
-      <code code="763678092"/>
+      <id root="MDHT" extension="1456218972"/>
+      <code code="229611722"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>
@@ -203,8 +203,8 @@
   </entry>
   <entry>
     <observation>
-      <id root="MDHT" extension="677609426"/>
-      <code code="30814368"/>
+      <id root="MDHT" extension="321069078"/>
+      <code code="449479314"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>
@@ -214,13 +214,13 @@
   </entry>
   <component>
     <section>
-      <id root="MDHT" extension="258914363"/>
+      <id root="MDHT" extension="1063353199"/>
       <title>TEXT FOR TITLE</title>
       <text/>
       <entry>
         <observation>
-          <id root="MDHT" extension="680416441"/>
-          <code code="1495259082"/>
+          <id root="MDHT" extension="1560087966"/>
+          <code code="29324877"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2013"/>
@@ -232,13 +232,13 @@
   </component>
   <component>
     <section>
-      <id root="MDHT" extension="1288682996"/>
+      <id root="MDHT" extension="15723416"/>
       <title>TEXT FOR TITLE</title>
       <text/>
       <entry>
         <observation>
-          <id root="MDHT" extension="719973042"/>
-          <code code="1681781314"/>
+          <id root="MDHT" extension="1512124243"/>
+          <code code="1303510764"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2013"/>

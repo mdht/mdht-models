@@ -44,17 +44,18 @@
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:363</entry><entry> EVN</entry></row> 
 <row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:361</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
 <row><entry>mother's Vital Signs Observation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Mothers Vital Signs Observation</entry><entry></entry><entry> </entry></row> 
+<row><entry>mothers Vital Signs Section</entry><entry>mothers Vital Signs Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Mothers Vital Signs Section</entry><entry></entry><entry> </entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:364</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="147593090"/>
-  <code code="413579228"/>
+  <id root="MDHT" extension="1750273771"/>
+  <code code="1299622209"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
     <observation>
-      <id root="MDHT" extension="1368785739"/>
-      <code code="932500603"/>
+      <id root="MDHT" extension="194623454"/>
+      <code code="738672103"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>

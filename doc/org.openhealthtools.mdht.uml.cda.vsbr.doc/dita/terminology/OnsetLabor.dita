@@ -28,7 +28,7 @@
 <row><entry>44223004</entry><entry>SNOMEDCT</entry><entry>Premature rupture of membranes</entry></row>
 <row><entry>51920004</entry><entry>SNOMEDCT</entry><entry>Precipitate labor</entry></row>
 <row><entry>53443007</entry><entry>SNOMEDCT</entry><entry>Prolonged labor</entry></row>
-<row><entry>60413007</entry><entry>SNOMEDCT</entry><entry>None of the cited unusual onsets</entry></row>
+<row><entry>260413007</entry><entry>SNOMEDCT</entry><entry>None</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

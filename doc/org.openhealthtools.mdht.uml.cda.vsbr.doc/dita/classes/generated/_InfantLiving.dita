@@ -41,8 +41,8 @@
 <row><entry>infant Living</entry><entry>infant Living</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Infant Living</entry><entry>CONF:62</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="595390868"/>
-  <code code="329006413"/>
+  <id root="MDHT" extension="1245461901"/>
+  <code code="999561651"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>

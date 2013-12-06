@@ -41,13 +41,13 @@
 <row><entry>abnormal Conditions of the Newborn</entry><entry>abnormal Conditions of the Newborn</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Abnormal Condition of the Newborn</entry><entry>CONF:59</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1448274508"/>
-  <code code="958275335"/>
+  <id root="MDHT" extension="476341069"/>
+  <code code="1149650913"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>
   </effectiveTime>
-  <value xsi:type="CD" code="453637276"/>
+  <value xsi:type="CD" code="1072552643"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

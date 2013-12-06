@@ -25,6 +25,8 @@ The reader should note that the subject of this section - the delivered fetus - 
 <ul><li><p><lines><i>A code value that indicates the nature of the section - it contains information regarding the delivered fetus.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:79)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF:65)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> <ol><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:67)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:69)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:70)</li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>name</b></tt> (CONF:72)<p><lines><i>A name provided for the fetus.</i></lines></p></li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:73), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>) (CONF:74)</li></ol> </li></ol> </li></ol>
+</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:81)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../Plurality.dita">Plurality</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.41</tt>)</li></ol></li>
@@ -46,8 +48,6 @@ The reader should note that the subject of this section - the delivered fetus - 
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:88)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../FetalDeliveryTime.dita">Fetal Delivery Time</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.23</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF:65)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> <ol><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:67)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:69)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:70)</li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>name</b></tt> (CONF:72)<p><lines><i>A name provided for the fetus.</i></lines></p></li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:73), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>) (CONF:74)</li></ol> </li></ol> </li></ol>
-</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:76)
@@ -58,6 +58,8 @@ The reader should note that the subject of this section - the delivered fetus - 
 <ul><li><p><lines><i>A code value that indicates the nature of the section - it contains information regarding the delivered fetus.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:79)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF:65)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> <ol><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:67)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:69)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:70)</li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>name</b></tt> (CONF:72)<p><lines><i>A name provided for the fetus.</i></lines></p></li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:73), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>) (CONF:74)</li></ol> </li></ol> </li></ol>
+</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:81)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../Plurality.dita">Plurality</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.41</tt>)</li></ol></li>
@@ -79,8 +81,6 @@ The reader should note that the subject of this section - the delivered fetus - 
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:88)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../FetalDeliveryTime.dita">Fetal Delivery Time</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.23</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF:65)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>relatedSubject</b></tt> <ol><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PRS" </tt> (CONF:67)</li><li> This relatedSubject <b>SHALL</b> contain exactly one [1..1] <tt><b>subject</b></tt> <ol><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:69)</li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:70)</li><li> This subject <b>MAY</b> contain zero or one [0..1] <tt><b>name</b></tt> (CONF:72)<p><lines><i>A name provided for the fetus.</i></lines></p></li><li> This subject <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CONF:73), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>) (CONF:74)</li></ol> </li></ol> </li></ol>
-</li>
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Fetal Delivery Section</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:76</entry><entry> DOCSECT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:78</entry><entry> EVN</entry></row> 
@@ -97,7 +97,7 @@ The reader should note that the subject of this section - the delivered fetus - 
 <row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:79</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1354314617"/>
+  <id root="MDHT" extension="1508295460"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <subject typeCode="SBJ">
@@ -109,8 +109,8 @@ The reader should note that the subject of this section - the delivered fetus - 
   </subject>
   <entry>
     <observation>
-      <id root="MDHT" extension="1038202920"/>
-      <code code="182053163"/>
+      <id root="MDHT" extension="1219223206"/>
+      <code code="550586983"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>
@@ -123,24 +123,29 @@ The reader should note that the subject of this section - the delivered fetus - 
   </entry>
   <entry>
     <observation>
-      <id root="MDHT" extension="2078671485"/>
-      <code code="392050675"/>
+      <id root="MDHT" extension="1159435549"/>
+      <code code="19624761"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>
         <high value="2013"/>
       </effectiveTime>
-      <entryRelationship>
+      <entryRelationship typeCode="COMP">
         <observation>
           <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship typeCode="COMP">
+        <observation>
+          <code code="73767-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Histological placental examination was performed"/>
         </observation>
       </entryRelationship>
     </observation>
   </entry>
   <entry>
     <observation>
-      <id root="MDHT" extension="2140017311"/>
-      <code code="347336539"/>
+      <id root="MDHT" extension="893253579"/>
+      <code code="140787304"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>
@@ -150,8 +155,8 @@ The reader should note that the subject of this section - the delivered fetus - 
   </entry>
   <entry>
     <observation>
-      <id root="MDHT" extension="971088808"/>
-      <code code="1181051113"/>
+      <id root="MDHT" extension="116533786"/>
+      <code code="1079677485"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>
@@ -161,8 +166,8 @@ The reader should note that the subject of this section - the delivered fetus - 
   </entry>
   <entry>
     <observation>
-      <id root="MDHT" extension="767548253"/>
-      <code code="1992636449"/>
+      <id root="MDHT" extension="603497976"/>
+      <code code="400368235"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>
@@ -182,13 +187,18 @@ The reader should note that the subject of this section - the delivered fetus - 
   </entry>
   <entry>
     <observation>
-      <id root="MDHT" extension="1703068440"/>
-      <code code="1642292098"/>
+      <id root="MDHT" extension="1724744798"/>
+      <code code="1281711142"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>
         <high value="2013"/>
       </effectiveTime>
+      <participant typeCode="LOC">
+        <participantRole classCode="SDLOC">
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+        </participantRole>
+      </participant>
     </observation>
   </entry>
 </section>]]></codeblock>

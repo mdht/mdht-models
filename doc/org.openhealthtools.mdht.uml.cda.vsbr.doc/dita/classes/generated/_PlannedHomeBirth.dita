@@ -41,8 +41,8 @@
 <row><entry>homeBirthPlan</entry><entry>homeBirthPlan</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Planned Home Birth</entry><entry>CONF:95</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1165656419"/>
-  <code code="83097398"/>
+  <id root="MDHT" extension="913347018"/>
+  <code code="1280133815"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>

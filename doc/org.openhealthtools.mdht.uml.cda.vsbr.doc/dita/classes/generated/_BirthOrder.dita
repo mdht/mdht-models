@@ -41,8 +41,8 @@
 <row><entry>birth Order</entry><entry>birth Order</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Birth Order</entry><entry>CONF:57</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="314872781"/>
-  <code code="2023049795"/>
+  <id root="MDHT" extension="336432638"/>
+  <code code="1379259470"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>

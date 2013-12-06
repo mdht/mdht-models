@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Prenatal Testing and Surveillance Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.10.20.26.3]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.10.20.26.3]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Prenatal Testing and Surveillance Section</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Prenatal Testing and Surveillance Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.10.20.26.3</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i">The section contains information on the prenatal care provided to the mother.   The content is drawn from prenatal care records, mother's medical records, labor and delivery records.  Information recorded for live births differs slightly from that recorded for a fetal death report.</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.26.3"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="DOCSECT" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:38)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:40)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="57078-8" </tt><em class="ph i">Antenatal testing and surveillance</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:39)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the section - it captures prenatal care information in the case of a live birth or of a fetal death.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:41)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:42)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The included entry records information regarding prenatal care received by the mother.</em></p>
+</div>
+</li>
+</ul>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PrenatalCare.html" title="[Act: templateId 2.16.840.1.113883.10.20.26.42]">Prenatal Care</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.42</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Prenatal Testing and Surveillance Section example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3" classCode="DOCSECT" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.26.3"/&gt;
+  &lt;id root="MDHT" extension="1318415508"/&gt;
+  &lt;code code="57078-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Antenatal testing and surveillance"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;text/&gt;
+  &lt;entry&gt;
+    &lt;act classCode="ACT" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.26.42"/&gt;
+      &lt;id root="MDHT" extension="1883273777"/&gt;
+      &lt;code code="73776-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="No-prenatal care"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship typeCode="COMP"&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;code code="68493-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prenatal visits for this pregnancy"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/act&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

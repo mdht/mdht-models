@@ -29,12 +29,12 @@
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:48)
 <ul><li><p><lines><i>Onset of labor information is collected for a live birth certificate, but not for a fetal death report.</i></lines></p></li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../OnsetOfLabor.dita">Onset of Labor</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.32</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:49)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../AssessmentsSection.dita">Assessments Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.9</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:50)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryProcedureSection.dita">Labor and Delivery Procedure Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.7</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MothersVitalSignsSection.dita">Mothers Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.9</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:43)
@@ -51,12 +51,12 @@
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:48)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../OnsetOfLabor.dita">Onset of Labor</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.32</tt>)</li></ol><ul><li><p><lines><i>Onset of labor information is collected for a live birth certificate, but not for a fetal death report.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:49)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../AssessmentsSection.dita">Assessments Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.9</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:50)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryProcedureSection.dita">Labor and Delivery Procedure Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.7</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MothersVitalSignsSection.dita">Mothers Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.9</tt>)</li></ol></li>
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Labor and Delivery Section</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:43</entry><entry> DOCSECT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:45</entry><entry> EVN</entry></row> 
@@ -65,11 +65,11 @@
 <row><entry>labor and Delivery Procedures Section</entry><entry>labor and Delivery Procedures Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Labor and Delivery Procedure Section</entry><entry>CONF:50</entry><entry> </entry></row> 
 <row><entry>labor and Delivery Section</entry><entry>labor and Delivery Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Labor and Delivery Section</entry><entry>CONF:20</entry><entry> </entry></row> 
 <row><entry>labor Onsets</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Onset of Labor</entry><entry>CONF:48</entry><entry> </entry></row> 
-<row><entry>Mother's Vital Signs Section</entry><entry>Mother's Vital Signs Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Assessments Section</entry><entry>CONF:49</entry><entry> </entry></row> 
+<row><entry>mothers Vital Signs Section</entry><entry>mothers Vital Signs Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Mothers Vital Signs Section</entry><entry></entry><entry> </entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:46</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1281569734"/>
+  <id root="MDHT" extension="930903097"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
@@ -79,14 +79,17 @@
     <observation/>
   </entry>
   <component>
+    <section/>
+  </component>
+  <component>
     <section>
-      <id root="MDHT" extension="1939435494"/>
+      <id root="MDHT" extension="41755880"/>
       <title>TEXT FOR TITLE</title>
       <text/>
       <entry>
         <observation>
-          <id root="MDHT" extension="1515695454"/>
-          <code code="827135391"/>
+          <id root="MDHT" extension="576549892"/>
+          <code code="854643990"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2013"/>
@@ -95,9 +98,6 @@
         </observation>
       </entry>
     </section>
-  </component>
-  <component>
-    <section/>
   </component>
 </section>]]></codeblock>
 <section id="changes">

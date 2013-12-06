@@ -41,8 +41,8 @@
 <row><entry>number of Live Births now Dead</entry><entry>number of Live Births now Dead</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Number of Live Births now Dead</entry><entry>CONF:375</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="196362489"/>
-  <code code="167825957"/>
+  <id root="MDHT" extension="1861413939"/>
+  <code code="10039163"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>

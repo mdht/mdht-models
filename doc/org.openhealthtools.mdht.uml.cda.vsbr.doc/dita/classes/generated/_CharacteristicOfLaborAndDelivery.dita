@@ -41,13 +41,13 @@
 <row><entry>characteristics of Labor and Delivery</entry><entry>characteristics of Labor and Delivery</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Characteristic of Labor and Delivery</entry><entry>CONF:97</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="599321873"/>
-  <code code="1676248074"/>
+  <id root="MDHT" extension="1172975921"/>
+  <code code="348626209"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>
   </effectiveTime>
-  <value xsi:type="CD" code="1056834265"/>
+  <value xsi:type="CD" code="2093902935"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

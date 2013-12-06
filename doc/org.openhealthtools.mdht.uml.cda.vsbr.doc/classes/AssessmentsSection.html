@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Assessments Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.10.20.26.9]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.10.20.26.9]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Assessments Section</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Assessments Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.10.20.26.9</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i">The section includes assessments, namely Apgar scores, that are recorded for the infant.</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.26.9"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="DOCSECT" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:360)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:363)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:362)<tt class="ph tt"><strong class="ph b">/@code</strong>="51848-0" </tt><em class="ph i">Assessment Note</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:361)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:364)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Apgar scores are recorded to assess the condition of the newborn.  In those cases in which the 5 minute Apgar score is less than 6, the 10 minute Apgar score is to be recorded, .</em></p>
+</div>
+</li>
+</ul>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AssessmentsObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.47]">Assessments Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.47</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Assessments Section example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3" classCode="DOCSECT" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.26.9"/&gt;
+  &lt;id root="MDHT" extension="1817686487"/&gt;
+  &lt;code code="51848-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Assessment Note"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;text/&gt;
+  &lt;entry&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.26.47"/&gt;
+      &lt;id root="MDHT" extension="1878880061"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

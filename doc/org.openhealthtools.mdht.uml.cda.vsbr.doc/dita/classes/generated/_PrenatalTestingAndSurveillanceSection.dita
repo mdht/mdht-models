@@ -48,13 +48,13 @@
 <row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:41</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="501523430"/>
+  <id root="MDHT" extension="1295630597"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
     <act>
-      <id root="MDHT" extension="1786010345"/>
-      <code code="931960047"/>
+      <id root="MDHT" extension="268954168"/>
+      <code code="278763709"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>

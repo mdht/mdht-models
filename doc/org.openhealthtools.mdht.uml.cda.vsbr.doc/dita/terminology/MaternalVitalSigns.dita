@@ -3,7 +3,7 @@
 <topic id="classId" xml:lang="en-us">
 <title>Maternal Vital Signs</title>
 <prolog id="prolog">
-<resourceid id="not specified"/>
+<resourceid id="2.16.840.1.114222.4.11.7209"/>
 </prolog>
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
@@ -12,7 +12,7 @@
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
-<row><entry>Value Set</entry><entry>Maternal Vital Signs - (OID not specified)</entry></row>
+<row><entry>Value Set</entry><entry>Maternal Vital Signs - 2.16.840.1.114222.4.11.7209</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Version</entry><entry>December 1, 2013</entry></row>
 <row><entry>Definition</entry><entry>The collection of vital sign items that is collected for a mother within a Live Birth or Fetal Death report.</entry></row>
@@ -26,8 +26,8 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>69461-2</entry><entry>LOINC</entry><entry>Body weight at delivery</entry></row>
-<row><entry>56077-1</entry><entry>LOINC</entry><entry>Body weight pre current pregnancy</entry></row>
+<row><entry>69461-2</entry><entry>LOINC</entry><entry>Body weight mother -- at delivery</entry></row>
+<row><entry>56077-1</entry><entry>LOINC</entry><entry>Body weight -- pre current pregnancy</entry></row>
 <row><entry>3137-7</entry><entry>LOINC</entry><entry>Body height</entry></row>
 </tbody></tgroup></table>
 </section>

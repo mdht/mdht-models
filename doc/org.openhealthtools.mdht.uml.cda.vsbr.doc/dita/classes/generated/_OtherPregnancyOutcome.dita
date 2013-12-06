@@ -46,8 +46,8 @@
 <row><entry>other Pregnancy Outcomes</entry><entry>other Pregnancy Outcomes</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Other Pregnancy Outcome</entry><entry>CONF:376</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="862679654"/>
-  <code code="1330774763"/>
+  <id root="MDHT" extension="367802240"/>
+  <code code="646895604"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>

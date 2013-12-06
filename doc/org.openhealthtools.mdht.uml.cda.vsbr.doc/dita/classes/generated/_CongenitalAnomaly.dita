@@ -51,23 +51,23 @@
 <row><entry>downConfirmationAssociation</entry><entry>downConfirmationAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>DownConfirmationAssociation</entry><entry></entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="388305404"/>
-  <code code="987761486"/>
+  <id root="MDHT" extension="1853226233"/>
+  <code code="1202736350"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>
   </effectiveTime>
-  <value xsi:type="CD" code="558735390"/>
+  <value xsi:type="CD" code="381070891"/>
   <entryRelationship typeCode="COMP">
     <observation classCode="OBS" moodCode="EVN">
       <code code="73779-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Down syndrome karyotype status"/>
-      <value xsi:type="CD" code="80353961"/>
+      <value xsi:type="CD" code="1211407002"/>
     </observation>
   </entryRelationship>
   <entryRelationship typeCode="COMP">
     <observation classCode="OBS" moodCode="EVN">
       <code code="73778-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Suspected chromosomal disorder karyotype status"/>
-      <value xsi:type="CD" code="1491244734"/>
+      <value xsi:type="CD" code="631415712"/>
     </observation>
   </entryRelationship>
 </observation>]]></codeblock>

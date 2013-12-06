@@ -3,7 +3,7 @@
 <topic id="classId" xml:lang="en-us">
 <title>Certifier Titles</title>
 <prolog id="prolog">
-<resourceid id="not specified"/>
+<resourceid id="2.16.840.1.114222.4.11.7212"/>
 </prolog>
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
@@ -12,7 +12,7 @@
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
-<row><entry>Value Set</entry><entry>Certifier Titles - (OID not specified)</entry></row>
+<row><entry>Value Set</entry><entry>Certifier Titles - 2.16.840.1.114222.4.11.7212</entry></row>
 <row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
 <row><entry>Version</entry><entry>December 1, 2013</entry></row>
 <row><entry>Description</entry><entry>A list of different titles used by birth attendants to denote professional role.  Note, SNOMED is being used as the primary source for codes within the value set.
