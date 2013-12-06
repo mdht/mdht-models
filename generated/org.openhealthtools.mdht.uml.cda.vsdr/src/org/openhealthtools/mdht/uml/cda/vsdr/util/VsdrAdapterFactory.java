@@ -88,9 +88,9 @@ public class VsdrAdapterFactory extends AdapterFactoryImpl
     new VsdrSwitch<Adapter>()
     {
       @Override
-      public Adapter caseReportingdeathinformationfromaclinicalsettingtovitalrecords(Reportingdeathinformationfromaclinicalsettingtovitalrecords object)
+      public Adapter caseReportingDeathInformationfromaClinicalSettingtoVitalRecords(ReportingDeathInformationfromaClinicalSettingtoVitalRecords object)
       {
-        return createReportingdeathinformationfromaclinicalsettingtovitalrecordsAdapter();
+        return createReportingDeathInformationfromaClinicalSettingtoVitalRecordsAdapter();
       }
       @Override
       public Adapter caseDeathReportDocumentBody(DeathReportDocumentBody object)
@@ -98,9 +98,9 @@ public class VsdrAdapterFactory extends AdapterFactoryImpl
         return createDeathReportDocumentBodyAdapter();
       }
       @Override
-      public Adapter caseTimeofDeath(TimeofDeath object)
+      public Adapter caseDateandTimeofDeath(DateandTimeofDeath object)
       {
-        return createTimeofDeathAdapter();
+        return createDateandTimeofDeathAdapter();
       }
       @Override
       public Adapter caseLocationofDeath(LocationofDeath object)
@@ -108,9 +108,9 @@ public class VsdrAdapterFactory extends AdapterFactoryImpl
         return createLocationofDeathAdapter();
       }
       @Override
-      public Adapter caseDeathCertification(DeathCertification object)
+      public Adapter caseCertifyingDeath(CertifyingDeath object)
       {
-        return createDeathCertificationAdapter();
+        return createCertifyingDeathAdapter();
       }
       @Override
       public Adapter caseMannerofDeath(MannerofDeath object)
@@ -161,6 +161,11 @@ public class VsdrAdapterFactory extends AdapterFactoryImpl
       public Adapter caseDeathLocationType(DeathLocationType object)
       {
         return createDeathLocationTypeAdapter();
+      }
+      @Override
+      public Adapter casePronouncingDeath(PronouncingDeath object)
+      {
+        return createPronouncingDeathAdapter();
       }
       @Override
       public Adapter caseInfrastructureRoot(InfrastructureRoot object)
@@ -220,16 +225,16 @@ public class VsdrAdapterFactory extends AdapterFactoryImpl
 
 
   /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords <em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>}'.
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords <em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords
+   * @see org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords
    * @generated
    */
-  public Adapter createReportingdeathinformationfromaclinicalsettingtovitalrecordsAdapter()
+  public Adapter createReportingDeathInformationfromaClinicalSettingtoVitalRecordsAdapter()
   {
     return null;
   }
@@ -250,16 +255,16 @@ public class VsdrAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsdr.TimeofDeath <em>Timeof Death</em>}'.
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsdr.DateandTimeofDeath <em>Dateand Timeof Death</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.vsdr.TimeofDeath
+   * @see org.openhealthtools.mdht.uml.cda.vsdr.DateandTimeofDeath
    * @generated
    */
-  public Adapter createTimeofDeathAdapter()
+  public Adapter createDateandTimeofDeathAdapter()
   {
     return null;
   }
@@ -280,16 +285,16 @@ public class VsdrAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCertification <em>Death Certification</em>}'.
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsdr.CertifyingDeath <em>Certifying Death</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.vsdr.DeathCertification
+   * @see org.openhealthtools.mdht.uml.cda.vsdr.CertifyingDeath
    * @generated
    */
-  public Adapter createDeathCertificationAdapter()
+  public Adapter createCertifyingDeathAdapter()
   {
     return null;
   }
@@ -440,6 +445,21 @@ public class VsdrAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createDeathLocationTypeAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsdr.PronouncingDeath <em>Pronouncing Death</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.vsdr.PronouncingDeath
+   * @generated
+   */
+  public Adapter createPronouncingDeathAdapter()
   {
     return null;
   }

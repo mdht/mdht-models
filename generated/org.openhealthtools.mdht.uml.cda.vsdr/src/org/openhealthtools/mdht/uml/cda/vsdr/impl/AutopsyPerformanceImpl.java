@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -178,6 +181,16 @@ public class AutopsyPerformanceImpl extends ObservationImpl implements AutopsyPe
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateAutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return AutopsyPerformanceOperations.validateAutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateAutopsyPerformanceAutopsyPerformerTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return AutopsyPerformanceOperations.validateAutopsyPerformanceAutopsyPerformerTypeCode(this, diagnostics, context);
@@ -199,7 +212,16 @@ public class AutopsyPerformanceImpl extends ObservationImpl implements AutopsyPe
    * @generated
    */
   public AutopsyPerformance init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AutopsyPerformance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //AutopsyPerformanceImpl

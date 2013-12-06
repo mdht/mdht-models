@@ -34,11 +34,11 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferCoronerCase(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Coroner Case</em>}</li>
  * </ul>
  * </p>
  *
@@ -81,7 +81,6 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.4')
    * @param coronerCaseTransfer The receiving '<em><b>Coroner Case Transfer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -148,7 +147,6 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param coronerCaseTransfer The receiving '<em><b>Coroner Case Transfer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -190,32 +188,9 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateCoronerCaseTransferCodeP(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Code P</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateCoronerCaseTransferCodeP(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CORONER_CASE_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined()";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateCoronerCaseTransferCodeP(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Code P</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateCoronerCaseTransferCodeP(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CORONER_CASE_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.code.oclIsUndefined()
    * @param coronerCaseTransfer The receiving '<em><b>Coroner Case Transfer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -257,36 +232,9 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateCoronerCaseTransferCode(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Code</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateCoronerCaseTransferCode(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CORONER_CASE_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'LOINC TBD' and value.codeSystem = '2.16.840.1.113883.6.1'";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateCoronerCaseTransferCode(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateCoronerCaseTransferCode(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CORONER_CASE_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.code = 'LOINC TBD' and value.codeSystem = '2.16.840.1.113883.6.1'
    * @param coronerCaseTransfer The receiving '<em><b>Coroner Case Transfer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -328,73 +276,6 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateCoronerCaseTransferId(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Id</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateCoronerCaseTransferId(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CORONER_CASE_TRANSFER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateCoronerCaseTransferId(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Id</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateCoronerCaseTransferId(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CORONER_CASE_TRANSFER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
-   * @param coronerCaseTransfer The receiving '<em><b>Coroner Case Transfer</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateCoronerCaseTransferId(CoronerCaseTransfer coronerCaseTransfer, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_CORONER_CASE_TRANSFER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(VsdrPackage.Literals.CORONER_CASE_TRANSFER);
-      try
-      {
-        VALIDATE_CORONER_CASE_TRANSFER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CORONER_CASE_TRANSFER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coronerCaseTransfer))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             VsdrValidator.DIAGNOSTIC_SOURCE,
-             VsdrValidator.CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
-             new Object [] { coronerCaseTransfer }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
-
-  /**
    * The cached OCL expression body for the '{@link #validateCoronerCaseTransferMoodCode(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Mood Code</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -414,13 +295,56 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations
    */
   
   protected static Constraint VALIDATE_CORONER_CASE_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * The cached OCL expression body for the '{@link #validateCoronerCaseTransferCodeP(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateCoronerCaseTransferCodeP(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_CORONER_CASE_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined()";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateCoronerCaseTransferCodeP(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateCoronerCaseTransferCodeP(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_CORONER_CASE_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * The cached OCL expression body for the '{@link #validateCoronerCaseTransferCode(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateCoronerCaseTransferCode(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_CORONER_CASE_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = 'LOINC TBD' and value.codeSystem = '2.16.840.1.113883.6.1'";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateCoronerCaseTransferCode(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateCoronerCaseTransferCode(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_CORONER_CASE_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
   
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param coronerCaseTransfer The receiving '<em><b>Coroner Case Transfer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -487,7 +411,6 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::BL)))
    * @param coronerCaseTransfer The receiving '<em><b>Coroner Case Transfer</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -520,6 +443,72 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations
              VsdrValidator.DIAGNOSTIC_SOURCE,
              VsdrValidator.CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_VALUE,
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
+             new Object [] { coronerCaseTransfer }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateCoronerCaseTransferCoronerCase(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Coroner Case</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateCoronerCaseTransferCoronerCase(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(cda::Observation))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateCoronerCaseTransferCoronerCase(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Coroner Case</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateCoronerCaseTransferCoronerCase(CoronerCaseTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param coronerCaseTransfer The receiving '<em><b>Coroner Case Transfer</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateCoronerCaseTransferCoronerCase(CoronerCaseTransfer coronerCaseTransfer, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(VsdrPackage.Literals.CORONER_CASE_TRANSFER);
+      try
+      {
+        VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coronerCaseTransfer))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             VsdrValidator.DIAGNOSTIC_SOURCE,
+             VsdrValidator.CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_CORONER_CASE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferCoronerCase", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
              new Object [] { coronerCaseTransfer }));
       }
        

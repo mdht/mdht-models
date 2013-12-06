@@ -6,12 +6,15 @@
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
 
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -88,6 +91,16 @@ public class DeathCausalInformationImpl extends OrganizerImpl implements DeathCa
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateDeathCausalInformationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DeathCausalInformationOperations.validateDeathCausalInformationStatusCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateDeathCausalInformationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return DeathCausalInformationOperations.validateDeathCausalInformationMoodCode(this, diagnostics, context);
@@ -128,9 +141,79 @@ public class DeathCausalInformationImpl extends OrganizerImpl implements DeathCa
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDeathCausalInformationComponentDeathCauseInterval(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseInterval(this, diagnostics, context);
+    return DeathCausalInformationOperations.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DeathCausalInformationOperations.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DeathCausalInformationOperations.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DeathCausalInformationOperations.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DeathCausalInformationOperations.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DeathCausalInformationOperations.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DeathCausalInformationOperations.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return DeathCausalInformationOperations.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval(this, diagnostics, context);
   }
 
   /**
@@ -288,138 +371,17 @@ public class DeathCausalInformationImpl extends OrganizerImpl implements DeathCa
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DeathCausalInformationOperations.validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodePDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeP1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DeathCausalInformationOperations.validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodePDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeP1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DeathCausalInformationOperations.validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DeathCausalInformationOperations.validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValueDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValue1(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DeathCausalInformationOperations.validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValueDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValue1(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalClassCode(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCodeP(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCode(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalMoodCode(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalValue(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformationComponentDeathCauseIntervalSequenceNumber(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalSequenceNumber(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformationComponentDeathCauseIntervalTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalTypeCode(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseInterval(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseInterval(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public DeathCausalInformation init() {
-    	CDAUtil.init(this);
-    	return this;
+      return Initializer.Util.init(this);
   }
+
+  /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DeathCausalInformation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //DeathCausalInformationImpl

@@ -34,9 +34,9 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral#validateCoronerReferralTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral#validateCoronerReferralClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral#validateCoronerReferralMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral#validateCoronerReferralCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral#validateCoronerReferralCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral#validateCoronerReferralMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral#validateCoronerReferralValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Value</em>}</li>
  * </ul>
  * </p>
@@ -80,7 +80,6 @@ public class CoronerReferralOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.5')
    * @param coronerReferral The receiving '<em><b>Coroner Referral</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -147,7 +146,6 @@ public class CoronerReferralOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param coronerReferral The receiving '<em><b>Coroner Referral</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -189,32 +187,9 @@ public class CoronerReferralOperations extends ClinicalStatementOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateCoronerReferralCodeP(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Code P</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateCoronerReferralCodeP(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CORONER_REFERRAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined()";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateCoronerReferralCodeP(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Code P</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateCoronerReferralCodeP(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CORONER_REFERRAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.code.oclIsUndefined()
    * @param coronerReferral The receiving '<em><b>Coroner Referral</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -256,36 +231,9 @@ public class CoronerReferralOperations extends ClinicalStatementOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateCoronerReferralCode(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Code</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateCoronerReferralCode(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_CORONER_REFERRAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '69438-0' and value.codeSystem = '2.16.840.1.113883.6.1'";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateCoronerReferralCode(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateCoronerReferralCode(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_CORONER_REFERRAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.code = '69438-0' and value.codeSystem = '2.16.840.1.113883.6.1'
    * @param coronerReferral The receiving '<em><b>Coroner Referral</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -346,13 +294,56 @@ public class CoronerReferralOperations extends ClinicalStatementOperations
    */
   
   protected static Constraint VALIDATE_CORONER_REFERRAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * The cached OCL expression body for the '{@link #validateCoronerReferralCodeP(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateCoronerReferralCodeP(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_CORONER_REFERRAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined()";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateCoronerReferralCodeP(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateCoronerReferralCodeP(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_CORONER_REFERRAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * The cached OCL expression body for the '{@link #validateCoronerReferralCode(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateCoronerReferralCode(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_CORONER_REFERRAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '69438-0' and value.codeSystem = '2.16.840.1.113883.6.1'";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateCoronerReferralCode(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateCoronerReferralCode(CoronerReferral, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_CORONER_REFERRAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
   
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param coronerReferral The receiving '<em><b>Coroner Referral</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -419,7 +410,6 @@ public class CoronerReferralOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::ED)))
    * @param coronerReferral The receiving '<em><b>Coroner Referral</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.

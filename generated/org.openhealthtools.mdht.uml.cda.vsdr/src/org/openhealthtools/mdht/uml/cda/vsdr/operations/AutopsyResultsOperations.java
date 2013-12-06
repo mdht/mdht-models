@@ -34,10 +34,11 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsAutopsyReport(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Autopsy Report</em>}</li>
  * </ul>
  * </p>
  *
@@ -80,7 +81,6 @@ public class AutopsyResultsOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1.3')
    * @param autopsyResults The receiving '<em><b>Autopsy Results</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -147,7 +147,6 @@ public class AutopsyResultsOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClassObservation::OBS
    * @param autopsyResults The receiving '<em><b>Autopsy Results</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -189,32 +188,9 @@ public class AutopsyResultsOperations extends ClinicalStatementOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateAutopsyResultsCodeP(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Code P</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateAutopsyResultsCodeP(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_AUTOPSY_RESULTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined()";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateAutopsyResultsCodeP(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Code P</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateAutopsyResultsCodeP(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_AUTOPSY_RESULTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.code.oclIsUndefined()
    * @param autopsyResults The receiving '<em><b>Autopsy Results</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -256,36 +232,9 @@ public class AutopsyResultsOperations extends ClinicalStatementOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateAutopsyResultsCode(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Code</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateAutopsyResultsCode(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_AUTOPSY_RESULTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '69436-4' and value.codeSystem = '2.16.840.1.113883.6.1'";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateAutopsyResultsCode(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateAutopsyResultsCode(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_AUTOPSY_RESULTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.code = '69436-4' and value.codeSystem = '2.16.840.1.113883.6.1'
    * @param autopsyResults The receiving '<em><b>Autopsy Results</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -346,13 +295,56 @@ public class AutopsyResultsOperations extends ClinicalStatementOperations
    */
   
   protected static Constraint VALIDATE_AUTOPSY_RESULTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * The cached OCL expression body for the '{@link #validateAutopsyResultsCodeP(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAutopsyResultsCodeP(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_AUTOPSY_RESULTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined()";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateAutopsyResultsCodeP(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAutopsyResultsCodeP(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_AUTOPSY_RESULTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * The cached OCL expression body for the '{@link #validateAutopsyResultsCode(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Code</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAutopsyResultsCode(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_AUTOPSY_RESULTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '69436-4' and value.codeSystem = '2.16.840.1.113883.6.1'";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateAutopsyResultsCode(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAutopsyResultsCode(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_AUTOPSY_RESULTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
   
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
    * @param autopsyResults The receiving '<em><b>Autopsy Results</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -419,7 +411,6 @@ public class AutopsyResultsOperations extends ClinicalStatementOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::BL)))
    * @param autopsyResults The receiving '<em><b>Autopsy Results</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -452,6 +443,72 @@ public class AutopsyResultsOperations extends ClinicalStatementOperations
              VsdrValidator.DIAGNOSTIC_SOURCE,
              VsdrValidator.AUTOPSY_RESULTS__AUTOPSY_RESULTS_VALUE,
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AutopsyResultsValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(autopsyResults, context) }),
+             new Object [] { autopsyResults }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validateAutopsyResultsAutopsyReport(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Autopsy Report</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAutopsyResultsAutopsyReport(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_AUTOPSY_RESULTS_AUTOPSY_REPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(cda::Observation))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateAutopsyResultsAutopsyReport(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Autopsy Report</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validateAutopsyResultsAutopsyReport(AutopsyResults, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_AUTOPSY_RESULTS_AUTOPSY_REPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param autopsyResults The receiving '<em><b>Autopsy Results</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validateAutopsyResultsAutopsyReport(AutopsyResults autopsyResults, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_AUTOPSY_RESULTS_AUTOPSY_REPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(VsdrPackage.Literals.AUTOPSY_RESULTS);
+      try
+      {
+        VALIDATE_AUTOPSY_RESULTS_AUTOPSY_REPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTOPSY_RESULTS_AUTOPSY_REPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_AUTOPSY_RESULTS_AUTOPSY_REPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(autopsyResults))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             VsdrValidator.DIAGNOSTIC_SOURCE,
+             VsdrValidator.AUTOPSY_RESULTS__AUTOPSY_RESULTS_AUTOPSY_REPORT,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AutopsyResultsAutopsyReport", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(autopsyResults, context) }),
              new Object [] { autopsyResults }));
       }
        

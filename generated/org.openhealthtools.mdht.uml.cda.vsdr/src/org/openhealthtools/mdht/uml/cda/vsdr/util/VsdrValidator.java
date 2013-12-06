@@ -47,324 +47,164 @@ public class VsdrValidator extends EObjectValidator
   public static final String DIAGNOSTIC_SOURCE = "org.openhealthtools.mdht.uml.cda.vsdr";
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Template Id' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Template Id' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID = 1;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_TEMPLATE_ID = 1;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Class Code' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Class Code' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE = 2;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CLASS_CODE = 2;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Code P' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Mood Code' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P = 3;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_MOOD_CODE = 3;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Code' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Code P' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE = 4;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CODE_P = 4;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Confidentiality Code P' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Code' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P = 5;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CODE = 5;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Confidentiality Code' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Confidentiality Code P' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE = 6;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CONFIDENTIALITY_CODE_P = 6;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Id' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Confidentiality Code' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID = 7;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CONFIDENTIALITY_CODE = 7;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Language Code' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Id' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE = 8;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_ID = 8;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Mood Code' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Language Code' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE = 9;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_LANGUAGE_CODE = 9;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Realm Code' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Realm Code' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE = 10;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_REALM_CODE = 10;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Title' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Realm Code P' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE = 11;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_REALM_CODE_P = 11;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Effective Time' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Title' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME = 12;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_TITLE = 12;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Custodian' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Effective Time' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN = 13;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_EFFECTIVE_TIME = 13;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Death Report Document Body' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Custodian' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_DEATH_REPORT_DOCUMENT_BODY = 14;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CUSTODIAN = 14;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Death Report Document Body' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR = 15;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_DEATH_REPORT_DOCUMENT_BODY = 15;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Author' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET = 16;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_AUTHOR = 16;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Custodian Assigned Custodian Custodian Organization Name' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Record Target' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_NAME = 17;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_RECORD_TARGET = 17;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Custodian Assigned Custodian Custodian Organization Id' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Custodian Assigned Custodian Custodian Organization Name' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_ID = 18;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_NAME = 18;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Custodian Assigned Custodian' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Custodian Assigned Custodian Custodian Organization Id' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN_ASSIGNED_CUSTODIAN = 19;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_ID = 19;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Assigned Author Authoring Person Class Code' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Death Informationfroma Clinical Settingto Vital Records Custodian Assigned Custodian' of 'Reporting Death Informationfroma Clinical Settingto Vital Records'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_ASSIGNED_AUTHOR_AUTHORING_PERSON_CLASS_CODE = 20;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Assigned Author Authoring Person Determiner Code' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_ASSIGNED_AUTHOR_AUTHORING_PERSON_DETERMINER_CODE = 21;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Assigned Author Authoring Person Name' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_ASSIGNED_AUTHOR_AUTHORING_PERSON_NAME = 22;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Assigned Author Class Code' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_ASSIGNED_AUTHOR_CLASS_CODE = 23;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Assigned Author Id' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_ASSIGNED_AUTHOR_ID = 24;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Assigned Author Authoring Person' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_ASSIGNED_AUTHOR_AUTHORING_PERSON = 25;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Type Code' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_TYPE_CODE = 26;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Time' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_TIME = 27;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Assigned Author' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_ASSIGNED_AUTHOR = 28;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Person Administrative Gender Code' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_PERSON_ADMINISTRATIVE_GENDER_CODE = 29;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Person Administrative Gender Code P' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_PERSON_ADMINISTRATIVE_GENDER_CODE_P = 30;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Person Birth Time' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_PERSON_BIRTH_TIME = 31;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Person Class Code' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_PERSON_CLASS_CODE = 32;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Person Determiner Code' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_PERSON_DETERMINER_CODE = 33;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Person Name' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_PERSON_NAME = 34;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Class Code' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_CLASS_CODE = 35;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Id' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_ID = 36;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Addr' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_ADDR = 37;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Person' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_PERSON = 38;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Type Code' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_TYPE_CODE = 39;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient' of 'Reportingdeathinformationfromaclinicalsettingtovitalrecords'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT = 40;
+  public static final int REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS__REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CUSTODIAN_ASSIGNED_CUSTODIAN = 20;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Template Id' of 'Death Report Document Body'.
@@ -372,7 +212,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_TEMPLATE_ID = 41;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_TEMPLATE_ID = 21;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Code P' of 'Death Report Document Body'.
@@ -380,7 +220,15 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CODE_P = 42;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CODE_P = 23;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Text' of 'Death Report Document Body'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_TEXT = 24;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Code' of 'Death Report Document Body'.
@@ -388,7 +236,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CODE = 43;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CODE = 22;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Timeof Death' of 'Death Report Document Body'.
@@ -396,7 +244,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_TIMEOF_DEATH = 44;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_TIMEOF_DEATH = 25;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Locationof Death' of 'Death Report Document Body'.
@@ -404,15 +252,15 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_LOCATIONOF_DEATH = 45;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_LOCATIONOF_DEATH = 26;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Death Certification' of 'Death Report Document Body'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Certifying Death' of 'Death Report Document Body'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_DEATH_CERTIFICATION = 46;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH = 27;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Mannerof Death' of 'Death Report Document Body'.
@@ -420,7 +268,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_MANNEROF_DEATH = 47;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_MANNEROF_DEATH = 28;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Pregnancy Status' of 'Death Report Document Body'.
@@ -428,7 +276,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_PREGNANCY_STATUS = 48;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_PREGNANCY_STATUS = 29;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Tobacco Use' of 'Death Report Document Body'.
@@ -436,7 +284,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_TOBACCO_USE = 49;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_TOBACCO_USE = 30;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Injury' of 'Death Report Document Body'.
@@ -444,7 +292,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_INJURY = 50;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_INJURY = 31;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Causeof Death' of 'Death Report Document Body'.
@@ -452,7 +300,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CAUSEOF_DEATH = 51;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CAUSEOF_DEATH = 32;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Autopsy Performance' of 'Death Report Document Body'.
@@ -460,7 +308,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_PERFORMANCE = 52;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_PERFORMANCE = 33;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Autopsy Results' of 'Death Report Document Body'.
@@ -468,7 +316,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_RESULTS = 53;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_RESULTS = 34;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Coroner Referral' of 'Death Report Document Body'.
@@ -476,7 +324,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CORONER_REFERRAL = 54;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CORONER_REFERRAL = 35;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Coroner Case Transfer' of 'Death Report Document Body'.
@@ -484,7 +332,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CORONER_CASE_TRANSFER = 55;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CORONER_CASE_TRANSFER = 36;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Death Location Type' of 'Death Report Document Body'.
@@ -492,63 +340,71 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_DEATH_LOCATION_TYPE = 56;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_DEATH_LOCATION_TYPE = 37;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Timeof Death Template Id' of 'Timeof Death'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Report Document Body Pronouncing Death' of 'Death Report Document Body'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int TIMEOF_DEATH__TIMEOF_DEATH_TEMPLATE_ID = 57;
+  public static final int DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH = 38;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Timeof Death Class Code' of 'Timeof Death'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Dateand Timeof Death Template Id' of 'Dateand Timeof Death'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int TIMEOF_DEATH__TIMEOF_DEATH_CLASS_CODE = 58;
+  public static final int DATEAND_TIMEOF_DEATH__DATEAND_TIMEOF_DEATH_TEMPLATE_ID = 39;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Timeof Death Code P' of 'Timeof Death'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Dateand Timeof Death Class Code' of 'Dateand Timeof Death'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int TIMEOF_DEATH__TIMEOF_DEATH_CODE_P = 59;
+  public static final int DATEAND_TIMEOF_DEATH__DATEAND_TIMEOF_DEATH_CLASS_CODE = 40;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Timeof Death Code' of 'Timeof Death'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Dateand Timeof Death Mood Code' of 'Dateand Timeof Death'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int TIMEOF_DEATH__TIMEOF_DEATH_CODE = 60;
+  public static final int DATEAND_TIMEOF_DEATH__DATEAND_TIMEOF_DEATH_MOOD_CODE = 41;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Timeof Death Effective Time' of 'Timeof Death'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Dateand Timeof Death Code P' of 'Dateand Timeof Death'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int TIMEOF_DEATH__TIMEOF_DEATH_EFFECTIVE_TIME = 61;
+  public static final int DATEAND_TIMEOF_DEATH__DATEAND_TIMEOF_DEATH_CODE_P = 42;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Timeof Death Mood Code' of 'Timeof Death'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Dateand Timeof Death Code' of 'Dateand Timeof Death'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int TIMEOF_DEATH__TIMEOF_DEATH_MOOD_CODE = 62;
+  public static final int DATEAND_TIMEOF_DEATH__DATEAND_TIMEOF_DEATH_CODE = 43;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Timeof Death Text' of 'Timeof Death'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Dateand Timeof Death Effective Time' of 'Dateand Timeof Death'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int TIMEOF_DEATH__TIMEOF_DEATH_TEXT = 63;
+  public static final int DATEAND_TIMEOF_DEATH__DATEAND_TIMEOF_DEATH_EFFECTIVE_TIME = 44;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Dateand Timeof Death Text' of 'Dateand Timeof Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int DATEAND_TIMEOF_DEATH__DATEAND_TIMEOF_DEATH_TEXT = 45;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Locationof Death Template Id' of 'Locationof Death'.
@@ -556,7 +412,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int LOCATIONOF_DEATH__LOCATIONOF_DEATH_TEMPLATE_ID = 64;
+  public static final int LOCATIONOF_DEATH__LOCATIONOF_DEATH_TEMPLATE_ID = 46;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Locationof Death Class Code' of 'Locationof Death'.
@@ -564,7 +420,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int LOCATIONOF_DEATH__LOCATIONOF_DEATH_CLASS_CODE = 65;
+  public static final int LOCATIONOF_DEATH__LOCATIONOF_DEATH_CLASS_CODE = 47;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Locationof Death Code P' of 'Locationof Death'.
@@ -572,7 +428,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int LOCATIONOF_DEATH__LOCATIONOF_DEATH_CODE_P = 66;
+  public static final int LOCATIONOF_DEATH__LOCATIONOF_DEATH_CODE_P = 49;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Locationof Death Code' of 'Locationof Death'.
@@ -580,7 +436,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int LOCATIONOF_DEATH__LOCATIONOF_DEATH_CODE = 67;
+  public static final int LOCATIONOF_DEATH__LOCATIONOF_DEATH_CODE = 50;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Locationof Death Mood Code' of 'Locationof Death'.
@@ -588,7 +444,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int LOCATIONOF_DEATH__LOCATIONOF_DEATH_MOOD_CODE = 68;
+  public static final int LOCATIONOF_DEATH__LOCATIONOF_DEATH_MOOD_CODE = 48;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Locationof Death Text' of 'Locationof Death'.
@@ -596,7 +452,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int LOCATIONOF_DEATH__LOCATIONOF_DEATH_TEXT = 69;
+  public static final int LOCATIONOF_DEATH__LOCATIONOF_DEATH_TEXT = 51;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Locationof Death Value' of 'Locationof Death'.
@@ -604,143 +460,55 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int LOCATIONOF_DEATH__LOCATIONOF_DEATH_VALUE = 70;
+  public static final int LOCATIONOF_DEATH__LOCATIONOF_DEATH_VALUE = 52;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Template Id' of 'Death Certification'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Certifying Death Template Id' of 'Certifying Death'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_TEMPLATE_ID = 71;
+  public static final int CERTIFYING_DEATH__CERTIFYING_DEATH_TEMPLATE_ID = 53;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Class Code' of 'Death Certification'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Certifying Death Class Code' of 'Certifying Death'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_CLASS_CODE = 72;
+  public static final int CERTIFYING_DEATH__CERTIFYING_DEATH_CLASS_CODE = 54;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Code' of 'Death Certification'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Certifying Death Mood Code' of 'Certifying Death'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_CODE = 73;
+  public static final int CERTIFYING_DEATH__CERTIFYING_DEATH_MOOD_CODE = 55;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Effective Time' of 'Death Certification'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Certifying Death Code' of 'Certifying Death'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_EFFECTIVE_TIME = 74;
+  public static final int CERTIFYING_DEATH__CERTIFYING_DEATH_CODE = 56;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Mood Code' of 'Death Certification'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Certifying Death Effective Time' of 'Certifying Death'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_MOOD_CODE = 75;
+  public static final int CERTIFYING_DEATH__CERTIFYING_DEATH_EFFECTIVE_TIME = 57;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Certification Performer' of 'Death Certification'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Certifying Death Certification Performer' of 'Certifying Death'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_CERTIFICATION_PERFORMER = 76;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Certification Performer Certifier Role Certifying Party Class Code' of 'Death Certification'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_CERTIFICATION_PERFORMER_CERTIFIER_ROLE_CERTIFYING_PARTY_CLASS_CODE = 77;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Certification Performer Certifier Role Certifying Party Determiner Code' of 'Death Certification'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_CERTIFICATION_PERFORMER_CERTIFIER_ROLE_CERTIFYING_PARTY_DETERMINER_CODE = 78;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Certification Performer Certifier Role Certifying Party Name' of 'Death Certification'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_CERTIFICATION_PERFORMER_CERTIFIER_ROLE_CERTIFYING_PARTY_NAME = 79;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Certification Performer Certifier Role Addr' of 'Death Certification'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_CERTIFICATION_PERFORMER_CERTIFIER_ROLE_ADDR = 80;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Certification Performer Certifier Role Class Code' of 'Death Certification'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_CERTIFICATION_PERFORMER_CERTIFIER_ROLE_CLASS_CODE = 81;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Certification Performer Certifier Role Code' of 'Death Certification'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_CERTIFICATION_PERFORMER_CERTIFIER_ROLE_CODE = 82;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Certification Performer Certifier Role Code P' of 'Death Certification'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_CERTIFICATION_PERFORMER_CERTIFIER_ROLE_CODE_P = 83;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Certification Performer Certifier Role Id' of 'Death Certification'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_CERTIFICATION_PERFORMER_CERTIFIER_ROLE_ID = 84;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Certification Performer Certifier Role Certifying Party' of 'Death Certification'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_CERTIFICATION_PERFORMER_CERTIFIER_ROLE_CERTIFYING_PARTY = 85;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Certification Performer Type Code' of 'Death Certification'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_CERTIFICATION_PERFORMER_TYPE_CODE = 86;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Certification Certification Performer Certifier Role' of 'Death Certification'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CERTIFICATION__DEATH_CERTIFICATION_CERTIFICATION_PERFORMER_CERTIFIER_ROLE = 87;
+  public static final int CERTIFYING_DEATH__CERTIFYING_DEATH_CERTIFICATION_PERFORMER = 58;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mannerof Death Template Id' of 'Mannerof Death'.
@@ -748,7 +516,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MANNEROF_DEATH__MANNEROF_DEATH_TEMPLATE_ID = 88;
+  public static final int MANNEROF_DEATH__MANNEROF_DEATH_TEMPLATE_ID = 59;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mannerof Death Class Code' of 'Mannerof Death'.
@@ -756,7 +524,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MANNEROF_DEATH__MANNEROF_DEATH_CLASS_CODE = 89;
+  public static final int MANNEROF_DEATH__MANNEROF_DEATH_CLASS_CODE = 60;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mannerof Death Code P' of 'Mannerof Death'.
@@ -764,7 +532,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MANNEROF_DEATH__MANNEROF_DEATH_CODE_P = 90;
+  public static final int MANNEROF_DEATH__MANNEROF_DEATH_CODE_P = 62;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mannerof Death Code' of 'Mannerof Death'.
@@ -772,7 +540,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MANNEROF_DEATH__MANNEROF_DEATH_CODE = 91;
+  public static final int MANNEROF_DEATH__MANNEROF_DEATH_CODE = 63;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mannerof Death Mood Code' of 'Mannerof Death'.
@@ -780,7 +548,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MANNEROF_DEATH__MANNEROF_DEATH_MOOD_CODE = 92;
+  public static final int MANNEROF_DEATH__MANNEROF_DEATH_MOOD_CODE = 61;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mannerof Death Value' of 'Mannerof Death'.
@@ -788,15 +556,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int MANNEROF_DEATH__MANNEROF_DEATH_VALUE = 93;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mannerof Death Value P' of 'Mannerof Death'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int MANNEROF_DEATH__MANNEROF_DEATH_VALUE_P = 94;
+  public static final int MANNEROF_DEATH__MANNEROF_DEATH_VALUE = 64;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Status Template Id' of 'Pregnancy Status'.
@@ -804,7 +564,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PREGNANCY_STATUS__PREGNANCY_STATUS_TEMPLATE_ID = 95;
+  public static final int PREGNANCY_STATUS__PREGNANCY_STATUS_TEMPLATE_ID = 65;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Status Class Code' of 'Pregnancy Status'.
@@ -812,7 +572,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PREGNANCY_STATUS__PREGNANCY_STATUS_CLASS_CODE = 96;
+  public static final int PREGNANCY_STATUS__PREGNANCY_STATUS_CLASS_CODE = 66;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Status Code P' of 'Pregnancy Status'.
@@ -820,7 +580,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PREGNANCY_STATUS__PREGNANCY_STATUS_CODE_P = 97;
+  public static final int PREGNANCY_STATUS__PREGNANCY_STATUS_CODE_P = 68;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Status Code' of 'Pregnancy Status'.
@@ -828,7 +588,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PREGNANCY_STATUS__PREGNANCY_STATUS_CODE = 98;
+  public static final int PREGNANCY_STATUS__PREGNANCY_STATUS_CODE = 69;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Status Mood Code' of 'Pregnancy Status'.
@@ -836,7 +596,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PREGNANCY_STATUS__PREGNANCY_STATUS_MOOD_CODE = 99;
+  public static final int PREGNANCY_STATUS__PREGNANCY_STATUS_MOOD_CODE = 67;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Status Value' of 'Pregnancy Status'.
@@ -844,15 +604,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PREGNANCY_STATUS__PREGNANCY_STATUS_VALUE = 100;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Status Value P' of 'Pregnancy Status'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int PREGNANCY_STATUS__PREGNANCY_STATUS_VALUE_P = 101;
+  public static final int PREGNANCY_STATUS__PREGNANCY_STATUS_VALUE = 70;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Tobacco Use Template Id' of 'Tobacco Use'.
@@ -860,7 +612,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int TOBACCO_USE__TOBACCO_USE_TEMPLATE_ID = 102;
+  public static final int TOBACCO_USE__TOBACCO_USE_TEMPLATE_ID = 71;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Tobacco Use Class Code' of 'Tobacco Use'.
@@ -868,7 +620,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int TOBACCO_USE__TOBACCO_USE_CLASS_CODE = 103;
+  public static final int TOBACCO_USE__TOBACCO_USE_CLASS_CODE = 72;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Tobacco Use Code' of 'Tobacco Use'.
@@ -876,7 +628,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int TOBACCO_USE__TOBACCO_USE_CODE = 104;
+  public static final int TOBACCO_USE__TOBACCO_USE_CODE = 74;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Tobacco Use Mood Code' of 'Tobacco Use'.
@@ -884,7 +636,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int TOBACCO_USE__TOBACCO_USE_MOOD_CODE = 105;
+  public static final int TOBACCO_USE__TOBACCO_USE_MOOD_CODE = 73;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Tobacco Use Value' of 'Tobacco Use'.
@@ -892,15 +644,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int TOBACCO_USE__TOBACCO_USE_VALUE = 106;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Tobacco Use Value P' of 'Tobacco Use'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int TOBACCO_USE__TOBACCO_USE_VALUE_P = 107;
+  public static final int TOBACCO_USE__TOBACCO_USE_VALUE = 75;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Template Id' of 'Injury'.
@@ -908,7 +652,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_TEMPLATE_ID = 108;
+  public static final int INJURY__INJURY_TEMPLATE_ID = 76;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Class Code' of 'Injury'.
@@ -916,7 +660,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_CLASS_CODE = 109;
+  public static final int INJURY__INJURY_CLASS_CODE = 77;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Code' of 'Injury'.
@@ -924,7 +668,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_CODE = 110;
+  public static final int INJURY__INJURY_CODE = 79;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Code P' of 'Injury'.
@@ -932,7 +676,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_CODE_P = 111;
+  public static final int INJURY__INJURY_CODE_P = 80;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Mood Code' of 'Injury'.
@@ -940,7 +684,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_MOOD_CODE = 112;
+  public static final int INJURY__INJURY_MOOD_CODE = 78;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Status Code' of 'Injury'.
@@ -948,7 +692,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_STATUS_CODE = 113;
+  public static final int INJURY__INJURY_STATUS_CODE = 81;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information' of 'Injury'.
@@ -956,7 +700,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION = 114;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION = 82;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Work Association' of 'Injury'.
@@ -964,7 +708,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION = 115;
+  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION = 83;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Association' of 'Injury'.
@@ -972,7 +716,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION = 116;
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION = 84;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Relationship' of 'Injury'.
@@ -980,7 +724,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP = 117;
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP = 85;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Location Participation Injury Location Role Place Of Injury Class Code' of 'Injury'.
@@ -988,7 +732,15 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_CLASS_CODE = 118;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_CLASS_CODE = 86;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Location Participation Injury Location Role Place Of Injury Determiner Code' of 'Injury'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DETERMINER_CODE = 87;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Location Participation Injury Location Role Place Of Injury Desc' of 'Injury'.
@@ -996,7 +748,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DESC = 119;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DESC = 88;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Location Participation Injury Location Role Addr' of 'Injury'.
@@ -1004,7 +756,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_ADDR = 120;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_ADDR = 89;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Location Participation Injury Location Role Class Code' of 'Injury'.
@@ -1012,7 +764,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_CLASS_CODE = 121;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_CLASS_CODE = 90;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Location Participation Injury Location Role Place Of Injury' of 'Injury'.
@@ -1020,7 +772,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY = 122;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY = 91;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Location Participation Type Code' of 'Injury'.
@@ -1028,7 +780,15 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_TYPE_CODE = 123;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_TYPE_CODE = 92;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Location Participation Injury Location Role' of 'Injury'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE = 93;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Class Code' of 'Injury'.
@@ -1036,7 +796,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CLASS_CODE = 124;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CLASS_CODE = 94;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Code P' of 'Injury'.
@@ -1044,7 +804,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE_P = 125;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE_P = 96;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Code' of 'Injury'.
@@ -1052,7 +812,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE = 126;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE = 97;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Mood Code' of 'Injury'.
@@ -1060,7 +820,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_MOOD_CODE = 127;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_MOOD_CODE = 95;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Text' of 'Injury'.
@@ -1068,7 +828,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_TEXT = 128;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_TEXT = 98;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Value' of 'Injury'.
@@ -1076,7 +836,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_VALUE = 129;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_VALUE = 99;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Effective Time' of 'Injury'.
@@ -1084,7 +844,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_EFFECTIVE_TIME = 130;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_EFFECTIVE_TIME = 100;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information Location Participation' of 'Injury'.
@@ -1092,7 +852,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION = 131;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION = 101;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Type Code' of 'Injury'.
@@ -1100,7 +860,15 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_TYPE_CODE = 132;
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_TYPE_CODE = 102;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Injury Information Injury Information' of 'Injury'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION = 103;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Work Association Work Association Class Code' of 'Injury'.
@@ -1108,7 +876,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CLASS_CODE = 133;
+  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CLASS_CODE = 104;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Work Association Work Association Code P' of 'Injury'.
@@ -1116,7 +884,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE_P = 134;
+  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE_P = 106;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Work Association Work Association Code' of 'Injury'.
@@ -1124,7 +892,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE = 135;
+  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE = 107;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Work Association Work Association Mood Code' of 'Injury'.
@@ -1132,7 +900,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_MOOD_CODE = 136;
+  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_MOOD_CODE = 105;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Work Association Work Association Value' of 'Injury'.
@@ -1140,7 +908,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_VALUE = 137;
+  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_VALUE = 108;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Work Association Type Code' of 'Injury'.
@@ -1148,7 +916,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_TYPE_CODE = 138;
+  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_TYPE_CODE = 109;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Work Association Work Association' of 'Injury'.
@@ -1156,7 +924,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION = 139;
+  public static final int INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION = 110;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Association Transportation Association Class Code' of 'Injury'.
@@ -1164,7 +932,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CLASS_CODE = 140;
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CLASS_CODE = 111;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Association Transportation Association Code P' of 'Injury'.
@@ -1172,7 +940,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE_P = 141;
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE_P = 113;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Association Transportation Association Code' of 'Injury'.
@@ -1180,7 +948,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE = 142;
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE = 114;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Association Transportation Association Mood Code' of 'Injury'.
@@ -1188,7 +956,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_MOOD_CODE = 143;
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_MOOD_CODE = 112;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Association Transportation Association Value' of 'Injury'.
@@ -1196,7 +964,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_VALUE = 144;
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_VALUE = 115;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Association Type Code' of 'Injury'.
@@ -1204,7 +972,15 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TYPE_CODE = 145;
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TYPE_CODE = 116;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Association Transportation Association' of 'Injury'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION = 117;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Relationship Transportation Relationship Class Code' of 'Injury'.
@@ -1212,7 +988,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CLASS_CODE = 146;
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CLASS_CODE = 118;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Relationship Transportation Relationship Code P' of 'Injury'.
@@ -1220,7 +996,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE_P = 147;
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE_P = 120;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Relationship Transportation Relationship Code' of 'Injury'.
@@ -1228,7 +1004,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE = 148;
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE = 121;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Relationship Transportation Relationship Mood Code' of 'Injury'.
@@ -1236,7 +1012,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_MOOD_CODE = 149;
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_MOOD_CODE = 119;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Relationship Transportation Relationship Value' of 'Injury'.
@@ -1244,7 +1020,15 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE = 150;
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE = 122;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Relationship Transportation Relationship Value P' of 'Injury'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE_P = 123;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Relationship Type Code' of 'Injury'.
@@ -1252,7 +1036,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TYPE_CODE = 151;
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TYPE_CODE = 124;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Injury Component Transportation Relationship Transportation Relationship' of 'Injury'.
@@ -1260,7 +1044,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP = 152;
+  public static final int INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP = 125;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Template Id' of 'Death Causal Information'.
@@ -1268,7 +1052,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_TEMPLATE_ID = 153;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_TEMPLATE_ID = 126;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Class Code' of 'Death Causal Information'.
@@ -1276,7 +1060,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_CLASS_CODE = 154;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_CLASS_CODE = 127;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Code' of 'Death Causal Information'.
@@ -1284,7 +1068,15 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_CODE = 155;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_CODE = 129;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Status Code P' of 'Death Causal Information'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_STATUS_CODE_P = 130;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Mood Code' of 'Death Causal Information'.
@@ -1292,7 +1084,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_MOOD_CODE = 156;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_MOOD_CODE = 128;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Status Code' of 'Death Causal Information'.
@@ -1300,7 +1092,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_STATUS_CODE = 157;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_STATUS_CODE = 131;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause' of 'Death Causal Information'.
@@ -1308,7 +1100,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE = 158;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE = 132;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Other Significant Condition' of 'Death Causal Information'.
@@ -1316,15 +1108,71 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION = 159;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION = 133;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Death Cause Interval' of 'Death Causal Information'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Death Cause Component Death Cause Interval Death Cause Interval Class Code' of 'Death Causal Information'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL = 160;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CLASS_CODE = 134;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Death Cause Component Death Cause Interval Death Cause Interval Code P' of 'Death Causal Information'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE_P = 135;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Death Cause Component Death Cause Interval Death Cause Interval Code' of 'Death Causal Information'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE = 136;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Death Cause Component Death Cause Interval Death Cause Interval Mood Code' of 'Death Causal Information'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_MOOD_CODE = 137;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Death Cause Component Death Cause Interval Death Cause Interval Value' of 'Death Causal Information'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_VALUE = 138;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Death Cause Component Death Cause Interval Sequence Number' of 'Death Causal Information'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_SEQUENCE_NUMBER = 139;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Death Cause Component Death Cause Interval Type Code' of 'Death Causal Information'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_TYPE_CODE = 140;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Death Cause Component Death Cause Interval Death Cause Interval' of 'Death Causal Information'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL = 141;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Death Cause Class Code' of 'Death Causal Information'.
@@ -1332,7 +1180,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CLASS_CODE = 161;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CLASS_CODE = 142;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Death Cause Code P' of 'Death Causal Information'.
@@ -1340,7 +1188,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE_P = 162;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE_P = 143;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Death Cause Code' of 'Death Causal Information'.
@@ -1348,7 +1196,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE = 163;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE = 144;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Death Cause Mood Code' of 'Death Causal Information'.
@@ -1356,7 +1204,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_MOOD_CODE = 164;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_MOOD_CODE = 145;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Death Cause Value' of 'Death Causal Information'.
@@ -1364,7 +1212,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_VALUE = 165;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_VALUE = 146;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Sequence Number' of 'Death Causal Information'.
@@ -1372,7 +1220,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_SEQUENCE_NUMBER = 166;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_SEQUENCE_NUMBER = 147;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Type Code' of 'Death Causal Information'.
@@ -1380,7 +1228,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_TYPE_CODE = 167;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_TYPE_CODE = 148;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Cause Death Cause' of 'Death Causal Information'.
@@ -1388,7 +1236,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE = 168;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE = 149;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Other Significant Condition Other Significant Condition Class Code' of 'Death Causal Information'.
@@ -1396,7 +1244,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CLASS_CODE = 169;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CLASS_CODE = 150;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Other Significant Condition Other Significant Condition Code P' of 'Death Causal Information'.
@@ -1404,7 +1252,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_P = 170;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_P = 152;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Other Significant Condition Other Significant Condition Code' of 'Death Causal Information'.
@@ -1412,7 +1260,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE = 171;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE = 153;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Other Significant Condition Other Significant Condition Mood Code' of 'Death Causal Information'.
@@ -1420,7 +1268,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE = 172;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE = 151;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Other Significant Condition Other Significant Condition Value' of 'Death Causal Information'.
@@ -1428,7 +1276,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_VALUE = 173;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_VALUE = 154;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Other Significant Condition Type Code' of 'Death Causal Information'.
@@ -1436,7 +1284,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_TYPE_CODE = 174;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_TYPE_CODE = 155;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Other Significant Condition Other Significant Condition' of 'Death Causal Information'.
@@ -1444,111 +1292,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION = 175;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Other Significant Condition Other Significant Condition Class Code Death Causal Information Component Other Significant Condition Other Significant Condition Class Code1' of 'Death Causal Information'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CLASS_CODE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CLASS_CODE1 = 176;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Other Significant Condition Other Significant Condition Code PDeath Causal Information Component Other Significant Condition Other Significant Condition Code P1' of 'Death Causal Information'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_PDEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_P1 = 177;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Other Significant Condition Other Significant Condition Code Death Causal Information Component Other Significant Condition Other Significant Condition Code1' of 'Death Causal Information'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE1 = 178;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Other Significant Condition Other Significant Condition Mood Code Death Causal Information Component Other Significant Condition Other Significant Condition Mood Code1' of 'Death Causal Information'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE1 = 179;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Other Significant Condition Other Significant Condition Value Death Causal Information Component Other Significant Condition Other Significant Condition Value1' of 'Death Causal Information'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_VALUE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_VALUE1 = 180;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Death Cause Interval Death Cause Interval Class Code' of 'Death Causal Information'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CLASS_CODE = 181;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Death Cause Interval Death Cause Interval Code P' of 'Death Causal Information'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE_P = 182;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Death Cause Interval Death Cause Interval Code' of 'Death Causal Information'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE = 183;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Death Cause Interval Death Cause Interval Mood Code' of 'Death Causal Information'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_MOOD_CODE = 184;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Death Cause Interval Death Cause Interval Value' of 'Death Causal Information'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_VALUE = 185;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Death Cause Interval Sequence Number' of 'Death Causal Information'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_SEQUENCE_NUMBER = 186;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Death Cause Interval Type Code' of 'Death Causal Information'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_TYPE_CODE = 187;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Causal Information Component Death Cause Interval Death Cause Interval' of 'Death Causal Information'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL = 188;
+  public static final int DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION = 156;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Template Id' of 'Autopsy Performance'.
@@ -1556,7 +1300,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_TEMPLATE_ID = 189;
+  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_TEMPLATE_ID = 157;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Class Code' of 'Autopsy Performance'.
@@ -1564,7 +1308,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CLASS_CODE = 190;
+  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CLASS_CODE = 158;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Code P' of 'Autopsy Performance'.
@@ -1572,7 +1316,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CODE_P = 191;
+  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CODE_P = 160;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Code' of 'Autopsy Performance'.
@@ -1580,7 +1324,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CODE = 192;
+  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CODE = 161;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Effective Time' of 'Autopsy Performance'.
@@ -1588,7 +1332,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_EFFECTIVE_TIME = 193;
+  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_EFFECTIVE_TIME = 162;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Value' of 'Autopsy Performance'.
@@ -1596,7 +1340,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_VALUE = 194;
+  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_VALUE = 163;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Mood Code' of 'Autopsy Performance'.
@@ -1604,7 +1348,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_MOOD_CODE = 195;
+  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_MOOD_CODE = 159;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Autopsy Performer' of 'Autopsy Performance'.
@@ -1612,7 +1356,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_AUTOPSY_PERFORMER = 196;
+  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_AUTOPSY_PERFORMER = 164;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Autopsy Performer Autopsy Performer Role Autopsy Clinician Class Code' of 'Autopsy Performance'.
@@ -1620,7 +1364,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_AUTOPSY_PERFORMER_AUTOPSY_PERFORMER_ROLE_AUTOPSY_CLINICIAN_CLASS_CODE = 197;
+  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_AUTOPSY_PERFORMER_AUTOPSY_PERFORMER_ROLE_AUTOPSY_CLINICIAN_CLASS_CODE = 165;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Autopsy Performer Autopsy Performer Role Autopsy Clinician Determiner Code' of 'Autopsy Performance'.
@@ -1628,7 +1372,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_AUTOPSY_PERFORMER_AUTOPSY_PERFORMER_ROLE_AUTOPSY_CLINICIAN_DETERMINER_CODE = 198;
+  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_AUTOPSY_PERFORMER_AUTOPSY_PERFORMER_ROLE_AUTOPSY_CLINICIAN_DETERMINER_CODE = 166;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Autopsy Performer Autopsy Performer Role Autopsy Clinician Name' of 'Autopsy Performance'.
@@ -1636,7 +1380,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_AUTOPSY_PERFORMER_AUTOPSY_PERFORMER_ROLE_AUTOPSY_CLINICIAN_NAME = 199;
+  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_AUTOPSY_PERFORMER_AUTOPSY_PERFORMER_ROLE_AUTOPSY_CLINICIAN_NAME = 167;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Autopsy Performer Autopsy Performer Role Class Code' of 'Autopsy Performance'.
@@ -1644,7 +1388,15 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_AUTOPSY_PERFORMER_AUTOPSY_PERFORMER_ROLE_CLASS_CODE = 200;
+  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_AUTOPSY_PERFORMER_AUTOPSY_PERFORMER_ROLE_CLASS_CODE = 168;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Autopsy Performer Autopsy Performer Role Autopsy Clinician' of 'Autopsy Performance'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_AUTOPSY_PERFORMER_AUTOPSY_PERFORMER_ROLE_AUTOPSY_CLINICIAN = 169;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Autopsy Performer Type Code' of 'Autopsy Performance'.
@@ -1652,7 +1404,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_AUTOPSY_PERFORMER_TYPE_CODE = 201;
+  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_AUTOPSY_PERFORMER_TYPE_CODE = 170;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Autopsy Performer Autopsy Performer Role' of 'Autopsy Performance'.
@@ -1660,7 +1412,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_AUTOPSY_PERFORMER_AUTOPSY_PERFORMER_ROLE = 202;
+  public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_AUTOPSY_PERFORMER_AUTOPSY_PERFORMER_ROLE = 171;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Results Template Id' of 'Autopsy Results'.
@@ -1668,7 +1420,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_RESULTS__AUTOPSY_RESULTS_TEMPLATE_ID = 203;
+  public static final int AUTOPSY_RESULTS__AUTOPSY_RESULTS_TEMPLATE_ID = 172;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Results Class Code' of 'Autopsy Results'.
@@ -1676,7 +1428,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_RESULTS__AUTOPSY_RESULTS_CLASS_CODE = 204;
+  public static final int AUTOPSY_RESULTS__AUTOPSY_RESULTS_CLASS_CODE = 173;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Results Code P' of 'Autopsy Results'.
@@ -1684,7 +1436,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_RESULTS__AUTOPSY_RESULTS_CODE_P = 205;
+  public static final int AUTOPSY_RESULTS__AUTOPSY_RESULTS_CODE_P = 175;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Results Code' of 'Autopsy Results'.
@@ -1692,7 +1444,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_RESULTS__AUTOPSY_RESULTS_CODE = 206;
+  public static final int AUTOPSY_RESULTS__AUTOPSY_RESULTS_CODE = 176;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Results Mood Code' of 'Autopsy Results'.
@@ -1700,7 +1452,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_RESULTS__AUTOPSY_RESULTS_MOOD_CODE = 207;
+  public static final int AUTOPSY_RESULTS__AUTOPSY_RESULTS_MOOD_CODE = 174;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Results Value' of 'Autopsy Results'.
@@ -1708,7 +1460,15 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int AUTOPSY_RESULTS__AUTOPSY_RESULTS_VALUE = 208;
+  public static final int AUTOPSY_RESULTS__AUTOPSY_RESULTS_VALUE = 177;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Results Autopsy Report' of 'Autopsy Results'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int AUTOPSY_RESULTS__AUTOPSY_RESULTS_AUTOPSY_REPORT = 178;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Coroner Referral Template Id' of 'Coroner Referral'.
@@ -1716,7 +1476,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int CORONER_REFERRAL__CORONER_REFERRAL_TEMPLATE_ID = 209;
+  public static final int CORONER_REFERRAL__CORONER_REFERRAL_TEMPLATE_ID = 179;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Coroner Referral Class Code' of 'Coroner Referral'.
@@ -1724,7 +1484,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int CORONER_REFERRAL__CORONER_REFERRAL_CLASS_CODE = 210;
+  public static final int CORONER_REFERRAL__CORONER_REFERRAL_CLASS_CODE = 180;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Coroner Referral Code P' of 'Coroner Referral'.
@@ -1732,7 +1492,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int CORONER_REFERRAL__CORONER_REFERRAL_CODE_P = 211;
+  public static final int CORONER_REFERRAL__CORONER_REFERRAL_CODE_P = 182;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Coroner Referral Code' of 'Coroner Referral'.
@@ -1740,7 +1500,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int CORONER_REFERRAL__CORONER_REFERRAL_CODE = 212;
+  public static final int CORONER_REFERRAL__CORONER_REFERRAL_CODE = 183;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Coroner Referral Mood Code' of 'Coroner Referral'.
@@ -1748,7 +1508,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int CORONER_REFERRAL__CORONER_REFERRAL_MOOD_CODE = 213;
+  public static final int CORONER_REFERRAL__CORONER_REFERRAL_MOOD_CODE = 181;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Coroner Referral Value' of 'Coroner Referral'.
@@ -1756,7 +1516,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int CORONER_REFERRAL__CORONER_REFERRAL_VALUE = 214;
+  public static final int CORONER_REFERRAL__CORONER_REFERRAL_VALUE = 184;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Coroner Case Transfer Template Id' of 'Coroner Case Transfer'.
@@ -1764,7 +1524,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_TEMPLATE_ID = 215;
+  public static final int CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_TEMPLATE_ID = 185;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Coroner Case Transfer Class Code' of 'Coroner Case Transfer'.
@@ -1772,7 +1532,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_CLASS_CODE = 216;
+  public static final int CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_CLASS_CODE = 186;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Coroner Case Transfer Code P' of 'Coroner Case Transfer'.
@@ -1780,7 +1540,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_CODE_P = 217;
+  public static final int CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_CODE_P = 188;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Coroner Case Transfer Code' of 'Coroner Case Transfer'.
@@ -1788,15 +1548,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_CODE = 218;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Coroner Case Transfer Id' of 'Coroner Case Transfer'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_ID = 219;
+  public static final int CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_CODE = 189;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Coroner Case Transfer Mood Code' of 'Coroner Case Transfer'.
@@ -1804,7 +1556,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_MOOD_CODE = 220;
+  public static final int CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_MOOD_CODE = 187;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Coroner Case Transfer Value' of 'Coroner Case Transfer'.
@@ -1812,7 +1564,15 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_VALUE = 221;
+  public static final int CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_VALUE = 190;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Coroner Case Transfer Coroner Case' of 'Coroner Case Transfer'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_CORONER_CASE = 191;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Location Type Template Id' of 'Death Location Type'.
@@ -1820,7 +1580,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_TEMPLATE_ID = 222;
+  public static final int DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_TEMPLATE_ID = 192;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Location Type Class Code' of 'Death Location Type'.
@@ -1828,7 +1588,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_CLASS_CODE = 223;
+  public static final int DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_CLASS_CODE = 193;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Location Type Code P' of 'Death Location Type'.
@@ -1836,7 +1596,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_CODE_P = 224;
+  public static final int DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_CODE_P = 195;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Location Type Code' of 'Death Location Type'.
@@ -1844,7 +1604,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_CODE = 225;
+  public static final int DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_CODE = 196;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Location Type Mood Code' of 'Death Location Type'.
@@ -1852,7 +1612,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_MOOD_CODE = 226;
+  public static final int DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_MOOD_CODE = 194;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Location Type Value' of 'Death Location Type'.
@@ -1860,7 +1620,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_VALUE = 227;
+  public static final int DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_VALUE = 197;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Death Location Type Value P' of 'Death Location Type'.
@@ -1868,7 +1628,127 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_VALUE_P = 228;
+  public static final int DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_VALUE_P = 198;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pronouncing Death Template Id' of 'Pronouncing Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PRONOUNCING_DEATH__PRONOUNCING_DEATH_TEMPLATE_ID = 199;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pronouncing Death Class Code' of 'Pronouncing Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PRONOUNCING_DEATH__PRONOUNCING_DEATH_CLASS_CODE = 200;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pronouncing Death Mood Code' of 'Pronouncing Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PRONOUNCING_DEATH__PRONOUNCING_DEATH_MOOD_CODE = 201;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pronouncing Death Code' of 'Pronouncing Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PRONOUNCING_DEATH__PRONOUNCING_DEATH_CODE = 202;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pronouncing Death Effective Time' of 'Pronouncing Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PRONOUNCING_DEATH__PRONOUNCING_DEATH_EFFECTIVE_TIME = 203;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pronouncing Death Pronouncer' of 'Pronouncing Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER = 204;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pronouncing Death Pronouncer Pronouncer Role Pronouncing Party Class Code' of 'Pronouncing Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_CLASS_CODE = 205;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pronouncing Death Pronouncer Pronouncer Role Pronouncing Party Determiner Code' of 'Pronouncing Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_DETERMINER_CODE = 206;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pronouncing Death Pronouncer Pronouncer Role Pronouncing Party Name' of 'Pronouncing Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_NAME = 207;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pronouncing Death Pronouncer Pronouncer Role Addr' of 'Pronouncing Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_ADDR = 208;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pronouncing Death Pronouncer Pronouncer Role Class Code' of 'Pronouncing Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_CLASS_CODE = 209;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pronouncing Death Pronouncer Pronouncer Role Id' of 'Pronouncing Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_ID = 210;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pronouncing Death Pronouncer Pronouncer Role Pronouncing Party' of 'Pronouncing Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY = 211;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pronouncing Death Pronouncer Type Code' of 'Pronouncing Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_TYPE_CODE = 212;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pronouncing Death Pronouncer Pronouncer Role' of 'Pronouncing Death'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE = 213;
 
   /**
    * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -1876,7 +1756,7 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 228;
+  private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 213;
 
   /**
    * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -1929,16 +1809,16 @@ public class VsdrValidator extends EObjectValidator
   {
     switch (classifierID)
     {
-      case VsdrPackage.REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS:
-        return validateReportingdeathinformationfromaclinicalsettingtovitalrecords((Reportingdeathinformationfromaclinicalsettingtovitalrecords)value, diagnostics, context);
+      case VsdrPackage.REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS:
+        return validateReportingDeathInformationfromaClinicalSettingtoVitalRecords((ReportingDeathInformationfromaClinicalSettingtoVitalRecords)value, diagnostics, context);
       case VsdrPackage.DEATH_REPORT_DOCUMENT_BODY:
         return validateDeathReportDocumentBody((DeathReportDocumentBody)value, diagnostics, context);
-      case VsdrPackage.TIMEOF_DEATH:
-        return validateTimeofDeath((TimeofDeath)value, diagnostics, context);
+      case VsdrPackage.DATEAND_TIMEOF_DEATH:
+        return validateDateandTimeofDeath((DateandTimeofDeath)value, diagnostics, context);
       case VsdrPackage.LOCATIONOF_DEATH:
         return validateLocationofDeath((LocationofDeath)value, diagnostics, context);
-      case VsdrPackage.DEATH_CERTIFICATION:
-        return validateDeathCertification((DeathCertification)value, diagnostics, context);
+      case VsdrPackage.CERTIFYING_DEATH:
+        return validateCertifyingDeath((CertifyingDeath)value, diagnostics, context);
       case VsdrPackage.MANNEROF_DEATH:
         return validateMannerofDeath((MannerofDeath)value, diagnostics, context);
       case VsdrPackage.PREGNANCY_STATUS:
@@ -1959,6 +1839,8 @@ public class VsdrValidator extends EObjectValidator
         return validateCoronerCaseTransfer((CoronerCaseTransfer)value, diagnostics, context);
       case VsdrPackage.DEATH_LOCATION_TYPE:
         return validateDeathLocationType((DeathLocationType)value, diagnostics, context);
+      case VsdrPackage.PRONOUNCING_DEATH:
+        return validatePronouncingDeath((PronouncingDeath)value, diagnostics, context);
       default:
         return true;
     }
@@ -1969,499 +1851,259 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (!validate_NoCircularContainment(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTemplateId(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsClassCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCodeP(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsId(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsLanguageCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsMoodCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRealmCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTitle(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsEffectiveTime(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodian(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsDeathReportDocumentBody(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthor(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTarget(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationName(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationId(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonClassCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonDeterminerCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonName(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorClassCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorId(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPerson(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTypeCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTime(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCodeP(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonBirthTime(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonClassCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonDeterminerCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonName(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientClassCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientId(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientAddr(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPerson(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetTypeCode(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
-    if (result || diagnostics != null) result &= validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatient(reportingdeathinformationfromaclinicalsettingtovitalrecords, diagnostics, context);
+    if (!validate_NoCircularContainment(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTemplateId(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsClassCode(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsMoodCode(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCodeP(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCode(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCodeP(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCode(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsId(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsLanguageCode(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCode(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCodeP(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTitle(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsEffectiveTime(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodian(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsDeathReportDocumentBody(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthor(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTarget(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationName(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationId(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
+    if (result || diagnostics != null) result &= validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodian(reportingDeathInformationfromaClinicalSettingtoVitalRecords, diagnostics, context);
     return result;
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTemplateId constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTemplateId constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTemplateId(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTemplateId(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTemplateId(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTemplateId(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsClassCode constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsClassCode constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsClassCode(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsClassCode(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsClassCode(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsClassCode(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCodeP constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsMoodCode constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCodeP(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsMoodCode(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCodeP(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsMoodCode(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCode constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCodeP constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCode(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCodeP(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCode(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCodeP(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCode constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCode(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCode(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCode constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCodeP constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCode(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCodeP(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCode(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCodeP(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsId constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCode constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsId(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCode(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsId(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCode(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsLanguageCode constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsId constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsLanguageCode(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsId(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsLanguageCode(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsId(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsMoodCode constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsLanguageCode constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsMoodCode(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsLanguageCode(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsMoodCode(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsLanguageCode(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRealmCode constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCode constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRealmCode(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCode(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRealmCode(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCode(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTitle constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCodeP constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTitle(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCodeP(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTitle(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCodeP(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsEffectiveTime constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTitle constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsEffectiveTime(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTitle(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsEffectiveTime(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTitle(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodian constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsEffectiveTime constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodian(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsEffectiveTime(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodian(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsEffectiveTime(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsDeathReportDocumentBody constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodian constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsDeathReportDocumentBody(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodian(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsDeathReportDocumentBody(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodian(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthor constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsDeathReportDocumentBody constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthor(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsDeathReportDocumentBody(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthor(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsDeathReportDocumentBody(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTarget constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthor constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTarget(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthor(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTarget(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthor(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationName constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTarget constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationName(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTarget(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationName(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTarget(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationId constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationName constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationId(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationName(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationId(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationName(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationId constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationId(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationId(diagnostics, context);
   }
 
   /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonClassCode constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
+   * Validates the validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodian constraint of '<em>Reporting Death Informationfroma Clinical Settingto Vital Records</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonClassCode(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingDeathInformationfromaClinicalSettingtoVitalRecords_validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodian(ReportingDeathInformationfromaClinicalSettingtoVitalRecords reportingDeathInformationfromaClinicalSettingtoVitalRecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonClassCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonDeterminerCode constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonDeterminerCode(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonDeterminerCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonName constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonName(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonName(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorClassCode constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorClassCode(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorClassCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorId constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorId(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorId(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPerson constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPerson(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPerson(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTypeCode constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTypeCode(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTypeCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTime constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTime(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTime(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCode constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCode(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCodeP constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCodeP(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCodeP(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonBirthTime constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonBirthTime(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonBirthTime(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonClassCode constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonClassCode(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonClassCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonDeterminerCode constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonDeterminerCode(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonDeterminerCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonName constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonName(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonName(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientClassCode constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientClassCode(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientClassCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientId constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientId(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientId(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientAddr constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientAddr(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientAddr(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPerson constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPerson(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPerson(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetTypeCode constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetTypeCode(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetTypeCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatient constraint of '<em>Reportingdeathinformationfromaclinicalsettingtovitalrecords</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateReportingdeathinformationfromaclinicalsettingtovitalrecords_validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatient(Reportingdeathinformationfromaclinicalsettingtovitalrecords reportingdeathinformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return reportingdeathinformationfromaclinicalsettingtovitalrecords.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatient(diagnostics, context);
+    return reportingDeathInformationfromaClinicalSettingtoVitalRecords.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodian(diagnostics, context);
   }
 
   /**
@@ -2482,11 +2124,12 @@ public class VsdrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(deathReportDocumentBody, diagnostics, context);
     if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(deathReportDocumentBody, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyTemplateId(deathReportDocumentBody, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyCodeP(deathReportDocumentBody, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyCode(deathReportDocumentBody, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyCodeP(deathReportDocumentBody, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyText(deathReportDocumentBody, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyTimeofDeath(deathReportDocumentBody, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyLocationofDeath(deathReportDocumentBody, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyDeathCertification(deathReportDocumentBody, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyCertifyingDeath(deathReportDocumentBody, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyMannerofDeath(deathReportDocumentBody, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyPregnancyStatus(deathReportDocumentBody, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyTobaccoUse(deathReportDocumentBody, diagnostics, context);
@@ -2497,6 +2140,7 @@ public class VsdrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyCoronerReferral(deathReportDocumentBody, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyCoronerCaseTransfer(deathReportDocumentBody, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyDeathLocationType(deathReportDocumentBody, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathReportDocumentBody_validateDeathReportDocumentBodyPronouncingDeath(deathReportDocumentBody, diagnostics, context);
     return result;
   }
 
@@ -2520,6 +2164,17 @@ public class VsdrValidator extends EObjectValidator
   public boolean validateDeathReportDocumentBody_validateDeathReportDocumentBodyCodeP(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return deathReportDocumentBody.validateDeathReportDocumentBodyCodeP(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateDeathReportDocumentBodyText constraint of '<em>Death Report Document Body</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathReportDocumentBody_validateDeathReportDocumentBodyText(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return deathReportDocumentBody.validateDeathReportDocumentBodyText(diagnostics, context);
   }
 
   /**
@@ -2556,14 +2211,14 @@ public class VsdrValidator extends EObjectValidator
   }
 
   /**
-   * Validates the validateDeathReportDocumentBodyDeathCertification constraint of '<em>Death Report Document Body</em>'.
+   * Validates the validateDeathReportDocumentBodyCertifyingDeath constraint of '<em>Death Report Document Body</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDeathReportDocumentBody_validateDeathReportDocumentBodyDeathCertification(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateDeathReportDocumentBody_validateDeathReportDocumentBodyCertifyingDeath(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return deathReportDocumentBody.validateDeathReportDocumentBodyDeathCertification(diagnostics, context);
+    return deathReportDocumentBody.validateDeathReportDocumentBodyCertifyingDeath(diagnostics, context);
   }
 
   /**
@@ -2677,105 +2332,116 @@ public class VsdrValidator extends EObjectValidator
   }
 
   /**
+   * Validates the validateDeathReportDocumentBodyPronouncingDeath constraint of '<em>Death Report Document Body</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateTimeofDeath(TimeofDeath timeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateDeathReportDocumentBody_validateDeathReportDocumentBodyPronouncingDeath(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (!validate_NoCircularContainment(timeofDeath, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(timeofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(timeofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(timeofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(timeofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(timeofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(timeofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(timeofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validateTimeofDeath_validateTimeofDeathTemplateId(timeofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validateTimeofDeath_validateTimeofDeathClassCode(timeofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validateTimeofDeath_validateTimeofDeathCodeP(timeofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validateTimeofDeath_validateTimeofDeathCode(timeofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validateTimeofDeath_validateTimeofDeathEffectiveTime(timeofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validateTimeofDeath_validateTimeofDeathMoodCode(timeofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validateTimeofDeath_validateTimeofDeathText(timeofDeath, diagnostics, context);
+    return deathReportDocumentBody.validateDeathReportDocumentBodyPronouncingDeath(diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDateandTimeofDeath(DateandTimeofDeath dateandTimeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    if (!validate_NoCircularContainment(dateandTimeofDeath, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(dateandTimeofDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(dateandTimeofDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(dateandTimeofDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(dateandTimeofDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(dateandTimeofDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(dateandTimeofDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(dateandTimeofDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDateandTimeofDeath_validateDateandTimeofDeathTemplateId(dateandTimeofDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDateandTimeofDeath_validateDateandTimeofDeathClassCode(dateandTimeofDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDateandTimeofDeath_validateDateandTimeofDeathMoodCode(dateandTimeofDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDateandTimeofDeath_validateDateandTimeofDeathCodeP(dateandTimeofDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDateandTimeofDeath_validateDateandTimeofDeathCode(dateandTimeofDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDateandTimeofDeath_validateDateandTimeofDeathEffectiveTime(dateandTimeofDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDateandTimeofDeath_validateDateandTimeofDeathText(dateandTimeofDeath, diagnostics, context);
     return result;
   }
 
   /**
-   * Validates the validateTimeofDeathTemplateId constraint of '<em>Timeof Death</em>'.
+   * Validates the validateDateandTimeofDeathTemplateId constraint of '<em>Dateand Timeof Death</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateTimeofDeath_validateTimeofDeathTemplateId(TimeofDeath timeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateDateandTimeofDeath_validateDateandTimeofDeathTemplateId(DateandTimeofDeath dateandTimeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return timeofDeath.validateTimeofDeathTemplateId(diagnostics, context);
+    return dateandTimeofDeath.validateDateandTimeofDeathTemplateId(diagnostics, context);
   }
 
   /**
-   * Validates the validateTimeofDeathClassCode constraint of '<em>Timeof Death</em>'.
+   * Validates the validateDateandTimeofDeathClassCode constraint of '<em>Dateand Timeof Death</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateTimeofDeath_validateTimeofDeathClassCode(TimeofDeath timeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateDateandTimeofDeath_validateDateandTimeofDeathClassCode(DateandTimeofDeath dateandTimeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return timeofDeath.validateTimeofDeathClassCode(diagnostics, context);
+    return dateandTimeofDeath.validateDateandTimeofDeathClassCode(diagnostics, context);
   }
 
   /**
-   * Validates the validateTimeofDeathCodeP constraint of '<em>Timeof Death</em>'.
+   * Validates the validateDateandTimeofDeathMoodCode constraint of '<em>Dateand Timeof Death</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateTimeofDeath_validateTimeofDeathCodeP(TimeofDeath timeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateDateandTimeofDeath_validateDateandTimeofDeathMoodCode(DateandTimeofDeath dateandTimeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return timeofDeath.validateTimeofDeathCodeP(diagnostics, context);
+    return dateandTimeofDeath.validateDateandTimeofDeathMoodCode(diagnostics, context);
   }
 
   /**
-   * Validates the validateTimeofDeathCode constraint of '<em>Timeof Death</em>'.
+   * Validates the validateDateandTimeofDeathCodeP constraint of '<em>Dateand Timeof Death</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateTimeofDeath_validateTimeofDeathCode(TimeofDeath timeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateDateandTimeofDeath_validateDateandTimeofDeathCodeP(DateandTimeofDeath dateandTimeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return timeofDeath.validateTimeofDeathCode(diagnostics, context);
+    return dateandTimeofDeath.validateDateandTimeofDeathCodeP(diagnostics, context);
   }
 
   /**
-   * Validates the validateTimeofDeathEffectiveTime constraint of '<em>Timeof Death</em>'.
+   * Validates the validateDateandTimeofDeathCode constraint of '<em>Dateand Timeof Death</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateTimeofDeath_validateTimeofDeathEffectiveTime(TimeofDeath timeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateDateandTimeofDeath_validateDateandTimeofDeathCode(DateandTimeofDeath dateandTimeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return timeofDeath.validateTimeofDeathEffectiveTime(diagnostics, context);
+    return dateandTimeofDeath.validateDateandTimeofDeathCode(diagnostics, context);
   }
 
   /**
-   * Validates the validateTimeofDeathMoodCode constraint of '<em>Timeof Death</em>'.
+   * Validates the validateDateandTimeofDeathEffectiveTime constraint of '<em>Dateand Timeof Death</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateTimeofDeath_validateTimeofDeathMoodCode(TimeofDeath timeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateDateandTimeofDeath_validateDateandTimeofDeathEffectiveTime(DateandTimeofDeath dateandTimeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return timeofDeath.validateTimeofDeathMoodCode(diagnostics, context);
+    return dateandTimeofDeath.validateDateandTimeofDeathEffectiveTime(diagnostics, context);
   }
 
   /**
-   * Validates the validateTimeofDeathText constraint of '<em>Timeof Death</em>'.
+   * Validates the validateDateandTimeofDeathText constraint of '<em>Dateand Timeof Death</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateTimeofDeath_validateTimeofDeathText(TimeofDeath timeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateDateandTimeofDeath_validateDateandTimeofDeathText(DateandTimeofDeath dateandTimeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return timeofDeath.validateTimeofDeathText(diagnostics, context);
+    return dateandTimeofDeath.validateDateandTimeofDeathText(diagnostics, context);
   }
 
   /**
@@ -2795,9 +2461,9 @@ public class VsdrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(locationofDeath, diagnostics, context);
     if (result || diagnostics != null) result &= validateLocationofDeath_validateLocationofDeathTemplateId(locationofDeath, diagnostics, context);
     if (result || diagnostics != null) result &= validateLocationofDeath_validateLocationofDeathClassCode(locationofDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validateLocationofDeath_validateLocationofDeathMoodCode(locationofDeath, diagnostics, context);
     if (result || diagnostics != null) result &= validateLocationofDeath_validateLocationofDeathCodeP(locationofDeath, diagnostics, context);
     if (result || diagnostics != null) result &= validateLocationofDeath_validateLocationofDeathCode(locationofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validateLocationofDeath_validateLocationofDeathMoodCode(locationofDeath, diagnostics, context);
     if (result || diagnostics != null) result &= validateLocationofDeath_validateLocationofDeathText(locationofDeath, diagnostics, context);
     if (result || diagnostics != null) result &= validateLocationofDeath_validateLocationofDeathValue(locationofDeath, diagnostics, context);
     return result;
@@ -2885,221 +2551,89 @@ public class VsdrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDeathCertification(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateCertifyingDeath(CertifyingDeath certifyingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (!validate_NoCircularContainment(deathCertification, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationTemplateId(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationClassCode(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationCode(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationEffectiveTime(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationMoodCode(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationCertificationPerformer(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleCertifyingPartyClassCode(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleCertifyingPartyDeterminerCode(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleCertifyingPartyName(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleAddr(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleClassCode(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleCode(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleCodeP(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleId(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleCertifyingParty(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationCertificationPerformerTypeCode(deathCertification, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRole(deathCertification, diagnostics, context);
+    if (!validate_NoCircularContainment(certifyingDeath, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(certifyingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(certifyingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(certifyingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(certifyingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(certifyingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(certifyingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(certifyingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validateCertifyingDeath_validateCertifyingDeathTemplateId(certifyingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validateCertifyingDeath_validateCertifyingDeathClassCode(certifyingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validateCertifyingDeath_validateCertifyingDeathMoodCode(certifyingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validateCertifyingDeath_validateCertifyingDeathCode(certifyingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validateCertifyingDeath_validateCertifyingDeathEffectiveTime(certifyingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validateCertifyingDeath_validateCertifyingDeathCertificationPerformer(certifyingDeath, diagnostics, context);
     return result;
   }
 
   /**
-   * Validates the validateDeathCertificationTemplateId constraint of '<em>Death Certification</em>'.
+   * Validates the validateCertifyingDeathTemplateId constraint of '<em>Certifying Death</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDeathCertification_validateDeathCertificationTemplateId(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateCertifyingDeath_validateCertifyingDeathTemplateId(CertifyingDeath certifyingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return deathCertification.validateDeathCertificationTemplateId(diagnostics, context);
+    return certifyingDeath.validateCertifyingDeathTemplateId(diagnostics, context);
   }
 
   /**
-   * Validates the validateDeathCertificationClassCode constraint of '<em>Death Certification</em>'.
+   * Validates the validateCertifyingDeathClassCode constraint of '<em>Certifying Death</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDeathCertification_validateDeathCertificationClassCode(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateCertifyingDeath_validateCertifyingDeathClassCode(CertifyingDeath certifyingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return deathCertification.validateDeathCertificationClassCode(diagnostics, context);
+    return certifyingDeath.validateCertifyingDeathClassCode(diagnostics, context);
   }
 
   /**
-   * Validates the validateDeathCertificationCode constraint of '<em>Death Certification</em>'.
+   * Validates the validateCertifyingDeathMoodCode constraint of '<em>Certifying Death</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDeathCertification_validateDeathCertificationCode(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateCertifyingDeath_validateCertifyingDeathMoodCode(CertifyingDeath certifyingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return deathCertification.validateDeathCertificationCode(diagnostics, context);
+    return certifyingDeath.validateCertifyingDeathMoodCode(diagnostics, context);
   }
 
   /**
-   * Validates the validateDeathCertificationEffectiveTime constraint of '<em>Death Certification</em>'.
+   * Validates the validateCertifyingDeathCode constraint of '<em>Certifying Death</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDeathCertification_validateDeathCertificationEffectiveTime(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateCertifyingDeath_validateCertifyingDeathCode(CertifyingDeath certifyingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return deathCertification.validateDeathCertificationEffectiveTime(diagnostics, context);
+    return certifyingDeath.validateCertifyingDeathCode(diagnostics, context);
   }
 
   /**
-   * Validates the validateDeathCertificationMoodCode constraint of '<em>Death Certification</em>'.
+   * Validates the validateCertifyingDeathEffectiveTime constraint of '<em>Certifying Death</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDeathCertification_validateDeathCertificationMoodCode(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateCertifyingDeath_validateCertifyingDeathEffectiveTime(CertifyingDeath certifyingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return deathCertification.validateDeathCertificationMoodCode(diagnostics, context);
+    return certifyingDeath.validateCertifyingDeathEffectiveTime(diagnostics, context);
   }
 
   /**
-   * Validates the validateDeathCertificationCertificationPerformer constraint of '<em>Death Certification</em>'.
+   * Validates the validateCertifyingDeathCertificationPerformer constraint of '<em>Certifying Death</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDeathCertification_validateDeathCertificationCertificationPerformer(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateCertifyingDeath_validateCertifyingDeathCertificationPerformer(CertifyingDeath certifyingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return deathCertification.validateDeathCertificationCertificationPerformer(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCertificationCertificationPerformerCertifierRoleCertifyingPartyClassCode constraint of '<em>Death Certification</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleCertifyingPartyClassCode(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCertification.validateDeathCertificationCertificationPerformerCertifierRoleCertifyingPartyClassCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCertificationCertificationPerformerCertifierRoleCertifyingPartyDeterminerCode constraint of '<em>Death Certification</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleCertifyingPartyDeterminerCode(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCertification.validateDeathCertificationCertificationPerformerCertifierRoleCertifyingPartyDeterminerCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCertificationCertificationPerformerCertifierRoleCertifyingPartyName constraint of '<em>Death Certification</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleCertifyingPartyName(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCertification.validateDeathCertificationCertificationPerformerCertifierRoleCertifyingPartyName(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCertificationCertificationPerformerCertifierRoleAddr constraint of '<em>Death Certification</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleAddr(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCertification.validateDeathCertificationCertificationPerformerCertifierRoleAddr(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCertificationCertificationPerformerCertifierRoleClassCode constraint of '<em>Death Certification</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleClassCode(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCertification.validateDeathCertificationCertificationPerformerCertifierRoleClassCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCertificationCertificationPerformerCertifierRoleCode constraint of '<em>Death Certification</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleCode(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCertification.validateDeathCertificationCertificationPerformerCertifierRoleCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCertificationCertificationPerformerCertifierRoleCodeP constraint of '<em>Death Certification</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleCodeP(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCertification.validateDeathCertificationCertificationPerformerCertifierRoleCodeP(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCertificationCertificationPerformerCertifierRoleId constraint of '<em>Death Certification</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleId(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCertification.validateDeathCertificationCertificationPerformerCertifierRoleId(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCertificationCertificationPerformerCertifierRoleCertifyingParty constraint of '<em>Death Certification</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRoleCertifyingParty(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCertification.validateDeathCertificationCertificationPerformerCertifierRoleCertifyingParty(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCertificationCertificationPerformerTypeCode constraint of '<em>Death Certification</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCertification_validateDeathCertificationCertificationPerformerTypeCode(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCertification.validateDeathCertificationCertificationPerformerTypeCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCertificationCertificationPerformerCertifierRole constraint of '<em>Death Certification</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCertification_validateDeathCertificationCertificationPerformerCertifierRole(DeathCertification deathCertification, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCertification.validateDeathCertificationCertificationPerformerCertifierRole(diagnostics, context);
+    return certifyingDeath.validateCertifyingDeathCertificationPerformer(diagnostics, context);
   }
 
   /**
@@ -3119,11 +2653,10 @@ public class VsdrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(mannerofDeath, diagnostics, context);
     if (result || diagnostics != null) result &= validateMannerofDeath_validateMannerofDeathTemplateId(mannerofDeath, diagnostics, context);
     if (result || diagnostics != null) result &= validateMannerofDeath_validateMannerofDeathClassCode(mannerofDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validateMannerofDeath_validateMannerofDeathMoodCode(mannerofDeath, diagnostics, context);
     if (result || diagnostics != null) result &= validateMannerofDeath_validateMannerofDeathCodeP(mannerofDeath, diagnostics, context);
     if (result || diagnostics != null) result &= validateMannerofDeath_validateMannerofDeathCode(mannerofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMannerofDeath_validateMannerofDeathMoodCode(mannerofDeath, diagnostics, context);
     if (result || diagnostics != null) result &= validateMannerofDeath_validateMannerofDeathValue(mannerofDeath, diagnostics, context);
-    if (result || diagnostics != null) result &= validateMannerofDeath_validateMannerofDeathValueP(mannerofDeath, diagnostics, context);
     return result;
   }
 
@@ -3194,17 +2727,6 @@ public class VsdrValidator extends EObjectValidator
   }
 
   /**
-   * Validates the validateMannerofDeathValueP constraint of '<em>Mannerof Death</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMannerofDeath_validateMannerofDeathValueP(MannerofDeath mannerofDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return mannerofDeath.validateMannerofDeathValueP(diagnostics, context);
-  }
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -3221,11 +2743,10 @@ public class VsdrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(pregnancyStatus, diagnostics, context);
     if (result || diagnostics != null) result &= validatePregnancyStatus_validatePregnancyStatusTemplateId(pregnancyStatus, diagnostics, context);
     if (result || diagnostics != null) result &= validatePregnancyStatus_validatePregnancyStatusClassCode(pregnancyStatus, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePregnancyStatus_validatePregnancyStatusMoodCode(pregnancyStatus, diagnostics, context);
     if (result || diagnostics != null) result &= validatePregnancyStatus_validatePregnancyStatusCodeP(pregnancyStatus, diagnostics, context);
     if (result || diagnostics != null) result &= validatePregnancyStatus_validatePregnancyStatusCode(pregnancyStatus, diagnostics, context);
-    if (result || diagnostics != null) result &= validatePregnancyStatus_validatePregnancyStatusMoodCode(pregnancyStatus, diagnostics, context);
     if (result || diagnostics != null) result &= validatePregnancyStatus_validatePregnancyStatusValue(pregnancyStatus, diagnostics, context);
-    if (result || diagnostics != null) result &= validatePregnancyStatus_validatePregnancyStatusValueP(pregnancyStatus, diagnostics, context);
     return result;
   }
 
@@ -3296,17 +2817,6 @@ public class VsdrValidator extends EObjectValidator
   }
 
   /**
-   * Validates the validatePregnancyStatusValueP constraint of '<em>Pregnancy Status</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validatePregnancyStatus_validatePregnancyStatusValueP(PregnancyStatus pregnancyStatus, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return pregnancyStatus.validatePregnancyStatusValueP(diagnostics, context);
-  }
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -3323,10 +2833,9 @@ public class VsdrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(tobaccoUse, diagnostics, context);
     if (result || diagnostics != null) result &= validateTobaccoUse_validateTobaccoUseTemplateId(tobaccoUse, diagnostics, context);
     if (result || diagnostics != null) result &= validateTobaccoUse_validateTobaccoUseClassCode(tobaccoUse, diagnostics, context);
-    if (result || diagnostics != null) result &= validateTobaccoUse_validateTobaccoUseCode(tobaccoUse, diagnostics, context);
     if (result || diagnostics != null) result &= validateTobaccoUse_validateTobaccoUseMoodCode(tobaccoUse, diagnostics, context);
+    if (result || diagnostics != null) result &= validateTobaccoUse_validateTobaccoUseCode(tobaccoUse, diagnostics, context);
     if (result || diagnostics != null) result &= validateTobaccoUse_validateTobaccoUseValue(tobaccoUse, diagnostics, context);
-    if (result || diagnostics != null) result &= validateTobaccoUse_validateTobaccoUseValueP(tobaccoUse, diagnostics, context);
     return result;
   }
 
@@ -3386,17 +2895,6 @@ public class VsdrValidator extends EObjectValidator
   }
 
   /**
-   * Validates the validateTobaccoUseValueP constraint of '<em>Tobacco Use</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateTobaccoUse_validateTobaccoUseValueP(TobaccoUse tobaccoUse, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return tobaccoUse.validateTobaccoUseValueP(diagnostics, context);
-  }
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -3413,47 +2911,52 @@ public class VsdrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryTemplateId(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryClassCode(injury, diagnostics, context);
+    if (result || diagnostics != null) result &= validateInjury_validateInjuryMoodCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryCodeP(injury, diagnostics, context);
-    if (result || diagnostics != null) result &= validateInjury_validateInjuryMoodCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryStatusCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformation(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentWorkAssociation(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationAssociation(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationRelationship(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode(injury, diagnostics, context);
+    if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAddr(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleClassCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode(injury, diagnostics, context);
+    if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationClassCode(injury, diagnostics, context);
+    if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationMoodCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationCodeP(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationCode(injury, diagnostics, context);
-    if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationMoodCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationText(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationValue(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationEffectiveTime(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformationLocationParticipation(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationTypeCode(injury, diagnostics, context);
+    if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentInjuryInformationInjuryInformation(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentWorkAssociationWorkAssociationClassCode(injury, diagnostics, context);
+    if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentWorkAssociationWorkAssociationMoodCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentWorkAssociationWorkAssociationCodeP(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentWorkAssociationWorkAssociationCode(injury, diagnostics, context);
-    if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentWorkAssociationWorkAssociationMoodCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentWorkAssociationWorkAssociationValue(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentWorkAssociationTypeCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentWorkAssociationWorkAssociation(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationAssociationTransportationAssociationClassCode(injury, diagnostics, context);
+    if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationAssociationTransportationAssociationMoodCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationAssociationTransportationAssociationCodeP(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationAssociationTransportationAssociationCode(injury, diagnostics, context);
-    if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationAssociationTransportationAssociationMoodCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationAssociationTransportationAssociationValue(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationAssociationTypeCode(injury, diagnostics, context);
+    if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationAssociationTransportationAssociation(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationRelationshipTransportationRelationshipClassCode(injury, diagnostics, context);
+    if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationRelationshipTransportationRelationshipMoodCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationRelationshipTransportationRelationshipCodeP(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationRelationshipTransportationRelationshipCode(injury, diagnostics, context);
-    if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationRelationshipTransportationRelationshipMoodCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationRelationshipTransportationRelationshipValue(injury, diagnostics, context);
+    if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationRelationshipTransportationRelationshipValueP(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationRelationshipTypeCode(injury, diagnostics, context);
     if (result || diagnostics != null) result &= validateInjury_validateInjuryComponentTransportationRelationshipTransportationRelationship(injury, diagnostics, context);
     return result;
@@ -3581,6 +3084,17 @@ public class VsdrValidator extends EObjectValidator
   }
 
   /**
+   * Validates the validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode constraint of '<em>Injury</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateInjury_validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return injury.validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode(diagnostics, context);
+  }
+
+  /**
    * Validates the validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc constraint of '<em>Injury</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -3633,6 +3147,17 @@ public class VsdrValidator extends EObjectValidator
   public boolean validateInjury_validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return injury.validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole constraint of '<em>Injury</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateInjury_validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return injury.validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole(diagnostics, context);
   }
 
   /**
@@ -3732,6 +3257,17 @@ public class VsdrValidator extends EObjectValidator
   public boolean validateInjury_validateInjuryComponentInjuryInformationTypeCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return injury.validateInjuryComponentInjuryInformationTypeCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateInjuryComponentInjuryInformationInjuryInformation constraint of '<em>Injury</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateInjury_validateInjuryComponentInjuryInformationInjuryInformation(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return injury.validateInjuryComponentInjuryInformationInjuryInformation(diagnostics, context);
   }
 
   /**
@@ -3878,6 +3414,17 @@ public class VsdrValidator extends EObjectValidator
   }
 
   /**
+   * Validates the validateInjuryComponentTransportationAssociationTransportationAssociation constraint of '<em>Injury</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateInjury_validateInjuryComponentTransportationAssociationTransportationAssociation(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return injury.validateInjuryComponentTransportationAssociationTransportationAssociation(diagnostics, context);
+  }
+
+  /**
    * Validates the validateInjuryComponentTransportationRelationshipTransportationRelationshipClassCode constraint of '<em>Injury</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -3933,6 +3480,17 @@ public class VsdrValidator extends EObjectValidator
   }
 
   /**
+   * Validates the validateInjuryComponentTransportationRelationshipTransportationRelationshipValueP constraint of '<em>Injury</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateInjury_validateInjuryComponentTransportationRelationshipTransportationRelationshipValueP(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return injury.validateInjuryComponentTransportationRelationshipTransportationRelationshipValueP(diagnostics, context);
+  }
+
+  /**
    * Validates the validateInjuryComponentTransportationRelationshipTypeCode constraint of '<em>Injury</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -3971,12 +3529,20 @@ public class VsdrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationTemplateId(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationClassCode(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationCode(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationMoodCode(deathCausalInformation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationCode(deathCausalInformation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationStatusCodeP(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationStatusCode(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentCause(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantCondition(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseInterval(deathCausalInformation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode(deathCausalInformation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP(deathCausalInformation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode(deathCausalInformation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode(deathCausalInformation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue(deathCausalInformation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber(deathCausalInformation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode(deathCausalInformation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseClassCode(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseCodeP(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseCode(deathCausalInformation, diagnostics, context);
@@ -3986,25 +3552,12 @@ public class VsdrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentCauseTypeCode(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCause(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCode(deathCausalInformation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeP(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCode(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValue(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionTypeCode(deathCausalInformation, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantCondition(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCode1(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodePDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeP1(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCode1(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode1(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValueDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValue1(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalClassCode(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCodeP(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCode(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalMoodCode(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalValue(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalSequenceNumber(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalTypeCode(deathCausalInformation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseInterval(deathCausalInformation, diagnostics, context);
     return result;
   }
 
@@ -4039,6 +3592,17 @@ public class VsdrValidator extends EObjectValidator
   public boolean validateDeathCausalInformation_validateDeathCausalInformationCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return deathCausalInformation.validateDeathCausalInformationCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateDeathCausalInformationStatusCodeP constraint of '<em>Death Causal Information</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathCausalInformation_validateDeathCausalInformationStatusCodeP(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return deathCausalInformation.validateDeathCausalInformationStatusCodeP(diagnostics, context);
   }
 
   /**
@@ -4086,14 +3650,91 @@ public class VsdrValidator extends EObjectValidator
   }
 
   /**
-   * Validates the validateDeathCausalInformationComponentDeathCauseInterval constraint of '<em>Death Causal Information</em>'.
+   * Validates the validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode constraint of '<em>Death Causal Information</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseInterval(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return deathCausalInformation.validateDeathCausalInformationComponentDeathCauseInterval(diagnostics, context);
+    return deathCausalInformation.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP constraint of '<em>Death Causal Information</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return deathCausalInformation.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode constraint of '<em>Death Causal Information</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return deathCausalInformation.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode constraint of '<em>Death Causal Information</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return deathCausalInformation.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue constraint of '<em>Death Causal Information</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return deathCausalInformation.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber constraint of '<em>Death Causal Information</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return deathCausalInformation.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalSequenceNumber(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode constraint of '<em>Death Causal Information</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return deathCausalInformation.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval constraint of '<em>Death Causal Information</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return deathCausalInformation.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval(diagnostics, context);
   }
 
   /**
@@ -4262,149 +3903,6 @@ public class VsdrValidator extends EObjectValidator
   }
 
   /**
-   * Validates the validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCode1 constraint of '<em>Death Causal Information</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCode1(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCausalInformation.validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCode1(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodePDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeP1 constraint of '<em>Death Causal Information</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodePDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeP1(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCausalInformation.validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodePDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeP1(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCode1 constraint of '<em>Death Causal Information</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCode1(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCausalInformation.validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCode1(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode1 constraint of '<em>Death Causal Information</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode1(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCausalInformation.validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCodeDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode1(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValueDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValue1 constraint of '<em>Death Causal Information</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValueDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValue1(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCausalInformation.validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValueDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValue1(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalClassCode constraint of '<em>Death Causal Information</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalClassCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCausalInformation.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalClassCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCodeP constraint of '<em>Death Causal Information</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCodeP(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCausalInformation.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCodeP(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCode constraint of '<em>Death Causal Information</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCausalInformation.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalMoodCode constraint of '<em>Death Causal Information</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalMoodCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCausalInformation.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalMoodCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalValue constraint of '<em>Death Causal Information</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalValue(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCausalInformation.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalValue(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCausalInformationComponentDeathCauseIntervalSequenceNumber constraint of '<em>Death Causal Information</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalSequenceNumber(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCausalInformation.validateDeathCausalInformationComponentDeathCauseIntervalSequenceNumber(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCausalInformationComponentDeathCauseIntervalTypeCode constraint of '<em>Death Causal Information</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalTypeCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCausalInformation.validateDeathCausalInformationComponentDeathCauseIntervalTypeCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseInterval constraint of '<em>Death Causal Information</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDeathCausalInformation_validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseInterval(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return deathCausalInformation.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseInterval(diagnostics, context);
-  }
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -4421,16 +3919,17 @@ public class VsdrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(autopsyPerformance, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceTemplateId(autopsyPerformance, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceClassCode(autopsyPerformance, diagnostics, context);
+    if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceMoodCode(autopsyPerformance, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceCodeP(autopsyPerformance, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceCode(autopsyPerformance, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceEffectiveTime(autopsyPerformance, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceValue(autopsyPerformance, diagnostics, context);
-    if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceMoodCode(autopsyPerformance, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceAutopsyPerformer(autopsyPerformance, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianClassCode(autopsyPerformance, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianDeterminerCode(autopsyPerformance, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianName(autopsyPerformance, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleClassCode(autopsyPerformance, diagnostics, context);
+    if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician(autopsyPerformance, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceAutopsyPerformerTypeCode(autopsyPerformance, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyPerformance_validateAutopsyPerformanceAutopsyPerformerAutopsyPerformerRole(autopsyPerformance, diagnostics, context);
     return result;
@@ -4569,6 +4068,17 @@ public class VsdrValidator extends EObjectValidator
   }
 
   /**
+   * Validates the validateAutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician constraint of '<em>Autopsy Performance</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateAutopsyPerformance_validateAutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician(AutopsyPerformance autopsyPerformance, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return autopsyPerformance.validateAutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician(diagnostics, context);
+  }
+
+  /**
    * Validates the validateAutopsyPerformanceAutopsyPerformerTypeCode constraint of '<em>Autopsy Performance</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -4607,10 +4117,11 @@ public class VsdrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(autopsyResults, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyResults_validateAutopsyResultsTemplateId(autopsyResults, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyResults_validateAutopsyResultsClassCode(autopsyResults, diagnostics, context);
+    if (result || diagnostics != null) result &= validateAutopsyResults_validateAutopsyResultsMoodCode(autopsyResults, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyResults_validateAutopsyResultsCodeP(autopsyResults, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyResults_validateAutopsyResultsCode(autopsyResults, diagnostics, context);
-    if (result || diagnostics != null) result &= validateAutopsyResults_validateAutopsyResultsMoodCode(autopsyResults, diagnostics, context);
     if (result || diagnostics != null) result &= validateAutopsyResults_validateAutopsyResultsValue(autopsyResults, diagnostics, context);
+    if (result || diagnostics != null) result &= validateAutopsyResults_validateAutopsyResultsAutopsyReport(autopsyResults, diagnostics, context);
     return result;
   }
 
@@ -4681,6 +4192,17 @@ public class VsdrValidator extends EObjectValidator
   }
 
   /**
+   * Validates the validateAutopsyResultsAutopsyReport constraint of '<em>Autopsy Results</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateAutopsyResults_validateAutopsyResultsAutopsyReport(AutopsyResults autopsyResults, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return autopsyResults.validateAutopsyResultsAutopsyReport(diagnostics, context);
+  }
+
+  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -4697,9 +4219,9 @@ public class VsdrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(coronerReferral, diagnostics, context);
     if (result || diagnostics != null) result &= validateCoronerReferral_validateCoronerReferralTemplateId(coronerReferral, diagnostics, context);
     if (result || diagnostics != null) result &= validateCoronerReferral_validateCoronerReferralClassCode(coronerReferral, diagnostics, context);
+    if (result || diagnostics != null) result &= validateCoronerReferral_validateCoronerReferralMoodCode(coronerReferral, diagnostics, context);
     if (result || diagnostics != null) result &= validateCoronerReferral_validateCoronerReferralCodeP(coronerReferral, diagnostics, context);
     if (result || diagnostics != null) result &= validateCoronerReferral_validateCoronerReferralCode(coronerReferral, diagnostics, context);
-    if (result || diagnostics != null) result &= validateCoronerReferral_validateCoronerReferralMoodCode(coronerReferral, diagnostics, context);
     if (result || diagnostics != null) result &= validateCoronerReferral_validateCoronerReferralValue(coronerReferral, diagnostics, context);
     return result;
   }
@@ -4787,11 +4309,11 @@ public class VsdrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(coronerCaseTransfer, diagnostics, context);
     if (result || diagnostics != null) result &= validateCoronerCaseTransfer_validateCoronerCaseTransferTemplateId(coronerCaseTransfer, diagnostics, context);
     if (result || diagnostics != null) result &= validateCoronerCaseTransfer_validateCoronerCaseTransferClassCode(coronerCaseTransfer, diagnostics, context);
+    if (result || diagnostics != null) result &= validateCoronerCaseTransfer_validateCoronerCaseTransferMoodCode(coronerCaseTransfer, diagnostics, context);
     if (result || diagnostics != null) result &= validateCoronerCaseTransfer_validateCoronerCaseTransferCodeP(coronerCaseTransfer, diagnostics, context);
     if (result || diagnostics != null) result &= validateCoronerCaseTransfer_validateCoronerCaseTransferCode(coronerCaseTransfer, diagnostics, context);
-    if (result || diagnostics != null) result &= validateCoronerCaseTransfer_validateCoronerCaseTransferId(coronerCaseTransfer, diagnostics, context);
-    if (result || diagnostics != null) result &= validateCoronerCaseTransfer_validateCoronerCaseTransferMoodCode(coronerCaseTransfer, diagnostics, context);
     if (result || diagnostics != null) result &= validateCoronerCaseTransfer_validateCoronerCaseTransferValue(coronerCaseTransfer, diagnostics, context);
+    if (result || diagnostics != null) result &= validateCoronerCaseTransfer_validateCoronerCaseTransferCoronerCase(coronerCaseTransfer, diagnostics, context);
     return result;
   }
 
@@ -4840,17 +4362,6 @@ public class VsdrValidator extends EObjectValidator
   }
 
   /**
-   * Validates the validateCoronerCaseTransferId constraint of '<em>Coroner Case Transfer</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateCoronerCaseTransfer_validateCoronerCaseTransferId(CoronerCaseTransfer coronerCaseTransfer, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return coronerCaseTransfer.validateCoronerCaseTransferId(diagnostics, context);
-  }
-
-  /**
    * Validates the validateCoronerCaseTransferMoodCode constraint of '<em>Coroner Case Transfer</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -4873,6 +4384,17 @@ public class VsdrValidator extends EObjectValidator
   }
 
   /**
+   * Validates the validateCoronerCaseTransferCoronerCase constraint of '<em>Coroner Case Transfer</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateCoronerCaseTransfer_validateCoronerCaseTransferCoronerCase(CoronerCaseTransfer coronerCaseTransfer, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return coronerCaseTransfer.validateCoronerCaseTransferCoronerCase(diagnostics, context);
+  }
+
+  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -4889,9 +4411,9 @@ public class VsdrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(deathLocationType, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathLocationType_validateDeathLocationTypeTemplateId(deathLocationType, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathLocationType_validateDeathLocationTypeClassCode(deathLocationType, diagnostics, context);
+    if (result || diagnostics != null) result &= validateDeathLocationType_validateDeathLocationTypeMoodCode(deathLocationType, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathLocationType_validateDeathLocationTypeCodeP(deathLocationType, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathLocationType_validateDeathLocationTypeCode(deathLocationType, diagnostics, context);
-    if (result || diagnostics != null) result &= validateDeathLocationType_validateDeathLocationTypeMoodCode(deathLocationType, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathLocationType_validateDeathLocationTypeValue(deathLocationType, diagnostics, context);
     if (result || diagnostics != null) result &= validateDeathLocationType_validateDeathLocationTypeValueP(deathLocationType, diagnostics, context);
     return result;
@@ -4972,6 +4494,204 @@ public class VsdrValidator extends EObjectValidator
   public boolean validateDeathLocationType_validateDeathLocationTypeValueP(DeathLocationType deathLocationType, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return deathLocationType.validateDeathLocationTypeValueP(diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    if (!validate_NoCircularContainment(pronouncingDeath, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePronouncingDeath_validatePronouncingDeathTemplateId(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePronouncingDeath_validatePronouncingDeathClassCode(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePronouncingDeath_validatePronouncingDeathMoodCode(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePronouncingDeath_validatePronouncingDeathCode(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePronouncingDeath_validatePronouncingDeathEffectiveTime(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePronouncingDeath_validatePronouncingDeathPronouncer(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRolePronouncingPartyClassCode(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRolePronouncingPartyDeterminerCode(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRolePronouncingPartyName(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRoleAddr(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRoleClassCode(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRoleId(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRolePronouncingParty(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePronouncingDeath_validatePronouncingDeathPronouncerTypeCode(pronouncingDeath, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRole(pronouncingDeath, diagnostics, context);
+    return result;
+  }
+
+  /**
+   * Validates the validatePronouncingDeathTemplateId constraint of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath_validatePronouncingDeathTemplateId(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return pronouncingDeath.validatePronouncingDeathTemplateId(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePronouncingDeathClassCode constraint of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath_validatePronouncingDeathClassCode(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return pronouncingDeath.validatePronouncingDeathClassCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePronouncingDeathMoodCode constraint of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath_validatePronouncingDeathMoodCode(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return pronouncingDeath.validatePronouncingDeathMoodCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePronouncingDeathCode constraint of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath_validatePronouncingDeathCode(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return pronouncingDeath.validatePronouncingDeathCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePronouncingDeathEffectiveTime constraint of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath_validatePronouncingDeathEffectiveTime(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return pronouncingDeath.validatePronouncingDeathEffectiveTime(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePronouncingDeathPronouncer constraint of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath_validatePronouncingDeathPronouncer(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return pronouncingDeath.validatePronouncingDeathPronouncer(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePronouncingDeathPronouncerPronouncerRolePronouncingPartyClassCode constraint of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRolePronouncingPartyClassCode(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return pronouncingDeath.validatePronouncingDeathPronouncerPronouncerRolePronouncingPartyClassCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePronouncingDeathPronouncerPronouncerRolePronouncingPartyDeterminerCode constraint of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRolePronouncingPartyDeterminerCode(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return pronouncingDeath.validatePronouncingDeathPronouncerPronouncerRolePronouncingPartyDeterminerCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePronouncingDeathPronouncerPronouncerRolePronouncingPartyName constraint of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRolePronouncingPartyName(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return pronouncingDeath.validatePronouncingDeathPronouncerPronouncerRolePronouncingPartyName(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePronouncingDeathPronouncerPronouncerRoleAddr constraint of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRoleAddr(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return pronouncingDeath.validatePronouncingDeathPronouncerPronouncerRoleAddr(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePronouncingDeathPronouncerPronouncerRoleClassCode constraint of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRoleClassCode(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return pronouncingDeath.validatePronouncingDeathPronouncerPronouncerRoleClassCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePronouncingDeathPronouncerPronouncerRoleId constraint of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRoleId(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return pronouncingDeath.validatePronouncingDeathPronouncerPronouncerRoleId(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePronouncingDeathPronouncerPronouncerRolePronouncingParty constraint of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRolePronouncingParty(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return pronouncingDeath.validatePronouncingDeathPronouncerPronouncerRolePronouncingParty(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePronouncingDeathPronouncerTypeCode constraint of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath_validatePronouncingDeathPronouncerTypeCode(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return pronouncingDeath.validatePronouncingDeathPronouncerTypeCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePronouncingDeathPronouncerPronouncerRole constraint of '<em>Pronouncing Death</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePronouncingDeath_validatePronouncingDeathPronouncerPronouncerRole(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return pronouncingDeath.validatePronouncingDeathPronouncerPronouncerRole(diagnostics, context);
   }
 
   /**
