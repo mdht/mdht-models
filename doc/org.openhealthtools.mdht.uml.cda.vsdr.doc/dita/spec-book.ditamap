@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
-<bookmap id="cdabook">
+<bookmap id="CDA_IG_DeathReportDec2013">
 	<booktitle>
-		<booklibrary>Reporting Death Information from a Clinical Setting to Vital Records</booklibrary>
-		<mainbooktitle>HL7 Public Health and Emergency Response WG</mainbooktitle>
-		<booktitlealt>Structured Documents Work Group</booktitlealt>
-		<booktitlealt><image href="images/HL7Logo.png"/></booktitlealt>
+		<booklibrary>Implementation Guide for CDA Release 2:</booklibrary>
+		<mainbooktitle>Reporting Death Information from the EHR to Vital Records, Release 1</mainbooktitle>
+		<booktitlealt id="image"><image href="images/hl7logo.gif"/></booktitlealt>
 		<booktitlealt>HL7 Draft Standard for Trial Use</booktitlealt>
 		<booktitlealt>Implementation guide: US Realm</booktitlealt>
-		<booktitlealt audience="developer">(Consolidated Developer Documentation)</booktitlealt>
+		<booktitlealt audience="developer">(Consolidated Developer Documentation)</booktitlealt>	
 	</booktitle>
 	<bookmeta>
 		<bookid><booknumber></booknumber>
 			<maintainer><organization>Health Level 7, MDHT</organization><person></person></maintainer>
 		</bookid>
 		<bookrights>
-			<copyrfirst><year>2012</year></copyrfirst>
-			<copyrlast><year>2012</year></copyrlast>
+			<copyrfirst><year>2013</year></copyrfirst>
+			<copyrlast><year>2013</year></copyrlast>
 			<bookowner>
 				<organization></organization>
 			</bookowner>

@@ -16,17 +16,16 @@
 <row><entry>Description</entry><entry>The value set contains the entire set of codes from the Transportation Relationships coding system.
 </entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>D</entry><entry>Driver or Operator</entry><entry></entry><entry></entry></row>
-<row><entry>PA</entry><entry>Passenger</entry><entry></entry><entry></entry></row>
-<row><entry>PE</entry><entry>Pedestrian</entry><entry></entry><entry></entry></row>
+<row><entry>D</entry><entry></entry><entry>Driver or Operator</entry></row>
+<row><entry>PA</entry><entry></entry><entry>Passenger</entry></row>
+<row><entry>PE</entry><entry></entry><entry>Pedestrian</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

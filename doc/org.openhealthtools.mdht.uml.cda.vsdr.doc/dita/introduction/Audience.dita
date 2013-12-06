@@ -6,7 +6,7 @@
 	<body>
 		<p>This guide is designed for use by analysts and developers who require
 		 guidance on how best to use the HL7 Clinical Document Architecture for 
-		 providing death related information..  Users of this guide must be familiar 
+		 providing death related information.  Users of this guide must be familiar 
 		 with the Clinical Document Architecture, and with the HL7 Version 3 models
 		 that it relies on.  This guide is 
 		 not intended to be a tutorial on that subject.</p>

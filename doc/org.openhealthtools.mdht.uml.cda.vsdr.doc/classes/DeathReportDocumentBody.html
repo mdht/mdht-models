@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
 <meta name="DC.rights.owner" content="(C) Copyright 2005"/>
 <meta name="DC.Type" content="topic"/>
 <meta name="DC.Title" content="Death Report Document Body"/>
-<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.10.20.24.1.2]"/>
-<meta name="description" content="[Section: templateId 2.16.840.1.113883.10.20.24.1.2]"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.10.20.26.1.1]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.10.20.26.1.1]"/>
 <meta name="DC.Coverage" content="Section"/>
 <meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
 <meta name="DC.Format" content="XHTML"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Death Report Document Body</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>For Discussion and Demonstration Only</b> The normative content for these specifications
 	may be found on the HL7 and CDC NCHS web sites.</p>
@@ -28,7 +28,7 @@
 
 
 
-<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.10.20.24.1.2</tt>]</p>
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.10.20.26.1.1</tt>]</p>
 
 
 <div class="section">
@@ -37,91 +37,114 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
-<ul class="ul"><li class="li">A code to indicate this is the section containing death reporting information.</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.26.1.1"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code to indicate this is the section containing death reporting information.</em></p>
+</div>
+</li>
 </ul>
 </li>
 
 <li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
-<ul class="ul"><li class="li">Contains, as text entries that can be rendered using a browser, the content of the structured information from the entries within the section.</li>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Contains, as text entries that can be rendered using a browser, the content of the structured information from the entries within the section.</em></p>
+</div>
+</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">time of Death</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="TimeOfDeath.html" title="[Observation: templateId 2.16.840.1.113883.10.20.24.1.3]">Time of Death</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.24.1.3</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="DateAndTimeOfDeath.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.1.13]">Date and Time of Death</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.1.13</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">location of Death</strong></tt>
-<ul class="ul"><li class="li">The report is expected to capture information about the physical location of death, either as an address or as a description.</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The report is expected to capture information about the physical location of death, either as an address or as a description.</em></p>
+</div>
+</li>
 </ul>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="LocationOfDeath.html" title="[Observation: templateId 2.16.840.1.113883.10.20.24.1.4]">Location of Death</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.24.1.4</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="LocationOfDeath.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.1.10]">Location of Death</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.1.10</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">death Certification</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="DeathCertification.html" title="[Observation: templateId 2.16.840.1.113883.10.20.24.1.5]">Death Certification</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.24.1.5</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="CertifyingDeath.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.1.7]">Certifying Death</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.1.7</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manner of Death</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="MannerOfDeath.html" title="[Observation: templateId 2.16.840.1.113883.10.20.24.1.7]">Manner of Death</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.24.1.7</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MannerOfDeath.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.1.11]">Manner of Death</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.1.11</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">pregnancy Status</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Note, the entry is required if the person is female and in the age range 5 to 75 years.   In other cases, e.g., male decedent, the nullFlavor "NA", should be provided.</em></p>
+</div>
+</li>
+</ul>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="PregnancyStatus.html" title="[Observation: templateId 2.16.840.1.113883.10.20.24.1.8]">Pregnancy Status</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.24.1.8</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PregnancyStatus.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.1.12]">Pregnancy Status</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.1.12</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">tobacco Use</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="TobaccoUse.html" title="[Observation: templateId 2.16.840.1.113883.10.20.24.1.9]">Tobacco Use</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.24.1.9</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="TobaccoUse.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.1.14]">Tobacco Use</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.1.14</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">injury</strong></tt>
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="Injury.html" title="[Organizer: templateId 2.16.840.1.113883.10.20.24.1.10]">Injury</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.24.1.10</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="Injury.html" title="[Organizer: templateId 2.16.840.1.113883.10.20.26.1.9]">Injury</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.1.9</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">cause of Death</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="DeathCausalInformation.html" title="[Organizer: templateId 2.16.840.1.113883.10.20.24.1.6]">Death Causal Information</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.24.1.6</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="DeathCausalInformation.html" title="[Organizer: templateId 2.16.840.1.113883.10.20.26.1.6]">Death Causal Information</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.1.6</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">autopsy Performance</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="AutopsyPerformance.html" title="[Observation: templateId 2.16.840.1.113883.10.20.24.1.11]">Autopsy Performance</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.24.1.11</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AutopsyPerformance.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.1.2]">Autopsy Performance</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.1.2</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">autopsy Results</strong></tt>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="AutopsyResults.html" title="[Observation: templateId 2.16.840.1.113883.10.20.24.1.13]">Autopsy Results</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.24.1.13</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AutopsyResults.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.1.3]">Autopsy Results</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.1.3</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">coroner Referral</strong></tt>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="CoronerReferral.html" title="[Observation: templateId 2.16.840.1.113883.10.20.24.1.14]">Coroner Referral</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.24.1.14</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="CoronerReferral.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.1.5]">Coroner Referral</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.1.5</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">coroner Case Transfer</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="CoronerCaseTransfer.html" title="[Observation: templateId 2.16.840.1.113883.10.20.24.1.12]">Coroner Case Transfer</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.24.1.12</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="CoronerCaseTransfer.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.1.4]">Coroner Case Transfer</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.1.4</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">deathLocationType</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="DeathLocationType.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.1.8]">Death LocationType</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.1.8</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PronouncingDeath.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.1.15]">Pronouncing Death</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.1.15</tt>)</li>
+</ol>
 </li>
 
 </ol>
@@ -138,155 +161,149 @@
 
 
 
-<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.24.1.2"/&gt;
-  &lt;id root="1600303765"/&gt;
+<pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.26.1.1"/&gt;
+  &lt;id root="MDHT" extension="1171305826"/&gt;
   &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-  &lt;title/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;entry&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.24.1.3"/&gt;
-      &lt;id root="1239735956"/&gt;
-      &lt;code code="31211-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Date of Death"/&gt;
+    &lt;observation/&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation/&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation/&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation/&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation classCode="OBS"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.26.1.12"/&gt;
+      &lt;id root="MDHT" extension="946945791"/&gt;
+      &lt;code code="69442-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Timing of recent pregancy related to death"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/observation&gt;
   &lt;/entry&gt;
   &lt;entry&gt;
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.24.1.4"/&gt;
-      &lt;id root="983480706"/&gt;
-      &lt;code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of Death"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.26.1.14"/&gt;
+      &lt;id root="MDHT" extension="1224422446"/&gt;
+      &lt;code code="69443-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Tobacco Use"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.24.1.5"/&gt;
-      &lt;id root="252712524"/&gt;
-      &lt;code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Death Certified"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.24.1.7"/&gt;
-      &lt;id root="344139815"/&gt;
-      &lt;code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Manner of Death"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.24.1.8"/&gt;
-      &lt;id root="1658888433"/&gt;
-      &lt;code code="11449-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pregnancy Status"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.24.1.9"/&gt;
-      &lt;id root="644667311"/&gt;
-      &lt;code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Tobacco Use"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/observation&gt;
   &lt;/entry&gt;
   &lt;entry&gt;
     &lt;organizer classCode="CLUSTER" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.24.1.10"/&gt;
-      &lt;id root="278283815"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.26.1.9"/&gt;
+      &lt;id root="MDHT" extension="1410419243"/&gt;
       &lt;code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury Cluster"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
       &lt;/effectiveTime&gt;
+      &lt;component typeCode="COMP"&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;code code="11374-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury incident description"/&gt;
+        &lt;/observation&gt;
+      &lt;/component&gt;
+      &lt;component typeCode="COMP"&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;code code="69444-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Did death result from injury at work"/&gt;
+        &lt;/observation&gt;
+      &lt;/component&gt;
+      &lt;component typeCode="COMP"&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;code code="69448-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury leading to death associated with transportation event"/&gt;
+        &lt;/observation&gt;
+      &lt;/component&gt;
+      &lt;component typeCode="COMP"&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;code code="69451-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Transportation role of decedent"/&gt;
+        &lt;/observation&gt;
+      &lt;/component&gt;
     &lt;/organizer&gt;
   &lt;/entry&gt;
   &lt;entry&gt;
     &lt;organizer classCode="CLUSTER" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.24.1.6"/&gt;
-      &lt;id root="1576687090"/&gt;
-      &lt;code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause Of Death Cluster"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.26.1.6"/&gt;
+      &lt;id root="MDHT" extension="1611111556"/&gt;
+      &lt;code code="69453-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause Of Death"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
       &lt;/effectiveTime&gt;
+      &lt;component typeCode="COMP"&gt;
+        &lt;sequenceNumber value="1"/&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;code code="21984-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause of Death"/&gt;
+        &lt;/observation&gt;
+      &lt;/component&gt;
+      &lt;component typeCode="COMP"&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;code code="69441-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other Significant Condition"/&gt;
+        &lt;/observation&gt;
+      &lt;/component&gt;
     &lt;/organizer&gt;
   &lt;/entry&gt;
   &lt;entry&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.24.1.11"/&gt;
-      &lt;id root="153267671"/&gt;
+    &lt;observation classCode="OBS"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.26.1.2"/&gt;
+      &lt;id root="MDHT" extension="529162223"/&gt;
       &lt;code code="21986-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy Status"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
       &lt;/effectiveTime&gt;
+      &lt;performer typeCode="PRF"&gt;
+        &lt;assignedEntity classCode="ASSIGNED"/&gt;
+      &lt;/performer&gt;
     &lt;/observation&gt;
   &lt;/entry&gt;
   &lt;entry&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.24.1.13"/&gt;
-      &lt;id root="66587451"/&gt;
-      &lt;code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy Result Availability"/&gt;
+    &lt;observation classCode="OBS"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.26.1.3"/&gt;
+      &lt;id root="MDHT" extension="405081341"/&gt;
+      &lt;code code="69436-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy results available"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/observation&gt;
   &lt;/entry&gt;
   &lt;entry&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.24.1.14"/&gt;
-      &lt;id root="2086887975"/&gt;
-      &lt;code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Coroner Referral Reason"/&gt;
+    &lt;observation classCode="OBS"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.26.1.5"/&gt;
+      &lt;id root="MDHT" extension="1538389362"/&gt;
+      &lt;code code="69438-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Coroner Referral Reason"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/observation&gt;
   &lt;/entry&gt;
   &lt;entry&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.24.1.12"/&gt;
-      &lt;id root="576153933"/&gt;
+    &lt;observation classCode="OBS"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.26.1.4"/&gt;
+      &lt;id root="MDHT" extension="308450280"/&gt;
       &lt;code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Coroner Assignment"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/observation&gt;
   &lt;/entry&gt;
   &lt;entry&gt;
-    &lt;observation&gt;
-      &lt;id root="428509918"/&gt;
-      &lt;code code="525920876"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
+    &lt;observation/&gt;
   &lt;/entry&gt;
 &lt;/section&gt;</pre>
 

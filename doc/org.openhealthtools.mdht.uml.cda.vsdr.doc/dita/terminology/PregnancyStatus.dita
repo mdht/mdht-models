@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Pregnancy Status</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.6003"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Pregnancy Status - 2.16.840.1.114222.4.11.6003</entry></row>
+<row><entry>Code System</entry><entry>PHIN VS (CDC Local Coding System) - 2.16.840.1.114222.4.5.274</entry></row>
+<row><entry>Description</entry><entry>The value set includes all the values from the Prenancy Statuses coding system.
+</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>PS1</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Not pregnant within the past year</entry></row>
+<row><entry>PS2</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Pregnant at the time of death</entry></row>
+<row><entry>PS3</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Not pregnant, but pregnant within 42 days of death</entry></row>
+<row><entry>PS4</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Not pregnant, but pregnant 43 days to 1 year before death</entry></row>
+<row><entry>PS9</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Unknown if pregnant within the past year</entry></row>
+<row><entry>PS8</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Not Applicable: Computer Generated</entry></row>
+<row><entry>NOC</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Not on Certificate</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

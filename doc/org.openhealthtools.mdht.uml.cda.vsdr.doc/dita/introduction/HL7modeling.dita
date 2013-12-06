@@ -17,8 +17,7 @@
        information is captured in a specific way.  For example, a "Person"", playing the role of "Assigned Entity", participates
    	   in the document as its "Author". In each case, the relevant information is spread across three implementation guide elements: there
    	   is a participation, a role, and an entity.  In some cases, the names are very similar, so that it looks as if information is 
-   	   being repeated.
-    template. </p>
+   	   being repeated. </p>
     </body>
 </topic>
 

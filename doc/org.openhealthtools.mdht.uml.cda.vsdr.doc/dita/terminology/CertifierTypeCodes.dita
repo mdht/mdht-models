@@ -17,20 +17,19 @@
 <row><entry>Description</entry><entry>The value set collects all the codes defined within the Certifier Types coding system.
 </entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>C</entry><entry>Coroner</entry><entry>Certifier Types</entry><entry></entry></row>
-<row><entry>CA</entry><entry>County Attorney</entry><entry>Certifier Types</entry><entry></entry></row>
-<row><entry>ME</entry><entry>Medical Examiner</entry><entry>Certifier Types</entry><entry></entry></row>
-<row><entry>NP</entry><entry>Nurse Practitioner</entry><entry>Certifier Types</entry><entry></entry></row>
-<row><entry>PHY</entry><entry>Physician</entry><entry>Certifier Types</entry><entry></entry></row>
-<row><entry>PA</entry><entry>Physician Assistant</entry><entry>Certifier Types</entry><entry></entry></row>
+<row><entry>C</entry><entry>Certifier Types</entry><entry>Coroner</entry></row>
+<row><entry>CA</entry><entry>Certifier Types</entry><entry>County Attorney</entry></row>
+<row><entry>ME</entry><entry>Certifier Types</entry><entry>Medical Examiner</entry></row>
+<row><entry>NP</entry><entry>Certifier Types</entry><entry>Nurse Practitioner</entry></row>
+<row><entry>PHY</entry><entry>Certifier Types</entry><entry>Physician</entry></row>
+<row><entry>PA</entry><entry>Certifier Types</entry><entry>Physician Assistant</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
