@@ -17,7 +17,7 @@
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.42"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:183)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="DEF" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:187)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:187)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@negationInd</b></tt> (CONF:188)
 <ul><li><p><lines><i>Value the negation indicator as true if the mother DID receive prenatal care.</i></lines></p></li></ul></li>
@@ -31,7 +31,7 @@
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:183)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="DEF" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:187)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:187)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@negationInd</b></tt> (CONF:188)
 <ul><li><p><lines><i>Value the negation indicator as true if the mother DID receive prenatal care.</i></lines></p></li></ul></li>
@@ -51,8 +51,8 @@
 <row><entry>pre-Natal Care</entry><entry>pre-Natal Care</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Prenatal Care</entry><entry>CONF:42</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="323063178"/>
-  <code code="1025268363"/>
+  <id root="MDHT" extension="498375829"/>
+  <code code="770349032"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>

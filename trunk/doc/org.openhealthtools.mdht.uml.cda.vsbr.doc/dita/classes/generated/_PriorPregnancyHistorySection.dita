@@ -83,8 +83,8 @@
 <row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:371</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1873310855"/>
-  <code code="1551890339"/>
+  <id root="MDHT" extension="445454640"/>
+  <code code="662776738"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
@@ -92,8 +92,8 @@
   </entry>
   <entry>
     <observation>
-      <id root="MDHT" extension="1135261161"/>
-      <code code="478344062"/>
+      <id root="MDHT" extension="550051513"/>
+      <code code="1799307322"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>
@@ -109,8 +109,8 @@
   </entry>
   <entry>
     <observation>
-      <id root="MDHT" extension="485056691"/>
-      <code code="1539548536"/>
+      <id root="MDHT" extension="79532717"/>
+      <code code="1933009308"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>

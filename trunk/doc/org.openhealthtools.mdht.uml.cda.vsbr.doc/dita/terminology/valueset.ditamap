@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map title="Value Sets">
-<topicref href="BirthAttendantTitles.dita" type="topic" />
-<topicref href="BirthOrDeliveryLocation.dita" type="topic" />
-<topicref href="CertifierTitles.dita" type="topic" />
-<topicref href="DeliveryPaymentSources.dita" type="topic" />
-<topicref href="DeliveryRoutes.dita" type="topic" />
-<topicref href="FetalDeathTimePoints.dita" type="topic" />
-<topicref href="FetalPresentations.dita" type="topic" />
-<topicref href="InfectionsPresentTreatedFetalDeath.dita" type="topic" />
-<topicref href="InfectionsPresentTreatedLiveBirth.dita" type="topic" />
-<topicref href="KaryotypeDownSyndrome.dita" type="topic" />
-<topicref href="KaryotypeSuspectedChromosomalDisorder.dita" type="topic" />
-<topicref href="LaborAndDeliveryCharacteristics.dita" type="topic" />
-<topicref href="MaternalMorbiditiy.dita" type="topic" />
-<topicref href="MaternalVitalSigns.dita" type="topic" />
-<topicref href="NewbornAbnormalConditions.dita" type="topic" />
-<topicref href="NewbornAssessments.dita" type="topic" />
-<topicref href="NewbornCongenitalAnomalies.dita" type="topic" />
-<topicref href="NewbornVitalSigns.dita" type="topic" />
-<topicref href="ObstetricProcedures.dita" type="topic" />
-<topicref href="OnsetLabor.dita" type="topic" />
-<topicref href="PregnancyRiskFactors.dita" type="topic" />
-<topicref href="SourceOfPaymentTypology.dita" type="topic" />
+<topicref href="BirthAndFetalDeathFinancialClassNCHS.dita" type="topic" />
+<topicref href="BirthAttendantTitlesNCHS.dita" type="topic" />
+<topicref href="BirthDeliveryLocationNCHS.dita" type="topic" />
+<topicref href="DeliveryRoutesNCHS.dita" type="topic" />
+<topicref href="FetalDeathTimePointsNCHS.dita" type="topic" />
+<topicref href="FetalPresentationsNCHS.dita" type="topic" />
+<topicref href="InfectionsPresentTreatedFetalDeathNCHS.dita" type="topic" />
+<topicref href="InfectionsPresentTreatedLiveBirthNCHS.dita" type="topic" />
+<topicref href="PregnancyRiskFactorNCHS.dita" type="topic" />
 </map>

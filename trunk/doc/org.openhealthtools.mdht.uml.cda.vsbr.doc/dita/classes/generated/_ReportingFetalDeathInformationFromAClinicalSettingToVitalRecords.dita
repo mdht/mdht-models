@@ -69,7 +69,7 @@ information.  Within the II data type, use the root to record the identifying OI
 <li>Contains exactly one [1..1] <xref href="../PriorPregnancyHistorySection.dita">Prior Pregnancy History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.12</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../HistoryOfInfectionFetalDeathSection.dita">History of Infection - Fetal Death Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.5</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../HistoryOfInfectionFetalDeathSection.dita">History of Infection - Fetal Death Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.48</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:155)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LaborAndDeliverySection.dita">Labor and Delivery Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.8</tt>)</li></ol></li>
@@ -117,7 +117,7 @@ information.  Within the II data type, use the root to record the identifying OI
 <li>Contains exactly one [1..1] <xref href="../PriorPregnancyHistorySection.dita">Prior Pregnancy History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.12</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../HistoryOfInfectionFetalDeathSection.dita">History of Infection - Fetal Death Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.5</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../HistoryOfInfectionFetalDeathSection.dita">History of Infection - Fetal Death Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.48</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:155)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LaborAndDeliverySection.dita">Labor and Delivery Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.8</tt>)</li></ol></li>
@@ -148,22 +148,22 @@ information.  Within the II data type, use the root to record the identifying OI
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <realmCode code="Code forrealmCode"/>
   <typeId root="2.16.840.1.113883.1.3"/>
-  <id root="MDHT" extension="604191042"/>
-  <code code="1242248925"/>
+  <id root="MDHT" extension="1050148809"/>
+  <code code="160375028"/>
   <title>TEXT FOR TITLE</title>
   <effectiveTime/>
-  <confidentialityCode code="332673482"/>
+  <confidentialityCode code="714923338"/>
   <languageCode code="Code forlanguageCode"/>
   <recordTarget typeCode="RCT">
     <patientRole classCode="PAT">
-      <id root="MDHT" extension="1759758898"/>
+      <id root="MDHT" extension="420523291"/>
       <addr/>
     </patientRole>
   </recordTarget>
   <author typeCode="AUT">
     <time/>
     <assignedAuthor classCode="ASSIGNED">
-      <id root="MDHT" extension="104169390"/>
+      <id root="MDHT" extension="502455726"/>
     </assignedAuthor>
   </author>
   <custodian typeCode="CST">
@@ -180,10 +180,10 @@ information.  Within the II data type, use the root to record the identifying OI
         <section>
           <realmCode code="Code forrealmCode"/>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <id root="MDHT" extension="1496293877"/>
-          <code code="1375743993"/>
+          <id root="MDHT" extension="729970142"/>
+          <code code="1747715159"/>
           <title>TEXT FOR TITLE</title>
-          <confidentialityCode code="1074525847"/>
+          <confidentialityCode code="422096517"/>
           <languageCode code="Code forlanguageCode"/>
           <subject typeCode="SBJ">
             <relatedSubject classCode="PRS"/>
@@ -192,8 +192,8 @@ information.  Within the II data type, use the root to record the identifying OI
             <observation>
               <realmCode code="Code forrealmCode"/>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <id root="MDHT" extension="1874086392"/>
-              <code code="87283818"/>
+              <id root="MDHT" extension="926678270"/>
+              <code code="1854042626"/>
               <effectiveTime>
                 <low value="2013"/>
                 <high value="2013"/>
@@ -208,48 +208,8 @@ information.  Within the II data type, use the root to record the identifying OI
             <observation>
               <realmCode code="Code forrealmCode"/>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <id root="MDHT" extension="1598897748"/>
-              <code code="217283959"/>
-              <effectiveTime>
-                <low value="2013"/>
-                <high value="2013"/>
-              </effectiveTime>
-              <languageCode code="Code forlanguageCode"/>
-              <entryRelationship/>
-            </observation>
-          </entry>
-          <entry>
-            <observation>
-              <realmCode code="Code forrealmCode"/>
-              <typeId root="2.16.840.1.113883.1.3"/>
-              <id root="MDHT" extension="1236861513"/>
-              <code code="326068288"/>
-              <effectiveTime>
-                <low value="2013"/>
-                <high value="2013"/>
-              </effectiveTime>
-              <languageCode code="Code forlanguageCode"/>
-            </observation>
-          </entry>
-          <entry>
-            <observation>
-              <realmCode code="Code forrealmCode"/>
-              <typeId root="2.16.840.1.113883.1.3"/>
-              <id root="MDHT" extension="521397939"/>
-              <code code="1105302881"/>
-              <effectiveTime>
-                <low value="2013"/>
-                <high value="2013"/>
-              </effectiveTime>
-              <languageCode code="Code forlanguageCode"/>
-            </observation>
-          </entry>
-          <entry>
-            <observation>
-              <realmCode code="Code forrealmCode"/>
-              <typeId root="2.16.840.1.113883.1.3"/>
-              <id root="MDHT" extension="1145467843"/>
-              <code code="2033515882"/>
+              <id root="MDHT" extension="873084544"/>
+              <code code="435877263"/>
               <effectiveTime>
                 <low value="2013"/>
                 <high value="2013"/>
@@ -263,13 +223,55 @@ information.  Within the II data type, use the root to record the identifying OI
             <observation>
               <realmCode code="Code forrealmCode"/>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <id root="MDHT" extension="1775539280"/>
-              <code code="253437277"/>
+              <id root="MDHT" extension="991020859"/>
+              <code code="1628577057"/>
               <effectiveTime>
                 <low value="2013"/>
                 <high value="2013"/>
               </effectiveTime>
               <languageCode code="Code forlanguageCode"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation>
+              <realmCode code="Code forrealmCode"/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <id root="MDHT" extension="134601153"/>
+              <code code="949068204"/>
+              <effectiveTime>
+                <low value="2013"/>
+                <high value="2013"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation>
+              <realmCode code="Code forrealmCode"/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <id root="MDHT" extension="2006432682"/>
+              <code code="209829253"/>
+              <effectiveTime>
+                <low value="2013"/>
+                <high value="2013"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+              <entryRelationship typeCode="COMP"/>
+              <entryRelationship typeCode="COMP"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation>
+              <realmCode code="Code forrealmCode"/>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <id root="MDHT" extension="1681854430"/>
+              <code code="493195039"/>
+              <effectiveTime>
+                <low value="2013"/>
+                <high value="2013"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+              <participant typeCode="LOC"/>
             </observation>
           </entry>
         </section>
@@ -281,10 +283,10 @@ information.  Within the II data type, use the root to record the identifying OI
         <section>
           <realmCode code="Code forrealmCode"/>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <id root="MDHT" extension="2082204610"/>
-          <code code="849328941"/>
+          <id root="MDHT" extension="2072825744"/>
+          <code code="666129953"/>
           <title>TEXT FOR TITLE</title>
-          <confidentialityCode code="896990263"/>
+          <confidentialityCode code="895218110"/>
           <languageCode code="Code forlanguageCode"/>
           <entry>
             <observation/>
@@ -293,8 +295,8 @@ information.  Within the II data type, use the root to record the identifying OI
             <observation>
               <realmCode code="Code forrealmCode"/>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <id root="MDHT" extension="802684317"/>
-              <code code="402266214"/>
+              <id root="MDHT" extension="1335655261"/>
+              <code code="293058667"/>
               <effectiveTime>
                 <low value="2013"/>
                 <high value="2013"/>
@@ -312,8 +314,8 @@ information.  Within the II data type, use the root to record the identifying OI
             <observation>
               <realmCode code="Code forrealmCode"/>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <id root="MDHT" extension="1718538128"/>
-              <code code="1172859453"/>
+              <id root="MDHT" extension="2029107594"/>
+              <code code="537032492"/>
               <effectiveTime>
                 <low value="2013"/>
                 <high value="2013"/>

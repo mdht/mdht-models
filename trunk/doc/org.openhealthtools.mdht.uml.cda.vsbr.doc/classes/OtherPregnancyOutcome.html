@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Other Pregnancy Outcome"/>
+<meta name="abstract" content="[Observation: templateId 2.16.840.1.113883.10.20.26.40]"/>
+<meta name="description" content="[Observation: templateId 2.16.840.1.113883.10.20.26.40]"/>
+<meta name="DC.Coverage" content="Observation"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Other Pregnancy Outcome</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Other Pregnancy Outcome</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.113883.10.20.26.40</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i">Total number of other pregnancy outcomes that did not result in a live birth.  Includes pregnancy losses of any gestation age.  For multiple deliveries include all previous pregnancy losses before this infant in this pregnancy and in previous pregnancies.</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.26.40"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:219)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:221)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:220)<tt class="ph tt"><strong class="ph b">/@code</strong>="69043-8" </tt><em class="ph i">Other pregnancy outcomes</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code to indicate the observation contains information on the total number of other pregnancy outcomes that did not result in a live birth.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:223)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The date that the last pregnancy that did not result in a live birth ended.    The effective time for the other pregnancy outcomes is the interval between the first such outcome and the latest.  Value the high property of the interval data type.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type INT (CONF:222)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Total number of other pregnancy outcomes that did not result in a live birth.  The entry is a non-negative integer within the range from zero to 30.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Other Pregnancy Outcome example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.26.40"/&gt;
+  &lt;id root="MDHT" extension="1893304691"/&gt;
+  &lt;code code="69043-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other pregnancy outcomes"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2013"/&gt;
+    &lt;high value="2013"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;value xsi:type="INT" value="1"/&gt;
+&lt;/observation&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

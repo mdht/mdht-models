@@ -41,8 +41,8 @@
 <row><entry>last Menstrual Period Date</entry><entry>last Menstrual Period Date</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Last Menstrual Period Date</entry><entry>CONF:373</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="443328300"/>
-  <code code="862237267"/>
+  <id root="MDHT" extension="940971773"/>
+  <code code="2106487119"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>

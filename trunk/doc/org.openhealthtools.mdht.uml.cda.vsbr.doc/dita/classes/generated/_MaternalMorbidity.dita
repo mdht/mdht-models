@@ -41,13 +41,13 @@
 <row><entry>maternal Morbidities</entry><entry>maternal Morbidities</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Maternal Morbidity</entry><entry>CONF:98</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="787708515"/>
-  <code code="140788228"/>
+  <id root="MDHT" extension="219567444"/>
+  <code code="260389947"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>
   </effectiveTime>
-  <value xsi:type="CD" code="631207212"/>
+  <value xsi:type="CD" code="824793751"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

@@ -46,8 +46,8 @@
 <row><entry>participant</entry><entry>participant</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>transferSource</entry><entry>CONF:424</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="468090094"/>
-  <code code="862628497"/>
+  <id root="MDHT" extension="1645250760"/>
+  <code code="173431206"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>

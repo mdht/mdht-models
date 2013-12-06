@@ -41,8 +41,8 @@
 <row><entry>infantBreastfed</entry><entry>infantBreastfed</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Infant Breastfed</entry><entry>CONF:63</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1767180062"/>
-  <code code="2072798317"/>
+  <id root="MDHT" extension="507651358"/>
+  <code code="57583024"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>

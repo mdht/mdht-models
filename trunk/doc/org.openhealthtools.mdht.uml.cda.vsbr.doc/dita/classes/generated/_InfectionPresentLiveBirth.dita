@@ -19,7 +19,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:237)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:235)<tt><b>/@code</b>="67188-3" </tt><i>Infection</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:235)<tt><b>/@code</b>="72519-2" </tt><i>InfeInfections present and or treated during this pregnancy for live birth</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records nature of the infection about which information is provided.  Note, for live birth reporting refer to the value set: Birth Reporting - Infections Present.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:238), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/InfectionsPresentTreatedLiveBirth.dita">Infections Present Treated - Live Birth</xref> 2.16.840.1.114222.4.11.6070</tt><b> STATIC</b> December 1, 2013
 <ul><li><p><lines><i>The content of the observation will be drawn from the appropriate value set: Birth Reporting - Infections Present, or Fetal Death Reporting - Infections persent.</i></lines></p></li></ul></li>
@@ -29,7 +29,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:237)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:235)<tt><b>/@code</b>="67188-3" </tt><i>Infection</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:235)<tt><b>/@code</b>="72519-2" </tt><i>InfeInfections present and or treated during this pregnancy for live birth</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records nature of the infection about which information is provided.  Note, for live birth reporting refer to the value set: Birth Reporting - Infections Present.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:238), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/InfectionsPresentTreatedLiveBirth.dita">Infections Present Treated - Live Birth</xref> 2.16.840.1.114222.4.11.6070</tt><b> STATIC</b> December 1, 2013
 <ul><li><p><lines><i>The content of the observation will be drawn from the appropriate value set: Birth Reporting - Infections Present, or Fetal Death Reporting - Infections persent.</i></lines></p></li></ul></li>
@@ -41,13 +41,13 @@
 <row><entry>infection Present - Live Birth</entry><entry>infection Present - Live Birth</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Infection Present - Live Birth</entry><entry></entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="966636373"/>
-  <code code="974399629"/>
+  <id root="MDHT" extension="1436844083"/>
+  <code code="825659723"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>
   </effectiveTime>
-  <value xsi:type="CD" code="236580504"/>
+  <value xsi:type="CD" code="1605839149"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

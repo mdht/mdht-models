@@ -19,7 +19,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:247)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:245)<tt><b>/@code</b>="7377-9" </tt><i>Risk factors in this pregnancy</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:245)<tt><b>/@code</b>="73775-9" </tt><i>Risk factors in this pregnancy</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - the nature of the risk factor about which information is provided.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:248), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PregnancyRiskFactors.dita">Pregnancy Risk Factors</xref> 2.16.840.1.114222.4.11.7126</tt><b> STATIC</b> December 1, 2013
 </li>
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:247)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:245)<tt><b>/@code</b>="7377-9" </tt><i>Risk factors in this pregnancy</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:245)<tt><b>/@code</b>="73775-9" </tt><i>Risk factors in this pregnancy</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - the nature of the risk factor about which information is provided.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:248), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PregnancyRiskFactors.dita">Pregnancy Risk Factors</xref> 2.16.840.1.114222.4.11.7126</tt><b> STATIC</b> December 1, 2013
 </li>
@@ -46,13 +46,13 @@
 <row><entry>risk Factors</entry><entry>risk Factors</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Pregnancy Risk Factor</entry><entry>CONF:99</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1970791808"/>
-  <code code="100785106"/>
+  <id root="MDHT" extension="658589322"/>
+  <code code="1373119186"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>
   </effectiveTime>
-  <value xsi:type="CD" code="1761173525"/>
+  <value xsi:type="CD" code="284458441"/>
   <entryRelationship typeCode="COMP">
     <observation classCode="OBS" moodCode="EVN">
       <code code="68497-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Previous cesarean deliveries"/>

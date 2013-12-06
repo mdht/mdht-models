@@ -49,8 +49,11 @@
          organize sections within this document, both to reflect the organization of the Facility Worksheets, and to correspond
          to the BFDR document. References to the corresponding IHE data structure will be provided where relevant.
                        </p>
+                       </body>
+         	<topic id="C-CDA">
+		<title>Relationship to C-CDA</title>              
                        
-                       <p><b>Relationship to C-CDA</b></p>
+                       <body>
            
            <p>We have also used HL7's consolidated CDA (C-CDA) as a point of reference for developing the templates used within
            this guide.  However, the focus of the reporting is rather different from that in the C-CDA documents: those provide an open
@@ -58,13 +61,30 @@
            birth and fetal death reporting address a constrained data set whose content is tailord to the specific needs of vital statistics.
            As a result, it was only possible to draw upon a few of the templates created for C-CDA.  The descriptions of individual templates
            touch on their relationship to C-CDA where appropriate.</p>
-
+          </body>
+           </topic>
+                            
+         	<topic id="Vocabulary">
+		<title>Standard Vocabulary</title>  
+<body>
 <p>This guide calls for specific vocabulary standards for managing live birth and fetal death reporting information.
   Use of standard vocabularies is important for a number of reasons.  Use of standard vocabularies allows broad
    distribution of healthcare information without the need for individual institutions to exchange master files
     for data such as test codes, result codes, etc.  Each institution maps its own local vocabularies to the
      standard code, allowing information to be shared broadly, rather than remaining isolated as a single island
       of information.</p>
+      </body>
+      </topic>
               
-		</body>
+                        
+         	<topic id="Schemas">
+		<title>Extending CDA Release 2</title>      
+		<body>   
+        <p>This Implementation Guide takes advantage of the extensions that have been defined to support the Consolidated CDA.  Using these extensions, for example, makes it possible to record the 
+        identifier for a newborn.  In order to take advantage of these features, it may be helpful to use the schemas, SDTC.xsd, CDA_SDTC.xsd, and POCD_MT000040_SDTC, that have been distributed as part
+        of the Consolidated CDA distribution.  It will also be necessary to declare the "sdtc" namespace that is used for this extension.</p> 
+       </body> 
+        </topic>    
+              
+		
 </topic>

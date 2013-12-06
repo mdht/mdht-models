@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -15,7 +15,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Scope</title>
 </head>
-<body id="topicId"><a name="topicId"><!-- --></a>
+<body id="topicId">
 <div>
 	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -24,9 +24,76 @@
 	<h1 class="title topictitle1">Scope</h1>
 
 	<div class="body">
-		<p class="p">TODO: scope of this implementation guide.
-		</p>
+		<p class="p">This specification covers the provision of live birth and fetal death reporting data to the applicable
+		 jurisdictional Vital Records Office.  The guide focuses on the use case describing the form and content of
+		  that portion of the record collected by electronic health record systems for transmission to state/jurisdictional vital
+		   record offices. The goal of the use
+		    case is to provide safe, reliable delivery of relevant clinical information to vital records. The use
+		    case does not cover the data that is reported by the mother, or in the case of fetal death, by the funeral
+		     director. The use case covers events that are recorded by a birthing facility in an EHR.  Planned or 
+		     unplanned home births are generally not recorded by the hospital unless the mother is taken there 
+		     immediately after birth for emergency medical care, and even in these cases, the home birth is usually 
+		     filed by the home birth attendant. This use case is not intended to cover reporting to national public health
+agencies such as NCHS." 
+         </p>
 
+         
+       
+      <p class="p">The following use case provides a common scenario for the recording of birth and fetal death events in
+       a birthing hospital.  For the birth record, prenatal care and pregnancy history information, such
+        as the mother’s last menstrual period (LMP), are obtained from the mother’s prenatal records which are
+         sent to the hospital by the prenatal care provider prior to the mother’s estimated delivery date. 
+         Information about the labor and delivery and the infant (e.g., a spontaneous vaginal delivery of a 
+         girl weighing 3,242 grams) is documented by the nurse in the hospital’s labor and delivery (L&amp;D) log. 
+         Information about the labor and delivery and the newborn to be collected for the birth record is 
+         also documented by the nurse in the Facility Worksheet for the Child’s Birth Certificate. The 
+         pediatrician documents the physical assessment in the newborn’s medical record and the nurse then 
+         completes the newborn information sections of the Facility Worksheet.</p>
+  
+         
+         <p class="p">The birth information specialist (BIS), the hospital staff person responsible for gathering and 
+         entering information for the birth certificate, checks the hospital’s information system for a list 
+         of all new births. The staff person prints a copy of the list and takes it to the L&amp;D unit where they pick up the 
+         Facility Worksheet completed by the nurse. The BIS then goes to the mother’s room and presents her 
+         with a packet of information and several forms to complete. One of the forms, called the Mother’s 
+         Worksheet for the Child’s Birth Certificate, collects important demographic information on the 
+         mother and father. The BIS helps the mother complete the Mother’s Worksheet. The BIS reviews the 
+         Facility Worksheet for completeness. If a section has not been completed, the L&amp;D log, 
+         mother’s prenatal care and other medical records are reviewed for the required information.  If necessary, the 
+       the prenatal care provider is called in order to supply more information. </p>
+
+         
+         <p class="p">The BIS may enter the information from the Mother’s and Facility worksheets into the State’s 
+         web-based Electronic Birth Registration System (EBRS). At the time of data entry, the EBRS performs 
+         field edits and cross-field edits that are pre-programmed into the system. Once the record “passes” 
+         all validations, the BIS submits the record to the state for registration. The birth record is then 
+         automatically transmitted over a secure Internet connection to the State Office of Vital Records.</p>
+
+         
+         <p class="p">The vital records registrar reviews a list of newly transmitted birth records received from birthing
+          facilities around his state. If there are records that have not passed all edits, the registrar contacts the hospital
+           and requests that they correct and retransmit the birth record. The hospital corrects the birth record
+            and retransmits. Once the birth record has passed all edits, the vital records registrar registers the
+             baby’s birth and the mother is provided with a certified copy of the birth certificate on request.</p>
+
+             
+             <p class="p">The process of collecting information at the hospital for the fetal death report is similar to that
+              for birth. The labor and delivery nurse enters information in the medical records and completes the
+               Facility Worksheet. The BIS is responsible for gathering and entering information into the Electronic
+                Fetal Death Registration System (EFDRS) for the fetal death report. The nurse first checks the hospital’s
+                 information system and learns about the mother’s loss.  The BIS obtains the completed Facility Worksheet
+                  from the nurse and helps the mother complete the Patient’s Worksheet. The BIS may also contact the
+                   prenatal care provider to obtain the Mother’s prenatal care information and the obstetrician to
+                    enter the cause of death in the system. </p>
+
+                    
+                    <p class="p">The hospital of birth will serve as the source for information drawn from the mother’s and infant’s electronic 
+                    medical record.  This data may be directly entered by the responsible person.  Data items may also be 
+                    extracted from the electronic record system used to support patient medical records.  In such cases,
+                     we expect the IHE (Interconnecting the Health Enterprise) specifications for Labor and Delivery
+                      Profiles to be useful.</p>
+
+                     
 	</div>
 
 <div class="related-links">

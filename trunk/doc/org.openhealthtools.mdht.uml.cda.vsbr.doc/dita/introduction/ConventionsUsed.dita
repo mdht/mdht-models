@@ -121,17 +121,5 @@
       </ul>
     </body>
   </topic>
-  <topic id="examples">
-    <title>XML Examples</title>
-    <body>
-      <p>XML samples appear in various figures in this document in a fixed-width font. Portions of the XML content may be omitted from the content for brevity, marked by an ellipsis (…) as shown in the example below.</p>
-      <fig>
-        <title>ClinicalDocument example</title>
-        <codeblock>&lt;ClinicalDocument xmlns=’urn:h17-org:v3’&gt;
-  ...
-&lt;/ClinicalDocument&gt;</codeblock>
-      </fig>
-      <p>XPath expressions are used in the narrative and conformance requirements to identify elements because they are familiar to many XML implementers.</p>
-    </body>
-  </topic>
+ 
 </topic>

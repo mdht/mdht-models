@@ -41,8 +41,8 @@
 <row><entry>estimate of Gestation</entry><entry>estimate of Gestation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Estimate of Gestation</entry><entry>CONF:377</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="894891664"/>
-  <code code="471121822"/>
+  <id root="MDHT" extension="395433975"/>
+  <code code="1322780543"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>
