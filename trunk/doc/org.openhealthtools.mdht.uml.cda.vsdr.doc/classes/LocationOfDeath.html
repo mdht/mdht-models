@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
 <meta name="DC.rights.owner" content="(C) Copyright 2005"/>
 <meta name="DC.Type" content="topic"/>
 <meta name="DC.Title" content="Location of Death"/>
-<meta name="abstract" content="[Observation: templateId 2.16.840.1.113883.10.20.24.1.4]"/>
-<meta name="description" content="[Observation: templateId 2.16.840.1.113883.10.20.24.1.4]"/>
+<meta name="abstract" content="[Observation: templateId 2.16.840.1.113883.10.20.26.1.10]"/>
+<meta name="description" content="[Observation: templateId 2.16.840.1.113883.10.20.26.1.10]"/>
 <meta name="DC.Coverage" content="Observation"/>
 <meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
 <meta name="DC.Format" content="XHTML"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Location of Death</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>For Discussion and Demonstration Only</b> The normative content for these specifications
 	may be found on the HL7 and CDC NCHS web sites.</p>
@@ -28,17 +28,22 @@
 
 
 
-<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.113883.10.20.24.1.4</tt>]</p>
+<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.113883.10.20.26.1.10</tt>]</p>
 
 
 <div class="section">
-<p class="p">This template contains information to document where the death occurred.</p>
+<div class="p"><p class="lines"><em class="ph i">This template contains information to document where the death occurred.</em></p>
+</div>
 
 </div>
 
 
 
 <ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.26.1.10"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
 </li>
 
@@ -49,12 +54,16 @@
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
-<ul class="ul"><li class="li">Information about the place where death occurred.  It is provided if no address can be.</li>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Information about the place where death occurred.  It is provided if no address can be.</em></p>
+</div>
+</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt>, where its data type is AD
-<ul class="ul"><li class="li">The mailing address for the place where the person died.  This attribute is collected if the person died at a home, a health facility, or other location with a postal address.</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type AD
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The mailing address for the place where the person died.  This attribute is collected if the person died at a home, a health facility, or other location with a postal address.</em></p>
+</div>
+</li>
 </ul>
 </li>
 
@@ -63,6 +72,86 @@
 
 <p class="p"> </p>
 
+<div class="section"><div class="p">
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"> <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d16733e148">vsdr::Location of Death</th>
+  </tr>
+  <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d16733e153">cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.10]/</th>
+  </tr>
+  <tr class="row"><th class="entry" align="left" valign="top" id="d16733e158">Name</th>
+<th class="entry" align="left" valign="top" id="d16733e160">XPath</th>
+<th class="entry" align="left" valign="top" id="d16733e162">Cardinality</th>
+<th class="entry" align="left" valign="top" id="d16733e164">Severity</th>
+<th class="entry" align="left" valign="top" id="d16733e166">Nullable</th>
+<th class="entry" align="left" valign="top" id="d16733e168">Data Type</th>
+<th class="entry" align="left" valign="top" id="d16733e170">Conformance</th>
+<th class="entry" align="left" valign="top" id="d16733e172">Value(s)</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e158 ">classCode</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e160 ">@classCode</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e162 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e164 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e166 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e168 ">ActClassObservation</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e170 "> </td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e172 "> ALRT</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e158 ">moodCode</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e160 ">@moodCode</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e162 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e164 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e166 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e168 ">x_ActMoodDocumentObservation</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e170 "> </td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e172 "> DEF</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e158 ">code</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e160 ">code</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e162 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e164 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e166 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e168 ">CD</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e170 "> </td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e172 ">LOINC 2.16.840.1.113883.6.1 LOINC TBD</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e158 ">text</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e160 ">text</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e162 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e164 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e166 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e168 ">ED</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e170 "> </td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e172 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e158 ">value</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e160 ">value</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e162 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e164 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e166 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e168 ">AD</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e170 "> </td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e172 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e158 ">location of Death</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e160 ">location of Death</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e162 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e164 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e166 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e168 ">Location of Death</td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e170 "> </td>
+<td class="entry" align="left" valign="top" headers="d16733e148 d16733e153 d16733e172 "> </td>
+</tr>
+ 
+</tbody>
+</table>
+</div>
+</div>
+</div>
 
 <p class="p"> </p>
 
@@ -72,15 +161,14 @@
 
 
 
-<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.24.1.4"/&gt;
-  &lt;id root="806086583"/&gt;
+<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.26.1.10"/&gt;
+  &lt;id root="MDHT" extension="60766606"/&gt;
   &lt;code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of Death"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2012"/&gt;
-    &lt;high value="2012"/&gt;
+    &lt;low value="2013"/&gt;
+    &lt;high value="2013"/&gt;
   &lt;/effectiveTime&gt;
   &lt;value xsi:type="AD"/&gt;
 &lt;/observation&gt;</pre>

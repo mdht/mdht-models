@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
 <meta name="DC.rights.owner" content="(C) Copyright 2005"/>
 <meta name="DC.Type" content="topic"/>
 <meta name="DC.Title" content="Autopsy Performance"/>
-<meta name="abstract" content="[Observation: templateId 2.16.840.1.113883.10.20.24.1.11]"/>
-<meta name="description" content="[Observation: templateId 2.16.840.1.113883.10.20.24.1.11]"/>
+<meta name="abstract" content="[Observation: templateId 2.16.840.1.113883.10.20.26.1.2]"/>
+<meta name="description" content="[Observation: templateId 2.16.840.1.113883.10.20.26.1.2]"/>
 <meta name="DC.Coverage" content="Observation"/>
 <meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
 <meta name="DC.Format" content="XHTML"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Autopsy Performance</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>For Discussion and Demonstration Only</b> The normative content for these specifications
 	may be found on the HL7 and CDC NCHS web sites.</p>
@@ -28,17 +28,22 @@
 
 
 
-<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.113883.10.20.24.1.11</tt>]</p>
+<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.113883.10.20.26.1.2</tt>]</p>
 
 
 <div class="section">
-<p class="p">Information on the performance of an autopsy.  Minimally, information on whether or not an autopsy was performed is recorded.</p>
+<div class="p"><p class="lines"><em class="ph i">Information on the performance of an autopsy.  Minimally, information on whether or not an autopsy was performed is recorded.</em></p>
+</div>
 
 </div>
 
 
 
 <ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.26.1.2"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
 </li>
 
@@ -46,23 +51,32 @@
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="21986-5" </tt><em class="ph i">Autopsy Status</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The code value notes that autopsy status information is provided.</em></p>
+</div>
 </li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
-<ul class="ul"><li class="li">If an autopsy is performed, this field is valued with the date and time the autopsy was begun and completed.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt>, where its data type is BL
-<ul class="ul"><li class="li">This field indicates whether an autopsy was performed.</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">If an autopsy is performed, this field is valued with the date and time the autopsy was begun and completed.  Start date/time for the autopsy is recorded using the low property of the interval data type, while the completion date and time are recorded using the high property of the data type.  Note, normally only the completion date and time will be provided.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type BL
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">An indicator that tells whether an autopsy was performed.</em></p>
+</div>
+</li>
 </ul>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt> <ol class="ol" type="a"><li class="li"> This performer <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="PRF" </tt></li>
 <li class="li"> This performer <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ASSIGNED" </tt></li>
-<li class="li"> This assignedEntity Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PSN" </tt></li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PSN" </tt></li>
 <li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@determinerCode</strong>="INSTANCE" </tt></li>
-<li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt><p class="p"><em class="ph i">This field is valued with the authority who performed the autopsy.</em></p>
+<li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt><div class="p"><p class="lines"><em class="ph i">This field is valued with the name of the person who performed the autopsy.</em></p>
+</div>
 </li>
 </ol>
  </li>
@@ -77,6 +91,96 @@
 
 <p class="p"> </p>
 
+<div class="section"><div class="p">
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"> <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d130e235">vsdr::Autopsy Performance</th>
+  </tr>
+  <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d130e240">cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.2]/</th>
+  </tr>
+  <tr class="row"><th class="entry" align="left" valign="top" id="d130e245">Name</th>
+<th class="entry" align="left" valign="top" id="d130e247">XPath</th>
+<th class="entry" align="left" valign="top" id="d130e249">Cardinality</th>
+<th class="entry" align="left" valign="top" id="d130e251">Severity</th>
+<th class="entry" align="left" valign="top" id="d130e253">Nullable</th>
+<th class="entry" align="left" valign="top" id="d130e255">Data Type</th>
+<th class="entry" align="left" valign="top" id="d130e257">Conformance</th>
+<th class="entry" align="left" valign="top" id="d130e259">Value(s)</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e245 ">classCode</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e247 ">@classCode</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e249 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e251 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e253 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e255 ">ActClassObservation</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e257 "> </td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e259 "> ALRT</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e245 ">moodCode</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e247 ">@moodCode</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e249 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e251 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e253 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e255 ">x_ActMoodDocumentObservation</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e257 "> </td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e259 "> DEF</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e245 ">code</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e247 ">code</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e249 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e251 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e253 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e255 ">CD</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e257 "> </td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e259 ">LOINC 2.16.840.1.113883.6.1 21986-5</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e245 ">effectiveTime</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e247 ">effectiveTime</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e249 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e251 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e253 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e255 ">IVL_TS</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e257 "> </td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e259 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e245 ">value</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e247 ">value</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e249 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e251 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e253 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e255 ">BL</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e257 "> </td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e259 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e245 ">autopsy Performance</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e247 ">autopsy Performance</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e249 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e251 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e253 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e255 ">Autopsy Performance</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e257 "> </td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e259 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e245 ">autopsyPerformer</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e247 ">autopsyPerformer</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e249 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e251 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e253 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e255 ">AutopsyPerformer</td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e257 "> </td>
+<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e259 "> </td>
+</tr>
+ 
+</tbody>
+</table>
+</div>
+</div>
+</div>
 
 <p class="p"> </p>
 
@@ -86,22 +190,19 @@
 
 
 
-<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.24.1.11"/&gt;
-  &lt;id root="1371523922"/&gt;
+<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.26.1.2"/&gt;
+  &lt;id root="MDHT" extension="893413231"/&gt;
   &lt;code code="21986-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy Status"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2012"/&gt;
-    &lt;high value="2012"/&gt;
+    &lt;low value="2013"/&gt;
+    &lt;high value="2013"/&gt;
   &lt;/effectiveTime&gt;
   &lt;value xsi:type="BL"/&gt;
   &lt;performer typeCode="PRF"&gt;
     &lt;assignedEntity classCode="ASSIGNED"&gt;
-      &lt;id root="1963401947"/&gt;
-      &lt;assignedPerson classCode="PSN" determinerCode="INSTANCE"&gt;
-        &lt;name/&gt;
-      &lt;/assignedPerson&gt;
+      &lt;id root="MDHT" extension="138020152"/&gt;
+      &lt;assignedPerson classCode="PSN" determinerCode="INSTANCE"/&gt;
     &lt;/assignedEntity&gt;
   &lt;/performer&gt;
 &lt;/observation&gt;</pre>
