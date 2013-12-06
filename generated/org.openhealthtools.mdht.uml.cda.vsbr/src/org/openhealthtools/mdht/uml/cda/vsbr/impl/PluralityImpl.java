@@ -35,94 +35,94 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.PluralityOperations;
  */
 public class PluralityImpl extends ObservationImpl implements Plurality {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PluralityImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return VsbrPackage.Literals.PLURALITY;
-	}
+    return VsbrPackage.Literals.PLURALITY;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePluralityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PluralityOperations.validatePluralityTemplateId(this, diagnostics, context);
-	}
+    return PluralityOperations.validatePluralityTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePluralityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PluralityOperations.validatePluralityClassCode(this, diagnostics, context);
-	}
+    return PluralityOperations.validatePluralityClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePluralityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PluralityOperations.validatePluralityMoodCode(this, diagnostics, context);
-	}
+    return PluralityOperations.validatePluralityMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePluralityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PluralityOperations.validatePluralityCodeP(this, diagnostics, context);
-	}
+    return PluralityOperations.validatePluralityCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePluralityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PluralityOperations.validatePluralityCode(this, diagnostics, context);
-	}
+    return PluralityOperations.validatePluralityCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePluralityValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PluralityOperations.validatePluralityValue(this, diagnostics, context);
-	}
+    return PluralityOperations.validatePluralityValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public Plurality init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Plurality init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PluralityImpl

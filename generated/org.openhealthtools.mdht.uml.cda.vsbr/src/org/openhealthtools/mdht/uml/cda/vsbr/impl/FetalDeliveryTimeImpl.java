@@ -35,85 +35,95 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.FetalDeliveryTimeOperati
  */
 public class FetalDeliveryTimeImpl extends ObservationImpl implements FetalDeliveryTime {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected FetalDeliveryTimeImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return VsbrPackage.Literals.FETAL_DELIVERY_TIME;
-	}
+    return VsbrPackage.Literals.FETAL_DELIVERY_TIME;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliveryTimeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliveryTimeOperations.validateFetalDeliveryTimeTemplateId(this, diagnostics, context);
-	}
+    return FetalDeliveryTimeOperations.validateFetalDeliveryTimeTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliveryTimeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliveryTimeOperations.validateFetalDeliveryTimeMoodCode(this, diagnostics, context);
-	}
+    return FetalDeliveryTimeOperations.validateFetalDeliveryTimeMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliveryTimeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliveryTimeOperations.validateFetalDeliveryTimeCodeP(this, diagnostics, context);
-	}
+    return FetalDeliveryTimeOperations.validateFetalDeliveryTimeCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliveryTimeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliveryTimeOperations.validateFetalDeliveryTimeCode(this, diagnostics, context);
-	}
+    return FetalDeliveryTimeOperations.validateFetalDeliveryTimeCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliveryTimeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliveryTimeOperations.validateFetalDeliveryTimeValue(this, diagnostics, context);
-	}
+    return FetalDeliveryTimeOperations.validateFetalDeliveryTimeValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFetalDeliveryTimeParticipatingLocation(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FetalDeliveryTimeOperations.validateFetalDeliveryTimeParticipatingLocation(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public FetalDeliveryTime init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FetalDeliveryTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // FetalDeliveryTimeImpl

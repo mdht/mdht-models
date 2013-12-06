@@ -35,94 +35,94 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.BirthOrderOperations;
  */
 public class BirthOrderImpl extends ObservationImpl implements BirthOrder {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected BirthOrderImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return VsbrPackage.Literals.BIRTH_ORDER;
-	}
+    return VsbrPackage.Literals.BIRTH_ORDER;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateBirthOrderTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return BirthOrderOperations.validateBirthOrderTemplateId(this, diagnostics, context);
-	}
+    return BirthOrderOperations.validateBirthOrderTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateBirthOrderClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return BirthOrderOperations.validateBirthOrderClassCode(this, diagnostics, context);
-	}
+    return BirthOrderOperations.validateBirthOrderClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateBirthOrderMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return BirthOrderOperations.validateBirthOrderMoodCode(this, diagnostics, context);
-	}
+    return BirthOrderOperations.validateBirthOrderMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateBirthOrderCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return BirthOrderOperations.validateBirthOrderCodeP(this, diagnostics, context);
-	}
+    return BirthOrderOperations.validateBirthOrderCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateBirthOrderCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return BirthOrderOperations.validateBirthOrderCode(this, diagnostics, context);
-	}
+    return BirthOrderOperations.validateBirthOrderCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateBirthOrderValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return BirthOrderOperations.validateBirthOrderValue(this, diagnostics, context);
-	}
+    return BirthOrderOperations.validateBirthOrderValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public BirthOrder init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public BirthOrder init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // BirthOrderImpl

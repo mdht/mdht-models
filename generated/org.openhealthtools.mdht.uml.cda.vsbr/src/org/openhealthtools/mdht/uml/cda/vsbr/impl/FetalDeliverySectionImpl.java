@@ -43,329 +43,316 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.FetalDeliverySectionOper
  */
 public class FetalDeliverySectionImpl extends SectionImpl implements FetalDeliverySection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected FetalDeliverySectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return VsbrPackage.Literals.FETAL_DELIVERY_SECTION;
-	}
+    return VsbrPackage.Literals.FETAL_DELIVERY_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionTemplateId(this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionClassCode(this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionMoodCode(this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionCode(this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionText(this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionBirthOrder(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionBirthOrder(this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionBirthOrder(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionNumberofInfantsBornAlive(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionNumberofInfantsBornAlive(
-			this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionNumberofInfantsBornAlive(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionAutopsyPerformance(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionAutopsyPerformance(this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionAutopsyPerformance(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionFetalDeathOccurrance(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeathOccurrance(
-			this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeathOccurrance(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionPlurality(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionPlurality(this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionPlurality(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionCongenitalAnomalies(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionCongenitalAnomalies(
-			this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionCongenitalAnomalies(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionFetalDeliveryTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliveryTime(this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliveryTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionFetalDeliverySubject(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubject(
-			this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubject(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusClassCode(
-			this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode(
-			this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusName(
-			this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusName(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode(
-			this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP(
-			this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusClassCode(
-			this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetus(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetus(
-			this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetus(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionFetalDeliverySubjectTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectTypeCode(
-			this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectTypeCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetus(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetus(
-			this, diagnostics, context);
-	}
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetus(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public BirthOrder getBirthOrder() {
-		return FetalDeliverySectionOperations.getBirthOrder(this);
-	}
+    return FetalDeliverySectionOperations.getBirthOrder(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public NumberofInfantsBornAlive getNumberofInfantsBornAlive() {
-		return FetalDeliverySectionOperations.getNumberofInfantsBornAlive(this);
-	}
+    return FetalDeliverySectionOperations.getNumberofInfantsBornAlive(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AutopsyPerformance getAutopsyPerformance() {
-		return FetalDeliverySectionOperations.getAutopsyPerformance(this);
-	}
+    return FetalDeliverySectionOperations.getAutopsyPerformance(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public FetalDeathOccurrance getFetalDeathOccurrance() {
-		return FetalDeliverySectionOperations.getFetalDeathOccurrance(this);
-	}
+    return FetalDeliverySectionOperations.getFetalDeathOccurrance(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public Plurality getPlurality() {
-		return FetalDeliverySectionOperations.getPlurality(this);
-	}
+    return FetalDeliverySectionOperations.getPlurality(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<CongenitalAnomaly> getCongenitalAnomaliess() {
-		return FetalDeliverySectionOperations.getCongenitalAnomaliess(this);
-	}
+    return FetalDeliverySectionOperations.getCongenitalAnomaliess(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public FetalDeliveryTime getFetalDeliveryTime() {
-		return FetalDeliverySectionOperations.getFetalDeliveryTime(this);
-	}
+    return FetalDeliverySectionOperations.getFetalDeliveryTime(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public FetalDeliverySection init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FetalDeliverySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // FetalDeliverySectionImpl

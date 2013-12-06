@@ -37,115 +37,109 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.AntenatalTestingandSurve
 public class AntenatalTestingandSurveillanceSectionImpl extends SectionImpl implements
 		AntenatalTestingandSurveillanceSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AntenatalTestingandSurveillanceSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return VsbrPackage.Literals.ANTENATAL_TESTINGAND_SURVEILLANCE_SECTION;
-	}
+    return VsbrPackage.Literals.ANTENATAL_TESTINGAND_SURVEILLANCE_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAntenatalTestingandSurveillanceSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AntenatalTestingandSurveillanceSectionOperations.validateAntenatalTestingandSurveillanceSectionTemplateId(
-			this, diagnostics, context);
-	}
+    return AntenatalTestingandSurveillanceSectionOperations.validateAntenatalTestingandSurveillanceSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAntenatalTestingandSurveillanceSectionClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AntenatalTestingandSurveillanceSectionOperations.validateAntenatalTestingandSurveillanceSectionClassCode(
-			this, diagnostics, context);
-	}
+    return AntenatalTestingandSurveillanceSectionOperations.validateAntenatalTestingandSurveillanceSectionClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAntenatalTestingandSurveillanceSectionMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AntenatalTestingandSurveillanceSectionOperations.validateAntenatalTestingandSurveillanceSectionMoodCode(
-			this, diagnostics, context);
-	}
+    return AntenatalTestingandSurveillanceSectionOperations.validateAntenatalTestingandSurveillanceSectionMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAntenatalTestingandSurveillanceSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AntenatalTestingandSurveillanceSectionOperations.validateAntenatalTestingandSurveillanceSectionCode(
-			this, diagnostics, context);
-	}
+    return AntenatalTestingandSurveillanceSectionOperations.validateAntenatalTestingandSurveillanceSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAntenatalTestingandSurveillanceSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AntenatalTestingandSurveillanceSectionOperations.validateAntenatalTestingandSurveillanceSectionText(
-			this, diagnostics, context);
-	}
+    return AntenatalTestingandSurveillanceSectionOperations.validateAntenatalTestingandSurveillanceSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAntenatalTestingandSurveillanceSectionPreNatalCare(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AntenatalTestingandSurveillanceSectionOperations.validateAntenatalTestingandSurveillanceSectionPreNatalCare(
-			this, diagnostics, context);
-	}
+    return AntenatalTestingandSurveillanceSectionOperations.validateAntenatalTestingandSurveillanceSectionPreNatalCare(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PrenatalCare getPreNatalCare() {
-		return AntenatalTestingandSurveillanceSectionOperations.getPreNatalCare(this);
-	}
+    return AntenatalTestingandSurveillanceSectionOperations.getPreNatalCare(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AntenatalTestingandSurveillanceSection init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AntenatalTestingandSurveillanceSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AntenatalTestingandSurveillanceSectionImpl

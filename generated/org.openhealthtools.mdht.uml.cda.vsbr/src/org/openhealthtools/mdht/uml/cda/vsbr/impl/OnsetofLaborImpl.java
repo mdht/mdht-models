@@ -35,112 +35,112 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.OnsetofLaborOperations;
  */
 public class OnsetofLaborImpl extends ObservationImpl implements OnsetofLabor {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected OnsetofLaborImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return VsbrPackage.Literals.ONSETOF_LABOR;
-	}
+    return VsbrPackage.Literals.ONSETOF_LABOR;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOnsetofLaborTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OnsetofLaborOperations.validateOnsetofLaborTemplateId(this, diagnostics, context);
-	}
+    return OnsetofLaborOperations.validateOnsetofLaborTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOnsetofLaborClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OnsetofLaborOperations.validateOnsetofLaborClassCode(this, diagnostics, context);
-	}
+    return OnsetofLaborOperations.validateOnsetofLaborClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOnsetofLaborMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OnsetofLaborOperations.validateOnsetofLaborMoodCode(this, diagnostics, context);
-	}
+    return OnsetofLaborOperations.validateOnsetofLaborMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOnsetofLaborCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OnsetofLaborOperations.validateOnsetofLaborCodeP(this, diagnostics, context);
-	}
+    return OnsetofLaborOperations.validateOnsetofLaborCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOnsetofLaborCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OnsetofLaborOperations.validateOnsetofLaborCode(this, diagnostics, context);
-	}
+    return OnsetofLaborOperations.validateOnsetofLaborCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOnsetofLaborCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OnsetofLaborOperations.validateOnsetofLaborCodeVS(this, diagnostics, context);
-	}
+    return OnsetofLaborOperations.validateOnsetofLaborCodeVS(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOnsetofLaborValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OnsetofLaborOperations.validateOnsetofLaborValue(this, diagnostics, context);
-	}
+    return OnsetofLaborOperations.validateOnsetofLaborValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOnsetofLaborValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OnsetofLaborOperations.validateOnsetofLaborValueP(this, diagnostics, context);
-	}
+    return OnsetofLaborOperations.validateOnsetofLaborValueP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public OnsetofLabor init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public OnsetofLabor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // OnsetofLaborImpl

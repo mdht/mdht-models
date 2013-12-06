@@ -35,96 +35,94 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.NumberofLiveBirthsnowDea
  */
 public class NumberofLiveBirthsnowDeadImpl extends ObservationImpl implements NumberofLiveBirthsnowDead {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected NumberofLiveBirthsnowDeadImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return VsbrPackage.Literals.NUMBEROF_LIVE_BIRTHSNOW_DEAD;
-	}
+    return VsbrPackage.Literals.NUMBEROF_LIVE_BIRTHSNOW_DEAD;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumberofLiveBirthsnowDeadTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadTemplateId(
-			this, diagnostics, context);
-	}
+    return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumberofLiveBirthsnowDeadClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadClassCode(
-			this, diagnostics, context);
-	}
+    return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumberofLiveBirthsnowDeadMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadMoodCode(this, diagnostics, context);
-	}
+    return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumberofLiveBirthsnowDeadCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadCodeP(this, diagnostics, context);
-	}
+    return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumberofLiveBirthsnowDeadCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadCode(this, diagnostics, context);
-	}
+    return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumberofLiveBirthsnowDeadValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadValue(this, diagnostics, context);
-	}
+    return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public NumberofLiveBirthsnowDead init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NumberofLiveBirthsnowDead init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // NumberofLiveBirthsnowDeadImpl

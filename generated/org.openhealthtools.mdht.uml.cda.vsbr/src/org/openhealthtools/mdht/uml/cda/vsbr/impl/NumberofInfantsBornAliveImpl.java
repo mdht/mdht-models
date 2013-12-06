@@ -35,94 +35,94 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.NumberofInfantsBornAlive
  */
 public class NumberofInfantsBornAliveImpl extends ObservationImpl implements NumberofInfantsBornAlive {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected NumberofInfantsBornAliveImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return VsbrPackage.Literals.NUMBEROF_INFANTS_BORN_ALIVE;
-	}
+    return VsbrPackage.Literals.NUMBEROF_INFANTS_BORN_ALIVE;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumberofInfantsBornAliveTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveTemplateId(this, diagnostics, context);
-	}
+    return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumberofInfantsBornAliveClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveClassCode(this, diagnostics, context);
-	}
+    return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumberofInfantsBornAliveMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveMoodCode(this, diagnostics, context);
-	}
+    return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumberofInfantsBornAliveCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveCodeP(this, diagnostics, context);
-	}
+    return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumberofInfantsBornAliveCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveCode(this, diagnostics, context);
-	}
+    return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateNumberofInfantsBornAliveValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveValue(this, diagnostics, context);
-	}
+    return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public NumberofInfantsBornAlive init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NumberofInfantsBornAlive init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // NumberofInfantsBornAliveImpl

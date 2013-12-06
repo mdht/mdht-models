@@ -41,234 +41,211 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.LaborandDeliveryInformat
  */
 public class LaborandDeliveryInformationImpl extends ActImpl implements LaborandDeliveryInformation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected LaborandDeliveryInformationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return VsbrPackage.Literals.LABORAND_DELIVERY_INFORMATION;
-	}
+    return VsbrPackage.Literals.LABORAND_DELIVERY_INFORMATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateLaborandDeliveryInformationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationTemplateId(
-			this, diagnostics, context);
-	}
+    return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateLaborandDeliveryInformationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationClassCode(
-			this, diagnostics, context);
-	}
+    return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateLaborandDeliveryInformationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationMoodCode(
-			this, diagnostics, context);
-	}
+    return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateLaborandDeliveryInformationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationCodeP(
-			this, diagnostics, context);
-	}
+    return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateLaborandDeliveryInformationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationCode(this, diagnostics, context);
-	}
+    return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateLaborandDeliveryInformationAttendantParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationAttendantParticipation(
-			this, diagnostics, context);
-	}
+    return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationAttendantParticipation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateLaborandDeliveryInformationEntryRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationEntryRelationship(
-			this, diagnostics, context);
-	}
+    return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationEntryRelationship(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateLaborandDeliveryInformationCharacteristicsofLaborandDelivery(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationCharacteristicsofLaborandDelivery(
-			this, diagnostics, context);
-	}
+    return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationCharacteristicsofLaborandDelivery(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateLaborandDeliveryInformationHomeBirthPlan(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationHomeBirthPlan(
-			this, diagnostics, context);
-	}
+    return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationHomeBirthPlan(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateLaborandDeliveryInformationMaternalTransfer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationMaternalTransfer(
-			this, diagnostics, context);
-	}
+    return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationMaternalTransfer(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateLaborandDeliveryInformationParticipatingLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationParticipatingLocation(
-			this, diagnostics, context);
-	}
+    return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationParticipatingLocation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateLaborandDeliveryInformationMaternalMorbidities(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationMaternalMorbidities(
-			this, diagnostics, context);
-	}
+    return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationMaternalMorbidities(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateLaborandDeliveryInformationRiskFactors(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationRiskFactors(
-			this, diagnostics, context);
-	}
+    return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationRiskFactors(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateLaborandDeliveryInformationCertifierParticipation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return LaborandDeliveryInformationOperations.validateLaborandDeliveryInformationCertifierParticipation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<CharacteristicofLaborandDelivery> getCharacteristicsofLaborandDeliveries() {
-		return LaborandDeliveryInformationOperations.getCharacteristicsofLaborandDeliveries(this);
-	}
+    return LaborandDeliveryInformationOperations.getCharacteristicsofLaborandDeliveries(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PlannedHomeBirth getHomeBirthPlan() {
-		return LaborandDeliveryInformationOperations.getHomeBirthPlan(this);
-	}
+    return LaborandDeliveryInformationOperations.getHomeBirthPlan(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public MaternalTransfer getMaternalTransfer() {
-		return LaborandDeliveryInformationOperations.getMaternalTransfer(this);
-	}
+    return LaborandDeliveryInformationOperations.getMaternalTransfer(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<MaternalMorbidity> getMaternalMorbiditiess() {
-		return LaborandDeliveryInformationOperations.getMaternalMorbiditiess(this);
-	}
+    return LaborandDeliveryInformationOperations.getMaternalMorbiditiess(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<PregnancyRiskFactor> getRiskFactorss() {
-		return LaborandDeliveryInformationOperations.getRiskFactorss(this);
-	}
+    return LaborandDeliveryInformationOperations.getRiskFactorss(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public LaborandDeliveryInformation init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public LaborandDeliveryInformation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // LaborandDeliveryInformationImpl

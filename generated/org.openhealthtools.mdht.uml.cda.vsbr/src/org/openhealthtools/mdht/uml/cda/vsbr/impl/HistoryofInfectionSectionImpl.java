@@ -37,79 +37,77 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.HistoryofInfectionSectio
  */
 public class HistoryofInfectionSectionImpl extends SectionImpl implements HistoryofInfectionSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected HistoryofInfectionSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return VsbrPackage.Literals.HISTORYOF_INFECTION_SECTION;
-	}
+    return VsbrPackage.Literals.HISTORYOF_INFECTION_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHistoryofInfectionSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryofInfectionSectionOperations.validateHistoryofInfectionSectionTemplateId(
-			this, diagnostics, context);
-	}
+    return HistoryofInfectionSectionOperations.validateHistoryofInfectionSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHistoryofInfectionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryofInfectionSectionOperations.validateHistoryofInfectionSectionText(this, diagnostics, context);
-	}
+    return HistoryofInfectionSectionOperations.validateHistoryofInfectionSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHistoryofInfectionSectionInfectionsPresent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryofInfectionSectionOperations.validateHistoryofInfectionSectionInfectionsPresent(
-			this, diagnostics, context);
-	}
+    return HistoryofInfectionSectionOperations.validateHistoryofInfectionSectionInfectionsPresent(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<InfectionPresent> getInfectionsPresents() {
-		return HistoryofInfectionSectionOperations.getInfectionsPresents(this);
-	}
+    return HistoryofInfectionSectionOperations.getInfectionsPresents(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public HistoryofInfectionSection init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HistoryofInfectionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HistoryofInfectionSectionImpl

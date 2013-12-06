@@ -35,103 +35,103 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.MaternalTransferOperatio
  */
 public class MaternalTransferImpl extends ObservationImpl implements MaternalTransfer {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected MaternalTransferImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return VsbrPackage.Literals.MATERNAL_TRANSFER;
-	}
+    return VsbrPackage.Literals.MATERNAL_TRANSFER;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMaternalTransferTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MaternalTransferOperations.validateMaternalTransferTemplateId(this, diagnostics, context);
-	}
+    return MaternalTransferOperations.validateMaternalTransferTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMaternalTransferClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MaternalTransferOperations.validateMaternalTransferClassCode(this, diagnostics, context);
-	}
+    return MaternalTransferOperations.validateMaternalTransferClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMaternalTransferMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MaternalTransferOperations.validateMaternalTransferMoodCode(this, diagnostics, context);
-	}
+    return MaternalTransferOperations.validateMaternalTransferMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMaternalTransferCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MaternalTransferOperations.validateMaternalTransferCodeP(this, diagnostics, context);
-	}
+    return MaternalTransferOperations.validateMaternalTransferCodeP(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMaternalTransferCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MaternalTransferOperations.validateMaternalTransferCode(this, diagnostics, context);
-	}
+    return MaternalTransferOperations.validateMaternalTransferCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMaternalTransferValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MaternalTransferOperations.validateMaternalTransferValue(this, diagnostics, context);
-	}
+    return MaternalTransferOperations.validateMaternalTransferValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMaternalTransferParticipant(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MaternalTransferOperations.validateMaternalTransferParticipant(this, diagnostics, context);
-	}
+    return MaternalTransferOperations.validateMaternalTransferParticipant(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public MaternalTransfer init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MaternalTransfer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MaternalTransferImpl
