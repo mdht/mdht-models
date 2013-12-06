@@ -1,47 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Package xmi:id="_tH2HMEuDEeGs8afU5hU7bA" name="vsdr-vocab">
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2TQRYEuEEeGCUrfdtxCbHg" name="Manners Of Death">
-      <ownedComment xmi:id="_IOJ0YG7qEeGducFY2S5l3A">
-        <body>The coding system defines a list of the possible manners by which the person died.</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_o7MOoEuFEeGCUrfdtxCbHg" name="MannerOfDeathCodes">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_o7MOoEuFEeGCUrfdtxCbHg" name="Manner Of Death">
       <ownedComment xmi:id="_L3boMG7qEeGducFY2S5l3A">
         <body>The value set includes all members of the Manners of Death coding system.</body>
       </ownedComment>
-      <ownedLiteral xmi:id="_zGpWAEuFEeGCUrfdtxCbHg" name="A"/>
-      <ownedLiteral xmi:id="_aevLIEuQEeGCUrfdtxCbHg" name="C"/>
-      <ownedLiteral xmi:id="_dpRNcEuQEeGCUrfdtxCbHg" name="H"/>
-      <ownedLiteral xmi:id="_fF908EuQEeGCUrfdtxCbHg" name="N"/>
-      <ownedLiteral xmi:id="_iKG7YEuQEeGCUrfdtxCbHg" name="NOS">
-        <ownedComment xmi:id="_QBIogG7qEeGducFY2S5l3A">
-          <body>A value for manner of death has been provided that does not appear on the standard list.</body>
-        </ownedComment>
-      </ownedLiteral>
-      <ownedLiteral xmi:id="_k2rPUEuQEeGCUrfdtxCbHg" name="NS">
-        <ownedComment xmi:id="_RfdnsG7qEeGducFY2S5l3A">
-          <body>The manner of death is not specified.</body>
-        </ownedComment>
-      </ownedLiteral>
-      <ownedLiteral xmi:id="_rDDnIEuSEeGCUrfdtxCbHg" name="P"/>
-      <ownedLiteral xmi:id="_sjvWwEuSEeGCUrfdtxCbHg" name="SI">
+      <ownedLiteral xmi:id="_zGpWAEuFEeGCUrfdtxCbHg" name="7878000"/>
+      <ownedLiteral xmi:id="_aevLIEuQEeGCUrfdtxCbHg" name="CNBD"/>
+      <ownedLiteral xmi:id="_dpRNcEuQEeGCUrfdtxCbHg" name="27935005"/>
+      <ownedLiteral xmi:id="_fF908EuQEeGCUrfdtxCbHg" name="38605008"/>
+      <ownedLiteral xmi:id="_rDDnIEuSEeGCUrfdtxCbHg" name="PI"/>
+      <ownedLiteral xmi:id="_sjvWwEuSEeGCUrfdtxCbHg" name="44301001">
         <ownedComment xmi:id="_TyASEG7qEeGducFY2S5l3A">
           <body>The death was self-inflicted.  This could include injury, and is therefore not identical with suicide.</body>
         </ownedComment>
       </ownedLiteral>
-      <ownedLiteral xmi:id="_voGfoEuSEeGCUrfdtxCbHg" name="S"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_lJB4sEuSEeGCUrfdtxCbHg" name="TobaccoUseCodes">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_lJB4sEuSEeGCUrfdtxCbHg" name="Contributory Tobacco Use">
       <ownedComment xmi:id="_x90wcG7qEeGducFY2S5l3A">
-        <body>The value set includes the entire content of the Tobacco Use coding system.</body>
+        <body>The value set contains the set of codes used to describe.  Note, the concept &quot;other&quot; is supported using the HL7 null flavor &quot;OTH&quot;.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_z0iq4EuSEeGCUrfdtxCbHg" name="N">
         <ownedComment xmi:id="_1c11AG7qEeGducFY2S5l3A">
           <body>No, use of tobacco did not contribute to the person's death.</body>
         </ownedComment>
       </ownedLiteral>
-      <ownedLiteral xmi:id="_16hf8EuSEeGCUrfdtxCbHg" name="P">
+      <ownedLiteral xmi:id="_16hf8EuSEeGCUrfdtxCbHg" name="2931005">
         <ownedComment xmi:id="_2zbNcG7qEeGducFY2S5l3A">
           <body>It is probable that use of tobacco contributed to the person's death.</body>
         </ownedComment>
@@ -51,72 +35,49 @@
           <body>Yes, use of tobacco contributed to the person's death.</body>
         </ownedComment>
       </ownedLiteral>
-      <ownedLiteral xmi:id="_3yKXAEuSEeGCUrfdtxCbHg" name="U">
-        <ownedComment xmi:id="_4eircG7qEeGducFY2S5l3A">
-          <body>The extent to which tobacco use contributed to the person's death is not known.</body>
-        </ownedComment>
-      </ownedLiteral>
-      <ownedLiteral xmi:id="_437sQEuSEeGCUrfdtxCbHg" name="C"/>
+      <ownedLiteral xmi:id="_437sQEuSEeGCUrfdtxCbHg" name="NOC"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Y8Id8ExWEeGCUrfdtxCbHg" name="Certifier Types">
-      <ownedComment xmi:id="_tvxREG7pEeGducFY2S5l3A">
-        <body>The code system collects the possible professional roles played by the person who certifies the death.</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dMGeUExWEeGCUrfdtxCbHg" name="CertifierTypeCodes">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dMGeUExWEeGCUrfdtxCbHg" name="Death CertifierTitles">
       <ownedComment xmi:id="_zAvbcG7pEeGducFY2S5l3A">
         <body>The value set collects all the codes defined within the Certifier Types coding system.</body>
       </ownedComment>
-      <ownedLiteral xmi:id="_lMyXQExWEeGCUrfdtxCbHg" name="C"/>
-      <ownedLiteral xmi:id="_ogcgYExWEeGCUrfdtxCbHg" name="CA"/>
-      <ownedLiteral xmi:id="_so0D8ExWEeGCUrfdtxCbHg" name="ME"/>
-      <ownedLiteral xmi:id="_ytYOcExWEeGCUrfdtxCbHg" name="NP"/>
-      <ownedLiteral xmi:id="_1WJngExWEeGCUrfdtxCbHg" name="PHY"/>
-      <ownedLiteral xmi:id="_3oYv4ExWEeGCUrfdtxCbHg" name="PA"/>
+      <ownedLiteral xmi:id="_so0D8ExWEeGCUrfdtxCbHg" name="MEC"/>
+      <ownedLiteral xmi:id="_ytYOcExWEeGCUrfdtxCbHg" name="PCP"/>
+      <ownedLiteral xmi:id="_1WJngExWEeGCUrfdtxCbHg" name="CP"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_95ndYExWEeGCUrfdtxCbHg" name="Pregnancy Statuses">
-      <ownedComment xmi:id="_dcASMG7qEeGducFY2S5l3A">
-        <body>The coding system contains a collection of values to provide an indication of whether or not a person was pregnant at the time of death.</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_AmdeIExXEeGCUrfdtxCbHg" name="PregnancyStatusCodes">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_AmdeIExXEeGCUrfdtxCbHg" name="Pregnancy Status">
       <ownedComment xmi:id="_hdr-8G7qEeGducFY2S5l3A">
         <body>The value set includes all the values from the Prenancy Statuses coding system.</body>
       </ownedComment>
-      <ownedLiteral xmi:id="_OIwlgExXEeGCUrfdtxCbHg" name="1"/>
-      <ownedLiteral xmi:id="_QdFYkExXEeGCUrfdtxCbHg" name="2"/>
-      <ownedLiteral xmi:id="_TWOI4ExXEeGCUrfdtxCbHg" name="3"/>
-      <ownedLiteral xmi:id="_VxM9kExXEeGCUrfdtxCbHg" name="4"/>
-      <ownedLiteral xmi:id="_XmbZ0ExXEeGCUrfdtxCbHg" name="9"/>
-      <ownedLiteral xmi:id="_aSf-gExXEeGCUrfdtxCbHg" name="8"/>
-      <ownedLiteral xmi:id="_cRZUIExXEeGCUrfdtxCbHg" name="7"/>
+      <ownedLiteral xmi:id="_OIwlgExXEeGCUrfdtxCbHg" name="PS1"/>
+      <ownedLiteral xmi:id="_QdFYkExXEeGCUrfdtxCbHg" name="PS2"/>
+      <ownedLiteral xmi:id="_TWOI4ExXEeGCUrfdtxCbHg" name="PS3"/>
+      <ownedLiteral xmi:id="_VxM9kExXEeGCUrfdtxCbHg" name="PS4"/>
+      <ownedLiteral xmi:id="_XmbZ0ExXEeGCUrfdtxCbHg" name="PS9"/>
+      <ownedLiteral xmi:id="_aSf-gExXEeGCUrfdtxCbHg" name="PS8"/>
+      <ownedLiteral xmi:id="_cRZUIExXEeGCUrfdtxCbHg" name="NOC"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_qYg_0ExXEeGCUrfdtxCbHg" name="Transportation Relationships">
-      <ownedComment xmi:id="_ATUPUG7rEeGducFY2S5l3A">
-        <body>The coding system contains the list of possible roles that the decedent could play with relationship to a transport vehicle in the context of an accident.</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tJkLIExXEeGCUrfdtxCbHg" name="TransportationRelationshipCodes">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tJkLIExXEeGCUrfdtxCbHg" name="Decedent Transportation Relationships">
       <ownedComment xmi:id="_Em_D8G7rEeGducFY2S5l3A">
-        <body>The value set contains the entire set of codes from the Transportation Relationships coding system.</body>
+        <body>The value set contains the set of codes used to indicate the role played by the decedent with reference to a vehicle involved with a transportation injury.  Note, the concept &quot;other&quot; is supported using the HL7 null flavor &quot;OTH&quot;.</body>
       </ownedComment>
-      <ownedLiteral xmi:id="_0lP5kExXEeGCUrfdtxCbHg" name="D"/>
-      <ownedLiteral xmi:id="_16vF0ExXEeGCUrfdtxCbHg" name="PA"/>
-      <ownedLiteral xmi:id="_33a08ExXEeGCUrfdtxCbHg" name="PE"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_LoPgMFaBEeGrndXG9pRuHg" name="Tobacco Use">
-      <ownedComment xmi:id="_ujk3IG7qEeGducFY2S5l3A">
-        <body>The coding system contains a list of values to describe the extent to which tobacco use contributed to the person's death.</body>
-      </ownedComment>
+      <ownedLiteral xmi:id="_0lP5kExXEeGCUrfdtxCbHg" name="303980003"/>
+      <ownedLiteral xmi:id="_16vF0ExXEeGCUrfdtxCbHg" name="257500003"/>
+      <ownedLiteral xmi:id="_33a08ExXEeGCUrfdtxCbHg" name="257518000"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_g8JUsG-FEeGducFY2S5l3A" name="Death Location Types"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_o_ybAG-FEeGducFY2S5l3A" name="DeathLocationTypeCodes">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_o_ybAG-FEeGducFY2S5l3A" name="Death LocationTypeCodes">
       <ownedLiteral xmi:id="_vOKo0G-FEeGducFY2S5l3A" name="H-IN"/>
       <ownedLiteral xmi:id="_2u-u4G-FEeGducFY2S5l3A" name="H-ER/OP"/>
       <ownedLiteral xmi:id="_8YptIG-FEeGducFY2S5l3A" name="H-DOA"/>
       <ownedLiteral xmi:id="__pUzsG-FEeGducFY2S5l3A" name="NH"/>
       <ownedLiteral xmi:id="_A9FhoG-GEeGducFY2S5l3A" name="RES"/>
       <ownedLiteral xmi:id="_CkqjcG-GEeGducFY2S5l3A" name="OTH"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3jsZsF66EeOAc4EMZ20xKQ" name="HL70136">
+      <ownedComment xmi:id="_PNLzgF67EeOAc4EMZ20xKQ">
+        <body>The HL7 Version 2 code system that supports recording of &quot;Yes&quot; or &quot;No&quot; as vocabulary items.</body>
+      </ownedComment>
     </packagedElement>
     <profileApplication xmi:id="_tH2HMUuDEeGs8afU5hU7bA">
       <eAnnotations xmi:id="_tH2HMkuDEeGs8afU5hU7bA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -125,34 +86,38 @@
       <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
   </uml:Package>
-  <term:CodeSystemVersion xmi:id="_2TQ4cEuEEeGCUrfdtxCbHg" identifier="2.16.840.1.114222.4.11.6002" base_Enumeration="_2TQRYEuEEeGCUrfdtxCbHg"/>
-  <term:ValueSetVersion xmi:id="_o7VYkEuFEeGCUrfdtxCbHg" identifier="2.16.840.1.114222.4.11.6002" codeSystem="_2TQ4cEuEEeGCUrfdtxCbHg" base_Enumeration="_o7MOoEuFEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_zGwqwEuFEeGCUrfdtxCbHg" conceptName="Accident" base_EnumerationLiteral="_zGpWAEuFEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_aevyMEuQEeGCUrfdtxCbHg" conceptName="Could not be determined" base_EnumerationLiteral="_aevLIEuQEeGCUrfdtxCbHg"/>
+  <term:ValueSetVersion xmi:id="_o7VYkEuFEeGCUrfdtxCbHg" identifier="2.16.840.1.114222.4.11.6002" base_Enumeration="_o7MOoEuFEeGCUrfdtxCbHg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_zGwqwEuFEeGCUrfdtxCbHg" conceptName="Accidental death" base_EnumerationLiteral="_zGpWAEuFEeGCUrfdtxCbHg"/>
+  <term:ValueSetCode xmi:id="_aevyMEuQEeGCUrfdtxCbHg" conceptName="Could not be determined" base_EnumerationLiteral="_aevLIEuQEeGCUrfdtxCbHg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_dpR0gEuQEeGCUrfdtxCbHg" conceptName="Homicide" base_EnumerationLiteral="_dpRNcEuQEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_fF-cAEuQEeGCUrfdtxCbHg" conceptName="Natural" base_EnumerationLiteral="_fF908EuQEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_iKG7YUuQEeGCUrfdtxCbHg" conceptName="Not on Standard" base_EnumerationLiteral="_iKG7YEuQEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_k2rPUUuQEeGCUrfdtxCbHg" conceptName="Not Specified" base_EnumerationLiteral="_k2rPUEuQEeGCUrfdtxCbHg"/>
-  <term:ValueSetVersion xmi:id="_lJB4sUuSEeGCUrfdtxCbHg" identifier="2.16.840.1.114222.4.11.6004" codeSystem="_LoQHQFaBEeGrndXG9pRuHg" base_Enumeration="_lJB4sEuSEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_rDEOMEuSEeGCUrfdtxCbHg" conceptName="Pending Investigation" base_EnumerationLiteral="_rDDnIEuSEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_sjv90EuSEeGCUrfdtxCbHg" conceptName="Self Inflicted" base_EnumerationLiteral="_sjvWwEuSEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_voGfoUuSEeGCUrfdtxCbHg" conceptName="Suicide" base_EnumerationLiteral="_voGfoEuSEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_z0iq4UuSEeGCUrfdtxCbHg" conceptName="No" base_EnumerationLiteral="_z0iq4EuSEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_16iHAEuSEeGCUrfdtxCbHg" conceptName="Probable" base_EnumerationLiteral="_16hf8EuSEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_28deEUuSEeGCUrfdtxCbHg" conceptName="Yes" base_EnumerationLiteral="_28deEEuSEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_3yKXAUuSEeGCUrfdtxCbHg" conceptName="Unknown" base_EnumerationLiteral="_3yKXAEuSEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_437sQUuSEeGCUrfdtxCbHg" conceptName="Not on Certificate" base_EnumerationLiteral="_437sQEuSEeGCUrfdtxCbHg"/>
+  <term:ValueSetCode xmi:id="_fF-cAEuQEeGCUrfdtxCbHg" conceptName="Natural death" base_EnumerationLiteral="_fF908EuQEeGCUrfdtxCbHg"/>
+  <term:ValueSetVersion xmi:id="_lJB4sUuSEeGCUrfdtxCbHg" identifier="2.16.840.1.114222.4.11.6004" base_Enumeration="_lJB4sEuSEeGCUrfdtxCbHg"/>
+  <term:ValueSetCode xmi:id="_rDEOMEuSEeGCUrfdtxCbHg" conceptName="Pending Investigation" base_EnumerationLiteral="_rDDnIEuSEeGCUrfdtxCbHg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_sjv90EuSEeGCUrfdtxCbHg" conceptName="Suicide" base_EnumerationLiteral="_sjvWwEuSEeGCUrfdtxCbHg"/>
+  <term:ValueSetCode xmi:id="_z0iq4UuSEeGCUrfdtxCbHg" conceptName="No" codeSystem="_3lODsF66EeOAc4EMZ20xKQ" base_EnumerationLiteral="_z0iq4EuSEeGCUrfdtxCbHg"/>
+  <term:ValueSetCode xmi:id="_16iHAEuSEeGCUrfdtxCbHg" conceptName="Probable diagnosis" base_EnumerationLiteral="_16hf8EuSEeGCUrfdtxCbHg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_28deEUuSEeGCUrfdtxCbHg" conceptName="Yes" codeSystem="_3lODsF66EeOAc4EMZ20xKQ" base_EnumerationLiteral="_28deEEuSEeGCUrfdtxCbHg"/>
+  <term:ValueSetCode xmi:id="_437sQUuSEeGCUrfdtxCbHg" conceptName="Not on Certificate" base_EnumerationLiteral="_437sQEuSEeGCUrfdtxCbHg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_7dL3QEuSEeGCUrfdtxCbHg"/>
-  <term:CodeSystemVersion xmi:id="_Y8Id8UxWEeGCUrfdtxCbHg" identifier="2.16.840.1.114222.4.11.6001" base_Enumeration="_Y8Id8ExWEeGCUrfdtxCbHg"/>
-  <term:ValueSetVersion xmi:id="_dMHFYExWEeGCUrfdtxCbHg" identifier="2.16.840.1.114222.4.11.6001" codeSystem="_Y8Id8UxWEeGCUrfdtxCbHg" base_Enumeration="_dMGeUExWEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_lMy-UExWEeGCUrfdtxCbHg" conceptName="Coroner" base_EnumerationLiteral="_lMyXQExWEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_ogdHcExWEeGCUrfdtxCbHg" conceptName="County Attorney" base_EnumerationLiteral="_ogcgYExWEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_so0rAExWEeGCUrfdtxCbHg" conceptName="Medical Examiner" base_EnumerationLiteral="_so0D8ExWEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_ytYOcUxWEeGCUrfdtxCbHg" conceptName="Nurse Practitioner" base_EnumerationLiteral="_ytYOcExWEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_1WJngUxWEeGCUrfdtxCbHg" conceptName="Physician" base_EnumerationLiteral="_1WJngExWEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_3oZW8ExWEeGCUrfdtxCbHg" conceptName="Physician Assistant" base_EnumerationLiteral="_3oYv4ExWEeGCUrfdtxCbHg"/>
-  <term:CodeSystemVersion xmi:id="_95oEcExWEeGCUrfdtxCbHg" identifier="2.16.840.1.114222.4.11.6003" base_Enumeration="_95ndYExWEeGCUrfdtxCbHg"/>
-  <term:ValueSetVersion xmi:id="_AmeFMExXEeGCUrfdtxCbHg" identifier="2.16.840.1.114222.4.11.6003" codeSystem="_95oEcExWEeGCUrfdtxCbHg" base_Enumeration="_AmdeIExXEeGCUrfdtxCbHg"/>
+  <term:ValueSetVersion xmi:id="_dMHFYExWEeGCUrfdtxCbHg" identifier="2.16.840.1.114222.4.11.6001" base_Enumeration="_dMGeUExWEeGCUrfdtxCbHg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_so0rAExWEeGCUrfdtxCbHg" conceptName="Medical Examiner/Coroner" base_EnumerationLiteral="_so0D8ExWEeGCUrfdtxCbHg"/>
+  <term:ValueSetCode xmi:id="_ytYOcUxWEeGCUrfdtxCbHg" conceptName="Pronouncing and Certifying Physician (MD,DO)" base_EnumerationLiteral="_ytYOcExWEeGCUrfdtxCbHg"/>
+  <term:ValueSetCode xmi:id="_1WJngUxWEeGCUrfdtxCbHg" conceptName="Certifying Physician (MD, DP)" base_EnumerationLiteral="_1WJngExWEeGCUrfdtxCbHg"/>
+  <term:ValueSetVersion xmi:id="_AmeFMExXEeGCUrfdtxCbHg" identifier="2.16.840.1.114222.4.11.6003" base_Enumeration="_AmdeIExXEeGCUrfdtxCbHg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_OIxMkExXEeGCUrfdtxCbHg" conceptName="Not pregnant within the past year" base_EnumerationLiteral="_OIwlgExXEeGCUrfdtxCbHg"/>
   <term:ValueSetCode xmi:id="_QdF_oExXEeGCUrfdtxCbHg" conceptName="Pregnant at the time of death" base_EnumerationLiteral="_QdFYkExXEeGCUrfdtxCbHg"/>
   <term:ValueSetCode xmi:id="_TWOv8ExXEeGCUrfdtxCbHg" conceptName="Not pregnant, but pregnant within 42 days of death" base_EnumerationLiteral="_TWOI4ExXEeGCUrfdtxCbHg"/>
@@ -160,12 +125,12 @@
   <term:ValueSetCode xmi:id="_XmbZ0UxXEeGCUrfdtxCbHg" conceptName="Unknown if pregnant within the past year" base_EnumerationLiteral="_XmbZ0ExXEeGCUrfdtxCbHg"/>
   <term:ValueSetCode xmi:id="_aSf-gUxXEeGCUrfdtxCbHg" conceptName="Not Applicable: Computer Generated" base_EnumerationLiteral="_aSf-gExXEeGCUrfdtxCbHg"/>
   <term:ValueSetCode xmi:id="_cRZUIUxXEeGCUrfdtxCbHg" conceptName="Not on Certificate" base_EnumerationLiteral="_cRZUIExXEeGCUrfdtxCbHg"/>
-  <term:CodeSystemVersion xmi:id="_qYhm4ExXEeGCUrfdtxCbHg" identifier="OID TBD" base_Enumeration="_qYg_0ExXEeGCUrfdtxCbHg"/>
-  <term:ValueSetVersion xmi:id="_tJkyMExXEeGCUrfdtxCbHg" base_Enumeration="_tJkLIExXEeGCUrfdtxCbHg"/>
-  <term:ValueSetCode xmi:id="_0lP5kUxXEeGCUrfdtxCbHg" conceptName="Driver or Operator" base_EnumerationLiteral="_0lP5kExXEeGCUrfdtxCbHg"/>
+  <term:ValueSetVersion xmi:id="_tJkyMExXEeGCUrfdtxCbHg" identifier="2.16.840.1.114222.4.11.6005" base_Enumeration="_tJkLIExXEeGCUrfdtxCbHg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_0lP5kUxXEeGCUrfdtxCbHg" conceptName="Driver of moter vehicle" base_EnumerationLiteral="_0lP5kExXEeGCUrfdtxCbHg"/>
   <term:ValueSetCode xmi:id="_16vs4ExXEeGCUrfdtxCbHg" conceptName="Passenger" base_EnumerationLiteral="_16vF0ExXEeGCUrfdtxCbHg"/>
   <term:ValueSetCode xmi:id="_33bcAExXEeGCUrfdtxCbHg" conceptName="Pedestrian" base_EnumerationLiteral="_33a08ExXEeGCUrfdtxCbHg"/>
-  <term:CodeSystemVersion xmi:id="_LoQHQFaBEeGrndXG9pRuHg" identifier="2.16.840.1.114222.4.11.6004" base_Enumeration="_LoPgMFaBEeGrndXG9pRuHg"/>
   <term:CodeSystemVersion xmi:id="_g8J7wG-FEeGducFY2S5l3A" identifier="OID TBD" base_Enumeration="_g8JUsG-FEeGducFY2S5l3A"/>
   <term:ValueSetVersion xmi:id="_o_zCEG-FEeGducFY2S5l3A" codeSystem="_g8J7wG-FEeGducFY2S5l3A" base_Enumeration="_o_ybAG-FEeGducFY2S5l3A"/>
   <term:ValueSetCode xmi:id="_vOL28G-FEeGducFY2S5l3A" conceptName="Hospital Inpatient" base_EnumerationLiteral="_vOKo0G-FEeGducFY2S5l3A"/>
@@ -174,4 +139,5 @@
   <term:ValueSetCode xmi:id="__pVawG-FEeGducFY2S5l3A" conceptName="Nursing Home" base_EnumerationLiteral="__pUzsG-FEeGducFY2S5l3A"/>
   <term:ValueSetCode xmi:id="_A9FhoW-GEeGducFY2S5l3A" conceptName="Residence" base_EnumerationLiteral="_A9FhoG-GEeGducFY2S5l3A"/>
   <term:ValueSetCode xmi:id="_CkrKgG-GEeGducFY2S5l3A" conceptName="Other" base_EnumerationLiteral="_CkqjcG-GEeGducFY2S5l3A"/>
+  <term:CodeSystemVersion xmi:id="_3lODsF66EeOAc4EMZ20xKQ" identifier="2.16.840.1.113883.12.136" fullName="HL70136 Yes/No Indicator" base_Enumeration="_3jsZsF66EeOAc4EMZ20xKQ"/>
 </xmi:XMI>

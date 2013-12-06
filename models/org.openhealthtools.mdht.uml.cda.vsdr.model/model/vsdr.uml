@@ -7,7 +7,7 @@
     <packageImport xmi:id="_W_H3MUj_EeGtBMy1ENLCpQ">
       <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Class" xmi:id="_W9yacUj_EeGtBMy1ENLCpQ" name="Reporting death information from a clinical setting to vital records">
+    <packagedElement xmi:type="uml:Class" xmi:id="_W9yacUj_EeGtBMy1ENLCpQ" name="Reporting Death Information from a Clinical Setting to Vital Records">
       <generalization xmi:id="_do13EFlvEeGYU_6eTM1M0g">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
       </generalization>
@@ -19,6 +19,16 @@
         <defaultValue xmi:type="uml:InstanceValue" xmi:id="_o27sY1D5EeGR99drm3mRRg" name="DOCCLIN">
           <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVd2kDcEd6xYZuu1VKCVw"/>
           <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVd20DcEd6xYZuu1VKCVw"/>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_o28TdlD5EeGR99drm3mRRg" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EJKqQFHFEeGSqNO1bVTZyw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EJLRUFHFEeGSqNO1bVTZyw" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_iEuGsEolEd6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_o28TeVD5EeGR99drm3mRRg" name="EVN">
+          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+          <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
         </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_o27sZFD5EeGR99drm3mRRg" name="code" visibility="private" aggregation="composite">
@@ -52,27 +62,17 @@
           <body>The language used for text within the document.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8KVuIFGmEeGSqNO1bVTZyw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8KVuIVGmEeGSqNO1bVTZyw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p11vIF6lEeO_5svOqPnaJg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p14ycF6lEeO_5svOqPnaJg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3qLBoEokEd6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_i3obIFGjEeGSqNO1bVTZyw" value="EN"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_o28TdlD5EeGR99drm3mRRg" name="moodCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EJKqQFHFEeGSqNO1bVTZyw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EJLRUFHFEeGSqNO1bVTZyw" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_iEuGsEolEd6c3qsAxlFHaQ"/>
-        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_o28TeVD5EeGR99drm3mRRg" name="EVN">
-          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
-          <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_o28TelD5EeGR99drm3mRRg" name="realmCode" visibility="private" isReadOnly="true" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6VGDwFGmEeGSqNO1bVTZyw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6VGDwVGmEeGSqNO1bVTZyw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fQPpMExwEd6h-an5IXo-DA"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_FfwFsFGkEeGSqNO1bVTZyw" value="USA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_FfwFsFGkEeGSqNO1bVTZyw" value="US"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_o28TfVD5EeGR99drm3mRRg" name="title" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_KDG8IFGkEeGSqNO1bVTZyw">
@@ -148,9 +148,6 @@
         </nestedClassifier>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_Ket-MFm0EeGlsI-eW0rVvQ" name="Author">
-        <ownedComment xmi:id="_NwnP8Fm4EeGlsI-eW0rVvQ">
-          <body>INLINE</body>
-        </ownedComment>
         <generalization xmi:id="_R0l_kFm0EeGlsI-eW0rVvQ">
           <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
         </generalization>
@@ -180,9 +177,6 @@
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_z2vcQEcDEd6besF9iFIJkQ"/>
           </generalization>
           <ownedAttribute xmi:id="_BrcN4Fm4EeGlsI-eW0rVvQ" name="classCode" visibility="private" isReadOnly="true">
-            <ownedComment xmi:id="_Va-TkFm4EeGlsI-eW0rVvQ">
-              <body>INLINE</body>
-            </ownedComment>
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE3AkDcEd6xYZuu1VKCVw"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tmd8UFm6EeGlsI-eW0rVvQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tmd8UVm6EeGlsI-eW0rVvQ" value="1"/>
@@ -200,9 +194,6 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l5LycVm4EeGlsI-eW0rVvQ" value="1"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_ajwyUFm4EeGlsI-eW0rVvQ" name="AuthoringPerson">
-            <ownedComment xmi:id="_on1xEFm4EeGlsI-eW0rVvQ">
-              <body>INLINE</body>
-            </ownedComment>
             <generalization xmi:id="_gFsJ0Fm4EeGlsI-eW0rVvQ">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
             </generalization>
@@ -239,9 +230,6 @@
         </nestedClassifier>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_qtD7sFm5EeGlsI-eW0rVvQ" name="RecordTarget">
-        <ownedComment xmi:id="_oJcS8Fm6EeGlsI-eW0rVvQ">
-          <body>INLINE</body>
-        </ownedComment>
         <generalization xmi:id="_xgYCkFm5EeGlsI-eW0rVvQ">
           <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CVzT8EALEd6wZe6nFLrjsw"/>
         </generalization>
@@ -278,11 +266,11 @@
           </ownedAttribute>
           <ownedAttribute xmi:id="_Ax2MFFm7EeGlsI-eW0rVvQ" name="id" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_gfHPEFm7EeGlsI-eW0rVvQ">
-              <body>.   It is expected that Social Security Number will be provided if it is available.  If SSN is not availaible, a null flavor should be provided.</body>
+              <body>One or more identifiers may be provided.  Social Security Number of the decendent is required, and must be provided if it is available.  If SSN is not availaible, a null flavor must be provided.  Additional identifier types are allowed.  Note, when including US Social Security Number as the patient identifier, the OID value to be used for the II root is 2.16.840.1.113883.3.184.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JRKhwFm7EeGlsI-eW0rVvQ" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JRKhwVm7EeGlsI-eW0rVvQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QWQ0EFxNEeOzK8lMYSCg8Q" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QWRbIFxNEeOzK8lMYSCg8Q" value="1"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_detJUErfEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_rU_zgFm7EeGlsI-eW0rVvQ" name="addr" visibility="private" aggregation="composite">
@@ -299,9 +287,6 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YS3w8Vm8EeGlsI-eW0rVvQ" value="1"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_zyYPgFm7EeGlsI-eW0rVvQ" name="Person">
-            <ownedComment xmi:id="_bbRFQFm8EeGlsI-eW0rVvQ">
-              <body>INLINE</body>
-            </ownedComment>
             <generalization xmi:id="_62NeoFm7EeGlsI-eW0rVvQ">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mxsCMEALEd6wZe6nFLrjsw"/>
             </generalization>
@@ -310,12 +295,6 @@
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cihoQFm8EeGlsI-eW0rVvQ" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cihoQVm8EeGlsI-eW0rVvQ" value="1"/>
               <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_2wfzIEreEd6FXKclYGEDCw"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_M54fc1m8EeGlsI-eW0rVvQ" name="birthTime" visibility="private" aggregation="composite">
-              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dFDGgFm8EeGlsI-eW0rVvQ" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dFDGgVm8EeGlsI-eW0rVvQ" value="1"/>
-              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_5dgL8EreEd6FXKclYGEDCw"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_M54fdlm8EeGlsI-eW0rVvQ" name="classCode" visibility="private" isReadOnly="true">
               <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoLe0DcEd6xYZuu1VKCVw"/>
@@ -347,7 +326,7 @@
         </nestedClassifier>
       </nestedClassifier>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_TwEEwEkAEeGtBMy1ENLCpQ" name="Time of Death">
+    <packagedElement xmi:type="uml:Class" xmi:id="_TwEEwEkAEeGtBMy1ENLCpQ" name="Date and Time of Death">
       <ownedComment xmi:id="_2dxZ8EkAEeGtBMy1ENLCpQ">
         <body>The template provides information about the decedent's date and time of death.</body>
       </ownedComment>
@@ -358,6 +337,11 @@
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_8bhKwEkAEeGtBMy1ENLCpQ" value="OBS"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_feBgtUkAEeGtBMy1ENLCpQ" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_VKeX0EkBEeGtBMy1ENLCpQ" value="EVN"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_feBgsUkAEeGtBMy1ENLCpQ" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -372,14 +356,9 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZnDz8W95EeGducFY2S5l3A" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_feBgtUkAEeGtBMy1ENLCpQ" name="moodCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_VKeX0EkBEeGtBMy1ENLCpQ" value="EVN"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_feBgtkkAEeGtBMy1ENLCpQ" name="text" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_qzsjAEkBEeGtBMy1ENLCpQ">
-          <body>Provide informamtion relevant to the date/time of death in cases where the point in time can in no way be established.</body>
+          <body>Provide information relevant to the date/time of death in cases where the point in time can in no way be established.  If needed, supplemental text may be added to indicate that date/time information, while present, is approximate.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_feBgt0kAEeGtBMy1ENLCpQ" value="1"/>
@@ -396,18 +375,18 @@
           <body>A code to indicate this is the section containing death reporting information.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-ciK0UkBEeGtBMy1ENLCpQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-ciK0kkBEeGtBMy1ENLCpQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9R44IF6lEeO_5svOqPnaJg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9R77cF6lEeO_5svOqPnaJg" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_WgMYIEkCEeGtBMy1ENLCpQ" value="LOINC TBD"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-cr70EkBEeGtBMy1ENLCpQ" name="text" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_NpXhYEkCEeGtBMy1ENLCpQ">
-          <body>Contains, as text entries that can be rendered using a browser, the content of the structured information from the entries within the section.</body>
+          <body>The text entry is drawn from the structured content contained within the entries of this section. Text is required to provide human readible content.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-cr70UkBEeGtBMy1ENLCpQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-cr70kkBEeGtBMy1ENLCpQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DbdecF6mEeO_5svOqPnaJg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DbhI0F6mEeO_5svOqPnaJg" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_w6QcIEkCEeGtBMy1ENLCpQ" name="time of Death" type="_TwEEwEkAEeGtBMy1ENLCpQ" association="_w6QcIkkCEeGtBMy1ENLCpQ">
@@ -418,7 +397,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_od12oG-oEeGducFY2S5l3A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_od12oW-oEeGducFY2S5l3A" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_SHzCcEksEeGZuYViNfIskw" name="death Certification" type="_sLKXUEkkEeGZuYViNfIskw" association="_SHzCckksEeGZuYViNfIskw">
+      <ownedAttribute xmi:id="_SHzCcEksEeGZuYViNfIskw" name="certifying Death" type="_sLKXUEkkEeGZuYViNfIskw" association="_SHzCckksEeGZuYViNfIskw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SHzCcUksEeGZuYViNfIskw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_63MpYEtSEeGCUrfdtxCbHg" name="manner of Death" type="_ZzKdMEtREeGCUrfdtxCbHg" association="_63NQcEtSEeGCUrfdtxCbHg">
@@ -426,10 +405,15 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Bw1IW90EeGducFY2S5l3A" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_9o5U8EtSEeGCUrfdtxCbHg" name="pregnancy Status" type="_LHUeYEtSEeGCUrfdtxCbHg" association="_9o5U8ktSEeGCUrfdtxCbHg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9o5U8UtSEeGCUrfdtxCbHg"/>
+        <ownedComment xmi:id="_B4CUUFxrEeO_5svOqPnaJg">
+          <body>Note, the entry is required if the person is female and in the age range 5 to 75 years.   In other cases, e.g., male decedent, the nullFlavor &quot;NA&quot;, should be provided.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rou6oF6UEeO_5svOqPnaJg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rou6oV6UEeO_5svOqPnaJg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Byb9MEtTEeGCUrfdtxCbHg" name="tobacco Use" type="_nmWDwEtSEeGCUrfdtxCbHg" association="_ByckQEtTEeGCUrfdtxCbHg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Byb9MUtTEeGCUrfdtxCbHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LwX68F6mEeO_5svOqPnaJg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LwX68V6mEeO_5svOqPnaJg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_J9_5AFGsEeGSqNO1bVTZyw" name="injury" type="_zXPkAFGqEeGSqNO1bVTZyw" association="_J-AgEVGsEeGSqNO1bVTZyw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J-AgEFGsEeGSqNO1bVTZyw"/>
@@ -456,13 +440,17 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xbjjEG-pEeGducFY2S5l3A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xbjjEW-pEeGducFY2S5l3A" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_my8ZIF6VEeO_5svOqPnaJg" name="pronouncing Death" type="_TLji0F6VEeO_5svOqPnaJg" association="_mzGKIF6VEeO_5svOqPnaJg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n3ZfwF6VEeO_5svOqPnaJg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n3cjEF6VEeO_5svOqPnaJg" value="1"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_w6QcIkkCEeGtBMy1ENLCpQ" memberEnd="_w6QcIEkCEeGtBMy1ENLCpQ _w6QcI0kCEeGtBMy1ENLCpQ">
       <ownedEnd xmi:id="_w6QcI0kCEeGtBMy1ENLCpQ" type="_2l1UUEkBEeGtBMy1ENLCpQ" association="_w6QcIkkCEeGtBMy1ENLCpQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_GBayYEkfEeGqCpGMXULTvg" name="Location of Death">
       <ownedComment xmi:id="_Q4taoFGnEeGSqNO1bVTZyw">
-        <body>This template contains information to document where the death occurred.</body>
+        <body>This template contains information to document the place (geographic location) where the death occurred.</body>
       </ownedComment>
       <generalization xmi:id="_GBayYUkfEeGqCpGMXULTvg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -472,14 +460,14 @@
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_SD6T4EkfEeGqCpGMXULTvg" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_LtBDQEkfEeGqCpGMXULTvg" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_LtBDQUkfEeGqCpGMXULTvg" name="moodCode" visibility="private">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_XGmxsEkfEeGqCpGMXULTvg" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LtBDQEkfEeGqCpGMXULTvg" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_LtBDQkkfEeGqCpGMXULTvg" name="text" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_rc0c4EkfEeGqCpGMXULTvg">
@@ -506,9 +494,11 @@
       </ownedComment>
       <ownedEnd xmi:id="_-6puk0kfEeGqCpGMXULTvg" type="_2l1UUEkBEeGtBMy1ENLCpQ" association="_-6pukkkfEeGqCpGMXULTvg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_sLKXUEkkEeGZuYViNfIskw" name="Death Certification">
+    <packagedElement xmi:type="uml:Class" xmi:id="_sLKXUEkkEeGZuYViNfIskw" name="Certifying Death">
       <ownedComment xmi:id="_2v8z8FGkEeGSqNO1bVTZyw">
-        <body>The template contains information on the the signing and identification of the death certificate.  This information may not be available if a case has been assigned to the coroner or medical examiner.</body>
+        <body>The template contains information on the certification of the person's death.  This information may not be available if a case has been assigned to the coroner or medical examiner.&#xD;
+&#xD;
+The certifying physician certifies or reports the cause of death.  In addition the certifying physician is responsible for including additional items, e.g., pregnancy status, tobacco use.  In most cases, a physician will both pronounce death and certify or report the cause of death.  A different physician will pronounce death only when the attending physician is unavailable to certify the cause of death at the time of death and if State law provides for this option. If an inquiry is required by a State Post-Mortem Examinations Act, a medical examiner or coroner is responsible for determining cause of death.</body>
       </ownedComment>
       <generalization xmi:id="_sLUIUEkkEeGZuYViNfIskw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -517,31 +507,28 @@
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_GlYMVUklEeGZuYViNfIskw" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_GlYMUUklEeGZuYViNfIskw" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_GlYMUkklEeGZuYViNfIskw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_7bHL8EknEeGZuYViNfIskw">
-          <body>Provide the date and time at which the death certificate was signed.  A value is required if the case has not been assigned to a coronor/medical examiner.</body>
+          <body>Provide the date and time at which the death certificate was signed.  A value is required if the case has not been assigned to a coroner/medical examiner.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GlYMU0klEeGZuYViNfIskw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GlYMVEklEeGZuYViNfIskw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yZkI4F6TEeO_5svOqPnaJg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yZ3q4F6TEeO_5svOqPnaJg" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_GlYMVUklEeGZuYViNfIskw" name="moodCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Gp8goFNUEeGRGfOtxXFQuA" name="certificationPerformer" type="_1fF-MFNTEeGRGfOtxXFQuA" association="_Gp9HsFNUEeGRGfOtxXFQuA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-seB0FNVEeGRGfOtxXFQuA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-seo4FNVEeGRGfOtxXFQuA" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_1fF-MFNTEeGRGfOtxXFQuA" name="CertificationPerformer">
-        <ownedComment xmi:id="_S6j9sFNUEeGRGfOtxXFQuA">
-          <body>INLINE</body>
-        </ownedComment>
         <generalization xmi:id="_7XPdUFNTEeGRGfOtxXFQuA">
           <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
         </generalization>
@@ -596,7 +583,7 @@ The element is required if the death has been certified.</body>
           </ownedAttribute>
           <ownedAttribute xmi:id="_1JLJcLS3EeGhbsXY607ygg" name="id" visibility="private" aggregation="composite">
             <ownedComment xmi:id="__Jy50LS3EeGhbsXY607ygg">
-              <body>One or more dentifiers for the certifying clinician.  The state license number is required.</body>
+              <body>One or more identifiers for the certifying clinician.  The state license number is required.  Provider NPI may be added as well.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1JLJcbS3EeGhbsXY607ygg" value="*"/>
@@ -648,7 +635,7 @@ A value is required if the case has not been assigned to a coroner/medical exami
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ZzKdMEtREeGCUrfdtxCbHg" name="Manner of Death">
       <ownedComment xmi:id="_dBjbwFGnEeGSqNO1bVTZyw">
-        <body>This template contains information on the main categories in which death can occur.</body>
+        <body>This template contains information on the manner in which the death occurred.</body>
       </ownedComment>
       <generalization xmi:id="_Z0HfcEtREeGCUrfdtxCbHg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -658,20 +645,20 @@ A value is required if the case has not been assigned to a coroner/medical exami
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_gIPv8EtREeGCUrfdtxCbHg" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_czc-YEtREeGCUrfdtxCbHg" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_czdlcEtREeGCUrfdtxCbHg" name="moodCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_gDqVcEtSEeGCUrfdtxCbHg" value="EVN"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_czc-YEtREeGCUrfdtxCbHg" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_czdlcUtREeGCUrfdtxCbHg" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_yncPIEtREeGCUrfdtxCbHg">
           <body>A coded indication of the manner in which the person died.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VIhzIG95EeGducFY2S5l3A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VIhzIW95EeGducFY2S5l3A" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
@@ -679,7 +666,7 @@ A value is required if the case has not been assigned to a coroner/medical exami
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_LHUeYEtSEeGCUrfdtxCbHg" name="Pregnancy Status">
       <ownedComment xmi:id="_vfZ3IFGnEeGSqNO1bVTZyw">
-        <body>This template contains information on the pregnancy status of the deceased.</body>
+        <body>This template contains information on the pregnancy status of the decedent.</body>
       </ownedComment>
       <generalization xmi:id="_LHVFcEtSEeGCUrfdtxCbHg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -689,21 +676,21 @@ A value is required if the case has not been assigned to a coroner/medical exami
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_QVgagEtSEeGCUrfdtxCbHg" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_N-zo4EtSEeGCUrfdtxCbHg" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_N-zo4UtSEeGCUrfdtxCbHg" name="moodCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_YtupsEtSEeGCUrfdtxCbHg" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_N-zo4EtSEeGCUrfdtxCbHg" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_N-0P8EtSEeGCUrfdtxCbHg" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_ak18UEtSEeGCUrfdtxCbHg">
           <body>A code that provides information regarding whether or not the person was pregnant at the time of her death, or whether she was pregnant around the time of death.&#xD;
 Required if the person is female and in the age range 5 to 75 years.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W6op8G95EeGducFY2S5l3A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W6op8W95EeGducFY2S5l3A" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
@@ -711,7 +698,7 @@ Required if the person is female and in the age range 5 to 75 years.</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_nmWDwEtSEeGCUrfdtxCbHg" name="Tobacco Use">
       <ownedComment xmi:id="_PuexQFGpEeGSqNO1bVTZyw">
-        <body>this template includes information about the deceased's use of tobacco.</body>
+        <body>this template includes information about the decedent's use of tobacco.</body>
       </ownedComment>
       <generalization xmi:id="_nmWq0EtSEeGCUrfdtxCbHg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -721,6 +708,11 @@ Required if the person is female and in the age range 5 to 75 years.</body>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_rVQlgEtSEeGCUrfdtxCbHg" value="OBS"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_pkHYAUtSEeGCUrfdtxCbHg" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_r8gLsEtSEeGCUrfdtxCbHg" value="EVN"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_pkHYAEtSEeGCUrfdtxCbHg" name="code" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_1CjKMEtSEeGCUrfdtxCbHg">
           <body>A coded indication of the extent of the person's use of tobacco.  The data is captured if tobacco use may have contributed to their death.</body>
@@ -728,13 +720,8 @@ Required if the person is female and in the age range 5 to 75 years.</body>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_pkHYAUtSEeGCUrfdtxCbHg" name="moodCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_r8gLsEtSEeGCUrfdtxCbHg" value="EVN"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_pkH_EEtSEeGCUrfdtxCbHg" name="value" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UYykQFGpEeGSqNO1bVTZyw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UYykQVGpEeGSqNO1bVTZyw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
@@ -751,7 +738,7 @@ Required if the person is female and in the age range 5 to 75 years.</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_K6HN4FGqEeGSqNO1bVTZyw" name="Death Causal Information">
       <ownedComment xmi:id="_XIpAQFGqEeGSqNO1bVTZyw">
-        <body>The template containts information provided by the clinican to indicate the cause or causes behind the person's death.  The information includes the chain of events that directly caused the death, and includes other significant conditions contributing to death.  There may be up to four causal elements provided, along with a single statement of the other significant conditions.</body>
+        <body>The template contains information provided by the clinican to indicate the cause or causes behind the person's death.  The information includes the chain of events that directly caused the death, and includes other significant conditions contributing to death.  There may be up to four causal elements provided, along with a single statement of the other significant conditions.</body>
       </ownedComment>
       <generalization xmi:id="_K6HN4VGqEeGSqNO1bVTZyw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
@@ -761,12 +748,6 @@ Required if the person is female and in the age range 5 to 75 years.</body>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_NjnHQEb9Ed6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_Z8Y6QFGqEeGSqNO1bVTZyw" value="CLUSTER"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Nd-RwVGqEeGSqNO1bVTZyw" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cKABUFGqEeGSqNO1bVTZyw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cKABUVGqEeGSqNO1bVTZyw" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_Nd-40FGqEeGSqNO1bVTZyw" name="moodCode" visibility="private">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Nd-40VGqEeGSqNO1bVTZyw" value="1"/>
@@ -774,7 +755,19 @@ Required if the person is female and in the age range 5 to 75 years.</body>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z5I4MErcEd6FXKclYGEDCw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_ir4Z8FGqEeGSqNO1bVTZyw" value="EVN"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Nd-401GqEeGSqNO1bVTZyw" name="statusCode" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_Nd-RwVGqEeGSqNO1bVTZyw" name="code" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_zWLosFxPEeOzK8lMYSCg8Q">
+          <body>A code that indicates that death causal information is provided.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cKABUFGqEeGSqNO1bVTZyw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cKABUVGqEeGSqNO1bVTZyw" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Nd-401GqEeGSqNO1bVTZyw" name="statusCode" visibility="private" isReadOnly="true" aggregation="composite">
+        <ownedComment xmi:id="_SxZYwFxYEeOzK8lMYSCg8Q">
+          <body>An indication of the status of the death causal information organizer.</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_SaXZgErcEd6FXKclYGEDCw"/>
       </ownedAttribute>
@@ -783,11 +776,8 @@ Required if the person is female and in the age range 5 to 75 years.</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q8klgW94EeGducFY2S5l3A" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_gTl4kFKJEeG6eOb5pyaZOw" name="componentOtherSignificantCondition" type="_p-Tw0FHNEeGSqNO1bVTZyw" association="_gTl4klKJEeG6eOb5pyaZOw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gTl4kVKJEeG6eOb5pyaZOw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_e_jWcFKMEeG6eOb5pyaZOw" name="componentDeathCauseInterval" type="_hW7k4FKJEeG6eOb5pyaZOw" association="_e_jWclKMEeG6eOb5pyaZOw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SiVCYG94EeGducFY2S5l3A" value="4"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SiVCYW94EeGducFY2S5l3A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1P1wkF0hEeO_5svOqPnaJg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1P1wkV0hEeO_5svOqPnaJg"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_p-Tw0FHNEeGSqNO1bVTZyw" name="ComponentOtherSignificantCondition">
         <ownedComment xmi:id="_HSs8EFKLEeG6eOb5pyaZOw">
@@ -807,7 +797,8 @@ Required if the person is female and in the age range 5 to 75 years.</body>
           </defaultValue>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7d5NIFHNEeGSqNO1bVTZyw" name="otherSignificantCondition" type="_-OBn4FHMEeGSqNO1bVTZyw" association="_7d5NIlHNEeGSqNO1bVTZyw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7d5NIVHNEeGSqNO1bVTZyw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GmArsF6iEeO_5svOqPnaJg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GmArsV6iEeO_5svOqPnaJg" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_-OBn4FHMEeGSqNO1bVTZyw" name="OtherSignificantCondition">
           <ownedComment xmi:id="_GsBH4FHNEeGSqNO1bVTZyw">
@@ -821,18 +812,18 @@ Required if the person is female and in the age range 5 to 75 years.</body>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_hNVqcFHNEeGSqNO1bVTZyw" value="OBS"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_TohakVHNEeGSqNO1bVTZyw" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-          </ownedAttribute>
           <ownedAttribute xmi:id="_ToiBoFHNEeGSqNO1bVTZyw" name="moodCode" visibility="private" isReadOnly="true">
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_jcbYMFHNEeGSqNO1bVTZyw" value="EVN"/>
           </ownedAttribute>
+          <ownedAttribute xmi:id="_TohakVHNEeGSqNO1bVTZyw" name="code" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+          </ownedAttribute>
           <ownedAttribute xmi:id="_ToiBoVHNEeGSqNO1bVTZyw" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_pVp1YFHNEeGSqNO1bVTZyw">
-              <body>Descriptive text that provides information on a significant condition or conditions that contributed to death, but did not result in the underlying cause that is elsewhere described.  In order to comply with NCHS edit specifications, the maximum length is 240 characters.</body>
+              <body>Descriptive text that provides information on a significant condition or conditions that contributed to death, but did not result in the underlying cause that is elsewhere described.  In order to comply with NCHS edit specifications, the maximum length of the significant condition descriptions, across the set of encapsulated date values, is 240 characters.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WyCJMFHNEeGSqNO1bVTZyw" value="1"/>
@@ -881,6 +872,9 @@ Required if the person is female and in the age range 5 to 75 years.</body>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_Kpo8kFHkEeGSqNO1bVTZyw" value="OBS"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_IRy7cFHkEeGSqNO1bVTZyw" name="code" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_wewZgFxYEeOzK8lMYSCg8Q">
+              <body>An indication that the observation contains information regarding a specific cause of death.</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
@@ -891,74 +885,80 @@ Required if the person is female and in the age range 5 to 75 years.</body>
           </ownedAttribute>
           <ownedAttribute xmi:id="_IRy7clHkEeGSqNO1bVTZyw" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_amqZ8FHkEeGSqNO1bVTZyw">
-              <body>Aset of codes that indicates one or more diseases, injuries, or complications that were implicated as a cause of the person's death.   Code is optional, and original text is required.   In order to comply with NCHS edit specifications, the maximum length of the original text values (combined across the set of concept descriptors) is 120 characters. &#xD;
-The immediate cause of death and the underlying cause of death must be reported.  Additional causes of death up to two may be recorded.  Death causes are ordered sequentially with the immediate cause of death given the sequence number &quot;1&quot;, and the underlying cause of death being given the highest sequence number among the set of cited causes.&#xD;
-Each cause of death is associated with a numeric observation Death Cause Interval which captures the approximate interval between the onset of the death cause (condition) and death.  This linkage is implemented through the use of actRelationship.sequenceNumber.</body>
+              <body>In order to comply with NCHS edit specifications, the entry is descriptive text with a maximum length of 120 characters. . Death causes are ordered sequentially with the immediate cause of death given the sequence number &quot;1&quot;, and the underlying cause of death being given the highest sequence number among the set of cited causes. Each cause of death is associated with a numeric observation Death Cause Interval which captures the approximate interval between the onset of the death cause (condition) and death. This linkage is implemented through the use of actRelationship.sequenceNumber.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NTDQULS0EeGhbsXY607ygg" value="*"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NTDQUbS0EeGhbsXY607ygg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xf4VgF0mEeO_5svOqPnaJg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xf4VgV0mEeO_5svOqPnaJg" value="1"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
-        </nestedClassifier>
-      </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_hW7k4FKJEeG6eOb5pyaZOw" name="ComponentDeathCauseInterval">
-        <ownedComment xmi:id="_GGK3gFKLEeG6eOb5pyaZOw">
-          <body>INLINE</body>
-        </ownedComment>
-        <generalization xmi:id="_4YbxoFKJEeG6eOb5pyaZOw">
-          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cEUTcEcEEd6besF9iFIJkQ"/>
-        </generalization>
-        <ownedAttribute xmi:id="_8_A7MFKJEeG6eOb5pyaZOw" name="sequenceNumber" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8_A7MVKJEeG6eOb5pyaZOw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8_A7MlKJEeG6eOb5pyaZOw"/>
-          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cQSwUEotEd6c3qsAxlFHaQ"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_8_BiQFKJEeG6eOb5pyaZOw" name="typeCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8_BiQVKJEeG6eOb5pyaZOw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8_BiQlKJEeG6eOb5pyaZOw"/>
-          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CHhbMEouEd6c3qsAxlFHaQ"/>
-          <defaultValue xmi:type="uml:InstanceValue" xmi:id="_8_BiQ1KJEeG6eOb5pyaZOw" name="COMP">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
-            <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZukDcEd6xYZuu1VKCVw"/>
-          </defaultValue>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_x0SAwFKMEeG6eOb5pyaZOw" name="deathCauseInterval" type="_Ms-B0FKKEeG6eOb5pyaZOw" association="_x0SAwlKMEeG6eOb5pyaZOw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x0SAwVKMEeG6eOb5pyaZOw"/>
-        </ownedAttribute>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_Ms-B0FKKEeG6eOb5pyaZOw" name="DeathCauseInterval">
-          <ownedComment xmi:id="_FUaqcFKLEeG6eOb5pyaZOw">
-            <body>INLINE</body>
-          </ownedComment>
-          <generalization xmi:id="_QxJo8FKKEeG6eOb5pyaZOw">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-          </generalization>
-          <ownedAttribute xmi:id="_ZHJDgFKKEeG6eOb5pyaZOw" name="classCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_paqVUFKKEeG6eOb5pyaZOw" value="OBS"/>
+          <ownedAttribute xmi:id="_CK_AEF0cEeO_5svOqPnaJg" name="componentDeathCauseInterval" type="_hW7k4FKJEeG6eOb5pyaZOw" association="_CK_AEl0cEeO_5svOqPnaJg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D0pskF0cEeO_5svOqPnaJg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D0pskV0cEeO_5svOqPnaJg" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_ZHJDgVKKEeG6eOb5pyaZOw" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_ZHJqkFKKEeG6eOb5pyaZOw" name="moodCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_nySCQFKKEeG6eOb5pyaZOw" value="EVN"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_ZHJqkVKKEeG6eOb5pyaZOw" name="value" visibility="private" aggregation="composite">
-            <ownedComment xmi:id="_vpw74FKKEeG6eOb5pyaZOw">
-              <body>A measure of the time interval between the onset of the disease, injury or complication, and the person's death.  The data to be included will vary from statements of time intervals to text statements such as &quot;many months&quot;, &quot;days&quot;, &quot;unknown&quot;.&#xD;
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_hW7k4FKJEeG6eOb5pyaZOw" name="ComponentDeathCauseInterval">
+            <ownedComment xmi:id="_GGK3gFKLEeG6eOb5pyaZOw">
+              <body>INLINE</body>
+            </ownedComment>
+            <generalization xmi:id="_4YbxoFKJEeG6eOb5pyaZOw">
+              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cEUTcEcEEd6besF9iFIJkQ"/>
+            </generalization>
+            <ownedAttribute xmi:id="_8_A7MFKJEeG6eOb5pyaZOw" name="sequenceNumber" visibility="private" aggregation="composite">
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xC-10F6mEeO_5svOqPnaJg" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xDEVYF6mEeO_5svOqPnaJg" value="1"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cQSwUEotEd6c3qsAxlFHaQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_8_BiQFKJEeG6eOb5pyaZOw" name="typeCode" visibility="private" isReadOnly="true">
+              <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xni7cF6mEeO_5svOqPnaJg" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xnl-wF6mEeO_5svOqPnaJg" value="1"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CHhbMEouEd6c3qsAxlFHaQ"/>
+              <defaultValue xmi:type="uml:InstanceValue" xmi:id="_8_BiQ1KJEeG6eOb5pyaZOw" name="COMP">
+                <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
+                <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZukDcEd6xYZuu1VKCVw"/>
+              </defaultValue>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_x0SAwFKMEeG6eOb5pyaZOw" name="deathCauseInterval" type="_Ms-B0FKKEeG6eOb5pyaZOw" association="_x0SAwlKMEeG6eOb5pyaZOw">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yogpMF6mEeO_5svOqPnaJg" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yogpMV6mEeO_5svOqPnaJg" value="1"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_Ms-B0FKKEeG6eOb5pyaZOw" name="DeathCauseInterval">
+              <ownedComment xmi:id="_FUaqcFKLEeG6eOb5pyaZOw">
+                <body>INLINE</body>
+              </ownedComment>
+              <generalization xmi:id="_QxJo8FKKEeG6eOb5pyaZOw">
+                <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+              </generalization>
+              <ownedAttribute xmi:id="_ZHJDgFKKEeG6eOb5pyaZOw" name="classCode" visibility="private" isReadOnly="true">
+                <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+                <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_paqVUFKKEeG6eOb5pyaZOw" value="OBS"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_ZHJDgVKKEeG6eOb5pyaZOw" name="code" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_QAY0QFxZEeOzK8lMYSCg8Q">
+                  <body>An indication that the observation contains information regrading the interval between disease onset and time of death.</body>
+                </ownedComment>
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+                <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_ZHJqkFKKEeG6eOb5pyaZOw" name="moodCode" visibility="private" isReadOnly="true">
+                <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+                <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_nySCQFKKEeG6eOb5pyaZOw" value="EVN"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_ZHJqkVKKEeG6eOb5pyaZOw" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_vpw74FKKEeG6eOb5pyaZOw">
+                  <body>A measure of the time interval between the onset of the disease, injury or complication, and the person's death.  The data to be included will vary from statements of time intervals to text statements such as &quot;many months&quot;, &quot;days&quot;, &quot;unknown&quot;.&#xD;
 Each death cause interval value is associated with a cause of death observation Cause of Death - that identifies the condition associated with the time interval.  This linkage is implemented through the use of actRelationship.sequenceNumber.</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZHJqklKKEeG6eOb5pyaZOw" value="*"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZHJqk1KKEeG6eOb5pyaZOw"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
-          </ownedAttribute>
+                </ownedComment>
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZHJqklKKEeG6eOb5pyaZOw" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZHJqk1KKEeG6eOb5pyaZOw"/>
+                <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
         </nestedClassifier>
       </nestedClassifier>
     </packagedElement>
@@ -974,12 +974,6 @@ Each death cause interval value is associated with a cause of death observation 
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_NjnHQEb9Ed6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_W3280FGrEeGSqNO1bVTZyw" value="CLUSTER"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_1W2rUVGqEeGSqNO1bVTZyw" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ciqjgFGrEeGSqNO1bVTZyw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ciqjgVGrEeGSqNO1bVTZyw" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_1W2rVFGqEeGSqNO1bVTZyw" name="moodCode" visibility="private">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1W2rVVGqEeGSqNO1bVTZyw" value="1"/>
@@ -987,18 +981,30 @@ Each death cause interval value is associated with a cause of death observation 
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z5I4MErcEd6FXKclYGEDCw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_eHsnoFGrEeGSqNO1bVTZyw" value="EVN"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_1W2rUVGqEeGSqNO1bVTZyw" name="code" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_Xn63QFxiEeO_5svOqPnaJg">
+          <body>An indication that the person's death resulted from an injury.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ciqjgFGrEeGSqNO1bVTZyw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ciqjgVGrEeGSqNO1bVTZyw" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_1W2rV1GqEeGSqNO1bVTZyw" name="statusCode" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_SaXZgErcEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_tLjQMFKOEeG6eOb5pyaZOw" name="componentInjuryInformation" type="_YoNkcFKNEeG6eOb5pyaZOw" association="_tLjQMlKOEeG6eOb5pyaZOw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tLjQMVKOEeG6eOb5pyaZOw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6VrPsF0mEeO_5svOqPnaJg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6VrPsV0mEeO_5svOqPnaJg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_npzasFKVEeG6eOb5pyaZOw" name="componentWorkAssociation" type="_ffoEAFKUEeG6eOb5pyaZOw" association="_npzaslKVEeG6eOb5pyaZOw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_npzasVKVEeG6eOb5pyaZOw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7ZMiMF0mEeO_5svOqPnaJg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7ZMiMV0mEeO_5svOqPnaJg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_qqx4YFKVEeG6eOb5pyaZOw" name="componentTransportationAssociation" type="_uYBboFKUEeG6eOb5pyaZOw" association="_qqyfcFKVEeG6eOb5pyaZOw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qqx4YVKVEeG6eOb5pyaZOw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9g51kF0mEeO_5svOqPnaJg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9g51kV0mEeO_5svOqPnaJg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_s_S4sFKVEeG6eOb5pyaZOw" name="componentTransportationRelationship" type="_BZHG8FKVEeG6eOb5pyaZOw" association="_s_S4slKVEeG6eOb5pyaZOw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s_S4sVKVEeG6eOb5pyaZOw"/>
@@ -1012,8 +1018,8 @@ Each death cause interval value is associated with a cause of death observation 
         </generalization>
         <ownedAttribute xmi:id="_kNiBwFKNEeG6eOb5pyaZOw" name="typeCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kNiBwVKNEeG6eOb5pyaZOw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kNiBwlKNEeG6eOb5pyaZOw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9RWhMF0nEeO_5svOqPnaJg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9RWhMV0nEeO_5svOqPnaJg" value="1"/>
           <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zYLLgEolEd6c3qsAxlFHaQ"/>
           <defaultValue xmi:type="uml:InstanceValue" xmi:id="_kNiBw1KNEeG6eOb5pyaZOw" name="COMP">
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
@@ -1021,7 +1027,8 @@ Each death cause interval value is associated with a cause of death observation 
           </defaultValue>
         </ownedAttribute>
         <ownedAttribute xmi:id="_oF8oUFKOEeG6eOb5pyaZOw" name="injuryInformation" type="_tVKUoFKNEeG6eOb5pyaZOw" association="_oF9PYFKOEeG6eOb5pyaZOw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oF8oUVKOEeG6eOb5pyaZOw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9-7_8F0nEeO_5svOqPnaJg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9-7_8V0nEeO_5svOqPnaJg" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_tVKUoFKNEeG6eOb5pyaZOw" name="InjuryInformation">
           <ownedComment xmi:id="_0S9NMFKNEeG6eOb5pyaZOw">
@@ -1035,31 +1042,31 @@ Each death cause interval value is associated with a cause of death observation 
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_ISy_wFKOEeG6eOb5pyaZOw" value="OBS"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_DdNJ0FKOEeG6eOb5pyaZOw" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-          </ownedAttribute>
           <ownedAttribute xmi:id="_DdNJ1FKOEeG6eOb5pyaZOw" name="moodCode" visibility="private" isReadOnly="true">
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZId8YFKOEeG6eOb5pyaZOw" value="EVN"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_DdNJ0FKOEeG6eOb5pyaZOw" name="code" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_DdNJ1VKOEeG6eOb5pyaZOw" name="text" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_dnGD0FKOEeG6eOb5pyaZOw">
               <body>A text description of how the injury occurred.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DdNJ1lKOEeG6eOb5pyaZOw" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DdNJ11KOEeG6eOb5pyaZOw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o4CesF0nEeO_5svOqPnaJg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o4CesV0nEeO_5svOqPnaJg" value="1"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_DdNJ2FKOEeG6eOb5pyaZOw" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_l7lCgFKOEeG6eOb5pyaZOw">
-              <body>A Boolean indicator (Yes/No) that tells whether the death resulted from an injury.</body>
+              <body>An indicator that tells whether the death resulted from an injury.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DdNw4FKOEeG6eOb5pyaZOw" value="*"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DdNw4VKOEeG6eOb5pyaZOw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rTAsUF0nEeO_5svOqPnaJg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rTAsUV0nEeO_5svOqPnaJg" value="1"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_7pQgwFNbEeGRGfOtxXFQuA" name="locationParticipation" type="_wvLY0FNbEeGRGfOtxXFQuA" association="_7pRH0VNbEeGRGfOtxXFQuA">
@@ -1067,9 +1074,12 @@ Each death cause interval value is associated with a cause of death observation 
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_youpgVNdEeGRGfOtxXFQuA" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_hHPFIFWAEeG7_vEkEtC8Kw" name="effectiveTime" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_5_crkF0nEeO_5svOqPnaJg">
+              <body>A record of the date and time that the injury occurred.</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hHPFIVWAEeG7_vEkEtC8Kw" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hHPFIlWAEeG7_vEkEtC8Kw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Qgq0F0nEeO_5svOqPnaJg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7QmxcF0nEeO_5svOqPnaJg" value="1"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_wvLY0FNbEeGRGfOtxXFQuA" name="LocationParticipation">
@@ -1085,7 +1095,8 @@ Each death cause interval value is associated with a cause of death observation 
               <defaultValue xmi:type="uml:LiteralString" xmi:id="_Fi5fYFNcEeGRGfOtxXFQuA" value="LOC"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_ED3qsFNeEeGRGfOtxXFQuA" name="injuryLocationRole" type="_pEGHAFNcEeGRGfOtxXFQuA" association="_ED4RwVNeEeGRGfOtxXFQuA">
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ED4RwFNeEeGRGfOtxXFQuA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jxjtEF0nEeO_5svOqPnaJg" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jxjtEV0nEeO_5svOqPnaJg" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_pEGHAFNcEeGRGfOtxXFQuA" name="InjuryLocationRole">
               <ownedComment xmi:id="_uMTW8FNcEeGRGfOtxXFQuA">
@@ -1096,8 +1107,7 @@ Each death cause interval value is associated with a cause of death observation 
               </generalization>
               <ownedAttribute xmi:id="_wcKgwFNcEeGRGfOtxXFQuA" name="addr" visibility="private" aggregation="composite">
                 <ownedComment xmi:id="_424N0FNdEeGRGfOtxXFQuA">
-                  <body>The street address for the place where the injury occurred.&#xD;
-Required if the decedent suffered an injury leading to death.</body>
+                  <body>The street address for the place where the injury occurred.</body>
                 </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w8Jy8FNdEeGRGfOtxXFQuA" value="1"/>
@@ -1110,7 +1120,8 @@ Required if the decedent suffered an injury leading to death.</body>
                 <defaultValue xmi:type="uml:LiteralString" xmi:id="_tXVBUFNdEeGRGfOtxXFQuA" value="ISDLOC"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_cM5gMFNeEeGRGfOtxXFQuA" name="placeOfInjury" type="_RKMAsFNeEeGRGfOtxXFQuA" association="_cM5gMlNeEeGRGfOtxXFQuA">
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cM5gMVNeEeGRGfOtxXFQuA"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bDFhEF0nEeO_5svOqPnaJg" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bDFhEV0nEeO_5svOqPnaJg" value="1"/>
               </ownedAttribute>
               <nestedClassifier xmi:type="uml:Class" xmi:id="_RKMAsFNeEeGRGfOtxXFQuA" name="PlaceOfInjury">
                 <ownedComment xmi:id="_hsTvMFNeEeGRGfOtxXFQuA">
@@ -1121,30 +1132,29 @@ Required if the decedent suffered an injury leading to death.</body>
                 </generalization>
                 <ownedAttribute xmi:id="_YspskFNeEeGRGfOtxXFQuA" name="classCode" visibility="private" isReadOnly="true">
                   <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
-                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YspskVNeEeGRGfOtxXFQuA" value="1"/>
-                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YspsklNeEeGRGfOtxXFQuA"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eQ450F0nEeO_5svOqPnaJg" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eQ_AcF0nEeO_5svOqPnaJg" value="1"/>
                   <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yE5n8Eo0Ed6c3qsAxlFHaQ"/>
                   <defaultValue xmi:type="uml:LiteralString" xmi:id="_k39L0FNeEeGRGfOtxXFQuA" value="PLC"/>
                 </ownedAttribute>
-                <ownedAttribute xmi:id="_YsqToFNeEeGRGfOtxXFQuA" name="desc" visibility="private" aggregation="composite">
-                  <ownedComment xmi:id="_tZPQYFNeEeGRGfOtxXFQuA">
-                    <body>A description of the type of place where the injury occurred. Possible entries are &quot;at home&quot;, &quot;farm&quot;, &quot;factory&quot;, &quot;office building&quot;, &quot;restaurant&quot;.&#xD;
-Required if the decedent suffered an injury leading to death.</body>
-                  </ownedComment>
-                  <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u2n0YFNeEeGRGfOtxXFQuA" value="1"/>
-                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u2obcFNeEeGRGfOtxXFQuA"/>
-                  <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_uLcqIEo0Ed6c3qsAxlFHaQ"/>
-                </ownedAttribute>
                 <ownedAttribute xmi:id="_YsqTo1NeEeGRGfOtxXFQuA" name="determinerCode" visibility="private">
                   <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoOBUDcEd6xYZuu1VKCVw"/>
-                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YsqTpFNeEeGRGfOtxXFQuA" value="1"/>
-                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YsqTpVNeEeGRGfOtxXFQuA"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fQNo0F0nEeO_5svOqPnaJg" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fQNo0V0nEeO_5svOqPnaJg" value="1"/>
                   <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_A46O0Eo1Ed6c3qsAxlFHaQ"/>
                   <defaultValue xmi:type="uml:InstanceValue" xmi:id="_YsqTplNeEeGRGfOtxXFQuA" name="INSTANCE">
                     <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoOBUDcEd6xYZuu1VKCVw"/>
                     <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoOBkDcEd6xYZuu1VKCVw"/>
                   </defaultValue>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_YsqToFNeEeGRGfOtxXFQuA" name="desc" visibility="private" aggregation="composite">
+                  <ownedComment xmi:id="_tZPQYFNeEeGRGfOtxXFQuA">
+                    <body>A description of the type of place where the injury occurred. Some possible entries include &quot;at home&quot;, &quot;farm&quot;, &quot;factory&quot;, &quot;office building&quot;, &quot;restaurant&quot;.</body>
+                  </ownedComment>
+                  <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_euElEF0nEeO_5svOqPnaJg" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_euElEV0nEeO_5svOqPnaJg" value="1"/>
+                  <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_uLcqIEo0Ed6c3qsAxlFHaQ"/>
                 </ownedAttribute>
               </nestedClassifier>
             </nestedClassifier>
@@ -1160,8 +1170,8 @@ Required if the decedent suffered an injury leading to death.</body>
         </generalization>
         <ownedAttribute xmi:id="_n0LUIFKUEeG6eOb5pyaZOw" name="typeCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n0LUIVKUEeG6eOb5pyaZOw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n0LUIlKUEeG6eOb5pyaZOw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fF-agF6iEeO_5svOqPnaJg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fGCE4F6iEeO_5svOqPnaJg" value="1"/>
           <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zYLLgEolEd6c3qsAxlFHaQ"/>
           <defaultValue xmi:type="uml:InstanceValue" xmi:id="_n0LUI1KUEeG6eOb5pyaZOw" name="COMP">
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
@@ -1169,7 +1179,8 @@ Required if the decedent suffered an injury leading to death.</body>
           </defaultValue>
         </ownedAttribute>
         <ownedAttribute xmi:id="_cR-KUFKWEeG6eOb5pyaZOw" name="workAssociation" type="_JywdAFKWEeG6eOb5pyaZOw" association="_cR-KUlKWEeG6eOb5pyaZOw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cR-KUVKWEeG6eOb5pyaZOw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hkLiUF6iEeO_5svOqPnaJg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hkLiUV6iEeO_5svOqPnaJg" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_JywdAFKWEeG6eOb5pyaZOw" name="WorkAssociation">
           <generalization xmi:id="_N6nDMFKWEeG6eOb5pyaZOw">
@@ -1180,23 +1191,23 @@ Required if the decedent suffered an injury leading to death.</body>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_iWXVsFKWEeG6eOb5pyaZOw" value="OBS"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_YCeEAFKWEeG6eOb5pyaZOw" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-          </ownedAttribute>
           <ownedAttribute xmi:id="_YCeEAVKWEeG6eOb5pyaZOw" name="moodCode" visibility="private" isReadOnly="true">
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_pPfJoFKWEeG6eOb5pyaZOw" value="EVN"/>
           </ownedAttribute>
+          <ownedAttribute xmi:id="_YCeEAFKWEeG6eOb5pyaZOw" name="code" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+          </ownedAttribute>
           <ownedAttribute xmi:id="_YCeEAlKWEeG6eOb5pyaZOw" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_0jtP4FKWEeG6eOb5pyaZOw">
-              <body>A Boolean indicator (Yes/No) that tells whether or not the injury occurred while the person was at work.&#xD;
+              <body>An indicator that tells whether or not the injury occurred while the person was at work.&#xD;
 Required if the decedent suffered an injury leading to death.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YCeEA1KWEeG6eOb5pyaZOw" value="*"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YCeEBFKWEeG6eOb5pyaZOw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y1dRcF0kEeO_5svOqPnaJg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y1jYEF0kEeO_5svOqPnaJg" value="1"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
         </nestedClassifier>
@@ -1210,8 +1221,8 @@ Required if the decedent suffered an injury leading to death.</body>
         </generalization>
         <ownedAttribute xmi:id="_5T7vkFKUEeG6eOb5pyaZOw" name="typeCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5T7vkVKUEeG6eOb5pyaZOw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5T7vklKUEeG6eOb5pyaZOw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cx7N0F0oEeO_5svOqPnaJg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cx7N0V0oEeO_5svOqPnaJg" value="1"/>
           <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zYLLgEolEd6c3qsAxlFHaQ"/>
           <defaultValue xmi:type="uml:InstanceValue" xmi:id="_5T8WoFKUEeG6eOb5pyaZOw" name="COMP">
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
@@ -1219,7 +1230,8 @@ Required if the decedent suffered an injury leading to death.</body>
           </defaultValue>
         </ownedAttribute>
         <ownedAttribute xmi:id="_xTbVcFKXEeG6eOb5pyaZOw" name="transportationAssociation" type="_-tdHEFKWEeG6eOb5pyaZOw" association="_xTb8gVKXEeG6eOb5pyaZOw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xTb8gFKXEeG6eOb5pyaZOw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DcvscF0oEeO_5svOqPnaJg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DcvscV0oEeO_5svOqPnaJg" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_-tdHEFKWEeG6eOb5pyaZOw" name="TransportationAssociation">
           <ownedComment xmi:id="_Ejg7gFKXEeG6eOb5pyaZOw">
@@ -1233,23 +1245,23 @@ Required if the decedent suffered an injury leading to death.</body>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_YnGloFKXEeG6eOb5pyaZOw" value="OBS"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_OkFokVKXEeG6eOb5pyaZOw" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-          </ownedAttribute>
           <ownedAttribute xmi:id="_OkFoklKXEeG6eOb5pyaZOw" name="moodCode" visibility="private" isReadOnly="true">
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_fjd60FKXEeG6eOb5pyaZOw" value="EVN"/>
           </ownedAttribute>
+          <ownedAttribute xmi:id="_OkFokVKXEeG6eOb5pyaZOw" name="code" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+          </ownedAttribute>
           <ownedAttribute xmi:id="_OkHdwFKXEeG6eOb5pyaZOw" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_mTKtAFKXEeG6eOb5pyaZOw">
-              <body>A Boolean indicator (Yes/No) that tells whether the injury leading to death was associated with a transportation event. &#xD;
+              <body>An indicator that tells whether the injury leading to death was associated with a transportation event. &#xD;
 Required if the decedent suffered an injury leading to death.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OkHdwVKXEeG6eOb5pyaZOw" value="*"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OkHdwlKXEeG6eOb5pyaZOw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0pI1kF0kEeO_5svOqPnaJg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0pI1kV0kEeO_5svOqPnaJg" value="1"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
         </nestedClassifier>
@@ -1263,8 +1275,8 @@ Required if the decedent suffered an injury leading to death.</body>
         </generalization>
         <ownedAttribute xmi:id="_K660YFKVEeG6eOb5pyaZOw" name="typeCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K660YVKVEeG6eOb5pyaZOw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K660YlKVEeG6eOb5pyaZOw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lJ32oF6iEeO_5svOqPnaJg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lJ8IEF6iEeO_5svOqPnaJg" value="1"/>
           <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zYLLgEolEd6c3qsAxlFHaQ"/>
           <defaultValue xmi:type="uml:InstanceValue" xmi:id="_K660Y1KVEeG6eOb5pyaZOw" name="COMP">
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
@@ -1272,7 +1284,8 @@ Required if the decedent suffered an injury leading to death.</body>
           </defaultValue>
         </ownedAttribute>
         <ownedAttribute xmi:id="_J64MUFKYEeG6eOb5pyaZOw" name="transportationRelationship" type="_8EpcUFKXEeG6eOb5pyaZOw" association="_J64MUlKYEeG6eOb5pyaZOw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J64MUVKYEeG6eOb5pyaZOw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eRhewF6iEeO_5svOqPnaJg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eRhewV6iEeO_5svOqPnaJg" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_8EpcUFKXEeG6eOb5pyaZOw" name="TransportationRelationship">
           <generalization xmi:id="___LYMFKXEeG6eOb5pyaZOw">
@@ -1283,23 +1296,23 @@ Required if the decedent suffered an injury leading to death.</body>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_NbWCYFKYEeG6eOb5pyaZOw" value="OBS"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_ErD4gFKYEeG6eOb5pyaZOw" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-          </ownedAttribute>
           <ownedAttribute xmi:id="_ErD4gVKYEeG6eOb5pyaZOw" name="moodCode" visibility="private" isReadOnly="true">
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_TF_4EFKYEeG6eOb5pyaZOw" value="EVN"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ErD4gFKYEeG6eOb5pyaZOw" name="code" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_ErD4glKYEeG6eOb5pyaZOw" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_ZEpn0FKYEeG6eOb5pyaZOw">
               <body>A coded value that states, if the injury was related to transportation, the specific role played by the decedent, e.g. driver, passenger.&#xD;
 Required if the decedent suffered an injury leading to death.</body>
             </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ErD4g1KYEeG6eOb5pyaZOw" value="*"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ErD4hFKYEeG6eOb5pyaZOw"/>
+            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9pjGIF0kEeO_5svOqPnaJg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9pjGIV0kEeO_5svOqPnaJg" value="1"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
         </nestedClassifier>
@@ -1319,13 +1332,21 @@ Required if the decedent suffered an injury leading to death.</body>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_nj7NUFGyEeGSqNO1bVTZyw" value="OBS"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_uC6NgFGzEeGSqNO1bVTZyw" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_vXh3EFGzEeGSqNO1bVTZyw" value="EVN"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_juZGMVGyEeGSqNO1bVTZyw" name="code" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_ExtrcFxQEeOzK8lMYSCg8Q">
+          <body>The code value notes that autopsy status information is provided.</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_juZGMlGyEeGSqNO1bVTZyw" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_zII3YFGyEeGSqNO1bVTZyw">
-          <body>If an autopsy is performed, this field is valued with the date and time the autopsy was begun and completed.</body>
+          <body>If an autopsy is performed, this field is valued with the date and time the autopsy was begun and completed.  Start date/time for the autopsy is recorded using the low property of the interval data type, while the completion date and time are recorded using the high property of the data type.  Note, normally only the completion date and time will be provided.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0LB3wFGyEeGSqNO1bVTZyw" value="1"/>
@@ -1334,17 +1355,12 @@ Required if the decedent suffered an injury leading to death.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_juZGNVGyEeGSqNO1bVTZyw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="__3pP4FGyEeGSqNO1bVTZyw">
-          <body>This field indicates whether an autopsy was performed.</body>
+          <body>An indicator that tells whether an autopsy was performed.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1_FPUFGyEeGSqNO1bVTZyw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1_FPUVGyEeGSqNO1bVTZyw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_uC6NgFGzEeGSqNO1bVTZyw" name="moodCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_vXh3EFGzEeGSqNO1bVTZyw" value="EVN"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_VjxUQFNXEeGRGfOtxXFQuA" name="autopsyPerformer" type="_HdNCMFNXEeGRGfOtxXFQuA" association="_Vjx7UFNXEeGRGfOtxXFQuA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VjxUQVNXEeGRGfOtxXFQuA"/>
@@ -1358,8 +1374,8 @@ Required if the decedent suffered an injury leading to death.</body>
         </generalization>
         <ownedAttribute xmi:id="_QHlYYFNXEeGRGfOtxXFQuA" name="typeCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BIEDcEd6xYZuu1VKCVw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QHlYYVNXEeGRGfOtxXFQuA" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QHlYYlNXEeGRGfOtxXFQuA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xa3MIF6mEeO_5svOqPnaJg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xa8rsF6mEeO_5svOqPnaJg" value="1"/>
           <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ELlCwErgEd6FXKclYGEDCw"/>
           <defaultValue xmi:type="uml:InstanceValue" xmi:id="_QHlYY1NXEeGRGfOtxXFQuA" name="PRF">
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BIEDcEd6xYZuu1VKCVw"/>
@@ -1367,7 +1383,8 @@ Required if the decedent suffered an injury leading to death.</body>
           </defaultValue>
         </ownedAttribute>
         <ownedAttribute xmi:id="_5JP-8FNXEeGRGfOtxXFQuA" name="autopsyPerformerRole" type="_fMgJEFNXEeGRGfOtxXFQuA" association="_5JP-8lNXEeGRGfOtxXFQuA">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5JP-8VNXEeGRGfOtxXFQuA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X_7oEF6mEeO_5svOqPnaJg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X_7oEV6mEeO_5svOqPnaJg" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_fMgJEFNXEeGRGfOtxXFQuA" name="AutopsyPerformerRole">
           <ownedComment xmi:id="_hEV0cFNXEeGRGfOtxXFQuA">
@@ -1378,8 +1395,8 @@ Required if the decedent suffered an injury leading to death.</body>
           </generalization>
           <ownedAttribute xmi:id="_ptgpsFNXEeGRGfOtxXFQuA" name="classCode" visibility="private" isReadOnly="true">
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE3AkDcEd6xYZuu1VKCVw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ptgpsVNXEeGRGfOtxXFQuA" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ptgpslNXEeGRGfOtxXFQuA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YzdWwF6mEeO_5svOqPnaJg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YzgaEF6mEeO_5svOqPnaJg" value="1"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_2PqPoEodEd6c3qsAxlFHaQ"/>
             <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ptgps1NXEeGRGfOtxXFQuA">
               <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE3AkDcEd6xYZuu1VKCVw"/>
@@ -1387,7 +1404,8 @@ Required if the decedent suffered an injury leading to death.</body>
             </defaultValue>
           </ownedAttribute>
           <ownedAttribute xmi:id="_d5ho0FNYEeGRGfOtxXFQuA" name="autopsyClinician" type="_D7DUoFNYEeGRGfOtxXFQuA" association="_d5ho0lNYEeGRGfOtxXFQuA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d5ho0VNYEeGRGfOtxXFQuA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZhEqsF6mEeO_5svOqPnaJg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZhEqsV6mEeO_5svOqPnaJg" value="1"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_D7DUoFNYEeGRGfOtxXFQuA" name="AutopsyClinician">
             <ownedComment xmi:id="_NeHmUFNYEeGRGfOtxXFQuA">
@@ -1398,8 +1416,8 @@ Required if the decedent suffered an injury leading to death.</body>
             </generalization>
             <ownedAttribute xmi:id="_TnKBIFNYEeGRGfOtxXFQuA" name="classCode" visibility="private" isReadOnly="true">
               <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoLe0DcEd6xYZuu1VKCVw"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TnKBIVNYEeGRGfOtxXFQuA" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TnKBIlNYEeGRGfOtxXFQuA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aY98AF6mEeO_5svOqPnaJg" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aZA_UF6mEeO_5svOqPnaJg" value="1"/>
               <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_QcIOYErgEd6FXKclYGEDCw"/>
               <defaultValue xmi:type="uml:InstanceValue" xmi:id="_TnKBI1NYEeGRGfOtxXFQuA" name="PSN">
                 <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoLe0DcEd6xYZuu1VKCVw"/>
@@ -1408,8 +1426,8 @@ Required if the decedent suffered an injury leading to death.</body>
             </ownedAttribute>
             <ownedAttribute xmi:id="_TnKoMFNYEeGRGfOtxXFQuA" name="determinerCode" visibility="private" isReadOnly="true">
               <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoOBUDcEd6xYZuu1VKCVw"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TnKoMVNYEeGRGfOtxXFQuA" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TnKoMlNYEeGRGfOtxXFQuA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bwYa4F6mEeO_5svOqPnaJg" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bwd6cF6mEeO_5svOqPnaJg" value="1"/>
               <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_XJIR4ErgEd6FXKclYGEDCw"/>
               <defaultValue xmi:type="uml:InstanceValue" xmi:id="_TnKoM1NYEeGRGfOtxXFQuA" name="INSTANCE">
                 <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoOBUDcEd6xYZuu1VKCVw"/>
@@ -1418,7 +1436,7 @@ Required if the decedent suffered an injury leading to death.</body>
             </ownedAttribute>
             <ownedAttribute xmi:id="_TnLPQFNYEeGRGfOtxXFQuA" name="name" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_azHRgFNYEeGRGfOtxXFQuA">
-                <body>This field is valued with the authority who performed the autopsy.</body>
+                <body>This field is valued with the name of the person who performed the autopsy.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TnLPQVNYEeGRGfOtxXFQuA" value="1"/>
@@ -1441,24 +1459,64 @@ Required if the decedent suffered an injury leading to death.</body>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_fVmEgFGzEeGSqNO1bVTZyw" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_bDSh0VGzEeGSqNO1bVTZyw" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_bDSh0lGzEeGSqNO1bVTZyw" name="moodCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_oIXhsFGzEeGSqNO1bVTZyw" value="EVN"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_bDSh0VGzEeGSqNO1bVTZyw" name="code" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_eYJTEFxQEeOzK8lMYSCg8Q">
+          <body>A code that indicates that information about the availability of autopsy results is provided.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_bDTI4FGzEeGSqNO1bVTZyw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_siuVsFHKEeGSqNO1bVTZyw">
-          <body>A Boolean indicator (Yes/No) that tells whether an autopsy report is available for the deceased.</body>
+          <body>An indicator that tells whether an autopsy report is available for the decedent.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wQfA4FHKEeGSqNO1bVTZyw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wQfA4VHKEeGSqNO1bVTZyw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="__E6OsF0VEeO_5svOqPnaJg" name="autopsy Report" type="_K3zqcF0VEeO_5svOqPnaJg" association="__E6Osl0VEeO_5svOqPnaJg">
+        <ownedComment xmi:id="_E2jdMF0WEeO_5svOqPnaJg">
+          <body>The autopsy report may be provided if it is available.</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__E6OsV0VEeO_5svOqPnaJg"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_K3zqcF0VEeO_5svOqPnaJg" name="Autopsy Report">
+        <generalization xmi:id="_O9l0EF0VEeO_5svOqPnaJg">
+          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        </generalization>
+        <ownedAttribute xmi:id="_TcH04F0VEeO_5svOqPnaJg" name="classCode" visibility="private" isReadOnly="true">
+          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_WoHPwF0VEeO_5svOqPnaJg" value="OBS"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ril3wF6YEeO_5svOqPnaJg" name="moodCode" visibility="private" isReadOnly="true">
+          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_vNUdEF6YEeO_5svOqPnaJg" value="EVN"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_TcH04V0VEeO_5svOqPnaJg" name="code" visibility="private" aggregation="composite">
+          <ownedComment xmi:id="_2H2NEF0VEeO_5svOqPnaJg">
+            <body>The code value indicates that the observation contains the autopsy report.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_TcH04l0VEeO_5svOqPnaJg" name="value" visibility="private" aggregation="composite">
+          <ownedComment xmi:id="_3-e-kF0VEeO_5svOqPnaJg">
+            <body>The content of the autopsy report.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9Z6FcF0VEeO_5svOqPnaJg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9Z6FcV0VEeO_5svOqPnaJg" value="1"/>
+          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+      </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_v3dWgFHCEeGSqNO1bVTZyw" name="Coroner Referral">
       <ownedComment xmi:id="_B7MBsFHDEeGSqNO1bVTZyw">
@@ -1472,14 +1530,14 @@ Required if the decedent suffered an injury leading to death.</body>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_D5PCwFHDEeGSqNO1bVTZyw" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_31IXsVHCEeGSqNO1bVTZyw" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_31IXslHCEeGSqNO1bVTZyw" name="moodCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_KDzHkFHDEeGSqNO1bVTZyw" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_31IXsVHCEeGSqNO1bVTZyw" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_31I-wFHCEeGSqNO1bVTZyw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_UxjDsFHDEeGSqNO1bVTZyw">
@@ -1503,33 +1561,53 @@ Required if the decedent suffered an injury leading to death.</body>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_tGtQsFHDEeGSqNO1bVTZyw" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_dbeG4VHDEeGSqNO1bVTZyw" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_dbeG4lHDEeGSqNO1bVTZyw" name="id" visibility="private" aggregation="composite">
-        <ownedComment xmi:id="_4gnvQFHDEeGSqNO1bVTZyw">
-          <body>The identifier assigned to a case of death by the coroner or medical examiner.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rgSFcFHDEeGSqNO1bVTZyw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rgSFcVHDEeGSqNO1bVTZyw"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_dbeG5VHDEeGSqNO1bVTZyw" name="moodCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_6JQhAFHDEeGSqNO1bVTZyw" value="EVN"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_dbeG4VHDEeGSqNO1bVTZyw" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_dbeG5lHDEeGSqNO1bVTZyw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_Z1dv4FHLEeGSqNO1bVTZyw">
-          <body>This field indicates whether the case was transferred to a coroner or medical examiner.</body>
+          <body>An indicator that tellss whether the case was transferred to a coroner or medical examiner.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qX46AFHDEeGSqNO1bVTZyw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qX46AVHDEeGSqNO1bVTZyw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="__kjl0F0aEeO_5svOqPnaJg" name="coroner Case" type="_TCuEIF0aEeO_5svOqPnaJg" association="__kjl0l0aEeO_5svOqPnaJg">
+        <ownedComment xmi:id="_F_r2MF0bEeO_5svOqPnaJg">
+          <body>The coroner case identifier may be provided, if the case has been transferred to the coroner or medical examiner.</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__kjl0V0aEeO_5svOqPnaJg"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_TCuEIF0aEeO_5svOqPnaJg" name="Coroner Case">
+        <generalization xmi:id="_TnV0IF0aEeO_5svOqPnaJg">
+          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        </generalization>
+        <ownedAttribute xmi:id="_VTraIF0aEeO_5svOqPnaJg" name="classCode" visibility="private" isReadOnly="true">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_xzx9kF0aEeO_5svOqPnaJg" value="OBS"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_VTraIV0aEeO_5svOqPnaJg" name="code" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_24-80F0aEeO_5svOqPnaJg" name="value" visibility="private" aggregation="composite">
+          <ownedComment xmi:id="_5ToaUF0aEeO_5svOqPnaJg">
+            <body>The identifier assigned to a case of death by the coroner or medical examiner.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4XjMkF0aEeO_5svOqPnaJg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4XpTMF0aEeO_5svOqPnaJg" value="1"/>
+          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+      </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" href="#_btLjoVHEEeGSqNO1bVTZyw"/>
     <packagedElement xmi:type="uml:Association" href="#_gRkU0lHEEeGSqNO1bVTZyw"/>
@@ -1538,7 +1616,6 @@ Required if the decedent suffered an injury leading to death.</body>
     <packagedElement xmi:type="uml:Association" href="#_gAdzIFKHEeG6eOb5pyaZOw"/>
     <packagedElement xmi:type="uml:Association" href="#_o5j6wlKHEeG6eOb5pyaZOw"/>
     <packagedElement xmi:type="uml:Association" href="#_gTl4klKJEeG6eOb5pyaZOw"/>
-    <packagedElement xmi:type="uml:Association" href="#_e_jWclKMEeG6eOb5pyaZOw"/>
     <packagedElement xmi:type="uml:Association" href="#_x0SAwlKMEeG6eOb5pyaZOw"/>
     <packagedElement xmi:type="uml:Association" href="#_oF9PYFKOEeG6eOb5pyaZOw"/>
     <packagedElement xmi:type="uml:Association" href="#_tLjQMlKOEeG6eOb5pyaZOw"/>
@@ -1570,7 +1647,7 @@ Required if the decedent suffered an injury leading to death.</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_kDv8om92EeGducFY2S5l3A" memberEnd="_kDv8oG92EeGducFY2S5l3A _kDv8o292EeGducFY2S5l3A">
       <ownedEnd xmi:id="_kDv8o292EeGducFY2S5l3A" type="_2l1UUEkBEeGtBMy1ENLCpQ" association="_kDv8om92EeGducFY2S5l3A"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_-IassG-oEeGducFY2S5l3A" name="DeathLocationType">
+    <packagedElement xmi:type="uml:Class" xmi:id="_-IassG-oEeGducFY2S5l3A" name="Death LocationType">
       <ownedComment xmi:id="_I1EcoG-pEeGducFY2S5l3A">
         <body>This template makes it possible to record the type of location, e.g.,hospital inpatient room, at which the person died.</body>
       </ownedComment>
@@ -1581,18 +1658,18 @@ Required if the decedent suffered an injury leading to death.</body>
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_RkKTsG-pEeGducFY2S5l3A" value="OBS"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_AH6fQW-pEeGducFY2S5l3A" name="code" visibility="private" isReadOnly="true" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_AH6fQm-pEeGducFY2S5l3A" name="moodCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_YdIWoG-pEeGducFY2S5l3A" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_AH6fQW-pEeGducFY2S5l3A" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_AH6fQ2-pEeGducFY2S5l3A" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_dxhocG-pEeGducFY2S5l3A">
           <body>A code value to indicate the type of location where the patient died.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iRGyIG-pEeGducFY2S5l3A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iRGyIW-pEeGducFY2S5l3A" value="1"/>
       </ownedAttribute>
@@ -1601,6 +1678,151 @@ Required if the decedent suffered an injury leading to death.</body>
       <ownedEnd xmi:id="_sWVVs2-pEeGducFY2S5l3A" type="_2l1UUEkBEeGtBMy1ENLCpQ" association="_sWVVsm-pEeGducFY2S5l3A"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Artifact" xmi:id="_15ZWcHIREeGL-K1S1E9LrQ" name="Reporting death information from a clinical setting to vital recordsSample" fileName="Reporting death information from a clinical setting to vital recordsSample.xml"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="__E6Osl0VEeO_5svOqPnaJg" memberEnd="__E6OsF0VEeO_5svOqPnaJg __E6Os10VEeO_5svOqPnaJg">
+      <ownedEnd xmi:id="__E6Os10VEeO_5svOqPnaJg" type="_V-OFcFGzEeGSqNO1bVTZyw" association="__E6Osl0VEeO_5svOqPnaJg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="__kjl0l0aEeO_5svOqPnaJg" memberEnd="__kjl0F0aEeO_5svOqPnaJg __kjl010aEeO_5svOqPnaJg">
+      <ownedEnd xmi:id="__kjl010aEeO_5svOqPnaJg" type="_Zf8sgFHDEeGSqNO1bVTZyw" association="__kjl0l0aEeO_5svOqPnaJg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CK_AEl0cEeO_5svOqPnaJg" memberEnd="_CK_AEF0cEeO_5svOqPnaJg _CK_AE10cEeO_5svOqPnaJg">
+      <ownedEnd xmi:id="_CK_AE10cEeO_5svOqPnaJg" type="_6U5iwFHjEeGSqNO1bVTZyw" association="_CK_AEl0cEeO_5svOqPnaJg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TLji0F6VEeO_5svOqPnaJg" name="Pronouncing Death">
+      <ownedComment xmi:id="_TLji0V6VEeO_5svOqPnaJg">
+        <body>The template contains information on the pronouncing of the person's death.  &#xD;
+In most cases, a physician will both pronounce death and certify or report the cause of death.  A different physician will pronounce death only when the attending physician is unavailable to certify the cause of death at the time of death and if State law provides for this option.&#xD;
+&#xD;
+Note, information on the pronouncing physician is only provided when the pronouncing physician and the certifying physician are different persons.</body>
+      </ownedComment>
+      <generalization xmi:id="_TLji0l6VEeO_5svOqPnaJg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_TLq3kF6VEeO_5svOqPnaJg" name="classCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TLreoV6VEeO_5svOqPnaJg" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TLq3kV6VEeO_5svOqPnaJg" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TLq3kl6VEeO_5svOqPnaJg" name="effectiveTime" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_TLq3k16VEeO_5svOqPnaJg">
+          <body>Provide the date and time at which the decedent was pronounced dead.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TLq3lF6VEeO_5svOqPnaJg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TLreoF6VEeO_5svOqPnaJg" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EKPTMF6qEeO_5svOqPnaJg" name="pronouncer" type="_TLrepV6VEeO_5svOqPnaJg" association="_EKP6QV6qEeO_5svOqPnaJg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EKP6QF6qEeO_5svOqPnaJg"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_TLrepV6VEeO_5svOqPnaJg" name="Pronouncer">
+        <ownedComment xmi:id="_TLrepl6VEeO_5svOqPnaJg">
+          <body>INLINE</body>
+        </ownedComment>
+        <generalization xmi:id="_TLrep16VEeO_5svOqPnaJg">
+          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_TLreqF6VEeO_5svOqPnaJg" name="typeCode" visibility="private" isReadOnly="true">
+          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BIEDcEd6xYZuu1VKCVw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TLreqV6VEeO_5svOqPnaJg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TLreql6VEeO_5svOqPnaJg" value="1"/>
+          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ELlCwErgEd6FXKclYGEDCw"/>
+          <defaultValue xmi:type="uml:InstanceValue" xmi:id="_TLreq16VEeO_5svOqPnaJg" name="PRF">
+            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BIEDcEd6xYZuu1VKCVw"/>
+            <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BIUDcEd6xYZuu1VKCVw"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_wUMgYF6qEeO_5svOqPnaJg" name="pronouncerRole" type="_TLrer16VEeO_5svOqPnaJg" association="_wUNugV6qEeO_5svOqPnaJg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xz2VQF6qEeO_5svOqPnaJg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xz8b4F6qEeO_5svOqPnaJg" value="1"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_TLrer16VEeO_5svOqPnaJg" name="PronouncerRole">
+          <generalization xmi:id="_TLresV6VEeO_5svOqPnaJg">
+            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_TLresl6VEeO_5svOqPnaJg" name="addr" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_TLres16VEeO_5svOqPnaJg">
+              <body>The postal address used to locate the clinician or coroner at the time of pronouncing death.&#xD;
+The element is required if the pronouncing and certifying physicians are different persons.</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TLretF6VEeO_5svOqPnaJg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TLretV6VEeO_5svOqPnaJg" value="1"/>
+            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_-czawEoeEd6c3qsAxlFHaQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_TLretl6VEeO_5svOqPnaJg" name="classCode" visibility="private" isReadOnly="true">
+            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE3C0DcEd6xYZuu1VKCVw"/>
+            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AkaAcEofEd6c3qsAxlFHaQ"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_TLret16VEeO_5svOqPnaJg" value="ASSIGNED"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_TLrev16VEeO_5svOqPnaJg" name="id" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_TLrewF6VEeO_5svOqPnaJg">
+              <body>One or more identifiers for the pronouncing clinician.  The state license number is required.  Provider NPI may be added as well.  The element is required if the pronouncing and certifying physicians are different persons.</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TLrewV6VEeO_5svOqPnaJg" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TLrewl6VEeO_5svOqPnaJg" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_T_tXEF6qEeO_5svOqPnaJg" name="pronouncingParty" type="_TLrew16VEeO_5svOqPnaJg" association="_T_tXEl6qEeO_5svOqPnaJg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2An3sF6qEeO_5svOqPnaJg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2AtXQF6qEeO_5svOqPnaJg" value="1"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_TLrew16VEeO_5svOqPnaJg" name="PronouncingParty">
+            <generalization xmi:id="_TLrexV6VEeO_5svOqPnaJg">
+              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
+            </generalization>
+            <ownedAttribute xmi:id="_TLrexl6VEeO_5svOqPnaJg" name="classCode" visibility="private">
+              <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoLe0DcEd6xYZuu1VKCVw"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TLrex16VEeO_5svOqPnaJg" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TLreyF6VEeO_5svOqPnaJg" value="1"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_QcIOYErgEd6FXKclYGEDCw"/>
+              <defaultValue xmi:type="uml:InstanceValue" xmi:id="_TLreyV6VEeO_5svOqPnaJg" name="PSN">
+                <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoLe0DcEd6xYZuu1VKCVw"/>
+                <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoLgEDcEd6xYZuu1VKCVw"/>
+              </defaultValue>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_TLreyl6VEeO_5svOqPnaJg" name="determinerCode" visibility="private">
+              <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoOBUDcEd6xYZuu1VKCVw"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TLrey16VEeO_5svOqPnaJg" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TLrezF6VEeO_5svOqPnaJg" value="1"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_XJIR4ErgEd6FXKclYGEDCw"/>
+              <defaultValue xmi:type="uml:InstanceValue" xmi:id="_TLrezV6VEeO_5svOqPnaJg" name="INSTANCE">
+                <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoOBUDcEd6xYZuu1VKCVw"/>
+                <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoOBkDcEd6xYZuu1VKCVw"/>
+              </defaultValue>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_TLrezl6VEeO_5svOqPnaJg" name="name" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_TLrez16VEeO_5svOqPnaJg">
+                <body>This field is valued with the name of the person who pronounced death.  The full name is required. &#xD;
+The element is required if the pronouncing and certifying physicians are different persons.</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TLre0F6VEeO_5svOqPnaJg" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TLre0V6VEeO_5svOqPnaJg" value="1"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+            </ownedAttribute>
+          </nestedClassifier>
+        </nestedClassifier>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mzGKIF6VEeO_5svOqPnaJg" memberEnd="_my8ZIF6VEeO_5svOqPnaJg _mzGKIV6VEeO_5svOqPnaJg">
+      <ownedEnd xmi:id="_mzGKIV6VEeO_5svOqPnaJg" type="_2l1UUEkBEeGtBMy1ENLCpQ" association="_mzGKIF6VEeO_5svOqPnaJg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EKP6QV6qEeO_5svOqPnaJg" memberEnd="_EKPTMF6qEeO_5svOqPnaJg _EKP6Ql6qEeO_5svOqPnaJg">
+      <ownedEnd xmi:id="_EKP6Ql6qEeO_5svOqPnaJg" type="_TLji0F6VEeO_5svOqPnaJg" association="_EKP6QV6qEeO_5svOqPnaJg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_T_tXEl6qEeO_5svOqPnaJg" memberEnd="_T_tXEF6qEeO_5svOqPnaJg _T_t-IF6qEeO_5svOqPnaJg">
+      <ownedEnd xmi:id="_T_t-IF6qEeO_5svOqPnaJg" type="_TLrer16VEeO_5svOqPnaJg" association="_T_tXEl6qEeO_5svOqPnaJg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wUNugV6qEeO_5svOqPnaJg" memberEnd="_wUMgYF6qEeO_5svOqPnaJg _wUNugl6qEeO_5svOqPnaJg">
+      <ownedEnd xmi:id="_wUNugl6qEeO_5svOqPnaJg" type="_TLrepV6VEeO_5svOqPnaJg" association="_wUNugV6qEeO_5svOqPnaJg"/>
+    </packagedElement>
     <profileApplication xmi:id="_W7svyUj_EeGtBMy1ENLCpQ">
       <eAnnotations xmi:id="_W7svykj_EeGtBMy1ENLCpQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -1621,7 +1843,7 @@ Required if the decedent suffered an injury leading to death.</body>
   </CDA:ClassValidation>
   <CDA:PropertyValidation xmi:id="_4NC_MEkAEeGtBMy1ENLCpQ" base_Property="_feBgsEkAEeGtBMy1ENLCpQ"/>
   <CDA:PropertyValidation xmi:id="_95PtAEkAEeGtBMy1ENLCpQ" mandatory="true" base_Property="_feBgsUkAEeGtBMy1ENLCpQ"/>
-  <CDA:PropertyValidation xmi:id="_LeO8AEkBEeGtBMy1ENLCpQ" severity="WARNING" base_Property="_feBgskkAEeGtBMy1ENLCpQ"/>
+  <CDA:PropertyValidation xmi:id="_LeO8AEkBEeGtBMy1ENLCpQ" base_Property="_feBgskkAEeGtBMy1ENLCpQ"/>
   <CDA:PropertyValidation xmi:id="_R54w0EkBEeGtBMy1ENLCpQ" base_Property="_feBgtUkAEeGtBMy1ENLCpQ"/>
   <CDA:TextValue xmi:id="_leHlcEkBEeGtBMy1ENLCpQ" severity="INFO" base_Property="_feBgtkkAEeGtBMy1ENLCpQ"/>
   <CDA:PropertyValidation xmi:id="_PYy3oEkCEeGtBMy1ENLCpQ" mandatory="true" base_Property="_-ciK0EkBEeGtBMy1ENLCpQ"/>
@@ -1674,18 +1896,13 @@ Required if the decedent suffered an injury leading to death.</body>
   <CDA:CodeSystemConstraint xmi:id="_tkVFIEtSEeGCUrfdtxCbHg" code="69443-0" displayName="Tobacco Use" base_Property="_pkHYAEtSEeGCUrfdtxCbHg" mandatory="true">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_34vCcEt5EeGCUrfdtxCbHg" base_Association="_63NQcEtSEeGCUrfdtxCbHg"/>
   <CDA:CDATemplate xmi:id="_A0jG4Et6EeGCUrfdtxCbHg" base_Class="_LHUeYEtSEeGCUrfdtxCbHg" templateId="2.16.840.1.113883.10.20.26.1.12"/>
   <CDA:ClassValidation xmi:id="_D72PAEt6EeGCUrfdtxCbHg" base_Class="_nmWDwEtSEeGCUrfdtxCbHg"/>
   <CDA:CDATemplate xmi:id="_G59l8Et6EeGCUrfdtxCbHg" base_Class="_nmWDwEtSEeGCUrfdtxCbHg" templateId="2.16.840.1.113883.10.20.26.1.14"/>
   <CDA:CDATemplate xmi:id="_J8eUsEt6EeGCUrfdtxCbHg" templateId="2.16.840.1.113883.10.20.24.1.10"/>
   <CDA:AssociationValidation xmi:id="_h9YwAEt6EeGCUrfdtxCbHg" mandatory="true"/>
-  <CDA:CodeSystemConstraint xmi:id="_h13KsEuFEeGCUrfdtxCbHg" base_Property="_czdlcUtREeGCUrfdtxCbHg">
-    <reference href="vsdr-vocab.uml#_2TQ4cEuEEeGCUrfdtxCbHg"/>
-  </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_VxMhEExYEeGCUrfdtxCbHg" base_Property="_N-0P8EtSEeGCUrfdtxCbHg">
-    <reference href="vsdr-vocab.uml#_95oEcExWEeGCUrfdtxCbHg"/>
-  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_h13KsEuFEeGCUrfdtxCbHg" base_Property="_czdlcUtREeGCUrfdtxCbHg"/>
+  <CDA:CodeSystemConstraint xmi:id="_VxMhEExYEeGCUrfdtxCbHg" base_Property="_N-0P8EtSEeGCUrfdtxCbHg"/>
   <CDA:PropertyValidation xmi:id="_a7LSoExYEeGCUrfdtxCbHg" base_Property="_pkH_EEtSEeGCUrfdtxCbHg"/>
   <CDA:PropertyValidation xmi:id="_8997IE0fEeGecLanFT3k9Q" base_Property="_GlYMVUklEeGZuYViNfIskw"/>
   <CDA:PropertyValidation xmi:id="_-joRYE0fEeGecLanFT3k9Q" base_Property="_GlYMUEklEeGZuYViNfIskw"/>
@@ -1701,7 +1918,7 @@ Required if the decedent suffered an injury leading to death.</body>
   <CDA:CodeSystemConstraint xmi:id="_GixT0FGiEeGSqNO1bVTZyw" code="69409-1" displayName="U.S. standard certificate of death - 2003 revision" base_Property="_o27sZFD5EeGR99drm3mRRg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_yWoVMFGiEeGSqNO1bVTZyw" identifier="2.16.840.1.11.3883.5.25" name="Confidentiality" base_Property="_o27sZ1D5EeGR99drm3mRRg" severity="WARNING"/>
+  <CDA:CodeSystemConstraint xmi:id="_yWoVMFGiEeGSqNO1bVTZyw" identifier="2.16.840.1.11.3883.5.25" name="Confidentiality" base_Property="_o27sZ1D5EeGR99drm3mRRg"/>
   <CDA:PropertyValidation xmi:id="_jiTIwFGjEeGSqNO1bVTZyw" severity="WARNING" base_Property="_o28Tc1D5EeGR99drm3mRRg"/>
   <CDA:CodeSystemConstraint xmi:id="_jxLSQFGjEeGSqNO1bVTZyw" identifier="2.16.840.1.113883.11.11526" name="HumanLanguage" base_Property="_o28Tc1D5EeGR99drm3mRRg"/>
   <CDA:PropertyValidation xmi:id="_4c89wFGjEeGSqNO1bVTZyw" mandatory="true" base_Property="_o28TcFD5EeGR99drm3mRRg"/>
@@ -1715,13 +1932,13 @@ Required if the decedent suffered an injury leading to death.</body>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_hTiG8FGqEeGSqNO1bVTZyw" base_Property="_Nd-40FGqEeGSqNO1bVTZyw"/>
   <CDA:PropertyValidation xmi:id="_keeY8FGqEeGSqNO1bVTZyw" base_Property="_Nd-401GqEeGSqNO1bVTZyw"/>
-  <CDA:CodeSystemConstraint xmi:id="_l9AzgFGqEeGSqNO1bVTZyw" base_Property="_Nd-401GqEeGSqNO1bVTZyw">
+  <CDA:CodeSystemConstraint xmi:id="_l9AzgFGqEeGSqNO1bVTZyw" code="Active" base_Property="_Nd-401GqEeGSqNO1bVTZyw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_6zWwQFGqEeGSqNO1bVTZyw" base_Class="_zXPkAFGqEeGSqNO1bVTZyw" templateId="2.16.840.1.113883.10.20.26.1.9"/>
   <CDA:PropertyValidation xmi:id="_V6wbYFGrEeGSqNO1bVTZyw" base_Property="_1W2rUFGqEeGSqNO1bVTZyw"/>
   <CDA:PropertyValidation xmi:id="_YZ-24FGrEeGSqNO1bVTZyw" mandatory="true" base_Property="_1W2rUVGqEeGSqNO1bVTZyw"/>
-  <CDA:CodeSystemConstraint xmi:id="_Y2z80FGrEeGSqNO1bVTZyw" code="LOINC TBD" displayName="Injury Cluster" base_Property="_1W2rUVGqEeGSqNO1bVTZyw">
+  <CDA:CodeSystemConstraint xmi:id="_Y2z80FGrEeGSqNO1bVTZyw" code="71481-6" displayName="Did the death of this person involve injury of any kind?" base_Property="_1W2rUVGqEeGSqNO1bVTZyw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_dDqXwFGrEeGSqNO1bVTZyw" base_Property="_1W2rVFGqEeGSqNO1bVTZyw"/>
@@ -1735,13 +1952,6 @@ Required if the decedent suffered an injury leading to death.</body>
   <uml:Association xmi:id="_Lrk1IlGsEeGSqNO1bVTZyw" name="causal Information" memberEnd="_Lrk1IFGsEeGSqNO1bVTZyw _LrlcMFGsEeGSqNO1bVTZyw">
     <ownedEnd xmi:id="_LrlcMFGsEeGSqNO1bVTZyw" type="_2l1UUEkBEeGtBMy1ENLCpQ" association="_Lrk1IlGsEeGSqNO1bVTZyw"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_e4XksFGtEeGSqNO1bVTZyw" base_Association="_w6QcIkkCEeGtBMy1ENLCpQ"/>
-  <CDA:AssociationValidation xmi:id="_fcciIFGtEeGSqNO1bVTZyw" base_Association="_-6pukkkfEeGqCpGMXULTvg"/>
-  <CDA:AssociationValidation xmi:id="_gRD18FGtEeGSqNO1bVTZyw" severity="INFO" base_Association="_SHzCckksEeGZuYViNfIskw"/>
-  <CDA:AssociationValidation xmi:id="_hV4I8FGtEeGSqNO1bVTZyw" severity="INFO" base_Association="_9o5U8ktSEeGCUrfdtxCbHg"/>
-  <CDA:AssociationValidation xmi:id="_iCVmUFGtEeGSqNO1bVTZyw" severity="WARNING" base_Association="_ByckQEtTEeGCUrfdtxCbHg"/>
-  <CDA:AssociationValidation xmi:id="_jR37kFGtEeGSqNO1bVTZyw" severity="WARNING" base_Association="_J-AgEVGsEeGSqNO1bVTZyw"/>
-  <CDA:AssociationValidation xmi:id="_j9Qa4FGtEeGSqNO1bVTZyw" base_Association="_Lrk1IlGsEeGSqNO1bVTZyw"/>
   <CDA:PropertyValidation xmi:id="_maAX4FGyEeGSqNO1bVTZyw" base_Property="_juZGMFGyEeGSqNO1bVTZyw"/>
   <CDA:PropertyValidation xmi:id="_p3l5EFGyEeGSqNO1bVTZyw" mandatory="true" base_Property="_juZGMVGyEeGSqNO1bVTZyw"/>
   <CDA:CodeSystemConstraint xmi:id="_qTnGsFGyEeGSqNO1bVTZyw" code="21986-5" displayName="Autopsy Status" base_Property="_juZGMVGyEeGSqNO1bVTZyw">
@@ -1758,18 +1968,17 @@ Required if the decedent suffered an injury leading to death.</body>
   <CDA:CDATemplate xmi:id="_9fNloFHCEeGSqNO1bVTZyw" severity="INFO" base_Class="_v3dWgFHCEeGSqNO1bVTZyw" templateId="2.16.840.1.113883.10.20.26.1.5"/>
   <CDA:PropertyValidation xmi:id="_CxIyQFHDEeGSqNO1bVTZyw" base_Property="_31IXsFHCEeGSqNO1bVTZyw"/>
   <CDA:PropertyValidation xmi:id="_FFO70FHDEeGSqNO1bVTZyw" mandatory="true" base_Property="_31IXsVHCEeGSqNO1bVTZyw"/>
-  <CDA:CodeSystemConstraint xmi:id="_FcQ7wFHDEeGSqNO1bVTZyw" code="69438-0" displayName="Coroner Referral Reason" base_Property="_31IXsVHCEeGSqNO1bVTZyw">
+  <CDA:CodeSystemConstraint xmi:id="_FcQ7wFHDEeGSqNO1bVTZyw" code="69438-0" displayName="Forensic medicine Referral note" base_Property="_31IXsVHCEeGSqNO1bVTZyw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_JQkT0FHDEeGSqNO1bVTZyw" base_Property="_31IXslHCEeGSqNO1bVTZyw"/>
   <CDA:PropertyValidation xmi:id="_N5098FHDEeGSqNO1bVTZyw" base_Property="_31I-wFHCEeGSqNO1bVTZyw"/>
   <CDA:CDATemplate xmi:id="_kqwYEFHDEeGSqNO1bVTZyw" base_Class="_Zf8sgFHDEeGSqNO1bVTZyw" templateId="2.16.840.1.113883.10.20.26.1.4"/>
-  <CDA:PropertyValidation xmi:id="_sDZZkFHDEeGSqNO1bVTZyw" severity="WARNING" base_Property="_dbeG4FHDEeGSqNO1bVTZyw"/>
+  <CDA:PropertyValidation xmi:id="_sDZZkFHDEeGSqNO1bVTZyw" base_Property="_dbeG4FHDEeGSqNO1bVTZyw"/>
   <CDA:PropertyValidation xmi:id="_ulVK0FHDEeGSqNO1bVTZyw" mandatory="true" base_Property="_dbeG4VHDEeGSqNO1bVTZyw"/>
   <CDA:CodeSystemConstraint xmi:id="_vHcZYFHDEeGSqNO1bVTZyw" code="LOINC TBD" displayName="Coroner Assignment" base_Property="_dbeG4VHDEeGSqNO1bVTZyw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_y9Vs4FHDEeGSqNO1bVTZyw" severity="INFO" base_Property="_dbeG4lHDEeGSqNO1bVTZyw"/>
   <CDA:PropertyValidation xmi:id="_5VAZkFHDEeGSqNO1bVTZyw" base_Property="_dbeG5VHDEeGSqNO1bVTZyw"/>
   <CDA:PropertyValidation xmi:id="_7-BqQFHDEeGSqNO1bVTZyw" base_Property="_dbeG5lHDEeGSqNO1bVTZyw"/>
   <uml:Association xmi:id="_btLjoVHEEeGSqNO1bVTZyw" memberEnd="_btK8kFHEEeGSqNO1bVTZyw _btLjolHEEeGSqNO1bVTZyw">
@@ -1781,9 +1990,6 @@ Required if the decedent suffered an injury leading to death.</body>
   <uml:Association xmi:id="_itxRglHEEeGSqNO1bVTZyw" memberEnd="_itxRgFHEEeGSqNO1bVTZyw _itx4kFHEEeGSqNO1bVTZyw">
     <ownedEnd xmi:id="_itx4kFHEEeGSqNO1bVTZyw" type="_2l1UUEkBEeGtBMy1ENLCpQ" association="_itxRglHEEeGSqNO1bVTZyw"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_3pQasFHJEeGSqNO1bVTZyw" base_Association="_btLjoVHEEeGSqNO1bVTZyw"/>
-  <CDA:AssociationValidation xmi:id="_4_SZgFHJEeGSqNO1bVTZyw" severity="INFO" base_Association="_gRkU0lHEEeGSqNO1bVTZyw"/>
-  <CDA:AssociationValidation xmi:id="_5sdBgFHJEeGSqNO1bVTZyw" severity="INFO" base_Association="_itxRglHEEeGSqNO1bVTZyw"/>
   <CDA:PropertyValidation xmi:id="_ww5mUFHKEeGSqNO1bVTZyw" base_Property="_bDTI4FGzEeGSqNO1bVTZyw"/>
   <CDA:PropertyValidation xmi:id="_XvQmcFHNEeGSqNO1bVTZyw" base_Property="_TohakFHNEeGSqNO1bVTZyw"/>
   <CDA:PropertyValidation xmi:id="_YoOOwFHNEeGSqNO1bVTZyw" mandatory="true" base_Property="_TohakVHNEeGSqNO1bVTZyw"/>
@@ -1808,9 +2014,9 @@ Required if the decedent suffered an injury leading to death.</body>
   <CDA:PropertyValidation xmi:id="_Tpjd4FHkEeGSqNO1bVTZyw" mandatory="true" base_Property="_IRy7clHkEeGSqNO1bVTZyw"/>
   <uml:Association xmi:id="_gAdzIFKHEeG6eOb5pyaZOw" memberEnd="_gAPJoFKHEeG6eOb5pyaZOw _gAdzIVKHEeG6eOb5pyaZOw">
     <ownedComment xmi:id="_p1E9EG-tEeGducFY2S5l3A">
-      <body>Up to four events - diseases, injuries, or complications may be entered to record the cause of death.  These are entered in a defined sequence, and the order of each is recorded using sequence number.  In addition, the approximate time interval from onset until death is captured as well.  this information is captured in the related Component Death Cause Interval observation.  The act relationship sequence number value that is captured is used to associate the time between onset and death with the relevant event.&#xD;
+      <body>Up to four events - diseases, injuries, or complications may be entered to record the cause of death. The immediate cause of death and the underlying cause of death must be reported. &#xD;
 &#xD;
-Within the collection of component causes that are provided, the first in the sequence is the immediate cause of death, while the last in the sequence is the underlying cause of death.</body>
+Additional causes of death up to two may be recorded. These are entered in a defined sequence, and the order of each is recorded using sequence number. In addition, the approximate time interval from onset until death is captured as well. this information is captured in the related Component Death Cause Interval observation. The act relationship sequence number value is used to associate the time between onset and death with the relevant event.</body>
     </ownedComment>
     <ownedEnd xmi:id="_gAdzIVKHEeG6eOb5pyaZOw" type="_K6HN4FGqEeGSqNO1bVTZyw" association="_gAdzIFKHEeG6eOb5pyaZOw"/>
   </uml:Association>
@@ -1826,28 +2032,10 @@ Within the collection of component causes that are provided, the first in the se
   <CDA:AssociationValidation xmi:id="_CJ0zMFKKEeG6eOb5pyaZOw" base_Association="_7d5NIlHNEeGSqNO1bVTZyw"/>
   <CDA:ClassValidation xmi:id="_EmseQFKKEeG6eOb5pyaZOw" base_Class="_eKrIsFHjEeGSqNO1bVTZyw"/>
   <CDA:AssociationValidation xmi:id="_Gyj44FKKEeG6eOb5pyaZOw" base_Association="_o5j6wlKHEeG6eOb5pyaZOw"/>
-  <CDA:ClassValidation xmi:id="_HkS30FKKEeG6eOb5pyaZOw" base_Class="_hW7k4FKJEeG6eOb5pyaZOw"/>
-  <CDA:PropertyValidation xmi:id="_IcoOAFKKEeG6eOb5pyaZOw" mandatory="true" base_Property="_8_A7MFKJEeG6eOb5pyaZOw"/>
-  <CDA:PropertyValidation xmi:id="_KCzhoFKKEeG6eOb5pyaZOw" base_Property="_8_BiQFKJEeG6eOb5pyaZOw"/>
-  <CDA:PropertyValidation xmi:id="_fUqVsFKKEeG6eOb5pyaZOw" base_Property="_ZHJDgFKKEeG6eOb5pyaZOw"/>
-  <CDA:PropertyValidation xmi:id="_h-CLsFKKEeG6eOb5pyaZOw" mandatory="true" base_Property="_ZHJDgVKKEeG6eOb5pyaZOw"/>
-  <CDA:CodeSystemConstraint xmi:id="_jRKAcFKKEeG6eOb5pyaZOw" code="69440-6" displayName="Disease onset to death interval" base_Property="_ZHJDgVKKEeG6eOb5pyaZOw">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_mv278FKKEeG6eOb5pyaZOw" base_Property="_ZHJqkFKKEeG6eOb5pyaZOw"/>
-  <CDA:PropertyValidation xmi:id="_q10rwFKKEeG6eOb5pyaZOw" mandatory="true" base_Property="_ZHJqkVKKEeG6eOb5pyaZOw"/>
   <CDA:ClassValidation xmi:id="_RpBaMFKMEeG6eOb5pyaZOw" severity="INFO" base_Class="_-OBn4FHMEeGSqNO1bVTZyw"/>
   <CDA:ClassValidation xmi:id="_TOSH0FKMEeG6eOb5pyaZOw" severity="INFO" base_Class="_p-Tw0FHNEeGSqNO1bVTZyw"/>
   <CDA:ClassValidation xmi:id="_WFHLAFKMEeG6eOb5pyaZOw" base_Class="_6U5iwFHjEeGSqNO1bVTZyw"/>
-  <CDA:ClassValidation xmi:id="_YATFUFKMEeG6eOb5pyaZOw" base_Class="_Ms-B0FKKEeG6eOb5pyaZOw"/>
   <CDA:AssociationValidation xmi:id="_aaMU4FKMEeG6eOb5pyaZOw" base_Association="_gAdzIFKHEeG6eOb5pyaZOw"/>
-  <uml:Association xmi:id="_e_jWclKMEeG6eOb5pyaZOw" memberEnd="_e_jWcFKMEeG6eOb5pyaZOw _e_jWc1KMEeG6eOb5pyaZOw">
-    <ownedComment xmi:id="_XkSQ0G-uEeGducFY2S5l3A">
-      <body>Up to four events - diseases, injuries, or complications may be entered to record the cause of death.  These are entered in a defined sequence, and the order of each is recorded using sequence number.  The act relationship sequence number value that is captured is used to associate the time between onset and death with the relevant death causal event.</body>
-    </ownedComment>
-    <ownedEnd xmi:id="_e_jWc1KMEeG6eOb5pyaZOw" type="_K6HN4FGqEeGSqNO1bVTZyw" association="_e_jWclKMEeG6eOb5pyaZOw"/>
-  </uml:Association>
-  <CDA:AssociationValidation xmi:id="_ffy8wFKMEeG6eOb5pyaZOw" base_Association="_e_jWclKMEeG6eOb5pyaZOw"/>
   <uml:Association xmi:id="_x0SAwlKMEeG6eOb5pyaZOw" memberEnd="_x0SAwFKMEeG6eOb5pyaZOw _x0SAw1KMEeG6eOb5pyaZOw">
     <ownedEnd xmi:id="_x0SAw1KMEeG6eOb5pyaZOw" type="_hW7k4FKJEeG6eOb5pyaZOw" association="_x0SAwlKMEeG6eOb5pyaZOw"/>
   </uml:Association>
@@ -1860,7 +2048,7 @@ Within the collection of component causes that are provided, the first in the se
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_YXi1wFKOEeG6eOb5pyaZOw" base_Property="_DdNJ1FKOEeG6eOb5pyaZOw"/>
-  <CDA:TextValue xmi:id="_bGxcIFKOEeG6eOb5pyaZOw" severity="INFO" base_Property="_DdNJ1VKOEeG6eOb5pyaZOw"/>
+  <CDA:TextValue xmi:id="_bGxcIFKOEeG6eOb5pyaZOw" base_Property="_DdNJ1VKOEeG6eOb5pyaZOw"/>
   <CDA:PropertyValidation xmi:id="_eflyEFKOEeG6eOb5pyaZOw" base_Property="_DdNJ2FKOEeG6eOb5pyaZOw"/>
   <uml:Association xmi:id="_oF9PYFKOEeG6eOb5pyaZOw" memberEnd="_oF8oUFKOEeG6eOb5pyaZOw _oF9PYVKOEeG6eOb5pyaZOw">
     <ownedEnd xmi:id="_oF9PYVKOEeG6eOb5pyaZOw" type="_YoNkcFKNEeG6eOb5pyaZOw" association="_oF9PYFKOEeG6eOb5pyaZOw"/>
@@ -1887,7 +2075,7 @@ Within the collection of component causes that are provided, the first in the se
     <ownedEnd xmi:id="_cR-KU1KWEeG6eOb5pyaZOw" type="_ffoEAFKUEeG6eOb5pyaZOw" association="_cR-KUlKWEeG6eOb5pyaZOw"/>
   </uml:Association>
   <CDA:ClassValidation xmi:id="_exv_cFKWEeG6eOb5pyaZOw" base_Class="_JywdAFKWEeG6eOb5pyaZOw"/>
-  <CDA:AssociationValidation xmi:id="_f_b6kFKWEeG6eOb5pyaZOw" severity="INFO" base_Association="_cR-KUlKWEeG6eOb5pyaZOw"/>
+  <CDA:AssociationValidation xmi:id="_f_b6kFKWEeG6eOb5pyaZOw" base_Association="_cR-KUlKWEeG6eOb5pyaZOw"/>
   <CDA:PropertyValidation xmi:id="_g-fj0FKWEeG6eOb5pyaZOw" base_Property="_YCdc8FKWEeG6eOb5pyaZOw"/>
   <CDA:PropertyValidation xmi:id="_jsjFgFKWEeG6eOb5pyaZOw" mandatory="true" base_Property="_YCeEAFKWEeG6eOb5pyaZOw"/>
   <CDA:CodeSystemConstraint xmi:id="_kQ_2YFKWEeG6eOb5pyaZOw" code="69444-8" displayName="Did death result from injury at work" base_Property="_YCeEAFKWEeG6eOb5pyaZOw">
@@ -1896,7 +2084,7 @@ Within the collection of component causes that are provided, the first in the se
   <CDA:PropertyValidation xmi:id="_oSNCAFKWEeG6eOb5pyaZOw" base_Property="_YCeEAVKWEeG6eOb5pyaZOw"/>
   <CDA:PropertyValidation xmi:id="_qvgK4FKWEeG6eOb5pyaZOw" base_Property="_YCeEAlKWEeG6eOb5pyaZOw"/>
   <CDA:AssociationValidation xmi:id="_RZMNcFKXEeG6eOb5pyaZOw" severity="INFO" base_Association="_s_S4slKVEeG6eOb5pyaZOw"/>
-  <CDA:AssociationValidation xmi:id="_T9WzUFKXEeG6eOb5pyaZOw" severity="INFO" base_Association="_qqyfcFKVEeG6eOb5pyaZOw"/>
+  <CDA:AssociationValidation xmi:id="_T9WzUFKXEeG6eOb5pyaZOw" base_Association="_qqyfcFKVEeG6eOb5pyaZOw"/>
   <CDA:ClassValidation xmi:id="_WXi90FKXEeG6eOb5pyaZOw" base_Class="_-tdHEFKWEeG6eOb5pyaZOw"/>
   <CDA:PropertyValidation xmi:id="_XWmAAFKXEeG6eOb5pyaZOw" base_Property="_OkFokFKXEeG6eOb5pyaZOw"/>
   <CDA:PropertyValidation xmi:id="_aXV0MFKXEeG6eOb5pyaZOw" mandatory="true" base_Property="_OkFokVKXEeG6eOb5pyaZOw"/>
@@ -1920,7 +2108,7 @@ Within the collection of component causes that are provided, the first in the se
   <CDA:PropertyValidation xmi:id="_SWUuoFKYEeG6eOb5pyaZOw" base_Property="_ErD4gVKYEeG6eOb5pyaZOw"/>
   <CDA:PropertyValidation xmi:id="_UkRM4FKYEeG6eOb5pyaZOw" base_Property="_ErD4glKYEeG6eOb5pyaZOw"/>
   <CDA:AssociationValidation xmi:id="_fV3HMFKYEeG6eOb5pyaZOw" base_Association="_tLjQMlKOEeG6eOb5pyaZOw"/>
-  <CDA:AssociationValidation xmi:id="_gJVLgFKYEeG6eOb5pyaZOw" severity="INFO" base_Association="_npzaslKVEeG6eOb5pyaZOw"/>
+  <CDA:AssociationValidation xmi:id="_gJVLgFKYEeG6eOb5pyaZOw" base_Association="_npzaslKVEeG6eOb5pyaZOw"/>
   <CDA:AssociationValidation xmi:id="_uIGMcFKYEeG6eOb5pyaZOw" base_Association="_x0SAwlKMEeG6eOb5pyaZOw"/>
   <uml:Association xmi:id="_Gp9HsFNUEeGRGfOtxXFQuA" memberEnd="_Gp8goFNUEeGRGfOtxXFQuA _Gp9HsVNUEeGRGfOtxXFQuA">
     <ownedEnd xmi:id="_Gp9HsVNUEeGRGfOtxXFQuA" type="_sLKXUEkkEeGZuYViNfIskw" association="_Gp9HsFNUEeGRGfOtxXFQuA"/>
@@ -1936,9 +2124,7 @@ Within the collection of component causes that are provided, the first in the se
   <CDA:PropertyValidation xmi:id="_w6t-oFNUEeGRGfOtxXFQuA" base_Property="_uPCbgFNUEeGRGfOtxXFQuA"/>
   <CDA:PropertyValidation xmi:id="_2FfaYFNUEeGRGfOtxXFQuA" base_Property="_uPDCkFNUEeGRGfOtxXFQuA"/>
   <CDA:PropertyValidation xmi:id="_5oXrQFNUEeGRGfOtxXFQuA" base_Property="_uPDCkVNUEeGRGfOtxXFQuA"/>
-  <CDA:CodeSystemConstraint xmi:id="_6m-okFNUEeGRGfOtxXFQuA" base_Property="_uPDCkVNUEeGRGfOtxXFQuA">
-    <reference href="vsdr-vocab.uml#_Y8Id8UxWEeGCUrfdtxCbHg"/>
-  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_6m-okFNUEeGRGfOtxXFQuA" base_Property="_uPDCkVNUEeGRGfOtxXFQuA"/>
   <CDA:PropertyValidation xmi:id="_yaq5BFNVEeGRGfOtxXFQuA" base_Property="_yaq5AFNVEeGRGfOtxXFQuA"/>
   <CDA:PropertyValidation xmi:id="_yargFFNVEeGRGfOtxXFQuA" base_Property="_yargEFNVEeGRGfOtxXFQuA"/>
   <CDA:PropertyValidation xmi:id="_yasHI1NVEeGRGfOtxXFQuA" base_Property="_yasHIFNVEeGRGfOtxXFQuA"/>
@@ -1950,12 +2136,10 @@ Within the collection of component causes that are provided, the first in the se
   <uml:Association xmi:id="_Vjx7UFNXEeGRGfOtxXFQuA" memberEnd="_VjxUQFNXEeGRGfOtxXFQuA _Vjx7UVNXEeGRGfOtxXFQuA">
     <ownedEnd xmi:id="_Vjx7UVNXEeGRGfOtxXFQuA" type="_YpKeMFGyEeGSqNO1bVTZyw" association="_Vjx7UFNXEeGRGfOtxXFQuA"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_akDXQFNXEeGRGfOtxXFQuA" base_Association="_Vjx7UFNXEeGRGfOtxXFQuA"/>
+  <CDA:AssociationValidation xmi:id="_akDXQFNXEeGRGfOtxXFQuA" severity="WARNING" base_Association="_Vjx7UFNXEeGRGfOtxXFQuA"/>
   <CDA:PropertyValidation xmi:id="_ptgptFNXEeGRGfOtxXFQuA" base_Property="_ptgpsFNXEeGRGfOtxXFQuA"/>
   <CDA:PropertyValidation xmi:id="_pthQw1NXEeGRGfOtxXFQuA"/>
-  <CDA:CodeSystemConstraint xmi:id="_pth30FNXEeGRGfOtxXFQuA">
-    <reference href="vsdr-vocab.uml#_Y8Id8UxWEeGCUrfdtxCbHg"/>
-  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_pth30FNXEeGRGfOtxXFQuA"/>
   <uml:Association xmi:id="_5JP-8lNXEeGRGfOtxXFQuA" memberEnd="_5JP-8FNXEeGRGfOtxXFQuA _5JQmAFNXEeGRGfOtxXFQuA">
     <ownedEnd xmi:id="_5JQmAFNXEeGRGfOtxXFQuA" type="_HdNCMFNXEeGRGfOtxXFQuA" association="_5JP-8lNXEeGRGfOtxXFQuA"/>
   </uml:Association>
@@ -1969,25 +2153,23 @@ Within the collection of component causes that are provided, the first in the se
   <uml:Association xmi:id="_7pRH0VNbEeGRGfOtxXFQuA" memberEnd="_7pQgwFNbEeGRGfOtxXFQuA _7pRH0lNbEeGRGfOtxXFQuA">
     <ownedEnd xmi:id="_7pRH0lNbEeGRGfOtxXFQuA" type="_tVKUoFKNEeG6eOb5pyaZOw" association="_7pRH0VNbEeGRGfOtxXFQuA"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_-z7F8FNbEeGRGfOtxXFQuA" severity="INFO" base_Association="_7pRH0VNbEeGRGfOtxXFQuA"/>
+  <CDA:AssociationValidation xmi:id="_-z7F8FNbEeGRGfOtxXFQuA" base_Association="_7pRH0VNbEeGRGfOtxXFQuA"/>
   <CDA:ClassValidation xmi:id="_AwuJ0FNcEeGRGfOtxXFQuA" base_Class="_wvLY0FNbEeGRGfOtxXFQuA"/>
   <CDA:PropertyValidation xmi:id="_C5LrIFNcEeGRGfOtxXFQuA" base_Property="_5gju4FNbEeGRGfOtxXFQuA"/>
   <CDA:PropertyValidation xmi:id="_uf06cFNdEeGRGfOtxXFQuA" base_Property="_wcLH0FNcEeGRGfOtxXFQuA"/>
-  <CDA:PropertyValidation xmi:id="_zSWOQFNdEeGRGfOtxXFQuA" severity="INFO" base_Property="_wcKgwFNcEeGRGfOtxXFQuA"/>
+  <CDA:PropertyValidation xmi:id="_zSWOQFNdEeGRGfOtxXFQuA" base_Property="_wcKgwFNcEeGRGfOtxXFQuA"/>
   <uml:Association xmi:id="_ED4RwVNeEeGRGfOtxXFQuA" memberEnd="_ED3qsFNeEeGRGfOtxXFQuA _ED4RwlNeEeGRGfOtxXFQuA">
     <ownedEnd xmi:id="_ED4RwlNeEeGRGfOtxXFQuA" type="_wvLY0FNbEeGRGfOtxXFQuA" association="_ED4RwVNeEeGRGfOtxXFQuA"/>
   </uml:Association>
   <uml:Association xmi:id="_cM5gMlNeEeGRGfOtxXFQuA" memberEnd="_cM5gMFNeEeGRGfOtxXFQuA _cM6HQFNeEeGRGfOtxXFQuA">
     <ownedEnd xmi:id="_cM6HQFNeEeGRGfOtxXFQuA" type="_pEGHAFNcEeGRGfOtxXFQuA" association="_cM5gMlNeEeGRGfOtxXFQuA"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_dPQ8IFNeEeGRGfOtxXFQuA" severity="INFO" base_Association="_cM5gMlNeEeGRGfOtxXFQuA"/>
+  <CDA:AssociationValidation xmi:id="_dPQ8IFNeEeGRGfOtxXFQuA" base_Association="_cM5gMlNeEeGRGfOtxXFQuA"/>
   <CDA:PropertyValidation xmi:id="_jOX-4FNeEeGRGfOtxXFQuA" base_Property="_YspskFNeEeGRGfOtxXFQuA"/>
   <CDA:TextValue xmi:id="_mPlGEFNeEeGRGfOtxXFQuA" severity="INFO" base_Property="_YsqToFNeEeGRGfOtxXFQuA"/>
-  <CDA:PropertyValidation xmi:id="_h7ho0FWAEeG7_vEkEtC8Kw" severity="INFO" base_Property="_hHPFIFWAEeG7_vEkEtC8Kw"/>
+  <CDA:PropertyValidation xmi:id="_h7ho0FWAEeG7_vEkEtC8Kw" base_Property="_hHPFIFWAEeG7_vEkEtC8Kw"/>
   <CDA:PropertyValidation xmi:id="_Imu44FWCEeGB-uFDV6EGzg" base_Property="_HS_ZEFWCEeGB-uFDV6EGzg"/>
-  <CDA:CodeSystemConstraint xmi:id="_WbyIAFaREeGrndXG9pRuHg" base_Property="_pkH_EEtSEeGCUrfdtxCbHg">
-    <reference href="vsdr-vocab.uml#_LoQHQFaBEeGrndXG9pRuHg"/>
-  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_WbyIAFaREeGrndXG9pRuHg" base_Property="_pkH_EEtSEeGCUrfdtxCbHg"/>
   <CDA:PropertyValidation xmi:id="_sfqr8FlwEeGYU_6eTM1M0g" base_Property="_o8qfQFlwEeGYU_6eTM1M0g"/>
   <uml:Association xmi:id="_wERbIFlwEeGYU_6eTM1M0g" memberEnd="_wEQ0EFlwEeGYU_6eTM1M0g _wESCMFlwEeGYU_6eTM1M0g">
     <ownedComment xmi:id="_Aul30G90EeGducFY2S5l3A">
@@ -2034,7 +2216,7 @@ Within the collection of component causes that are provided, the first in the se
   <CDA:PropertyValidation xmi:id="_vxnQIFm4EeGlsI-eW0rVvQ" base_Property="_rFZYqFm4EeGlsI-eW0rVvQ"/>
   <uml:Association xmi:id="_f-89wlm6EeGlsI-eW0rVvQ" memberEnd="_f-89wFm6EeGlsI-eW0rVvQ _f-89w1m6EeGlsI-eW0rVvQ">
     <ownedComment xmi:id="_OotCQG90EeGducFY2S5l3A">
-      <body>The recordTarget participation contains nformation that directly refers to the deceased.</body>
+      <body>The recordTarget participation contains information that directly refers to the decedent.</body>
     </ownedComment>
     <ownedEnd xmi:id="_f-89w1m6EeGlsI-eW0rVvQ" type="_W9yacUj_EeGtBMy1ENLCpQ" association="_f-89wlm6EeGlsI-eW0rVvQ"/>
   </uml:Association>
@@ -2046,7 +2228,7 @@ Within the collection of component causes that are provided, the first in the se
   <CDA:AssociationValidation xmi:id="_LEUhcFm7EeGlsI-eW0rVvQ" base_Association="_Gb9PMlm7EeGlsI-eW0rVvQ"/>
   <CDA:PropertyValidation xmi:id="_M9RAEFm7EeGlsI-eW0rVvQ" base_Property="_Ax2MEFm7EeGlsI-eW0rVvQ"/>
   <CDA:PropertyValidation xmi:id="_PKTfYFm7EeGlsI-eW0rVvQ" base_Property="_Ax2MFFm7EeGlsI-eW0rVvQ"/>
-  <CDA:PropertyValidation xmi:id="_t_o00Fm7EeGlsI-eW0rVvQ" severity="WARNING" base_Property="_rU_zgFm7EeGlsI-eW0rVvQ"/>
+  <CDA:PropertyValidation xmi:id="_t_o00Fm7EeGlsI-eW0rVvQ" base_Property="_rU_zgFm7EeGlsI-eW0rVvQ"/>
   <uml:Association xmi:id="_WJZjAlm8EeGlsI-eW0rVvQ" memberEnd="_WJZjAFm8EeGlsI-eW0rVvQ _WJZjA1m8EeGlsI-eW0rVvQ">
     <ownedEnd xmi:id="_WJZjA1m8EeGlsI-eW0rVvQ" type="_zZ894Fm6EeGlsI-eW0rVvQ" association="_WJZjAlm8EeGlsI-eW0rVvQ"/>
   </uml:Association>
@@ -2055,15 +2237,14 @@ Within the collection of component causes that are provided, the first in the se
   <CDA:CodeSystemConstraint xmi:id="_hP8ZoFm8EeGlsI-eW0rVvQ" base_Property="_M54fcFm8EeGlsI-eW0rVvQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_VXEOQCF_Ed-M3adQxwHq4g"/>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_jxODkFm8EeGlsI-eW0rVvQ" severity="WARNING" base_Property="_M54fc1m8EeGlsI-eW0rVvQ"/>
+  <CDA:PropertyValidation xmi:id="_jxODkFm8EeGlsI-eW0rVvQ" severity="WARNING"/>
   <CDA:PropertyValidation xmi:id="_mTOtUFm8EeGlsI-eW0rVvQ" base_Property="_M54fdlm8EeGlsI-eW0rVvQ"/>
   <CDA:PropertyValidation xmi:id="_nzx6EFm8EeGlsI-eW0rVvQ" base_Property="_M54felm8EeGlsI-eW0rVvQ"/>
   <CDA:PropertyValidation xmi:id="_pcEtkFm8EeGlsI-eW0rVvQ" base_Property="_M54fflm8EeGlsI-eW0rVvQ"/>
-  <CDA:PropertyValidation xmi:id="_LrNBQG9yEeGducFY2S5l3A" severity="WARNING" base_Property="_o27sZ1D5EeGR99drm3mRRg"/>
-  <CDA:AssociationValidation xmi:id="_m4ptMG92EeGducFY2S5l3A" base_Association="_kDv8om92EeGducFY2S5l3A"/>
+  <CDA:PropertyValidation xmi:id="_LrNBQG9yEeGducFY2S5l3A" base_Property="_o27sZ1D5EeGR99drm3mRRg"/>
   <CDA:PropertyValidation xmi:id="_QVBAAG-pEeGducFY2S5l3A" base_Property="_AH6fQG-pEeGducFY2S5l3A"/>
   <CDA:PropertyValidation xmi:id="_TTmRAG-pEeGducFY2S5l3A" base_Property="_AH6fQW-pEeGducFY2S5l3A"/>
-  <CDA:CodeSystemConstraint xmi:id="_T76OMG-pEeGducFY2S5l3A" code="LOINC TBD" base_Property="_AH6fQW-pEeGducFY2S5l3A">
+  <CDA:CodeSystemConstraint xmi:id="_T76OMG-pEeGducFY2S5l3A" code="58332-8" displayName="Location of Death" base_Property="_AH6fQW-pEeGducFY2S5l3A">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_XodYcG-pEeGducFY2S5l3A" base_Property="_AH6fQm-pEeGducFY2S5l3A"/>
@@ -2071,8 +2252,84 @@ Within the collection of component causes that are provided, the first in the se
   <CDA:ValueSetConstraint xmi:id="_mozLIG-pEeGducFY2S5l3A" base_Property="_AH6fQ2-pEeGducFY2S5l3A">
     <reference href="vsdr-vocab.uml#_o_zCEG-FEeGducFY2S5l3A"/>
   </CDA:ValueSetConstraint>
-  <CDA:AssociationValidation xmi:id="_u0VCIG-pEeGducFY2S5l3A" base_Association="_sWVVsm-pEeGducFY2S5l3A"/>
   <CDA:PropertyValidation xmi:id="_Puq5wHNvEeGF08nJ9G2MBg" base_Property="_bDSh0VGzEeGSqNO1bVTZyw"/>
   <CDA:CDATemplate xmi:id="_LgF6oLQUEeGe-s6YNMP6eg" base_Class="_-IassG-oEeGducFY2S5l3A" templateId="2.16.840.1.113883.10.20.26.1.8"/>
   <CDA:PropertyValidation xmi:id="_35xBwLS3EeGhbsXY607ygg" base_Property="_1JLJcLS3EeGhbsXY607ygg"/>
+  <CDA:Entry xmi:id="_DRPckFxjEeO_5svOqPnaJg" base_Association="_w6QcIkkCEeGtBMy1ENLCpQ"/>
+  <CDA:Entry xmi:id="_EJ0DUFxjEeO_5svOqPnaJg" base_Association="_-6pukkkfEeGqCpGMXULTvg"/>
+  <CDA:Entry xmi:id="_E39iwFxjEeO_5svOqPnaJg" severity="WARNING" base_Association="_SHzCckksEeGZuYViNfIskw"/>
+  <CDA:Entry xmi:id="_FmNI0FxjEeO_5svOqPnaJg" base_Association="_63NQcEtSEeGCUrfdtxCbHg"/>
+  <CDA:Entry xmi:id="_GQ7g0FxjEeO_5svOqPnaJg" base_Association="_9o5U8ktSEeGCUrfdtxCbHg"/>
+  <CDA:Entry xmi:id="_G1xTQFxjEeO_5svOqPnaJg" base_Association="_ByckQEtTEeGCUrfdtxCbHg"/>
+  <CDA:Entry xmi:id="_Hd4cIFxjEeO_5svOqPnaJg" severity="WARNING" base_Association="_J-AgEVGsEeGSqNO1bVTZyw"/>
+  <CDA:Entry xmi:id="_IlGi4FxjEeO_5svOqPnaJg" base_Association="_Lrk1IlGsEeGSqNO1bVTZyw"/>
+  <CDA:Entry xmi:id="_JXIcwFxjEeO_5svOqPnaJg" base_Association="_btLjoVHEEeGSqNO1bVTZyw"/>
+  <CDA:Entry xmi:id="_J_h5gFxjEeO_5svOqPnaJg" severity="INFO" base_Association="_gRkU0lHEEeGSqNO1bVTZyw"/>
+  <CDA:Entry xmi:id="_KqrIQFxjEeO_5svOqPnaJg" severity="INFO" base_Association="_itxRglHEEeGSqNO1bVTZyw"/>
+  <CDA:Entry xmi:id="_LRzZsFxjEeO_5svOqPnaJg" base_Association="_kDv8om92EeGducFY2S5l3A"/>
+  <CDA:Entry xmi:id="_MDJXEFxjEeO_5svOqPnaJg" base_Association="_sWVVsm-pEeGducFY2S5l3A"/>
+  <CDA:PropertyValidation xmi:id="_sz_cEF0VEeO_5svOqPnaJg" base_Property="_TcH04F0VEeO_5svOqPnaJg"/>
+  <CDA:PropertyValidation xmi:id="_tdGDcF0VEeO_5svOqPnaJg" base_Property="_TcH04V0VEeO_5svOqPnaJg"/>
+  <CDA:CodeSystemConstraint xmi:id="_vBnKMF0VEeO_5svOqPnaJg" code="18743-5" displayName="Autopsy Report" base_Property="_TcH04V0VEeO_5svOqPnaJg">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_4xaQUF0VEeO_5svOqPnaJg" base_Property="_TcH04l0VEeO_5svOqPnaJg"/>
+  <CDA:AssociationValidation xmi:id="_Ap_9MF0WEeO_5svOqPnaJg" severity="INFO" base_Association="__E6Osl0VEeO_5svOqPnaJg"/>
+  <CDA:PropertyValidation xmi:id="_YUOaAF0aEeO_5svOqPnaJg" base_Property="_VTraIF0aEeO_5svOqPnaJg"/>
+  <CDA:PropertyValidation xmi:id="_Y1CBAF0aEeO_5svOqPnaJg" base_Property="_VTraIV0aEeO_5svOqPnaJg"/>
+  <CDA:PropertyValidation xmi:id="_ZbRhoF0aEeO_5svOqPnaJg"/>
+  <CDA:CodeSystemConstraint xmi:id="_fU1WAF0aEeO_5svOqPnaJg" code="69452-1" displayName="Coroner-medical examiner case number" base_Property="_VTraIV0aEeO_5svOqPnaJg">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_7tXR0F0aEeO_5svOqPnaJg" base_Property="_24-80F0aEeO_5svOqPnaJg"/>
+  <CDA:AssociationValidation xmi:id="_AkEiEF0bEeO_5svOqPnaJg" severity="INFO" base_Association="__kjl0l0aEeO_5svOqPnaJg"/>
+  <CDA:ClassValidation xmi:id="_HkS30FKKEeG6eOb5pyaZOw" base_Class="_hW7k4FKJEeG6eOb5pyaZOw"/>
+  <CDA:PropertyValidation xmi:id="_IcoOAFKKEeG6eOb5pyaZOw" mandatory="true" base_Property="_8_A7MFKJEeG6eOb5pyaZOw"/>
+  <CDA:PropertyValidation xmi:id="_KCzhoFKKEeG6eOb5pyaZOw" base_Property="_8_BiQFKJEeG6eOb5pyaZOw"/>
+  <CDA:ClassValidation xmi:id="_YATFUFKMEeG6eOb5pyaZOw" base_Class="_Ms-B0FKKEeG6eOb5pyaZOw"/>
+  <CDA:PropertyValidation xmi:id="_fUqVsFKKEeG6eOb5pyaZOw" base_Property="_ZHJDgFKKEeG6eOb5pyaZOw"/>
+  <CDA:PropertyValidation xmi:id="_h-CLsFKKEeG6eOb5pyaZOw" mandatory="true" base_Property="_ZHJDgVKKEeG6eOb5pyaZOw"/>
+  <CDA:CodeSystemConstraint xmi:id="_jRKAcFKKEeG6eOb5pyaZOw" code="69440-6" displayName="Disease onset to death interval" base_Property="_ZHJDgVKKEeG6eOb5pyaZOw">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_mv278FKKEeG6eOb5pyaZOw" base_Property="_ZHJqkFKKEeG6eOb5pyaZOw"/>
+  <CDA:PropertyValidation xmi:id="_q10rwFKKEeG6eOb5pyaZOw" mandatory="true" base_Property="_ZHJqkVKKEeG6eOb5pyaZOw"/>
+  <CDA:AssociationValidation xmi:id="_Ecg90F0cEeO_5svOqPnaJg" base_Association="_CK_AEl0cEeO_5svOqPnaJg"/>
+  <CDA:CodeSystemConstraint xmi:id="_aDqscF0cEeO_5svOqPnaJg" code="US" base_Property="_o28TelD5EeGR99drm3mRRg">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1ZiywKFkEd-dVeaMP0XXQw"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_-4m6QF0kEeO_5svOqPnaJg" base_Property="_ErD4glKYEeG6eOb5pyaZOw">
+    <reference href="vsdr-vocab.uml#_tJkyMExXEeGCUrfdtxCbHg"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_f471sF0nEeO_5svOqPnaJg" base_Property="_YsqToFNeEeGRGfOtxXFQuA"/>
+  <CDA:PropertyValidation xmi:id="_ga-y0F0nEeO_5svOqPnaJg" base_Property="_YsqTo1NeEeGRGfOtxXFQuA"/>
+  <CDA:AssociationValidation xmi:id="_iYAgMF0nEeO_5svOqPnaJg" base_Association="_ED4RwVNeEeGRGfOtxXFQuA"/>
+  <CDA:PropertyValidation xmi:id="_lok5EF0nEeO_5svOqPnaJg" base_Property="_DdNJ1VKOEeG6eOb5pyaZOw"/>
+  <CDA:AssociationValidation xmi:id="_-Y4J8F0nEeO_5svOqPnaJg" base_Association="_oF9PYFKOEeG6eOb5pyaZOw"/>
+  <CDA:AssociationValidation xmi:id="_DuMo0F0oEeO_5svOqPnaJg" base_Association="_xTb8gVKXEeG6eOb5pyaZOw"/>
+  <CDA:CDATemplate xmi:id="_TLre0l6VEeO_5svOqPnaJg" base_Class="_TLji0F6VEeO_5svOqPnaJg" templateId="2.16.840.1.113883.10.20.26.1.15"/>
+  <CDA:PropertyValidation xmi:id="_TLre016VEeO_5svOqPnaJg" base_Property="_TLq3kF6VEeO_5svOqPnaJg"/>
+  <CDA:CodeSystemConstraint xmi:id="_TLre1F6VEeO_5svOqPnaJg" code="LOINC TBD" displayName="Death Pronouncer" base_Property="_TLq3kV6VEeO_5svOqPnaJg" mandatory="true">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_TLre1V6VEeO_5svOqPnaJg" base_Property="_TLq3kl6VEeO_5svOqPnaJg"/>
+  <CDA:PropertyValidation xmi:id="_TLre1l6VEeO_5svOqPnaJg" base_Property="_TLreoV6VEeO_5svOqPnaJg"/>
+  <CDA:ClassValidation xmi:id="_TLre116VEeO_5svOqPnaJg" base_Class="_TLrepV6VEeO_5svOqPnaJg"/>
+  <CDA:PropertyValidation xmi:id="_TLre2F6VEeO_5svOqPnaJg" base_Property="_TLreqF6VEeO_5svOqPnaJg"/>
+  <CDA:ClassValidation xmi:id="_TLre2V6VEeO_5svOqPnaJg" base_Class="_TLrer16VEeO_5svOqPnaJg"/>
+  <CDA:PropertyValidation xmi:id="_TLre2l6VEeO_5svOqPnaJg" base_Property="_TLresl6VEeO_5svOqPnaJg"/>
+  <CDA:PropertyValidation xmi:id="_TLre216VEeO_5svOqPnaJg" base_Property="_TLretl6VEeO_5svOqPnaJg"/>
+  <CDA:PropertyValidation xmi:id="_TLre3F6VEeO_5svOqPnaJg"/>
+  <CDA:CodeSystemConstraint xmi:id="_TLre3V6VEeO_5svOqPnaJg"/>
+  <CDA:PropertyValidation xmi:id="_TLre3l6VEeO_5svOqPnaJg" base_Property="_TLrev16VEeO_5svOqPnaJg"/>
+  <CDA:PropertyValidation xmi:id="_TLre316VEeO_5svOqPnaJg" base_Property="_TLrexl6VEeO_5svOqPnaJg"/>
+  <CDA:PropertyValidation xmi:id="_TLre4F6VEeO_5svOqPnaJg" base_Property="_TLreyl6VEeO_5svOqPnaJg"/>
+  <CDA:PropertyValidation xmi:id="_TLre4V6VEeO_5svOqPnaJg" base_Property="_TLrezl6VEeO_5svOqPnaJg"/>
+  <CDA:Entry xmi:id="_pSgL0F6VEeO_5svOqPnaJg" base_Association="_mzGKIF6VEeO_5svOqPnaJg"/>
+  <CDA:AssociationValidation xmi:id="_VcotQF6YEeO_5svOqPnaJg" base_Association="_d5ho0lNYEeGRGfOtxXFQuA"/>
+  <CDA:PropertyValidation xmi:id="_uIs-YF6YEeO_5svOqPnaJg" base_Property="_ril3wF6YEeO_5svOqPnaJg"/>
+  <CDA:PropertyValidation xmi:id="_D5jIoF6mEeO_5svOqPnaJg" base_Property="_-cr70EkBEeGtBMy1ENLCpQ"/>
+  <CDA:AssociationValidation xmi:id="_GcfpsF6qEeO_5svOqPnaJg" severity="INFO" base_Association="_EKP6QV6qEeO_5svOqPnaJg"/>
+  <CDA:AssociationValidation xmi:id="_U4L3MF6qEeO_5svOqPnaJg" base_Association="_T_tXEl6qEeO_5svOqPnaJg"/>
+  <CDA:AssociationValidation xmi:id="_yKbpQF6qEeO_5svOqPnaJg" base_Association="_wUNugV6qEeO_5svOqPnaJg"/>
 </xmi:XMI>
