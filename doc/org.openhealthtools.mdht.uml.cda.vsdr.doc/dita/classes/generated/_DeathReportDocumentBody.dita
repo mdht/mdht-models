@@ -14,7 +14,7 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.1.1"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69409-1" </tt><i>U.S. standard certificate of death - 2003 revision</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 <ul><li><p><lines><i>A code to indicate this is the section containing death reporting information.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section. Text is required to provide human readible content.</i></lines></p></li></ul></li>
@@ -62,7 +62,7 @@
 <li>Contains exactly one [1..1] <xref href="../PronouncingDeath.dita">Pronouncing Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.15</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69409-1" </tt><i>U.S. standard certificate of death - 2003 revision</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 <ul><li><p><lines><i>A code to indicate this is the section containing death reporting information.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section. Text is required to provide human readible content.</i></lines></p></li></ul></li>

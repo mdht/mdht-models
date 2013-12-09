@@ -378,7 +378,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9R44IF6lEeO_5svOqPnaJg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9R77cF6lEeO_5svOqPnaJg" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_WgMYIEkCEeGtBMy1ENLCpQ" value="LOINC TBD"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_WgMYIEkCEeGtBMy1ENLCpQ" value=""/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-cr70EkBEeGtBMy1ENLCpQ" name="text" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_NpXhYEkCEeGtBMy1ENLCpQ">
@@ -1865,7 +1865,7 @@ The element is required if the pronouncing and certifying physicians are differe
   <CDA:CodeSystemConstraint xmi:id="_FuF60EksEeGZuYViNfIskw" code="LOINC TBD" displayName="Location of Death" base_Property="_LtBDQEkfEeGqCpGMXULTvg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_LBmb0EksEeGZuYViNfIskw" base_Property="_-ciK0EkBEeGtBMy1ENLCpQ">
+  <CDA:CodeSystemConstraint xmi:id="_LBmb0EksEeGZuYViNfIskw" code="69409-1" displayName="U.S. standard certificate of death - 2003 revision" base_Property="_-ciK0EkBEeGtBMy1ENLCpQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_h0ngoEksEeGZuYViNfIskw" base_Class="_2l1UUEkBEeGtBMy1ENLCpQ" templateId="2.16.840.1.113883.10.20.26.1.1"/>

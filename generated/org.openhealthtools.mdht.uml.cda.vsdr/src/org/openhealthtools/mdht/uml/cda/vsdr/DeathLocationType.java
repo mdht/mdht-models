@@ -94,7 +94,7 @@ public interface DeathLocationType extends Observation
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'OID TBD\' and (value.code = \'H-IN\' or value.code = \'H-ER/OP\' or value.code = \'H-DOA\' or value.code = \'NH\' or value.code = \'RES\' or value.code = \'OTH\')))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.114222.4.5.274\' and (value.code = \'H-IN\' or value.code = \'H-ER/OP\' or value.code = \'H-DOA\' or value.code = \'NH\' or value.code = \'RES\' or value.code = \'OTH\')))'"
    * @generated
    */
   boolean validateDeathLocationTypeValue(DiagnosticChain diagnostics, Map<Object, Object> context);

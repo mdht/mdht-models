@@ -57,7 +57,7 @@
       <ownedLiteral xmi:id="_aSf-gExXEeGCUrfdtxCbHg" name="PS8"/>
       <ownedLiteral xmi:id="_cRZUIExXEeGCUrfdtxCbHg" name="NOC"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tJkLIExXEeGCUrfdtxCbHg" name="Decedent Transportation Relationships">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tJkLIExXEeGCUrfdtxCbHg" name="Decedent Transportation Relationship">
       <ownedComment xmi:id="_Em_D8G7rEeGducFY2S5l3A">
         <body>The value set contains the set of codes used to indicate the role played by the decedent with reference to a vehicle involved with a transportation injury.  Note, the concept &quot;other&quot; is supported using the HL7 null flavor &quot;OTH&quot;.</body>
       </ownedComment>
@@ -65,8 +65,7 @@
       <ownedLiteral xmi:id="_16vF0ExXEeGCUrfdtxCbHg" name="257500003"/>
       <ownedLiteral xmi:id="_33a08ExXEeGCUrfdtxCbHg" name="257518000"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_g8JUsG-FEeGducFY2S5l3A" name="Death Location Types"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_o_ybAG-FEeGducFY2S5l3A" name="Death LocationTypeCodes">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_o_ybAG-FEeGducFY2S5l3A" name="Death Location Type">
       <ownedLiteral xmi:id="_vOKo0G-FEeGducFY2S5l3A" name="H-IN"/>
       <ownedLiteral xmi:id="_2u-u4G-FEeGducFY2S5l3A" name="H-ER/OP"/>
       <ownedLiteral xmi:id="_8YptIG-FEeGducFY2S5l3A" name="H-DOA"/>
@@ -79,6 +78,17 @@
         <body>The HL7 Version 2 code system that supports recording of &quot;Yes&quot; or &quot;No&quot; as vocabulary items.</body>
       </ownedComment>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_lWDOQGEPEeOucruFG1usrQ" name="SNOMEDCT">
+      <ownedComment xmi:id="_lWDOQWEPEeOucruFG1usrQ">
+        <body>SNOMED CT&amp;reg; consists of a technical design, core content architecture, and Core content. SNOMED CT&amp;reg; Core content includes the technical specification of SNOMED CT&amp;reg; and fully integrated multi-specialty clinical content. The Core content also includes a concepts table, description table, relationships table, history table, ICD-9-CM mapping, and Technical Reference Guide. Additionally, SNOMED CT&amp;reg; provides a framework to manage language dialects, clinically relevant subsets, qualifiers and extensions, as well as concepts and terms unique to particular organizations or localities. For more information visit www.ihtsdo.com</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_IvbWoGEQEeOucruFG1usrQ" name="LOINC">
+      <ownedComment xmi:id="_IvbWoWEQEeOucruFG1usrQ">
+        <body>A database of universal identifiers for laboratory and other clinical observations. The laboratory portion of the LOINC&amp;reg; database contains the usual categories of chemistry, hematology, serology, microbiology (including parasitology and virology), and toxicology; as well as categories for drugs and the cell counts typically reported on a complete blood count or a cerebrospinal fluid cell count. Antibiotic susceptibilities are a separate category. The clinical portion of the LOINC&amp;reg; database includes entries for vital signs, hemodynamics, intake/output, EKG, obstetric ultrasound, cardiac echo, urologic imaging, gastroendoscopic procedures, pulmonary ventilator management, selected survey instruments, and other clinical observations. For more information visit www.loinc.org</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_QoTXYGEQEeOucruFG1usrQ" name="PHIN VS (CDC Local Coding System)"/>
     <profileApplication xmi:id="_tH2HMUuDEeGs8afU5hU7bA">
       <eAnnotations xmi:id="_tH2HMkuDEeGs8afU5hU7bA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -131,8 +141,9 @@
   <term:ValueSetCode xmi:id="_0lP5kUxXEeGCUrfdtxCbHg" conceptName="Driver of moter vehicle" base_EnumerationLiteral="_0lP5kExXEeGCUrfdtxCbHg"/>
   <term:ValueSetCode xmi:id="_16vs4ExXEeGCUrfdtxCbHg" conceptName="Passenger" base_EnumerationLiteral="_16vF0ExXEeGCUrfdtxCbHg"/>
   <term:ValueSetCode xmi:id="_33bcAExXEeGCUrfdtxCbHg" conceptName="Pedestrian" base_EnumerationLiteral="_33a08ExXEeGCUrfdtxCbHg"/>
-  <term:CodeSystemVersion xmi:id="_g8J7wG-FEeGducFY2S5l3A" identifier="OID TBD" base_Enumeration="_g8JUsG-FEeGducFY2S5l3A"/>
-  <term:ValueSetVersion xmi:id="_o_zCEG-FEeGducFY2S5l3A" codeSystem="_g8J7wG-FEeGducFY2S5l3A" base_Enumeration="_o_ybAG-FEeGducFY2S5l3A"/>
+  <term:ValueSetVersion xmi:id="_o_zCEG-FEeGducFY2S5l3A" base_Enumeration="_o_ybAG-FEeGducFY2S5l3A">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_vOL28G-FEeGducFY2S5l3A" conceptName="Hospital Inpatient" base_EnumerationLiteral="_vOKo0G-FEeGducFY2S5l3A"/>
   <term:ValueSetCode xmi:id="_2u_V8G-FEeGducFY2S5l3A" conceptName="Hospital Emergency Department or Outpatient" base_EnumerationLiteral="_2u-u4G-FEeGducFY2S5l3A"/>
   <term:ValueSetCode xmi:id="_8YqUMG-FEeGducFY2S5l3A" conceptName="Hospital Dead on Arrival" base_EnumerationLiteral="_8YptIG-FEeGducFY2S5l3A"/>
@@ -140,4 +151,7 @@
   <term:ValueSetCode xmi:id="_A9FhoW-GEeGducFY2S5l3A" conceptName="Residence" base_EnumerationLiteral="_A9FhoG-GEeGducFY2S5l3A"/>
   <term:ValueSetCode xmi:id="_CkrKgG-GEeGducFY2S5l3A" conceptName="Other" base_EnumerationLiteral="_CkqjcG-GEeGducFY2S5l3A"/>
   <term:CodeSystemVersion xmi:id="_3lODsF66EeOAc4EMZ20xKQ" identifier="2.16.840.1.113883.12.136" fullName="HL70136 Yes/No Indicator" base_Enumeration="_3jsZsF66EeOAc4EMZ20xKQ"/>
+  <term:CodeSystemVersion xmi:id="_lWbowGEPEeOucruFG1usrQ" identifier="2.16.840.1.113883.6.96" fullName="International Health Terminology Standards Development Organisation (IHTSDO) Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT)" source="National Library of Medicine – UMLS" url="http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" base_Enumeration="_lWDOQGEPEeOucruFG1usrQ"/>
+  <term:CodeSystemVersion xmi:id="_IvbWomEQEeOucruFG1usrQ" identifier="2.16.840.1.113883.6.1" fullName="Logical Observation Identifiers Names and Codes (LOINC)" source="Regenstrief Institute, Inc" url="http://loinc.org" base_Enumeration="_IvbWoGEQEeOucruFG1usrQ"/>
+  <term:CodeSystemVersion xmi:id="_QoTXYWEQEeOucruFG1usrQ" identifier="2.16.840.1.114222.4.5.274" version="20100308" source="CDCPHINVS" base_Enumeration="_QoTXYGEQEeOucruFG1usrQ"/>
 </xmi:XMI>

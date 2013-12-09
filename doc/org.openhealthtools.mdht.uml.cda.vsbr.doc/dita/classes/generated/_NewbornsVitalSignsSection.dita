@@ -43,19 +43,20 @@
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Newborns Vital Signs Section</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:353</entry><entry> DOCSECT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:356</entry><entry> EVN</entry></row> 
 <row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:354</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
-<row><entry>newborn's Vital Signs Observation</entry><entry>cda:entry/cda:observation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Newborns Vital Signs Observation</entry><entry></entry><entry> </entry></row> 
+<row><entry>newborn's Vital Signs Observation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.46]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Newborns Vital Signs Observation</entry><entry></entry><entry> </entry></row> 
 <row><entry>newborn's Vital Signs Section</entry><entry>newborn's Vital Signs Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Newborns Vital Signs Section</entry><entry>CONF:64</entry><entry> </entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:357</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="962301552"/>
-  <code code="1854725470"/>
+  <id root="MDHT" extension="745966523"/>
+  <code code="2051517352"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
-    <observation>
-      <id root="MDHT" extension="1482021203"/>
-      <code code="1108617296"/>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.26.46"/>
+      <id root="MDHT" extension="943867656"/>
+      <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2013"/>

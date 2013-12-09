@@ -40,7 +40,8 @@
 <row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>INT</entry><entry>CONF:352</entry><entry> </entry></row> 
 <row><entry>birth Order</entry><entry>birth Order</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Birth Order</entry><entry>CONF:57</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+<codeblock id="example">
+<![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
   <id root="MDHT" extension="336432638"/>
   <code code="1379259470"/>
   <effectiveTime>
@@ -48,7 +49,8 @@
     <high value="2013"/>
   </effectiveTime>
   <value xsi:type="INT" value="1"/>
-</observation>]]></codeblock>
+</observation>]]>
+</codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Birth Order</ph></p>

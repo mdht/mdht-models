@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Death Location Type</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Death Location Type - (OID not specified)</entry></row>
+<row><entry>Code System</entry><entry>PHIN VS (CDC Local Coding System) - 2.16.840.1.114222.4.5.274</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>H-IN</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Hospital Inpatient</entry></row>
+<row><entry>H-ER/OP</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Hospital Emergency Department or Outpatient</entry></row>
+<row><entry>H-DOA</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Hospital Dead on Arrival</entry></row>
+<row><entry>NH</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Nursing Home</entry></row>
+<row><entry>RES</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Residence</entry></row>
+<row><entry>OTH</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Other</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

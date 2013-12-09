@@ -58,18 +58,20 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MothersVitalSignsSection.dita">Mothers Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.9</tt>)</li></ol></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Labor and Delivery Section</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:43</entry><entry> DOCSECT</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Labor and Delivery Section</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.26.8]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:43</entry><entry> DOCSECT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:45</entry><entry> EVN</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:44</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
-<row><entry>labor and Delivery Information</entry><entry>cda:entry/cda:act</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Labor and Delivery Information</entry><entry>CONF:47</entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:44</entry><entry>LOINC 2.16.840.1.113883.6.1 34079-4</entry></row> 
+<row><entry>labor and Delivery Information</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.26.31]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Labor and Delivery Information</entry><entry>CONF:47</entry><entry> </entry></row> 
 <row><entry>labor and Delivery Procedures Section</entry><entry>labor and Delivery Procedures Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Labor and Delivery Procedure Section</entry><entry>CONF:50</entry><entry> </entry></row> 
 <row><entry>labor and Delivery Section</entry><entry>labor and Delivery Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Labor and Delivery Section</entry><entry>CONF:20</entry><entry> </entry></row> 
-<row><entry>labor Onsets</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Onset of Labor</entry><entry>CONF:48</entry><entry> </entry></row> 
+<row><entry>labor Onsets</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.32]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Onset of Labor</entry><entry>CONF:48</entry><entry> </entry></row> 
 <row><entry>mothers Vital Signs Section</entry><entry>mothers Vital Signs Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Mothers Vital Signs Section</entry><entry></entry><entry> </entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:46</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="930903097"/>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3" classCode="DOCSECT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.26.8"/>
+  <id root="MDHT" extension="346944824"/>
+  <code code="34079-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Labor and delivery section"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
@@ -83,13 +85,14 @@
   </component>
   <component>
     <section>
-      <id root="MDHT" extension="41755880"/>
+      <id root="MDHT" extension="848832445"/>
       <title>TEXT FOR TITLE</title>
       <text/>
       <entry>
-        <observation>
-          <id root="MDHT" extension="576549892"/>
-          <code code="854643990"/>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.26.46"/>
+          <id root="MDHT" extension="524916034"/>
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2013"/>

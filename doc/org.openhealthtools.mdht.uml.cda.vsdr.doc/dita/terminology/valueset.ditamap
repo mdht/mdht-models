@@ -3,10 +3,12 @@
 <map title="Value Sets">
 <topicref href="ContributoryTobaccoUse.dita" type="topic" />
 <topicref href="DeathCertifierTitles.dita" type="topic" />
-<topicref href="DeathLocationTypeCodes.dita" type="topic" />
-<topicref href="DeathLocationTypes.dita" type="topic" />
-<topicref href="DecedentTransportationRelationships.dita" type="topic" />
+<topicref href="DeathLocationType.dita" type="topic" />
+<topicref href="DecedentTransportationRelationship.dita" type="topic" />
 <topicref href="HL70136.dita" type="topic" />
+<topicref href="LOINC.dita" type="topic" />
 <topicref href="MannerOfDeath.dita" type="topic" />
+<topicref href="PHINVSCDCLocalCodingSystem.dita" type="topic" />
 <topicref href="PregnancyStatus.dita" type="topic" />
+<topicref href="SNOMEDCT.dita" type="topic" />
 </map>
