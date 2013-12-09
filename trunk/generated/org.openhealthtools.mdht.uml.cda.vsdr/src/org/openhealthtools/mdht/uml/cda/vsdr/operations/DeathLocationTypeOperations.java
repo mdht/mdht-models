@@ -397,7 +397,7 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations
    */
   protected static final String VALIDATE_DEATH_LOCATION_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = 'OID TBD' and (value.code = 'H-IN' or value.code = 'H-ER/OP' or value.code = 'H-DOA' or value.code = 'NH' or value.code = 'RES' or value.code = 'OTH')))";
+"value.codeSystem = '2.16.840.1.114222.4.5.274' and (value.code = 'H-IN' or value.code = 'H-ER/OP' or value.code = 'H-DOA' or value.code = 'NH' or value.code = 'RES' or value.code = 'OTH')))";
 
   /**
    * The cached OCL invariant for the '{@link #validateDeathLocationTypeValue(DeathLocationType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Location Type Value</em>}' invariant operation.

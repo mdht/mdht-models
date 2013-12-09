@@ -2625,8 +2625,10 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage
            {
              "constraints.validation.error", "Death Report Document BodyTemplateId Death Report Document BodyCode Death Report Document BodyCodeP Death Report Document BodyText Death Report Document BodyTime of Death Death Report Document BodyLocation of Death Death Report Document BodyManner of Death Death Report Document BodyPregnancy Status Death Report Document BodyTobacco Use Death Report Document BodyCause of Death Death Report Document BodyAutopsy Performance Death Report Document BodyCoroner Case Transfer Death Report Document BodyDeathLocationType Death Report Document BodyPronouncing Death",
              "templateId.root", "2.16.840.1.113883.10.20.26.1.1",
+             "code.code", "69409-1",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
+             "code.displayName", "U.S. standard certificate of death - 2003 revision",
              "constraints.validation.warning", "Death Report Document BodyCertifying Death Death Report Document BodyInjury",
              "constraints.validation.info", "Death Report Document BodyAutopsy Results Death Report Document BodyCoroner Referral"
            });                                                                         

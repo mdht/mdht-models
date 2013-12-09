@@ -266,7 +266,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations
    */
   protected static final String VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1'";
+"value.code = '69409-1' and value.codeSystem = '2.16.840.1.113883.6.1'";
 
   /**
    * The cached OCL invariant for the '{@link #validateDeathReportDocumentBodyCode(DeathReportDocumentBody, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Code</em>}' invariant operation.
