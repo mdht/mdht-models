@@ -12,7 +12,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>SNOMEDCT</entry></row>
-<row><entry>Description</entry><entry>SNOMED CT&reg; consists of a technical design, core content architecture, and Core content. SNOMED CT&reg; Core content includes the technical specification of SNOMED CT&reg; and fully integrated multi-specialty clinical content. The Core content also includes a concepts table, description table, relationships table, history table, ICD-9-CM mapping, and Technical Reference Guide. Additionally, SNOMED CT&reg; provides a framework to manage language dialects, clinically relevant subsets, qualifiers and extensions, as well as concepts and terms unique to particular organizations or localities. For more information visit www.ihtsdo.com
+<row><entry>Description</entry><entry><tm trademark="SNOMED CT" tmtype="reg" tmclass="snomedct">SNOMED CT</tm> consists of a technical design, core content architecture, and Core content. <tm trademark="SNOMED CT" tmtype="reg" tmclass="snomedct">SNOMED CT</tm>  Core content includes the technical specification of <tm trademark="SNOMED CT" tmtype="reg" tmclass="snomedct">SNOMED CT</tm> and fully integrated multi-specialty clinical content. The Core content also includes a concepts table, description table, relationships table, history table, ICD-9-CM mapping, and Technical Reference Guide. Additionally, <tm trademark="SNOMED CT" tmtype="reg" tmclass="snomedct">SNOMED CT</tm>  provides a framework to manage language dialects, clinically relevant subsets, qualifiers and extensions, as well as concepts and terms unique to particular organizations or localities. For more information visit www.ihtsdo.com
 </entry></row>
 </tbody></tgroup></table>
 </section>
