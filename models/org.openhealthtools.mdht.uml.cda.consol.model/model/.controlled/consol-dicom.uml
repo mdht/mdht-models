@@ -284,6 +284,16 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
     <generalization xmi:id="_crHC0UcAEeGp67IkyTw1fg">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
+    <ownedAttribute xmi:id="_wUw6IGQmEeOD5bEp3nNX5w" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_IqUvwGQnEeOD5bEp3nNX5w" value="ACT"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wUxhMGQmEeOD5bEp3nNX5w" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_VcsPAGQnEeOD5bEp3nNX5w" value="EVN"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_FyeiIOZJEeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
@@ -1335,4 +1345,10 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:ConstraintValidation xmi:id="_xtRUMParEeGwLN-1_ZfJEQ" severity="WARNING" base_Constraint="_xsB-EParEeGwLN-1_ZfJEQ">
     <ruleId>CONF:10034</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_5iP9YGQmEeOD5bEp3nNX5w" base_Property="_wUw6IGQmEeOD5bEp3nNX5w">
+    <ruleId>CONF:Pending</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_-FQOgGQmEeOD5bEp3nNX5w" base_Property="_wUxhMGQmEeOD5bEp3nNX5w">
+    <ruleId>CONF:Pending</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

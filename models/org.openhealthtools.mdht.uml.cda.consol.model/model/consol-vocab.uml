@@ -1189,6 +1189,81 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_13RkcDp5EeOpivxgTh7oFg" name="HPOWATT"/>
       <ownedLiteral xmi:id="_2LBm4Dp5EeOpivxgTh7oFg" name="SPOWATT"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_jU_WgGKxEeOD5bEp3nNX5w" name="ParticipationFunction">
+      <ownedComment xmi:id="_f4XpMGKyEeOD5bEp3nNX5w">
+        <body>This code is used to specify the exact function an actor had in a service in all necessary detail. This domain may include local extensions (CWE).</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_vDf6IGKzEeOD5bEp3nNX5w" name="ADMPHYS">
+        <ownedComment xmi:id="_xFIlQGK0EeOD5bEp3nNX5w">
+          <body>A physician who admitted a patient to a hospital or other care unit that is the context of this service.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_4qqMMGK0EeOD5bEp3nNX5w" name="ANEST">
+        <ownedComment xmi:id="_-hMhwGK0EeOD5bEp3nNX5w">
+          <body>In a typical anesthesia setting an anesthesiologist or anesthesia resident in charge of the anesthesia and life support, but only a witness to the surgical procedure itself. To clarify responsibilities anesthesia should always be represented as a separate service related to the surgery.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_DmGmEGK1EeOD5bEp3nNX5w" name="ANRS">
+        <ownedComment xmi:id="_Li6roGK1EeOD5bEp3nNX5w">
+          <body>In a typical anesthesia setting the nurse principally assisting the anesthesiologist during the critical periods.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_MbM-gGK1EeOD5bEp3nNX5w" name="ATTPHYS">
+        <ownedComment xmi:id="_PZG6EGK1EeOD5bEp3nNX5w">
+          <body>A physician who is primarily responsible for a patient during the hospitalization, which is the context of the service.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_PwI6AGK1EeOD5bEp3nNX5w" name="DISPHYS">
+        <ownedComment xmi:id="_Sz17kGK1EeOD5bEp3nNX5w">
+          <body>A physician who discharged a patient from a hospital or other care unit that is the context of this service.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_TG6BgGK1EeOD5bEp3nNX5w" name="FASST">
+        <ownedComment xmi:id="_WtyooGK1EeOD5bEp3nNX5w">
+          <body>In a typical surgery setting the assistant facing the primary surgeon. The first assistant performs parts of the operation and assists in others (e.g., incision, approach, electrocoutering, ligatures, sutures).</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_ayFkgGK1EeOD5bEp3nNX5w" name="MDWF">
+        <ownedComment xmi:id="_eLhlgGK1EeOD5bEp3nNX5w">
+          <body>A person (usually female) helping a woman deliver a baby. Responsibilities vary locally, ranging from a mere optional assistant to a full required participant, responsible for (normal) births and pre- and post-natal care for both mother and baby.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_eZoS8GK1EeOD5bEp3nNX5w" name="NASST">
+        <ownedComment xmi:id="_guR2IGK1EeOD5bEp3nNX5w">
+          <body>In a typical surgery setting the non-sterile nurse handles material supply from the stock, forwards specimen to pathology, and helps with other non-sterile tasks (e.g., phone calls, etc.).</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_g7X28GK1EeOD5bEp3nNX5w" name="PCP">
+        <ownedComment xmi:id="_kIsHgGK1EeOD5bEp3nNX5w">
+          <body>The healthcare provider that holds primary responsibility for the overall care of a patient.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_ktrq8GK1EeOD5bEp3nNX5w" name="PRISURG">
+        <ownedComment xmi:id="_oEXS4GK1EeOD5bEp3nNX5w">
+          <body>In a typical surgery setting the primary performing surgeon.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_odUlcGK1EeOD5bEp3nNX5w" name="RNDPHYS">
+        <ownedComment xmi:id="_r3-ucGK1EeOD5bEp3nNX5w">
+          <body>A physician who made rounds on a patient in a hospital or other care center.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_sCHh4GK1EeOD5bEp3nNX5w" name="SASST">
+        <ownedComment xmi:id="_vOc7AGK1EeOD5bEp3nNX5w">
+          <body>In a typical surgery setting the assistant who primarily holds the hooks.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_vX05cGK1EeOD5bEp3nNX5w" name="SNRS">
+        <ownedComment xmi:id="_yFLQgGK1EeOD5bEp3nNX5w">
+          <body>In a typical surgery setting the nurse in charge of the instrumentation.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_yNuIgGK1EeOD5bEp3nNX5w" name="TASST">
+        <ownedComment xmi:id="_4TIAgGK1EeOD5bEp3nNX5w">
+          <body>In a typical surgery setting there is rarely a third assistant (e.g., in some Hip operations the third assistant postures the affected leg).</body>
+        </ownedComment>
+      </ownedLiteral>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -2431,4 +2506,21 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_1jJukDp5EeOpivxgTh7oFg" conceptName="durable power of attorney" usageNote="RoleCode" base_EnumerationLiteral="_1jJHgDp5EeOpivxgTh7oFg"/>
   <term:ValueSetCode xmi:id="_13RkcTp5EeOpivxgTh7oFg" conceptName="healthcare power of attorney" usageNote="RoleCode" base_EnumerationLiteral="_13RkcDp5EeOpivxgTh7oFg"/>
   <term:ValueSetCode xmi:id="_2LBm4Tp5EeOpivxgTh7oFg" conceptName="special power of attorney" usageNote="RoleCode" base_EnumerationLiteral="_2LBm4Dp5EeOpivxgTh7oFg"/>
+  <term:ValueSetVersion xmi:id="_jVJukGKxEeOD5bEp3nNX5w" identifier="2.16.840.1.113883.1.11.10267" fullName="ParticipationFunction" base_Enumeration="_jU_WgGKxEeOD5bEp3nNX5w">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Si0RgOxyEeG7k4bbVdXbXw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_vDghMGKzEeOD5bEp3nNX5w" conceptName="admitting physician" base_EnumerationLiteral="_vDf6IGKzEeOD5bEp3nNX5w"/>
+  <term:ValueSetCode xmi:id="_4qqMMWK0EeOD5bEp3nNX5w" conceptName="anesthesist" base_EnumerationLiteral="_4qqMMGK0EeOD5bEp3nNX5w"/>
+  <term:ValueSetCode xmi:id="_DmGmEWK1EeOD5bEp3nNX5w" conceptName="anesthesia nurse" base_EnumerationLiteral="_DmGmEGK1EeOD5bEp3nNX5w"/>
+  <term:ValueSetCode xmi:id="_MbM-gWK1EeOD5bEp3nNX5w" conceptName="attending physician" base_EnumerationLiteral="_MbM-gGK1EeOD5bEp3nNX5w"/>
+  <term:ValueSetCode xmi:id="_PwJhEGK1EeOD5bEp3nNX5w" conceptName="discharging physician" base_EnumerationLiteral="_PwI6AGK1EeOD5bEp3nNX5w"/>
+  <term:ValueSetCode xmi:id="_TG6BgWK1EeOD5bEp3nNX5w" conceptName="first assistant surgeon" base_EnumerationLiteral="_TG6BgGK1EeOD5bEp3nNX5w"/>
+  <term:ValueSetCode xmi:id="_ayFkgWK1EeOD5bEp3nNX5w" conceptName="midwife" base_EnumerationLiteral="_ayFkgGK1EeOD5bEp3nNX5w"/>
+  <term:ValueSetCode xmi:id="_eZoS8WK1EeOD5bEp3nNX5w" conceptName="nurse assistant" base_EnumerationLiteral="_eZoS8GK1EeOD5bEp3nNX5w"/>
+  <term:ValueSetCode xmi:id="_g7X28WK1EeOD5bEp3nNX5w" conceptName="primary care physician" base_EnumerationLiteral="_g7X28GK1EeOD5bEp3nNX5w"/>
+  <term:ValueSetCode xmi:id="_ktsSAGK1EeOD5bEp3nNX5w" conceptName="primary surgeon" base_EnumerationLiteral="_ktrq8GK1EeOD5bEp3nNX5w"/>
+  <term:ValueSetCode xmi:id="_odUlcWK1EeOD5bEp3nNX5w" conceptName="rounding physician" base_EnumerationLiteral="_odUlcGK1EeOD5bEp3nNX5w"/>
+  <term:ValueSetCode xmi:id="_sCII8GK1EeOD5bEp3nNX5w" conceptName="second assistant surgeon" base_EnumerationLiteral="_sCHh4GK1EeOD5bEp3nNX5w"/>
+  <term:ValueSetCode xmi:id="_vX05cWK1EeOD5bEp3nNX5w" conceptName="scrub nurse" base_EnumerationLiteral="_vX05cGK1EeOD5bEp3nNX5w"/>
+  <term:ValueSetCode xmi:id="_yNuIgWK1EeOD5bEp3nNX5w" conceptName="third assistant" base_EnumerationLiteral="_yNuIgGK1EeOD5bEp3nNX5w"/>
 </xmi:XMI>

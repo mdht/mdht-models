@@ -13,7 +13,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_U7RnAFcfEeGCdLgBm6VHOQ">
         <language>Analysis</language>
-        <body>The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset &#xD;
+        <body>[DEPRECATED] The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset &#xD;
 is provided, you can make no assumption about time, unless you have made a local exchange agreement.&#xD;
 This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime &#xD;
 element.</body>
@@ -26,9 +26,7 @@ element.</body>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_GTIrwux2EeG7k4bbVdXbXw">
         <language>Analysis</language>
         <body>The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset &#xD;
-is provided, you can make no assumption about time, unless you have made a local exchange agreement.&#xD;
-This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime &#xD;
-element.</body>
+is provided, you can make no assumption about time, unless you have made a local exchange agreement.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_jXOYoMa8EeGp28IjMvW3Ag" name="typeIdRoot" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
@@ -2527,6 +2525,38 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rGbMgTsxEeGvzMYhXuqAEA" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_xf2epzsvEeGvzMYhXuqAEA" name="EncompassingEncounter2">
+        <ownedRule xmi:id="_a61tMGatEeOVOfVUed23Tw" name="preciseToTheDay" constrainedElement="_xf2epzsvEeGvzMYhXuqAEA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ctuAEGatEeOVOfVUed23Tw">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 8</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHALL be precise to the day</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_t1LWoGa1EeO8u4bjJ5HCCg" name="preciseToTheMinute" constrainedElement="_xf2epzsvEeGvzMYhXuqAEA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_t1LWoWa1EeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 12</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHOULD be precise to the minute</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_u4E-EGa1EeO8u4bjJ5HCCg" name="preciseToTheSecond" constrainedElement="_xf2epzsvEeGvzMYhXuqAEA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_u4E-EWa1EeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 14</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). MAY be precise to the second</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_vxJUEGa1EeO8u4bjJ5HCCg" name="ifMorePreciseThanDayIncludeTimeZoneOffset" constrainedElement="_xf2epzsvEeGvzMYhXuqAEA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_vxJUEWa1EeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() and self.effectiveTime.value.size() > 8 implies self.effectiveTime.value.size() >= 15</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, SHOULD include time-zone offset</body>
+          </specification>
+        </ownedRule>
         <generalization xmi:id="_xf2eqDsvEeGvzMYhXuqAEA">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_j5JZsEAJEd6wZe6nFLrjsw"/>
         </generalization>
@@ -2687,18 +2717,6 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
     <reference href="../consol-vocab.uml#_Z8iQMTstEeGvzMYhXuqAEA"/>
     <ruleId>CONF:17177</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_1sbh4DsxEeGvzMYhXuqAEA" base_Property="_yVHAwDsxEeGvzMYhXuqAEA">
-    <ruleId>CONF:8389</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2FT78DsxEeGvzMYhXuqAEA" base_Property="_yVHAwTsxEeGvzMYhXuqAEA">
-    <ruleId>CONF:8388</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="_zjqpIDsyEeGvzMYhXuqAEA" base_Constraint="_M0h7UDsxEeGvzMYhXuqAEA">
-    <ruleId>CONF:8394</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_z5uYsDsyEeGvzMYhXuqAEA" base_Constraint="_ybGekDsyEeGvzMYhXuqAEA">
-    <ruleId>CONF:8396</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:AssociationValidation xmi:id="_jQQhgDsxEeGvzMYhXuqAEA" base_Association="_7kxgMDsvEeGvzMYhXuqAEA">
     <ruleId>CONF:8386</ruleId>
   </CDA:AssociationValidation>
@@ -3015,6 +3033,38 @@ A History and Physical Examination is required upon hospital admission as well a
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SuJt0T1lEeG3tde5scYNWA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_PThaAD1lEeG3tde5scYNWA" name="EncompassingEncounter4">
+        <ownedRule xmi:id="_OLqQUGdnEeO8u4bjJ5HCCg" name="preciseToTheDay" constrainedElement="_PThaAD1lEeG3tde5scYNWA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_OLqQUWdnEeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 8</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHALL be precise to the day</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_QqDlYGdnEeO8u4bjJ5HCCg" name="preciseToTheMinute" constrainedElement="_PThaAD1lEeG3tde5scYNWA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QqDlYWdnEeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 12</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHOULD be precise to the minute</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_SlG80GdnEeO8u4bjJ5HCCg" name="preciseToTheSecond" constrainedElement="_PThaAD1lEeG3tde5scYNWA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_SlG80WdnEeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 14</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). MAY be precise to the second</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_UX8MYGdnEeO8u4bjJ5HCCg" name="ifMorePreciseThanDayIncludeTimeZoneOffset" constrainedElement="_PThaAD1lEeG3tde5scYNWA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_UX8MYWdnEeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() and self.effectiveTime.value.size() > 8 implies self.effectiveTime.value.size() >= 15</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, SHOULD include time-zone offset</body>
+          </specification>
+        </ownedRule>
         <generalization xmi:id="_c-tXoD1lEeG3tde5scYNWA">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_j5JZsEAJEd6wZe6nFLrjsw"/>
         </generalization>
@@ -3394,6 +3444,38 @@ A History and Physical Examination is required upon hospital admission as well a
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_8RuZcD4nEeGtCLm-c2g23Q">
             <language>Analysis</language>
             <body>Any assistants SHALL be identified and SHALL be identified as secondary performers (SPRF)</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_EtNcEGdrEeO8u4bjJ5HCCg" name="preciseToTheDay" constrainedElement="_1mJ2ID4jEeGhnL_c4sBHGg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_EtNcEWdrEeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 8) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 8)</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHALL be precise to the day</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_GxQ-gGdrEeO8u4bjJ5HCCg" name="preciseToTheMinute" constrainedElement="_1mJ2ID4jEeGhnL_c4sBHGg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_GxQ-gWdrEeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 12) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 12)</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHOULD be precise to the minute</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_IMowUGdrEeO8u4bjJ5HCCg" name="preciseToTheSecond" constrainedElement="_1mJ2ID4jEeGhnL_c4sBHGg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMowUWdrEeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 14) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 14)</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). MAY be precise to the second</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_KUPWAGdrEeO8u4bjJ5HCCg" name="ifMorePreciseThanDayIncludeTimeZoneOffset" constrainedElement="_1mJ2ID4jEeGhnL_c4sBHGg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_KUPWAWdrEeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() and self.effectiveTime.low.value.size() > 8 implies self.effectiveTime.low.value.size() >= 15) and (not self.effectiveTime.high.value.oclIsUndefined() and self.effectiveTime.high.value.size() > 8 implies self.effectiveTime.high.value.size() >= 15)</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, SHOULD include time-zone offset</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_6IsNMD4jEeGhnL_c4sBHGg">
@@ -3823,6 +3905,38 @@ A History and Physical Examination is required upon hospital admission as well a
             <body>Any assistants SHALL be identified and SHALL be identified as secondary performers (SPRF)</body>
           </specification>
         </ownedRule>
+        <ownedRule xmi:id="_TNTqoGd6EeO8u4bjJ5HCCg" name="preciseToTheDay" constrainedElement="_ifn98D-TEeGvOdejHZ7dYg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_TNTqoWd6EeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 8) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 8)</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHALL be precise to the day</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_Us51IGd6EeO8u4bjJ5HCCg" name="preciseToTheMinute" constrainedElement="_ifn98D-TEeGvOdejHZ7dYg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Us6cMGd6EeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 12) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 12)</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHOULD be precise to the minute</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_WfksoGd6EeO8u4bjJ5HCCg" name="preciseToTheSecond" constrainedElement="_ifn98D-TEeGvOdejHZ7dYg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WfksoWd6EeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 14) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 14)</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). MAY be precise to the second</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_YhHtoGd6EeO8u4bjJ5HCCg" name="ifMorePreciseThanDayIncludeTimeZoneOffset" constrainedElement="_ifn98D-TEeGvOdejHZ7dYg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YhHtoWd6EeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() and self.effectiveTime.low.value.size() > 8 implies self.effectiveTime.low.value.size() >= 15) and (not self.effectiveTime.high.value.oclIsUndefined() and self.effectiveTime.high.value.size() > 8 implies self.effectiveTime.high.value.size() >= 15)</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, SHOULD include time-zone offset</body>
+          </specification>
+        </ownedRule>
         <generalization xmi:id="_k7duQD-TEeGvOdejHZ7dYg">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_lriDUEcaEd6besF9iFIJkQ"/>
         </generalization>
@@ -4243,6 +4357,38 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
             <body>self.effectiveTime->forAll(width.oclIsUndefined() implies not high.oclIsUndefined())</body>
           </specification>
         </ownedRule>
+        <ownedRule xmi:id="_0IhrUGd2EeO8u4bjJ5HCCg" name="preciseToTheDay" constrainedElement="_sfqx0D_bEeGnev0fONNFyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_0IhrUWd2EeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 8) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 8)</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHALL be precise to the day</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_1sibwGd2EeO8u4bjJ5HCCg" name="preciseToTheMinute" constrainedElement="_sfqx0D_bEeGnev0fONNFyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_1sibwWd2EeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 12) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 12)</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHOULD be precise to the minute</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_265sUGd2EeO8u4bjJ5HCCg" name="preciseToTheSecond" constrainedElement="_sfqx0D_bEeGnev0fONNFyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_265sUWd2EeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() implies self.effectiveTime.low.value.size() >= 14) and (not self.effectiveTime.high.value.oclIsUndefined() implies self.effectiveTime.high.value.size() >= 14)</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). MAY be precise to the second</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_4PDb0Gd2EeO8u4bjJ5HCCg" name="ifMorePreciseThanDayIncludeTimeZoneOffset" constrainedElement="_sfqx0D_bEeGnev0fONNFyw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_4PDb0Wd2EeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>(not self.effectiveTime.low.value.oclIsUndefined() and self.effectiveTime.low.value.size() > 8 implies self.effectiveTime.low.value.size() >= 15) and (not self.effectiveTime.high.value.oclIsUndefined() and self.effectiveTime.high.value.size() > 8 implies self.effectiveTime.high.value.size() >= 15)</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, SHOULD include time-zone offset</body>
+          </specification>
+        </ownedRule>
         <generalization xmi:id="_zJsZ0D_bEeGnev0fONNFyw">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_lriDUEcaEd6besF9iFIJkQ"/>
         </generalization>
@@ -4273,6 +4419,38 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bANQEfK-EeGFUPBL8qS7yQ" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_gtLcMD_QEeGXieeKs7NJjA" name="EncompassingEncounter6">
+        <ownedRule xmi:id="_8uBsEGd3EeO8u4bjJ5HCCg" name="preciseToTheDay" constrainedElement="_gtLcMD_QEeGXieeKs7NJjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_8uBsEWd3EeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 8</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHALL be precise to the day</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_-YebsGd3EeO8u4bjJ5HCCg" name="preciseToTheMinute" constrainedElement="_gtLcMD_QEeGXieeKs7NJjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_-YebsWd3EeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 12</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHOULD be precise to the minute</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_APjSEGd4EeO8u4bjJ5HCCg" name="preciseToTheSecond" constrainedElement="_gtLcMD_QEeGXieeKs7NJjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_APjSEWd4EeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 14</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). MAY be precise to the second</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_CmAzIGd4EeO8u4bjJ5HCCg" name="ifMorePreciseThanDayIncludeTimeZoneOffset" constrainedElement="_gtLcMD_QEeGXieeKs7NJjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_CmAzIWd4EeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() and self.effectiveTime.value.size() > 8 implies self.effectiveTime.value.size() >= 15</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, SHOULD include time-zone offset</body>
+          </specification>
+        </ownedRule>
         <generalization xmi:id="_nafBsD_QEeGXieeKs7NJjA">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_j5JZsEAJEd6wZe6nFLrjsw"/>
         </generalization>
@@ -4861,6 +5039,38 @@ OIDs SHALL be no more than 64 characters in length..</body>
         <association href="consol-dicom.uml#_OrkU4Eb3EeGp67IkyTw1fg"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_lxDCoEVKEeGAh_iQGJvI5w" name="EncompassingEncounter7">
+        <ownedRule xmi:id="_8Hsb8GdjEeO8u4bjJ5HCCg" name="preciseToTheDay" constrainedElement="_lxDCoEVKEeGAh_iQGJvI5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_8Hsb8WdjEeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 8</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHALL be precise to the day</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_B9mfYGdkEeO8u4bjJ5HCCg" name="preciseToTheMinute" constrainedElement="_lxDCoEVKEeGAh_iQGJvI5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_B9mfYWdkEeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 12</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). SHOULD be precise to the minute</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_DftyYGdkEeO8u4bjJ5HCCg" name="preciseToTheSecond" constrainedElement="_lxDCoEVKEeGAh_iQGJvI5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_DftyYWdkEeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() implies self.effectiveTime.value.size() >= 14</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). MAY be precise to the second</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_Hl_EMGdkEeO8u4bjJ5HCCg" name="ifMorePreciseThanDayIncludeTimeZoneOffset" constrainedElement="_lxDCoEVKEeGAh_iQGJvI5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Hl_EMWdkEeO8u4bjJ5HCCg">
+            <language>OCL</language>
+            <language>Analysis</language>
+            <body>not self.effectiveTime.value.oclIsUndefined() and self.effectiveTime.value.size() > 8 implies self.effectiveTime.value.size() >= 15</body>
+            <body>The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, SHOULD include time-zone offset</body>
+          </specification>
+        </ownedRule>
         <generalization xmi:id="_pJ3YkEVKEeGAh_iQGJvI5w">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_j5JZsEAJEd6wZe6nFLrjsw"/>
         </generalization>
@@ -5466,5 +5676,129 @@ OIDs SHALL be no more than 64 characters in length..</body>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_Hk5R8F1GEeO84_IebRjYkg" severity="INFO" base_Constraint="_lGT94F1FEeO84_IebRjYkg">
     <ruleId>CONF:8476</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_8HuRIGdjEeO8u4bjJ5HCCg" base_Constraint="_8Hsb8GdjEeO8u4bjJ5HCCg">
+    <ruleId>CONF:10133</ruleId>
+    <ruleId>CONF:10127</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_B9nGcGdkEeO8u4bjJ5HCCg" severity="WARNING" base_Constraint="_B9mfYGdkEeO8u4bjJ5HCCg">
+    <ruleId>CONF:10133</ruleId>
+    <ruleId>CONF:10128</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_DfuZcGdkEeO8u4bjJ5HCCg" severity="INFO" base_Constraint="_DftyYGdkEeO8u4bjJ5HCCg">
+    <ruleId>CONF:10133</ruleId>
+    <ruleId>CONF:10129</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_HmASUGdkEeO8u4bjJ5HCCg" severity="WARNING" base_Constraint="_Hl_EMGdkEeO8u4bjJ5HCCg">
+    <ruleId>CONF:10133</ruleId>
+    <ruleId>CONF:10130</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_qD14IGdnEeO8u4bjJ5HCCg" base_Constraint="_a61tMGatEeOVOfVUed23Tw">
+    <ruleId>CONF:10132</ruleId>
+    <ruleId>CONF:10127</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_tzINUGdnEeO8u4bjJ5HCCg" severity="WARNING" base_Constraint="_t1LWoGa1EeO8u4bjJ5HCCg">
+    <ruleId>CONF:10132</ruleId>
+    <ruleId>CONF:10128</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_v56ToGdnEeO8u4bjJ5HCCg" severity="INFO" base_Constraint="_u4E-EGa1EeO8u4bjJ5HCCg">
+    <ruleId>CONF:10132</ruleId>
+    <ruleId>CONF:10129</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_zlNgsGdnEeO8u4bjJ5HCCg" severity="WARNING" base_Constraint="_vxJUEGa1EeO8u4bjJ5HCCg">
+    <ruleId>CONF:10132</ruleId>
+    <ruleId>CONF:10130</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="__COWkGdnEeO8u4bjJ5HCCg" base_Constraint="_OLqQUGdnEeO8u4bjJ5HCCg">
+    <ruleId>CONF:10135</ruleId>
+    <ruleId>CONF:10127</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="__4KgEGdnEeO8u4bjJ5HCCg" severity="WARNING" base_Constraint="_QqDlYGdnEeO8u4bjJ5HCCg">
+    <ruleId>CONF:10135</ruleId>
+    <ruleId>CONF:10128</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_AfPuMGdoEeO8u4bjJ5HCCg" severity="INFO" base_Constraint="_SlG80GdnEeO8u4bjJ5HCCg">
+    <ruleId>CONF:10135</ruleId>
+    <ruleId>CONF:10129</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_A-XTIGdoEeO8u4bjJ5HCCg" severity="WARNING" base_Constraint="_UX8MYGdnEeO8u4bjJ5HCCg">
+    <ruleId>CONF:10135</ruleId>
+    <ruleId>CONF:10130</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_EtODIGdrEeO8u4bjJ5HCCg" base_Constraint="_EtNcEGdrEeO8u4bjJ5HCCg">
+    <ruleId>CONF:10136</ruleId>
+    <ruleId>CONF:10127</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_GxSMoGdrEeO8u4bjJ5HCCg" severity="WARNING" base_Constraint="_GxQ-gGdrEeO8u4bjJ5HCCg">
+    <ruleId>CONF:10136</ruleId>
+    <ruleId>CONF:10128</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_IMpXYGdrEeO8u4bjJ5HCCg" severity="INFO" base_Constraint="_IMowUGdrEeO8u4bjJ5HCCg">
+    <ruleId>CONF:10136</ruleId>
+    <ruleId>CONF:10129</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_KUP9EGdrEeO8u4bjJ5HCCg" severity="WARNING" base_Constraint="_KUPWAGdrEeO8u4bjJ5HCCg">
+    <ruleId>CONF:10136</ruleId>
+    <ruleId>CONF:10130</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_0Ii5cGd2EeO8u4bjJ5HCCg" base_Constraint="_0IhrUGd2EeO8u4bjJ5HCCg">
+    <ruleId>CONF:10137</ruleId>
+    <ruleId>CONF:10127</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_1sjp4Gd2EeO8u4bjJ5HCCg" severity="WARNING" base_Constraint="_1sibwGd2EeO8u4bjJ5HCCg">
+    <ruleId>CONF:10137</ruleId>
+    <ruleId>CONF:10128</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2666cGd2EeO8u4bjJ5HCCg" severity="INFO" base_Constraint="_265sUGd2EeO8u4bjJ5HCCg">
+    <ruleId>CONF:10137</ruleId>
+    <ruleId>CONF:10129</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_4PEp8Gd2EeO8u4bjJ5HCCg" severity="WARNING" base_Constraint="_4PDb0Gd2EeO8u4bjJ5HCCg">
+    <ruleId>CONF:10137</ruleId>
+    <ruleId>CONF:10130</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_8uC6MGd3EeO8u4bjJ5HCCg" base_Constraint="_8uBsEGd3EeO8u4bjJ5HCCg">
+    <ruleId>CONF:10138</ruleId>
+    <ruleId>CONF:10127</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_-YfCwGd3EeO8u4bjJ5HCCg" severity="WARNING" base_Constraint="_-YebsGd3EeO8u4bjJ5HCCg">
+    <ruleId>CONF:10138</ruleId>
+    <ruleId>CONF:10128</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_APkgMGd4EeO8u4bjJ5HCCg" severity="INFO" base_Constraint="_APjSEGd4EeO8u4bjJ5HCCg">
+    <ruleId>CONF:10138</ruleId>
+    <ruleId>CONF:10129</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_CmCBQGd4EeO8u4bjJ5HCCg" severity="WARNING" base_Constraint="_CmAzIGd4EeO8u4bjJ5HCCg">
+    <ruleId>CONF:10138</ruleId>
+    <ruleId>CONF:10130</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_TNU4wGd6EeO8u4bjJ5HCCg" base_Constraint="_TNTqoGd6EeO8u4bjJ5HCCg">
+    <ruleId>CONF:10063</ruleId>
+    <ruleId>CONF:10127</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Us7qUGd6EeO8u4bjJ5HCCg" severity="WARNING" base_Constraint="_Us51IGd6EeO8u4bjJ5HCCg">
+    <ruleId>CONF:10063</ruleId>
+    <ruleId>CONF:10128</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Wfl6wGd6EeO8u4bjJ5HCCg" severity="INFO" base_Constraint="_WfksoGd6EeO8u4bjJ5HCCg">
+    <ruleId>CONF:10063</ruleId>
+    <ruleId>CONF:10129</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_YhI7wGd6EeO8u4bjJ5HCCg" severity="WARNING" base_Constraint="_YhHtoGd6EeO8u4bjJ5HCCg">
+    <ruleId>CONF:10063</ruleId>
+    <ruleId>CONF:10130</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_Oc7SkGd_EeOTOrM7GF-Lqg" base_Property="_yVHAwDsxEeGvzMYhXuqAEA">
+    <ruleId>CONF:8389</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_W_6AQGd_EeOTOrM7GF-Lqg" base_Property="_yVHAwTsxEeGvzMYhXuqAEA">
+    <ruleId>CONF:8388</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_tdN60Gd_EeOTOrM7GF-Lqg" base_Constraint="_M0h7UDsxEeGvzMYhXuqAEA">
+    <ruleId>CONF:8394</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_-MTHQGd_EeOTOrM7GF-Lqg" base_Constraint="_ybGekDsyEeGvzMYhXuqAEA">
+    <ruleId>CONF:8396</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>
