@@ -180,6 +180,15 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationUseNoneKnownValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MedicationUseNoneKnown init() {
 		return Initializer.Util.init(this);
 	}

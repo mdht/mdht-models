@@ -433,6 +433,50 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheDay(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheDay(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheMinute(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheMinute(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheSecond(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheSecond(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4IfMorePreciseThanDayIncludeTimeZoneOffset(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4IfMorePreciseThanDayIncludeTimeZoneOffset(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(

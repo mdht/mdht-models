@@ -311,6 +311,50 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheDay(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheDay(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheMinute(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheMinute(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheSecond(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheSecond(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7IfMorePreciseThanDayIncludeTimeZoneOffset(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7IfMorePreciseThanDayIncludeTimeZoneOffset(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime(

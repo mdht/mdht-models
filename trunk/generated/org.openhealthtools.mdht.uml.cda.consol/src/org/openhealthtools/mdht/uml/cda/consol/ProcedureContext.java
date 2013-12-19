@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureContext()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureContextTemplateId ProcedureContextEffectiveTimeValue ProcedureContextCode' templateId.root='2.16.840.1.113883.10.20.6.2.5' constraints.validation.warning='ProcedureContextEffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureContextTemplateId ProcedureContextEffectiveTimeValue ProcedureContextClassCode ProcedureContextMoodCode ProcedureContextCode' templateId.root='2.16.840.1.113883.10.20.6.2.5' classCode='ACT' moodCode='EVN' constraints.validation.warning='ProcedureContextEffectiveTime'"
  * @generated
  */
 public interface ProcedureContext extends Act {
@@ -52,6 +52,30 @@ public interface ProcedureContext extends Act {
 	 * @generated
 	 */
 	boolean validateProcedureContextTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.classCode=vocab::x_ActClassDocumentEntryAct::ACT'"
+	 * @generated
+	 */
+	boolean validateProcedureContextClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode=vocab::x_DocumentActMood::EVN'"
+	 * @generated
+	 */
+	boolean validateProcedureContextMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

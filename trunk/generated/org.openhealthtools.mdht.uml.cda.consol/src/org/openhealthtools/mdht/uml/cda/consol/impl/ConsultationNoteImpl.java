@@ -191,6 +191,50 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(

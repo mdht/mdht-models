@@ -24,9 +24,9 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHistoryAndPhysicalNote()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HistoryAndPhysicalNoteTemplateId HistoryAndPhysicalNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections HistoryAndPhysicalNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent HistoryAndPhysicalNoteHasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit HistoryAndPhysicalNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP HistoryAndPhysicalNoteComponentOf HistoryAndPhysicalNoteAllergiesSectionEntriesOptional HistoryAndPhysicalNoteFamilyHistorySection HistoryAndPhysicalNoteGeneralStatusSection HistoryAndPhysicalNoteHistoryOfPastIllnessSection HistoryAndPhysicalNoteMedicationsSectionEntriesOptional HistoryAndPhysicalNotePhysicalExamSection HistoryAndPhysicalNoteResultsSectionEntriesOptional HistoryAndPhysicalNoteReviewOfSystemsSection HistoryAndPhysicalNoteSocialHistorySection HistoryAndPhysicalNoteVitalSignsSectionEntriesOptional HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id HistoryAndPhysicalNoteComponentOfEncompassingEncounter' templateId.root='2.16.840.1.113883.10.20.22.1.3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.GeneralHeaderConstraintsCode='GeneralHeaderConstraintsCodeP' constraints.validation.info='HistoryAndPhysicalNoteInFulfillmentOf HistoryAndPhysicalNoteAssessmentSection HistoryAndPhysicalNotePlanOfCareSection HistoryAndPhysicalNoteAssessmentAndPlanSection HistoryAndPhysicalNoteChiefComplaintSection HistoryAndPhysicalNoteChiefComplaintAndReasonForVisitSection HistoryAndPhysicalNoteReasonForVisitSection HistoryAndPhysicalNoteImmunizationsSectionEntriesOptional HistoryAndPhysicalNoteProblemSectionEntriesOptional HistoryAndPhysicalNoteProceduresSectionEntriesOptional HistoryAndPhysicalNoteInstructionsSection HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant' constraints.validation.warning='HistoryAndPhysicalNoteHistoryOfPresentIllnessSection' constraints.validation.query='HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant HistoryAndPhysicalNoteComponentOfEncompassingEncounter'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HistoryAndPhysicalNoteTemplateId HistoryAndPhysicalNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections HistoryAndPhysicalNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent HistoryAndPhysicalNoteHasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit HistoryAndPhysicalNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP HistoryAndPhysicalNoteComponentOf HistoryAndPhysicalNoteAllergiesSectionEntriesOptional HistoryAndPhysicalNoteFamilyHistorySection HistoryAndPhysicalNoteGeneralStatusSection HistoryAndPhysicalNoteHistoryOfPastIllnessSection HistoryAndPhysicalNoteMedicationsSectionEntriesOptional HistoryAndPhysicalNotePhysicalExamSection HistoryAndPhysicalNoteResultsSectionEntriesOptional HistoryAndPhysicalNoteReviewOfSystemsSection HistoryAndPhysicalNoteSocialHistorySection HistoryAndPhysicalNoteVitalSignsSectionEntriesOptional HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheDay HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id HistoryAndPhysicalNoteComponentOfEncompassingEncounter' templateId.root='2.16.840.1.113883.10.20.22.1.3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.GeneralHeaderConstraintsCode='GeneralHeaderConstraintsCodeP' constraints.validation.info='HistoryAndPhysicalNoteInFulfillmentOf HistoryAndPhysicalNoteAssessmentSection HistoryAndPhysicalNotePlanOfCareSection HistoryAndPhysicalNoteAssessmentAndPlanSection HistoryAndPhysicalNoteChiefComplaintSection HistoryAndPhysicalNoteChiefComplaintAndReasonForVisitSection HistoryAndPhysicalNoteReasonForVisitSection HistoryAndPhysicalNoteImmunizationsSectionEntriesOptional HistoryAndPhysicalNoteProblemSectionEntriesOptional HistoryAndPhysicalNoteProceduresSectionEntriesOptional HistoryAndPhysicalNoteInstructionsSection HistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheSecond HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant' constraints.validation.warning='HistoryAndPhysicalNoteHistoryOfPresentIllnessSection HistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheMinute HistoryAndPhysicalNoteComponentOfEncompassingEncounter4IfMorePreciseThanDayIncludeTimeZoneOffset' constraints.validation.query='HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheDay HistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheMinute HistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheSecond HistoryAndPhysicalNoteComponentOfEncompassingEncounter4IfMorePreciseThanDayIncludeTimeZoneOffset HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant HistoryAndPhysicalNoteComponentOfEncompassingEncounter'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHistoryAndPhysicalNoteComponentOf constraints.validation.error='HistoryAndPhysicalNoteComponentOfEncompassingEncounter'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHistoryAndPhysicalNoteComponentOfEncompassingEncounter4 constraints.validation.error='HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id' constraints.validation.info='HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHistoryAndPhysicalNoteComponentOfEncompassingEncounter4 constraints.validation.error='HistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheDay HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id' constraints.validation.warning='HistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheMinute HistoryAndPhysicalNoteComponentOfEncompassingEncounter4IfMorePreciseThanDayIncludeTimeZoneOffset' constraints.validation.info='HistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheSecond HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty constraints.validation.error='HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant constraints.validation.error='HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity'"
  * @generated
@@ -446,6 +446,58 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * @generated
 	 */
 	boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() implies effectiveTime.value.size() >= 8)'"
+	 * @generated
+	 */
+	boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheDay(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() implies effectiveTime.value.size() >= 12)'"
+	 * @generated
+	 */
+	boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheMinute(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() implies effectiveTime.value.size() >= 14)'"
+	 * @generated
+	 */
+	boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheSecond(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() and effectiveTime.value.size() > 8 implies effectiveTime.value.size() >= 15)'"
+	 * @generated
+	 */
+	boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4IfMorePreciseThanDayIncludeTimeZoneOffset(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**

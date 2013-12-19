@@ -117,6 +117,10 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote#validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Effective Time Has Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote#validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Effective Time Has High When No Width</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote#validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Effective Time No High If Width</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote#validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Precise To The Day</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote#validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheMinute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Precise To The Minute</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote#validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheSecond(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Precise To The Second</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote#validateProcedureNoteDocumentationOfServiceEvent1IfMorePreciseThanDayIncludeTimeZoneOffset(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 If More Precise Than Day Include Time Zone Offset</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote#validateProcedureNoteDocumentationOfServiceEvent1Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote#validateProcedureNoteDocumentationOfServiceEvent1EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote#validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Primary Performer</em>}</li>
@@ -3362,6 +3366,266 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheDay(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Precise To The Day</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheDay(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() implies effectiveTime.low.value.size() >= 8) and (not effectiveTime.high.value.oclIsUndefined() implies effectiveTime.high.value.size() >= 8))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheDay(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Precise To The Day</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheDay(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheDay(ProcedureNote procedureNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_DAY,
+						ConsolPlugin.INSTANCE.getString("ProcedureNoteDocumentationOfServiceEvent1PreciseToTheDay"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheMinute(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Precise To The Minute</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheMinute(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() implies effectiveTime.low.value.size() >= 12) and (not effectiveTime.high.value.oclIsUndefined() implies effectiveTime.high.value.size() >= 12))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheMinute(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Precise To The Minute</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheMinute(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheMinute(
+			ProcedureNote procedureNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_MINUTE,
+						ConsolPlugin.INSTANCE.getString("ProcedureNoteDocumentationOfServiceEvent1PreciseToTheMinute"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheSecond(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Precise To The Second</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheSecond(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() implies effectiveTime.low.value.size() >= 14) and (not effectiveTime.high.value.oclIsUndefined() implies effectiveTime.high.value.size() >= 14))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheSecond(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Precise To The Second</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheSecond(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheSecond(
+			ProcedureNote procedureNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.INFO,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_PRECISE_TO_THE_SECOND,
+						ConsolPlugin.INSTANCE.getString("ProcedureNoteDocumentationOfServiceEvent1PreciseToTheSecond"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureNoteDocumentationOfServiceEvent1IfMorePreciseThanDayIncludeTimeZoneOffset(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 If More Precise Than Day Include Time Zone Offset</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureNoteDocumentationOfServiceEvent1IfMorePreciseThanDayIncludeTimeZoneOffset(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() and effectiveTime.low.value.size() > 8 implies effectiveTime.low.value.size() >= 15) and (not effectiveTime.high.value.oclIsUndefined() and effectiveTime.high.value.size() > 8 implies effectiveTime.high.value.size() >= 15))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureNoteDocumentationOfServiceEvent1IfMorePreciseThanDayIncludeTimeZoneOffset(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 If More Precise Than Day Include Time Zone Offset</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureNoteDocumentationOfServiceEvent1IfMorePreciseThanDayIncludeTimeZoneOffset(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateProcedureNoteDocumentationOfServiceEvent1IfMorePreciseThanDayIncludeTimeZoneOffset(
+			ProcedureNote procedureNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT1_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET,
+						ConsolPlugin.INSTANCE.getString("ProcedureNoteDocumentationOfServiceEvent1IfMorePreciseThanDayIncludeTimeZoneOffset"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateProcedureNoteDocumentationOfServiceEvent1Code(ProcedureNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note Documentation Of Service Event1 Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3649,7 +3913,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(348));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(352));
 			try {
 				GET_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3691,7 +3955,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(349));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(353));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3733,7 +3997,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(350));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(354));
 			try {
 				GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3775,7 +4039,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(351));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(355));
 			try {
 				GET_COMPLICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_COMPLICATIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3817,7 +4081,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(352));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(356));
 			try {
 				GET_POSTPROCEDURE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_POSTPROCEDURE_DIAGNOSIS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3859,7 +4123,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(353));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(357));
 			try {
 				GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3901,7 +4165,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(354));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(358));
 			try {
 				GET_PROCEDURE_INDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_INDICATIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3943,7 +4207,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(355));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(359));
 			try {
 				GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3985,7 +4249,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(356));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(360));
 			try {
 				GET_ANESTHESIA_SECTION__EOCL_QRY = helper.createQuery(GET_ANESTHESIA_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4027,7 +4291,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(357));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(361));
 			try {
 				GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4070,7 +4334,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(358));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(362));
 			try {
 				GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4112,7 +4376,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(359));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(363));
 			try {
 				GET_FAMILY_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4154,7 +4418,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(360));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(364));
 			try {
 				GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4196,7 +4460,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(361));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(365));
 			try {
 				GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4238,7 +4502,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(362));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(366));
 			try {
 				GET_MEDICAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICAL_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4280,7 +4544,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(363));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(367));
 			try {
 				GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4322,7 +4586,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(364));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(368));
 			try {
 				GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4364,7 +4628,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(365));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(369));
 			try {
 				GET_PHYSICAL_EXAM_SECTION__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAM_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4406,7 +4670,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(366));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(370));
 			try {
 				GET_PLANNED_PROCEDURE_SECTION__EOCL_QRY = helper.createQuery(GET_PLANNED_PROCEDURE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4448,7 +4712,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(367));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(371));
 			try {
 				GET_PROCEDURE_DISPOSITION_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_DISPOSITION_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4490,7 +4754,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(368));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(372));
 			try {
 				GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4532,7 +4796,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(369));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(373));
 			try {
 				GET_PROCEDURE_FINDINGS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_FINDINGS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4574,7 +4838,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(370));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(374));
 			try {
 				GET_PROCEDURE_IMPLANTS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_IMPLANTS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4616,7 +4880,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(371));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(375));
 			try {
 				GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4658,7 +4922,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(372));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(376));
 			try {
 				GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4700,7 +4964,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(373));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(377));
 			try {
 				GET_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_VISIT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4742,7 +5006,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(374));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(378));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4784,7 +5048,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE,
-				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(375));
+				ConsolPackage.Literals.PROCEDURE_NOTE.getEAllOperations().get(379));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {

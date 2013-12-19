@@ -120,6 +120,16 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFamilyHistoryDeathObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValueP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public FamilyHistoryDeathObservation init() {
 		return Initializer.Util.init(this);
 	}

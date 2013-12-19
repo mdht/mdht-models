@@ -24,9 +24,9 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getOperativeNote()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='OperativeNoteTemplateId GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP OperativeNoteDocumentationOf OperativeNoteAnesthesiaSection OperativeNoteComplicationsSection OperativeNotePostoperativeDiagnosisSection OperativeNotePreoperativeDiagnosisSection OperativeNoteProcedureEstimatedBloodLossSection OperativeNoteProcedureFindingsSection OperativeNoteProcedureSpecimensTakenSection OperativeNoteProcedureDescriptionSection OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEvent' templateId.root='2.16.840.1.113883.10.20.22.1.7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.GeneralHeaderConstraintsCode='GeneralHeaderConstraintsCodeP' constraints.validation.info='OperativeNoteProcedureImplantsSection OperativeNoteFluidSection OperativeNoteSurgicalProcedureSection OperativeNotePlanOfCareSection OperativeNotePlannedProcedureSection OperativeNoteProcedureDispositionSection OperativeNoteProcedureIndicationsSection OperativeNoteSurgicalDrainsSection' constraints.validation.query='OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEvent'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='OperativeNoteTemplateId GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP OperativeNoteDocumentationOf OperativeNoteAnesthesiaSection OperativeNoteComplicationsSection OperativeNotePostoperativeDiagnosisSection OperativeNotePreoperativeDiagnosisSection OperativeNoteProcedureEstimatedBloodLossSection OperativeNoteProcedureFindingsSection OperativeNoteProcedureSpecimensTakenSection OperativeNoteProcedureDescriptionSection OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventPreciseToTheDay OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEvent' templateId.root='2.16.840.1.113883.10.20.22.1.7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.GeneralHeaderConstraintsCode='GeneralHeaderConstraintsCodeP' constraints.validation.info='OperativeNoteProcedureImplantsSection OperativeNoteFluidSection OperativeNoteSurgicalProcedureSection OperativeNotePlanOfCareSection OperativeNotePlannedProcedureSection OperativeNoteProcedureDispositionSection OperativeNoteProcedureIndicationsSection OperativeNoteSurgicalDrainsSection OperativeNoteDocumentationOfServiceEventPreciseToTheSecond' constraints.validation.query='OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventPreciseToTheDay OperativeNoteDocumentationOfServiceEventPreciseToTheMinute OperativeNoteDocumentationOfServiceEventPreciseToTheSecond OperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEvent' constraints.validation.warning='OperativeNoteDocumentationOfServiceEventPreciseToTheMinute OperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOf constraints.validation.error='OperativeNoteDocumentationOfServiceEvent'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEvent constraints.validation.error='OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity' constraints.validation.query='OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEvent constraints.validation.error='OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventPreciseToTheDay OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity' constraints.validation.warning='OperativeNoteDocumentationOfServiceEventPreciseToTheMinute OperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset' constraints.validation.info='OperativeNoteDocumentationOfServiceEventPreciseToTheSecond' constraints.validation.query='OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEventPrimaryPerformer typeCode='PPRF' constraints.validation.error='OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity code.codeSystem='2.16.840.1.113883.6.101' code.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.error='OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP'"
  * @generated
@@ -268,7 +268,7 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode(
@@ -364,6 +364,58 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 */
 	boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() implies effectiveTime.low.value.size() >= 8) and (not effectiveTime.high.value.oclIsUndefined() implies effectiveTime.high.value.size() >= 8))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteDocumentationOfServiceEventPreciseToTheDay(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() implies effectiveTime.low.value.size() >= 12) and (not effectiveTime.high.value.oclIsUndefined() implies effectiveTime.high.value.size() >= 12))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteDocumentationOfServiceEventPreciseToTheMinute(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() implies effectiveTime.low.value.size() >= 14) and (not effectiveTime.high.value.oclIsUndefined() implies effectiveTime.high.value.size() >= 14))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteDocumentationOfServiceEventPreciseToTheSecond(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() and effectiveTime.low.value.size() > 8 implies effectiveTime.low.value.size() >= 15) and (not effectiveTime.high.value.oclIsUndefined() and effectiveTime.high.value.size() > 8 implies effectiveTime.high.value.size() >= 15))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

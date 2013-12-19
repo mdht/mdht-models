@@ -43,6 +43,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationUseNoneKnown#validateMedicationUseNoneKnownStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Use None Known Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationUseNoneKnown#validateMedicationUseNoneKnownText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Use None Known Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationUseNoneKnown#validateMedicationUseNoneKnownValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Use None Known Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationUseNoneKnown#validateMedicationUseNoneKnownValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Use None Known Value P</em>}</li>
  * </ul>
  * </p>
  *
@@ -902,6 +903,65 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_VALUE,
 					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownValue"),
+					new Object[] { medicationUseNoneKnown }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateMedicationUseNoneKnownValueP(MedicationUseNoneKnown, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Use None Known Value P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationUseNoneKnownValueP(MedicationUseNoneKnown, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_MEDICATION_USE_NONE_KNOWN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateMedicationUseNoneKnownValueP(MedicationUseNoneKnown, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Use None Known Value P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationUseNoneKnownValueP(MedicationUseNoneKnown, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_MEDICATION_USE_NONE_KNOWN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param medicationUseNoneKnown The receiving '<em><b>Medication Use None Known</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateMedicationUseNoneKnownValueP(MedicationUseNoneKnown medicationUseNoneKnown,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN);
+			try {
+				VALIDATE_MEDICATION_USE_NONE_KNOWN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_USE_NONE_KNOWN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationUseNoneKnown)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_VALUE_P,
+					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownValueP"),
 					new Object[] { medicationUseNoneKnown }));
 			}
 

@@ -90,6 +90,10 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote#validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Responsible Party Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote#validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Encounter Participant Assigned Entity Has Person Organization Or Both</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote#validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Encounter Participant Assigned Entity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote#validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Precise To The Day</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote#validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Precise To The Minute</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote#validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Precise To The Second</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote#validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 If More Precise Than Day Include Time Zone Offset</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote#validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote#validateConsultationNoteComponentOfEncompassingEncounter2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote#validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Responsible Party</em>}</li>
@@ -2131,6 +2135,266 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Precise To The Day</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() implies effectiveTime.value.size() >= 8)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Precise To The Day</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param consultationNote The receiving '<em><b>Consultation Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY,
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Precise To The Minute</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() implies effectiveTime.value.size() >= 12)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Precise To The Minute</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param consultationNote The receiving '<em><b>Consultation Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE,
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Precise To The Second</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() implies effectiveTime.value.size() >= 14)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Precise To The Second</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param consultationNote The receiving '<em><b>Consultation Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.INFO,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND,
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 If More Precise Than Day Include Time Zone Offset</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() and effectiveTime.value.size() > 8 implies effectiveTime.value.size() >= 15)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 If More Precise Than Day Include Time Zone Offset</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param consultationNote The receiving '<em><b>Consultation Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(
+			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET,
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Component Of Encompassing Encounter2 Effective Time</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2612,7 +2876,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(332));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(336));
 			try {
 				GET_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2654,7 +2918,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(333));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(337));
 			try {
 				GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2696,7 +2960,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(334));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(338));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2738,7 +3002,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(335));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(339));
 			try {
 				GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2780,7 +3044,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(336));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(340));
 			try {
 				GET_PHYSICAL_EXAM_SECTION__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAM_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2822,7 +3086,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(337));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(341));
 			try {
 				GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_REFERRAL_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2864,7 +3128,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(338));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(342));
 			try {
 				GET_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_VISIT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2906,7 +3170,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(339));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(343));
 			try {
 				GET_ALLERGIES_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2948,7 +3212,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(340));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(344));
 			try {
 				GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2991,7 +3255,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(341));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(345));
 			try {
 				GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3033,7 +3297,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(342));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(346));
 			try {
 				GET_FAMILY_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3075,7 +3339,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(343));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(347));
 			try {
 				GET_GENERAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_GENERAL_STATUS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3117,7 +3381,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(344));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(348));
 			try {
 				GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3159,7 +3423,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(345));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(349));
 			try {
 				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3202,7 +3466,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(346));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(350));
 			try {
 				GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3244,7 +3508,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(347));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(351));
 			try {
 				GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3286,7 +3550,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(348));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(352));
 			try {
 				GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3328,7 +3592,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(349));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(353));
 			try {
 				GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3370,7 +3634,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(350));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(354));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3412,7 +3676,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(351));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(355));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3454,7 +3718,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(352));
+				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(356));
 			try {
 				GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
