@@ -34,6 +34,8 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureContext#validateProcedureContextEffectiveTimeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Context Effective Time Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureContext#validateProcedureContextTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Context Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureContext#validateProcedureContextClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Context Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureContext#validateProcedureContextMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Context Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureContext#validateProcedureContextCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Context Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureContext#validateProcedureContextEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Context Effective Time</em>}</li>
  * </ul>
@@ -161,6 +163,122 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("ProcedureContextTemplateId"), new Object[] { procedureContext }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureContextClassCode(ProcedureContext, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Context Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureContextClassCode(ProcedureContext, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_CONTEXT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::x_ActClassDocumentEntryAct::ACT";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureContextClassCode(ProcedureContext, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Context Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureContextClassCode(ProcedureContext, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_PROCEDURE_CONTEXT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureContext The receiving '<em><b>Procedure Context</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateProcedureContextClassCode(ProcedureContext procedureContext,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROCEDURE_CONTEXT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_CONTEXT);
+			try {
+				VALIDATE_PROCEDURE_CONTEXT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_CONTEXT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_CONTEXT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureContext)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_CLASS_CODE,
+					ConsolPlugin.INSTANCE.getString("ProcedureContextClassCode"), new Object[] { procedureContext }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureContextMoodCode(ProcedureContext, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Context Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureContextMoodCode(ProcedureContext, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_CONTEXT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_DocumentActMood::EVN";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureContextMoodCode(ProcedureContext, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Context Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureContextMoodCode(ProcedureContext, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_PROCEDURE_CONTEXT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureContext The receiving '<em><b>Procedure Context</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateProcedureContextMoodCode(ProcedureContext procedureContext,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROCEDURE_CONTEXT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_CONTEXT);
+			try {
+				VALIDATE_PROCEDURE_CONTEXT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_CONTEXT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_CONTEXT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureContext)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_MOOD_CODE,
+					ConsolPlugin.INSTANCE.getString("ProcedureContextMoodCode"), new Object[] { procedureContext }));
 			}
 
 			return false;

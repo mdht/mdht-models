@@ -71,6 +71,24 @@ public class ProcedureContextImpl extends ActImpl implements ProcedureContext {
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureContextClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureContextOperations.validateProcedureContextClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureContextMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureContextOperations.validateProcedureContextMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
 	 * @generated
 	 */

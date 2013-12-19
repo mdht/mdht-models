@@ -24,9 +24,9 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getConsultationNote()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ConsultationNoteTemplateId ConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections ConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent ConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection ConsultationNoteHasReasonForReferralOrReasonForVisit GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP ConsultationNoteComponentOf ConsultationNoteHistoryOfPresentIllness ConsultationNoteInFulfillmentOf ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity ConsultationNoteComponentOfEncompassingEncounter2EffectiveTime ConsultationNoteComponentOfEncompassingEncounter2Id ConsultationNoteComponentOfEncompassingEncounter ConsultationNoteInFulfillmentOfOrderId ConsultationNoteInFulfillmentOfOrder' templateId.root='2.16.840.1.113883.10.20.22.1.4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.GeneralHeaderConstraintsCode='GeneralHeaderConstraintsCodeP' constraints.validation.info='ConsultationNoteAssessmentSection ConsultationNoteAssessmentAndPlanSection ConsultationNotePlanOfCareSection ConsultationNoteReasonForReferralSection ConsultationNoteReasonForVisitSection ConsultationNoteAllergiesSection ConsultationNoteChiefComplaintSection ConsultationNoteChiefComplaintAndReasonForVisitSection ConsultationNoteFamilyHistorySection ConsultationNoteGeneralStatusSection ConsultationNoteHistoryOfPastIllnessSection ConsultationNoteImmunizationsSection ConsultationNoteMedicationsSectionEntriesOptional ConsultationNoteProblemSectionEntriesOptional ConsultationNoteProceduresSectionEntriesOptional ConsultationNoteResultsSectionEntriesOptional ConsultationNoteReviewOfSystemsSection ConsultationNoteSocialHistorySection ConsultationNoteVitalSignsSectionEntriesOptional ConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant' constraints.validation.warning='ConsultationNotePhysicalExamSection' constraints.validation.query='ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity ConsultationNoteComponentOfEncompassingEncounter2EffectiveTime ConsultationNoteComponentOfEncompassingEncounter2Id ConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant ConsultationNoteComponentOfEncompassingEncounter ConsultationNoteInFulfillmentOfOrderId ConsultationNoteInFulfillmentOfOrder'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ConsultationNoteTemplateId ConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections ConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent ConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection ConsultationNoteHasReasonForReferralOrReasonForVisit GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP ConsultationNoteComponentOf ConsultationNoteHistoryOfPresentIllness ConsultationNoteInFulfillmentOf ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity ConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay ConsultationNoteComponentOfEncompassingEncounter2EffectiveTime ConsultationNoteComponentOfEncompassingEncounter2Id ConsultationNoteComponentOfEncompassingEncounter ConsultationNoteInFulfillmentOfOrderId ConsultationNoteInFulfillmentOfOrder' templateId.root='2.16.840.1.113883.10.20.22.1.4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.GeneralHeaderConstraintsCode='GeneralHeaderConstraintsCodeP' constraints.validation.info='ConsultationNoteAssessmentSection ConsultationNoteAssessmentAndPlanSection ConsultationNotePlanOfCareSection ConsultationNoteReasonForReferralSection ConsultationNoteReasonForVisitSection ConsultationNoteAllergiesSection ConsultationNoteChiefComplaintSection ConsultationNoteChiefComplaintAndReasonForVisitSection ConsultationNoteFamilyHistorySection ConsultationNoteGeneralStatusSection ConsultationNoteHistoryOfPastIllnessSection ConsultationNoteImmunizationsSection ConsultationNoteMedicationsSectionEntriesOptional ConsultationNoteProblemSectionEntriesOptional ConsultationNoteProceduresSectionEntriesOptional ConsultationNoteResultsSectionEntriesOptional ConsultationNoteReviewOfSystemsSection ConsultationNoteSocialHistorySection ConsultationNoteVitalSignsSectionEntriesOptional ConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond ConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant' constraints.validation.warning='ConsultationNotePhysicalExamSection ConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute ConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset' constraints.validation.query='ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity ConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay ConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute ConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond ConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset ConsultationNoteComponentOfEncompassingEncounter2EffectiveTime ConsultationNoteComponentOfEncompassingEncounter2Id ConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant ConsultationNoteComponentOfEncompassingEncounter ConsultationNoteInFulfillmentOfOrderId ConsultationNoteInFulfillmentOfOrder'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolConsultationNoteComponentOf constraints.validation.error='ConsultationNoteComponentOfEncompassingEncounter'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolConsultationNoteComponentOfEncompassingEncounter2 constraints.validation.error='ConsultationNoteComponentOfEncompassingEncounter2EffectiveTime ConsultationNoteComponentOfEncompassingEncounter2Id' constraints.validation.info='ConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolConsultationNoteComponentOfEncompassingEncounter2 constraints.validation.error='ConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay ConsultationNoteComponentOfEncompassingEncounter2EffectiveTime ConsultationNoteComponentOfEncompassingEncounter2Id' constraints.validation.warning='ConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute ConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset' constraints.validation.info='ConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond ConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty constraints.validation.error='ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant constraints.validation.error='ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolConsultationNoteInFulfillmentOf constraints.validation.error='ConsultationNoteInFulfillmentOfOrder'"
@@ -172,6 +172,58 @@ public interface ConsultationNote extends GeneralHeaderConstraints {
 	 * @generated
 	 */
 	boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() implies effectiveTime.value.size() >= 8)'"
+	 * @generated
+	 */
+	boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() implies effectiveTime.value.size() >= 12)'"
+	 * @generated
+	 */
+	boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() implies effectiveTime.value.size() >= 14)'"
+	 * @generated
+	 */
+	boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() and effectiveTime.value.size() > 8 implies effectiveTime.value.size() >= 15)'"
+	 * @generated
+	 */
+	boolean validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**

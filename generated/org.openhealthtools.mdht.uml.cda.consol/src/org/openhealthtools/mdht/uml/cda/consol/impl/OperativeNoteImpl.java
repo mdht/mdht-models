@@ -341,6 +341,50 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateOperativeNoteDocumentationOfServiceEventPreciseToTheDay(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPreciseToTheDay(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteDocumentationOfServiceEventPreciseToTheMinute(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPreciseToTheMinute(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteDocumentationOfServiceEventPreciseToTheSecond(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPreciseToTheSecond(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateOperativeNoteDocumentationOfServiceEventCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventCode(this, diagnostics, context);

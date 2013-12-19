@@ -606,6 +606,50 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheDay(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheDay(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheMinute(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheMinute(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheSecond(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheSecond(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNoteDocumentationOfServiceEvent1IfMorePreciseThanDayIncludeTimeZoneOffset(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1IfMorePreciseThanDayIncludeTimeZoneOffset(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1Code(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1Code(this, diagnostics, context);

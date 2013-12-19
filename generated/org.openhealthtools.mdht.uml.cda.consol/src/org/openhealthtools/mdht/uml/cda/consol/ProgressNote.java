@@ -24,11 +24,11 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProgressNote()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProgressNoteTemplateId ProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections ProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP ProgressNoteComponentOf ProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh ProgressNoteDocumentationOfServiceEvent2TemplateId ProgressNoteDocumentationOfServiceEvent2ClassCode ProgressNoteDocumentationOfServiceEvent2 ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility ProgressNoteComponentOfEncompassingEncounter6EffectiveTime ProgressNoteComponentOfEncompassingEncounter6Id ProgressNoteComponentOfEncompassingEncounter6Location ProgressNoteComponentOfEncompassingEncounter6' templateId.root='2.16.840.1.113883.10.20.22.1.9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.GeneralHeaderConstraintsCode='GeneralHeaderConstraintsCodeP' constraints.validation.warning='ProgressNoteDocumentationOf ProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow ProgressNoteDocumentationOfServiceEvent2EffectiveTime' constraints.validation.info='ProgressNoteAssessmentSection ProgressNotePlanOfCareSection ProgressNoteAssessmentAndPlanSection ProgressNoteAllergiesSectionEntriesOptional ProgressNoteChiefComplaintSection ProgressNoteInterventionsSection ProgressNoteMedicationsSectionEntriesOptional ProgressNoteObjectiveSection ProgressNotePhysicalExamSection ProgressNoteProblemSectionEntriesOptional ProgressNoteResultsSectionEntriesOptional ProgressNoteReviewOfSystemsSection ProgressNoteSubjectiveSection ProgressNoteVitalSignsSectionEntriesOptional ProgressNoteInstructionsSection' constraints.validation.query='ProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow ProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh ProgressNoteDocumentationOfServiceEvent2TemplateId ProgressNoteDocumentationOfServiceEvent2ClassCode ProgressNoteDocumentationOfServiceEvent2EffectiveTime ProgressNoteDocumentationOfServiceEvent2 ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility ProgressNoteComponentOfEncompassingEncounter6EffectiveTime ProgressNoteComponentOfEncompassingEncounter6Id ProgressNoteComponentOfEncompassingEncounter6Location ProgressNoteComponentOfEncompassingEncounter6'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProgressNoteTemplateId ProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections ProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP ProgressNoteComponentOf ProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh ProgressNoteDocumentationOfServiceEvent2PreciseToTheDay ProgressNoteDocumentationOfServiceEvent2TemplateId ProgressNoteDocumentationOfServiceEvent2ClassCode ProgressNoteDocumentationOfServiceEvent2 ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility ProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay ProgressNoteComponentOfEncompassingEncounter6EffectiveTime ProgressNoteComponentOfEncompassingEncounter6Id ProgressNoteComponentOfEncompassingEncounter6Location ProgressNoteComponentOfEncompassingEncounter6' templateId.root='2.16.840.1.113883.10.20.22.1.9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.GeneralHeaderConstraintsCode='GeneralHeaderConstraintsCodeP' constraints.validation.warning='ProgressNoteDocumentationOf ProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow ProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute ProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset ProgressNoteDocumentationOfServiceEvent2EffectiveTime ProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute ProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset' constraints.validation.info='ProgressNoteAssessmentSection ProgressNotePlanOfCareSection ProgressNoteAssessmentAndPlanSection ProgressNoteAllergiesSectionEntriesOptional ProgressNoteChiefComplaintSection ProgressNoteInterventionsSection ProgressNoteMedicationsSectionEntriesOptional ProgressNoteObjectiveSection ProgressNotePhysicalExamSection ProgressNoteProblemSectionEntriesOptional ProgressNoteResultsSectionEntriesOptional ProgressNoteReviewOfSystemsSection ProgressNoteSubjectiveSection ProgressNoteVitalSignsSectionEntriesOptional ProgressNoteInstructionsSection ProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond ProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond' constraints.validation.query='ProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow ProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh ProgressNoteDocumentationOfServiceEvent2PreciseToTheDay ProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute ProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond ProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset ProgressNoteDocumentationOfServiceEvent2TemplateId ProgressNoteDocumentationOfServiceEvent2ClassCode ProgressNoteDocumentationOfServiceEvent2EffectiveTime ProgressNoteDocumentationOfServiceEvent2 ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility ProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay ProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute ProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond ProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset ProgressNoteComponentOfEncompassingEncounter6EffectiveTime ProgressNoteComponentOfEncompassingEncounter6Id ProgressNoteComponentOfEncompassingEncounter6Location ProgressNoteComponentOfEncompassingEncounter6'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteDocumentationOf constraints.validation.error='ProgressNoteDocumentationOfServiceEvent2'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteDocumentationOfServiceEvent2 constraints.validation.error='ProgressNoteDocumentationOfServiceEvent2TemplateId ProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh ProgressNoteDocumentationOfServiceEvent2ClassCode' templateId.root='2.16.840.1.113883.10.20.21.3.1' constraints.validation.warning='ProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow ProgressNoteDocumentationOfServiceEvent2EffectiveTime' classCode='PCPR'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteDocumentationOfServiceEvent2 constraints.validation.error='ProgressNoteDocumentationOfServiceEvent2TemplateId ProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh ProgressNoteDocumentationOfServiceEvent2PreciseToTheDay ProgressNoteDocumentationOfServiceEvent2ClassCode' templateId.root='2.16.840.1.113883.10.20.21.3.1' constraints.validation.warning='ProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow ProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute ProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset ProgressNoteDocumentationOfServiceEvent2EffectiveTime' constraints.validation.info='ProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond' classCode='PCPR'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteComponentOf constraints.validation.error='ProgressNoteComponentOfEncompassingEncounter6'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteComponentOfEncompassingEncounter6 constraints.validation.error='ProgressNoteComponentOfEncompassingEncounter6EffectiveTime ProgressNoteComponentOfEncompassingEncounter6Id ProgressNoteComponentOfEncompassingEncounter6Location'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteComponentOfEncompassingEncounter6 constraints.validation.error='ProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay ProgressNoteComponentOfEncompassingEncounter6EffectiveTime ProgressNoteComponentOfEncompassingEncounter6Id ProgressNoteComponentOfEncompassingEncounter6Location' constraints.validation.warning='ProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute ProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset' constraints.validation.info='ProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteComponentOfEncompassingEncounter6Location constraints.validation.error='ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1 constraints.validation.error='ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id'"
  * @generated
@@ -323,6 +323,58 @@ public interface ProgressNote extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() implies effectiveTime.low.value.size() >= 8) and (not effectiveTime.high.value.oclIsUndefined() implies effectiveTime.high.value.size() >= 8))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteDocumentationOfServiceEvent2PreciseToTheDay(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() implies effectiveTime.low.value.size() >= 12) and (not effectiveTime.high.value.oclIsUndefined() implies effectiveTime.high.value.size() >= 12))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() implies effectiveTime.low.value.size() >= 14) and (not effectiveTime.high.value.oclIsUndefined() implies effectiveTime.high.value.size() >= 14))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((not effectiveTime.low.value.oclIsUndefined() and effectiveTime.low.value.size() > 8 implies effectiveTime.low.value.size() >= 15) and (not effectiveTime.high.value.oclIsUndefined() and effectiveTime.high.value.size() > 8 implies effectiveTime.high.value.size() >= 15))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.21.3.1\'))'"
 	 * @generated
 	 */
@@ -391,6 +443,58 @@ public interface ProgressNote extends GeneralHeaderConstraints {
 	 * @generated
 	 */
 	boolean validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() implies effectiveTime.value.size() >= 8)'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() implies effectiveTime.value.size() >= 12)'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() implies effectiveTime.value.size() >= 14)'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(not effectiveTime.value.oclIsUndefined() and effectiveTime.value.size() > 8 implies effectiveTime.value.size() >= 15)'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**

@@ -290,6 +290,50 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProgressNoteDocumentationOfServiceEvent2PreciseToTheDay(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2PreciseToTheDay(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProgressNoteDocumentationOfServiceEvent2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2TemplateId(
@@ -347,6 +391,50 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset(
 			this, diagnostics, context);
 	}
 
