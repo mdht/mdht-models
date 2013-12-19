@@ -374,7 +374,7 @@ extension to CDA R2 for the use of the id element.</body>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Ow2PMCHkEeGFLIX-2_sWzA" code="419099009" displayName="Dead" base_Property="_8y9tUCHjEeGFLIX-2_sWzA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:8626</ruleId>
+    <ruleId>CONF:Pending</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_G2dBIHnsEeGgiPp0lBONag" base_Property="_2IpyJhSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_xoDdYNc4EeGfQ6frO0B-Jg" base_Property="_uHs8ENc4EeGfQ6frO0B-Jg">
@@ -414,5 +414,8 @@ extension to CDA R2 for the use of the id element.</body>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_CXj0UOMxEeGfv4R-kzpM0g" base_Property="_2IYsYBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:15469</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_W_-YIGRSEeOD5bEp3nNX5w" base_Property="_8y9tUCHjEeGFLIX-2_sWzA">
+    <ruleId>CONF:8626</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>

@@ -225,7 +225,7 @@
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_1wvtEBtnEeGL6omwPdOIng" code="77386006" displayName="Pregnant" base_Property="_2N6ssBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:457</ruleId>
+    <ruleId>CONF:Pending</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_oW16cBtsEeGT89b80j3MTg" severity="WARNING" base_Constraint="_L9YKgBtsEeGT89b80j3MTg">
     <ruleId>CONF:8893</ruleId>
@@ -480,5 +480,8 @@ The smoking status value set includes a special code to communicate if the smoki
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_2xQ1sOWYEeGKmvzED_He2w" base_Property="_2N6soxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:454</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_mMh3UGRREeOD5bEp3nNX5w" base_Property="_2N6ssBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:457</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>

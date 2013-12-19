@@ -671,7 +671,7 @@ A cognitive problem observation is a finding or medical condition. This is diffe
     </ownedAttribute>
     <ownedAttribute xmi:id="_hvJ8UuYxEeGINOJ_SD9_dA" name="derivationExpr" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_5Lc8wOYzEeGINOJ_SD9_dA">
-        <body>Such derivation expression can contain a text calculation of how the components total up to the summed score</body>
+        <body>The optional derivation expression records text showing how the score was calculated from its component data</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hvJ8U-YxEeGINOJ_SD9_dA" value="1"/>

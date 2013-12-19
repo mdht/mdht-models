@@ -2528,7 +2528,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_7Iw40OZFEeGINOJ_SD9_dA" code="182904002" displayName="Drug treatment unknown" base_Property="_-7rmT-ZEEeGINOJ_SD9_dA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7564</ruleId>
+    <ruleId>CONF:Pending</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_K8t5wOZGEeGINOJ_SD9_dA" severity="WARNING" base_Constraint="_Fu374OZGEeGINOJ_SD9_dA">
     <ruleId>CONF:15580</ruleId>
@@ -2798,4 +2798,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:AssociationValidation xmi:id="_qpSiEMMlEeKhp9meU6hZdQ" severity="WARNING" base_Association="_F6-ucMMiEeKhp9meU6hZdQ">
     <ruleId>CONF:7733</ruleId>
   </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_EmvXAGRSEeOD5bEp3nNX5w" base_Property="_-7rmT-ZEEeGINOJ_SD9_dA">
+    <ruleId>CONF:7564</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
