@@ -1296,7 +1296,7 @@
       <ownedLiteral xmi:id="_d80RwMFTEeGyGv5RKvEgDA" name="LA18300-6"/>
       <ownedLiteral xmi:id="_d86YYMFTEeGyGv5RKvEgDA" name="LA3774-2"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Deg4kHSUEeGa4IXs2ghZEw" name="GlasgowComaScoreQualifier">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Deg4kHSUEeGa4IXs2ghZEw" name="GlasgowComaScoreSpecialCircumstances">
       <ownedLiteral xmi:id="_d9BGEMFTEeGyGv5RKvEgDA" name="LA17102-7"/>
       <ownedLiteral xmi:id="_d9HzwMFTEeGyGv5RKvEgDA" name="LA17103-5"/>
       <ownedLiteral xmi:id="_d9OhcMFTEeGyGv5RKvEgDA" name="LA17104-3"/>
