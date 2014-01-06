@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Newborn Abnormal Condition (NCHS)</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.7121"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Newborn Abnormal Condition (NCHS) - 2.16.840.1.114222.4.11.7121</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Version</entry><entry>December 1, 2013</entry></row>
+<row><entry>Description</entry><entry>A list of disorders or significant morbidities experienced by the newborn.  Note, SNOMED is being used as the primary source for codes within the value set.
+</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>PHC1250</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Assisted Ventilation Immediatly Following Delivery</entry></row>
+<row><entry>PHC1251</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Assisted Ventilation for more than 6 Hours</entry></row>
+<row><entry>405269005</entry><entry>SNOMEDCT</entry><entry>Neonatal intensive care unit</entry></row>
+<row><entry>43470100012410</entry><entry>SNOMEDCT</entry><entry>Surfactant replacement therapy</entry></row>
+<row><entry>434621000124103</entry><entry>SNOMEDCT</entry><entry>Antibiotics for suspected neonatal sepsis</entry></row>
+<row><entry>91175000</entry><entry>SNOMEDCT</entry><entry>Seizure</entry></row>
+<row><entry>56110009</entry><entry>SNOMEDCT</entry><entry>Birth trauma of fetus</entry></row>
+<row><entry>260413007</entry><entry>SNOMEDCT</entry><entry>None</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

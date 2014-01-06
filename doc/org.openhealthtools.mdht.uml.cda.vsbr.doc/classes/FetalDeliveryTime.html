@@ -72,7 +72,7 @@
 <li class="li"> This participantRole <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:120)<div class="p"><p class="lines"><em class="ph i">An identifer for the facility within which the delivery took place.  This attribute is not relevant if the birth took place outside of a health care facility.  The attribute repeats to allow entry of both state and nationally assigned identifiers.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</em></p>
 </div>
 </li>
-<li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:121), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/BirthDeliveryLocation.html">Birth Delivery Location</a> 2.16.840.1.114222.4.11.7124</tt><strong class="ph b"> STATIC</strong> December 1, 2013 (CONF:122)<div class="p"><p class="lines"><em class="ph i">A code that indicates the type of facility or place at which the delivery took place.</em></p>
+<li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:121), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/BirthDeliveryLocationNCHS.html">Birth Delivery Location (NCHS)</a> 2.16.840.1.114222.4.11.7124</tt><strong class="ph b"> STATIC</strong> December 1, 2013 (CONF:122)<div class="p"><p class="lines"><em class="ph i">A code that indicates the type of facility or place at which the delivery took place.</em></p>
 </div>
 </li>
 <li class="li"> This participantRole <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:123)<div class="p"><p class="lines"><em class="ph i">The address for the place where the delivery took place.  It is collected in those cases where the delivery did not occur within a healthcare facility.</em></p>
@@ -104,24 +104,7 @@ If the delivery occurred in international air space or waters, enter "plane" or 
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.26.23"/&gt;
-  &lt;id root="MDHT" extension="1338035135"/&gt;
-  &lt;code code="11778-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Delivery date for patient selected by practitioner using all pertinent information"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;value xsi:type="TS"/&gt;
-  &lt;participant typeCode="LOC"&gt;
-    &lt;participantRole classCode="SDLOC"&gt;
-      &lt;id root="MDHT" extension="715658764"/&gt;
-      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
-      &lt;addr/&gt;
-      &lt;playingEntity classCode="PLC" determinerCode="INSTANCE"/&gt;
-    &lt;/participantRole&gt;
-  &lt;/participant&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

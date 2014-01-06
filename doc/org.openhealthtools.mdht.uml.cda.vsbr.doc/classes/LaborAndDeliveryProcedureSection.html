@@ -50,7 +50,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:382)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:381)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:381)<tt class="ph tt"><strong class="ph b">/@code</strong>="29300-1" </tt><em class="ph i">Procedure</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:383)
@@ -85,28 +85,7 @@
 
 
 
-<pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3" classCode="DOCSECT" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.26.7"/&gt;
-  &lt;id root="MDHT" extension="539897810"/&gt;
-  &lt;code code="1997030025"/&gt;
-  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
-  &lt;text/&gt;
-  &lt;entry&gt;
-    &lt;procedure classCode="PROC" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.26.39"/&gt;
-      &lt;id root="MDHT" extension="413063223"/&gt;
-      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/procedure&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;procedure/&gt;
-  &lt;/entry&gt;
-&lt;/section&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

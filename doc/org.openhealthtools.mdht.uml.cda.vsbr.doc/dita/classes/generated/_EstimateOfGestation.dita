@@ -34,21 +34,7 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:333)
 <ul><li><p><lines><i>The final estimate of gestation based on all perinatal factors and assessments, but  not the neonatal exam.  The value is to be provided as a number of completed weeks.</i></lines></p></li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Estimate of Gestation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:330</entry><entry> ALRT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:332</entry><entry> DEF</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:331</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PQ</entry><entry>CONF:333</entry><entry> </entry></row> 
-<row><entry>estimate of Gestation</entry><entry>estimate of Gestation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Estimate of Gestation</entry><entry>CONF:377</entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="395433975"/>
-  <code code="1322780543"/>
-  <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
-  </effectiveTime>
-  <value xsi:type="PQ"/>
-</observation>]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Estimate of Gestation</ph></p>

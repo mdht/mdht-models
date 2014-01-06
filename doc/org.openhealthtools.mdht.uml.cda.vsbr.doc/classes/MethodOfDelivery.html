@@ -65,7 +65,7 @@
 <li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:322)<tt class="ph tt"><strong class="ph b">/@code</strong>="73761-9" </tt><em class="ph i">Fetal presentation at birth</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)<div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - fetal presentation.</em></p>
 </div>
 </li>
-<li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:324), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/FetalPresentations.html">Fetal Presentations</a> 2.16.840.1.114222.4.11.7113</tt><strong class="ph b"> STATIC</strong> December 1, 2013 (CONF:325)<div class="p"><p class="lines"><em class="ph i">Information on the presentation of the fetus at the point of delivery.</em></p>
+<li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:324), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/FetalPresentationsNCHS.html">Fetal Presentations (NCHS)</a> 2.16.840.1.114222.4.11.7113</tt><strong class="ph b"> STATIC</strong> December 1, 2013 (CONF:325)<div class="p"><p class="lines"><em class="ph i">Information on the presentation of the fetus at the point of delivery.</em></p>
 </div>
 </li>
 </ol>
@@ -77,7 +77,7 @@
 <li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:291)<tt class="ph tt"><strong class="ph b">/@code</strong>="73762-7" </tt><em class="ph i">Final route and method of delivery</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)<div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - the method and route of delivery.</em></p>
 </div>
 </li>
-<li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:293), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/DeliveryRoutes.html">Delivery Routes</a> 2.16.840.1.114222.4.11.7118</tt><strong class="ph b"> STATIC</strong> December 1, 2013 (CONF:294)<div class="p"><p class="lines"><em class="ph i">The method and route of delivery.</em></p>
+<li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:293), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/DeliveryRouteNCHS.html">Delivery Route (NCHS)</a> 2.16.840.1.114222.4.11.7118</tt><strong class="ph b"> STATIC</strong> December 1, 2013 (CONF:294)<div class="p"><p class="lines"><em class="ph i">The method and route of delivery.</em></p>
 </div>
 </li>
 <li class="li"> This entryRelationship <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> <div class="p"><p class="lines"><em class="ph i">If the newborn has been delivered by Cesarean section, the report must record whether a trial of labor was attempted.</em></p>
@@ -125,21 +125,7 @@
 
 
 
-<pre class="pre codeblock">&lt;procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="PROC" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.26.45"/&gt;
-  &lt;id root="MDHT" extension="684388144"/&gt;
-  &lt;code code="72149-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Delivery method"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;entryRelationship typeCode="COMP"&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;code code="73759-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hysterotomy or hysterectomy was performed at delivery"/&gt;
-      &lt;value xsi:type="BL"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-&lt;/procedure&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

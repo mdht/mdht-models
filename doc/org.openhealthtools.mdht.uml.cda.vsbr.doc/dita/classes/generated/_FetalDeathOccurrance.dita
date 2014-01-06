@@ -21,7 +21,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:416)<tt><b>/@code</b>="73811-2" </tt><i>Estimated time of fetal death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - that it indicates the death of a fetus.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:418), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/FetalDeathTimePoints.dita">Fetal Death Time Points</xref> 2.16.840.1.114222.4.11.7112</tt><b> STATIC</b> December 1, 2013 (CONF:419)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:418), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/FetalDeathTimePointNCHS.dita">Fetal Death Time Point (NCHS)</xref> 2.16.840.1.114222.4.11.7112</tt><b> STATIC</b> December 1, 2013 (CONF:419)
 <ul><li><p><lines><i>Information regarding the point within the delivery process at which fetal death occurred.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -31,24 +31,10 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:416)<tt><b>/@code</b>="73811-2" </tt><i>Estimated time of fetal death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - that it indicates the death of a fetus.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:418), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/FetalDeathTimePoints.dita">Fetal Death Time Points</xref> 2.16.840.1.114222.4.11.7112</tt><b> STATIC</b> December 1, 2013 (CONF:419)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:418), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/FetalDeathTimePointNCHS.dita">Fetal Death Time Point (NCHS)</xref> 2.16.840.1.114222.4.11.7112</tt><b> STATIC</b> December 1, 2013 (CONF:419)
 <ul><li><p><lines><i>Information regarding the point within the delivery process at which fetal death occurred.</i></lines></p></li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Fetal Death Occurrance</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry>CONF:415</entry><entry> ALRT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentActMood</entry><entry>CONF:417</entry><entry> DEF</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:416</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:418</entry><entry> </entry></row> 
-<row><entry>fetal Death Occurrance</entry><entry>fetal Death Occurrance</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Fetal Death Occurrance</entry><entry>CONF:86</entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1969727611"/>
-  <code code="506287599"/>
-  <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
-  </effectiveTime>
-  <value xsi:type="CD" code="1028748073"/>
-</observation>]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Fetal Death Occurrance</ph></p>

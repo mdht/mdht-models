@@ -55,7 +55,7 @@ information.  Within the II data type, use the root to record the identifying OI
 <ul><li><p><lines><i>An indication of the level of confidentiality with which the document needs to be managed.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt> (CONF:151)
 <ul><li><p><lines><i>The language used for recording information within the document.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>recordTarget</b></tt> (CONF:152) <ol><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RCT" </tt> (CONF:164)</li><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> (CONF:165) <ol><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PAT" </tt> (CONF:169)</li><li> This patientRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>addr</b></tt> (CONF:166)<p><lines><i>The current postal address for the mother.</i></lines></p></li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:167)<p><lines><i>The medical record number assigned to the mother by the health care facility.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</i></lines></p></li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>patient</b></tt> with data type <xref href="../Patient.dita">Patient</xref> (CONF:168)</li></ol> </li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>recordTarget</b></tt> (CONF:152) <ol><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RCT" </tt> (CONF:164)</li><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> (CONF:165) <ol><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PAT" </tt> (CONF:169)</li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:167)<p><lines><i>The medical record number assigned to the mother by the health care facility.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</i></lines></p></li><li> This patientRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>addr</b></tt> (CONF:166)<p><lines><i>The current postal address for the mother.</i></lines></p></li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>patient</b></tt> with data type <xref href="../Patient.dita">Patient</xref> (CONF:168)</li></ol> </li></ol>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>author</b></tt> (CONF:153) <p><lines><i>The author participation contains information about the person who authored the document.  This is the person who verifies/approves the accuracy of the data to be sent to the vital records system.</i></lines></p><ol><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="AUT" </tt> (CONF:160)</li><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> (CONF:161) <ol><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ASSIGNED" </tt> (CONF:162)</li><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:163)<p><lines><i>An identifier for the author of the fetal death report.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</i></lines></p></li></ol> </li></ol>
 </li>
@@ -69,7 +69,7 @@ information.  Within the II data type, use the root to record the identifying OI
 <li>Contains exactly one [1..1] <xref href="../PriorPregnancyHistorySection.dita">Prior Pregnancy History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.12</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../HistoryOfInfectionFetalDeathSection.dita">History of Infection - Fetal Death Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.48</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../HistoryOfInfectionFetalDeathSection.dita">History of Infection: Fetal Death Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.48</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:155)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LaborAndDeliverySection.dita">Labor and Delivery Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.8</tt>)</li></ol></li>
@@ -103,7 +103,7 @@ information.  Within the II data type, use the root to record the identifying OI
 <li>Contains exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../Component2.dita">Component2</xref></li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>recordTarget</b></tt> (CONF:152) <ol><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RCT" </tt> (CONF:164)</li><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> (CONF:165) <ol><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PAT" </tt> (CONF:169)</li><li> This patientRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>addr</b></tt> (CONF:166)<p><lines><i>The current postal address for the mother.</i></lines></p></li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:167)<p><lines><i>The medical record number assigned to the mother by the health care facility.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</i></lines></p></li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>patient</b></tt> with data type <xref href="../Patient.dita">Patient</xref> (CONF:168)</li></ol> </li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>recordTarget</b></tt> (CONF:152) <ol><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RCT" </tt> (CONF:164)</li><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> (CONF:165) <ol><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PAT" </tt> (CONF:169)</li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:167)<p><lines><i>The medical record number assigned to the mother by the health care facility.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</i></lines></p></li><li> This patientRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>addr</b></tt> (CONF:166)<p><lines><i>The current postal address for the mother.</i></lines></p></li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>patient</b></tt> with data type <xref href="../Patient.dita">Patient</xref> (CONF:168)</li></ol> </li></ol>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>author</b></tt> (CONF:153) <p><lines><i>The author participation contains information about the person who authored the document.  This is the person who verifies/approves the accuracy of the data to be sent to the vital records system.</i></lines></p><ol><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="AUT" </tt> (CONF:160)</li><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> (CONF:161) <ol><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ASSIGNED" </tt> (CONF:162)</li><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:163)<p><lines><i>An identifier for the author of the fetal death report.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</i></lines></p></li></ol> </li></ol>
 </li>
@@ -117,7 +117,7 @@ information.  Within the II data type, use the root to record the identifying OI
 <li>Contains exactly one [1..1] <xref href="../PriorPregnancyHistorySection.dita">Prior Pregnancy History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.12</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../HistoryOfInfectionFetalDeathSection.dita">History of Infection - Fetal Death Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.48</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../HistoryOfInfectionFetalDeathSection.dita">History of Infection: Fetal Death Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.48</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:155)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LaborAndDeliverySection.dita">Labor and Delivery Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.8</tt>)</li></ol></li>
@@ -125,226 +125,7 @@ information.  Within the II data type, use the root to record the identifying OI
 <ol>
 <li>Contains exactly one [1..1] <xref href="../FetalDeliverySection.dita">Fetal Delivery Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.4</tt>)</li></ol></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Reporting Fetal Death Information from a clinical setting to vital records</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::clinicaldocument[cda:templateId/@root = 2.16.840.1.113883.10.20.26.2]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClinicalDocument</entry><entry>CONF:142</entry><entry> DOCCLIN</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:143</entry><entry> EVN</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:145</entry><entry>LOINC 2.16.840.1.113883.6.1 69045-3</entry></row> 
-<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:149</entry><entry>Confidentiality 2.16.840.1.113883.5.25 </entry></row> 
-<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>TS</entry><entry>CONF:148</entry><entry> </entry></row> 
-<row><entry>id</entry><entry>id</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:144</entry><entry> </entry></row> 
-<row><entry>languageCode</entry><entry>languageCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:151</entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:139</entry><entry>Country (ISO 3166-1) 1.0.3166.1 US</entry></row> 
-<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:147</entry><entry> </entry></row> 
-<row><entry>antenatal Testing and Surveillance</entry><entry>antenatal Testing and Surveillance</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Prenatal Testing and Surveillance Section</entry><entry>CONF:157</entry><entry> </entry></row> 
-<row><entry>author</entry><entry>author</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Author</entry><entry>CONF:153</entry><entry> </entry></row> 
-<row><entry>custodian</entry><entry>custodian</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Custodian</entry><entry>CONF:154</entry><entry> </entry></row> 
-<row><entry>fetal Delivery Section</entry><entry>fetal Delivery Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Fetal Delivery Section</entry><entry>CONF:156</entry><entry> </entry></row> 
-<row><entry>history of Infection - Fetal Death Section</entry><entry>history of Infection - Fetal Death Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>History of Infection - Fetal Death Section</entry><entry></entry><entry> </entry></row> 
-<row><entry>labor and Delivery Section</entry><entry>labor and Delivery Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Labor and Delivery Section</entry><entry>CONF:155</entry><entry> </entry></row> 
-<row><entry>pregnancy History</entry><entry>pregnancy History</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Prior Pregnancy History Section</entry><entry>CONF:158</entry><entry> </entry></row> 
-<row><entry>recordTarget</entry><entry>recordTarget</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>RecordTarget</entry><entry>CONF:152</entry><entry> </entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry>CONF:141</entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="DOCCLIN" moodCode="EVN">
-  <realmCode code="US"/>
-  <typeId root="2.16.840.1.113883.1.3"/>
-  <templateId root="2.16.840.1.113883.10.20.26.2"/>
-  <id root="MDHT" extension="35821525"/>
-  <code code="69045-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="U.S. stanard report of fetal death - 2003 revision"/>
-  <title>TEXT FOR TITLE</title>
-  <effectiveTime/>
-  <confidentialityCode code="1660896409"/>
-  <languageCode code="Code forlanguageCode"/>
-  <recordTarget typeCode="RCT">
-    <patientRole classCode="PAT">
-      <id root="MDHT" extension="698664666"/>
-      <addr/>
-    </patientRole>
-  </recordTarget>
-  <author typeCode="AUT">
-    <time/>
-    <assignedAuthor classCode="ASSIGNED">
-      <id root="MDHT" extension="1036791837"/>
-    </assignedAuthor>
-  </author>
-  <custodian typeCode="CST">
-    <assignedCustodian classCode="ASSIGNED">
-      <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE"/>
-    </assignedCustodian>
-  </custodian>
-  <component>
-    <structuredBody>
-      <component>
-        <section/>
-      </component>
-      <component>
-        <section classCode="DOCSECT" moodCode="EVN">
-          <realmCode code="Code forrealmCode"/>
-          <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.26.4"/>
-          <id root="MDHT" extension="401298223"/>
-          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-          <title>TEXT FOR TITLE</title>
-          <confidentialityCode code="2116001739"/>
-          <languageCode code="Code forlanguageCode"/>
-          <subject typeCode="SBJ">
-            <relatedSubject classCode="PRS"/>
-          </subject>
-          <entry>
-            <observation classCode="OBS" moodCode="EVN">
-              <realmCode code="Code forrealmCode"/>
-              <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.26.16"/>
-              <id root="MDHT" extension="1596035180"/>
-              <code code="73771-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Birth order"/>
-              <effectiveTime>
-                <low value="2013"/>
-                <high value="2013"/>
-              </effectiveTime>
-              <languageCode code="Code forlanguageCode"/>
-            </observation>
-          </entry>
-          <entry>
-            <observation/>
-          </entry>
-          <entry>
-            <observation classCode="OBS" moodCode="EVN">
-              <realmCode code="Code forrealmCode"/>
-              <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.26.15"/>
-              <id root="MDHT" extension="1246230977"/>
-              <code code="73768-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy was performed"/>
-              <effectiveTime>
-                <low value="2013"/>
-                <high value="2013"/>
-              </effectiveTime>
-              <languageCode code="Code forlanguageCode"/>
-              <entryRelationship typeCode="COMP"/>
-              <entryRelationship typeCode="COMP"/>
-            </observation>
-          </entry>
-          <entry>
-            <observation moodCode="EVN">
-              <realmCode code="Code forrealmCode"/>
-              <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.26.22"/>
-              <id root="MDHT" extension="110888387"/>
-              <code code="73811-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Estimated time of fetal death"/>
-              <effectiveTime>
-                <low value="2013"/>
-                <high value="2013"/>
-              </effectiveTime>
-              <languageCode code="Code forlanguageCode"/>
-            </observation>
-          </entry>
-          <entry>
-            <observation classCode="OBS" moodCode="EVN">
-              <realmCode code="Code forrealmCode"/>
-              <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.26.41"/>
-              <id root="MDHT" extension="796602406"/>
-              <code code="57722-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Birth plurality"/>
-              <effectiveTime>
-                <low value="2013"/>
-                <high value="2013"/>
-              </effectiveTime>
-              <languageCode code="Code forlanguageCode"/>
-            </observation>
-          </entry>
-          <entry>
-            <observation classCode="OBS" moodCode="EVN">
-              <realmCode code="Code forrealmCode"/>
-              <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.26.19"/>
-              <id root="MDHT" extension="105898607"/>
-              <code code="73780-9" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Congenital anomalies of the newborn"/>
-              <effectiveTime>
-                <low value="2013"/>
-                <high value="2013"/>
-              </effectiveTime>
-              <languageCode code="Code forlanguageCode"/>
-              <entryRelationship typeCode="COMP"/>
-              <entryRelationship typeCode="COMP"/>
-            </observation>
-          </entry>
-          <entry>
-            <observation classCode="OBS" moodCode="EVN">
-              <realmCode code="Code forrealmCode"/>
-              <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.26.23"/>
-              <id root="MDHT" extension="263814620"/>
-              <code code="11778-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Delivery date for patient selected by practitioner using all pertinent information"/>
-              <effectiveTime>
-                <low value="2013"/>
-                <high value="2013"/>
-              </effectiveTime>
-              <languageCode code="Code forlanguageCode"/>
-              <participant typeCode="LOC"/>
-            </observation>
-          </entry>
-        </section>
-      </component>
-      <component>
-        <section/>
-      </component>
-      <component>
-        <section classCode="DOCSECT" moodCode="EVN">
-          <realmCode code="Code forrealmCode"/>
-          <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.26.12"/>
-          <id root="MDHT" extension="1786281907"/>
-          <code code="57073-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prenatal events"/>
-          <title>TEXT FOR TITLE</title>
-          <confidentialityCode code="1607639347"/>
-          <languageCode code="Code forlanguageCode"/>
-          <entry>
-            <observation/>
-          </entry>
-          <entry>
-            <observation classCode="OBS" moodCode="EVN">
-              <realmCode code="Code forrealmCode"/>
-              <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.26.33"/>
-              <id root="MDHT" extension="37628288"/>
-              <code code="8665-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Date last menstrual period"/>
-              <effectiveTime>
-                <low value="2013"/>
-                <high value="2013"/>
-              </effectiveTime>
-              <languageCode code="Code forlanguageCode"/>
-            </observation>
-          </entry>
-          <entry>
-            <observation/>
-          </entry>
-          <entry>
-            <observation/>
-          </entry>
-          <entry>
-            <observation classCode="OBS" moodCode="EVN">
-              <realmCode code="Code forrealmCode"/>
-              <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.26.40"/>
-              <id root="MDHT" extension="1184332069"/>
-              <code code="69043-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other pregnancy outcomes"/>
-              <effectiveTime>
-                <low value="2013"/>
-                <high value="2013"/>
-              </effectiveTime>
-              <languageCode code="Code forlanguageCode"/>
-            </observation>
-          </entry>
-          <entry>
-            <observation/>
-          </entry>
-        </section>
-      </component>
-      <component>
-        <section/>
-      </component>
-    </structuredBody>
-  </component>
-</ClinicalDocument>]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Reporting Fetal Death Information from a clinical setting to vital records</ph></p>

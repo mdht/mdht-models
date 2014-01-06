@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "dtd/topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Fetal Death Report Sample</title>
+	<body>
+		<p>The sample message has been constructed to illustrate the use of this implementation guide to constrain
+		CDA in the representation of a fetal death report.</p>
+		
+		<codeblock id="FetalDeathExample">
+		<![CDATA[Here some text text. ]
+		</codeblock>
+	</body>
+</topic>

@@ -122,10 +122,10 @@ information.  Within the II data type, use the root to record the identifying 
 </div>
 <ol class="ol" type="a"><li class="li"> This recordTarget <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="RCT" </tt> (CONF:23)</li>
 <li class="li"> This recordTarget <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patientRole</strong></tt> (CONF:24) <ol class="ol" type="i"><li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PAT" </tt> (CONF:28)</li>
-<li class="li"> This patientRole <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:25)<div class="p"><p class="lines"><em class="ph i">The current postal address for the mother.</em></p>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:26)<div class="p"><p class="lines"><em class="ph i">The medical record number assigned to the mother by the health care facility.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</em></p>
 </div>
 </li>
-<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:26)<div class="p"><p class="lines"><em class="ph i">The medical record number assigned to the mother by the health care facility.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</em></p>
+<li class="li"> This patientRole <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:25)<div class="p"><p class="lines"><em class="ph i">The current postal address for the mother.</em></p>
 </div>
 </li>
 <li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patient</strong></tt> (CONF:27) <ol class="ol"><li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PSN" </tt> (CONF:29)</li>
@@ -144,7 +144,8 @@ information.  Within the II data type, use the root to record the identifying 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">author</strong></tt> (CONF:14) <div class="p"><p class="lines"><em class="ph i">The author participation contains information about the person who authored the document.  This is the person who verifies/approves the accuracy of the data to be sent to the vital records system.</em></p>
 </div>
 <ol class="ol" type="a"><li class="li"> This author Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="AUT" </tt></li>
-<li class="li"> This author <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedAuthor</strong></tt> (CONF:21) <ol class="ol" type="i"><li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:22)<div class="p"><p class="lines"><em class="ph i">An identifier for the author of the live birth report.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</em></p>
+<li class="li"> This author <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedAuthor</strong></tt> (CONF:21) <ol class="ol" type="i"><li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ASSIGNED" </tt></li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:22)<div class="p"><p class="lines"><em class="ph i">An identifier for the author of the live birth report.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</em></p>
 </div>
 </li>
 </ol>
@@ -185,7 +186,7 @@ steward that is entrusted with the care of the document. Every CDA document has 
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="HistoryOfInfectionLiveBirthSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.26.5]">History of Infection - Live Birth Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.5</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HistoryOfInfectionLiveBirthSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.26.5]">History of Infection: Live Birth Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.5</tt>)</li>
 </ol>
 </li>
 
@@ -210,245 +211,7 @@ steward that is entrusted with the care of the document. Every CDA document has 
 
 
 
-<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="DOCCLIN" moodCode="EVN"&gt;
-  &lt;realmCode code="USA"/&gt;
-  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.26.1"/&gt;
-  &lt;id root="MDHT" extension="944051731"/&gt;
-  &lt;code code="68998-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="U.S. standard certificate of live birth - 2003 revision"/&gt;
-  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
-  &lt;effectiveTime/&gt;
-  &lt;confidentialityCode code="1470157195"/&gt;
-  &lt;languageCode code="Code forlanguageCode"/&gt;
-  &lt;recordTarget typeCode="RCT"&gt;
-    &lt;patientRole classCode="PAT"&gt;
-      &lt;id root="MDHT" extension="1758529284"/&gt;
-      &lt;addr/&gt;
-      &lt;patient classCode="PSN" determinerCode="INSTANCE"/&gt;
-    &lt;/patientRole&gt;
-  &lt;/recordTarget&gt;
-  &lt;author typeCode="AUT"&gt;
-    &lt;time/&gt;
-    &lt;assignedAuthor&gt;
-      &lt;id root="MDHT" extension="1622913419"/&gt;
-    &lt;/assignedAuthor&gt;
-  &lt;/author&gt;
-  &lt;custodian typeCode="CST"&gt;
-    &lt;assignedCustodian classCode="ASSIGNED"&gt;
-      &lt;representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE"/&gt;
-    &lt;/assignedCustodian&gt;
-  &lt;/custodian&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section classCode="DOCSECT" moodCode="EVN"&gt;
-          &lt;realmCode code="Code forrealmCode"/&gt;
-          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.26.12"/&gt;
-          &lt;id root="MDHT" extension="364327896"/&gt;
-          &lt;code code="57073-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prenatal events"/&gt;
-          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
-          &lt;confidentialityCode code="71849711"/&gt;
-          &lt;languageCode code="Code forlanguageCode"/&gt;
-          &lt;entry&gt;
-            &lt;observation/&gt;
-          &lt;/entry&gt;
-          &lt;entry&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;realmCode code="Code forrealmCode"/&gt;
-              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.26.33"/&gt;
-              &lt;id root="MDHT" extension="272377703"/&gt;
-              &lt;code code="8665-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Date last menstrual period"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2013"/&gt;
-                &lt;high value="2013"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;languageCode code="Code forlanguageCode"/&gt;
-            &lt;/observation&gt;
-          &lt;/entry&gt;
-          &lt;entry&gt;
-            &lt;observation/&gt;
-          &lt;/entry&gt;
-          &lt;entry&gt;
-            &lt;observation/&gt;
-          &lt;/entry&gt;
-          &lt;entry&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;realmCode code="Code forrealmCode"/&gt;
-              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.26.40"/&gt;
-              &lt;id root="MDHT" extension="1563606654"/&gt;
-              &lt;code code="69043-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other pregnancy outcomes"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2013"/&gt;
-                &lt;high value="2013"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;languageCode code="Code forlanguageCode"/&gt;
-            &lt;/observation&gt;
-          &lt;/entry&gt;
-          &lt;entry&gt;
-            &lt;observation/&gt;
-          &lt;/entry&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;realmCode code="Code forrealmCode"/&gt;
-          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-          &lt;id root="MDHT" extension="209781662"/&gt;
-          &lt;code code="969034083"/&gt;
-          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
-          &lt;confidentialityCode code="184046256"/&gt;
-          &lt;languageCode code="Code forlanguageCode"/&gt;
-          &lt;subject typeCode="SBJ"&gt;
-            &lt;relatedSubject classCode="PRS"&gt;
-              &lt;code code="CHILD" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/&gt;
-            &lt;/relatedSubject&gt;
-          &lt;/subject&gt;
-          &lt;entry&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;realmCode code="Code forrealmCode"/&gt;
-              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.26.16"/&gt;
-              &lt;id root="MDHT" extension="1291185126"/&gt;
-              &lt;code code="73771-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Birth order"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2013"/&gt;
-                &lt;high value="2013"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;languageCode code="Code forlanguageCode"/&gt;
-            &lt;/observation&gt;
-          &lt;/entry&gt;
-          &lt;entry&gt;
-            &lt;observation/&gt;
-          &lt;/entry&gt;
-          &lt;entry&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;realmCode code="Code forrealmCode"/&gt;
-              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.26.19"/&gt;
-              &lt;id root="MDHT" extension="437008123"/&gt;
-              &lt;code code="73780-9" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Congenital anomalies of the newborn"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2013"/&gt;
-                &lt;high value="2013"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;languageCode code="Code forlanguageCode"/&gt;
-              &lt;entryRelationship typeCode="COMP"/&gt;
-              &lt;entryRelationship typeCode="COMP"/&gt;
-            &lt;/observation&gt;
-          &lt;/entry&gt;
-          &lt;entry&gt;
-            &lt;observation/&gt;
-          &lt;/entry&gt;
-          &lt;entry&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;realmCode code="Code forrealmCode"/&gt;
-              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.26.28"/&gt;
-              &lt;id root="MDHT" extension="1163020737"/&gt;
-              &lt;code code="73757-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Infant living at time of report"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2013"/&gt;
-                &lt;high value="2013"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;languageCode code="Code forlanguageCode"/&gt;
-            &lt;/observation&gt;
-          &lt;/entry&gt;
-          &lt;entry&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;realmCode code="Code forrealmCode"/&gt;
-              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.26.27"/&gt;
-              &lt;id root="MDHT" extension="64277212"/&gt;
-              &lt;code code="73756-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Infant is being breastfed at discharge"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2013"/&gt;
-                &lt;high value="2013"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;languageCode code="Code forlanguageCode"/&gt;
-            &lt;/observation&gt;
-          &lt;/entry&gt;
-          &lt;entry&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;realmCode code="Code forrealmCode"/&gt;
-              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.26.29"/&gt;
-              &lt;id root="MDHT" extension="1658758659"/&gt;
-              &lt;code code="73758-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Infant was transferred within 24 hours of delivery"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2013"/&gt;
-                &lt;high value="2013"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;languageCode code="Code forlanguageCode"/&gt;
-              &lt;participant typeCode="DST"/&gt;
-            &lt;/observation&gt;
-          &lt;/entry&gt;
-          &lt;entry&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;realmCode code="Code forrealmCode"/&gt;
-              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.26.41"/&gt;
-              &lt;id root="MDHT" extension="987964536"/&gt;
-              &lt;code code="57722-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Birth plurality"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2013"/&gt;
-                &lt;high value="2013"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;languageCode code="Code forlanguageCode"/&gt;
-            &lt;/observation&gt;
-          &lt;/entry&gt;
-          &lt;component&gt;
-            &lt;section&gt;
-              &lt;realmCode code="Code forrealmCode"/&gt;
-              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-              &lt;id root="MDHT" extension="898947032"/&gt;
-              &lt;code code="365645450"/&gt;
-              &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
-              &lt;confidentialityCode code="1867863256"/&gt;
-              &lt;languageCode code="Code forlanguageCode"/&gt;
-              &lt;entry&gt;
-                &lt;observation classCode="OBS" moodCode="EVN"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.26.46"/&gt;
-                  &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-                &lt;/observation&gt;
-              &lt;/entry&gt;
-            &lt;/section&gt;
-          &lt;/component&gt;
-          &lt;component&gt;
-            &lt;section classCode="DOCSECT" moodCode="EVN"&gt;
-              &lt;realmCode code="Code forrealmCode"/&gt;
-              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.26.9"/&gt;
-              &lt;id root="MDHT" extension="1705827507"/&gt;
-              &lt;code code="51848-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Assessment Note"/&gt;
-              &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
-              &lt;confidentialityCode code="864011124"/&gt;
-              &lt;languageCode code="Code forlanguageCode"/&gt;
-              &lt;entry&gt;
-                &lt;observation classCode="OBS" moodCode="EVN"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.26.47"/&gt;
-                  &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-                &lt;/observation&gt;
-              &lt;/entry&gt;
-            &lt;/section&gt;
-          &lt;/component&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

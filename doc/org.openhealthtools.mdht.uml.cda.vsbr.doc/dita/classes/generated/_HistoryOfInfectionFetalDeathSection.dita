@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
-<title>History of Infection - Fetal Death Section - conformance rules</title>
+<title>History of Infection: Fetal Death Section - conformance rules</title>
 <shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.26.48</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Section</category></metadata>
@@ -23,7 +23,7 @@
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
 <ul><li><p><lines><i>There may be multiple infections recorded.  At least one observation will be present in the case that none are present.</i></lines></p></li></ul><ol>
-<li>Contains exactly one [1..1] <xref href="../InfectionPresentFetalDeath.dita">Infection Present - Fetal Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.49</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../InfectionPresentFetalDeath.dita">Infection Present: Fetal Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.49</tt>)</li></ol></li>
 <li>Contains zero or one [0..1] <tt><b>text</b></tt>
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
 </ol>
@@ -38,22 +38,12 @@
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../InfectionPresentFetalDeath.dita">Infection Present - Fetal Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.49</tt>)</li></ol><ul><li><p><lines><i>There may be multiple infections recorded.  At least one observation will be present in the case that none are present.</i></lines></p></li></ul></li>
+<li>Contains exactly one [1..1] <xref href="../InfectionPresentFetalDeath.dita">Infection Present: Fetal Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.49</tt>)</li></ol><ul><li><p><lines><i>There may be multiple infections recorded.  At least one observation will be present in the case that none are present.</i></lines></p></li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::History of Infection - Fetal Death Section</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
-<row><entry>history of Infection - Fetal Death Section</entry><entry>history of Infection - Fetal Death Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>History of Infection - Fetal Death Section</entry><entry></entry><entry> </entry></row> 
-<row><entry>infection Present - Fetal Death</entry><entry>cda:entry/cda:observation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Infection Present - Fetal Death</entry><entry></entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="727753778"/>
-  <title>TEXT FOR TITLE</title>
-  <entry>
-    <observation/>
-  </entry>
-</section>]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
-<p><ph id="classformalname">History of Infection - Fetal Death Section</ph></p>
+<p><ph id="classformalname">History of Infection: Fetal Death Section</ph></p>
 <p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.26.48</tt>]</p>
 </body>
 </topic>

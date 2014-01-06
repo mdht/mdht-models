@@ -42,29 +42,7 @@
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:189) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt> (CONF:191)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:190) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:192)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:194)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:193)<tt><b>/@code</b>="68493-6" </tt><i>Prenatal visits for this pregnancy</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT (CONF:195)<p><lines><i>The number of prenatal visits for this pregnancy.  The entry is a non-negative integer within the range from zero to 98.</i></lines></p></li></ol> </li></ol>
 </li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Prenatal Care</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.26.42]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry>CONF:183</entry><entry> ACCM</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentActMood</entry><entry>CONF:187</entry><entry> APT</entry></row> 
-<row><entry>negationInd</entry><entry>@negationInd</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>Boolean</entry><entry>CONF:188</entry><entry> </entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:184</entry><entry>LOINC 2.16.840.1.113883.6.1 73776-7</entry></row> 
-<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:186</entry><entry> </entry></row> 
-<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>prenatalVisitsAssociation</entry><entry>CONF:189</entry><entry> </entry></row> 
-<row><entry>pre-Natal Care</entry><entry>pre-Natal Care</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Prenatal Care</entry><entry>CONF:42</entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="ACT" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.26.42"/>
-  <id root="MDHT" extension="1589102475"/>
-  <code code="73776-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="No-prenatal care"/>
-  <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
-  </effectiveTime>
-  <entryRelationship typeCode="COMP">
-    <observation classCode="OBS" moodCode="EVN">
-      <code code="68493-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prenatal visits for this pregnancy"/>
-      <value xsi:type="INT" value="1"/>
-    </observation>
-  </entryRelationship>
-</act>]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Prenatal Care</ph></p>

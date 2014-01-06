@@ -84,9 +84,9 @@ If the birth occurred in international air space or waters, enter "plane" or "bo
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:100) <p><lines><i>Information on the source of payment for the delivery.  Not collected for a fetal death report.</i></lines></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt> (CONF:111)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:112) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:113)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:115)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:114)<tt><b>/@code</b>="68461-3" </tt><i>Payment source</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)<p><lines><i>A code value that indicates the nature of the observation - that it includes payment source information.</i></lines></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:116), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BirthAndFetalDeathFinancialClassNCHS.dita">Birth and Fetal Death Financial Class (NCHS)</xref> 2.16.840.1.114222.4.11.7163</tt><b> STATIC</b> December 1, 2013<p><lines><i>Information to identify the source of payment for charges associated with delivering the baby.</i></lines></p></li></ol> </li></ol>
 </li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Labor and Delivery Information</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.26.31]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry>CONF:89</entry><entry> ACCM</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Labor and Delivery Information</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry>CONF:89</entry><entry> ACCM</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentActMood</entry><entry>CONF:91</entry><entry> APT</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:90</entry><entry>LOINC 2.16.840.1.113883.6.1 57074-7</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:90</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
 <row><entry>attendantParticipation</entry><entry>attendantParticipation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>attendantParticipation</entry><entry>CONF:92</entry><entry> </entry></row> 
 <row><entry>characteristics of Labor and Delivery</entry><entry>characteristics of Labor and Delivery</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Characteristic of Labor and Delivery</entry><entry>CONF:97</entry><entry> </entry></row> 
 <row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>paymentSourceAssociation</entry><entry>CONF:100</entry><entry> </entry></row> 
@@ -97,24 +97,23 @@ If the birth occurred in international air space or waters, enter "plane" or "bo
 <row><entry>participatingLocation</entry><entry>participatingLocation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>participatingLocation</entry><entry>CONF:94</entry><entry> </entry></row> 
 <row><entry>risk Factors</entry><entry>risk Factors</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Pregnancy Risk Factor</entry><entry>CONF:99</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="ACT" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.26.31"/>
-  <id root="MDHT" extension="329912846"/>
-  <code code="57074-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Labor and delivery process"/>
+<codeblock id="example"><![CDATA[<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="18662293"/>
+  <code code="730440194"/>
   <effectiveTime>
     <low value="2013"/>
     <high value="2013"/>
   </effectiveTime>
   <performer typeCode="PRF">
     <assignedEntity classCode="ASSIGNED">
-      <id root="MDHT" extension="247186006"/>
+      <id root="MDHT" extension="1539366689"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <assignedPerson classCode="PSN" determinerCode="INSTANCE"/>
     </assignedEntity>
   </performer>
   <participant typeCode="LOC">
     <participantRole classCode="BIRTHPL">
-      <id root="MDHT" extension="361964753"/>
+      <id root="MDHT" extension="1695547858"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <addr/>
       <playingEntity classCode="PLC" determinerCode="INSTANCE"/>
@@ -123,17 +122,16 @@ If the birth occurred in international air space or waters, enter "plane" or "bo
   <entryRelationship typeCode="COMP">
     <observation classCode="OBS" moodCode="EVN">
       <code code="68461-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment source"/>
-      <value xsi:type="CD" code="37921094"/>
+      <value xsi:type="CD" code="481661641"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation/>
   </entryRelationship>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.26.26"/>
-      <id root="MDHT" extension="1614263177"/>
-      <code code="73765-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Planned to delivery at home"/>
+    <observation>
+      <id root="MDHT" extension="1973604153"/>
+      <code code="202999788"/>
       <effectiveTime>
         <low value="2013"/>
         <high value="2013"/>
@@ -141,10 +139,9 @@ If the birth occurred in international air space or waters, enter "plane" or "bo
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.26.35"/>
-      <id root="MDHT" extension="1151760803"/>
-      <code code="73763-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Mother was transferred for maternal medical or fetal indications for delivery"/>
+    <observation>
+      <id root="MDHT" extension="1209441954"/>
+      <code code="610969286"/>
       <effectiveTime>
         <low value="2013"/>
         <high value="2013"/>
@@ -155,10 +152,9 @@ If the birth occurred in international air space or waters, enter "plane" or "bo
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.26.34"/>
-      <id root="MDHT" extension="473161929"/>
-      <code code="73781-7" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Maternal morbidity"/>
+    <observation>
+      <id root="MDHT" extension="476221479"/>
+      <code code="641442679"/>
       <effectiveTime>
         <low value="2013"/>
         <high value="2013"/>
@@ -166,10 +162,9 @@ If the birth occurred in international air space or waters, enter "plane" or "bo
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.26.44"/>
-      <id root="MDHT" extension="996469180"/>
-      <code code="73775-9" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Risk factors in this pregnancy"/>
+    <observation>
+      <id root="MDHT" extension="214475033"/>
+      <code code="289944150"/>
       <effectiveTime>
         <low value="2013"/>
         <high value="2013"/>
