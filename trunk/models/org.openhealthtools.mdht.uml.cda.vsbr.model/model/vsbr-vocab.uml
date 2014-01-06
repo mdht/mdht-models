@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Package xmi:id="_esc8MLSgEeGhbsXY607ygg" name="vsbr-vocab">
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_pBguULutEeGkEvM80TFRNQ" name="Birth Attendant Titles (NCHS)">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_pBguULutEeGkEvM80TFRNQ" name="Birth Attendant Title (NCHS)">
       <ownedComment xmi:id="_d3imYMHmEeGrHfBMjd7c_Q">
         <body>A list of different titles used by birth attendants to denote professional role.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
@@ -19,7 +19,7 @@
       <ownedLiteral xmi:id="_Keh3sLuuEeGkEvM80TFRNQ" name="394841004"/>
       <ownedLiteral xmi:id="_YAS9wB_XEeOYe8LVX7HMMw" name="70028003"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_OcUi8LuuEeGkEvM80TFRNQ" name="Delivery Routes (NCHS)">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_OcUi8LuuEeGkEvM80TFRNQ" name="Delivery Route (NCHS)">
       <ownedComment xmi:id="_ydMusMRKEeGoQ8pWsHTi4g">
         <body>A list of delivery routes that are relevant.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
@@ -40,13 +40,13 @@
       <ownedLiteral xmi:id="_Mrvj4LuzEeGkEvM80TFRNQ" name="394841004"/>
       <ownedLiteral xmi:id="_gF5UQAnQEeOSQLMpSugQSQ" name="261665006"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_QY5LELuzEeGkEvM80TFRNQ" name="Fetal Death Time Points (NCHS)">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_QY5LELuzEeGkEvM80TFRNQ" name="Fetal Death Time Point (NCHS)">
       <ownedComment xmi:id="_ugGVEMRMEeGoQ8pWsHTi4g">
         <body>A list of time points during the delivery process at which the fetal death is thought to have occured.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
-      <ownedLiteral xmi:id="_YQojYLuzEeGkEvM80TFRNQ" name="634751000124116"/>
-      <ownedLiteral xmi:id="_bgejgLuzEeGkEvM80TFRNQ" name="634741000124118"/>
-      <ownedLiteral xmi:id="_e2HCkLuzEeGkEvM80TFRNQ" name="634661000124111"/>
+      <ownedLiteral xmi:id="_YQojYLuzEeGkEvM80TFRNQ" name="434681000124104"/>
+      <ownedLiteral xmi:id="_bgejgLuzEeGkEvM80TFRNQ" name="434671000124102"/>
+      <ownedLiteral xmi:id="_e2HCkLuzEeGkEvM80TFRNQ" name="434631000124100"/>
       <ownedLiteral xmi:id="_hbskwLuzEeGkEvM80TFRNQ" name="261665006"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_WfZfULywEeGUNfs_q_VvNQ" name="Birth and Fetal Death Financial Class (NCHS)">
@@ -79,7 +79,7 @@
       <ownedLiteral xmi:id="_GRg8QL7xEeGdruZFgBKbQw" name="200144004"/>
       <ownedLiteral xmi:id="_JPphUL7xEeGdruZFgBKbQw" name="260413007"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0MnaIL71EeGdruZFgBKbQw" name="Infections Present Treated - Live Birth (NCHS)">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0MnaIL71EeGdruZFgBKbQw" name="Infections Present Treated: Live Birth (NCHS)">
       <ownedComment xmi:id="_1xzdAL76EeGdruZFgBKbQw">
         <body>A list of infections which may be present during pregnancy.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
@@ -90,7 +90,7 @@
       <ownedLiteral xmi:id="_DZvroL72EeGdruZFgBKbQw" name="50711007"/>
       <ownedLiteral xmi:id="_Fx8SEL72EeGdruZFgBKbQw" name="260413007"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_RV75sL72EeGdruZFgBKbQw" name="Infections Present Treated - Fetal Death (NCHS)">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_RV75sL72EeGdruZFgBKbQw" name="Infections Present Treated: Fetal Death (NCHS)">
       <ownedComment xmi:id="_4DwRgL76EeGdruZFgBKbQw">
         <body>A list of infections which may be present during pregnancy. Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
@@ -105,7 +105,7 @@
       <ownedLiteral xmi:id="_nBsbgL72EeGdruZFgBKbQw" name="394841004"/>
       <ownedLiteral xmi:id="_RV75tr72EeGdruZFgBKbQw" name="260413007"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_t2yHML76EeGdruZFgBKbQw" name="Obstetric Procedure  (NCHS)">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_t2yHML76EeGdruZFgBKbQw" name="Obstetric Procedure (NCHS)">
       <ownedComment xmi:id="_9wP6QL76EeGdruZFgBKbQw">
         <body>A list of obstetric procedures which may be performed during pregnancy.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
@@ -130,8 +130,8 @@
       </ownedComment>
       <ownedLiteral xmi:id="_CZx_QL79EeGdruZFgBKbQw" name="236958009"/>
       <ownedLiteral xmi:id="_GB3gQL79EeGdruZFgBKbQw" name="237001001"/>
-      <ownedLiteral xmi:id="_KOstEL79EeGdruZFgBKbQw" name="634621000124113"/>
-      <ownedLiteral xmi:id="_NDUJwL79EeGdruZFgBKbQw" name="634771000124114"/>
+      <ownedLiteral xmi:id="_KOstEL79EeGdruZFgBKbQw" name="434611000124106"/>
+      <ownedLiteral xmi:id="_NDUJwL79EeGdruZFgBKbQw" name="434691000124101"/>
       <ownedLiteral xmi:id="_P-xOQL79EeGdruZFgBKbQw" name="11612004"/>
       <ownedLiteral xmi:id="_VSHXML79EeGdruZFgBKbQw" name="249135009"/>
       <ownedLiteral xmi:id="_XO8QQL79EeGdruZFgBKbQw" name="130955003"/>
@@ -150,20 +150,20 @@
       <ownedLiteral xmi:id="_nDcicL8LEeGJd49YTXcCkg" name="177217006"/>
       <ownedLiteral xmi:id="_pI9dcL8LEeGJd49YTXcCkg" name="260413007"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ROHnEMCOEeGP5fduNvI1Qw" name="Newborn Abnormal Condition  (NCHS)">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ROHnEMCOEeGP5fduNvI1Qw" name="Newborn Abnormal Condition (NCHS)">
       <ownedComment xmi:id="_h6wjgMCOEeGP5fduNvI1Qw">
         <body>A list of disorders or significant morbidities experienced by the newborn.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
-      <ownedLiteral xmi:id="_VtnJ0MCREeGP5fduNvI1Qw" name="AVI"/>
-      <ownedLiteral xmi:id="_9AXiEMCSEeGP5fduNvI1Qw" name="AV6"/>
+      <ownedLiteral xmi:id="_VtnJ0MCREeGP5fduNvI1Qw" name="PHC1250"/>
+      <ownedLiteral xmi:id="_9AXiEMCSEeGP5fduNvI1Qw" name="PHC1251"/>
       <ownedLiteral xmi:id="_AS4bsMCTEeGP5fduNvI1Qw" name="405269005"/>
-      <ownedLiteral xmi:id="_BnO_gMCTEeGP5fduNvI1Qw" name="634801000124111"/>
-      <ownedLiteral xmi:id="_GDr8sMCTEeGP5fduNvI1Qw" name="634641000124112"/>
+      <ownedLiteral xmi:id="_BnO_gMCTEeGP5fduNvI1Qw" name="43470100012410"/>
+      <ownedLiteral xmi:id="_GDr8sMCTEeGP5fduNvI1Qw" name="434621000124103"/>
       <ownedLiteral xmi:id="_KWU2kMCTEeGP5fduNvI1Qw" name="91175000"/>
       <ownedLiteral xmi:id="_OM11IMCTEeGP5fduNvI1Qw" name="56110009"/>
       <ownedLiteral xmi:id="_Qzw0EMCTEeGP5fduNvI1Qw" name="260413007"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Wodv4MCOEeGP5fduNvI1Qw" name="Newborn Congenital Anomaly  (NCHS)">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Wodv4MCOEeGP5fduNvI1Qw" name="Newborn Congenital Anomaly (NCHS)">
       <ownedComment xmi:id="_d5Fd0MCOEeGP5fduNvI1Qw">
         <body>A list of malformations of the newborn or fetus diagnosed prenatally or after delivery.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
@@ -181,7 +181,7 @@
       <ownedLiteral xmi:id="_JQdXgMCPEeGP5fduNvI1Qw" name="416010008"/>
       <ownedLiteral xmi:id="_PnpjEMCPEeGP5fduNvI1Qw" name="260413007"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_HXQlIFqpEeKUiPQlmqLrLg" name="Certifier Titles (NCHS)">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_HXQlIFqpEeKUiPQlmqLrLg" name="Certifier Title (NCHS)">
       <ownedComment xmi:id="_HXQlIVqpEeKUiPQlmqLrLg">
         <body>A list of different titles used by birth attendants to denote professional role.  Note, SNOMED is being used as the primary source for codes within the value set.</body>
       </ownedComment>
@@ -192,7 +192,7 @@
       <ownedLiteral xmi:id="_HXQlJVqpEeKUiPQlmqLrLg" name="75271001"/>
       <ownedLiteral xmi:id="_HXQlJlqpEeKUiPQlmqLrLg" name="394841004"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_p8E5wAnREeOSQLMpSugQSQ" name="Maternal Vital Signs (NCHS)">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_p8E5wAnREeOSQLMpSugQSQ" name="Maternal Vital Sign (NCHS)">
       <ownedComment xmi:id="_f1jY8B8KEeObkflEmglQXA">
         <body>A list of vital sign items captured for a mother.  Note, LOINC is being used as the primary source for codes within the value set.</body>
       </ownedComment>
@@ -208,7 +208,7 @@
       </ownedLiteral>
       <ownedLiteral xmi:id="_Jq-7gAnSEeOSQLMpSugQSQ" name="3137-7"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_SRJgEAnSEeOSQLMpSugQSQ" name="Newborn Vital Signs (NCHS)">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_SRJgEAnSEeOSQLMpSugQSQ" name="Newborn Vital Sign (NCHS)">
       <ownedComment xmi:id="_i44nEB8KEeObkflEmglQXA">
         <body>A list of vital sign information captured for a newborn or delivered fetus.</body>
       </ownedComment>
@@ -239,7 +239,7 @@
 The Source of Payment Typology code system is used as a source for categorizing the payment sources for birth and fetal death related hospitalization.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_6YDEUB_HEeOYe8LVX7HMMw" name="Apgar Assessments (NCHS)">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_6YDEUB_HEeOYe8LVX7HMMw" name="Apgar Assessment (NCHS)">
       <ownedComment xmi:id="_6YDEUR_HEeOYe8LVX7HMMw">
         <body>Note, LOINC is being used as the primary source for codes within the value set.</body>
       </ownedComment>
@@ -252,7 +252,7 @@ The Source of Payment Typology code system is used as a source for categorizing 
       </ownedComment>
       <ownedLiteral xmi:id="_F5BGUEJoEeO_G8MQAkZusQ" name="29240004"/>
       <ownedLiteral xmi:id="_Mp_D0EJoEeO_G8MQAkZusQ" name="44551000009109"/>
-      <ownedLiteral xmi:id="_PoJeEEJoEeO_G8MQAkZusQ" name="634711000124117"/>
+      <ownedLiteral xmi:id="_PoJeEEJoEeO_G8MQAkZusQ" name="434661000124109"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_iexXEEJuEeOTOraTCBgKoQ" name="Histological Placental Examination (NCHS)">
       <ownedComment xmi:id="_iexXEUJuEeOTOraTCBgKoQ">
@@ -270,7 +270,7 @@ The Source of Payment Typology code system is used as a source for categorizing 
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_7fbmkGEXEeOucruFG1usrQ" name="PHIN VS (CDC Local Coding System)"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ASzO8GEYEeOucruFG1usrQ" name="LOINC">
       <ownedComment xmi:id="_ASzO8WEYEeOucruFG1usrQ">
-        <body>A database of universal identifiers for laboratory and other clinical observations. The laboratory portion of the LOINC&amp;reg; database contains the usual categories of chemistry, hematology, serology, microbiology (including parasitology and virology), and toxicology; as well as categories for drugs and the cell counts typically reported on a complete blood count or a cerebrospinal fluid cell count. Antibiotic susceptibilities are a separate category. The clinical portion of the LOINC&amp;reg; database includes entries for vital signs, hemodynamics, intake/output, EKG, obstetric ultrasound, cardiac echo, urologic imaging, gastroendoscopic procedures, pulmonary ventilator management, selected survey instruments, and other clinical observations. For more information visit www.loinc.org</body>
+        <body>A database of universal identifiers for laboratory and other clinical observations. The laboratory portion of the LOINC&amp;reg; database contains the usual categories of chemistry, hematology, serology, microbiology (including parasitology and virology), and toxicology; as well as categories for drugs and the cell counts typically reported on a complete blood count or a cerebrospinal fluid cell count. Antibiotic susceptibilities are a separate category. The clinical portion of the LOINC&amp;reg; database includes entries for vital signs, hemodynamics, intake/output, EKG, obstetric ultrasound, cardiac echo, urologic imaging, gastroendoscopic procedures, pulmonary ventilator management, selected survey instruments, and other clinical observations. For more information, visit www.loinc.org</body>
       </ownedComment>
     </packagedElement>
     <profileApplication xmi:id="_esc8MbSgEeGhbsXY607ygg">
@@ -554,7 +554,7 @@ The Source of Payment Typology code system is used as a source for categorizing 
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_F5BGUUJoEeO_G8MQAkZusQ" conceptName="Autopsy Examination" base_EnumerationLiteral="_F5BGUEJoEeO_G8MQAkZusQ"/>
   <term:ValueSetCode xmi:id="_Mp_D0UJoEeO_G8MQAkZusQ" conceptName="Was an autopsy performed? No" base_EnumerationLiteral="_Mp_D0EJoEeO_G8MQAkZusQ"/>
-  <term:ValueSetCode xmi:id="_PoJeEUJoEeO_G8MQAkZusQ" conceptName="Was an autopsy performed? Planned" base_EnumerationLiteral="_PoJeEEJoEeO_G8MQAkZusQ"/>
+  <term:ValueSetCode xmi:id="_PoJeEUJoEeO_G8MQAkZusQ" conceptName="Autopsy Planned" base_EnumerationLiteral="_PoJeEEJoEeO_G8MQAkZusQ"/>
   <term:ValueSetVersion xmi:id="_iexXFUJuEeOTOraTCBgKoQ" identifier="2.16.840.1.114222.4.11.7138" base_Enumeration="_iexXEEJuEeOTOraTCBgKoQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
