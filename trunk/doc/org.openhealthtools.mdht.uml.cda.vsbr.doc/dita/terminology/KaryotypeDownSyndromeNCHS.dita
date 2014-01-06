@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Karyotype Down Syndrome (NCHS)</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.7116"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Karyotype Down Syndrome (NCHS) - 2.16.840.1.114222.4.11.7116</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Version</entry><entry>December 1, 2013</entry></row>
+<row><entry>Description</entry><entry>Note, SNOMED is being used as the primary source for codes within the value set.
+</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>442124003</entry><entry>SNOMEDCT</entry><entry>Karyotype evaluation abnormal</entry></row>
+<row><entry>312948004</entry><entry>SNOMEDCT</entry><entry>Karyotype determination</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

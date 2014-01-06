@@ -21,7 +21,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:337)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:335), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/NewbornVitalSignsNCHS.dita">Newborn Vital Signs (NCHS)</xref> 2.16.840.1.114222.4.11.7208</tt><b> STATIC</b> December 1, 2013
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:335), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/NewbornVitalSignNCHS.dita">Newborn Vital Sign (NCHS)</xref> 2.16.840.1.114222.4.11.7208</tt><b> STATIC</b> December 1, 2013
 <ul><li><p><lines><i>A code value that indicates the nature of the observation.   The value is drawn from the Newborn Vital Signs value set.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:339)
 <ul><li><p><lines><i>The measured vital sign amount.  The meaning of the observation is dependent on the value of observation code.</i></lines></p></li></ul></li>
@@ -31,25 +31,12 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:337)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:335), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/NewbornVitalSignsNCHS.dita">Newborn Vital Signs (NCHS)</xref> 2.16.840.1.114222.4.11.7208</tt><b> STATIC</b> December 1, 2013
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:335), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/NewbornVitalSignNCHS.dita">Newborn Vital Sign (NCHS)</xref> 2.16.840.1.114222.4.11.7208</tt><b> STATIC</b> December 1, 2013
 <ul><li><p><lines><i>A code value that indicates the nature of the observation.   The value is drawn from the Newborn Vital Signs value set.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:339)
 <ul><li><p><lines><i>The measured vital sign amount.  The meaning of the observation is dependent on the value of observation code.</i></lines></p></li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Newborns Vital Signs Observation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:334</entry><entry> ALRT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:337</entry><entry> DEF</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:335</entry><entry> </entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ANY</entry><entry>CONF:339</entry><entry> </entry></row> 
-<row><entry>newborn's Vital Signs Observation</entry><entry>newborn's Vital Signs Observation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Newborns Vital Signs Observation</entry><entry></entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<observation xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1828630114"/>
-  <code code="579617338"/>
-  <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
-  </effectiveTime>
-</observation>]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Newborns Vital Signs Observation</ph></p>

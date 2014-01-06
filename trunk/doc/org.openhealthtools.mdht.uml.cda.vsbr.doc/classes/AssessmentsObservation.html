@@ -11,7 +11,6 @@
 <meta name="abstract" content="[Observation: templateId 2.16.840.1.113883.10.20.26.47]"/>
 <meta name="description" content="[Observation: templateId 2.16.840.1.113883.10.20.26.47]"/>
 <meta name="DC.Coverage" content="Observation"/>
-<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
 <meta name="DC.Format" content="XHTML"/>
 <meta name="DC.Identifier" content="classId"/>
 <meta name="DC.Language" content="en-us"/>
@@ -53,7 +52,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:337)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:335), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ApgarAssessments.html">Apgar Assessments</a> 2.16.840.1.114222.4.11.7210</tt><strong class="ph b"> STATIC</strong>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:335), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/ApgarAssessmentsNCHS.html">Apgar Assessments (NCHS)</a> 2.16.840.1.114222.4.11.7210</tt><strong class="ph b"> STATIC</strong>
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation.   The value is drawn from the Newborn Vital Signs value set.</em></p>
 </div>
 </li>
@@ -76,10 +75,9 @@
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.26.47"/&gt;
-  &lt;id root="MDHT" extension="151491979"/&gt;
-  &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="1280373023"/&gt;
+  &lt;code code="1915345771"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2013"/&gt;
     &lt;high value="2013"/&gt;
@@ -88,11 +86,6 @@
 
 </div>
 
-<div class="related-links">
-<div class="familylinks">
-<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
-</div>
-</div>
 
 </body>
 </html>

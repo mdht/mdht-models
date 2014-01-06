@@ -38,6 +38,10 @@
 	<chapter format="ditamap" href="introduction/introduction.ditamap"/>
 
 	<chapter format="ditamap" href="content/content.ditamap"/>
+  
+	<chapter format="ditamap" href="introduction/example.ditamap"/>
+	
+	
 
 	<backmatter>
 		<topicref href="References.dita" navtitle="REFERENCES" type="topic"/>

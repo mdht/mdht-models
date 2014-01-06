@@ -40,37 +40,7 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PrenatalCare.dita">Prenatal Care</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.42</tt>)</li></ol><ul><li><p><lines><i>The included entry records information regarding prenatal care received by the mother.</i></lines></p></li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Prenatal Testing and Surveillance Section</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.26.3]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:38</entry><entry> DOCSECT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:40</entry><entry> EVN</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:39</entry><entry>LOINC 2.16.840.1.113883.6.1 57078-8</entry></row> 
-<row><entry>antenatal Testing and Surveillance</entry><entry>antenatal Testing and Surveillance</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Prenatal Testing and Surveillance Section</entry><entry>CONF:16</entry><entry> </entry></row> 
-<row><entry>pre-Natal Care</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.26.42]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Prenatal Care</entry><entry>CONF:42</entry><entry> </entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:41</entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3" classCode="DOCSECT" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.26.3"/>
-  <id root="MDHT" extension="183272325"/>
-  <code code="57078-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Antenatal testing and surveillance"/>
-  <title>TEXT FOR TITLE</title>
-  <text/>
-  <entry>
-    <act classCode="ACT" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.26.42"/>
-      <id root="MDHT" extension="1712570701"/>
-      <code code="73776-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="No-prenatal care"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
-      </effectiveTime>
-      <entryRelationship typeCode="COMP">
-        <observation classCode="OBS" moodCode="EVN">
-          <code code="68493-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prenatal visits for this pregnancy"/>
-        </observation>
-      </entryRelationship>
-    </act>
-  </entry>
-</section>]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Prenatal Testing and Surveillance Section</ph></p>

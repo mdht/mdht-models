@@ -55,7 +55,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The valu
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:337)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:335), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MaternalVitalSigns.html">Maternal Vital Signs</a> 2.16.840.1.114222.4.11.7209</tt><strong class="ph b"> STATIC</strong> December 1, 2013
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:335), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MaternalVitalSignNCHS.html">Maternal Vital Sign (NCHS)</a> 2.16.840.1.114222.4.11.7209</tt><strong class="ph b"> STATIC</strong> December 1, 2013
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation.   The value is drawn from the Maternal Vital Signs value set.</em></p>
 </div>
 </li>
@@ -78,15 +78,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The valu
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.26.46"/&gt;
-  &lt;id root="MDHT" extension="1246606463"/&gt;
-  &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

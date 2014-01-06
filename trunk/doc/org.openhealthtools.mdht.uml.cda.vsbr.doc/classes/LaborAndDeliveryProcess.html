@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Labor and Delivery Process"/>
+<meta name="abstract" content="[Act: templateId 2.16.840.1.113883.10.20.26.31]"/>
+<meta name="description" content="[Act: templateId 2.16.840.1.113883.10.20.26.31]"/>
+<meta name="DC.Coverage" content="Act"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Labor and Delivery Process</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Labor and Delivery Process</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Act: templateId <tt class="ph tt">2.16.840.1.113883.10.20.26.31</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i">The template contains information directly associated with the labor and delivery process.  It captures the act of labor and delivery, and includes information for the birth attendant and location.</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.26.31"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ACT" </tt><em class="ph i">Act</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:89)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:91)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:90)<tt class="ph tt"><strong class="ph b">/@code</strong>="57074-7" </tt><em class="ph i">Labor and delivery process</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - it contains information regarding the labor and delivery process.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF:92) <div class="p"><p class="lines"><em class="ph i">Information on the person attending the birth.</em></p>
+</div>
+<ol class="ol" type="a"><li class="li"> This performer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="PRF" </tt> (CONF:101)</li>
+<li class="li"> This performer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:102) <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ASSIGNED" </tt> (CONF:103)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:104)<div class="p"><p class="lines"><em class="ph i">An identifier for the birth attendant.  The national provider id is expected.  A state registration id may be provided as well.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</em></p>
+</div>
+</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:106), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/BirthAttendantTitleNCHS.html">Birth Attendant Title (NCHS)</a> 2.16.840.1.114222.4.11.7111</tt><strong class="ph b"> STATIC</strong> December 1, 2013 (CONF:107)<div class="p"><p class="lines"><em class="ph i">An indication of the professional qualification of the birth attendant.  Their title.  If the code - 394841004 (other category) - is chosen, the original text property is used to record a text value.</em></p>
+</div>
+</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PSN" </tt> (CONF:108)</li>
+<li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@determinerCode</strong>="INSTANCE" </tt> (CONF:109)</li>
+<li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:110)<div class="p"><p class="lines"><em class="ph i">The name of the birth attendant</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:94) <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="LOC" </tt> (CONF:118)</li>
+<li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> (CONF:117) <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="BIRTHPL" </tt> (CONF:119)</li>
+<li class="li"> This participantRole <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:120)<div class="p"><p class="lines"><em class="ph i">An identifer for the facility within which the delivery took place.  This attribute is not relevant if the birth took place outside of a health care facility.  The attribute repeats to allow entry of both state and nationally assigned identifiers.  Within the II data type, use the root to record the identifying OID for the namespace that the identifier value is drawn from.</em></p>
+</div>
+</li>
+<li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:121), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/BirthDeliveryLocationNCHS.html">Birth Delivery Location (NCHS)</a> 2.16.840.1.114222.4.11.7124</tt><strong class="ph b"> STATIC</strong> December 1, 2013 (CONF:122)<div class="p"><p class="lines"><em class="ph i">A code that indicates the type of facility or place at which the delivery took place.</em></p>
+</div>
+</li>
+<li class="li"> This participantRole <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:123)<div class="p"><p class="lines"><em class="ph i">The address for the place where the delivery took place.  It is collected in those cases where the delivery did not occur within a healthcare facility.</em></p>
+</div>
+</li>
+<li class="li"> This participantRole <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">playingEntity</strong></tt> (CONF:124) <ol class="ol"><li class="li"> This playingEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PLC" </tt> (CONF:127)</li>
+<li class="li"> This playingEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@determinerCode</strong>="INSTANCE" </tt> (CONF:128)</li>
+<li class="li"> This playingEntity <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:126)<div class="p"><p class="lines"><em class="ph i">The name of the facility at which the delivery took place.</em></p>
+</div>
+</li>
+<li class="li"> This playingEntity <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">desc</strong></tt> (CONF:125)<div class="p"><p class="lines"><em class="ph i">A description of the place where the birth took place.  The attribute is used for those cases in which the delivery occurred neither at a healthcare facility, nor at a place with a defined postal address.  If this birth occurred en route, that is, in a moving conveyance, enter the city, town, village, or location where the child was first removed from the conveyance.<br/>
+If the birth occurred in international air space or waters, enter "plane" or "boat."</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:95)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Information on whether or not a home birth was planned is only collected for births that take place at  home.</em></p>
+</div>
+</li>
+</ul>
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PlannedHomeBirth.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.26]">Planned Home Birth</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.26</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:96)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MaternalTransfer.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.35]">Maternal Transfer</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.35</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:97)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Characteristics of labor and delivery information is collected for a live birth certificate, but not for a fetal death report.</em></p>
+</div>
+</li>
+</ul>
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="CharacteristicOfLaborAndDelivery.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.18]">Characteristic of Labor and Delivery</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.18</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:98)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MaternalMorbidity.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.34]">Maternal Morbidity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.34</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:99)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">There may be multiple risk factors recorded.  At least one observation will be present in the case that none of cited risk factors are present.</em></p>
+</div>
+</li>
+</ul>
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PregnancyRiskFactor.html" title="[Observation: templateId 2.16.840.1.113883.10.20.26.44]">Pregnancy Risk Factor</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.26.44</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:100) <div class="p"><p class="lines"><em class="ph i">Information on the source of payment for the delivery.  Not collected for a fetal death report.</em></p>
+</div>
+<ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt> (CONF:111)</li>
+<li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:112) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:113)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:115)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:114)<tt class="ph tt"><strong class="ph b">/@code</strong>="68461-3" </tt><em class="ph i">Payment source</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)<div class="p"><p class="lines"><em class="ph i">A code value that indicates the nature of the observation - that it includes payment source information.</em></p>
+</div>
+</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:116), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/BirthAndFetalDeathFinancialClassNCHS.html">Birth and Fetal Death Financial Class (NCHS)</a> 2.16.840.1.114222.4.11.7163</tt><strong class="ph b"> STATIC</strong> December 1, 2013<div class="p"><p class="lines"><em class="ph i">Information to identify the source of payment for charges associated with delivering the baby.</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Labor and Delivery Process example</strong></p>
+
+
+
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>
