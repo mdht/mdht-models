@@ -112,9 +112,9 @@ public class PrenatalTestingandSurveillanceSectionImpl extends SectionImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validatePrenatalTestingandSurveillanceSectionPreNatalCare(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validatePrenatalTestingandSurveillanceSectionPrenatalCare(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return PrenatalTestingandSurveillanceSectionOperations.validatePrenatalTestingandSurveillanceSectionPreNatalCare(this, diagnostics, context);
+    return PrenatalTestingandSurveillanceSectionOperations.validatePrenatalTestingandSurveillanceSectionPrenatalCare(this, diagnostics, context);
   }
 
   /**
@@ -122,9 +122,9 @@ public class PrenatalTestingandSurveillanceSectionImpl extends SectionImpl imple
    * <!-- end-user-doc -->
    * @generated
    */
-  public PrenatalCare getPreNatalCare()
+  public PrenatalCare getPrenatalCare()
   {
-    return PrenatalTestingandSurveillanceSectionOperations.getPreNatalCare(this);
+    return PrenatalTestingandSurveillanceSectionOperations.getPrenatalCare(this);
   }
 
   /**

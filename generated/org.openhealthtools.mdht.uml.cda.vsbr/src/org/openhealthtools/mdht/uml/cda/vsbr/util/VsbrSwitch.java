@@ -174,14 +174,14 @@ public class VsbrSwitch<T> {
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case VsbrPackage.NUMBEROF_LIVE_BIRTHSNOW_DEAD:
+      case VsbrPackage.NUMBEROF_LIVE_BIRTHS_NOW_DEAD:
       {
-        NumberofLiveBirthsnowDead numberofLiveBirthsnowDead = (NumberofLiveBirthsnowDead)theEObject;
-        T result = caseNumberofLiveBirthsnowDead(numberofLiveBirthsnowDead);
-        if (result == null) result = caseObservation(numberofLiveBirthsnowDead);
-        if (result == null) result = caseClinicalStatement(numberofLiveBirthsnowDead);
-        if (result == null) result = caseAct(numberofLiveBirthsnowDead);
-        if (result == null) result = caseInfrastructureRoot(numberofLiveBirthsnowDead);
+        NumberofLiveBirthsNowDead numberofLiveBirthsNowDead = (NumberofLiveBirthsNowDead)theEObject;
+        T result = caseNumberofLiveBirthsNowDead(numberofLiveBirthsNowDead);
+        if (result == null) result = caseObservation(numberofLiveBirthsNowDead);
+        if (result == null) result = caseClinicalStatement(numberofLiveBirthsNowDead);
+        if (result == null) result = caseAct(numberofLiveBirthsNowDead);
+        if (result == null) result = caseInfrastructureRoot(numberofLiveBirthsNowDead);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -336,14 +336,14 @@ public class VsbrSwitch<T> {
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case VsbrPackage.ASSESSMENTS_OBSERVATION:
+      case VsbrPackage.ASSESSMENT_OBSERVATION:
       {
-        AssessmentsObservation assessmentsObservation = (AssessmentsObservation)theEObject;
-        T result = caseAssessmentsObservation(assessmentsObservation);
-        if (result == null) result = caseObservation(assessmentsObservation);
-        if (result == null) result = caseClinicalStatement(assessmentsObservation);
-        if (result == null) result = caseAct(assessmentsObservation);
-        if (result == null) result = caseInfrastructureRoot(assessmentsObservation);
+        AssessmentObservation assessmentObservation = (AssessmentObservation)theEObject;
+        T result = caseAssessmentObservation(assessmentObservation);
+        if (result == null) result = caseObservation(assessmentObservation);
+        if (result == null) result = caseClinicalStatement(assessmentObservation);
+        if (result == null) result = caseAct(assessmentObservation);
+        if (result == null) result = caseInfrastructureRoot(assessmentObservation);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -357,14 +357,14 @@ public class VsbrSwitch<T> {
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case VsbrPackage.LABORAND_DELIVERY_INFORMATION:
+      case VsbrPackage.LABORAND_DELIVERY_PROCESS:
       {
-        LaborandDeliveryInformation laborandDeliveryInformation = (LaborandDeliveryInformation)theEObject;
-        T result = caseLaborandDeliveryInformation(laborandDeliveryInformation);
-        if (result == null) result = caseCDA_Act(laborandDeliveryInformation);
-        if (result == null) result = caseClinicalStatement(laborandDeliveryInformation);
-        if (result == null) result = caseAct(laborandDeliveryInformation);
-        if (result == null) result = caseInfrastructureRoot(laborandDeliveryInformation);
+        LaborandDeliveryProcess laborandDeliveryProcess = (LaborandDeliveryProcess)theEObject;
+        T result = caseLaborandDeliveryProcess(laborandDeliveryProcess);
+        if (result == null) result = caseCDA_Act(laborandDeliveryProcess);
+        if (result == null) result = caseClinicalStatement(laborandDeliveryProcess);
+        if (result == null) result = caseAct(laborandDeliveryProcess);
+        if (result == null) result = caseInfrastructureRoot(laborandDeliveryProcess);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -694,21 +694,22 @@ public class VsbrSwitch<T> {
   }
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Numberof Live Birthsnow Dead</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Numberof Live Births Now Dead</em>'.
    * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Numberof Live Birthsnow Dead</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Numberof Live Births Now Dead</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-	public T caseNumberofLiveBirthsnowDead(NumberofLiveBirthsnowDead object) {
+  public T caseNumberofLiveBirthsNowDead(NumberofLiveBirthsNowDead object)
+  {
     return null;
   }
 
-	/**
+  /**
    * Returns the result of interpreting the object as an instance of '<em>Other Pregnancy Outcome</em>'.
    * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -920,21 +921,22 @@ public class VsbrSwitch<T> {
   }
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Laborand Delivery Information</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Laborand Delivery Process</em>'.
    * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Laborand Delivery Information</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Laborand Delivery Process</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-	public T caseLaborandDeliveryInformation(LaborandDeliveryInformation object) {
+  public T caseLaborandDeliveryProcess(LaborandDeliveryProcess object)
+  {
     return null;
   }
 
-	/**
+  /**
    * Returns the result of interpreting the object as an instance of '<em>Characteristicof Laborand Delivery</em>'.
    * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1026,6 +1028,22 @@ public class VsbrSwitch<T> {
   }
 
   /**
+   * Returns the result of interpreting the object as an instance of '<em>Assessment Observation</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Assessment Observation</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseAssessmentObservation(AssessmentObservation object)
+  {
+    return null;
+  }
+
+  /**
    * Returns the result of interpreting the object as an instance of '<em>Mothers Vital Signs Section</em>'.
    * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1041,22 +1059,6 @@ public class VsbrSwitch<T> {
   }
 
 	/**
-   * Returns the result of interpreting the object as an instance of '<em>Assessments Observation</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Assessments Observation</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseAssessmentsObservation(AssessmentsObservation object)
-  {
-    return null;
-  }
-
-  /**
    * Returns the result of interpreting the object as an instance of '<em>Mothers Vital Signs Observation</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;

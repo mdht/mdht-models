@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage#getFetalDeliverySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Fetal Delivery SectionTemplateId Fetal Delivery SectionClassCode Fetal Delivery SectionMoodCode Fetal Delivery SectionCode Fetal Delivery SectionText Fetal Delivery SectionBirth Order Fetal Delivery SectionNumber of Infants Born Alive Fetal Delivery SectionFetal Death Occurrance Fetal Delivery SectionPlurality Fetal Delivery SectionCongenital Anomalies Fetal Delivery SectionFetal Delivery Time Fetal Delivery SectionFetalDeliverySubject Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus Fetal Delivery SectionFetalDeliverySubjectTypeCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus' templateId.root='2.16.840.1.113883.10.20.26.4' classCode='DOCSECT' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.warning='Fetal Delivery SectionAutopsy Performance' constraints.validation.query='Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusName Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus Fetal Delivery SectionFetalDeliverySubjectTypeCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus' constraints.validation.info='Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusName'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Fetal Delivery SectionTemplateId Fetal Delivery SectionClassCode Fetal Delivery SectionMoodCode Fetal Delivery SectionCode Fetal Delivery SectionText Fetal Delivery SectionBirthOrder Fetal Delivery SectionNumberOfInfantsBornAlive Fetal Delivery SectionFetalDeathOccurrance Fetal Delivery SectionPlurality Fetal Delivery SectionCongenitalAnomaly Fetal Delivery SectionFetalDeliveryTime Fetal Delivery SectionFetalDeliverySubject Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus Fetal Delivery SectionFetalDeliverySubjectTypeCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus' templateId.root='2.16.840.1.113883.10.20.26.4' classCode='DOCSECT' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.warning='Fetal Delivery SectionAutopsyPerformance' constraints.validation.query='Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusName Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus Fetal Delivery SectionFetalDeliverySubjectTypeCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus' constraints.validation.info='Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusName'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliverySectionFetalDeliverySubject typeCode='SBJ' constraints.validation.error='FetalDeliverySubjectTypeCode FetalDeliverySubjectRoleOfFetus'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliverySectionFetalDeliverySubjectRoleOfFetus classCode='PRS' constraints.validation.error='RoleOfFetusClassCode RoleOfFetusFetus'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetus classCode='PSN' constraints.validation.error='FetusClassCode FetusDeterminerCode FetusAdministrativeGenderCode FetusAdministrativeGenderCodeP' determinerCode='INSTANCE' constraints.validation.info='FetusName' administrativeGenderCode.codeSystem='2.16.840.1.113883.5.1' administrativeGenderCode.codeSystemName='AdministrativeGenderCode'"
@@ -107,7 +107,7 @@ public interface FetalDeliverySection extends Section {
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -115,10 +115,9 @@ public interface FetalDeliverySection extends Section {
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Number of Infants Born Alive) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
    * @generated
    */
-	boolean validateFetalDeliverySectionNumberofInfantsBornAlive(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+  boolean validateFetalDeliverySectionNumberOfInfantsBornAlive(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
@@ -156,7 +155,7 @@ public interface FetalDeliverySection extends Section {
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -164,9 +163,9 @@ public interface FetalDeliverySection extends Section {
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Congenital Anomaly) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
    * @generated
    */
-	boolean validateFetalDeliverySectionCongenitalAnomalies(DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validateFetalDeliverySectionCongenitalAnomaly(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
@@ -318,14 +317,14 @@ public interface FetalDeliverySection extends Section {
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Number of Infants Born Alive))->asSequence()->any(true).oclAsType(vsbr::Number of Infants Born Alive)'"
    * @generated
    */
-	NumberofInfantsBornAlive getNumberofInfantsBornAlive();
+  NumberofInfantsBornAlive getNumberOfInfantsBornAlive();
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
@@ -354,14 +353,14 @@ public interface FetalDeliverySection extends Section {
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Congenital Anomaly)).oclAsType(vsbr::Congenital Anomaly)'"
    * @generated
    */
-	EList<CongenitalAnomaly> getCongenitalAnomaliess();
+  EList<CongenitalAnomaly> getCongenitalAnomalies();
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"

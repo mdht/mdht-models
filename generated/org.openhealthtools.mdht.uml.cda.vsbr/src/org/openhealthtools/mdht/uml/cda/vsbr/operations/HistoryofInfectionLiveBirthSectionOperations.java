@@ -270,7 +270,7 @@ public class HistoryofInfectionLiveBirthSectionOperations extends SectionOperati
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Infection Present - Live Birth))";
+  protected static final String VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Infection Present: Live Birth))";
 
   /**
    * The cached OCL invariant for the '{@link #validateHistoryofInfectionLiveBirthSectionInfectionPresentLiveBirth(HistoryofInfectionLiveBirthSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Historyof Infection Live Birth Section Infection Present Live Birth</em>}' invariant operation.
@@ -336,7 +336,7 @@ public class HistoryofInfectionLiveBirthSectionOperations extends SectionOperati
    * @generated
    * @ordered
    */
-  protected static final String GET_INFECTION_PRESENT_LIVE_BIRTHS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Infection Present - Live Birth)).oclAsType(vsbr::Infection Present - Live Birth)";
+  protected static final String GET_INFECTION_PRESENT_LIVE_BIRTHS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Infection Present: Live Birth)).oclAsType(vsbr::Infection Present: Live Birth)";
 
   /**
    * The cached OCL query for the '{@link #getInfectionPresentLiveBirths(HistoryofInfectionLiveBirthSection) <em>Get Infection Present Live Births</em>}' query operation.

@@ -321,8 +321,8 @@ public class ObstetricProcedureOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_OBSTETRIC_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+	protected static final String VALIDATE_OBSTETRIC_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
 "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '265636007' or value.code = '103747003' or value.code = '240278000' or value.code = '260413007'))";
 
 	/**
@@ -388,7 +388,7 @@ public class ObstetricProcedureOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_OBSTETRIC_PROCEDURE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+	protected static final String VALIDATE_OBSTETRIC_PROCEDURE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsTypeOf(datatypes::CE))";
 
 	/**
    * The cached OCL invariant for the '{@link #validateObstetricProcedureCodeP(ObstetricProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Obstetric Procedure Code P</em>}' invariant operation.

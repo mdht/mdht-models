@@ -1805,295 +1805,295 @@ public interface VsbrPackage extends EPackage {
 	int NUMBEROF_BIRTHS_NOW_LIVING_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
-     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.NumberofLiveBirthsnowDeadImpl <em>Numberof Live Birthsnow Dead</em>}' class.
+     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.NumberofLiveBirthsNowDeadImpl <em>Numberof Live Births Now Dead</em>}' class.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.NumberofLiveBirthsnowDeadImpl
-     * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.VsbrPackageImpl#getNumberofLiveBirthsnowDead()
+     * <!-- end-user-doc -->
+     * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.NumberofLiveBirthsNowDeadImpl
+     * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.VsbrPackageImpl#getNumberofLiveBirthsNowDead()
      * @generated
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD = 7;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD = 7;
 
-	/**
+  /**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
 
-	/**
+  /**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
 
-	/**
+  /**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
 
-	/**
+  /**
      * The feature id for the '<em><b>Id</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__ID = CDAPackage.OBSERVATION__ID;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__ID = CDAPackage.OBSERVATION__ID;
 
-	/**
+  /**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__CODE = CDAPackage.OBSERVATION__CODE;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__CODE = CDAPackage.OBSERVATION__CODE;
 
-	/**
+  /**
      * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
-	/**
+  /**
      * The feature id for the '<em><b>Text</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__TEXT = CDAPackage.OBSERVATION__TEXT;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__TEXT = CDAPackage.OBSERVATION__TEXT;
 
-	/**
+  /**
      * The feature id for the '<em><b>Status Code</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
 
-	/**
+  /**
      * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
-	/**
+  /**
      * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
 
-	/**
+  /**
      * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
-	/**
+  /**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
-	/**
+  /**
      * The feature id for the '<em><b>Value</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__VALUE = CDAPackage.OBSERVATION__VALUE;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__VALUE = CDAPackage.OBSERVATION__VALUE;
 
-	/**
+  /**
      * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
-	/**
+  /**
      * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
 
-	/**
+  /**
      * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
-	/**
+  /**
      * The feature id for the '<em><b>Subject</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
 
-	/**
+  /**
      * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
 
-	/**
+  /**
      * The feature id for the '<em><b>Performer</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
 
-	/**
+  /**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
 
-	/**
+  /**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
 
-	/**
+  /**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
 
-	/**
+  /**
      * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
-	/**
+  /**
      * The feature id for the '<em><b>Reference</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
 
-	/**
+  /**
      * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
 
-	/**
+  /**
      * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
-	/**
+  /**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
 
-	/**
+  /**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
 
-	/**
+  /**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
 
-	/**
+  /**
      * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
-	/**
-     * The number of structural features of the '<em>Numberof Live Birthsnow Dead</em>' class.
+  /**
+     * The number of structural features of the '<em>Numberof Live Births Now Dead</em>' class.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int NUMBEROF_LIVE_BIRTHSNOW_DEAD_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+    int NUMBEROF_LIVE_BIRTHS_NOW_DEAD_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
-	/**
+  /**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.OtherPregnancyOutcomeImpl <em>Other Pregnancy Outcome</em>}' class.
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5645,16 +5645,6 @@ public interface VsbrPackage extends EPackage {
 	int LABORAND_DELIVERY_SECTION = 23;
 
 	/**
-     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.LaborandDeliveryInformationImpl <em>Laborand Delivery Information</em>}' class.
-     * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.LaborandDeliveryInformationImpl
-     * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.VsbrPackageImpl#getLaborandDeliveryInformation()
-     * @generated
-     */
-	int LABORAND_DELIVERY_INFORMATION = 24;
-
-	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.CharacteristicofLaborandDeliveryImpl <em>Characteristicof Laborand Delivery</em>}' class.
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5886,6 +5876,295 @@ public interface VsbrPackage extends EPackage {
     int ASSESSMENTS_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
 
   /**
+     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.AssessmentObservationImpl <em>Assessment Observation</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.AssessmentObservationImpl
+     * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.VsbrPackageImpl#getAssessmentObservation()
+     * @generated
+     */
+    int ASSESSMENT_OBSERVATION = 22;
+
+  /**
+     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+
+  /**
+     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+
+  /**
+     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+
+  /**
+     * The feature id for the '<em><b>Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+
+  /**
+     * The feature id for the '<em><b>Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+
+  /**
+     * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+
+  /**
+     * The feature id for the '<em><b>Text</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+
+  /**
+     * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+
+  /**
+     * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+
+  /**
+     * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+
+  /**
+     * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+
+  /**
+     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+
+  /**
+     * The feature id for the '<em><b>Value</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+
+  /**
+     * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+
+  /**
+     * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+
+  /**
+     * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+
+  /**
+     * The feature id for the '<em><b>Subject</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+
+  /**
+     * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+
+  /**
+     * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+
+  /**
+     * The feature id for the '<em><b>Author</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+
+  /**
+     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+
+  /**
+     * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+
+  /**
+     * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+
+  /**
+     * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+
+  /**
+     * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+
+  /**
+     * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+
+  /**
+     * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+
+  /**
+     * The feature id for the '<em><b>Class Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+
+  /**
+     * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+
+  /**
+     * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+  /**
+     * The number of structural features of the '<em>Assessment Observation</em>' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSESSMENT_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+
+  /**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.MothersVitalSignsSectionImpl <em>Mothers Vital Signs Section</em>}' class.
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5896,16 +6175,6 @@ public interface VsbrPackage extends EPackage {
 	int MOTHERS_VITAL_SIGNS_SECTION = 34;
 
 	/**
-     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.AssessmentsObservationImpl <em>Assessments Observation</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.AssessmentsObservationImpl
-     * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.VsbrPackageImpl#getAssessmentsObservation()
-     * @generated
-     */
-    int ASSESSMENTS_OBSERVATION = 22;
-
-  /**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.MothersVitalSignsObservationImpl <em>Mothers Vital Signs Observation</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -6044,285 +6313,6 @@ public interface VsbrPackage extends EPackage {
      * @generated
      */
     int INFECTION_PRESENT_LIVE_BIRTH = 37;
-
-  /**
-     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
-
-  /**
-     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
-
-  /**
-     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
-
-  /**
-     * The feature id for the '<em><b>Id</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
-
-  /**
-     * The feature id for the '<em><b>Code</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
-
-  /**
-     * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
-
-  /**
-     * The feature id for the '<em><b>Text</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
-
-  /**
-     * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
-
-  /**
-     * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
-
-  /**
-     * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
-
-  /**
-     * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
-
-  /**
-     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
-
-  /**
-     * The feature id for the '<em><b>Value</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
-
-  /**
-     * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
-
-  /**
-     * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
-
-  /**
-     * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
-
-  /**
-     * The feature id for the '<em><b>Subject</b></em>' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
-
-  /**
-     * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
-
-  /**
-     * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
-
-  /**
-     * The feature id for the '<em><b>Author</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
-
-  /**
-     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
-
-  /**
-     * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
-
-  /**
-     * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
-
-  /**
-     * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
-
-  /**
-     * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
-
-  /**
-     * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
-
-  /**
-     * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
-
-  /**
-     * The feature id for the '<em><b>Class Code</b></em>' attribute.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
-
-  /**
-     * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
-
-  /**
-     * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
-
-  /**
-     * The number of structural features of the '<em>Assessments Observation</em>' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-    int ASSESSMENTS_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
   /**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -6496,220 +6486,230 @@ public interface VsbrPackage extends EPackage {
 	int LABORAND_DELIVERY_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
 
   /**
+     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.LaborandDeliveryProcessImpl <em>Laborand Delivery Process</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.LaborandDeliveryProcessImpl
+     * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.VsbrPackageImpl#getLaborandDeliveryProcess()
+     * @generated
+     */
+    int LABORAND_DELIVERY_PROCESS = 24;
+
+  /**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__REALM_CODE = CDAPackage.ACT__REALM_CODE;
+    int LABORAND_DELIVERY_PROCESS__REALM_CODE = CDAPackage.ACT__REALM_CODE;
 
   /**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__TYPE_ID = CDAPackage.ACT__TYPE_ID;
+    int LABORAND_DELIVERY_PROCESS__TYPE_ID = CDAPackage.ACT__TYPE_ID;
 
   /**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
+    int LABORAND_DELIVERY_PROCESS__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
 
   /**
      * The feature id for the '<em><b>Id</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__ID = CDAPackage.ACT__ID;
+    int LABORAND_DELIVERY_PROCESS__ID = CDAPackage.ACT__ID;
 
   /**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__CODE = CDAPackage.ACT__CODE;
+    int LABORAND_DELIVERY_PROCESS__CODE = CDAPackage.ACT__CODE;
 
   /**
      * The feature id for the '<em><b>Text</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__TEXT = CDAPackage.ACT__TEXT;
+    int LABORAND_DELIVERY_PROCESS__TEXT = CDAPackage.ACT__TEXT;
 
   /**
      * The feature id for the '<em><b>Status Code</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
+    int LABORAND_DELIVERY_PROCESS__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
 
   /**
      * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
+    int LABORAND_DELIVERY_PROCESS__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
 
   /**
      * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
+    int LABORAND_DELIVERY_PROCESS__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
 
   /**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
+    int LABORAND_DELIVERY_PROCESS__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
 
   /**
      * The feature id for the '<em><b>Subject</b></em>' containment reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__SUBJECT = CDAPackage.ACT__SUBJECT;
+    int LABORAND_DELIVERY_PROCESS__SUBJECT = CDAPackage.ACT__SUBJECT;
 
   /**
      * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__SPECIMEN = CDAPackage.ACT__SPECIMEN;
+    int LABORAND_DELIVERY_PROCESS__SPECIMEN = CDAPackage.ACT__SPECIMEN;
 
   /**
      * The feature id for the '<em><b>Performer</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__PERFORMER = CDAPackage.ACT__PERFORMER;
+    int LABORAND_DELIVERY_PROCESS__PERFORMER = CDAPackage.ACT__PERFORMER;
 
   /**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__AUTHOR = CDAPackage.ACT__AUTHOR;
+    int LABORAND_DELIVERY_PROCESS__AUTHOR = CDAPackage.ACT__AUTHOR;
 
   /**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__INFORMANT = CDAPackage.ACT__INFORMANT;
+    int LABORAND_DELIVERY_PROCESS__INFORMANT = CDAPackage.ACT__INFORMANT;
 
   /**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
+    int LABORAND_DELIVERY_PROCESS__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
 
   /**
      * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
+    int LABORAND_DELIVERY_PROCESS__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
 
   /**
      * The feature id for the '<em><b>Reference</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__REFERENCE = CDAPackage.ACT__REFERENCE;
+    int LABORAND_DELIVERY_PROCESS__REFERENCE = CDAPackage.ACT__REFERENCE;
 
   /**
      * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__PRECONDITION = CDAPackage.ACT__PRECONDITION;
+    int LABORAND_DELIVERY_PROCESS__PRECONDITION = CDAPackage.ACT__PRECONDITION;
 
   /**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+    int LABORAND_DELIVERY_PROCESS__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
 
   /**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
+    int LABORAND_DELIVERY_PROCESS__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
 
   /**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
+    int LABORAND_DELIVERY_PROCESS__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
 
   /**
      * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
+    int LABORAND_DELIVERY_PROCESS__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
 
   /**
-     * The number of structural features of the '<em>Laborand Delivery Information</em>' class.
+     * The number of structural features of the '<em>Laborand Delivery Process</em>' class.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int LABORAND_DELIVERY_INFORMATION_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
+    int LABORAND_DELIVERY_PROCESS_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
 
   /**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -11750,16 +11750,16 @@ public interface VsbrPackage extends EPackage {
 	EClass getNumberofBirthsNowLiving();
 
 	/**
-     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsnowDead <em>Numberof Live Birthsnow Dead</em>}'.
+     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead <em>Numberof Live Births Now Dead</em>}'.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @return the meta object for class '<em>Numberof Live Birthsnow Dead</em>'.
-     * @see org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsnowDead
+     * <!-- end-user-doc -->
+     * @return the meta object for class '<em>Numberof Live Births Now Dead</em>'.
+     * @see org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead
      * @generated
      */
-	EClass getNumberofLiveBirthsnowDead();
+    EClass getNumberofLiveBirthsNowDead();
 
-	/**
+  /**
      * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.vsbr.OtherPregnancyOutcome <em>Other Pregnancy Outcome</em>}'.
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11900,16 +11900,16 @@ public interface VsbrPackage extends EPackage {
 	EClass getLaborandDeliverySection();
 
 	/**
-     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryInformation <em>Laborand Delivery Information</em>}'.
+     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcess <em>Laborand Delivery Process</em>}'.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @return the meta object for class '<em>Laborand Delivery Information</em>'.
-     * @see org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryInformation
+     * <!-- end-user-doc -->
+     * @return the meta object for class '<em>Laborand Delivery Process</em>'.
+     * @see org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcess
      * @generated
      */
-	EClass getLaborandDeliveryInformation();
+    EClass getLaborandDeliveryProcess();
 
-	/**
+  /**
      * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.vsbr.CharacteristicofLaborandDelivery <em>Characteristicof Laborand Delivery</em>}'.
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11970,6 +11970,16 @@ public interface VsbrPackage extends EPackage {
     EClass getAssessmentsSection();
 
   /**
+     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.vsbr.AssessmentObservation <em>Assessment Observation</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for class '<em>Assessment Observation</em>'.
+     * @see org.openhealthtools.mdht.uml.cda.vsbr.AssessmentObservation
+     * @generated
+     */
+    EClass getAssessmentObservation();
+
+  /**
      * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.vsbr.MothersVitalSignsSection <em>Mothers Vital Signs Section</em>}'.
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11980,16 +11990,6 @@ public interface VsbrPackage extends EPackage {
 	EClass getMothersVitalSignsSection();
 
 	/**
-     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsObservation <em>Assessments Observation</em>}'.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @return the meta object for class '<em>Assessments Observation</em>'.
-     * @see org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsObservation
-     * @generated
-     */
-    EClass getAssessmentsObservation();
-
-  /**
      * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.vsbr.MothersVitalSignsObservation <em>Mothers Vital Signs Observation</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -12222,16 +12222,16 @@ public interface VsbrPackage extends EPackage {
 		EClass NUMBEROF_BIRTHS_NOW_LIVING = eINSTANCE.getNumberofBirthsNowLiving();
 
 		/**
-         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.NumberofLiveBirthsnowDeadImpl <em>Numberof Live Birthsnow Dead</em>}' class.
+         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.NumberofLiveBirthsNowDeadImpl <em>Numberof Live Births Now Dead</em>}' class.
          * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-         * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.NumberofLiveBirthsnowDeadImpl
-         * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.VsbrPackageImpl#getNumberofLiveBirthsnowDead()
+         * <!-- end-user-doc -->
+         * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.NumberofLiveBirthsNowDeadImpl
+         * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.VsbrPackageImpl#getNumberofLiveBirthsNowDead()
          * @generated
          */
-		EClass NUMBEROF_LIVE_BIRTHSNOW_DEAD = eINSTANCE.getNumberofLiveBirthsnowDead();
+        EClass NUMBEROF_LIVE_BIRTHS_NOW_DEAD = eINSTANCE.getNumberofLiveBirthsNowDead();
 
-		/**
+    /**
          * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.OtherPregnancyOutcomeImpl <em>Other Pregnancy Outcome</em>}' class.
          * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -12372,16 +12372,16 @@ public interface VsbrPackage extends EPackage {
 		EClass LABORAND_DELIVERY_SECTION = eINSTANCE.getLaborandDeliverySection();
 
 		/**
-         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.LaborandDeliveryInformationImpl <em>Laborand Delivery Information</em>}' class.
+         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.LaborandDeliveryProcessImpl <em>Laborand Delivery Process</em>}' class.
          * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-         * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.LaborandDeliveryInformationImpl
-         * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.VsbrPackageImpl#getLaborandDeliveryInformation()
+         * <!-- end-user-doc -->
+         * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.LaborandDeliveryProcessImpl
+         * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.VsbrPackageImpl#getLaborandDeliveryProcess()
          * @generated
          */
-		EClass LABORAND_DELIVERY_INFORMATION = eINSTANCE.getLaborandDeliveryInformation();
+        EClass LABORAND_DELIVERY_PROCESS = eINSTANCE.getLaborandDeliveryProcess();
 
-		/**
+    /**
          * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.CharacteristicofLaborandDeliveryImpl <em>Characteristicof Laborand Delivery</em>}' class.
          * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -12442,6 +12442,16 @@ public interface VsbrPackage extends EPackage {
         EClass ASSESSMENTS_SECTION = eINSTANCE.getAssessmentsSection();
 
     /**
+         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.AssessmentObservationImpl <em>Assessment Observation</em>}' class.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.AssessmentObservationImpl
+         * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.VsbrPackageImpl#getAssessmentObservation()
+         * @generated
+         */
+        EClass ASSESSMENT_OBSERVATION = eINSTANCE.getAssessmentObservation();
+
+    /**
          * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.MothersVitalSignsSectionImpl <em>Mothers Vital Signs Section</em>}' class.
          * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -12452,16 +12462,6 @@ public interface VsbrPackage extends EPackage {
 		EClass MOTHERS_VITAL_SIGNS_SECTION = eINSTANCE.getMothersVitalSignsSection();
 
 		/**
-         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.AssessmentsObservationImpl <em>Assessments Observation</em>}' class.
-         * <!-- begin-user-doc -->
-         * <!-- end-user-doc -->
-         * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.AssessmentsObservationImpl
-         * @see org.openhealthtools.mdht.uml.cda.vsbr.impl.VsbrPackageImpl#getAssessmentsObservation()
-         * @generated
-         */
-        EClass ASSESSMENTS_OBSERVATION = eINSTANCE.getAssessmentsObservation();
-
-    /**
          * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.MothersVitalSignsObservationImpl <em>Mothers Vital Signs Observation</em>}' class.
          * <!-- begin-user-doc -->
          * <!-- end-user-doc -->

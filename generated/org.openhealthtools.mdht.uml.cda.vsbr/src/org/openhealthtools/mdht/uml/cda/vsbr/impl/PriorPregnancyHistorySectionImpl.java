@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.vsbr.DateofLastLiveBirth;
 import org.openhealthtools.mdht.uml.cda.vsbr.EstimateofGestation;
 import org.openhealthtools.mdht.uml.cda.vsbr.LastMenstrualPeriodDate;
 import org.openhealthtools.mdht.uml.cda.vsbr.NumberofBirthsNowLiving;
+import org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead;
 import org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsnowDead;
 import org.openhealthtools.mdht.uml.cda.vsbr.OtherPregnancyOutcome;
 import org.openhealthtools.mdht.uml.cda.vsbr.PriorPregnancyHistorySection;
@@ -207,7 +208,7 @@ public class PriorPregnancyHistorySectionImpl extends SectionImpl implements Pri
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public NumberofLiveBirthsnowDead getNumberofLiveBirthsnowDead() {
+	public NumberofLiveBirthsNowDead getNumberofLiveBirthsnowDead() {
     return PriorPregnancyHistorySectionOperations.getNumberofLiveBirthsnowDead(this);
   }
 

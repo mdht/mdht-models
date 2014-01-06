@@ -97,6 +97,16 @@ public class LaborandDeliveryProcedureSectionImpl extends SectionImpl implements
 
 	/**
    * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateLaborandDeliveryProcedureSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
    */
@@ -106,43 +116,45 @@ public class LaborandDeliveryProcedureSectionImpl extends SectionImpl implements
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateLaborandDeliveryProcedureSectionObstetricProcedures(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionObstetricProcedures(this, diagnostics, context);
+  public boolean validateLaborandDeliveryProcedureSectionObstetricProcedure(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionObstetricProcedure(this, diagnostics, context);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateLaborandDeliveryProcedureSectionMethodofDelivery(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionMethodofDelivery(this, diagnostics, context);
+  public boolean validateLaborandDeliveryProcedureSectionMethodOfDelivery(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionMethodOfDelivery(this, diagnostics, context);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public EList<ObstetricProcedure> getObstetricProceduress() {
-    return LaborandDeliveryProcedureSectionOperations.getObstetricProceduress(this);
+  public EList<ObstetricProcedure> getObstetricProcedures()
+  {
+    return LaborandDeliveryProcedureSectionOperations.getObstetricProcedures(this);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public MethodofDelivery getMethodofDelivery() {
-    return LaborandDeliveryProcedureSectionOperations.getMethodofDelivery(this);
+  public MethodofDelivery getMethodOfDelivery()
+  {
+    return LaborandDeliveryProcedureSectionOperations.getMethodOfDelivery(this);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated

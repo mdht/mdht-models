@@ -397,7 +397,7 @@ public class CharacteristicofLaborandDeliveryOperations extends ClinicalStatemen
    */
 	protected static final String VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '236958009' or value.code = '237001001' or value.code = '634621000124113' or value.code = '634771000124114' or value.code = '11612004' or value.code = '249135009' or value.code = '130955003' or value.code = '231064003' or value.code = '260413007'))";
+"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '236958009' or value.code = '237001001' or value.code = '434611000124106' or value.code = '434691000124101' or value.code = '11612004' or value.code = '249135009' or value.code = '130955003' or value.code = '231064003' or value.code = '260413007'))";
 
 	/**
    * The cached OCL invariant for the '{@link #validateCharacteristicofLaborandDeliveryCodeVS(CharacteristicofLaborandDelivery, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristicof Laborand Delivery Code VS</em>}' invariant operation.
@@ -465,7 +465,7 @@ public class CharacteristicofLaborandDeliveryOperations extends ClinicalStatemen
    */
 	protected static final String VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '236958009' or value.code = '237001001' or value.code = '634621000124113' or value.code = '634771000124114' or value.code = '11612004' or value.code = '249135009' or value.code = '130955003' or value.code = '231064003' or value.code = '260413007')))";
+"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '236958009' or value.code = '237001001' or value.code = '434611000124106' or value.code = '434691000124101' or value.code = '11612004' or value.code = '249135009' or value.code = '130955003' or value.code = '231064003' or value.code = '260413007')))";
 
 	/**
    * The cached OCL invariant for the '{@link #validateCharacteristicofLaborandDeliveryValue(CharacteristicofLaborandDelivery, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristicof Laborand Delivery Value</em>}' invariant operation.

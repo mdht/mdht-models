@@ -37,7 +37,7 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryFinalRouteandMethod(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Final Routeand Method</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryFinalRouteAndMethod(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Final Route And Method</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryFetalPresentation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Fetal Presentation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryHysterotomyHysterectomyAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Hysterotomy Hysterectomy Association</em>}</li>
  * </ul>
@@ -383,29 +383,29 @@ public class MethodofDeliveryOperations extends ClinicalStatementOperations {
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #validateMethodofDeliveryFinalRouteandMethod(MethodofDelivery, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Final Routeand Method</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateMethodofDeliveryFinalRouteAndMethod(MethodofDelivery, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Final Route And Method</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateMethodofDeliveryFinalRouteandMethod(MethodofDelivery, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateMethodofDeliveryFinalRouteAndMethod(MethodofDelivery, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_METHODOF_DELIVERY_FINAL_ROUTEAND_METHOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(cda::Observation))";
+  protected static final String VALIDATE_METHODOF_DELIVERY_FINAL_ROUTE_AND_METHOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(cda::Observation))";
 
-	/**
-   * The cached OCL invariant for the '{@link #validateMethodofDeliveryFinalRouteandMethod(MethodofDelivery, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Final Routeand Method</em>}' invariant operation.
+  /**
+   * The cached OCL invariant for the '{@link #validateMethodofDeliveryFinalRouteAndMethod(MethodofDelivery, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Final Route And Method</em>}' invariant operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateMethodofDeliveryFinalRouteandMethod(MethodofDelivery, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateMethodofDeliveryFinalRouteAndMethod(MethodofDelivery, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
+  
+  protected static Constraint VALIDATE_METHODOF_DELIVERY_FINAL_ROUTE_AND_METHOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-	protected static Constraint VALIDATE_METHODOF_DELIVERY_FINAL_ROUTEAND_METHOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param methodofDelivery The receiving '<em><b>Methodof Delivery</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -413,23 +413,23 @@ public class MethodofDeliveryOperations extends ClinicalStatementOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-
-	public static boolean validateMethodofDeliveryFinalRouteandMethod(MethodofDelivery methodofDelivery,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validateMethodofDeliveryFinalRouteAndMethod(MethodofDelivery methodofDelivery, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
-    if (VALIDATE_METHODOF_DELIVERY_FINAL_ROUTEAND_METHOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_METHODOF_DELIVERY_FINAL_ROUTE_AND_METHOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(VsbrPackage.Literals.METHODOF_DELIVERY);
       try
       {
-        VALIDATE_METHODOF_DELIVERY_FINAL_ROUTEAND_METHOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_METHODOF_DELIVERY_FINAL_ROUTEAND_METHOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_METHODOF_DELIVERY_FINAL_ROUTE_AND_METHOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_METHODOF_DELIVERY_FINAL_ROUTE_AND_METHOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_METHODOF_DELIVERY_FINAL_ROUTEAND_METHOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(methodofDelivery))
+    if (!EOCL_ENV.createQuery(VALIDATE_METHODOF_DELIVERY_FINAL_ROUTE_AND_METHOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(methodofDelivery))
     {
       if (diagnostics != null)
       {
@@ -437,8 +437,8 @@ public class MethodofDeliveryOperations extends ClinicalStatementOperations {
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.METHODOF_DELIVERY__METHODOF_DELIVERY_FINAL_ROUTEAND_METHOD,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MethodofDeliveryFinalRouteandMethod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(methodofDelivery, context) }),
+             VsbrValidator.METHODOF_DELIVERY__METHODOF_DELIVERY_FINAL_ROUTE_AND_METHOD,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MethodofDeliveryFinalRouteAndMethod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(methodofDelivery, context) }),
              new Object [] { methodofDelivery }));
       }
        
@@ -447,7 +447,7 @@ public class MethodofDeliveryOperations extends ClinicalStatementOperations {
     return true;
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->

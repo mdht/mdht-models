@@ -47,11 +47,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Realm Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Realm Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTypeId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Type Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Code</em>}</li>
@@ -63,16 +63,16 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Author</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodian(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Custodian</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTarget(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Record Target</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Laborand Delivery Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Labor And Delivery Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsFetalDeliverySection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Fetal Delivery Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Antenatal Testingand Surveillance</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Prenatal Testing And Surveillance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPregnancyHistory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Pregnancy History</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionFetalDeathSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Historyof Infection Fetal Death Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#getLaborandDeliverySection() <em>Get Laborand Delivery Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionFetalDeathSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords History Of Infection Fetal Death Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#getLaborAndDeliverySection() <em>Get Labor And Delivery Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#getFetalDeliverySection() <em>Get Fetal Delivery Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#getAntenatalTestingandSurveillance() <em>Get Antenatal Testingand Surveillance</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#getPrenatalTestingAndSurveillance() <em>Get Prenatal Testing And Surveillance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#getPregnancyHistory() <em>Get Pregnancy History</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#getHistoryofInfectionFetalDeathSection() <em>Get Historyof Infection Fetal Death Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords#getHistoryOfInfectionFetalDeathSection() <em>Get History Of Infection Fetal Death Section</em>}</li>
  * </ul>
  * </p>
  *
@@ -156,29 +156,6 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Realm Code</em>}' operation.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.realmCode->isEmpty() or self.realmCode->exists(element | element.isNullFlavorUndefined())) implies (self.realmCode->size() = 1 and self.realmCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = element.oclAsType(datatypes::CS) in "+
-"value.code = 'US'))";
-
-	/**
-   * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Realm Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
@@ -224,27 +201,6 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCodeP(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Realm Code P</em>}' operation.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCodeP(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.realmCode->isEmpty() or self.realmCode->exists(element | element.isNullFlavorUndefined())) implies (self.realmCode->size() = 1)";
-
-	/**
-   * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCodeP(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Realm Code P</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCodeP(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
@@ -288,27 +244,6 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
     }
     return true;
   }
-
-	/**
-   * The cached OCL expression body for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTypeId(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Type Id</em>}' operation.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTypeId(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.typeId.oclIsUndefined() or self.typeId.isNullFlavorUndefined()) implies (not self.typeId.oclIsUndefined())";
-
-	/**
-   * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTypeId(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Type Id</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTypeId(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
    * <!-- begin-user-doc -->
@@ -441,6 +376,71 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
    */
 
 	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * The cached OCL expression body for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Realm Code</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.realmCode->isEmpty() or self.realmCode->exists(element | element.isNullFlavorUndefined())) implies (self.realmCode->size() = 1 and self.realmCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = element.oclAsType(datatypes::CS) in "+
+"value.code = 'US'))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Realm Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+
+	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * The cached OCL expression body for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCodeP(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Realm Code P</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCodeP(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.realmCode->isEmpty() or self.realmCode->exists(element | element.isNullFlavorUndefined())) implies (self.realmCode->size() = 1)";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCodeP(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Realm Code P</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCodeP(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+
+	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+  /**
+   * The cached OCL expression body for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTypeId(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Type Id</em>}' operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTypeId(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.typeId.oclIsUndefined() or self.typeId.isNullFlavorUndefined()) implies (not self.typeId.oclIsUndefined())";
+
+  /**
+   * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTypeId(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Type Id</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTypeId(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+
+	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
    * <!-- begin-user-doc -->
@@ -1218,29 +1218,29 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Laborand Delivery Section</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Labor And Delivery Section</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABORAND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Section))";
+  protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Section))";
 
-	/**
-   * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Laborand Delivery Section</em>}' invariant operation.
+  /**
+   * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Labor And Delivery Section</em>}' invariant operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
+  
+  protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABORAND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param reportingFetalDeathInformationfromaclinicalsettingtovitalrecords The receiving '<em><b>Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -1248,24 +1248,23 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
    * <!-- end-model-doc -->
    * @generated
    */
-
-	public static boolean validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection(
-			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
-    if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABORAND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
       try
       {
-        VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABORAND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABORAND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABORAND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords))
+    if (!EOCL_ENV.createQuery(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords))
     {
       if (diagnostics != null)
       {
@@ -1273,8 +1272,8 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABORAND_DELIVERY_SECTION,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+             VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
              new Object [] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
       }
        
@@ -1283,7 +1282,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
     return true;
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsFetalDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Fetal Delivery Section</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1350,29 +1349,29 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Antenatal Testingand Surveillance</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Prenatal Testing And Surveillance</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ANTENATAL_TESTINGAND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prenatal Testing and Surveillance Section))";
+  protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prenatal Testing and Surveillance Section))";
 
-	/**
-   * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Antenatal Testingand Surveillance</em>}' invariant operation.
+  /**
+   * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Prenatal Testing And Surveillance</em>}' invariant operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
+  
+  protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ANTENATAL_TESTINGAND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param reportingFetalDeathInformationfromaclinicalsettingtovitalrecords The receiving '<em><b>Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -1380,24 +1379,23 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
    * <!-- end-model-doc -->
    * @generated
    */
-
-	public static boolean validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance(
-			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
-    if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ANTENATAL_TESTINGAND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
       try
       {
-        VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ANTENATAL_TESTINGAND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ANTENATAL_TESTINGAND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ANTENATAL_TESTINGAND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords))
+    if (!EOCL_ENV.createQuery(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords))
     {
       if (diagnostics != null)
       {
@@ -1405,8 +1403,8 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ANTENATAL_TESTINGAND_SURVEILLANCE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+             VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
              new Object [] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
       }
        
@@ -1415,7 +1413,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
     return true;
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPregnancyHistory(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Pregnancy History</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1482,25 +1480,25 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Historyof Infection Fetal Death Section</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords History Of Infection Fetal Death Section</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORYOF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection - Fetal Death Section))";
+  protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection: Fetal Death Section))";
 
   /**
-   * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Historyof Infection Fetal Death Section</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords History Of Infection Fetal Death Section</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORYOF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
   /**
    * <!-- begin-user-doc -->
@@ -1513,22 +1511,22 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
    * @generated
    */
   
-  public static  boolean validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
   	  
-    if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORYOF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
       try
       {
-        VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORYOF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORYOF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORYOF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords))
+    if (!EOCL_ENV.createQuery(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords))
     {
       if (diagnostics != null)
       {
@@ -1536,8 +1534,8 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORYOF_INFECTION_FETAL_DEATH_SECTION,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionFetalDeathSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+             VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionFetalDeathSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
              new Object [] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
       }
        
@@ -1547,51 +1545,51 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
   }
 
   /**
-   * The cached OCL expression body for the '{@link #getLaborandDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Laborand Delivery Section</em>}' operation.
+   * The cached OCL expression body for the '{@link #getLaborAndDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Labor And Delivery Section</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #getLaborandDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
+   * <!-- end-user-doc -->
+   * @see #getLaborAndDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
    * @generated
    * @ordered
    */
-	protected static final String GET_LABORAND_DELIVERY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Section))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Section)";
+  protected static final String GET_LABOR_AND_DELIVERY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Section))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Section)";
 
-	/**
-   * The cached OCL query for the '{@link #getLaborandDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Laborand Delivery Section</em>}' query operation.
+  /**
+   * The cached OCL query for the '{@link #getLaborAndDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Labor And Delivery Section</em>}' query operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #getLaborandDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
+   * <!-- end-user-doc -->
+   * @see #getLaborAndDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
    * @generated
    * @ordered
    */
-	protected static OCLExpression<EClassifier> GET_LABORAND_DELIVERY_SECTION__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_LABOR_AND_DELIVERY_SECTION__EOCL_QRY;
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-
-	public static LaborandDeliverySection getLaborandDeliverySection(
-			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords) {
-    if (GET_LABORAND_DELIVERY_SECTION__EOCL_QRY == null)
+  
+  public static  LaborandDeliverySection getLaborAndDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
+  {
+    if (GET_LABOR_AND_DELIVERY_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setOperationContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS, VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS.getEAllOperations().get(51));
       try
       {
-        GET_LABORAND_DELIVERY_SECTION__EOCL_QRY = helper.createQuery(GET_LABORAND_DELIVERY_SECTION__EOCL_EXP);
+        GET_LABOR_AND_DELIVERY_SECTION__EOCL_QRY = helper.createQuery(GET_LABOR_AND_DELIVERY_SECTION__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    OCL.Query query = EOCL_ENV.createQuery(GET_LABORAND_DELIVERY_SECTION__EOCL_QRY);
+    OCL.Query query = EOCL_ENV.createQuery(GET_LABOR_AND_DELIVERY_SECTION__EOCL_QRY);
     return (LaborandDeliverySection) query.evaluate(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords);
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #getFetalDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Fetal Delivery Section</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1637,51 +1635,51 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #getAntenatalTestingandSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Antenatal Testingand Surveillance</em>}' operation.
+   * The cached OCL expression body for the '{@link #getPrenatalTestingAndSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Prenatal Testing And Surveillance</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #getAntenatalTestingandSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
+   * <!-- end-user-doc -->
+   * @see #getPrenatalTestingAndSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
    * @generated
    * @ordered
    */
-	protected static final String GET_ANTENATAL_TESTINGAND_SURVEILLANCE__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prenatal Testing and Surveillance Section))->asSequence()->any(true).oclAsType(vsbr::Prenatal Testing and Surveillance Section)";
+  protected static final String GET_PRENATAL_TESTING_AND_SURVEILLANCE__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prenatal Testing and Surveillance Section))->asSequence()->any(true).oclAsType(vsbr::Prenatal Testing and Surveillance Section)";
 
-	/**
-   * The cached OCL query for the '{@link #getAntenatalTestingandSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Antenatal Testingand Surveillance</em>}' query operation.
+  /**
+   * The cached OCL query for the '{@link #getPrenatalTestingAndSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Prenatal Testing And Surveillance</em>}' query operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #getAntenatalTestingandSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
+   * <!-- end-user-doc -->
+   * @see #getPrenatalTestingAndSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
    * @generated
    * @ordered
    */
-	protected static OCLExpression<EClassifier> GET_ANTENATAL_TESTINGAND_SURVEILLANCE__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_PRENATAL_TESTING_AND_SURVEILLANCE__EOCL_QRY;
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-
-	public static PrenatalTestingandSurveillanceSection getAntenatalTestingandSurveillance(
-			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords) {
-    if (GET_ANTENATAL_TESTINGAND_SURVEILLANCE__EOCL_QRY == null)
+  
+  public static  PrenatalTestingandSurveillanceSection getPrenatalTestingAndSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
+  {
+    if (GET_PRENATAL_TESTING_AND_SURVEILLANCE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setOperationContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS, VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS.getEAllOperations().get(53));
       try
       {
-        GET_ANTENATAL_TESTINGAND_SURVEILLANCE__EOCL_QRY = helper.createQuery(GET_ANTENATAL_TESTINGAND_SURVEILLANCE__EOCL_EXP);
+        GET_PRENATAL_TESTING_AND_SURVEILLANCE__EOCL_QRY = helper.createQuery(GET_PRENATAL_TESTING_AND_SURVEILLANCE__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    OCL.Query query = EOCL_ENV.createQuery(GET_ANTENATAL_TESTINGAND_SURVEILLANCE__EOCL_QRY);
+    OCL.Query query = EOCL_ENV.createQuery(GET_PRENATAL_TESTING_AND_SURVEILLANCE__EOCL_QRY);
     return (PrenatalTestingandSurveillanceSection) query.evaluate(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords);
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #getPregnancyHistory(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Pregnancy History</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1727,24 +1725,24 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #getHistoryofInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Historyof Infection Fetal Death Section</em>}' operation.
+   * The cached OCL expression body for the '{@link #getHistoryOfInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get History Of Infection Fetal Death Section</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getHistoryofInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
+   * @see #getHistoryOfInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
    * @generated
    * @ordered
    */
-  protected static final String GET_HISTORYOF_INFECTION_FETAL_DEATH_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection - Fetal Death Section))->asSequence()->any(true).oclAsType(vsbr::History of Infection - Fetal Death Section)";
+  protected static final String GET_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection: Fetal Death Section))->asSequence()->any(true).oclAsType(vsbr::History of Infection: Fetal Death Section)";
 
   /**
-   * The cached OCL query for the '{@link #getHistoryofInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Historyof Infection Fetal Death Section</em>}' query operation.
+   * The cached OCL query for the '{@link #getHistoryOfInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get History Of Infection Fetal Death Section</em>}' query operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getHistoryofInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
+   * @see #getHistoryOfInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
    * @generated
    * @ordered
    */
-  protected static OCLExpression<EClassifier> GET_HISTORYOF_INFECTION_FETAL_DEATH_SECTION__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__EOCL_QRY;
 
   /**
    * <!-- begin-user-doc -->
@@ -1752,22 +1750,22 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
    * @generated
    */
   
-  public static  HistoryofInfectionFetalDeathSection getHistoryofInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
+  public static  HistoryofInfectionFetalDeathSection getHistoryOfInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)
   {
-    if (GET_HISTORYOF_INFECTION_FETAL_DEATH_SECTION__EOCL_QRY == null)
+    if (GET_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setOperationContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS, VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS.getEAllOperations().get(55));
       try
       {
-        GET_HISTORYOF_INFECTION_FETAL_DEATH_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORYOF_INFECTION_FETAL_DEATH_SECTION__EOCL_EXP);
+        GET_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    OCL.Query query = EOCL_ENV.createQuery(GET_HISTORYOF_INFECTION_FETAL_DEATH_SECTION__EOCL_QRY);
+    OCL.Query query = EOCL_ENV.createQuery(GET_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__EOCL_QRY);
     return (HistoryofInfectionFetalDeathSection) query.evaluate(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords);
   }
 

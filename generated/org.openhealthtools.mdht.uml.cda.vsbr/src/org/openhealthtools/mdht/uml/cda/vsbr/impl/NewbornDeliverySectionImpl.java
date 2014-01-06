@@ -129,15 +129,15 @@ public class NewbornDeliverySectionImpl extends SectionImpl implements NewbornDe
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateNewbornDeliverySectionNumberofInfantsBornAlive(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return NewbornDeliverySectionOperations.validateNewbornDeliverySectionNumberofInfantsBornAlive(this, diagnostics, context);
+  public boolean validateNewbornDeliverySectionNumberOfInfantsBornAlive(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return NewbornDeliverySectionOperations.validateNewbornDeliverySectionNumberOfInfantsBornAlive(this, diagnostics, context);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -159,15 +159,15 @@ public class NewbornDeliverySectionImpl extends SectionImpl implements NewbornDe
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateNewbornDeliverySectionAbnormalConditionsoftheNewborn(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return NewbornDeliverySectionOperations.validateNewbornDeliverySectionAbnormalConditionsoftheNewborn(this, diagnostics, context);
+  public boolean validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return NewbornDeliverySectionOperations.validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn(this, diagnostics, context);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -345,14 +345,15 @@ public class NewbornDeliverySectionImpl extends SectionImpl implements NewbornDe
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public NumberofInfantsBornAlive getNumberofInfantsBornAlive() {
-    return NewbornDeliverySectionOperations.getNumberofInfantsBornAlive(this);
+  public NumberofInfantsBornAlive getNumberOfInfantsBornAlive()
+  {
+    return NewbornDeliverySectionOperations.getNumberOfInfantsBornAlive(this);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -372,14 +373,15 @@ public class NewbornDeliverySectionImpl extends SectionImpl implements NewbornDe
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public EList<AbnormalConditionoftheNewborn> getAbnormalConditionsoftheNewborns() {
-    return NewbornDeliverySectionOperations.getAbnormalConditionsoftheNewborns(this);
+  public EList<AbnormalConditionoftheNewborn> getAbnormalConditionsOfTheNewborns()
+  {
+    return NewbornDeliverySectionOperations.getAbnormalConditionsOfTheNewborns(this);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated

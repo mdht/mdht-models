@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage#getInfectionPresentFetalDeath()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Infection Present - Fetal DeathTemplateId Infection Present - Fetal DeathClassCode Infection Present - Fetal DeathMoodCode Infection Present - Fetal DeathCode Infection Present - Fetal DeathCodeVS Infection Present - Fetal DeathCodeP Infection Present - Fetal DeathValue Infection Present - Fetal DeathValueP' templateId.root='2.16.840.1.113883.10.20.26.49' classCode='OBS' moodCode='EVN' code.code='73769-2' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Infections present and or treated during this pregnancy for fetal death'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Infection Present: Fetal DeathTemplateId Infection Present: Fetal DeathClassCode Infection Present: Fetal DeathMoodCode Infection Present: Fetal DeathCode Infection Present: Fetal DeathCodeVS Infection Present: Fetal DeathCodeP Infection Present: Fetal DeathValue Infection Present: Fetal DeathValueP' templateId.root='2.16.840.1.113883.10.20.26.49' classCode='OBS' moodCode='EVN' code.code='73769-2' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Infections present and or treated during this pregnancy for fetal death'"
  * @generated
  */
 public interface InfectionPresentFetalDeath extends Observation

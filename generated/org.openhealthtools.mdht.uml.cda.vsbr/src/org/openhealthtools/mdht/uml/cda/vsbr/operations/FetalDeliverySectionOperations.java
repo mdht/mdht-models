@@ -52,11 +52,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionBirthOrder(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Birth Order</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionNumberofInfantsBornAlive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Numberof Infants Born Alive</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionNumberOfInfantsBornAlive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Number Of Infants Born Alive</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionAutopsyPerformance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Autopsy Performance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionFetalDeathOccurrance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Fetal Death Occurrance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionPlurality(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Plurality</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionCongenitalAnomalies(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Congenital Anomalies</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionCongenitalAnomaly(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Congenital Anomaly</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionFetalDeliveryTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Fetal Delivery Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionFetalDeliverySubject(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Fetal Delivery Subject</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Fetal Delivery Subject Role Of Fetus Fetus Class Code</em>}</li>
@@ -69,11 +69,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionFetalDeliverySubjectTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Fetal Delivery Subject Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetus(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Fetal Delivery Subject Role Of Fetus</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getBirthOrder() <em>Get Birth Order</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getNumberofInfantsBornAlive() <em>Get Numberof Infants Born Alive</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getNumberOfInfantsBornAlive() <em>Get Number Of Infants Born Alive</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getAutopsyPerformance() <em>Get Autopsy Performance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getFetalDeathOccurrance() <em>Get Fetal Death Occurrance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getPlurality() <em>Get Plurality</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getCongenitalAnomaliess() <em>Get Congenital Anomaliess</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getCongenitalAnomalies() <em>Get Congenital Anomalies</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getFetalDeliveryTime() <em>Get Fetal Delivery Time</em>}</li>
  * </ul>
  * </p>
@@ -483,29 +483,29 @@ public class FetalDeliverySectionOperations extends SectionOperations {
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #validateFetalDeliverySectionNumberofInfantsBornAlive(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Numberof Infants Born Alive</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateFetalDeliverySectionNumberOfInfantsBornAlive(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Number Of Infants Born Alive</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateFetalDeliverySectionNumberofInfantsBornAlive(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateFetalDeliverySectionNumberOfInfantsBornAlive(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_FETAL_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Number of Infants Born Alive) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+  protected static final String VALIDATE_FETAL_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Number of Infants Born Alive) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
-	/**
-   * The cached OCL invariant for the '{@link #validateFetalDeliverySectionNumberofInfantsBornAlive(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Numberof Infants Born Alive</em>}' invariant operation.
+  /**
+   * The cached OCL invariant for the '{@link #validateFetalDeliverySectionNumberOfInfantsBornAlive(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Number Of Infants Born Alive</em>}' invariant operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateFetalDeliverySectionNumberofInfantsBornAlive(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateFetalDeliverySectionNumberOfInfantsBornAlive(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
+  
+  protected static Constraint VALIDATE_FETAL_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-	protected static Constraint VALIDATE_FETAL_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param fetalDeliverySection The receiving '<em><b>Fetal Delivery Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -513,23 +513,23 @@ public class FetalDeliverySectionOperations extends SectionOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-
-	public static boolean validateFetalDeliverySectionNumberofInfantsBornAlive(
-			FetalDeliverySection fetalDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validateFetalDeliverySectionNumberOfInfantsBornAlive(FetalDeliverySection fetalDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
-    if (VALIDATE_FETAL_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_FETAL_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(VsbrPackage.Literals.FETAL_DELIVERY_SECTION);
       try
       {
-        VALIDATE_FETAL_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_FETAL_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(fetalDeliverySection))
+    if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(fetalDeliverySection))
     {
       if (diagnostics != null)
       {
@@ -537,8 +537,8 @@ public class FetalDeliverySectionOperations extends SectionOperations {
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FetalDeliverySectionNumberofInfantsBornAlive", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(fetalDeliverySection, context) }),
+             VsbrValidator.FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FetalDeliverySectionNumberOfInfantsBornAlive", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(fetalDeliverySection, context) }),
              new Object [] { fetalDeliverySection }));
       }
        
@@ -547,7 +547,7 @@ public class FetalDeliverySectionOperations extends SectionOperations {
     return true;
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #validateFetalDeliverySectionAutopsyPerformance(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Autopsy Performance</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -743,29 +743,29 @@ public class FetalDeliverySectionOperations extends SectionOperations {
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #validateFetalDeliverySectionCongenitalAnomalies(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Congenital Anomalies</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateFetalDeliverySectionCongenitalAnomaly(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Congenital Anomaly</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateFetalDeliverySectionCongenitalAnomalies(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateFetalDeliverySectionCongenitalAnomaly(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Congenital Anomaly) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+  protected static final String VALIDATE_FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Congenital Anomaly) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
-	/**
-   * The cached OCL invariant for the '{@link #validateFetalDeliverySectionCongenitalAnomalies(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Congenital Anomalies</em>}' invariant operation.
+  /**
+   * The cached OCL invariant for the '{@link #validateFetalDeliverySectionCongenitalAnomaly(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Congenital Anomaly</em>}' invariant operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateFetalDeliverySectionCongenitalAnomalies(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateFetalDeliverySectionCongenitalAnomaly(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
+  
+  protected static Constraint VALIDATE_FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-	protected static Constraint VALIDATE_FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param fetalDeliverySection The receiving '<em><b>Fetal Delivery Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -773,23 +773,23 @@ public class FetalDeliverySectionOperations extends SectionOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-
-	public static boolean validateFetalDeliverySectionCongenitalAnomalies(FetalDeliverySection fetalDeliverySection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validateFetalDeliverySectionCongenitalAnomaly(FetalDeliverySection fetalDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
-    if (VALIDATE_FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(VsbrPackage.Literals.FETAL_DELIVERY_SECTION);
       try
       {
-        VALIDATE_FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(fetalDeliverySection))
+    if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(fetalDeliverySection))
     {
       if (diagnostics != null)
       {
@@ -797,8 +797,8 @@ public class FetalDeliverySectionOperations extends SectionOperations {
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALIES,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FetalDeliverySectionCongenitalAnomalies", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(fetalDeliverySection, context) }),
+             VsbrValidator.FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALY,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FetalDeliverySectionCongenitalAnomaly", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(fetalDeliverySection, context) }),
              new Object [] { fetalDeliverySection }));
       }
        
@@ -807,7 +807,7 @@ public class FetalDeliverySectionOperations extends SectionOperations {
     return true;
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #validateFetalDeliverySectionFetalDeliveryTime(FetalDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Fetal Delivery Time</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1569,50 +1569,51 @@ public class FetalDeliverySectionOperations extends SectionOperations {
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #getNumberofInfantsBornAlive(FetalDeliverySection) <em>Get Numberof Infants Born Alive</em>}' operation.
+   * The cached OCL expression body for the '{@link #getNumberOfInfantsBornAlive(FetalDeliverySection) <em>Get Number Of Infants Born Alive</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #getNumberofInfantsBornAlive(FetalDeliverySection)
+   * <!-- end-user-doc -->
+   * @see #getNumberOfInfantsBornAlive(FetalDeliverySection)
    * @generated
    * @ordered
    */
-	protected static final String GET_NUMBEROF_INFANTS_BORN_ALIVE__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Number of Infants Born Alive))->asSequence()->any(true).oclAsType(vsbr::Number of Infants Born Alive)";
+  protected static final String GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Number of Infants Born Alive))->asSequence()->any(true).oclAsType(vsbr::Number of Infants Born Alive)";
 
-	/**
-   * The cached OCL query for the '{@link #getNumberofInfantsBornAlive(FetalDeliverySection) <em>Get Numberof Infants Born Alive</em>}' query operation.
+  /**
+   * The cached OCL query for the '{@link #getNumberOfInfantsBornAlive(FetalDeliverySection) <em>Get Number Of Infants Born Alive</em>}' query operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #getNumberofInfantsBornAlive(FetalDeliverySection)
+   * <!-- end-user-doc -->
+   * @see #getNumberOfInfantsBornAlive(FetalDeliverySection)
    * @generated
    * @ordered
    */
-	protected static OCLExpression<EClassifier> GET_NUMBEROF_INFANTS_BORN_ALIVE__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_QRY;
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-
-	public static NumberofInfantsBornAlive getNumberofInfantsBornAlive(FetalDeliverySection fetalDeliverySection) {
-    if (GET_NUMBEROF_INFANTS_BORN_ALIVE__EOCL_QRY == null)
+  
+  public static  NumberofInfantsBornAlive getNumberOfInfantsBornAlive(FetalDeliverySection fetalDeliverySection)
+  {
+    if (GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setOperationContext(VsbrPackage.Literals.FETAL_DELIVERY_SECTION, VsbrPackage.Literals.FETAL_DELIVERY_SECTION.getEAllOperations().get(78));
       try
       {
-        GET_NUMBEROF_INFANTS_BORN_ALIVE__EOCL_QRY = helper.createQuery(GET_NUMBEROF_INFANTS_BORN_ALIVE__EOCL_EXP);
+        GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_QRY = helper.createQuery(GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    OCL.Query query = EOCL_ENV.createQuery(GET_NUMBEROF_INFANTS_BORN_ALIVE__EOCL_QRY);
+    OCL.Query query = EOCL_ENV.createQuery(GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_QRY);
     return (NumberofInfantsBornAlive) query.evaluate(fetalDeliverySection);
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #getAutopsyPerformance(FetalDeliverySection) <em>Get Autopsy Performance</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1745,52 +1746,53 @@ public class FetalDeliverySectionOperations extends SectionOperations {
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #getCongenitalAnomaliess(FetalDeliverySection) <em>Get Congenital Anomaliess</em>}' operation.
+   * The cached OCL expression body for the '{@link #getCongenitalAnomalies(FetalDeliverySection) <em>Get Congenital Anomalies</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #getCongenitalAnomaliess(FetalDeliverySection)
+   * <!-- end-user-doc -->
+   * @see #getCongenitalAnomalies(FetalDeliverySection)
    * @generated
    * @ordered
    */
-	protected static final String GET_CONGENITAL_ANOMALIESS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Congenital Anomaly)).oclAsType(vsbr::Congenital Anomaly)";
+  protected static final String GET_CONGENITAL_ANOMALIES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Congenital Anomaly)).oclAsType(vsbr::Congenital Anomaly)";
 
-	/**
-   * The cached OCL query for the '{@link #getCongenitalAnomaliess(FetalDeliverySection) <em>Get Congenital Anomaliess</em>}' query operation.
+  /**
+   * The cached OCL query for the '{@link #getCongenitalAnomalies(FetalDeliverySection) <em>Get Congenital Anomalies</em>}' query operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #getCongenitalAnomaliess(FetalDeliverySection)
+   * <!-- end-user-doc -->
+   * @see #getCongenitalAnomalies(FetalDeliverySection)
    * @generated
    * @ordered
    */
-	protected static OCLExpression<EClassifier> GET_CONGENITAL_ANOMALIESS__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_CONGENITAL_ANOMALIES__EOCL_QRY;
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-
-	public static EList<CongenitalAnomaly> getCongenitalAnomaliess(FetalDeliverySection fetalDeliverySection) {
-    if (GET_CONGENITAL_ANOMALIESS__EOCL_QRY == null)
+  
+  public static  EList<CongenitalAnomaly> getCongenitalAnomalies(FetalDeliverySection fetalDeliverySection)
+  {
+    if (GET_CONGENITAL_ANOMALIES__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setOperationContext(VsbrPackage.Literals.FETAL_DELIVERY_SECTION, VsbrPackage.Literals.FETAL_DELIVERY_SECTION.getEAllOperations().get(82));
       try
       {
-        GET_CONGENITAL_ANOMALIESS__EOCL_QRY = helper.createQuery(GET_CONGENITAL_ANOMALIESS__EOCL_EXP);
+        GET_CONGENITAL_ANOMALIES__EOCL_QRY = helper.createQuery(GET_CONGENITAL_ANOMALIES__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    OCL.Query query = EOCL_ENV.createQuery(GET_CONGENITAL_ANOMALIESS__EOCL_QRY);
+    OCL.Query query = EOCL_ENV.createQuery(GET_CONGENITAL_ANOMALIES__EOCL_QRY);
     @SuppressWarnings("unchecked")
     Collection<CongenitalAnomaly> result = (Collection<CongenitalAnomaly>) query.evaluate(fetalDeliverySection);
     return new BasicEList.UnmodifiableEList<CongenitalAnomaly>(result.size(), result.toArray());
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #getFetalDeliveryTime(FetalDeliverySection) <em>Get Fetal Delivery Time</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

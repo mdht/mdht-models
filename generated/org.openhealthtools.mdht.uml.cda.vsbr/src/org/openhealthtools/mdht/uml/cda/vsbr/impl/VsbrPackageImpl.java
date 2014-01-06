@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.CDAPackage;
 import org.openhealthtools.mdht.uml.cda.util.AnnotationBasedInitializer;
 
 import org.openhealthtools.mdht.uml.cda.vsbr.AbnormalConditionoftheNewborn;
+import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentObservation;
 import org.openhealthtools.mdht.uml.cda.vsbr.AntenatalTestingandSurveillanceSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsObservation;
 import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsSection;
@@ -44,6 +45,7 @@ import org.openhealthtools.mdht.uml.cda.vsbr.InfectionPresentLiveBirth;
 import org.openhealthtools.mdht.uml.cda.vsbr.InfectionPresent;
 import org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryInformation;
 import org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection;
+import org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcess;
 import org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliverySection;
 import org.openhealthtools.mdht.uml.cda.vsbr.LastMenstrualPeriodDate;
 import org.openhealthtools.mdht.uml.cda.vsbr.MaternalMorbidity;
@@ -56,6 +58,7 @@ import org.openhealthtools.mdht.uml.cda.vsbr.NewbornsVitalSignsObservation;
 import org.openhealthtools.mdht.uml.cda.vsbr.NewbornsVitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.NumberofBirthsNowLiving;
 import org.openhealthtools.mdht.uml.cda.vsbr.NumberofInfantsBornAlive;
+import org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead;
 import org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsnowDead;
 import org.openhealthtools.mdht.uml.cda.vsbr.ObstetricProcedure;
 import org.openhealthtools.mdht.uml.cda.vsbr.OnsetofLabor;
@@ -132,12 +135,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
 	/**
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass numberofLiveBirthsnowDeadEClass = null;
+    private EClass numberofLiveBirthsNowDeadEClass = null;
 
-	/**
+  /**
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
      * @generated
@@ -237,12 +240,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
 	/**
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass laborandDeliveryInformationEClass = null;
+    private EClass laborandDeliveryProcessEClass = null;
 
-	/**
+  /**
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
      * @generated
@@ -286,19 +289,19 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
   /**
      * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass assessmentObservationEClass = null;
+
+  /**
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
      * @generated
      */
 	private EClass mothersVitalSignsSectionEClass = null;
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    private EClass assessmentsObservationEClass = null;
-
-  /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -541,14 +544,15 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
 	/**
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	public EClass getNumberofLiveBirthsnowDead() {
-        return numberofLiveBirthsnowDeadEClass;
+    public EClass getNumberofLiveBirthsNowDead()
+    {
+        return numberofLiveBirthsNowDeadEClass;
     }
 
-	/**
+  /**
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
      * @generated
@@ -677,14 +681,15 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
 	/**
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	public EClass getLaborandDeliveryInformation() {
-        return laborandDeliveryInformationEClass;
+    public EClass getLaborandDeliveryProcess()
+    {
+        return laborandDeliveryProcessEClass;
     }
 
-	/**
+  /**
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
      * @generated
@@ -741,6 +746,16 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
   /**
      * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getAssessmentObservation()
+    {
+        return assessmentObservationEClass;
+    }
+
+  /**
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
      * @generated
      */
@@ -749,16 +764,6 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
     }
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EClass getAssessmentsObservation()
-    {
-        return assessmentsObservationEClass;
-    }
-
-  /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -931,7 +936,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
         numberofBirthsNowLivingEClass = createEClass(NUMBEROF_BIRTHS_NOW_LIVING);
 
-        numberofLiveBirthsnowDeadEClass = createEClass(NUMBEROF_LIVE_BIRTHSNOW_DEAD);
+        numberofLiveBirthsNowDeadEClass = createEClass(NUMBEROF_LIVE_BIRTHS_NOW_DEAD);
 
         otherPregnancyOutcomeEClass = createEClass(OTHER_PREGNANCY_OUTCOME);
 
@@ -961,11 +966,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
         assessmentsSectionEClass = createEClass(ASSESSMENTS_SECTION);
 
-        assessmentsObservationEClass = createEClass(ASSESSMENTS_OBSERVATION);
+        assessmentObservationEClass = createEClass(ASSESSMENT_OBSERVATION);
 
         laborandDeliverySectionEClass = createEClass(LABORAND_DELIVERY_SECTION);
 
-        laborandDeliveryInformationEClass = createEClass(LABORAND_DELIVERY_INFORMATION);
+        laborandDeliveryProcessEClass = createEClass(LABORAND_DELIVERY_PROCESS);
 
         characteristicofLaborandDeliveryEClass = createEClass(CHARACTERISTICOF_LABORAND_DELIVERY);
 
@@ -1046,7 +1051,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         dateofLastLiveBirthEClass.getESuperTypes().add(theCDAPackage.getObservation());
         lastMenstrualPeriodDateEClass.getESuperTypes().add(theCDAPackage.getObservation());
         numberofBirthsNowLivingEClass.getESuperTypes().add(theCDAPackage.getObservation());
-        numberofLiveBirthsnowDeadEClass.getESuperTypes().add(theCDAPackage.getObservation());
+        numberofLiveBirthsNowDeadEClass.getESuperTypes().add(theCDAPackage.getObservation());
         otherPregnancyOutcomeEClass.getESuperTypes().add(theCDAPackage.getObservation());
         estimateofGestationEClass.getESuperTypes().add(theCDAPackage.getObservation());
         newbornDeliverySectionEClass.getESuperTypes().add(theCDAPackage.getSection());
@@ -1061,9 +1066,9 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         infantTransferEClass.getESuperTypes().add(theCDAPackage.getObservation());
         pluralityEClass.getESuperTypes().add(theCDAPackage.getObservation());
         assessmentsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
-        assessmentsObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
+        assessmentObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
         laborandDeliverySectionEClass.getESuperTypes().add(theCDAPackage.getSection());
-        laborandDeliveryInformationEClass.getESuperTypes().add(theCDAPackage.getAct());
+        laborandDeliveryProcessEClass.getESuperTypes().add(theCDAPackage.getAct());
         characteristicofLaborandDeliveryEClass.getESuperTypes().add(theCDAPackage.getObservation());
         plannedHomeBirthEClass.getESuperTypes().add(theCDAPackage.getObservation());
         maternalTransferEClass.getESuperTypes().add(theCDAPackage.getObservation());
@@ -1097,6 +1102,15 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+        op = addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingBirthInformationfromaclinicalsettingtovitalrecordsMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingBirthInformationfromaclinicalsettingtovitalrecordsRealmCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -1116,15 +1130,6 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
         op = addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingBirthInformationfromaclinicalsettingtovitalrecordsTypeId", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-        op = addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingBirthInformationfromaclinicalsettingtovitalrecordsMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1232,7 +1237,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingBirthInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingBirthInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1259,7 +1264,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingBirthInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingBirthInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1268,7 +1273,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingBirthInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionLiveBirthSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingBirthInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionLiveBirthSection", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1277,15 +1282,15 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, this.getPrenatalTestingandSurveillanceSection(), "getAntenatalTestingandSurveillance", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, this.getPrenatalTestingandSurveillanceSection(), "getPrenatalTestingAndSurveillance", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
         addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, this.getPriorPregnancyHistorySection(), "getPregnancyHistory", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
         addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, this.getNewbornDeliverySection(), "getNewbornDeliverySection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, this.getLaborandDeliverySection(), "getLaborandDeliverySection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, this.getLaborandDeliverySection(), "getLaborAndDeliverySection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, this.getHistoryofInfectionLiveBirthSection(), "getHistoryofInfectionLiveBirthSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, this.getHistoryofInfectionLiveBirthSection(), "getHistoryOfInfectionLiveBirthSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
         initEClass(prenatalTestingandSurveillanceSectionEClass, PrenatalTestingandSurveillanceSection.class, "PrenatalTestingandSurveillanceSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1334,7 +1339,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(prenatalTestingandSurveillanceSectionEClass, ecorePackage.getEBoolean(), "validatePrenatalTestingandSurveillanceSectionPreNatalCare", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(prenatalTestingandSurveillanceSectionEClass, ecorePackage.getEBoolean(), "validatePrenatalTestingandSurveillanceSectionPrenatalCare", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1343,7 +1348,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        addEOperation(prenatalTestingandSurveillanceSectionEClass, this.getPrenatalCare(), "getPreNatalCare", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(prenatalTestingandSurveillanceSectionEClass, this.getPrenatalCare(), "getPrenatalCare", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
         initEClass(prenatalCareEClass, PrenatalCare.class, "PrenatalCare", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1535,7 +1540,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
         addEOperation(priorPregnancyHistorySectionEClass, this.getNumberofBirthsNowLiving(), "getNumberofBirthsStillLiving", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(priorPregnancyHistorySectionEClass, this.getNumberofLiveBirthsnowDead(), "getNumberofLiveBirthsnowDead", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(priorPregnancyHistorySectionEClass, this.getNumberofLiveBirthsNowDead(), "getNumberofLiveBirthsnowDead", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
         addEOperation(priorPregnancyHistorySectionEClass, this.getOtherPregnancyOutcome(), "getOtherPregnancyOutcomes", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
@@ -1700,9 +1705,9 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        initEClass(numberofLiveBirthsnowDeadEClass, NumberofLiveBirthsnowDead.class, "NumberofLiveBirthsnowDead", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+        initEClass(numberofLiveBirthsNowDeadEClass, NumberofLiveBirthsNowDead.class, "NumberofLiveBirthsNowDead", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-        op = addEOperation(numberofLiveBirthsnowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsnowDeadTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(numberofLiveBirthsNowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsNowDeadTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1711,7 +1716,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(numberofLiveBirthsnowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsnowDeadClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(numberofLiveBirthsNowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsNowDeadClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1720,7 +1725,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(numberofLiveBirthsnowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsnowDeadMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(numberofLiveBirthsNowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsNowDeadMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1729,7 +1734,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(numberofLiveBirthsnowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsnowDeadCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(numberofLiveBirthsNowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsNowDeadCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1738,7 +1743,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(numberofLiveBirthsnowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsnowDeadCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(numberofLiveBirthsNowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsNowDeadCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1747,7 +1752,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(numberofLiveBirthsnowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsnowDeadValue", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(numberofLiveBirthsNowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsNowDeadValue", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1942,7 +1947,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(newbornDeliverySectionEClass, ecorePackage.getEBoolean(), "validateNewbornDeliverySectionNumberofInfantsBornAlive", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(newbornDeliverySectionEClass, ecorePackage.getEBoolean(), "validateNewbornDeliverySectionNumberOfInfantsBornAlive", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1969,7 +1974,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(newbornDeliverySectionEClass, ecorePackage.getEBoolean(), "validateNewbornDeliverySectionAbnormalConditionsoftheNewborn", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(newbornDeliverySectionEClass, ecorePackage.getEBoolean(), "validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2133,13 +2138,13 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
         addEOperation(newbornDeliverySectionEClass, this.getBirthOrder(), "getBirthOrder", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(newbornDeliverySectionEClass, this.getNumberofInfantsBornAlive(), "getNumberofInfantsBornAlive", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(newbornDeliverySectionEClass, this.getNumberofInfantsBornAlive(), "getNumberOfInfantsBornAlive", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
         addEOperation(newbornDeliverySectionEClass, this.getCongenitalAnomaly(), "getCongenitalAnomaliess", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
         addEOperation(newbornDeliverySectionEClass, this.getNewbornsVitalSignsSection(), "getNewbornsVitalSignsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(newbornDeliverySectionEClass, this.getAbnormalConditionoftheNewborn(), "getAbnormalConditionsoftheNewborns", 1, -1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(newbornDeliverySectionEClass, this.getAbnormalConditionoftheNewborn(), "getAbnormalConditionsOfTheNewborns", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
         addEOperation(newbornDeliverySectionEClass, this.getInfantLiving(), "getInfantLiving", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
@@ -2841,7 +2846,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(assessmentsSectionEClass, ecorePackage.getEBoolean(), "validateAssessmentsSectionAssessmentsObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(assessmentsSectionEClass, ecorePackage.getEBoolean(), "validateAssessmentsSectionAssessmentObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2850,11 +2855,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        addEOperation(assessmentsSectionEClass, this.getAssessmentsObservation(), "getAssessmentsObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(assessmentsSectionEClass, this.getAssessmentObservation(), "getAssessmentObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
-        initEClass(assessmentsObservationEClass, AssessmentsObservation.class, "AssessmentsObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+        initEClass(assessmentObservationEClass, AssessmentObservation.class, "AssessmentObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-        op = addEOperation(assessmentsObservationEClass, ecorePackage.getEBoolean(), "validateAssessmentsObservationTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(assessmentObservationEClass, ecorePackage.getEBoolean(), "validateAssessmentObservationTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2863,7 +2868,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(assessmentsObservationEClass, ecorePackage.getEBoolean(), "validateAssessmentsObservationClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(assessmentObservationEClass, ecorePackage.getEBoolean(), "validateAssessmentObservationClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2872,7 +2877,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(assessmentsObservationEClass, ecorePackage.getEBoolean(), "validateAssessmentsObservationMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(assessmentObservationEClass, ecorePackage.getEBoolean(), "validateAssessmentObservationMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2881,7 +2886,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(assessmentsObservationEClass, ecorePackage.getEBoolean(), "validateAssessmentsObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(assessmentObservationEClass, ecorePackage.getEBoolean(), "validateAssessmentObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2890,7 +2895,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(assessmentsObservationEClass, ecorePackage.getEBoolean(), "validateAssessmentsObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(assessmentObservationEClass, ecorePackage.getEBoolean(), "validateAssessmentObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2899,7 +2904,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(assessmentsObservationEClass, ecorePackage.getEBoolean(), "validateAssessmentsObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(assessmentObservationEClass, ecorePackage.getEBoolean(), "validateAssessmentObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2955,7 +2960,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliverySectionEClass, ecorePackage.getEBoolean(), "validateLaborandDeliverySectionLaborandDeliveryInformation", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliverySectionEClass, ecorePackage.getEBoolean(), "validateLaborandDeliverySectionLaborAndDeliveryProcess", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2964,7 +2969,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliverySectionEClass, ecorePackage.getEBoolean(), "validateLaborandDeliverySectionLaborandDeliveryProceduresSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliverySectionEClass, ecorePackage.getEBoolean(), "validateLaborandDeliverySectionLaborAndDeliveryProceduresSection", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2991,17 +2996,17 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        addEOperation(laborandDeliverySectionEClass, this.getLaborandDeliveryInformation(), "getLaborandDeliveryInformation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(laborandDeliverySectionEClass, this.getLaborandDeliveryProcess(), "getLaborAndDeliveryProcess", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(laborandDeliverySectionEClass, this.getLaborandDeliveryProcedureSection(), "getLaborandDeliveryProceduresSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(laborandDeliverySectionEClass, this.getLaborandDeliveryProcedureSection(), "getLaborAndDeliveryProceduresSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
         addEOperation(laborandDeliverySectionEClass, this.getOnsetofLabor(), "getLaborOnsetss", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
         addEOperation(laborandDeliverySectionEClass, this.getMothersVitalSignsSection(), "getMothersVitalSignsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-        initEClass(laborandDeliveryInformationEClass, LaborandDeliveryInformation.class, "LaborandDeliveryInformation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+        initEClass(laborandDeliveryProcessEClass, LaborandDeliveryProcess.class, "LaborandDeliveryProcess", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-        op = addEOperation(laborandDeliveryInformationEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryInformationTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliveryProcessEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcessTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3010,7 +3015,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliveryInformationEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryInformationClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliveryProcessEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcessClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3019,7 +3024,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliveryInformationEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryInformationMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliveryProcessEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcessMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3028,7 +3033,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliveryInformationEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryInformationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliveryProcessEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcessCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3037,7 +3042,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliveryInformationEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryInformationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliveryProcessEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcessCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3046,7 +3051,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliveryInformationEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryInformationAttendantParticipation", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliveryProcessEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcessAttendantParticipation", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3055,7 +3060,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliveryInformationEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryInformationEntryRelationship", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliveryProcessEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcessEntryRelationship", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3064,7 +3069,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliveryInformationEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryInformationCharacteristicsofLaborandDelivery", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliveryProcessEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcessCharacteristicsOfLaborAndDelivery", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3073,7 +3078,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliveryInformationEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryInformationHomeBirthPlan", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliveryProcessEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcessHomeBirthPlan", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3082,7 +3087,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliveryInformationEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryInformationMaternalTransfer", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliveryProcessEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcessMaternalTransfer", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3091,7 +3096,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliveryInformationEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryInformationParticipatingLocation", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliveryProcessEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcessParticipatingLocation", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3100,7 +3105,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliveryInformationEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryInformationMaternalMorbidities", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliveryProcessEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcessMaternalMorbidities", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3109,7 +3114,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliveryInformationEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryInformationRiskFactors", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliveryProcessEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcessRiskFactors", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3118,15 +3123,15 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        addEOperation(laborandDeliveryInformationEClass, this.getCharacteristicofLaborandDelivery(), "getCharacteristicsofLaborandDeliveries", 1, -1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(laborandDeliveryProcessEClass, this.getCharacteristicofLaborandDelivery(), "getCharacteristicsOfLaborAndDeliveries", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(laborandDeliveryInformationEClass, this.getPlannedHomeBirth(), "getHomeBirthPlan", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(laborandDeliveryProcessEClass, this.getPlannedHomeBirth(), "getHomeBirthPlan", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(laborandDeliveryInformationEClass, this.getMaternalTransfer(), "getMaternalTransfer", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(laborandDeliveryProcessEClass, this.getMaternalTransfer(), "getMaternalTransfer", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(laborandDeliveryInformationEClass, this.getMaternalMorbidity(), "getMaternalMorbiditiess", 1, -1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(laborandDeliveryProcessEClass, this.getMaternalMorbidity(), "getMaternalMorbiditiess", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(laborandDeliveryInformationEClass, this.getPregnancyRiskFactor(), "getRiskFactorss", 1, -1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(laborandDeliveryProcessEClass, this.getPregnancyRiskFactor(), "getRiskFactorss", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
         initEClass(characteristicofLaborandDeliveryEClass, CharacteristicofLaborandDelivery.class, "CharacteristicofLaborandDelivery", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -3518,6 +3523,15 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+        op = addEOperation(laborandDeliveryProcedureSectionEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcedureSectionCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(laborandDeliveryProcedureSectionEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcedureSectionText", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -3527,7 +3541,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliveryProcedureSectionEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcedureSectionObstetricProcedures", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliveryProcedureSectionEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcedureSectionObstetricProcedure", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3536,7 +3550,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(laborandDeliveryProcedureSectionEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcedureSectionMethodofDelivery", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(laborandDeliveryProcedureSectionEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcedureSectionMethodOfDelivery", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3545,9 +3559,9 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        addEOperation(laborandDeliveryProcedureSectionEClass, this.getObstetricProcedure(), "getObstetricProceduress", 1, -1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(laborandDeliveryProcedureSectionEClass, this.getObstetricProcedure(), "getObstetricProcedures", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(laborandDeliveryProcedureSectionEClass, this.getMethodofDelivery(), "getMethodofDelivery", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(laborandDeliveryProcedureSectionEClass, this.getMethodofDelivery(), "getMethodOfDelivery", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
         initEClass(obstetricProcedureEClass, ObstetricProcedure.class, "ObstetricProcedure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -3652,7 +3666,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(methodofDeliveryEClass, ecorePackage.getEBoolean(), "validateMethodofDeliveryFinalRouteandMethod", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(methodofDeliveryEClass, ecorePackage.getEBoolean(), "validateMethodofDeliveryFinalRouteAndMethod", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4046,7 +4060,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(fetalDeliverySectionEClass, ecorePackage.getEBoolean(), "validateFetalDeliverySectionNumberofInfantsBornAlive", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(fetalDeliverySectionEClass, ecorePackage.getEBoolean(), "validateFetalDeliverySectionNumberOfInfantsBornAlive", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4082,7 +4096,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(fetalDeliverySectionEClass, ecorePackage.getEBoolean(), "validateFetalDeliverySectionCongenitalAnomalies", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(fetalDeliverySectionEClass, ecorePackage.getEBoolean(), "validateFetalDeliverySectionCongenitalAnomaly", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4192,7 +4206,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
         addEOperation(fetalDeliverySectionEClass, this.getBirthOrder(), "getBirthOrder", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(fetalDeliverySectionEClass, this.getNumberofInfantsBornAlive(), "getNumberofInfantsBornAlive", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(fetalDeliverySectionEClass, this.getNumberofInfantsBornAlive(), "getNumberOfInfantsBornAlive", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
         addEOperation(fetalDeliverySectionEClass, this.getAutopsyPerformance(), "getAutopsyPerformance", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
@@ -4200,7 +4214,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
         addEOperation(fetalDeliverySectionEClass, this.getPlurality(), "getPlurality", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(fetalDeliverySectionEClass, this.getCongenitalAnomaly(), "getCongenitalAnomaliess", 1, -1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(fetalDeliverySectionEClass, this.getCongenitalAnomaly(), "getCongenitalAnomalies", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
         addEOperation(fetalDeliverySectionEClass, this.getFetalDeliveryTime(), "getFetalDeliveryTime", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
@@ -4419,6 +4433,24 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+        op = addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -4438,24 +4470,6 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
         op = addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTypeId", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-        op = addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-        op = addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4563,7 +4577,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4581,7 +4595,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4599,7 +4613,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionFetalDeathSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(), "validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionFetalDeathSection", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4608,15 +4622,15 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, this.getLaborandDeliverySection(), "getLaborandDeliverySection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, this.getLaborandDeliverySection(), "getLaborAndDeliverySection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
         addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, this.getFetalDeliverySection(), "getFetalDeliverySection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, this.getPrenatalTestingandSurveillanceSection(), "getAntenatalTestingandSurveillance", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, this.getPrenatalTestingandSurveillanceSection(), "getPrenatalTestingAndSurveillance", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
         addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, this.getPriorPregnancyHistorySection(), "getPregnancyHistory", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-        addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, this.getHistoryofInfectionFetalDeathSection(), "getHistoryofInfectionFetalDeathSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+        addEOperation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, this.getHistoryofInfectionFetalDeathSection(), "getHistoryOfInfectionFetalDeathSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
         initEClass(historyofInfectionFetalDeathSectionEClass, HistoryofInfectionFetalDeathSection.class, "HistoryofInfectionFetalDeathSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -4771,22 +4785,22 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         createVsbrInfantTransferTransferFacilityFacilityRoleAnnotations();
         // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrInfantTransferTransferFacilityFacilityRoleFacility
         createVsbrInfantTransferTransferFacilityFacilityRoleFacilityAnnotations();
-        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationattendantParticipation
-        createVsbrLaborandDeliveryInformationattendantParticipationAnnotations();
-        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationattendantParticipationattendantRole
-        createVsbrLaborandDeliveryInformationattendantParticipationattendantRoleAnnotations();
-        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationattendantParticipationattendantRoleAttendant
-        createVsbrLaborandDeliveryInformationattendantParticipationattendantRoleAttendantAnnotations();
-        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationpaymentSourceAssociation
-        createVsbrLaborandDeliveryInformationpaymentSourceAssociationAnnotations();
-        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationpaymentSourceAssociationpaymentSource
-        createVsbrLaborandDeliveryInformationpaymentSourceAssociationpaymentSourceAnnotations();
-        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationparticipatingLocation
-        createVsbrLaborandDeliveryInformationparticipatingLocationAnnotations();
-        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationparticipatingLocationLocationRole
-        createVsbrLaborandDeliveryInformationparticipatingLocationLocationRoleAnnotations();
-        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationparticipatingLocationLocationRoleLocation
-        createVsbrLaborandDeliveryInformationparticipatingLocationLocationRoleLocationAnnotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessattendantParticipation
+        createVsbrLaborandDeliveryProcessattendantParticipationAnnotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessattendantParticipationattendantRole
+        createVsbrLaborandDeliveryProcessattendantParticipationattendantRoleAnnotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessattendantParticipationattendantRoleAttendant
+        createVsbrLaborandDeliveryProcessattendantParticipationattendantRoleAttendantAnnotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcesspaymentSourceAssociation
+        createVsbrLaborandDeliveryProcesspaymentSourceAssociationAnnotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcesspaymentSourceAssociationpaymentSource
+        createVsbrLaborandDeliveryProcesspaymentSourceAssociationpaymentSourceAnnotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessparticipatingLocation
+        createVsbrLaborandDeliveryProcessparticipatingLocationAnnotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessparticipatingLocationLocationRole
+        createVsbrLaborandDeliveryProcessparticipatingLocationLocationRoleAnnotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessparticipatingLocationLocationRoleLocation
+        createVsbrLaborandDeliveryProcessparticipatingLocationLocationRoleLocationAnnotations();
         // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMaternalTransfertransferSource
         createVsbrMaternalTransfertransferSourceAnnotations();
         // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMaternalTransfertransferSourcetransferRole
@@ -4829,16 +4843,16 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
         createVsbrFetalDeliveryTimeparticipatingLocationLocationRoleAnnotations();
         // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliveryTimeparticipatingLocationLocationRoleLocation
         createVsbrFetalDeliveryTimeparticipatingLocationLocationRoleLocationAnnotations();
-        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthor
-        createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthorAnnotations();
-        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor
-        createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAnnotations();
         // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTarget
         createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetAnnotations();
         // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRole
         createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRoleAnnotations();
         // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRolePatient
         createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRolePatientAnnotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthor
+        createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthorAnnotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor
+        createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAnnotations();
         // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodian
         createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodianAnnotations();
         // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian
@@ -4861,7 +4875,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            new String[] 
            {
              "initializers", "org.openhealthtools.mdht.uml.cda.vsbr"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     }
 
 	/**
@@ -4877,11 +4891,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Reporting Birth Information from a clinical setting to vital recordsTemplateId Reporting Birth Information from a clinical setting to vital recordsRealmCode Reporting Birth Information from a clinical setting to vital recordsRealmCodeP Reporting Birth Information from a clinical setting to vital recordsTypeId Reporting Birth Information from a clinical setting to vital recordsMoodCode Reporting Birth Information from a clinical setting to vital recordsId Reporting Birth Information from a clinical setting to vital recordsCode Reporting Birth Information from a clinical setting to vital recordsCodeP Reporting Birth Information from a clinical setting to vital recordsTitle Reporting Birth Information from a clinical setting to vital recordsEffectiveTime Reporting Birth Information from a clinical setting to vital recordsConfidentialityCode Reporting Birth Information from a clinical setting to vital recordsConfidentialityCodeP Reporting Birth Information from a clinical setting to vital recordsLanguageCode Reporting Birth Information from a clinical setting to vital recordsAuthor Reporting Birth Information from a clinical setting to vital recordsCustodian Reporting Birth Information from a clinical setting to vital recordsRecordTarget Reporting Birth Information from a clinical setting to vital recordsAntenatal Testing and Surveillance Reporting Birth Information from a clinical setting to vital recordsPregnancy History Reporting Birth Information from a clinical setting to vital recordsNewborn Delivery Section Reporting Birth Information from a clinical setting to vital recordsLabor and Delivery Section Reporting Birth Information from a clinical setting to vital recordsHistory of Infection - Live Birth Section",
+             "constraints.validation.error", "Reporting Birth Information from a clinical setting to vital recordsTemplateId Reporting Birth Information from a clinical setting to vital recordsMoodCode Reporting Birth Information from a clinical setting to vital recordsRealmCode Reporting Birth Information from a clinical setting to vital recordsRealmCodeP Reporting Birth Information from a clinical setting to vital recordsTypeId Reporting Birth Information from a clinical setting to vital recordsId Reporting Birth Information from a clinical setting to vital recordsCode Reporting Birth Information from a clinical setting to vital recordsCodeP Reporting Birth Information from a clinical setting to vital recordsTitle Reporting Birth Information from a clinical setting to vital recordsEffectiveTime Reporting Birth Information from a clinical setting to vital recordsConfidentialityCode Reporting Birth Information from a clinical setting to vital recordsConfidentialityCodeP Reporting Birth Information from a clinical setting to vital recordsLanguageCode Reporting Birth Information from a clinical setting to vital recordsAuthor Reporting Birth Information from a clinical setting to vital recordsCustodian Reporting Birth Information from a clinical setting to vital recordsRecordTarget Reporting Birth Information from a clinical setting to vital recordsPrenatalTestingAndSurveillance Reporting Birth Information from a clinical setting to vital recordsPregnancyHistory Reporting Birth Information from a clinical setting to vital recordsNewbornDeliverySection Reporting Birth Information from a clinical setting to vital recordsLaborAndDeliverySection Reporting Birth Information from a clinical setting to vital recordsHistoryOfInfectionLiveBirthSection",
              "templateId.root", "2.16.840.1.113883.10.20.26.1",
-             "realmCode.code", "USA",
              "classCode", "DOCCLIN",
              "moodCode", "EVN",
+             "realmCode.code", "USA",
              "code.code", "68998-4",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
@@ -4892,7 +4906,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Prenatal Testing and Surveillance SectionTemplateId Prenatal Testing and Surveillance SectionClassCode Prenatal Testing and Surveillance SectionMoodCode Prenatal Testing and Surveillance SectionCode Prenatal Testing and Surveillance SectionText Prenatal Testing and Surveillance SectionPre-Natal Care",
+             "constraints.validation.error", "Prenatal Testing and Surveillance SectionTemplateId Prenatal Testing and Surveillance SectionClassCode Prenatal Testing and Surveillance SectionMoodCode Prenatal Testing and Surveillance SectionCode Prenatal Testing and Surveillance SectionText Prenatal Testing and Surveillance SectionPrenatalCare",
              "templateId.root", "2.16.840.1.113883.10.20.26.3",
              "classCode", "DOCSECT",
              "moodCode", "EVN",
@@ -4971,11 +4985,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "code.displayName", "Births still living"
            });                       
         addAnnotation
-          (numberofLiveBirthsnowDeadEClass, 
+          (numberofLiveBirthsNowDeadEClass, 
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Number of Live Births now DeadTemplateId Number of Live Births now DeadClassCode Number of Live Births now DeadMoodCode Number of Live Births now DeadCode Number of Live Births now DeadCodeP Number of Live Births now DeadValue",
+             "constraints.validation.error", "Number of Live Births Now DeadTemplateId Number of Live Births Now DeadClassCode Number of Live Births Now DeadMoodCode Number of Live Births Now DeadCode Number of Live Births Now DeadCodeP Number of Live Births Now DeadValue",
              "templateId.root", "2.16.840.1.113883.10.20.26.38",
              "classCode", "OBS",
              "moodCode", "EVN",
@@ -5017,7 +5031,16 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Newborn Delivery SectionTemplateId Newborn Delivery SectionClassCode Newborn Delivery SectionMoodCode Newborn Delivery SectionCode Newborn Delivery SectionText Newborn Delivery SectionSubject Newborn Delivery SectionCongenital Anomalies Newborn Delivery SectionNewborn"
+             "constraints.validation.error", "Newborn Delivery SectionTemplateId Newborn Delivery SectionClassCode Newborn Delivery SectionMoodCode Newborn Delivery SectionCode Newborn Delivery SectionText Newborn Delivery SectionSubject Newborn Delivery SectionCongenitalAnomalies Newborn Delivery SectionNewbornsVitalSignsSection Newborn Delivery SectionAbnormalConditionsOfTheNewborn Newborn Delivery SectionInfantLiving Newborn Delivery SectionInfantBreastfed Newborn Delivery SectionPlurality Newborn Delivery SectionAssessmentsSection Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornClassCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornDeterminerCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornSDTCId Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornName Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCodeP Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornBirthTime Newborn Delivery SectionNewbornSubjectRoleOfNewbornClassCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornSubject Newborn Delivery SectionNewbornSubjectTypeCode Newborn Delivery SectionNewbornSubjectRelatedSubject",
+             "templateId.root", "2.16.840.1.113883.10.20.26.10",
+             "classCode", "DOCSECT",
+             "moodCode", "EVN",
+             "code.code", "57075-4",
+             "code.codeSystem", "2.16.840.1.113883.6.1",
+             "code.codeSystemName", "LOINC",
+             "code.displayName", "Newborn delivery information from newborn narrative",
+             "constraints.validation.info", "Newborn Delivery SectionBirthOrder Newborn Delivery SectionNumberOfInfantsBornAlive Newborn Delivery SectionInfantTransfer",
+             "constraints.validation.query", "Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornClassCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornDeterminerCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornSDTCId Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornName Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCodeP Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornBirthTime Newborn Delivery SectionNewbornSubjectRoleOfNewbornClassCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornSubject Newborn Delivery SectionNewbornSubjectTypeCode Newborn Delivery SectionNewbornSubjectRelatedSubject"
            });                                                                                                      
         addAnnotation
           (birthOrderEClass, 
@@ -5066,7 +5089,14 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Newborns Vital Signs SectionTemplateId Newborns Vital Signs SectionClassCode Newborns Vital Signs SectionMoodCode Newborns Vital Signs SectionCode Newborns Vital Signs SectionCodeP Newborns Vital Signs SectionText Newborns Vital Signs SectionNewborn"
+             "constraints.validation.error", "Newborns Vital Signs SectionTemplateId Newborns Vital Signs SectionClassCode Newborns Vital Signs SectionMoodCode Newborns Vital Signs SectionCode Newborns Vital Signs SectionCodeP Newborns Vital Signs SectionText Newborns Vital Signs SectionNewbornsVitalSignsObservation",
+             "templateId.root", "2.16.840.1.113883.10.20.26.11",
+             "classCode", "DOCSECT",
+             "moodCode", "EVN",
+             "code.code", "8716-3",
+             "code.codeSystem", "2.16.840.1.113883.6.1",
+             "code.codeSystemName", "LOINC",
+             "code.displayName", "Vital Signs"
            });                           
         addAnnotation
           (newbornsVitalSignsObservationEClass, 
@@ -5158,7 +5188,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Assessments SectionTemplateId Assessments SectionClassCode Assessments SectionMoodCode Assessments SectionCode Assessments SectionCodeP Assessments SectionText Assessments SectionAssessments Observation",
+             "constraints.validation.error", "Assessments SectionTemplateId Assessments SectionClassCode Assessments SectionMoodCode Assessments SectionCode Assessments SectionCodeP Assessments SectionText Assessments SectionAssessmentObservation",
              "templateId.root", "2.16.840.1.113883.10.20.26.9",
              "classCode", "DOCSECT",
              "moodCode", "EVN",
@@ -5168,11 +5198,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "code.displayName", "Assessment Note"
            });                           
         addAnnotation
-          (assessmentsObservationEClass, 
+          (assessmentObservationEClass, 
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Assessments ObservationTemplateId Assessments ObservationClassCode Assessments ObservationMoodCode Assessments ObservationCode Assessments ObservationCodeP Assessments ObservationValue",
+             "constraints.validation.error", "Assessment ObservationTemplateId Assessment ObservationClassCode Assessment ObservationMoodCode Assessment ObservationCode Assessment ObservationCodeP Assessment ObservationValue",
              "templateId.root", "2.16.840.1.113883.10.20.26.47",
              "classCode", "OBS",
              "moodCode", "EVN",
@@ -5184,7 +5214,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Labor and Delivery SectionTemplateId Labor and Delivery SectionClassCode Labor and Delivery SectionMoodCode Labor and Delivery SectionCode Labor and Delivery SectionText Labor and Delivery SectionLabor and Delivery Information Labor and Delivery SectionLabor and Delivery Procedures Section Labor and Delivery SectionMothers Vital Signs Section",
+             "constraints.validation.error", "Labor and Delivery SectionTemplateId Labor and Delivery SectionClassCode Labor and Delivery SectionMoodCode Labor and Delivery SectionCode Labor and Delivery SectionText Labor and Delivery SectionLaborAndDeliveryProcess Labor and Delivery SectionLaborAndDeliveryProcedures Section Labor and Delivery SectionMothersVitalSignsSection",
              "templateId.root", "2.16.840.1.113883.10.20.26.8",
              "classCode", "DOCSECT",
              "moodCode", "EVN",
@@ -5192,14 +5222,14 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Labor and delivery section",
-             "constraints.validation.info", "Labor and Delivery SectionLabor Onsets"
+             "constraints.validation.info", "Labor and Delivery SectionLaborOnsets"
            });                                    
         addAnnotation
-          (laborandDeliveryInformationEClass, 
+          (laborandDeliveryProcessEClass, 
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Labor and Delivery InformationTemplateId Labor and Delivery InformationClassCode Labor and Delivery InformationMoodCode Labor and Delivery InformationCode Labor and Delivery InformationCodeP Labor and Delivery InformationAttendantParticipation Labor and Delivery InformationEntryRelationship Labor and Delivery InformationMaternalTransfer Labor and Delivery InformationParticipatingLocation Labor and Delivery InformationMaternal Morbidities Labor and Delivery InformationRisk Factors",
+             "constraints.validation.error", "Labor and Delivery ProcessTemplateId Labor and Delivery ProcessClassCode Labor and Delivery ProcessMoodCode Labor and Delivery ProcessCode Labor and Delivery ProcessCodeP Labor and Delivery ProcessAttendantParticipation Labor and Delivery ProcessEntryRelationship Labor and Delivery ProcessMaternalTransfer Labor and Delivery ProcessParticipatingLocation Labor and Delivery ProcessMaternalMorbidities Labor and Delivery ProcessRiskFactors",
              "templateId.root", "2.16.840.1.113883.10.20.26.31",
              "classCode", "ACT",
              "moodCode", "EVN",
@@ -5283,12 +5313,16 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Labor and Delivery Procedure SectionTemplateId Labor and Delivery Procedure SectionClassCode Labor and Delivery Procedure SectionMoodCode Labor and Delivery Procedure SectionCode Labor and Delivery Procedure SectionText Labor and Delivery Procedure SectionMethod of Delivery",
+             "constraints.validation.error", "Labor and Delivery Procedure SectionTemplateId Labor and Delivery Procedure SectionClassCode Labor and Delivery Procedure SectionMoodCode Labor and Delivery Procedure SectionCode Labor and Delivery Procedure SectionCodeP Labor and Delivery Procedure SectionText Labor and Delivery Procedure SectionMethodOfDelivery",
              "templateId.root", "2.16.840.1.113883.10.20.26.7",
              "classCode", "DOCSECT",
              "moodCode", "EVN",
-             "constraints.validation.info", "Labor and Delivery Procedure SectionObstetric Procedures"
-           });                            
+             "code.code", "29300-1",
+             "code.codeSystem", "2.16.840.1.113883.6.1",
+             "code.codeSystemName", "LOINC",
+             "code.displayName", "Procedure",
+             "constraints.validation.info", "Labor and Delivery Procedure SectionObstetricProcedure"
+           });                               
         addAnnotation
           (obstetricProcedureEClass, 
            source, 
@@ -5306,7 +5340,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Method of DeliveryTemplateId Method of DeliveryClassCode Method of DeliveryMoodCode Method of DeliveryCode Method of DeliveryCodeP Method of DeliveryFinal Route and Method Method of DeliveryFetal Presentation Method of DeliveryHysterotomyHysterectomyAssociation",
+             "constraints.validation.error", "Method of DeliveryTemplateId Method of DeliveryClassCode Method of DeliveryMoodCode Method of DeliveryCode Method of DeliveryCodeP Method of DeliveryFinalRouteAndMethod Method of DeliveryFetalPresentation Method of DeliveryHysterotomyHysterectomyAssociation",
              "templateId.root", "2.16.840.1.113883.10.20.26.45",
              "classCode", "PROC",
              "moodCode", "EVN",
@@ -5334,7 +5368,14 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Mothers Vital Signs SectionTemplateId Mothers Vital Signs SectionClassCode Mothers Vital Signs SectionMoodCode Mothers Vital Signs SectionCode Mothers Vital Signs SectionCodeP Mothers Vital Signs SectionText Mothers Vital Signs SectionMother"
+             "constraints.validation.error", "Mothers Vital Signs SectionTemplateId Mothers Vital Signs SectionClassCode Mothers Vital Signs SectionMoodCode Mothers Vital Signs SectionCode Mothers Vital Signs SectionCodeP Mothers Vital Signs SectionText Mothers Vital Signs SectionMothersVitalSignsObservation",
+             "templateId.root", "2.16.840.1.113883.10.20.26.9",
+             "classCode", "DOCSECT",
+             "moodCode", "EVN",
+             "code.code", "8716-3",
+             "code.codeSystem", "2.16.840.1.113883.6.1",
+             "code.codeSystemName", "LOINC",
+             "code.displayName", "Vital Signs"
            });                           
         addAnnotation
           (mothersVitalSignsObservationEClass, 
@@ -5353,7 +5394,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "History of Infection - Live Birth SectionTemplateId History of Infection - Live Birth SectionCode History of Infection - Live Birth SectionText History of Infection - Live Birth SectionInfection Present - Live Birth",
+             "constraints.validation.error", "History of Infection: Live Birth SectionTemplateId History of Infection: Live Birth SectionCode History of Infection: Live Birth SectionText History of Infection: Live Birth SectionInfectionPresentLiveBirth",
              "templateId.root", "2.16.840.1.113883.10.20.26.5",
              "classCode", "DOCSECT",
              "moodCode", "EVN",
@@ -5366,7 +5407,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Infection Present - Live BirthTemplateId Infection Present - Live BirthClassCode Infection Present - Live BirthMoodCode Infection Present - Live BirthCode Infection Present - Live BirthCodeVS Infection Present - Live BirthCodeP Infection Present - Live BirthValue Infection Present - Live BirthValueP",
+             "constraints.validation.error", "Infection Present: Live BirthTemplateId Infection Present: Live BirthClassCode Infection Present: Live BirthMoodCode Infection Present: Live BirthCode Infection Present: Live BirthCodeVS Infection Present: Live BirthCodeP Infection Present: Live BirthValue Infection Present: Live BirthValueP",
              "templateId.root", "2.16.840.1.113883.10.20.26.30",
              "classCode", "OBS",
              "moodCode", "EVN",
@@ -5380,13 +5421,13 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Fetal Delivery SectionTemplateId Fetal Delivery SectionClassCode Fetal Delivery SectionMoodCode Fetal Delivery SectionCode Fetal Delivery SectionText Fetal Delivery SectionBirth Order Fetal Delivery SectionNumber of Infants Born Alive Fetal Delivery SectionFetal Death Occurrance Fetal Delivery SectionPlurality Fetal Delivery SectionCongenital Anomalies Fetal Delivery SectionFetal Delivery Time Fetal Delivery SectionFetalDeliverySubject Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus Fetal Delivery SectionFetalDeliverySubjectTypeCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus",
+             "constraints.validation.error", "Fetal Delivery SectionTemplateId Fetal Delivery SectionClassCode Fetal Delivery SectionMoodCode Fetal Delivery SectionCode Fetal Delivery SectionText Fetal Delivery SectionBirthOrder Fetal Delivery SectionNumberOfInfantsBornAlive Fetal Delivery SectionFetalDeathOccurrance Fetal Delivery SectionPlurality Fetal Delivery SectionCongenitalAnomaly Fetal Delivery SectionFetalDeliveryTime Fetal Delivery SectionFetalDeliverySubject Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus Fetal Delivery SectionFetalDeliverySubjectTypeCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus",
              "templateId.root", "2.16.840.1.113883.10.20.26.4",
              "classCode", "DOCSECT",
              "moodCode", "EVN",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
-             "constraints.validation.warning", "Fetal Delivery SectionAutopsy Performance",
+             "constraints.validation.warning", "Fetal Delivery SectionAutopsyPerformance",
              "constraints.validation.query", "Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusName Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus Fetal Delivery SectionFetalDeliverySubjectTypeCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus",
              "constraints.validation.info", "Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusName"
            });                                                                                 
@@ -5437,11 +5478,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Reporting Fetal Death Information from a clinical setting to vital recordsTemplateId Reporting Fetal Death Information from a clinical setting to vital recordsRealmCode Reporting Fetal Death Information from a clinical setting to vital recordsRealmCodeP Reporting Fetal Death Information from a clinical setting to vital recordsTypeId Reporting Fetal Death Information from a clinical setting to vital recordsClassCode Reporting Fetal Death Information from a clinical setting to vital recordsMoodCode Reporting Fetal Death Information from a clinical setting to vital recordsId Reporting Fetal Death Information from a clinical setting to vital recordsCode Reporting Fetal Death Information from a clinical setting to vital recordsCodeP Reporting Fetal Death Information from a clinical setting to vital recordsTitle Reporting Fetal Death Information from a clinical setting to vital recordsEffectiveTime Reporting Fetal Death Information from a clinical setting to vital recordsConfidentialityCode Reporting Fetal Death Information from a clinical setting to vital recordsConfidentialityCodeP Reporting Fetal Death Information from a clinical setting to vital recordsLanguageCode Reporting Fetal Death Information from a clinical setting to vital recordsAuthor Reporting Fetal Death Information from a clinical setting to vital recordsCustodian Reporting Fetal Death Information from a clinical setting to vital recordsRecordTarget Reporting Fetal Death Information from a clinical setting to vital recordsLabor and Delivery Section Reporting Fetal Death Information from a clinical setting to vital recordsFetal Delivery Section Reporting Fetal Death Information from a clinical setting to vital recordsAntenatal Testing and Surveillance Reporting Fetal Death Information from a clinical setting to vital recordsPregnancy History Reporting Fetal Death Information from a clinical setting to vital recordsHistory of Infection - Fetal Death Section",
+             "constraints.validation.error", "Reporting Fetal Death Information from a clinical setting to vital recordsTemplateId Reporting Fetal Death Information from a clinical setting to vital recordsClassCode Reporting Fetal Death Information from a clinical setting to vital recordsMoodCode Reporting Fetal Death Information from a clinical setting to vital recordsRealmCode Reporting Fetal Death Information from a clinical setting to vital recordsRealmCodeP Reporting Fetal Death Information from a clinical setting to vital recordsTypeId Reporting Fetal Death Information from a clinical setting to vital recordsId Reporting Fetal Death Information from a clinical setting to vital recordsCode Reporting Fetal Death Information from a clinical setting to vital recordsCodeP Reporting Fetal Death Information from a clinical setting to vital recordsTitle Reporting Fetal Death Information from a clinical setting to vital recordsEffectiveTime Reporting Fetal Death Information from a clinical setting to vital recordsConfidentialityCode Reporting Fetal Death Information from a clinical setting to vital recordsConfidentialityCodeP Reporting Fetal Death Information from a clinical setting to vital recordsLanguageCode Reporting Fetal Death Information from a clinical setting to vital recordsAuthor Reporting Fetal Death Information from a clinical setting to vital recordsCustodian Reporting Fetal Death Information from a clinical setting to vital recordsRecordTarget Reporting Fetal Death Information from a clinical setting to vital recordsLaborAndDeliverySection Reporting Fetal Death Information from a clinical setting to vital recordsFetalDeliverySection Reporting Fetal Death Information from a clinical setting to vital recordsPrenatalTestingAndSurveillance Reporting Fetal Death Information from a clinical setting to vital recordsPregnancyHistory Reporting Fetal Death Information from a clinical setting to vital recordsHistoryOfInfectionFetalDeathSection",
              "templateId.root", "2.16.840.1.113883.10.20.26.2",
-             "realmCode.code", "US",
              "classCode", "DOCCLIN",
              "moodCode", "EVN",
+             "realmCode.code", "US",
              "code.code", "69045-3",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
@@ -5452,7 +5493,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "History of Infection - Fetal Death SectionTemplateId History of Infection - Fetal Death SectionCode History of Infection - Fetal Death SectionInfection Present - Fetal Death",
+             "constraints.validation.error", "History of Infection: Fetal Death SectionTemplateId History of Infection: Fetal Death SectionCode History of Infection: Fetal Death SectionInfectionPresentFetalDeath",
              "templateId.root", "2.16.840.1.113883.10.20.26.48",
              "classCode", "DOCSECT",
              "moodCode", "EVN",
@@ -5466,7 +5507,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Infection Present - Fetal DeathTemplateId Infection Present - Fetal DeathClassCode Infection Present - Fetal DeathMoodCode Infection Present - Fetal DeathCode Infection Present - Fetal DeathCodeVS Infection Present - Fetal DeathCodeP Infection Present - Fetal DeathValue Infection Present - Fetal DeathValueP",
+             "constraints.validation.error", "Infection Present: Fetal DeathTemplateId Infection Present: Fetal DeathClassCode Infection Present: Fetal DeathMoodCode Infection Present: Fetal DeathCode Infection Present: Fetal DeathCodeVS Infection Present: Fetal DeathCodeP Infection Present: Fetal DeathValue Infection Present: Fetal DeathValueP",
              "templateId.root", "2.16.840.1.113883.10.20.26.49",
              "classCode", "OBS",
              "moodCode", "EVN",
@@ -5492,7 +5533,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "typeCode", "AUT",
              "constraints.validation.error", "AuthorAssignedAuthor"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
     }
 
 	/**
@@ -5508,8 +5549,9 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.error", "AssignedAuthorId"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+             "constraints.validation.error", "AssignedAuthorId AssignedAuthorClassCode",
+             "classCode", "ASSIGNED"
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
     }
 
 	/**
@@ -5527,7 +5569,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "typeCode", "RCT",
              "constraints.validation.error", "RecordTargetTypeCode RecordTargetPatientRole"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     }
 
 	/**
@@ -5543,10 +5585,10 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            source, 
            new String[] 
            {
-             "constraints.validation.warning", "PatientRoleAddr",
-             "constraints.validation.error", "PatientRoleId PatientRoleClassCode PatientRolePatient",
-             "classCode", "PAT"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+             "classCode", "PAT",
+             "constraints.validation.error", "PatientRoleClassCode PatientRoleId PatientRolePatient",
+             "constraints.validation.warning", "PatientRoleAddr"
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
     }
 
 	/**
@@ -5565,7 +5607,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "classCode", "PSN",
              "constraints.validation.error", "PatientClassCode PatientDeterminerCode PatientName",
              "determinerCode", "INSTANCE"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     }
 
 	/**
@@ -5583,7 +5625,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "typeCode", "CST",
              "constraints.validation.error", "CustodianTypeCode CustodianAssignedCustodian"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     }
 
 	/**
@@ -5601,7 +5643,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "classCode", "ASSIGNED",
              "constraints.validation.error", "AssignedCustodianClassCode"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     }
 
 	/**
@@ -5620,7 +5662,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "classCode", "ORG",
              "constraints.validation.error", "CustodianOrganizationClassCode CustodianOrganizationDeterminerCode CustodianOrganizationId",
              "determinerCode", "INSTANCE"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
     }
 
 	/**
@@ -5638,7 +5680,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "typeCode", "COMP",
              "constraints.validation.error", "prenatalVisitsAssociationTypeCode prenatalVisitsAssociationObservation"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
     }
 
 	/**
@@ -5655,14 +5697,14 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            new String[] 
            {
              "classCode", "OBS",
-             "constraints.validation.error", "preNatalVisitNumberClassCode preNatalVisitNumberCode preNatalVisitNumberCodeP preNatalVisitNumberMoodCode preNatalVisitNumberValue",
+             "constraints.validation.error", "preNatalVisitNumberClassCode preNatalVisitNumberMoodCode preNatalVisitNumberCode preNatalVisitNumberCodeP preNatalVisitNumberValue",
+             "moodCode", "EVN",
              "code.code", "68493-6",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Prenatal visits for this pregnancy",
-             "constraints.validation.dependOn.preNatalVisitNumberCode", "preNatalVisitNumberCodeP",
-             "moodCode", "EVN"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+             "constraints.validation.dependOn.preNatalVisitNumberCode", "preNatalVisitNumberCodeP"
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     }
 
 	/**
@@ -5680,7 +5722,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "typeCode", "SBJ",
              "constraints.validation.error", "NewbornSubjectTypeCode NewbornSubjectRelatedSubject"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     }
 
 	/**
@@ -5701,7 +5743,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "code.code", "CHILD",
              "code.codeSystem", "2.16.840.1.113883.5.111",
              "code.codeSystemName", "RoleCode"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
     }
 
 	/**
@@ -5722,7 +5764,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "determinerCode", "INSTANCE",
              "administrativeGenderCode.codeSystem", "2.16.840.1.113883.5.1",
              "administrativeGenderCode.codeSystemName", "AdministrativeGenderCode"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
     }
 
 	/**
@@ -5740,7 +5782,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "typeCode", "COMP",
              "constraints.validation.error", "DownConfirmationAssociationTypeCode DownConfirmationAssociationDownConfirmation"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
     }
 
 	/**
@@ -5766,7 +5808,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "moodCode", "EVN",
              "value.codeSystem", "2.16.840.1.113883.6.96",
              "value.codeSystemName", "SNOMEDCT"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     }
 
 	/**
@@ -5784,7 +5826,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "typeCode", "COMP",
              "constraints.validation.error", "ChromosomalDisorderConfirmationAssociationTypeCode ChromosomalDisorderConfirmationAssociationChromosomalDisorderConfirmation"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
     }
 
 	/**
@@ -5810,7 +5852,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "moodCode", "EVN",
              "value.codeSystem", "2.16.840.1.113883.6.96",
              "value.codeSystemName", "SNOMEDCT"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     }
 
 	/**
@@ -5828,7 +5870,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "typeCode", "DST",
              "constraints.validation.error", "TransferFacilityTypeCode TransferFacilityParticipantRole"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
     }
 
 	/**
@@ -5846,7 +5888,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "classCode", "SDLOC",
              "constraints.validation.error", "FacilityRoleClassCode FacilityRoleScopingEntity"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     }
 
 	/**
@@ -5865,37 +5907,39 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "classCode", "ORG",
              "constraints.validation.error", "FacilityClassCode FacilityDeterminerCode FacilityName",
              "determinerCode", "INSTANCE"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     }
 
 	/**
-     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationattendantParticipation</b>.
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessattendantParticipation</b>.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createVsbrLaborandDeliveryInformationattendantParticipationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationattendantParticipation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    protected void createVsbrLaborandDeliveryProcessattendantParticipationAnnotations()
+    {
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessattendantParticipation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
         addAnnotation
-          (laborandDeliveryInformationEClass, 
+          (laborandDeliveryProcessEClass, 
            source, 
            new String[] 
            {
              "typeCode", "PRF",
              "constraints.validation.error", "attendantParticipationTypeCode attendantParticipationAssignedEntity"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
     }
 
-	/**
-     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationattendantParticipationattendantRole</b>.
+  /**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessattendantParticipationattendantRole</b>.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createVsbrLaborandDeliveryInformationattendantParticipationattendantRoleAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationattendantParticipationattendantRole";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    protected void createVsbrLaborandDeliveryProcessattendantParticipationattendantRoleAnnotations()
+    {
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessattendantParticipationattendantRole";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
         addAnnotation
-          (laborandDeliveryInformationEClass, 
+          (laborandDeliveryProcessEClass, 
            source, 
            new String[] 
            {
@@ -5904,100 +5948,105 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "constraints.validation.warning", "attendantRoleId",
              "code.codeSystem", "2.16.840.1.113883.6.96",
              "code.codeSystemName", "SNOMEDCT"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     }
 
-	/**
-     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationattendantParticipationattendantRoleAttendant</b>.
+  /**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessattendantParticipationattendantRoleAttendant</b>.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createVsbrLaborandDeliveryInformationattendantParticipationattendantRoleAttendantAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationattendantParticipationattendantRoleAttendant";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    protected void createVsbrLaborandDeliveryProcessattendantParticipationattendantRoleAttendantAnnotations()
+    {
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessattendantParticipationattendantRoleAttendant";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
         addAnnotation
-          (laborandDeliveryInformationEClass, 
+          (laborandDeliveryProcessEClass, 
            source, 
            new String[] 
            {
              "classCode", "PSN",
              "constraints.validation.error", "AttendantClassCode AttendantDeterminerCode AttendantName",
              "determinerCode", "INSTANCE"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     }
 
-	/**
-     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationpaymentSourceAssociation</b>.
+  /**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcesspaymentSourceAssociation</b>.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createVsbrLaborandDeliveryInformationpaymentSourceAssociationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationpaymentSourceAssociation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+    protected void createVsbrLaborandDeliveryProcesspaymentSourceAssociationAnnotations()
+    {
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcesspaymentSourceAssociation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
         addAnnotation
-          (laborandDeliveryInformationEClass, 
+          (laborandDeliveryProcessEClass, 
            source, 
            new String[] 
            {
              "typeCode", "COMP",
              "constraints.validation.error", "paymentSourceAssociationTypeCode paymentSourceAssociationObservation"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     }
 
-	/**
-     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationpaymentSourceAssociationpaymentSource</b>.
+  /**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcesspaymentSourceAssociationpaymentSource</b>.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createVsbrLaborandDeliveryInformationpaymentSourceAssociationpaymentSourceAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationpaymentSourceAssociationpaymentSource";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+    protected void createVsbrLaborandDeliveryProcesspaymentSourceAssociationpaymentSourceAnnotations()
+    {
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcesspaymentSourceAssociationpaymentSource";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
         addAnnotation
-          (laborandDeliveryInformationEClass, 
+          (laborandDeliveryProcessEClass, 
            source, 
            new String[] 
            {
              "classCode", "OBS",
-             "constraints.validation.error", "paymentSourceClassCode paymentSourceCode paymentSourceCodeP paymentSourceMoodCode paymentSourceValue paymentSourceValueP",
+             "constraints.validation.error", "paymentSourceClassCode paymentSourceMoodCode paymentSourceCode paymentSourceCodeP paymentSourceValue paymentSourceValueP",
+             "moodCode", "EVN",
              "code.code", "68461-3",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Payment source",
              "constraints.validation.dependOn.paymentSourceCode", "paymentSourceCodeP",
-             "moodCode", "EVN",
              "value.codeSystem", "2.16.840.1.113883.221.5",
              "value.codeSystemName", "Source of Payment Typology"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
     }
 
-	/**
-     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationparticipatingLocation</b>.
+  /**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessparticipatingLocation</b>.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createVsbrLaborandDeliveryInformationparticipatingLocationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationparticipatingLocation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    protected void createVsbrLaborandDeliveryProcessparticipatingLocationAnnotations()
+    {
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessparticipatingLocation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
         addAnnotation
-          (laborandDeliveryInformationEClass, 
+          (laborandDeliveryProcessEClass, 
            source, 
            new String[] 
            {
              "typeCode", "LOC",
-             "constraints.validation.error", "participatingLocationTypeCode participatingLocationParticipantRole"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+             "constraints.validation.error", "participatingLocationTypeCode participatingLocationLocationRole"
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
     }
 
-	/**
-     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationparticipatingLocationLocationRole</b>.
+  /**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessparticipatingLocationLocationRole</b>.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createVsbrLaborandDeliveryInformationparticipatingLocationLocationRoleAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationparticipatingLocationLocationRole";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+    protected void createVsbrLaborandDeliveryProcessparticipatingLocationLocationRoleAnnotations()
+    {
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessparticipatingLocationLocationRole";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
         addAnnotation
-          (laborandDeliveryInformationEClass, 
+          (laborandDeliveryProcessEClass, 
            source, 
            new String[] 
            {
@@ -6007,19 +6056,20 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.96",
              "code.codeSystemName", "SNOMEDCT",
              "constraints.validation.info", "LocationRoleAddr"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     }
 
-	/**
-     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationparticipatingLocationLocationRoleLocation</b>.
+  /**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessparticipatingLocationLocationRoleLocation</b>.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createVsbrLaborandDeliveryInformationparticipatingLocationLocationRoleLocationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationparticipatingLocationLocationRoleLocation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    protected void createVsbrLaborandDeliveryProcessparticipatingLocationLocationRoleLocationAnnotations()
+    {
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessparticipatingLocationLocationRoleLocation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
         addAnnotation
-          (laborandDeliveryInformationEClass, 
+          (laborandDeliveryProcessEClass, 
            source, 
            new String[] 
            {
@@ -6028,10 +6078,10 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "determinerCode", "INSTANCE",
              "constraints.validation.warning", "LocationName",
              "constraints.validation.info", "LocationDesc"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
     }
 
-	/**
+  /**
      * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMaternalTransfertransferSource</b>.
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6046,7 +6096,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "typeCode", "ORG",
              "constraints.validation.error", "transferSourceTypeCode transferSourceParticipantRole"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     }
 
 	/**
@@ -6064,7 +6114,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "classCode", "SDLOC",
              "constraints.validation.error", "transferRoleClassCode transferRoleScopingEntity"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     }
 
 	/**
@@ -6083,7 +6133,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "classCode", "ORG",
              "constraints.validation.error", "FacilityClassCode FacilityDeterminerCode FacilityName",
              "determinerCode", "INSTANCE"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     }
 
 	/**
@@ -6101,7 +6151,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "typeCode", "COMP",
              "constraints.validation.error", "CesareanAssociationTypeCode CesareanAssociationObservation"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     }
 
 	/**
@@ -6125,7 +6175,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "code.displayName", "Previous cesarean deliveries",
              "constraints.validation.dependOn.NumberOfCesarianDeliveriesCode", "NumberOfCesarianDeliveriesCodeP",
              "moodCode", "EVN"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
     }
 
 	/**
@@ -6135,15 +6185,16 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrMethodofDeliveryFinalRouteandMethodAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryFinalRouteandMethod";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryFinalRouteandMethod";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
         addAnnotation
           (methodofDeliveryEClass, 
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Final Route and MethodTemplateId Final Route and MethodClassCode Final Route and MethodCode Final Route and MethodCodeP Final Route and MethodMoodCode Final Route and MethodValue Final Route and MethodValueP Final Route and MethodTrialOfLaborAssociationTrialOfLaborClassCode Final Route and MethodTrialOfLaborAssociationTrialOfLaborMoodCode Final Route and MethodTrialOfLaborAssociationTrialOfLaborCodeP Final Route and MethodTrialOfLaborAssociationTrialOfLaborCode Final Route and MethodTrialOfLaborAssociationTrialOfLaborValue Final Route and MethodTrialOfLaborAssociationTypeCode Final Route and MethodTrialOfLaborAssociationTrialOfLabor",
+             "constraints.validation.error", "Final Route and MethodTemplateId Final Route and MethodClassCode Final Route and MethodMoodCode Final Route and MethodCode Final Route and MethodCodeP Final Route and MethodValue Final Route and MethodValueP Final Route and MethodTrialOfLaborAssociationTrialOfLaborClassCode Final Route and MethodTrialOfLaborAssociationTrialOfLaborMoodCode Final Route and MethodTrialOfLaborAssociationTrialOfLaborCodeP Final Route and MethodTrialOfLaborAssociationTrialOfLaborCode Final Route and MethodTrialOfLaborAssociationTrialOfLaborValue Final Route and MethodTrialOfLaborAssociationTypeCode Final Route and MethodTrialOfLaborAssociationTrialOfLabor",
              "templateId.root", "null",
              "classCode", "OBS",
+             "moodCode", "EVN",
              "code.code", "73762-7",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
@@ -6158,7 +6209,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrMethodofDeliveryFinalRouteandMethodTrialOfLaborAssociationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryFinalRouteandMethodTrialOfLaborAssociation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryFinalRouteandMethodTrialOfLaborAssociation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
         addAnnotation
           (methodofDeliveryEClass, 
            source, 
@@ -6176,7 +6227,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrMethodofDeliveryFinalRouteandMethodTrialOfLaborAssociationTrialOfLaborAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryFinalRouteandMethodTrialOfLaborAssociationTrialOfLabor";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryFinalRouteandMethodTrialOfLaborAssociationTrialOfLabor";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
         addAnnotation
           (methodofDeliveryEClass, 
            source, 
@@ -6200,7 +6251,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrMethodofDeliveryhysterotomyHysterectomyAssociationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryhysterotomyHysterectomyAssociation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryhysterotomyHysterectomyAssociation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
         addAnnotation
           (methodofDeliveryEClass, 
            source, 
@@ -6218,7 +6269,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrMethodofDeliveryhysterotomyHysterectomyAssociationhysterotomyHysterectomyAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryhysterotomyHysterectomyAssociationhysterotomyHysterectomy";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryhysterotomyHysterectomyAssociationhysterotomyHysterectomy";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
         addAnnotation
           (methodofDeliveryEClass, 
            source, 
@@ -6242,15 +6293,16 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrMethodofDeliveryFetalPresentationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryFetalPresentation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryFetalPresentation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
         addAnnotation
           (methodofDeliveryEClass, 
            source, 
            new String[] 
            {
-             "constraints.validation.error", "Fetal PresentationTemplateId Fetal PresentationClassCode Fetal PresentationCode Fetal PresentationCodeP Fetal PresentationMoodCode Fetal PresentationValue Fetal PresentationValueP",
+             "constraints.validation.error", "Fetal PresentationTemplateId Fetal PresentationClassCode Fetal PresentationMoodCode Fetal PresentationCode Fetal PresentationCodeP Fetal PresentationValue Fetal PresentationValueP",
              "templateId.root", "null",
              "classCode", "OBS",
+             "moodCode", "EVN",
              "code.code", "73761-9",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
@@ -6265,7 +6317,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrFetalDeliverySectionFetalDeliverySubjectAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliverySectionFetalDeliverySubject";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliverySectionFetalDeliverySubject";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
         addAnnotation
           (fetalDeliverySectionEClass, 
            source, 
@@ -6283,7 +6335,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrFetalDeliverySectionFetalDeliverySubjectRoleOfFetusAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliverySectionFetalDeliverySubjectRoleOfFetus";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliverySectionFetalDeliverySubjectRoleOfFetus";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
         addAnnotation
           (fetalDeliverySectionEClass, 
            source, 
@@ -6301,7 +6353,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetus";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetus";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
         addAnnotation
           (fetalDeliverySectionEClass, 
            source, 
@@ -6323,7 +6375,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrAutopsyPerformanceUseAssociationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrAutopsyPerformanceUseAssociation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrAutopsyPerformanceUseAssociation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
         addAnnotation
           (autopsyPerformanceEClass, 
            source, 
@@ -6341,12 +6393,13 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrAutopsyPerformanceUseAssociationAutopsyUseAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrAutopsyPerformanceUseAssociationAutopsyUse";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrAutopsyPerformanceUseAssociationAutopsyUse";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
         addAnnotation
           (autopsyPerformanceEClass, 
            source, 
            new String[] 
            {
+             "code.code", "TBD",
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "constraints.validation.error", "AutopsyUseCode AutopsyUseCodeP AutopsyUseValue",
@@ -6362,7 +6415,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      */
     protected void createVsbrAutopsyPerformanceHistologicalExamAssociationAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrAutopsyPerformanceHistologicalExamAssociation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrAutopsyPerformanceHistologicalExamAssociation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
         addAnnotation
           (autopsyPerformanceEClass, 
            source, 
@@ -6381,7 +6434,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      */
     protected void createVsbrAutopsyPerformanceHistologicalExamAssociationHistologicalPlacentalExamAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrAutopsyPerformanceHistologicalExamAssociationHistologicalPlacentalExam";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrAutopsyPerformanceHistologicalExamAssociationHistologicalPlacentalExam";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
         addAnnotation
           (autopsyPerformanceEClass, 
            source, 
@@ -6406,7 +6459,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      */
     protected void createVsbrFetalDeliveryTimeparticipatingLocationAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliveryTimeparticipatingLocation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliveryTimeparticipatingLocation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
         addAnnotation
           (fetalDeliveryTimeEClass, 
            source, 
@@ -6425,7 +6478,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      */
     protected void createVsbrFetalDeliveryTimeparticipatingLocationLocationRoleAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliveryTimeparticipatingLocationLocationRole";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliveryTimeparticipatingLocationLocationRole";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
         addAnnotation
           (fetalDeliveryTimeEClass, 
            source, 
@@ -6448,7 +6501,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      */
     protected void createVsbrFetalDeliveryTimeparticipatingLocationLocationRoleLocationAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliveryTimeparticipatingLocationLocationRoleLocation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliveryTimeparticipatingLocationLocationRoleLocation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
         addAnnotation
           (fetalDeliveryTimeEClass, 
            source, 
@@ -6469,7 +6522,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthorAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthor";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthor";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
         addAnnotation
           (reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, 
            source, 
@@ -6477,7 +6530,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "typeCode", "AUT",
              "constraints.validation.error", "AuthorTypeCode AuthorAssignedAuthor"
-           });                                                                                                                  
+           });                                                                                                               
     }
 
 	/**
@@ -6487,7 +6540,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
         addAnnotation
           (reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, 
            source, 
@@ -6495,7 +6548,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "classCode", "ASSIGNED",
              "constraints.validation.error", "AssignedAuthorClassCode AssignedAuthorId"
-           });                                                                                                                 
+           });                                                                                                              
     }
 
 	/**
@@ -6505,7 +6558,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTarget";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTarget";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
         addAnnotation
           (reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, 
            source, 
@@ -6513,7 +6566,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
            {
              "typeCode", "RCT",
              "constraints.validation.error", "RecordTargetTypeCode RecordTargetPatientRole"
-           });                                                                                                                
+           });                                                                                                                  
     }
 
 	/**
@@ -6523,16 +6576,16 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRoleAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRole";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRole";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
         addAnnotation
           (reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, 
            source, 
            new String[] 
            {
-             "constraints.validation.warning", "PatientRoleAddr",
-             "constraints.validation.error", "PatientRoleId PatientRolePatient PatientRoleClassCode",
-             "classCode", "PAT"
-           });                                                                                                               
+             "classCode", "PAT",
+             "constraints.validation.error", "PatientRoleClassCode PatientRoleId PatientRolePatient",
+             "constraints.validation.warning", "PatientRoleAddr"
+           });                                                                                                                 
     }
 
 	/**
@@ -6542,7 +6595,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRolePatientAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRolePatient";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRolePatient";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
         addAnnotation
           (reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, 
            source, 
@@ -6551,7 +6604,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
              "classCode", "PSN",
              "constraints.validation.error", "PatientClassCode PatientDeterminerCode PatientName",
              "determinerCode", "INSTANCE"
-           });                                                                                                              
+           });                                                                                                                
     }
 
 	/**
@@ -6561,7 +6614,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodianAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodian";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodian";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
         addAnnotation
           (reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, 
            source, 
@@ -6579,7 +6632,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
         addAnnotation
           (reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, 
            source, 
@@ -6597,7 +6650,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
      * @generated
      */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganization";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganization";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
         addAnnotation
           (reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, 
            source, 

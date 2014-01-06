@@ -27,6 +27,7 @@ import org.openhealthtools.mdht.uml.cda.vsbr.DateofLastLiveBirth;
 import org.openhealthtools.mdht.uml.cda.vsbr.EstimateofGestation;
 import org.openhealthtools.mdht.uml.cda.vsbr.LastMenstrualPeriodDate;
 import org.openhealthtools.mdht.uml.cda.vsbr.NumberofBirthsNowLiving;
+import org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead;
 import org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsnowDead;
 import org.openhealthtools.mdht.uml.cda.vsbr.OtherPregnancyOutcome;
 import org.openhealthtools.mdht.uml.cda.vsbr.PriorPregnancyHistorySection;
@@ -679,7 +680,7 @@ public class PriorPregnancyHistorySectionOperations extends SectionOperations {
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_NUMBEROF_LIVE_BIRTHSNOW_DEAD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Number of Live Births now Dead) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+	protected static final String VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_NUMBEROF_LIVE_BIRTHSNOW_DEAD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Number of Live Births Now Dead) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
 	/**
    * The cached OCL invariant for the '{@link #validatePriorPregnancyHistorySectionNumberofLiveBirthsnowDead(PriorPregnancyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior Pregnancy History Section Numberof Live Birthsnow Dead</em>}' invariant operation.
@@ -1011,7 +1012,7 @@ public class PriorPregnancyHistorySectionOperations extends SectionOperations {
    * @generated
    * @ordered
    */
-	protected static final String GET_NUMBEROF_LIVE_BIRTHSNOW_DEAD__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Number of Live Births now Dead))->asSequence()->any(true).oclAsType(vsbr::Number of Live Births now Dead)";
+	protected static final String GET_NUMBEROF_LIVE_BIRTHSNOW_DEAD__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Number of Live Births Now Dead))->asSequence()->any(true).oclAsType(vsbr::Number of Live Births Now Dead)";
 
 	/**
    * The cached OCL query for the '{@link #getNumberofLiveBirthsnowDead(PriorPregnancyHistorySection) <em>Get Numberof Live Birthsnow Dead</em>}' query operation.
@@ -1029,7 +1030,7 @@ public class PriorPregnancyHistorySectionOperations extends SectionOperations {
    * @generated
    */
 
-	public static NumberofLiveBirthsnowDead getNumberofLiveBirthsnowDead(
+	public static NumberofLiveBirthsNowDead getNumberofLiveBirthsnowDead(
 			PriorPregnancyHistorySection priorPregnancyHistorySection) {
     if (GET_NUMBEROF_LIVE_BIRTHSNOW_DEAD__EOCL_QRY == null)
     {
@@ -1045,7 +1046,7 @@ public class PriorPregnancyHistorySectionOperations extends SectionOperations {
       }
     }
     OCL.Query query = EOCL_ENV.createQuery(GET_NUMBEROF_LIVE_BIRTHSNOW_DEAD__EOCL_QRY);
-    return (NumberofLiveBirthsnowDead) query.evaluate(priorPregnancyHistorySection);
+    return (NumberofLiveBirthsNowDead) query.evaluate(priorPregnancyHistorySection);
   }
 
 	/**

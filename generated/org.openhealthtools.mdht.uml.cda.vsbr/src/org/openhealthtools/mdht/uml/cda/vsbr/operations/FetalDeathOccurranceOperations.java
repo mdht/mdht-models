@@ -391,7 +391,7 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
    */
 	protected static final String VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '634751000124116' or value.code = '634741000124118' or value.code = '634661000124111' or value.code = '261665006')))";
+"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '434681000124104' or value.code = '434671000124102' or value.code = '434631000124100' or value.code = '261665006')))";
 
 	/**
    * The cached OCL invariant for the '{@link #validateFetalDeathOccurranceValue(FetalDeathOccurrance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Death Occurrance Value</em>}' invariant operation.

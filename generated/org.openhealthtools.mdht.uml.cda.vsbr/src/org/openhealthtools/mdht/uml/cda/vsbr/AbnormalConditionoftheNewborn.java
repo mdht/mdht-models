@@ -96,7 +96,7 @@ public interface AbnormalConditionoftheNewborn extends Observation {
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'AVI\' or value.code = \'AV6\' or value.code = \'405269005\' or value.code = \'634801000124111\' or value.code = \'634641000124112\' or value.code = \'91175000\' or value.code = \'56110009\' or value.code = \'260413007\'))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'PHC1250\' or value.code = \'PHC1251\' or value.code = \'405269005\' or value.code = \'43470100012410\' or value.code = \'434621000124103\' or value.code = \'91175000\' or value.code = \'56110009\' or value.code = \'260413007\'))'"
    * @generated
    */
 	boolean validateAbnormalConditionoftheNewbornCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -108,7 +108,7 @@ public interface AbnormalConditionoftheNewborn extends Observation {
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'AVI\' or value.code = \'AV6\' or value.code = \'405269005\' or value.code = \'634801000124111\' or value.code = \'634641000124112\' or value.code = \'91175000\' or value.code = \'56110009\' or value.code = \'260413007\')))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'PHC1250\' or value.code = \'PHC1251\' or value.code = \'405269005\' or value.code = \'43470100012410\' or value.code = \'434621000124103\' or value.code = \'91175000\' or value.code = \'56110009\' or value.code = \'260413007\')))'"
    * @generated
    */
 	boolean validateAbnormalConditionoftheNewbornValue(DiagnosticChain diagnostics, Map<Object, Object> context);

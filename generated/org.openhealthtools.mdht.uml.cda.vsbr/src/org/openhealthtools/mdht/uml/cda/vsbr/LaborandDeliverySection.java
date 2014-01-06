@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage#getLaborandDeliverySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Labor and Delivery SectionTemplateId Labor and Delivery SectionClassCode Labor and Delivery SectionMoodCode Labor and Delivery SectionCode Labor and Delivery SectionText Labor and Delivery SectionLabor and Delivery Information Labor and Delivery SectionLabor and Delivery Procedures Section Labor and Delivery SectionMothers Vital Signs Section' templateId.root='2.16.840.1.113883.10.20.26.8' classCode='DOCSECT' moodCode='EVN' code.code='34079-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Labor and delivery section' constraints.validation.info='Labor and Delivery SectionLabor Onsets'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Labor and Delivery SectionTemplateId Labor and Delivery SectionClassCode Labor and Delivery SectionMoodCode Labor and Delivery SectionCode Labor and Delivery SectionText Labor and Delivery SectionLaborAndDeliveryProcess Labor and Delivery SectionLaborAndDeliveryProcedures Section Labor and Delivery SectionMothersVitalSignsSection' templateId.root='2.16.840.1.113883.10.20.26.8' classCode='DOCSECT' moodCode='EVN' code.code='34079-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Labor and delivery section' constraints.validation.info='Labor and Delivery SectionLaborOnsets'"
  * @generated
  */
 public interface LaborandDeliverySection extends Section {
@@ -92,18 +92,29 @@ public interface LaborandDeliverySection extends Section {
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(vsbr::Labor and Delivery Information) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(vsbr::Labor and Delivery Process) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
    * @generated
    */
-	boolean validateLaborandDeliverySectionLaborandDeliveryInformation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+  boolean validateLaborandDeliverySectionLaborAndDeliveryProcess(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	/**
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Procedure Section))'"
+   * @generated
+   */
+  boolean validateLaborandDeliverySectionLaborAndDeliveryProceduresSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
@@ -118,18 +129,23 @@ public interface LaborandDeliverySection extends Section {
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Procedure Section))'"
+   * <!-- end-user-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(vsbr::Labor and Delivery Process))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Process)'"
    * @generated
    */
-	boolean validateLaborandDeliverySectionLaborandDeliveryProceduresSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+  LaborandDeliveryProcess getLaborAndDeliveryProcess();
 
-	/**
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Procedure Section))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Procedure Section)'"
+   * @generated
+   */
+  LaborandDeliveryProcedureSection getLaborAndDeliveryProceduresSection();
+
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
@@ -145,28 +161,10 @@ public interface LaborandDeliverySection extends Section {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(vsbr::Labor and Delivery Information))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Information)'"
-   * @generated
-   */
-	LaborandDeliveryInformation getLaborandDeliveryInformation();
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Mothers Vital Signs Section))->asSequence()->any(true).oclAsType(vsbr::Mothers Vital Signs Section)'"
    * @generated
    */
 	MothersVitalSignsSection getMothersVitalSignsSection();
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Procedure Section))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Procedure Section)'"
-   * @generated
-   */
-	LaborandDeliveryProcedureSection getLaborandDeliveryProceduresSection();
 
 	/**
    * <!-- begin-user-doc -->

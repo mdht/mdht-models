@@ -26,6 +26,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 
 import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
 
+import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentObservation;
 import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsObservation;
 import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.NewbornsVitalSignsObservation;
@@ -47,8 +48,8 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsSection#validateAssessmentsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessments Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsSection#validateAssessmentsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessments Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsSection#validateAssessmentsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessments Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsSection#validateAssessmentsSectionAssessmentsObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessments Section Assessments Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsSection#getAssessmentsObservations() <em>Get Assessments Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsSection#validateAssessmentsSectionAssessmentObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessments Section Assessment Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsSection#getAssessmentObservations() <em>Get Assessment Observations</em>}</li>
  * </ul>
  * </p>
  *
@@ -464,25 +465,25 @@ public class AssessmentsSectionOperations extends SectionOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateAssessmentsSectionAssessmentsObservation(AssessmentsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessments Section Assessments Observation</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateAssessmentsSectionAssessmentObservation(AssessmentsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessments Section Assessment Observation</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateAssessmentsSectionAssessmentsObservation(AssessmentsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateAssessmentsSectionAssessmentObservation(AssessmentsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_ASSESSMENTS_SECTION_ASSESSMENTS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Assessments Observation))";
+  protected static final String VALIDATE_ASSESSMENTS_SECTION_ASSESSMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Assessment Observation))";
 
   /**
-   * The cached OCL invariant for the '{@link #validateAssessmentsSectionAssessmentsObservation(AssessmentsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessments Section Assessments Observation</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateAssessmentsSectionAssessmentObservation(AssessmentsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessments Section Assessment Observation</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateAssessmentsSectionAssessmentsObservation(AssessmentsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateAssessmentsSectionAssessmentObservation(AssessmentsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_ASSESSMENTS_SECTION_ASSESSMENTS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  protected static Constraint VALIDATE_ASSESSMENTS_SECTION_ASSESSMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 
   /**
@@ -496,22 +497,22 @@ public class AssessmentsSectionOperations extends SectionOperations
    * @generated
    */
   
-  public static  boolean validateAssessmentsSectionAssessmentsObservation(AssessmentsSection assessmentsSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateAssessmentsSectionAssessmentObservation(AssessmentsSection assessmentsSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
   	  
-    if (VALIDATE_ASSESSMENTS_SECTION_ASSESSMENTS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_ASSESSMENTS_SECTION_ASSESSMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(VsbrPackage.Literals.ASSESSMENTS_SECTION);
       try
       {
-        VALIDATE_ASSESSMENTS_SECTION_ASSESSMENTS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENTS_SECTION_ASSESSMENTS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_ASSESSMENTS_SECTION_ASSESSMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENTS_SECTION_ASSESSMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENTS_SECTION_ASSESSMENTS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentsSection))
+    if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENTS_SECTION_ASSESSMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentsSection))
     {
       if (diagnostics != null)
       {
@@ -519,8 +520,8 @@ public class AssessmentsSectionOperations extends SectionOperations
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.ASSESSMENTS_SECTION__ASSESSMENTS_SECTION_ASSESSMENTS_OBSERVATION,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AssessmentsSectionAssessmentsObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assessmentsSection, context) }),
+             VsbrValidator.ASSESSMENTS_SECTION__ASSESSMENTS_SECTION_ASSESSMENT_OBSERVATION,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AssessmentsSectionAssessmentObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assessmentsSection, context) }),
              new Object [] { assessmentsSection }));
       }
        
@@ -530,24 +531,24 @@ public class AssessmentsSectionOperations extends SectionOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #getAssessmentsObservations(AssessmentsSection) <em>Get Assessments Observations</em>}' operation.
+   * The cached OCL expression body for the '{@link #getAssessmentObservations(AssessmentsSection) <em>Get Assessment Observations</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAssessmentsObservations(AssessmentsSection)
+   * @see #getAssessmentObservations(AssessmentsSection)
    * @generated
    * @ordered
    */
-  protected static final String GET_ASSESSMENTS_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Assessments Observation)).oclAsType(vsbr::Assessments Observation)";
+  protected static final String GET_ASSESSMENT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Assessment Observation)).oclAsType(vsbr::Assessment Observation)";
 
   /**
-   * The cached OCL query for the '{@link #getAssessmentsObservations(AssessmentsSection) <em>Get Assessments Observations</em>}' query operation.
+   * The cached OCL query for the '{@link #getAssessmentObservations(AssessmentsSection) <em>Get Assessment Observations</em>}' query operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAssessmentsObservations(AssessmentsSection)
+   * @see #getAssessmentObservations(AssessmentsSection)
    * @generated
    * @ordered
    */
-  protected static OCLExpression<EClassifier> GET_ASSESSMENTS_OBSERVATIONS__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_ASSESSMENT_OBSERVATIONS__EOCL_QRY;
 
 
   /**
@@ -556,25 +557,25 @@ public class AssessmentsSectionOperations extends SectionOperations
    * @generated
    */
   
-  public static  EList<AssessmentsObservation> getAssessmentsObservations(AssessmentsSection assessmentsSection)
+  public static  EList<AssessmentObservation> getAssessmentObservations(AssessmentsSection assessmentsSection)
   {
-    if (GET_ASSESSMENTS_OBSERVATIONS__EOCL_QRY == null)
+    if (GET_ASSESSMENT_OBSERVATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setOperationContext(VsbrPackage.Literals.ASSESSMENTS_SECTION, VsbrPackage.Literals.ASSESSMENTS_SECTION.getEAllOperations().get(62));
       try
       {
-        GET_ASSESSMENTS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ASSESSMENTS_OBSERVATIONS__EOCL_EXP);
+        GET_ASSESSMENT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_OBSERVATIONS__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    OCL.Query query = EOCL_ENV.createQuery(GET_ASSESSMENTS_OBSERVATIONS__EOCL_QRY);
+    OCL.Query query = EOCL_ENV.createQuery(GET_ASSESSMENT_OBSERVATIONS__EOCL_QRY);
     @SuppressWarnings("unchecked")
-    Collection<AssessmentsObservation> result = (Collection<AssessmentsObservation>) query.evaluate(assessmentsSection);
-    return new BasicEList.UnmodifiableEList<AssessmentsObservation>(result.size(), result.toArray());
+    Collection<AssessmentObservation> result = (Collection<AssessmentObservation>) query.evaluate(assessmentsSection);
+    return new BasicEList.UnmodifiableEList<AssessmentObservation>(result.size(), result.toArray());
   }
 
 } // AssessmentsSectionOperations

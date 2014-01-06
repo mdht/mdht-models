@@ -25,11 +25,11 @@ import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage#getReportingBirthInformationfromaclinicalsettingtovitalrecords()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Reporting Birth Information from a clinical setting to vital recordsTemplateId Reporting Birth Information from a clinical setting to vital recordsRealmCode Reporting Birth Information from a clinical setting to vital recordsRealmCodeP Reporting Birth Information from a clinical setting to vital recordsTypeId Reporting Birth Information from a clinical setting to vital recordsMoodCode Reporting Birth Information from a clinical setting to vital recordsId Reporting Birth Information from a clinical setting to vital recordsCode Reporting Birth Information from a clinical setting to vital recordsCodeP Reporting Birth Information from a clinical setting to vital recordsTitle Reporting Birth Information from a clinical setting to vital recordsEffectiveTime Reporting Birth Information from a clinical setting to vital recordsConfidentialityCode Reporting Birth Information from a clinical setting to vital recordsConfidentialityCodeP Reporting Birth Information from a clinical setting to vital recordsLanguageCode Reporting Birth Information from a clinical setting to vital recordsAuthor Reporting Birth Information from a clinical setting to vital recordsCustodian Reporting Birth Information from a clinical setting to vital recordsRecordTarget Reporting Birth Information from a clinical setting to vital recordsAntenatal Testing and Surveillance Reporting Birth Information from a clinical setting to vital recordsPregnancy History Reporting Birth Information from a clinical setting to vital recordsNewborn Delivery Section Reporting Birth Information from a clinical setting to vital recordsLabor and Delivery Section Reporting Birth Information from a clinical setting to vital recordsHistory of Infection - Live Birth Section' templateId.root='2.16.840.1.113883.10.20.26.1' realmCode.code='USA' classCode='DOCCLIN' moodCode='EVN' code.code='68998-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='U.S. standard certificate of live birth - 2003 revision'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Reporting Birth Information from a clinical setting to vital recordsTemplateId Reporting Birth Information from a clinical setting to vital recordsMoodCode Reporting Birth Information from a clinical setting to vital recordsRealmCode Reporting Birth Information from a clinical setting to vital recordsRealmCodeP Reporting Birth Information from a clinical setting to vital recordsTypeId Reporting Birth Information from a clinical setting to vital recordsId Reporting Birth Information from a clinical setting to vital recordsCode Reporting Birth Information from a clinical setting to vital recordsCodeP Reporting Birth Information from a clinical setting to vital recordsTitle Reporting Birth Information from a clinical setting to vital recordsEffectiveTime Reporting Birth Information from a clinical setting to vital recordsConfidentialityCode Reporting Birth Information from a clinical setting to vital recordsConfidentialityCodeP Reporting Birth Information from a clinical setting to vital recordsLanguageCode Reporting Birth Information from a clinical setting to vital recordsAuthor Reporting Birth Information from a clinical setting to vital recordsCustodian Reporting Birth Information from a clinical setting to vital recordsRecordTarget Reporting Birth Information from a clinical setting to vital recordsPrenatalTestingAndSurveillance Reporting Birth Information from a clinical setting to vital recordsPregnancyHistory Reporting Birth Information from a clinical setting to vital recordsNewbornDeliverySection Reporting Birth Information from a clinical setting to vital recordsLaborAndDeliverySection Reporting Birth Information from a clinical setting to vital recordsHistoryOfInfectionLiveBirthSection' templateId.root='2.16.840.1.113883.10.20.26.1' classCode='DOCCLIN' moodCode='EVN' realmCode.code='USA' code.code='68998-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='U.S. standard certificate of live birth - 2003 revision'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthor typeCode='AUT' constraints.validation.error='AuthorAssignedAuthor'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor constraints.validation.error='AssignedAuthorId'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor constraints.validation.error='AssignedAuthorId AssignedAuthorClassCode' classCode='ASSIGNED'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTarget typeCode='RCT' constraints.validation.error='RecordTargetTypeCode RecordTargetPatientRole'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRole constraints.validation.warning='PatientRoleAddr' constraints.validation.error='PatientRoleId PatientRoleClassCode PatientRolePatient' classCode='PAT'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRole classCode='PAT' constraints.validation.error='PatientRoleClassCode PatientRoleId PatientRolePatient' constraints.validation.warning='PatientRoleAddr'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRolePatient classCode='PSN' constraints.validation.error='PatientClassCode PatientDeterminerCode PatientName' determinerCode='INSTANCE'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodian typeCode='CST' constraints.validation.error='CustodianTypeCode CustodianAssignedCustodian'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian classCode='ASSIGNED' constraints.validation.error='AssignedCustodianClassCode'"
@@ -247,7 +247,7 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -255,10 +255,9 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prenatal Testing and Surveillance Section))'"
    * @generated
    */
-	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
@@ -286,7 +285,7 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -294,31 +293,30 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Section))'"
    * @generated
    */
-	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	/**
+  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection - Live Birth Section))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection: Live Birth Section))'"
    * @generated
    */
-  boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionLiveBirthSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionLiveBirthSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
   /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prenatal Testing and Surveillance Section))->asSequence()->any(true).oclAsType(vsbr::Prenatal Testing and Surveillance Section)'"
    * @generated
    */
-	PrenatalTestingandSurveillanceSection getAntenatalTestingandSurveillance();
+  PrenatalTestingandSurveillanceSection getPrenatalTestingAndSurveillance();
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
@@ -338,21 +336,21 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Section))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Section)'"
    * @generated
    */
-	LaborandDeliverySection getLaborandDeliverySection();
+  LaborandDeliverySection getLaborAndDeliverySection();
 
-	/**
+  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection - Live Birth Section))->asSequence()->any(true).oclAsType(vsbr::History of Infection - Live Birth Section)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection: Live Birth Section))->asSequence()->any(true).oclAsType(vsbr::History of Infection: Live Birth Section)'"
    * @generated
    */
-  HistoryofInfectionLiveBirthSection getHistoryofInfectionLiveBirthSection();
+  HistoryofInfectionLiveBirthSection getHistoryOfInfectionLiveBirthSection();
 
   /**
    * <!-- begin-user-doc -->
