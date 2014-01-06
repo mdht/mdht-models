@@ -100,14 +100,15 @@ public class MethodofDeliveryImpl extends ProcedureImpl implements MethodofDeliv
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateMethodofDeliveryFinalRouteandMethod(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return MethodofDeliveryOperations.validateMethodofDeliveryFinalRouteandMethod(this, diagnostics, context);
+  public boolean validateMethodofDeliveryFinalRouteAndMethod(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return MethodofDeliveryOperations.validateMethodofDeliveryFinalRouteAndMethod(this, diagnostics, context);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated

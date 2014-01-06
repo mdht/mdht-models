@@ -42,8 +42,8 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.PrenatalTestingandSurveillanceSection#validatePrenatalTestingandSurveillanceSectionMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prenatal Testingand Surveillance Section Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.PrenatalTestingandSurveillanceSection#validatePrenatalTestingandSurveillanceSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prenatal Testingand Surveillance Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.PrenatalTestingandSurveillanceSection#validatePrenatalTestingandSurveillanceSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prenatal Testingand Surveillance Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.PrenatalTestingandSurveillanceSection#validatePrenatalTestingandSurveillanceSectionPreNatalCare(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prenatal Testingand Surveillance Section Pre Natal Care</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.PrenatalTestingandSurveillanceSection#getPreNatalCare() <em>Get Pre Natal Care</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.PrenatalTestingandSurveillanceSection#validatePrenatalTestingandSurveillanceSectionPrenatalCare(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prenatal Testingand Surveillance Section Prenatal Care</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.PrenatalTestingandSurveillanceSection#getPrenatalCare() <em>Get Prenatal Care</em>}</li>
  * </ul>
  * </p>
  *
@@ -393,26 +393,26 @@ public class PrenatalTestingandSurveillanceSectionOperations extends SectionOper
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validatePrenatalTestingandSurveillanceSectionPreNatalCare(PrenatalTestingandSurveillanceSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prenatal Testingand Surveillance Section Pre Natal Care</em>}' operation.
+   * The cached OCL expression body for the '{@link #validatePrenatalTestingandSurveillanceSectionPrenatalCare(PrenatalTestingandSurveillanceSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prenatal Testingand Surveillance Section Prenatal Care</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validatePrenatalTestingandSurveillanceSectionPreNatalCare(PrenatalTestingandSurveillanceSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validatePrenatalTestingandSurveillanceSectionPrenatalCare(PrenatalTestingandSurveillanceSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_PRE_NATAL_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(vsbr::Prenatal Care) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+  protected static final String VALIDATE_PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_PRENATAL_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(vsbr::Prenatal Care) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
-   * The cached OCL invariant for the '{@link #validatePrenatalTestingandSurveillanceSectionPreNatalCare(PrenatalTestingandSurveillanceSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prenatal Testingand Surveillance Section Pre Natal Care</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validatePrenatalTestingandSurveillanceSectionPrenatalCare(PrenatalTestingandSurveillanceSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prenatal Testingand Surveillance Section Prenatal Care</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validatePrenatalTestingandSurveillanceSectionPreNatalCare(PrenatalTestingandSurveillanceSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validatePrenatalTestingandSurveillanceSectionPrenatalCare(PrenatalTestingandSurveillanceSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_PRE_NATAL_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+  protected static Constraint VALIDATE_PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_PRENATAL_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
 
   /**
    * <!-- begin-user-doc -->
@@ -425,22 +425,22 @@ public class PrenatalTestingandSurveillanceSectionOperations extends SectionOper
    * @generated
    */
   
-  public static  boolean validatePrenatalTestingandSurveillanceSectionPreNatalCare(PrenatalTestingandSurveillanceSection prenatalTestingandSurveillanceSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validatePrenatalTestingandSurveillanceSectionPrenatalCare(PrenatalTestingandSurveillanceSection prenatalTestingandSurveillanceSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
   	  
-    if (VALIDATE_PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_PRE_NATAL_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_PRENATAL_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(VsbrPackage.Literals.PRENATAL_TESTINGAND_SURVEILLANCE_SECTION);
       try
       {
-        VALIDATE_PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_PRE_NATAL_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_PRE_NATAL_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_PRENATAL_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_PRENATAL_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_PRE_NATAL_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(prenatalTestingandSurveillanceSection))
+    if (!EOCL_ENV.createQuery(VALIDATE_PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_PRENATAL_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(prenatalTestingandSurveillanceSection))
     {
       if (diagnostics != null)
       {
@@ -448,8 +448,8 @@ public class PrenatalTestingandSurveillanceSectionOperations extends SectionOper
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_PRE_NATAL_CARE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PrenatalTestingandSurveillanceSectionPreNatalCare", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(prenatalTestingandSurveillanceSection, context) }),
+             VsbrValidator.PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_PRENATAL_CARE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PrenatalTestingandSurveillanceSectionPrenatalCare", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(prenatalTestingandSurveillanceSection, context) }),
              new Object [] { prenatalTestingandSurveillanceSection }));
       }
        
@@ -459,24 +459,25 @@ public class PrenatalTestingandSurveillanceSectionOperations extends SectionOper
   }
 
   /**
-   * The cached OCL expression body for the '{@link #getPreNatalCare(PrenatalTestingandSurveillanceSection) <em>Get Pre Natal Care</em>}' operation.
+   * The cached OCL expression body for the '{@link #getPrenatalCare(PrenatalTestingandSurveillanceSection) <em>Get Prenatal Care</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getPreNatalCare(PrenatalTestingandSurveillanceSection)
+   * @see #getPrenatalCare(PrenatalTestingandSurveillanceSection)
    * @generated
    * @ordered
    */
-  protected static final String GET_PRE_NATAL_CARE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(vsbr::Prenatal Care))->asSequence()->any(true).oclAsType(vsbr::Prenatal Care)";
+  protected static final String GET_PRENATAL_CARE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(vsbr::Prenatal Care))->asSequence()->any(true).oclAsType(vsbr::Prenatal Care)";
 
   /**
-   * The cached OCL query for the '{@link #getPreNatalCare(PrenatalTestingandSurveillanceSection) <em>Get Pre Natal Care</em>}' query operation.
+   * The cached OCL query for the '{@link #getPrenatalCare(PrenatalTestingandSurveillanceSection) <em>Get Prenatal Care</em>}' query operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getPreNatalCare(PrenatalTestingandSurveillanceSection)
+   * @see #getPrenatalCare(PrenatalTestingandSurveillanceSection)
    * @generated
    * @ordered
    */
-  protected static OCLExpression<EClassifier> GET_PRE_NATAL_CARE__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_PRENATAL_CARE__EOCL_QRY;
+
 
   /**
    * <!-- begin-user-doc -->
@@ -484,22 +485,22 @@ public class PrenatalTestingandSurveillanceSectionOperations extends SectionOper
    * @generated
    */
   
-  public static  PrenatalCare getPreNatalCare(PrenatalTestingandSurveillanceSection prenatalTestingandSurveillanceSection)
+  public static  PrenatalCare getPrenatalCare(PrenatalTestingandSurveillanceSection prenatalTestingandSurveillanceSection)
   {
-    if (GET_PRE_NATAL_CARE__EOCL_QRY == null)
+    if (GET_PRENATAL_CARE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setOperationContext(VsbrPackage.Literals.PRENATAL_TESTINGAND_SURVEILLANCE_SECTION, VsbrPackage.Literals.PRENATAL_TESTINGAND_SURVEILLANCE_SECTION.getEAllOperations().get(61));
       try
       {
-        GET_PRE_NATAL_CARE__EOCL_QRY = helper.createQuery(GET_PRE_NATAL_CARE__EOCL_EXP);
+        GET_PRENATAL_CARE__EOCL_QRY = helper.createQuery(GET_PRENATAL_CARE__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    OCL.Query query = EOCL_ENV.createQuery(GET_PRE_NATAL_CARE__EOCL_QRY);
+    OCL.Query query = EOCL_ENV.createQuery(GET_PRENATAL_CARE__EOCL_QRY);
     return (PrenatalCare) query.evaluate(prenatalTestingandSurveillanceSection);
   }
 

@@ -56,10 +56,10 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionSubject(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Subject</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionBirthOrder(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Birth Order</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionNumberofInfantsBornAlive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Numberof Infants Born Alive</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionNumberOfInfantsBornAlive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Number Of Infants Born Alive</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionCongenitalAnomalies(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Congenital Anomalies</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionNewbornsVitalSignsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Newborns Vital Signs Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionAbnormalConditionsoftheNewborn(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Abnormal Conditionsofthe Newborn</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Abnormal Conditions Of The Newborn</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionInfantLiving(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Infant Living</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionInfantBreastfed(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Infant Breastfed</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionInfantTransfer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Infant Transfer</em>}</li>
@@ -78,10 +78,10 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionNewbornSubjectTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Newborn Subject Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionNewbornSubjectRelatedSubject(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Newborn Subject Related Subject</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getBirthOrder() <em>Get Birth Order</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getNumberofInfantsBornAlive() <em>Get Numberof Infants Born Alive</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getNumberOfInfantsBornAlive() <em>Get Number Of Infants Born Alive</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getCongenitalAnomaliess() <em>Get Congenital Anomaliess</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getNewbornsVitalSignsSection() <em>Get Newborns Vital Signs Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getAbnormalConditionsoftheNewborns() <em>Get Abnormal Conditionsofthe Newborns</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getAbnormalConditionsOfTheNewborns() <em>Get Abnormal Conditions Of The Newborns</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getInfantLiving() <em>Get Infant Living</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getInfantBreastfed() <em>Get Infant Breastfed</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getInfantTransfer() <em>Get Infant Transfer</em>}</li>
@@ -560,29 +560,29 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #validateNewbornDeliverySectionNumberofInfantsBornAlive(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Numberof Infants Born Alive</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateNewbornDeliverySectionNumberOfInfantsBornAlive(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Number Of Infants Born Alive</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateNewbornDeliverySectionNumberofInfantsBornAlive(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateNewbornDeliverySectionNumberOfInfantsBornAlive(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Number of Infants Born Alive) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+  protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Number of Infants Born Alive) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
-	/**
-   * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionNumberofInfantsBornAlive(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Numberof Infants Born Alive</em>}' invariant operation.
+  /**
+   * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionNumberOfInfantsBornAlive(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Number Of Infants Born Alive</em>}' invariant operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateNewbornDeliverySectionNumberofInfantsBornAlive(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateNewbornDeliverySectionNumberOfInfantsBornAlive(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
+  
+  protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param newbornDeliverySection The receiving '<em><b>Newborn Delivery Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -590,23 +590,23 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-
-	public static boolean validateNewbornDeliverySectionNumberofInfantsBornAlive(
-			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validateNewbornDeliverySectionNumberOfInfantsBornAlive(NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
-    if (VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
       try
       {
-        VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(newbornDeliverySection))
+    if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(newbornDeliverySection))
     {
       if (diagnostics != null)
       {
@@ -614,8 +614,8 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NewbornDeliverySectionNumberofInfantsBornAlive", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(newbornDeliverySection, context) }),
+             VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NewbornDeliverySectionNumberOfInfantsBornAlive", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(newbornDeliverySection, context) }),
              new Object [] { newbornDeliverySection }));
       }
        
@@ -624,7 +624,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
     return true;
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #validateNewbornDeliverySectionCongenitalAnomalies(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Congenital Anomalies</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -755,29 +755,29 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #validateNewbornDeliverySectionAbnormalConditionsoftheNewborn(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Abnormal Conditionsofthe Newborn</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Abnormal Conditions Of The Newborn</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateNewbornDeliverySectionAbnormalConditionsoftheNewborn(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONSOFTHE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Abnormal Condition of the Newborn) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+  protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Abnormal Condition of the Newborn) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
-	/**
-   * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionAbnormalConditionsoftheNewborn(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Abnormal Conditionsofthe Newborn</em>}' invariant operation.
+  /**
+   * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Abnormal Conditions Of The Newborn</em>}' invariant operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateNewbornDeliverySectionAbnormalConditionsoftheNewborn(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * <!-- end-user-doc -->
+   * @see #validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
+  
+  protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONSOFTHE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * @param newbornDeliverySection The receiving '<em><b>Newborn Delivery Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -785,23 +785,23 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-
-	public static boolean validateNewbornDeliverySectionAbnormalConditionsoftheNewborn(
-			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  
+  public static  boolean validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn(NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
   	  
-    if (VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONSOFTHE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
       try
       {
-        VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONSOFTHE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONSOFTHE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONSOFTHE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(newbornDeliverySection))
+    if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(newbornDeliverySection))
     {
       if (diagnostics != null)
       {
@@ -809,8 +809,8 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONSOFTHE_NEWBORN,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NewbornDeliverySectionAbnormalConditionsoftheNewborn", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(newbornDeliverySection, context) }),
+             VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NewbornDeliverySectionAbnormalConditionsOfTheNewborn", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(newbornDeliverySection, context) }),
              new Object [] { newbornDeliverySection }));
       }
        
@@ -819,7 +819,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
     return true;
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #validateNewbornDeliverySectionInfantLiving(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Infant Living</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1973,50 +1973,51 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #getNumberofInfantsBornAlive(NewbornDeliverySection) <em>Get Numberof Infants Born Alive</em>}' operation.
+   * The cached OCL expression body for the '{@link #getNumberOfInfantsBornAlive(NewbornDeliverySection) <em>Get Number Of Infants Born Alive</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #getNumberofInfantsBornAlive(NewbornDeliverySection)
+   * <!-- end-user-doc -->
+   * @see #getNumberOfInfantsBornAlive(NewbornDeliverySection)
    * @generated
    * @ordered
    */
-	protected static final String GET_NUMBEROF_INFANTS_BORN_ALIVE__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Number of Infants Born Alive))->asSequence()->any(true).oclAsType(vsbr::Number of Infants Born Alive)";
+  protected static final String GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Number of Infants Born Alive))->asSequence()->any(true).oclAsType(vsbr::Number of Infants Born Alive)";
 
-	/**
-   * The cached OCL query for the '{@link #getNumberofInfantsBornAlive(NewbornDeliverySection) <em>Get Numberof Infants Born Alive</em>}' query operation.
+  /**
+   * The cached OCL query for the '{@link #getNumberOfInfantsBornAlive(NewbornDeliverySection) <em>Get Number Of Infants Born Alive</em>}' query operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #getNumberofInfantsBornAlive(NewbornDeliverySection)
+   * <!-- end-user-doc -->
+   * @see #getNumberOfInfantsBornAlive(NewbornDeliverySection)
    * @generated
    * @ordered
    */
-	protected static OCLExpression<EClassifier> GET_NUMBEROF_INFANTS_BORN_ALIVE__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_QRY;
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-
-	public static NumberofInfantsBornAlive getNumberofInfantsBornAlive(NewbornDeliverySection newbornDeliverySection) {
-    if (GET_NUMBEROF_INFANTS_BORN_ALIVE__EOCL_QRY == null)
+  
+  public static  NumberofInfantsBornAlive getNumberOfInfantsBornAlive(NewbornDeliverySection newbornDeliverySection)
+  {
+    if (GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setOperationContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION, VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION.getEAllOperations().get(84));
       try
       {
-        GET_NUMBEROF_INFANTS_BORN_ALIVE__EOCL_QRY = helper.createQuery(GET_NUMBEROF_INFANTS_BORN_ALIVE__EOCL_EXP);
+        GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_QRY = helper.createQuery(GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    OCL.Query query = EOCL_ENV.createQuery(GET_NUMBEROF_INFANTS_BORN_ALIVE__EOCL_QRY);
+    OCL.Query query = EOCL_ENV.createQuery(GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_QRY);
     return (NumberofInfantsBornAlive) query.evaluate(newbornDeliverySection);
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #getCongenitalAnomaliess(NewbornDeliverySection) <em>Get Congenital Anomaliess</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2107,53 +2108,53 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #getAbnormalConditionsoftheNewborns(NewbornDeliverySection) <em>Get Abnormal Conditionsofthe Newborns</em>}' operation.
+   * The cached OCL expression body for the '{@link #getAbnormalConditionsOfTheNewborns(NewbornDeliverySection) <em>Get Abnormal Conditions Of The Newborns</em>}' operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #getAbnormalConditionsoftheNewborns(NewbornDeliverySection)
+   * <!-- end-user-doc -->
+   * @see #getAbnormalConditionsOfTheNewborns(NewbornDeliverySection)
    * @generated
    * @ordered
    */
-	protected static final String GET_ABNORMAL_CONDITIONSOFTHE_NEWBORNS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Abnormal Condition of the Newborn)).oclAsType(vsbr::Abnormal Condition of the Newborn)";
+  protected static final String GET_ABNORMAL_CONDITIONS_OF_THE_NEWBORNS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Abnormal Condition of the Newborn)).oclAsType(vsbr::Abnormal Condition of the Newborn)";
 
-	/**
-   * The cached OCL query for the '{@link #getAbnormalConditionsoftheNewborns(NewbornDeliverySection) <em>Get Abnormal Conditionsofthe Newborns</em>}' query operation.
+  /**
+   * The cached OCL query for the '{@link #getAbnormalConditionsOfTheNewborns(NewbornDeliverySection) <em>Get Abnormal Conditions Of The Newborns</em>}' query operation.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #getAbnormalConditionsoftheNewborns(NewbornDeliverySection)
+   * <!-- end-user-doc -->
+   * @see #getAbnormalConditionsOfTheNewborns(NewbornDeliverySection)
    * @generated
    * @ordered
    */
-	protected static OCLExpression<EClassifier> GET_ABNORMAL_CONDITIONSOFTHE_NEWBORNS__EOCL_QRY;
+  protected static OCLExpression<EClassifier> GET_ABNORMAL_CONDITIONS_OF_THE_NEWBORNS__EOCL_QRY;
 
-	/**
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-
-	public static EList<AbnormalConditionoftheNewborn> getAbnormalConditionsoftheNewborns(
-			NewbornDeliverySection newbornDeliverySection) {
-    if (GET_ABNORMAL_CONDITIONSOFTHE_NEWBORNS__EOCL_QRY == null)
+  
+  public static  EList<AbnormalConditionoftheNewborn> getAbnormalConditionsOfTheNewborns(NewbornDeliverySection newbornDeliverySection)
+  {
+    if (GET_ABNORMAL_CONDITIONS_OF_THE_NEWBORNS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setOperationContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION, VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION.getEAllOperations().get(87));
       try
       {
-        GET_ABNORMAL_CONDITIONSOFTHE_NEWBORNS__EOCL_QRY = helper.createQuery(GET_ABNORMAL_CONDITIONSOFTHE_NEWBORNS__EOCL_EXP);
+        GET_ABNORMAL_CONDITIONS_OF_THE_NEWBORNS__EOCL_QRY = helper.createQuery(GET_ABNORMAL_CONDITIONS_OF_THE_NEWBORNS__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    OCL.Query query = EOCL_ENV.createQuery(GET_ABNORMAL_CONDITIONSOFTHE_NEWBORNS__EOCL_QRY);
+    OCL.Query query = EOCL_ENV.createQuery(GET_ABNORMAL_CONDITIONS_OF_THE_NEWBORNS__EOCL_QRY);
     @SuppressWarnings("unchecked")
     Collection<AbnormalConditionoftheNewborn> result = (Collection<AbnormalConditionoftheNewborn>) query.evaluate(newbornDeliverySection);
     return new BasicEList.UnmodifiableEList<AbnormalConditionoftheNewborn>(result.size(), result.toArray());
   }
 
-	/**
+  /**
    * The cached OCL expression body for the '{@link #getInfantLiving(NewbornDeliverySection) <em>Get Infant Living</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

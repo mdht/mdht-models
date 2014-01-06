@@ -147,7 +147,7 @@ public interface PriorPregnancyHistorySection extends Section {
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Number of Live Births now Dead) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Number of Live Births Now Dead) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
    * @generated
    */
 	boolean validatePriorPregnancyHistorySectionNumberofLiveBirthsnowDead(DiagnosticChain diagnostics,
@@ -210,10 +210,10 @@ public interface PriorPregnancyHistorySection extends Section {
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Number of Live Births now Dead))->asSequence()->any(true).oclAsType(vsbr::Number of Live Births now Dead)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Number of Live Births Now Dead))->asSequence()->any(true).oclAsType(vsbr::Number of Live Births Now Dead)'"
    * @generated
    */
-	NumberofLiveBirthsnowDead getNumberofLiveBirthsnowDead();
+	NumberofLiveBirthsNowDead getNumberofLiveBirthsnowDead();
 
 	/**
    * <!-- begin-user-doc -->

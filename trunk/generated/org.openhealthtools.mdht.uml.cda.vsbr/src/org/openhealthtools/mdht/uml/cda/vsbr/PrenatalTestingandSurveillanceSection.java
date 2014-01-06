@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage#getPrenatalTestingandSurveillanceSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Prenatal Testing and Surveillance SectionTemplateId Prenatal Testing and Surveillance SectionClassCode Prenatal Testing and Surveillance SectionMoodCode Prenatal Testing and Surveillance SectionCode Prenatal Testing and Surveillance SectionText Prenatal Testing and Surveillance SectionPre-Natal Care' templateId.root='2.16.840.1.113883.10.20.26.3' classCode='DOCSECT' moodCode='EVN' code.code='57078-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Antenatal testing and surveillance'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Prenatal Testing and Surveillance SectionTemplateId Prenatal Testing and Surveillance SectionClassCode Prenatal Testing and Surveillance SectionMoodCode Prenatal Testing and Surveillance SectionCode Prenatal Testing and Surveillance SectionText Prenatal Testing and Surveillance SectionPrenatalCare' templateId.root='2.16.840.1.113883.10.20.26.3' classCode='DOCSECT' moodCode='EVN' code.code='57078-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Antenatal testing and surveillance'"
  * @generated
  */
 public interface PrenatalTestingandSurveillanceSection extends Section
@@ -100,7 +100,7 @@ public interface PrenatalTestingandSurveillanceSection extends Section
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(vsbr::Prenatal Care) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
    * @generated
    */
-  boolean validatePrenatalTestingandSurveillanceSectionPreNatalCare(DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validatePrenatalTestingandSurveillanceSectionPrenatalCare(DiagnosticChain diagnostics, Map<Object, Object> context);
 
   /**
    * <!-- begin-user-doc -->
@@ -109,7 +109,7 @@ public interface PrenatalTestingandSurveillanceSection extends Section
    *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(vsbr::Prenatal Care))->asSequence()->any(true).oclAsType(vsbr::Prenatal Care)'"
    * @generated
    */
-  PrenatalCare getPreNatalCare();
+  PrenatalCare getPrenatalCare();
 
   /**
    * <!-- begin-user-doc -->

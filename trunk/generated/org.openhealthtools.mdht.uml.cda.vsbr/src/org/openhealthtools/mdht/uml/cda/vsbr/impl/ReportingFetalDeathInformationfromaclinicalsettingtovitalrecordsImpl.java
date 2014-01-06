@@ -234,15 +234,15 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsImp
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection(this, diagnostics, context);
+  public boolean validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection(this, diagnostics, context);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -254,15 +254,15 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsImp
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance(this, diagnostics, context);
+  public boolean validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance(this, diagnostics, context);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -277,21 +277,22 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsImp
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionFetalDeathSection(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionFetalDeathSection(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionFetalDeathSection(this, diagnostics, context);
+    return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionFetalDeathSection(this, diagnostics, context);
   }
 
   /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public LaborandDeliverySection getLaborandDeliverySection() {
-    return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.getLaborandDeliverySection(this);
+  public LaborandDeliverySection getLaborAndDeliverySection()
+  {
+    return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.getLaborAndDeliverySection(this);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -302,14 +303,15 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsImp
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public PrenatalTestingandSurveillanceSection getAntenatalTestingandSurveillance() {
-    return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.getAntenatalTestingandSurveillance(this);
+  public PrenatalTestingandSurveillanceSection getPrenatalTestingAndSurveillance()
+  {
+    return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.getPrenatalTestingAndSurveillance(this);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -323,9 +325,9 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsImp
    * <!-- end-user-doc -->
    * @generated
    */
-  public HistoryofInfectionFetalDeathSection getHistoryofInfectionFetalDeathSection()
+  public HistoryofInfectionFetalDeathSection getHistoryOfInfectionFetalDeathSection()
   {
-    return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.getHistoryofInfectionFetalDeathSection(this);
+    return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.getHistoryOfInfectionFetalDeathSection(this);
   }
 
   /**

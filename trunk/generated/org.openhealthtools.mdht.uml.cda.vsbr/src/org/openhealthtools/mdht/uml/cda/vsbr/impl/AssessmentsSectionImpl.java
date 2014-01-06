@@ -20,6 +20,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
+import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentObservation;
 import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsObservation;
 import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.NewbornsVitalSignsObservation;
@@ -124,9 +125,9 @@ public class AssessmentsSectionImpl extends SectionImpl implements AssessmentsSe
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateAssessmentsSectionAssessmentsObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateAssessmentsSectionAssessmentObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return AssessmentsSectionOperations.validateAssessmentsSectionAssessmentsObservation(this, diagnostics, context);
+    return AssessmentsSectionOperations.validateAssessmentsSectionAssessmentObservation(this, diagnostics, context);
   }
 
   /**
@@ -134,9 +135,9 @@ public class AssessmentsSectionImpl extends SectionImpl implements AssessmentsSe
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<AssessmentsObservation> getAssessmentsObservations()
+  public EList<AssessmentObservation> getAssessmentObservations()
   {
-    return AssessmentsSectionOperations.getAssessmentsObservations(this);
+    return AssessmentsSectionOperations.getAssessmentObservations(this);
   }
 
   /**

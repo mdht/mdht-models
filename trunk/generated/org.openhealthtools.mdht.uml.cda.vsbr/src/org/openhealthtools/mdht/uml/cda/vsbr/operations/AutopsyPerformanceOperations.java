@@ -393,7 +393,7 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
    */
 	protected static final String VALIDATE_AUTOPSY_PERFORMANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '29240004' or value.code = '44551000009109' or value.code = '634711000124117')))";
+"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '29240004' or value.code = '44551000009109' or value.code = '434661000124109')))";
 
 	/**
    * The cached OCL invariant for the '{@link #validateAutopsyPerformanceValue(AutopsyPerformance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Performance Value</em>}' invariant operation.

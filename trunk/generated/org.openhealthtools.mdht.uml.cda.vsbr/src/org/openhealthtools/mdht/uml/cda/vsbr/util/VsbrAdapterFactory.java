@@ -119,9 +119,9 @@ public class VsbrAdapterFactory extends AdapterFactoryImpl {
         return createNumberofBirthsNowLivingAdapter();
       }
       @Override
-      public Adapter caseNumberofLiveBirthsnowDead(NumberofLiveBirthsnowDead object)
+      public Adapter caseNumberofLiveBirthsNowDead(NumberofLiveBirthsNowDead object)
       {
-        return createNumberofLiveBirthsnowDeadAdapter();
+        return createNumberofLiveBirthsNowDeadAdapter();
       }
       @Override
       public Adapter caseOtherPregnancyOutcome(OtherPregnancyOutcome object)
@@ -194,9 +194,9 @@ public class VsbrAdapterFactory extends AdapterFactoryImpl {
         return createAssessmentsSectionAdapter();
       }
       @Override
-      public Adapter caseAssessmentsObservation(AssessmentsObservation object)
+      public Adapter caseAssessmentObservation(AssessmentObservation object)
       {
-        return createAssessmentsObservationAdapter();
+        return createAssessmentObservationAdapter();
       }
       @Override
       public Adapter caseLaborandDeliverySection(LaborandDeliverySection object)
@@ -204,9 +204,9 @@ public class VsbrAdapterFactory extends AdapterFactoryImpl {
         return createLaborandDeliverySectionAdapter();
       }
       @Override
-      public Adapter caseLaborandDeliveryInformation(LaborandDeliveryInformation object)
+      public Adapter caseLaborandDeliveryProcess(LaborandDeliveryProcess object)
       {
-        return createLaborandDeliveryInformationAdapter();
+        return createLaborandDeliveryProcessAdapter();
       }
       @Override
       public Adapter caseCharacteristicofLaborandDelivery(CharacteristicofLaborandDelivery object)
@@ -468,20 +468,21 @@ public class VsbrAdapterFactory extends AdapterFactoryImpl {
   }
 
 	/**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsnowDead <em>Numberof Live Birthsnow Dead</em>}'.
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead <em>Numberof Live Births Now Dead</em>}'.
    * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsnowDead
+   * @see org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead
    * @generated
    */
-	public Adapter createNumberofLiveBirthsnowDeadAdapter() {
+  public Adapter createNumberofLiveBirthsNowDeadAdapter()
+  {
     return null;
   }
 
-	/**
+  /**
    * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsbr.OtherPregnancyOutcome <em>Other Pregnancy Outcome</em>}'.
    * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -679,20 +680,21 @@ public class VsbrAdapterFactory extends AdapterFactoryImpl {
   }
 
 	/**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryInformation <em>Laborand Delivery Information</em>}'.
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcess <em>Laborand Delivery Process</em>}'.
    * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryInformation
+   * @see org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcess
    * @generated
    */
-	public Adapter createLaborandDeliveryInformationAdapter() {
+  public Adapter createLaborandDeliveryProcessAdapter()
+  {
     return null;
   }
 
-	/**
+  /**
    * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsbr.CharacteristicofLaborandDelivery <em>Characteristicof Laborand Delivery</em>}'.
    * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -778,6 +780,21 @@ public class VsbrAdapterFactory extends AdapterFactoryImpl {
   }
 
   /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsbr.AssessmentObservation <em>Assessment Observation</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.vsbr.AssessmentObservation
+   * @generated
+   */
+  public Adapter createAssessmentObservationAdapter()
+  {
+    return null;
+  }
+
+  /**
    * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsbr.MothersVitalSignsSection <em>Mothers Vital Signs Section</em>}'.
    * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -792,21 +809,6 @@ public class VsbrAdapterFactory extends AdapterFactoryImpl {
   }
 
 	/**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsObservation <em>Assessments Observation</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsObservation
-   * @generated
-   */
-  public Adapter createAssessmentsObservationAdapter()
-  {
-    return null;
-  }
-
-  /**
    * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.vsbr.MothersVitalSignsObservation <em>Mothers Vital Signs Observation</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;

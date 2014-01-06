@@ -200,7 +200,7 @@ public class HistoryofInfectionFetalDeathSectionOperations extends SectionOperat
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Infection Present - Fetal Death))";
+  protected static final String VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Infection Present: Fetal Death))";
 
   /**
    * The cached OCL invariant for the '{@link #validateHistoryofInfectionFetalDeathSectionInfectionPresentFetalDeath(HistoryofInfectionFetalDeathSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Historyof Infection Fetal Death Section Infection Present Fetal Death</em>}' invariant operation.
@@ -266,7 +266,7 @@ public class HistoryofInfectionFetalDeathSectionOperations extends SectionOperat
    * @generated
    * @ordered
    */
-  protected static final String GET_INFECTION_PRESENT_FETAL_DEATHS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Infection Present - Fetal Death)).oclAsType(vsbr::Infection Present - Fetal Death)";
+  protected static final String GET_INFECTION_PRESENT_FETAL_DEATHS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Infection Present: Fetal Death)).oclAsType(vsbr::Infection Present: Fetal Death)";
 
   /**
    * The cached OCL query for the '{@link #getInfectionPresentFetalDeaths(HistoryofInfectionFetalDeathSection) <em>Get Infection Present Fetal Deaths</em>}' query operation.

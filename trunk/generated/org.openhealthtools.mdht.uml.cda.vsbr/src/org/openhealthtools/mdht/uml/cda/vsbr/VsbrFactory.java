@@ -89,15 +89,15 @@ public interface VsbrFactory extends EFactory {
 	NumberofBirthsNowLiving createNumberofBirthsNowLiving();
 
 	/**
-   * Returns a new object of class '<em>Numberof Live Birthsnow Dead</em>'.
+   * Returns a new object of class '<em>Numberof Live Births Now Dead</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Numberof Live Birthsnow Dead</em>'.
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Numberof Live Births Now Dead</em>'.
    * @generated
    */
-	NumberofLiveBirthsnowDead createNumberofLiveBirthsnowDead();
+  NumberofLiveBirthsNowDead createNumberofLiveBirthsNowDead();
 
-	/**
+  /**
    * Returns a new object of class '<em>Other Pregnancy Outcome</em>'.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -224,15 +224,15 @@ public interface VsbrFactory extends EFactory {
 	LaborandDeliverySection createLaborandDeliverySection();
 
 	/**
-   * Returns a new object of class '<em>Laborand Delivery Information</em>'.
+   * Returns a new object of class '<em>Laborand Delivery Process</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Laborand Delivery Information</em>'.
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Laborand Delivery Process</em>'.
    * @generated
    */
-	LaborandDeliveryInformation createLaborandDeliveryInformation();
+  LaborandDeliveryProcess createLaborandDeliveryProcess();
 
-	/**
+  /**
    * Returns a new object of class '<em>Characteristicof Laborand Delivery</em>'.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -287,6 +287,15 @@ public interface VsbrFactory extends EFactory {
   AssessmentsSection createAssessmentsSection();
 
   /**
+   * Returns a new object of class '<em>Assessment Observation</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Assessment Observation</em>'.
+   * @generated
+   */
+  AssessmentObservation createAssessmentObservation();
+
+  /**
    * Returns a new object of class '<em>Mothers Vital Signs Section</em>'.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -296,15 +305,6 @@ public interface VsbrFactory extends EFactory {
 	MothersVitalSignsSection createMothersVitalSignsSection();
 
 	/**
-   * Returns a new object of class '<em>Assessments Observation</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Assessments Observation</em>'.
-   * @generated
-   */
-  AssessmentsObservation createAssessmentsObservation();
-
-  /**
    * Returns a new object of class '<em>Mothers Vital Signs Observation</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

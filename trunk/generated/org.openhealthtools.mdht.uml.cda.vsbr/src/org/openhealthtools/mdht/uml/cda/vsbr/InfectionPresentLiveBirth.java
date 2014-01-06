@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage#getInfectionPresentLiveBirth()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Infection Present - Live BirthTemplateId Infection Present - Live BirthClassCode Infection Present - Live BirthMoodCode Infection Present - Live BirthCode Infection Present - Live BirthCodeVS Infection Present - Live BirthCodeP Infection Present - Live BirthValue Infection Present - Live BirthValueP' templateId.root='2.16.840.1.113883.10.20.26.30' classCode='OBS' moodCode='EVN' code.code='72519-2' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='InfeInfections present and or treated during this pregnancy for live birth'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Infection Present: Live BirthTemplateId Infection Present: Live BirthClassCode Infection Present: Live BirthMoodCode Infection Present: Live BirthCode Infection Present: Live BirthCodeVS Infection Present: Live BirthCodeP Infection Present: Live BirthValue Infection Present: Live BirthValueP' templateId.root='2.16.840.1.113883.10.20.26.30' classCode='OBS' moodCode='EVN' code.code='72519-2' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='InfeInfections present and or treated during this pregnancy for live birth'"
  * @generated
  */
 public interface InfectionPresentLiveBirth extends Observation

@@ -9,11 +9,11 @@
   <eClassifiers xsi:type="ecore:EClass" name="ReportingBirthInformationfromaclinicalsettingtovitalrecords"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//ClinicalDocument">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Reporting Birth Information from a clinical setting to vital recordsTemplateId Reporting Birth Information from a clinical setting to vital recordsRealmCode Reporting Birth Information from a clinical setting to vital recordsRealmCodeP Reporting Birth Information from a clinical setting to vital recordsTypeId Reporting Birth Information from a clinical setting to vital recordsMoodCode Reporting Birth Information from a clinical setting to vital recordsId Reporting Birth Information from a clinical setting to vital recordsCode Reporting Birth Information from a clinical setting to vital recordsCodeP Reporting Birth Information from a clinical setting to vital recordsTitle Reporting Birth Information from a clinical setting to vital recordsEffectiveTime Reporting Birth Information from a clinical setting to vital recordsConfidentialityCode Reporting Birth Information from a clinical setting to vital recordsConfidentialityCodeP Reporting Birth Information from a clinical setting to vital recordsLanguageCode Reporting Birth Information from a clinical setting to vital recordsAuthor Reporting Birth Information from a clinical setting to vital recordsCustodian Reporting Birth Information from a clinical setting to vital recordsRecordTarget Reporting Birth Information from a clinical setting to vital recordsAntenatal Testing and Surveillance Reporting Birth Information from a clinical setting to vital recordsPregnancy History Reporting Birth Information from a clinical setting to vital recordsNewborn Delivery Section Reporting Birth Information from a clinical setting to vital recordsLabor and Delivery Section Reporting Birth Information from a clinical setting to vital recordsHistory of Infection - Live Birth Section"/>
+      <details key="constraints.validation.error" value="Reporting Birth Information from a clinical setting to vital recordsTemplateId Reporting Birth Information from a clinical setting to vital recordsMoodCode Reporting Birth Information from a clinical setting to vital recordsRealmCode Reporting Birth Information from a clinical setting to vital recordsRealmCodeP Reporting Birth Information from a clinical setting to vital recordsTypeId Reporting Birth Information from a clinical setting to vital recordsId Reporting Birth Information from a clinical setting to vital recordsCode Reporting Birth Information from a clinical setting to vital recordsCodeP Reporting Birth Information from a clinical setting to vital recordsTitle Reporting Birth Information from a clinical setting to vital recordsEffectiveTime Reporting Birth Information from a clinical setting to vital recordsConfidentialityCode Reporting Birth Information from a clinical setting to vital recordsConfidentialityCodeP Reporting Birth Information from a clinical setting to vital recordsLanguageCode Reporting Birth Information from a clinical setting to vital recordsAuthor Reporting Birth Information from a clinical setting to vital recordsCustodian Reporting Birth Information from a clinical setting to vital recordsRecordTarget Reporting Birth Information from a clinical setting to vital recordsPrenatalTestingAndSurveillance Reporting Birth Information from a clinical setting to vital recordsPregnancyHistory Reporting Birth Information from a clinical setting to vital recordsNewbornDeliverySection Reporting Birth Information from a clinical setting to vital recordsLaborAndDeliverySection Reporting Birth Information from a clinical setting to vital recordsHistoryOfInfectionLiveBirthSection"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.26.1"/>
-      <details key="realmCode.code" value="USA"/>
       <details key="classCode" value="DOCCLIN"/>
       <details key="moodCode" value="EVN"/>
+      <details key="realmCode.code" value="USA"/>
       <details key="code.code" value="68998-4"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -24,16 +24,17 @@
       <details key="constraints.validation.error" value="AuthorAssignedAuthor"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor">
-      <details key="constraints.validation.error" value="AssignedAuthorId"/>
+      <details key="constraints.validation.error" value="AssignedAuthorId AssignedAuthorClassCode"/>
+      <details key="classCode" value="ASSIGNED"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTarget">
       <details key="typeCode" value="RCT"/>
       <details key="constraints.validation.error" value="RecordTargetTypeCode RecordTargetPatientRole"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRole">
-      <details key="constraints.validation.warning" value="PatientRoleAddr"/>
-      <details key="constraints.validation.error" value="PatientRoleId PatientRoleClassCode PatientRolePatient"/>
       <details key="classCode" value="PAT"/>
+      <details key="constraints.validation.error" value="PatientRoleClassCode PatientRoleId PatientRolePatient"/>
+      <details key="constraints.validation.warning" value="PatientRoleAddr"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRolePatient">
       <details key="classCode" value="PSN"/>
@@ -57,6 +58,26 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.1')"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReportingBirthInformationfromaclinicalsettingtovitalrecordsMoodCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="isDefined('moodCode') and self.moodCode=vocab::ActMood::EVN"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -117,26 +138,6 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.typeId.oclIsUndefined() or self.typeId.isNullFlavorUndefined()) implies (not self.typeId.oclIsUndefined())"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ReportingBirthInformationfromaclinicalsettingtovitalrecordsMoodCode"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="isDefined('moodCode') and self.moodCode=vocab::ActMood::EVN"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -373,7 +374,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ReportingBirthInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance"
+    <eOperations name="ReportingBirthInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prenatal Testing and Surveillance Section))"/>
@@ -433,7 +434,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ReportingBirthInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection"
+    <eOperations name="ReportingBirthInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Section))"/>
@@ -453,10 +454,10 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ReportingBirthInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionLiveBirthSection"
+    <eOperations name="ReportingBirthInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionLiveBirthSection"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection - Live Birth Section))"/>
+        <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection: Live Birth Section))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -473,7 +474,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getAntenatalTestingandSurveillance" ordered="false" lowerBound="1"
+    <eOperations name="getPrenatalTestingAndSurveillance" ordered="false" lowerBound="1"
         eType="#//PrenatalTestingandSurveillanceSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prenatal Testing and Surveillance Section))->asSequence()->any(true).oclAsType(vsbr::Prenatal Testing and Surveillance Section)"/>
@@ -489,23 +490,23 @@
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Newborn Delivery Section))->asSequence()->any(true).oclAsType(vsbr::Newborn Delivery Section)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getLaborandDeliverySection" ordered="false" lowerBound="1"
+    <eOperations name="getLaborAndDeliverySection" ordered="false" lowerBound="1"
         eType="#//LaborandDeliverySection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Section))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Section)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getHistoryofInfectionLiveBirthSection" ordered="false" lowerBound="1"
+    <eOperations name="getHistoryOfInfectionLiveBirthSection" ordered="false" lowerBound="1"
         eType="#//HistoryofInfectionLiveBirthSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection - Live Birth Section))->asSequence()->any(true).oclAsType(vsbr::History of Infection - Live Birth Section)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection: Live Birth Section))->asSequence()->any(true).oclAsType(vsbr::History of Infection: Live Birth Section)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PrenatalTestingandSurveillanceSection"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Prenatal Testing and Surveillance SectionTemplateId Prenatal Testing and Surveillance SectionClassCode Prenatal Testing and Surveillance SectionMoodCode Prenatal Testing and Surveillance SectionCode Prenatal Testing and Surveillance SectionText Prenatal Testing and Surveillance SectionPre-Natal Care"/>
+      <details key="constraints.validation.error" value="Prenatal Testing and Surveillance SectionTemplateId Prenatal Testing and Surveillance SectionClassCode Prenatal Testing and Surveillance SectionMoodCode Prenatal Testing and Surveillance SectionCode Prenatal Testing and Surveillance SectionText Prenatal Testing and Surveillance SectionPrenatalCare"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.26.3"/>
       <details key="classCode" value="DOCSECT"/>
       <details key="moodCode" value="EVN"/>
@@ -609,7 +610,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="PrenatalTestingandSurveillanceSectionPreNatalCare" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="PrenatalTestingandSurveillanceSectionPrenatalCare" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(vsbr::Prenatal Care) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)"/>
       </eAnnotations>
@@ -628,7 +629,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getPreNatalCare" ordered="false" lowerBound="1" eType="#//PrenatalCare">
+    <eOperations name="getPrenatalCare" ordered="false" lowerBound="1" eType="#//PrenatalCare">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(vsbr::Prenatal Care))->asSequence()->any(true).oclAsType(vsbr::Prenatal Care)"/>
       </eAnnotations>
@@ -651,13 +652,13 @@
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrPrenatalCareprenatalVisitsAssociationpreNatalVisitNumber">
       <details key="classCode" value="OBS"/>
-      <details key="constraints.validation.error" value="preNatalVisitNumberClassCode preNatalVisitNumberCode preNatalVisitNumberCodeP preNatalVisitNumberMoodCode preNatalVisitNumberValue"/>
+      <details key="constraints.validation.error" value="preNatalVisitNumberClassCode preNatalVisitNumberMoodCode preNatalVisitNumberCode preNatalVisitNumberCodeP preNatalVisitNumberValue"/>
+      <details key="moodCode" value="EVN"/>
       <details key="code.code" value="68493-6"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.displayName" value="Prenatal visits for this pregnancy"/>
       <details key="constraints.validation.dependOn.preNatalVisitNumberCode" value="preNatalVisitNumberCodeP"/>
-      <details key="moodCode" value="EVN"/>
     </eAnnotations>
     <eOperations name="PrenatalCareTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -996,7 +997,7 @@
     </eOperations>
     <eOperations name="PriorPregnancyHistorySectionNumberofLiveBirthsnowDead" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Number of Live Births now Dead) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)"/>
+        <details key="body" value="self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Number of Live Births Now Dead) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1069,9 +1070,9 @@
       </eAnnotations>
     </eOperations>
     <eOperations name="getNumberofLiveBirthsnowDead" ordered="false" lowerBound="1"
-        eType="#//NumberofLiveBirthsnowDead">
+        eType="#//NumberofLiveBirthsNowDead">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Number of Live Births now Dead))->asSequence()->any(true).oclAsType(vsbr::Number of Live Births now Dead)"/>
+        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Number of Live Births Now Dead))->asSequence()->any(true).oclAsType(vsbr::Number of Live Births Now Dead)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getOtherPregnancyOutcomes" ordered="false" lowerBound="1" eType="#//OtherPregnancyOutcome">
@@ -1443,9 +1444,9 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NumberofLiveBirthsnowDead" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="NumberofLiveBirthsNowDead" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Number of Live Births now DeadTemplateId Number of Live Births now DeadClassCode Number of Live Births now DeadMoodCode Number of Live Births now DeadCode Number of Live Births now DeadCodeP Number of Live Births now DeadValue"/>
+      <details key="constraints.validation.error" value="Number of Live Births Now DeadTemplateId Number of Live Births Now DeadClassCode Number of Live Births Now DeadMoodCode Number of Live Births Now DeadCode Number of Live Births Now DeadCodeP Number of Live Births Now DeadValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.26.38"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
@@ -1454,7 +1455,7 @@
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.displayName" value="Live births now dead"/>
     </eAnnotations>
-    <eOperations name="NumberofLiveBirthsnowDeadTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="NumberofLiveBirthsNowDeadTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.38')"/>
       </eAnnotations>
@@ -1473,7 +1474,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="NumberofLiveBirthsnowDeadClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="NumberofLiveBirthsNowDeadClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.classCode=vocab::ActClassObservation::OBS"/>
       </eAnnotations>
@@ -1492,7 +1493,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="NumberofLiveBirthsnowDeadMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="NumberofLiveBirthsNowDeadMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.moodCode=vocab::x_ActMoodDocumentObservation::EVN"/>
       </eAnnotations>
@@ -1511,7 +1512,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="NumberofLiveBirthsnowDeadCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="NumberofLiveBirthsNowDeadCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())"/>
       </eAnnotations>
@@ -1530,7 +1531,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="NumberofLiveBirthsnowDeadCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="NumberofLiveBirthsNowDeadCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '68496-9' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
@@ -1549,7 +1550,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="NumberofLiveBirthsnowDeadValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="NumberofLiveBirthsNowDeadValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::INT)))"/>
       </eAnnotations>
@@ -1842,7 +1843,16 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NewbornDeliverySection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Newborn Delivery SectionTemplateId Newborn Delivery SectionClassCode Newborn Delivery SectionMoodCode Newborn Delivery SectionCode Newborn Delivery SectionText Newborn Delivery SectionSubject Newborn Delivery SectionCongenital Anomalies Newborn Delivery SectionNewborn"/>
+      <details key="constraints.validation.error" value="Newborn Delivery SectionTemplateId Newborn Delivery SectionClassCode Newborn Delivery SectionMoodCode Newborn Delivery SectionCode Newborn Delivery SectionText Newborn Delivery SectionSubject Newborn Delivery SectionCongenitalAnomalies Newborn Delivery SectionNewbornsVitalSignsSection Newborn Delivery SectionAbnormalConditionsOfTheNewborn Newborn Delivery SectionInfantLiving Newborn Delivery SectionInfantBreastfed Newborn Delivery SectionPlurality Newborn Delivery SectionAssessmentsSection Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornClassCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornDeterminerCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornSDTCId Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornName Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCodeP Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornBirthTime Newborn Delivery SectionNewbornSubjectRoleOfNewbornClassCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornSubject Newborn Delivery SectionNewbornSubjectTypeCode Newborn Delivery SectionNewbornSubjectRelatedSubject"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.26.10"/>
+      <details key="classCode" value="DOCSECT"/>
+      <details key="moodCode" value="EVN"/>
+      <details key="code.code" value="57075-4"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="code.codeSystemName" value="LOINC"/>
+      <details key="code.displayName" value="Newborn delivery information from newborn narrative"/>
+      <details key="constraints.validation.info" value="Newborn Delivery SectionBirthOrder Newborn Delivery SectionNumberOfInfantsBornAlive Newborn Delivery SectionInfantTransfer"/>
+      <details key="constraints.validation.query" value="Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornClassCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornDeterminerCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornSDTCId Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornName Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCodeP Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornBirthTime Newborn Delivery SectionNewbornSubjectRoleOfNewbornClassCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornSubject Newborn Delivery SectionNewbornSubjectTypeCode Newborn Delivery SectionNewbornSubjectRelatedSubject"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrNewbornDeliverySectionNewbornSubject">
       <details key="typeCode" value="SBJ"/>
@@ -1995,7 +2005,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="NewbornDeliverySectionNumberofInfantsBornAlive" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="NewbornDeliverySectionNumberOfInfantsBornAlive" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Number of Infants Born Alive) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)"/>
       </eAnnotations>
@@ -2052,7 +2062,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="NewbornDeliverySectionAbnormalConditionsoftheNewborn" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="NewbornDeliverySectionAbnormalConditionsOfTheNewborn" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Abnormal Condition of the Newborn) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)"/>
       </eAnnotations>
@@ -2407,7 +2417,7 @@
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Birth Order))->asSequence()->any(true).oclAsType(vsbr::Birth Order)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getNumberofInfantsBornAlive" ordered="false" lowerBound="1"
+    <eOperations name="getNumberOfInfantsBornAlive" ordered="false" lowerBound="1"
         eType="#//NumberofInfantsBornAlive">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Number of Infants Born Alive))->asSequence()->any(true).oclAsType(vsbr::Number of Infants Born Alive)"/>
@@ -2425,7 +2435,7 @@
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Newborns Vital Signs Section))->asSequence()->any(true).oclAsType(vsbr::Newborns Vital Signs Section)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getAbnormalConditionsoftheNewborns" ordered="false" lowerBound="1"
+    <eOperations name="getAbnormalConditionsOfTheNewborns" ordered="false" lowerBound="1"
         upperBound="-1" eType="#//AbnormalConditionoftheNewborn">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Abnormal Condition of the Newborn)).oclAsType(vsbr::Abnormal Condition of the Newborn)"/>
@@ -2947,7 +2957,14 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NewbornsVitalSignsSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Newborns Vital Signs SectionTemplateId Newborns Vital Signs SectionClassCode Newborns Vital Signs SectionMoodCode Newborns Vital Signs SectionCode Newborns Vital Signs SectionCodeP Newborns Vital Signs SectionText Newborns Vital Signs SectionNewborn"/>
+      <details key="constraints.validation.error" value="Newborns Vital Signs SectionTemplateId Newborns Vital Signs SectionClassCode Newborns Vital Signs SectionMoodCode Newborns Vital Signs SectionCode Newborns Vital Signs SectionCodeP Newborns Vital Signs SectionText Newborns Vital Signs SectionNewbornsVitalSignsObservation"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.26.11"/>
+      <details key="classCode" value="DOCSECT"/>
+      <details key="moodCode" value="EVN"/>
+      <details key="code.code" value="8716-3"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="code.codeSystemName" value="LOINC"/>
+      <details key="code.displayName" value="Vital Signs"/>
     </eAnnotations>
     <eOperations name="NewbornsVitalSignsSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -3321,7 +3338,7 @@
     </eOperations>
     <eOperations name="AbnormalConditionoftheNewbornCodeVS" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = 'AVI' or value.code = 'AV6' or value.code = '405269005' or value.code = '634801000124111' or value.code = '634641000124112' or value.code = '91175000' or value.code = '56110009' or value.code = '260413007'))"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = 'PHC1250' or value.code = 'PHC1251' or value.code = '405269005' or value.code = '43470100012410' or value.code = '434621000124103' or value.code = '91175000' or value.code = '56110009' or value.code = '260413007'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -3340,7 +3357,7 @@
     </eOperations>
     <eOperations name="AbnormalConditionoftheNewbornValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = 'AVI' or value.code = 'AV6' or value.code = '405269005' or value.code = '634801000124111' or value.code = '634641000124112' or value.code = '91175000' or value.code = '56110009' or value.code = '260413007')))"/>
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = 'PHC1250' or value.code = 'PHC1251' or value.code = '405269005' or value.code = '43470100012410' or value.code = '434621000124103' or value.code = '91175000' or value.code = '56110009' or value.code = '260413007')))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -3918,7 +3935,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AssessmentsSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Assessments SectionTemplateId Assessments SectionClassCode Assessments SectionMoodCode Assessments SectionCode Assessments SectionCodeP Assessments SectionText Assessments SectionAssessments Observation"/>
+      <details key="constraints.validation.error" value="Assessments SectionTemplateId Assessments SectionClassCode Assessments SectionMoodCode Assessments SectionCode Assessments SectionCodeP Assessments SectionText Assessments SectionAssessmentObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.26.9"/>
       <details key="classCode" value="DOCSECT"/>
       <details key="moodCode" value="EVN"/>
@@ -4041,9 +4058,9 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AssessmentsSectionAssessmentsObservation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AssessmentsSectionAssessmentObservation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Assessments Observation))"/>
+        <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Assessment Observation))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -4060,23 +4077,23 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getAssessmentsObservations" ordered="false" lowerBound="1"
-        upperBound="-1" eType="#//AssessmentsObservation">
+    <eOperations name="getAssessmentObservations" ordered="false" lowerBound="1" upperBound="-1"
+        eType="#//AssessmentObservation">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Assessments Observation)).oclAsType(vsbr::Assessments Observation)"/>
+        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Assessment Observation)).oclAsType(vsbr::Assessment Observation)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AssessmentsObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="AssessmentObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Assessments ObservationTemplateId Assessments ObservationClassCode Assessments ObservationMoodCode Assessments ObservationCode Assessments ObservationCodeP Assessments ObservationValue"/>
+      <details key="constraints.validation.error" value="Assessment ObservationTemplateId Assessment ObservationClassCode Assessment ObservationMoodCode Assessment ObservationCode Assessment ObservationCodeP Assessment ObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.26.47"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
     </eAnnotations>
-    <eOperations name="AssessmentsObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AssessmentObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.47')"/>
       </eAnnotations>
@@ -4095,7 +4112,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AssessmentsObservationClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AssessmentObservationClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.classCode=vocab::ActClassObservation::OBS"/>
       </eAnnotations>
@@ -4114,7 +4131,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AssessmentsObservationMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AssessmentObservationMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.moodCode=vocab::x_ActMoodDocumentObservation::EVN"/>
       </eAnnotations>
@@ -4133,7 +4150,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AssessmentsObservationCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AssessmentObservationCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())"/>
       </eAnnotations>
@@ -4152,7 +4169,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AssessmentsObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AssessmentObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '9274-2' or value.code = '9271-8'))"/>
       </eAnnotations>
@@ -4171,7 +4188,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AssessmentsObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AssessmentObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)"/>
       </eAnnotations>
@@ -4193,7 +4210,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LaborandDeliverySection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Labor and Delivery SectionTemplateId Labor and Delivery SectionClassCode Labor and Delivery SectionMoodCode Labor and Delivery SectionCode Labor and Delivery SectionText Labor and Delivery SectionLabor and Delivery Information Labor and Delivery SectionLabor and Delivery Procedures Section Labor and Delivery SectionMothers Vital Signs Section"/>
+      <details key="constraints.validation.error" value="Labor and Delivery SectionTemplateId Labor and Delivery SectionClassCode Labor and Delivery SectionMoodCode Labor and Delivery SectionCode Labor and Delivery SectionText Labor and Delivery SectionLaborAndDeliveryProcess Labor and Delivery SectionLaborAndDeliveryProcedures Section Labor and Delivery SectionMothersVitalSignsSection"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.26.8"/>
       <details key="classCode" value="DOCSECT"/>
       <details key="moodCode" value="EVN"/>
@@ -4201,7 +4218,7 @@
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.displayName" value="Labor and delivery section"/>
-      <details key="constraints.validation.info" value="Labor and Delivery SectionLabor Onsets"/>
+      <details key="constraints.validation.info" value="Labor and Delivery SectionLaborOnsets"/>
     </eAnnotations>
     <eOperations name="LaborandDeliverySectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -4298,9 +4315,9 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliverySectionLaborandDeliveryInformation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliverySectionLaborAndDeliveryProcess" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(vsbr::Labor and Delivery Information) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)"/>
+        <details key="body" value="self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(vsbr::Labor and Delivery Process) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -4317,7 +4334,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliverySectionLaborandDeliveryProceduresSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliverySectionLaborAndDeliveryProceduresSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Procedure Section))"/>
       </eAnnotations>
@@ -4374,13 +4391,13 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getLaborandDeliveryInformation" ordered="false" lowerBound="1"
-        eType="#//LaborandDeliveryInformation">
+    <eOperations name="getLaborAndDeliveryProcess" ordered="false" lowerBound="1"
+        eType="#//LaborandDeliveryProcess">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(vsbr::Labor and Delivery Information))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Information)"/>
+        <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(vsbr::Labor and Delivery Process))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Process)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getLaborandDeliveryProceduresSection" ordered="false" lowerBound="1"
+    <eOperations name="getLaborAndDeliveryProceduresSection" ordered="false" lowerBound="1"
         eType="#//LaborandDeliveryProcedureSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Procedure Section))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Procedure Section)"/>
@@ -4399,9 +4416,9 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="LaborandDeliveryInformation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="LaborandDeliveryProcess" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Labor and Delivery InformationTemplateId Labor and Delivery InformationClassCode Labor and Delivery InformationMoodCode Labor and Delivery InformationCode Labor and Delivery InformationCodeP Labor and Delivery InformationAttendantParticipation Labor and Delivery InformationEntryRelationship Labor and Delivery InformationMaternalTransfer Labor and Delivery InformationParticipatingLocation Labor and Delivery InformationMaternal Morbidities Labor and Delivery InformationRisk Factors"/>
+      <details key="constraints.validation.error" value="Labor and Delivery ProcessTemplateId Labor and Delivery ProcessClassCode Labor and Delivery ProcessMoodCode Labor and Delivery ProcessCode Labor and Delivery ProcessCodeP Labor and Delivery ProcessAttendantParticipation Labor and Delivery ProcessEntryRelationship Labor and Delivery ProcessMaternalTransfer Labor and Delivery ProcessParticipatingLocation Labor and Delivery ProcessMaternalMorbidities Labor and Delivery ProcessRiskFactors"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.26.31"/>
       <details key="classCode" value="ACT"/>
       <details key="moodCode" value="EVN"/>
@@ -4410,43 +4427,43 @@
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.displayName" value="Labor and delivery process"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationattendantParticipation">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessattendantParticipation">
       <details key="typeCode" value="PRF"/>
       <details key="constraints.validation.error" value="attendantParticipationTypeCode attendantParticipationAssignedEntity"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationattendantParticipationattendantRole">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessattendantParticipationattendantRole">
       <details key="classCode" value="ASSIGNED"/>
       <details key="constraints.validation.error" value="attendantRoleClassCode attendantRoleCode attendantRoleCodeP attendantRoleAttendant"/>
       <details key="constraints.validation.warning" value="attendantRoleId"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="code.codeSystemName" value="SNOMEDCT"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationattendantParticipationattendantRoleAttendant">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessattendantParticipationattendantRoleAttendant">
       <details key="classCode" value="PSN"/>
       <details key="constraints.validation.error" value="AttendantClassCode AttendantDeterminerCode AttendantName"/>
       <details key="determinerCode" value="INSTANCE"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationpaymentSourceAssociation">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcesspaymentSourceAssociation">
       <details key="typeCode" value="COMP"/>
       <details key="constraints.validation.error" value="paymentSourceAssociationTypeCode paymentSourceAssociationObservation"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationpaymentSourceAssociationpaymentSource">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcesspaymentSourceAssociationpaymentSource">
       <details key="classCode" value="OBS"/>
-      <details key="constraints.validation.error" value="paymentSourceClassCode paymentSourceCode paymentSourceCodeP paymentSourceMoodCode paymentSourceValue paymentSourceValueP"/>
+      <details key="constraints.validation.error" value="paymentSourceClassCode paymentSourceMoodCode paymentSourceCode paymentSourceCodeP paymentSourceValue paymentSourceValueP"/>
+      <details key="moodCode" value="EVN"/>
       <details key="code.code" value="68461-3"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.displayName" value="Payment source"/>
       <details key="constraints.validation.dependOn.paymentSourceCode" value="paymentSourceCodeP"/>
-      <details key="moodCode" value="EVN"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.221.5"/>
       <details key="value.codeSystemName" value="Source of Payment Typology"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationparticipatingLocation">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessparticipatingLocation">
       <details key="typeCode" value="LOC"/>
-      <details key="constraints.validation.error" value="participatingLocationTypeCode participatingLocationParticipantRole"/>
+      <details key="constraints.validation.error" value="participatingLocationTypeCode participatingLocationLocationRole"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationparticipatingLocationLocationRole">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessparticipatingLocationLocationRole">
       <details key="classCode" value="BIRTHPL"/>
       <details key="constraints.validation.error" value="LocationRoleClassCode LocationRoleCode LocationRoleCodeP"/>
       <details key="constraints.validation.warning" value="LocationRoleId LocationRolePlayingEntity"/>
@@ -4454,14 +4471,14 @@
       <details key="code.codeSystemName" value="SNOMEDCT"/>
       <details key="constraints.validation.info" value="LocationRoleAddr"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryInformationparticipatingLocationLocationRoleLocation">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessparticipatingLocationLocationRoleLocation">
       <details key="classCode" value="PLC"/>
       <details key="constraints.validation.error" value="LocationClassCode LocationDeterminerCode"/>
       <details key="determinerCode" value="INSTANCE"/>
       <details key="constraints.validation.warning" value="LocationName"/>
       <details key="constraints.validation.info" value="LocationDesc"/>
     </eAnnotations>
-    <eOperations name="LaborandDeliveryInformationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliveryProcessTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.31')"/>
       </eAnnotations>
@@ -4480,7 +4497,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliveryInformationClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliveryProcessClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.classCode=vocab::x_ActClassDocumentEntryAct::ACT"/>
       </eAnnotations>
@@ -4499,7 +4516,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliveryInformationMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliveryProcessMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.moodCode=vocab::x_DocumentActMood::EVN"/>
       </eAnnotations>
@@ -4518,7 +4535,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliveryInformationCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliveryProcessCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())"/>
       </eAnnotations>
@@ -4537,7 +4554,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliveryInformationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliveryProcessCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '57074-7' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
@@ -4556,7 +4573,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliveryInformationAttendantParticipation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliveryProcessAttendantParticipation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.performer->one(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))"/>
       </eAnnotations>
@@ -4575,7 +4592,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliveryInformationEntryRelationship" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliveryProcessEntryRelationship" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))"/>
       </eAnnotations>
@@ -4594,8 +4611,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliveryInformationCharacteristicsofLaborandDelivery"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliveryProcessCharacteristicsOfLaborAndDelivery" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(vsbr::Characteristic of Labor and Delivery) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)"/>
       </eAnnotations>
@@ -4614,7 +4630,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliveryInformationHomeBirthPlan" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliveryProcessHomeBirthPlan" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(vsbr::Planned Home Birth) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)"/>
       </eAnnotations>
@@ -4633,7 +4649,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliveryInformationMaternalTransfer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliveryProcessMaternalTransfer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(vsbr::Maternal Transfer) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)"/>
       </eAnnotations>
@@ -4652,7 +4668,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliveryInformationParticipatingLocation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliveryProcessParticipatingLocation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.participant->one(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))"/>
       </eAnnotations>
@@ -4671,7 +4687,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliveryInformationMaternalMorbidities" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliveryProcessMaternalMorbidities" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(vsbr::Maternal Morbidity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)"/>
       </eAnnotations>
@@ -4690,7 +4706,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliveryInformationRiskFactors" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliveryProcessRiskFactors" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(vsbr::Pregnancy Risk Factor) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)"/>
       </eAnnotations>
@@ -4709,7 +4725,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getCharacteristicsofLaborandDeliveries" ordered="false" lowerBound="1"
+    <eOperations name="getCharacteristicsOfLaborAndDeliveries" ordered="false" lowerBound="1"
         upperBound="-1" eType="#//CharacteristicofLaborandDelivery">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Characteristic of Labor and Delivery)).oclAsType(vsbr::Characteristic of Labor and Delivery)"/>
@@ -4846,7 +4862,7 @@
     </eOperations>
     <eOperations name="CharacteristicofLaborandDeliveryCodeVS" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '236958009' or value.code = '237001001' or value.code = '634621000124113' or value.code = '634771000124114' or value.code = '11612004' or value.code = '249135009' or value.code = '130955003' or value.code = '231064003' or value.code = '260413007'))"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '236958009' or value.code = '237001001' or value.code = '434611000124106' or value.code = '434691000124101' or value.code = '11612004' or value.code = '249135009' or value.code = '130955003' or value.code = '231064003' or value.code = '260413007'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -4865,7 +4881,7 @@
     </eOperations>
     <eOperations name="CharacteristicofLaborandDeliveryValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '236958009' or value.code = '237001001' or value.code = '634621000124113' or value.code = '634771000124114' or value.code = '11612004' or value.code = '249135009' or value.code = '130955003' or value.code = '231064003' or value.code = '260413007')))"/>
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '236958009' or value.code = '237001001' or value.code = '434611000124106' or value.code = '434691000124101' or value.code = '11612004' or value.code = '249135009' or value.code = '130955003' or value.code = '231064003' or value.code = '260413007')))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -5550,11 +5566,15 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LaborandDeliveryProcedureSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Labor and Delivery Procedure SectionTemplateId Labor and Delivery Procedure SectionClassCode Labor and Delivery Procedure SectionMoodCode Labor and Delivery Procedure SectionCode Labor and Delivery Procedure SectionText Labor and Delivery Procedure SectionMethod of Delivery"/>
+      <details key="constraints.validation.error" value="Labor and Delivery Procedure SectionTemplateId Labor and Delivery Procedure SectionClassCode Labor and Delivery Procedure SectionMoodCode Labor and Delivery Procedure SectionCode Labor and Delivery Procedure SectionCodeP Labor and Delivery Procedure SectionText Labor and Delivery Procedure SectionMethodOfDelivery"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.26.7"/>
       <details key="classCode" value="DOCSECT"/>
       <details key="moodCode" value="EVN"/>
-      <details key="constraints.validation.info" value="Labor and Delivery Procedure SectionObstetric Procedures"/>
+      <details key="code.code" value="29300-1"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="code.codeSystemName" value="LOINC"/>
+      <details key="code.displayName" value="Procedure"/>
+      <details key="constraints.validation.info" value="Labor and Delivery Procedure SectionObstetricProcedure"/>
     </eAnnotations>
     <eOperations name="LaborandDeliveryProcedureSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -5615,6 +5635,25 @@
     </eOperations>
     <eOperations name="LaborandDeliveryProcedureSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '29300-1' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="LaborandDeliveryProcedureSectionCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -5651,7 +5690,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliveryProcedureSectionObstetricProcedures" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliveryProcedureSectionObstetricProcedure" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(vsbr::Obstetric Procedure) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)"/>
       </eAnnotations>
@@ -5670,7 +5709,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="LaborandDeliveryProcedureSectionMethodofDelivery" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="LaborandDeliveryProcedureSectionMethodOfDelivery" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->one(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(vsbr::Method of Delivery) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)"/>
       </eAnnotations>
@@ -5689,13 +5728,13 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getObstetricProceduress" ordered="false" lowerBound="1" upperBound="-1"
+    <eOperations name="getObstetricProcedures" ordered="false" lowerBound="1" upperBound="-1"
         eType="#//ObstetricProcedure">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(vsbr::Obstetric Procedure)).oclAsType(vsbr::Obstetric Procedure)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getMethodofDelivery" ordered="false" lowerBound="1" eType="#//MethodofDelivery">
+    <eOperations name="getMethodOfDelivery" ordered="false" lowerBound="1" eType="#//MethodofDelivery">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(vsbr::Method of Delivery))->asSequence()->any(true).oclAsType(vsbr::Method of Delivery)"/>
       </eAnnotations>
@@ -5788,7 +5827,7 @@
     </eOperations>
     <eOperations name="ObstetricProcedureCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '265636007' or value.code = '103747003' or value.code = '240278000' or value.code = '260413007'))"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '265636007' or value.code = '103747003' or value.code = '240278000' or value.code = '260413007'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -5807,7 +5846,7 @@
     </eOperations>
     <eOperations name="ObstetricProcedureCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsTypeOf(datatypes::CE))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -5827,7 +5866,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MethodofDelivery" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Procedure">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Method of DeliveryTemplateId Method of DeliveryClassCode Method of DeliveryMoodCode Method of DeliveryCode Method of DeliveryCodeP Method of DeliveryFinal Route and Method Method of DeliveryFetal Presentation Method of DeliveryHysterotomyHysterectomyAssociation"/>
+      <details key="constraints.validation.error" value="Method of DeliveryTemplateId Method of DeliveryClassCode Method of DeliveryMoodCode Method of DeliveryCode Method of DeliveryCodeP Method of DeliveryFinalRouteAndMethod Method of DeliveryFetalPresentation Method of DeliveryHysterotomyHysterectomyAssociation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.26.45"/>
       <details key="classCode" value="PROC"/>
       <details key="moodCode" value="EVN"/>
@@ -5837,9 +5876,10 @@
       <details key="code.displayName" value="Delivery method"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryFinalRouteandMethod">
-      <details key="constraints.validation.error" value="Final Route and MethodTemplateId Final Route and MethodClassCode Final Route and MethodCode Final Route and MethodCodeP Final Route and MethodMoodCode Final Route and MethodValue Final Route and MethodValueP Final Route and MethodTrialOfLaborAssociationTrialOfLaborClassCode Final Route and MethodTrialOfLaborAssociationTrialOfLaborMoodCode Final Route and MethodTrialOfLaborAssociationTrialOfLaborCodeP Final Route and MethodTrialOfLaborAssociationTrialOfLaborCode Final Route and MethodTrialOfLaborAssociationTrialOfLaborValue Final Route and MethodTrialOfLaborAssociationTypeCode Final Route and MethodTrialOfLaborAssociationTrialOfLabor"/>
+      <details key="constraints.validation.error" value="Final Route and MethodTemplateId Final Route and MethodClassCode Final Route and MethodMoodCode Final Route and MethodCode Final Route and MethodCodeP Final Route and MethodValue Final Route and MethodValueP Final Route and MethodTrialOfLaborAssociationTrialOfLaborClassCode Final Route and MethodTrialOfLaborAssociationTrialOfLaborMoodCode Final Route and MethodTrialOfLaborAssociationTrialOfLaborCodeP Final Route and MethodTrialOfLaborAssociationTrialOfLaborCode Final Route and MethodTrialOfLaborAssociationTrialOfLaborValue Final Route and MethodTrialOfLaborAssociationTypeCode Final Route and MethodTrialOfLaborAssociationTrialOfLabor"/>
       <details key="templateId.root" value="null"/>
       <details key="classCode" value="OBS"/>
+      <details key="moodCode" value="EVN"/>
       <details key="code.code" value="73762-7"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -5874,9 +5914,10 @@
       <details key="moodCode" value="EVN"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryFetalPresentation">
-      <details key="constraints.validation.error" value="Fetal PresentationTemplateId Fetal PresentationClassCode Fetal PresentationCode Fetal PresentationCodeP Fetal PresentationMoodCode Fetal PresentationValue Fetal PresentationValueP"/>
+      <details key="constraints.validation.error" value="Fetal PresentationTemplateId Fetal PresentationClassCode Fetal PresentationMoodCode Fetal PresentationCode Fetal PresentationCodeP Fetal PresentationValue Fetal PresentationValueP"/>
       <details key="templateId.root" value="null"/>
       <details key="classCode" value="OBS"/>
+      <details key="moodCode" value="EVN"/>
       <details key="code.code" value="73761-9"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -5977,7 +6018,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="MethodofDeliveryFinalRouteandMethod" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="MethodofDeliveryFinalRouteAndMethod" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(cda::Observation))"/>
       </eAnnotations>
@@ -6201,7 +6242,14 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MothersVitalSignsSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Mothers Vital Signs SectionTemplateId Mothers Vital Signs SectionClassCode Mothers Vital Signs SectionMoodCode Mothers Vital Signs SectionCode Mothers Vital Signs SectionCodeP Mothers Vital Signs SectionText Mothers Vital Signs SectionMother"/>
+      <details key="constraints.validation.error" value="Mothers Vital Signs SectionTemplateId Mothers Vital Signs SectionClassCode Mothers Vital Signs SectionMoodCode Mothers Vital Signs SectionCode Mothers Vital Signs SectionCodeP Mothers Vital Signs SectionText Mothers Vital Signs SectionMothersVitalSignsObservation"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.26.9"/>
+      <details key="classCode" value="DOCSECT"/>
+      <details key="moodCode" value="EVN"/>
+      <details key="code.code" value="8716-3"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="code.codeSystemName" value="LOINC"/>
+      <details key="code.displayName" value="Vital Signs"/>
     </eAnnotations>
     <eOperations name="MothersVitalSignsSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -6470,7 +6518,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="HistoryofInfectionLiveBirthSection"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="History of Infection - Live Birth SectionTemplateId History of Infection - Live Birth SectionCode History of Infection - Live Birth SectionText History of Infection - Live Birth SectionInfection Present - Live Birth"/>
+      <details key="constraints.validation.error" value="History of Infection: Live Birth SectionTemplateId History of Infection: Live Birth SectionCode History of Infection: Live Birth SectionText History of Infection: Live Birth SectionInfectionPresentLiveBirth"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.26.5"/>
       <details key="classCode" value="DOCSECT"/>
       <details key="moodCode" value="EVN"/>
@@ -6538,7 +6586,7 @@
     <eOperations name="HistoryofInfectionLiveBirthSectionInfectionPresentLiveBirth"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Infection Present - Live Birth))"/>
+        <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Infection Present: Live Birth))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -6558,13 +6606,13 @@
     <eOperations name="getInfectionPresentLiveBirths" ordered="false" lowerBound="1"
         upperBound="-1" eType="#//InfectionPresentLiveBirth">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Infection Present - Live Birth)).oclAsType(vsbr::Infection Present - Live Birth)"/>
+        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Infection Present: Live Birth)).oclAsType(vsbr::Infection Present: Live Birth)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InfectionPresentLiveBirth" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Infection Present - Live BirthTemplateId Infection Present - Live BirthClassCode Infection Present - Live BirthMoodCode Infection Present - Live BirthCode Infection Present - Live BirthCodeVS Infection Present - Live BirthCodeP Infection Present - Live BirthValue Infection Present - Live BirthValueP"/>
+      <details key="constraints.validation.error" value="Infection Present: Live BirthTemplateId Infection Present: Live BirthClassCode Infection Present: Live BirthMoodCode Infection Present: Live BirthCode Infection Present: Live BirthCodeVS Infection Present: Live BirthCodeP Infection Present: Live BirthValue Infection Present: Live BirthValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.26.30"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
@@ -6728,13 +6776,13 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FetalDeliverySection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Fetal Delivery SectionTemplateId Fetal Delivery SectionClassCode Fetal Delivery SectionMoodCode Fetal Delivery SectionCode Fetal Delivery SectionText Fetal Delivery SectionBirth Order Fetal Delivery SectionNumber of Infants Born Alive Fetal Delivery SectionFetal Death Occurrance Fetal Delivery SectionPlurality Fetal Delivery SectionCongenital Anomalies Fetal Delivery SectionFetal Delivery Time Fetal Delivery SectionFetalDeliverySubject Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus Fetal Delivery SectionFetalDeliverySubjectTypeCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus"/>
+      <details key="constraints.validation.error" value="Fetal Delivery SectionTemplateId Fetal Delivery SectionClassCode Fetal Delivery SectionMoodCode Fetal Delivery SectionCode Fetal Delivery SectionText Fetal Delivery SectionBirthOrder Fetal Delivery SectionNumberOfInfantsBornAlive Fetal Delivery SectionFetalDeathOccurrance Fetal Delivery SectionPlurality Fetal Delivery SectionCongenitalAnomaly Fetal Delivery SectionFetalDeliveryTime Fetal Delivery SectionFetalDeliverySubject Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus Fetal Delivery SectionFetalDeliverySubjectTypeCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.26.4"/>
       <details key="classCode" value="DOCSECT"/>
       <details key="moodCode" value="EVN"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
-      <details key="constraints.validation.warning" value="Fetal Delivery SectionAutopsy Performance"/>
+      <details key="constraints.validation.warning" value="Fetal Delivery SectionAutopsyPerformance"/>
       <details key="constraints.validation.query" value="Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusName Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus Fetal Delivery SectionFetalDeliverySubjectTypeCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus"/>
       <details key="constraints.validation.info" value="Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusName"/>
     </eAnnotations>
@@ -6868,7 +6916,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="FetalDeliverySectionNumberofInfantsBornAlive" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="FetalDeliverySectionNumberOfInfantsBornAlive" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Number of Infants Born Alive) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)"/>
       </eAnnotations>
@@ -6944,7 +6992,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="FetalDeliverySectionCongenitalAnomalies" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="FetalDeliverySectionCongenitalAnomaly" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Congenital Anomaly) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)"/>
       </eAnnotations>
@@ -7183,7 +7231,7 @@
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Birth Order))->asSequence()->any(true).oclAsType(vsbr::Birth Order)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getNumberofInfantsBornAlive" ordered="false" lowerBound="1"
+    <eOperations name="getNumberOfInfantsBornAlive" ordered="false" lowerBound="1"
         eType="#//NumberofInfantsBornAlive">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Number of Infants Born Alive))->asSequence()->any(true).oclAsType(vsbr::Number of Infants Born Alive)"/>
@@ -7204,7 +7252,7 @@
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Plurality))->asSequence()->any(true).oclAsType(vsbr::Plurality)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getCongenitalAnomaliess" ordered="false" lowerBound="1" upperBound="-1"
+    <eOperations name="getCongenitalAnomalies" ordered="false" lowerBound="1" upperBound="-1"
         eType="#//CongenitalAnomaly">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Congenital Anomaly)).oclAsType(vsbr::Congenital Anomaly)"/>
@@ -7232,6 +7280,7 @@
       <details key="constraints.validation.error" value="UseAssociationTypeCode UseAssociationAutopsyUse"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrAutopsyPerformanceUseAssociationAutopsyUse">
+      <details key="code.code" value="TBD"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.error" value="AutopsyUseCode AutopsyUseCodeP AutopsyUseValue"/>
@@ -7349,7 +7398,7 @@
     </eOperations>
     <eOperations name="AutopsyPerformanceValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '29240004' or value.code = '44551000009109' or value.code = '634711000124117')))"/>
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '29240004' or value.code = '44551000009109' or value.code = '434661000124109')))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -7532,7 +7581,7 @@
     </eOperations>
     <eOperations name="FetalDeathOccurranceValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '634751000124116' or value.code = '634741000124118' or value.code = '634661000124111' or value.code = '261665006')))"/>
+        <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '434681000124104' or value.code = '434671000124102' or value.code = '434631000124100' or value.code = '261665006')))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -7717,15 +7766,29 @@
   <eClassifiers xsi:type="ecore:EClass" name="ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//ClinicalDocument">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Reporting Fetal Death Information from a clinical setting to vital recordsTemplateId Reporting Fetal Death Information from a clinical setting to vital recordsRealmCode Reporting Fetal Death Information from a clinical setting to vital recordsRealmCodeP Reporting Fetal Death Information from a clinical setting to vital recordsTypeId Reporting Fetal Death Information from a clinical setting to vital recordsClassCode Reporting Fetal Death Information from a clinical setting to vital recordsMoodCode Reporting Fetal Death Information from a clinical setting to vital recordsId Reporting Fetal Death Information from a clinical setting to vital recordsCode Reporting Fetal Death Information from a clinical setting to vital recordsCodeP Reporting Fetal Death Information from a clinical setting to vital recordsTitle Reporting Fetal Death Information from a clinical setting to vital recordsEffectiveTime Reporting Fetal Death Information from a clinical setting to vital recordsConfidentialityCode Reporting Fetal Death Information from a clinical setting to vital recordsConfidentialityCodeP Reporting Fetal Death Information from a clinical setting to vital recordsLanguageCode Reporting Fetal Death Information from a clinical setting to vital recordsAuthor Reporting Fetal Death Information from a clinical setting to vital recordsCustodian Reporting Fetal Death Information from a clinical setting to vital recordsRecordTarget Reporting Fetal Death Information from a clinical setting to vital recordsLabor and Delivery Section Reporting Fetal Death Information from a clinical setting to vital recordsFetal Delivery Section Reporting Fetal Death Information from a clinical setting to vital recordsAntenatal Testing and Surveillance Reporting Fetal Death Information from a clinical setting to vital recordsPregnancy History Reporting Fetal Death Information from a clinical setting to vital recordsHistory of Infection - Fetal Death Section"/>
+      <details key="constraints.validation.error" value="Reporting Fetal Death Information from a clinical setting to vital recordsTemplateId Reporting Fetal Death Information from a clinical setting to vital recordsClassCode Reporting Fetal Death Information from a clinical setting to vital recordsMoodCode Reporting Fetal Death Information from a clinical setting to vital recordsRealmCode Reporting Fetal Death Information from a clinical setting to vital recordsRealmCodeP Reporting Fetal Death Information from a clinical setting to vital recordsTypeId Reporting Fetal Death Information from a clinical setting to vital recordsId Reporting Fetal Death Information from a clinical setting to vital recordsCode Reporting Fetal Death Information from a clinical setting to vital recordsCodeP Reporting Fetal Death Information from a clinical setting to vital recordsTitle Reporting Fetal Death Information from a clinical setting to vital recordsEffectiveTime Reporting Fetal Death Information from a clinical setting to vital recordsConfidentialityCode Reporting Fetal Death Information from a clinical setting to vital recordsConfidentialityCodeP Reporting Fetal Death Information from a clinical setting to vital recordsLanguageCode Reporting Fetal Death Information from a clinical setting to vital recordsAuthor Reporting Fetal Death Information from a clinical setting to vital recordsCustodian Reporting Fetal Death Information from a clinical setting to vital recordsRecordTarget Reporting Fetal Death Information from a clinical setting to vital recordsLaborAndDeliverySection Reporting Fetal Death Information from a clinical setting to vital recordsFetalDeliverySection Reporting Fetal Death Information from a clinical setting to vital recordsPrenatalTestingAndSurveillance Reporting Fetal Death Information from a clinical setting to vital recordsPregnancyHistory Reporting Fetal Death Information from a clinical setting to vital recordsHistoryOfInfectionFetalDeathSection"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.26.2"/>
-      <details key="realmCode.code" value="US"/>
       <details key="classCode" value="DOCCLIN"/>
       <details key="moodCode" value="EVN"/>
+      <details key="realmCode.code" value="US"/>
       <details key="code.code" value="69045-3"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.displayName" value="U.S. stanard report of fetal death - 2003 revision"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTarget">
+      <details key="typeCode" value="RCT"/>
+      <details key="constraints.validation.error" value="RecordTargetTypeCode RecordTargetPatientRole"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRole">
+      <details key="classCode" value="PAT"/>
+      <details key="constraints.validation.error" value="PatientRoleClassCode PatientRoleId PatientRolePatient"/>
+      <details key="constraints.validation.warning" value="PatientRoleAddr"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRolePatient">
+      <details key="classCode" value="PSN"/>
+      <details key="constraints.validation.error" value="PatientClassCode PatientDeterminerCode PatientName"/>
+      <details key="determinerCode" value="INSTANCE"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthor">
       <details key="typeCode" value="AUT"/>
@@ -7734,20 +7797,6 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor">
       <details key="classCode" value="ASSIGNED"/>
       <details key="constraints.validation.error" value="AssignedAuthorClassCode AssignedAuthorId"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTarget">
-      <details key="typeCode" value="RCT"/>
-      <details key="constraints.validation.error" value="RecordTargetTypeCode RecordTargetPatientRole"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRole">
-      <details key="constraints.validation.warning" value="PatientRoleAddr"/>
-      <details key="constraints.validation.error" value="PatientRoleId PatientRolePatient PatientRoleClassCode"/>
-      <details key="classCode" value="PAT"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRolePatient">
-      <details key="classCode" value="PSN"/>
-      <details key="constraints.validation.error" value="PatientClassCode PatientDeterminerCode PatientName"/>
-      <details key="determinerCode" value="INSTANCE"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodian">
       <details key="typeCode" value="CST"/>
@@ -7766,6 +7815,46 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.2')"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsClassCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="isDefined('classCode') and self.classCode=vocab::ActClinicalDocument::DOCCLIN"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsMoodCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="isDefined('moodCode') and self.moodCode=vocab::ActMood::EVN"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -7826,46 +7915,6 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.typeId.oclIsUndefined() or self.typeId.isNullFlavorUndefined()) implies (not self.typeId.oclIsUndefined())"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsClassCode"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="isDefined('classCode') and self.classCode=vocab::ActClinicalDocument::DOCCLIN"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsMoodCode"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="isDefined('moodCode') and self.moodCode=vocab::ActMood::EVN"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -8102,7 +8151,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection"
+    <eOperations name="ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Section))"/>
@@ -8142,7 +8191,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance"
+    <eOperations name="ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prenatal Testing and Surveillance Section))"/>
@@ -8182,10 +8231,10 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionFetalDeathSection"
+    <eOperations name="ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionFetalDeathSection"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection - Fetal Death Section))"/>
+        <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection: Fetal Death Section))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -8202,7 +8251,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getLaborandDeliverySection" ordered="false" lowerBound="1"
+    <eOperations name="getLaborAndDeliverySection" ordered="false" lowerBound="1"
         eType="#//LaborandDeliverySection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Section))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Section)"/>
@@ -8213,7 +8262,7 @@
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Fetal Delivery Section))->asSequence()->any(true).oclAsType(vsbr::Fetal Delivery Section)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getAntenatalTestingandSurveillance" ordered="false" lowerBound="1"
+    <eOperations name="getPrenatalTestingAndSurveillance" ordered="false" lowerBound="1"
         eType="#//PrenatalTestingandSurveillanceSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prenatal Testing and Surveillance Section))->asSequence()->any(true).oclAsType(vsbr::Prenatal Testing and Surveillance Section)"/>
@@ -8224,17 +8273,17 @@
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prior Pregnancy History Section))->asSequence()->any(true).oclAsType(vsbr::Prior Pregnancy History Section)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getHistoryofInfectionFetalDeathSection" ordered="false" lowerBound="1"
+    <eOperations name="getHistoryOfInfectionFetalDeathSection" ordered="false" lowerBound="1"
         eType="#//HistoryofInfectionFetalDeathSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection - Fetal Death Section))->asSequence()->any(true).oclAsType(vsbr::History of Infection - Fetal Death Section)"/>
+        <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection: Fetal Death Section))->asSequence()->any(true).oclAsType(vsbr::History of Infection: Fetal Death Section)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HistoryofInfectionFetalDeathSection"
       eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="History of Infection - Fetal Death SectionTemplateId History of Infection - Fetal Death SectionCode History of Infection - Fetal Death SectionInfection Present - Fetal Death"/>
+      <details key="constraints.validation.error" value="History of Infection: Fetal Death SectionTemplateId History of Infection: Fetal Death SectionCode History of Infection: Fetal Death SectionInfectionPresentFetalDeath"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.26.48"/>
       <details key="classCode" value="DOCSECT"/>
       <details key="moodCode" value="EVN"/>
@@ -8284,7 +8333,7 @@
     <eOperations name="HistoryofInfectionFetalDeathSectionInfectionPresentFetalDeath"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Infection Present - Fetal Death))"/>
+        <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Infection Present: Fetal Death))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -8304,13 +8353,13 @@
     <eOperations name="getInfectionPresentFetalDeaths" ordered="false" lowerBound="1"
         upperBound="-1" eType="#//InfectionPresentFetalDeath">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Infection Present - Fetal Death)).oclAsType(vsbr::Infection Present - Fetal Death)"/>
+        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Infection Present: Fetal Death)).oclAsType(vsbr::Infection Present: Fetal Death)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InfectionPresentFetalDeath" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Infection Present - Fetal DeathTemplateId Infection Present - Fetal DeathClassCode Infection Present - Fetal DeathMoodCode Infection Present - Fetal DeathCode Infection Present - Fetal DeathCodeVS Infection Present - Fetal DeathCodeP Infection Present - Fetal DeathValue Infection Present - Fetal DeathValueP"/>
+      <details key="constraints.validation.error" value="Infection Present: Fetal DeathTemplateId Infection Present: Fetal DeathClassCode Infection Present: Fetal DeathMoodCode Infection Present: Fetal DeathCode Infection Present: Fetal DeathCodeVS Infection Present: Fetal DeathCodeP Infection Present: Fetal DeathValue Infection Present: Fetal DeathValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.26.49"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>

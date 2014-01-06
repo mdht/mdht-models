@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage#getHistoryofInfectionFetalDeathSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='History of Infection - Fetal Death SectionTemplateId History of Infection - Fetal Death SectionCode History of Infection - Fetal Death SectionInfection Present - Fetal Death' templateId.root='2.16.840.1.113883.10.20.26.48' classCode='DOCSECT' moodCode='EVN' code.code='71459-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Infection Panel'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='History of Infection: Fetal Death SectionTemplateId History of Infection: Fetal Death SectionCode History of Infection: Fetal Death SectionInfectionPresentFetalDeath' templateId.root='2.16.840.1.113883.10.20.26.48' classCode='DOCSECT' moodCode='EVN' code.code='71459-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Infection Panel'"
  * @generated
  */
 public interface HistoryofInfectionFetalDeathSection extends Section
@@ -62,7 +62,7 @@ public interface HistoryofInfectionFetalDeathSection extends Section
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Infection Present - Fetal Death))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Infection Present: Fetal Death))'"
    * @generated
    */
   boolean validateHistoryofInfectionFetalDeathSectionInfectionPresentFetalDeath(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -71,7 +71,7 @@ public interface HistoryofInfectionFetalDeathSection extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Infection Present - Fetal Death)).oclAsType(vsbr::Infection Present - Fetal Death)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Infection Present: Fetal Death)).oclAsType(vsbr::Infection Present: Fetal Death)'"
    * @generated
    */
   EList<InfectionPresentFetalDeath> getInfectionPresentFetalDeaths();

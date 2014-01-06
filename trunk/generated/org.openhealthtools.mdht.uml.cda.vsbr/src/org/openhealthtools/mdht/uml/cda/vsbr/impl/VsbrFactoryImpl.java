@@ -71,7 +71,7 @@ public class VsbrFactoryImpl extends EFactoryImpl implements VsbrFactory {
       case VsbrPackage.DATEOF_LAST_LIVE_BIRTH: return createDateofLastLiveBirth();
       case VsbrPackage.LAST_MENSTRUAL_PERIOD_DATE: return createLastMenstrualPeriodDate();
       case VsbrPackage.NUMBEROF_BIRTHS_NOW_LIVING: return createNumberofBirthsNowLiving();
-      case VsbrPackage.NUMBEROF_LIVE_BIRTHSNOW_DEAD: return createNumberofLiveBirthsnowDead();
+      case VsbrPackage.NUMBEROF_LIVE_BIRTHS_NOW_DEAD: return createNumberofLiveBirthsNowDead();
       case VsbrPackage.OTHER_PREGNANCY_OUTCOME: return createOtherPregnancyOutcome();
       case VsbrPackage.ESTIMATEOF_GESTATION: return createEstimateofGestation();
       case VsbrPackage.NEWBORN_DELIVERY_SECTION: return createNewbornDeliverySection();
@@ -86,9 +86,9 @@ public class VsbrFactoryImpl extends EFactoryImpl implements VsbrFactory {
       case VsbrPackage.INFANT_TRANSFER: return createInfantTransfer();
       case VsbrPackage.PLURALITY: return createPlurality();
       case VsbrPackage.ASSESSMENTS_SECTION: return createAssessmentsSection();
-      case VsbrPackage.ASSESSMENTS_OBSERVATION: return createAssessmentsObservation();
+      case VsbrPackage.ASSESSMENT_OBSERVATION: return createAssessmentObservation();
       case VsbrPackage.LABORAND_DELIVERY_SECTION: return createLaborandDeliverySection();
-      case VsbrPackage.LABORAND_DELIVERY_INFORMATION: return createLaborandDeliveryInformation();
+      case VsbrPackage.LABORAND_DELIVERY_PROCESS: return createLaborandDeliveryProcess();
       case VsbrPackage.CHARACTERISTICOF_LABORAND_DELIVERY: return createCharacteristicofLaborandDelivery();
       case VsbrPackage.PLANNED_HOME_BIRTH: return createPlannedHomeBirth();
       case VsbrPackage.MATERNAL_TRANSFER: return createMaternalTransfer();
@@ -187,15 +187,16 @@ public class VsbrFactoryImpl extends EFactoryImpl implements VsbrFactory {
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public NumberofLiveBirthsnowDead createNumberofLiveBirthsnowDead() {
-    NumberofLiveBirthsnowDeadImpl numberofLiveBirthsnowDead = new NumberofLiveBirthsnowDeadImpl();
-    return numberofLiveBirthsnowDead;
+  public NumberofLiveBirthsNowDead createNumberofLiveBirthsNowDead()
+  {
+    NumberofLiveBirthsNowDeadImpl numberofLiveBirthsNowDead = new NumberofLiveBirthsNowDeadImpl();
+    return numberofLiveBirthsNowDead;
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -338,15 +339,16 @@ public class VsbrFactoryImpl extends EFactoryImpl implements VsbrFactory {
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public LaborandDeliveryInformation createLaborandDeliveryInformation() {
-    LaborandDeliveryInformationImpl laborandDeliveryInformation = new LaborandDeliveryInformationImpl();
-    return laborandDeliveryInformation;
+  public LaborandDeliveryProcess createLaborandDeliveryProcess()
+  {
+    LaborandDeliveryProcessImpl laborandDeliveryProcess = new LaborandDeliveryProcessImpl();
+    return laborandDeliveryProcess;
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -409,6 +411,17 @@ public class VsbrFactoryImpl extends EFactoryImpl implements VsbrFactory {
 
   /**
    * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public AssessmentObservation createAssessmentObservation()
+  {
+    AssessmentObservationImpl assessmentObservation = new AssessmentObservationImpl();
+    return assessmentObservation;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
    */
@@ -418,17 +431,6 @@ public class VsbrFactoryImpl extends EFactoryImpl implements VsbrFactory {
   }
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public AssessmentsObservation createAssessmentsObservation()
-  {
-    AssessmentsObservationImpl assessmentsObservation = new AssessmentsObservationImpl();
-    return assessmentsObservation;
-  }
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated

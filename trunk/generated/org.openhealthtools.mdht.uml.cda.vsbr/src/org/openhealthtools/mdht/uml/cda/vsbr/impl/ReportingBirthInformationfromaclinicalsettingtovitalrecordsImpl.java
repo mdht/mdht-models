@@ -223,15 +223,15 @@ public class ReportingBirthInformationfromaclinicalsettingtovitalrecordsImpl ext
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.validateReportingBirthInformationfromaclinicalsettingtovitalrecordsAntenatalTestingandSurveillance(this, diagnostics, context);
+  public boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.validateReportingBirthInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance(this, diagnostics, context);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -253,34 +253,35 @@ public class ReportingBirthInformationfromaclinicalsettingtovitalrecordsImpl ext
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.validateReportingBirthInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionLiveBirthSection(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.validateReportingBirthInformationfromaclinicalsettingtovitalrecordsHistoryofInfectionLiveBirthSection(this, diagnostics, context);
+    return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.validateReportingBirthInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection(this, diagnostics, context);
   }
 
   /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public PrenatalTestingandSurveillanceSection getAntenatalTestingandSurveillance() {
-    return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.getAntenatalTestingandSurveillance(this);
+  public boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionLiveBirthSection(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.validateReportingBirthInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionLiveBirthSection(this, diagnostics, context);
   }
 
-	/**
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public PrenatalTestingandSurveillanceSection getPrenatalTestingAndSurveillance()
+  {
+    return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.getPrenatalTestingAndSurveillance(this);
+  }
+
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -300,21 +301,22 @@ public class ReportingBirthInformationfromaclinicalsettingtovitalrecordsImpl ext
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public LaborandDeliverySection getLaborandDeliverySection() {
-    return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.getLaborandDeliverySection(this);
+  public LaborandDeliverySection getLaborAndDeliverySection()
+  {
+    return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.getLaborAndDeliverySection(this);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public HistoryofInfectionLiveBirthSection getHistoryofInfectionLiveBirthSection()
+  public HistoryofInfectionLiveBirthSection getHistoryOfInfectionLiveBirthSection()
   {
-    return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.getHistoryofInfectionLiveBirthSection(this);
+    return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.getHistoryOfInfectionLiveBirthSection(this);
   }
 
   /**

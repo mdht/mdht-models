@@ -117,15 +117,15 @@ public class FetalDeliverySectionImpl extends SectionImpl implements FetalDelive
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateFetalDeliverySectionNumberofInfantsBornAlive(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return FetalDeliverySectionOperations.validateFetalDeliverySectionNumberofInfantsBornAlive(this, diagnostics, context);
+  public boolean validateFetalDeliverySectionNumberOfInfantsBornAlive(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionNumberOfInfantsBornAlive(this, diagnostics, context);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -156,15 +156,15 @@ public class FetalDeliverySectionImpl extends SectionImpl implements FetalDelive
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateFetalDeliverySectionCongenitalAnomalies(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return FetalDeliverySectionOperations.validateFetalDeliverySectionCongenitalAnomalies(this, diagnostics, context);
+  public boolean validateFetalDeliverySectionCongenitalAnomaly(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FetalDeliverySectionOperations.validateFetalDeliverySectionCongenitalAnomaly(this, diagnostics, context);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -285,14 +285,15 @@ public class FetalDeliverySectionImpl extends SectionImpl implements FetalDelive
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public NumberofInfantsBornAlive getNumberofInfantsBornAlive() {
-    return FetalDeliverySectionOperations.getNumberofInfantsBornAlive(this);
+  public NumberofInfantsBornAlive getNumberOfInfantsBornAlive()
+  {
+    return FetalDeliverySectionOperations.getNumberOfInfantsBornAlive(this);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -321,14 +322,15 @@ public class FetalDeliverySectionImpl extends SectionImpl implements FetalDelive
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public EList<CongenitalAnomaly> getCongenitalAnomaliess() {
-    return FetalDeliverySectionOperations.getCongenitalAnomaliess(this);
+  public EList<CongenitalAnomaly> getCongenitalAnomalies()
+  {
+    return FetalDeliverySectionOperations.getCongenitalAnomalies(this);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated

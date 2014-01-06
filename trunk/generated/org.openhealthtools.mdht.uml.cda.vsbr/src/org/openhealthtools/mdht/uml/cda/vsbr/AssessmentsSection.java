@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage#getAssessmentsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Assessments SectionTemplateId Assessments SectionClassCode Assessments SectionMoodCode Assessments SectionCode Assessments SectionCodeP Assessments SectionText Assessments SectionAssessments Observation' templateId.root='2.16.840.1.113883.10.20.26.9' classCode='DOCSECT' moodCode='EVN' code.code='51848-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Assessment Note'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Assessments SectionTemplateId Assessments SectionClassCode Assessments SectionMoodCode Assessments SectionCode Assessments SectionCodeP Assessments SectionText Assessments SectionAssessmentObservation' templateId.root='2.16.840.1.113883.10.20.26.9' classCode='DOCSECT' moodCode='EVN' code.code='51848-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Assessment Note'"
  * @generated
  */
 public interface AssessmentsSection extends Section
@@ -110,19 +110,19 @@ public interface AssessmentsSection extends Section
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Assessments Observation))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Assessment Observation))'"
    * @generated
    */
-  boolean validateAssessmentsSectionAssessmentsObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validateAssessmentsSectionAssessmentObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Assessments Observation)).oclAsType(vsbr::Assessments Observation)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Assessment Observation)).oclAsType(vsbr::Assessment Observation)'"
    * @generated
    */
-  EList<AssessmentsObservation> getAssessmentsObservations();
+  EList<AssessmentObservation> getAssessmentObservations();
 
   /**
    * <!-- begin-user-doc -->

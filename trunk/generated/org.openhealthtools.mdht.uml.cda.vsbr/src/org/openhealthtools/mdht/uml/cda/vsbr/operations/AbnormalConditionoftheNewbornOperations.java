@@ -397,7 +397,7 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
    */
 	protected static final String VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = 'AVI' or value.code = 'AV6' or value.code = '405269005' or value.code = '634801000124111' or value.code = '634641000124112' or value.code = '91175000' or value.code = '56110009' or value.code = '260413007'))";
+"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = 'PHC1250' or value.code = 'PHC1251' or value.code = '405269005' or value.code = '43470100012410' or value.code = '434621000124103' or value.code = '91175000' or value.code = '56110009' or value.code = '260413007'))";
 
 	/**
    * The cached OCL invariant for the '{@link #validateAbnormalConditionoftheNewbornCodeVS(AbnormalConditionoftheNewborn, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Abnormal Conditionofthe Newborn Code VS</em>}' invariant operation.
@@ -465,7 +465,7 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
    */
 	protected static final String VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = 'AVI' or value.code = 'AV6' or value.code = '405269005' or value.code = '634801000124111' or value.code = '634641000124112' or value.code = '91175000' or value.code = '56110009' or value.code = '260413007')))";
+"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = 'PHC1250' or value.code = 'PHC1251' or value.code = '405269005' or value.code = '43470100012410' or value.code = '434621000124103' or value.code = '91175000' or value.code = '56110009' or value.code = '260413007')))";
 
 	/**
    * The cached OCL invariant for the '{@link #validateAbnormalConditionoftheNewbornValue(AbnormalConditionoftheNewborn, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Abnormal Conditionofthe Newborn Value</em>}' invariant operation.
