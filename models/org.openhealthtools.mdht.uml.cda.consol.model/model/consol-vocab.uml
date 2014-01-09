@@ -612,7 +612,7 @@ http://phinvads.cdc.gov/vads/ViewValueSet.action?id=77FDBFB5-A277-DE11-9B52-0015
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dSQDEKDqEd-dVeaMP0XXQw" name="Medication Clinical Drug">
       <ownedComment xmi:id="_AI7q0CXaEeGD8_EQPvfzIQ">
         <body>Clinical drug names&#xD;
-http://phinvads.cdc.gov/vads/ViewValueSet.action?id=239BEF3E-971C-DF11-B334-0015173D1785</body>
+https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.113883.3.88.12.80.17</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_e1-m8CXaEeGD8_EQPvfzIQ" name="Ingredient Name">

@@ -740,8 +740,8 @@ This section requires that there be either an entry indicating the subject is no
     </ownedAttribute>
     <ownedAttribute xmi:id="_2HUVYBSVEeGGzu7fmW9pXw" name="quantity" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2HUVYhSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2HUVYxSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bfgEYHgPEeOWV4WyBjS-AA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bfgEYXgPEeOWV4WyBjS-AA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2HVjgBSVEeGGzu7fmW9pXw" name="productInstance" type="_2G2bUxSVEeGGzu7fmW9pXw" association="_2HVjgxSVEeGGzu7fmW9pXw">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cp52IDv8EeGtp7JtQeULVw" value="1"/>
