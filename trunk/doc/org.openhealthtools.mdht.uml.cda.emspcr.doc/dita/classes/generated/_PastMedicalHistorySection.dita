@@ -19,12 +19,12 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Past Medical History" (CONF:10060)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10902)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10903)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ExistenceOfHistoryOfCondition.dita">Existence Of History Of Condition</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.60</tt>)</li></ol></li>
-<li><b>SHALL</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:10905)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../HistoryOfCondition.dita">History Of Condition</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.61</tt>)</li></ol></li>
 </ol>
@@ -33,12 +33,12 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Past Medical History" (CONF:10060)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10902)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10903)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ExistenceOfHistoryOfCondition.dita">Existence Of History Of Condition</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.60</tt>)</li></ol></li>
-<li><b>SHALL</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:10905)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../HistoryOfCondition.dita">History Of Condition</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.61</tt>)</li></ol></li>
 </ol>

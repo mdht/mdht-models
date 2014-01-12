@@ -15,21 +15,21 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.105"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11216)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt><i>Assertion</i> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:10462)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10463), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationNotGivenReason.dita">MedicationNotGivenReason</xref> 2.16.840.1.113883.17.3.11.92</tt><b> STATIC</b> (CONF:10464)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10463), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationNotGivenReason.dita">MedicationNotGivenReason</xref> 2.16.840.1.113883.17.3.11.92</tt><b> DYNAMIC</b> (CONF:10464)
 <ul><li><p><lines><i>EMedications.03</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11216)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt><i>Assertion</i> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:10462)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10463), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationNotGivenReason.dita">MedicationNotGivenReason</xref> 2.16.840.1.113883.17.3.11.92</tt><b> STATIC</b> (CONF:10464)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10463), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationNotGivenReason.dita">MedicationNotGivenReason</xref> 2.16.840.1.113883.17.3.11.92</tt><b> DYNAMIC</b> (CONF:10464)
 <ul><li><p><lines><i>EMedications.03</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

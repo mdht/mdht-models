@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Cardiac Arrest Event Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.14</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.17.3.10.1.14"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>Information regarding a cardiac arrest</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.14"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67799-7" </tt><i>EMS cardiac arrest event Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10134)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Cardiac Arrest Event" (CONF:10937)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10938)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10939)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CardiacArrest.dita">Cardiac Arrest</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.27</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67799-7" </tt><i>EMS cardiac arrest event Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10134)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Cardiac Arrest Event" (CONF:10937)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10938)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10939)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CardiacArrest.dita">Cardiac Arrest</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.27</tt>)</li></ol></li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">EMS Cardiac Arrest Event Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.14</tt>]</p>
+</body>
+</topic>

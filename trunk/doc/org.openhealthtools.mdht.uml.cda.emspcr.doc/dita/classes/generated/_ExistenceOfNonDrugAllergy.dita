@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Existence Of Non Drug Allergy - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.103</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.103"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>Indicator of whether patient has any allergies or sensitivities to materials other than drugs</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.103"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11214)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69747-4" </tt><i>Does the patient have any environmental allergies NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10214)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10215)
+<ul><li><p><lines><i>If NEMSIS EHistory.07 has no values, this is FALSE; otherwise it is TRUE.</i></lines></p></li></ul></li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11214)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69747-4" </tt><i>Does the patient have any environmental allergies NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10214)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10215)
+<ul><li><p><lines><i>If NEMSIS EHistory.07 has no values, this is FALSE; otherwise it is TRUE.</i></lines></p></li></ul></li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Existence Of Non Drug Allergy</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.103</tt>]</p>
+</body>
+</topic>

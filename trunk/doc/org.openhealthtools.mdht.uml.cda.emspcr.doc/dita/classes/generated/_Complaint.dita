@@ -11,14 +11,16 @@
 <section id="knownSubclasses">
 </section>
 <section id="description">
-<p><lines><i>The statement of the problem by the patient or the history provider, including duration, system, and whether it is the chief complaint</i></lines></p>
+<p><lines><i>Statement of the problem by the patient or provider, including duration, system, and whether it is the chief complaint</i></lines></p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.63"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11169)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10768)<tt><b>/@code</b>="10154-3" </tt><i>Chief complaint Narrative - Reported</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10769)
 </li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:11170)
+<ul><li><p><lines><i>effectiveTime.low = NEMSIS Trace: ESituation.01</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>value</b></tt> with data type ST (CONF:10770)
 <ul><li><p><lines><i>NEMSIS Trace: ESituation.04</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10771) <ol><li> This entryRelationship Contains exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ComplaintDuration.dita">Complaint Duration</xref><ol>
@@ -27,27 +29,25 @@
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10772) <ol><li> This entryRelationship Contains at least one [1..*] <tt><b>observation</b></tt>, where its type is <xref href="../ComplaintType.dita">Complaint Type</xref><ol>
 <li>Contains exactly one [1..1] <xref href="../ComplaintType.dita">Complaint Type</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.138</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10773), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AnatomicLocation.dita">AnatomicLocation</xref> 2.16.840.1.113883.17.3.11.76</tt><b> STATIC</b> (CONF:10774)
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10773), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AnatomicLocation.dita">AnatomicLocation</xref> 2.16.840.1.113883.17.3.11.76</tt><b> DYNAMIC</b> (CONF:10774)
 <ul><li><p><lines><i>NEMSIS Trace: ESituation.07
 Complaint site is required if complaint is type "Chief complaint"</i></lines></p></li></ul></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10775) <p><lines><i>The organ system is required if the complaint is of type "Chief complaint"</i></lines></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ComplaintOrganSystem.dita">Complaint Organ System</xref> (CONF:10782)<ol>
 <li>Contains exactly one [1..1] <xref href="../ComplaintOrganSystem.dita">Complaint Organ System</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.140</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
-<ul><li><p><lines><i>effectiveTime.low = NEMSIS Trace: ESituation.01</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11169)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10768)<tt><b>/@code</b>="10154-3" </tt><i>Chief complaint Narrative - Reported</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10769)
 </li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:11170)
 <ul><li><p><lines><i>effectiveTime.low = NEMSIS Trace: ESituation.01</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>value</b></tt> with data type ST (CONF:10770)
 <ul><li><p><lines><i>NEMSIS Trace: ESituation.04</i></lines></p></li></ul></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10773), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AnatomicLocation.dita">AnatomicLocation</xref> 2.16.840.1.113883.17.3.11.76</tt><b> STATIC</b> (CONF:10774)
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10773), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AnatomicLocation.dita">AnatomicLocation</xref> 2.16.840.1.113883.17.3.11.76</tt><b> DYNAMIC</b> (CONF:10774)
 <ul><li><p><lines><i>NEMSIS Trace: ESituation.07
 Complaint site is required if complaint is type "Chief complaint"</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10771) <ol><li> This entryRelationship Contains exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ComplaintDuration.dita">Complaint Duration</xref><ol>

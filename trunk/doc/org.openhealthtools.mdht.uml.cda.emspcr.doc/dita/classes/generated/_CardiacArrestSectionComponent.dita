@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Cardiac Arrest Section Component - conformance rules</title>
+<shortdesc id="shortdesc">[Component3: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Component3</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>=""</li></ol></li>
+<li>Contains exactly one [1..1] <tt><b>section</b></tt>, where its type is <xref href="../CardiacArrestEventSection.dita">Cardiac Arrest Event Section</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CardiacArrestEventSection.dita">Cardiac Arrest Event Section</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.14</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>section</b></tt>, where its type is <xref href="../CardiacArrestEventSection.dita">Cardiac Arrest Event Section</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CardiacArrestEventSection.dita">Cardiac Arrest Event Section</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.14</tt>)</li></ol></li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Cardiac Arrest Section Component</ph></p>
+<p id="shortdesc">[Component3: templateId <tt>null</tt>]</p>
+</body>
+</topic>

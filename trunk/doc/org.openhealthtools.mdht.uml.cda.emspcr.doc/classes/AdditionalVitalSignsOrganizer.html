@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Common observations regarding the state of the patient that are not typically included in strict definitions of vital signs.</em></p>
+</div>
+
 </div>
 
 
@@ -54,13 +57,13 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="StrokeScore.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.163]">Stroke Score</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.163</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="PainScore.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.164]">Pain Score</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.164</tt>)</li>
 </ol>
@@ -96,7 +99,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">component</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="GlasgowComaScoreOrganizer.html" title="[Organizer: templateId 2.16.840.1.1133883.17.3.10.1.170]">Glasgow Coma Score Organizer</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.170</tt>)</li>
 </ol>
@@ -111,161 +114,7 @@
 
 
 
-<pre class="pre codeblock">&lt;organizer xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.30"/&gt;
-  &lt;id root="MDHT" extension="5492590"/&gt;
-  &lt;statusCode code="completed"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;component&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.163"/&gt;
-      &lt;id root="MDHT" extension="1965896270"/&gt;
-      &lt;code code="67520-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stroke scale overall interpretation"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.164"/&gt;
-      &lt;id root="MDHT" extension="1958935208"/&gt;
-      &lt;code code="56840-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pain severity verbal numeric scale"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.165"/&gt;
-      &lt;id root="MDHT" extension="1118236436"/&gt;
-      &lt;code code="67775-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Level of responsiveness"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.166"/&gt;
-      &lt;id root="MDHT" extension="239043636"/&gt;
-      &lt;code code="2339-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glucose"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.167"/&gt;
-      &lt;id root="MDHT" extension="1402224928"/&gt;
-      &lt;code code="19911-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diffusion capacity.carbon monoxide"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.168"/&gt;
-      &lt;id root="MDHT" extension="1380736077"/&gt;
-      &lt;code code="19889-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carbon dioxide/Gas.total.at end expiration"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.169"/&gt;
-      &lt;id root="MDHT" extension="1178130690"/&gt;
-      &lt;code code="67519-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac rhythm"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-      &lt;participant/&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component&gt;
-    &lt;organizer&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.170"/&gt;
-      &lt;id root="MDHT" extension="1582902467"/&gt;
-      &lt;statusCode code="completed"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;component&gt;
-        &lt;observation moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.1133883.17.3.10.1.160"/&gt;
-          &lt;id root="MDHT" extension="996003254"/&gt;
-          &lt;code code="9267-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.eye opening"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
-          &lt;/effectiveTime&gt;
-        &lt;/observation&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.1133883.17.3.10.1.176"/&gt;
-          &lt;id root="MDHT" extension="2437622"/&gt;
-          &lt;code code="9268-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.motor"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
-          &lt;/effectiveTime&gt;
-        &lt;/observation&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.1133883.17.3.10.1.159"/&gt;
-          &lt;id root="MDHT" extension="1715390631"/&gt;
-          &lt;code code="55285-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score special circumstances"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
-          &lt;/effectiveTime&gt;
-        &lt;/observation&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.1133883.17.3.10.1.158"/&gt;
-          &lt;id root="MDHT" extension="1802401976"/&gt;
-          &lt;code code="9269-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.total"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
-          &lt;/effectiveTime&gt;
-        &lt;/observation&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.1133883.17.3.10.1.162"/&gt;
-          &lt;id root="MDHT" extension="341041248"/&gt;
-          &lt;code code="9270-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.verbal"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
-          &lt;/effectiveTime&gt;
-        &lt;/observation&gt;
-      &lt;/component&gt;
-    &lt;/organizer&gt;
-  &lt;/component&gt;
-&lt;/organizer&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

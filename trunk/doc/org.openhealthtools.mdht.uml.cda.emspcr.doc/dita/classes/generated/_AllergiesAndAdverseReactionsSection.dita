@@ -17,36 +17,36 @@
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.13"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48765-2" </tt><i>Allergies and adverse reactions Document</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10196)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Allergies and Adverse Reactions"
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Allergies and Adverse Reactions" (CONF:10948)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10949)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10950)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ExistenceOfDrugAllergyObservation.dita">Existence Of Drug Allergy Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.102</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10951)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../DrugAllergyProblemAct.dita">Drug Allergy Problem Act</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.48</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10953)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../EnvironmentalAllergies.dita">Environmental Allergies</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.49</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../NonDrugAllergyOrganizer.dita">Non Drug Allergy Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.49</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48765-2" </tt><i>Allergies and adverse reactions Document</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10196)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Allergies and Adverse Reactions"
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Allergies and Adverse Reactions" (CONF:10948)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10949)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10950)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ExistenceOfDrugAllergyObservation.dita">Existence Of Drug Allergy Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.102</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10951)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../DrugAllergyProblemAct.dita">Drug Allergy Problem Act</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.48</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10953)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../EnvironmentalAllergies.dita">Environmental Allergies</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.49</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../NonDrugAllergyOrganizer.dita">Non Drug Allergy Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.49</tt>)</li></ol></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">

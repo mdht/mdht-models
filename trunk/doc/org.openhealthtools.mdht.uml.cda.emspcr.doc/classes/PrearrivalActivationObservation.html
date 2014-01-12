@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Indication of whether destination was activated prior to patient arrival</em></p>
+</div>
+
 </div>
 
 
@@ -47,19 +50,19 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10689)<tt class="ph tt"><strong class="ph b">/@code</strong>="69462-0" </tt><em class="ph i">EMS prearrival activation performed</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10688)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10689)<tt class="ph tt"><strong class="ph b">/@code</strong>="69462-0" </tt><em class="ph i">Activation of the destination healthcare facility team NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10688)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type BL (CONF:10690)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EDisposition.24</em></p>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:10691)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EDisposition.25<br/>
+Required if value is TRUE</em></p>
 </div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:10691)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EDisposition.25<br/>
-Required if value is TRUE</em></p>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type BL (CONF:10690)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EDisposition.24</em></p>
 </div>
 </li>
 </ul>
@@ -74,16 +77,7 @@ Required if value is TRUE</em></p>
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.36"/&gt;
-  &lt;id root="MDHT" extension="1869393002"/&gt;
-  &lt;code code="69462-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS prearrival activation performed"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;value xsi:type="BL"/&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

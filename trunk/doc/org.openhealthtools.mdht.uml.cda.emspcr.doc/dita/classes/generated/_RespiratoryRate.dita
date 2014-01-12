@@ -16,21 +16,21 @@
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.146"</li></ol></li>
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignObservation.html">Consol Vital Sign Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.27</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11276)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="9279-1" </tt><i>Respiratory rate</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10287)
 </li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11277)
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:10288)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.14
 UCUM units SHOULD be "/min".</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
-<ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignObservation.html">Consol Vital Sign Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.27</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7297)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11276)
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7300)
 </li>
@@ -40,7 +40,7 @@ UCUM units SHOULD be "/min".</i></lines></p></li></ul></li>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7303)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11277)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:10288)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.14

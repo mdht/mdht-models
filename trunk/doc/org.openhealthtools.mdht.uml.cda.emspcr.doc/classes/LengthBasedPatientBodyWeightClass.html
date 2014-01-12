@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Classification of patient weight based on length</em></p>
+</div>
+
 </div>
 
 
@@ -47,19 +50,19 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10366)<tt class="ph tt"><strong class="ph b">/@code</strong>="67670-0" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10365)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10366)<tt class="ph tt"><strong class="ph b">/@code</strong>="67670-0" </tt><em class="ph i">Length-based tape measure category NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10365)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/LengthBasedWeightClass.html">LengthBasedWeightClass</a> 2.16.840.1.113883.17.3.5.24</tt><strong class="ph b"> STATIC</strong> (CONF:10367)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EExam.02.<br/>
-Note: a license is required to implement the Broselow-Luten measure.</em></p>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EExam.03</em></p>
 </div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EExam.03</em></p>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/LengthBasedWeightClass.html">LengthBasedWeightClass</a> 2.16.840.1.113883.17.3.11.24</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10367)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EExam.02.<br/>
+Note: a license is required to implement the Broselow-Luten measure.</em></p>
 </div>
 </li>
 </ul>
@@ -74,15 +77,7 @@ Note: a license is required to implement the Broselow-Luten measure.</em></p>
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.110"/&gt;
-  &lt;id root="MDHT" extension="1361236656"/&gt;
-  &lt;code code="67670-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

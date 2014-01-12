@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Information regarding a cardiac arrest</em></p>
+</div>
+
 </div>
 
 
@@ -44,7 +47,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67799-7" </tt><em class="ph i">EMS Cardiac Arrest Section</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10134)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67799-7" </tt><em class="ph i">EMS cardiac arrest event Narrative NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10134)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">SHOULD</strong> equal "EMS Cardiac Arrest Event"
@@ -68,51 +71,7 @@
 
 
 
-<pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3"&gt;
-  &lt;templateId root="2.16.840.1.113883.17.3.10.1.14"/&gt;
-  &lt;id root="MDHT" extension="1578956323"/&gt;
-  &lt;code code="67799-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Cardiac Arrest Section"/&gt;
-  &lt;title&gt;EMS Cardiac Arrest Event&lt;/title&gt;
-  &lt;text/&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.27"/&gt;
-      &lt;id root="MDHT" extension="1965737881"/&gt;
-      &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="ASSERTION"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;informant typeCode="INF"&gt;
-        &lt;relatedEntity classCode="AGNT"&gt;
-          &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-        &lt;/relatedEntity&gt;
-      &lt;/informant&gt;
-      &lt;entryRelationship typeCode="SUBJ" inversionInd="true"&gt;
-        &lt;observation/&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship typeCode="SUBJ" inversionInd="true"&gt;
-        &lt;observation/&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship typeCode="SUBJ" inversionInd="true"&gt;
-        &lt;observation/&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship typeCode="SUBJ" inversionInd="true"&gt;
-        &lt;observation/&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship typeCode="SUBJ" inversionInd="true"&gt;
-        &lt;observation/&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship typeCode="SUBJ" inversionInd="true"&gt;
-        &lt;observation/&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship typeCode="SUBJ" inversionInd="true"&gt;
-        &lt;observation/&gt;
-      &lt;/entryRelationship&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-&lt;/section&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

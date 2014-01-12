@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Time the unit is back in service</em></p>
+</div>
+
 </div>
 
 
@@ -47,7 +50,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10863)<tt class="ph tt"><strong class="ph b">/@code</strong>="69477-8" </tt><em class="ph i">Unit back in service time</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10862)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10863)<tt class="ph tt"><strong class="ph b">/@code</strong>="69477-8" </tt><em class="ph i">Unit was back in service and available for response [Date and time] Vehicle NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10862)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type TS (CONF:10864)
@@ -66,16 +69,7 @@
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.45"/&gt;
-  &lt;id root="MDHT" extension="811957906"/&gt;
-  &lt;code code="69477-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit back in service time"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;value xsi:type="TS"/&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

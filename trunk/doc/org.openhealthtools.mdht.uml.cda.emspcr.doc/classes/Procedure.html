@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Procedure performed by EMS unit</em></p>
+</div>
+
 </div>
 
 
@@ -69,14 +72,6 @@ and EArrest.03:<br/>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:10497)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EProcedures.01 goes in effectiveTime.low<br/>
-If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</em></p>
-</div>
-</li>
-</ul>
-</li>
-
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:10498) <ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="AbandonedProcedureReasonObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.130]">Abandoned Procedure Reason Observation</a> (CONF:10510)<ol class="ol" type="i">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="AbandonedProcedureReasonObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.130]">Abandoned Procedure Reason Observation</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.130</tt>)</li>
 </ol>
@@ -92,7 +87,15 @@ If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</em></p>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">approachSiteCode</strong></tt> (CONF:10502), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/IVSite.html">IVSite</a> 2.16.840.1.113883.17.3.5.56</tt><strong class="ph b"> STATIC</strong> (CONF:10501)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:10497)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EProcedures.01 goes in effectiveTime.low<br/>
+If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">approachSiteCode</strong></tt> (CONF:10502), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/IVSite.html">IVSite</a> 2.16.840.1.113883.17.3.11.56</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10501)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EProcedures.13<br/>
 Required conditionally if procedure code is intravenous catheterization (E303)</em></p>
 </div>
@@ -100,7 +103,7 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:10503) <ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="ProcedurePriorIndicator.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.131]">Procedure Prior Indicator</a> (CONF:10515)<ol class="ol" type="i">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:10503) <ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="ProcedurePriorIndicator.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.131]">Procedure Prior Indicator</a> (CONF:10515)<ol class="ol" type="i">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedurePriorIndicator.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.131]">Procedure Prior Indicator</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.131</tt>)</li>
 </ol>
 </li>
@@ -108,7 +111,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:10504) <ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="ProcedureNumberOfAttemptsObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.132]">Procedure Number Of Attempts Observation</a> (CONF:10519)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EProcedures.05</em></p>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:10504) <div class="p"><p class="lines"><em class="ph i">Important for airway insertion</em></p>
+</div>
+<ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="ProcedureNumberOfAttemptsObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.132]">Procedure Number Of Attempts Observation</a> (CONF:10519)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EProcedures.05</em></p>
 </div>
 <ol class="ol" type="i">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureNumberOfAttemptsObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.132]">Procedure Number Of Attempts Observation</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.132</tt>)</li>
@@ -126,7 +131,7 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:10506) <ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="ProcedureComplicationsObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.179]">Procedure Complications Observation</a> (CONF:10527)<ol class="ol" type="i">
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:10506) <ol class="ol" type="a"><li class="li"> Such entryRelationships <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="ProcedureComplicationsObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.179]">Procedure Complications Observation</a> (CONF:10527)<ol class="ol" type="i">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureComplicationsObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.179]">Procedure Complications Observation</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.179</tt>)</li>
 </ol>
 </li>
@@ -142,10 +147,10 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF:10508) <ol class="ol" type="a"><li class="li"> Such performers <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:10536) <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10537), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProviderRole.html">ProviderRole</a> 2.16.840.1.113883.17.3.5.46</tt><strong class="ph b"> STATIC</strong> (CONF:10538)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EProcedures.10</em></p>
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF:10508) <ol class="ol" type="a"><li class="li"> Such performers <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:10536) <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:10539)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EProcedures.09, ID equal to the EMS professional's agency ID number</em></p>
 </div>
 </li>
-<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:10539)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EProcedures.09, ID equal to the EMS professional's agency ID number</em></p>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10537), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProviderRole.html">ProviderRole</a> 2.16.840.1.113883.17.3.11.46</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10538)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EProcedures.10</em></p>
 </div>
 </li>
 </ol>
@@ -181,73 +186,7 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
 
 
 
-<pre class="pre codeblock">&lt;procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="PROC"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.98"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.4.14"/&gt;
-  &lt;id root="MDHT" extension="1826902990"/&gt;
-  &lt;code code="265152720"/&gt;
-  &lt;statusCode code="Aborted"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/&gt;
-  &lt;methodCode code="82305753"/&gt;
-  &lt;approachSiteCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-  &lt;targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
-  &lt;performer&gt;
-    &lt;assignedEntity&gt;
-      &lt;id root="MDHT" extension="1813139041"/&gt;
-      &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-    &lt;/assignedEntity&gt;
-  &lt;/performer&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;code code="748439668"/&gt;
-      &lt;value xsi:type="CD" code="2129112869"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;code code="884382665"/&gt;
-      &lt;value xsi:type="BL"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;code code="192943443"/&gt;
-      &lt;value xsi:type="INT" value="1"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;code code="1000497860"/&gt;
-      &lt;value xsi:type="BL"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;code code="300292722"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;code code="806918855"/&gt;
-      &lt;value xsi:type="CD" code="783643083"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;code code="1979493417"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;value xsi:type="BL"/&gt;
-      &lt;methodCode code="1612134681"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-&lt;/procedure&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

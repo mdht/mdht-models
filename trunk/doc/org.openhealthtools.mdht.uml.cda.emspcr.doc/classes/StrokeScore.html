@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Result of a stroke scale instrument</em></p>
+</div>
+
 </div>
 
 
@@ -47,25 +50,25 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10308)<tt class="ph tt"><strong class="ph b">/@code</strong>="67520-7" </tt><em class="ph i">Stroke scale overall interpretation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10307)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10308)<tt class="ph tt"><strong class="ph b">/@code</strong>="67520-7" </tt><em class="ph i">Stroke scale overall interpretation NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10307)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10310), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/StrokeScaleInterpretation.html">Stroke Scale Interpretation</a> 2.16.840.1.113883.17.3.5.93</tt><strong class="ph b"> STATIC</strong> (CONF:10309)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.01</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10310), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/StrokeScaleInterpretation.html">Stroke Scale Interpretation</a> 2.16.840.1.113883.17.3.11.93</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10309)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.29</em></p>
 </div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt> (CONF:10312), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/StrokeScale.html">StrokeScale</a> 2.16.840.1.113883.17.3.5.88</tt><strong class="ph b"> STATIC</strong> (CONF:10311)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt> (CONF:10312), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/StrokeScale.html">StrokeScale</a> 2.16.840.1.113883.17.3.11.88</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10311)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.30</em></p>
-</div>
-</li>
-</ul>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.01</em></p>
 </div>
 </li>
 </ul>
@@ -80,17 +83,7 @@
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.163"/&gt;
-  &lt;id root="MDHT" extension="813341440"/&gt;
-  &lt;code code="67520-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stroke scale overall interpretation"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;value xsi:type="CD" code="1055349600"/&gt;
-  &lt;methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

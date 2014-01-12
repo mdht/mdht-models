@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Set of times for defined events in the EMS trip</em></p>
+</div>
+
 </div>
 
 
@@ -44,7 +47,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67667-6" </tt><em class="ph i">EMS Times Section</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10820)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67667-6" </tt><em class="ph i">EMS times Narrative NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10820)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">SHOULD</strong> equal "EMS Times" (CONF:10822)
@@ -79,7 +82,7 @@
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="UnitAtPatienttTime.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.42]">Unit At Patientt Time</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.42</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="UnitAtPatientTime.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.42]">Unit At Patient Time</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.42</tt>)</li>
 </ol>
 </li>
 
@@ -116,121 +119,7 @@
 
 
 
-<pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3"&gt;
-  &lt;templateId root="2.16.840.1.113883.17.3.10.1.10"/&gt;
-  &lt;id root="MDHT" extension="1392319466"/&gt;
-  &lt;code code="67667-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Times Section"/&gt;
-  &lt;title&gt;EMS Times&lt;/title&gt;
-  &lt;text/&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.38"/&gt;
-      &lt;id root="MDHT" extension="833329731"/&gt;
-      &lt;code code="69469-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Call time"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.39"/&gt;
-      &lt;id root="MDHT" extension="622155659"/&gt;
-      &lt;code code="69471-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit notified time"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.40"/&gt;
-      &lt;id root="MDHT" extension="794219448"/&gt;
-      &lt;code code="69472-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit en route time"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.41"/&gt;
-      &lt;id root="MDHT" extension="1124957362"/&gt;
-      &lt;code code="69473-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit on scene time"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.42"/&gt;
-      &lt;id root="MDHT" extension="872223273"/&gt;
-      &lt;code code="69474-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit at patient time"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.43"/&gt;
-      &lt;id root="MDHT" extension="1788454410"/&gt;
-      &lt;code code="69475-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit left scene time"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.44"/&gt;
-      &lt;id root="MDHT" extension="1661174211"/&gt;
-      &lt;code code="69476-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient arrived at destination time"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.45"/&gt;
-      &lt;id root="MDHT" extension="51217784"/&gt;
-      &lt;code code="69477-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit back in service time"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.46"/&gt;
-      &lt;id root="MDHT" extension="338463333"/&gt;
-      &lt;code code="69470-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dispatch notified time"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-&lt;/section&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

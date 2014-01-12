@@ -21,10 +21,10 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10699)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11017)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AdverseEventIndicator.dita">Adverse Event Indicator</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.89</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11019)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AdverseEventTypeObservation.dita">Adverse Event Type Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.90</tt>)</li></ol></li>
 </ol>
@@ -35,10 +35,10 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10699)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11017)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AdverseEventIndicator.dita">Adverse Event Indicator</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.89</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11019)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AdverseEventTypeObservation.dita">Adverse Event Type Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.90</tt>)</li></ol></li>
 </ol>

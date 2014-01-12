@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Nulls and Negative Action Values"/>
+<meta name="DC.Relation" scheme="URI" content="../appendices/Appendices.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="topic_id"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Nulls and Negative Action Values</title>
+</head>
+<body id="topic_id">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+  <h1 class="title topictitle1">Nulls and Negative Action Values</h1>
+
+  <div class="body">
+    <p class="p">This table maps NEMSIS null and negative action values to the appropriate values and
+      structures in the HL7 CDA specification.</p>
+
+    <div class="p">
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="topic_id__table_fys_t2z_sg" class="table" frame="border" border="1" rules="all">
+          
+          
+          
+          
+          
+          
+          <tbody class="tbody">
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%">
+                <strong class="ph b"> </strong>
+              </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%">
+                <strong class="ph b">NEMSIS Negative Action Values</strong>
+              </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%">
+                <strong class="ph b">Type</strong>
+              </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%">
+                <strong class="ph b">NullFlavor</strong>
+              </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%">
+                <strong class="ph b">Case</strong>
+              </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%">
+                <strong class="ph b">Solution</strong>
+              </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 1 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> Unable to Complete </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> null </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%"> NI </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%"> observation </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> Observation.value = null (NI); obs.text = "unable to complete" </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 2 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> Unable to Complete </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> null </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%"> NI </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%"> medication </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> SBADM.value = null (NI); SBADM.text = "unable to complete" </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 3 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> Unable to Complete </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> null </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%"> NI </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%"> procedure </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> PROC.value = null (NI); PROC.text = "unable to complete" </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 4 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> Refused </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> null </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%"> ASKU (NT) </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%"> observation (including history)</td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> Observation.value = null (ASKU) </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 7 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> Refused </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> neg </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%">   </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%"> medication given </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> negate specific medication; put "refused" value in MedicationNotAdministeredReason observation</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 9 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> Refused </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> neg </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%">   </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%"> procedure performed </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> negate specific procedure; put "refused" value in ReasonProcedureNotAttempted observation </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 10 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> Exam finding not present </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> null </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%"> NAV </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%"> observation </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> Observation.value = null (NAV) </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 11 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> No known drug allergies </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> none </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%">   </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%"> observation: negation value </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> Use Boolean observation ExistenceOfDrugAllergy </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 12 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> None reported </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> none </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%">   </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%"> observation: alcohol </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> Use Boolean observation ExistenceOfDrugUseIndication </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 16 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> No anticoagulants or bleeding disorder </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> none </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%">   </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%"> medication </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> Use Boolean observation PatientOnAnticoagulants; negate HistoryOfCondition observation for D66, D67, D68 </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 18 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> Contraindication noted </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> neg </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%">   </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%"> medication, procedure </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> negate specific procedure or medication; use related reason observation to record reason</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 19 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> Denied by order </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> neg </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%">   </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%"> medication, procedure </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> negate specific procedure or medication; use related reason observation to record reason </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 20 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> Medication allergy </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> neg </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%">   </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%"> medication </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> negate specific procedure or medication; use related reason observation to record reason </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 21 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> Medication already taken </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> neg </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%">   </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%"> medication </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> negate specific procedure or medication; use related reason observation to record reason </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%">
+                <strong class="ph b"> </strong>
+              </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%">
+                <strong class="ph b">Null Values</strong>
+              </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%">
+                <strong class="ph b"> </strong>
+              </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%">
+                <strong class="ph b"> </strong>
+              </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%">
+                <strong class="ph b"> </strong>
+              </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%">
+                <strong class="ph b"> </strong>
+              </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 22 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> Not Applicable </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> null </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%"> NA </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%">   </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> null: NA </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 23 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> Not Recorded </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> null </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%"> NI </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%">   </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> null: NI; add detail to obs.text or proc.text </td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry" valign="top" width="3.176620076238881%"> 24 </td>
+
+              <td class="entry" valign="top" width="27.477763659466326%"> Not Reported </td>
+
+              <td class="entry" valign="top" width="6.035578144853875%"> null </td>
+
+              <td class="entry" valign="top" width="9.466327827191867%"> NI </td>
+
+              <td class="entry" valign="top" width="13.468869123252858%">   </td>
+
+              <td class="entry" valign="top" width="40.374841168996184%"> null: NI; add detail to obs.text or proc.text </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+</div>
+
+    </div>
+
+  </div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../appendices/Appendices.html">Appendices</a></div>
+</div>
+</div>
+
+</body>
+</html>

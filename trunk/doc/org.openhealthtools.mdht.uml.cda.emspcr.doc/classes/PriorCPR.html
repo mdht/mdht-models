@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Indication of whether CPR was provided prior to the documenting EMS unit's care</em></p>
+</div>
+
 </div>
 
 
@@ -47,7 +50,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67506-6" </tt><em class="ph i">CPR prior to EMS arrival</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10163)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67506-6" </tt><em class="ph i">CPR prior to EMS arrival NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10163)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type BL (CONF:10164)
@@ -58,7 +61,7 @@
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:10165) <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="RESP" </tt></li>
-<li class="li"> This participant <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PriorCareProviderRole.html">PriorCareProviderRole</a> 2.16.840.1.113883.17.3.5.12</tt><strong class="ph b"> STATIC</strong> (CONF:10167)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: eArrest.06</em></p>
+<li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PriorCareProviderRole.html">PriorCareProviderRole</a> 2.16.840.1.113883.17.3.11.12</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10167)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: eArrest.06</em></p>
 </div>
 </li>
 </ol>
@@ -76,21 +79,7 @@
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.125"/&gt;
-  &lt;id root="MDHT" extension="1387426620"/&gt;
-  &lt;code code="67506-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CPR prior to EMS arrival"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;value xsi:type="BL"/&gt;
-  &lt;participant typeCode="RESP"&gt;
-    &lt;participantRole&gt;
-      &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-    &lt;/participantRole&gt;
-  &lt;/participant&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

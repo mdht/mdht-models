@@ -19,22 +19,22 @@ For any observation within the organizer, if the NEMSIS value is "Refused," the 
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsOrganizer.html">Consol Vital Signs Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.26</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10257)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../SystolicBloodPressure.dita">Systolic Blood Pressure</xref><ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11078) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../SystolicBloodPressure.dita">Systolic Blood Pressure</xref> (CONF:11077)<ol>
 <li>Contains exactly one [1..1] <xref href="../SystolicBloodPressure.dita">Systolic Blood Pressure</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.23.1</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DiastolicBloodPressure.dita">Diastolic Blood Pressure</xref><ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11080) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DiastolicBloodPressure.dita">Diastolic Blood Pressure</xref> (CONF:11079)<ol>
 <li>Contains exactly one [1..1] <xref href="../DiastolicBloodPressure.dita">Diastolic Blood Pressure</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.144</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HeartRate.dita">Heart Rate</xref><ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11082) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HeartRate.dita">Heart Rate</xref> (CONF:11081)<ol>
 <li>Contains exactly one [1..1] <xref href="../HeartRate.dita">Heart Rate</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.145</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../RespiratoryRate.dita">Respiratory Rate</xref><ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11084) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../RespiratoryRate.dita">Respiratory Rate</xref> (CONF:11083)<ol>
 <li>Contains exactly one [1..1] <xref href="../RespiratoryRate.dita">Respiratory Rate</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.146</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../BodyTemperature.dita">Body Temperature</xref><ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11086) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../BodyTemperature.dita">Body Temperature</xref> (CONF:11085)<ol>
 <li>Contains exactly one [1..1] <xref href="../BodyTemperature.dita">Body Temperature</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.176</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref><ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11090) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref> (CONF:11087)<ol>
 <li>Contains exactly one [1..1] <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.177</tt>)</li></ol></li></ol>
 </li>
 <li>Contains zero or one [0..1] <tt><b>component</b></tt>
@@ -58,22 +58,22 @@ For any observation within the organizer, if the NEMSIS value is "Refused," the 
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>component</b></tt> (CONF:7285, CONF:7286)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../VitalSignObservation.dita">Vital Sign Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.27</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../SystolicBloodPressure.dita">Systolic Blood Pressure</xref><ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11078) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../SystolicBloodPressure.dita">Systolic Blood Pressure</xref> (CONF:11077)<ol>
 <li>Contains exactly one [1..1] <xref href="../SystolicBloodPressure.dita">Systolic Blood Pressure</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.23.1</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DiastolicBloodPressure.dita">Diastolic Blood Pressure</xref><ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11080) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DiastolicBloodPressure.dita">Diastolic Blood Pressure</xref> (CONF:11079)<ol>
 <li>Contains exactly one [1..1] <xref href="../DiastolicBloodPressure.dita">Diastolic Blood Pressure</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.144</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HeartRate.dita">Heart Rate</xref><ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11082) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HeartRate.dita">Heart Rate</xref> (CONF:11081)<ol>
 <li>Contains exactly one [1..1] <xref href="../HeartRate.dita">Heart Rate</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.145</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../RespiratoryRate.dita">Respiratory Rate</xref><ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11084) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../RespiratoryRate.dita">Respiratory Rate</xref> (CONF:11083)<ol>
 <li>Contains exactly one [1..1] <xref href="../RespiratoryRate.dita">Respiratory Rate</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.146</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../BodyTemperature.dita">Body Temperature</xref><ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11086) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../BodyTemperature.dita">Body Temperature</xref> (CONF:11085)<ol>
 <li>Contains exactly one [1..1] <xref href="../BodyTemperature.dita">Body Temperature</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.176</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref><ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11090) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref> (CONF:11087)<ol>
 <li>Contains exactly one [1..1] <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.177</tt>)</li></ol></li></ol>
 </li>
 <li>Contains zero or one [0..1] <tt><b>component</b></tt>

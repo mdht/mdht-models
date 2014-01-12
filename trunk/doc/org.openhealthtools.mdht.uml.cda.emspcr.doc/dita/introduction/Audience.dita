@@ -3,38 +3,13 @@
  "dtd/topic.dtd">
 <topic id="topicId" xml:lang="en-us">
 	<title>Audience</title>
-	<body>
-	<p>Normative Ballot Concerns</p>
-	
-	<p>We are pleased to offer the EMS PCR implementation guide for normative ballot. A team of 
-	implementers has participated in the DSTU period, including ESO Solutions, Intermedix, Medusa 
-	Medical, Zoll, BeyondLucid, EMSpic, and ImageTrend, as well as the NEMSIS Technical Assistance 
-	Center.</p>
-
-    <p>Zoll has performed two implemenations. The first, at a customer conference, was the creation 
-    of test instances (level 1 and 3) from the integrator's software, transmission to a test 
-    recipient, and review of the contents on the receiving system. As the recipient was not an EHR, 
-    record integration was not possible. We hope that the maturation of the standard will draw more 
-    interest from the EHR community.</p>
-
-    <p>The second is the production implementation of level one transmissions from Poudre Valley EMS 
-    to the University Health system in Fort Collins, Colorado. This implementation includes automated 
-    matching of patient identifiers and import to Epic's patient chart media tab. This implementation 
-    has been in operation since mid-July.</p>
-
-    <p>The most significant DSTU-driven change to the specification during this test period has been 
-    the breakout of observations into individual templates. For a complete list of changes, please 
-    consult the change log in the document. Partipants used the DSTU meetings and GForge to post issues; 
-    the DSTU comment site has not seen heavy use.</p>
-	
-		<p>Audience expectations</p>
-		
+	<body>		
 		<p>The audience for this document is software developers and development organizations 
 			who wish to produce or receive EMS patient care reports.</p>
 		<p>Software developers should use the CDA XML schema to guide their production of EMS patient 
 		care reports, subject to the constraints documented in this guide. Mappings of NEMSIS 
-		elements to the CDA schema are included in this document. Coded elements should use the 
-		vocabularies referred to in the constraints.</p>
+		elements to the CDA schema are included in this document, in the "NEMSIS trace" comment. Coded 
+		elements should use the vocabularies referred to in the constraints.</p>
 		<p>The CDA schema is published by Health Level 7, and is available at 
 		http://www.hl7.org/implement/standards.</p>
 		<p>This guide defines the information payload only. Implementers are encouraged to coordinate with

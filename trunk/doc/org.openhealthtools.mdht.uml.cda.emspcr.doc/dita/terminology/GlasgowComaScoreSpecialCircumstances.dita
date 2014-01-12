@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Glasgow Coma Score Special Circumstances</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.11.89"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>GlasgowComaScoreSpecialCircumstances - 2.16.840.1.113883.17.3.11.89</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Circumstance confounding the assessment of one or more Glasgow Coma Scale observations</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA17102-7</entry><entry>LOINC</entry><entry>Initial GCS has legitimate values without interventions such as intubation and sedation</entry></row>
+<row><entry>LA17103-5</entry><entry>LOINC</entry><entry>Eye obstruction prevents eye assessment</entry></row>
+<row><entry>LA17104-3</entry><entry>LOINC</entry><entry>Patient chemically sedated</entry></row>
+<row><entry>LA17105-0</entry><entry>LOINC</entry><entry>Patient chemically paralyzed</entry></row>
+<row><entry>LA17106-8</entry><entry>LOINC</entry><entry>Patient intubated</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

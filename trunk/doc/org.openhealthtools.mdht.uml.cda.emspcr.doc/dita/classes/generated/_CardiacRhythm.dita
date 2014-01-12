@@ -15,33 +15,33 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.169"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11309)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10275)<tt><b>/@code</b>="67519-9" </tt><i>Cardiac rhythm NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10274)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>methodCode</b></tt> (CONF:10277), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MethodOfECGInterpretation.dita">MethodOfECGInterpretation</xref> 2.16.840.1.113883.17.3.11.20</tt><b> STATIC</b> (CONF:10276)
-<ul><li><p><lines><i>NEMSIS Trace: EVitals.05</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10278), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacRhythmReading.dita">CardiacRhythmReading</xref> 2.16.840.1.113883.17.3.11.16</tt><b> STATIC</b> (CONF:10279)
-<ul><li><p><lines><i>NEMSIS Trace: EVitals.03</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11310)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>participant</b></tt> <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> <ol><li> This playingDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ECGType.dita">ECGType</xref> 2.16.840.1.113883.17.3.11.19</tt><b> STATIC</b><p><lines><i>NEMSIS Trace: EVitals.04</i></lines></p></li></ol> </li></ol> </li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10278), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacRhythmReading.dita">CardiacRhythmReading</xref> 2.16.840.1.113883.17.3.11.16</tt><b> DYNAMIC</b> (CONF:10279)
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.03</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>methodCode</b></tt> (CONF:10277), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MethodOfECGInterpretation.dita">MethodOfECGInterpretation</xref> 2.16.840.1.113883.17.3.11.20</tt><b> DYNAMIC</b> (CONF:10276)
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.05</i></lines></p></li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:11127) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:11128) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> (CONF:11129) <ol><li> This playingDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11311), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ECGType.dita">ECGType</xref> 2.16.840.1.113883.17.3.11.19</tt><b> DYNAMIC</b> (CONF:11312)<p><lines><i>NEMSIS Trace: EVitals.04</i></lines></p></li></ol> </li></ol> </li></ol>
 </li>
 </ol>
 <ol id="aggregate">
 <li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11309)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10275)<tt><b>/@code</b>="67519-9" </tt><i>Cardiac rhythm NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10274)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11310)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10278), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacRhythmReading.dita">CardiacRhythmReading</xref> 2.16.840.1.113883.17.3.11.16</tt><b> STATIC</b> (CONF:10279)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10278), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacRhythmReading.dita">CardiacRhythmReading</xref> 2.16.840.1.113883.17.3.11.16</tt><b> DYNAMIC</b> (CONF:10279)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.03</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>methodCode</b></tt> (CONF:10277), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MethodOfECGInterpretation.dita">MethodOfECGInterpretation</xref> 2.16.840.1.113883.17.3.11.20</tt><b> STATIC</b> (CONF:10276)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>methodCode</b></tt> (CONF:10277), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MethodOfECGInterpretation.dita">MethodOfECGInterpretation</xref> 2.16.840.1.113883.17.3.11.20</tt><b> DYNAMIC</b> (CONF:10276)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.05</i></lines></p></li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>participant</b></tt> <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> <ol><li> This playingDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ECGType.dita">ECGType</xref> 2.16.840.1.113883.17.3.11.19</tt><b> STATIC</b><p><lines><i>NEMSIS Trace: EVitals.04</i></lines></p></li></ol> </li></ol> </li></ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:11127) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:11128) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> (CONF:11129) <ol><li> This playingDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11311), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ECGType.dita">ECGType</xref> 2.16.840.1.113883.17.3.11.19</tt><b> DYNAMIC</b> (CONF:11312)<p><lines><i>NEMSIS Trace: EVitals.04</i></lines></p></li></ol> </li></ol> </li></ol>
 </li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Observations concerning a patient injury</em></p>
+</div>
+
 </div>
 
 
@@ -44,7 +47,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="11374-6" </tt><em class="ph i">Injury Incident Description Section</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10094)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67800-3" </tt><em class="ph i">EMS injury incident description Narrative NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10094)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">SHOULD</strong> equal "Injury Incident Description Section"
@@ -77,37 +80,37 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="VehicleImpactArea.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.54]">Vehicle Impact Area</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.54</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="PatientLocationInVehicle.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.55]">Patient Location In Vehicle</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.55</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="VehicleOccupantSafetyEquipment.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.56]">Vehicle Occupant Safety Equipment</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.56</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="AirbagDeploymentStatus.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.57]">Airbag Deployment Status</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.57</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="HeightOfFall.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.58]">Height Of Fall</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.58</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="DisasterType.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.59]">Disaster Type</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.59</tt>)</li>
 </ol>
@@ -122,133 +125,7 @@
 
 
 
-<pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3"&gt;
-  &lt;templateId root="2.16.840.1.113883.17.3.10.1.17"/&gt;
-  &lt;id root="MDHT" extension="2053762367"/&gt;
-  &lt;code code="11374-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury Incident Description Section"/&gt;
-  &lt;title&gt;Injury Incident Description Section&lt;/title&gt;
-  &lt;text/&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.50"/&gt;
-      &lt;id root="MDHT" extension="505585793"/&gt;
-      &lt;code code="69543-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury Cause"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.51"/&gt;
-      &lt;id root="MDHT" extension="291536233"/&gt;
-      &lt;code code="67494-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury Mechanism"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.52"/&gt;
-      &lt;id root="MDHT" extension="1837429907"/&gt;
-      &lt;code code="67495-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Trauma Center Critieria"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.53"/&gt;
-      &lt;id root="MDHT" extension="1961512857"/&gt;
-      &lt;code code="67496-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other injury risk factors"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.54"/&gt;
-      &lt;id root="MDHT" extension="179688627"/&gt;
-      &lt;code code="67497-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of impact on the vehicle"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.55"/&gt;
-      &lt;id root="MDHT" extension="1363751461"/&gt;
-      &lt;code code="67498-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of patient in vehicle"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.56"/&gt;
-      &lt;id root="MDHT" extension="104218190"/&gt;
-      &lt;code code="67499-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Safety equipment"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.57"/&gt;
-      &lt;id root="MDHT" extension="571945850"/&gt;
-      &lt;code code="67500-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Airbag deployment"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.58"/&gt;
-      &lt;id root="MDHT" extension="1294539463"/&gt;
-      &lt;code code="67501-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height of fall"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.59"/&gt;
-      &lt;id root="MDHT" extension="1895610117"/&gt;
-      &lt;code code="69463-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Suspected intentional or unintentional disaster"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-&lt;/section&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

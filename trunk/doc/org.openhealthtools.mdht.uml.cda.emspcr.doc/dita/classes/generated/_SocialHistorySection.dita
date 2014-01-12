@@ -19,12 +19,12 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Social History" (CONF:10243)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10964)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10965)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ExistenceOfDrugUseIndication.dita">Existence Of Drug Use Indication</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.70</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10967)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../DrugUseIndication.dita">Drug Use Indication</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.71</tt>)</li></ol></li>
 </ol>
@@ -33,12 +33,12 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Social History" (CONF:10243)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10964)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10965)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ExistenceOfDrugUseIndication.dita">Existence Of Drug Use Indication</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.70</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10967)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../DrugUseIndication.dita">Drug Use Indication</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.71</tt>)</li></ol></li>
 </ol>

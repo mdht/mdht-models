@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">A collection of qualitative assessments of the patient's physical condition and other facts</em></p>
+</div>
+
 </div>
 
 
@@ -46,7 +49,7 @@
 
 <li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PhysicalExamSection.html">Consol Physical Exam Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.2.10</tt>)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10337)<tt class="ph tt"><strong class="ph b">/@code</strong>="29545-1" </tt><em class="ph i">Physical Assessment Section</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10336)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10337)<tt class="ph tt"><strong class="ph b">/@code</strong>="29545-1" </tt><em class="ph i">Physical findings Narrative</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10336)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">SHOULD</strong> equal "EMS Physical Assessment Section" (CONF:10339)
@@ -100,138 +103,7 @@
 
 
 
-<pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3"&gt;
-  &lt;templateId root="2.16.840.1.113883.17.3.10.1.20"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.2.10"/&gt;
-  &lt;id root="MDHT" extension="505792057"/&gt;
-  &lt;code code="29545-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PHYSICAL EXAMINATION"/&gt;
-  &lt;title&gt;EMS Physical Assessment Section&lt;/title&gt;
-  &lt;text/&gt;
-  &lt;entry&gt;
-    &lt;organizer&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.78"/&gt;
-      &lt;id root="MDHT" extension="1883790836"/&gt;
-      &lt;code code="471014643"/&gt;
-      &lt;statusCode code="completed"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;component&gt;
-        &lt;observation/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;templateId root="null"/&gt;
-        &lt;observation/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;observation moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.1133883.17.3.10.1.180"/&gt;
-          &lt;id root="MDHT" extension="66639256"/&gt;
-          &lt;code code="67524-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-          &lt;text&gt;Text Value&lt;/text&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2013"/&gt;
-            &lt;high value="2013"/&gt;
-          &lt;/effectiveTime&gt;
-        &lt;/observation&gt;
-      &lt;/component&gt;
-    &lt;/organizer&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.79"/&gt;
-      &lt;id root="MDHT" extension="200217184"/&gt;
-      &lt;code code="67471-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Pregnancy"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.80"/&gt;
-      &lt;id root="MDHT" extension="52002950"/&gt;
-      &lt;code code="67517-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Last oral intake"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.81"/&gt;
-      &lt;id root="MDHT" extension="302984592"/&gt;
-      &lt;code code="30525-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient age"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.82"/&gt;
-      &lt;id root="MDHT" extension="2026804684"/&gt;
-      &lt;code code="67523-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Contraindications to thrombolytic use"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.83"/&gt;
-      &lt;id root="MDHT" extension="1093455879"/&gt;
-      &lt;code code="67523-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Barriers to patient care"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-&lt;/section&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

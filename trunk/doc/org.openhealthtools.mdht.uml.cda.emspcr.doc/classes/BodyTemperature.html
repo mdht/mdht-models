@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Patient's body temperature</em></p>
+</div>
+
 </div>
 
 
@@ -52,16 +55,16 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="8310-5" </tt><em class="ph i">Body temperature</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10289)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> (CONF:10290)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.24<br/>
-UCUM units SHOULD be "Cel".</em></p>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.01</em></p>
 </div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.01</em></p>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> (CONF:10290)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.24<br/>
+UCUM units SHOULD be "Cel".</em></p>
 </div>
 </li>
 </ul>
@@ -76,22 +79,7 @@ UCUM units SHOULD be "Cel".</em></p>
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.176"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.4.27"/&gt;
-  &lt;id root="MDHT" extension="1434940114"/&gt;
-  &lt;code code="8310-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body temperature"/&gt;
-  &lt;text&gt;Text Value&lt;/text&gt;
-  &lt;statusCode code="completed"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;value xsi:type="PQ"/&gt;
-  &lt;interpretationCode code="715474443"/&gt;
-  &lt;methodCode code="504407162"/&gt;
-  &lt;targetSiteCode code="519957467"/&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

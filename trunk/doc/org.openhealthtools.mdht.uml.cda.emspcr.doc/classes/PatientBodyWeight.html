@@ -35,7 +35,7 @@
 
 
 <div class="section">
-<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EExam.03</em></p>
+<div class="p"><p class="lines"><em class="ph i">Patient's body weight</em></p>
 </div>
 
 </div>
@@ -48,9 +48,16 @@
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EExam.03</em></p>
+</div>
+</li>
+</ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="8335-2" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10363)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="8335-2" </tt><em class="ph i">Body weight Estimated</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10363)
+</li>
+
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ (CONF:10364)
@@ -59,9 +66,6 @@ UCUM units should be 'kg'</em></p>
 </div>
 </li>
 </ul>
-</li>
-
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
 </li>
 
 </ol>
@@ -73,16 +77,7 @@ UCUM units should be 'kg'</em></p>
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.178"/&gt;
-  &lt;id root="MDHT" extension="2083674895"/&gt;
-  &lt;code code="8335-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;value xsi:type="PQ"/&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 
