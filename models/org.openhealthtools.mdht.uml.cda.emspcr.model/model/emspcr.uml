@@ -3168,9 +3168,11 @@ This is the value represented in the header for the encompassing encounter</body
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_InP7HNICEeKRzPZKi7WbBQ" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_3C3WwMWqEeK3RfDsHamIUQ" name="PatientDrugAllergy">
+    <packagedElement xmi:type="uml:Class" xmi:id="_3C3WwMWqEeK3RfDsHamIUQ" name="DrugAllergy">
       <ownedComment xmi:id="_qKVCoCUkEeOEaIF_MBGm_A">
-        <body>The drug a patient is allergic or sensitive to</body>
+        <body>An allergy or sensitivity to a drug.&#xD;
+In the contained observation, as the Consolidated guide specifies, the code is &quot;ASSERTION,&quot; and the value selected from 2.16.840.1.113883.3.88.12.3221.6.2. In this case, the value should be 416098002 (	Drug allergy (disorder)), System = SNOMED CT, 2.16.840.1.113883.6.5. &#xD;
+The drug, to be placed in the participating product, is encoded in RxNorm.</body>
       </ownedComment>
       <generalization xmi:id="_4F12sMWqEeK3RfDsHamIUQ">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_2EAisBSVEeGGzu7fmW9pXw"/>
@@ -6658,7 +6660,7 @@ Note: CPR procedures have appropriate values &quot;Not Attempted-Considered Futi
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_4ZsacKg_EeG79fAvHk6H4g" name="ComplaintType">
       <ownedComment xmi:id="_7GW4MCUfEeOPwcQY2yBpiA">
-        <body>Whether a complaint is a cheif complaint</body>
+        <body>Whether a complaint is a chief complaint</body>
       </ownedComment>
       <generalization xmi:id="_4uqk4Kg_EeG79fAvHk6H4g">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -6942,7 +6944,7 @@ UCUM units SHOULD be &quot;Cel&quot;.</body>
           <body>NEMSIS Trace: EVitals.12&#xD;
 UCUM units will typically be &quot;%&quot;.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9w8hgIzsEeGnhceUMXltng" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9w8hgYzsEeGnhceUMXltng" value="1"/>
       </ownedAttribute>
@@ -9525,7 +9527,6 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <ruleId>CONF:10027</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_CW3J4McbEeGjDJAyT0XW9Q" base_Association="_CW2i0McbEeGjDJAyT0XW9Q">
-    <ruleId>iv.</ruleId>
     <ruleId>CONF:5519</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_NVUbgMcbEeGjDJAyT0XW9Q" base_Association="_JsZ0EMcbEeGjDJAyT0XW9Q">
@@ -10839,7 +10840,6 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_Wzc3scWkEeK3RfDsHamIUQ" severity="INFO" base_Association="_WzcQoMWkEeK3RfDsHamIUQ">
     <ruleId>CONF:6277</ruleId>
-    <ruleId>CONF:8534</ruleId>
   </CDA:AssociationValidation>
   <CDA:CodeSystemConstraint xmi:id="_uLp9kIy-EeGnhceUMXltng" code="67794-8" displayName="Does the patient have any medication allergies NEMSIS" base_Property="_lhnloIy-EeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -11910,6 +11910,10 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <ruleId>CONF:10883</ruleId>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_Jd2q0GtAEeOeb59rcSI6Mw" base_Property="_aL-lcIzyEeGnhceUMXltng">
+    <reference href="emspcr-vocab.uml#_DehfoHSUEeGa4IXs2ghZEw"/>
     <ruleId>CONF:11293</ruleId>
   </CDA:ValueSetConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_tdgNoHvWEeOw3rTrG-1RHg" base_Property="_h7aPwIzFEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>
