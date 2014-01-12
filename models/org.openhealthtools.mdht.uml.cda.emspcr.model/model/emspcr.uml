@@ -785,7 +785,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_-rSVEmlZEeG4boS-IbG8Zw" memberEnd="_-rSVEGlZEeG4boS-IbG8Zw _-rS8IGlZEeG4boS-IbG8Zw">
       <ownedEnd xmi:id="_-rS8IGlZEeG4boS-IbG8Zw" type="_x_Bd0GlZEeG4boS-IbG8Zw" association="_-rSVEmlZEeG4boS-IbG8Zw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_VtMvAIzcEeGnhceUMXltng" name="PastMedicalHistorySection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_VtMvAIzcEeGnhceUMXltng" name="EMSPastMedicalHistorySection">
       <ownedComment xmi:id="_r4pFkCwqEeOaIuM51LdlNw">
         <body>Collection of information regarding the patient's medical history</body>
       </ownedComment>
@@ -821,7 +821,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_tvaNUmlaEeG4boS-IbG8Zw" memberEnd="_tvaNUGlaEeG4boS-IbG8Zw _tva0YGlaEeG4boS-IbG8Zw">
       <ownedEnd xmi:id="_tva0YGlaEeG4boS-IbG8Zw" type="_o-PZ0GlZEeG4boS-IbG8Zw" association="_tvaNUmlaEeG4boS-IbG8Zw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_S-YTcGldEeG4boS-IbG8Zw" name="BillingSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_S-YTcGldEeG4boS-IbG8Zw" name="EMSBillingSection">
       <ownedComment xmi:id="_SnBqACUcEeOPwcQY2yBpiA">
         <body>Information pertinent to billing processes</body>
       </ownedComment>
@@ -854,9 +854,9 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ip60ktICEeKRzPZKi7WbBQ" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_3dRe0HSUEeGa4IXs2ghZEw" name="InjuryIncidentDescriptionSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_3dRe0HSUEeGa4IXs2ghZEw" name="EMSInjuryIncidentDescriptionSection">
       <ownedComment xmi:id="_t6nrwCwnEeOaIuM51LdlNw">
-        <body>Observations concerning a patient injury</body>
+        <body>Observations concerning a patient's injury mechanism</body>
       </ownedComment>
       <generalization xmi:id="_3dSF4HSUEeGa4IXs2ghZEw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -938,7 +938,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_UoAVQXuIEeGs2I-Db78R9w" memberEnd="_Un_uMHuIEeGs2I-Db78R9w _UoA8UHuIEeGs2I-Db78R9w">
       <ownedEnd xmi:id="_UoA8UHuIEeGs2I-Db78R9w" type="_Mn0zUGlYEeG4boS-IbG8Zw" association="_UoAVQXuIEeGs2I-Db78R9w"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_pIikMHwDEeGW3cDolvqrTA" name="CardiacArrestEventSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_pIikMHwDEeGW3cDolvqrTA" name="EMSCardiacArrestEventSection">
       <ownedComment xmi:id="_eAWn0CUeEeOPwcQY2yBpiA">
         <body>Information regarding a cardiac arrest</body>
       </ownedComment>
@@ -1014,7 +1014,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_xBIoYnwUEeGW3cDolvqrTA" memberEnd="_xBIoYHwUEeGW3cDolvqrTA _xBIoY3wUEeGW3cDolvqrTA">
       <ownedEnd xmi:id="_xBIoY3wUEeGW3cDolvqrTA" type="_egsBcHwTEeGW3cDolvqrTA" association="_xBIoYnwUEeGW3cDolvqrTA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_i4C-AH9aEeGht55Sz1eBOw" name="AdvanceDirectivesSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_i4C-AH9aEeGht55Sz1eBOw" name="EMSAdvanceDirectivesSection">
       <ownedComment xmi:id="_ryjSACSSEeO2bfzIdJE0yg">
         <body>Information regarding patient advance directives</body>
       </ownedComment>
@@ -1045,7 +1045,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S4Kz8ffjEeK_n7ZHGRzt1Q" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_nSjIgH9cEeGht55Sz1eBOw" name="AllergiesAndAdverseReactionsSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_nSjIgH9cEeGht55Sz1eBOw" name="EMSAllergiesAndAdverseReactionsSection">
       <ownedComment xmi:id="_NTt7kCSTEeO2bfzIdJE0yg">
         <body>Information regarding patient allergies and sensitivities</body>
       </ownedComment>
@@ -1085,7 +1085,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_InWBstICEeKRzPZKi7WbBQ" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_aDO5AIcnEeGqF6qfYwLiQw" name="CurrentMedicationSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_aDO5AIcnEeGqF6qfYwLiQw" name="EMSCurrentMedicationSection">
       <ownedComment xmi:id="_Dz0XkCUgEeOPwcQY2yBpiA">
         <body>Information regarding a patient's current medications</body>
       </ownedComment>
@@ -1151,7 +1151,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_pLtucIziEeGnhceUMXltng" memberEnd="_pLsgUIziEeGnhceUMXltng _pLuVgIziEeGnhceUMXltng">
       <ownedEnd xmi:id="_pLuVgIziEeGnhceUMXltng" type="_xs1LQWeQEeGtXKebdWh3hg" association="_pLtucIziEeGnhceUMXltng"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_1XH7YIziEeGnhceUMXltng" name="SocialHistorySection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_1XH7YIziEeGnhceUMXltng" name="EMSSocialHistorySection">
       <ownedComment xmi:id="_nF9UcC0AEeO0H9tywllqaQ">
         <body>Information about the patient's social environment</body>
       </ownedComment>
@@ -1187,7 +1187,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_KBT2AYzkEeGnhceUMXltng" memberEnd="_KBTO8IzkEeGnhceUMXltng _KBUdEIzkEeGnhceUMXltng">
       <ownedEnd xmi:id="_KBUdEIzkEeGnhceUMXltng" type="_xs1LQWeQEeGtXKebdWh3hg" association="_KBT2AYzkEeGnhceUMXltng"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_jCzkkIzkEeGnhceUMXltng" name="VitalSignsSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_jCzkkIzkEeGnhceUMXltng" name="EMSVitalSignsSection">
       <ownedComment xmi:id="_6jIiAC0EEeO0H9tywllqaQ">
         <body>Collection of vital signs and other observations about the patient's status</body>
       </ownedComment>
@@ -1235,7 +1235,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_2BJ8kYzyEeGnhceUMXltng" memberEnd="_2BIucIzyEeGnhceUMXltng _2BKjoIzyEeGnhceUMXltng">
       <ownedEnd xmi:id="_2BKjoIzyEeGnhceUMXltng" type="_RNfAcIzyEeGnhceUMXltng" association="_2BJ8kYzyEeGnhceUMXltng"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_6223oJohEeG_FLcaRgAa7g" name="PhysicalAssessmentSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_6223oJohEeG_FLcaRgAa7g" name="EMSPhysicalAssessmentSection">
       <ownedComment xmi:id="_Jd_okCwlEeOaIuM51LdlNw">
         <body>A collection of qualitative assessments of the patient's physical condition and other facts</body>
       </ownedComment>
@@ -1286,7 +1286,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_RUnyQpovEeG_FLcaRgAa7g" memberEnd="_RUnyQJovEeG_FLcaRgAa7g _RUnyQ5ovEeG_FLcaRgAa7g">
       <ownedEnd xmi:id="_RUnyQ5ovEeG_FLcaRgAa7g" type="_xs1LQWeQEeGtXKebdWh3hg" association="_RUnyQpovEeG_FLcaRgAa7g"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_c7crcJovEeG_FLcaRgAa7g" name="MedicationsAdministeredSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_c7crcJovEeG_FLcaRgAa7g" name="EMSMedicationsAdministeredSection">
       <ownedComment xmi:id="_X8kYsCwqEeOaIuM51LdlNw">
         <body>Collection of information regarding the administration of medications</body>
       </ownedComment>
@@ -1371,9 +1371,9 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_IV_6cJssEeGzXI65shd6Fw" memberEnd="_IV-sUJssEeGzXI65shd6Fw _IWAhgJssEeGzXI65shd6Fw">
       <ownedEnd xmi:id="_IWAhgJssEeGzXI65shd6Fw" type="_xs1LQWeQEeGtXKebdWh3hg" association="_IV_6cJssEeGzXI65shd6Fw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_4QFw8JumEeGzXI65shd6Fw" name="ProceduresPerformedSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_4QFw8JumEeGzXI65shd6Fw" name="EMSProceduresPerformedSection">
       <ownedComment xmi:id="_UKGrQCz8EeO0H9tywllqaQ">
-        <body>Information regarding procedures performed by the EMS unit or by others prior to EMS unit arrival</body>
+        <body>Information regarding procedures performed by the EMS personnel or by others prior to EMS unit arrival</body>
       </ownedComment>
       <generalization xmi:id="_4mzn0JumEeGzXI65shd6Fw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_HNUIIDVzEeGaW4kr-GbV8Q"/>
@@ -1462,7 +1462,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_ajQEYZ9mEeGw9ZRnaFfEZQ" memberEnd="_ajPdUJ9mEeGw9ZRnaFfEZQ _ajQrcJ9mEeGw9ZRnaFfEZQ">
       <ownedEnd xmi:id="_ajQrcJ9mEeGw9ZRnaFfEZQ" type="_xs1LQWeQEeGtXKebdWh3hg" association="_ajQEYZ9mEeGw9ZRnaFfEZQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_iDmQYJ9mEeGw9ZRnaFfEZQ" name="PatientCareNarrativeSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_iDmQYJ9mEeGw9ZRnaFfEZQ" name="EMSPatientCareNarrativeSection">
       <ownedComment xmi:id="_eq61ICwsEeOaIuM51LdlNw">
         <body>A narrative description of the EMS encounter</body>
       </ownedComment>
@@ -1491,7 +1491,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_74vpcZ9mEeGw9ZRnaFfEZQ" memberEnd="_74vCYJ9mEeGw9ZRnaFfEZQ _74vpcp9mEeGw9ZRnaFfEZQ">
       <ownedEnd xmi:id="_74vpcp9mEeGw9ZRnaFfEZQ" type="_xs1LQWeQEeGtXKebdWh3hg" association="_74vpcZ9mEeGw9ZRnaFfEZQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_OV4TIJ9nEeGw9ZRnaFfEZQ" name="DispatchSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_OV4TIJ9nEeGw9ZRnaFfEZQ" name="EMSDispatchSection">
       <ownedComment xmi:id="_h4oSMCUkEeOEaIF_MBGm_A">
         <body>Information regarding the dispatch process</body>
       </ownedComment>
@@ -1522,7 +1522,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Io3rudICEeKRzPZKi7WbBQ" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_LI7M8J99EeGw9ZRnaFfEZQ" name="ResponseSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_LI7M8J99EeGw9ZRnaFfEZQ" name="EMSResponseSection">
       <ownedComment xmi:id="_Ag0QICz_EeO0H9tywllqaQ">
         <body>Information regarding the EMS crew's response to dispatch</body>
       </ownedComment>
@@ -1627,9 +1627,9 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_NUwPsZ-bEeGorI3CPDW2ww" memberEnd="_NUvooJ-bEeGorI3CPDW2ww _NUw2wJ-bEeGorI3CPDW2ww">
       <ownedEnd xmi:id="_NUw2wJ-bEeGorI3CPDW2ww" type="_yVviAJ-OEeGorI3CPDW2ww" association="_NUwPsZ-bEeGorI3CPDW2ww"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_i-lM8J-dEeGorI3CPDW2ww" name="DispositionSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_i-lM8J-dEeGorI3CPDW2ww" name="EMSDispositionSection">
       <ownedComment xmi:id="_juoxkCUkEeOEaIF_MBGm_A">
-        <body>Information regarding the final disposition of the patient</body>
+        <body>Information regarding the disposition of the patient</body>
       </ownedComment>
       <generalization xmi:id="_kGvu4J-dEeGorI3CPDW2ww">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -1678,7 +1678,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ImxZ8tICEeKRzPZKi7WbBQ" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_GGotEJ-kEeGorI3CPDW2ww" name="PersonnelAdverseEventSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_GGotEJ-kEeGorI3CPDW2ww" name="EMSPersonnelAdverseEventSection">
       <ownedComment xmi:id="_MbR_cCwtEeOaIuM51LdlNw">
         <body>Information regarding adverse events affecting EMS personnel</body>
       </ownedComment>
@@ -1709,7 +1709,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ip0t8tICEeKRzPZKi7WbBQ" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_aK7P4J-mEeGorI3CPDW2ww" name="ProtocolSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_aK7P4J-mEeGorI3CPDW2ww" name="EMSProtocolSection">
       <ownedComment xmi:id="_kDY4ICz8EeO0H9tywllqaQ">
         <body>Information about the protocol used by EMS personnel to direct the clinical care of the patient</body>
       </ownedComment>
@@ -1740,7 +1740,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IqA7M9ICEeKRzPZKi7WbBQ" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_h3A8IKK3EeGOxth0BgV-QA" name="SceneSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_h3A8IKK3EeGOxth0BgV-QA" name="EMSSceneSection">
       <ownedComment xmi:id="_dKMO4C0AEeO0H9tywllqaQ">
         <body>Information about the environment in which the patient is found</body>
       </ownedComment>
@@ -1786,7 +1786,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_zgPAIqK4EeGOxth0BgV-QA" memberEnd="_zgPAIKK4EeGOxth0BgV-QA _zgVGwKK4EeGOxth0BgV-QA">
       <ownedEnd xmi:id="_zgVGwKK4EeGOxth0BgV-QA" type="_xs1LQWeQEeGtXKebdWh3hg" association="_zgPAIqK4EeGOxth0BgV-QA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_olqMIKK8EeGOxth0BgV-QA" name="SituationSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_olqMIKK8EeGOxth0BgV-QA" name="EMSSituationSection">
       <ownedComment xmi:id="_iWUVgC0AEeO0H9tywllqaQ">
         <body>Information about patient symptoms and complaints</body>
       </ownedComment>
@@ -2196,9 +2196,9 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IhJTFNICEeKRzPZKi7WbBQ" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_Qlqj8HwGEeGW3cDolvqrTA" name="CardiacArrestExistence">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Qlqj8HwGEeGW3cDolvqrTA" name="CardiacArrest">
       <ownedComment xmi:id="_f_M6ICUeEeOPwcQY2yBpiA">
-        <body>Whether a patient had a cardiac arrest</body>
+        <body>Characteristics of a patient's cardiac arrest</body>
       </ownedComment>
       <generalization xmi:id="_RvtVMHwGEeGW3cDolvqrTA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -3168,9 +3168,9 @@ This is the value represented in the header for the encompassing encounter</body
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_InP7HNICEeKRzPZKi7WbBQ" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_3C3WwMWqEeK3RfDsHamIUQ" name="DrugAllergyProblemAct">
+    <packagedElement xmi:type="uml:Class" xmi:id="_3C3WwMWqEeK3RfDsHamIUQ" name="PatientDrugAllergy">
       <ownedComment xmi:id="_qKVCoCUkEeOEaIF_MBGm_A">
-        <body>A patient's allergy or sensitivity to a drug</body>
+        <body>The drug a patient is allergic or sensitive to</body>
       </ownedComment>
       <generalization xmi:id="_4F12sMWqEeK3RfDsHamIUQ">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_2EAisBSVEeGGzu7fmW9pXw"/>
@@ -3339,7 +3339,7 @@ Causes are in ICD-10 chapter XX</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_vuraIIcZEeGqF6qfYwLiQw" name="InjuryRiskFactor">
       <ownedComment xmi:id="_37Nm8CwnEeOaIuM51LdlNw">
-        <body>Circumstance affecting likelihood of injury</body>
+        <body>Factors predictive of need for trauma center care</body>
       </ownedComment>
       <generalization xmi:id="_x1Ee4IcZEeGqF6qfYwLiQw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -3619,7 +3619,7 @@ ICD-10 code (D66, D67, D68) and negationIndicator should be TRUE.</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_KEZzkKg-EeG79fAvHk6H4g" name="Complaint">
       <ownedComment xmi:id="_Hj9d0CUfEeOPwcQY2yBpiA">
-        <body>The statement of the problem by the patient or the history provider, including duration, system, and whether it is the chief complaint</body>
+        <body>Statement of the problem by the patient or provider, including duration, system, and whether it is the chief complaint</body>
       </ownedComment>
       <generalization xmi:id="_Ke-PsKg-EeG79fAvHk6H4g">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -6325,7 +6325,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_qsAEkHwPEeGW3cDolvqrTA" name="PriorAEDUse">
       <ownedComment xmi:id="_JZX4MCwuEeOaIuM51LdlNw">
-        <body>Indication of whether an automated electronic defibrillator was used on the patient prior to EMS arrival</body>
+        <body>Indication of whether an automated external defibrillator was used on the patient prior to EMS arrival</body>
       </ownedComment>
       <generalization xmi:id="_s7rBIHwPEeGW3cDolvqrTA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -6548,7 +6548,7 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_lVl1sJ0uEeGmCMENP40rhA" name="ProcedureComplicationsObservation">
       <ownedComment xmi:id="_JTGFcCz8EeO0H9tywllqaQ">
-        <body>Complications attending a procedure performed by the EMS unit</body>
+        <body>Complications associated with a procedure performed by the EMS unit</body>
       </ownedComment>
       <generalization xmi:id="_l6VhgJ0uEeGmCMENP40rhA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -7412,7 +7412,7 @@ UCUM units will typically be &quot;mg/dl&quot;.</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_WFit0IztEeGnhceUMXltng" name="CarbonMonoxide">
       <ownedComment xmi:id="_QoenwCUeEeOPwcQY2yBpiA">
-        <body>Measurement of carbon monoxide in patient bloodstream</body>
+        <body>Measurement of carbon monoxide in patient's bloodstream</body>
       </ownedComment>
       <generalization xmi:id="_WP_qUIztEeGnhceUMXltng">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -7445,7 +7445,7 @@ UCUM units will typically be &quot;[ppm]&quot;.</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_IU2lIIztEeGnhceUMXltng" name="CarbonDioxide">
       <ownedComment xmi:id="_AsUigCUdEeOPwcQY2yBpiA">
-        <body>Measurement of carbon dioxide in patient bloodstream</body>
+        <body>Measurement of carbon dioxide in patient's bloodstream</body>
       </ownedComment>
       <generalization xmi:id="_I1iQUIztEeGnhceUMXltng">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>

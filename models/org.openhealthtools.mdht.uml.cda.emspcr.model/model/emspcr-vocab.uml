@@ -1306,7 +1306,6 @@
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_HE_3EHSUEeGa4IXs2ghZEw" name="CardiacArrestTiming">
       <ownedLiteral xmi:id="_d_S-AMFTEeGyGv5RKvEgDA" name="LA17054-0"/>
       <ownedLiteral xmi:id="_d_ZEoMFTEeGyGv5RKvEgDA" name="LA17055-7"/>
-      <ownedLiteral xmi:id="_d_fyUMFTEeGyGv5RKvEgDA" name="LA32-8"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_MkY38HSUEeGa4IXs2ghZEw" name="DisasterType">
       <ownedLiteral xmi:id="_d9iDcMFTEeGyGv5RKvEgDA" name="LA17594-5"/>
@@ -2610,9 +2609,8 @@
   <term:ValueSetCode xmi:id="_d--08cFTEeGyGv5RKvEgDA" conceptName="Considered futile" base_EnumerationLiteral="_d--08MFTEeGyGv5RKvEgDA" xxxxx="LA17063-1"/>
   <term:ValueSetCode xmi:id="_d_FiocFTEeGyGv5RKvEgDA" conceptName="DNR orders" base_EnumerationLiteral="_d_FioMFTEeGyGv5RKvEgDA" xxxxx="LA17064-9"/>
   <term:ValueSetCode xmi:id="_d_MQUcFTEeGyGv5RKvEgDA" conceptName="Signs of circulation" base_EnumerationLiteral="_d_MQUMFTEeGyGv5RKvEgDA" xxxxx="LA17065-6"/>
-  <term:ValueSetCode xmi:id="_d_S-AcFTEeGyGv5RKvEgDA" conceptName="Yes, prior to EMS arrival" base_EnumerationLiteral="_d_S-AMFTEeGyGv5RKvEgDA" xxxxx="LA17054-0"/>
-  <term:ValueSetCode xmi:id="_d_ZrsMFTEeGyGv5RKvEgDA" conceptName="Yes, after EMS arrival" base_EnumerationLiteral="_d_ZEoMFTEeGyGv5RKvEgDA" xxxxx="LA17055-7"/>
-  <term:ValueSetCode xmi:id="_d_gZYMFTEeGyGv5RKvEgDA" conceptName="No" base_EnumerationLiteral="_d_fyUMFTEeGyGv5RKvEgDA" xxxxx="LA32-8"/>
+  <term:ValueSetCode xmi:id="_d_S-AcFTEeGyGv5RKvEgDA" conceptName="Prior to EMS arrival" base_EnumerationLiteral="_d_S-AMFTEeGyGv5RKvEgDA" xxxxx="LA17054-0"/>
+  <term:ValueSetCode xmi:id="_d_ZrsMFTEeGyGv5RKvEgDA" conceptName="After EMS arrival" base_EnumerationLiteral="_d_ZEoMFTEeGyGv5RKvEgDA" xxxxx="LA17055-7"/>
   <term:ValueSetCode xmi:id="_d_mgAcFTEeGyGv5RKvEgDA" conceptName="Unable to complete" base_EnumerationLiteral="_d_mgAMFTEeGyGv5RKvEgDA" xxxxx="LA15185-4"/>
   <term:ValueSetCode xmi:id="_d_tNscFTEeGyGv5RKvEgDA" conceptName="Medication already taken" base_EnumerationLiteral="_d_tNsMFTEeGyGv5RKvEgDA" xxxxx="LA18921-9"/>
   <term:ValueSetCode xmi:id="_d_z7YcFTEeGyGv5RKvEgDA" conceptName="Medication allergy" base_EnumerationLiteral="_d_z7YMFTEeGyGv5RKvEgDA" xxxxx="LA18922-7"/>
