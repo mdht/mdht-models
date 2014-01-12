@@ -23,9 +23,8 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17054-0</entry><entry>LOINC</entry><entry>Yes, prior to EMS arrival</entry></row>
-<row><entry>LA17055-7</entry><entry>LOINC</entry><entry>Yes, after EMS arrival</entry></row>
-<row><entry>LA32-8</entry><entry>LOINC</entry><entry>No</entry></row>
+<row><entry>LA17054-0</entry><entry>LOINC</entry><entry>Prior to EMS arrival</entry></row>
+<row><entry>LA17055-7</entry><entry>LOINC</entry><entry>After EMS arrival</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

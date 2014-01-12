@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Information regarding patient advance directives</em></p>
+</div>
+
 </div>
 
 
@@ -44,7 +47,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67840-9" </tt><em class="ph i">EMS Advance Directives Section</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10191)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67840-9" </tt><em class="ph i">EMS advance directives Narrative NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10191)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">SHOULD</strong> equal "EMS Advance Directives Section"
@@ -53,9 +56,9 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="AdvancedDirectiveObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.98]">Advanced Directive Observation</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.98</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AdvanceDirectiveObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.98]">Advance Directive Observation</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.98</tt>)</li>
 </ol>
 </li>
 
@@ -68,25 +71,7 @@
 
 
 
-<pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3"&gt;
-  &lt;templateId root="2.16.840.1.113883.17.3.10.1.12"/&gt;
-  &lt;id root="MDHT" extension="1112199124"/&gt;
-  &lt;code code="67840-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Advance Directives Section"/&gt;
-  &lt;title&gt;EMS Advance Directives Section&lt;/title&gt;
-  &lt;text/&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.98"/&gt;
-      &lt;id root="MDHT" extension="1466151144"/&gt;
-      &lt;code code="67516-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advanced directive"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-&lt;/section&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

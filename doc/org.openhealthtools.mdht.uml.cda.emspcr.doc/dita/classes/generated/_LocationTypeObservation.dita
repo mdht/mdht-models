@@ -15,9 +15,9 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.88"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="eScene.09" </tt><i>Location type</i> (CodeSystem:<tt> 2.16.840.1.113883.17.3.5 NEMSISCodeSystem</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="eScene.09" </tt><i>Location type</i> (CodeSystem:<tt> 2.16.840.1.113883.17.3.5 NEMSISCodeSystem</tt>) (CONF:11202)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:11203)
 <ul><li><p><lines><i>See NEMSIS recommended subset at http://nemsis.org/v3/resources.html. ICD-10 CM contains "place of occurrence of external cause" under code Y92.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -25,9 +25,9 @@
 </li>
 <li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with data type x_ActMoodDocumentObservation
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="eScene.09" </tt><i>Location type</i> (CodeSystem:<tt> 2.16.840.1.113883.17.3.5 NEMSISCodeSystem</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="eScene.09" </tt><i>Location type</i> (CodeSystem:<tt> 2.16.840.1.113883.17.3.5 NEMSISCodeSystem</tt>) (CONF:11202)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:11203)
 <ul><li><p><lines><i>See NEMSIS recommended subset at http://nemsis.org/v3/resources.html. ICD-10 CM contains "place of occurrence of external cause" under code Y92.</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

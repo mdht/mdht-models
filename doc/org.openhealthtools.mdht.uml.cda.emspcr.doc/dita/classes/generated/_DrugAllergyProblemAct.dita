@@ -16,7 +16,7 @@
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.48"</li></ol></li>
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AllergyProblemAct.html">Consol Allergy Problem Act</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.30</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:10208) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (CONF:10209) <ol><li> This playingEntity Contains exactly one [1..1] <tt><b>code</b></tt><p><lines><i>NEMSIS Trace: EHistory.06</i></lines></p></li></ol> </li></ol> </li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF:11126) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:10208) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (CONF:10209) <ol><li> This playingEntity Contains exactly one [1..1] <tt><b>code</b></tt><p><lines><i>NEMSIS Trace: EHistory.06</i></lines></p></li></ol> </li></ol> </li></ol>
 </li>
 </ol>
 <ol id="aggregate">
@@ -49,7 +49,7 @@ historical purposes.
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../AllergyObservation.dita">Allergy Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.7</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:10208) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (CONF:10209) <ol><li> This playingEntity Contains exactly one [1..1] <tt><b>code</b></tt><p><lines><i>NEMSIS Trace: EHistory.06</i></lines></p></li></ol> </li></ol> </li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF:11126) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:10208) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (CONF:10209) <ol><li> This playingEntity Contains exactly one [1..1] <tt><b>code</b></tt><p><lines><i>NEMSIS Trace: EHistory.06</i></lines></p></li></ol> </li></ol> </li></ol>
 </li>
 <li>If statusCode = "55561003" Active, then effectiveTime <b>SHALL</b> contain [1..1] low (CONF:7504). (CONF:7504)</li>
 <li>If statusCode = "413322009", then effectiveTime <b>SHALL</b> contain  high [1..1] (CONF:10085). (CONF:10085)</li>

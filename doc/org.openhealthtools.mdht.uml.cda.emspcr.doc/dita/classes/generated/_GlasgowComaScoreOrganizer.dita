@@ -30,7 +30,7 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:10317)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../GlasgowVerbal.dita">Glasgow Verbal</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.162</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11313)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -40,7 +40,7 @@
 </li>
 <li>Contains exactly one [1..1] <tt><b>statusCode</b></tt> with data type CS
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11313)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:10313)
 <ol>

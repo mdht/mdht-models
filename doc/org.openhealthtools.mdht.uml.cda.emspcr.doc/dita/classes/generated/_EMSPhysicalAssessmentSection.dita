@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Physical Assessment Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.20</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.17.3.10.1.20"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>A collection of qualitative assessments of the patient's physical condition and other facts</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.20"</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PhysicalExamSection.html">Consol Physical Exam Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.2.10</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10337)<tt><b>/@code</b>="29545-1" </tt><i>Physical findings Narrative</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10336)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Physical Assessment Section" (CONF:10339)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10338)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10975)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PhysicalAssessmentOrganizer.dita">Physical Assessment Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.78</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10977)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientPregnancy.dita">Patient Pregnancy</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.79</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10979)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LastOralIntake.dita">Last Oral Intake</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.80</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10981)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientAge.dita">Patient Age</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.81</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10983)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ThrombolyticContraindications.dita">Thrombolytic Contraindications</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.82</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10985)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../BarriersToPatientCare.dita">Barriers To Patient Care</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.83</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PhysicalExamSection.html">Consol Physical Exam Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.2.10</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10337)<tt><b>/@code</b>="29545-1" </tt><i>Physical findings Narrative</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10336)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Physical Assessment Section" (CONF:10339)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10338)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10975)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PhysicalAssessmentOrganizer.dita">Physical Assessment Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.78</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10977)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientPregnancy.dita">Patient Pregnancy</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.79</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10979)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LastOralIntake.dita">Last Oral Intake</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.80</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10981)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientAge.dita">Patient Age</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.81</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10983)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ThrombolyticContraindications.dita">Thrombolytic Contraindications</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.82</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10985)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../BarriersToPatientCare.dita">Barriers To Patient Care</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.83</tt>)</li></ol></li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">EMS Physical Assessment Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.20</tt>]</p>
+</body>
+</topic>

@@ -21,25 +21,25 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10757)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:11039)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../Complaint.dita">Complaint</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.63</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11041)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PossibleInjury.dita">Possible Injury</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.64</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11043)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProviderPrimaryImpression.dita">Provider Primary Impression</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.65</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11045)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PrimarySymptom.dita">Primary Symptom</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.66</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11047)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../OtherSymptoms.dita">Other Symptoms</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.67</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11049)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProviderSecondaryImpressions.dita">Provider Secondary Impressions</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.68</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11051)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../InitialPatientAcuity.dita">Initial Patient Acuity</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.69</tt>)</li></ol></li>
 </ol>
@@ -50,25 +50,25 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10757)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:11039)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../Complaint.dita">Complaint</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.63</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11041)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PossibleInjury.dita">Possible Injury</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.64</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11043)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProviderPrimaryImpression.dita">Provider Primary Impression</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.65</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11045)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PrimarySymptom.dita">Primary Symptom</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.66</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11047)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../OtherSymptoms.dita">Other Symptoms</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.67</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11049)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProviderSecondaryImpressions.dita">Provider Secondary Impressions</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.68</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11051)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../InitialPatientAcuity.dita">Initial Patient Acuity</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.69</tt>)</li></ol></li>
 </ol>

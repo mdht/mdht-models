@@ -35,7 +35,7 @@
 
 
 <div class="section">
-<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ESituation.10</em></p>
+<div class="p"><p class="lines"><em class="ph i">Symptoms other than the primary symptom</em></p>
 </div>
 
 </div>
@@ -50,10 +50,10 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10806)<tt class="ph tt"><strong class="ph b">/@code</strong>="67776-5" </tt><em class="ph i">Other symptoms</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10807)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10806)<tt class="ph tt"><strong class="ph b">/@code</strong>="67776-5" </tt><em class="ph i">Other symptoms NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10807)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10808), where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:10809)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10808), which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:10809)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ESituation.10</em></p>
 </div>
 </li>
@@ -69,16 +69,7 @@
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.67"/&gt;
-  &lt;id root="MDHT" extension="2053439113"/&gt;
-  &lt;code code="67776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other symptoms"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;value xsi:type="CD" code="2144426493"/&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

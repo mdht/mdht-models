@@ -20,12 +20,12 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Vital Signs" (CONF:10254)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10969)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:10970)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.28</tt>)</li></ol></li>
-<li><b>SHALL</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:10972)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AdditionalVitalSignsOrganizer.dita">Additional Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.30</tt>)</li></ol></li>
 </ol>
@@ -36,12 +36,12 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Vital Signs" (CONF:10254)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10969)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:10970)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.28</tt>)</li></ol></li>
-<li><b>SHALL</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:10972)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AdditionalVitalSignsOrganizer.dita">Additional Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.30</tt>)</li></ol></li>
 </ol>

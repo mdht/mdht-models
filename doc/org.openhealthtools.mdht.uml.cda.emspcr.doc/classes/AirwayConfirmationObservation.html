@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Whether airway placement was confirmed, including time and method</em></p>
+</div>
+
 </div>
 
 
@@ -47,11 +50,11 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10542)<tt class="ph tt"><strong class="ph b">/@code</strong>="71576-3" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10541)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10542)<tt class="ph tt"><strong class="ph b">/@code</strong>="71576-3" </tt><em class="ph i">Airway device placement confirmation NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10541)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt> (CONF:10544), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AirwayDeviceConfirmationMethod.html">AirwayDeviceConfirmationMethod</a> 2.16.840.1.113883.17.3.5.60</tt><strong class="ph b"> STATIC</strong> (CONF:10543)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EAirway.04</em></p>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:10546)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EAirway.02. If the confirmation is negated, this SHALL be "NA."</em></p>
 </div>
 </li>
 </ul>
@@ -64,8 +67,8 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:10546)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EAirway.02. If the confirmation is negated, this SHALL be "NA."</em></p>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt> (CONF:10544), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AirwayDeviceConfirmationMethod.html">AirwayDeviceConfirmationMethod</a> 2.16.840.1.113883.17.3.11.60</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10543)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EAirway.04</em></p>
 </div>
 </li>
 </ul>
@@ -80,17 +83,7 @@
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.175"/&gt;
-  &lt;id root="MDHT" extension="626881632"/&gt;
-  &lt;code code="71576-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;value xsi:type="BL"/&gt;
-  &lt;methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

@@ -15,66 +15,66 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.30"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11133)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11134)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11091)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../StrokeScore.dita">Stroke Score</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.163</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11092)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PainScore.dita">Pain Score</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.164</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11093)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LevelOfResponsiveness.dita">Level Of Responsiveness</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.165</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11094)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../BloodGlucose.dita">Blood Glucose</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.166</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11095)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CarbonMonoxide.dita">Carbon Monoxide</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.167</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11096)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CarbonDioxide.dita">Carbon Dioxide</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.168</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11097)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CardiacRhythm.dita">Cardiac Rhythm</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.169</tt>)</li></ol></li>
-<li><b>SHALL</b> contain zero or more [0..*] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> (CONF:11135)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../GlasgowComaScoreOrganizer.dita">Glasgow Coma Score Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.170</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
 <li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type x_ActClassDocumentEntryOrganizer
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11133)
 </li>
 <li>Contains exactly one [1..1] <tt><b>statusCode</b></tt> with data type CS
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11134)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11091)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../StrokeScore.dita">Stroke Score</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.163</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11092)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PainScore.dita">Pain Score</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.164</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11093)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LevelOfResponsiveness.dita">Level Of Responsiveness</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.165</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11094)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../BloodGlucose.dita">Blood Glucose</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.166</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11095)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CarbonMonoxide.dita">Carbon Monoxide</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.167</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11096)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CarbonDioxide.dita">Carbon Dioxide</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.168</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11097)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CardiacRhythm.dita">Cardiac Rhythm</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.169</tt>)</li></ol></li>
-<li><b>SHALL</b> contain zero or more [0..*] <tt><b>component</b></tt>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> (CONF:11135)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../GlasgowComaScoreOrganizer.dita">Glasgow Coma Score Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.170</tt>)</li></ol></li>
 </ol>

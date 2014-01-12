@@ -45,462 +45,255 @@
             <entry>Jay Lyle</entry>
             <entry>DSTU changes</entry>
           </row>
+          <row>
+            <entry>R1 D6</entry>
+            <entry>January 2014</entry>
+            <entry>Jay Lyle</entry>
+            <entry>Normative version</entry>
+          </row>
         </tbody>
       </tgroup>
     </table>
-    <p>A detailed list of changes from the October ballot follows, also noting minor changes applied
-      in the subsequent process of publishing in MDHT. </p>
+    <p>A detailed list of changes from DSTU version follows. </p>
     <table id="table_bnh_zkz_sg">
-      <tgroup cols="5">
+      <tgroup cols="4">
         <colspec colnum="1" colname="col1" colwidth="1*"/>
         <colspec colnum="2" colname="col2" colwidth="24*"/>
         <colspec colnum="3" colname="col3" colwidth="4*"/>
         <colspec colnum="4" colname="col4" colwidth="4*"/>
         <thead>
           <row>
-            <entry>ID</entry>
+            <entry>#</entry>
             <entry>Change</entry>
-            <entry>Changed By</entry>
-            <entry>Date Changed</entry>
+            <entry>By Whom</entry>
+            <entry>Date</entry>
           </row>
         </thead>
-        <tbody>
-          <row>
-            <entry>1</entry>
-            <entry>5/2011 #1: Updated address constraint format</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>2</entry>
-            <entry>5/2011 #2: Updated appendix B</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>3</entry>
-            <entry>5/2011 #3: Called out conformance statements from referenced standards with
-              formatting (shading).</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>4</entry>
-            <entry>5/2011 #4: Changed ID practice constraint from SHALL to SHOULD (was conf-6 to 8;
-              now conf-3 &amp; 4).</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>5</entry>
-            <entry>5/2011 #5: Changed strength of confidentiality code system from SHALL to SHOULD
-              (was conf-12; now conf-8).</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>6</entry>
-            <entry>5/2011 #6: Added constraints to prevent mixed content and support identified
-              address parts and cardinality (all addresses).</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>7</entry>
-            <entry>5/2011 #7: Added regex constraint to ensure field is a telephone number. (Was
-              conf-21; now GHC conf.)</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>8</entry>
-            <entry>5/2011 #8: Provided guidance on family names (was conf-24; now conf-10).</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>9</entry>
-            <entry>5/2011 #9: Use CDC race and ethnicity codes (was conf-28-29; now conf-12)</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>10</entry>
-            <entry>5/2011 #11: “Vocab OK with either dynamic binding or concept domain binding; due
-              to lack of realm administrative body in US, we will use dynamic”</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>11</entry>
-            <entry>Articulated section data as clinical statements</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>12</entry>
-            <entry>Changed template OIDs from IHE to NEMSIS</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>13</entry>
-            <entry>Updated section on approach to nulls and negatives with resulting changes to
-              medications, medical history, and allergies; added appendix for mapping of NEMSIS
-              values.</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>14</entry>
-            <entry>Added EncompassingEncounter/Location/HealthCareFacility/Place</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>15</entry>
-            <entry>Added destination participant</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>16</entry>
-            <entry>9/2011: all typographical changes</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-11</entry>
-          </row>
-          <row>
-            <entry>17</entry>
-            <entry>9/2011 #2: added organizer for non-medication allergies</entry>
-            <entry>JLyle</entry>
-            <entry>Nov-11</entry>
-          </row>
-          <row>
-            <entry>18</entry>
-            <entry>9/2011 # 5: changed ‘Adverse Event’ to ‘Exposures or Injuries of EMS
-              Personnel’</entry>
-            <entry>JLyle</entry>
-            <entry>Nov-11</entry>
-          </row>
-          <row>
-            <entry>19</entry>
-            <entry>9/2011 #6: Updated LOINC codes</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>20</entry>
-            <entry>9/2011 #7, 68: Included vocabularies in appendix</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-12 </entry>
-          </row>
-          <row>
-            <entry>21</entry>
-            <entry>9/2011 #8: Included copyright information for copyrighted IP</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>22</entry>
-            <entry>9/2011 #9: Provide URL for CDA schema for implementers</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>23</entry>
-            <entry>9/2011 #12: Provide URL for LOINC for implementers</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>24</entry>
-            <entry>9/2011 #13: Provide URL for IHE framework for implementers</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>25</entry>
-            <entry>9/2011 #15: Provide examples of new and old constraints (see change #3
-              above)</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>26</entry>
-            <entry>9/2011 #18: Moved description of GHC from 6.2 to 6.1, prior to its first
-              use</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>27</entry>
-            <entry>9/2011 #19: Swapped order of conf-1 (GHC) and conf-2 (document) (really?)</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>28</entry>
-            <entry>9/2011 #22: Updated optionality constraints</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-12 </entry>
-          </row>
-          <row>
-            <entry>29</entry>
-            <entry>9/2011 #23: confirmed tel regex</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>30</entry>
-            <entry>9/2011 #24: Ensure all GHC constraints have reference numbers</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>31</entry>
-            <entry>9/2011 #25: Added explanation for 2nd race code entry</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>32</entry>
-            <entry>9/2011 #29: Added root instructions for dispatch id and performer id
-              (hmm)</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>33</entry>
-            <entry>9/2011 #38: Update value set references with correct format indicating static or
-              dynamic</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>34</entry>
-            <entry>9/2011 #39-46: Updated xpath for entryRelationship/Observation</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>35</entry>
-            <entry>9/2011 #49: added conditional requirement for drug allergy observation</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>36</entry>
-            <entry>9/2011 #50: Changed blood coagulation disorder from SCT to ICD</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>37</entry>
-            <entry>9/2011 #54: Changed pain scale to ordinal</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>38</entry>
-            <entry>9/2011 #55: Corrected Glasgow Coma ranges</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>39</entry>
-            <entry>9/2011 #58: Specified entryRelationship/typeCode Caus Comp* Mfst Refr Rson
-              Subj</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>40</entry>
-            <entry>9/2011 #59, 61: Update conformance criterion numbering</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-12 </entry>
-          </row>
-          <row>
-            <entry>41</entry>
-            <entry>9/2011 #69: Include table of required and optional sections</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>42</entry>
-            <entry>9/2011 #70: Add “open” to template definitions</entry>
-            <entry>Stet</entry>
-            <entry> </entry>
-          </row>
-          <row>
-            <entry>43</entry>
-            <entry>Changed CONF-34 destination entity from id to name</entry>
-            <entry>JLyle</entry>
-            <entry>Dec-11</entry>
-          </row>
-          <row>
-            <entry>44</entry>
-            <entry>Removed "EN" recommendation from language code constraint</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-12</entry>
-          </row>
-          <row>
-            <entry>45</entry>
-            <entry>Left Consolidated guidance out of core spec (e.g., TEL regex; requirement to
-              avoid mixed content</entry>
-            <entry>JLyle</entry>
-            <entry>Jun-12</entry>
-          </row>
-          <row> 
-            <entry>46</entry><entry> GForge #  2366 Procedure may have multiple performers</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>47</entry><entry> GForge #  2369 Stipulate EVN mood for all observations</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>48</entry><entry> GForge #  2370 correct Routes of adm system</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>49</entry><entry> GForge #  2374 Informant requires code</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>50</entry><entry> GForge #  2376 need rxnorm OID</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>51</entry><entry> GForge #  2379 missing observation at 10202</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>52</entry><entry> GForge #  2380 update negatives map in appendix; remove redundancies</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>53</entry><entry> GForge #  2381 correct author cardinality</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>54</entry><entry> GForge #  2382 select best concatenation pattern for software name</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>55</entry><entry> GForge #  2385 add icd-10 cm</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>56</entry><entry> GForge #  2392 add missing traces</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>57</entry><entry> GForge #  2408 Replace trace 'professional' w 'personnel'</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>58</entry><entry> GForge #  2424 Deduplicate pt status and condition change</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>59</entry><entry> GForge #  2425 Deduplicate provider role level and role</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>60</entry><entry> GForge #  2426 Harmonize 2 resuscitation sets</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>61</entry><entry> GForge #  2427 make value set for medication administration devices</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>62</entry><entry> GForge #  2430 Fix vitals entry cardinality</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>63</entry><entry> GForge #  2431 add times to vitals obs</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>64</entry><entry> GForge #  2438 harmonize Glasgow values; change to quantities</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>65</entry><entry> GForge #  2447 Correct History of conditions cardinality </entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>66</entry><entry> GForge #  2448 remove Procedure History </entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>67</entry><entry> GForge #  2451 repeated code for first unit on scene</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>68</entry><entry> GForge #  2516 Advance Directives Section should allow multiple observations</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>69</entry><entry> GForge #  2580 correct loinc for O2 sat</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>70</entry><entry> GForge #  2586 align demographic value sets with CCDA (subsets)</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>71</entry><entry> GForge #  2636 Merge bradycardia, sinus bradycardia</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>72</entry><entry> GForge #  2643 add text to intro re vocabulary sources</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>73</entry><entry> GForge #  2646 split ""itching/urticaria"" into two answers</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>74</entry><entry> GForge #  2661 Update new value set OIDs using ext. 5, not 11</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-            
-          </row>
-          <row> 
-            <entry>75</entry>
-            <entry> GForge #  2667 injury cause code system is ICD-10 CM, not ICD-10</entry> <entry>JLyle</entry>
-            <entry>Jul 29</entry>
-    
-          </row>          
+        <row>
+          <entry>1</entry>
+          <entry>add descriptions to all templates (ballot ref 28,60,69 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>2</entry>
+          <entry>change CO2 type to PQ </entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>3</entry>
+          <entry>cardiac arrest timing value set: remove "no"</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>4</entry>
+          <entry>LOINC for environmental allergy is narr not nom. Request new one? (ballot ref 46 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>5</entry>
+          <entry>make IV sBADM to support rate (dose) (ballot ref 21 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>6</entry>
+          <entry>Insert "such that" language (ballot ref 1,6,8 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>7</entry>
+          <entry>Ensure example shows elements in schema order</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>8</entry>
+          <entry>typo: patientt, the the, SCT, version (ballot ref 24 , 47, 49, 52 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>9</entry>
+          <entry>environmental allergy: change to "non-drug"</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>10</entry>
+          <entry>correct related document cardinality (ballot ref 5 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>11</entry>
+          <entry>age units: allow min, h, d, wk, mo, a; not s (ballot ref 23 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>12</entry>
+          <entry>add URL to paragraph 1 (ballot ref 67 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>13</entry>
+          <entry>custodian cardinality (ballot ref 3 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>14</entry>
+          <entry>service event cardinality (ballot ref 4 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>15</entry>
+          <entry>height of fall unit (ballot ref 18 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>16</entry>
+          <entry>ucum unit IN_I => in_i (ballot ref 26 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>17</entry>
+          <entry>ensure all constraints have conformance numbers (ballot ref 29 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>18</entry>
+          <entry>Correct missing LOINC code names (ballot ref 43,45 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>19</entry>
+          <entry>make bindings dynamic (ballot ref 56 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>20</entry>
+          <entry>check all descendant templates for conformance to ancestors (ballot ref 64, 65 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>21</entry>
+          <entry>correct author model (ballot ref 64 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>22</entry>
+          <entry>escene.09 location: need LOINC </entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>23</entry>
+          <entry>re-order classes to display in document in schema order (ballot ref 2 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>24</entry>
+          <entry>LOINC: advance directive, no "D" (67516-5, 67840-9) (ballot ref 16 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>25</entry>
+          <entry>add Carbon Monoxide code </entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>26</entry>
+          <entry>correct medication cardinality (ballot ref 10 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>27</entry>
+          <entry>correct cardinality where shall & 0:1 is ambiguous (ballot ref 53 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>28</entry>
+          <entry>correct trauma center cardinality (ballot ref 61 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>29</entry>
+          <entry>check parent child conformance (ballot ref 66 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>30</entry>
+          <entry>correct conformance verb for encounter (ballot ref 62 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>31</entry>
+          <entry>examples: use effective time value not range (ballot ref 15 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>32</entry>
+          <entry>remove extraneous xml from examples (ballot ref 7 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>33</entry>
+          <entry>need code, title, template id in examples (ballot ref 9, 59, 70 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>34</entry>
+          <entry>generate IDs  for II elements (ballot ref 50 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>35</entry>
+          <entry>include time not year in examples (ballot ref 51 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>36</entry>
+          <entry>include code system oids in examples (ballot ref 55 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+        <row>
+          <entry>37</entry>
+          <entry>include template ids in examples (ballot ref 57, 58 )</entry>
+          <entry>JLyle</entry>
+          <entry>Nov-13</entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
         </tbody>
       </tgroup>
     </table>

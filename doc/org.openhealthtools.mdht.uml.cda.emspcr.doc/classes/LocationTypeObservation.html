@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Kind of location</em></p>
+</div>
+
 </div>
 
 
@@ -44,11 +47,11 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="eScene.09" </tt><em class="ph i">Location type</em> (CodeSystem:<tt class="ph tt"> </tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="eScene.09" </tt><em class="ph i">Location type</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.17.3.5 NEMSISCodeSystem</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value1</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.90 ICD-10 CM</tt>)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">See NEMSIS recommended subset at http://nemsis.org/v3/resources.html</em></p>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.90 ICD-10 CM</tt>)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">See NEMSIS recommended subset at http://nemsis.org/v3/resources.html. ICD-10 CM contains "place of occurrence of external cause" under code Y92.</em></p>
 </div>
 </li>
 </ul>
@@ -63,15 +66,7 @@
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.88"/&gt;
-  &lt;id root="MDHT" extension="1246235161"/&gt;
-  &lt;code code="eScene.09" codeSystemName="" displayName="Location type"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

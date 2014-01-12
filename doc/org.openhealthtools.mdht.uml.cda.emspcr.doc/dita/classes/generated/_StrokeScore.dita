@@ -15,29 +15,29 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.163"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11297)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10308)<tt><b>/@code</b>="67520-7" </tt><i>Stroke scale overall interpretation NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10307)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10310), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/StrokeScaleInterpretation.dita">Stroke Scale Interpretation</xref> 2.16.840.1.113883.17.3.11.93</tt><b> STATIC</b> (CONF:10309)
-<ul><li><p><lines><i>NEMSIS Trace: EVitals.29</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>methodCode</b></tt> (CONF:10312), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/StrokeScale.dita">StrokeScale</xref> 2.16.840.1.113883.17.3.11.88</tt><b> STATIC</b> (CONF:10311)
-<ul><li><p><lines><i>NEMSIS Trace: EVitals.30</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11298)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10310), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/StrokeScaleInterpretation.dita">Stroke Scale Interpretation</xref> 2.16.840.1.113883.17.3.11.93</tt><b> DYNAMIC</b> (CONF:10309)
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.29</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>methodCode</b></tt> (CONF:10312), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/StrokeScale.dita">StrokeScale</xref> 2.16.840.1.113883.17.3.11.88</tt><b> DYNAMIC</b> (CONF:10311)
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.30</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11297)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10308)<tt><b>/@code</b>="67520-7" </tt><i>Stroke scale overall interpretation NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10307)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11298)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10310), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/StrokeScaleInterpretation.dita">Stroke Scale Interpretation</xref> 2.16.840.1.113883.17.3.11.93</tt><b> STATIC</b> (CONF:10309)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10310), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/StrokeScaleInterpretation.dita">Stroke Scale Interpretation</xref> 2.16.840.1.113883.17.3.11.93</tt><b> DYNAMIC</b> (CONF:10309)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.29</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>methodCode</b></tt> (CONF:10312), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/StrokeScale.dita">StrokeScale</xref> 2.16.840.1.113883.17.3.11.88</tt><b> STATIC</b> (CONF:10311)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>methodCode</b></tt> (CONF:10312), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/StrokeScale.dita">StrokeScale</xref> 2.16.840.1.113883.17.3.11.88</tt><b> DYNAMIC</b> (CONF:10311)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.30</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

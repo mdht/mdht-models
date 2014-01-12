@@ -35,7 +35,8 @@
 
 
 <div class="section">
-<div class="p"><p class="lines"><em class="ph i">For any observation within the organizer, if the NEMSIS value is "Refused," the value SHALL be "NI;" the string "Refused" MAY be recorded in Observation.text.</em></p>
+<div class="p"><p class="lines"><em class="ph i">A collection vital signs observations<br/>
+For any observation within the organizer, if the NEMSIS value is "Refused," the value SHALL be "NI;" the string "Refused" MAY be recorded in Observation.text.</em></p>
 </div>
 
 </div>
@@ -104,6 +105,12 @@
 
 </li>
 
+<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PriorAidVitals.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.29]">Prior Aid Vitals</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.29</tt>)</li>
+</ol>
+</li>
+
 </ol>
 
 
@@ -113,97 +120,7 @@
 
 
 
-<pre class="pre codeblock">&lt;organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.28"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.4.26"/&gt;
-  &lt;id root="MDHT" extension="640538679"/&gt;
-  &lt;code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/&gt;
-  &lt;statusCode code="completed"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;component&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="1516253865"/&gt;
-      &lt;code code="1627202544"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;value xsi:type="PQ"/&gt;
-      &lt;interpretationCode code="1109320545"/&gt;
-      &lt;methodCode code="828278744"/&gt;
-      &lt;targetSiteCode code="1156496501"/&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="1790342792"/&gt;
-      &lt;code code="511682558"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;value xsi:type="PQ"/&gt;
-      &lt;interpretationCode code="2138185885"/&gt;
-      &lt;methodCode code="757558467"/&gt;
-      &lt;targetSiteCode code="1929763814"/&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="2057049927"/&gt;
-      &lt;code code="779414541"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;value xsi:type="PQ"/&gt;
-      &lt;interpretationCode code="1226348184"/&gt;
-      &lt;methodCode code="265391892"/&gt;
-      &lt;targetSiteCode code="1988634117"/&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="1530473873"/&gt;
-      &lt;code code="2091824120"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;value xsi:type="PQ"/&gt;
-      &lt;interpretationCode code="1288488525"/&gt;
-      &lt;methodCode code="1815478223"/&gt;
-      &lt;targetSiteCode code="940595195"/&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component&gt;
-    &lt;observation&gt;
-      &lt;id root="MDHT" extension="1026498395"/&gt;
-      &lt;code code="828643929"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;value xsi:type="PQ"/&gt;
-      &lt;interpretationCode code="1530174823"/&gt;
-      &lt;methodCode code="703917328"/&gt;
-      &lt;targetSiteCode code="502011313"/&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component&gt;
-    &lt;observation&gt;
-      &lt;code code="1776485998"/&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-&lt;/organizer&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

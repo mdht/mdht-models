@@ -35,8 +35,7 @@
 
 
 <div class="section">
-<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EProcedures.03 pertinent negatives, EArrest.03 negative values<br/>
-This is a superset of both value sets: the question is the same, even if the .90 values are appropriate only for CPR and the .95 for all other procedures.</em></p>
+<div class="p"><p class="lines"><em class="ph i">Why the EMS crew did not attempt to perform a procedure</em></p>
 </div>
 
 </div>
@@ -51,10 +50,16 @@ This is a superset of both value sets: the question is the same, even if the .90
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67504-1" </tt><em class="ph i">Reason Not Attempted</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67504-1" </tt><em class="ph i">Reason resuscitation not attempted NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ReasonProcedureNotPerformedSuperset.html">Reason Procedure not Performed Superset</a> 2.16.840.1.113883.17.3.5.100</tt><strong class="ph b"> STATIC</strong>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ReasonProcedureNotPerformedSuperset.html">Reason Procedure not Performed Superset</a> 2.16.840.1.113883.17.3.11.100</tt><strong class="ph b"> DYNAMIC</strong>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EProcedures.03 pertinent negatives, EArrest.03 negative values<br/>
+This is a superset of both value sets: the question is the same, even if the .90 values are appropriate only for CPR and the .95 for all other procedures.<br/>
+Note: CPR procedures have appropriate values "Not Attempted-Considered Futile," "Not Attempted-DNR Orders." "Not Attempted-Signs of Circulation"; other procedures have values "Contraindication Noted," "Denied By Order," "Refused," "Unable to Complete"</em></p>
+</div>
+</li>
+</ul>
 </li>
 
 </ol>
@@ -66,16 +71,7 @@ This is a superset of both value sets: the question is the same, even if the .90
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.137"/&gt;
-  &lt;id root="MDHT" extension="235519380"/&gt;
-  &lt;code code="67504-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reason Not Attempted"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;value xsi:type="CD" code="700734765"/&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Collection of information regarding the patient's medical history</em></p>
+</div>
+
 </div>
 
 
@@ -44,7 +47,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10059)<tt class="ph tt"><strong class="ph b">/@code</strong>="67842-5" </tt><em class="ph i">EMS Past Medical History Section</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10058)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10059)<tt class="ph tt"><strong class="ph b">/@code</strong>="67842-5" </tt><em class="ph i">EMS past medical history Narrative NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10058)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">SHOULD</strong> equal "EMS Past Medical History" (CONF:10060)
@@ -59,15 +62,9 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="HistoryOfCondition.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.61]">History Of Condition</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.61</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="HistoryOfProceduresOrganizer.html" title="[Organizer: templateId 2.16.840.1.1133883.17.3.10.1.62]">History Of Procedures Organizer</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.62</tt>)</li>
 </ol>
 </li>
 
@@ -80,59 +77,7 @@
 
 
 
-<pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3"&gt;
-  &lt;templateId root="2.16.840.1.113883.17.3.10.1.19"/&gt;
-  &lt;id root="MDHT" extension="1869477070"/&gt;
-  &lt;code code="67842-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Past Medical History Section"/&gt;
-  &lt;title&gt;EMS Past Medical History&lt;/title&gt;
-  &lt;text/&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.60"/&gt;
-      &lt;id root="MDHT" extension="2031275830"/&gt;
-      &lt;code code="67793-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Has the patient had any significant medical conditions"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.61"/&gt;
-      &lt;id root="MDHT" extension="1817847983"/&gt;
-      &lt;code code="68487-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS History of Condition"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;organizer&gt;
-      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.62"/&gt;
-      &lt;id root="MDHT" extension="512409781"/&gt;
-      &lt;code code="962402556"/&gt;
-      &lt;statusCode code="completed"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;component&gt;
-        &lt;procedure&gt;
-          &lt;code codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD-10 PCS"/&gt;
-        &lt;/procedure&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;procedure&gt;
-          &lt;code codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD-10 PCS"/&gt;
-        &lt;/procedure&gt;
-      &lt;/component&gt;
-    &lt;/organizer&gt;
-  &lt;/entry&gt;
-&lt;/section&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Assessment of the patient's level of pain</em></p>
+</div>
+
 </div>
 
 
@@ -50,16 +53,16 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="56840-2" </tt><em class="ph i">Pain severity verbal numeric scale</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10306)
 </li>
 
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type INT
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.27<br/>
-An ordinal value between 0 and 10, inclusive. There are three scales, but the values are equivalent.</em></p>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.01</em></p>
 </div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.01</em></p>
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type INT
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.27<br/>
+An ordinal value between 0 and 10, inclusive. There are three scales, but the values are equivalent.</em></p>
 </div>
 </li>
 </ul>
@@ -74,15 +77,7 @@ An ordinal value between 0 and 10, inclusive. There are three scales, but the va
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.164"/&gt;
-  &lt;id root="MDHT" extension="1256573596"/&gt;
-  &lt;code code="56840-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pain severity verbal numeric scale"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

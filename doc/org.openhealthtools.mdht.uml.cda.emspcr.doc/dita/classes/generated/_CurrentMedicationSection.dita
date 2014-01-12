@@ -16,38 +16,38 @@
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.15"</li></ol></li>
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67844-1" </tt><i>EMS current medications Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67844-1" </tt><i>EMS current medications Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10955)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Current Medications Section" (CONF:10219)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10957)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10958)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CurrentlyOnMedication.dita">Currently On Medication</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.75</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10960)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PatientOnAnticoagulants.dita">Patient On Anticoagulants</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.76</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10962)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CurrentMedication.dita">Current Medication</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.77</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSectionEntriesOptional.html">Consol Medications Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.1</tt>)</li>
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67844-1" </tt><i>EMS current medications Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67844-1" </tt><i>EMS current medications Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10955)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Current Medications Section" (CONF:10219)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10957)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10958)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CurrentlyOnMedication.dita">Currently On Medication</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.75</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10960)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PatientOnAnticoagulants.dita">Patient On Anticoagulants</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.76</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10962)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CurrentMedication.dita">Current Medication</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.77</tt>)</li></ol></li>
 <li>If medication use is unknown, the appropriate nullFlavor <b>MAY</b> be present (see unknown information in Section 1)</li>

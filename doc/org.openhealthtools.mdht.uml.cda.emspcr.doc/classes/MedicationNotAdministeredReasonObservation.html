@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Reason for declining to administer a medication</em></p>
+</div>
+
 </div>
 
 
@@ -50,7 +53,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="ASSERTION" </tt><em class="ph i">Assertion</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:10462)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10463), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MedicationNotGivenReason.html">MedicationNotGivenReason</a> 2.16.840.1.113883.17.3.5.92</tt><strong class="ph b"> STATIC</strong> (CONF:10464)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10463), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MedicationNotGivenReason.html">MedicationNotGivenReason</a> 2.16.840.1.113883.17.3.11.92</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10464)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">EMedications.03</em></p>
 </div>
 </li>
@@ -66,16 +69,7 @@
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.105"/&gt;
-  &lt;id root="MDHT" extension="42628185"/&gt;
-  &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;value xsi:type="CD" code="706032798"/&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

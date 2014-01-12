@@ -35,7 +35,7 @@
 
 
 <div class="section">
-<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ESituation.02</em></p>
+<div class="p"><p class="lines"><em class="ph i">Indicator of whether a patient may have an injury</em></p>
 </div>
 
 </div>
@@ -50,7 +50,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10792)<tt class="ph tt"><strong class="ph b">/@code</strong>="69467-9" </tt><em class="ph i">Possible injury</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10793)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10792)<tt class="ph tt"><strong class="ph b">/@code</strong>="69467-9" </tt><em class="ph i">Possible injury NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10793)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type BL (CONF:10794)
@@ -69,16 +69,7 @@
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.64"/&gt;
-  &lt;id root="MDHT" extension="1425752699"/&gt;
-  &lt;code code="69467-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Possible injury"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;value xsi:type="BL"/&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Whether a patient had a cardiac arrest</em></p>
+</div>
+
 </div>
 
 
@@ -82,8 +85,8 @@
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">informant</strong></tt> (CONF:10144) <ol class="ol" type="a"><li class="li"> This informant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="INF" </tt> (CONF:10158)</li>
-<li class="li"> This informant <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">relatedEntity</strong></tt> <ol class="ol" type="i"><li class="li"> This relatedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="AGNT" </tt> (CONF:10159)</li>
-<li class="li"> This relatedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/CardiacArrestWitnessRole.html">CardiacArrestWitnessRole</a> 2.16.840.1.113883.17.3.5.11</tt><strong class="ph b"> STATIC</strong> (CONF:10160)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EArrest.04</em></p>
+<li class="li"> This informant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">relatedEntity</strong></tt> <ol class="ol" type="i"><li class="li"> This relatedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="AGNT" </tt> (CONF:10159)</li>
+<li class="li"> This relatedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/CardiacArrestWitnessRole.html">CardiacArrestWitnessRole</a> 2.16.840.1.113883.17.3.11.11</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10160)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EArrest.04</em></p>
 </div>
 </li>
 </ol>
@@ -102,7 +105,7 @@
 
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:10146) <ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@inversionInd</strong>="TRUE" </tt> (CONF:10168)</li>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:10146) <ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@inversionInd</strong>="TRUE" </tt> (CONF:10168)</li>
 <li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="SUBJ" </tt> (CONF:10169)</li>
 <li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="PriorAEDUse.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.126]">Prior AED Use</a> (CONF:10170)<ol class="ol" type="i">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="PriorAEDUse.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.126]">Prior AED Use</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.126</tt>)</li>
@@ -144,8 +147,8 @@
 
 <li class="li">Contains zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> <ol class="ol" type="a"><li class="li"> Such entryRelationships <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@inversionInd</strong>="TRUE" </tt> (CONF:10149)</li>
 <li class="li"> Such entryRelationships <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="SUBJ" </tt> (CONF:10151)</li>
-<li class="li"> Such entryRelationships Contains zero or more [0..*] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="CardiacArrestTiming.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.123]">Cardiac Arrest Timing</a><ol class="ol" type="i">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="CardiacArrestTiming.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.123]">Cardiac Arrest Timing</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.123</tt>)</li>
+<li class="li"> Such entryRelationships Contains zero or more [0..*] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="CardiacArrestWithTiming.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.123]">Cardiac Arrest With Timing</a><ol class="ol" type="i">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="CardiacArrestWithTiming.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.123]">Cardiac Arrest With Timing</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.123</tt>)</li>
 </ol>
 </li>
 </ol>
@@ -161,58 +164,7 @@
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.27"/&gt;
-  &lt;id root="MDHT" extension="1892250410"/&gt;
-  &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="ASSERTION"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;informant typeCode="INF"&gt;
-    &lt;relatedEntity classCode="AGNT"&gt;
-      &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-    &lt;/relatedEntity&gt;
-  &lt;/informant&gt;
-  &lt;entryRelationship typeCode="SUBJ" inversionInd="true"&gt;
-    &lt;observation&gt;
-      &lt;code code="864384110"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship typeCode="SUBJ" inversionInd="true"&gt;
-    &lt;observation&gt;
-      &lt;code code="830632355"/&gt;
-      &lt;value xsi:type="BL"/&gt;
-      &lt;participant typeCode="RESP"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship typeCode="SUBJ" inversionInd="true"&gt;
-    &lt;observation&gt;
-      &lt;code code="230208863"/&gt;
-      &lt;participant typeCode="RESP"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship typeCode="SUBJ" inversionInd="true"&gt;
-    &lt;observation&gt;
-      &lt;code code="997169952"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship typeCode="SUBJ" inversionInd="true"&gt;
-    &lt;observation&gt;
-      &lt;code code="1870578663"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship typeCode="SUBJ" inversionInd="true"&gt;
-    &lt;observation&gt;
-      &lt;code code="264298347"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship typeCode="SUBJ" inversionInd="true"&gt;
-    &lt;observation&gt;
-      &lt;code code="1718527797"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

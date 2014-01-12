@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">The statement of the problem by the patient or the history provider, including duration, system, and whether it is the chief complaint</em></p>
+</div>
+
 </div>
 
 
@@ -47,7 +50,14 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10768)<tt class="ph tt"><strong class="ph b">/@code</strong>="10154-3" </tt><em class="ph i">EMS complaint</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10769)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10768)<tt class="ph tt"><strong class="ph b">/@code</strong>="10154-3" </tt><em class="ph i">Chief complaint Narrative - Reported</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10769)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">effectiveTime.low = NEMSIS Trace: ESituation.01</em></p>
+</div>
+</li>
+</ul>
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type ST (CONF:10770)
@@ -73,7 +83,7 @@
 
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">targetSiteCode</strong></tt> (CONF:10773), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AnatomicLocation.html">AnatomicLocation</a> 2.16.840.1.113883.17.3.5.76</tt><strong class="ph b"> STATIC</strong> (CONF:10774)
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">targetSiteCode</strong></tt> (CONF:10773), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AnatomicLocation.html">AnatomicLocation</a> 2.16.840.1.113883.17.3.11.76</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10774)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ESituation.07<br/>
 Complaint site is required if complaint is type "Chief complaint"</em></p>
 </div>
@@ -91,13 +101,6 @@ Complaint site is required if complaint is type "Chief complaint"</em></p>
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">effectiveTime.low = NEMSIS Trace: ESituation.01</em></p>
-</div>
-</li>
-</ul>
-</li>
-
 </ol>
 
 
@@ -107,35 +110,7 @@ Complaint site is required if complaint is type "Chief complaint"</em></p>
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.63"/&gt;
-  &lt;id root="MDHT" extension="1152651734"/&gt;
-  &lt;code code="10154-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS complaint"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;value xsi:type="ST"&gt;TEXT FOR VALUE&lt;/value&gt;
-  &lt;targetSiteCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;code code="999860603"/&gt;
-      &lt;value xsi:type="PQ"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;code code="1563088141"/&gt;
-      &lt;value xsi:type="CD" code="1587109773"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;code code="1864081454"/&gt;
-      &lt;value xsi:type="CD" code="2103283912"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

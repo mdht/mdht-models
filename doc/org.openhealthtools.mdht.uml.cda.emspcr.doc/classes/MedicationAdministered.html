@@ -35,6 +35,9 @@
 
 
 <div class="section">
+<div class="p"><p class="lines"><em class="ph i">Medications administered in response to the emergency--usually by the EMS crew</em></p>
+</div>
+
 </div>
 
 
@@ -54,14 +57,7 @@
 If a substance is recorded as not given, it shall be recorded with a negationInd =True, and with an entryRelationship such that it<br/>
 SHALL contain exactly one [1..1] @typeCode="RSON" Has reason (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002)<br/>
 SHALL contain exactly one [1..1] @inversionInd="true" True<br/>
-SHALL contain exactly one /Observation with code drawn from  2.16.840.1.113883.17.3.5.42 Medication omission reason and value = "Assertion."</em></p>
-</div>
-</li>
-</ul>
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">doseQuantity</strong></tt> (CONF:10446)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.05, 06</em></p>
+SHALL contain exactly one /Observation with code = "Assertion" and value drawn from  2.16.840.1.113883.17.3.5.42 Medication omission reason</em></p>
 </div>
 </li>
 </ul>
@@ -74,7 +70,7 @@ SHALL contain exactly one /Observation with code drawn from  2.16.840.1.113883
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">routeCode</strong></tt> (CONF:10450), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MedicationAdministrationRoute.html">MedicationAdministrationRoute</a> 2.16.840.1.113883.17.3.5.43</tt><strong class="ph b"> STATIC</strong> (CONF:10449)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">routeCode</strong></tt> (CONF:10450), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MedicationAdministrationRoute.html">MedicationAdministrationRoute</a> 2.16.840.1.113883.17.3.11.43</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10449)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.04<br/>
 <br/>
 See appendix for mapping NEMSIS values to FDA values and for postcoordination of device information.</em></p>
@@ -94,7 +90,7 @@ See appendix for mapping NEMSIS values to FDA values and for postcoordination of
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">consumable</strong></tt> (CONF:10452) <ol class="ol" type="a"><li class="li"> This consumable <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manufacturedProduct</strong></tt> (CONF:10465) <ol class="ol" type="i"><li class="li"> This manufacturedProduct <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationInformation.html">Consol Medication Information</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.23</tt>)</li>
-<li class="li"> This manufacturedProduct <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manufacturedMaterial</strong></tt> (CONF:10466) <ol class="ol"><li class="li"> This manufacturedMaterial <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:10467)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.03<br/>
+<li class="li"> This manufacturedProduct <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manufacturedMaterial</strong></tt> (CONF:10466) <ol class="ol"><li class="li"> This manufacturedMaterial <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:10467)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.03<br/>
 Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list at http://www.nemsis.org/v3/resources.html</em></p>
 </div>
 </li>
@@ -134,10 +130,10 @@ Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list 
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF:10456) <div class="p"><p class="lines"><em class="ph i">This participation is required if the medication is administered by the crew; i.e., if EMSMedicationPriorAdministrationObservation is FALSE.</em></p>
 </div>
-<ol class="ol" type="a"><li class="li"> This performer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:10481) <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10482), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProviderRole.html">ProviderRole</a> 2.16.840.1.113883.17.3.5.46</tt><strong class="ph b"> STATIC</strong> (CONF:10483)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.10</em></p>
+<ol class="ol" type="a"><li class="li"> This performer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:10481) <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:10484)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.09</em></p>
 </div>
 </li>
-<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:10484)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.09</em></p>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10482), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProviderRole.html">ProviderRole</a> 2.16.840.1.113883.17.3.11.46</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10483)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.10</em></p>
 </div>
 </li>
 </ol>
@@ -149,7 +145,7 @@ Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:10457) <div class="p"><p class="lines"><em class="ph i">This relationship is required if the medication is administered by the crew; i.e., if EMSMedicationPriorAdministrationObservation is FALSE.</em></p>
 </div>
 <ol class="ol" type="a"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">act</strong></tt> (CONF:10485) <ol class="ol" type="i"><li class="li"> This act <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong></tt> (CONF:10486)<tt class="ph tt"><strong class="ph b">/@code</strong>="INFRM" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:10487)</li>
-<li class="li"> This act <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MedicationAuthorizationType.html">MedicationAuthorizationType</a> 2.16.840.1.113883.17.3.5.47</tt><strong class="ph b"> STATIC</strong> (CONF:10488)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.11</em></p>
+<li class="li"> This act <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MedicationAuthorizationType.html">MedicationAuthorizationType</a> 2.16.840.1.113883.17.3.11.47</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10488)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.11</em></p>
 </div>
 </li>
 </ol>
@@ -165,9 +161,17 @@ Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list 
 </ul>
 </li>
 
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">doseQuantity</strong></tt> (CONF:10446)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.05, 06<br/>
+Note: rate values should be recorded in rateQuantity, not doseQuantity</em></p>
+</div>
+</li>
+</ul>
+</li>
+
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="DEV" </tt></li>
-<li class="li"> This participant <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="MANU" </tt></li>
-<li class="li"> This participantRole Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">playingDevice</strong></tt> <ol class="ol"><li class="li"> This playingDevice <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from<div class="p"><p class="lines"><em class="ph i">For NEMSIS codes that imply devices:<br/>
+<li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="MANU" </tt></li>
+<li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">playingDevice</strong></tt> <ol class="ol"><li class="li"> This playingDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)<div class="p"><p class="lines"><em class="ph i">For NEMSIS route codes that imply devices:<br/>
 @ value = "39849001" @codeSystem = "2.16.840.1.113883.6.5" @displayName="nasal oxygen cannula"<br/>
 @ value = "427591007" @codeSystem = "2.16.840.1.113883.6.5" @displayName="nonrebreather oxygen mask"<br/>
 @ value = "425926003" @codeSystem = "2.16.840.1.113883.6.5" @displayName="partial rebreather oxygen mask"<br/>
@@ -182,6 +186,14 @@ Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list 
 
 </li>
 
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">rateQuantity</strong></tt> (CONF:7517)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedications.05, 06<br/>
+Note: rate values should be recorded in rateQuantity, not doseQuantity</em></p>
+</div>
+</li>
+</ul>
+</li>
+
 </ol>
 
 
@@ -191,69 +203,7 @@ Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list 
 
 
 
-<pre class="pre codeblock">&lt;substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="SBADM"&gt;
-  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.72"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.4.16"/&gt;
-  &lt;id root="MDHT" extension="858920307"/&gt;
-  &lt;code code="85903005"/&gt;
-  &lt;text&gt;Text Value&lt;/text&gt;
-  &lt;statusCode code="completed"/&gt;
-  &lt;effectiveTime value="20130612"/&gt;
-  &lt;repeatNumber value="1"/&gt;
-  &lt;routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
-  &lt;approachSiteCode code="15562006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="structure of respiratory region of nose"/&gt;
-  &lt;approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
-  &lt;doseQuantity/&gt;
-  &lt;rateQuantity/&gt;
-  &lt;maxDoseQuantity/&gt;
-  &lt;consumable&gt;
-    &lt;manufacturedProduct&gt;
-      &lt;id root="MDHT" extension="298650013"/&gt;
-      &lt;manufacturedMaterial&gt;
-        &lt;code codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/&gt;
-      &lt;/manufacturedMaterial&gt;
-    &lt;/manufacturedProduct&gt;
-  &lt;/consumable&gt;
-  &lt;performer&gt;
-    &lt;assignedEntity&gt;
-      &lt;id root="MDHT" extension="1246656300"/&gt;
-      &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-    &lt;/assignedEntity&gt;
-  &lt;/performer&gt;
-  &lt;participant typeCode="DEV"&gt;
-    &lt;participantRole classCode="MANU"&gt;
-      &lt;playingDevice/&gt;
-    &lt;/participantRole&gt;
-  &lt;/participant&gt;
-  &lt;entryRelationship typeCode="RSON" inversionInd="true"&gt;
-    &lt;observation&gt;
-      &lt;code code="540120605"/&gt;
-      &lt;value xsi:type="CD" code="1348029927"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;code code="117927421"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;code code="357838356"/&gt;
-      &lt;value xsi:type="CD" code="606784504"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;code code="311705393"/&gt;
-      &lt;value xsi:type="BL"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;act classCode="INFRM"&gt;
-      &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-    &lt;/act&gt;
-  &lt;/entryRelationship&gt;
-&lt;/substanceadministration&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

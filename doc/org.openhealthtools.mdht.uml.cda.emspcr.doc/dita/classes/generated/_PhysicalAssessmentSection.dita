@@ -22,22 +22,22 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10338)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10975)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PhysicalAssessmentOrganizer.dita">Physical Assessment Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.78</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10977)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PatientPregnancy.dita">Patient Pregnancy</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.79</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10979)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LastOralIntake.dita">Last Oral Intake</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.80</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10981)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PatientAge.dita">Patient Age</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.81</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10983)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ThrombolyticContraindications.dita">Thrombolytic Contraindications</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.82</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10985)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../BarriersToPatientCare.dita">Barriers To Patient Care</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.83</tt>)</li></ol></li>
 </ol>
@@ -49,22 +49,22 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10338)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10975)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PhysicalAssessmentOrganizer.dita">Physical Assessment Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.78</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10977)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PatientPregnancy.dita">Patient Pregnancy</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.79</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10979)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LastOralIntake.dita">Last Oral Intake</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.80</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10981)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PatientAge.dita">Patient Age</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.81</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10983)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ThrombolyticContraindications.dita">Thrombolytic Contraindications</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.82</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10985)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../BarriersToPatientCare.dita">Barriers To Patient Care</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.83</tt>)</li></ol></li>
 </ol>
