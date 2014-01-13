@@ -19,10 +19,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>Diastolic Blood Pressure example</b></p>
+<p audience="Examples"><b>Diastolic Blood Pressure example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_DiastolicBloodPressure.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_DiastolicBloodPressure.dita#classId/example">
 </codeblock>
 </body>
 </topic>

@@ -19,17 +19,17 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10322)<tt><b>/@code</b>="55285-1" </tt><i>Glasgow coma score special circumstances</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10321)
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CD (CONF:10323), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/GlasgowComaScoreSpecialCircumstances.dita">GlasgowComaScoreSpecialCircumstances</xref> 2.16.840.1.113883.17.3.11.89</tt><b> DYNAMIC</b> (CONF:11293)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:10323), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/GlasgowComaScoreSpecialCircumstances.dita">GlasgowComaScoreSpecialCircumstances</xref> 2.16.840.1.113883.17.3.11.89</tt><b> DYNAMIC</b> (CONF:11293)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.22</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11292)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10322)<tt><b>/@code</b>="55285-1" </tt><i>Glasgow coma score special circumstances</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10321)
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CD (CONF:10323), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/GlasgowComaScoreSpecialCircumstances.dita">GlasgowComaScoreSpecialCircumstances</xref> 2.16.840.1.113883.17.3.11.89</tt><b> DYNAMIC</b> (CONF:11293)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:10323), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/GlasgowComaScoreSpecialCircumstances.dita">GlasgowComaScoreSpecialCircumstances</xref> 2.16.840.1.113883.17.3.11.89</tt><b> DYNAMIC</b> (CONF:11293)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.22</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

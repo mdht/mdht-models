@@ -19,17 +19,17 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67513-2" </tt><i>Return of spontaneous circulation NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10184)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with data type CD (CONF:11253), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ReturnOfSpontaneousCirculation.dita">ReturnOfSpontaneousCirculation</xref> 2.16.840.1.113883.17.3.11.15</tt><b> DYNAMIC</b> (CONF:10185)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:11253), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ReturnOfSpontaneousCirculation.dita">ReturnOfSpontaneousCirculation</xref> 2.16.840.1.113883.17.3.11.15</tt><b> DYNAMIC</b> (CONF:10185)
 <ul><li><p><lines><i>NEMSIS Trace: EArrest.12</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11252)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67513-2" </tt><i>Return of spontaneous circulation NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10184)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with data type CD (CONF:11253), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ReturnOfSpontaneousCirculation.dita">ReturnOfSpontaneousCirculation</xref> 2.16.840.1.113883.17.3.11.15</tt><b> DYNAMIC</b> (CONF:10185)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:11253), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ReturnOfSpontaneousCirculation.dita">ReturnOfSpontaneousCirculation</xref> 2.16.840.1.113883.17.3.11.15</tt><b> DYNAMIC</b> (CONF:10185)
 <ul><li><p><lines><i>NEMSIS Trace: EArrest.12</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

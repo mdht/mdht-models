@@ -2,4 +2,7 @@
 <val>
 	<prop att="audience" val="standards" action="include" />
 	<prop att="audience" val="developer" action="exclude" />
+	<prop att="audience" val="Examples" action="exclude" />
+	
+	
 </val>

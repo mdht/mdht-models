@@ -52,9 +52,11 @@
         </booklists>
     </frontmatter>
     <chapter format="ditamap" href="introduction/introduction.ditamap"/>
-  <!--   <chapter format="ditamap" href="content/content.ditamap"/>
-    <chapter href="appendices/appendices.ditamap" format="ditamap"/> -->
+  <chapter format="ditamap" href="content/content.ditamap"/>
+<!--     <chapter href="appendices/appendices.ditamap" format="ditamap"/> -->
     <backmatter>
+        <topicref href="Sample.dita" navtitle="SAMPLE" type="topic"/>
+ 
         <topicref href="References.dita" navtitle="REFERENCES" type="topic"/>
     </backmatter>
 </bookmap>

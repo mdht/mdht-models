@@ -19,17 +19,17 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10684)<tt><b>/@code</b>="67552-0" </tt><i>Reason for choosing destination NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10683)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10685), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/DestinationChoiceReason.dita">DestinationChoiceReason</xref> 2.16.840.1.113883.17.3.11.68</tt><b> DYNAMIC</b> (CONF:10686)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:10685), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/DestinationChoiceReason.dita">DestinationChoiceReason</xref> 2.16.840.1.113883.17.3.11.68</tt><b> DYNAMIC</b> (CONF:10686)
 <ul><li><p><lines><i>NEMSIS Trace: EDisposition.20</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11140)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10684)<tt><b>/@code</b>="67552-0" </tt><i>Reason for choosing destination NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10683)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10685), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/DestinationChoiceReason.dita">DestinationChoiceReason</xref> 2.16.840.1.113883.17.3.11.68</tt><b> DYNAMIC</b> (CONF:10686)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:10685), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/DestinationChoiceReason.dita">DestinationChoiceReason</xref> 2.16.840.1.113883.17.3.11.68</tt><b> DYNAMIC</b> (CONF:10686)
 <ul><li><p><lines><i>NEMSIS Trace: EDisposition.20</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

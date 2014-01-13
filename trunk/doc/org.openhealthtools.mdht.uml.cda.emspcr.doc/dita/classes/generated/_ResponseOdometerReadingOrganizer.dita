@@ -29,11 +29,11 @@
 </li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type x_ActClassDocumentEntryOrganizer
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="x_ActClassDocumentEntryOrganizer"
 </li>
-<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with data type ActMood
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with @xsi:type="ActMood"
 </li>
-<li>Contains exactly one [1..1] <tt><b>statusCode</b></tt> with data type CS
+<li>Contains exactly one [1..1] <tt><b>statusCode</b></tt> with @xsi:type="CS"
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10626) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ResponseBeginningOdometerReading.dita">Response Beginning Odometer Reading</xref> (CONF:10630)<ol>
 <li>Contains exactly one [1..1] <xref href="../ResponseBeginningOdometerReading.dita">Response Beginning Odometer Reading</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.171</tt>)</li></ol></li></ol>

@@ -19,10 +19,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>Provider Primary Impression example</b></p>
+<p audience="Examples"><b>Provider Primary Impression example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_ProviderPrimaryImpression.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_ProviderPrimaryImpression.dita#classId/example">
 </codeblock>
 </body>
 </topic>

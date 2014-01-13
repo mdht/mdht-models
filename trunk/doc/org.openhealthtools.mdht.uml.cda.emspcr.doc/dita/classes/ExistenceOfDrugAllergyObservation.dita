@@ -19,10 +19,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>Existence Of Drug Allergy Observation example</b></p>
+<p audience="Examples"><b>Existence Of Drug Allergy Observation example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_ExistenceOfDrugAllergyObservation.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_ExistenceOfDrugAllergyObservation.dita#classId/example">
 </codeblock>
 </body>
 </topic>

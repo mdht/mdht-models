@@ -19,10 +19,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>Glasgow Total example</b></p>
+<p audience="Examples"><b>Glasgow Total example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_GlasgowTotal.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_GlasgowTotal.dita#classId/example">
 </codeblock>
 </body>
 </topic>

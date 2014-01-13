@@ -19,18 +19,18 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="52002-3" </tt><i>Ambulance transport, Destination site latitude coordinate</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10620)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:10621)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="PQ" (CONF:10621)
 <ul><li><p><lines><i>NEMSIS Trace: EResponse.17
 UCUM units SHOULD be "deg". This may require conversion from a parsed "degree + minutes" representation to a decimal representation.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11284)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="52002-3" </tt><i>Ambulance transport, Destination site latitude coordinate</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10620)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:10621)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="PQ" (CONF:10621)
 <ul><li><p><lines><i>NEMSIS Trace: EResponse.17
 UCUM units SHOULD be "deg". This may require conversion from a parsed "degree + minutes" representation to a decimal representation.</i></lines></p></li></ul></li>
 </ol>

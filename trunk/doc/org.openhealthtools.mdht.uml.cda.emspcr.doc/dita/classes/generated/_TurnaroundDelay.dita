@@ -19,17 +19,17 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10610)<tt><b>/@code</b>="67560-3" </tt><i>Turn-around delay NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10609)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with data type CD (CONF:10612), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/TurnAroundDelayType.dita">TurnAroundDelayType</xref> 2.16.840.1.113883.17.3.11.54</tt><b> DYNAMIC</b> (CONF:10611)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:10612), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/TurnAroundDelayType.dita">TurnAroundDelayType</xref> 2.16.840.1.113883.17.3.11.54</tt><b> DYNAMIC</b> (CONF:10611)
 <ul><li><p><lines><i>NEMSIS Trace: EResponse.12</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11290)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10610)<tt><b>/@code</b>="67560-3" </tt><i>Turn-around delay NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10609)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with data type CD (CONF:10612), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/TurnAroundDelayType.dita">TurnAroundDelayType</xref> 2.16.840.1.113883.17.3.11.54</tt><b> DYNAMIC</b> (CONF:10611)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:10612), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/TurnAroundDelayType.dita">TurnAroundDelayType</xref> 2.16.840.1.113883.17.3.11.54</tt><b> DYNAMIC</b> (CONF:10611)
 <ul><li><p><lines><i>NEMSIS Trace: EResponse.12</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

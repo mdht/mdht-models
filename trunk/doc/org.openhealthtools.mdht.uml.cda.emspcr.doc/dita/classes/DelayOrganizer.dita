@@ -19,10 +19,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>Delay Organizer example</b></p>
+<p audience="Examples"><b>Delay Organizer example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_DelayOrganizer.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_DelayOrganizer.dita#classId/example">
 </codeblock>
 </body>
 </topic>
