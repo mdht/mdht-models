@@ -5542,7 +5542,7 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_IvUooFhWEeK-i8RB1gvLUA" name="ReasonProcedureNotAttemptedRelationship">
         <generalization xmi:id="_J1_VwFhWEeK-i8RB1gvLUA">
-          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cEUTcEcEEd6besF9iFIJkQ"/>
+          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
         </generalization>
         <ownedAttribute xmi:id="_kXk-EFhWEeK-i8RB1gvLUA" name="ReasonProcedureNotAttemptedObservation" type="_N8t6kFhWEeK-i8RB1gvLUA" association="_kXllIFhWEeK-i8RB1gvLUA">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lTqy4FhWEeK-i8RB1gvLUA" value="1"/>
