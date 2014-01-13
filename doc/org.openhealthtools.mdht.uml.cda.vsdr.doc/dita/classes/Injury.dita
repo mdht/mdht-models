@@ -20,10 +20,10 @@
 
 <p> </p>
 <p> </p>
-<p><b>Injury example</b></p>
+<p audience="Examples"><b>Injury example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_Injury.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_Injury.dita#classId/example">
 </codeblock>
 </body>
 </topic>

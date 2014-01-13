@@ -21,10 +21,10 @@
 </section>
 <p> </p>
 <p> </p>
-<p><b>Injury Information example</b></p>
+<p audience="Examples"><b>Injury Information example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_InjuryInformation.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_InjuryInformation.dita#classId/example">
 </codeblock>
 </body>
 </topic>

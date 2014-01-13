@@ -21,10 +21,10 @@
 </section>
 <p> </p>
 <p> </p>
-<p><b>Death Cause Interval example</b></p>
+<p audience="Examples"><b>Death Cause Interval example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_DeathCauseInterval.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_DeathCauseInterval.dita#classId/example">
 </codeblock>
 </body>
 </topic>
