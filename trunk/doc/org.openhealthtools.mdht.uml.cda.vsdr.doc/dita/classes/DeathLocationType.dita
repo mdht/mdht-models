@@ -19,10 +19,10 @@
 
 <p> </p>
 <p> </p>
-<p><b>Death Location Type example</b></p>
+<p audience="Examples"><b>Death Location Type example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_DeathLocationType.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_DeathLocationType.dita#classId/example">
 </codeblock>
 </body>
 </topic>

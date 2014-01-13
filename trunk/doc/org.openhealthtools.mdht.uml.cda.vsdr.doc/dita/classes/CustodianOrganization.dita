@@ -21,10 +21,10 @@
 </section>
 <p> </p>
 <p> </p>
-<p><b>Custodian Organization example</b></p>
+<p audience="Examples"><b>Custodian Organization example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_CustodianOrganization.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_CustodianOrganization.dita#classId/example">
 </codeblock>
 </body>
 </topic>

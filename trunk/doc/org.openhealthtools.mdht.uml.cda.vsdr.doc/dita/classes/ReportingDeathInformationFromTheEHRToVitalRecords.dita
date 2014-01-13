@@ -21,10 +21,10 @@
 </section>
 <p> </p>
 <p> </p>
-<p><b>Reporting Death Information from the EHR to Vital Records example</b></p>
+<p audience="Examples"><b>Reporting Death Information from the EHR to Vital Records example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_ReportingDeathInformationFromTheEHRToVitalRecords.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_ReportingDeathInformationFromTheEHRToVitalRecords.dita#classId/example">
 </codeblock>
 </body>
 </topic>
