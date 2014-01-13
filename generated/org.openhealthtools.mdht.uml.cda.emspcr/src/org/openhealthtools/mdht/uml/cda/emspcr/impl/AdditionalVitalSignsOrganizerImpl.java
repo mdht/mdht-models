@@ -44,224 +44,12 @@ import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
  */
 public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements AdditionalVitalSignsOrganizer {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AdditionalVitalSignsOrganizerImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdditionalVitalSignsOrganizerStrokeScoreComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerStrokeScoreComponent(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdditionalVitalSignsOrganizerPainScoreComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerPainScoreComponent(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdditionalVitalSignsOrganizerTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerTemplateId(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdditionalVitalSignsOrganizerEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerEffectiveTime(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdditionalVitalSignsOrganizerMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerMoodCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public StrokeScore getStrokeScoreComponent() {
-		return AdditionalVitalSignsOrganizerOperations.getStrokeScoreComponent(this);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public PainScore getPainScoreComponent() {
-		return AdditionalVitalSignsOrganizerOperations.getPainScoreComponent(this);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public LevelOfResponsiveness getLevelOfResponsivenessComponent() {
-		return AdditionalVitalSignsOrganizerOperations.getLevelOfResponsivenessComponent(this);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public BloodGlucose getBloodGlucoseComponent() {
-		return AdditionalVitalSignsOrganizerOperations.getBloodGlucoseComponent(this);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public CarbonMonoxide getCarbonMonoxideComponent() {
-		return AdditionalVitalSignsOrganizerOperations.getCarbonMonoxideComponent(this);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public CarbonDioxide getCarbonDioxideComponent() {
-		return AdditionalVitalSignsOrganizerOperations.getCarbonDioxideComponent(this);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public CardiacRhythm getCardiacRhythmComponent() {
-		return AdditionalVitalSignsOrganizerOperations.getCardiacRhythmComponent(this);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public EList<GlasgowComaScoreOrganizer> getGlasgowComaScoreOrganizers() {
-		return AdditionalVitalSignsOrganizerOperations.getGlasgowComaScoreOrganizers(this);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public AdditionalVitalSignsOrganizer init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -269,8 +57,197 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdditionalVitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER;
 	}
-} // AdditionalVitalSignsOrganizerImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdditionalVitalSignsOrganizerStrokeScoreComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerStrokeScoreComponent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdditionalVitalSignsOrganizerPainScoreComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerPainScoreComponent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdditionalVitalSignsOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdditionalVitalSignsOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdditionalVitalSignsOrganizerEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StrokeScore getStrokeScoreComponent() {
+		return AdditionalVitalSignsOrganizerOperations.getStrokeScoreComponent(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PainScore getPainScoreComponent() {
+		return AdditionalVitalSignsOrganizerOperations.getPainScoreComponent(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LevelOfResponsiveness getLevelOfResponsivenessComponent() {
+		return AdditionalVitalSignsOrganizerOperations.getLevelOfResponsivenessComponent(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BloodGlucose getBloodGlucoseComponent() {
+		return AdditionalVitalSignsOrganizerOperations.getBloodGlucoseComponent(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CarbonMonoxide getCarbonMonoxideComponent() {
+		return AdditionalVitalSignsOrganizerOperations.getCarbonMonoxideComponent(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CarbonDioxide getCarbonDioxideComponent() {
+		return AdditionalVitalSignsOrganizerOperations.getCarbonDioxideComponent(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CardiacRhythm getCardiacRhythmComponent() {
+		return AdditionalVitalSignsOrganizerOperations.getCardiacRhythmComponent(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<GlasgowComaScoreOrganizer> getGlasgowComaScoreOrganizers() {
+		return AdditionalVitalSignsOrganizerOperations.getGlasgowComaScoreOrganizers(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdditionalVitalSignsOrganizer init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AdditionalVitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //AdditionalVitalSignsOrganizerImpl

@@ -35,85 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class SkinAssessmentImpl extends ObservationImpl implements SkinAssessment {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected SkinAssessmentImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.SKIN_ASSESSMENT;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateSkinAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SkinAssessmentOperations.validateSkinAssessmentTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateSkinAssessmentCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SkinAssessmentOperations.validateSkinAssessmentCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateSkinAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SkinAssessmentOperations.validateSkinAssessmentCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateSkinAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SkinAssessmentOperations.validateSkinAssessmentValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateSkinAssessmentValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SkinAssessmentOperations.validateSkinAssessmentValueP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateSkinAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SkinAssessmentOperations.validateSkinAssessmentMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public SkinAssessment init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -121,8 +48,80 @@ public class SkinAssessmentImpl extends ObservationImpl implements SkinAssessmen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SkinAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.SKIN_ASSESSMENT;
 	}
-} // SkinAssessmentImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSkinAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SkinAssessmentOperations.validateSkinAssessmentTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSkinAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SkinAssessmentOperations.validateSkinAssessmentMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSkinAssessmentCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SkinAssessmentOperations.validateSkinAssessmentCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSkinAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SkinAssessmentOperations.validateSkinAssessmentCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSkinAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SkinAssessmentOperations.validateSkinAssessmentValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSkinAssessmentValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SkinAssessmentOperations.validateSkinAssessmentValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SkinAssessment init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SkinAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //SkinAssessmentImpl

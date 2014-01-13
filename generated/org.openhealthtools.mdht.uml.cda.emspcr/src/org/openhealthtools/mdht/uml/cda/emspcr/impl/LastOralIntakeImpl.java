@@ -35,76 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class LastOralIntakeImpl extends ObservationImpl implements LastOralIntake {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected LastOralIntakeImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.LAST_ORAL_INTAKE;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateLastOralIntakeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LastOralIntakeOperations.validateLastOralIntakeTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateLastOralIntakeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LastOralIntakeOperations.validateLastOralIntakeCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateLastOralIntakeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LastOralIntakeOperations.validateLastOralIntakeCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateLastOralIntakeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LastOralIntakeOperations.validateLastOralIntakeValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateLastOralIntakeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LastOralIntakeOperations.validateLastOralIntakeMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public LastOralIntake init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -112,8 +48,71 @@ public class LastOralIntakeImpl extends ObservationImpl implements LastOralIntak
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LastOralIntake init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.LAST_ORAL_INTAKE;
 	}
-} // LastOralIntakeImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateLastOralIntakeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LastOralIntakeOperations.validateLastOralIntakeTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateLastOralIntakeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LastOralIntakeOperations.validateLastOralIntakeMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateLastOralIntakeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LastOralIntakeOperations.validateLastOralIntakeCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateLastOralIntakeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LastOralIntakeOperations.validateLastOralIntakeCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateLastOralIntakeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LastOralIntakeOperations.validateLastOralIntakeValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LastOralIntake init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public LastOralIntake init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //LastOralIntakeImpl

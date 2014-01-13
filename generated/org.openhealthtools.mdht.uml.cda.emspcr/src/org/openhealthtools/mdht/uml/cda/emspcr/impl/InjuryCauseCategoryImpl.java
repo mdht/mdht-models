@@ -35,67 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class InjuryCauseCategoryImpl extends ObservationImpl implements InjuryCauseCategory {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected InjuryCauseCategoryImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.INJURY_CAUSE_CATEGORY;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateInjuryCauseCategoryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InjuryCauseCategoryOperations.validateInjuryCauseCategoryTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateInjuryCauseCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InjuryCauseCategoryOperations.validateInjuryCauseCategoryCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateInjuryCauseCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InjuryCauseCategoryOperations.validateInjuryCauseCategoryValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateInjuryCauseCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InjuryCauseCategoryOperations.validateInjuryCauseCategoryMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public InjuryCauseCategory init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -103,8 +48,62 @@ public class InjuryCauseCategoryImpl extends ObservationImpl implements InjuryCa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public InjuryCauseCategory init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.INJURY_CAUSE_CATEGORY;
 	}
-} // InjuryCauseCategoryImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInjuryCauseCategoryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InjuryCauseCategoryOperations.validateInjuryCauseCategoryTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInjuryCauseCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InjuryCauseCategoryOperations.validateInjuryCauseCategoryMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInjuryCauseCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InjuryCauseCategoryOperations.validateInjuryCauseCategoryCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInjuryCauseCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InjuryCauseCategoryOperations.validateInjuryCauseCategoryValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InjuryCauseCategory init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public InjuryCauseCategory init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //InjuryCauseCategoryImpl

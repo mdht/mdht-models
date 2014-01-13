@@ -35,76 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class AdverseEventIndicatorImpl extends ObservationImpl implements AdverseEventIndicator {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AdverseEventIndicatorImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.ADVERSE_EVENT_INDICATOR;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdverseEventIndicatorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdverseEventIndicatorOperations.validateAdverseEventIndicatorTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdverseEventIndicatorCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdverseEventIndicatorOperations.validateAdverseEventIndicatorCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdverseEventIndicatorCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdverseEventIndicatorOperations.validateAdverseEventIndicatorCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdverseEventIndicatorValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdverseEventIndicatorOperations.validateAdverseEventIndicatorValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAdverseEventIndicatorMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdverseEventIndicatorOperations.validateAdverseEventIndicatorMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public AdverseEventIndicator init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -112,8 +48,71 @@ public class AdverseEventIndicatorImpl extends ObservationImpl implements Advers
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdverseEventIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.ADVERSE_EVENT_INDICATOR;
 	}
-} // AdverseEventIndicatorImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdverseEventIndicatorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdverseEventIndicatorOperations.validateAdverseEventIndicatorTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdverseEventIndicatorMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdverseEventIndicatorOperations.validateAdverseEventIndicatorMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdverseEventIndicatorCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdverseEventIndicatorOperations.validateAdverseEventIndicatorCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdverseEventIndicatorCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdverseEventIndicatorOperations.validateAdverseEventIndicatorCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdverseEventIndicatorValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdverseEventIndicatorOperations.validateAdverseEventIndicatorValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdverseEventIndicator init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AdverseEventIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //AdverseEventIndicatorImpl

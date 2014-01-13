@@ -35,96 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implements PelvicAndGenitourinaryAssessment {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PelvicAndGenitourinaryAssessmentImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.PELVIC_AND_GENITOURINARY_ASSESSMENT;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePelvicAndGenitourinaryAssessmentTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentTemplateId(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePelvicAndGenitourinaryAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePelvicAndGenitourinaryAssessmentValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePelvicAndGenitourinaryAssessmentValueP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentValueP(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePelvicAndGenitourinaryAssessmentEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentEffectiveTime(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePelvicAndGenitourinaryAssessmentMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentMoodCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public PelvicAndGenitourinaryAssessment init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -132,8 +48,80 @@ public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PelvicAndGenitourinaryAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.PELVIC_AND_GENITOURINARY_ASSESSMENT;
 	}
-} // PelvicAndGenitourinaryAssessmentImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePelvicAndGenitourinaryAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePelvicAndGenitourinaryAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePelvicAndGenitourinaryAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePelvicAndGenitourinaryAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePelvicAndGenitourinaryAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePelvicAndGenitourinaryAssessmentValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PelvicAndGenitourinaryAssessment init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PelvicAndGenitourinaryAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //PelvicAndGenitourinaryAssessmentImpl

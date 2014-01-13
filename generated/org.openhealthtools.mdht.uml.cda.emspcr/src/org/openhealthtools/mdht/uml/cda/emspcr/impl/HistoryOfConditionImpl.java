@@ -35,85 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class HistoryOfConditionImpl extends ObservationImpl implements HistoryOfCondition {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected HistoryOfConditionImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.HISTORY_OF_CONDITION;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateHistoryOfConditionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfConditionOperations.validateHistoryOfConditionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateHistoryOfConditionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfConditionOperations.validateHistoryOfConditionCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateHistoryOfConditionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfConditionOperations.validateHistoryOfConditionCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateHistoryOfConditionValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfConditionOperations.validateHistoryOfConditionValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateHistoryOfConditionValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfConditionOperations.validateHistoryOfConditionValueP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateHistoryOfConditionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfConditionOperations.validateHistoryOfConditionMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public HistoryOfCondition init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -121,8 +48,80 @@ public class HistoryOfConditionImpl extends ObservationImpl implements HistoryOf
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HistoryOfCondition init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.HISTORY_OF_CONDITION;
 	}
-} // HistoryOfConditionImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryOfConditionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryOfConditionOperations.validateHistoryOfConditionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryOfConditionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryOfConditionOperations.validateHistoryOfConditionMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryOfConditionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryOfConditionOperations.validateHistoryOfConditionCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryOfConditionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryOfConditionOperations.validateHistoryOfConditionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryOfConditionValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryOfConditionOperations.validateHistoryOfConditionValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryOfConditionValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryOfConditionOperations.validateHistoryOfConditionValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HistoryOfCondition init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HistoryOfCondition init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //HistoryOfConditionImpl

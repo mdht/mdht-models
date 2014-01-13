@@ -35,67 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class DestinationRhythmImpl extends ObservationImpl implements DestinationRhythm {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DestinationRhythmImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.DESTINATION_RHYTHM;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateDestinationRhythmTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DestinationRhythmOperations.validateDestinationRhythmTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateDestinationRhythmCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DestinationRhythmOperations.validateDestinationRhythmCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateDestinationRhythmValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DestinationRhythmOperations.validateDestinationRhythmValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateDestinationRhythmMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DestinationRhythmOperations.validateDestinationRhythmMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public DestinationRhythm init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -103,8 +48,62 @@ public class DestinationRhythmImpl extends ObservationImpl implements Destinatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DestinationRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.DESTINATION_RHYTHM;
 	}
-} // DestinationRhythmImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDestinationRhythmTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DestinationRhythmOperations.validateDestinationRhythmTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDestinationRhythmMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DestinationRhythmOperations.validateDestinationRhythmMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDestinationRhythmCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DestinationRhythmOperations.validateDestinationRhythmCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDestinationRhythmValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DestinationRhythmOperations.validateDestinationRhythmValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DestinationRhythm init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DestinationRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //DestinationRhythmImpl

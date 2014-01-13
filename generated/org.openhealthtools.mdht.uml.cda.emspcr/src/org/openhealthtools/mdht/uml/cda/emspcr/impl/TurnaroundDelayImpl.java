@@ -35,85 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class TurnaroundDelayImpl extends ObservationImpl implements TurnaroundDelay {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected TurnaroundDelayImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.TURNAROUND_DELAY;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateTurnaroundDelayTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TurnaroundDelayOperations.validateTurnaroundDelayTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateTurnaroundDelayCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TurnaroundDelayOperations.validateTurnaroundDelayCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateTurnaroundDelayCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TurnaroundDelayOperations.validateTurnaroundDelayCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateTurnaroundDelayValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TurnaroundDelayOperations.validateTurnaroundDelayValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateTurnaroundDelayValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TurnaroundDelayOperations.validateTurnaroundDelayValueP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateTurnaroundDelayMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TurnaroundDelayOperations.validateTurnaroundDelayMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public TurnaroundDelay init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -121,8 +48,80 @@ public class TurnaroundDelayImpl extends ObservationImpl implements TurnaroundDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TurnaroundDelay init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.TURNAROUND_DELAY;
 	}
-} // TurnaroundDelayImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTurnaroundDelayTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TurnaroundDelayOperations.validateTurnaroundDelayTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTurnaroundDelayMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TurnaroundDelayOperations.validateTurnaroundDelayMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTurnaroundDelayCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TurnaroundDelayOperations.validateTurnaroundDelayCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTurnaroundDelayCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TurnaroundDelayOperations.validateTurnaroundDelayCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTurnaroundDelayValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TurnaroundDelayOperations.validateTurnaroundDelayValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTurnaroundDelayValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TurnaroundDelayOperations.validateTurnaroundDelayValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TurnaroundDelay init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TurnaroundDelay init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //TurnaroundDelayImpl

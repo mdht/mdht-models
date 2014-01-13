@@ -35,76 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class GlasgowQualifierImpl extends ObservationImpl implements GlasgowQualifier {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected GlasgowQualifierImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.GLASGOW_QUALIFIER;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateGlasgowQualifierTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowQualifierOperations.validateGlasgowQualifierTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateGlasgowQualifierCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowQualifierOperations.validateGlasgowQualifierCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateGlasgowQualifierCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowQualifierOperations.validateGlasgowQualifierCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateGlasgowQualifierValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowQualifierOperations.validateGlasgowQualifierValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateGlasgowQualifierMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowQualifierOperations.validateGlasgowQualifierMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public GlasgowQualifier init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -112,8 +48,80 @@ public class GlasgowQualifierImpl extends ObservationImpl implements GlasgowQual
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GlasgowQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.GLASGOW_QUALIFIER;
 	}
-} // GlasgowQualifierImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowQualifierTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowQualifierOperations.validateGlasgowQualifierTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowQualifierMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowQualifierOperations.validateGlasgowQualifierMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowQualifierCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowQualifierOperations.validateGlasgowQualifierCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowQualifierCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowQualifierOperations.validateGlasgowQualifierCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowQualifierValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowQualifierOperations.validateGlasgowQualifierValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowQualifierValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowQualifierOperations.validateGlasgowQualifierValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GlasgowQualifier init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public GlasgowQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //GlasgowQualifierImpl

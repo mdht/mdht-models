@@ -35,85 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ComplaintOrganSystemImpl extends ObservationImpl implements ComplaintOrganSystem {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ComplaintOrganSystemImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.COMPLAINT_ORGAN_SYSTEM;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintOrganSystemTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOrganSystemOperations.validateComplaintOrganSystemTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintOrganSystemCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOrganSystemOperations.validateComplaintOrganSystemCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintOrganSystemCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOrganSystemOperations.validateComplaintOrganSystemCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintOrganSystemValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOrganSystemOperations.validateComplaintOrganSystemValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintOrganSystemValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOrganSystemOperations.validateComplaintOrganSystemValueP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintOrganSystemMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOrganSystemOperations.validateComplaintOrganSystemMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public ComplaintOrganSystem init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -121,8 +48,80 @@ public class ComplaintOrganSystemImpl extends ObservationImpl implements Complai
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ComplaintOrganSystem init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.COMPLAINT_ORGAN_SYSTEM;
 	}
-} // ComplaintOrganSystemImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintOrganSystemTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOrganSystemOperations.validateComplaintOrganSystemTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintOrganSystemMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOrganSystemOperations.validateComplaintOrganSystemMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintOrganSystemCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOrganSystemOperations.validateComplaintOrganSystemCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintOrganSystemCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOrganSystemOperations.validateComplaintOrganSystemCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintOrganSystemValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOrganSystemOperations.validateComplaintOrganSystemValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintOrganSystemValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOrganSystemOperations.validateComplaintOrganSystemValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComplaintOrganSystem init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ComplaintOrganSystem init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //ComplaintOrganSystemImpl

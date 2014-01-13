@@ -35,112 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class EyeAssessmentImpl extends ObservationImpl implements EyeAssessment {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected EyeAssessmentImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.EYE_ASSESSMENT;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEyeAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EyeAssessmentOperations.validateEyeAssessmentTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEyeAssessmentCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EyeAssessmentOperations.validateEyeAssessmentCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEyeAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EyeAssessmentOperations.validateEyeAssessmentCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEyeAssessmentTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EyeAssessmentOperations.validateEyeAssessmentTargetSiteCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEyeAssessmentTargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EyeAssessmentOperations.validateEyeAssessmentTargetSiteCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEyeAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EyeAssessmentOperations.validateEyeAssessmentValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEyeAssessmentValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EyeAssessmentOperations.validateEyeAssessmentValueP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEyeAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EyeAssessmentOperations.validateEyeAssessmentEffectiveTime(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEyeAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EyeAssessmentOperations.validateEyeAssessmentMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public EyeAssessment init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -148,8 +48,107 @@ public class EyeAssessmentImpl extends ObservationImpl implements EyeAssessment 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EyeAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.EYE_ASSESSMENT;
 	}
-} // EyeAssessmentImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEyeAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EyeAssessmentOperations.validateEyeAssessmentTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEyeAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EyeAssessmentOperations.validateEyeAssessmentMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEyeAssessmentCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EyeAssessmentOperations.validateEyeAssessmentCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEyeAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EyeAssessmentOperations.validateEyeAssessmentCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEyeAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EyeAssessmentOperations.validateEyeAssessmentEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEyeAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EyeAssessmentOperations.validateEyeAssessmentValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEyeAssessmentValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EyeAssessmentOperations.validateEyeAssessmentValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEyeAssessmentTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EyeAssessmentOperations.validateEyeAssessmentTargetSiteCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEyeAssessmentTargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EyeAssessmentOperations.validateEyeAssessmentTargetSiteCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EyeAssessment init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EyeAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //EyeAssessmentImpl

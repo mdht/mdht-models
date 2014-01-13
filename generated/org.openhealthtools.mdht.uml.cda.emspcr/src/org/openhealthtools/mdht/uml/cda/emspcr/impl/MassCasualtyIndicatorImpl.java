@@ -35,76 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class MassCasualtyIndicatorImpl extends ObservationImpl implements MassCasualtyIndicator {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected MassCasualtyIndicatorImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.MASS_CASUALTY_INDICATOR;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateMassCasualtyIndicatorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MassCasualtyIndicatorOperations.validateMassCasualtyIndicatorTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateMassCasualtyIndicatorCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MassCasualtyIndicatorOperations.validateMassCasualtyIndicatorCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateMassCasualtyIndicatorCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MassCasualtyIndicatorOperations.validateMassCasualtyIndicatorCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateMassCasualtyIndicatorValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MassCasualtyIndicatorOperations.validateMassCasualtyIndicatorValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateMassCasualtyIndicatorMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MassCasualtyIndicatorOperations.validateMassCasualtyIndicatorMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public MassCasualtyIndicator init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -112,8 +48,71 @@ public class MassCasualtyIndicatorImpl extends ObservationImpl implements MassCa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MassCasualtyIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.MASS_CASUALTY_INDICATOR;
 	}
-} // MassCasualtyIndicatorImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMassCasualtyIndicatorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MassCasualtyIndicatorOperations.validateMassCasualtyIndicatorTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMassCasualtyIndicatorMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MassCasualtyIndicatorOperations.validateMassCasualtyIndicatorMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMassCasualtyIndicatorCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MassCasualtyIndicatorOperations.validateMassCasualtyIndicatorCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMassCasualtyIndicatorCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MassCasualtyIndicatorOperations.validateMassCasualtyIndicatorCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMassCasualtyIndicatorValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MassCasualtyIndicatorOperations.validateMassCasualtyIndicatorValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MassCasualtyIndicator init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MassCasualtyIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //MassCasualtyIndicatorImpl

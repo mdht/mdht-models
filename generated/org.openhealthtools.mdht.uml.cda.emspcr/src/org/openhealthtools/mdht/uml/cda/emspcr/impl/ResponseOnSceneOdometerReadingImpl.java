@@ -35,83 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ResponseOnSceneOdometerReadingImpl extends ObservationImpl implements ResponseOnSceneOdometerReading {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ResponseOnSceneOdometerReadingImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.RESPONSE_ON_SCENE_ODOMETER_READING;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateResponseOnSceneOdometerReadingTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingTemplateId(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateResponseOnSceneOdometerReadingCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateResponseOnSceneOdometerReadingCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateResponseOnSceneOdometerReadingValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateResponseOnSceneOdometerReadingMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingMoodCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public ResponseOnSceneOdometerReading init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -119,8 +48,71 @@ public class ResponseOnSceneOdometerReadingImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ResponseOnSceneOdometerReading init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.RESPONSE_ON_SCENE_ODOMETER_READING;
 	}
-} // ResponseOnSceneOdometerReadingImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResponseOnSceneOdometerReadingTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResponseOnSceneOdometerReadingMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResponseOnSceneOdometerReadingCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResponseOnSceneOdometerReadingCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResponseOnSceneOdometerReadingValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResponseOnSceneOdometerReading init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ResponseOnSceneOdometerReading init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //ResponseOnSceneOdometerReadingImpl

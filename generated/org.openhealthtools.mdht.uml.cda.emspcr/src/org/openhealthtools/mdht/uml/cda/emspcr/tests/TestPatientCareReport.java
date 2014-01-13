@@ -70,9 +70,6 @@ public class TestPatientCareReport {
 		assgndAuthor.getAddrs().add(addr1);
 		document.getAuthors().add(author);
 
-		// Add a few empty sections for illustration purpose
-		document.addSection(EmspcrFactory.eINSTANCE.createBillingSection().init());
-
 		document.addSection(EmspcrFactory.eINSTANCE.createTimesSection().init());
 
 		ValidationResult result = new ValidationResult();

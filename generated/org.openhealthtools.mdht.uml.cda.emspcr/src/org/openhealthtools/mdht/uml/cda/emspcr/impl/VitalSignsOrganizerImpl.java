@@ -32,130 +32,14 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.VitalSignsOrganizerOpe
  *
  * @generated
  */
-public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignsOrganizerImpl
-		implements VitalSignsOrganizer {
+public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignsOrganizerImpl implements VitalSignsOrganizer {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected VitalSignsOrganizerImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.VITAL_SIGNS_ORGANIZER;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEMSPCRVitalSignsOrganizerSystolicBloodPressureComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerSystolicBloodPressureComponent(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEMSPCRVitalSignsOrganizerHeartRateComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerHeartRateComponent(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEMSPCRVitalSignsOrganizerRespiratoryRateComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerRespiratoryRateComponent(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEMSPCRVitalSignsOrganizerBodyTemperatureComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerBodyTemperatureComponent(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEMSPCRVitalSignsOrganizerOxygenSaturationComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerOxygenSaturationComponent(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEMSPCRVitalSignsOrganizerEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerEffectiveTime(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	* @generated
-	*/
-	public PriorAidVitals getPriorAidVitals() {
-		return VitalSignsOrganizerOperations.getPriorAidVitals(this);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	public boolean validateVitalSignsOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	public VitalSignsOrganizer init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -164,8 +48,107 @@ public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.co
 	 * @generated
 	 */
 	@Override
-	public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.VITAL_SIGNS_ORGANIZER;
 	}
-} // VitalSignsOrganizerImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSPCRVitalSignsOrganizerSystolicBloodPressureComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerSystolicBloodPressureComponent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSPCRVitalSignsOrganizerHeartRateComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerHeartRateComponent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSPCRVitalSignsOrganizerRespiratoryRateComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerRespiratoryRateComponent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSPCRVitalSignsOrganizerBodyTemperatureComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerBodyTemperatureComponent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSPCRVitalSignsOrganizerOxygenSaturationComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerOxygenSaturationComponent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSPCRVitalSignsOrganizerEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PriorAidVitals getPriorAidVitals() {
+		return VitalSignsOrganizerOperations.getPriorAidVitals(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateVitalSignsOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VitalSignsOrganizer init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //VitalSignsOrganizerImpl

@@ -35,76 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PatientAgeImpl extends ObservationImpl implements PatientAge {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PatientAgeImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.PATIENT_AGE;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePatientAgeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientAgeOperations.validatePatientAgeTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePatientAgeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientAgeOperations.validatePatientAgeCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePatientAgeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientAgeOperations.validatePatientAgeCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePatientAgeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientAgeOperations.validatePatientAgeValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePatientAgeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientAgeOperations.validatePatientAgeMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public PatientAge init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -112,8 +48,71 @@ public class PatientAgeImpl extends ObservationImpl implements PatientAge {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PatientAge init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.PATIENT_AGE;
 	}
-} // PatientAgeImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientAgeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientAgeOperations.validatePatientAgeTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientAgeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientAgeOperations.validatePatientAgeMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientAgeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientAgeOperations.validatePatientAgeCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientAgeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientAgeOperations.validatePatientAgeCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientAgeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientAgeOperations.validatePatientAgeValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PatientAge init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PatientAge init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //PatientAgeImpl

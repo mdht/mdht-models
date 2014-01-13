@@ -35,85 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class AbdomenAssessmentImpl extends ObservationImpl implements AbdomenAssessment {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AbdomenAssessmentImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.ABDOMEN_ASSESSMENT;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAbdomenAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AbdomenAssessmentOperations.validateAbdomenAssessmentTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAbdomenAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AbdomenAssessmentOperations.validateAbdomenAssessmentCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAbdomenAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AbdomenAssessmentOperations.validateAbdomenAssessmentValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAbdomenAssessmentTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AbdomenAssessmentOperations.validateAbdomenAssessmentTargetSiteCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAbdomenAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AbdomenAssessmentOperations.validateAbdomenAssessmentEffectiveTime(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAbdomenAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AbdomenAssessmentOperations.validateAbdomenAssessmentMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public AbdomenAssessment init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -121,8 +48,80 @@ public class AbdomenAssessmentImpl extends ObservationImpl implements AbdomenAss
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbdomenAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.ABDOMEN_ASSESSMENT;
 	}
-} // AbdomenAssessmentImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAbdomenAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AbdomenAssessmentOperations.validateAbdomenAssessmentTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAbdomenAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AbdomenAssessmentOperations.validateAbdomenAssessmentMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAbdomenAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AbdomenAssessmentOperations.validateAbdomenAssessmentCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAbdomenAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AbdomenAssessmentOperations.validateAbdomenAssessmentEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAbdomenAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AbdomenAssessmentOperations.validateAbdomenAssessmentValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAbdomenAssessmentTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AbdomenAssessmentOperations.validateAbdomenAssessmentTargetSiteCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AbdomenAssessment init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AbdomenAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //AbdomenAssessmentImpl

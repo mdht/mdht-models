@@ -35,77 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ChestAndLungsAssessmentImpl extends ObservationImpl implements ChestAndLungsAssessment {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ChestAndLungsAssessmentImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.CHEST_AND_LUNGS_ASSESSMENT;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateChestAndLungsAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChestAndLungsAssessmentOperations.validateChestAndLungsAssessmentTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateChestAndLungsAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChestAndLungsAssessmentOperations.validateChestAndLungsAssessmentCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateChestAndLungsAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChestAndLungsAssessmentOperations.validateChestAndLungsAssessmentValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateChestAndLungsAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChestAndLungsAssessmentOperations.validateChestAndLungsAssessmentEffectiveTime(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateChestAndLungsAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChestAndLungsAssessmentOperations.validateChestAndLungsAssessmentMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public ChestAndLungsAssessment init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -113,8 +48,71 @@ public class ChestAndLungsAssessmentImpl extends ObservationImpl implements Ches
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ChestAndLungsAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.CHEST_AND_LUNGS_ASSESSMENT;
 	}
-} // ChestAndLungsAssessmentImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateChestAndLungsAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ChestAndLungsAssessmentOperations.validateChestAndLungsAssessmentTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateChestAndLungsAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ChestAndLungsAssessmentOperations.validateChestAndLungsAssessmentMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateChestAndLungsAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ChestAndLungsAssessmentOperations.validateChestAndLungsAssessmentCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateChestAndLungsAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ChestAndLungsAssessmentOperations.validateChestAndLungsAssessmentEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateChestAndLungsAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ChestAndLungsAssessmentOperations.validateChestAndLungsAssessmentValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ChestAndLungsAssessment init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ChestAndLungsAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //ChestAndLungsAssessmentImpl

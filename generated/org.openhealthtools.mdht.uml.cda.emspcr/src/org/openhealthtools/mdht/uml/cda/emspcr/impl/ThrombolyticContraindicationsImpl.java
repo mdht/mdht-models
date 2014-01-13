@@ -35,83 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ThrombolyticContraindicationsImpl extends ObservationImpl implements ThrombolyticContraindications {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ThrombolyticContraindicationsImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.THROMBOLYTIC_CONTRAINDICATIONS;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateThrombolyticContraindicationsTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ThrombolyticContraindicationsOperations.validateThrombolyticContraindicationsTemplateId(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateThrombolyticContraindicationsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ThrombolyticContraindicationsOperations.validateThrombolyticContraindicationsCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateThrombolyticContraindicationsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ThrombolyticContraindicationsOperations.validateThrombolyticContraindicationsCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateThrombolyticContraindicationsValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ThrombolyticContraindicationsOperations.validateThrombolyticContraindicationsValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateThrombolyticContraindicationsMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ThrombolyticContraindicationsOperations.validateThrombolyticContraindicationsMoodCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public ThrombolyticContraindications init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -119,8 +48,71 @@ public class ThrombolyticContraindicationsImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ThrombolyticContraindications init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.THROMBOLYTIC_CONTRAINDICATIONS;
 	}
-} // ThrombolyticContraindicationsImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateThrombolyticContraindicationsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ThrombolyticContraindicationsOperations.validateThrombolyticContraindicationsTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateThrombolyticContraindicationsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ThrombolyticContraindicationsOperations.validateThrombolyticContraindicationsMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateThrombolyticContraindicationsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ThrombolyticContraindicationsOperations.validateThrombolyticContraindicationsCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateThrombolyticContraindicationsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ThrombolyticContraindicationsOperations.validateThrombolyticContraindicationsCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateThrombolyticContraindicationsValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ThrombolyticContraindicationsOperations.validateThrombolyticContraindicationsValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ThrombolyticContraindications init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ThrombolyticContraindications init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //ThrombolyticContraindicationsImpl

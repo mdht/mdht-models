@@ -35,76 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ScenePatientCountImpl extends ObservationImpl implements ScenePatientCount {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ScenePatientCountImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.SCENE_PATIENT_COUNT;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateScenePatientCountTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScenePatientCountOperations.validateScenePatientCountTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateScenePatientCountCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScenePatientCountOperations.validateScenePatientCountCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateScenePatientCountCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScenePatientCountOperations.validateScenePatientCountCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateScenePatientCountValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScenePatientCountOperations.validateScenePatientCountValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateScenePatientCountMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScenePatientCountOperations.validateScenePatientCountMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public ScenePatientCount init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -112,8 +48,71 @@ public class ScenePatientCountImpl extends ObservationImpl implements ScenePatie
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ScenePatientCount init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.SCENE_PATIENT_COUNT;
 	}
-} // ScenePatientCountImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateScenePatientCountTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScenePatientCountOperations.validateScenePatientCountTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateScenePatientCountMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScenePatientCountOperations.validateScenePatientCountMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateScenePatientCountCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScenePatientCountOperations.validateScenePatientCountCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateScenePatientCountCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScenePatientCountOperations.validateScenePatientCountCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateScenePatientCountValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ScenePatientCountOperations.validateScenePatientCountValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ScenePatientCount init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ScenePatientCount init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //ScenePatientCountImpl

@@ -35,76 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class GlasgowEyeImpl extends ObservationImpl implements GlasgowEye {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected GlasgowEyeImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.GLASGOW_EYE;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateGlasgowEyeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowEyeOperations.validateGlasgowEyeTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateGlasgowEyeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowEyeOperations.validateGlasgowEyeCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateGlasgowEyeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowEyeOperations.validateGlasgowEyeCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateGlasgowEyeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowEyeOperations.validateGlasgowEyeValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateGlasgowEyeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowEyeOperations.validateGlasgowEyeMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public GlasgowEye init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -112,8 +48,71 @@ public class GlasgowEyeImpl extends ObservationImpl implements GlasgowEye {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GlasgowEye init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.GLASGOW_EYE;
 	}
-} // GlasgowEyeImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowEyeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowEyeOperations.validateGlasgowEyeTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowEyeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowEyeOperations.validateGlasgowEyeMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowEyeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowEyeOperations.validateGlasgowEyeCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowEyeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowEyeOperations.validateGlasgowEyeCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowEyeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowEyeOperations.validateGlasgowEyeValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GlasgowEye init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public GlasgowEye init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //GlasgowEyeImpl

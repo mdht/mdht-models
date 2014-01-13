@@ -35,73 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class VehicleOccupantSafetyEquipmentImpl extends ObservationImpl implements VehicleOccupantSafetyEquipment {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected VehicleOccupantSafetyEquipmentImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateVehicleOccupantSafetyEquipmentTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentTemplateId(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateVehicleOccupantSafetyEquipmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateVehicleOccupantSafetyEquipmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateVehicleOccupantSafetyEquipmentMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentMoodCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public VehicleOccupantSafetyEquipment init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -109,8 +48,62 @@ public class VehicleOccupantSafetyEquipmentImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VehicleOccupantSafetyEquipment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT;
 	}
-} // VehicleOccupantSafetyEquipmentImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVehicleOccupantSafetyEquipmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVehicleOccupantSafetyEquipmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVehicleOccupantSafetyEquipmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVehicleOccupantSafetyEquipmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VehicleOccupantSafetyEquipment init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public VehicleOccupantSafetyEquipment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //VehicleOccupantSafetyEquipmentImpl

@@ -35,78 +35,12 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.RespiratoryRateOperati
  */
 public class RespiratoryRateImpl extends VitalSignObservationImpl implements RespiratoryRate {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected RespiratoryRateImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.RESPIRATORY_RATE;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateRespiratoryRateCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RespiratoryRateOperations.validateRespiratoryRateCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateRespiratoryRateValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RespiratoryRateOperations.validateRespiratoryRateValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateRespiratoryRateEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RespiratoryRateOperations.validateRespiratoryRateEffectiveTime(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateRespiratoryRateMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RespiratoryRateOperations.validateRespiratoryRateMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	public boolean validateVitalSignObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RespiratoryRateOperations.validateVitalSignObservationTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	public RespiratoryRate init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -115,8 +49,71 @@ public class RespiratoryRateImpl extends VitalSignObservationImpl implements Res
 	 * @generated
 	 */
 	@Override
-	public RespiratoryRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.RESPIRATORY_RATE;
 	}
-} // RespiratoryRateImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRespiratoryRateMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RespiratoryRateOperations.validateRespiratoryRateMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRespiratoryRateCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RespiratoryRateOperations.validateRespiratoryRateCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRespiratoryRateEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RespiratoryRateOperations.validateRespiratoryRateEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRespiratoryRateValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RespiratoryRateOperations.validateRespiratoryRateValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateVitalSignObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RespiratoryRateOperations.validateVitalSignObservationTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RespiratoryRate init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public RespiratoryRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //RespiratoryRateImpl

@@ -35,11 +35,11 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.DispatchDelay#validateDispatchDelayTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.DispatchDelay#validateDispatchDelayMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.DispatchDelay#validateDispatchDelayCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.DispatchDelay#validateDispatchDelayCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.DispatchDelay#validateDispatchDelayValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.DispatchDelay#validateDispatchDelayValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Value P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.DispatchDelay#validateDispatchDelayMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Mood Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -47,124 +47,192 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class DispatchDelayOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DispatchDelayOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispatchDelayTemplateId(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispatchDelayTemplateId(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchDelayTemplateId(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchDelayTemplateId(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.153')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispatchDelayTemplateId(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispatchDelayTemplateId(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchDelayTemplateId(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-
+	 * @see #validateDispatchDelayTemplateId(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
 	protected static Constraint VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispatchDelay The receiving '<em><b>Dispatch Delay</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-
-	public static boolean validateDispatchDelayTemplateId(DispatchDelay dispatchDelay, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	 * <!-- begin-model-doc -->
+	 * @param dispatchDelay The receiving '<em><b>Dispatch Delay</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateDispatchDelayTemplateId(DispatchDelay dispatchDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_DELAY);
 			try {
 				VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchDelay)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("DispatchDelayTemplateId"), new Object[] { dispatchDelay }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("DispatchDelayTemplateId"),
+						 new Object [] { dispatchDelay }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispatchDelayCodeP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispatchDelayMoodCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchDelayCodeP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchDelayMoodCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDispatchDelayMoodCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDispatchDelayMoodCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param dispatchDelay The receiving '<em><b>Dispatch Delay</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateDispatchDelayMoodCode(DispatchDelay dispatchDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(EmspcrPackage.Literals.DISPATCH_DELAY);
+			try {
+				VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchDelay)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("DispatchDelayMoodCode"),
+						 new Object [] { dispatchDelay }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateDispatchDelayCodeP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDispatchDelayCodeP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispatchDelayCodeP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispatchDelayCodeP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchDelayCodeP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-
+	 * @see #validateDispatchDelayCodeP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
 	protected static Constraint VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispatchDelay The receiving '<em><b>Dispatch Delay</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-
-	public static boolean validateDispatchDelayCodeP(DispatchDelay dispatchDelay, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	 * <!-- begin-model-doc -->
+	 * @param dispatchDelay The receiving '<em><b>Dispatch Delay</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateDispatchDelayCodeP(DispatchDelay dispatchDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_DELAY);
 			try {
 				VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("DispatchDelayCodeP"), new Object[] { dispatchDelay }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("DispatchDelayCodeP"),
+						 new Object [] { dispatchDelay }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -176,248 +244,200 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(dispatchDelay);
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispatchDelayCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispatchDelayCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchDelayCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67480-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	 * @see #validateDispatchDelayCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67480-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispatchDelayCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispatchDelayCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchDelayCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-
+	 * @see #validateDispatchDelayCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
 	protected static Constraint VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispatchDelay The receiving '<em><b>Dispatch Delay</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-
-	public static boolean validateDispatchDelayCode(DispatchDelay dispatchDelay, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.DispatchDelayCodeP");
+	 * <!-- begin-model-doc -->
+	 * @param dispatchDelay The receiving '<em><b>Dispatch Delay</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateDispatchDelayCode(DispatchDelay dispatchDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.DispatchDelayCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(dispatchDelay)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_DELAY);
 			try {
 				VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_CODE,
-					EmspcrPlugin.INSTANCE.getString("DispatchDelayCode"), new Object[] { dispatchDelay }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_CODE,
+						 EmspcrPlugin.INSTANCE.getString("DispatchDelayCode"),
+						 new Object [] { dispatchDelay }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispatchDelayValue(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispatchDelayValue(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchDelayValue(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA17183-7' or value.code = 'LA17579-6' or value.code = 'LA17580-4' or value.code = 'LA17581-2' or value.code = 'LA17582-0' or value.code = 'LA17584-6' or value.code = 'LA18081-2' or value.code = 'LA7540-3')))";
+	 * @see #validateDispatchDelayValue(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA17183-7' or value.code = 'LA17579-6' or value.code = 'LA17580-4' or value.code = 'LA17581-2' or value.code = 'LA17582-0' or value.code = 'LA17584-6' or value.code = 'LA18081-2' or value.code = 'LA7540-3')))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispatchDelayValue(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispatchDelayValue(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchDelayValue(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-
+	 * @see #validateDispatchDelayValue(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
 	protected static Constraint VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispatchDelay The receiving '<em><b>Dispatch Delay</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-
-	public static boolean validateDispatchDelayValue(DispatchDelay dispatchDelay, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	 * <!-- begin-model-doc -->
+	 * @param dispatchDelay The receiving '<em><b>Dispatch Delay</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateDispatchDelayValue(DispatchDelay dispatchDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_DELAY);
 			try {
 				VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_VALUE,
-					EmspcrPlugin.INSTANCE.getString("DispatchDelayValue"), new Object[] { dispatchDelay }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("DispatchDelayValue"),
+						 new Object [] { dispatchDelay }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispatchDelayValueP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Value P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispatchDelayValueP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Value P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchDelayValueP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchDelayValueP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispatchDelayValueP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Value P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispatchDelayValueP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Value P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchDelayValueP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-
+	 * @see #validateDispatchDelayValueP(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
 	protected static Constraint VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispatchDelay The receiving '<em><b>Dispatch Delay</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-
-	public static boolean validateDispatchDelayValueP(DispatchDelay dispatchDelay, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	 * <!-- begin-model-doc -->
+	 * @param dispatchDelay The receiving '<em><b>Dispatch Delay</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateDispatchDelayValueP(DispatchDelay dispatchDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_DELAY);
 			try {
 				VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("DispatchDelayValueP"), new Object[] { dispatchDelay }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("DispatchDelayValueP"),
+						 new Object [] { dispatchDelay }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	* The cached OCL expression body for the '{@link #validateDispatchDelayMoodCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateDispatchDelayMoodCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateDispatchDelayMoodCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateDispatchDelayMoodCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-
-	protected static Constraint VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispatchDelay The receiving '<em><b>Dispatch Delay</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-
-	public static boolean validateDispatchDelayMoodCode(DispatchDelay dispatchDelay, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(EmspcrPackage.Literals.DISPATCH_DELAY);
-			try {
-				VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchDelay)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("DispatchDelayMoodCode"), new Object[] { dispatchDelay }));
-			}
-
+			 
 			return false;
 		}
 		return true;
