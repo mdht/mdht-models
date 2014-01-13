@@ -17,10 +17,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>Reporting Birth Information from a clinical setting to vital records example</b></p>
+<p audience="Examples"><b>Reporting Birth Information from a clinical setting to vital records example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_ReportingBirthInformationFromAClinicalSettingToVitalRecords.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_ReportingBirthInformationFromAClinicalSettingToVitalRecords.dita#classId/example">
 </codeblock>
 </body>
 </topic>

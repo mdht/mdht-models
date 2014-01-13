@@ -19,10 +19,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>Other Pregnancy Outcome example</b></p>
+<p audience="Examples"><b>Other Pregnancy Outcome example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_OtherPregnancyOutcome.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_OtherPregnancyOutcome.dita#classId/example">
 </codeblock>
 </body>
 </topic>
