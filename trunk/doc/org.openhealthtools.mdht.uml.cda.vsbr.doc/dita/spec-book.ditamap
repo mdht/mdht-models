@@ -10,19 +10,38 @@
 		<booktitlealt audience="developer">(Consolidated Developer Documentation)</booktitlealt>	
 	</booktitle>
 	
-	
-	    <bookmeta>
-    	<bookid><booknumber></booknumber>
-			<maintainer><organization>Health Level 7, MDHT</organization><person></person></maintainer>
-		</bookid>
-		<bookrights>
-			<copyrfirst><year>2013</year></copyrfirst>
-			<copyrlast><year>2013</year></copyrlast>
-			<bookowner>
-				<organization></organization>
-			</bookowner>
-		</bookrights>
+	   <bookmeta>
+    	<author>Public Health and Emergency Response Work Group</author>
+    	<prodinfo>
+			<prodname>CDAR2_BAFDRPT</prodname>
+			<vrmlist>
+				<vrm release="R1" version="2014JAN" ></vrm>
+			</vrmlist>
+			<brand>HL7 IG for CDA R2</brand>
+			<series>DSTU</series>
+			<platform>US Realm</platform>
+		</prodinfo>
+        <bookid>
+            <booknumber/>
+            <maintainer>
+                <organization>Open Health Tools, Model Driven Health Tools (MDHT)</organization>
+                <person/>
+            </maintainer>
+        </bookid>
+        <bookrights>
+            <copyrfirst>
+                <year>2009</year>
+            </copyrfirst>
+            <copyrlast>
+                <year>2014</year>
+            </copyrlast>
+            <bookowner>
+                <organization/>
+            </bookowner>
+        </bookrights>
     </bookmeta>
+	
+	
     
 	
 	<frontmatter>

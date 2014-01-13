@@ -17,10 +17,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>Number of Infants Born Alive example</b></p>
+<p audience="Examples"><b>Number of Infants Born Alive example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_NumberOfInfantsBornAlive.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_NumberOfInfantsBornAlive.dita#classId/example">
 </codeblock>
 </body>
 </topic>

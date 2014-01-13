@@ -17,10 +17,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>Date of Last Live Birth example</b></p>
+<p audience="Examples"><b>Date of Last Live Birth example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_DateOfLastLiveBirth.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_DateOfLastLiveBirth.dita#classId/example">
 </codeblock>
 </body>
 </topic>

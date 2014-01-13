@@ -17,10 +17,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>Characteristics of Labor & Delivery example</b></p>
+<p audience="Examples"><b>Characteristics of Labor & Delivery example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_CharacteristicsOfLaborDelivery.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_CharacteristicsOfLaborDelivery.dita#classId/example">
 </codeblock>
 </body>
 </topic>
