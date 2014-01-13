@@ -10,6 +10,7 @@
       <ownedLiteral xmi:id="_6r_MALutEeGkEvM80TFRNQ" name="309453006"/>
       <ownedLiteral xmi:id="__dP7kLutEeGkEvM80TFRNQ" name="75271001"/>
       <ownedLiteral xmi:id="_Dgr70LuuEeGkEvM80TFRNQ" name="394841004"/>
+      <ownedLiteral xmi:id="_bkTvgHoKEeO2lpcyxhKv_Q" name="261665006"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_FX6jMLuuEeGkEvM80TFRNQ" name="Fetal Presentations (NCHS)">
       <ownedComment xmi:id="_Fjs9QMLREeGrHfBMjd7c_Q">
@@ -18,6 +19,7 @@
       <ownedLiteral xmi:id="_JhQ-MLuuEeGkEvM80TFRNQ" name="6096002"/>
       <ownedLiteral xmi:id="_Keh3sLuuEeGkEvM80TFRNQ" name="394841004"/>
       <ownedLiteral xmi:id="_YAS9wB_XEeOYe8LVX7HMMw" name="70028003"/>
+      <ownedLiteral xmi:id="_8O12kHoLEeO2lpcyxhKv_Q" name="261665006"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_OcUi8LuuEeGkEvM80TFRNQ" name="Delivery Route (NCHS)">
       <ownedComment xmi:id="_ydMusMRKEeGoQ8pWsHTi4g">
@@ -25,7 +27,7 @@
       </ownedComment>
       <ownedLiteral xmi:id="_QgTM4LuuEeGkEvM80TFRNQ" name="48782003"/>
       <ownedLiteral xmi:id="_UZnn0LuuEeGkEvM80TFRNQ" name="302383004"/>
-      <ownedLiteral xmi:id="_V7o0MLuuEeGkEvM80TFRNQ" name="200144004"/>
+      <ownedLiteral xmi:id="_V7o0MLuuEeGkEvM80TFRNQ" name="11466000"/>
       <ownedLiteral xmi:id="_V-6xsLuuEeGkEvM80TFRNQ" name="61586001"/>
       <ownedLiteral xmi:id="_BAwFYAnJEeOSQLMpSugQSQ" name="261665006"/>
     </packagedElement>
@@ -51,7 +53,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_WfZfULywEeGUNfs_q_VvNQ" name="Birth and Fetal Death Financial Class (NCHS)">
       <ownedComment xmi:id="_7bArUMHmEeGrHfBMjd7c_Q">
-        <body>A list of different types of payment that may be used to support the expense of labor and delivery.  Note, the Public Health Data Consortium Source of Payment Typology is being used as the primary source for codes within the value set.</body>
+        <body>A list of different types of payment that may be used to support the expense of labor and delivery.  The value set is drawn from the Source of payment typology created by the Public Health Data Consortium</body>
       </ownedComment>
       <ownedLiteral xmi:id="_eUBSMLywEeGUNfs_q_VvNQ" name="5"/>
       <ownedLiteral xmi:id="_gP6XILywEeGUNfs_q_VvNQ" name="2"/>
@@ -137,6 +139,7 @@
       <ownedLiteral xmi:id="_XO8QQL79EeGdruZFgBKbQw" name="130955003"/>
       <ownedLiteral xmi:id="_ZUiDwL79EeGdruZFgBKbQw" name="231064003"/>
       <ownedLiteral xmi:id="_beARsL79EeGdruZFgBKbQw" name="260413007"/>
+      <ownedLiteral xmi:id="_PJDd0HoMEeO2lpcyxhKv_Q" name="15028002"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ut8x0L8LEeGJd49YTXcCkg" name="Maternal Morbidity (NCHS)">
       <ownedComment xmi:id="_NlJVQMCOEeGP5fduNvI1Qw">
@@ -220,19 +223,19 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_f9MfsAnaEeOSQLMpSugQSQ" name="Karyotype Down Syndrome (NCHS)">
       <ownedComment xmi:id="_cuorUB8KEeObkflEmglQXA">
-        <body>Note, SNOMED is being used as the primary source for codes within the value set.</body>
+        <body>The value set contains the list of values that indicate whether the newborn/fetus is confirmed or pending if there is a diagnosis of Down syndrome, Trisomy 21</body>
       </ownedComment>
       <ownedLiteral xmi:id="_lYSPYAnaEeOSQLMpSugQSQ" name="442124003"/>
       <ownedLiteral xmi:id="_rYkW0AnaEeOSQLMpSugQSQ" name="312948004"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_y1_KoAnaEeOSQLMpSugQSQ" name="Karyotype Suspected Chromosomal Disorder (NCHS)">
       <ownedComment xmi:id="_dSfmUB8KEeObkflEmglQXA">
-        <body>Note, SNOMED is being used as the primary source for codes within the value set.</body>
+        <body>The value set contains the list of values that indicate whether the newborn/fetus is confirmed or pending if there is a diagnosis of suspected chromosomal disorder (may include Trisomy 21</body>
       </ownedComment>
       <ownedLiteral xmi:id="_-YMpkAnaEeOSQLMpSugQSQ" name="442124003"/>
       <ownedLiteral xmi:id="_DKhJEAnbEeOSQLMpSugQSQ" name="312948004"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_jRPEUAnPEeOSQLMpSugQSQ" name="Source of Payment Typology">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_jRPEUAnPEeOSQLMpSugQSQ" name="Source of Payment Typology (PHDSC)">
       <ownedComment xmi:id="_WEkCMEYpEeORdKgX6HHCZw">
         <body>The Source of Payment Typology was developed to create a standard for reporting payer type data that will enhance the payer data classification; it is also intended for use by those collecting data, or analyzing healthcare claims information. Modeled loosely after the ICD typology for classifying medical conditions, the proposed typology identifies broad Payer categories with related subcategories that are more specific. This format provides analysts with flexibility to either use payer codes at a highly detailed level or to roll up codes to broader hierarchical categories for comparative analyses across payers and locations.&#xD;
 &#xD;
@@ -240,15 +243,15 @@ The Source of Payment Typology code system is used as a source for categorizing 
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_6YDEUB_HEeOYe8LVX7HMMw" name="Apgar Assessment (NCHS)">
-      <ownedComment xmi:id="_6YDEUR_HEeOYe8LVX7HMMw">
-        <body>Note, LOINC is being used as the primary source for codes within the value set.</body>
+      <ownedComment xmi:id="_4uyNAHoHEeO2lpcyxhKv_Q">
+        <body>A value set of systematic measures for evaluating the physical condition of the infant at specific intervals following birth.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_6YDEUx_HEeOYe8LVX7HMMw" name="9274-2"/>
       <ownedLiteral xmi:id="_6YDEVB_HEeOYe8LVX7HMMw" name="9271-8"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_3RjGoEJnEeO_G8MQAkZusQ" name="Autopsy Examination (NCHS)">
       <ownedComment xmi:id="_FXKWcEJoEeO_G8MQAkZusQ">
-        <body>A list of values that responds to the question, was an autopsy performed or planned?</body>
+        <body>The value set contains the list of values used to indicate whether or not an autopsy was performed.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_F5BGUEJoEeO_G8MQAkZusQ" name="29240004"/>
       <ownedLiteral xmi:id="_Mp_D0EJoEeO_G8MQAkZusQ" name="44551000009109"/>
@@ -308,7 +311,7 @@ The Source of Payment Typology code system is used as a source for categorizing 
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_QgTz8LuuEeGkEvM80TFRNQ" conceptName="Delivery normal" usageNote="Vaginal/Spontaneous" base_EnumerationLiteral="_QgTM4LuuEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_UZnn0buuEeGkEvM80TFRNQ" conceptName="Forceps delivery" usageNote="Vaginal/Forceps" base_EnumerationLiteral="_UZnn0LuuEeGkEvM80TFRNQ"/>
-  <term:ValueSetCode xmi:id="_V7o0MbuuEeGkEvM80TFRNQ" conceptName="Deliveries by cesarean" base_EnumerationLiteral="_V7o0MLuuEeGkEvM80TFRNQ"/>
+  <term:ValueSetCode xmi:id="_V7o0MbuuEeGkEvM80TFRNQ" conceptName="Cesarean section" base_EnumerationLiteral="_V7o0MLuuEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_V-7YwLuuEeGkEvM80TFRNQ" conceptName="Delivery by vacuum extraction" usageNote="Vaginal/Vacuum" base_EnumerationLiteral="_V-6xsLuuEeGkEvM80TFRNQ"/>
   <term:ValueSetVersion xmi:id="_5RyFkbuyEeGkEvM80TFRNQ" identifier="2.16.840.1.114222.4.11.7124" version="December 1, 2013" base_Enumeration="_5RyFkLuyEeGkEvM80TFRNQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
@@ -325,7 +328,7 @@ The Source of Payment Typology code system is used as a source for categorizing 
   <term:ValueSetCode xmi:id="_bgejgbuzEeGkEvM80TFRNQ" conceptName="Dead at time of first assessment, labor ongoing" base_EnumerationLiteral="_bgejgLuzEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_e2HCkbuzEeGkEvM80TFRNQ" conceptName="Died during labor, after first assessment" base_EnumerationLiteral="_e2HCkLuzEeGkEvM80TFRNQ"/>
   <term:ValueSetCode xmi:id="_hbskwbuzEeGkEvM80TFRNQ" conceptName="Unknown" usageNote="Unknown time of fetal death" base_EnumerationLiteral="_hbskwLuzEeGkEvM80TFRNQ"/>
-  <term:ValueSetVersion xmi:id="_WfZfUbywEeGUNfs_q_VvNQ" identifier="2.16.840.1.114222.4.11.7163" version="December 1, 2013" definition="The value set is drawn from the Source of payment typology created by the Public Health Data Consortium" codeSystem="_jRPEUQnPEeOSQLMpSugQSQ" base_Enumeration="_WfZfULywEeGUNfs_q_VvNQ"/>
+  <term:ValueSetVersion xmi:id="_WfZfUbywEeGUNfs_q_VvNQ" identifier="2.16.840.1.114222.4.11.7163" version="December 1, 2013" codeSystem="_jRPEUQnPEeOSQLMpSugQSQ" base_Enumeration="_WfZfULywEeGUNfs_q_VvNQ"/>
   <term:ValueSetCode xmi:id="_eUB5QLywEeGUNfs_q_VvNQ" conceptName="Private Health Insurance" base_EnumerationLiteral="_eUBSMLywEeGUNfs_q_VvNQ"/>
   <term:ValueSetCode xmi:id="_gP6-MLywEeGUNfs_q_VvNQ" conceptName="Medicaid" base_EnumerationLiteral="_gP6XILywEeGUNfs_q_VvNQ"/>
   <term:ValueSetCode xmi:id="_ioPgcbywEeGUNfs_q_VvNQ" conceptName="Self Pay" base_EnumerationLiteral="_ioPgcLywEeGUNfs_q_VvNQ"/>
@@ -476,10 +479,10 @@ The Source of Payment Typology code system is used as a source for categorizing 
   <term:ValueSetCode xmi:id="_AKc1QcCPEeGP5fduNvI1Qw" conceptName="Cleft palate" usageNote="Cleft Palate Alone" base_EnumerationLiteral="_AKc1QMCPEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_JQdXgcCPEeGP5fduNvI1Qw" conceptName="Hypospadias" base_EnumerationLiteral="_JQdXgMCPEeGP5fduNvI1Qw"/>
   <term:ValueSetCode xmi:id="_PnpjEcCPEeGP5fduNvI1Qw" conceptName="None" base_EnumerationLiteral="_PnpjEMCPEeGP5fduNvI1Qw"/>
-  <term:ValueSetCode xmi:id="_VtnJ0cCREeGP5fduNvI1Qw" conceptName="Assisted Ventilation Immediatly Following Delivery" base_EnumerationLiteral="_VtnJ0MCREeGP5fduNvI1Qw">
+  <term:ValueSetCode xmi:id="_VtnJ0cCREeGP5fduNvI1Qw" conceptName="Assisted ventilation required immediatly following delivery" base_EnumerationLiteral="_VtnJ0MCREeGP5fduNvI1Qw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_9AXiEcCSEeGP5fduNvI1Qw" conceptName="Assisted Ventilation for more than 6 Hours" base_EnumerationLiteral="_9AXiEMCSEeGP5fduNvI1Qw">
+  <term:ValueSetCode xmi:id="_9AXiEcCSEeGP5fduNvI1Qw" conceptName="Assisted ventilation required for more than six hours" base_EnumerationLiteral="_9AXiEMCSEeGP5fduNvI1Qw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_AS4bscCTEeGP5fduNvI1Qw" conceptName="Neonatal intensive care unit" base_EnumerationLiteral="_AS4bsMCTEeGP5fduNvI1Qw">
@@ -518,10 +521,10 @@ The Source of Payment Typology code system is used as a source for categorizing 
   </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_BA5PUAnJEeOSQLMpSugQSQ" conceptName="Unknown" base_EnumerationLiteral="_BAwFYAnJEeOSQLMpSugQSQ"/>
   <term:ValueSetCode xmi:id="_7jhY8QnOEeOSQLMpSugQSQ" conceptName="Unknown" base_EnumerationLiteral="_7jhY8AnOEeOSQLMpSugQSQ"/>
-  <term:ValueSetCode xmi:id="_-rxjUQnOEeOSQLMpSugQSQ" conceptName="Indian Health Service" base_EnumerationLiteral="_-rxjUAnOEeOSQLMpSugQSQ"/>
-  <term:ValueSetCode xmi:id="_CWYz4QnPEeOSQLMpSugQSQ" conceptName="Other Government" base_EnumerationLiteral="_CWYz4AnPEeOSQLMpSugQSQ"/>
-  <term:ValueSetCode xmi:id="_DAVv0QnPEeOSQLMpSugQSQ" conceptName="CHAMPUS/TRICARE" base_EnumerationLiteral="_DAVv0AnPEeOSQLMpSugQSQ"/>
-  <term:CodeSystemVersion xmi:id="_jRPEUQnPEeOSQLMpSugQSQ" identifier="2.16.840.1.113883.221.5" version="3.0" source="Public Health Data Consortium" url="http://phdsc.org/standards/payment-typology-source.asp" base_Enumeration="_jRPEUAnPEeOSQLMpSugQSQ"/>
+  <term:ValueSetCode xmi:id="_-rxjUQnOEeOSQLMpSugQSQ" conceptName="Indian Health Service or Tribe" base_EnumerationLiteral="_-rxjUAnOEeOSQLMpSugQSQ"/>
+  <term:ValueSetCode xmi:id="_CWYz4QnPEeOSQLMpSugQSQ" conceptName="Other Government (Federal, State, Local not specified)" base_EnumerationLiteral="_CWYz4AnPEeOSQLMpSugQSQ"/>
+  <term:ValueSetCode xmi:id="_DAVv0QnPEeOSQLMpSugQSQ" conceptName="TRICARE (CHAMPUS)" base_EnumerationLiteral="_DAVv0AnPEeOSQLMpSugQSQ"/>
+  <term:CodeSystemVersion xmi:id="_jRPEUQnPEeOSQLMpSugQSQ" identifier="2.16.840.1.113883.3.221.5" version="3.0" source="Public Health Data Consortium" url="http://phdsc.org/standards/payment-typology-source.asp" base_Enumeration="_jRPEUAnPEeOSQLMpSugQSQ"/>
   <term:ValueSetCode xmi:id="_gF5UQQnQEeOSQLMpSugQSQ" conceptName="Unknown" base_EnumerationLiteral="_gF5UQAnQEeOSQLMpSugQSQ"/>
   <term:ValueSetVersion xmi:id="_p8ODsAnREeOSQLMpSugQSQ" identifier="2.16.840.1.114222.4.11.7209" version="December 1, 2013" definition="The collection of vital sign items that is collected for a mother within a Live Birth or Fetal Death report." base_Enumeration="_p8E5wAnREeOSQLMpSugQSQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -553,7 +556,7 @@ The Source of Payment Typology code system is used as a source for categorizing 
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_F5BGUUJoEeO_G8MQAkZusQ" conceptName="Autopsy Examination" base_EnumerationLiteral="_F5BGUEJoEeO_G8MQAkZusQ"/>
-  <term:ValueSetCode xmi:id="_Mp_D0UJoEeO_G8MQAkZusQ" conceptName="Was an autopsy performed? No" base_EnumerationLiteral="_Mp_D0EJoEeO_G8MQAkZusQ"/>
+  <term:ValueSetCode xmi:id="_Mp_D0UJoEeO_G8MQAkZusQ" conceptName="Autopsy not performed" base_EnumerationLiteral="_Mp_D0EJoEeO_G8MQAkZusQ"/>
   <term:ValueSetCode xmi:id="_PoJeEUJoEeO_G8MQAkZusQ" conceptName="Autopsy Planned" base_EnumerationLiteral="_PoJeEEJoEeO_G8MQAkZusQ"/>
   <term:ValueSetVersion xmi:id="_iexXFUJuEeOTOraTCBgKoQ" identifier="2.16.840.1.114222.4.11.7138" base_Enumeration="_iexXEEJuEeOTOraTCBgKoQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
@@ -561,7 +564,10 @@ The Source of Payment Typology code system is used as a source for categorizing 
   <term:ValueSetCode xmi:id="_iexXFkJuEeOTOraTCBgKoQ" conceptName="Performed" base_EnumerationLiteral="_iexXEkJuEeOTOraTCBgKoQ"/>
   <term:ValueSetCode xmi:id="_iexXF0JuEeOTOraTCBgKoQ" conceptName="Planned" base_EnumerationLiteral="_iexXE0JuEeOTOraTCBgKoQ"/>
   <term:ValueSetCode xmi:id="_iexXGEJuEeOTOraTCBgKoQ" conceptName="Not performed" base_EnumerationLiteral="_iexXFEJuEeOTOraTCBgKoQ"/>
-  <term:CodeSystemVersion xmi:id="_qCywkmEXEeOucruFG1usrQ" identifier="2.16.840.1.113883.6.96" version="2013" fullName="International Health Terminology Standards Development Organisation (IHTSDO) Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT)" source="National Library of Medicine – UMLS" url="http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" base_Enumeration="_qCywkGEXEeOucruFG1usrQ"/>
-  <term:CodeSystemVersion xmi:id="_7fbmkWEXEeOucruFG1usrQ" identifier="2.16.840.1.114222.4.5.274" version="20100308" source="CDCPHINVS" base_Enumeration="_7fbmkGEXEeOucruFG1usrQ"/>
-  <term:CodeSystemVersion xmi:id="_ASzO8mEYEeOucruFG1usrQ" identifier="2.16.840.1.113883.6.1" version="2013" fullName="Logical Observation Identifiers Names and Codes (LOINC)" source="Regenstrief Institute, Inc" url="http://loinc.org" base_Enumeration="_ASzO8GEYEeOucruFG1usrQ"/>
+  <term:CodeSystemVersion xmi:id="_qCywkmEXEeOucruFG1usrQ" identifier="2.16.840.1.113883.6.96" version="2013_09_01" fullName="International Health Terminology Standards Development Organisation (IHTSDO) Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT)" source="National Library of Medicine – UMLS" url="http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" releaseDate="2013-09-01" base_Enumeration="_qCywkGEXEeOucruFG1usrQ"/>
+  <term:CodeSystemVersion xmi:id="_7fbmkWEXEeOucruFG1usrQ" identifier="2.16.840.1.114222.4.5.274" version="2011.06.17" source="CDCPHINVS" url="https://phinvads.cdc.gov/" base_Enumeration="_7fbmkGEXEeOucruFG1usrQ"/>
+  <term:CodeSystemVersion xmi:id="_ASzO8mEYEeOucruFG1usrQ" identifier="2.16.840.1.113883.6.1" version="2.46" fullName="Logical Observation Identifiers Names and Codes (LOINC)" source="Regenstrief Institute, Inc" url="http://loinc.org" releaseDate="2013-12-26" base_Enumeration="_ASzO8GEYEeOucruFG1usrQ"/>
+  <term:ValueSetCode xmi:id="_bnK2QHoKEeO2lpcyxhKv_Q" conceptName="Unknown" base_EnumerationLiteral="_bkTvgHoKEeO2lpcyxhKv_Q"/>
+  <term:ValueSetCode xmi:id="_8O12kXoLEeO2lpcyxhKv_Q" conceptName="Unknown" base_EnumerationLiteral="_8O12kHoLEeO2lpcyxhKv_Q"/>
+  <term:ValueSetCode xmi:id="_PJDd0XoMEeO2lpcyxhKv_Q" conceptName="Abnormal Fetal Presentation" base_EnumerationLiteral="_PJDd0HoMEeO2lpcyxhKv_Q"/>
 </xmi:XMI>

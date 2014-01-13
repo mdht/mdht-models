@@ -4818,7 +4818,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:185</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_TgcGUGWSEeK5DM6q0QrKnA" code="TBD" base_Property="_kr9kOFp7EeKUiPQlmqLrLg">
+  <CDA:CodeSystemConstraint xmi:id="_TgcGUGWSEeK5DM6q0QrKnA" code="LOINC_TBD" displayName="Autopsy or Histological Results Used" base_Property="_kr9kOFp7EeKUiPQlmqLrLg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:413</ruleId>
   </CDA:CodeSystemConstraint>
