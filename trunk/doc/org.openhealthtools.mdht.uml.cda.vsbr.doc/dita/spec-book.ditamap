@@ -3,7 +3,7 @@
 <bookmap id="BirthReportIGforPublish">
 	<booktitle>
 		<booklibrary>Implementation Guide for CDA Release 2:</booklibrary>
-		<mainbooktitle>Reporting Birth and Fetal Death Information from the EHR to Vital Records, Release 1</mainbooktitle>
+		<mainbooktitle>Birth and Fetal Death Report, Release 1</mainbooktitle>
 		<booktitlealt id="image"><image href="images/hl7logo.gif"/></booktitlealt>
 		<booktitlealt>HL7 Draft Standard for Trial Use</booktitlealt>
 		<booktitlealt>Implementation guide: US Realm</booktitlealt>
@@ -28,7 +28,7 @@
 	<frontmatter>
 		<preface>
 			<topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
-			<topicref href="preface/RevisionHistory.dita" navtitle="Authors" type="topic"/>
+			<topicref href="preface/Contributors.dita" navtitle="Contributors" type="topic"/>
 		</preface>
 		<booklists>
 			<toc/><figurelist/><tablelist/>

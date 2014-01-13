@@ -27,7 +27,7 @@
 </row></thead><tbody>
 <row><entry>48782003</entry><entry>SNOMEDCT</entry><entry>Delivery normal</entry></row>
 <row><entry>302383004</entry><entry>SNOMEDCT</entry><entry>Forceps delivery</entry></row>
-<row><entry>200144004</entry><entry>SNOMEDCT</entry><entry>Deliveries by cesarean</entry></row>
+<row><entry>11466000</entry><entry>SNOMEDCT</entry><entry>Cesarean section</entry></row>
 <row><entry>61586001</entry><entry>SNOMEDCT</entry><entry>Delivery by vacuum extraction</entry></row>
 <row><entry>261665006</entry><entry>SNOMEDCT</entry><entry>Unknown</entry></row>
 </tbody></tgroup></table>

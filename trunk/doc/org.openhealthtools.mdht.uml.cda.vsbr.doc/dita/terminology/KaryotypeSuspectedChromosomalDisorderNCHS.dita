@@ -15,7 +15,7 @@
 <row><entry>Value Set</entry><entry>Karyotype Suspected Chromosomal Disorder (NCHS) - 2.16.840.1.114222.4.11.7115</entry></row>
 <row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
 <row><entry>Version</entry><entry>December 1, 2013</entry></row>
-<row><entry>Description</entry><entry>Note, SNOMED is being used as the primary source for codes within the value set.
+<row><entry>Description</entry><entry>The value set contains the list of values that indicate whether the newborn/fetus is confirmed or pending if there is a diagnosis of suspected chromosomal disorder (may include Trisomy 21
 </entry></row>
 </tbody></tgroup></table>
 <table><tgroup cols="3">

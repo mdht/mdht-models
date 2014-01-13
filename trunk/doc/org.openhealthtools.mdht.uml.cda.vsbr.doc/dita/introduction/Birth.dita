@@ -793,12 +793,12 @@ Assessment Section
 								</observation>
 							</entry>
 						</section>
-					</component>
+					</component> 
 				</section>
 			</component>
 		</structuredBody>
 	</component>
-</ClinicalDocument>]]
+</ClinicalDocument>]]>
 		</codeblock>
 		
 	</body>

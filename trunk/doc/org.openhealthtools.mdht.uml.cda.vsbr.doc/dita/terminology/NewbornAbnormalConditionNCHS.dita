@@ -25,8 +25,8 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>PHC1250</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Assisted Ventilation Immediatly Following Delivery</entry></row>
-<row><entry>PHC1251</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Assisted Ventilation for more than 6 Hours</entry></row>
+<row><entry>PHC1250</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Assisted ventilation required immediatly following delivery</entry></row>
+<row><entry>PHC1251</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry>Assisted ventilation required for more than six hours</entry></row>
 <row><entry>405269005</entry><entry>SNOMEDCT</entry><entry>Neonatal intensive care unit</entry></row>
 <row><entry>43470100012410</entry><entry>SNOMEDCT</entry><entry>Surfactant replacement therapy</entry></row>
 <row><entry>434621000124103</entry><entry>SNOMEDCT</entry><entry>Antibiotics for suspected neonatal sepsis</entry></row>
