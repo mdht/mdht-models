@@ -14,10 +14,6 @@
 		<!-- clinicalstatement.ditamap is generated from the model -->
 		<topicref format="ditamap" href="../classes/clinicalstatement.ditamap" navtitle="Clinical Statement Templates"/>
 	</chapter>
-	<chapter href="OtherClasses.dita" navtitle="OTHER CLASSES" type="topic">
-		<!-- classes.ditamap is generated from the model -->
-		<topicref format="ditamap" href="../classes/classes.ditamap" navtitle="Other Classes"/>
-	</chapter>
 	<chapter href="ValueSets.dita" navtitle="VALUE SETS" type="topic">
 		<!-- valueset.ditamap is generated from the model -->
 		<topicref format="ditamap" href="../terminology/valueset.ditamap" navtitle="Value Sets"/>

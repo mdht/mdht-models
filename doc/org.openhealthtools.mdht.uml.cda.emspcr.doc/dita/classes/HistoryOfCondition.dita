@@ -19,10 +19,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>History Of Condition example</b></p>
+<p audience="Examples"><b>History Of Condition example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_HistoryOfCondition.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_HistoryOfCondition.dita#classId/example">
 </codeblock>
 </body>
 </topic>

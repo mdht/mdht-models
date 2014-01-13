@@ -31,7 +31,7 @@ The drug, to be placed in the participating product, is encoded in RxNorm.</i></
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48765-2" </tt><i>Allergies, adverse reactions, alerts</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7477)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/HITSPProblemStatus.dita">HITSP Problem Status</xref> 2.16.840.1.113883.3.88.12.80.68</tt><b> STATIC</b> (CONF:7485)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProblemActStatusCode.dita">ProblemActStatusCode</xref> 2.16.840.1.113883.11.20.9.19</tt><b> STATIC</b> 2011-09-09 (CONF:7485)
 <ul><li><p><lines><i><p>
 The statusCode associated with any concern must be one of the following values:
 </p>
@@ -47,14 +47,14 @@ historical purposes.
 </p></i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:7498)
 <ul><li><p><lines><i>The effectiveTime element records the starting and ending times during which the concern was active.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:7509, CONF:7915, CONF:7510)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:7509, CONF:7915, CONF:14925)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../AllergyObservation.dita">Allergy Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.7</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF:11126) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:10208) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (CONF:10209) <ol><li> This playingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>)<p><lines><i>NEMSIS Trace: EHistory.06</i></lines></p></li></ol> </li></ol> </li></ol>
 </li>
-<li>If statusCode = "55561003" Active, then effectiveTime <b>SHALL</b> contain [1..1] low (CONF:7504). (CONF:7504)</li>
-<li>If statusCode = "413322009", then effectiveTime <b>SHALL</b> contain  high [1..1] (CONF:10085). (CONF:10085)</li>
+<li>If statusCode = "active" Active, then effectiveTime <b>SHALL</b> contain [1..1] low (CONF:7504). (CONF:7504)</li>
+<li>If statusCode = "completed" Completed, then effectiveTime <b>SHALL</b> contain  high [1..1] (CONF:10085). (CONF:10085)</li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">

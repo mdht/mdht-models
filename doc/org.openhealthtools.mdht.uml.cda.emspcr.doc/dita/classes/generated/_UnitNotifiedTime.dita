@@ -19,18 +19,18 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10839)<tt><b>/@code</b>="69471-1" </tt><i>Responding unit was notified by dispatch [Date and time] Vehicle NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10838)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10840)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="TS" (CONF:10840)
 <ul><li><p><lines><i>NEMSIS Trace: ETimes.03
 This is the value represented in the header for the encompassing encounter</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11144)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10839)<tt><b>/@code</b>="69471-1" </tt><i>Responding unit was notified by dispatch [Date and time] Vehicle NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10838)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10840)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="TS" (CONF:10840)
 <ul><li><p><lines><i>NEMSIS Trace: ETimes.03
 This is the value represented in the header for the encompassing encounter</i></lines></p></li></ul></li>
 </ol>

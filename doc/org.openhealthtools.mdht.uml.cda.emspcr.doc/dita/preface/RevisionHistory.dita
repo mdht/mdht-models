@@ -62,6 +62,7 @@
         <colspec colnum="3" colname="col3" colwidth="4*"/>
         <colspec colnum="4" colname="col4" colwidth="4*"/>
         <thead>
+    
           <row>
             <entry>#</entry>
             <entry>Change</entry>
@@ -69,6 +70,7 @@
             <entry>Date</entry>
           </row>
         </thead>
+               <tbody>
         <row>
           <entry>1</entry>
           <entry>add descriptions to all templates (ballot ref 28,60,69 )</entry>
@@ -227,7 +229,7 @@
         </row>
         <row>
           <entry>27</entry>
-          <entry>correct cardinality where shall & 0:1 is ambiguous (ballot ref 53 )</entry>
+          <entry>correct cardinality where shall and 0:1 is ambiguous (ballot ref 53 )</entry>
           <entry>JLyle</entry>
           <entry>Nov-13</entry>
         </row>
@@ -291,11 +293,8 @@
           <entry>JLyle</entry>
           <entry>Nov-13</entry>
         </row>
-      </tbody>
+    </tbody>
     </tgroup>
-  </table>
-        </tbody>
-      </tgroup>
     </table>
-  </body>
+    </body>
 </topic>

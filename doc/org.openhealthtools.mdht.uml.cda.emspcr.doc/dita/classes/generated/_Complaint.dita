@@ -21,7 +21,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:11170)
 <ul><li><p><lines><i>effectiveTime.low = NEMSIS Trace: ESituation.01</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>value</b></tt> with data type ST (CONF:10770)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>value</b></tt> with @xsi:type="ST" (CONF:10770)
 <ul><li><p><lines><i>NEMSIS Trace: ESituation.04</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10771) <ol><li> This entryRelationship Contains exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ComplaintDuration.dita">Complaint Duration</xref><ol>
 <li>Contains exactly one [1..1] <xref href="../ComplaintDuration.dita">Complaint Duration</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.139</tt>)</li></ol></li></ol>
@@ -37,7 +37,7 @@ Complaint site is required if complaint is type "Chief complaint"</i></lines></p
 </li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11169)
 </li>
@@ -45,7 +45,7 @@ Complaint site is required if complaint is type "Chief complaint"</i></lines></p
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:11170)
 <ul><li><p><lines><i>effectiveTime.low = NEMSIS Trace: ESituation.01</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>value</b></tt> with data type ST (CONF:10770)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>value</b></tt> with @xsi:type="ST" (CONF:10770)
 <ul><li><p><lines><i>NEMSIS Trace: ESituation.04</i></lines></p></li></ul></li>
 <li><b>SHOULD</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10773), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AnatomicLocation.dita">AnatomicLocation</xref> 2.16.840.1.113883.17.3.11.76</tt><b> DYNAMIC</b> (CONF:10774)
 <ul><li><p><lines><i>NEMSIS Trace: ESituation.07

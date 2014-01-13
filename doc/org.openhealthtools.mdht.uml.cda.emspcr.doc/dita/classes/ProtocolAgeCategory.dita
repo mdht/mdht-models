@@ -19,10 +19,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>Protocol Age Category example</b></p>
+<p audience="Examples"><b>Protocol Age Category example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_ProtocolAgeCategory.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_ProtocolAgeCategory.dita#classId/example">
 </codeblock>
 </body>
 </topic>

@@ -19,10 +19,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>Dispatch Notified Time example</b></p>
+<p audience="Examples"><b>Dispatch Notified Time example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_DispatchNotifiedTime.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_DispatchNotifiedTime.dita#classId/example">
 </codeblock>
 </body>
 </topic>

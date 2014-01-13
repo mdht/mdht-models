@@ -19,10 +19,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>Dispatch Delay example</b></p>
+<p audience="Examples"><b>Dispatch Delay example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_DispatchDelay.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_DispatchDelay.dita#classId/example">
 </codeblock>
 </body>
 </topic>

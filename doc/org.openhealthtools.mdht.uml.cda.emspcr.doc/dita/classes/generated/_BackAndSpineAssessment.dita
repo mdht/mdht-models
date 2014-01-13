@@ -21,13 +21,13 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:11239)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.03</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10397), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineAssessmentFinding.dita">BackSpineAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.34</tt><b> DYNAMIC</b> (CONF:10398)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:10397), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineAssessmentFinding.dita">BackSpineAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.34</tt><b> DYNAMIC</b> (CONF:10398)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.14</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10396), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineFindingLocation.dita">BackSpineFindingLocation</xref> 2.16.840.1.113883.17.3.11.35</tt><b> DYNAMIC</b> (CONF:10395)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.13</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11238)
 </li>
@@ -35,7 +35,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:11239)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.03</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10397), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineAssessmentFinding.dita">BackSpineAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.34</tt><b> DYNAMIC</b> (CONF:10398)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:10397), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineAssessmentFinding.dita">BackSpineAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.34</tt><b> DYNAMIC</b> (CONF:10398)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.14</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10396), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineFindingLocation.dita">BackSpineFindingLocation</xref> 2.16.840.1.113883.17.3.11.35</tt><b> DYNAMIC</b> (CONF:10395)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.13</i></lines></p></li></ul></li>

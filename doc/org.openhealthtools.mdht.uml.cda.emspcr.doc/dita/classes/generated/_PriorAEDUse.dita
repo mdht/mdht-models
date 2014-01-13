@@ -19,19 +19,19 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67508-2" </tt><i>AED use prior to EMS arrival NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10171)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AEDUsePriorToEMSArrival.dita">AEDUsePriorToEMSArrival</xref> 2.16.840.1.113883.17.3.11.13</tt><b> DYNAMIC</b> (CONF:10172)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AEDUsePriorToEMSArrival.dita">AEDUsePriorToEMSArrival</xref> 2.16.840.1.113883.17.3.11.13</tt><b> DYNAMIC</b> (CONF:10172)
 <ul><li><p><lines><i>NEMSIS Trace: EArrest.07</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:10173) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RESP" </tt> (CONF:11250)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:10174) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PriorCareProviderRole.dita">PriorCareProviderRole</xref> 2.16.840.1.113883.17.3.11.12</tt><b> DYNAMIC</b> (CONF:10175)<p><lines><i>NEMSIS Trace: EArrest.08</i></lines></p></li></ol> </li></ol>
 </li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11249)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67508-2" </tt><i>AED use prior to EMS arrival NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10171)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AEDUsePriorToEMSArrival.dita">AEDUsePriorToEMSArrival</xref> 2.16.840.1.113883.17.3.11.13</tt><b> DYNAMIC</b> (CONF:10172)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AEDUsePriorToEMSArrival.dita">AEDUsePriorToEMSArrival</xref> 2.16.840.1.113883.17.3.11.13</tt><b> DYNAMIC</b> (CONF:10172)
 <ul><li><p><lines><i>NEMSIS Trace: EArrest.07</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:10173) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RESP" </tt> (CONF:11250)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:10174) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PriorCareProviderRole.dita">PriorCareProviderRole</xref> 2.16.840.1.113883.17.3.11.12</tt><b> DYNAMIC</b> (CONF:10175)<p><lines><i>NEMSIS Trace: EArrest.08</i></lines></p></li></ol> </li></ol>
 </li>

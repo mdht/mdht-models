@@ -19,10 +19,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>Length Based Patient Body Weight Class example</b></p>
+<p audience="Examples"><b>Length Based Patient Body Weight Class example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_LengthBasedPatientBodyWeightClass.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_LengthBasedPatientBodyWeightClass.dita#classId/example">
 </codeblock>
 </body>
 </topic>

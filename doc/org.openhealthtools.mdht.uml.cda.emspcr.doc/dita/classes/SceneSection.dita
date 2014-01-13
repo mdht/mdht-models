@@ -19,10 +19,10 @@
 <li></li>
 </ol>
 <p> </p>
-<p><b>Scene Section example</b></p>
+<p audience="Examples"><b>Scene Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_SceneSection.dita#classId/example">
+<codeblock audience="Examples" conref="generated/_SceneSection.dita#classId/example">
 </codeblock>
 </body>
 </topic>

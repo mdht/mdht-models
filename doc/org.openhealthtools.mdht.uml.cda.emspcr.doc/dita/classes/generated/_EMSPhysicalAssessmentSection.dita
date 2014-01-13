@@ -49,6 +49,15 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10338)
 </li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:17094, CONF:17095)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PressureUlcerObservation.dita">Pressure Ulcer Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.70</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:17096, CONF:17097)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfPressureUlcersObservation.dita">Number Of Pressure Ulcers Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.76</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:17098, CONF:17099)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HighestPressureUlcerStage.dita">Highest Pressure Ulcer Stage</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.77</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10975)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PhysicalAssessmentOrganizer.dita">Physical Assessment Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.78</tt>)</li></ol></li>
