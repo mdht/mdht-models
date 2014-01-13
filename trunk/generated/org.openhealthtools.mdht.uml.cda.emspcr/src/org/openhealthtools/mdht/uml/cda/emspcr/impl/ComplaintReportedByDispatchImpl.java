@@ -35,91 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ComplaintReportedByDispatchImpl extends ObservationImpl implements ComplaintReportedByDispatch {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ComplaintReportedByDispatchImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.COMPLAINT_REPORTED_BY_DISPATCH;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintReportedByDispatchTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchTemplateId(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintReportedByDispatchCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintReportedByDispatchCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintReportedByDispatchValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintReportedByDispatchValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchValueP(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintReportedByDispatchMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchMoodCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public ComplaintReportedByDispatch init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -127,8 +48,80 @@ public class ComplaintReportedByDispatchImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ComplaintReportedByDispatch init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.COMPLAINT_REPORTED_BY_DISPATCH;
 	}
-} // ComplaintReportedByDispatchImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintReportedByDispatchTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintReportedByDispatchMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintReportedByDispatchCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintReportedByDispatchCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintReportedByDispatchValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintReportedByDispatchValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComplaintReportedByDispatch init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ComplaintReportedByDispatch init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //ComplaintReportedByDispatchImpl

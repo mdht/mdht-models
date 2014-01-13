@@ -35,67 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class CardiacArrestCauseImpl extends ObservationImpl implements CardiacArrestCause {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CardiacArrestCauseImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.CARDIAC_ARREST_CAUSE;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateCardiacArrestCauseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CardiacArrestCauseOperations.validateCardiacArrestCauseTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateCardiacArrestCauseCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CardiacArrestCauseOperations.validateCardiacArrestCauseCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateCardiacArrestCauseValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CardiacArrestCauseOperations.validateCardiacArrestCauseValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateCardiacArrestCauseMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CardiacArrestCauseOperations.validateCardiacArrestCauseMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public CardiacArrestCause init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -103,8 +48,62 @@ public class CardiacArrestCauseImpl extends ObservationImpl implements CardiacAr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CardiacArrestCause init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.CARDIAC_ARREST_CAUSE;
 	}
-} // CardiacArrestCauseImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCardiacArrestCauseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CardiacArrestCauseOperations.validateCardiacArrestCauseTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCardiacArrestCauseMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CardiacArrestCauseOperations.validateCardiacArrestCauseMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCardiacArrestCauseCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CardiacArrestCauseOperations.validateCardiacArrestCauseCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCardiacArrestCauseValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CardiacArrestCauseOperations.validateCardiacArrestCauseValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CardiacArrestCause init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CardiacArrestCause init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //CardiacArrestCauseImpl

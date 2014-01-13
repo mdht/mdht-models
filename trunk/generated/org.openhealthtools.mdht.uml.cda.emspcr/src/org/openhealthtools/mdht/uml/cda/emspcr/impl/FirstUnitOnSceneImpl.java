@@ -35,76 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class FirstUnitOnSceneImpl extends ObservationImpl implements FirstUnitOnScene {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected FirstUnitOnSceneImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.FIRST_UNIT_ON_SCENE;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateFirstUnitOnSceneTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FirstUnitOnSceneOperations.validateFirstUnitOnSceneTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateFirstUnitOnSceneCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FirstUnitOnSceneOperations.validateFirstUnitOnSceneCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateFirstUnitOnSceneCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FirstUnitOnSceneOperations.validateFirstUnitOnSceneCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateFirstUnitOnSceneValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FirstUnitOnSceneOperations.validateFirstUnitOnSceneValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateFirstUnitOnSceneMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FirstUnitOnSceneOperations.validateFirstUnitOnSceneMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public FirstUnitOnScene init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -112,8 +48,71 @@ public class FirstUnitOnSceneImpl extends ObservationImpl implements FirstUnitOn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FirstUnitOnScene init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.FIRST_UNIT_ON_SCENE;
 	}
-} // FirstUnitOnSceneImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFirstUnitOnSceneTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FirstUnitOnSceneOperations.validateFirstUnitOnSceneTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFirstUnitOnSceneMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FirstUnitOnSceneOperations.validateFirstUnitOnSceneMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFirstUnitOnSceneCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FirstUnitOnSceneOperations.validateFirstUnitOnSceneCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFirstUnitOnSceneCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FirstUnitOnSceneOperations.validateFirstUnitOnSceneCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFirstUnitOnSceneValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FirstUnitOnSceneOperations.validateFirstUnitOnSceneValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FirstUnitOnScene init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public FirstUnitOnScene init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //FirstUnitOnSceneImpl

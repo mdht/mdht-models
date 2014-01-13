@@ -35,76 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ComplaintDurationImpl extends ObservationImpl implements ComplaintDuration {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ComplaintDurationImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.COMPLAINT_DURATION;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintDurationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintDurationOperations.validateComplaintDurationTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintDurationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintDurationOperations.validateComplaintDurationCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintDurationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintDurationOperations.validateComplaintDurationCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintDurationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintDurationOperations.validateComplaintDurationValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintDurationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintDurationOperations.validateComplaintDurationMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public ComplaintDuration init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -112,8 +48,71 @@ public class ComplaintDurationImpl extends ObservationImpl implements ComplaintD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ComplaintDuration init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.COMPLAINT_DURATION;
 	}
-} // ComplaintDurationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintDurationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintDurationOperations.validateComplaintDurationTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintDurationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintDurationOperations.validateComplaintDurationMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintDurationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintDurationOperations.validateComplaintDurationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintDurationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintDurationOperations.validateComplaintDurationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintDurationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintDurationOperations.validateComplaintDurationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComplaintDuration init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ComplaintDuration init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //ComplaintDurationImpl

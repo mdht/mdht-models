@@ -35,76 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class GlasgowTotalImpl extends ObservationImpl implements GlasgowTotal {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected GlasgowTotalImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.GLASGOW_TOTAL;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateGlasgowTotalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowTotalOperations.validateGlasgowTotalTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateGlasgowTotalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowTotalOperations.validateGlasgowTotalCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateGlasgowTotalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowTotalOperations.validateGlasgowTotalCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateGlasgowTotalValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowTotalOperations.validateGlasgowTotalValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateGlasgowTotalMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowTotalOperations.validateGlasgowTotalMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public GlasgowTotal init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -112,8 +48,71 @@ public class GlasgowTotalImpl extends ObservationImpl implements GlasgowTotal {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GlasgowTotal init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.GLASGOW_TOTAL;
 	}
-} // GlasgowTotalImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowTotalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowTotalOperations.validateGlasgowTotalTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowTotalMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowTotalOperations.validateGlasgowTotalMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowTotalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowTotalOperations.validateGlasgowTotalCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowTotalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowTotalOperations.validateGlasgowTotalCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGlasgowTotalValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GlasgowTotalOperations.validateGlasgowTotalValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GlasgowTotal init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public GlasgowTotal init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //GlasgowTotalImpl

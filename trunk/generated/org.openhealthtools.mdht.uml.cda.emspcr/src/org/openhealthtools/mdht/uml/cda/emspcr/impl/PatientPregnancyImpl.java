@@ -35,85 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PatientPregnancyImpl extends ObservationImpl implements PatientPregnancy {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PatientPregnancyImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.PATIENT_PREGNANCY;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePatientPregnancyTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientPregnancyOperations.validatePatientPregnancyTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePatientPregnancyCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientPregnancyOperations.validatePatientPregnancyCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePatientPregnancyCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientPregnancyOperations.validatePatientPregnancyCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePatientPregnancyValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientPregnancyOperations.validatePatientPregnancyValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePatientPregnancyValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientPregnancyOperations.validatePatientPregnancyValueP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePatientPregnancyMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientPregnancyOperations.validatePatientPregnancyMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public PatientPregnancy init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -121,8 +48,80 @@ public class PatientPregnancyImpl extends ObservationImpl implements PatientPreg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PatientPregnancy init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.PATIENT_PREGNANCY;
 	}
-} // PatientPregnancyImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPregnancyTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientPregnancyOperations.validatePatientPregnancyTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPregnancyMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientPregnancyOperations.validatePatientPregnancyMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPregnancyCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientPregnancyOperations.validatePatientPregnancyCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPregnancyCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientPregnancyOperations.validatePatientPregnancyCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPregnancyValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientPregnancyOperations.validatePatientPregnancyValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPregnancyValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientPregnancyOperations.validatePatientPregnancyValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PatientPregnancy init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PatientPregnancy init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //PatientPregnancyImpl

@@ -35,67 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class DisasterTypeImpl extends ObservationImpl implements DisasterType {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DisasterTypeImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.DISASTER_TYPE;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateDisasterTypeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DisasterTypeOperations.validateDisasterTypeTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateDisasterTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DisasterTypeOperations.validateDisasterTypeCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateDisasterTypeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DisasterTypeOperations.validateDisasterTypeValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateDisasterTypeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DisasterTypeOperations.validateDisasterTypeMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public DisasterType init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -103,8 +48,62 @@ public class DisasterTypeImpl extends ObservationImpl implements DisasterType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DisasterType init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.DISASTER_TYPE;
 	}
-} // DisasterTypeImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDisasterTypeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DisasterTypeOperations.validateDisasterTypeTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDisasterTypeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DisasterTypeOperations.validateDisasterTypeMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDisasterTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DisasterTypeOperations.validateDisasterTypeCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDisasterTypeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DisasterTypeOperations.validateDisasterTypeValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DisasterType init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DisasterType init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //DisasterTypeImpl

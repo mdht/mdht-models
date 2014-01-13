@@ -35,78 +35,12 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.DiastolicBloodPressure
  */
 public class DiastolicBloodPressureImpl extends VitalSignObservationImpl implements DiastolicBloodPressure {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DiastolicBloodPressureImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.DIASTOLIC_BLOOD_PRESSURE;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateDiastolicBloodPressureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiastolicBloodPressureOperations.validateDiastolicBloodPressureCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateDiastolicBloodPressureValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiastolicBloodPressureOperations.validateDiastolicBloodPressureValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateDiastolicBloodPressureEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiastolicBloodPressureOperations.validateDiastolicBloodPressureEffectiveTime(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateDiastolicBloodPressureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiastolicBloodPressureOperations.validateDiastolicBloodPressureMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	public boolean validateVitalSignObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiastolicBloodPressureOperations.validateVitalSignObservationTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	public DiastolicBloodPressure init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -115,8 +49,71 @@ public class DiastolicBloodPressureImpl extends VitalSignObservationImpl impleme
 	 * @generated
 	 */
 	@Override
-	public DiastolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.DIASTOLIC_BLOOD_PRESSURE;
 	}
-} // DiastolicBloodPressureImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDiastolicBloodPressureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiastolicBloodPressureOperations.validateDiastolicBloodPressureMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDiastolicBloodPressureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiastolicBloodPressureOperations.validateDiastolicBloodPressureCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDiastolicBloodPressureEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiastolicBloodPressureOperations.validateDiastolicBloodPressureEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDiastolicBloodPressureValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiastolicBloodPressureOperations.validateDiastolicBloodPressureValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateVitalSignObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiastolicBloodPressureOperations.validateVitalSignObservationTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DiastolicBloodPressure init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DiastolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //DiastolicBloodPressureImpl

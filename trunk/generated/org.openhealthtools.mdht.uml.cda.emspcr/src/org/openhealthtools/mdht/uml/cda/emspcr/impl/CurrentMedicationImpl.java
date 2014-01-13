@@ -35,96 +35,12 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.CurrentMedicationOpera
  */
 public class CurrentMedicationImpl extends MedicationActivityImpl implements CurrentMedication {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CurrentMedicationImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.CURRENT_MEDICATION;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateCurrentMedicationConsumable(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CurrentMedicationOperations.validateCurrentMedicationConsumable(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateCurrentMedicationDoseQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CurrentMedicationOperations.validateCurrentMedicationDoseQuantity(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateCurrentMedicationRouteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CurrentMedicationOperations.validateCurrentMedicationRouteCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateCurrentMedicationRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CurrentMedicationOperations.validateCurrentMedicationRouteCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateCurrentMedicationNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CurrentMedicationOperations.validateCurrentMedicationNegationInd(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateCurrentMedicationNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CurrentMedicationOperations.validateCurrentMedicationNullFlavor(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	public boolean validateMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CurrentMedicationOperations.validateMedicationActivityTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	public CurrentMedication init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -133,8 +49,89 @@ public class CurrentMedicationImpl extends MedicationActivityImpl implements Cur
 	 * @generated
 	 */
 	@Override
-	public CurrentMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.CURRENT_MEDICATION;
 	}
-} // CurrentMedicationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCurrentMedicationConsumable(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CurrentMedicationOperations.validateCurrentMedicationConsumable(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCurrentMedicationNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CurrentMedicationOperations.validateCurrentMedicationNegationInd(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCurrentMedicationNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CurrentMedicationOperations.validateCurrentMedicationNullFlavor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCurrentMedicationDoseQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CurrentMedicationOperations.validateCurrentMedicationDoseQuantity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCurrentMedicationRouteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CurrentMedicationOperations.validateCurrentMedicationRouteCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCurrentMedicationRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CurrentMedicationOperations.validateCurrentMedicationRouteCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CurrentMedicationOperations.validateMedicationActivityTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CurrentMedication init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CurrentMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //CurrentMedicationImpl

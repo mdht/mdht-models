@@ -35,67 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PatientLocationInVehicleImpl extends ObservationImpl implements PatientLocationInVehicle {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PatientLocationInVehicleImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.PATIENT_LOCATION_IN_VEHICLE;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePatientLocationInVehicleTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientLocationInVehicleOperations.validatePatientLocationInVehicleTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePatientLocationInVehicleCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientLocationInVehicleOperations.validatePatientLocationInVehicleCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePatientLocationInVehicleValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientLocationInVehicleOperations.validatePatientLocationInVehicleValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validatePatientLocationInVehicleMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientLocationInVehicleOperations.validatePatientLocationInVehicleMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public PatientLocationInVehicle init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -103,8 +48,62 @@ public class PatientLocationInVehicleImpl extends ObservationImpl implements Pat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PatientLocationInVehicle init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.PATIENT_LOCATION_IN_VEHICLE;
 	}
-} // PatientLocationInVehicleImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientLocationInVehicleTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientLocationInVehicleOperations.validatePatientLocationInVehicleTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientLocationInVehicleMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientLocationInVehicleOperations.validatePatientLocationInVehicleMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientLocationInVehicleCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientLocationInVehicleOperations.validatePatientLocationInVehicleCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientLocationInVehicleValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientLocationInVehicleOperations.validatePatientLocationInVehicleValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PatientLocationInVehicle init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PatientLocationInVehicle init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //PatientLocationInVehicleImpl

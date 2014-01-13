@@ -35,130 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ComplaintImpl extends ObservationImpl implements Complaint {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ComplaintImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.COMPLAINT;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintDurationRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOperations.validateComplaintDurationRelationship(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintTypeRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOperations.validateComplaintTypeRelationship(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintOrganSystemRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOperations.validateComplaintOrganSystemRelationship(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOperations.validateComplaintTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOperations.validateComplaintCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOperations.validateComplaintCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOperations.validateComplaintValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOperations.validateComplaintTargetSiteCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintTargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOperations.validateComplaintTargetSiteCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOperations.validateComplaintEffectiveTime(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOperations.validateComplaintMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public Complaint init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -166,8 +48,125 @@ public class ComplaintImpl extends ObservationImpl implements Complaint {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Complaint init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.COMPLAINT;
 	}
-} // ComplaintImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintDurationRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOperations.validateComplaintDurationRelationship(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintTypeRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOperations.validateComplaintTypeRelationship(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintOrganSystemRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOperations.validateComplaintOrganSystemRelationship(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOperations.validateComplaintTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOperations.validateComplaintMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOperations.validateComplaintCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOperations.validateComplaintCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOperations.validateComplaintEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOperations.validateComplaintValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOperations.validateComplaintTargetSiteCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplaintTargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOperations.validateComplaintTargetSiteCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Complaint init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public Complaint init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //ComplaintImpl

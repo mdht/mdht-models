@@ -35,112 +35,12 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class StrokeScoreImpl extends ObservationImpl implements StrokeScore {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected StrokeScoreImpl() {
 		super();
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	@Override
-	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.STROKE_SCORE;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateStrokeScoreTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StrokeScoreOperations.validateStrokeScoreTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateStrokeScoreCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StrokeScoreOperations.validateStrokeScoreCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateStrokeScoreCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StrokeScoreOperations.validateStrokeScoreCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateStrokeScoreValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StrokeScoreOperations.validateStrokeScoreValue(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateStrokeScoreValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StrokeScoreOperations.validateStrokeScoreValueP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateStrokeScoreMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StrokeScoreOperations.validateStrokeScoreMethodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateStrokeScoreMethodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StrokeScoreOperations.validateStrokeScoreMethodCodeP(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateStrokeScoreEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StrokeScoreOperations.validateStrokeScoreEffectiveTime(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateStrokeScoreMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StrokeScoreOperations.validateStrokeScoreMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public StrokeScore init() {
-		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -148,8 +48,107 @@ public class StrokeScoreImpl extends ObservationImpl implements StrokeScore {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StrokeScore init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	@Override
+	protected EClass eStaticClass() {
+		return EmspcrPackage.Literals.STROKE_SCORE;
 	}
-} // StrokeScoreImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateStrokeScoreTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StrokeScoreOperations.validateStrokeScoreTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateStrokeScoreMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StrokeScoreOperations.validateStrokeScoreMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateStrokeScoreCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StrokeScoreOperations.validateStrokeScoreCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateStrokeScoreCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StrokeScoreOperations.validateStrokeScoreCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateStrokeScoreEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StrokeScoreOperations.validateStrokeScoreEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateStrokeScoreValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StrokeScoreOperations.validateStrokeScoreValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateStrokeScoreValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StrokeScoreOperations.validateStrokeScoreValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateStrokeScoreMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StrokeScoreOperations.validateStrokeScoreMethodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateStrokeScoreMethodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StrokeScoreOperations.validateStrokeScoreMethodCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StrokeScore init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public StrokeScore init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //StrokeScoreImpl
