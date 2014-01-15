@@ -24,12 +24,18 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ul><li><p><lines><i>The report is expected to capture information about the physical location of death, either as an address or as a description.</i></lines></p></li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../LocationOfDeath.dita">Location of Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.10</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DeathLocationType.dita">Death LocationType</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.8</tt>)</li></ol></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CertifyingDeath.dita">Certifying Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.7</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MannerOfDeath.dita">Manner of Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.11</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PronouncingDeath.dita">Pronouncing Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.15</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ul><li><p><lines><i>Note, the entry is required if the person is female and in the age range 5 to 75 years.   In other cases, e.g., male decedent, the nullFlavor "NA", should be provided.</i></lines></p></li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../PregnancyStatus.dita">Pregnancy Status</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.12</tt>)</li></ol></li>
@@ -54,12 +60,6 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CoronerCaseTransfer.dita">Coroner Case Transfer</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.4</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../DeathLocationType.dita">Death LocationType</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.8</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PronouncingDeath.dita">Pronouncing Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.15</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69409-1" </tt><i>U.S. standard certificate of death - 2003 revision</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
@@ -72,12 +72,18 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LocationOfDeath.dita">Location of Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.10</tt>)</li></ol><ul><li><p><lines><i>The report is expected to capture information about the physical location of death, either as an address or as a description.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DeathLocationType.dita">Death LocationType</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.8</tt>)</li></ol></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CertifyingDeath.dita">Certifying Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.7</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MannerOfDeath.dita">Manner of Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.11</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PronouncingDeath.dita">Pronouncing Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.15</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PregnancyStatus.dita">Pregnancy Status</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.12</tt>)</li></ol><ul><li><p><lines><i>Note, the entry is required if the person is female and in the age range 5 to 75 years.   In other cases, e.g., male decedent, the nullFlavor "NA", should be provided.</i></lines></p></li></ul></li>
@@ -102,12 +108,6 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CoronerCaseTransfer.dita">Coroner Case Transfer</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.4</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../DeathLocationType.dita">Death LocationType</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.8</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PronouncingDeath.dita">Pronouncing Death</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.1.15</tt>)</li></ol></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">

@@ -77,7 +77,7 @@
 </li>
 <li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">scopingEntity</strong></tt> <ol class="ol" type="i"><li class="li"> This scopingEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PLC" </tt></li>
 <li class="li"> This scopingEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@determinerCode</strong>="INSTANCE" </tt></li>
-<li class="li"> This scopingEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">desc</strong></tt><div class="p"><p class="lines"><em class="ph i">A description of the type of place where the injury occurred. Possible entries are "at home", "farm", "factory", "office building", "restaurant".</em></p>
+<li class="li"> This scopingEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">desc</strong></tt><div class="p"><p class="lines"><em class="ph i">A description of the type of place where the injury occurred. Some possible entries include "at home", "farm", "factory", "office building", "restaurant".</em></p>
 </div>
 </li>
 </ol>
@@ -95,8 +95,8 @@
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="a"><li class="li"> This component <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt></li>
-<li class="li"> This component <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="a"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt></li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li>
 <li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li>
 <li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="69444-8" </tt><em class="ph i">Did death result from injury at work</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
 <li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type BL<div class="p"><p class="lines"><em class="ph i">An indicator that tells whether or not the injury occurred while the person was at work.<br/>
@@ -123,11 +123,11 @@ Required if the decedent suffered an injury leading to death.</em></p>
 
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="a"><li class="li"> This component <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt></li>
-<li class="li"> This component <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="a"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt></li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li>
 <li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li>
 <li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="69451-3" </tt><em class="ph i">Transportation role of decedent</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/TransportationRelationshipsToDeath.html">TransportationRelationshipsToDeath</a> 2.16.840.1.114222.4.11.6005</tt><strong class="ph b"> STATIC</strong><div class="p"><p class="lines"><em class="ph i">A coded value that states, if the injury was related to transportation, the specific role played by the decedent, e.g. driver, passenger.<br/>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/DecedentTransportationRelationship.html">Decedent Transportation Relationship</a> 2.16.840.1.114222.4.11.6005</tt><strong class="ph b"> STATIC</strong><div class="p"><p class="lines"><em class="ph i">A coded value that states, if the injury was related to transportation, the specific role played by the decedent, e.g. driver, passenger.<br/>
 Required if the decedent suffered an injury leading to death.</em></p>
 </div>
 </li>
@@ -151,46 +151,7 @@ Required if the decedent suffered an injury leading to death.</em></p>
 
 
 
-<pre class="pre codeblock">&lt;organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.26.1.9"/&gt;
-  &lt;id root="MDHT" extension="865953997"/&gt;
-  &lt;code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury Cluster"/&gt;
-  &lt;statusCode code="completed"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;component typeCode="COMP"&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;code code="11374-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury incident description"/&gt;
-      &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2013"/&gt;
-        &lt;high value="2013"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;value xsi:type="BL"/&gt;
-      &lt;participant typeCode="LOC"/&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component typeCode="COMP"&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;code code="69444-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Did death result from injury at work"/&gt;
-      &lt;value xsi:type="BL"/&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component typeCode="COMP"&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;code code="69448-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury leading to death associated with transportation event"/&gt;
-      &lt;value xsi:type="BL"/&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component typeCode="COMP"&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;code code="69451-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Transportation role of decedent"/&gt;
-      &lt;value xsi:type="CD" code="1570993903"/&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-&lt;/organizer&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

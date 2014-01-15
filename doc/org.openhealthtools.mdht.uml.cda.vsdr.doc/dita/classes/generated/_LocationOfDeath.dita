@@ -19,7 +19,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Location of Death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="58332-8" </tt><i>Location of Death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt>
 <ul><li><p><lines><i>Information about the place where death occurred.  It is provided if no address can be.</i></lines></p></li></ul></li>
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Location of Death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="58332-8" </tt><i>Location of Death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt>
 <ul><li><p><lines><i>Information about the place where death occurred.  It is provided if no address can be.</i></lines></p></li></ul></li>

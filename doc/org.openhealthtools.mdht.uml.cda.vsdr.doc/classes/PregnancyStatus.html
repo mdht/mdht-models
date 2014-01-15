@@ -32,7 +32,7 @@
 
 
 <div class="section">
-<div class="p"><p class="lines"><em class="ph i">This template contains information on the pregnancy status of the deceased.</em></p>
+<div class="p"><p class="lines"><em class="ph i">This template contains information on the pregnancy status of the decedent.</em></p>
 </div>
 
 </div>
@@ -53,7 +53,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="69442-2" </tt><em class="ph i">Timing of recent pregancy related to death</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.114222.4.11.6003 Pregnancy Statuses</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">A code that provides information regarding whether or not the person was pregnant at the time of her death, or whether she was pregnant around the time of death.<br/>
 Required if the person is female and in the age range 5 to 75 years.</em></p>
 </div>
@@ -66,76 +66,6 @@ Required if the person is female and in the age range 5 to 75 years.</em></p>
 
 <p class="p"> </p>
 
-<div class="section"><div class="p">
-<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"> <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d20409e138">vsdr::Pregnancy Status</th>
-  </tr>
-  <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d20409e143">cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.12]/</th>
-  </tr>
-  <tr class="row"><th class="entry" align="left" valign="top" id="d20409e148">Name</th>
-<th class="entry" align="left" valign="top" id="d20409e150">XPath</th>
-<th class="entry" align="left" valign="top" id="d20409e152">Cardinality</th>
-<th class="entry" align="left" valign="top" id="d20409e154">Severity</th>
-<th class="entry" align="left" valign="top" id="d20409e156">Nullable</th>
-<th class="entry" align="left" valign="top" id="d20409e158">Data Type</th>
-<th class="entry" align="left" valign="top" id="d20409e160">Conformance</th>
-<th class="entry" align="left" valign="top" id="d20409e162">Value(s)</th>
-</tr>
-</thead>
-<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e148 ">classCode</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e150 ">@classCode</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e152 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e154 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e156 ">NO</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e158 ">ActClassObservation</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e160 "> </td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e162 "> ALRT</td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e148 ">moodCode</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e150 ">@moodCode</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e152 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e154 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e156 ">NO</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e158 ">x_ActMoodDocumentObservation</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e160 "> </td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e162 "> DEF</td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e148 ">code</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e150 ">code</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e152 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e154 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e156 ">NO</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e158 ">CD</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e160 "> </td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e162 ">LOINC 2.16.840.1.113883.6.1 69442-2</td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e148 ">value</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e150 ">value</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e152 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e154 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e156 ">NO</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e158 ">CD</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e160 "> </td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e162 ">Pregnancy Statuses 2.16.840.1.114222.4.11.6003 </td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e148 ">pregnancy Status</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e150 ">pregnancy Status</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e152 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e154 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e156 ">YES</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e158 ">Pregnancy Status</td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e160 "> </td>
-<td class="entry" align="left" valign="top" headers="d20409e138 d20409e143 d20409e162 "> </td>
-</tr>
- 
-</tbody>
-</table>
-</div>
-</div>
-</div>
 
 <p class="p"> </p>
 
@@ -145,16 +75,7 @@ Required if the person is female and in the age range 5 to 75 years.</em></p>
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.26.1.12"/&gt;
-  &lt;id root="MDHT" extension="582960412"/&gt;
-  &lt;code code="69442-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Timing of recent pregancy related to death"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;value xsi:type="CD" code="2028556633"/&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

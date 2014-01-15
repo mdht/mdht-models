@@ -71,10 +71,10 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt> <ol class="ol" type="a"><li class="li"> This performer <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="PRF" </tt></li>
-<li class="li"> This performer <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ASSIGNED" </tt></li>
-<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PSN" </tt></li>
-<li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@determinerCode</strong>="INSTANCE" </tt></li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt> <ol class="ol" type="a"><li class="li"> This performer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="PRF" </tt></li>
+<li class="li"> This performer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ASSIGNED" </tt></li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PSN" </tt></li>
+<li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@determinerCode</strong>="INSTANCE" </tt></li>
 <li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt><div class="p"><p class="lines"><em class="ph i">This field is valued with the name of the person who performed the autopsy.</em></p>
 </div>
 </li>
@@ -91,96 +91,6 @@
 
 <p class="p"> </p>
 
-<div class="section"><div class="p">
-<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"> <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d130e235">vsdr::Autopsy Performance</th>
-  </tr>
-  <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d130e240">cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.2]/</th>
-  </tr>
-  <tr class="row"><th class="entry" align="left" valign="top" id="d130e245">Name</th>
-<th class="entry" align="left" valign="top" id="d130e247">XPath</th>
-<th class="entry" align="left" valign="top" id="d130e249">Cardinality</th>
-<th class="entry" align="left" valign="top" id="d130e251">Severity</th>
-<th class="entry" align="left" valign="top" id="d130e253">Nullable</th>
-<th class="entry" align="left" valign="top" id="d130e255">Data Type</th>
-<th class="entry" align="left" valign="top" id="d130e257">Conformance</th>
-<th class="entry" align="left" valign="top" id="d130e259">Value(s)</th>
-</tr>
-</thead>
-<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e245 ">classCode</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e247 ">@classCode</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e249 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e251 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e253 ">NO</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e255 ">ActClassObservation</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e257 "> </td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e259 "> ALRT</td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e245 ">moodCode</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e247 ">@moodCode</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e249 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e251 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e253 ">NO</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e255 ">x_ActMoodDocumentObservation</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e257 "> </td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e259 "> DEF</td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e245 ">code</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e247 ">code</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e249 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e251 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e253 ">NO</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e255 ">CD</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e257 "> </td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e259 ">LOINC 2.16.840.1.113883.6.1 21986-5</td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e245 ">effectiveTime</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e247 ">effectiveTime</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e249 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e251 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e253 ">YES</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e255 ">IVL_TS</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e257 "> </td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e259 "> </td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e245 ">value</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e247 ">value</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e249 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e251 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e253 ">YES</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e255 ">BL</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e257 "> </td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e259 "> </td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e245 ">autopsy Performance</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e247 ">autopsy Performance</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e249 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e251 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e253 ">YES</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e255 ">Autopsy Performance</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e257 "> </td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e259 "> </td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e245 ">autopsyPerformer</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e247 ">autopsyPerformer</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e249 ">0..1</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e251 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e253 ">YES</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e255 ">AutopsyPerformer</td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e257 "> </td>
-<td class="entry" align="left" valign="top" headers="d130e235 d130e240 d130e259 "> </td>
-</tr>
- 
-</tbody>
-</table>
-</div>
-</div>
-</div>
 
 <p class="p"> </p>
 
@@ -190,22 +100,7 @@
 
 
 
-<pre class="pre codeblock">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.26.1.2"/&gt;
-  &lt;id root="MDHT" extension="893413231"/&gt;
-  &lt;code code="21986-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy Status"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;value xsi:type="BL"/&gt;
-  &lt;performer typeCode="PRF"&gt;
-    &lt;assignedEntity classCode="ASSIGNED"&gt;
-      &lt;id root="MDHT" extension="138020152"/&gt;
-      &lt;assignedPerson classCode="PSN" determinerCode="INSTANCE"/&gt;
-    &lt;/assignedEntity&gt;
-  &lt;/performer&gt;
-&lt;/observation&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

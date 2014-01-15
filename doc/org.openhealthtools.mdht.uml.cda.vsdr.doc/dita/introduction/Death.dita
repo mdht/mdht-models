@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "dtd/topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Death Report Sample</title>
+	<body>
+		<p>The sample message has been constructed to illustrate the use of this implementation guide to constrain
+		CDA in the representation of a death report.</p>
+		
+		<codeblock id="DeathExample">
+		<![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA_SDTC.xsd" classCode="DOCCLIN" moodCode="EVN">
+	<!--
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="DOCCLIN" moodCode="EVN" xsi:schemaLocation="urn:hl7-org:v3 /Documents/Specs/HL7/CDA_R2/infrastructure/cda/CDA.xsd">
+	 xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" -->
+	<realmCode/>
+	<typeId extension="POCD_MT000040" root="2.16.840.1.113883.1.3"/>
+	<templateId root="2.16.840.1.113883.10.20.26.1"/>
+	<id root="1.1" extension="1052464931"/>
+	<!-- Provide an OID that identifies the namespace for the identifier. -->
+	<code code="69409-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="U.S. standard certificate of death - 2003 revision"/>
+	<title/>
+	<!-- SHALL contain exactly one [1..1] code/@code="69409-1" U.S. standard certificate of death - 2003
+revision (CodeSystem: 2.16.840.1.113883.6.1 LOINC)
+• The .code value indicates that the document contans death information. -->
+	<effectiveTime/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.11.3883.5.25" codeSystemName="Confidentiality" displayName="Normal"/>
+	<languageCode code="en-us"/>
+	<recordTarget typeCode="RCT">
+		<patientRole classCode="PAT">
+			<id root="2.16.840.1.113883.4.1" extension="123457689"/>
+			<!-- Provide an OID that identifies the namespace for the identifier, in this case, SSN. -->
+			<addr use="WP">
+				<streetAddressLine>100 SOUTH 100 EAST</streetAddressLine>
+				<city>SALT LAKE CITY</city>
+				<state>UT</state>
+				<postalCode>84111</postalCode>
+			</addr>
+			<!-- The guide does not include address.  You will want to document its inclusion.  -->
+			<patient classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<family>Doe</family>
+					<given>Jane</given>
+					<given>A.</given>
+				</name>
+				<administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGenderCode" displayName="Female"/>
+				<birthTime value="19700304"/>
+			</patient>
+		</patientRole>
+	</recordTarget>
+	<author typeCode="AUT">
+		<time value="20121201100000"/>
+		<assignedAuthor classCode="ASSIGNED">
+			<id root="1.1" extension="126134972"/>
+			<!-- Provide an OID that identifies the namespace for the identifier. -->
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<family>Doe</family>
+					<given>John</given>
+					<given>M.</given>
+				</name>
+			</assignedPerson>
+		</assignedAuthor>
+	</author>
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<id root="1.1" extension="1288898110"/>
+				<!-- Provide an OID that identifies the namespace for the identifier. -->
+				<name>Acme Organization</name>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<component>
+		<structuredBody>
+			<component>
+				<!-- Death Information Template -->
+				<section>
+					<templateId root="2.16.840.1.113883.10.20.26.1.1"/>
+					<code code="69409-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="U.S. standard certificate of death - 2003 revision"/>
+					<title/>
+					<confidentialityCode code="Value"/>
+					<entry>
+						<!-- Time of Death Observation -->
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.13"/>
+							<code code="31211-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Date of Death"/>
+							<text>Optional information relevant to the date/time of death in cases where the point in time can in no way be established.</text>
+							<effectiveTime>
+								<low value="20121201100000"/>
+								<high value="20121201100000"/>
+							</effectiveTime>
+						</observation>
+					</entry>
+					<entry>
+						<!-- Location of Death Observation -->
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.10"/>
+							<code code="58332-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of Death"/>
+							<value use="HP" xsi:type="AD">
+								<streetAddressLine>104 MAIN STREET</streetAddressLine>
+								<city>SALT LAKE CITY</city>
+								<state>UT</state>
+								<postalCode>84111</postalCode>
+							</value>
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.7"/>
+							<code code="69437-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Death Certifier"/>
+							<effectiveTime>
+								<low value="20121201100000"/>
+								<high value="20121201100000"/>
+							</effectiveTime>
+							<performer typeCode="PRF">
+								<assignedEntity classCode="ASSIGNED">
+									<id root="1.1" extension="1234567"/>
+									<!-- Provide an OID that identifies the namespace for the identifier. -->
+									<code code="CP" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Certifying Physician (MD, DP)"/>
+									<addr use="WP">
+										<streetAddressLine>104 MAIN STREET</streetAddressLine>
+										<city>SALT LAKE CITY</city>
+										<state>UT</state>
+										<postalCode>84111</postalCode>
+									</addr>
+									<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+										<name>
+											<family>Doe</family>
+											<given>John</given>
+											<given>M.</given>
+										</name>
+									</assignedPerson>
+								</assignedEntity>
+							</performer>
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.11"/>
+							<code code="69449-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Manner of Death"/>
+							<value code="38605008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Natural Death (event)" xsi:type="CD"/>
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.7"/>
+							<code code="LOINC_TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Death Pronouncer"/>
+							<effectiveTime>
+								<low value="20121201100000"/>
+								<high value="20121201100000"/>
+							</effectiveTime>
+							<performer typeCode="PRF">
+								<assignedEntity classCode="ASSIGNED">
+									<id root="1.1.2" extension="1234567"/>
+									<!-- Provide an OID that identifies the namespace for the identifier. -->
+									<addr use="WP">
+										<streetAddressLine>104 SECONDARY STREET</streetAddressLine>
+										<city>SALT LAKE CITY</city>
+										<state>UT</state>
+										<postalCode>84111</postalCode>
+									</addr>
+									<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+										<name>
+											<family>Buck</family>
+											<given>Jane</given>
+											<given>F.</given>
+										</name>
+									</assignedPerson>
+								</assignedEntity>
+							</performer>
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.12"/>
+							<code code="69442-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pregnancy Status"/>
+							<value code="PS1" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Not pregnant within the past year" xsi:type="CD"/>
+						</observation>
+					</entry>
+					<entry>
+						<!-- Tobacco Use - This is optional -->
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.24.1.9"/>
+							<code code="69443-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Tobacco Use"/>
+							<value code="N" codeSystem="2.16.840.1.113883.12.136" codeSystemName="HL70136" displayName="No" xsi:type="CD"/>
+						</observation>
+					</entry>
+					<entry>
+						<!-- Injury - This is optional -->
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.24.1.10"/>
+							<code code="71481-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Did the death of this person involve injury of any kind"/>
+							<statusCode code="completed"/>
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="11374-6" displayName="Injury incident description" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<text mediaType="text/plain">A description of how the injury occurred.</text>
+									<effectiveTime value="20121129"/>
+									<value xsi:type="BL" value="true"/>
+								</observation>
+							</component>
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="69444-8" displayName="Did death result from injury at work" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="BL" value="false"/>
+								</observation>
+							</component>
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="69448-9" displayName="Injury leading to death associated with transportation event" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="BL" value="true"/>
+								</observation>
+							</component>
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="69451-3" displayName="Transportation role of decedent" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="303980003" displayName="Driver of moter vehicle" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry>
+						<!-- Cause of Death - This is optional -->
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.24.1.6"/>
+							<code code="69453-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause Of Death (US Standard Certificate of Death)"/>
+							<statusCode code="completed"/>
+							<!-- Note, at least one component containing death cause information is required -->
+							<component typeCode="COMP">
+								<sequenceNumber value="1"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="21984-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause of Death"/>
+									<value xsi:type="ED">PROBABLE ATCVD</value>
+									<!-- Descriptive text that indicates one or more diseases, injuries, or complications that were implicated as a cause of the person's death. -->
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="69440-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Disease onset to death interval"/>
+											<value xsi:type="ED">Three Days</value>
+											<!-- A measure of the time interval between the onset of the disease, injury or complication, and the person's death. -->
+										</observation>
+									</entryRelationship>
+								</observation>
+							</component>
+							<component typeCode="COMP">
+								<sequenceNumber value="2"/>
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="21984-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause of Death"/>
+									<value xsi:type="ED">HTN</value>
+									<!-- Descriptive text that indicates one or more diseases, injuries, or complications that were implicated as a cause of the person's death. -->
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="69440-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Disease onset to death interval"/>
+											<value xsi:type="ED">2 months</value>
+											<!-- A measure of the time interval between the onset of the disease, injury or complication, and the person's death. -->
+										</observation>
+									</entryRelationship>
+								</observation>
+							</component>
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="69441-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Death cause other significant conditions"/>
+									<value xsi:type="ED">Descriptive text that provides information on a significant condition or conditions that contributed to death, but did not result in the underlying cause that is elsewhere described. </value>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.24.1.11"/>
+							<code code="21986-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy Status"/>
+							<effectiveTime>
+								<low value="20121202100000"/>
+								<high value="20121203100000"/>
+							</effectiveTime>
+							<value xsi:type="BL" value="true"/>
+							<performer typeCode="PRF">
+								<assignedEntity classCode="ASSIGNED">
+									<id root="1.1" extension="1234567"/>
+									<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+										<name>
+											<family>Roe</family>
+											<given>Ralph</given>
+											<given>T.</given>
+										</name>
+									</assignedPerson>
+								</assignedEntity>
+							</performer>
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.24.1.13"/>
+							<code code="69436-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy results available"/>
+							<value xsi:type="BL" value="true"/>
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.24.1.14"/>
+							<code code="69438-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referral note Forensic medicine"/>
+							<!-- My instance has a LOINC code 69438-0.  -->
+							<value xsi:type="ED">The reason the case was forwarded to the coroner or medical examiner.</value>
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.24.1.12"/>
+							<id root="1.1" extension="1111111"/>
+							<code code="LOINC_TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Coroner Assignment"/>
+							<value xsi:type="BL" value="true"/>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="69452-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Coroner - medical examiner case number"/>
+									<value xsi:type="II" root="1.2.33" extension="1234-aa"/>
+									<!-- Provide an OID that identifies the namespace for the identifier. -->
+								</observation>
+							</entryRelationship>
+						</observation>
+					</entry>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>
+		
+]]>
+		</codeblock>
+	</body>
+</topic>

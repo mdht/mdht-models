@@ -11,7 +11,7 @@
 <section id="knownSubclasses">
 </section>
 <section id="description">
-<p><lines><i>An observation to indicate whether or not the case has been transferred to a coroner or medical examiner for investigative purposes.</i></lines></p>
+<p><lines><i>The template contains information related to transfer of the case to a coroner or medical examiner for investigative purposes.</i></lines></p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.1.4"</li></ol></li>
@@ -19,8 +19,8 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Coroner Assignment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
-</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Coroner Indicator</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul><li><p><lines><i>A code value that indicates that the case/death has been assigned to the coroner/medical examiner for investigative purposes.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL
 <ul><li><p><lines><i>An indicator that tellss whether the case was transferred to a coroner or medical examiner.</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><lines><i>The coroner case identifier may be provided, if the case has been transferred to the coroner or medical examiner.</i></lines></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69452-1" </tt><i>Coroner-medical examiner case number</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type II<p><lines><i>The identifier assigned to a case of death by the coroner or medical examiner.</i></lines></p></li></ol>
@@ -31,8 +31,8 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Coroner Assignment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
-</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Coroner Indicator</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul><li><p><lines><i>A code value that indicates that the case/death has been assigned to the coroner/medical examiner for investigative purposes.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL
 <ul><li><p><lines><i>An indicator that tellss whether the case was transferred to a coroner or medical examiner.</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><lines><i>The coroner case identifier may be provided, if the case has been transferred to the coroner or medical examiner.</i></lines></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69452-1" </tt><i>Coroner-medical examiner case number</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type II<p><lines><i>The identifier assigned to a case of death by the coroner or medical examiner.</i></lines></p></li></ol>
