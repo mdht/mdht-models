@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
-<bookmap id="CDA_IG_DeathReportDec2013">
+<bookmap id="CDA_IG_DeathReportJan2014">
 	<booktitle>
 		<booklibrary>Implementation Guide for CDA Release 2:</booklibrary>
-		<mainbooktitle>Reporting Death Information from the EHR to Vital Records, Release 1</mainbooktitle>
+		<mainbooktitle>Vital Records Death Report, Release 1</mainbooktitle>
 		<booktitlealt id="image"><image href="images/hl7logo.gif"/></booktitlealt>
 		<booktitlealt>HL7 Draft Standard for Trial Use</booktitlealt>
 		<booktitlealt>Implementation guide: US Realm</booktitlealt>
@@ -44,7 +44,7 @@
 	<frontmatter>
 		<preface>
 			<topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
-			<topicref href="preface/RevisionHistory.dita" navtitle="Authors" type="topic"/>
+			<topicref href="preface/Contributors.dita" navtitle="Contributors" type="topic"/>
 		</preface>
 		<booklists>
 			<toc/><figurelist/><tablelist/>
@@ -54,6 +54,8 @@
 	<chapter format="ditamap" href="introduction/introduction.ditamap"/>
 	
 	<chapter format="ditamap" href="content/content.ditamap"/>
+	
+		<chapter format="ditamap" href="introduction/example.ditamap"/>
 
 	<backmatter>
 		<topicref href="References.dita" navtitle="REFERENCES" type="topic"/>

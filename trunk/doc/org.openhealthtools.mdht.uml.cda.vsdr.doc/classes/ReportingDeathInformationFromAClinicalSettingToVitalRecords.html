@@ -68,7 +68,7 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">languageCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.11.11526 HumanLanguage</tt>)
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">languageCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.11.11526 HumanLanguage</tt>)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The language used for text within the document.</em></p>
 </div>
 </li>
@@ -116,9 +116,7 @@
 <li class="li"> This author <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">time</strong></tt><div class="p"><p class="lines"><em class="ph i">The date/time of authorship is required by CDA.   It may be set equal to the document creation date/time.</em></p>
 </div>
 </li>
-<li class="li"> This author <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedAuthor</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ASSIGNED" </tt><div class="p"><p class="lines"><em class="ph i">INLINE</em></p>
-</div>
-</li>
+<li class="li"> This author <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedAuthor</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ASSIGNED" </tt></li>
 <li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt></li>
 <li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PSN" </tt></li>
 <li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@determinerCode</strong>="INSTANCE" </tt></li>
@@ -133,14 +131,14 @@
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">recordTarget</strong></tt> <div class="p"><p class="lines"><em class="ph i">The recordTarget participation contains information that directly refers to the deceased.</em></p>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">recordTarget</strong></tt> <div class="p"><p class="lines"><em class="ph i">The recordTarget participation contains information that directly refers to the decedent.</em></p>
 </div>
 <ol class="ol" type="a"><li class="li"> This recordTarget <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="RCT" </tt></li>
 <li class="li"> This recordTarget <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patientRole</strong></tt> <ol class="ol" type="i"><li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PAT" </tt></li>
 <li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt><div class="p"><p class="lines"><em class="ph i">One or more identifiers may be provided.  Social Security Number of the decendent is required, and must be provided if it is available.  If SSN is not availaible, a null flavor must be provided.  Additional identifier types are allowed.  Note, when including US Social Security Number as the patient identifier, the OID value to be used for the II root is 2.16.840.1.113883.3.184.</em></p>
 </div>
 </li>
-<li class="li"> This patientRole <strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt><div class="p"><p class="lines"><em class="ph i">Street address, city, state and zip code are expected.</em></p>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt><div class="p"><p class="lines"><em class="ph i">Street address, city, state and zip code are expected.</em></p>
 </div>
 </li>
 <li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patient</strong></tt> <ol class="ol"><li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PSN" </tt></li>

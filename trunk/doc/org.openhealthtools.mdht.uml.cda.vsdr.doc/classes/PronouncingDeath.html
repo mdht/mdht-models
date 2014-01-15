@@ -66,7 +66,27 @@ Note, information on the pronouncing physician is only provided when the pronoun
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">pronouncer</strong></tt> with data type <a class="xref" href="generated/../Pronouncer.html">Pronouncer</a>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt> <ol class="ol" type="a"><li class="li"> This performer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="PRF" </tt></li>
+<li class="li"> This performer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ASSIGNED" </tt></li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt><div class="p"><p class="lines"><em class="ph i">The postal address used to locate the clinician or coroner at the time of pronouncing death.<br/>
+The element is required if the pronouncing and certifying physicians are different persons.</em></p>
+</div>
+</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt><div class="p"><p class="lines"><em class="ph i">One or more identifiers for the pronouncing clinician.  The state license number is required.  Provider NPI may be added as well.  The element is required if the pronouncing and certifying physicians are different persons.</em></p>
+</div>
+</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PSN" </tt></li>
+<li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@determinerCode</strong>="INSTANCE" </tt></li>
+<li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt><div class="p"><p class="lines"><em class="ph i">This field is valued with the name of the person who pronounced death.  The full name is required. <br/>
+The element is required if the pronouncing and certifying physicians are different persons.</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
 </li>
 
 </ol>

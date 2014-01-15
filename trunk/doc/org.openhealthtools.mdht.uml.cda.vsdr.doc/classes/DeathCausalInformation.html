@@ -78,9 +78,9 @@ Additional causes of death up to two may be recorded. These are entered in a def
 <li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD<div class="p"><p class="lines"><em class="ph i">In order to comply with NCHS edit specifications, the entry is descriptive text with a maximum length of 120 characters. . Death causes are ordered sequentially with the immediate cause of death given the sequence number "1", and the underlying cause of death being given the highest sequence number among the set of cited causes. Each cause of death is associated with a numeric observation Death Cause Interval which captures the approximate interval between the onset of the death cause (condition) and death. This linkage is implemented through the use of actRelationship.sequenceNumber.</em></p>
 </div>
 </li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">componentDeathCauseInterval</strong></tt> <ol class="ol"><li class="li"> This componentDeathCauseInterval <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt></li>
-<li class="li"> This componentDeathCauseInterval <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">sequenceNumber</strong></tt></li>
-<li class="li"> This componentDeathCauseInterval <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="a"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">componentDeathCauseInterval</strong></tt> <ol class="ol"><li class="li"> This componentDeathCauseInterval <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt></li>
+<li class="li"> This componentDeathCauseInterval <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">sequenceNumber</strong></tt></li>
+<li class="li"> This componentDeathCauseInterval <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="a"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li>
 <li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li>
 <li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="69440-6" </tt><em class="ph i">Disease onset to death interval</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)<div class="p"><p class="lines"><em class="ph i">An indication that the observation contains information regrading the interval between disease onset and time of death.</em></p>
 </div>
@@ -100,7 +100,7 @@ Each death cause interval value is associated with a cause of death observation 
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="a"><li class="li"> Such components <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt></li>
-<li class="li"> Such components <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li>
+<li class="li"> Such components <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li>
 <li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li>
 <li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="69441-4" </tt><em class="ph i">Other Significant Condition</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
 <li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type ED<div class="p"><p class="lines"><em class="ph i">Descriptive text that provides information on a significant condition or conditions that contributed to death, but did not result in the underlying cause that is elsewhere described.  In order to comply with NCHS edit specifications, the maximum length of the significant condition descriptions, across the set of encapsulated date values, is 240 characters.</em></p>
@@ -117,96 +117,6 @@ Each death cause interval value is associated with a cause of death observation 
 
 <p class="p"> </p>
 
-<div class="section"><div class="p">
-<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"> <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d9929e448">vsdr::Death Causal Information</th>
-  </tr>
-  <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d9929e453">cda::organizer[cda:templateId/@root = 2.16.840.1.113883.10.20.26.1.6]/</th>
-  </tr>
-  <tr class="row"><th class="entry" align="left" valign="top" id="d9929e458">Name</th>
-<th class="entry" align="left" valign="top" id="d9929e460">XPath</th>
-<th class="entry" align="left" valign="top" id="d9929e462">Cardinality</th>
-<th class="entry" align="left" valign="top" id="d9929e464">Severity</th>
-<th class="entry" align="left" valign="top" id="d9929e466">Nullable</th>
-<th class="entry" align="left" valign="top" id="d9929e468">Data Type</th>
-<th class="entry" align="left" valign="top" id="d9929e470">Conformance</th>
-<th class="entry" align="left" valign="top" id="d9929e472">Value(s)</th>
-</tr>
-</thead>
-<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e458 ">classCode</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e460 ">@classCode</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e462 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e464 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e466 ">NO</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e468 ">x_ActClassDocumentEntryOrganizer</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e470 "> </td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e472 "> BATTERY</td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e458 ">moodCode</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e460 ">@moodCode</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e462 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e464 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e466 ">NO</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e468 ">ActMood</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e470 "> </td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e472 "> APT</td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e458 ">code</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e460 ">code</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e462 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e464 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e466 ">NO</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e468 ">CD</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e470 "> </td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e472 ">LOINC 2.16.840.1.113883.6.1 69453-9</td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e458 ">statusCode</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e460 ">statusCode</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e462 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e464 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e466 ">YES</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e468 ">CS</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e470 "> </td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e472 ">ActStatus 2.16.840.1.113883.5.14 </td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e458 ">cause of Death</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e460 ">cause of Death</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e462 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e464 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e466 ">YES</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e468 ">Death Causal Information</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e470 "> </td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e472 "> </td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e458 ">componentCause</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e460 ">componentCause</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e462 ">1..4</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e464 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e466 ">YES</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e468 ">ComponentCause</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e470 "> </td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e472 "> </td>
-</tr>
- 
-<tr class="row"><td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e458 ">componentOtherSignificantCondition</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e460 ">componentOtherSignificantCondition</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e462 ">0..*</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e464 ">SHOULD</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e466 ">YES</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e468 ">ComponentOtherSignificantCondition</td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e470 "> </td>
-<td class="entry" align="left" valign="top" headers="d9929e448 d9929e453 d9929e472 "> </td>
-</tr>
- 
-</tbody>
-</table>
-</div>
-</div>
-</div>
 
 <p class="p"> </p>
 
@@ -216,29 +126,7 @@ Each death cause interval value is associated with a cause of death observation 
 
 
 
-<pre class="pre codeblock">&lt;organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.26.1.6"/&gt;
-  &lt;id root="MDHT" extension="2116192100"/&gt;
-  &lt;code code="69453-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause Of Death"/&gt;
-  &lt;statusCode code="completed"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2013"/&gt;
-    &lt;high value="2013"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;component typeCode="COMP"&gt;
-    &lt;sequenceNumber value="1"/&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;code code="21984-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause of Death"/&gt;
-      &lt;value xsi:type="CD" code="1400900308"/&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-  &lt;component typeCode="COMP"&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;code code="69441-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other Significant Condition"/&gt;
-      &lt;value xsi:type="ED"&gt;Text Value&lt;/value&gt;
-    &lt;/observation&gt;
-  &lt;/component&gt;
-&lt;/organizer&gt;</pre>
+<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 
