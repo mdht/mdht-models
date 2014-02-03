@@ -7438,7 +7438,7 @@ UCUM units will typically be &quot;mg/dl&quot;.</body>
       <ownedAttribute xmi:id="_W79_gIztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_gOCAwIztEeGnhceUMXltng">
           <body>NEMSIS Trace: EVitals.17&#xD;
-UCUM units will typically be &quot;[ppm]&quot;.</body>
+UCUM units will typically be &quot;%&quot;.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zGEnwMcXEeGjDJAyT0XW9Q" value="1"/>
@@ -10084,7 +10084,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_xi8qcIjuEeKx3P4dlW9OSw" severity="INFO" base_Property="_w0ELMIjuEeKx3P4dlW9OSw">
     <ruleId>CONF:11304</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_Z-RS4IztEeGnhceUMXltng" code="TBD" displayName="carbon monoxide" base_Property="_W79YcIztEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_Z-RS4IztEeGnhceUMXltng" code="20563-3" displayName="Carboxyhemoglobin/​Hemoglobin.total in Blood" base_Property="_W79YcIztEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:10296</ruleId>
   </CDA:CodeSystemConstraint>
@@ -10862,7 +10862,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <reference href="emspcr-vocab.uml#_t_IUYMcdEeGjDJAyT0XW9Q"/>
     <ruleId>CONF:11203</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_NPqBAMk4EeK2gbjCtOEivw" code="eScene.09" displayName="Location type" base_Property="_dvSRoMk3EeK2gbjCtOEivw">
+  <CDA:CodeSystemConstraint xmi:id="_NPqBAMk4EeK2gbjCtOEivw" code="74496-1" displayName="Injury location ICD code" base_Property="_dvSRoMk3EeK2gbjCtOEivw">
     <reference href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol-vocab.uml#_Q_28MMk4EeK2gbjCtOEivw"/>
     <ruleId>CONF:11202</ruleId>
   </CDA:CodeSystemConstraint>
