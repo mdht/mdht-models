@@ -88,6 +88,10 @@
             </ol></li>
         </ol>
       </fig>
+      <p>Note that most constraints in this guide do not contain the "such that" phrase, and this could in some cases  
+      give the impression that two statements, each of the form "SHALL contain exactly one . . ." are to be in conflict.
+      This is an artifact of the modeling tool: both statements are required, and they are not in conflict.
+      </p>
       <p>CCD templates are included within this implementation guide for ease
  of reference. CCD templates contained within this implementation guide
  are formatted WITHOUT typical <b>KEYWORD</b> and <b>XML</b> element styles. A WIKI
