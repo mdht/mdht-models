@@ -23,7 +23,7 @@
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:10139)
 <ul><li><p><lines><i>NEMSIS Trace: EArrest.14</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD"<tt><b>/@code</b>="410429000" </tt><i>cardiac arrest</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:10140)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD<tt><b>/@code</b>="410429000" </tt><i>cardiac arrest</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:10140)
 <ul><li><p><lines><i>NEMSIS Trace: EArrest.01</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10142) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10154)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10155)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../CardiacArrestCause.dita">Cardiac Arrest Cause</xref> (CONF:10941)<ol>
 <li>Contains exactly one [1..1] <xref href="../CardiacArrestCause.dita">Cardiac Arrest Cause</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.124</tt>)</li></ol></li></ol>
@@ -50,7 +50,7 @@
 </li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11130)
 </li>
@@ -60,7 +60,7 @@
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:10139)
 <ul><li><p><lines><i>NEMSIS Trace: EArrest.14</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD"<tt><b>/@code</b>="410429000" </tt><i>cardiac arrest</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:10140)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD<tt><b>/@code</b>="410429000" </tt><i>cardiac arrest</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:10140)
 <ul><li><p><lines><i>NEMSIS Trace: EArrest.01</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10142) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10154)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10155)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../CardiacArrestCause.dita">Cardiac Arrest Cause</xref> (CONF:10941)<ol>
 <li>Contains exactly one [1..1] <xref href="../CardiacArrestCause.dita">Cardiac Arrest Cause</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.124</tt>)</li></ol></li></ol>

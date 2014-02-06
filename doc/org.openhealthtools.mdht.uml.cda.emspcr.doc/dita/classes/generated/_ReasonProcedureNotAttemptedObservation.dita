@@ -19,19 +19,19 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67504-1" </tt><i>Reason resuscitation not attempted NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11263)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:11264), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ReasonProcedureNotPerformedSuperset.dita">Reason Procedure not Performed Superset</xref> 2.16.840.1.113883.17.3.11.100</tt><b> DYNAMIC</b> (CONF:11265)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:11264), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ReasonProcedureNotPerformedSuperset.dita">Reason Procedure not Performed Superset</xref> 2.16.840.1.113883.17.3.11.100</tt><b> DYNAMIC</b> (CONF:11265)
 <ul><li><p><lines><i>NEMSIS Trace: EProcedures.03 pertinent negatives, EArrest.03 negative values
 This is a superset of both value sets: the question is the same, even if the .90 values are appropriate only for CPR and the .95 for all other procedures.
 Note: CPR procedures have appropriate values "Not Attempted-Considered Futile," "Not Attempted-DNR Orders." "Not Attempted-Signs of Circulation"; other procedures have values "Contraindication Noted," "Denied By Order," "Refused," "Unable to Complete"</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11262)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67504-1" </tt><i>Reason resuscitation not attempted NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11263)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:11264), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ReasonProcedureNotPerformedSuperset.dita">Reason Procedure not Performed Superset</xref> 2.16.840.1.113883.17.3.11.100</tt><b> DYNAMIC</b> (CONF:11265)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:11264), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ReasonProcedureNotPerformedSuperset.dita">Reason Procedure not Performed Superset</xref> 2.16.840.1.113883.17.3.11.100</tt><b> DYNAMIC</b> (CONF:11265)
 <ul><li><p><lines><i>NEMSIS Trace: EProcedures.03 pertinent negatives, EArrest.03 negative values
 This is a superset of both value sets: the question is the same, even if the .90 values are appropriate only for CPR and the .95 for all other procedures.
 Note: CPR procedures have appropriate values "Not Attempted-Considered Futile," "Not Attempted-DNR Orders." "Not Attempted-Signs of Circulation"; other procedures have values "Contraindication Noted," "Denied By Order," "Refused," "Unable to Complete"</i></lines></p></li></ul></li>

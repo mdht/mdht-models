@@ -958,7 +958,7 @@ This example report does not demonstrate every statement specified in the guide,
             <observation classCode="OBS"  moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.88"/>
               <id root="2.16.840.1.113883.19.4" extension="2061038138"/>
-              <code code="eScene.09" codeSystemName="temporarary" displayName="Location type"/>
+              <code code="74496-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury location ICD code"/>
               <value xsi:type="CD" code="Y92.41" displayName="Street and highway" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD-10 CM"/>
             </observation>
           </entry>
