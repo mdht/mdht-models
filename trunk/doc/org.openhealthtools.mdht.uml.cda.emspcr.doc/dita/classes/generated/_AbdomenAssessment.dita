@@ -21,13 +21,13 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:11235)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.03</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AbdomenAssessmentFinding.dita">AbdomenAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.31</tt><b> DYNAMIC</b> (CONF:10388)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AbdomenAssessmentFinding.dita">AbdomenAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.31</tt><b> DYNAMIC</b> (CONF:10388)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.11</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AbdominalFindingLocation.dita">AbdominalFindingLocation</xref> 2.16.840.1.113883.17.3.11.32</tt><b> DYNAMIC</b> (CONF:10389)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.10</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11234)
 </li>
@@ -35,7 +35,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:11235)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.03</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AbdomenAssessmentFinding.dita">AbdomenAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.31</tt><b> DYNAMIC</b> (CONF:10388)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AbdomenAssessmentFinding.dita">AbdomenAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.31</tt><b> DYNAMIC</b> (CONF:10388)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.11</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AbdominalFindingLocation.dita">AbdominalFindingLocation</xref> 2.16.840.1.113883.17.3.11.32</tt><b> DYNAMIC</b> (CONF:10389)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.10</i></lines></p></li></ul></li>

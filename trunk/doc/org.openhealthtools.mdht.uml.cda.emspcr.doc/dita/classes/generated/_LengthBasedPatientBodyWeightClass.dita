@@ -21,12 +21,12 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:11222)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.03</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/LengthBasedWeightClass.dita">LengthBasedWeightClass</xref> 2.16.840.1.113883.17.3.11.24</tt><b> DYNAMIC</b> (CONF:10367)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/LengthBasedWeightClass.dita">LengthBasedWeightClass</xref> 2.16.840.1.113883.17.3.11.24</tt><b> DYNAMIC</b> (CONF:10367)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.02.
 Note: a license is required to implement the Broselow-Luten measure.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11221)
 </li>
@@ -34,7 +34,7 @@ Note: a license is required to implement the Broselow-Luten measure.</i></lines>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:11222)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.03</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/LengthBasedWeightClass.dita">LengthBasedWeightClass</xref> 2.16.840.1.113883.17.3.11.24</tt><b> DYNAMIC</b> (CONF:10367)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/LengthBasedWeightClass.dita">LengthBasedWeightClass</xref> 2.16.840.1.113883.17.3.11.24</tt><b> DYNAMIC</b> (CONF:10367)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.02.
 Note: a license is required to implement the Broselow-Luten measure.</i></lines></p></li></ul></li>
 </ol>

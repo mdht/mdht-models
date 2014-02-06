@@ -19,17 +19,17 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10665)<tt><b>/@code</b>="67547-0" </tt><i>Patients transported in EMS unit [#] NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10664)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="INT" (CONF:10666)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT (CONF:10666)
 <ul><li><p><lines><i>NEMSIS Trace: eDisposition.11</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11136)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10665)<tt><b>/@code</b>="67547-0" </tt><i>Patients transported in EMS unit [#] NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10664)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="INT" (CONF:10666)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT (CONF:10666)
 <ul><li><p><lines><i>NEMSIS Trace: eDisposition.11</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

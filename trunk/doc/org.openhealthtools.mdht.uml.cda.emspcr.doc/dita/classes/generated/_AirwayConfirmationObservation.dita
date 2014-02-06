@@ -21,13 +21,13 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10546)
 <ul><li><p><lines><i>NEMSIS Trace: EAirway.02. If the confirmation is negated, this SHALL be "NA."</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="BL" (CONF:10545)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10545)
 <ul><li><p><lines><i>NEMSIS Trace: if EAirway.02 is populated, this is TRUE</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>methodCode</b></tt> (CONF:10544), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AirwayDeviceConfirmationMethod.dita">AirwayDeviceConfirmationMethod</xref> 2.16.840.1.113883.17.3.11.60</tt><b> DYNAMIC</b> (CONF:10543)
 <ul><li><p><lines><i>NEMSIS Trace: EAirway.04</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11261)
 </li>
@@ -35,7 +35,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10546)
 <ul><li><p><lines><i>NEMSIS Trace: EAirway.02. If the confirmation is negated, this SHALL be "NA."</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="BL" (CONF:10545)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10545)
 <ul><li><p><lines><i>NEMSIS Trace: if EAirway.02 is populated, this is TRUE</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>methodCode</b></tt> (CONF:10544), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AirwayDeviceConfirmationMethod.dita">AirwayDeviceConfirmationMethod</xref> 2.16.840.1.113883.17.3.11.60</tt><b> DYNAMIC</b> (CONF:10543)
 <ul><li><p><lines><i>NEMSIS Trace: EAirway.04</i></lines></p></li></ul></li>

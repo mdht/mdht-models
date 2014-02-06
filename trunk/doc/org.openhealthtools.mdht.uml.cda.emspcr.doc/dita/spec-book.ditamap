@@ -14,7 +14,7 @@
     	<prodinfo>
 			<prodname>CDAR2L3_IG_EMSRUNRPT</prodname>
 			<vrmlist>
-				<vrm release="R1_N1" version="2013JUL" ></vrm>
+				<vrm release="R1" version="2014FEB" ></vrm>
 			</vrmlist>
 			<brand>HL7 IG for CDA R2</brand>
 			<series>Normative</series>

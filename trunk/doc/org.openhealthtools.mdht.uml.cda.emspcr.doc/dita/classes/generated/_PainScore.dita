@@ -21,12 +21,12 @@
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11300)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
-<li>Contains exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="INT"
+<li>Contains exactly one [1..1] <tt><b>value</b></tt> with data type INT
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.27
 An ordinal value between 0 and 10, inclusive. There are three scales, but the values are equivalent.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11299)
 </li>
@@ -34,7 +34,7 @@ An ordinal value between 0 and 10, inclusive. There are three scales, but the va
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11300)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
-<li>Contains exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="INT"
+<li>Contains exactly one [1..1] <tt><b>value</b></tt> with data type INT
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.27
 An ordinal value between 0 and 10, inclusive. There are three scales, but the values are equivalent.</i></lines></p></li></ul></li>
 </ol>

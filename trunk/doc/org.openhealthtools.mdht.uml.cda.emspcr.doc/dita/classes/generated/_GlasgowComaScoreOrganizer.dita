@@ -34,11 +34,11 @@
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="x_ActClassDocumentEntryOrganizer"
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type x_ActClassDocumentEntryOrganizer
 </li>
-<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with @xsi:type="ActMood"
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with data type ActMood
 </li>
-<li>Contains exactly one [1..1] <tt><b>statusCode</b></tt> with @xsi:type="CS"
+<li>Contains exactly one [1..1] <tt><b>statusCode</b></tt> with data type CS
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11313)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>

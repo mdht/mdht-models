@@ -19,17 +19,17 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10532)<tt><b>/@code</b>="67546-2" </tt><i>Response to procedure NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10533)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:10534), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PatientConditionChange.dita">PatientConditionChange</xref> 2.16.840.1.113883.17.3.11.59</tt><b> DYNAMIC</b> (CONF:10535)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10534), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PatientConditionChange.dita">PatientConditionChange</xref> 2.16.840.1.113883.17.3.11.59</tt><b> DYNAMIC</b> (CONF:10535)
 <ul><li><p><lines><i>NEMSIS Trace: EProcedures.08</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11260)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10532)<tt><b>/@code</b>="67546-2" </tt><i>Response to procedure NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10533)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:10534), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PatientConditionChange.dita">PatientConditionChange</xref> 2.16.840.1.113883.17.3.11.59</tt><b> DYNAMIC</b> (CONF:10535)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10534), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PatientConditionChange.dita">PatientConditionChange</xref> 2.16.840.1.113883.17.3.11.59</tt><b> DYNAMIC</b> (CONF:10535)
 <ul><li><p><lines><i>NEMSIS Trace: EProcedures.08</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
