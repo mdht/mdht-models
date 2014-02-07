@@ -1362,6 +1362,168 @@ public interface ConsolFactory extends EFactory {
 	ObserverContext createObserverContext();
 
 	/**
+	 * Returns a new object of class '<em>Act Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Act Reference</em>'.
+	 * @generated
+	 */
+	ActReference createActReference();
+
+	/**
+	 * Returns a new object of class '<em>Advance Directive Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directive Organizer</em>'.
+	 * @generated
+	 */
+	AdvanceDirectiveOrganizer createAdvanceDirectiveOrganizer();
+
+	/**
+	 * Returns a new object of class '<em>Characteristics Of Home Environment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Characteristics Of Home Environment</em>'.
+	 * @generated
+	 */
+	CharacteristicsOfHomeEnvironment createCharacteristicsOfHomeEnvironment();
+
+	/**
+	 * Returns a new object of class '<em>Cognitive Abilities Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cognitive Abilities Observation</em>'.
+	 * @generated
+	 */
+	CognitiveAbilitiesObservation createCognitiveAbilitiesObservation();
+
+	/**
+	 * Returns a new object of class '<em>Cultural And Religious Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cultural And Religious Observation</em>'.
+	 * @generated
+	 */
+	CulturalAndReligiousObservation createCulturalAndReligiousObservation();
+
+	/**
+	 * Returns a new object of class '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Drug Monitoring Act</em>'.
+	 * @generated
+	 */
+	DrugMonitoringAct createDrugMonitoringAct();
+
+	/**
+	 * Returns a new object of class '<em>Handoff Communication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Handoff Communication</em>'.
+	 * @generated
+	 */
+	HandoffCommunication createHandoffCommunication();
+
+	/**
+	 * Returns a new object of class '<em>Medical Equipment Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medical Equipment Organizer</em>'.
+	 * @generated
+	 */
+	MedicalEquipmentOrganizer createMedicalEquipmentOrganizer();
+
+	/**
+	 * Returns a new object of class '<em>Mental Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mental Status Observation</em>'.
+	 * @generated
+	 */
+	MentalStatusObservation createMentalStatusObservation();
+
+	/**
+	 * Returns a new object of class '<em>Nutrition Assessment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Nutrition Assessment</em>'.
+	 * @generated
+	 */
+	NutritionAssessment createNutritionAssessment();
+
+	/**
+	 * Returns a new object of class '<em>Nutrition Recommendations</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Nutrition Recommendations</em>'.
+	 * @generated
+	 */
+	NutritionRecommendations createNutritionRecommendations();
+
+	/**
+	 * Returns a new object of class '<em>Nutritional Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Nutritional Status Observation</em>'.
+	 * @generated
+	 */
+	NutritionalStatusObservation createNutritionalStatusObservation();
+
+	/**
+	 * Returns a new object of class '<em>Outcome Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Outcome Observation</em>'.
+	 * @generated
+	 */
+	OutcomeObservation createOutcomeObservation();
+
+	/**
+	 * Returns a new object of class '<em>Patient Priority Preference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Patient Priority Preference</em>'.
+	 * @generated
+	 */
+	PatientPriorityPreference createPatientPriorityPreference();
+
+	/**
+	 * Returns a new object of class '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Patient Referral Act</em>'.
+	 * @generated
+	 */
+	PatientReferralAct createPatientReferralAct();
+
+	/**
+	 * Returns a new object of class '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Planned Coverage</em>'.
+	 * @generated
+	 */
+	PlannedCoverage createPlannedCoverage();
+
+	/**
+	 * Returns a new object of class '<em>Goal Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Goal Observation</em>'.
+	 * @generated
+	 */
+	GoalObservation createGoalObservation();
+
+	/**
+	 * Returns a new object of class '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Health Concern Act</em>'.
+	 * @generated
+	 */
+	HealthConcernAct createHealthConcernAct();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

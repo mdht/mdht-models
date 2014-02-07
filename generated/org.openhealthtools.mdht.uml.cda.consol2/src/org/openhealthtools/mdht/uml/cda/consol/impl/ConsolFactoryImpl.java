@@ -392,6 +392,42 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createFetusSubjectContext();
 			case ConsolPackage.OBSERVER_CONTEXT:
 				return createObserverContext();
+			case ConsolPackage.ACT_REFERENCE:
+				return createActReference();
+			case ConsolPackage.ADVANCE_DIRECTIVE_ORGANIZER:
+				return createAdvanceDirectiveOrganizer();
+			case ConsolPackage.CHARACTERISTICS_OF_HOME_ENVIRONMENT:
+				return createCharacteristicsOfHomeEnvironment();
+			case ConsolPackage.COGNITIVE_ABILITIES_OBSERVATION:
+				return createCognitiveAbilitiesObservation();
+			case ConsolPackage.CULTURAL_AND_RELIGIOUS_OBSERVATION:
+				return createCulturalAndReligiousObservation();
+			case ConsolPackage.DRUG_MONITORING_ACT:
+				return createDrugMonitoringAct();
+			case ConsolPackage.HANDOFF_COMMUNICATION:
+				return createHandoffCommunication();
+			case ConsolPackage.MEDICAL_EQUIPMENT_ORGANIZER:
+				return createMedicalEquipmentOrganizer();
+			case ConsolPackage.MENTAL_STATUS_OBSERVATION:
+				return createMentalStatusObservation();
+			case ConsolPackage.NUTRITION_ASSESSMENT:
+				return createNutritionAssessment();
+			case ConsolPackage.NUTRITION_RECOMMENDATIONS:
+				return createNutritionRecommendations();
+			case ConsolPackage.NUTRITIONAL_STATUS_OBSERVATION:
+				return createNutritionalStatusObservation();
+			case ConsolPackage.OUTCOME_OBSERVATION:
+				return createOutcomeObservation();
+			case ConsolPackage.PATIENT_PRIORITY_PREFERENCE:
+				return createPatientPriorityPreference();
+			case ConsolPackage.PATIENT_REFERRAL_ACT:
+				return createPatientReferralAct();
+			case ConsolPackage.PLANNED_COVERAGE:
+				return createPlannedCoverage();
+			case ConsolPackage.GOAL_OBSERVATION:
+				return createGoalObservation();
+			case ConsolPackage.HEALTH_CONCERN_ACT:
+				return createHealthConcernAct();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1875,6 +1911,186 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ObserverContext createObserverContext() {
 		ObserverContextImpl observerContext = new ObserverContextImpl();
 		return observerContext;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ActReference createActReference() {
+		ActReferenceImpl actReference = new ActReferenceImpl();
+		return actReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectiveOrganizer createAdvanceDirectiveOrganizer() {
+		AdvanceDirectiveOrganizerImpl advanceDirectiveOrganizer = new AdvanceDirectiveOrganizerImpl();
+		return advanceDirectiveOrganizer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CharacteristicsOfHomeEnvironment createCharacteristicsOfHomeEnvironment() {
+		CharacteristicsOfHomeEnvironmentImpl characteristicsOfHomeEnvironment = new CharacteristicsOfHomeEnvironmentImpl();
+		return characteristicsOfHomeEnvironment;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CognitiveAbilitiesObservation createCognitiveAbilitiesObservation() {
+		CognitiveAbilitiesObservationImpl cognitiveAbilitiesObservation = new CognitiveAbilitiesObservationImpl();
+		return cognitiveAbilitiesObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CulturalAndReligiousObservation createCulturalAndReligiousObservation() {
+		CulturalAndReligiousObservationImpl culturalAndReligiousObservation = new CulturalAndReligiousObservationImpl();
+		return culturalAndReligiousObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DrugMonitoringAct createDrugMonitoringAct() {
+		DrugMonitoringActImpl drugMonitoringAct = new DrugMonitoringActImpl();
+		return drugMonitoringAct;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HandoffCommunication createHandoffCommunication() {
+		HandoffCommunicationImpl handoffCommunication = new HandoffCommunicationImpl();
+		return handoffCommunication;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicalEquipmentOrganizer createMedicalEquipmentOrganizer() {
+		MedicalEquipmentOrganizerImpl medicalEquipmentOrganizer = new MedicalEquipmentOrganizerImpl();
+		return medicalEquipmentOrganizer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MentalStatusObservation createMentalStatusObservation() {
+		MentalStatusObservationImpl mentalStatusObservation = new MentalStatusObservationImpl();
+		return mentalStatusObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NutritionAssessment createNutritionAssessment() {
+		NutritionAssessmentImpl nutritionAssessment = new NutritionAssessmentImpl();
+		return nutritionAssessment;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NutritionRecommendations createNutritionRecommendations() {
+		NutritionRecommendationsImpl nutritionRecommendations = new NutritionRecommendationsImpl();
+		return nutritionRecommendations;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NutritionalStatusObservation createNutritionalStatusObservation() {
+		NutritionalStatusObservationImpl nutritionalStatusObservation = new NutritionalStatusObservationImpl();
+		return nutritionalStatusObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OutcomeObservation createOutcomeObservation() {
+		OutcomeObservationImpl outcomeObservation = new OutcomeObservationImpl();
+		return outcomeObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PatientPriorityPreference createPatientPriorityPreference() {
+		PatientPriorityPreferenceImpl patientPriorityPreference = new PatientPriorityPreferenceImpl();
+		return patientPriorityPreference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PatientReferralAct createPatientReferralAct() {
+		PatientReferralActImpl patientReferralAct = new PatientReferralActImpl();
+		return patientReferralAct;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlannedCoverage createPlannedCoverage() {
+		PlannedCoverageImpl plannedCoverage = new PlannedCoverageImpl();
+		return plannedCoverage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GoalObservation createGoalObservation() {
+		GoalObservationImpl goalObservation = new GoalObservationImpl();
+		return goalObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HealthConcernAct createHealthConcernAct() {
+		HealthConcernActImpl healthConcernAct = new HealthConcernActImpl();
+		return healthConcernAct;
 	}
 
 	/**

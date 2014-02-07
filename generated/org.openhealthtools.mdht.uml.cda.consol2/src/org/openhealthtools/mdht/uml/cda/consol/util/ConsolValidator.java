@@ -17899,12 +17899,1724 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int OBSERVER_CONTEXT__OBSERVER_CONTEXT_ASSIGNED_AUTHOR = 2233;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Act Reference Template Id' of 'Act Reference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ACT_REFERENCE__ACT_REFERENCE_TEMPLATE_ID = 2234;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Act Reference Class Code' of 'Act Reference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ACT_REFERENCE__ACT_REFERENCE_CLASS_CODE = 2235;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Act Reference Mood Code' of 'Act Reference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ACT_REFERENCE__ACT_REFERENCE_MOOD_CODE = 2236;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Act Reference Id' of 'Act Reference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ACT_REFERENCE__ACT_REFERENCE_ID = 2237;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Act Reference Code' of 'Act Reference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ACT_REFERENCE__ACT_REFERENCE_CODE = 2238;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Act Reference Status Code' of 'Act Reference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ACT_REFERENCE__ACT_REFERENCE_STATUS_CODE = 2239;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Act Reference Status Code P' of 'Act Reference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ACT_REFERENCE__ACT_REFERENCE_STATUS_CODE_P = 2240;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Act Reference CD Null Flavor' of 'Act Reference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ACT_REFERENCE__ACT_REFERENCE_CD_NULL_FLAVOR = 2241;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Act Reference CD Null Flavor P' of 'Act Reference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ACT_REFERENCE__ACT_REFERENCE_CD_NULL_FLAVOR_P = 2242;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Organizer Template Id' of 'Advance Directive Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID = 2243;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Organizer Class Code' of 'Advance Directive Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE = 2244;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Organizer Mood Code' of 'Advance Directive Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE = 2245;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Organizer Id' of 'Advance Directive Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_ID = 2246;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Organizer Code' of 'Advance Directive Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_CODE = 2247;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Organizer Code P' of 'Advance Directive Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_CODE_P = 2248;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Organizer Status Code P' of 'Advance Directive Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P = 2249;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Organizer Status Code' of 'Advance Directive Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE = 2250;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Organizer Advance Directive Observation' of 'Advance Directive Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION = 2251;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristics Of Home Environment Template Id' of 'Characteristics Of Home Environment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_TEMPLATE_ID = 2252;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristics Of Home Environment Class Code' of 'Characteristics Of Home Environment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_CLASS_CODE = 2253;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristics Of Home Environment Mood Code' of 'Characteristics Of Home Environment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_MOOD_CODE = 2254;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristics Of Home Environment Id' of 'Characteristics Of Home Environment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID = 2255;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristics Of Home Environment Code P' of 'Characteristics Of Home Environment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P = 2256;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristics Of Home Environment Code' of 'Characteristics Of Home Environment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE = 2257;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristics Of Home Environment Status Code' of 'Characteristics Of Home Environment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE = 2258;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristics Of Home Environment Status Code P' of 'Characteristics Of Home Environment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE_P = 2259;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristics Of Home Environment Value' of 'Characteristics Of Home Environment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE = 2260;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Abilities Observation Template Id' of 'Cognitive Abilities Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_TEMPLATE_ID = 2261;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Abilities Observation Class Code' of 'Cognitive Abilities Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_CLASS_CODE = 2262;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Abilities Observation Mood Code' of 'Cognitive Abilities Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_MOOD_CODE = 2263;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Abilities Observation Id' of 'Cognitive Abilities Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_ID = 2264;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Abilities Observation Code P' of 'Cognitive Abilities Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_CODE_P = 2265;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Abilities Observation Code' of 'Cognitive Abilities Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_CODE = 2266;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Abilities Observation Text' of 'Cognitive Abilities Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_TEXT = 2267;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Abilities Observation Status Code' of 'Cognitive Abilities Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_STATUS_CODE = 2268;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Abilities Observation Status Code P' of 'Cognitive Abilities Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_STATUS_CODE_P = 2269;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Abilities Observation Effective Time' of 'Cognitive Abilities Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_EFFECTIVE_TIME = 2270;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Abilities Observation Value' of 'Cognitive Abilities Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_VALUE = 2271;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Abilities Observation Value P' of 'Cognitive Abilities Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_VALUE_P = 2272;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cognitive Abilities Observation Assessment Scale Observation' of 'Cognitive Abilities Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION = 2273;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cultural And Religious Observation Template Id' of 'Cultural And Religious Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_TEMPLATE_ID = 2274;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cultural And Religious Observation Class Code' of 'Cultural And Religious Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_CLASS_CODE = 2275;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cultural And Religious Observation Mood Code' of 'Cultural And Religious Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_MOOD_CODE = 2276;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cultural And Religious Observation Id' of 'Cultural And Religious Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_ID = 2277;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cultural And Religious Observation Code P' of 'Cultural And Religious Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE_P = 2278;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cultural And Religious Observation Code' of 'Cultural And Religious Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE = 2279;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cultural And Religious Observation Status Code' of 'Cultural And Religious Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE = 2280;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cultural And Religious Observation Status Code P' of 'Cultural And Religious Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE_P = 2281;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Cultural And Religious Observation Value' of 'Cultural And Religious Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE = 2282;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Template Id' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_TEMPLATE_ID = 2283;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Class Code' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_CLASS_CODE = 2284;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Mood Code' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_MOOD_CODE = 2285;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Id' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_ID = 2286;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Code P' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_CODE_P = 2287;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Code' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_CODE = 2288;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Status Code' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_STATUS_CODE = 2289;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Effective Time' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_EFFECTIVE_TIME = 2290;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Participant' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT = 2291;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Participant Participant Role Playing Entity Class Code' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CLASS_CODE = 2292;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Participant Participant Role Playing Entity Name' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME = 2293;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Participant Participant Role Class Code' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE = 2294;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Participant Participant Role Id' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_ID = 2295;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Participant Participant Role Playing Entity' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY = 2296;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Participant Type Code' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_TYPE_CODE = 2297;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Drug Monitoring Act Participant Participant Role' of 'Drug Monitoring Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE = 2298;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Handoff Communication Template Id' of 'Handoff Communication'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_TEMPLATE_ID = 2299;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Handoff Communication Class Code' of 'Handoff Communication'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_CLASS_CODE = 2300;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Handoff Communication Mood Code' of 'Handoff Communication'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_MOOD_CODE = 2301;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Handoff Communication Code P' of 'Handoff Communication'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_CODE_P = 2302;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Handoff Communication Code' of 'Handoff Communication'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_CODE = 2303;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Handoff Communication Status Code' of 'Handoff Communication'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_STATUS_CODE = 2304;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Handoff Communication Status Code P' of 'Handoff Communication'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_STATUS_CODE_P = 2305;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Handoff Communication Effective Time' of 'Handoff Communication'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_EFFECTIVE_TIME = 2306;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Handoff Communication Participant' of 'Handoff Communication'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_PARTICIPANT = 2307;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medical Equipment Organizer Template Id' of 'Medical Equipment Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_TEMPLATE_ID = 2308;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medical Equipment Organizer Class Code' of 'Medical Equipment Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_CLASS_CODE = 2309;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medical Equipment Organizer Mood Code' of 'Medical Equipment Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_MOOD_CODE = 2310;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medical Equipment Organizer Id' of 'Medical Equipment Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_ID = 2311;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medical Equipment Organizer Code' of 'Medical Equipment Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_CODE = 2312;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medical Equipment Organizer Status Code P' of 'Medical Equipment Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE_P = 2313;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medical Equipment Organizer Status Code' of 'Medical Equipment Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE = 2314;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medical Equipment Organizer Effective Time' of 'Medical Equipment Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_EFFECTIVE_TIME = 2315;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medical Equipment Organizer Non Medicinal Supply Activity' of 'Medical Equipment Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY = 2316;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medical Equipment Organizer Procedure Activity Procedure' of 'Medical Equipment Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE = 2317;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Observation Template Id' of 'Mental Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_TEMPLATE_ID = 2318;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Observation Class Code' of 'Mental Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_CLASS_CODE = 2319;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Observation Mood Code' of 'Mental Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_MOOD_CODE = 2320;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Observation Id' of 'Mental Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_ID = 2321;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Observation Code P' of 'Mental Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_CODE_P = 2322;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Observation Code' of 'Mental Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_CODE = 2323;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Observation Status Code' of 'Mental Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_STATUS_CODE = 2324;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Observation Status Code P' of 'Mental Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_STATUS_CODE_P = 2325;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Observation Effective Time' of 'Mental Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME = 2326;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Observation Value' of 'Mental Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_VALUE = 2327;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Observation Value P' of 'Mental Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_VALUE_P = 2328;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Observation Assessment Scale Observation' of 'Mental Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION = 2329;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Assessment Template Id' of 'Nutrition Assessment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_TEMPLATE_ID = 2330;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Assessment Class Code' of 'Nutrition Assessment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_CLASS_CODE = 2331;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Assessment Mood Code' of 'Nutrition Assessment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_MOOD_CODE = 2332;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Assessment Id' of 'Nutrition Assessment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_ID = 2333;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Assessment Code P' of 'Nutrition Assessment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_CODE_P = 2334;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Assessment Code' of 'Nutrition Assessment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_CODE = 2335;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Assessment Status Code' of 'Nutrition Assessment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_STATUS_CODE = 2336;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Assessment Status Code P' of 'Nutrition Assessment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_STATUS_CODE_P = 2337;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Assessment Effective Time' of 'Nutrition Assessment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_EFFECTIVE_TIME = 2338;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Assessment Value' of 'Nutrition Assessment'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_VALUE = 2339;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Recommendations Template Id' of 'Nutrition Recommendations'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_TEMPLATE_ID = 2340;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Recommendations Class Code' of 'Nutrition Recommendations'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_CLASS_CODE = 2341;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Recommendations Mood Code P' of 'Nutrition Recommendations'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_MOOD_CODE_P = 2342;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Recommendations Mood Code' of 'Nutrition Recommendations'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_MOOD_CODE = 2343;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Recommendations Code P' of 'Nutrition Recommendations'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_CODE_P = 2344;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Recommendations Code' of 'Nutrition Recommendations'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_CODE = 2345;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Recommendations Status Code' of 'Nutrition Recommendations'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_STATUS_CODE = 2346;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Recommendations Status Code P' of 'Nutrition Recommendations'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_STATUS_CODE_P = 2347;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Recommendations Effective Time' of 'Nutrition Recommendations'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_RECOMMENDATIONS__NUTRITION_RECOMMENDATIONS_EFFECTIVE_TIME = 2348;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutritional Status Observation Template Id' of 'Nutritional Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_TEMPLATE_ID = 2349;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutritional Status Observation Class Code' of 'Nutritional Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_CLASS_CODE = 2350;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutritional Status Observation Mood Code' of 'Nutritional Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_MOOD_CODE = 2351;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutritional Status Observation Id' of 'Nutritional Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_ID = 2352;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutritional Status Observation Code P' of 'Nutritional Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_CODE_P = 2353;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutritional Status Observation Code' of 'Nutritional Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_CODE = 2354;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutritional Status Observation Status Code' of 'Nutritional Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_STATUS_CODE = 2355;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutritional Status Observation Status Code P' of 'Nutritional Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_STATUS_CODE_P = 2356;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutritional Status Observation Effective Time' of 'Nutritional Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_EFFECTIVE_TIME = 2357;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutritional Status Observation Value' of 'Nutritional Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_VALUE = 2358;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutritional Status Observation Value P' of 'Nutritional Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_VALUE_P = 2359;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutritional Status Observation Nutrition Assessment' of 'Nutritional Status Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_NUTRITION_ASSESSMENT = 2360;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Outcome Observation Template Id' of 'Outcome Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_TEMPLATE_ID = 2361;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Outcome Observation Class Code' of 'Outcome Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CLASS_CODE = 2362;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Outcome Observation Mood Code' of 'Outcome Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_MOOD_CODE = 2363;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Outcome Observation Id' of 'Outcome Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ID = 2364;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Outcome Observation Act Reference' of 'Outcome Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ACT_REFERENCE = 2365;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Outcome Observation Act Reference2' of 'Outcome Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ACT_REFERENCE2 = 2366;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Priority Preference Template Id' of 'Patient Priority Preference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_TEMPLATE_ID = 2367;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Priority Preference Class Code' of 'Patient Priority Preference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_CLASS_CODE = 2368;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Priority Preference Mood Code' of 'Patient Priority Preference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_MOOD_CODE = 2369;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Priority Preference Id' of 'Patient Priority Preference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_ID = 2370;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Priority Preference Code P' of 'Patient Priority Preference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_CODE_P = 2371;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Priority Preference Code' of 'Patient Priority Preference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_CODE = 2372;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Priority Preference Priority Code P' of 'Patient Priority Preference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_PRIORITY_CODE_P = 2373;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Priority Preference Priority Code' of 'Patient Priority Preference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_PRIORITY_CODE = 2374;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Priority Preference Value' of 'Patient Priority Preference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_VALUE = 2375;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Priority Preference Value P' of 'Patient Priority Preference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_VALUE_P = 2376;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Priority Preference CD Code System' of 'Patient Priority Preference'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_PRIORITY_PREFERENCE__PATIENT_PRIORITY_PREFERENCE_CD_CODE_SYSTEM = 2377;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Template Id' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_TEMPLATE_ID = 2378;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Class Code' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_CLASS_CODE = 2379;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Mood Code' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_MOOD_CODE = 2380;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Id' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ID = 2381;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Code P' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_CODE_P = 2382;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Code' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_CODE = 2383;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Status Code' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_STATUS_CODE = 2384;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Status Code P' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_STATUS_CODE_P = 2385;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Effective Time' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_EFFECTIVE_TIME = 2386;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Act Reference' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ACT_REFERENCE = 2387;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Entry Relationship' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP = 2388;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Entry Relationship Observation Class Code' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE = 2389;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Entry Relationship Observation Mood Code' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE = 2390;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Entry Relationship Observation Code P' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE_P = 2391;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Entry Relationship Observation Code' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE = 2392;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Entry Relationship Observation Status Code' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE = 2393;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Entry Relationship Observation Status Code P' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE_P = 2394;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Entry Relationship Observation Value' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE = 2395;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Entry Relationship Observation Value P' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P = 2396;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Entry Relationship Type Code P' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_TYPE_CODE_P = 2397;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Entry Relationship Type Code' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_TYPE_CODE = 2398;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Referral Act Entry Relationship Observation' of 'Patient Referral Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION = 2399;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Template Id' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_TEMPLATE_ID = 2400;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Class Code' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_CLASS_CODE = 2401;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Mood Code' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_MOOD_CODE = 2402;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Id' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_ID = 2403;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Code P' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_CODE_P = 2404;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Code' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_CODE = 2405;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Status Code' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_STATUS_CODE = 2406;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Status Code P' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_STATUS_CODE_P = 2407;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Entry Relationship' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP = 2408;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Entry Relationship Act Class Code' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE = 2409;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Entry Relationship Act Mood Code' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE = 2410;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Entry Relationship Act Id' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID = 2411;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Entry Relationship Act Code' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE = 2412;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Entry Relationship Act Status Code' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE = 2413;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Entry Relationship Act Status Code P' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P = 2414;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Entry Relationship Type Code' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE = 2415;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Entry Relationship Type Code P' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE_P = 2416;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Coverage Entry Relationship Act' of 'Planned Coverage'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT = 2417;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Goal Observation Template Id' of 'Goal Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int GOAL_OBSERVATION__GOAL_OBSERVATION_TEMPLATE_ID = 2418;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Goal Observation Class Code' of 'Goal Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int GOAL_OBSERVATION__GOAL_OBSERVATION_CLASS_CODE = 2419;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Goal Observation Mood Code' of 'Goal Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int GOAL_OBSERVATION__GOAL_OBSERVATION_MOOD_CODE = 2420;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Goal Observation Code' of 'Goal Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int GOAL_OBSERVATION__GOAL_OBSERVATION_CODE = 2421;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Goal Observation Patient Priority Preference' of 'Goal Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int GOAL_OBSERVATION__GOAL_OBSERVATION_PATIENT_PRIORITY_PREFERENCE = 2422;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Goal Observation' of 'Goal Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int GOAL_OBSERVATION__GOAL_OBSERVATION = 2423;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Goal Observation Act Reference' of 'Goal Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int GOAL_OBSERVATION__GOAL_OBSERVATION_ACT_REFERENCE = 2424;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Template Id' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_TEMPLATE_ID = 2425;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Class Code' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CLASS_CODE = 2426;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Mood Code' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_MOOD_CODE = 2427;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Id' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ID = 2428;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Code P' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CODE_P = 2429;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Code' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CODE = 2430;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Status Code' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_STATUS_CODE = 2431;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Effective Time' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_EFFECTIVE_TIME = 2432;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Act Reference' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ACT_REFERENCE = 2433;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Act Reference2' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ACT_REFERENCE2 = 2434;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Assessment Scale Observation' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION = 2435;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Cognitive Abilities Observation' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_COGNITIVE_ABILITIES_OBSERVATION = 2436;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Family History Organizer' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER = 2437;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Mental Status Observation' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_MENTAL_STATUS_OBSERVATION = 2438;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Nutrition Assessment' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_NUTRITION_ASSESSMENT = 2439;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Nutrition Assessment2' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_NUTRITION_ASSESSMENT2 = 2440;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Pregnancy Observation' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PREGNANCY_OBSERVATION = 2441;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Caregiver Characteristics' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CAREGIVER_CHARACTERISTICS = 2442;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Cultural And Religious Observation' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION = 2443;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Characteristics Of Home Environment' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT = 2444;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Nutritional Status Observation' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION = 2445;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Patient Priority Preference' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PATIENT_PRIORITY_PREFERENCE = 2446;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concern Act Act Reference3' of 'Health Concern Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ACT_REFERENCE3 = 2447;
+
+	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 2233;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 2447;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -18326,6 +20038,45 @@ public class ConsolValidator extends EObjectValidator {
 				return validateFetusSubjectContext((FetusSubjectContext) value, diagnostics, context);
 			case ConsolPackage.OBSERVER_CONTEXT:
 				return validateObserverContext((ObserverContext) value, diagnostics, context);
+			case ConsolPackage.ACT_REFERENCE:
+				return validateActReference((ActReference) value, diagnostics, context);
+			case ConsolPackage.ADVANCE_DIRECTIVE_ORGANIZER:
+				return validateAdvanceDirectiveOrganizer((AdvanceDirectiveOrganizer) value, diagnostics, context);
+			case ConsolPackage.CHARACTERISTICS_OF_HOME_ENVIRONMENT:
+				return validateCharacteristicsOfHomeEnvironment(
+					(CharacteristicsOfHomeEnvironment) value, diagnostics, context);
+			case ConsolPackage.COGNITIVE_ABILITIES_OBSERVATION:
+				return validateCognitiveAbilitiesObservation(
+					(CognitiveAbilitiesObservation) value, diagnostics, context);
+			case ConsolPackage.CULTURAL_AND_RELIGIOUS_OBSERVATION:
+				return validateCulturalAndReligiousObservation(
+					(CulturalAndReligiousObservation) value, diagnostics, context);
+			case ConsolPackage.DRUG_MONITORING_ACT:
+				return validateDrugMonitoringAct((DrugMonitoringAct) value, diagnostics, context);
+			case ConsolPackage.HANDOFF_COMMUNICATION:
+				return validateHandoffCommunication((HandoffCommunication) value, diagnostics, context);
+			case ConsolPackage.MEDICAL_EQUIPMENT_ORGANIZER:
+				return validateMedicalEquipmentOrganizer((MedicalEquipmentOrganizer) value, diagnostics, context);
+			case ConsolPackage.MENTAL_STATUS_OBSERVATION:
+				return validateMentalStatusObservation((MentalStatusObservation) value, diagnostics, context);
+			case ConsolPackage.NUTRITION_ASSESSMENT:
+				return validateNutritionAssessment((NutritionAssessment) value, diagnostics, context);
+			case ConsolPackage.NUTRITION_RECOMMENDATIONS:
+				return validateNutritionRecommendations((NutritionRecommendations) value, diagnostics, context);
+			case ConsolPackage.NUTRITIONAL_STATUS_OBSERVATION:
+				return validateNutritionalStatusObservation((NutritionalStatusObservation) value, diagnostics, context);
+			case ConsolPackage.OUTCOME_OBSERVATION:
+				return validateOutcomeObservation((OutcomeObservation) value, diagnostics, context);
+			case ConsolPackage.PATIENT_PRIORITY_PREFERENCE:
+				return validatePatientPriorityPreference((PatientPriorityPreference) value, diagnostics, context);
+			case ConsolPackage.PATIENT_REFERRAL_ACT:
+				return validatePatientReferralAct((PatientReferralAct) value, diagnostics, context);
+			case ConsolPackage.PLANNED_COVERAGE:
+				return validatePlannedCoverage((PlannedCoverage) value, diagnostics, context);
+			case ConsolPackage.GOAL_OBSERVATION:
+				return validateGoalObservation((GoalObservation) value, diagnostics, context);
+			case ConsolPackage.HEALTH_CONCERN_ACT:
+				return validateHealthConcernAct((HealthConcernAct) value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -68544,6 +70295,3843 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateObserverContext_validateObserverContextAssignedAuthor(ObserverContext observerContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return observerContext.validateObserverContextAssignedAuthor(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateActReference(ActReference actReference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(actReference, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(actReference, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(actReference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(actReference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(actReference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(actReference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(actReference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(actReference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateActReference_validateActReferenceTemplateId(actReference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateActReference_validateActReferenceClassCode(actReference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateActReference_validateActReferenceMoodCode(actReference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateActReference_validateActReferenceId(actReference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateActReference_validateActReferenceCode(actReference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateActReference_validateActReferenceStatusCode(actReference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateActReference_validateActReferenceStatusCodeP(actReference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateActReference_validateActReferenceCDNullFlavor(actReference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateActReference_validateActReferenceCDNullFlavorP(actReference, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateActReferenceTemplateId constraint of '<em>Act Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateActReference_validateActReferenceTemplateId(ActReference actReference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return actReference.validateActReferenceTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateActReferenceClassCode constraint of '<em>Act Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateActReference_validateActReferenceClassCode(ActReference actReference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return actReference.validateActReferenceClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateActReferenceMoodCode constraint of '<em>Act Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateActReference_validateActReferenceMoodCode(ActReference actReference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return actReference.validateActReferenceMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateActReferenceId constraint of '<em>Act Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateActReference_validateActReferenceId(ActReference actReference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return actReference.validateActReferenceId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateActReferenceCode constraint of '<em>Act Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateActReference_validateActReferenceCode(ActReference actReference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return actReference.validateActReferenceCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateActReferenceStatusCode constraint of '<em>Act Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateActReference_validateActReferenceStatusCode(ActReference actReference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return actReference.validateActReferenceStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateActReferenceStatusCodeP constraint of '<em>Act Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateActReference_validateActReferenceStatusCodeP(ActReference actReference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return actReference.validateActReferenceStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateActReferenceCDNullFlavor constraint of '<em>Act Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateActReference_validateActReferenceCDNullFlavor(ActReference actReference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return actReference.validateActReferenceCDNullFlavor(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateActReferenceCDNullFlavorP constraint of '<em>Act Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateActReference_validateActReferenceCDNullFlavorP(ActReference actReference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return actReference.validateActReferenceCDNullFlavorP(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveOrganizer(AdvanceDirectiveOrganizer advanceDirectiveOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(advanceDirectiveOrganizer, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(advanceDirectiveOrganizer, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(advanceDirectiveOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(advanceDirectiveOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(advanceDirectiveOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(advanceDirectiveOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(advanceDirectiveOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(advanceDirectiveOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerTemplateId(
+				advanceDirectiveOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerClassCode(
+				advanceDirectiveOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerMoodCode(
+				advanceDirectiveOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerId(
+				advanceDirectiveOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerCode(
+				advanceDirectiveOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerCodeP(
+				advanceDirectiveOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerStatusCodeP(
+				advanceDirectiveOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerStatusCode(
+				advanceDirectiveOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(
+				advanceDirectiveOrganizer, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveOrganizerTemplateId constraint of '<em>Advance Directive Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerTemplateId(
+			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return advanceDirectiveOrganizer.validateAdvanceDirectiveOrganizerTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveOrganizerClassCode constraint of '<em>Advance Directive Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerClassCode(
+			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return advanceDirectiveOrganizer.validateAdvanceDirectiveOrganizerClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveOrganizerMoodCode constraint of '<em>Advance Directive Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerMoodCode(
+			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return advanceDirectiveOrganizer.validateAdvanceDirectiveOrganizerMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveOrganizerId constraint of '<em>Advance Directive Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerId(
+			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return advanceDirectiveOrganizer.validateAdvanceDirectiveOrganizerId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveOrganizerCode constraint of '<em>Advance Directive Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerCode(
+			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return advanceDirectiveOrganizer.validateAdvanceDirectiveOrganizerCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveOrganizerCodeP constraint of '<em>Advance Directive Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerCodeP(
+			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return advanceDirectiveOrganizer.validateAdvanceDirectiveOrganizerCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveOrganizerStatusCodeP constraint of '<em>Advance Directive Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerStatusCodeP(
+			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return advanceDirectiveOrganizer.validateAdvanceDirectiveOrganizerStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveOrganizerStatusCode constraint of '<em>Advance Directive Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerStatusCode(
+			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return advanceDirectiveOrganizer.validateAdvanceDirectiveOrganizerStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation constraint of '<em>Advance Directive Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveOrganizer_validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(
+			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return advanceDirectiveOrganizer.validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(
+			diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCharacteristicsOfHomeEnvironment(
+			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(characteristicsOfHomeEnvironment, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(characteristicsOfHomeEnvironment, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(characteristicsOfHomeEnvironment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(characteristicsOfHomeEnvironment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(characteristicsOfHomeEnvironment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(characteristicsOfHomeEnvironment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(characteristicsOfHomeEnvironment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(characteristicsOfHomeEnvironment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentTemplateId(
+				characteristicsOfHomeEnvironment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentClassCode(
+				characteristicsOfHomeEnvironment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentMoodCode(
+				characteristicsOfHomeEnvironment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentId(
+				characteristicsOfHomeEnvironment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentCodeP(
+				characteristicsOfHomeEnvironment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentCode(
+				characteristicsOfHomeEnvironment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentStatusCode(
+				characteristicsOfHomeEnvironment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentStatusCodeP(
+				characteristicsOfHomeEnvironment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentValue(
+				characteristicsOfHomeEnvironment, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateCharacteristicsOfHomeEnvironmentTemplateId constraint of '<em>Characteristics Of Home Environment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentTemplateId(
+			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return characteristicsOfHomeEnvironment.validateCharacteristicsOfHomeEnvironmentTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCharacteristicsOfHomeEnvironmentClassCode constraint of '<em>Characteristics Of Home Environment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentClassCode(
+			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return characteristicsOfHomeEnvironment.validateCharacteristicsOfHomeEnvironmentClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCharacteristicsOfHomeEnvironmentMoodCode constraint of '<em>Characteristics Of Home Environment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentMoodCode(
+			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return characteristicsOfHomeEnvironment.validateCharacteristicsOfHomeEnvironmentMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCharacteristicsOfHomeEnvironmentId constraint of '<em>Characteristics Of Home Environment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentId(
+			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return characteristicsOfHomeEnvironment.validateCharacteristicsOfHomeEnvironmentId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCharacteristicsOfHomeEnvironmentCodeP constraint of '<em>Characteristics Of Home Environment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentCodeP(
+			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return characteristicsOfHomeEnvironment.validateCharacteristicsOfHomeEnvironmentCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCharacteristicsOfHomeEnvironmentCode constraint of '<em>Characteristics Of Home Environment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentCode(
+			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return characteristicsOfHomeEnvironment.validateCharacteristicsOfHomeEnvironmentCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCharacteristicsOfHomeEnvironmentStatusCode constraint of '<em>Characteristics Of Home Environment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentStatusCode(
+			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return characteristicsOfHomeEnvironment.validateCharacteristicsOfHomeEnvironmentStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCharacteristicsOfHomeEnvironmentStatusCodeP constraint of '<em>Characteristics Of Home Environment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentStatusCodeP(
+			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return characteristicsOfHomeEnvironment.validateCharacteristicsOfHomeEnvironmentStatusCodeP(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCharacteristicsOfHomeEnvironmentValue constraint of '<em>Characteristics Of Home Environment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCharacteristicsOfHomeEnvironment_validateCharacteristicsOfHomeEnvironmentValue(
+			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return characteristicsOfHomeEnvironment.validateCharacteristicsOfHomeEnvironmentValue(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveAbilitiesObservation(CognitiveAbilitiesObservation cognitiveAbilitiesObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(cognitiveAbilitiesObservation, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(cognitiveAbilitiesObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationTemplateId(
+				cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationClassCode(
+				cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationMoodCode(
+				cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationId(
+				cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationCodeP(
+				cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationCode(
+				cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationText(
+				cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationStatusCode(
+				cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationStatusCodeP(
+				cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationEffectiveTime(
+				cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationValue(
+				cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationValueP(
+				cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationAssessmentScaleObservation(
+				cognitiveAbilitiesObservation, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateCognitiveAbilitiesObservationTemplateId constraint of '<em>Cognitive Abilities Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationTemplateId(
+			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveAbilitiesObservation.validateCognitiveAbilitiesObservationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCognitiveAbilitiesObservationClassCode constraint of '<em>Cognitive Abilities Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationClassCode(
+			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveAbilitiesObservation.validateCognitiveAbilitiesObservationClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCognitiveAbilitiesObservationMoodCode constraint of '<em>Cognitive Abilities Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationMoodCode(
+			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveAbilitiesObservation.validateCognitiveAbilitiesObservationMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCognitiveAbilitiesObservationId constraint of '<em>Cognitive Abilities Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationId(
+			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveAbilitiesObservation.validateCognitiveAbilitiesObservationId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCognitiveAbilitiesObservationCodeP constraint of '<em>Cognitive Abilities Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationCodeP(
+			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveAbilitiesObservation.validateCognitiveAbilitiesObservationCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCognitiveAbilitiesObservationCode constraint of '<em>Cognitive Abilities Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationCode(
+			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveAbilitiesObservation.validateCognitiveAbilitiesObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCognitiveAbilitiesObservationText constraint of '<em>Cognitive Abilities Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationText(
+			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveAbilitiesObservation.validateCognitiveAbilitiesObservationText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCognitiveAbilitiesObservationStatusCode constraint of '<em>Cognitive Abilities Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationStatusCode(
+			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveAbilitiesObservation.validateCognitiveAbilitiesObservationStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCognitiveAbilitiesObservationStatusCodeP constraint of '<em>Cognitive Abilities Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationStatusCodeP(
+			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveAbilitiesObservation.validateCognitiveAbilitiesObservationStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCognitiveAbilitiesObservationEffectiveTime constraint of '<em>Cognitive Abilities Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationEffectiveTime(
+			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveAbilitiesObservation.validateCognitiveAbilitiesObservationEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCognitiveAbilitiesObservationValue constraint of '<em>Cognitive Abilities Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationValue(
+			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveAbilitiesObservation.validateCognitiveAbilitiesObservationValue(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCognitiveAbilitiesObservationValueP constraint of '<em>Cognitive Abilities Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationValueP(
+			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveAbilitiesObservation.validateCognitiveAbilitiesObservationValueP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCognitiveAbilitiesObservationAssessmentScaleObservation constraint of '<em>Cognitive Abilities Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveAbilitiesObservation_validateCognitiveAbilitiesObservationAssessmentScaleObservation(
+			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveAbilitiesObservation.validateCognitiveAbilitiesObservationAssessmentScaleObservation(
+			diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCulturalAndReligiousObservation(
+			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(culturalAndReligiousObservation, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(culturalAndReligiousObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(culturalAndReligiousObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(culturalAndReligiousObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(culturalAndReligiousObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(culturalAndReligiousObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(culturalAndReligiousObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(culturalAndReligiousObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationTemplateId(
+				culturalAndReligiousObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationClassCode(
+				culturalAndReligiousObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationMoodCode(
+				culturalAndReligiousObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationId(
+				culturalAndReligiousObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationCodeP(
+				culturalAndReligiousObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationCode(
+				culturalAndReligiousObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationStatusCode(
+				culturalAndReligiousObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationStatusCodeP(
+				culturalAndReligiousObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationValue(
+				culturalAndReligiousObservation, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateCulturalAndReligiousObservationTemplateId constraint of '<em>Cultural And Religious Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationTemplateId(
+			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return culturalAndReligiousObservation.validateCulturalAndReligiousObservationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCulturalAndReligiousObservationClassCode constraint of '<em>Cultural And Religious Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationClassCode(
+			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return culturalAndReligiousObservation.validateCulturalAndReligiousObservationClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCulturalAndReligiousObservationMoodCode constraint of '<em>Cultural And Religious Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationMoodCode(
+			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return culturalAndReligiousObservation.validateCulturalAndReligiousObservationMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCulturalAndReligiousObservationId constraint of '<em>Cultural And Religious Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationId(
+			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return culturalAndReligiousObservation.validateCulturalAndReligiousObservationId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCulturalAndReligiousObservationCodeP constraint of '<em>Cultural And Religious Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationCodeP(
+			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return culturalAndReligiousObservation.validateCulturalAndReligiousObservationCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCulturalAndReligiousObservationCode constraint of '<em>Cultural And Religious Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationCode(
+			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return culturalAndReligiousObservation.validateCulturalAndReligiousObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCulturalAndReligiousObservationStatusCode constraint of '<em>Cultural And Religious Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationStatusCode(
+			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return culturalAndReligiousObservation.validateCulturalAndReligiousObservationStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCulturalAndReligiousObservationStatusCodeP constraint of '<em>Cultural And Religious Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationStatusCodeP(
+			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return culturalAndReligiousObservation.validateCulturalAndReligiousObservationStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCulturalAndReligiousObservationValue constraint of '<em>Cultural And Religious Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCulturalAndReligiousObservation_validateCulturalAndReligiousObservationValue(
+			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return culturalAndReligiousObservation.validateCulturalAndReligiousObservationValue(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct(DrugMonitoringAct drugMonitoringAct, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(drugMonitoringAct, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(drugMonitoringAct, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActTemplateId(
+				drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActClassCode(
+				drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActMoodCode(
+				drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActId(drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActCodeP(drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActCode(drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActStatusCode(
+				drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActEffectiveTime(
+				drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActParticipant(
+				drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(
+				drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActParticipantParticipantRolePlayingEntityName(
+				drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActParticipantParticipantRoleClassCode(
+				drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActParticipantParticipantRoleId(
+				drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActParticipantParticipantRolePlayingEntity(
+				drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActParticipantTypeCode(
+				drugMonitoringAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDrugMonitoringAct_validateDrugMonitoringActParticipantParticipantRole(
+				drugMonitoringAct, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActTemplateId constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActTemplateId(DrugMonitoringAct drugMonitoringAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActClassCode constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActClassCode(DrugMonitoringAct drugMonitoringAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActMoodCode constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActMoodCode(DrugMonitoringAct drugMonitoringAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActId constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActId(DrugMonitoringAct drugMonitoringAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActCodeP constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActCodeP(DrugMonitoringAct drugMonitoringAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActCode constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActCode(DrugMonitoringAct drugMonitoringAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActStatusCode constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActStatusCode(DrugMonitoringAct drugMonitoringAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActEffectiveTime constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActEffectiveTime(
+			DrugMonitoringAct drugMonitoringAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActParticipant constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActParticipant(DrugMonitoringAct drugMonitoringAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActParticipant(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(
+			DrugMonitoringAct drugMonitoringAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActParticipantParticipantRolePlayingEntityName constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActParticipantParticipantRolePlayingEntityName(
+			DrugMonitoringAct drugMonitoringAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActParticipantParticipantRolePlayingEntityName(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActParticipantParticipantRoleClassCode constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActParticipantParticipantRoleClassCode(
+			DrugMonitoringAct drugMonitoringAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActParticipantParticipantRoleClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActParticipantParticipantRoleId constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActParticipantParticipantRoleId(
+			DrugMonitoringAct drugMonitoringAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActParticipantParticipantRoleId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActParticipantParticipantRolePlayingEntity constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActParticipantParticipantRolePlayingEntity(
+			DrugMonitoringAct drugMonitoringAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActParticipantParticipantRolePlayingEntity(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActParticipantTypeCode constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActParticipantTypeCode(
+			DrugMonitoringAct drugMonitoringAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActParticipantTypeCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDrugMonitoringActParticipantParticipantRole constraint of '<em>Drug Monitoring Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDrugMonitoringAct_validateDrugMonitoringActParticipantParticipantRole(
+			DrugMonitoringAct drugMonitoringAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return drugMonitoringAct.validateDrugMonitoringActParticipantParticipantRole(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHandoffCommunication(HandoffCommunication handoffCommunication, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(handoffCommunication, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(handoffCommunication, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(handoffCommunication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(handoffCommunication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(handoffCommunication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(handoffCommunication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(handoffCommunication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(handoffCommunication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHandoffCommunication_validateHandoffCommunicationTemplateId(
+				handoffCommunication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHandoffCommunication_validateHandoffCommunicationClassCode(
+				handoffCommunication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHandoffCommunication_validateHandoffCommunicationMoodCode(
+				handoffCommunication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHandoffCommunication_validateHandoffCommunicationCodeP(
+				handoffCommunication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHandoffCommunication_validateHandoffCommunicationCode(
+				handoffCommunication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHandoffCommunication_validateHandoffCommunicationStatusCode(
+				handoffCommunication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHandoffCommunication_validateHandoffCommunicationStatusCodeP(
+				handoffCommunication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHandoffCommunication_validateHandoffCommunicationEffectiveTime(
+				handoffCommunication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHandoffCommunication_validateHandoffCommunicationParticipant(
+				handoffCommunication, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateHandoffCommunicationTemplateId constraint of '<em>Handoff Communication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHandoffCommunication_validateHandoffCommunicationTemplateId(
+			HandoffCommunication handoffCommunication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return handoffCommunication.validateHandoffCommunicationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHandoffCommunicationClassCode constraint of '<em>Handoff Communication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHandoffCommunication_validateHandoffCommunicationClassCode(
+			HandoffCommunication handoffCommunication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return handoffCommunication.validateHandoffCommunicationClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHandoffCommunicationMoodCode constraint of '<em>Handoff Communication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHandoffCommunication_validateHandoffCommunicationMoodCode(
+			HandoffCommunication handoffCommunication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return handoffCommunication.validateHandoffCommunicationMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHandoffCommunicationCodeP constraint of '<em>Handoff Communication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHandoffCommunication_validateHandoffCommunicationCodeP(
+			HandoffCommunication handoffCommunication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return handoffCommunication.validateHandoffCommunicationCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHandoffCommunicationCode constraint of '<em>Handoff Communication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHandoffCommunication_validateHandoffCommunicationCode(
+			HandoffCommunication handoffCommunication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return handoffCommunication.validateHandoffCommunicationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHandoffCommunicationStatusCode constraint of '<em>Handoff Communication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHandoffCommunication_validateHandoffCommunicationStatusCode(
+			HandoffCommunication handoffCommunication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return handoffCommunication.validateHandoffCommunicationStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHandoffCommunicationStatusCodeP constraint of '<em>Handoff Communication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHandoffCommunication_validateHandoffCommunicationStatusCodeP(
+			HandoffCommunication handoffCommunication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return handoffCommunication.validateHandoffCommunicationStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHandoffCommunicationEffectiveTime constraint of '<em>Handoff Communication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHandoffCommunication_validateHandoffCommunicationEffectiveTime(
+			HandoffCommunication handoffCommunication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return handoffCommunication.validateHandoffCommunicationEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHandoffCommunicationParticipant constraint of '<em>Handoff Communication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHandoffCommunication_validateHandoffCommunicationParticipant(
+			HandoffCommunication handoffCommunication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return handoffCommunication.validateHandoffCommunicationParticipant(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentOrganizer(MedicalEquipmentOrganizer medicalEquipmentOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(medicalEquipmentOrganizer, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(medicalEquipmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(medicalEquipmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(medicalEquipmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(medicalEquipmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(medicalEquipmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(medicalEquipmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(medicalEquipmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerTemplateId(
+				medicalEquipmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerClassCode(
+				medicalEquipmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerMoodCode(
+				medicalEquipmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerId(
+				medicalEquipmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerCode(
+				medicalEquipmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerStatusCodeP(
+				medicalEquipmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerStatusCode(
+				medicalEquipmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerEffectiveTime(
+				medicalEquipmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity(
+				medicalEquipmentOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerProcedureActivityProcedure(
+				medicalEquipmentOrganizer, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateMedicalEquipmentOrganizerTemplateId constraint of '<em>Medical Equipment Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerTemplateId(
+			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return medicalEquipmentOrganizer.validateMedicalEquipmentOrganizerTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMedicalEquipmentOrganizerClassCode constraint of '<em>Medical Equipment Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerClassCode(
+			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return medicalEquipmentOrganizer.validateMedicalEquipmentOrganizerClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMedicalEquipmentOrganizerMoodCode constraint of '<em>Medical Equipment Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerMoodCode(
+			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return medicalEquipmentOrganizer.validateMedicalEquipmentOrganizerMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMedicalEquipmentOrganizerId constraint of '<em>Medical Equipment Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerId(
+			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return medicalEquipmentOrganizer.validateMedicalEquipmentOrganizerId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMedicalEquipmentOrganizerCode constraint of '<em>Medical Equipment Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerCode(
+			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return medicalEquipmentOrganizer.validateMedicalEquipmentOrganizerCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMedicalEquipmentOrganizerStatusCodeP constraint of '<em>Medical Equipment Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerStatusCodeP(
+			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return medicalEquipmentOrganizer.validateMedicalEquipmentOrganizerStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMedicalEquipmentOrganizerStatusCode constraint of '<em>Medical Equipment Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerStatusCode(
+			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return medicalEquipmentOrganizer.validateMedicalEquipmentOrganizerStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMedicalEquipmentOrganizerEffectiveTime constraint of '<em>Medical Equipment Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerEffectiveTime(
+			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return medicalEquipmentOrganizer.validateMedicalEquipmentOrganizerEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity constraint of '<em>Medical Equipment Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity(
+			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return medicalEquipmentOrganizer.validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMedicalEquipmentOrganizerProcedureActivityProcedure constraint of '<em>Medical Equipment Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentOrganizer_validateMedicalEquipmentOrganizerProcedureActivityProcedure(
+			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return medicalEquipmentOrganizer.validateMedicalEquipmentOrganizerProcedureActivityProcedure(
+			diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservation(MentalStatusObservation mentalStatusObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(mentalStatusObservation, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(mentalStatusObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusObservation_validateMentalStatusObservationTemplateId(
+				mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusObservation_validateMentalStatusObservationClassCode(
+				mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusObservation_validateMentalStatusObservationMoodCode(
+				mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusObservation_validateMentalStatusObservationId(
+				mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusObservation_validateMentalStatusObservationCodeP(
+				mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusObservation_validateMentalStatusObservationCode(
+				mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusObservation_validateMentalStatusObservationStatusCode(
+				mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusObservation_validateMentalStatusObservationStatusCodeP(
+				mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusObservation_validateMentalStatusObservationEffectiveTime(
+				mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusObservation_validateMentalStatusObservationValue(
+				mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusObservation_validateMentalStatusObservationValueP(
+				mentalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusObservation_validateMentalStatusObservationAssessmentScaleObservation(
+				mentalStatusObservation, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateMentalStatusObservationTemplateId constraint of '<em>Mental Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservation_validateMentalStatusObservationTemplateId(
+			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusObservation.validateMentalStatusObservationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusObservationClassCode constraint of '<em>Mental Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservation_validateMentalStatusObservationClassCode(
+			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusObservation.validateMentalStatusObservationClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusObservationMoodCode constraint of '<em>Mental Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservation_validateMentalStatusObservationMoodCode(
+			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusObservation.validateMentalStatusObservationMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusObservationId constraint of '<em>Mental Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservation_validateMentalStatusObservationId(
+			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusObservation.validateMentalStatusObservationId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusObservationCodeP constraint of '<em>Mental Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservation_validateMentalStatusObservationCodeP(
+			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusObservation.validateMentalStatusObservationCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusObservationCode constraint of '<em>Mental Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservation_validateMentalStatusObservationCode(
+			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusObservation.validateMentalStatusObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusObservationStatusCode constraint of '<em>Mental Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservation_validateMentalStatusObservationStatusCode(
+			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusObservation.validateMentalStatusObservationStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusObservationStatusCodeP constraint of '<em>Mental Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservation_validateMentalStatusObservationStatusCodeP(
+			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusObservation.validateMentalStatusObservationStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusObservationEffectiveTime constraint of '<em>Mental Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservation_validateMentalStatusObservationEffectiveTime(
+			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusObservation.validateMentalStatusObservationEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusObservationValue constraint of '<em>Mental Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservation_validateMentalStatusObservationValue(
+			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusObservation.validateMentalStatusObservationValue(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusObservationValueP constraint of '<em>Mental Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservation_validateMentalStatusObservationValueP(
+			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusObservation.validateMentalStatusObservationValueP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusObservationAssessmentScaleObservation constraint of '<em>Mental Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservation_validateMentalStatusObservationAssessmentScaleObservation(
+			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusObservation.validateMentalStatusObservationAssessmentScaleObservation(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionAssessment(NutritionAssessment nutritionAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(nutritionAssessment, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(nutritionAssessment, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(nutritionAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(nutritionAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(nutritionAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(nutritionAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(nutritionAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(nutritionAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionAssessment_validateNutritionAssessmentTemplateId(
+				nutritionAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionAssessment_validateNutritionAssessmentClassCode(
+				nutritionAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionAssessment_validateNutritionAssessmentMoodCode(
+				nutritionAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionAssessment_validateNutritionAssessmentId(
+				nutritionAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionAssessment_validateNutritionAssessmentCodeP(
+				nutritionAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionAssessment_validateNutritionAssessmentCode(
+				nutritionAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionAssessment_validateNutritionAssessmentStatusCode(
+				nutritionAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionAssessment_validateNutritionAssessmentStatusCodeP(
+				nutritionAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionAssessment_validateNutritionAssessmentEffectiveTime(
+				nutritionAssessment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionAssessment_validateNutritionAssessmentValue(
+				nutritionAssessment, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateNutritionAssessmentTemplateId constraint of '<em>Nutrition Assessment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionAssessment_validateNutritionAssessmentTemplateId(
+			NutritionAssessment nutritionAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionAssessment.validateNutritionAssessmentTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionAssessmentClassCode constraint of '<em>Nutrition Assessment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionAssessment_validateNutritionAssessmentClassCode(
+			NutritionAssessment nutritionAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionAssessment.validateNutritionAssessmentClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionAssessmentMoodCode constraint of '<em>Nutrition Assessment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionAssessment_validateNutritionAssessmentMoodCode(
+			NutritionAssessment nutritionAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionAssessment.validateNutritionAssessmentMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionAssessmentId constraint of '<em>Nutrition Assessment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionAssessment_validateNutritionAssessmentId(NutritionAssessment nutritionAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionAssessment.validateNutritionAssessmentId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionAssessmentCodeP constraint of '<em>Nutrition Assessment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionAssessment_validateNutritionAssessmentCodeP(
+			NutritionAssessment nutritionAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionAssessment.validateNutritionAssessmentCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionAssessmentCode constraint of '<em>Nutrition Assessment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionAssessment_validateNutritionAssessmentCode(NutritionAssessment nutritionAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionAssessment.validateNutritionAssessmentCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionAssessmentStatusCode constraint of '<em>Nutrition Assessment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionAssessment_validateNutritionAssessmentStatusCode(
+			NutritionAssessment nutritionAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionAssessment.validateNutritionAssessmentStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionAssessmentStatusCodeP constraint of '<em>Nutrition Assessment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionAssessment_validateNutritionAssessmentStatusCodeP(
+			NutritionAssessment nutritionAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionAssessment.validateNutritionAssessmentStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionAssessmentEffectiveTime constraint of '<em>Nutrition Assessment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionAssessment_validateNutritionAssessmentEffectiveTime(
+			NutritionAssessment nutritionAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionAssessment.validateNutritionAssessmentEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionAssessmentValue constraint of '<em>Nutrition Assessment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionAssessment_validateNutritionAssessmentValue(
+			NutritionAssessment nutritionAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionAssessment.validateNutritionAssessmentValue(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionRecommendations(NutritionRecommendations nutritionRecommendations,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(nutritionRecommendations, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(nutritionRecommendations, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(nutritionRecommendations, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(nutritionRecommendations, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(nutritionRecommendations, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(nutritionRecommendations, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(nutritionRecommendations, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(nutritionRecommendations, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionRecommendations_validateNutritionRecommendationsTemplateId(
+				nutritionRecommendations, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionRecommendations_validateNutritionRecommendationsClassCode(
+				nutritionRecommendations, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionRecommendations_validateNutritionRecommendationsMoodCodeP(
+				nutritionRecommendations, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionRecommendations_validateNutritionRecommendationsMoodCode(
+				nutritionRecommendations, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionRecommendations_validateNutritionRecommendationsCodeP(
+				nutritionRecommendations, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionRecommendations_validateNutritionRecommendationsCode(
+				nutritionRecommendations, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionRecommendations_validateNutritionRecommendationsStatusCode(
+				nutritionRecommendations, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionRecommendations_validateNutritionRecommendationsStatusCodeP(
+				nutritionRecommendations, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionRecommendations_validateNutritionRecommendationsEffectiveTime(
+				nutritionRecommendations, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateNutritionRecommendationsTemplateId constraint of '<em>Nutrition Recommendations</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionRecommendations_validateNutritionRecommendationsTemplateId(
+			NutritionRecommendations nutritionRecommendations, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionRecommendations.validateNutritionRecommendationsTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionRecommendationsClassCode constraint of '<em>Nutrition Recommendations</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionRecommendations_validateNutritionRecommendationsClassCode(
+			NutritionRecommendations nutritionRecommendations, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionRecommendations.validateNutritionRecommendationsClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionRecommendationsMoodCodeP constraint of '<em>Nutrition Recommendations</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionRecommendations_validateNutritionRecommendationsMoodCodeP(
+			NutritionRecommendations nutritionRecommendations, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionRecommendations.validateNutritionRecommendationsMoodCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionRecommendationsMoodCode constraint of '<em>Nutrition Recommendations</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionRecommendations_validateNutritionRecommendationsMoodCode(
+			NutritionRecommendations nutritionRecommendations, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionRecommendations.validateNutritionRecommendationsMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionRecommendationsCodeP constraint of '<em>Nutrition Recommendations</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionRecommendations_validateNutritionRecommendationsCodeP(
+			NutritionRecommendations nutritionRecommendations, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionRecommendations.validateNutritionRecommendationsCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionRecommendationsCode constraint of '<em>Nutrition Recommendations</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionRecommendations_validateNutritionRecommendationsCode(
+			NutritionRecommendations nutritionRecommendations, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionRecommendations.validateNutritionRecommendationsCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionRecommendationsStatusCode constraint of '<em>Nutrition Recommendations</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionRecommendations_validateNutritionRecommendationsStatusCode(
+			NutritionRecommendations nutritionRecommendations, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionRecommendations.validateNutritionRecommendationsStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionRecommendationsStatusCodeP constraint of '<em>Nutrition Recommendations</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionRecommendations_validateNutritionRecommendationsStatusCodeP(
+			NutritionRecommendations nutritionRecommendations, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionRecommendations.validateNutritionRecommendationsStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionRecommendationsEffectiveTime constraint of '<em>Nutrition Recommendations</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionRecommendations_validateNutritionRecommendationsEffectiveTime(
+			NutritionRecommendations nutritionRecommendations, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionRecommendations.validateNutritionRecommendationsEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionalStatusObservation(NutritionalStatusObservation nutritionalStatusObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(nutritionalStatusObservation, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(nutritionalStatusObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionalStatusObservation_validateNutritionalStatusObservationTemplateId(
+				nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionalStatusObservation_validateNutritionalStatusObservationClassCode(
+				nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionalStatusObservation_validateNutritionalStatusObservationMoodCode(
+				nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionalStatusObservation_validateNutritionalStatusObservationId(
+				nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionalStatusObservation_validateNutritionalStatusObservationCodeP(
+				nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionalStatusObservation_validateNutritionalStatusObservationCode(
+				nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionalStatusObservation_validateNutritionalStatusObservationStatusCode(
+				nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionalStatusObservation_validateNutritionalStatusObservationStatusCodeP(
+				nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionalStatusObservation_validateNutritionalStatusObservationEffectiveTime(
+				nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionalStatusObservation_validateNutritionalStatusObservationValue(
+				nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionalStatusObservation_validateNutritionalStatusObservationValueP(
+				nutritionalStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionalStatusObservation_validateNutritionalStatusObservationNutritionAssessment(
+				nutritionalStatusObservation, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateNutritionalStatusObservationTemplateId constraint of '<em>Nutritional Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionalStatusObservation_validateNutritionalStatusObservationTemplateId(
+			NutritionalStatusObservation nutritionalStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return nutritionalStatusObservation.validateNutritionalStatusObservationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionalStatusObservationClassCode constraint of '<em>Nutritional Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionalStatusObservation_validateNutritionalStatusObservationClassCode(
+			NutritionalStatusObservation nutritionalStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return nutritionalStatusObservation.validateNutritionalStatusObservationClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionalStatusObservationMoodCode constraint of '<em>Nutritional Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionalStatusObservation_validateNutritionalStatusObservationMoodCode(
+			NutritionalStatusObservation nutritionalStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return nutritionalStatusObservation.validateNutritionalStatusObservationMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionalStatusObservationId constraint of '<em>Nutritional Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionalStatusObservation_validateNutritionalStatusObservationId(
+			NutritionalStatusObservation nutritionalStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return nutritionalStatusObservation.validateNutritionalStatusObservationId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionalStatusObservationCodeP constraint of '<em>Nutritional Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionalStatusObservation_validateNutritionalStatusObservationCodeP(
+			NutritionalStatusObservation nutritionalStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return nutritionalStatusObservation.validateNutritionalStatusObservationCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionalStatusObservationCode constraint of '<em>Nutritional Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionalStatusObservation_validateNutritionalStatusObservationCode(
+			NutritionalStatusObservation nutritionalStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return nutritionalStatusObservation.validateNutritionalStatusObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionalStatusObservationStatusCode constraint of '<em>Nutritional Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionalStatusObservation_validateNutritionalStatusObservationStatusCode(
+			NutritionalStatusObservation nutritionalStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return nutritionalStatusObservation.validateNutritionalStatusObservationStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionalStatusObservationStatusCodeP constraint of '<em>Nutritional Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionalStatusObservation_validateNutritionalStatusObservationStatusCodeP(
+			NutritionalStatusObservation nutritionalStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return nutritionalStatusObservation.validateNutritionalStatusObservationStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionalStatusObservationEffectiveTime constraint of '<em>Nutritional Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionalStatusObservation_validateNutritionalStatusObservationEffectiveTime(
+			NutritionalStatusObservation nutritionalStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return nutritionalStatusObservation.validateNutritionalStatusObservationEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionalStatusObservationValue constraint of '<em>Nutritional Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionalStatusObservation_validateNutritionalStatusObservationValue(
+			NutritionalStatusObservation nutritionalStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return nutritionalStatusObservation.validateNutritionalStatusObservationValue(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionalStatusObservationValueP constraint of '<em>Nutritional Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionalStatusObservation_validateNutritionalStatusObservationValueP(
+			NutritionalStatusObservation nutritionalStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return nutritionalStatusObservation.validateNutritionalStatusObservationValueP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionalStatusObservationNutritionAssessment constraint of '<em>Nutritional Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionalStatusObservation_validateNutritionalStatusObservationNutritionAssessment(
+			NutritionalStatusObservation nutritionalStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return nutritionalStatusObservation.validateNutritionalStatusObservationNutritionAssessment(
+			diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservation(OutcomeObservation outcomeObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(outcomeObservation, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(outcomeObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(outcomeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(outcomeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(outcomeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(outcomeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(outcomeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(outcomeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOutcomeObservation_validateOutcomeObservationTemplateId(
+				outcomeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOutcomeObservation_validateOutcomeObservationClassCode(
+				outcomeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOutcomeObservation_validateOutcomeObservationMoodCode(
+				outcomeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOutcomeObservation_validateOutcomeObservationId(outcomeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOutcomeObservation_validateOutcomeObservationActReference(
+				outcomeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateOutcomeObservation_validateOutcomeObservationActReference2(
+				outcomeObservation, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateOutcomeObservationTemplateId constraint of '<em>Outcome Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservation_validateOutcomeObservationTemplateId(
+			OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return outcomeObservation.validateOutcomeObservationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOutcomeObservationClassCode constraint of '<em>Outcome Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservation_validateOutcomeObservationClassCode(
+			OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return outcomeObservation.validateOutcomeObservationClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOutcomeObservationMoodCode constraint of '<em>Outcome Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservation_validateOutcomeObservationMoodCode(OutcomeObservation outcomeObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return outcomeObservation.validateOutcomeObservationMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOutcomeObservationId constraint of '<em>Outcome Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservation_validateOutcomeObservationId(OutcomeObservation outcomeObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return outcomeObservation.validateOutcomeObservationId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOutcomeObservationActReference constraint of '<em>Outcome Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservation_validateOutcomeObservationActReference(
+			OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return outcomeObservation.validateOutcomeObservationActReference(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateOutcomeObservationActReference2 constraint of '<em>Outcome Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservation_validateOutcomeObservationActReference2(
+			OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return outcomeObservation.validateOutcomeObservationActReference2(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPriorityPreference(PatientPriorityPreference patientPriorityPreference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(patientPriorityPreference, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(patientPriorityPreference, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientPriorityPreference_validatePatientPriorityPreferenceTemplateId(
+				patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientPriorityPreference_validatePatientPriorityPreferenceClassCode(
+				patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientPriorityPreference_validatePatientPriorityPreferenceMoodCode(
+				patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientPriorityPreference_validatePatientPriorityPreferenceId(
+				patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientPriorityPreference_validatePatientPriorityPreferenceCodeP(
+				patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientPriorityPreference_validatePatientPriorityPreferenceCode(
+				patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientPriorityPreference_validatePatientPriorityPreferencePriorityCodeP(
+				patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientPriorityPreference_validatePatientPriorityPreferencePriorityCode(
+				patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientPriorityPreference_validatePatientPriorityPreferenceValue(
+				patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientPriorityPreference_validatePatientPriorityPreferenceValueP(
+				patientPriorityPreference, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientPriorityPreference_validatePatientPriorityPreferenceCDCodeSystem(
+				patientPriorityPreference, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validatePatientPriorityPreferenceTemplateId constraint of '<em>Patient Priority Preference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPriorityPreference_validatePatientPriorityPreferenceTemplateId(
+			PatientPriorityPreference patientPriorityPreference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return patientPriorityPreference.validatePatientPriorityPreferenceTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientPriorityPreferenceClassCode constraint of '<em>Patient Priority Preference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPriorityPreference_validatePatientPriorityPreferenceClassCode(
+			PatientPriorityPreference patientPriorityPreference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return patientPriorityPreference.validatePatientPriorityPreferenceClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientPriorityPreferenceMoodCode constraint of '<em>Patient Priority Preference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPriorityPreference_validatePatientPriorityPreferenceMoodCode(
+			PatientPriorityPreference patientPriorityPreference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return patientPriorityPreference.validatePatientPriorityPreferenceMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientPriorityPreferenceId constraint of '<em>Patient Priority Preference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPriorityPreference_validatePatientPriorityPreferenceId(
+			PatientPriorityPreference patientPriorityPreference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return patientPriorityPreference.validatePatientPriorityPreferenceId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientPriorityPreferenceCodeP constraint of '<em>Patient Priority Preference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPriorityPreference_validatePatientPriorityPreferenceCodeP(
+			PatientPriorityPreference patientPriorityPreference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return patientPriorityPreference.validatePatientPriorityPreferenceCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientPriorityPreferenceCode constraint of '<em>Patient Priority Preference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPriorityPreference_validatePatientPriorityPreferenceCode(
+			PatientPriorityPreference patientPriorityPreference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return patientPriorityPreference.validatePatientPriorityPreferenceCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientPriorityPreferencePriorityCodeP constraint of '<em>Patient Priority Preference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPriorityPreference_validatePatientPriorityPreferencePriorityCodeP(
+			PatientPriorityPreference patientPriorityPreference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return patientPriorityPreference.validatePatientPriorityPreferencePriorityCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientPriorityPreferencePriorityCode constraint of '<em>Patient Priority Preference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPriorityPreference_validatePatientPriorityPreferencePriorityCode(
+			PatientPriorityPreference patientPriorityPreference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return patientPriorityPreference.validatePatientPriorityPreferencePriorityCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientPriorityPreferenceValue constraint of '<em>Patient Priority Preference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPriorityPreference_validatePatientPriorityPreferenceValue(
+			PatientPriorityPreference patientPriorityPreference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return patientPriorityPreference.validatePatientPriorityPreferenceValue(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientPriorityPreferenceValueP constraint of '<em>Patient Priority Preference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPriorityPreference_validatePatientPriorityPreferenceValueP(
+			PatientPriorityPreference patientPriorityPreference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return patientPriorityPreference.validatePatientPriorityPreferenceValueP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientPriorityPreferenceCDCodeSystem constraint of '<em>Patient Priority Preference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientPriorityPreference_validatePatientPriorityPreferenceCDCodeSystem(
+			PatientPriorityPreference patientPriorityPreference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return patientPriorityPreference.validatePatientPriorityPreferenceCDCodeSystem(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct(PatientReferralAct patientReferralAct, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(patientReferralAct, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(patientReferralAct, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActTemplateId(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActClassCode(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActMoodCode(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActId(patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActCodeP(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActCode(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActStatusCode(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActStatusCodeP(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActEffectiveTime(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActActReference(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActEntryRelationship(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationClassCode(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationMoodCode(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationCodeP(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationCode(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationStatusCode(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationStatusCodeP(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationValue(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationValueP(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActEntryRelationshipTypeCodeP(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActEntryRelationshipTypeCode(
+				patientReferralAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservation(
+				patientReferralAct, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validatePatientReferralActTemplateId constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActTemplateId(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActClassCode constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActClassCode(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActMoodCode constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActMoodCode(PatientReferralAct patientReferralAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActId constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActId(PatientReferralAct patientReferralAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActCodeP constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActCodeP(PatientReferralAct patientReferralAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActCode constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActCode(PatientReferralAct patientReferralAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActStatusCode constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActStatusCode(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActStatusCodeP constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActStatusCodeP(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActEffectiveTime constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActEffectiveTime(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActActReference constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActActReference(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActActReference(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActEntryRelationship constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActEntryRelationship(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActEntryRelationship(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActEntryRelationshipObservationClassCode constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationClassCode(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActEntryRelationshipObservationClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActEntryRelationshipObservationMoodCode constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationMoodCode(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActEntryRelationshipObservationMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActEntryRelationshipObservationCodeP constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationCodeP(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActEntryRelationshipObservationCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActEntryRelationshipObservationCode constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationCode(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActEntryRelationshipObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActEntryRelationshipObservationStatusCode constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationStatusCode(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActEntryRelationshipObservationStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActEntryRelationshipObservationStatusCodeP constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationStatusCodeP(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActEntryRelationshipObservationStatusCodeP(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActEntryRelationshipObservationValue constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationValue(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActEntryRelationshipObservationValue(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActEntryRelationshipObservationValueP constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservationValueP(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActEntryRelationshipObservationValueP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActEntryRelationshipTypeCodeP constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActEntryRelationshipTypeCodeP(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActEntryRelationshipTypeCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActEntryRelationshipTypeCode constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActEntryRelationshipTypeCode(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActEntryRelationshipTypeCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePatientReferralActEntryRelationshipObservation constraint of '<em>Patient Referral Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientReferralAct_validatePatientReferralActEntryRelationshipObservation(
+			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientReferralAct.validatePatientReferralActEntryRelationshipObservation(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage(PlannedCoverage plannedCoverage, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(plannedCoverage, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(plannedCoverage, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageTemplateId(plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageClassCode(plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageMoodCode(plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageId(plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageCodeP(plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageCode(plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageStatusCode(plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageStatusCodeP(plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageEntryRelationship(
+				plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageEntryRelationshipActClassCode(
+				plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageEntryRelationshipActMoodCode(
+				plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageEntryRelationshipActId(
+				plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageEntryRelationshipActCode(
+				plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageEntryRelationshipActStatusCode(
+				plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageEntryRelationshipActStatusCodeP(
+				plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageEntryRelationshipTypeCode(
+				plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageEntryRelationshipTypeCodeP(
+				plannedCoverage, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlannedCoverage_validatePlannedCoverageEntryRelationshipAct(
+				plannedCoverage, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageTemplateId constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageTemplateId(PlannedCoverage plannedCoverage,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageClassCode constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageClassCode(PlannedCoverage plannedCoverage,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageMoodCode constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageMoodCode(PlannedCoverage plannedCoverage,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageId constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageId(PlannedCoverage plannedCoverage,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageCodeP constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageCodeP(PlannedCoverage plannedCoverage,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageCode constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageCode(PlannedCoverage plannedCoverage,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageStatusCode constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageStatusCode(PlannedCoverage plannedCoverage,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageStatusCodeP constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageStatusCodeP(PlannedCoverage plannedCoverage,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageEntryRelationship constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageEntryRelationship(PlannedCoverage plannedCoverage,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageEntryRelationship(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageEntryRelationshipActClassCode constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageEntryRelationshipActClassCode(
+			PlannedCoverage plannedCoverage, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageEntryRelationshipActClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageEntryRelationshipActMoodCode constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageEntryRelationshipActMoodCode(
+			PlannedCoverage plannedCoverage, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageEntryRelationshipActMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageEntryRelationshipActId constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageEntryRelationshipActId(
+			PlannedCoverage plannedCoverage, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageEntryRelationshipActId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageEntryRelationshipActCode constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageEntryRelationshipActCode(
+			PlannedCoverage plannedCoverage, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageEntryRelationshipActCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageEntryRelationshipActStatusCode constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageEntryRelationshipActStatusCode(
+			PlannedCoverage plannedCoverage, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageEntryRelationshipActStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageEntryRelationshipActStatusCodeP constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageEntryRelationshipActStatusCodeP(
+			PlannedCoverage plannedCoverage, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageEntryRelationshipActStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageEntryRelationshipTypeCode constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageEntryRelationshipTypeCode(
+			PlannedCoverage plannedCoverage, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageEntryRelationshipTypeCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageEntryRelationshipTypeCodeP constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageEntryRelationshipTypeCodeP(
+			PlannedCoverage plannedCoverage, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageEntryRelationshipTypeCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePlannedCoverageEntryRelationshipAct constraint of '<em>Planned Coverage</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedCoverage_validatePlannedCoverageEntryRelationshipAct(PlannedCoverage plannedCoverage,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return plannedCoverage.validatePlannedCoverageEntryRelationshipAct(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservation(GoalObservation goalObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(goalObservation, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(goalObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(goalObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(goalObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(goalObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(goalObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(goalObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(goalObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGoalObservation_validateGoalObservationTemplateId(goalObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGoalObservation_validateGoalObservationClassCode(goalObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGoalObservation_validateGoalObservationMoodCode(goalObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGoalObservation_validateGoalObservationCode(goalObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGoalObservation_validateGoalObservationPatientPriorityPreference(
+				goalObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGoalObservation_validateGoalObservation(goalObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGoalObservation_validateGoalObservationActReference(goalObservation, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateGoalObservationTemplateId constraint of '<em>Goal Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservation_validateGoalObservationTemplateId(GoalObservation goalObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return goalObservation.validateGoalObservationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGoalObservationClassCode constraint of '<em>Goal Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservation_validateGoalObservationClassCode(GoalObservation goalObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return goalObservation.validateGoalObservationClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGoalObservationMoodCode constraint of '<em>Goal Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservation_validateGoalObservationMoodCode(GoalObservation goalObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return goalObservation.validateGoalObservationMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGoalObservationCode constraint of '<em>Goal Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservation_validateGoalObservationCode(GoalObservation goalObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return goalObservation.validateGoalObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGoalObservationPatientPriorityPreference constraint of '<em>Goal Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservation_validateGoalObservationPatientPriorityPreference(
+			GoalObservation goalObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return goalObservation.validateGoalObservationPatientPriorityPreference(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGoalObservation constraint of '<em>Goal Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservation_validateGoalObservation(GoalObservation goalObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return goalObservation.validateGoalObservation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGoalObservationActReference constraint of '<em>Goal Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservation_validateGoalObservationActReference(GoalObservation goalObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return goalObservation.validateGoalObservationActReference(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct(HealthConcernAct healthConcernAct, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(healthConcernAct, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(healthConcernAct, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActTemplateId(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActClassCode(healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActMoodCode(healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActId(healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActCodeP(healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActCode(healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActStatusCode(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActEffectiveTime(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActActReference(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActActReference2(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActAssessmentScaleObservation(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActCognitiveAbilitiesObservation(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActFamilyHistoryOrganizer(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActMentalStatusObservation(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActNutritionAssessment(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActNutritionAssessment2(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActPregnancyObservation(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActCaregiverCharacteristics(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActCulturalAndReligiousObservation(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActCharacteristicsOfHomeEnvironment(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActNutritionalStatusObservation(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActPatientPriorityPreference(
+				healthConcernAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernAct_validateHealthConcernActActReference3(
+				healthConcernAct, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateHealthConcernActTemplateId constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActTemplateId(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActClassCode constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActClassCode(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActMoodCode constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActMoodCode(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActId constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActId(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActCodeP constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActCodeP(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActCode constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActCode(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActStatusCode constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActStatusCode(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActEffectiveTime constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActEffectiveTime(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActActReference constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActActReference(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActActReference(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActActReference2 constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActActReference2(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActActReference2(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActAssessmentScaleObservation constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActAssessmentScaleObservation(
+			HealthConcernAct healthConcernAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActAssessmentScaleObservation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActCognitiveAbilitiesObservation constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActCognitiveAbilitiesObservation(
+			HealthConcernAct healthConcernAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActCognitiveAbilitiesObservation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActFamilyHistoryOrganizer constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActFamilyHistoryOrganizer(
+			HealthConcernAct healthConcernAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActFamilyHistoryOrganizer(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActMentalStatusObservation constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActMentalStatusObservation(
+			HealthConcernAct healthConcernAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActMentalStatusObservation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActNutritionAssessment constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActNutritionAssessment(
+			HealthConcernAct healthConcernAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActNutritionAssessment(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActNutritionAssessment2 constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActNutritionAssessment2(
+			HealthConcernAct healthConcernAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActNutritionAssessment2(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActPregnancyObservation constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActPregnancyObservation(
+			HealthConcernAct healthConcernAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActPregnancyObservation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActCaregiverCharacteristics constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActCaregiverCharacteristics(
+			HealthConcernAct healthConcernAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActCaregiverCharacteristics(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActCulturalAndReligiousObservation constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActCulturalAndReligiousObservation(
+			HealthConcernAct healthConcernAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActCulturalAndReligiousObservation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActCharacteristicsOfHomeEnvironment constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActCharacteristicsOfHomeEnvironment(
+			HealthConcernAct healthConcernAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActCharacteristicsOfHomeEnvironment(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActNutritionalStatusObservation constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActNutritionalStatusObservation(
+			HealthConcernAct healthConcernAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActNutritionalStatusObservation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActPatientPriorityPreference constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActPatientPriorityPreference(
+			HealthConcernAct healthConcernAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActPatientPriorityPreference(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernActActReference3 constraint of '<em>Health Concern Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernAct_validateHealthConcernActActReference3(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernAct.validateHealthConcernActActReference3(diagnostics, context);
 	}
 
 	/**
