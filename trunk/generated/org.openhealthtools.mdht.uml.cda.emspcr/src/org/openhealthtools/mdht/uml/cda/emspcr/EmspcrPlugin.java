@@ -40,7 +40,7 @@ public final class EmspcrPlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public EmspcrPlugin() {
-		super(new ResourceLocator [] {});
+		super(new ResourceLocator[] {});
 	}
 
 	/**

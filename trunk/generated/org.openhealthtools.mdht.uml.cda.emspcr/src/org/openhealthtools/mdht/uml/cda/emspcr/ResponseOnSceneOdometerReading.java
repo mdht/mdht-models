@@ -95,10 +95,11 @@ public interface ResponseOnSceneOdometerReading extends Observation {
 	 * @generated
 	 */
 	public ResponseOnSceneOdometerReading init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ResponseOnSceneOdometerReading init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResponseOnSceneOdometerReading init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResponseOnSceneOdometerReading

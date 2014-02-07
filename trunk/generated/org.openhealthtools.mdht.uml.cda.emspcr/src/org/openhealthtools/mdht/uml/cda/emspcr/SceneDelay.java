@@ -107,10 +107,11 @@ public interface SceneDelay extends Observation {
 	 * @generated
 	 */
 	public SceneDelay init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SceneDelay init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SceneDelay init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SceneDelay

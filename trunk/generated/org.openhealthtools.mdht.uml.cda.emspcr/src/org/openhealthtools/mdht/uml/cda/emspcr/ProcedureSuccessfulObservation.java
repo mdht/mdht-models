@@ -95,10 +95,11 @@ public interface ProcedureSuccessfulObservation extends Observation {
 	 * @generated
 	 */
 	public ProcedureSuccessfulObservation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProcedureSuccessfulObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureSuccessfulObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureSuccessfulObservation

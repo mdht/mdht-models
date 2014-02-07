@@ -95,10 +95,11 @@ public interface LastOralIntake extends Observation {
 	 * @generated
 	 */
 	public LastOralIntake init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public LastOralIntake init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LastOralIntake init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // LastOralIntake

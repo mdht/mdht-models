@@ -68,9 +68,8 @@ public class DrugAllergyOperations extends AllergyProblemActOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_DRUG_ALLERGY_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,30 +81,27 @@ public class DrugAllergyOperations extends AllergyProblemActOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDrugAllergyParticipant1(DrugAllergy drugAllergy, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateDrugAllergyParticipant1(DrugAllergy drugAllergy, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_DRUG_ALLERGY_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DRUG_ALLERGY);
 			try {
 				VALIDATE_DRUG_ALLERGY_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ALLERGY_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ALLERGY_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAllergy)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.DRUG_ALLERGY__DRUG_ALLERGY_PARTICIPANT1,
-						 EmspcrPlugin.INSTANCE.getString("DrugAllergyParticipant1"),
-						 new Object [] { drugAllergy }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.DRUG_ALLERGY__DRUG_ALLERGY_PARTICIPANT1,
+					EmspcrPlugin.INSTANCE.getString("DrugAllergyParticipant1"), new Object[] { drugAllergy }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -129,9 +125,8 @@ public class DrugAllergyOperations extends AllergyProblemActOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -143,30 +138,28 @@ public class DrugAllergyOperations extends AllergyProblemActOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAllergyProblemActTemplateId(DrugAllergy drugAllergy, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAllergyProblemActTemplateId(DrugAllergy drugAllergy, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DRUG_ALLERGY);
 			try {
 				VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAllergy)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			drugAllergy)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.DRUG_ALLERGY__ALLERGY_PROBLEM_ACT_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("AllergyProblemActTemplateId"),
-						 new Object [] { drugAllergy }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.DRUG_ALLERGY__ALLERGY_PROBLEM_ACT_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("AllergyProblemActTemplateId"), new Object[] { drugAllergy }));
 			}
-			 
+
 			return false;
 		}
 		return true;

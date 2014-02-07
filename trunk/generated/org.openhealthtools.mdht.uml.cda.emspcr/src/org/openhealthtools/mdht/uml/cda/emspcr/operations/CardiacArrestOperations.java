@@ -79,9 +79,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_CAUSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,30 +92,28 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestCauseRelationship(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestCauseRelationship(CardiacArrest cardiacArrest,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_CAUSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST);
 			try {
 				VALIDATE_CARDIAC_ARREST_CAUSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_CAUSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_CAUSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_CAUSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cardiacArrest)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_CAUSE_RELATIONSHIP,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestCauseRelationship"),
-						 new Object [] { cardiacArrest }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_CAUSE_RELATIONSHIP,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestCauseRelationship"), new Object[] { cardiacArrest }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -140,9 +137,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_INFORMANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -154,30 +150,29 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestInformantParticipation(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestInformantParticipation(CardiacArrest cardiacArrest,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_INFORMANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST);
 			try {
 				VALIDATE_CARDIAC_ARREST_INFORMANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_INFORMANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_INFORMANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_INFORMANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cardiacArrest)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_INFORMANT_PARTICIPATION,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestInformantParticipation"),
-						 new Object [] { cardiacArrest }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_INFORMANT_PARTICIPATION,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestInformantParticipation"),
+					new Object[] { cardiacArrest }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -201,9 +196,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_PRIOR_CPR_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -215,30 +209,29 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestPriorCPRRelationship(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestPriorCPRRelationship(CardiacArrest cardiacArrest,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_PRIOR_CPR_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST);
 			try {
 				VALIDATE_CARDIAC_ARREST_PRIOR_CPR_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_PRIOR_CPR_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_PRIOR_CPR_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_PRIOR_CPR_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cardiacArrest)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_PRIOR_CPR_RELATIONSHIP,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestPriorCPRRelationship"),
-						 new Object [] { cardiacArrest }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_PRIOR_CPR_RELATIONSHIP,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestPriorCPRRelationship"),
+					new Object[] { cardiacArrest }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -262,9 +255,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_PRIOR_AED_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -276,30 +268,29 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestPriorAEDRelationship(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestPriorAEDRelationship(CardiacArrest cardiacArrest,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_PRIOR_AED_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST);
 			try {
 				VALIDATE_CARDIAC_ARREST_PRIOR_AED_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_PRIOR_AED_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_PRIOR_AED_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_PRIOR_AED_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cardiacArrest)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_PRIOR_AED_RELATIONSHIP,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestPriorAEDRelationship"),
-						 new Object [] { cardiacArrest }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_PRIOR_AED_RELATIONSHIP,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestPriorAEDRelationship"),
+					new Object[] { cardiacArrest }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -323,9 +314,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_SPONTANEOUS_CIRCULATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -337,30 +327,30 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestSpontaneousCirculationRelationship(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestSpontaneousCirculationRelationship(CardiacArrest cardiacArrest,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_SPONTANEOUS_CIRCULATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST);
 			try {
 				VALIDATE_CARDIAC_ARREST_SPONTANEOUS_CIRCULATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_SPONTANEOUS_CIRCULATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_SPONTANEOUS_CIRCULATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrest)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CARDIAC_ARREST_SPONTANEOUS_CIRCULATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cardiacArrest)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_SPONTANEOUS_CIRCULATION_RELATIONSHIP,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestSpontaneousCirculationRelationship"),
-						 new Object [] { cardiacArrest }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_SPONTANEOUS_CIRCULATION_RELATIONSHIP,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestSpontaneousCirculationRelationship"),
+					new Object[] { cardiacArrest }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -384,9 +374,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_DESTINATION_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -398,30 +387,30 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestDestinationRhythmRelationship(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestDestinationRhythmRelationship(CardiacArrest cardiacArrest,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_DESTINATION_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST);
 			try {
 				VALIDATE_CARDIAC_ARREST_DESTINATION_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_DESTINATION_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_DESTINATION_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrest)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CARDIAC_ARREST_DESTINATION_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cardiacArrest)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_DESTINATION_RHYTHM_RELATIONSHIP,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestDestinationRhythmRelationship"),
-						 new Object [] { cardiacArrest }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_DESTINATION_RHYTHM_RELATIONSHIP,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestDestinationRhythmRelationship"),
+					new Object[] { cardiacArrest }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -445,9 +434,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_ARREST_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -459,30 +447,29 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestArrestRhythmRelationship(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestArrestRhythmRelationship(CardiacArrest cardiacArrest,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_ARREST_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST);
 			try {
 				VALIDATE_CARDIAC_ARREST_ARREST_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_ARREST_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_ARREST_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_ARREST_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cardiacArrest)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_ARREST_RHYTHM_RELATIONSHIP,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestArrestRhythmRelationship"),
-						 new Object [] { cardiacArrest }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_ARREST_RHYTHM_RELATIONSHIP,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestArrestRhythmRelationship"),
+					new Object[] { cardiacArrest }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -506,9 +493,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -520,30 +506,28 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestTemplateId(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestTemplateId(CardiacArrest cardiacArrest, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST);
 			try {
 				VALIDATE_CARDIAC_ARREST_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cardiacArrest)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestTemplateId"),
-						 new Object [] { cardiacArrest }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestTemplateId"), new Object[] { cardiacArrest }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -567,9 +551,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -581,30 +564,28 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestMoodCode(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestMoodCode(CardiacArrest cardiacArrest, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST);
 			try {
 				VALIDATE_CARDIAC_ARREST_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cardiacArrest)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestMoodCode"),
-						 new Object [] { cardiacArrest }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestMoodCode"), new Object[] { cardiacArrest }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -618,9 +599,9 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARDIAC_ARREST_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
+	protected static final String VALIDATE_CARDIAC_ARREST_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCardiacArrestCode(CardiacArrest, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Code</em>}' invariant operation.
@@ -630,9 +611,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -644,30 +624,27 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestCode(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestCode(CardiacArrest cardiacArrest, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST);
 			try {
 				VALIDATE_CARDIAC_ARREST_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrest)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_CODE,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestCode"),
-						 new Object [] { cardiacArrest }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_CODE,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestCode"), new Object[] { cardiacArrest }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -691,9 +668,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -705,30 +681,28 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestNegationInd(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestNegationInd(CardiacArrest cardiacArrest, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST);
 			try {
 				VALIDATE_CARDIAC_ARREST_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cardiacArrest)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_NEGATION_IND,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestNegationInd"),
-						 new Object [] { cardiacArrest }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_NEGATION_IND,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestNegationInd"), new Object[] { cardiacArrest }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -752,9 +726,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -766,30 +739,28 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestEffectiveTime(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestEffectiveTime(CardiacArrest cardiacArrest, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST);
 			try {
 				VALIDATE_CARDIAC_ARREST_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrest)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cardiacArrest)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_EFFECTIVE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestEffectiveTime"),
-						 new Object [] { cardiacArrest }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_EFFECTIVE_TIME,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestEffectiveTime"), new Object[] { cardiacArrest }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -803,9 +774,9 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARDIAC_ARREST_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.code = '410429000' and value.codeSystem = '2.16.840.1.113883.6.96'))";
+	protected static final String VALIDATE_CARDIAC_ARREST_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.code = '410429000' and value.codeSystem = '2.16.840.1.113883.6.96'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCardiacArrestValue(CardiacArrest, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Value</em>}' invariant operation.
@@ -815,9 +786,8 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -829,30 +799,27 @@ public class CardiacArrestOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestValue(CardiacArrest cardiacArrest, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestValue(CardiacArrest cardiacArrest, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST);
 			try {
 				VALIDATE_CARDIAC_ARREST_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrest)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestValue"),
-						 new Object [] { cardiacArrest }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST__CARDIAC_ARREST_VALUE,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestValue"), new Object[] { cardiacArrest }));
 			}
-			 
+
 			return false;
 		}
 		return true;

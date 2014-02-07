@@ -73,9 +73,8 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_QUALIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,30 +86,28 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowQualifierTemplateId(GlasgowQualifier glasgowQualifier, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGlasgowQualifierTemplateId(GlasgowQualifier glasgowQualifier,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GLASGOW_QUALIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_QUALIFIER);
 			try {
 				VALIDATE_GLASGOW_QUALIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_QUALIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_QUALIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowQualifier)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_QUALIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			glasgowQualifier)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_QUALIFIER__GLASGOW_QUALIFIER_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowQualifierTemplateId"),
-						 new Object [] { glasgowQualifier }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.GLASGOW_QUALIFIER__GLASGOW_QUALIFIER_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("GlasgowQualifierTemplateId"), new Object[] { glasgowQualifier }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -134,9 +131,8 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_QUALIFIER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,30 +144,28 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowQualifierMoodCode(GlasgowQualifier glasgowQualifier, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGlasgowQualifierMoodCode(GlasgowQualifier glasgowQualifier,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GLASGOW_QUALIFIER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_QUALIFIER);
 			try {
 				VALIDATE_GLASGOW_QUALIFIER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_QUALIFIER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_QUALIFIER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowQualifier)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_QUALIFIER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			glasgowQualifier)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_QUALIFIER__GLASGOW_QUALIFIER_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowQualifierMoodCode"),
-						 new Object [] { glasgowQualifier }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.GLASGOW_QUALIFIER__GLASGOW_QUALIFIER_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("GlasgowQualifierMoodCode"), new Object[] { glasgowQualifier }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -195,9 +189,8 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_QUALIFIER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,30 +202,28 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowQualifierCodeP(GlasgowQualifier glasgowQualifier, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGlasgowQualifierCodeP(GlasgowQualifier glasgowQualifier, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_GLASGOW_QUALIFIER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_QUALIFIER);
 			try {
 				VALIDATE_GLASGOW_QUALIFIER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_QUALIFIER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_QUALIFIER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowQualifier)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_QUALIFIER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			glasgowQualifier)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_QUALIFIER__GLASGOW_QUALIFIER_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowQualifierCodeP"),
-						 new Object [] { glasgowQualifier }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.GLASGOW_QUALIFIER__GLASGOW_QUALIFIER_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("GlasgowQualifierCodeP"), new Object[] { glasgowQualifier }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -244,7 +235,7 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(glasgowQualifier);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -258,9 +249,9 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GLASGOW_QUALIFIER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '55285-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_GLASGOW_QUALIFIER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '55285-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGlasgowQualifierCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Code</em>}' invariant operation.
@@ -270,9 +261,8 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_QUALIFIER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,36 +274,36 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowQualifierCode(GlasgowQualifier glasgowQualifier, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.GlasgowQualifierCodeP");
+
+	public static boolean validateGlasgowQualifierCode(GlasgowQualifier glasgowQualifier, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.GlasgowQualifierCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(glasgowQualifier)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_GLASGOW_QUALIFIER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_QUALIFIER);
 			try {
 				VALIDATE_GLASGOW_QUALIFIER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_QUALIFIER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_QUALIFIER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowQualifier)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_QUALIFIER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			glasgowQualifier)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_QUALIFIER__GLASGOW_QUALIFIER_CODE,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowQualifierCode"),
-						 new Object [] { glasgowQualifier }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.GLASGOW_QUALIFIER__GLASGOW_QUALIFIER_CODE,
+					EmspcrPlugin.INSTANCE.getString("GlasgowQualifierCode"), new Object[] { glasgowQualifier }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -327,9 +317,9 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GLASGOW_QUALIFIER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17102-7' or value.code = 'LA17103-5' or value.code = 'LA17104-3' or value.code = 'LA17105-0' or value.code = 'LA17106-8')))";
+	protected static final String VALIDATE_GLASGOW_QUALIFIER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17102-7' or value.code = 'LA17103-5' or value.code = 'LA17104-3' or value.code = 'LA17105-0' or value.code = 'LA17106-8')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGlasgowQualifierValue(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Value</em>}' invariant operation.
@@ -339,9 +329,8 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_QUALIFIER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -353,30 +342,28 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowQualifierValue(GlasgowQualifier glasgowQualifier, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGlasgowQualifierValue(GlasgowQualifier glasgowQualifier, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_GLASGOW_QUALIFIER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_QUALIFIER);
 			try {
 				VALIDATE_GLASGOW_QUALIFIER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_QUALIFIER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_QUALIFIER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowQualifier)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_QUALIFIER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			glasgowQualifier)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_QUALIFIER__GLASGOW_QUALIFIER_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowQualifierValue"),
-						 new Object [] { glasgowQualifier }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.GLASGOW_QUALIFIER__GLASGOW_QUALIFIER_VALUE,
+					EmspcrPlugin.INSTANCE.getString("GlasgowQualifierValue"), new Object[] { glasgowQualifier }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -400,9 +387,8 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_QUALIFIER_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,30 +400,28 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowQualifierValueP(GlasgowQualifier glasgowQualifier, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGlasgowQualifierValueP(GlasgowQualifier glasgowQualifier,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GLASGOW_QUALIFIER_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_QUALIFIER);
 			try {
 				VALIDATE_GLASGOW_QUALIFIER_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_QUALIFIER_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_QUALIFIER_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowQualifier)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_QUALIFIER_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			glasgowQualifier)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_QUALIFIER__GLASGOW_QUALIFIER_VALUE_P,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowQualifierValueP"),
-						 new Object [] { glasgowQualifier }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.GLASGOW_QUALIFIER__GLASGOW_QUALIFIER_VALUE_P,
+					EmspcrPlugin.INSTANCE.getString("GlasgowQualifierValueP"), new Object[] { glasgowQualifier }));
 			}
-			 
+
 			return false;
 		}
 		return true;

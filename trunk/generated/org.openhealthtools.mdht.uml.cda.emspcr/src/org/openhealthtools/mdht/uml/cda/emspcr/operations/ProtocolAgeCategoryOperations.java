@@ -73,9 +73,8 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROTOCOL_AGE_CATEGORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,30 +86,29 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProtocolAgeCategoryTemplateId(ProtocolAgeCategory protocolAgeCategory, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProtocolAgeCategoryTemplateId(ProtocolAgeCategory protocolAgeCategory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROTOCOL_AGE_CATEGORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROTOCOL_AGE_CATEGORY);
 			try {
 				VALIDATE_PROTOCOL_AGE_CATEGORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_AGE_CATEGORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_AGE_CATEGORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolAgeCategory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_AGE_CATEGORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			protocolAgeCategory)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROTOCOL_AGE_CATEGORY__PROTOCOL_AGE_CATEGORY_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("ProtocolAgeCategoryTemplateId"),
-						 new Object [] { protocolAgeCategory }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROTOCOL_AGE_CATEGORY__PROTOCOL_AGE_CATEGORY_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("ProtocolAgeCategoryTemplateId"),
+					new Object[] { protocolAgeCategory }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -134,9 +132,8 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROTOCOL_AGE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,30 +145,29 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProtocolAgeCategoryMoodCode(ProtocolAgeCategory protocolAgeCategory, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProtocolAgeCategoryMoodCode(ProtocolAgeCategory protocolAgeCategory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROTOCOL_AGE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROTOCOL_AGE_CATEGORY);
 			try {
 				VALIDATE_PROTOCOL_AGE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_AGE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_AGE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolAgeCategory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_AGE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			protocolAgeCategory)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROTOCOL_AGE_CATEGORY__PROTOCOL_AGE_CATEGORY_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ProtocolAgeCategoryMoodCode"),
-						 new Object [] { protocolAgeCategory }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROTOCOL_AGE_CATEGORY__PROTOCOL_AGE_CATEGORY_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("ProtocolAgeCategoryMoodCode"),
+					new Object[] { protocolAgeCategory }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -195,9 +191,8 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROTOCOL_AGE_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,30 +204,28 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProtocolAgeCategoryCodeP(ProtocolAgeCategory protocolAgeCategory, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProtocolAgeCategoryCodeP(ProtocolAgeCategory protocolAgeCategory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROTOCOL_AGE_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROTOCOL_AGE_CATEGORY);
 			try {
 				VALIDATE_PROTOCOL_AGE_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_AGE_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_AGE_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolAgeCategory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_AGE_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			protocolAgeCategory)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROTOCOL_AGE_CATEGORY__PROTOCOL_AGE_CATEGORY_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("ProtocolAgeCategoryCodeP"),
-						 new Object [] { protocolAgeCategory }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROTOCOL_AGE_CATEGORY__PROTOCOL_AGE_CATEGORY_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("ProtocolAgeCategoryCodeP"), new Object[] { protocolAgeCategory }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -244,7 +237,7 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(protocolAgeCategory);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -258,9 +251,9 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROTOCOL_AGE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67538-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PROTOCOL_AGE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67538-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProtocolAgeCategoryCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Code</em>}' invariant operation.
@@ -270,9 +263,8 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROTOCOL_AGE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,36 +276,36 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProtocolAgeCategoryCode(ProtocolAgeCategory protocolAgeCategory, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.ProtocolAgeCategoryCodeP");
+
+	public static boolean validateProtocolAgeCategoryCode(ProtocolAgeCategory protocolAgeCategory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.ProtocolAgeCategoryCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(protocolAgeCategory)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_PROTOCOL_AGE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROTOCOL_AGE_CATEGORY);
 			try {
 				VALIDATE_PROTOCOL_AGE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_AGE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_AGE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolAgeCategory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_AGE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			protocolAgeCategory)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROTOCOL_AGE_CATEGORY__PROTOCOL_AGE_CATEGORY_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ProtocolAgeCategoryCode"),
-						 new Object [] { protocolAgeCategory }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROTOCOL_AGE_CATEGORY__PROTOCOL_AGE_CATEGORY_CODE,
+					EmspcrPlugin.INSTANCE.getString("ProtocolAgeCategoryCode"), new Object[] { protocolAgeCategory }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -327,9 +319,9 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17571-3' or value.code = 'LA17572-1' or value.code = 'LA17573-9')))";
+	protected static final String VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17571-3' or value.code = 'LA17572-1' or value.code = 'LA17573-9')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProtocolAgeCategoryValue(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Value</em>}' invariant operation.
@@ -339,9 +331,8 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -353,30 +344,28 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProtocolAgeCategoryValue(ProtocolAgeCategory protocolAgeCategory, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProtocolAgeCategoryValue(ProtocolAgeCategory protocolAgeCategory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROTOCOL_AGE_CATEGORY);
 			try {
 				VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolAgeCategory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			protocolAgeCategory)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROTOCOL_AGE_CATEGORY__PROTOCOL_AGE_CATEGORY_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("ProtocolAgeCategoryValue"),
-						 new Object [] { protocolAgeCategory }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROTOCOL_AGE_CATEGORY__PROTOCOL_AGE_CATEGORY_VALUE,
+					EmspcrPlugin.INSTANCE.getString("ProtocolAgeCategoryValue"), new Object[] { protocolAgeCategory }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -400,9 +389,8 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,30 +402,28 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProtocolAgeCategoryValueP(ProtocolAgeCategory protocolAgeCategory, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProtocolAgeCategoryValueP(ProtocolAgeCategory protocolAgeCategory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROTOCOL_AGE_CATEGORY);
 			try {
 				VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolAgeCategory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			protocolAgeCategory)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROTOCOL_AGE_CATEGORY__PROTOCOL_AGE_CATEGORY_VALUE_P,
-						 EmspcrPlugin.INSTANCE.getString("ProtocolAgeCategoryValueP"),
-						 new Object [] { protocolAgeCategory }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROTOCOL_AGE_CATEGORY__PROTOCOL_AGE_CATEGORY_VALUE_P,
+					EmspcrPlugin.INSTANCE.getString("ProtocolAgeCategoryValueP"), new Object[] { protocolAgeCategory }));
 			}
-			 
+
 			return false;
 		}
 		return true;

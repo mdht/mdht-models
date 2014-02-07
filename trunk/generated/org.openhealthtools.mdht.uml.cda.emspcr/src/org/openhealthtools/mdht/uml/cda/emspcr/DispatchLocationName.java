@@ -83,10 +83,11 @@ public interface DispatchLocationName extends Observation {
 	 * @generated
 	 */
 	public DispatchLocationName init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DispatchLocationName init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DispatchLocationName init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DispatchLocationName

@@ -107,10 +107,11 @@ public interface HistoryOfCondition extends Observation {
 	 * @generated
 	 */
 	public HistoryOfCondition init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public HistoryOfCondition init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HistoryOfCondition init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HistoryOfCondition

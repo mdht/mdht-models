@@ -107,10 +107,11 @@ public interface BarriersToPatientCare extends Observation {
 	 * @generated
 	 */
 	public BarriersToPatientCare init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public BarriersToPatientCare init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BarriersToPatientCare init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // BarriersToPatientCare

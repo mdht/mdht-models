@@ -88,7 +88,8 @@ public interface EMSProceduresPerformedSection extends ProcedureDescriptionSecti
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(emspcr::Procedure))'"
 	 * @generated
 	 */
-	boolean validateEMSProceduresPerformedSectionProcedureActivityProcedure1(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSProceduresPerformedSectionProcedureActivityProcedure1(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,10 +106,11 @@ public interface EMSProceduresPerformedSection extends ProcedureDescriptionSecti
 	 * @generated
 	 */
 	public EMSProceduresPerformedSection init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EMSProceduresPerformedSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EMSProceduresPerformedSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSProceduresPerformedSection

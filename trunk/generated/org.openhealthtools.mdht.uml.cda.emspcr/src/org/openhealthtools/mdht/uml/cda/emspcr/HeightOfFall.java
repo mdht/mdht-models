@@ -83,10 +83,11 @@ public interface HeightOfFall extends Observation {
 	 * @generated
 	 */
 	public HeightOfFall init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public HeightOfFall init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HeightOfFall init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HeightOfFall

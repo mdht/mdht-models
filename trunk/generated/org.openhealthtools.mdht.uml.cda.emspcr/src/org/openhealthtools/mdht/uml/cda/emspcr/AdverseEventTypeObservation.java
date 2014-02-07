@@ -107,10 +107,11 @@ public interface AdverseEventTypeObservation extends Observation {
 	 * @generated
 	 */
 	public AdverseEventTypeObservation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AdverseEventTypeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdverseEventTypeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdverseEventTypeObservation

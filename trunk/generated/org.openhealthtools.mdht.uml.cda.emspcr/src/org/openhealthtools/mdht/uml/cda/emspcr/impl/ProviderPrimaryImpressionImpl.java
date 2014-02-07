@@ -59,7 +59,8 @@ public class ProviderPrimaryImpressionImpl extends ObservationImpl implements Pr
 	 * @generated
 	 */
 	public boolean validateProviderPrimaryImpressionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProviderPrimaryImpressionOperations.validateProviderPrimaryImpressionTemplateId(this, diagnostics, context);
+		return ProviderPrimaryImpressionOperations.validateProviderPrimaryImpressionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -113,15 +114,16 @@ public class ProviderPrimaryImpressionImpl extends ObservationImpl implements Pr
 	 * @generated
 	 */
 	public ProviderPrimaryImpression init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProviderPrimaryImpression init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ProviderPrimaryImpressionImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProviderPrimaryImpression init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ProviderPrimaryImpressionImpl

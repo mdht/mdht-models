@@ -72,9 +72,8 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,30 +85,30 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateThrombolyticContraindicationsTemplateId(ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateThrombolyticContraindicationsTemplateId(
+			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.THROMBOLYTIC_CONTRAINDICATIONS);
 			try {
 				VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(thrombolyticContraindications)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			thrombolyticContraindications)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.THROMBOLYTIC_CONTRAINDICATIONS__THROMBOLYTIC_CONTRAINDICATIONS_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("ThrombolyticContraindicationsTemplateId"),
-						 new Object [] { thrombolyticContraindications }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.THROMBOLYTIC_CONTRAINDICATIONS__THROMBOLYTIC_CONTRAINDICATIONS_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("ThrombolyticContraindicationsTemplateId"),
+					new Object[] { thrombolyticContraindications }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -133,9 +132,8 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,30 +145,30 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateThrombolyticContraindicationsMoodCode(ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateThrombolyticContraindicationsMoodCode(
+			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.THROMBOLYTIC_CONTRAINDICATIONS);
 			try {
 				VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(thrombolyticContraindications)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			thrombolyticContraindications)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.THROMBOLYTIC_CONTRAINDICATIONS__THROMBOLYTIC_CONTRAINDICATIONS_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ThrombolyticContraindicationsMoodCode"),
-						 new Object [] { thrombolyticContraindications }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.THROMBOLYTIC_CONTRAINDICATIONS__THROMBOLYTIC_CONTRAINDICATIONS_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("ThrombolyticContraindicationsMoodCode"),
+					new Object[] { thrombolyticContraindications }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -194,9 +192,8 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +205,30 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateThrombolyticContraindicationsCodeP(ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateThrombolyticContraindicationsCodeP(
+			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.THROMBOLYTIC_CONTRAINDICATIONS);
 			try {
 				VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(thrombolyticContraindications)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			thrombolyticContraindications)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.THROMBOLYTIC_CONTRAINDICATIONS__THROMBOLYTIC_CONTRAINDICATIONS_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("ThrombolyticContraindicationsCodeP"),
-						 new Object [] { thrombolyticContraindications }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.THROMBOLYTIC_CONTRAINDICATIONS__THROMBOLYTIC_CONTRAINDICATIONS_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("ThrombolyticContraindicationsCodeP"),
+					new Object[] { thrombolyticContraindications }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -243,7 +240,7 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 				}
 				passToken.add(thrombolyticContraindications);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -257,9 +254,9 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67523-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67523-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateThrombolyticContraindicationsCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Code</em>}' invariant operation.
@@ -269,9 +266,8 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -283,36 +279,38 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateThrombolyticContraindicationsCode(ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.ThrombolyticContraindicationsCodeP");
+
+	public static boolean validateThrombolyticContraindicationsCode(
+			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.ThrombolyticContraindicationsCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(thrombolyticContraindications)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.THROMBOLYTIC_CONTRAINDICATIONS);
 			try {
 				VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(thrombolyticContraindications)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			thrombolyticContraindications)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.THROMBOLYTIC_CONTRAINDICATIONS__THROMBOLYTIC_CONTRAINDICATIONS_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ThrombolyticContraindicationsCode"),
-						 new Object [] { thrombolyticContraindications }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.THROMBOLYTIC_CONTRAINDICATIONS__THROMBOLYTIC_CONTRAINDICATIONS_CODE,
+					EmspcrPlugin.INSTANCE.getString("ThrombolyticContraindicationsCode"),
+					new Object[] { thrombolyticContraindications }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -326,9 +324,9 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17114-2' or value.code = 'LA17115-9' or value.code = 'LA17116-7')))";
+	protected static final String VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17114-2' or value.code = 'LA17115-9' or value.code = 'LA17116-7')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateThrombolyticContraindicationsValue(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Value</em>}' invariant operation.
@@ -338,9 +336,8 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -352,30 +349,30 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateThrombolyticContraindicationsValue(ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateThrombolyticContraindicationsValue(
+			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.THROMBOLYTIC_CONTRAINDICATIONS);
 			try {
 				VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(thrombolyticContraindications)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			thrombolyticContraindications)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.THROMBOLYTIC_CONTRAINDICATIONS__THROMBOLYTIC_CONTRAINDICATIONS_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("ThrombolyticContraindicationsValue"),
-						 new Object [] { thrombolyticContraindications }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.THROMBOLYTIC_CONTRAINDICATIONS__THROMBOLYTIC_CONTRAINDICATIONS_VALUE,
+					EmspcrPlugin.INSTANCE.getString("ThrombolyticContraindicationsValue"),
+					new Object[] { thrombolyticContraindications }));
 			}
-			 
+
 			return false;
 		}
 		return true;

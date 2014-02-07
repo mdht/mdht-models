@@ -95,10 +95,11 @@ public interface AdverseEventIndicator extends Observation {
 	 * @generated
 	 */
 	public AdverseEventIndicator init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AdverseEventIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdverseEventIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdverseEventIndicator

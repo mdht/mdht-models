@@ -73,9 +73,8 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROVIDER_PRIMARY_IMPRESSION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,30 +86,30 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProviderPrimaryImpressionTemplateId(ProviderPrimaryImpression providerPrimaryImpression, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProviderPrimaryImpressionTemplateId(
+			ProviderPrimaryImpression providerPrimaryImpression, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PROVIDER_PRIMARY_IMPRESSION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROVIDER_PRIMARY_IMPRESSION);
 			try {
 				VALIDATE_PROVIDER_PRIMARY_IMPRESSION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(providerPrimaryImpression)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			providerPrimaryImpression)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROVIDER_PRIMARY_IMPRESSION__PROVIDER_PRIMARY_IMPRESSION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("ProviderPrimaryImpressionTemplateId"),
-						 new Object [] { providerPrimaryImpression }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROVIDER_PRIMARY_IMPRESSION__PROVIDER_PRIMARY_IMPRESSION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("ProviderPrimaryImpressionTemplateId"),
+					new Object[] { providerPrimaryImpression }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -134,9 +133,8 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROVIDER_PRIMARY_IMPRESSION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,30 +146,30 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProviderPrimaryImpressionMoodCode(ProviderPrimaryImpression providerPrimaryImpression, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProviderPrimaryImpressionMoodCode(
+			ProviderPrimaryImpression providerPrimaryImpression, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PROVIDER_PRIMARY_IMPRESSION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROVIDER_PRIMARY_IMPRESSION);
 			try {
 				VALIDATE_PROVIDER_PRIMARY_IMPRESSION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(providerPrimaryImpression)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			providerPrimaryImpression)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROVIDER_PRIMARY_IMPRESSION__PROVIDER_PRIMARY_IMPRESSION_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ProviderPrimaryImpressionMoodCode"),
-						 new Object [] { providerPrimaryImpression }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROVIDER_PRIMARY_IMPRESSION__PROVIDER_PRIMARY_IMPRESSION_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("ProviderPrimaryImpressionMoodCode"),
+					new Object[] { providerPrimaryImpression }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -195,9 +193,8 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,30 +206,29 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProviderPrimaryImpressionCodeP(ProviderPrimaryImpression providerPrimaryImpression, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProviderPrimaryImpressionCodeP(ProviderPrimaryImpression providerPrimaryImpression,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROVIDER_PRIMARY_IMPRESSION);
 			try {
 				VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(providerPrimaryImpression)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			providerPrimaryImpression)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROVIDER_PRIMARY_IMPRESSION__PROVIDER_PRIMARY_IMPRESSION_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("ProviderPrimaryImpressionCodeP"),
-						 new Object [] { providerPrimaryImpression }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROVIDER_PRIMARY_IMPRESSION__PROVIDER_PRIMARY_IMPRESSION_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("ProviderPrimaryImpressionCodeP"),
+					new Object[] { providerPrimaryImpression }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -244,7 +240,7 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 				}
 				passToken.add(providerPrimaryImpression);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -258,9 +254,9 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67492-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67492-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProviderPrimaryImpressionCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Code</em>}' invariant operation.
@@ -270,9 +266,8 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,36 +279,37 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProviderPrimaryImpressionCode(ProviderPrimaryImpression providerPrimaryImpression, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.ProviderPrimaryImpressionCodeP");
+
+	public static boolean validateProviderPrimaryImpressionCode(ProviderPrimaryImpression providerPrimaryImpression,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.ProviderPrimaryImpressionCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(providerPrimaryImpression)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROVIDER_PRIMARY_IMPRESSION);
 			try {
 				VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(providerPrimaryImpression)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			providerPrimaryImpression)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROVIDER_PRIMARY_IMPRESSION__PROVIDER_PRIMARY_IMPRESSION_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ProviderPrimaryImpressionCode"),
-						 new Object [] { providerPrimaryImpression }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROVIDER_PRIMARY_IMPRESSION__PROVIDER_PRIMARY_IMPRESSION_CODE,
+					EmspcrPlugin.INSTANCE.getString("ProviderPrimaryImpressionCode"),
+					new Object[] { providerPrimaryImpression }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -327,9 +323,9 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.90'))";
+	protected static final String VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.90'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProviderPrimaryImpressionValue(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Value</em>}' invariant operation.
@@ -339,9 +335,8 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -353,30 +348,29 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProviderPrimaryImpressionValue(ProviderPrimaryImpression providerPrimaryImpression, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProviderPrimaryImpressionValue(ProviderPrimaryImpression providerPrimaryImpression,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROVIDER_PRIMARY_IMPRESSION);
 			try {
 				VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(providerPrimaryImpression)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			providerPrimaryImpression)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROVIDER_PRIMARY_IMPRESSION__PROVIDER_PRIMARY_IMPRESSION_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("ProviderPrimaryImpressionValue"),
-						 new Object [] { providerPrimaryImpression }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROVIDER_PRIMARY_IMPRESSION__PROVIDER_PRIMARY_IMPRESSION_VALUE,
+					EmspcrPlugin.INSTANCE.getString("ProviderPrimaryImpressionValue"),
+					new Object[] { providerPrimaryImpression }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -400,9 +394,8 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,30 +407,29 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProviderPrimaryImpressionValueP(ProviderPrimaryImpression providerPrimaryImpression, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProviderPrimaryImpressionValueP(ProviderPrimaryImpression providerPrimaryImpression,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROVIDER_PRIMARY_IMPRESSION);
 			try {
 				VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(providerPrimaryImpression)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			providerPrimaryImpression)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROVIDER_PRIMARY_IMPRESSION__PROVIDER_PRIMARY_IMPRESSION_VALUE_P,
-						 EmspcrPlugin.INSTANCE.getString("ProviderPrimaryImpressionValueP"),
-						 new Object [] { providerPrimaryImpression }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROVIDER_PRIMARY_IMPRESSION__PROVIDER_PRIMARY_IMPRESSION_VALUE_P,
+					EmspcrPlugin.INSTANCE.getString("ProviderPrimaryImpressionValueP"),
+					new Object[] { providerPrimaryImpression }));
 			}
-			 
+
 			return false;
 		}
 		return true;

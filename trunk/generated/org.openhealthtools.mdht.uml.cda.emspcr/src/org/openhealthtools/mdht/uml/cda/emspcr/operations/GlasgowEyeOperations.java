@@ -72,9 +72,8 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_EYE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,30 +85,27 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowEyeTemplateId(GlasgowEye glasgowEye, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGlasgowEyeTemplateId(GlasgowEye glasgowEye, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_GLASGOW_EYE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_EYE);
 			try {
 				VALIDATE_GLASGOW_EYE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_EYE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_EYE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowEye)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_EYE__GLASGOW_EYE_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowEyeTemplateId"),
-						 new Object [] { glasgowEye }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.GLASGOW_EYE__GLASGOW_EYE_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("GlasgowEyeTemplateId"), new Object[] { glasgowEye }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -133,9 +129,8 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_EYE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,30 +142,27 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowEyeMoodCode(GlasgowEye glasgowEye, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGlasgowEyeMoodCode(GlasgowEye glasgowEye, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_GLASGOW_EYE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_EYE);
 			try {
 				VALIDATE_GLASGOW_EYE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_EYE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_EYE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowEye)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_EYE__GLASGOW_EYE_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowEyeMoodCode"),
-						 new Object [] { glasgowEye }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.GLASGOW_EYE__GLASGOW_EYE_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("GlasgowEyeMoodCode"), new Object[] { glasgowEye }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -194,9 +186,8 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_EYE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +199,27 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowEyeCodeP(GlasgowEye glasgowEye, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGlasgowEyeCodeP(GlasgowEye glasgowEye, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_GLASGOW_EYE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_EYE);
 			try {
 				VALIDATE_GLASGOW_EYE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_EYE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_EYE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowEye)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_EYE__GLASGOW_EYE_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowEyeCodeP"),
-						 new Object [] { glasgowEye }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.GLASGOW_EYE__GLASGOW_EYE_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("GlasgowEyeCodeP"), new Object[] { glasgowEye }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -243,7 +231,7 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(glasgowEye);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -257,9 +245,9 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GLASGOW_EYE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '9267-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_GLASGOW_EYE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '9267-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGlasgowEyeCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Code</em>}' invariant operation.
@@ -269,9 +257,8 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_EYE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -283,36 +270,34 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowEyeCode(GlasgowEye glasgowEye, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.GlasgowEyeCodeP");
+
+	public static boolean validateGlasgowEyeCode(GlasgowEye glasgowEye, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.GlasgowEyeCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(glasgowEye)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_GLASGOW_EYE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_EYE);
 			try {
 				VALIDATE_GLASGOW_EYE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_EYE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_EYE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowEye)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_EYE__GLASGOW_EYE_CODE,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowEyeCode"),
-						 new Object [] { glasgowEye }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE, EmspcrValidator.GLASGOW_EYE__GLASGOW_EYE_CODE,
+					EmspcrPlugin.INSTANCE.getString("GlasgowEyeCode"), new Object[] { glasgowEye }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -336,9 +321,8 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_EYE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -350,30 +334,27 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowEyeValue(GlasgowEye glasgowEye, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGlasgowEyeValue(GlasgowEye glasgowEye, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_GLASGOW_EYE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_EYE);
 			try {
 				VALIDATE_GLASGOW_EYE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_EYE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_EYE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowEye)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_EYE__GLASGOW_EYE_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowEyeValue"),
-						 new Object [] { glasgowEye }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.GLASGOW_EYE__GLASGOW_EYE_VALUE, EmspcrPlugin.INSTANCE.getString("GlasgowEyeValue"),
+					new Object[] { glasgowEye }));
 			}
-			 
+
 			return false;
 		}
 		return true;

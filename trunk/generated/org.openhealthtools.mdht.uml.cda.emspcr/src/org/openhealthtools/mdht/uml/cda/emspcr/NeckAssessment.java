@@ -95,10 +95,11 @@ public interface NeckAssessment extends Observation {
 	 * @generated
 	 */
 	public NeckAssessment init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public NeckAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NeckAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // NeckAssessment

@@ -107,10 +107,11 @@ public interface ProviderSecondaryImpressions extends Observation {
 	 * @generated
 	 */
 	public ProviderSecondaryImpressions init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProviderSecondaryImpressions init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProviderSecondaryImpressions init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProviderSecondaryImpressions

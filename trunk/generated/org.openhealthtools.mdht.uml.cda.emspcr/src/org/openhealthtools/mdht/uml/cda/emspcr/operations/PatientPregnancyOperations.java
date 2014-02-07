@@ -73,9 +73,8 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_PREGNANCY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,30 +86,28 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientPregnancyTemplateId(PatientPregnancy patientPregnancy, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientPregnancyTemplateId(PatientPregnancy patientPregnancy,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_PREGNANCY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_PREGNANCY);
 			try {
 				VALIDATE_PATIENT_PREGNANCY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_PREGNANCY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_PREGNANCY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientPregnancy)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_PREGNANCY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientPregnancy)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_PREGNANCY__PATIENT_PREGNANCY_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("PatientPregnancyTemplateId"),
-						 new Object [] { patientPregnancy }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_PREGNANCY__PATIENT_PREGNANCY_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("PatientPregnancyTemplateId"), new Object[] { patientPregnancy }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -134,9 +131,8 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_PREGNANCY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,30 +144,28 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientPregnancyMoodCode(PatientPregnancy patientPregnancy, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientPregnancyMoodCode(PatientPregnancy patientPregnancy,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_PREGNANCY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_PREGNANCY);
 			try {
 				VALIDATE_PATIENT_PREGNANCY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_PREGNANCY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_PREGNANCY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientPregnancy)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_PREGNANCY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientPregnancy)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_PREGNANCY__PATIENT_PREGNANCY_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("PatientPregnancyMoodCode"),
-						 new Object [] { patientPregnancy }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_PREGNANCY__PATIENT_PREGNANCY_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("PatientPregnancyMoodCode"), new Object[] { patientPregnancy }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -195,9 +189,8 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_PREGNANCY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,30 +202,28 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientPregnancyCodeP(PatientPregnancy patientPregnancy, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientPregnancyCodeP(PatientPregnancy patientPregnancy, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_PREGNANCY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_PREGNANCY);
 			try {
 				VALIDATE_PATIENT_PREGNANCY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_PREGNANCY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_PREGNANCY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientPregnancy)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_PREGNANCY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientPregnancy)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_PREGNANCY__PATIENT_PREGNANCY_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("PatientPregnancyCodeP"),
-						 new Object [] { patientPregnancy }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_PREGNANCY__PATIENT_PREGNANCY_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("PatientPregnancyCodeP"), new Object[] { patientPregnancy }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -244,7 +235,7 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(patientPregnancy);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -258,9 +249,9 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_PREGNANCY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67471-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PATIENT_PREGNANCY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67471-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientPregnancyCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Code</em>}' invariant operation.
@@ -270,9 +261,8 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_PREGNANCY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,36 +274,36 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientPregnancyCode(PatientPregnancy patientPregnancy, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.PatientPregnancyCodeP");
+
+	public static boolean validatePatientPregnancyCode(PatientPregnancy patientPregnancy, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.PatientPregnancyCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(patientPregnancy)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_PATIENT_PREGNANCY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_PREGNANCY);
 			try {
 				VALIDATE_PATIENT_PREGNANCY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_PREGNANCY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_PREGNANCY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientPregnancy)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_PREGNANCY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientPregnancy)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_PREGNANCY__PATIENT_PREGNANCY_CODE,
-						 EmspcrPlugin.INSTANCE.getString("PatientPregnancyCode"),
-						 new Object [] { patientPregnancy }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_PREGNANCY__PATIENT_PREGNANCY_CODE,
+					EmspcrPlugin.INSTANCE.getString("PatientPregnancyCode"), new Object[] { patientPregnancy }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -327,9 +317,9 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_PREGNANCY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17329-6' or value.code = 'LA17330-4' or value.code = 'LA17331-2' or value.code = 'LA17332-0' or value.code = 'LA32-8')))";
+	protected static final String VALIDATE_PATIENT_PREGNANCY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17329-6' or value.code = 'LA17330-4' or value.code = 'LA17331-2' or value.code = 'LA17332-0' or value.code = 'LA32-8')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientPregnancyValue(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Value</em>}' invariant operation.
@@ -339,9 +329,8 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_PREGNANCY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -353,30 +342,28 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientPregnancyValue(PatientPregnancy patientPregnancy, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientPregnancyValue(PatientPregnancy patientPregnancy, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_PREGNANCY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_PREGNANCY);
 			try {
 				VALIDATE_PATIENT_PREGNANCY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_PREGNANCY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_PREGNANCY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientPregnancy)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_PREGNANCY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientPregnancy)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_PREGNANCY__PATIENT_PREGNANCY_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("PatientPregnancyValue"),
-						 new Object [] { patientPregnancy }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_PREGNANCY__PATIENT_PREGNANCY_VALUE,
+					EmspcrPlugin.INSTANCE.getString("PatientPregnancyValue"), new Object[] { patientPregnancy }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -400,9 +387,8 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_PREGNANCY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,30 +400,28 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientPregnancyValueP(PatientPregnancy patientPregnancy, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientPregnancyValueP(PatientPregnancy patientPregnancy,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_PREGNANCY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_PREGNANCY);
 			try {
 				VALIDATE_PATIENT_PREGNANCY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_PREGNANCY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_PREGNANCY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientPregnancy)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_PREGNANCY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientPregnancy)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_PREGNANCY__PATIENT_PREGNANCY_VALUE_P,
-						 EmspcrPlugin.INSTANCE.getString("PatientPregnancyValueP"),
-						 new Object [] { patientPregnancy }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_PREGNANCY__PATIENT_PREGNANCY_VALUE_P,
+					EmspcrPlugin.INSTANCE.getString("PatientPregnancyValueP"), new Object[] { patientPregnancy }));
 			}
-			 
+
 			return false;
 		}
 		return true;

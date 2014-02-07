@@ -70,9 +70,8 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CURRENTLY_ON_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,30 +83,29 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCurrentlyOnMedicationTemplateId(CurrentlyOnMedication currentlyOnMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCurrentlyOnMedicationTemplateId(CurrentlyOnMedication currentlyOnMedication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CURRENTLY_ON_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CURRENTLY_ON_MEDICATION);
 			try {
 				VALIDATE_CURRENTLY_ON_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CURRENTLY_ON_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CURRENTLY_ON_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(currentlyOnMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CURRENTLY_ON_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			currentlyOnMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CURRENTLY_ON_MEDICATION__CURRENTLY_ON_MEDICATION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("CurrentlyOnMedicationTemplateId"),
-						 new Object [] { currentlyOnMedication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CURRENTLY_ON_MEDICATION__CURRENTLY_ON_MEDICATION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("CurrentlyOnMedicationTemplateId"),
+					new Object[] { currentlyOnMedication }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -131,9 +129,8 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CURRENTLY_ON_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,30 +142,29 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCurrentlyOnMedicationMoodCode(CurrentlyOnMedication currentlyOnMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCurrentlyOnMedicationMoodCode(CurrentlyOnMedication currentlyOnMedication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CURRENTLY_ON_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CURRENTLY_ON_MEDICATION);
 			try {
 				VALIDATE_CURRENTLY_ON_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CURRENTLY_ON_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CURRENTLY_ON_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(currentlyOnMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CURRENTLY_ON_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			currentlyOnMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CURRENTLY_ON_MEDICATION__CURRENTLY_ON_MEDICATION_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("CurrentlyOnMedicationMoodCode"),
-						 new Object [] { currentlyOnMedication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CURRENTLY_ON_MEDICATION__CURRENTLY_ON_MEDICATION_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("CurrentlyOnMedicationMoodCode"),
+					new Object[] { currentlyOnMedication }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -182,9 +178,9 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CURRENTLY_ON_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67791-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CURRENTLY_ON_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67791-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCurrentlyOnMedicationCode(CurrentlyOnMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Currently On Medication Code</em>}' invariant operation.
@@ -194,9 +190,8 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CURRENTLY_ON_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +203,29 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCurrentlyOnMedicationCode(CurrentlyOnMedication currentlyOnMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCurrentlyOnMedicationCode(CurrentlyOnMedication currentlyOnMedication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CURRENTLY_ON_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CURRENTLY_ON_MEDICATION);
 			try {
 				VALIDATE_CURRENTLY_ON_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CURRENTLY_ON_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CURRENTLY_ON_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(currentlyOnMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CURRENTLY_ON_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			currentlyOnMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CURRENTLY_ON_MEDICATION__CURRENTLY_ON_MEDICATION_CODE,
-						 EmspcrPlugin.INSTANCE.getString("CurrentlyOnMedicationCode"),
-						 new Object [] { currentlyOnMedication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CURRENTLY_ON_MEDICATION__CURRENTLY_ON_MEDICATION_CODE,
+					EmspcrPlugin.INSTANCE.getString("CurrentlyOnMedicationCode"),
+					new Object[] { currentlyOnMedication }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -255,9 +249,8 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CURRENTLY_ON_MEDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -269,30 +262,29 @@ public class CurrentlyOnMedicationOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCurrentlyOnMedicationValue(CurrentlyOnMedication currentlyOnMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCurrentlyOnMedicationValue(CurrentlyOnMedication currentlyOnMedication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CURRENTLY_ON_MEDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CURRENTLY_ON_MEDICATION);
 			try {
 				VALIDATE_CURRENTLY_ON_MEDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CURRENTLY_ON_MEDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CURRENTLY_ON_MEDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(currentlyOnMedication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CURRENTLY_ON_MEDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			currentlyOnMedication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CURRENTLY_ON_MEDICATION__CURRENTLY_ON_MEDICATION_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("CurrentlyOnMedicationValue"),
-						 new Object [] { currentlyOnMedication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CURRENTLY_ON_MEDICATION__CURRENTLY_ON_MEDICATION_VALUE,
+					EmspcrPlugin.INSTANCE.getString("CurrentlyOnMedicationValue"),
+					new Object[] { currentlyOnMedication }));
 			}
-			 
+
 			return false;
 		}
 		return true;

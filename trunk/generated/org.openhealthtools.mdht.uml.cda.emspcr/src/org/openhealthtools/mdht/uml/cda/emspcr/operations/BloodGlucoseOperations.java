@@ -73,9 +73,8 @@ public class BloodGlucoseOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_BLOOD_GLUCOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,30 +86,28 @@ public class BloodGlucoseOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBloodGlucoseTemplateId(BloodGlucose bloodGlucose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateBloodGlucoseTemplateId(BloodGlucose bloodGlucose, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_BLOOD_GLUCOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BLOOD_GLUCOSE);
 			try {
 				VALIDATE_BLOOD_GLUCOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BLOOD_GLUCOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BLOOD_GLUCOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bloodGlucose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BLOOD_GLUCOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			bloodGlucose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.BLOOD_GLUCOSE__BLOOD_GLUCOSE_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("BloodGlucoseTemplateId"),
-						 new Object [] { bloodGlucose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.BLOOD_GLUCOSE__BLOOD_GLUCOSE_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("BloodGlucoseTemplateId"), new Object[] { bloodGlucose }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -134,9 +131,8 @@ public class BloodGlucoseOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_BLOOD_GLUCOSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,30 +144,27 @@ public class BloodGlucoseOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBloodGlucoseMoodCode(BloodGlucose bloodGlucose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateBloodGlucoseMoodCode(BloodGlucose bloodGlucose, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_BLOOD_GLUCOSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BLOOD_GLUCOSE);
 			try {
 				VALIDATE_BLOOD_GLUCOSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BLOOD_GLUCOSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_BLOOD_GLUCOSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bloodGlucose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.BLOOD_GLUCOSE__BLOOD_GLUCOSE_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("BloodGlucoseMoodCode"),
-						 new Object [] { bloodGlucose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.BLOOD_GLUCOSE__BLOOD_GLUCOSE_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("BloodGlucoseMoodCode"), new Object[] { bloodGlucose }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -195,9 +188,8 @@ public class BloodGlucoseOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_BLOOD_GLUCOSE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,30 +201,27 @@ public class BloodGlucoseOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBloodGlucoseCodeP(BloodGlucose bloodGlucose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateBloodGlucoseCodeP(BloodGlucose bloodGlucose, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_BLOOD_GLUCOSE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BLOOD_GLUCOSE);
 			try {
 				VALIDATE_BLOOD_GLUCOSE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BLOOD_GLUCOSE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_BLOOD_GLUCOSE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bloodGlucose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.BLOOD_GLUCOSE__BLOOD_GLUCOSE_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("BloodGlucoseCodeP"),
-						 new Object [] { bloodGlucose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.BLOOD_GLUCOSE__BLOOD_GLUCOSE_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("BloodGlucoseCodeP"), new Object[] { bloodGlucose }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -244,7 +233,7 @@ public class BloodGlucoseOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(bloodGlucose);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -258,9 +247,9 @@ public class BloodGlucoseOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_BLOOD_GLUCOSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '2339-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_BLOOD_GLUCOSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '2339-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBloodGlucoseCode(BloodGlucose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Blood Glucose Code</em>}' invariant operation.
@@ -270,9 +259,8 @@ public class BloodGlucoseOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_BLOOD_GLUCOSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,36 +272,35 @@ public class BloodGlucoseOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBloodGlucoseCode(BloodGlucose bloodGlucose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.BloodGlucoseCodeP");
+
+	public static boolean validateBloodGlucoseCode(BloodGlucose bloodGlucose, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.BloodGlucoseCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(bloodGlucose)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_BLOOD_GLUCOSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BLOOD_GLUCOSE);
 			try {
 				VALIDATE_BLOOD_GLUCOSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BLOOD_GLUCOSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_BLOOD_GLUCOSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bloodGlucose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.BLOOD_GLUCOSE__BLOOD_GLUCOSE_CODE,
-						 EmspcrPlugin.INSTANCE.getString("BloodGlucoseCode"),
-						 new Object [] { bloodGlucose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.BLOOD_GLUCOSE__BLOOD_GLUCOSE_CODE,
+					EmspcrPlugin.INSTANCE.getString("BloodGlucoseCode"), new Object[] { bloodGlucose }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -337,9 +324,8 @@ public class BloodGlucoseOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_BLOOD_GLUCOSE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -351,30 +337,28 @@ public class BloodGlucoseOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBloodGlucoseEffectiveTime(BloodGlucose bloodGlucose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateBloodGlucoseEffectiveTime(BloodGlucose bloodGlucose, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_BLOOD_GLUCOSE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BLOOD_GLUCOSE);
 			try {
 				VALIDATE_BLOOD_GLUCOSE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BLOOD_GLUCOSE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BLOOD_GLUCOSE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bloodGlucose)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BLOOD_GLUCOSE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			bloodGlucose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.BLOOD_GLUCOSE__BLOOD_GLUCOSE_EFFECTIVE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("BloodGlucoseEffectiveTime"),
-						 new Object [] { bloodGlucose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.BLOOD_GLUCOSE__BLOOD_GLUCOSE_EFFECTIVE_TIME,
+					EmspcrPlugin.INSTANCE.getString("BloodGlucoseEffectiveTime"), new Object[] { bloodGlucose }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -398,9 +382,8 @@ public class BloodGlucoseOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_BLOOD_GLUCOSE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -412,30 +395,27 @@ public class BloodGlucoseOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBloodGlucoseValue(BloodGlucose bloodGlucose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateBloodGlucoseValue(BloodGlucose bloodGlucose, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_BLOOD_GLUCOSE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BLOOD_GLUCOSE);
 			try {
 				VALIDATE_BLOOD_GLUCOSE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BLOOD_GLUCOSE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_BLOOD_GLUCOSE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bloodGlucose)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.BLOOD_GLUCOSE__BLOOD_GLUCOSE_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("BloodGlucoseValue"),
-						 new Object [] { bloodGlucose }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.BLOOD_GLUCOSE__BLOOD_GLUCOSE_VALUE,
+					EmspcrPlugin.INSTANCE.getString("BloodGlucoseValue"), new Object[] { bloodGlucose }));
 			}
-			 
+
 			return false;
 		}
 		return true;

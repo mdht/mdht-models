@@ -107,10 +107,11 @@ public interface ResponseDelay extends Observation {
 	 * @generated
 	 */
 	public ResponseDelay init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ResponseDelay init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResponseDelay init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResponseDelay

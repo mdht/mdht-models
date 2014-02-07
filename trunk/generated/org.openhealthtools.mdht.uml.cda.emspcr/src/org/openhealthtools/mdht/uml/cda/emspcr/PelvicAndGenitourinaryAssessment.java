@@ -75,7 +75,8 @@ public interface PelvicAndGenitourinaryAssessment extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validatePelvicAndGenitourinaryAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePelvicAndGenitourinaryAssessmentEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -107,10 +108,11 @@ public interface PelvicAndGenitourinaryAssessment extends Observation {
 	 * @generated
 	 */
 	public PelvicAndGenitourinaryAssessment init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PelvicAndGenitourinaryAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PelvicAndGenitourinaryAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PelvicAndGenitourinaryAssessment

@@ -87,9 +87,8 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -101,30 +100,30 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePhysicalAssessmentOrganizerComponent1(PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePhysicalAssessmentOrganizerComponent1(
+			PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER);
 			try {
 				VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalAssessmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalAssessmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT1,
-						 EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent1"),
-						 new Object [] { physicalAssessmentOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT1,
+					EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent1"),
+					new Object[] { physicalAssessmentOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -148,9 +147,8 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -162,30 +160,30 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePhysicalAssessmentOrganizerComponent2(PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePhysicalAssessmentOrganizerComponent2(
+			PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER);
 			try {
 				VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalAssessmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalAssessmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT2,
-						 EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent2"),
-						 new Object [] { physicalAssessmentOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT2,
+					EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent2"),
+					new Object[] { physicalAssessmentOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -209,9 +207,8 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -223,30 +220,30 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePhysicalAssessmentOrganizerComponent3(PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePhysicalAssessmentOrganizerComponent3(
+			PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER);
 			try {
 				VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalAssessmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalAssessmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT3,
-						 EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent3"),
-						 new Object [] { physicalAssessmentOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT3,
+					EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent3"),
+					new Object[] { physicalAssessmentOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -270,9 +267,8 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,30 +280,30 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePhysicalAssessmentOrganizerComponent4(PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePhysicalAssessmentOrganizerComponent4(
+			PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER);
 			try {
 				VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalAssessmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalAssessmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT4,
-						 EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent4"),
-						 new Object [] { physicalAssessmentOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT4,
+					EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent4"),
+					new Object[] { physicalAssessmentOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -331,9 +327,8 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT5__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -345,30 +340,30 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePhysicalAssessmentOrganizerComponent5(PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePhysicalAssessmentOrganizerComponent5(
+			PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT5__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER);
 			try {
 				VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT5__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT5__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT5__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalAssessmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT5__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalAssessmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT5,
-						 EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent5"),
-						 new Object [] { physicalAssessmentOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT5,
+					EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent5"),
+					new Object[] { physicalAssessmentOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -392,9 +387,8 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT6__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -406,30 +400,30 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePhysicalAssessmentOrganizerComponent6(PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePhysicalAssessmentOrganizerComponent6(
+			PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT6__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER);
 			try {
 				VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT6__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT6__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT6__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalAssessmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT6__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalAssessmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT6,
-						 EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent6"),
-						 new Object [] { physicalAssessmentOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT6,
+					EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent6"),
+					new Object[] { physicalAssessmentOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -453,9 +447,8 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT7__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -467,30 +460,30 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePhysicalAssessmentOrganizerComponent7(PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePhysicalAssessmentOrganizerComponent7(
+			PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT7__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER);
 			try {
 				VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT7__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT7__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT7__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalAssessmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT7__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalAssessmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT7,
-						 EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent7"),
-						 new Object [] { physicalAssessmentOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT7,
+					EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent7"),
+					new Object[] { physicalAssessmentOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -514,9 +507,8 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT8__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -528,30 +520,30 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePhysicalAssessmentOrganizerComponent8(PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePhysicalAssessmentOrganizerComponent8(
+			PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT8__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER);
 			try {
 				VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT8__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT8__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT8__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalAssessmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT8__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalAssessmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT8,
-						 EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent8"),
-						 new Object [] { physicalAssessmentOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT8,
+					EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent8"),
+					new Object[] { physicalAssessmentOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -575,9 +567,8 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT9__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -589,30 +580,30 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePhysicalAssessmentOrganizerComponent9(PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePhysicalAssessmentOrganizerComponent9(
+			PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT9__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER);
 			try {
 				VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT9__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT9__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT9__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalAssessmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT9__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalAssessmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT9,
-						 EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent9"),
-						 new Object [] { physicalAssessmentOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT9,
+					EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent9"),
+					new Object[] { physicalAssessmentOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -636,9 +627,8 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT10__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -650,30 +640,30 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePhysicalAssessmentOrganizerComponent10(PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePhysicalAssessmentOrganizerComponent10(
+			PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT10__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER);
 			try {
 				VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT10__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT10__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT10__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalAssessmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT10__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalAssessmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT10,
-						 EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent10"),
-						 new Object [] { physicalAssessmentOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT10,
+					EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent10"),
+					new Object[] { physicalAssessmentOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -697,9 +687,8 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT11__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -711,30 +700,30 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePhysicalAssessmentOrganizerComponent11(PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePhysicalAssessmentOrganizerComponent11(
+			PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT11__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER);
 			try {
 				VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT11__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT11__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT11__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalAssessmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT11__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalAssessmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT11,
-						 EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent11"),
-						 new Object [] { physicalAssessmentOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT11,
+					EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent11"),
+					new Object[] { physicalAssessmentOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -758,9 +747,8 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT12__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -772,30 +760,30 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePhysicalAssessmentOrganizerComponent12(PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePhysicalAssessmentOrganizerComponent12(
+			PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT12__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER);
 			try {
 				VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT12__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT12__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT12__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalAssessmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT12__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalAssessmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT12,
-						 EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent12"),
-						 new Object [] { physicalAssessmentOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT12,
+					EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent12"),
+					new Object[] { physicalAssessmentOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -819,9 +807,8 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT13__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -833,30 +820,30 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePhysicalAssessmentOrganizerComponent13(PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePhysicalAssessmentOrganizerComponent13(
+			PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT13__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER);
 			try {
 				VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT13__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT13__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT13__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalAssessmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT13__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalAssessmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT13,
-						 EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent13"),
-						 new Object [] { physicalAssessmentOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT13,
+					EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent13"),
+					new Object[] { physicalAssessmentOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -880,9 +867,8 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT14__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -894,30 +880,30 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePhysicalAssessmentOrganizerComponent14(PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePhysicalAssessmentOrganizerComponent14(
+			PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT14__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER);
 			try {
 				VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT14__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT14__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT14__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalAssessmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT14__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalAssessmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT14,
-						 EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent14"),
-						 new Object [] { physicalAssessmentOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_COMPONENT14,
+					EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerComponent14"),
+					new Object[] { physicalAssessmentOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -941,9 +927,8 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -955,30 +940,30 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePhysicalAssessmentOrganizerTemplateId(PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePhysicalAssessmentOrganizerTemplateId(
+			PhysicalAssessmentOrganizer physicalAssessmentOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER);
 			try {
 				VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalAssessmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_ASSESSMENT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalAssessmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerTemplateId"),
-						 new Object [] { physicalAssessmentOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PHYSICAL_ASSESSMENT_ORGANIZER__PHYSICAL_ASSESSMENT_ORGANIZER_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("PhysicalAssessmentOrganizerTemplateId"),
+					new Object[] { physicalAssessmentOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1009,15 +994,16 @@ public class PhysicalAssessmentOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  SkinAssessment getComponent3(PhysicalAssessmentOrganizer physicalAssessmentOrganizer) {
+
+	public static SkinAssessment getComponent3(PhysicalAssessmentOrganizer physicalAssessmentOrganizer) {
 		if (GET_COMPONENT3__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER, EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER.getEAllOperations().get(67));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER,
+				EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER.getEAllOperations().get(67));
 			try {
 				GET_COMPONENT3__EOCL_QRY = helper.createQuery(GET_COMPONENT3__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

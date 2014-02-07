@@ -73,9 +73,8 @@ public class TurnaroundDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TURNAROUND_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,30 +86,28 @@ public class TurnaroundDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTurnaroundDelayTemplateId(TurnaroundDelay turnaroundDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTurnaroundDelayTemplateId(TurnaroundDelay turnaroundDelay,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_TURNAROUND_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TURNAROUND_DELAY);
 			try {
 				VALIDATE_TURNAROUND_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TURNAROUND_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TURNAROUND_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(turnaroundDelay)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TURNAROUND_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			turnaroundDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TURNAROUND_DELAY__TURNAROUND_DELAY_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("TurnaroundDelayTemplateId"),
-						 new Object [] { turnaroundDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TURNAROUND_DELAY__TURNAROUND_DELAY_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("TurnaroundDelayTemplateId"), new Object[] { turnaroundDelay }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -134,9 +131,8 @@ public class TurnaroundDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TURNAROUND_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,30 +144,28 @@ public class TurnaroundDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTurnaroundDelayMoodCode(TurnaroundDelay turnaroundDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTurnaroundDelayMoodCode(TurnaroundDelay turnaroundDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TURNAROUND_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TURNAROUND_DELAY);
 			try {
 				VALIDATE_TURNAROUND_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TURNAROUND_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TURNAROUND_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(turnaroundDelay)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TURNAROUND_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			turnaroundDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TURNAROUND_DELAY__TURNAROUND_DELAY_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("TurnaroundDelayMoodCode"),
-						 new Object [] { turnaroundDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TURNAROUND_DELAY__TURNAROUND_DELAY_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("TurnaroundDelayMoodCode"), new Object[] { turnaroundDelay }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -195,9 +189,8 @@ public class TurnaroundDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TURNAROUND_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,30 +202,28 @@ public class TurnaroundDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTurnaroundDelayCodeP(TurnaroundDelay turnaroundDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTurnaroundDelayCodeP(TurnaroundDelay turnaroundDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TURNAROUND_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TURNAROUND_DELAY);
 			try {
 				VALIDATE_TURNAROUND_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TURNAROUND_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TURNAROUND_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(turnaroundDelay)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TURNAROUND_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			turnaroundDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TURNAROUND_DELAY__TURNAROUND_DELAY_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("TurnaroundDelayCodeP"),
-						 new Object [] { turnaroundDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TURNAROUND_DELAY__TURNAROUND_DELAY_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("TurnaroundDelayCodeP"), new Object[] { turnaroundDelay }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -244,7 +235,7 @@ public class TurnaroundDelayOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(turnaroundDelay);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -258,9 +249,9 @@ public class TurnaroundDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TURNAROUND_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67560-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_TURNAROUND_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67560-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTurnaroundDelayCode(TurnaroundDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Turnaround Delay Code</em>}' invariant operation.
@@ -270,9 +261,8 @@ public class TurnaroundDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TURNAROUND_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,36 +274,35 @@ public class TurnaroundDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTurnaroundDelayCode(TurnaroundDelay turnaroundDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.TurnaroundDelayCodeP");
+
+	public static boolean validateTurnaroundDelayCode(TurnaroundDelay turnaroundDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.TurnaroundDelayCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(turnaroundDelay)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_TURNAROUND_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TURNAROUND_DELAY);
 			try {
 				VALIDATE_TURNAROUND_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TURNAROUND_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_TURNAROUND_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(turnaroundDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TURNAROUND_DELAY__TURNAROUND_DELAY_CODE,
-						 EmspcrPlugin.INSTANCE.getString("TurnaroundDelayCode"),
-						 new Object [] { turnaroundDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TURNAROUND_DELAY__TURNAROUND_DELAY_CODE,
+					EmspcrPlugin.INSTANCE.getString("TurnaroundDelayCode"), new Object[] { turnaroundDelay }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -327,9 +316,9 @@ public class TurnaroundDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TURNAROUND_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA17587-9' or value.code = 'LA17590-3' or value.code = 'LA17592-9' or value.code = 'LA17593-7' or value.code = 'LA17594-5' or value.code = 'LA17598-6' or value.code = 'LA17599-4' or value.code = 'LA17600-0' or value.code = 'LA17601-8' or value.code = 'LA17602-6' or value.code = 'LA17603-4' or value.code = 'LA18081-2' or value.code = 'LA18270-1' or value.code = 'LA18271-9' or value.code = 'LA7497-6')))";
+	protected static final String VALIDATE_TURNAROUND_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA17587-9' or value.code = 'LA17590-3' or value.code = 'LA17592-9' or value.code = 'LA17593-7' or value.code = 'LA17594-5' or value.code = 'LA17598-6' or value.code = 'LA17599-4' or value.code = 'LA17600-0' or value.code = 'LA17601-8' or value.code = 'LA17602-6' or value.code = 'LA17603-4' or value.code = 'LA18081-2' or value.code = 'LA18270-1' or value.code = 'LA18271-9' or value.code = 'LA7497-6')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTurnaroundDelayValue(TurnaroundDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Turnaround Delay Value</em>}' invariant operation.
@@ -339,9 +328,8 @@ public class TurnaroundDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TURNAROUND_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -353,30 +341,28 @@ public class TurnaroundDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTurnaroundDelayValue(TurnaroundDelay turnaroundDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTurnaroundDelayValue(TurnaroundDelay turnaroundDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TURNAROUND_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TURNAROUND_DELAY);
 			try {
 				VALIDATE_TURNAROUND_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TURNAROUND_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TURNAROUND_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(turnaroundDelay)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TURNAROUND_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			turnaroundDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TURNAROUND_DELAY__TURNAROUND_DELAY_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("TurnaroundDelayValue"),
-						 new Object [] { turnaroundDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TURNAROUND_DELAY__TURNAROUND_DELAY_VALUE,
+					EmspcrPlugin.INSTANCE.getString("TurnaroundDelayValue"), new Object[] { turnaroundDelay }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -400,9 +386,8 @@ public class TurnaroundDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TURNAROUND_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,30 +399,28 @@ public class TurnaroundDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTurnaroundDelayValueP(TurnaroundDelay turnaroundDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTurnaroundDelayValueP(TurnaroundDelay turnaroundDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TURNAROUND_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TURNAROUND_DELAY);
 			try {
 				VALIDATE_TURNAROUND_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TURNAROUND_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TURNAROUND_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(turnaroundDelay)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TURNAROUND_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			turnaroundDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TURNAROUND_DELAY__TURNAROUND_DELAY_VALUE_P,
-						 EmspcrPlugin.INSTANCE.getString("TurnaroundDelayValueP"),
-						 new Object [] { turnaroundDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TURNAROUND_DELAY__TURNAROUND_DELAY_VALUE_P,
+					EmspcrPlugin.INSTANCE.getString("TurnaroundDelayValueP"), new Object[] { turnaroundDelay }));
 			}
-			 
+
 			return false;
 		}
 		return true;

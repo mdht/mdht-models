@@ -83,10 +83,11 @@ public interface OxygenSaturation extends Observation {
 	 * @generated
 	 */
 	public OxygenSaturation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public OxygenSaturation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OxygenSaturation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // OxygenSaturation

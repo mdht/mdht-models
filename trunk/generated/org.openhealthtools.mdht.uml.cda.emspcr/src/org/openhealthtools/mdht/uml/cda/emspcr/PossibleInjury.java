@@ -95,10 +95,11 @@ public interface PossibleInjury extends Observation {
 	 * @generated
 	 */
 	public PossibleInjury init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PossibleInjury init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PossibleInjury init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PossibleInjury

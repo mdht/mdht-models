@@ -58,8 +58,10 @@ public class IncidentDispositionObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIncidentDispositionObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationTemplateId(this, diagnostics, context);
+	public boolean validateIncidentDispositionObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +69,10 @@ public class IncidentDispositionObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIncidentDispositionObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationMoodCode(this, diagnostics, context);
+	public boolean validateIncidentDispositionObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +81,8 @@ public class IncidentDispositionObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateIncidentDispositionObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationCodeP(this, diagnostics, context);
+		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,7 +91,8 @@ public class IncidentDispositionObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateIncidentDispositionObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationCode(this, diagnostics, context);
+		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,7 +101,8 @@ public class IncidentDispositionObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateIncidentDispositionObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationValue(this, diagnostics, context);
+		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -104,7 +111,8 @@ public class IncidentDispositionObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateIncidentDispositionObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationValueP(this, diagnostics, context);
+		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationValueP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -113,15 +121,16 @@ public class IncidentDispositionObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public IncidentDispositionObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public IncidentDispositionObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //IncidentDispositionObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IncidentDispositionObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // IncidentDispositionObservationImpl

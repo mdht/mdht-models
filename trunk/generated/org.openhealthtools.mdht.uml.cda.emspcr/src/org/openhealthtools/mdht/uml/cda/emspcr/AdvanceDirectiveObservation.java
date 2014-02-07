@@ -95,10 +95,11 @@ public interface AdvanceDirectiveObservation extends Observation {
 	 * @generated
 	 */
 	public AdvanceDirectiveObservation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AdvanceDirectiveObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectiveObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdvanceDirectiveObservation

@@ -108,10 +108,11 @@ public interface ProtocolObservation extends Observation {
 	 * @generated
 	 */
 	public ProtocolObservation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProtocolObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProtocolObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProtocolObservation

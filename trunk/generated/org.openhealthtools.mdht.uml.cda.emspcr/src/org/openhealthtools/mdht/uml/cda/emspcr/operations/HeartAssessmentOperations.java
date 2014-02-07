@@ -74,9 +74,8 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_HEART_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,30 +87,28 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateHeartAssessmentTemplateId(HeartAssessment heartAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateHeartAssessmentTemplateId(HeartAssessment heartAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HEART_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEART_ASSESSMENT);
 			try {
 				VALIDATE_HEART_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEART_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEART_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heartAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HEART_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			heartAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.HEART_ASSESSMENT__HEART_ASSESSMENT_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("HeartAssessmentTemplateId"),
-						 new Object [] { heartAssessment }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.HEART_ASSESSMENT__HEART_ASSESSMENT_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("HeartAssessmentTemplateId"), new Object[] { heartAssessment }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -135,9 +132,8 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_HEART_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,30 +145,28 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateHeartAssessmentMoodCode(HeartAssessment heartAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateHeartAssessmentMoodCode(HeartAssessment heartAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_HEART_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEART_ASSESSMENT);
 			try {
 				VALIDATE_HEART_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEART_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEART_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heartAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HEART_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			heartAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.HEART_ASSESSMENT__HEART_ASSESSMENT_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("HeartAssessmentMoodCode"),
-						 new Object [] { heartAssessment }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.HEART_ASSESSMENT__HEART_ASSESSMENT_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("HeartAssessmentMoodCode"), new Object[] { heartAssessment }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -196,9 +190,8 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_HEART_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,30 +203,28 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateHeartAssessmentCodeP(HeartAssessment heartAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateHeartAssessmentCodeP(HeartAssessment heartAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_HEART_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEART_ASSESSMENT);
 			try {
 				VALIDATE_HEART_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEART_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEART_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heartAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HEART_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			heartAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.HEART_ASSESSMENT__HEART_ASSESSMENT_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("HeartAssessmentCodeP"),
-						 new Object [] { heartAssessment }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.HEART_ASSESSMENT__HEART_ASSESSMENT_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("HeartAssessmentCodeP"), new Object[] { heartAssessment }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -245,7 +236,7 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(heartAssessment);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -259,9 +250,9 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HEART_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67529-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_HEART_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67529-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHeartAssessmentCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Code</em>}' invariant operation.
@@ -271,9 +262,8 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_HEART_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -285,36 +275,35 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateHeartAssessmentCode(HeartAssessment heartAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.HeartAssessmentCodeP");
+
+	public static boolean validateHeartAssessmentCode(HeartAssessment heartAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.HeartAssessmentCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(heartAssessment)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_HEART_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEART_ASSESSMENT);
 			try {
 				VALIDATE_HEART_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEART_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_HEART_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heartAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.HEART_ASSESSMENT__HEART_ASSESSMENT_CODE,
-						 EmspcrPlugin.INSTANCE.getString("HeartAssessmentCode"),
-						 new Object [] { heartAssessment }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.HEART_ASSESSMENT__HEART_ASSESSMENT_CODE,
+					EmspcrPlugin.INSTANCE.getString("HeartAssessmentCode"), new Object[] { heartAssessment }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -338,9 +327,8 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_HEART_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -352,30 +340,28 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateHeartAssessmentEffectiveTime(HeartAssessment heartAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateHeartAssessmentEffectiveTime(HeartAssessment heartAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HEART_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEART_ASSESSMENT);
 			try {
 				VALIDATE_HEART_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEART_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEART_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heartAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HEART_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			heartAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.HEART_ASSESSMENT__HEART_ASSESSMENT_EFFECTIVE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("HeartAssessmentEffectiveTime"),
-						 new Object [] { heartAssessment }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.HEART_ASSESSMENT__HEART_ASSESSMENT_EFFECTIVE_TIME,
+					EmspcrPlugin.INSTANCE.getString("HeartAssessmentEffectiveTime"), new Object[] { heartAssessment }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -389,9 +375,9 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HEART_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17239-7' or value.code = 'LA17240-5' or value.code = 'LA17241-3' or value.code = 'LA18241-2' or value.code = 'LA18242-0' or value.code = 'LA18243-8' or value.code = 'LA18244-6' or value.code = 'LA18245-3' or value.code = 'LA18246-1' or value.code = 'LA6626-1' or value.code = 'LA6630-3')))";
+	protected static final String VALIDATE_HEART_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17239-7' or value.code = 'LA17240-5' or value.code = 'LA17241-3' or value.code = 'LA18241-2' or value.code = 'LA18242-0' or value.code = 'LA18243-8' or value.code = 'LA18244-6' or value.code = 'LA18245-3' or value.code = 'LA18246-1' or value.code = 'LA6626-1' or value.code = 'LA6630-3')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHeartAssessmentValue(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Value</em>}' invariant operation.
@@ -401,9 +387,8 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_HEART_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -415,30 +400,28 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateHeartAssessmentValue(HeartAssessment heartAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateHeartAssessmentValue(HeartAssessment heartAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_HEART_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEART_ASSESSMENT);
 			try {
 				VALIDATE_HEART_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEART_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEART_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heartAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HEART_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			heartAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.HEART_ASSESSMENT__HEART_ASSESSMENT_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("HeartAssessmentValue"),
-						 new Object [] { heartAssessment }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.HEART_ASSESSMENT__HEART_ASSESSMENT_VALUE,
+					EmspcrPlugin.INSTANCE.getString("HeartAssessmentValue"), new Object[] { heartAssessment }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -462,9 +445,8 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_HEART_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -476,30 +458,28 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateHeartAssessmentValueP(HeartAssessment heartAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateHeartAssessmentValueP(HeartAssessment heartAssessment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_HEART_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEART_ASSESSMENT);
 			try {
 				VALIDATE_HEART_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEART_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEART_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heartAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HEART_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			heartAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.HEART_ASSESSMENT__HEART_ASSESSMENT_VALUE_P,
-						 EmspcrPlugin.INSTANCE.getString("HeartAssessmentValueP"),
-						 new Object [] { heartAssessment }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.HEART_ASSESSMENT__HEART_ASSESSMENT_VALUE_P,
+					EmspcrPlugin.INSTANCE.getString("HeartAssessmentValueP"), new Object[] { heartAssessment }));
 			}
-			 
+
 			return false;
 		}
 		return true;

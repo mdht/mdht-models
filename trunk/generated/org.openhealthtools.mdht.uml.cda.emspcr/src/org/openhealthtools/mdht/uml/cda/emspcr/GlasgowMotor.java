@@ -95,10 +95,11 @@ public interface GlasgowMotor extends Observation {
 	 * @generated
 	 */
 	public GlasgowMotor init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public GlasgowMotor init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GlasgowMotor init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GlasgowMotor

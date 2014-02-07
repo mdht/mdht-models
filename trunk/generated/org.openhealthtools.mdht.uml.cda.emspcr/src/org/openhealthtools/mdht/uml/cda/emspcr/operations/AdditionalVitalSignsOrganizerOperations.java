@@ -100,9 +100,8 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_STROKE_SCORE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -114,30 +113,32 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdditionalVitalSignsOrganizerStrokeScoreComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdditionalVitalSignsOrganizerStrokeScoreComponent(
+			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_STROKE_SCORE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER);
 			try {
 				VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_STROKE_SCORE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_STROKE_SCORE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_STROKE_SCORE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(additionalVitalSignsOrganizer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_STROKE_SCORE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			additionalVitalSignsOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_STROKE_SCORE_COMPONENT,
-						 EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerStrokeScoreComponent"),
-						 new Object [] { additionalVitalSignsOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_STROKE_SCORE_COMPONENT,
+					EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerStrokeScoreComponent"),
+					new Object[] { additionalVitalSignsOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -161,9 +162,8 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_PAIN_SCORE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -175,30 +175,32 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdditionalVitalSignsOrganizerPainScoreComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdditionalVitalSignsOrganizerPainScoreComponent(
+			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_PAIN_SCORE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER);
 			try {
 				VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_PAIN_SCORE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_PAIN_SCORE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_PAIN_SCORE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(additionalVitalSignsOrganizer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_PAIN_SCORE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			additionalVitalSignsOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_PAIN_SCORE_COMPONENT,
-						 EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerPainScoreComponent"),
-						 new Object [] { additionalVitalSignsOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_PAIN_SCORE_COMPONENT,
+					EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerPainScoreComponent"),
+					new Object[] { additionalVitalSignsOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -222,9 +224,8 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_LEVEL_OF_RESPONSIVENESS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -236,30 +237,32 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(
+			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_LEVEL_OF_RESPONSIVENESS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER);
 			try {
 				VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_LEVEL_OF_RESPONSIVENESS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_LEVEL_OF_RESPONSIVENESS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_LEVEL_OF_RESPONSIVENESS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(additionalVitalSignsOrganizer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_LEVEL_OF_RESPONSIVENESS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			additionalVitalSignsOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_LEVEL_OF_RESPONSIVENESS_COMPONENT,
-						 EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerLevelOfResponsivenessComponent"),
-						 new Object [] { additionalVitalSignsOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_LEVEL_OF_RESPONSIVENESS_COMPONENT,
+					EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerLevelOfResponsivenessComponent"),
+					new Object[] { additionalVitalSignsOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -283,9 +286,8 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_BLOOD_GLUCOSE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -297,30 +299,32 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(
+			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_BLOOD_GLUCOSE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER);
 			try {
 				VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_BLOOD_GLUCOSE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_BLOOD_GLUCOSE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_BLOOD_GLUCOSE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(additionalVitalSignsOrganizer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_BLOOD_GLUCOSE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			additionalVitalSignsOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_BLOOD_GLUCOSE_COMPONENT,
-						 EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerBloodGlucoseComponent"),
-						 new Object [] { additionalVitalSignsOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_BLOOD_GLUCOSE_COMPONENT,
+					EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerBloodGlucoseComponent"),
+					new Object[] { additionalVitalSignsOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -344,9 +348,8 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_MONOXIDE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -358,30 +361,32 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(
+			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_MONOXIDE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER);
 			try {
 				VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_MONOXIDE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_MONOXIDE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_MONOXIDE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(additionalVitalSignsOrganizer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_MONOXIDE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			additionalVitalSignsOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_MONOXIDE_COMPONENT,
-						 EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerCarbonMonoxideComponent"),
-						 new Object [] { additionalVitalSignsOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_MONOXIDE_COMPONENT,
+					EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerCarbonMonoxideComponent"),
+					new Object[] { additionalVitalSignsOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -405,9 +410,8 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_DIOXIDE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -419,30 +423,32 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(
+			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_DIOXIDE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER);
 			try {
 				VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_DIOXIDE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_DIOXIDE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_DIOXIDE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(additionalVitalSignsOrganizer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_DIOXIDE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			additionalVitalSignsOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_DIOXIDE_COMPONENT,
-						 EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerCarbonDioxideComponent"),
-						 new Object [] { additionalVitalSignsOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARBON_DIOXIDE_COMPONENT,
+					EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerCarbonDioxideComponent"),
+					new Object[] { additionalVitalSignsOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -466,9 +472,8 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARDIAC_RHYTHM_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -480,30 +485,32 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(
+			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARDIAC_RHYTHM_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER);
 			try {
 				VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARDIAC_RHYTHM_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARDIAC_RHYTHM_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARDIAC_RHYTHM_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(additionalVitalSignsOrganizer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARDIAC_RHYTHM_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			additionalVitalSignsOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARDIAC_RHYTHM_COMPONENT,
-						 EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerCardiacRhythmComponent"),
-						 new Object [] { additionalVitalSignsOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_CARDIAC_RHYTHM_COMPONENT,
+					EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerCardiacRhythmComponent"),
+					new Object[] { additionalVitalSignsOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -527,9 +534,8 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -541,30 +547,30 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdditionalVitalSignsOrganizerTemplateId(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdditionalVitalSignsOrganizerTemplateId(
+			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER);
 			try {
 				VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(additionalVitalSignsOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			additionalVitalSignsOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerTemplateId"),
-						 new Object [] { additionalVitalSignsOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerTemplateId"),
+					new Object[] { additionalVitalSignsOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -588,9 +594,8 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -602,30 +607,30 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdditionalVitalSignsOrganizerMoodCode(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdditionalVitalSignsOrganizerMoodCode(
+			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER);
 			try {
 				VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(additionalVitalSignsOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			additionalVitalSignsOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerMoodCode"),
-						 new Object [] { additionalVitalSignsOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerMoodCode"),
+					new Object[] { additionalVitalSignsOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -649,9 +654,8 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -663,30 +667,31 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdditionalVitalSignsOrganizerEffectiveTime(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdditionalVitalSignsOrganizerEffectiveTime(
+			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER);
 			try {
 				VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(additionalVitalSignsOrganizer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			additionalVitalSignsOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerEffectiveTime"),
-						 new Object [] { additionalVitalSignsOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME,
+					EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerEffectiveTime"),
+					new Object[] { additionalVitalSignsOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -710,9 +715,8 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_GLASGOW_COMA_SCORE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -724,30 +728,32 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(
+			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_GLASGOW_COMA_SCORE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER);
 			try {
 				VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_GLASGOW_COMA_SCORE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_GLASGOW_COMA_SCORE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_GLASGOW_COMA_SCORE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(additionalVitalSignsOrganizer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ADDITIONAL_VITAL_SIGNS_ORGANIZER_GLASGOW_COMA_SCORE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			additionalVitalSignsOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_GLASGOW_COMA_SCORE_ORGANIZER,
-						 EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer"),
-						 new Object [] { additionalVitalSignsOrganizer }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADDITIONAL_VITAL_SIGNS_ORGANIZER__ADDITIONAL_VITAL_SIGNS_ORGANIZER_GLASGOW_COMA_SCORE_ORGANIZER,
+					EmspcrPlugin.INSTANCE.getString("AdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer"),
+					new Object[] { additionalVitalSignsOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -778,15 +784,16 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  StrokeScore getStrokeScoreComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
+
+	public static StrokeScore getStrokeScoreComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
 		if (GET_STROKE_SCORE_COMPONENT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER, EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(63));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER,
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(63));
 			try {
 				GET_STROKE_SCORE_COMPONENT__EOCL_QRY = helper.createQuery(GET_STROKE_SCORE_COMPONENT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -819,15 +826,16 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  PainScore getPainScoreComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
+
+	public static PainScore getPainScoreComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
 		if (GET_PAIN_SCORE_COMPONENT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER, EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(64));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER,
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(64));
 			try {
 				GET_PAIN_SCORE_COMPONENT__EOCL_QRY = helper.createQuery(GET_PAIN_SCORE_COMPONENT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -860,15 +868,17 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  LevelOfResponsiveness getLevelOfResponsivenessComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
+
+	public static LevelOfResponsiveness getLevelOfResponsivenessComponent(
+			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
 		if (GET_LEVEL_OF_RESPONSIVENESS_COMPONENT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER, EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(65));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER,
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(65));
 			try {
 				GET_LEVEL_OF_RESPONSIVENESS_COMPONENT__EOCL_QRY = helper.createQuery(GET_LEVEL_OF_RESPONSIVENESS_COMPONENT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -901,15 +911,16 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  BloodGlucose getBloodGlucoseComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
+
+	public static BloodGlucose getBloodGlucoseComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
 		if (GET_BLOOD_GLUCOSE_COMPONENT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER, EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(66));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER,
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(66));
 			try {
 				GET_BLOOD_GLUCOSE_COMPONENT__EOCL_QRY = helper.createQuery(GET_BLOOD_GLUCOSE_COMPONENT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -942,15 +953,16 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  CarbonMonoxide getCarbonMonoxideComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
+
+	public static CarbonMonoxide getCarbonMonoxideComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
 		if (GET_CARBON_MONOXIDE_COMPONENT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER, EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(67));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER,
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(67));
 			try {
 				GET_CARBON_MONOXIDE_COMPONENT__EOCL_QRY = helper.createQuery(GET_CARBON_MONOXIDE_COMPONENT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -983,15 +995,16 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  CarbonDioxide getCarbonDioxideComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
+
+	public static CarbonDioxide getCarbonDioxideComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
 		if (GET_CARBON_DIOXIDE_COMPONENT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER, EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(68));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER,
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(68));
 			try {
 				GET_CARBON_DIOXIDE_COMPONENT__EOCL_QRY = helper.createQuery(GET_CARBON_DIOXIDE_COMPONENT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1024,15 +1037,16 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  CardiacRhythm getCardiacRhythmComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
+
+	public static CardiacRhythm getCardiacRhythmComponent(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
 		if (GET_CARDIAC_RHYTHM_COMPONENT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER, EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(69));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER,
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(69));
 			try {
 				GET_CARDIAC_RHYTHM_COMPONENT__EOCL_QRY = helper.createQuery(GET_CARDIAC_RHYTHM_COMPONENT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1065,15 +1079,17 @@ public class AdditionalVitalSignsOrganizerOperations extends OrganizerOperations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<GlasgowComaScoreOrganizer> getGlasgowComaScoreOrganizers(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
+
+	public static EList<GlasgowComaScoreOrganizer> getGlasgowComaScoreOrganizers(
+			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer) {
 		if (GET_GLASGOW_COMA_SCORE_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER, EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(70));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER,
+				EmspcrPackage.Literals.ADDITIONAL_VITAL_SIGNS_ORGANIZER.getEAllOperations().get(70));
 			try {
 				GET_GLASGOW_COMA_SCORE_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_GLASGOW_COMA_SCORE_ORGANIZERS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

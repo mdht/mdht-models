@@ -87,7 +87,8 @@ public interface PrearrivalActivationObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validatePrearrivalActivationObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrearrivalActivationObservationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -107,10 +108,11 @@ public interface PrearrivalActivationObservation extends Observation {
 	 * @generated
 	 */
 	public PrearrivalActivationObservation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PrearrivalActivationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrearrivalActivationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrearrivalActivationObservation

@@ -164,10 +164,11 @@ public interface GlasgowComaScoreOrganizer extends Organizer {
 	 * @generated
 	 */
 	public GlasgowComaScoreOrganizer init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public GlasgowComaScoreOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GlasgowComaScoreOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GlasgowComaScoreOrganizer

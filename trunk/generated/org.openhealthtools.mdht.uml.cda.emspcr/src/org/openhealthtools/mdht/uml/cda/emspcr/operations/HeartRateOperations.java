@@ -73,9 +73,8 @@ public class HeartRateOperations extends VitalSignObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_HEART_RATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,30 +86,27 @@ public class HeartRateOperations extends VitalSignObservationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateHeartRateMoodCode(HeartRate heartRate, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateHeartRateMoodCode(HeartRate heartRate, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_HEART_RATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEART_RATE);
 			try {
 				VALIDATE_HEART_RATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEART_RATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_HEART_RATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heartRate)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.HEART_RATE__HEART_RATE_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("HeartRateMoodCode"),
-						 new Object [] { heartRate }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.HEART_RATE__HEART_RATE_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("HeartRateMoodCode"), new Object[] { heartRate }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -134,9 +130,8 @@ public class HeartRateOperations extends VitalSignObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_HEART_RATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,30 +143,26 @@ public class HeartRateOperations extends VitalSignObservationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateHeartRateCodeP(HeartRate heartRate, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateHeartRateCodeP(HeartRate heartRate, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_HEART_RATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEART_RATE);
 			try {
 				VALIDATE_HEART_RATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEART_RATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_HEART_RATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heartRate)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.HEART_RATE__HEART_RATE_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("HeartRateCodeP"),
-						 new Object [] { heartRate }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE, EmspcrValidator.HEART_RATE__HEART_RATE_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("HeartRateCodeP"), new Object[] { heartRate }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -183,7 +174,7 @@ public class HeartRateOperations extends VitalSignObservationOperations {
 				}
 				passToken.add(heartRate);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -197,9 +188,9 @@ public class HeartRateOperations extends VitalSignObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HEART_RATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '8867-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_HEART_RATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '8867-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHeartRateCode(HeartRate, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Rate Code</em>}' invariant operation.
@@ -209,9 +200,8 @@ public class HeartRateOperations extends VitalSignObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_HEART_RATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -223,36 +213,34 @@ public class HeartRateOperations extends VitalSignObservationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateHeartRateCode(HeartRate heartRate, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.HeartRateCodeP");
+
+	public static boolean validateHeartRateCode(HeartRate heartRate, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.HeartRateCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(heartRate)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_HEART_RATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEART_RATE);
 			try {
 				VALIDATE_HEART_RATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEART_RATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_HEART_RATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heartRate)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.HEART_RATE__HEART_RATE_CODE,
-						 EmspcrPlugin.INSTANCE.getString("HeartRateCode"),
-						 new Object [] { heartRate }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE, EmspcrValidator.HEART_RATE__HEART_RATE_CODE,
+					EmspcrPlugin.INSTANCE.getString("HeartRateCode"), new Object[] { heartRate }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -276,9 +264,8 @@ public class HeartRateOperations extends VitalSignObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_HEART_RATE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -290,30 +277,27 @@ public class HeartRateOperations extends VitalSignObservationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateHeartRateEffectiveTime(HeartRate heartRate, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateHeartRateEffectiveTime(HeartRate heartRate, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_HEART_RATE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEART_RATE);
 			try {
 				VALIDATE_HEART_RATE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEART_RATE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_HEART_RATE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heartRate)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.HEART_RATE__HEART_RATE_EFFECTIVE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("HeartRateEffectiveTime"),
-						 new Object [] { heartRate }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.HEART_RATE__HEART_RATE_EFFECTIVE_TIME,
+					EmspcrPlugin.INSTANCE.getString("HeartRateEffectiveTime"), new Object[] { heartRate }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -337,9 +321,8 @@ public class HeartRateOperations extends VitalSignObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_HEART_RATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -351,30 +334,26 @@ public class HeartRateOperations extends VitalSignObservationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateHeartRateValue(HeartRate heartRate, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateHeartRateValue(HeartRate heartRate, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_HEART_RATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEART_RATE);
 			try {
 				VALIDATE_HEART_RATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEART_RATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_HEART_RATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heartRate)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.HEART_RATE__HEART_RATE_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("HeartRateValue"),
-						 new Object [] { heartRate }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE, EmspcrValidator.HEART_RATE__HEART_RATE_VALUE,
+					EmspcrPlugin.INSTANCE.getString("HeartRateValue"), new Object[] { heartRate }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -398,9 +377,8 @@ public class HeartRateOperations extends VitalSignObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -412,30 +390,28 @@ public class HeartRateOperations extends VitalSignObservationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVitalSignObservationTemplateId(HeartRate heartRate, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateVitalSignObservationTemplateId(HeartRate heartRate, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEART_RATE);
 			try {
 				VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heartRate)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			heartRate)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.HEART_RATE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("VitalSignObservationTemplateId"),
-						 new Object [] { heartRate }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.HEART_RATE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("VitalSignObservationTemplateId"), new Object[] { heartRate }));
 			}
-			 
+
 			return false;
 		}
 		return true;

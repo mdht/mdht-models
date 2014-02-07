@@ -83,10 +83,11 @@ public interface InjuryCauseCategory extends Observation {
 	 * @generated
 	 */
 	public InjuryCauseCategory init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public InjuryCauseCategory init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InjuryCauseCategory init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InjuryCauseCategory

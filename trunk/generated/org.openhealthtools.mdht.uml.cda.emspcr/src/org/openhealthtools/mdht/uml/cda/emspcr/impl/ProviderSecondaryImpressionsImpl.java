@@ -58,8 +58,10 @@ public class ProviderSecondaryImpressionsImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProviderSecondaryImpressionsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsTemplateId(this, diagnostics, context);
+	public boolean validateProviderSecondaryImpressionsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -68,7 +70,8 @@ public class ProviderSecondaryImpressionsImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateProviderSecondaryImpressionsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsMoodCode(this, diagnostics, context);
+		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +80,8 @@ public class ProviderSecondaryImpressionsImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateProviderSecondaryImpressionsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsCodeP(this, diagnostics, context);
+		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,7 +90,8 @@ public class ProviderSecondaryImpressionsImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateProviderSecondaryImpressionsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsCode(this, diagnostics, context);
+		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,7 +100,8 @@ public class ProviderSecondaryImpressionsImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateProviderSecondaryImpressionsValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsValue(this, diagnostics, context);
+		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -104,7 +110,8 @@ public class ProviderSecondaryImpressionsImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateProviderSecondaryImpressionsValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsValueP(this, diagnostics, context);
+		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsValueP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -113,15 +120,16 @@ public class ProviderSecondaryImpressionsImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public ProviderSecondaryImpressions init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProviderSecondaryImpressions init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ProviderSecondaryImpressionsImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProviderSecondaryImpressions init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ProviderSecondaryImpressionsImpl

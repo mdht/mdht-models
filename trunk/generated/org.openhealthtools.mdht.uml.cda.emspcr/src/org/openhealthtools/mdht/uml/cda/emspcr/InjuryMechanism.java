@@ -83,10 +83,11 @@ public interface InjuryMechanism extends Observation {
 	 * @generated
 	 */
 	public InjuryMechanism init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public InjuryMechanism init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InjuryMechanism init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InjuryMechanism

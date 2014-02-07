@@ -107,10 +107,11 @@ public interface MedicationComplicationObservation extends Observation {
 	 * @generated
 	 */
 	public MedicationComplicationObservation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MedicationComplicationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationComplicationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationComplicationObservation

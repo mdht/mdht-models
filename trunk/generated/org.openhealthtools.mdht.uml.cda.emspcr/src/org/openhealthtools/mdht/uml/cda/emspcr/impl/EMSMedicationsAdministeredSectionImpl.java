@@ -35,7 +35,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSMedicationsAdminist
  *
  * @generated
  */
-public class EMSMedicationsAdministeredSectionImpl extends MedicationsAdministeredSectionImpl implements EMSMedicationsAdministeredSection {
+public class EMSMedicationsAdministeredSectionImpl extends MedicationsAdministeredSectionImpl implements
+		EMSMedicationsAdministeredSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +61,10 @@ public class EMSMedicationsAdministeredSectionImpl extends MedicationsAdminister
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSMedicationsAdministeredSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionCodeP(this, diagnostics, context);
+	public boolean validateEMSMedicationsAdministeredSectionCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +72,10 @@ public class EMSMedicationsAdministeredSectionImpl extends MedicationsAdminister
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSMedicationsAdministeredSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionCode(this, diagnostics, context);
+	public boolean validateEMSMedicationsAdministeredSectionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +83,10 @@ public class EMSMedicationsAdministeredSectionImpl extends MedicationsAdminister
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSMedicationsAdministeredSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionTitle(this, diagnostics, context);
+	public boolean validateEMSMedicationsAdministeredSectionTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -87,8 +94,10 @@ public class EMSMedicationsAdministeredSectionImpl extends MedicationsAdminister
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSMedicationsAdministeredSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionText(this, diagnostics, context);
+	public boolean validateEMSMedicationsAdministeredSectionText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -96,8 +105,10 @@ public class EMSMedicationsAdministeredSectionImpl extends MedicationsAdminister
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSMedicationsAdministeredSectionMedicationAdministered(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionMedicationAdministered(this, diagnostics, context);
+	public boolean validateEMSMedicationsAdministeredSectionMedicationAdministered(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionMedicationAdministered(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +126,10 @@ public class EMSMedicationsAdministeredSectionImpl extends MedicationsAdminister
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSMedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTemplateId(this, diagnostics, context);
+	public boolean validateMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSMedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -124,16 +137,19 @@ public class EMSMedicationsAdministeredSectionImpl extends MedicationsAdminister
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EMSMedicationsAdministeredSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EMSMedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //EMSMedicationsAdministeredSectionImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EMSMedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // EMSMedicationsAdministeredSectionImpl

@@ -107,10 +107,11 @@ public interface ComplaintReportedByDispatch extends Observation {
 	 * @generated
 	 */
 	public ComplaintReportedByDispatch init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ComplaintReportedByDispatch init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComplaintReportedByDispatch init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ComplaintReportedByDispatch

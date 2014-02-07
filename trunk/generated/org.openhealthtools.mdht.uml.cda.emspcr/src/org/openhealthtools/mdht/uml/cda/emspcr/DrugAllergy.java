@@ -50,10 +50,11 @@ public interface DrugAllergy extends AllergyProblemAct {
 	 * @generated
 	 */
 	public DrugAllergy init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DrugAllergy

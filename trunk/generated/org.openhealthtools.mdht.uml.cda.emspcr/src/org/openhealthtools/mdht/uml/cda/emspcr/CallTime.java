@@ -95,10 +95,11 @@ public interface CallTime extends Observation {
 	 * @generated
 	 */
 	public CallTime init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CallTime init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CallTime init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CallTime

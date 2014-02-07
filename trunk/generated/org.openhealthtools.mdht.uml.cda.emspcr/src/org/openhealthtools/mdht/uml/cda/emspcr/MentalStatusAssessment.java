@@ -95,10 +95,11 @@ public interface MentalStatusAssessment extends Observation {
 	 * @generated
 	 */
 	public MentalStatusAssessment init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MentalStatusAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MentalStatusAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MentalStatusAssessment

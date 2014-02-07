@@ -107,10 +107,11 @@ public interface HeadAssessment extends Observation {
 	 * @generated
 	 */
 	public HeadAssessment init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public HeadAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HeadAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HeadAssessment

@@ -104,15 +104,16 @@ public class FirstUnitOnSceneImpl extends ObservationImpl implements FirstUnitOn
 	 * @generated
 	 */
 	public FirstUnitOnScene init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public FirstUnitOnScene init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //FirstUnitOnSceneImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FirstUnitOnScene init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // FirstUnitOnSceneImpl

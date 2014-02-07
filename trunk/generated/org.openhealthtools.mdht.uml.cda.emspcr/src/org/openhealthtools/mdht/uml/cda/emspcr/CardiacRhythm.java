@@ -158,10 +158,11 @@ public interface CardiacRhythm extends Observation {
 	 * @generated
 	 */
 	public CardiacRhythm init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CardiacRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CardiacRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CardiacRhythm

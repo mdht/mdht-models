@@ -95,10 +95,11 @@ public interface ReturnOfSpontaneousCirculation extends Observation {
 	 * @generated
 	 */
 	public ReturnOfSpontaneousCirculation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ReturnOfSpontaneousCirculation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReturnOfSpontaneousCirculation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ReturnOfSpontaneousCirculation

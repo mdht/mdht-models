@@ -168,10 +168,11 @@ public interface Complaint extends Observation {
 	 * @generated
 	 */
 	public Complaint init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public Complaint init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Complaint init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Complaint

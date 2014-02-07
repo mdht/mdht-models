@@ -105,8 +105,10 @@ public class EMSSocialHistorySectionImpl extends SectionImpl implements EMSSocia
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSSocialHistorySectionExistenceOfDrugUseIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionExistenceOfDrugUseIndication(this, diagnostics, context);
+	public boolean validateEMSSocialHistorySectionExistenceOfDrugUseIndication(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionExistenceOfDrugUseIndication(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -114,8 +116,10 @@ public class EMSSocialHistorySectionImpl extends SectionImpl implements EMSSocia
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSSocialHistorySectionDrugUseIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionDrugUseIndication(this, diagnostics, context);
+	public boolean validateEMSSocialHistorySectionDrugUseIndication(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionDrugUseIndication(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -142,15 +146,16 @@ public class EMSSocialHistorySectionImpl extends SectionImpl implements EMSSocia
 	 * @generated
 	 */
 	public EMSSocialHistorySection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EMSSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //EMSSocialHistorySectionImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EMSSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // EMSSocialHistorySectionImpl

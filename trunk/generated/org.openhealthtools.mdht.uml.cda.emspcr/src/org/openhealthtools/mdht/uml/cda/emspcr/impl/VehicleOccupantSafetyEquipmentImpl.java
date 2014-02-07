@@ -58,8 +58,10 @@ public class VehicleOccupantSafetyEquipmentImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVehicleOccupantSafetyEquipmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentTemplateId(this, diagnostics, context);
+	public boolean validateVehicleOccupantSafetyEquipmentTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +69,10 @@ public class VehicleOccupantSafetyEquipmentImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVehicleOccupantSafetyEquipmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentMoodCode(this, diagnostics, context);
+	public boolean validateVehicleOccupantSafetyEquipmentMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +81,8 @@ public class VehicleOccupantSafetyEquipmentImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateVehicleOccupantSafetyEquipmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentCode(this, diagnostics, context);
+		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,7 +91,8 @@ public class VehicleOccupantSafetyEquipmentImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateVehicleOccupantSafetyEquipmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentValue(this, diagnostics, context);
+		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,15 +101,16 @@ public class VehicleOccupantSafetyEquipmentImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public VehicleOccupantSafetyEquipment init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public VehicleOccupantSafetyEquipment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //VehicleOccupantSafetyEquipmentImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VehicleOccupantSafetyEquipment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // VehicleOccupantSafetyEquipmentImpl

@@ -87,7 +87,8 @@ public interface LengthBasedPatientBodyWeightClass extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateLengthBasedPatientBodyWeightClassEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateLengthBasedPatientBodyWeightClassEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -107,10 +108,11 @@ public interface LengthBasedPatientBodyWeightClass extends Observation {
 	 * @generated
 	 */
 	public LengthBasedPatientBodyWeightClass init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public LengthBasedPatientBodyWeightClass init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LengthBasedPatientBodyWeightClass init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // LengthBasedPatientBodyWeightClass

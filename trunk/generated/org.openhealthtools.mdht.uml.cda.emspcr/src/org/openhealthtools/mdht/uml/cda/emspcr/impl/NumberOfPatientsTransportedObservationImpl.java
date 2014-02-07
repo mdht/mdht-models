@@ -33,7 +33,8 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  *
  * @generated
  */
-public class NumberOfPatientsTransportedObservationImpl extends ObservationImpl implements NumberOfPatientsTransportedObservation {
+public class NumberOfPatientsTransportedObservationImpl extends ObservationImpl implements
+		NumberOfPatientsTransportedObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58,8 +59,10 @@ public class NumberOfPatientsTransportedObservationImpl extends ObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNumberOfPatientsTransportedObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationTemplateId(this, diagnostics, context);
+	public boolean validateNumberOfPatientsTransportedObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +70,10 @@ public class NumberOfPatientsTransportedObservationImpl extends ObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNumberOfPatientsTransportedObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationMoodCode(this, diagnostics, context);
+	public boolean validateNumberOfPatientsTransportedObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -76,8 +81,10 @@ public class NumberOfPatientsTransportedObservationImpl extends ObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNumberOfPatientsTransportedObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationCodeP(this, diagnostics, context);
+	public boolean validateNumberOfPatientsTransportedObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,8 +92,10 @@ public class NumberOfPatientsTransportedObservationImpl extends ObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNumberOfPatientsTransportedObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationCode(this, diagnostics, context);
+	public boolean validateNumberOfPatientsTransportedObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +103,10 @@ public class NumberOfPatientsTransportedObservationImpl extends ObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNumberOfPatientsTransportedObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationValue(this, diagnostics, context);
+	public boolean validateNumberOfPatientsTransportedObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -104,15 +115,16 @@ public class NumberOfPatientsTransportedObservationImpl extends ObservationImpl 
 	 * @generated
 	 */
 	public NumberOfPatientsTransportedObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public NumberOfPatientsTransportedObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //NumberOfPatientsTransportedObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NumberOfPatientsTransportedObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // NumberOfPatientsTransportedObservationImpl

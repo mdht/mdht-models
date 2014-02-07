@@ -71,9 +71,8 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,30 +84,32 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateReasonProcedureNotAttemptedObservationTemplateId(ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateReasonProcedureNotAttemptedObservationTemplateId(
+			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION);
 			try {
 				VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reasonProcedureNotAttemptedObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			reasonProcedureNotAttemptedObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION__REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("ReasonProcedureNotAttemptedObservationTemplateId"),
-						 new Object [] { reasonProcedureNotAttemptedObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION__REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("ReasonProcedureNotAttemptedObservationTemplateId"),
+					new Object[] { reasonProcedureNotAttemptedObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -132,9 +133,8 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -146,30 +146,32 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateReasonProcedureNotAttemptedObservationMoodCode(ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateReasonProcedureNotAttemptedObservationMoodCode(
+			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION);
 			try {
 				VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reasonProcedureNotAttemptedObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			reasonProcedureNotAttemptedObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION__REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ReasonProcedureNotAttemptedObservationMoodCode"),
-						 new Object [] { reasonProcedureNotAttemptedObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION__REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("ReasonProcedureNotAttemptedObservationMoodCode"),
+					new Object[] { reasonProcedureNotAttemptedObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -183,9 +185,9 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67504-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67504-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReasonProcedureNotAttemptedObservationCode(ReasonProcedureNotAttemptedObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reason Procedure Not Attempted Observation Code</em>}' invariant operation.
@@ -195,9 +197,8 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,30 +210,32 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateReasonProcedureNotAttemptedObservationCode(ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateReasonProcedureNotAttemptedObservationCode(
+			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION);
 			try {
 				VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reasonProcedureNotAttemptedObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			reasonProcedureNotAttemptedObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION__REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ReasonProcedureNotAttemptedObservationCode"),
-						 new Object [] { reasonProcedureNotAttemptedObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION__REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_CODE,
+					EmspcrPlugin.INSTANCE.getString("ReasonProcedureNotAttemptedObservationCode"),
+					new Object[] { reasonProcedureNotAttemptedObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -246,9 +249,9 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA15185-4' or value.code = 'LA18925-0' or value.code = 'LA4216-3' or value.code = 'LA4389-8' or value.code = 'LA17063-1' or value.code = 'LA17064-9' or value.code = 'LA17065-6')))";
+	protected static final String VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA15185-4' or value.code = 'LA18925-0' or value.code = 'LA4216-3' or value.code = 'LA4389-8' or value.code = 'LA17063-1' or value.code = 'LA17064-9' or value.code = 'LA17065-6')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReasonProcedureNotAttemptedObservationValue(ReasonProcedureNotAttemptedObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reason Procedure Not Attempted Observation Value</em>}' invariant operation.
@@ -258,9 +261,8 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -272,30 +274,32 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateReasonProcedureNotAttemptedObservationValue(ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateReasonProcedureNotAttemptedObservationValue(
+			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION);
 			try {
 				VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reasonProcedureNotAttemptedObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			reasonProcedureNotAttemptedObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION__REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("ReasonProcedureNotAttemptedObservationValue"),
-						 new Object [] { reasonProcedureNotAttemptedObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION__REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE,
+					EmspcrPlugin.INSTANCE.getString("ReasonProcedureNotAttemptedObservationValue"),
+					new Object[] { reasonProcedureNotAttemptedObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -319,9 +323,8 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -333,30 +336,32 @@ public class ReasonProcedureNotAttemptedObservationOperations extends ClinicalSt
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateReasonProcedureNotAttemptedObservationValueP(ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateReasonProcedureNotAttemptedObservationValueP(
+			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION);
 			try {
 				VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reasonProcedureNotAttemptedObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			reasonProcedureNotAttemptedObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION__REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE_P,
-						 EmspcrPlugin.INSTANCE.getString("ReasonProcedureNotAttemptedObservationValueP"),
-						 new Object [] { reasonProcedureNotAttemptedObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION__REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION_VALUE_P,
+					EmspcrPlugin.INSTANCE.getString("ReasonProcedureNotAttemptedObservationValueP"),
+					new Object[] { reasonProcedureNotAttemptedObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;

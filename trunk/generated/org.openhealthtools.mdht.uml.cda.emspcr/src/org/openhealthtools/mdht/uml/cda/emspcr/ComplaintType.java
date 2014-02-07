@@ -107,10 +107,11 @@ public interface ComplaintType extends Observation {
 	 * @generated
 	 */
 	public ComplaintType init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ComplaintType init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComplaintType init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ComplaintType

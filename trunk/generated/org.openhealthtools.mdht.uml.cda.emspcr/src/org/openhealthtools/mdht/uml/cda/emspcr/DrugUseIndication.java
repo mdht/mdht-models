@@ -83,10 +83,11 @@ public interface DrugUseIndication extends Observation {
 	 * @generated
 	 */
 	public DrugUseIndication init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DrugUseIndication init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DrugUseIndication init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DrugUseIndication

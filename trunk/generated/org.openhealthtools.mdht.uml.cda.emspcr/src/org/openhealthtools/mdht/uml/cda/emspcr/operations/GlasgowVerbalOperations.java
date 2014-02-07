@@ -72,9 +72,8 @@ public class GlasgowVerbalOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_VERBAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,30 +85,28 @@ public class GlasgowVerbalOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowVerbalTemplateId(GlasgowVerbal glasgowVerbal, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGlasgowVerbalTemplateId(GlasgowVerbal glasgowVerbal, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_GLASGOW_VERBAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_VERBAL);
 			try {
 				VALIDATE_GLASGOW_VERBAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_VERBAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_VERBAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowVerbal)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_VERBAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			glasgowVerbal)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_VERBAL__GLASGOW_VERBAL_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowVerbalTemplateId"),
-						 new Object [] { glasgowVerbal }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.GLASGOW_VERBAL__GLASGOW_VERBAL_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("GlasgowVerbalTemplateId"), new Object[] { glasgowVerbal }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -133,9 +130,8 @@ public class GlasgowVerbalOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_VERBAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,30 +143,28 @@ public class GlasgowVerbalOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowVerbalMoodCode(GlasgowVerbal glasgowVerbal, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGlasgowVerbalMoodCode(GlasgowVerbal glasgowVerbal, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_GLASGOW_VERBAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_VERBAL);
 			try {
 				VALIDATE_GLASGOW_VERBAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_VERBAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_VERBAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowVerbal)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_VERBAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			glasgowVerbal)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_VERBAL__GLASGOW_VERBAL_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowVerbalMoodCode"),
-						 new Object [] { glasgowVerbal }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.GLASGOW_VERBAL__GLASGOW_VERBAL_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("GlasgowVerbalMoodCode"), new Object[] { glasgowVerbal }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -194,9 +188,8 @@ public class GlasgowVerbalOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_VERBAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +201,27 @@ public class GlasgowVerbalOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowVerbalCodeP(GlasgowVerbal glasgowVerbal, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGlasgowVerbalCodeP(GlasgowVerbal glasgowVerbal, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_GLASGOW_VERBAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_VERBAL);
 			try {
 				VALIDATE_GLASGOW_VERBAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_VERBAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_VERBAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowVerbal)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_VERBAL__GLASGOW_VERBAL_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowVerbalCodeP"),
-						 new Object [] { glasgowVerbal }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.GLASGOW_VERBAL__GLASGOW_VERBAL_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("GlasgowVerbalCodeP"), new Object[] { glasgowVerbal }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -243,7 +233,7 @@ public class GlasgowVerbalOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(glasgowVerbal);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -257,9 +247,9 @@ public class GlasgowVerbalOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GLASGOW_VERBAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '9270-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_GLASGOW_VERBAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '9270-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGlasgowVerbalCode(GlasgowVerbal, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Verbal Code</em>}' invariant operation.
@@ -269,9 +259,8 @@ public class GlasgowVerbalOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_VERBAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -283,36 +272,35 @@ public class GlasgowVerbalOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowVerbalCode(GlasgowVerbal glasgowVerbal, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.GlasgowVerbalCodeP");
+
+	public static boolean validateGlasgowVerbalCode(GlasgowVerbal glasgowVerbal, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.GlasgowVerbalCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(glasgowVerbal)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_GLASGOW_VERBAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_VERBAL);
 			try {
 				VALIDATE_GLASGOW_VERBAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_VERBAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_VERBAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowVerbal)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_VERBAL__GLASGOW_VERBAL_CODE,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowVerbalCode"),
-						 new Object [] { glasgowVerbal }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.GLASGOW_VERBAL__GLASGOW_VERBAL_CODE,
+					EmspcrPlugin.INSTANCE.getString("GlasgowVerbalCode"), new Object[] { glasgowVerbal }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -336,9 +324,8 @@ public class GlasgowVerbalOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GLASGOW_VERBAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -350,30 +337,27 @@ public class GlasgowVerbalOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGlasgowVerbalValue(GlasgowVerbal glasgowVerbal, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGlasgowVerbalValue(GlasgowVerbal glasgowVerbal, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_GLASGOW_VERBAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_VERBAL);
 			try {
 				VALIDATE_GLASGOW_VERBAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_VERBAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_VERBAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowVerbal)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.GLASGOW_VERBAL__GLASGOW_VERBAL_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("GlasgowVerbalValue"),
-						 new Object [] { glasgowVerbal }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.GLASGOW_VERBAL__GLASGOW_VERBAL_VALUE,
+					EmspcrPlugin.INSTANCE.getString("GlasgowVerbalValue"), new Object[] { glasgowVerbal }));
 			}
-			 
+
 			return false;
 		}
 		return true;

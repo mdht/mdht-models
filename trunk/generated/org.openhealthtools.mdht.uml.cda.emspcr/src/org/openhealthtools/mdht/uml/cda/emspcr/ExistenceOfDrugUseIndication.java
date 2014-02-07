@@ -95,10 +95,11 @@ public interface ExistenceOfDrugUseIndication extends Observation {
 	 * @generated
 	 */
 	public ExistenceOfDrugUseIndication init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ExistenceOfDrugUseIndication init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExistenceOfDrugUseIndication init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ExistenceOfDrugUseIndication

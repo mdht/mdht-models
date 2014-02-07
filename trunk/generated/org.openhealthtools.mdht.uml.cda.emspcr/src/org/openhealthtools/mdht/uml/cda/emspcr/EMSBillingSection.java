@@ -125,10 +125,11 @@ public interface EMSBillingSection extends Section {
 	 * @generated
 	 */
 	public EMSBillingSection init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EMSBillingSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EMSBillingSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSBillingSection

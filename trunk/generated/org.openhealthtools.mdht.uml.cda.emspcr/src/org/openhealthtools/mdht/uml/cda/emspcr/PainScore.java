@@ -83,10 +83,11 @@ public interface PainScore extends Observation {
 	 * @generated
 	 */
 	public PainScore init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PainScore init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PainScore init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PainScore

@@ -71,9 +71,8 @@ public class BodyTemperatureOperations extends VitalSignObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_BODY_TEMPERATURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,30 +84,28 @@ public class BodyTemperatureOperations extends VitalSignObservationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBodyTemperatureMoodCode(BodyTemperature bodyTemperature, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateBodyTemperatureMoodCode(BodyTemperature bodyTemperature, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_BODY_TEMPERATURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BODY_TEMPERATURE);
 			try {
 				VALIDATE_BODY_TEMPERATURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_TEMPERATURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_TEMPERATURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyTemperature)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BODY_TEMPERATURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			bodyTemperature)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.BODY_TEMPERATURE__BODY_TEMPERATURE_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("BodyTemperatureMoodCode"),
-						 new Object [] { bodyTemperature }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.BODY_TEMPERATURE__BODY_TEMPERATURE_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("BodyTemperatureMoodCode"), new Object[] { bodyTemperature }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -122,9 +119,9 @@ public class BodyTemperatureOperations extends VitalSignObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_BODY_TEMPERATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '8310-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_BODY_TEMPERATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '8310-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBodyTemperatureCode(BodyTemperature, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Body Temperature Code</em>}' invariant operation.
@@ -134,9 +131,8 @@ public class BodyTemperatureOperations extends VitalSignObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_BODY_TEMPERATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,30 +144,27 @@ public class BodyTemperatureOperations extends VitalSignObservationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBodyTemperatureCode(BodyTemperature bodyTemperature, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateBodyTemperatureCode(BodyTemperature bodyTemperature, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_BODY_TEMPERATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BODY_TEMPERATURE);
 			try {
 				VALIDATE_BODY_TEMPERATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_TEMPERATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_BODY_TEMPERATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyTemperature)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.BODY_TEMPERATURE__BODY_TEMPERATURE_CODE,
-						 EmspcrPlugin.INSTANCE.getString("BodyTemperatureCode"),
-						 new Object [] { bodyTemperature }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.BODY_TEMPERATURE__BODY_TEMPERATURE_CODE,
+					EmspcrPlugin.INSTANCE.getString("BodyTemperatureCode"), new Object[] { bodyTemperature }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -195,9 +188,8 @@ public class BodyTemperatureOperations extends VitalSignObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_BODY_TEMPERATURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,30 +201,28 @@ public class BodyTemperatureOperations extends VitalSignObservationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBodyTemperatureEffectiveTime(BodyTemperature bodyTemperature, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateBodyTemperatureEffectiveTime(BodyTemperature bodyTemperature,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_BODY_TEMPERATURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BODY_TEMPERATURE);
 			try {
 				VALIDATE_BODY_TEMPERATURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_TEMPERATURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_TEMPERATURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyTemperature)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BODY_TEMPERATURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			bodyTemperature)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.BODY_TEMPERATURE__BODY_TEMPERATURE_EFFECTIVE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("BodyTemperatureEffectiveTime"),
-						 new Object [] { bodyTemperature }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.BODY_TEMPERATURE__BODY_TEMPERATURE_EFFECTIVE_TIME,
+					EmspcrPlugin.INSTANCE.getString("BodyTemperatureEffectiveTime"), new Object[] { bodyTemperature }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -256,9 +246,8 @@ public class BodyTemperatureOperations extends VitalSignObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_BODY_TEMPERATURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -270,30 +259,28 @@ public class BodyTemperatureOperations extends VitalSignObservationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateBodyTemperatureValue(BodyTemperature bodyTemperature, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateBodyTemperatureValue(BodyTemperature bodyTemperature, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_BODY_TEMPERATURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BODY_TEMPERATURE);
 			try {
 				VALIDATE_BODY_TEMPERATURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_TEMPERATURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_TEMPERATURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyTemperature)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BODY_TEMPERATURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			bodyTemperature)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.BODY_TEMPERATURE__BODY_TEMPERATURE_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("BodyTemperatureValue"),
-						 new Object [] { bodyTemperature }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.BODY_TEMPERATURE__BODY_TEMPERATURE_VALUE,
+					EmspcrPlugin.INSTANCE.getString("BodyTemperatureValue"), new Object[] { bodyTemperature }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -317,9 +304,8 @@ public class BodyTemperatureOperations extends VitalSignObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -331,30 +317,28 @@ public class BodyTemperatureOperations extends VitalSignObservationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVitalSignObservationTemplateId(BodyTemperature bodyTemperature, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateVitalSignObservationTemplateId(BodyTemperature bodyTemperature,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BODY_TEMPERATURE);
 			try {
 				VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyTemperature)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			bodyTemperature)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.BODY_TEMPERATURE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("VitalSignObservationTemplateId"),
-						 new Object [] { bodyTemperature }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.BODY_TEMPERATURE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("VitalSignObservationTemplateId"), new Object[] { bodyTemperature }));
 			}
-			 
+
 			return false;
 		}
 		return true;

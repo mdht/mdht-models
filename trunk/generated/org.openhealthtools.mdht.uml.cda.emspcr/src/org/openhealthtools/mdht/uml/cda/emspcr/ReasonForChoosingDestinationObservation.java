@@ -39,7 +39,8 @@ public interface ReasonForChoosingDestinationObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.1133883.17.3.10.1.35\')'"
 	 * @generated
 	 */
-	boolean validateReasonForChoosingDestinationObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateReasonForChoosingDestinationObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -51,7 +52,8 @@ public interface ReasonForChoosingDestinationObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\')'"
 	 * @generated
 	 */
-	boolean validateReasonForChoosingDestinationObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateReasonForChoosingDestinationObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -63,7 +65,8 @@ public interface ReasonForChoosingDestinationObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateReasonForChoosingDestinationObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateReasonForChoosingDestinationObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,7 +90,8 @@ public interface ReasonForChoosingDestinationObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17059-9\' or value.code = \'LA17182-9\' or value.code = \'LA17184-5\' or value.code = \'LA17185-2\' or value.code = \'LA17186-0\' or value.code = \'LA17187-8\' or value.code = \'LA17188-6\' or value.code = \'LA17189-4\' or value.code = \'LA17190-2\' or value.code = \'LA17191-0\' or value.code = \'LA18301-4\')))'"
 	 * @generated
 	 */
-	boolean validateReasonForChoosingDestinationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateReasonForChoosingDestinationObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -99,7 +103,8 @@ public interface ReasonForChoosingDestinationObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
 	 * @generated
 	 */
-	boolean validateReasonForChoosingDestinationObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateReasonForChoosingDestinationObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -107,10 +112,11 @@ public interface ReasonForChoosingDestinationObservation extends Observation {
 	 * @generated
 	 */
 	public ReasonForChoosingDestinationObservation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ReasonForChoosingDestinationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReasonForChoosingDestinationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ReasonForChoosingDestinationObservation

@@ -70,9 +70,8 @@ public class PriorAidVitalsOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PRIOR_AID_VITALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,30 +83,28 @@ public class PriorAidVitalsOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePriorAidVitalsTemplateId(PriorAidVitals priorAidVitals, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePriorAidVitalsTemplateId(PriorAidVitals priorAidVitals, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PRIOR_AID_VITALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PRIOR_AID_VITALS);
 			try {
 				VALIDATE_PRIOR_AID_VITALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIOR_AID_VITALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIOR_AID_VITALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(priorAidVitals)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRIOR_AID_VITALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			priorAidVitals)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PRIOR_AID_VITALS__PRIOR_AID_VITALS_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("PriorAidVitalsTemplateId"),
-						 new Object [] { priorAidVitals }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PRIOR_AID_VITALS__PRIOR_AID_VITALS_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("PriorAidVitalsTemplateId"), new Object[] { priorAidVitals }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -131,9 +128,8 @@ public class PriorAidVitalsOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PRIOR_AID_VITALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,30 +141,28 @@ public class PriorAidVitalsOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePriorAidVitalsMoodCode(PriorAidVitals priorAidVitals, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePriorAidVitalsMoodCode(PriorAidVitals priorAidVitals, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PRIOR_AID_VITALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PRIOR_AID_VITALS);
 			try {
 				VALIDATE_PRIOR_AID_VITALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIOR_AID_VITALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIOR_AID_VITALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(priorAidVitals)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRIOR_AID_VITALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			priorAidVitals)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PRIOR_AID_VITALS__PRIOR_AID_VITALS_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("PriorAidVitalsMoodCode"),
-						 new Object [] { priorAidVitals }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PRIOR_AID_VITALS__PRIOR_AID_VITALS_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("PriorAidVitalsMoodCode"), new Object[] { priorAidVitals }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -182,9 +176,9 @@ public class PriorAidVitalsOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PRIOR_AID_VITALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67518-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PRIOR_AID_VITALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67518-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePriorAidVitalsCode(PriorAidVitals, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior Aid Vitals Code</em>}' invariant operation.
@@ -194,9 +188,8 @@ public class PriorAidVitalsOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PRIOR_AID_VITALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +201,27 @@ public class PriorAidVitalsOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePriorAidVitalsCode(PriorAidVitals priorAidVitals, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePriorAidVitalsCode(PriorAidVitals priorAidVitals, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PRIOR_AID_VITALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PRIOR_AID_VITALS);
 			try {
 				VALIDATE_PRIOR_AID_VITALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIOR_AID_VITALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PRIOR_AID_VITALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(priorAidVitals)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PRIOR_AID_VITALS__PRIOR_AID_VITALS_CODE,
-						 EmspcrPlugin.INSTANCE.getString("PriorAidVitalsCode"),
-						 new Object [] { priorAidVitals }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PRIOR_AID_VITALS__PRIOR_AID_VITALS_CODE,
+					EmspcrPlugin.INSTANCE.getString("PriorAidVitalsCode"), new Object[] { priorAidVitals }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -255,9 +245,8 @@ public class PriorAidVitalsOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PRIOR_AID_VITALS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -269,30 +258,27 @@ public class PriorAidVitalsOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePriorAidVitalsValue(PriorAidVitals priorAidVitals, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePriorAidVitalsValue(PriorAidVitals priorAidVitals, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PRIOR_AID_VITALS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PRIOR_AID_VITALS);
 			try {
 				VALIDATE_PRIOR_AID_VITALS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIOR_AID_VITALS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PRIOR_AID_VITALS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(priorAidVitals)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PRIOR_AID_VITALS__PRIOR_AID_VITALS_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("PriorAidVitalsValue"),
-						 new Object [] { priorAidVitals }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PRIOR_AID_VITALS__PRIOR_AID_VITALS_VALUE,
+					EmspcrPlugin.INSTANCE.getString("PriorAidVitalsValue"), new Object[] { priorAidVitals }));
 			}
-			 
+
 			return false;
 		}
 		return true;

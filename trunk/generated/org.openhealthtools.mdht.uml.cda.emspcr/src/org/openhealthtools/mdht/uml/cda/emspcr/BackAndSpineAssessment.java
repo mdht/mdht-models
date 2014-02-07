@@ -143,10 +143,11 @@ public interface BackAndSpineAssessment extends Observation {
 	 * @generated
 	 */
 	public BackAndSpineAssessment init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public BackAndSpineAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BackAndSpineAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // BackAndSpineAssessment

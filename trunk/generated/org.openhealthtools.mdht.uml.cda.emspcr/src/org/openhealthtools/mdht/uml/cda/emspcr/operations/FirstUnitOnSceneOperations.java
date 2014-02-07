@@ -72,9 +72,8 @@ public class FirstUnitOnSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_FIRST_UNIT_ON_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,30 +85,28 @@ public class FirstUnitOnSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateFirstUnitOnSceneTemplateId(FirstUnitOnScene firstUnitOnScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateFirstUnitOnSceneTemplateId(FirstUnitOnScene firstUnitOnScene,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FIRST_UNIT_ON_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.FIRST_UNIT_ON_SCENE);
 			try {
 				VALIDATE_FIRST_UNIT_ON_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FIRST_UNIT_ON_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FIRST_UNIT_ON_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(firstUnitOnScene)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FIRST_UNIT_ON_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			firstUnitOnScene)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.FIRST_UNIT_ON_SCENE__FIRST_UNIT_ON_SCENE_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("FirstUnitOnSceneTemplateId"),
-						 new Object [] { firstUnitOnScene }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.FIRST_UNIT_ON_SCENE__FIRST_UNIT_ON_SCENE_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("FirstUnitOnSceneTemplateId"), new Object[] { firstUnitOnScene }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -133,9 +130,8 @@ public class FirstUnitOnSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_FIRST_UNIT_ON_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,30 +143,28 @@ public class FirstUnitOnSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateFirstUnitOnSceneMoodCode(FirstUnitOnScene firstUnitOnScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateFirstUnitOnSceneMoodCode(FirstUnitOnScene firstUnitOnScene,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FIRST_UNIT_ON_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.FIRST_UNIT_ON_SCENE);
 			try {
 				VALIDATE_FIRST_UNIT_ON_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FIRST_UNIT_ON_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FIRST_UNIT_ON_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(firstUnitOnScene)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FIRST_UNIT_ON_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			firstUnitOnScene)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.FIRST_UNIT_ON_SCENE__FIRST_UNIT_ON_SCENE_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("FirstUnitOnSceneMoodCode"),
-						 new Object [] { firstUnitOnScene }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.FIRST_UNIT_ON_SCENE__FIRST_UNIT_ON_SCENE_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("FirstUnitOnSceneMoodCode"), new Object[] { firstUnitOnScene }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -194,9 +188,8 @@ public class FirstUnitOnSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_FIRST_UNIT_ON_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +201,28 @@ public class FirstUnitOnSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateFirstUnitOnSceneCodeP(FirstUnitOnScene firstUnitOnScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateFirstUnitOnSceneCodeP(FirstUnitOnScene firstUnitOnScene, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_FIRST_UNIT_ON_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.FIRST_UNIT_ON_SCENE);
 			try {
 				VALIDATE_FIRST_UNIT_ON_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FIRST_UNIT_ON_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FIRST_UNIT_ON_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(firstUnitOnScene)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FIRST_UNIT_ON_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			firstUnitOnScene)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.FIRST_UNIT_ON_SCENE__FIRST_UNIT_ON_SCENE_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("FirstUnitOnSceneCodeP"),
-						 new Object [] { firstUnitOnScene }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.FIRST_UNIT_ON_SCENE__FIRST_UNIT_ON_SCENE_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("FirstUnitOnSceneCodeP"), new Object[] { firstUnitOnScene }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -243,7 +234,7 @@ public class FirstUnitOnSceneOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(firstUnitOnScene);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -257,9 +248,9 @@ public class FirstUnitOnSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_FIRST_UNIT_ON_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67481-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_FIRST_UNIT_ON_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67481-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFirstUnitOnSceneCode(FirstUnitOnScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate First Unit On Scene Code</em>}' invariant operation.
@@ -269,9 +260,8 @@ public class FirstUnitOnSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_FIRST_UNIT_ON_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -283,36 +273,36 @@ public class FirstUnitOnSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateFirstUnitOnSceneCode(FirstUnitOnScene firstUnitOnScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.FirstUnitOnSceneCodeP");
+
+	public static boolean validateFirstUnitOnSceneCode(FirstUnitOnScene firstUnitOnScene, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.FirstUnitOnSceneCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(firstUnitOnScene)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_FIRST_UNIT_ON_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.FIRST_UNIT_ON_SCENE);
 			try {
 				VALIDATE_FIRST_UNIT_ON_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FIRST_UNIT_ON_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FIRST_UNIT_ON_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(firstUnitOnScene)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FIRST_UNIT_ON_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			firstUnitOnScene)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.FIRST_UNIT_ON_SCENE__FIRST_UNIT_ON_SCENE_CODE,
-						 EmspcrPlugin.INSTANCE.getString("FirstUnitOnSceneCode"),
-						 new Object [] { firstUnitOnScene }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.FIRST_UNIT_ON_SCENE__FIRST_UNIT_ON_SCENE_CODE,
+					EmspcrPlugin.INSTANCE.getString("FirstUnitOnSceneCode"), new Object[] { firstUnitOnScene }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -336,9 +326,8 @@ public class FirstUnitOnSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_FIRST_UNIT_ON_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -350,30 +339,28 @@ public class FirstUnitOnSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateFirstUnitOnSceneValue(FirstUnitOnScene firstUnitOnScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateFirstUnitOnSceneValue(FirstUnitOnScene firstUnitOnScene, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_FIRST_UNIT_ON_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.FIRST_UNIT_ON_SCENE);
 			try {
 				VALIDATE_FIRST_UNIT_ON_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FIRST_UNIT_ON_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FIRST_UNIT_ON_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(firstUnitOnScene)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FIRST_UNIT_ON_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			firstUnitOnScene)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.FIRST_UNIT_ON_SCENE__FIRST_UNIT_ON_SCENE_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("FirstUnitOnSceneValue"),
-						 new Object [] { firstUnitOnScene }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.FIRST_UNIT_ON_SCENE__FIRST_UNIT_ON_SCENE_VALUE,
+					EmspcrPlugin.INSTANCE.getString("FirstUnitOnSceneValue"), new Object[] { firstUnitOnScene }));
 			}
-			 
+
 			return false;
 		}
 		return true;

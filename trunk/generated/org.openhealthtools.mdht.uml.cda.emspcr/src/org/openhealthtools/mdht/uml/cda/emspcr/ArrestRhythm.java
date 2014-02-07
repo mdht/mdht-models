@@ -83,10 +83,11 @@ public interface ArrestRhythm extends Observation {
 	 * @generated
 	 */
 	public ArrestRhythm init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ArrestRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ArrestRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ArrestRhythm

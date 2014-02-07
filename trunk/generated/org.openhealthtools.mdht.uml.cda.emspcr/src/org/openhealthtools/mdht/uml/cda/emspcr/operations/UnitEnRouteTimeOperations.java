@@ -72,9 +72,8 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_UNIT_EN_ROUTE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,30 +85,28 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateUnitEnRouteTimeTemplateId(UnitEnRouteTime unitEnRouteTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateUnitEnRouteTimeTemplateId(UnitEnRouteTime unitEnRouteTime,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_UNIT_EN_ROUTE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.UNIT_EN_ROUTE_TIME);
 			try {
 				VALIDATE_UNIT_EN_ROUTE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNIT_EN_ROUTE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_EN_ROUTE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unitEnRouteTime)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_EN_ROUTE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			unitEnRouteTime)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.UNIT_EN_ROUTE_TIME__UNIT_EN_ROUTE_TIME_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("UnitEnRouteTimeTemplateId"),
-						 new Object [] { unitEnRouteTime }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.UNIT_EN_ROUTE_TIME__UNIT_EN_ROUTE_TIME_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("UnitEnRouteTimeTemplateId"), new Object[] { unitEnRouteTime }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -133,9 +130,8 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_UNIT_EN_ROUTE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,30 +143,28 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateUnitEnRouteTimeMoodCode(UnitEnRouteTime unitEnRouteTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateUnitEnRouteTimeMoodCode(UnitEnRouteTime unitEnRouteTime, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_UNIT_EN_ROUTE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.UNIT_EN_ROUTE_TIME);
 			try {
 				VALIDATE_UNIT_EN_ROUTE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNIT_EN_ROUTE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_EN_ROUTE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unitEnRouteTime)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_EN_ROUTE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			unitEnRouteTime)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.UNIT_EN_ROUTE_TIME__UNIT_EN_ROUTE_TIME_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("UnitEnRouteTimeMoodCode"),
-						 new Object [] { unitEnRouteTime }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.UNIT_EN_ROUTE_TIME__UNIT_EN_ROUTE_TIME_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("UnitEnRouteTimeMoodCode"), new Object[] { unitEnRouteTime }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -194,9 +188,8 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_UNIT_EN_ROUTE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +201,28 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateUnitEnRouteTimeCodeP(UnitEnRouteTime unitEnRouteTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateUnitEnRouteTimeCodeP(UnitEnRouteTime unitEnRouteTime, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_UNIT_EN_ROUTE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.UNIT_EN_ROUTE_TIME);
 			try {
 				VALIDATE_UNIT_EN_ROUTE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNIT_EN_ROUTE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_EN_ROUTE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unitEnRouteTime)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_EN_ROUTE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			unitEnRouteTime)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.UNIT_EN_ROUTE_TIME__UNIT_EN_ROUTE_TIME_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("UnitEnRouteTimeCodeP"),
-						 new Object [] { unitEnRouteTime }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.UNIT_EN_ROUTE_TIME__UNIT_EN_ROUTE_TIME_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("UnitEnRouteTimeCodeP"), new Object[] { unitEnRouteTime }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -243,7 +234,7 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(unitEnRouteTime);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -257,9 +248,9 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_UNIT_EN_ROUTE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '69472-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_UNIT_EN_ROUTE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '69472-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateUnitEnRouteTimeCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Code</em>}' invariant operation.
@@ -269,9 +260,8 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_UNIT_EN_ROUTE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -283,36 +273,36 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateUnitEnRouteTimeCode(UnitEnRouteTime unitEnRouteTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.UnitEnRouteTimeCodeP");
+
+	public static boolean validateUnitEnRouteTimeCode(UnitEnRouteTime unitEnRouteTime, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.UnitEnRouteTimeCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(unitEnRouteTime)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_UNIT_EN_ROUTE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.UNIT_EN_ROUTE_TIME);
 			try {
 				VALIDATE_UNIT_EN_ROUTE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNIT_EN_ROUTE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_EN_ROUTE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unitEnRouteTime)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_EN_ROUTE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			unitEnRouteTime)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.UNIT_EN_ROUTE_TIME__UNIT_EN_ROUTE_TIME_CODE,
-						 EmspcrPlugin.INSTANCE.getString("UnitEnRouteTimeCode"),
-						 new Object [] { unitEnRouteTime }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.UNIT_EN_ROUTE_TIME__UNIT_EN_ROUTE_TIME_CODE,
+					EmspcrPlugin.INSTANCE.getString("UnitEnRouteTimeCode"), new Object[] { unitEnRouteTime }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -336,9 +326,8 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_UNIT_EN_ROUTE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -350,30 +339,28 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateUnitEnRouteTimeValue(UnitEnRouteTime unitEnRouteTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateUnitEnRouteTimeValue(UnitEnRouteTime unitEnRouteTime, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_UNIT_EN_ROUTE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.UNIT_EN_ROUTE_TIME);
 			try {
 				VALIDATE_UNIT_EN_ROUTE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNIT_EN_ROUTE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_EN_ROUTE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unitEnRouteTime)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_EN_ROUTE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			unitEnRouteTime)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.UNIT_EN_ROUTE_TIME__UNIT_EN_ROUTE_TIME_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("UnitEnRouteTimeValue"),
-						 new Object [] { unitEnRouteTime }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.UNIT_EN_ROUTE_TIME__UNIT_EN_ROUTE_TIME_VALUE,
+					EmspcrPlugin.INSTANCE.getString("UnitEnRouteTimeValue"), new Object[] { unitEnRouteTime }));
 			}
-			 
+
 			return false;
 		}
 		return true;
