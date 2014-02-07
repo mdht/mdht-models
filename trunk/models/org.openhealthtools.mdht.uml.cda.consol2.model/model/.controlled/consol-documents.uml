@@ -2709,10 +2709,6 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
     <ruleId>CONF:8375</ruleId>
     <ruleId>CONF:10040</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_BJkF0DstEeGvzMYhXuqAEA" base_Generalization="_R_oggDssEeGvzMYhXuqAEA" requiresParentId="true">
-    <ruleId>CONF:9477</ruleId>
-    <ruleId>CONF:10039</ruleId>
-  </CDA:ConformsTo>
   <CDA:ValueSetConstraint xmi:id="_GzN18DstEeGvzMYhXuqAEA" base_Property="_X-4tMDssEeGvzMYhXuqAEA">
     <reference href="../consol-vocab.uml#_Z8iQMTstEeGvzMYhXuqAEA"/>
     <ruleId>CONF:17177</ruleId>
@@ -3200,9 +3196,6 @@ A History and Physical Examination is required upon hospital admission as well a
     <ruleId>CONF:8283</ruleId>
   </CDA:ClassValidation>
   <CDA:CDATemplate xmi:id="_DJxPYD1kEeG3tde5scYNWA" base_Class="_-Qa60D1jEeG3tde5scYNWA" templateId="2.16.840.1.113883.10.20.22.1.3"/>
-  <CDA:ConformsTo xmi:id="_HCyIUD1kEeG3tde5scYNWA" base_Generalization="_-QelMD1jEeG3tde5scYNWA" requiresParentId="true">
-    <ruleId>CONF:9968</ruleId>
-  </CDA:ConformsTo>
   <CDA:ValueSetConstraint xmi:id="_bHudUD1kEeG3tde5scYNWA" base_Property="_-2L6UD1jEeG3tde5scYNWA">
     <reference href="../consol-vocab.uml#_MBvVoD1kEeG3tde5scYNWA"/>
     <ruleId>CONF:17186</ruleId>
@@ -3535,10 +3528,6 @@ A History and Physical Examination is required upon hospital admission as well a
     <ruleId>CONF:10048</ruleId>
   </CDA:ClassValidation>
   <CDA:CDATemplate xmi:id="_7C3L4D4iEeGhnL_c4sBHGg" base_Class="_xe9MsD4iEeGhnL_c4sBHGg" templateId="2.16.840.1.113883.10.20.22.1.7"/>
-  <CDA:ConformsTo xmi:id="_Asa1YD4jEeGhnL_c4sBHGg" base_Generalization="_xfHkwD4iEeGhnL_c4sBHGg" requiresParentId="true">
-    <ruleId>CONF:9914</ruleId>
-    <ruleId>CONF:10047</ruleId>
-  </CDA:ConformsTo>
   <CDA:ValueSetConstraint xmi:id="_UWlS4D4jEeGhnL_c4sBHGg" base_Property="_3GPlUD4iEeGhnL_c4sBHGg">
     <reference href="../consol-vocab.uml#_IuPWwT4jEeGhnL_c4sBHGg"/>
     <ruleId>CONF:17188</ruleId>
@@ -4083,10 +4072,6 @@ A History and Physical Examination is required upon hospital admission as well a
     <ruleId>CONF:8496</ruleId>
     <ruleId>CONF:10050</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_ddfKwD7YEeGvOdejHZ7dYg" base_Generalization="_Luag8D7YEeGvOdejHZ7dYg" requiresParentId="true">
-    <ruleId>CONF:9969</ruleId>
-    <ruleId>CONF:10049</ruleId>
-  </CDA:ConformsTo>
   <CDA:ValueSetConstraint xmi:id="_kv8rwD7YEeGvOdejHZ7dYg" base_Property="_S9Np8D7YEeGvOdejHZ7dYg">
     <reference href="../consol-vocab.uml#_oDanoD7YEeGvOdejHZ7dYg"/>
     <ruleId>CONF:17183</ruleId>
@@ -4540,9 +4525,6 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
     <ownedEnd xmi:id="_oWLtkD_TEeGXieeKs7NJjA" type="_UBzvED_LEeGXieeKs7NJjA" association="_oWB8kj_TEeGXieeKs7NJjA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_coZxcD_LEeGXieeKs7NJjA" base_Class="_UBzvED_LEeGXieeKs7NJjA" templateId="2.16.840.1.113883.10.20.22.1.9"/>
-  <CDA:ConformsTo xmi:id="_tO2mUD_LEeGXieeKs7NJjA" base_Generalization="_UCQbAD_LEeGXieeKs7NJjA" requiresParentId="true">
-    <ruleId>CONF:9483</ruleId>
-  </CDA:ConformsTo>
   <CDA:ValueSetConstraint xmi:id="_IyHHAD_MEeGXieeKs7NJjA" base_Property="_X72iwD_LEeGXieeKs7NJjA">
     <reference href="../consol-vocab.uml#_6yjb4T_LEeGXieeKs7NJjA"/>
     <ruleId>CONF:17190</ruleId>
@@ -4624,9 +4606,6 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
   <CDA:ConstraintValidation xmi:id="_nto-gD_hEeGysvimLgYv4A" base_Constraint="_lKUtMD_hEeGysvimLgYv4A">
     <ruleId>CONF:10069</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConformsTo xmi:id="_M8fegEBVEeGXKr6TcG1UOQ" base_Generalization="_2T9DPxSVEeGGzu7fmW9pXw" requiresParentId="true">
-    <ruleId>CONF:9970</ruleId>
-  </CDA:ConformsTo>
   <CDA:PropertyValidation xmi:id="_UsI1UEBWEeGXKr6TcG1UOQ" base_Property="_RjRm8EBWEeGXKr6TcG1UOQ">
     <ruleId>CONF:7643</ruleId>
   </CDA:PropertyValidation>
@@ -5129,10 +5108,6 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:ConstraintValidation xmi:id="_HAihoEUwEeGdQ4KWAmnbhw" severity="WARNING" base_Constraint="__CBy8EUvEeGdQ4KWAmnbhw">
     <ruleId>CONF:8409</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConformsTo xmi:id="_rQcUQEUuEeGdQ4KWAmnbhw" base_Generalization="_XwdtgEUuEeGdQ4KWAmnbhw" requiresParentId="true">
-    <ruleId>CONF:9405</ruleId>
-    <ruleId>CONF:10041</ruleId>
-  </CDA:ConformsTo>
   <CDA:ValueSetConstraint xmi:id="_4p4lIEUvEeGdQ4KWAmnbhw" base_Property="_Z-7JIEUuEeGdQ4KWAmnbhw">
     <reference href="../consol-vocab.uml#_hJA70UUvEeGdQ4KWAmnbhw"/>
     <ruleId>CONF:14834</ruleId>
@@ -5801,4 +5776,13 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:ConstraintValidation xmi:id="_-MTHQGd_EeOTOrM7GF-Lqg" base_Constraint="_ybGekDsyEeGvzMYhXuqAEA">
     <ruleId>CONF:8396</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:ConformsTo xmi:id="_5usfIHyqEeOMoc1VIZQnRQ" base_Generalization="_XwdtgEUuEeGdQ4KWAmnbhw"/>
+  <CDA:ConformsTo xmi:id="_OtsooHyrEeOMoc1VIZQnRQ" base_Generalization="_-QelMD1jEeG3tde5scYNWA"/>
+  <CDA:ConformsTo xmi:id="_R_H9IHyrEeOMoc1VIZQnRQ" base_Generalization="_xfHkwD4iEeGhnL_c4sBHGg"/>
+  <CDA:ConformsTo xmi:id="_T4eEYHyrEeOMoc1VIZQnRQ" base_Generalization="_Luag8D7YEeGvOdejHZ7dYg"/>
+  <CDA:ConformsTo xmi:id="_V0tuoHyrEeOMoc1VIZQnRQ" base_Generalization="_UCQbAD_LEeGXieeKs7NJjA"/>
+  <CDA:ConformsTo xmi:id="_XylwkHyrEeOMoc1VIZQnRQ" base_Generalization="_2T9DPxSVEeGGzu7fmW9pXw"/>
+  <CDA:ConformsTo xmi:id="_HtrosJAWEeOBqfnqAvqk7Q" base_Generalization="_R_oggDssEeGvzMYhXuqAEA"/>
+  <CDA:ConformsTo xmi:id="_JGLFoJAWEeOBqfnqAvqk7Q" base_Generalization="_2PQJchSVEeGGzu7fmW9pXw"/>
+  <CDA:ConformsTo xmi:id="_LfhioJAWEeOBqfnqAvqk7Q" base_Generalization="_2U6FfBSVEeGGzu7fmW9pXw"/>
 </xmi:XMI>
