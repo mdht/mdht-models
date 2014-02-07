@@ -1264,6 +1264,196 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_np5CwInYEeOJGtGyq_dBbA" name="Residence and Accommodation Type">
+      <ownedComment xmi:id="_fEs5IInZEeOJGtGyq_dBbA">
+        <body>A value set of SNOMED-CT codes descending from &quot;365508006&quot;  &quot;Residence and accommodation circumstances - finding&quot; reflecting type of residence, status of accommodations, living situation and environment.&#xD;
+Specific URL pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_MJZE0I0-EeOB0eBUISUB4Q" name="424661000"/>
+      <ownedLiteral xmi:id="_0J0tUI09EeOB0eBUISUB4Q" name="160708008"/>
+      <ownedLiteral xmi:id="_4HCw0I09EeOB0eBUISUB4Q" name="160751007"/>
+      <ownedLiteral xmi:id="_5iHnsI09EeOB0eBUISUB4Q" name="423859003"/>
+      <ownedLiteral xmi:id="_6xioMI09EeOB0eBUISUB4Q" name="160720000"/>
+      <ownedLiteral xmi:id="_8Fj00I09EeOB0eBUISUB4Q" name="105529008"/>
+      <ownedLiteral xmi:id="_9rpB0I09EeOB0eBUISUB4Q" name="60585007"/>
+      <ownedLiteral xmi:id="__PqZUI09EeOB0eBUISUB4Q" name="365508006"/>
+      <ownedLiteral xmi:id="_Ae7BwI0-EeOB0eBUISUB4Q" name="422491004"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_hfQH0IoMEeOoMZgUoTghIg" name="Cognitive Abilities Value Set">
+      <ownedComment xmi:id="_prVYcIoMEeOoMZgUoTghIg">
+        <body>This Value Set identifies the specific types of cognitive abilities.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_AeLeIIoNEeOoMZgUoTghIg" name="61254005"/>
+      <ownedLiteral xmi:id="_XXn7EIoNEeOoMZgUoTghIg" name="395659009"/>
+      <ownedLiteral xmi:id="_dkxZ0IoNEeOoMZgUoTghIg" name="286574007"/>
+      <ownedLiteral xmi:id="_hm-D8IoNEeOoMZgUoTghIg" name="307082005"/>
+      <ownedLiteral xmi:id="_mvYvQIoNEeOoMZgUoTghIg" name="304641000"/>
+      <ownedLiteral xmi:id="_rG6wMIoNEeOoMZgUoTghIg" name="363878000"/>
+      <ownedLiteral xmi:id="_vK9NYIoNEeOoMZgUoTghIg" name="418907009"/>
+      <ownedLiteral xmi:id="_Gvt4MIoOEeOoMZgUoTghIg" name="304645009"/>
+      <ownedLiteral xmi:id="_JxkfoIoOEeOoMZgUoTghIg" name="311465003"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_cyt1UIoOEeOoMZgUoTghIg" name="Mental and Functional Status Response Value Set">
+      <ownedComment xmi:id="_nWQFgIoOEeOoMZgUoTghIg">
+        <body>A value set containing 2 SNOMED-CT qualifier codes that are common responses to mental and functional ability queries. Specific URL Pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_m0F-MIoPEeOoMZgUoTghIg" name="11163003"/>
+      <ownedLiteral xmi:id="_oquvsIoPEeOoMZgUoTghIg" name="260379002"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_CRU1gI0oEeOB0eBUISUB4Q" name="Mental Status Observation Type">
+      <ownedComment xmi:id="_JScu4I0oEeOB0eBUISUB4Q">
+        <body>A value set of observable entity codes for types of mental status. Specific URL Pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_Xrt6gI0oEeOB0eBUISUB4Q" name="43173001"/>
+      <ownedLiteral xmi:id="_dbKJkI0oEeOB0eBUISUB4Q" name="405051006"/>
+      <ownedLiteral xmi:id="_hANksI0oEeOB0eBUISUB4Q" name="363871006"/>
+      <ownedLiteral xmi:id="_j67pYI0oEeOB0eBUISUB4Q" name="85256008"/>
+      <ownedLiteral xmi:id="_pDmzYI0oEeOB0eBUISUB4Q" name="285231000"/>
+      <ownedLiteral xmi:id="_tmRGQI0oEeOB0eBUISUB4Q" name="6942003"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_CIFfUI07EeOB0eBUISUB4Q" name="Nutrition Assessment">
+      <ownedComment xmi:id="_LCw7UI07EeOB0eBUISUB4Q">
+        <body>A value set of SNOMED-CT observable entity codes descending from &quot;364645004&quot; &quot;eating feeding / drinking observable (observable entity)&quot; for diet and nutrition habits and abilities. 
+ 
+Specific URL Pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_7rVzcI08EeOB0eBUISUB4Q" name="364395008"/>
+      <ownedLiteral xmi:id="_-RAOII08EeOB0eBUISUB4Q" name="364394007"/>
+      <ownedLiteral xmi:id="_A9218I09EeOB0eBUISUB4Q" name="230125005"/>
+      <ownedLiteral xmi:id="_D1CecI09EeOB0eBUISUB4Q" name="288929001"/>
+      <ownedLiteral xmi:id="_GPE38I09EeOB0eBUISUB4Q" name="288987002"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_X9w6QI3MEeOB0eBUISUB4Q" name="Nutrition Recommendations">
+      <ownedComment xmi:id="_sN4kgI3MEeOB0eBUISUB4Q">
+        <body>Types of nutritional regimes, therapies or interventions. Specific URL Pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_F3WSAI3NEeOB0eBUISUB4Q" name="61310001"/>
+      <ownedLiteral xmi:id="_leL84I3NEeOB0eBUISUB4Q" name="386373004"/>
+      <ownedLiteral xmi:id="_nwv1YI3NEeOB0eBUISUB4Q" name="418995006"/>
+      <ownedLiteral xmi:id="_pqlr4I3NEeOB0eBUISUB4Q" name="413315001"/>
+      <ownedLiteral xmi:id="_q790MI3NEeOB0eBUISUB4Q" name="182922004"/>
+      <ownedLiteral xmi:id="_tBum0I3NEeOB0eBUISUB4Q" name="229912004"/>
+      <ownedLiteral xmi:id="_vB02UI3NEeOB0eBUISUB4Q" name="225372007"/>
+      <ownedLiteral xmi:id="_4MwU0I3NEeOB0eBUISUB4Q" name="2897151011"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_sJV7YI3PEeOB0eBUISUB4Q" name="Planned moodCode (Act/Encounter/Procedure)">
+      <ownedComment xmi:id="_9Fy1cI3PEeOB0eBUISUB4Q">
+        <body>This value set is used to restrict the moodCode on an act, and encounter or a procedure to future moods.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_UetcoI3QEeOB0eBUISUB4Q" name="INT"/>
+      <ownedLiteral xmi:id="_W5OXQI3QEeOB0eBUISUB4Q" name="ARQ"/>
+      <ownedLiteral xmi:id="_YwGZUI3QEeOB0eBUISUB4Q" name="PRMS"/>
+      <ownedLiteral xmi:id="_bEHDUI3QEeOB0eBUISUB4Q" name="PRP"/>
+      <ownedLiteral xmi:id="_cIFo0I3QEeOB0eBUISUB4Q" name="RQO"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_oBAeII39EeOB0eBUISUB4Q" name="Nutritional Status">
+      <ownedComment xmi:id="_BT5esI3-EeOB0eBUISUB4Q">
+        <body>A Value Set of SNOMED-CT codes representing nutrition problems.&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="__e-H8I3-EeOB0eBUISUB4Q" name="371597004"/>
+      <ownedLiteral xmi:id="_E64XAI3_EeOB0eBUISUB4Q" name="284670008"/>
+      <ownedLiteral xmi:id="_GUaVwI3_EeOB0eBUISUB4Q" name="248325000"/>
+      <ownedLiteral xmi:id="_HeotMI3_EeOB0eBUISUB4Q" name="248324001"/>
+      <ownedLiteral xmi:id="_JSHdAI3_EeOB0eBUISUB4Q" name="75051000"/>
+      <ownedLiteral xmi:id="_KbMk8I3_EeOB0eBUISUB4Q" name="414285001"/>
+      <ownedLiteral xmi:id="_LdbeAI3_EeOB0eBUISUB4Q" name="414915002"/>
+      <ownedLiteral xmi:id="_M_7LgI3_EeOB0eBUISUB4Q" name="288939007"/>
+      <ownedLiteral xmi:id="_P7SwcI3_EeOB0eBUISUB4Q" name="175130015"/>
+      <ownedLiteral xmi:id="_Ro2ecI3_EeOB0eBUISUB4Q" name="2647146015"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Wrm0II6jEeOB0eBUISUB4Q" name="Priority Order">
+      <ownedComment xmi:id="_m9w0AI6jEeOB0eBUISUB4Q">
+        <body>The Priority Order value set contains concepts that are descendants of the SNOMED CT concept &quot;Ordinal number&quot;. These are simply ordinal numbers eg. first, second, third etc.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_sM2vEI6jEeOB0eBUISUB4Q" name="255216001"/>
+      <ownedLiteral xmi:id="_9MBekI6mEeOB0eBUISUB4Q" name="81170007"/>
+      <ownedLiteral xmi:id="_urFFAI6jEeOB0eBUISUB4Q" name="70905002"/>
+      <ownedLiteral xmi:id="_zTVCgI6jEeOB0eBUISUB4Q" name="29970001"/>
+      <ownedLiteral xmi:id="_1FY2AI6jEeOB0eBUISUB4Q" name="32088001"/>
+      <ownedLiteral xmi:id="_4FRHgI6jEeOB0eBUISUB4Q" name="53046009"/>
+      <ownedLiteral xmi:id="_6vyNAI6jEeOB0eBUISUB4Q" name="86777004"/>
+      <ownedLiteral xmi:id="_8x2ycI6jEeOB0eBUISUB4Q" name="51601003"/>
+      <ownedLiteral xmi:id="_AGVa8I6kEeOB0eBUISUB4Q" name="58584009"/>
+      <ownedLiteral xmi:id="_Ci91cI6kEeOB0eBUISUB4Q" name="28226006"/>
+      <ownedLiteral xmi:id="_IMCPYI6nEeOB0eBUISUB4Q" name="40397004"/>
+      <ownedLiteral xmi:id="_KYcckI6nEeOB0eBUISUB4Q" name="46213005"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_TIYvkI6kEeOB0eBUISUB4Q" name="Priority Level">
+      <ownedComment xmi:id="_hLjIUI6kEeOB0eBUISUB4Q">
+        <body>A value set of SNOMED-CT that contains concepts representing priority.&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_lvPV8I6kEeOB0eBUISUB4Q" name="394849002"/>
+      <ownedLiteral xmi:id="_qyPVwI6kEeOB0eBUISUB4Q" name="394848005"/>
+      <ownedLiteral xmi:id="_tmJn0I6kEeOB0eBUISUB4Q" name="441808003"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_L1n8gI64EeOB0eBUISUB4Q" name="Referral Types">
+      <ownedComment xmi:id="_SXtJcI64EeOB0eBUISUB4Q">
+        <body>A value set of SNOMED-CT codes descending from &quot;3457005&quot; patient referral (procedure). 
+ 
+Specific URL Pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_tltL0I64EeOB0eBUISUB4Q" name="408293001"/>
+      <ownedLiteral xmi:id="_yKN40I64EeOB0eBUISUB4Q" name="44383000"/>
+      <ownedLiteral xmi:id="_111O8I64EeOB0eBUISUB4Q" name="103697008"/>
+      <ownedLiteral xmi:id="_5XA2sI64EeOB0eBUISUB4Q" name="27217005"/>
+      <ownedLiteral xmi:id="_8OQJkI64EeOB0eBUISUB4Q" name="41920009"/>
+      <ownedLiteral xmi:id="__Bd4EI64EeOB0eBUISUB4Q" name="17294003"/>
+      <ownedLiteral xmi:id="_B1wkoI65EeOB0eBUISUB4Q" name="28214001"/>
+      <ownedLiteral xmi:id="_EWxI0I65EeOB0eBUISUB4Q" name="413293006"/>
+      <ownedLiteral xmi:id="_HLwY8I65EeOB0eBUISUB4Q" name="183877003"/>
+      <ownedLiteral xmi:id="_IJMRkI65EeOB0eBUISUB4Q" name="183686006"/>
+      <ownedLiteral xmi:id="_K1v-cI65EeOB0eBUISUB4Q" name="391034007"/>
+      <ownedLiteral xmi:id="_L1ouII65EeOB0eBUISUB4Q" name="307836003"/>
+      <ownedLiteral xmi:id="_O-euYI65EeOB0eBUISUB4Q" name="307834000"/>
+      <ownedLiteral xmi:id="_RfYk4I65EeOB0eBUISUB4Q" name="307835004"/>
+      <ownedLiteral xmi:id="_TRc_cI65EeOB0eBUISUB4Q" name="417073006"/>
+      <ownedLiteral xmi:id="_Vkn78I65EeOB0eBUISUB4Q" name="396150002"/>
+      <ownedLiteral xmi:id="_Xz4o0I65EeOB0eBUISUB4Q" name="396158009"/>
+      <ownedLiteral xmi:id="_Z5m_MI65EeOB0eBUISUB4Q" name="275821008"/>
+      <ownedLiteral xmi:id="_cO2YQI65EeOB0eBUISUB4Q" name="306101007"/>
+      <ownedLiteral xmi:id="_ecAzYI65EeOB0eBUISUB4Q" name="307837007"/>
+      <ownedLiteral xmi:id="_g7xaYI65EeOB0eBUISUB4Q" name="306206005"/>
+      <ownedLiteral xmi:id="_jebkYI65EeOB0eBUISUB4Q" name="134403003"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3NYecI69EeOB0eBUISUB4Q" name="Care Model">
+      <ownedComment xmi:id="_-lbqEI69EeOB0eBUISUB4Q">
+        <body>A value set of SNOMED-CT codes representing care management styles (e.g. shared care, full care) descending from &quot;170932006&quot;  &quot;Chronic disease - care arrangement&quot;. 
+ 
+ 
+Specific URL Pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_Buhh8I6-EeOB0eBUISUB4Q" name="370985002"/>
+      <ownedLiteral xmi:id="_D5UlkI6-EeOB0eBUISUB4Q" name="170941001"/>
+      <ownedLiteral xmi:id="_Gyxe8I6-EeOB0eBUISUB4Q" name="170935008"/>
+      <ownedLiteral xmi:id="_JlQ0sI6-EeOB0eBUISUB4Q" name="268528005"/>
+      <ownedLiteral xmi:id="_M6Y9cI6-EeOB0eBUISUB4Q" name="170939002"/>
+      <ownedLiteral xmi:id="_PADpcI6-EeOB0eBUISUB4Q" name="268529002"/>
+      <ownedLiteral xmi:id="_QiMKkI6-EeOB0eBUISUB4Q" name="170936009"/>
+      <ownedLiteral xmi:id="_Sc7Y8I6-EeOB0eBUISUB4Q" name="170937000"/>
+      <ownedLiteral xmi:id="_Uu9F8I6-EeOB0eBUISUB4Q" name="170940000"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8AS78I9OEeOB0eBUISUB4Q" name="Source of Payment Typology (PHDSC)">
+      <ownedComment xmi:id="_Av--MI9PEeOB0eBUISUB4Q">
+        <body>A value set of Public Health Data Standards Consortium Source of Payment Typology Version 3.0 Codes&#xD;
+Valueset Source: http://www.health.ny.gov/statistics/sparcs/sysdoc/appp.htm</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_YttEII9mEeOB0eBUISUB4Q" name="Health Concern Type">
+      <ownedComment xmi:id="_pwIqYI9mEeOB0eBUISUB4Q">
+        <body>The Health Concern Type value set contains codes used to differentiate between different types of health concerns.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_2PB0AI9mEeOB0eBUISUB4Q" name="CONC"/>
+      <ownedLiteral xmi:id="_7mN7II9mEeOB0eBUISUB4Q" name="281694009"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -2523,4 +2713,148 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
   <term:ValueSetCode xmi:id="_sCII8GK1EeOD5bEp3nNX5w" conceptName="second assistant surgeon" base_EnumerationLiteral="_sCHh4GK1EeOD5bEp3nNX5w"/>
   <term:ValueSetCode xmi:id="_vX05cWK1EeOD5bEp3nNX5w" conceptName="scrub nurse" base_EnumerationLiteral="_vX05cGK1EeOD5bEp3nNX5w"/>
   <term:ValueSetCode xmi:id="_yNuIgWK1EeOD5bEp3nNX5w" conceptName="third assistant" base_EnumerationLiteral="_yNuIgGK1EeOD5bEp3nNX5w"/>
+  <term:ValueSetVersion xmi:id="_np5CwYnYEeOJGtGyq_dBbA" identifier="2.16.840.1.113883.11.20.9.49" fullName="Residence and Accommodation Type" binding="Dynamic" base_Enumeration="_np5CwInYEeOJGtGyq_dBbA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_hfQH0YoMEeOoMZgUoTghIg" identifier="2.16.840.1.113883.11.20.9.48" fullName="Cognitive Abilities Value Set" binding="Dynamic" base_Enumeration="_hfQH0IoMEeOoMZgUoTghIg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_AeLeIYoNEeOoMZgUoTghIg" conceptName="judgement (observable entity)" base_EnumerationLiteral="_AeLeIIoNEeOoMZgUoTghIg"/>
+  <term:ValueSetCode xmi:id="_XXn7EYoNEeOoMZgUoTghIg" conceptName="ability to comprehend (observable entity)" base_EnumerationLiteral="_XXn7EIoNEeOoMZgUoTghIg"/>
+  <term:ValueSetCode xmi:id="_dkxZ0YoNEeOoMZgUoTghIg" conceptName="ability to plan (observable entity)" base_EnumerationLiteral="_dkxZ0IoNEeOoMZgUoTghIg"/>
+  <term:ValueSetCode xmi:id="_hm-D8YoNEeOoMZgUoTghIg" conceptName="ability to process information (observable entity)" base_EnumerationLiteral="_hm-D8IoNEeOoMZgUoTghIg"/>
+  <term:ValueSetCode xmi:id="_mvYvQYoNEeOoMZgUoTghIg" conceptName="ability to reason (observable entity)" base_EnumerationLiteral="_mvYvQIoNEeOoMZgUoTghIg"/>
+  <term:ValueSetCode xmi:id="_rG6wMYoNEeOoMZgUoTghIg" conceptName="ability to think abstractly (observable entity)" base_EnumerationLiteral="_rG6wMIoNEeOoMZgUoTghIg"/>
+  <term:ValueSetCode xmi:id="_vK9NYYoNEeOoMZgUoTghIg" conceptName="ability to verbalize understanding (observable entity)" base_EnumerationLiteral="_vK9NYIoNEeOoMZgUoTghIg"/>
+  <term:ValueSetCode xmi:id="_Gvt4MYoOEeOoMZgUoTghIg" conceptName="logical sequencing ability (observable entity)" base_EnumerationLiteral="_Gvt4MIoOEeOoMZgUoTghIg"/>
+  <term:ValueSetCode xmi:id="_JxkfoYoOEeOoMZgUoTghIg" conceptName="Cognitive functions (observable entity)" base_EnumerationLiteral="_JxkfoIoOEeOoMZgUoTghIg"/>
+  <term:ValueSetVersion xmi:id="_cyt1UYoOEeOoMZgUoTghIg" identifier="2.16.840.1.113883.11.20.9.44" fullName="Mental and Functional Status Response Value Set" binding="Dynamic" base_Enumeration="_cyt1UIoOEeOoMZgUoTghIg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_m0GlQIoPEeOoMZgUoTghIg" conceptName="Intact" base_EnumerationLiteral="_m0F-MIoPEeOoMZgUoTghIg"/>
+  <term:ValueSetCode xmi:id="_oquvsYoPEeOoMZgUoTghIg" conceptName="Impaired" base_EnumerationLiteral="_oquvsIoPEeOoMZgUoTghIg"/>
+  <term:ValueSetVersion xmi:id="_CRVckI0oEeOB0eBUISUB4Q" identifier="2.16.840.1.113883.11.20.9.43" fullName="Mental Status Observation Type" binding="Dynamic" base_Enumeration="_CRU1gI0oEeOB0eBUISUB4Q">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_Xrt6gY0oEeOB0eBUISUB4Q" conceptName="orientation, function (observable entity)" base_EnumerationLiteral="_Xrt6gI0oEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_dbKwoI0oEeOB0eBUISUB4Q" conceptName="level of anxiety (observable entity)" base_EnumerationLiteral="_dbKJkI0oEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_hAOLwI0oEeOB0eBUISUB4Q" conceptName="mental state (observable entity)" base_EnumerationLiteral="_hANksI0oEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_j67pYY0oEeOB0eBUISUB4Q" conceptName="mood, function (observable entity)" base_EnumerationLiteral="_j67pYI0oEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_pDnacI0oEeOB0eBUISUB4Q" conceptName="mental function (observable entity)" base_EnumerationLiteral="_pDmzYI0oEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_tmRtUI0oEeOB0eBUISUB4Q" conceptName="level of consciousness (observable entity)" base_EnumerationLiteral="_tmRGQI0oEeOB0eBUISUB4Q"/>
+  <term:ValueSetVersion xmi:id="_CIGGYI07EeOB0eBUISUB4Q" identifier="2.16.840.1.113883.1.11.20.2.8" fullName="Nutrition Assessment" binding="Dynamic" base_Enumeration="_CIFfUI07EeOB0eBUISUB4Q">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_7rWagI08EeOB0eBUISUB4Q" conceptName="dietary intake (observable entity)" base_EnumerationLiteral="_7rVzcI08EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_-RAOIY08EeOB0eBUISUB4Q" conceptName="dietary requirements (observable entity)" base_EnumerationLiteral="_-RAOII08EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_A9218Y09EeOB0eBUISUB4Q" conceptName="diet followed (observable entity)" base_EnumerationLiteral="_A9218I09EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_D1CecY09EeOB0eBUISUB4Q" conceptName="ability to clear mouth of residue (observable entity)" base_EnumerationLiteral="_D1CecI09EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_GPE38Y09EeOB0eBUISUB4Q" conceptName="ability to latch on to breast for feeding (observable entity)" base_EnumerationLiteral="_GPE38I09EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_0J0tUY09EeOB0eBUISUB4Q" conceptName="stairs in house (finding)" base_EnumerationLiteral="_0J0tUI09EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_4HCw0Y09EeOB0eBUISUB4Q" conceptName="eviction from dwelling (finding)" base_EnumerationLiteral="_4HCw0I09EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_5iIOwI09EeOB0eBUISUB4Q" conceptName="crowded living space (finding)" base_EnumerationLiteral="_5iHnsI09EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_6xioMY09EeOB0eBUISUB4Q" conceptName="harassment by landlord (finding)" base_EnumerationLiteral="_6xioMI09EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_8Fj00Y09EeOB0eBUISUB4Q" conceptName="lives alone (finding)" base_EnumerationLiteral="_8Fj00I09EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_9rpB0Y09EeOB0eBUISUB4Q" conceptName="slum area living (finding)" base_EnumerationLiteral="_9rpB0I09EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="__PqZUY09EeOB0eBUISUB4Q" conceptName="unsatisfactory living conditions (finding)" base_EnumerationLiteral="__PqZUI09EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_Ae7o0I0-EeOB0eBUISUB4Q" conceptName="housing contains exposed wiring (finding)" base_EnumerationLiteral="_Ae7BwI0-EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_MJZE0Y0-EeOB0eBUISUB4Q" conceptName="cluttered living space (finding)" base_EnumerationLiteral="_MJZE0I0-EeOB0eBUISUB4Q"/>
+  <term:ValueSetVersion xmi:id="_X9w6QY3MEeOB0eBUISUB4Q" identifier="2.16.840.1.113883.1.11.20.2.9" fullName="Nutrition Recommendations" binding="Dynamic" base_Enumeration="_X9w6QI3MEeOB0eBUISUB4Q">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_F3WSAY3NEeOB0eBUISUB4Q" conceptName="nutrition education (procedure)" base_EnumerationLiteral="_F3WSAI3NEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_leL84Y3NEeOB0eBUISUB4Q" conceptName="nutrition therapy (regime/therapy)" base_EnumerationLiteral="_leL84I3NEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_nwv1YY3NEeOB0eBUISUB4Q" conceptName="feeding regime (regime/therapy)" base_EnumerationLiteral="_nwv1YI3NEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_pqlr4Y3NEeOB0eBUISUB4Q" conceptName="nutrition / feeding management (regime/therapy)" base_EnumerationLiteral="_pqlr4I3NEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_q7-bQI3NEeOB0eBUISUB4Q" conceptName="dietary regime (regime/therapy)" base_EnumerationLiteral="_q790MI3NEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_tBvN4I3NEeOB0eBUISUB4Q" conceptName="enteral feeding (regime/therapy)" base_EnumerationLiteral="_tBum0I3NEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_vB1dYI3NEeOB0eBUISUB4Q" conceptName="total parenteral nutrition (regime/therapy)" base_EnumerationLiteral="_vB02UI3NEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_4MwU0Y3NEeOB0eBUISUB4Q" conceptName="oral nutrition support (regime/therapy)" base_EnumerationLiteral="_4MwU0I3NEeOB0eBUISUB4Q"/>
+  <term:ValueSetVersion xmi:id="_sJV7YY3PEeOB0eBUISUB4Q" identifier="2.16.840.1.113883.11.20.9.23" fullName="Planned moodCode (Act/Encounter/Procedure)" base_Enumeration="_sJV7YI3PEeOB0eBUISUB4Q">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_UeuDsI3QEeOB0eBUISUB4Q" conceptName="Intent" base_EnumerationLiteral="_UetcoI3QEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_W5OXQY3QEeOB0eBUISUB4Q" conceptName="Appointment Request" base_EnumerationLiteral="_W5OXQI3QEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_YwHAYI3QEeOB0eBUISUB4Q" conceptName="Promise" base_EnumerationLiteral="_YwGZUI3QEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_bEHqYI3QEeOB0eBUISUB4Q" conceptName="Proposal" base_EnumerationLiteral="_bEHDUI3QEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_cIFo0Y3QEeOB0eBUISUB4Q" conceptName="Request" base_EnumerationLiteral="_cIFo0I3QEeOB0eBUISUB4Q"/>
+  <term:ValueSetVersion xmi:id="_oBBFMI39EeOB0eBUISUB4Q" identifier="2.16.840.1.113883.1.11.20.2.7" fullName="Nutritional Status" binding="Dynamic" base_Enumeration="_oBAeII39EeOB0eBUISUB4Q">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="__e-vAI3-EeOB0eBUISUB4Q" conceptName="emaciated (finding)" base_EnumerationLiteral="__e-H8I3-EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_E64XAY3_EeOB0eBUISUB4Q" conceptName="nutritionally compromised (finding)" base_EnumerationLiteral="_E64XAI3_EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_GUa80I3_EeOB0eBUISUB4Q" conceptName="undernourished (finding)" base_EnumerationLiteral="_GUaVwI3_EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_HepUQI3_EeOB0eBUISUB4Q" conceptName="well nourished (finding)" base_EnumerationLiteral="_HeotMI3_EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_JSHdAY3_EeOB0eBUISUB4Q" conceptName="Food intolerance (finding)" base_EnumerationLiteral="_JSHdAI3_EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_KbNMAI3_EeOB0eBUISUB4Q" conceptName="Food allergy (disorder)" base_EnumerationLiteral="_KbMk8I3_EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_LdbeAY3_EeOB0eBUISUB4Q" conceptName="Obese (finding)" base_EnumerationLiteral="_LdbeAI3_EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_M_7LgY3_EeOB0eBUISUB4Q" conceptName="Swallowing difficulty (finding)" base_EnumerationLiteral="_M_7LgI3_EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_P7TXgI3_EeOB0eBUISUB4Q" conceptName="biting/chewing (masticatory) difficulty" base_EnumerationLiteral="_P7SwcI3_EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_Ro2ecY3_EeOB0eBUISUB4Q" conceptName="Breastfeeding difficulty" base_EnumerationLiteral="_Ro2ecI3_EeOB0eBUISUB4Q"/>
+  <term:ValueSetVersion xmi:id="_WrnbMI6jEeOB0eBUISUB4Q" identifier="2.16.840.1.113883.11.20.9.57" fullName="Priority Order" base_Enumeration="_Wrm0II6jEeOB0eBUISUB4Q">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_sM3WII6jEeOB0eBUISUB4Q" conceptName="First" base_EnumerationLiteral="_sM2vEI6jEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_urFFAY6jEeOB0eBUISUB4Q" conceptName="Third" base_EnumerationLiteral="_urFFAI6jEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_zTVCgY6jEeOB0eBUISUB4Q" conceptName="Fourth" base_EnumerationLiteral="_zTVCgI6jEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_1FZdEI6jEeOB0eBUISUB4Q" conceptName="Fifth" base_EnumerationLiteral="_1FY2AI6jEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_4FRHgY6jEeOB0eBUISUB4Q" conceptName="Sixth" base_EnumerationLiteral="_4FRHgI6jEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_6vyNAY6jEeOB0eBUISUB4Q" conceptName="Seventh" base_EnumerationLiteral="_6vyNAI6jEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_8x2ycY6jEeOB0eBUISUB4Q" conceptName="Eighth" base_EnumerationLiteral="_8x2ycI6jEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_AGWCAI6kEeOB0eBUISUB4Q" conceptName="Ninth" base_EnumerationLiteral="_AGVa8I6kEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_Ci-cgI6kEeOB0eBUISUB4Q" conceptName="Tenth" base_EnumerationLiteral="_Ci91cI6kEeOB0eBUISUB4Q"/>
+  <term:ValueSetVersion xmi:id="_TIYvkY6kEeOB0eBUISUB4Q" identifier="2.16.840.1.113883.11.20.9.60" fullName="Priority Level" base_Enumeration="_TIYvkI6kEeOB0eBUISUB4Q">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_lvPV8Y6kEeOB0eBUISUB4Q" conceptName="High priority" base_EnumerationLiteral="_lvPV8I6kEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_qyP80I6kEeOB0eBUISUB4Q" conceptName="Normal priority" base_EnumerationLiteral="_qyPVwI6kEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_tmJn0Y6kEeOB0eBUISUB4Q" conceptName="Delayed priority" base_EnumerationLiteral="_tmJn0I6kEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_9MBekY6mEeOB0eBUISUB4Q" conceptName="Second" base_EnumerationLiteral="_9MBekI6mEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_IMCPYY6nEeOB0eBUISUB4Q" conceptName="Eleventh" base_EnumerationLiteral="_IMCPYI6nEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_KYcckY6nEeOB0eBUISUB4Q" conceptName="Twelfth" base_EnumerationLiteral="_KYcckI6nEeOB0eBUISUB4Q"/>
+  <term:ValueSetVersion xmi:id="_L1n8gY64EeOB0eBUISUB4Q" identifier="2.16.840.1.113883.11.20.9.56" fullName="Referral Types" binding="Dynamic" base_Enumeration="_L1n8gI64EeOB0eBUISUB4Q">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_tltL0Y64EeOB0eBUISUB4Q" conceptName="Earlier referral for specialist review (procedure)" base_EnumerationLiteral="_tltL0I64EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_yKOf4I64EeOB0eBUISUB4Q" conceptName="Patient referral for consultation (procedure)" base_EnumerationLiteral="_yKN40I64EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_111O8Y64EeOB0eBUISUB4Q" conceptName="Patient referral for dental care (procedure)" base_EnumerationLiteral="_111O8I64EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_5XBdwI64EeOB0eBUISUB4Q" conceptName="Patient referral for evaluation, aging problem (procedure)" base_EnumerationLiteral="_5XA2sI64EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_8OQJkY64EeOB0eBUISUB4Q" conceptName="Patient referral for socioeconomic factors (procedure)" base_EnumerationLiteral="_8OQJkI64EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="__Bd4EY64EeOB0eBUISUB4Q" conceptName="Patient referral for special education (procedure)" base_EnumerationLiteral="__Bd4EI64EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_B1xLsI65EeOB0eBUISUB4Q" conceptName="Patient referral for specialized training (procedure)" base_EnumerationLiteral="_B1wkoI65EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_EWxv4I65EeOB0eBUISUB4Q" conceptName="Patient to initiate further contact (procedure)" base_EnumerationLiteral="_EWxI0I65EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_HLwY8Y65EeOB0eBUISUB4Q" conceptName="Private referral (procedure)" base_EnumerationLiteral="_HLwY8I65EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_IJMRkY65EeOB0eBUISUB4Q" conceptName="Refer - no direct consultation (procedure)" base_EnumerationLiteral="_IJMRkI65EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_K1wlgI65EeOB0eBUISUB4Q" conceptName="Refer for falls assessment (procedure)" base_EnumerationLiteral="_K1v-cI65EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_L1pVMI65EeOB0eBUISUB4Q" conceptName="Referral by establishment (procedure)" base_EnumerationLiteral="_L1ouII65EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_O-fVcI65EeOB0eBUISUB4Q" conceptName="Referral by person (procedure)" base_EnumerationLiteral="_O-euYI65EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_RfZL8I65EeOB0eBUISUB4Q" conceptName="Referral by service (procedure)" base_EnumerationLiteral="_RfYk4I65EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_TRc_cY65EeOB0eBUISUB4Q" conceptName="Referral for hematuria (procedure)" base_EnumerationLiteral="_TRc_cI65EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_Vkn78Y65EeOB0eBUISUB4Q" conceptName="Referral for substance abuse (procedure)" base_EnumerationLiteral="_Vkn78I65EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_Xz4o0Y65EeOB0eBUISUB4Q" conceptName="Referral for therapeutic abortion (procedure)" base_EnumerationLiteral="_Xz4o0I65EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_Z5m_MY65EeOB0eBUISUB4Q" conceptName="Referral of child (procedure)" base_EnumerationLiteral="_Z5m_MI65EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_cO2_UI65EeOB0eBUISUB4Q" conceptName="Referral to establishment (procedure)" base_EnumerationLiteral="_cO2YQI65EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_ecAzYY65EeOB0eBUISUB4Q" conceptName="Referral to person (procedure)" base_EnumerationLiteral="_ecAzYI65EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_g7xaYY65EeOB0eBUISUB4Q" conceptName="Referral to service (procedure)" base_EnumerationLiteral="_g7xaYI65EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_jebkYY65EeOB0eBUISUB4Q" conceptName="Urgent referral (procedure)" base_EnumerationLiteral="_jebkYI65EeOB0eBUISUB4Q"/>
+  <term:ValueSetVersion xmi:id="_3NZFgI69EeOB0eBUISUB4Q" identifier="2.16.840.1.113883.11.20.9.61" fullName="Care Model" base_Enumeration="_3NYecI69EeOB0eBUISUB4Q">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_Buhh8Y6-EeOB0eBUISUB4Q" conceptName="care by local physician (finding)" base_EnumerationLiteral="_Buhh8I6-EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_D5UlkY6-EeOB0eBUISUB4Q" conceptName="full care by GP (finding)" base_EnumerationLiteral="_D5UlkI6-EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_Gyxe8Y6-EeOB0eBUISUB4Q" conceptName="full care by hospice (finding)" base_EnumerationLiteral="_Gyxe8I6-EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_JlRbwI6-EeOB0eBUISUB4Q" conceptName="full care by specialist (finding)" base_EnumerationLiteral="_JlQ0sI6-EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_M6Y9cY6-EeOB0eBUISUB4Q" conceptName="full care: nurse practitioner (finding)" base_EnumerationLiteral="_M6Y9cI6-EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_PAEQgI6-EeOB0eBUISUB4Q" conceptName="shared care - consultant and GP (finding)" base_EnumerationLiteral="_PADpcI6-EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_QiMKkY6-EeOB0eBUISUB4Q" conceptName="shared care - hospice and GP (finding)" base_EnumerationLiteral="_QiMKkI6-EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_Sc7Y8Y6-EeOB0eBUISUB4Q" conceptName="shared care: district nurse and GP (finding)" base_EnumerationLiteral="_Sc7Y8I6-EeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_Uu9tAI6-EeOB0eBUISUB4Q" conceptName="shared care: practice nurse and GP (finding)" base_EnumerationLiteral="_Uu9F8I6-EeOB0eBUISUB4Q"/>
+  <term:ValueSetVersion xmi:id="_8AS78Y9OEeOB0eBUISUB4Q" identifier="2.16.840.1.114222.4.11.3591" fullName="Source of Payment Typology (PHDSC)" binding="Dynamic" base_Enumeration="_8AS78I9OEeOB0eBUISUB4Q"/>
+  <term:ValueSetVersion xmi:id="_YttrMI9mEeOB0eBUISUB4Q" identifier="2.16.840.1.113883.11.20.9.53" fullName="Health Concern Type" base_Enumeration="_YttEII9mEeOB0eBUISUB4Q">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_2PCbEI9mEeOB0eBUISUB4Q" conceptName="Concern" base_EnumerationLiteral="_2PB0AI9mEeOB0eBUISUB4Q"/>
+  <term:ValueSetCode xmi:id="_7mOiMI9mEeOB0eBUISUB4Q" conceptName="At risk" base_EnumerationLiteral="_7mN7II9mEeOB0eBUISUB4Q">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
 </xmi:XMI>
