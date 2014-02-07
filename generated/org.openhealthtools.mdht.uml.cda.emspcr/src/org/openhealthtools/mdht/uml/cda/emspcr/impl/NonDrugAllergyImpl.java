@@ -95,15 +95,16 @@ public class NonDrugAllergyImpl extends ObservationImpl implements NonDrugAllerg
 	 * @generated
 	 */
 	public NonDrugAllergy init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public NonDrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //NonDrugAllergyImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NonDrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // NonDrugAllergyImpl

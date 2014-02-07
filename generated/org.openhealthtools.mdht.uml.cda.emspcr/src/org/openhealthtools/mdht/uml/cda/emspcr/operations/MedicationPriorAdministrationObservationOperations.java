@@ -71,9 +71,8 @@ public class MedicationPriorAdministrationObservationOperations extends Clinical
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,30 +84,32 @@ public class MedicationPriorAdministrationObservationOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationPriorAdministrationObservationTemplateId(MedicationPriorAdministrationObservation medicationPriorAdministrationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationPriorAdministrationObservationTemplateId(
+			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION);
 			try {
 				VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationPriorAdministrationObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationPriorAdministrationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationTemplateId"),
-						 new Object [] { medicationPriorAdministrationObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationTemplateId"),
+					new Object[] { medicationPriorAdministrationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -132,9 +133,8 @@ public class MedicationPriorAdministrationObservationOperations extends Clinical
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -146,30 +146,32 @@ public class MedicationPriorAdministrationObservationOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationPriorAdministrationObservationMoodCode(MedicationPriorAdministrationObservation medicationPriorAdministrationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationPriorAdministrationObservationMoodCode(
+			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION);
 			try {
 				VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationPriorAdministrationObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationPriorAdministrationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationMoodCode"),
-						 new Object [] { medicationPriorAdministrationObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationMoodCode"),
+					new Object[] { medicationPriorAdministrationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -193,9 +195,8 @@ public class MedicationPriorAdministrationObservationOperations extends Clinical
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -207,30 +208,32 @@ public class MedicationPriorAdministrationObservationOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationPriorAdministrationObservationCodeP(MedicationPriorAdministrationObservation medicationPriorAdministrationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationPriorAdministrationObservationCodeP(
+			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION);
 			try {
 				VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationPriorAdministrationObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationPriorAdministrationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationCodeP"),
-						 new Object [] { medicationPriorAdministrationObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationCodeP"),
+					new Object[] { medicationPriorAdministrationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -244,9 +247,9 @@ public class MedicationPriorAdministrationObservationOperations extends Clinical
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67539-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67539-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationPriorAdministrationObservationCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Code</em>}' invariant operation.
@@ -256,9 +259,8 @@ public class MedicationPriorAdministrationObservationOperations extends Clinical
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -270,30 +272,32 @@ public class MedicationPriorAdministrationObservationOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationPriorAdministrationObservationCode(MedicationPriorAdministrationObservation medicationPriorAdministrationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationPriorAdministrationObservationCode(
+			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION);
 			try {
 				VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationPriorAdministrationObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationPriorAdministrationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE,
-						 EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationCode"),
-						 new Object [] { medicationPriorAdministrationObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE,
+					EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationCode"),
+					new Object[] { medicationPriorAdministrationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -317,9 +321,8 @@ public class MedicationPriorAdministrationObservationOperations extends Clinical
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -331,30 +334,32 @@ public class MedicationPriorAdministrationObservationOperations extends Clinical
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationPriorAdministrationObservationValue(MedicationPriorAdministrationObservation medicationPriorAdministrationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationPriorAdministrationObservationValue(
+			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION);
 			try {
 				VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationPriorAdministrationObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationPriorAdministrationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationValue"),
-						 new Object [] { medicationPriorAdministrationObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE,
+					EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationValue"),
+					new Object[] { medicationPriorAdministrationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;

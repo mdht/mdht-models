@@ -83,10 +83,11 @@ public interface PatientBodyWeight extends Observation {
 	 * @generated
 	 */
 	public PatientBodyWeight init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PatientBodyWeight init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PatientBodyWeight init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PatientBodyWeight

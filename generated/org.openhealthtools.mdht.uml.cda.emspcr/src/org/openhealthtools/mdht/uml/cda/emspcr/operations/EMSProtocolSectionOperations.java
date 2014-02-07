@@ -80,9 +80,8 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_PROTOCOL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,30 +93,29 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSProtocolSectionTemplateId(EMSProtocolSection emsProtocolSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSProtocolSectionTemplateId(EMSProtocolSection emsProtocolSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_PROTOCOL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PROTOCOL_SECTION);
 			try {
 				VALIDATE_EMS_PROTOCOL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PROTOCOL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PROTOCOL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsProtocolSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PROTOCOL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsProtocolSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("EMSProtocolSectionTemplateId"),
-						 new Object [] { emsProtocolSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("EMSProtocolSectionTemplateId"),
+					new Object[] { emsProtocolSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -131,9 +129,9 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMS_PROTOCOL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '67663-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EMS_PROTOCOL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '67663-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEMSProtocolSectionCode(EMSProtocolSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Protocol Section Code</em>}' invariant operation.
@@ -143,9 +141,8 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_PROTOCOL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -157,30 +154,28 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSProtocolSectionCode(EMSProtocolSection emsProtocolSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSProtocolSectionCode(EMSProtocolSection emsProtocolSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_PROTOCOL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PROTOCOL_SECTION);
 			try {
 				VALIDATE_EMS_PROTOCOL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PROTOCOL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PROTOCOL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsProtocolSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PROTOCOL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsProtocolSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_CODE,
-						 EmspcrPlugin.INSTANCE.getString("EMSProtocolSectionCode"),
-						 new Object [] { emsProtocolSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_CODE,
+					EmspcrPlugin.INSTANCE.getString("EMSProtocolSectionCode"), new Object[] { emsProtocolSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -204,9 +199,8 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_PROTOCOL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -218,30 +212,28 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSProtocolSectionTitle(EMSProtocolSection emsProtocolSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSProtocolSectionTitle(EMSProtocolSection emsProtocolSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_PROTOCOL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PROTOCOL_SECTION);
 			try {
 				VALIDATE_EMS_PROTOCOL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PROTOCOL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PROTOCOL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsProtocolSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PROTOCOL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsProtocolSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_TITLE,
-						 EmspcrPlugin.INSTANCE.getString("EMSProtocolSectionTitle"),
-						 new Object [] { emsProtocolSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_TITLE,
+					EmspcrPlugin.INSTANCE.getString("EMSProtocolSectionTitle"), new Object[] { emsProtocolSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -265,9 +257,8 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_PROTOCOL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -279,30 +270,28 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSProtocolSectionText(EMSProtocolSection emsProtocolSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSProtocolSectionText(EMSProtocolSection emsProtocolSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_PROTOCOL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PROTOCOL_SECTION);
 			try {
 				VALIDATE_EMS_PROTOCOL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PROTOCOL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PROTOCOL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsProtocolSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PROTOCOL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsProtocolSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_TEXT,
-						 EmspcrPlugin.INSTANCE.getString("EMSProtocolSectionText"),
-						 new Object [] { emsProtocolSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_TEXT,
+					EmspcrPlugin.INSTANCE.getString("EMSProtocolSectionText"), new Object[] { emsProtocolSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -326,9 +315,8 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_PROTOCOL_SECTION_PROTOCOL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,30 +328,29 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSProtocolSectionProtocolObservation(EMSProtocolSection emsProtocolSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSProtocolSectionProtocolObservation(EMSProtocolSection emsProtocolSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_PROTOCOL_SECTION_PROTOCOL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PROTOCOL_SECTION);
 			try {
 				VALIDATE_EMS_PROTOCOL_SECTION_PROTOCOL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PROTOCOL_SECTION_PROTOCOL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PROTOCOL_SECTION_PROTOCOL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsProtocolSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PROTOCOL_SECTION_PROTOCOL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsProtocolSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_PROTOCOL_OBSERVATION,
-						 EmspcrPlugin.INSTANCE.getString("EMSProtocolSectionProtocolObservation"),
-						 new Object [] { emsProtocolSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_PROTOCOL_OBSERVATION,
+					EmspcrPlugin.INSTANCE.getString("EMSProtocolSectionProtocolObservation"),
+					new Object[] { emsProtocolSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -387,9 +374,8 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_PROTOCOL_SECTION_CANDIDATE_PATIENT_REGISTRY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -401,30 +387,30 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSProtocolSectionCandidatePatientRegistryType(EMSProtocolSection emsProtocolSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSProtocolSectionCandidatePatientRegistryType(EMSProtocolSection emsProtocolSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_PROTOCOL_SECTION_CANDIDATE_PATIENT_REGISTRY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PROTOCOL_SECTION);
 			try {
 				VALIDATE_EMS_PROTOCOL_SECTION_CANDIDATE_PATIENT_REGISTRY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PROTOCOL_SECTION_CANDIDATE_PATIENT_REGISTRY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PROTOCOL_SECTION_CANDIDATE_PATIENT_REGISTRY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsProtocolSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_EMS_PROTOCOL_SECTION_CANDIDATE_PATIENT_REGISTRY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsProtocolSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_CANDIDATE_PATIENT_REGISTRY_TYPE,
-						 EmspcrPlugin.INSTANCE.getString("EMSProtocolSectionCandidatePatientRegistryType"),
-						 new Object [] { emsProtocolSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_CANDIDATE_PATIENT_REGISTRY_TYPE,
+					EmspcrPlugin.INSTANCE.getString("EMSProtocolSectionCandidatePatientRegistryType"),
+					new Object[] { emsProtocolSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -455,15 +441,16 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  ProtocolObservation getProtocolObservation(EMSProtocolSection emsProtocolSection) {
+
+	public static ProtocolObservation getProtocolObservation(EMSProtocolSection emsProtocolSection) {
 		if (GET_PROTOCOL_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.EMS_PROTOCOL_SECTION, EmspcrPackage.Literals.EMS_PROTOCOL_SECTION.getEAllOperations().get(61));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.EMS_PROTOCOL_SECTION,
+				EmspcrPackage.Literals.EMS_PROTOCOL_SECTION.getEAllOperations().get(61));
 			try {
 				GET_PROTOCOL_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROTOCOL_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -496,15 +483,16 @@ public class EMSProtocolSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  CandidatePatientRegistryType getCandidatePatientRegistryType(EMSProtocolSection emsProtocolSection) {
+
+	public static CandidatePatientRegistryType getCandidatePatientRegistryType(EMSProtocolSection emsProtocolSection) {
 		if (GET_CANDIDATE_PATIENT_REGISTRY_TYPE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.EMS_PROTOCOL_SECTION, EmspcrPackage.Literals.EMS_PROTOCOL_SECTION.getEAllOperations().get(62));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.EMS_PROTOCOL_SECTION,
+				EmspcrPackage.Literals.EMS_PROTOCOL_SECTION.getEAllOperations().get(62));
 			try {
 				GET_CANDIDATE_PATIENT_REGISTRY_TYPE__EOCL_QRY = helper.createQuery(GET_CANDIDATE_PATIENT_REGISTRY_TYPE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

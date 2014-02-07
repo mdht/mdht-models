@@ -95,10 +95,11 @@ public interface ThrombolyticContraindications extends Observation {
 	 * @generated
 	 */
 	public ThrombolyticContraindications init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ThrombolyticContraindications init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ThrombolyticContraindications init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ThrombolyticContraindications

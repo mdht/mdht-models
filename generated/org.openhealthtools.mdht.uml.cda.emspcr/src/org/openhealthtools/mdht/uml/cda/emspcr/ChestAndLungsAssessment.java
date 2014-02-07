@@ -95,10 +95,11 @@ public interface ChestAndLungsAssessment extends Observation {
 	 * @generated
 	 */
 	public ChestAndLungsAssessment init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ChestAndLungsAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ChestAndLungsAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ChestAndLungsAssessment

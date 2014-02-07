@@ -113,16 +113,19 @@ public class HeartRateImpl extends VitalSignObservationImpl implements HeartRate
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HeartRate init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public HeartRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //HeartRateImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public HeartRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // HeartRateImpl

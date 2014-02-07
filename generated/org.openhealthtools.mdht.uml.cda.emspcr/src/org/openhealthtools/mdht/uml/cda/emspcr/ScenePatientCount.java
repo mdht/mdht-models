@@ -95,10 +95,11 @@ public interface ScenePatientCount extends Observation {
 	 * @generated
 	 */
 	public ScenePatientCount init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ScenePatientCount init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ScenePatientCount init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ScenePatientCount

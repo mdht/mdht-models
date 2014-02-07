@@ -58,7 +58,8 @@ public class ProcedureImpl extends ProcedureActivityProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureAbandonedProcedureRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPCRProcedureAbandonedProcedureRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureAbandonedProcedureRelationship(this, diagnostics, context);
 	}
 
@@ -67,7 +68,8 @@ public class ProcedureImpl extends ProcedureActivityProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureProcedurePriorRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPCRProcedureProcedurePriorRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureProcedurePriorRelationship(this, diagnostics, context);
 	}
 
@@ -76,8 +78,10 @@ public class ProcedureImpl extends ProcedureActivityProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureProcedureNumberOfAttemptsRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureProcedureNumberOfAttemptsRelationship(this, diagnostics, context);
+	public boolean validateEMSPCRProcedureProcedureNumberOfAttemptsRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureOperations.validateEMSPCRProcedureProcedureNumberOfAttemptsRelationship(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +89,8 @@ public class ProcedureImpl extends ProcedureActivityProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureProcedureSuccessfulRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPCRProcedureProcedureSuccessfulRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureProcedureSuccessfulRelationship(this, diagnostics, context);
 	}
 
@@ -94,7 +99,8 @@ public class ProcedureImpl extends ProcedureActivityProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureProcedureComplicationsRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPCRProcedureProcedureComplicationsRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureProcedureComplicationsRelationship(this, diagnostics, context);
 	}
 
@@ -103,8 +109,10 @@ public class ProcedureImpl extends ProcedureActivityProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureProcedurePatientResponseRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureProcedurePatientResponseRelationship(this, diagnostics, context);
+	public boolean validateEMSPCRProcedureProcedurePatientResponseRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureOperations.validateEMSPCRProcedureProcedurePatientResponseRelationship(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -121,7 +129,8 @@ public class ProcedureImpl extends ProcedureActivityProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureAirwayConfirmationRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEMSPCRProcedureAirwayConfirmationRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureAirwayConfirmationRelationship(this, diagnostics, context);
 	}
 
@@ -130,8 +139,10 @@ public class ProcedureImpl extends ProcedureActivityProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureReasonProcedureNotAttemptedRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureReasonProcedureNotAttemptedRelationship(this, diagnostics, context);
+	public boolean validateEMSPCRProcedureReasonProcedureNotAttemptedRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureOperations.validateEMSPCRProcedureReasonProcedureNotAttemptedRelationship(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -212,16 +223,19 @@ public class ProcedureImpl extends ProcedureActivityProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Procedure init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public Procedure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ProcedureImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Procedure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ProcedureImpl

@@ -107,10 +107,11 @@ public interface InitialPatientAcuity extends Observation {
 	 * @generated
 	 */
 	public InitialPatientAcuity init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public InitialPatientAcuity init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InitialPatientAcuity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InitialPatientAcuity

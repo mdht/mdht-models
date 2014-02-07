@@ -80,9 +80,8 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,30 +93,30 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSAdvanceDirectivesSectionTemplateId(EMSAdvanceDirectivesSection emsAdvanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSAdvanceDirectivesSectionTemplateId(
+			EMSAdvanceDirectivesSection emsAdvanceDirectivesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_ADVANCE_DIRECTIVES_SECTION);
 			try {
 				VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsAdvanceDirectivesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsAdvanceDirectivesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("EMSAdvanceDirectivesSectionTemplateId"),
-						 new Object [] { emsAdvanceDirectivesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("EMSAdvanceDirectivesSectionTemplateId"),
+					new Object[] { emsAdvanceDirectivesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -131,9 +130,9 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '67840-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '67840-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEMSAdvanceDirectivesSectionCode(EMSAdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Advance Directives Section Code</em>}' invariant operation.
@@ -143,9 +142,8 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -157,30 +155,30 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSAdvanceDirectivesSectionCode(EMSAdvanceDirectivesSection emsAdvanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSAdvanceDirectivesSectionCode(
+			EMSAdvanceDirectivesSection emsAdvanceDirectivesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_ADVANCE_DIRECTIVES_SECTION);
 			try {
 				VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsAdvanceDirectivesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsAdvanceDirectivesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_CODE,
-						 EmspcrPlugin.INSTANCE.getString("EMSAdvanceDirectivesSectionCode"),
-						 new Object [] { emsAdvanceDirectivesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_CODE,
+					EmspcrPlugin.INSTANCE.getString("EMSAdvanceDirectivesSectionCode"),
+					new Object[] { emsAdvanceDirectivesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -204,9 +202,8 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -218,30 +215,30 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSAdvanceDirectivesSectionTitle(EMSAdvanceDirectivesSection emsAdvanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSAdvanceDirectivesSectionTitle(
+			EMSAdvanceDirectivesSection emsAdvanceDirectivesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_ADVANCE_DIRECTIVES_SECTION);
 			try {
 				VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsAdvanceDirectivesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsAdvanceDirectivesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_TITLE,
-						 EmspcrPlugin.INSTANCE.getString("EMSAdvanceDirectivesSectionTitle"),
-						 new Object [] { emsAdvanceDirectivesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_TITLE,
+					EmspcrPlugin.INSTANCE.getString("EMSAdvanceDirectivesSectionTitle"),
+					new Object[] { emsAdvanceDirectivesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -265,9 +262,8 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -279,30 +275,30 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSAdvanceDirectivesSectionText(EMSAdvanceDirectivesSection emsAdvanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSAdvanceDirectivesSectionText(
+			EMSAdvanceDirectivesSection emsAdvanceDirectivesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_ADVANCE_DIRECTIVES_SECTION);
 			try {
 				VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsAdvanceDirectivesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsAdvanceDirectivesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_TEXT,
-						 EmspcrPlugin.INSTANCE.getString("EMSAdvanceDirectivesSectionText"),
-						 new Object [] { emsAdvanceDirectivesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_TEXT,
+					EmspcrPlugin.INSTANCE.getString("EMSAdvanceDirectivesSectionText"),
+					new Object[] { emsAdvanceDirectivesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -326,9 +322,8 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_ADVANCED_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,30 +335,32 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(EMSAdvanceDirectivesSection emsAdvanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(
+			EMSAdvanceDirectivesSection emsAdvanceDirectivesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_ADVANCED_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_ADVANCE_DIRECTIVES_SECTION);
 			try {
 				VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_ADVANCED_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_ADVANCED_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_ADVANCED_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsAdvanceDirectivesSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_EMS_ADVANCE_DIRECTIVES_SECTION_ADVANCED_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsAdvanceDirectivesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_ADVANCED_DIRECTIVE_OBSERVATION,
-						 EmspcrPlugin.INSTANCE.getString("EMSAdvanceDirectivesSectionAdvancedDirectiveObservation"),
-						 new Object [] { emsAdvanceDirectivesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_ADVANCED_DIRECTIVE_OBSERVATION,
+					EmspcrPlugin.INSTANCE.getString("EMSAdvanceDirectivesSectionAdvancedDirectiveObservation"),
+					new Object[] { emsAdvanceDirectivesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -394,15 +391,17 @@ public class EMSAdvanceDirectivesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<AdvanceDirectiveObservation> getAdvancedDirectiveObservations(EMSAdvanceDirectivesSection emsAdvanceDirectivesSection) {
+
+	public static EList<AdvanceDirectiveObservation> getAdvancedDirectiveObservations(
+			EMSAdvanceDirectivesSection emsAdvanceDirectivesSection) {
 		if (GET_ADVANCED_DIRECTIVE_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.EMS_ADVANCE_DIRECTIVES_SECTION, EmspcrPackage.Literals.EMS_ADVANCE_DIRECTIVES_SECTION.getEAllOperations().get(60));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.EMS_ADVANCE_DIRECTIVES_SECTION,
+				EmspcrPackage.Literals.EMS_ADVANCE_DIRECTIVES_SECTION.getEAllOperations().get(60));
 			try {
 				GET_ADVANCED_DIRECTIVE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ADVANCED_DIRECTIVE_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

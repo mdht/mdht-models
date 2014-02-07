@@ -83,10 +83,11 @@ public interface PriorAidVitals extends Observation {
 	 * @generated
 	 */
 	public PriorAidVitals init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PriorAidVitals init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PriorAidVitals init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PriorAidVitals

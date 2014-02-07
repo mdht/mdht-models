@@ -95,10 +95,11 @@ public interface HeartRate extends VitalSignObservation {
 	 * @generated
 	 */
 	public HeartRate init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public HeartRate init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HeartRate init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HeartRate

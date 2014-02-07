@@ -101,9 +101,8 @@ public class TimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TIMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -115,30 +114,28 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTimesSectionTemplateId(TimesSection timesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTimesSectionTemplateId(TimesSection timesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TIMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TIMES_SECTION);
 			try {
 				VALIDATE_TIMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TIMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(timesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			timesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TIMES_SECTION__TIMES_SECTION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("TimesSectionTemplateId"),
-						 new Object [] { timesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TIMES_SECTION__TIMES_SECTION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("TimesSectionTemplateId"), new Object[] { timesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -152,9 +149,9 @@ public class TimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TIMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '67667-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_TIMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '67667-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTimesSectionCode(TimesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Times Section Code</em>}' invariant operation.
@@ -164,9 +161,8 @@ public class TimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TIMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -178,30 +174,27 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTimesSectionCode(TimesSection timesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTimesSectionCode(TimesSection timesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TIMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TIMES_SECTION);
 			try {
 				VALIDATE_TIMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TIMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(timesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TIMES_SECTION__TIMES_SECTION_CODE,
-						 EmspcrPlugin.INSTANCE.getString("TimesSectionCode"),
-						 new Object [] { timesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TIMES_SECTION__TIMES_SECTION_CODE,
+					EmspcrPlugin.INSTANCE.getString("TimesSectionCode"), new Object[] { timesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -225,9 +218,8 @@ public class TimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TIMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -239,30 +231,27 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTimesSectionTitle(TimesSection timesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTimesSectionTitle(TimesSection timesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TIMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TIMES_SECTION);
 			try {
 				VALIDATE_TIMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TIMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(timesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TIMES_SECTION__TIMES_SECTION_TITLE,
-						 EmspcrPlugin.INSTANCE.getString("TimesSectionTitle"),
-						 new Object [] { timesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TIMES_SECTION__TIMES_SECTION_TITLE,
+					EmspcrPlugin.INSTANCE.getString("TimesSectionTitle"), new Object[] { timesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -286,9 +275,8 @@ public class TimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TIMES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -300,30 +288,27 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTimesSectionText(TimesSection timesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTimesSectionText(TimesSection timesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TIMES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TIMES_SECTION);
 			try {
 				VALIDATE_TIMES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TIMES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(timesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TIMES_SECTION__TIMES_SECTION_TEXT,
-						 EmspcrPlugin.INSTANCE.getString("TimesSectionText"),
-						 new Object [] { timesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TIMES_SECTION__TIMES_SECTION_TEXT,
+					EmspcrPlugin.INSTANCE.getString("TimesSectionText"), new Object[] { timesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -347,9 +332,8 @@ public class TimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TIMES_SECTION_CALL_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -361,30 +345,27 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTimesSectionCallTime(TimesSection timesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTimesSectionCallTime(TimesSection timesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TIMES_SECTION_CALL_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TIMES_SECTION);
 			try {
 				VALIDATE_TIMES_SECTION_CALL_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TIMES_SECTION_CALL_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_CALL_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(timesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TIMES_SECTION__TIMES_SECTION_CALL_TIME,
-						 EmspcrPlugin.INSTANCE.getString("TimesSectionCallTime"),
-						 new Object [] { timesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TIMES_SECTION__TIMES_SECTION_CALL_TIME,
+					EmspcrPlugin.INSTANCE.getString("TimesSectionCallTime"), new Object[] { timesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -408,9 +389,8 @@ public class TimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TIMES_SECTION_UNIT_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -422,30 +402,28 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTimesSectionUnitNotifiedTime(TimesSection timesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTimesSectionUnitNotifiedTime(TimesSection timesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TIMES_SECTION_UNIT_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TIMES_SECTION);
 			try {
 				VALIDATE_TIMES_SECTION_UNIT_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TIMES_SECTION_UNIT_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_UNIT_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(timesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_UNIT_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			timesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TIMES_SECTION__TIMES_SECTION_UNIT_NOTIFIED_TIME,
-						 EmspcrPlugin.INSTANCE.getString("TimesSectionUnitNotifiedTime"),
-						 new Object [] { timesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TIMES_SECTION__TIMES_SECTION_UNIT_NOTIFIED_TIME,
+					EmspcrPlugin.INSTANCE.getString("TimesSectionUnitNotifiedTime"), new Object[] { timesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -469,9 +447,8 @@ public class TimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TIMES_SECTION_UNIT_EN_ROUTE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -483,30 +460,28 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTimesSectionUnitEnRouteTime(TimesSection timesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTimesSectionUnitEnRouteTime(TimesSection timesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TIMES_SECTION_UNIT_EN_ROUTE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TIMES_SECTION);
 			try {
 				VALIDATE_TIMES_SECTION_UNIT_EN_ROUTE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TIMES_SECTION_UNIT_EN_ROUTE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_UNIT_EN_ROUTE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(timesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_UNIT_EN_ROUTE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			timesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TIMES_SECTION__TIMES_SECTION_UNIT_EN_ROUTE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("TimesSectionUnitEnRouteTime"),
-						 new Object [] { timesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TIMES_SECTION__TIMES_SECTION_UNIT_EN_ROUTE_TIME,
+					EmspcrPlugin.INSTANCE.getString("TimesSectionUnitEnRouteTime"), new Object[] { timesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -530,9 +505,8 @@ public class TimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TIMES_SECTION_UNIT_ON_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -544,30 +518,28 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTimesSectionUnitOnSceneTime(TimesSection timesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTimesSectionUnitOnSceneTime(TimesSection timesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TIMES_SECTION_UNIT_ON_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TIMES_SECTION);
 			try {
 				VALIDATE_TIMES_SECTION_UNIT_ON_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TIMES_SECTION_UNIT_ON_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_UNIT_ON_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(timesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_UNIT_ON_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			timesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TIMES_SECTION__TIMES_SECTION_UNIT_ON_SCENE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("TimesSectionUnitOnSceneTime"),
-						 new Object [] { timesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TIMES_SECTION__TIMES_SECTION_UNIT_ON_SCENE_TIME,
+					EmspcrPlugin.INSTANCE.getString("TimesSectionUnitOnSceneTime"), new Object[] { timesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -591,9 +563,8 @@ public class TimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TIMES_SECTION_UNIT_AT_PATIENTT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -605,30 +576,28 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTimesSectionUnitAtPatienttTime(TimesSection timesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTimesSectionUnitAtPatienttTime(TimesSection timesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_TIMES_SECTION_UNIT_AT_PATIENTT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TIMES_SECTION);
 			try {
 				VALIDATE_TIMES_SECTION_UNIT_AT_PATIENTT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TIMES_SECTION_UNIT_AT_PATIENTT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_UNIT_AT_PATIENTT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(timesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_UNIT_AT_PATIENTT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			timesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TIMES_SECTION__TIMES_SECTION_UNIT_AT_PATIENTT_TIME,
-						 EmspcrPlugin.INSTANCE.getString("TimesSectionUnitAtPatienttTime"),
-						 new Object [] { timesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TIMES_SECTION__TIMES_SECTION_UNIT_AT_PATIENTT_TIME,
+					EmspcrPlugin.INSTANCE.getString("TimesSectionUnitAtPatienttTime"), new Object[] { timesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -652,9 +621,8 @@ public class TimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TIMES_SECTION_UNIT_LEFT_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -666,30 +634,28 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTimesSectionUnitLeftSceneTime(TimesSection timesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTimesSectionUnitLeftSceneTime(TimesSection timesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TIMES_SECTION_UNIT_LEFT_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TIMES_SECTION);
 			try {
 				VALIDATE_TIMES_SECTION_UNIT_LEFT_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TIMES_SECTION_UNIT_LEFT_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_UNIT_LEFT_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(timesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_UNIT_LEFT_SCENE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			timesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TIMES_SECTION__TIMES_SECTION_UNIT_LEFT_SCENE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("TimesSectionUnitLeftSceneTime"),
-						 new Object [] { timesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TIMES_SECTION__TIMES_SECTION_UNIT_LEFT_SCENE_TIME,
+					EmspcrPlugin.INSTANCE.getString("TimesSectionUnitLeftSceneTime"), new Object[] { timesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -713,9 +679,8 @@ public class TimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TIMES_SECTION_PATIENT_ARRIVED_AT_DESTINATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -727,30 +692,30 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTimesSectionPatientArrivedAtDestinationTime(TimesSection timesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTimesSectionPatientArrivedAtDestinationTime(TimesSection timesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_TIMES_SECTION_PATIENT_ARRIVED_AT_DESTINATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TIMES_SECTION);
 			try {
 				VALIDATE_TIMES_SECTION_PATIENT_ARRIVED_AT_DESTINATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TIMES_SECTION_PATIENT_ARRIVED_AT_DESTINATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_PATIENT_ARRIVED_AT_DESTINATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(timesSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_TIMES_SECTION_PATIENT_ARRIVED_AT_DESTINATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			timesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TIMES_SECTION__TIMES_SECTION_PATIENT_ARRIVED_AT_DESTINATION_TIME,
-						 EmspcrPlugin.INSTANCE.getString("TimesSectionPatientArrivedAtDestinationTime"),
-						 new Object [] { timesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TIMES_SECTION__TIMES_SECTION_PATIENT_ARRIVED_AT_DESTINATION_TIME,
+					EmspcrPlugin.INSTANCE.getString("TimesSectionPatientArrivedAtDestinationTime"),
+					new Object[] { timesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -774,9 +739,8 @@ public class TimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TIMES_SECTION_UNIT_BACK_IN_SERVICE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -788,30 +752,28 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTimesSectionUnitBackInServiceTime(TimesSection timesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTimesSectionUnitBackInServiceTime(TimesSection timesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_TIMES_SECTION_UNIT_BACK_IN_SERVICE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TIMES_SECTION);
 			try {
 				VALIDATE_TIMES_SECTION_UNIT_BACK_IN_SERVICE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TIMES_SECTION_UNIT_BACK_IN_SERVICE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_UNIT_BACK_IN_SERVICE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(timesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_UNIT_BACK_IN_SERVICE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			timesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TIMES_SECTION__TIMES_SECTION_UNIT_BACK_IN_SERVICE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("TimesSectionUnitBackInServiceTime"),
-						 new Object [] { timesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TIMES_SECTION__TIMES_SECTION_UNIT_BACK_IN_SERVICE_TIME,
+					EmspcrPlugin.INSTANCE.getString("TimesSectionUnitBackInServiceTime"), new Object[] { timesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -835,9 +797,8 @@ public class TimesSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TIMES_SECTION_DISPATCH_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -849,30 +810,28 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTimesSectionDispatchNotifiedTime(TimesSection timesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTimesSectionDispatchNotifiedTime(TimesSection timesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_TIMES_SECTION_DISPATCH_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TIMES_SECTION);
 			try {
 				VALIDATE_TIMES_SECTION_DISPATCH_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TIMES_SECTION_DISPATCH_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_DISPATCH_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(timesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TIMES_SECTION_DISPATCH_NOTIFIED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			timesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TIMES_SECTION__TIMES_SECTION_DISPATCH_NOTIFIED_TIME,
-						 EmspcrPlugin.INSTANCE.getString("TimesSectionDispatchNotifiedTime"),
-						 new Object [] { timesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TIMES_SECTION__TIMES_SECTION_DISPATCH_NOTIFIED_TIME,
+					EmspcrPlugin.INSTANCE.getString("TimesSectionDispatchNotifiedTime"), new Object[] { timesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -903,15 +862,15 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  CallTime getCallTime(TimesSection timesSection) {
+
+	public static CallTime getCallTime(TimesSection timesSection) {
 		if (GET_CALL_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(68));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(68));
 			try {
 				GET_CALL_TIME__EOCL_QRY = helper.createQuery(GET_CALL_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -944,15 +903,15 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  UnitNotifiedTime getUnitNotifiedTime(TimesSection timesSection) {
+
+	public static UnitNotifiedTime getUnitNotifiedTime(TimesSection timesSection) {
 		if (GET_UNIT_NOTIFIED_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(69));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(69));
 			try {
 				GET_UNIT_NOTIFIED_TIME__EOCL_QRY = helper.createQuery(GET_UNIT_NOTIFIED_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -985,15 +944,15 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  UnitEnRouteTime getUnitEnRouteTime(TimesSection timesSection) {
+
+	public static UnitEnRouteTime getUnitEnRouteTime(TimesSection timesSection) {
 		if (GET_UNIT_EN_ROUTE_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(70));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(70));
 			try {
 				GET_UNIT_EN_ROUTE_TIME__EOCL_QRY = helper.createQuery(GET_UNIT_EN_ROUTE_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1026,15 +985,15 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  UnitOnSceneTime getUnitOnSceneTime(TimesSection timesSection) {
+
+	public static UnitOnSceneTime getUnitOnSceneTime(TimesSection timesSection) {
 		if (GET_UNIT_ON_SCENE_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(71));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(71));
 			try {
 				GET_UNIT_ON_SCENE_TIME__EOCL_QRY = helper.createQuery(GET_UNIT_ON_SCENE_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1067,15 +1026,15 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  UnitAtPatientTime getUnitAtPatienttTime(TimesSection timesSection) {
+
+	public static UnitAtPatientTime getUnitAtPatienttTime(TimesSection timesSection) {
 		if (GET_UNIT_AT_PATIENTT_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(72));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(72));
 			try {
 				GET_UNIT_AT_PATIENTT_TIME__EOCL_QRY = helper.createQuery(GET_UNIT_AT_PATIENTT_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1108,15 +1067,15 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  UnitLeftSceneTime getUnitLeftSceneTime(TimesSection timesSection) {
+
+	public static UnitLeftSceneTime getUnitLeftSceneTime(TimesSection timesSection) {
 		if (GET_UNIT_LEFT_SCENE_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(73));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(73));
 			try {
 				GET_UNIT_LEFT_SCENE_TIME__EOCL_QRY = helper.createQuery(GET_UNIT_LEFT_SCENE_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1149,15 +1108,15 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  PatientArrivedAtDestinationTime getPatientArrivedAtDestinationTime(TimesSection timesSection) {
+
+	public static PatientArrivedAtDestinationTime getPatientArrivedAtDestinationTime(TimesSection timesSection) {
 		if (GET_PATIENT_ARRIVED_AT_DESTINATION_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(74));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(74));
 			try {
 				GET_PATIENT_ARRIVED_AT_DESTINATION_TIME__EOCL_QRY = helper.createQuery(GET_PATIENT_ARRIVED_AT_DESTINATION_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1190,15 +1149,15 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  UnitBackInServiceTime getUnitBackInServiceTime(TimesSection timesSection) {
+
+	public static UnitBackInServiceTime getUnitBackInServiceTime(TimesSection timesSection) {
 		if (GET_UNIT_BACK_IN_SERVICE_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(75));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(75));
 			try {
 				GET_UNIT_BACK_IN_SERVICE_TIME__EOCL_QRY = helper.createQuery(GET_UNIT_BACK_IN_SERVICE_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1231,15 +1190,15 @@ public class TimesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  DispatchNotifiedTime getDispatchNotifiedTime(TimesSection timesSection) {
+
+	public static DispatchNotifiedTime getDispatchNotifiedTime(TimesSection timesSection) {
 		if (GET_DISPATCH_NOTIFIED_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(76));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.TIMES_SECTION, EmspcrPackage.Literals.TIMES_SECTION.getEAllOperations().get(76));
 			try {
 				GET_DISPATCH_NOTIFIED_TIME__EOCL_QRY = helper.createQuery(GET_DISPATCH_NOTIFIED_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

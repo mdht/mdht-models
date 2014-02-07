@@ -95,10 +95,11 @@ public interface FirstUnitOnScene extends Observation {
 	 * @generated
 	 */
 	public FirstUnitOnScene init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public FirstUnitOnScene init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FirstUnitOnScene init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FirstUnitOnScene

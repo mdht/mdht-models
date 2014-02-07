@@ -107,10 +107,11 @@ public interface TransportDelay extends Observation {
 	 * @generated
 	 */
 	public TransportDelay init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TransportDelay init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TransportDelay init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TransportDelay

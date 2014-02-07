@@ -73,9 +73,8 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TRANSPORT_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,30 +86,28 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportDelayTemplateId(TransportDelay transportDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTransportDelayTemplateId(TransportDelay transportDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TRANSPORT_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRANSPORT_DELAY);
 			try {
 				VALIDATE_TRANSPORT_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSPORT_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSPORT_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transportDelay)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TRANSPORT_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			transportDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TRANSPORT_DELAY__TRANSPORT_DELAY_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("TransportDelayTemplateId"),
-						 new Object [] { transportDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TRANSPORT_DELAY__TRANSPORT_DELAY_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("TransportDelayTemplateId"), new Object[] { transportDelay }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -134,9 +131,8 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TRANSPORT_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,30 +144,28 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportDelayMoodCode(TransportDelay transportDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTransportDelayMoodCode(TransportDelay transportDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TRANSPORT_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRANSPORT_DELAY);
 			try {
 				VALIDATE_TRANSPORT_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSPORT_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSPORT_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transportDelay)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TRANSPORT_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			transportDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TRANSPORT_DELAY__TRANSPORT_DELAY_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("TransportDelayMoodCode"),
-						 new Object [] { transportDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TRANSPORT_DELAY__TRANSPORT_DELAY_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("TransportDelayMoodCode"), new Object[] { transportDelay }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -195,9 +189,8 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TRANSPORT_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,30 +202,27 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportDelayCodeP(TransportDelay transportDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTransportDelayCodeP(TransportDelay transportDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TRANSPORT_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRANSPORT_DELAY);
 			try {
 				VALIDATE_TRANSPORT_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSPORT_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_TRANSPORT_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transportDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TRANSPORT_DELAY__TRANSPORT_DELAY_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("TransportDelayCodeP"),
-						 new Object [] { transportDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TRANSPORT_DELAY__TRANSPORT_DELAY_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("TransportDelayCodeP"), new Object[] { transportDelay }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -244,7 +234,7 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(transportDelay);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -258,9 +248,9 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSPORT_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67559-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_TRANSPORT_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67559-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransportDelayCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Code</em>}' invariant operation.
@@ -270,9 +260,8 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TRANSPORT_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,36 +273,35 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportDelayCode(TransportDelay transportDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.TransportDelayCodeP");
+
+	public static boolean validateTransportDelayCode(TransportDelay transportDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.TransportDelayCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(transportDelay)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_TRANSPORT_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRANSPORT_DELAY);
 			try {
 				VALIDATE_TRANSPORT_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSPORT_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_TRANSPORT_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transportDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TRANSPORT_DELAY__TRANSPORT_DELAY_CODE,
-						 EmspcrPlugin.INSTANCE.getString("TransportDelayCode"),
-						 new Object [] { transportDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TRANSPORT_DELAY__TRANSPORT_DELAY_CODE,
+					EmspcrPlugin.INSTANCE.getString("TransportDelayCode"), new Object[] { transportDelay }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -327,9 +315,9 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSPORT_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA17585-3' or value.code = 'LA17586-1' or value.code = 'LA17587-9' or value.code = 'LA17588-7' or value.code = 'LA17589-5' or value.code = 'LA17590-3' or value.code = 'LA17591-1' or value.code = 'LA17592-9' or value.code = 'LA17593-7' or value.code = 'LA17594-5' or value.code = 'LA18081-2' or value.code = 'LA18270-1' or value.code = 'LA18271-9' or value.code = 'LA18301-4')))";
+	protected static final String VALIDATE_TRANSPORT_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA17585-3' or value.code = 'LA17586-1' or value.code = 'LA17587-9' or value.code = 'LA17588-7' or value.code = 'LA17589-5' or value.code = 'LA17590-3' or value.code = 'LA17591-1' or value.code = 'LA17592-9' or value.code = 'LA17593-7' or value.code = 'LA17594-5' or value.code = 'LA18081-2' or value.code = 'LA18270-1' or value.code = 'LA18271-9' or value.code = 'LA18301-4')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransportDelayValue(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Value</em>}' invariant operation.
@@ -339,9 +327,8 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TRANSPORT_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -353,30 +340,27 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportDelayValue(TransportDelay transportDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTransportDelayValue(TransportDelay transportDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TRANSPORT_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRANSPORT_DELAY);
 			try {
 				VALIDATE_TRANSPORT_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSPORT_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_TRANSPORT_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transportDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TRANSPORT_DELAY__TRANSPORT_DELAY_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("TransportDelayValue"),
-						 new Object [] { transportDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TRANSPORT_DELAY__TRANSPORT_DELAY_VALUE,
+					EmspcrPlugin.INSTANCE.getString("TransportDelayValue"), new Object[] { transportDelay }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -400,9 +384,8 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TRANSPORT_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,30 +397,28 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTransportDelayValueP(TransportDelay transportDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTransportDelayValueP(TransportDelay transportDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_TRANSPORT_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRANSPORT_DELAY);
 			try {
 				VALIDATE_TRANSPORT_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSPORT_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSPORT_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transportDelay)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TRANSPORT_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			transportDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TRANSPORT_DELAY__TRANSPORT_DELAY_VALUE_P,
-						 EmspcrPlugin.INSTANCE.getString("TransportDelayValueP"),
-						 new Object [] { transportDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TRANSPORT_DELAY__TRANSPORT_DELAY_VALUE_P,
+					EmspcrPlugin.INSTANCE.getString("TransportDelayValueP"), new Object[] { transportDelay }));
 			}
-			 
+
 			return false;
 		}
 		return true;

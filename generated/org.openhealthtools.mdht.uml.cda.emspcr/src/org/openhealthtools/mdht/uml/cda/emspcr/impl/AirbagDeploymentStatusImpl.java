@@ -104,15 +104,16 @@ public class AirbagDeploymentStatusImpl extends ObservationImpl implements Airba
 	 * @generated
 	 */
 	public AirbagDeploymentStatus init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AirbagDeploymentStatus init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //AirbagDeploymentStatusImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AirbagDeploymentStatus init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // AirbagDeploymentStatusImpl

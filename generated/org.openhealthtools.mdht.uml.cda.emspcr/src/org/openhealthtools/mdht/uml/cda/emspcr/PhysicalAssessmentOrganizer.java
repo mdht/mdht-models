@@ -238,10 +238,11 @@ public interface PhysicalAssessmentOrganizer extends Organizer {
 	 * @generated
 	 */
 	public PhysicalAssessmentOrganizer init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PhysicalAssessmentOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PhysicalAssessmentOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PhysicalAssessmentOrganizer

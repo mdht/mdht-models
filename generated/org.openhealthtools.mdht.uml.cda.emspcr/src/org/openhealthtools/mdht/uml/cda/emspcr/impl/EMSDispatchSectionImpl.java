@@ -96,8 +96,10 @@ public class EMSDispatchSectionImpl extends SectionImpl implements EMSDispatchSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSDispatchSectionEmergencyMedicalDispatchObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSDispatchSectionOperations.validateEMSDispatchSectionEmergencyMedicalDispatchObservation(this, diagnostics, context);
+	public boolean validateEMSDispatchSectionEmergencyMedicalDispatchObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSDispatchSectionOperations.validateEMSDispatchSectionEmergencyMedicalDispatchObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +107,10 @@ public class EMSDispatchSectionImpl extends SectionImpl implements EMSDispatchSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSDispatchSectionComplaintReportedByDispatch(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSDispatchSectionOperations.validateEMSDispatchSectionComplaintReportedByDispatch(this, diagnostics, context);
+	public boolean validateEMSDispatchSectionComplaintReportedByDispatch(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSDispatchSectionOperations.validateEMSDispatchSectionComplaintReportedByDispatch(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -133,15 +137,16 @@ public class EMSDispatchSectionImpl extends SectionImpl implements EMSDispatchSe
 	 * @generated
 	 */
 	public EMSDispatchSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EMSDispatchSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //EMSDispatchSectionImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EMSDispatchSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // EMSDispatchSectionImpl

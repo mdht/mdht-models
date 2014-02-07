@@ -70,9 +70,8 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ARREST_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,30 +83,28 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateArrestRhythmTemplateId(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateArrestRhythmTemplateId(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ARREST_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ARREST_RHYTHM);
 			try {
 				VALIDATE_ARREST_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ARREST_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ARREST_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(arrestRhythm)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ARREST_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			arrestRhythm)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ARREST_RHYTHM__ARREST_RHYTHM_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("ArrestRhythmTemplateId"),
-						 new Object [] { arrestRhythm }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ARREST_RHYTHM__ARREST_RHYTHM_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("ArrestRhythmTemplateId"), new Object[] { arrestRhythm }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -131,9 +128,8 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ARREST_RHYTHM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,30 +141,27 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateArrestRhythmMoodCode(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateArrestRhythmMoodCode(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ARREST_RHYTHM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ARREST_RHYTHM);
 			try {
 				VALIDATE_ARREST_RHYTHM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ARREST_RHYTHM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_ARREST_RHYTHM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(arrestRhythm)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ARREST_RHYTHM__ARREST_RHYTHM_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ArrestRhythmMoodCode"),
-						 new Object [] { arrestRhythm }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ARREST_RHYTHM__ARREST_RHYTHM_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("ArrestRhythmMoodCode"), new Object[] { arrestRhythm }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -182,9 +175,9 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ARREST_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67512-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_ARREST_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67512-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateArrestRhythmCode(ArrestRhythm, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Arrest Rhythm Code</em>}' invariant operation.
@@ -194,9 +187,8 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ARREST_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +200,27 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateArrestRhythmCode(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateArrestRhythmCode(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ARREST_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ARREST_RHYTHM);
 			try {
 				VALIDATE_ARREST_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ARREST_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_ARREST_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(arrestRhythm)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ARREST_RHYTHM__ARREST_RHYTHM_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ArrestRhythmCode"),
-						 new Object [] { arrestRhythm }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ARREST_RHYTHM__ARREST_RHYTHM_CODE,
+					EmspcrPlugin.INSTANCE.getString("ArrestRhythmCode"), new Object[] { arrestRhythm }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -245,9 +234,9 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ARREST_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17068-0' or value.code = 'LA17070-6' or value.code = 'LA17071-4' or value.code = 'LA17072-2' or value.code = 'LA17073-0' or value.code = 'LA17074-8' or value.code = 'LA17394-0')))";
+	protected static final String VALIDATE_ARREST_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17068-0' or value.code = 'LA17070-6' or value.code = 'LA17071-4' or value.code = 'LA17072-2' or value.code = 'LA17073-0' or value.code = 'LA17074-8' or value.code = 'LA17394-0')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateArrestRhythmValue(ArrestRhythm, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Arrest Rhythm Value</em>}' invariant operation.
@@ -257,9 +246,8 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ARREST_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,30 +259,27 @@ public class ArrestRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateArrestRhythmValue(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateArrestRhythmValue(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ARREST_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ARREST_RHYTHM);
 			try {
 				VALIDATE_ARREST_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ARREST_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_ARREST_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(arrestRhythm)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ARREST_RHYTHM__ARREST_RHYTHM_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("ArrestRhythmValue"),
-						 new Object [] { arrestRhythm }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ARREST_RHYTHM__ARREST_RHYTHM_VALUE,
+					EmspcrPlugin.INSTANCE.getString("ArrestRhythmValue"), new Object[] { arrestRhythm }));
 			}
-			 
+
 			return false;
 		}
 		return true;

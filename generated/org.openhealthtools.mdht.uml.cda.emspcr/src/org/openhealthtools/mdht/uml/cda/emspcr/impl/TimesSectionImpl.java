@@ -157,7 +157,8 @@ public class TimesSectionImpl extends SectionImpl implements TimesSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTimesSectionPatientArrivedAtDestinationTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTimesSectionPatientArrivedAtDestinationTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TimesSectionOperations.validateTimesSectionPatientArrivedAtDestinationTime(this, diagnostics, context);
 	}
 
@@ -266,15 +267,16 @@ public class TimesSectionImpl extends SectionImpl implements TimesSection {
 	 * @generated
 	 */
 	public TimesSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TimesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //TimesSectionImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TimesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // TimesSectionImpl

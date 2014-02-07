@@ -3465,9 +3465,9 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="LocationTypeObservationTemplateId LocationTypeObservationCode LocationTypeObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.1133883.17.3.10.1.88"/>
-      <details key="code.code" value="eScene.09"/>
+      <details key="code.code" value="74496-1"/>
       <details key="code.codeSystemName" value=""/>
-      <details key="code.displayName" value="Location type"/>
+      <details key="code.displayName" value="Injury location ICD code"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.90"/>
       <details key="value.codeSystemName" value="ICD-10 CM"/>
     </eAnnotations>
@@ -7028,10 +7028,10 @@
       <details key="constraints.validation.error" value="CarbonMonoxideTemplateId CarbonMonoxideMoodCode CarbonMonoxideCode CarbonMonoxideCodeP CarbonMonoxideValue"/>
       <details key="templateId.root" value="2.16.840.1.1133883.17.3.10.1.167"/>
       <details key="moodCode" value="EVN"/>
-      <details key="code.code" value="TBD"/>
+      <details key="code.code" value="20563-3"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
-      <details key="code.displayName" value="carbon monoxide"/>
+      <details key="code.displayName" value="Carboxyhemoglobin/​Hemoglobin.total in Blood"/>
       <details key="constraints.validation.dependOn.CarbonMonoxideCode" value="CarbonMonoxideCodeP"/>
       <details key="constraints.validation.info" value="CarbonMonoxideEffectiveTime"/>
     </eAnnotations>

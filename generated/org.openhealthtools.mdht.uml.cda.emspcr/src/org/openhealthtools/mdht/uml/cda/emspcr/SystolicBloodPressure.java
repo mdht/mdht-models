@@ -71,10 +71,11 @@ public interface SystolicBloodPressure extends VitalSignObservation {
 	 * @generated
 	 */
 	public SystolicBloodPressure init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SystolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SystolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SystolicBloodPressure

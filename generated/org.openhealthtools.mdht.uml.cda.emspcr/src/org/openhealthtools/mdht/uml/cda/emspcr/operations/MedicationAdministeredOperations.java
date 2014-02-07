@@ -85,9 +85,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_NOT_ADMINISTERED_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -99,30 +98,31 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredMedicationNotAdministeredEntryRelationship(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationAdministeredMedicationNotAdministeredEntryRelationship(
+			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_NOT_ADMINISTERED_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_NOT_ADMINISTERED_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_NOT_ADMINISTERED_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_NOT_ADMINISTERED_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_NOT_ADMINISTERED_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_MEDICATION_NOT_ADMINISTERED_ENTRY_RELATIONSHIP,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredMedicationNotAdministeredEntryRelationship"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_MEDICATION_NOT_ADMINISTERED_ENTRY_RELATIONSHIP,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredMedicationNotAdministeredEntryRelationship"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -146,9 +146,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -160,30 +159,30 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredMedicationConsumable(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationAdministeredMedicationConsumable(
+			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_MEDICATION_CONSUMABLE,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredMedicationConsumable"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_MEDICATION_CONSUMABLE,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredMedicationConsumable"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -207,9 +206,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -221,30 +219,30 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredResponseRelationship(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationAdministeredResponseRelationship(
+			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredResponseRelationship"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredResponseRelationship"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -268,9 +266,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_COMPLICATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -282,30 +279,31 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredMedicationComplicationRelationship(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationAdministeredMedicationComplicationRelationship(
+			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_COMPLICATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_COMPLICATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_COMPLICATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_COMPLICATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_COMPLICATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_MEDICATION_COMPLICATION_RELATIONSHIP,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredMedicationComplicationRelationship"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_MEDICATION_COMPLICATION_RELATIONSHIP,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredMedicationComplicationRelationship"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -329,9 +327,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_PRIOR_ADMINISTRATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -343,30 +340,31 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredMedicationPriorAdministrationRelationship(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationAdministeredMedicationPriorAdministrationRelationship(
+			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_PRIOR_ADMINISTRATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_PRIOR_ADMINISTRATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_PRIOR_ADMINISTRATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_PRIOR_ADMINISTRATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_PRIOR_ADMINISTRATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_MEDICATION_PRIOR_ADMINISTRATION_RELATIONSHIP,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredMedicationPriorAdministrationRelationship"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_MEDICATION_PRIOR_ADMINISTRATION_RELATIONSHIP,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredMedicationPriorAdministrationRelationship"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -390,9 +388,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_PERFORMER_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -404,30 +401,31 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredMedicationPerformerParticipation(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationAdministeredMedicationPerformerParticipation(
+			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_PERFORMER_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_PERFORMER_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_PERFORMER_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_PERFORMER_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_PERFORMER_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_MEDICATION_PERFORMER_PARTICIPATION,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredMedicationPerformerParticipation"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_MEDICATION_PERFORMER_PARTICIPATION,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredMedicationPerformerParticipation"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -451,9 +449,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_AUTHORIZATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -465,30 +462,31 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredMedicationAuthorizationRelationship(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationAdministeredMedicationAuthorizationRelationship(
+			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_AUTHORIZATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_AUTHORIZATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_AUTHORIZATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_AUTHORIZATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_AUTHORIZATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_MEDICATION_AUTHORIZATION_RELATIONSHIP,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredMedicationAuthorizationRelationship"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_MEDICATION_AUTHORIZATION_RELATIONSHIP,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredMedicationAuthorizationRelationship"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -512,9 +510,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_ADMINISTRATION_DEVICE_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -526,30 +523,31 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredMedicationAdministrationDeviceParticipant(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationAdministeredMedicationAdministrationDeviceParticipant(
+			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_ADMINISTRATION_DEVICE_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_ADMINISTRATION_DEVICE_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_ADMINISTRATION_DEVICE_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_ADMINISTRATION_DEVICE_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_ADMINISTRATION_DEVICE_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_MEDICATION_ADMINISTRATION_DEVICE_PARTICIPANT,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredMedicationAdministrationDeviceParticipant"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_MEDICATION_ADMINISTRATION_DEVICE_PARTICIPANT,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredMedicationAdministrationDeviceParticipant"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -573,9 +571,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -587,30 +584,29 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredClassCode(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationAdministeredClassCode(MedicationAdministered medicationAdministered,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_CLASS_CODE,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredClassCode"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_CLASS_CODE,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredClassCode"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -634,9 +630,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -648,30 +643,29 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredNegationInd(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationAdministeredNegationInd(MedicationAdministered medicationAdministered,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_NEGATION_IND,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredNegationInd"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_NEGATION_IND,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredNegationInd"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -695,9 +689,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -709,30 +702,29 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredEffectiveTime(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationAdministeredEffectiveTime(MedicationAdministered medicationAdministered,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_EFFECTIVE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredEffectiveTime"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_EFFECTIVE_TIME,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredEffectiveTime"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -756,9 +748,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -770,30 +761,29 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredRouteCodeP(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationAdministeredRouteCodeP(MedicationAdministered medicationAdministered,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_ROUTE_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredRouteCodeP"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_ROUTE_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredRouteCodeP"),
+					new Object[] { medicationAdministered }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -805,7 +795,7 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 				}
 				passToken.add(medicationAdministered);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -819,9 +809,9 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ADMINISTERED_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in "+
-"value.codeSystem = '2.16.840.1.113883.3.26.1.1.1' and (value.code = 'C38208' or value.code = 'C38246' or value.code = 'C38216' or value.code = 'C38222' or value.code = 'C38284' or value.code = 'C28161' or value.code = 'C38255' or value.code = 'C38253' or value.code = 'C38276' or value.code = 'C38285' or value.code = 'C38287' or value.code = 'C38288' or value.code = 'C38290' or value.code = 'C38192' or value.code = 'C38295' or value.code = 'C38299' or value.code = 'C38300' or value.code = 'C38304' or value.code = 'C38308' or value.code = 'C38305' or value.code = 'C38271' or value.code = 'NewCode' or value.code = 'C38250'))";
+	protected static final String VALIDATE_MEDICATION_ADMINISTERED_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in "
+			+ "value.codeSystem = '2.16.840.1.113883.3.26.1.1.1' and (value.code = 'C38208' or value.code = 'C38246' or value.code = 'C38216' or value.code = 'C38222' or value.code = 'C38284' or value.code = 'C28161' or value.code = 'C38255' or value.code = 'C38253' or value.code = 'C38276' or value.code = 'C38285' or value.code = 'C38287' or value.code = 'C38288' or value.code = 'C38290' or value.code = 'C38192' or value.code = 'C38295' or value.code = 'C38299' or value.code = 'C38300' or value.code = 'C38304' or value.code = 'C38308' or value.code = 'C38305' or value.code = 'C38271' or value.code = 'NewCode' or value.code = 'C38250'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationAdministeredRouteCode(MedicationAdministered, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Administered Route Code</em>}' invariant operation.
@@ -831,9 +821,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -845,36 +834,37 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredRouteCode(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.MedicationAdministeredRouteCodeP");
+
+	public static boolean validateMedicationAdministeredRouteCode(MedicationAdministered medicationAdministered,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.MedicationAdministeredRouteCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(medicationAdministered)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_ROUTE_CODE,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredRouteCode"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_ROUTE_CODE,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredRouteCode"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -898,9 +888,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -912,30 +901,29 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredApproachSiteCodeP(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationAdministeredApproachSiteCodeP(
+			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_APPROACH_SITE_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredApproachSiteCodeP"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_APPROACH_SITE_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredApproachSiteCodeP"),
+					new Object[] { medicationAdministered }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -943,11 +931,12 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.emspcr.MedicationAdministeredApproachSiteCodeP", passToken);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.emspcr.MedicationAdministeredApproachSiteCodeP", passToken);
 				}
 				passToken.add(medicationAdministered);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -961,9 +950,9 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ADMINISTERED_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.code = '15562006' and value.codeSystem = '2.16.840.1.113883.6.96'))";
+	protected static final String VALIDATE_MEDICATION_ADMINISTERED_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.code = '15562006' and value.codeSystem = '2.16.840.1.113883.6.96'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationAdministeredApproachSiteCode(MedicationAdministered, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Administered Approach Site Code</em>}' invariant operation.
@@ -973,9 +962,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -987,36 +975,37 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredApproachSiteCode(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.MedicationAdministeredApproachSiteCodeP");
+
+	public static boolean validateMedicationAdministeredApproachSiteCode(MedicationAdministered medicationAdministered,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.MedicationAdministeredApproachSiteCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(medicationAdministered)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_APPROACH_SITE_CODE,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredApproachSiteCode"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_APPROACH_SITE_CODE,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredApproachSiteCode"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1040,9 +1029,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1054,30 +1042,29 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationAdministeredDoseQuantity(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationAdministeredDoseQuantity(MedicationAdministered medicationAdministered,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ADMINISTERED_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ADMINISTERED_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ADMINISTERED_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_DOSE_QUANTITY,
-						 EmspcrPlugin.INSTANCE.getString("MedicationAdministeredDoseQuantity"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_DOSE_QUANTITY,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredDoseQuantity"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1101,9 +1088,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1115,30 +1101,29 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationActivityTemplateId(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationActivityTemplateId(MedicationAdministered medicationAdministered,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ACTIVITY_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("MedicationActivityTemplateId"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ACTIVITY_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("MedicationActivityTemplateId"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1162,9 +1147,8 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1176,30 +1160,29 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateMedicationActivityRateQuantity(MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateMedicationActivityRateQuantity(MedicationAdministered medicationAdministered,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ACTIVITY_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
 				VALIDATE_MEDICATION_ACTIVITY_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationAdministered)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationAdministered)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ACTIVITY_RATE_QUANTITY,
-						 EmspcrPlugin.INSTANCE.getString("MedicationActivityRateQuantity"),
-						 new Object [] { medicationAdministered }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ACTIVITY_RATE_QUANTITY,
+					EmspcrPlugin.INSTANCE.getString("MedicationActivityRateQuantity"),
+					new Object[] { medicationAdministered }));
 			}
-			 
+
 			return false;
 		}
 		return true;

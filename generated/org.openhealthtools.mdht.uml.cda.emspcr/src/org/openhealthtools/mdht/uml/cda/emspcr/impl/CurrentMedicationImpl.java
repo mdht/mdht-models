@@ -122,16 +122,19 @@ public class CurrentMedicationImpl extends MedicationActivityImpl implements Cur
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CurrentMedication init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CurrentMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //CurrentMedicationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CurrentMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // CurrentMedicationImpl

@@ -110,10 +110,11 @@ public interface CurrentMedication extends MedicationActivity {
 	 * @generated
 	 */
 	public CurrentMedication init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CurrentMedication init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CurrentMedication init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CurrentMedication

@@ -70,9 +70,8 @@ public class PainScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAIN_SCORE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,30 +83,27 @@ public class PainScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePainScoreTemplateId(PainScore painScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePainScoreTemplateId(PainScore painScore, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PAIN_SCORE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PAIN_SCORE);
 			try {
 				VALIDATE_PAIN_SCORE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAIN_SCORE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAIN_SCORE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(painScore)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PAIN_SCORE__PAIN_SCORE_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("PainScoreTemplateId"),
-						 new Object [] { painScore }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PAIN_SCORE__PAIN_SCORE_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("PainScoreTemplateId"), new Object[] { painScore }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -131,9 +127,8 @@ public class PainScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAIN_SCORE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,30 +140,27 @@ public class PainScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePainScoreMoodCode(PainScore painScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePainScoreMoodCode(PainScore painScore, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PAIN_SCORE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PAIN_SCORE);
 			try {
 				VALIDATE_PAIN_SCORE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAIN_SCORE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAIN_SCORE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(painScore)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PAIN_SCORE__PAIN_SCORE_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("PainScoreMoodCode"),
-						 new Object [] { painScore }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PAIN_SCORE__PAIN_SCORE_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("PainScoreMoodCode"), new Object[] { painScore }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -182,9 +174,9 @@ public class PainScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PAIN_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '56840-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PAIN_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '56840-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePainScoreCode(PainScore, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pain Score Code</em>}' invariant operation.
@@ -194,9 +186,8 @@ public class PainScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAIN_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +199,26 @@ public class PainScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePainScoreCode(PainScore painScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePainScoreCode(PainScore painScore, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PAIN_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PAIN_SCORE);
 			try {
 				VALIDATE_PAIN_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAIN_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAIN_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(painScore)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PAIN_SCORE__PAIN_SCORE_CODE,
-						 EmspcrPlugin.INSTANCE.getString("PainScoreCode"),
-						 new Object [] { painScore }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE, EmspcrValidator.PAIN_SCORE__PAIN_SCORE_CODE,
+					EmspcrPlugin.INSTANCE.getString("PainScoreCode"), new Object[] { painScore }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -255,9 +242,8 @@ public class PainScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PAIN_SCORE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -269,30 +255,27 @@ public class PainScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePainScoreEffectiveTime(PainScore painScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePainScoreEffectiveTime(PainScore painScore, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PAIN_SCORE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PAIN_SCORE);
 			try {
 				VALIDATE_PAIN_SCORE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAIN_SCORE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAIN_SCORE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(painScore)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PAIN_SCORE__PAIN_SCORE_EFFECTIVE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("PainScoreEffectiveTime"),
-						 new Object [] { painScore }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PAIN_SCORE__PAIN_SCORE_EFFECTIVE_TIME,
+					EmspcrPlugin.INSTANCE.getString("PainScoreEffectiveTime"), new Object[] { painScore }));
 			}
-			 
+
 			return false;
 		}
 		return true;

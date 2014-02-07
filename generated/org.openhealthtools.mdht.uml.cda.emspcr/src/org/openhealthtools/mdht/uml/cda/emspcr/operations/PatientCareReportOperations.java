@@ -147,9 +147,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -161,30 +160,28 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportClassCode(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportClassCode(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CLASS_CODE,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportClassCode"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CLASS_CODE,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportClassCode"), new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -208,9 +205,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -222,30 +218,28 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportMoodCode(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportMoodCode(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportMoodCode"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportMoodCode"), new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -269,9 +263,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -283,30 +276,28 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportCodeP(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportCodeP(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportCodeP"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportCodeP"), new Object[] { patientCareReport }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -318,7 +309,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 				}
 				passToken.add(patientCareReport);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -332,9 +323,9 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_CARE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '67796-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PATIENT_CARE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '67796-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientCareReportCode(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Code</em>}' invariant operation.
@@ -344,9 +335,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -358,36 +348,36 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportCode(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReportCodeP");
+
+	public static boolean validatePatientCareReportCode(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReportCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(patientCareReport)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_PATIENT_CARE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CODE,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportCode"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CODE,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportCode"), new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -401,9 +391,9 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_CARE_REPORT_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in "+
-"value.codeSystem = '2.16.840.1.113883.5.25' and (value.code = 'N' or value.code = 'R' or value.code = 'V'))";
+	protected static final String VALIDATE_PATIENT_CARE_REPORT_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in "
+			+ "value.codeSystem = '2.16.840.1.113883.5.25' and (value.code = 'N' or value.code = 'R' or value.code = 'V'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientCareReportConfidentialityCode(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Confidentiality Code</em>}' invariant operation.
@@ -413,9 +403,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -427,30 +416,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportConfidentialityCode(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportConfidentialityCode(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CONFIDENTIALITY_CODE,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportConfidentialityCode"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CONFIDENTIALITY_CODE,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportConfidentialityCode"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -474,9 +462,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -488,30 +475,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportRecordTarget(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportRecordTarget(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RECORD_TARGET,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportRecordTarget"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RECORD_TARGET,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportRecordTarget"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -535,9 +521,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_CURRENT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -549,30 +534,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportCurrentMedication(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportCurrentMedication(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_CURRENT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_CURRENT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_CURRENT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_CURRENT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_CURRENT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CURRENT_MEDICATION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportCurrentMedication"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CURRENT_MEDICATION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportCurrentMedication"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -596,9 +580,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_CARDIAC_ARREST_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -610,30 +593,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportCardiacArrestEvent(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportCardiacArrestEvent(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_CARDIAC_ARREST_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_CARDIAC_ARREST_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_CARDIAC_ARREST_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_CARDIAC_ARREST_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_CARDIAC_ARREST_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CARDIAC_ARREST_EVENT,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportCardiacArrestEvent"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CARDIAC_ARREST_EVENT,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportCardiacArrestEvent"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -657,9 +639,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -671,30 +652,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportAdvanceDirectives(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportAdvanceDirectives(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportAdvanceDirectives"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportAdvanceDirectives"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -718,9 +698,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -732,30 +711,30 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportAllergiesAndAdverseReactionsSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportAllergiesAndAdverseReactionsSection(
+			PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PATIENT_CARE_REPORT_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportAllergiesAndAdverseReactionsSection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportAllergiesAndAdverseReactionsSection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -779,9 +758,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -793,30 +771,30 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportPastMedicalHistorySection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportPastMedicalHistorySection(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PATIENT_CARE_REPORT_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PAST_MEDICAL_HISTORY_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportPastMedicalHistorySection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PAST_MEDICAL_HISTORY_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportPastMedicalHistorySection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -840,9 +818,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -854,30 +831,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportSocialHistorySection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportSocialHistorySection(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_SOCIAL_HISTORY_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportSocialHistorySection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_SOCIAL_HISTORY_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportSocialHistorySection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -901,9 +877,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_PHYSICAL_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -915,30 +890,30 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportPhysicalAssessmentSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportPhysicalAssessmentSection(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_PHYSICAL_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_PHYSICAL_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_PHYSICAL_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_PHYSICAL_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PATIENT_CARE_REPORT_PHYSICAL_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PHYSICAL_ASSESSMENT_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportPhysicalAssessmentSection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PHYSICAL_ASSESSMENT_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportPhysicalAssessmentSection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -962,9 +937,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -976,30 +950,30 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportMedicationsAdministeredSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportMedicationsAdministeredSection(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PATIENT_CARE_REPORT_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_MEDICATIONS_ADMINISTERED_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportMedicationsAdministeredSection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_MEDICATIONS_ADMINISTERED_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportMedicationsAdministeredSection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1023,9 +997,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_PROCEDURES_PERFORMED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1037,30 +1010,30 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportProceduresPerformedSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportProceduresPerformedSection(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_PROCEDURES_PERFORMED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_PROCEDURES_PERFORMED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_PROCEDURES_PERFORMED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_PROCEDURES_PERFORMED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PATIENT_CARE_REPORT_PROCEDURES_PERFORMED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PROCEDURES_PERFORMED_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportProceduresPerformedSection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PROCEDURES_PERFORMED_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportProceduresPerformedSection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1084,9 +1057,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_PATIENT_CARE_NARRATIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1098,30 +1070,30 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportPatientCareNarrativeSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportPatientCareNarrativeSection(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_PATIENT_CARE_NARRATIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_PATIENT_CARE_NARRATIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_PATIENT_CARE_NARRATIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_PATIENT_CARE_NARRATIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PATIENT_CARE_REPORT_PATIENT_CARE_NARRATIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PATIENT_CARE_NARRATIVE_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportPatientCareNarrativeSection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PATIENT_CARE_NARRATIVE_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportPatientCareNarrativeSection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1145,9 +1117,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_SCENE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1159,30 +1130,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportSceneSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportSceneSection(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_SCENE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_SCENE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_SCENE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_SCENE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_SCENE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_SCENE_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportSceneSection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_SCENE_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportSceneSection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1206,9 +1176,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_DISPATCH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1220,30 +1189,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportDispatchSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportDispatchSection(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_DISPATCH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_DISPATCH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_DISPATCH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_DISPATCH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_DISPATCH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_DISPATCH_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportDispatchSection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_DISPATCH_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportDispatchSection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1267,9 +1235,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1281,30 +1248,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportDispositionSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportDispositionSection(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_DISPOSITION_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportDispositionSection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_DISPOSITION_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportDispositionSection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1328,9 +1294,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_PERSONNEL_ADVERSE_EVENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1342,30 +1307,30 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportPersonnelAdverseEventSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportPersonnelAdverseEventSection(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_PERSONNEL_ADVERSE_EVENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_PERSONNEL_ADVERSE_EVENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_PERSONNEL_ADVERSE_EVENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_PERSONNEL_ADVERSE_EVENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PATIENT_CARE_REPORT_PERSONNEL_ADVERSE_EVENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PERSONNEL_ADVERSE_EVENT_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportPersonnelAdverseEventSection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PERSONNEL_ADVERSE_EVENT_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportPersonnelAdverseEventSection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1389,9 +1354,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_PROTOCOL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1403,30 +1367,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportProtocolSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportProtocolSection(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_PROTOCOL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_PROTOCOL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_PROTOCOL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_PROTOCOL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_PROTOCOL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PROTOCOL_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportProtocolSection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PROTOCOL_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportProtocolSection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1450,9 +1413,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_RESPONSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1464,30 +1426,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportResponseSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportResponseSection(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_RESPONSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_RESPONSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_RESPONSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_RESPONSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_RESPONSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RESPONSE_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportResponseSection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RESPONSE_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportResponseSection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1511,9 +1472,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_SITUATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1525,30 +1485,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportSituationSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportSituationSection(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_SITUATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_SITUATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_SITUATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_SITUATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_SITUATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_SITUATION_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportSituationSection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_SITUATION_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportSituationSection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1572,9 +1531,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_TIMES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1586,30 +1544,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportTimesSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportTimesSection(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_TIMES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_TIMES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_TIMES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_TIMES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_TIMES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_TIMES_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportTimesSection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_TIMES_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportTimesSection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1633,9 +1590,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1647,30 +1603,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportVitalSignsSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportVitalSignsSection(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_VITAL_SIGNS_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportVitalSignsSection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_VITAL_SIGNS_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportVitalSignsSection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1694,9 +1649,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1708,30 +1662,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportAuthorParticipation(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportAuthorParticipation(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_AUTHOR_PARTICIPATION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportAuthorParticipation"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_AUTHOR_PARTICIPATION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportAuthorParticipation"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1755,9 +1708,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1769,30 +1721,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportDocumentationOf(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportDocumentationOf(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_DOCUMENTATION_OF,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportDocumentationOf"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_DOCUMENTATION_OF,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportDocumentationOf"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1816,9 +1767,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1830,30 +1780,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportRelatedDocument(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportRelatedDocument(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RELATED_DOCUMENT,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportRelatedDocument"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RELATED_DOCUMENT,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportRelatedDocument"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1877,9 +1826,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1891,30 +1839,28 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportParticipant(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportParticipant(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PARTICIPANT,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportParticipant"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PARTICIPANT,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportParticipant"), new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1938,9 +1884,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PATIENT_CARE_REPORT_INJURY_INCIDENT_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1952,30 +1897,30 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePatientCareReportInjuryIncidentDescriptionSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePatientCareReportInjuryIncidentDescriptionSection(
+			PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CARE_REPORT_INJURY_INCIDENT_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_PATIENT_CARE_REPORT_INJURY_INCIDENT_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_INJURY_INCIDENT_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_INJURY_INCIDENT_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PATIENT_CARE_REPORT_INJURY_INCIDENT_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_INJURY_INCIDENT_DESCRIPTION_SECTION,
-						 EmspcrPlugin.INSTANCE.getString("PatientCareReportInjuryIncidentDescriptionSection"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_INJURY_INCIDENT_DESCRIPTION_SECTION,
+					EmspcrPlugin.INSTANCE.getString("PatientCareReportInjuryIncidentDescriptionSection"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2006,15 +1951,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSCurrentMedicationSection getCurrentMedication(PatientCareReport patientCareReport) {
+
+	public static EMSCurrentMedicationSection getCurrentMedication(PatientCareReport patientCareReport) {
 		if (GET_CURRENT_MEDICATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(322));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(322));
 			try {
 				GET_CURRENT_MEDICATION__EOCL_QRY = helper.createQuery(GET_CURRENT_MEDICATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2047,15 +1993,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSCardiacArrestEventSection getCardiacArrestEvent(PatientCareReport patientCareReport) {
+
+	public static EMSCardiacArrestEventSection getCardiacArrestEvent(PatientCareReport patientCareReport) {
 		if (GET_CARDIAC_ARREST_EVENT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(323));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(323));
 			try {
 				GET_CARDIAC_ARREST_EVENT__EOCL_QRY = helper.createQuery(GET_CARDIAC_ARREST_EVENT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2088,15 +2035,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSAdvanceDirectivesSection getAdvanceDirectives(PatientCareReport patientCareReport) {
+
+	public static EMSAdvanceDirectivesSection getAdvanceDirectives(PatientCareReport patientCareReport) {
 		if (GET_ADVANCE_DIRECTIVES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(324));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(324));
 			try {
 				GET_ADVANCE_DIRECTIVES__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2129,15 +2077,17 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSAllergiesAndAdverseReactionsSection getAllergiesAndAdverseReactionsSection(PatientCareReport patientCareReport) {
+
+	public static EMSAllergiesAndAdverseReactionsSection getAllergiesAndAdverseReactionsSection(
+			PatientCareReport patientCareReport) {
 		if (GET_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(325));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(325));
 			try {
 				GET_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2170,15 +2120,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSPastMedicalHistorySection getPastMedicalHistorySection(PatientCareReport patientCareReport) {
+
+	public static EMSPastMedicalHistorySection getPastMedicalHistorySection(PatientCareReport patientCareReport) {
 		if (GET_PAST_MEDICAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(326));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(326));
 			try {
 				GET_PAST_MEDICAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_PAST_MEDICAL_HISTORY_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2211,15 +2162,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSSocialHistorySection getSocialHistorySection(PatientCareReport patientCareReport) {
+
+	public static EMSSocialHistorySection getSocialHistorySection(PatientCareReport patientCareReport) {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(327));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(327));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2252,15 +2204,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSPhysicalAssessmentSection getPhysicalAssessmentSection(PatientCareReport patientCareReport) {
+
+	public static EMSPhysicalAssessmentSection getPhysicalAssessmentSection(PatientCareReport patientCareReport) {
 		if (GET_PHYSICAL_ASSESSMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(328));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(328));
 			try {
 				GET_PHYSICAL_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_PHYSICAL_ASSESSMENT_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2293,15 +2246,17 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSMedicationsAdministeredSection getMedicationsAdministeredSection(PatientCareReport patientCareReport) {
+
+	public static EMSMedicationsAdministeredSection getMedicationsAdministeredSection(
+			PatientCareReport patientCareReport) {
 		if (GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(329));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(329));
 			try {
 				GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2334,15 +2289,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSProceduresPerformedSection getProceduresPerformedSection(PatientCareReport patientCareReport) {
+
+	public static EMSProceduresPerformedSection getProceduresPerformedSection(PatientCareReport patientCareReport) {
 		if (GET_PROCEDURES_PERFORMED_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(330));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(330));
 			try {
 				GET_PROCEDURES_PERFORMED_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURES_PERFORMED_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2375,15 +2331,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSPatientCareNarrativeSection getPatientCareNarrativeSection(PatientCareReport patientCareReport) {
+
+	public static EMSPatientCareNarrativeSection getPatientCareNarrativeSection(PatientCareReport patientCareReport) {
 		if (GET_PATIENT_CARE_NARRATIVE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(331));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(331));
 			try {
 				GET_PATIENT_CARE_NARRATIVE_SECTION__EOCL_QRY = helper.createQuery(GET_PATIENT_CARE_NARRATIVE_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2416,15 +2373,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSSceneSection getSceneSection(PatientCareReport patientCareReport) {
+
+	public static EMSSceneSection getSceneSection(PatientCareReport patientCareReport) {
 		if (GET_SCENE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(332));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(332));
 			try {
 				GET_SCENE_SECTION__EOCL_QRY = helper.createQuery(GET_SCENE_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2457,15 +2415,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSDispatchSection getDispatchSection(PatientCareReport patientCareReport) {
+
+	public static EMSDispatchSection getDispatchSection(PatientCareReport patientCareReport) {
 		if (GET_DISPATCH_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(333));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(333));
 			try {
 				GET_DISPATCH_SECTION__EOCL_QRY = helper.createQuery(GET_DISPATCH_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2498,15 +2457,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSDispositionSection getDispositionSection(PatientCareReport patientCareReport) {
+
+	public static EMSDispositionSection getDispositionSection(PatientCareReport patientCareReport) {
 		if (GET_DISPOSITION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(334));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(334));
 			try {
 				GET_DISPOSITION_SECTION__EOCL_QRY = helper.createQuery(GET_DISPOSITION_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2539,15 +2499,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSPersonnelAdverseEventSection getPersonnelAdverseEventSection(PatientCareReport patientCareReport) {
+
+	public static EMSPersonnelAdverseEventSection getPersonnelAdverseEventSection(PatientCareReport patientCareReport) {
 		if (GET_PERSONNEL_ADVERSE_EVENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(335));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(335));
 			try {
 				GET_PERSONNEL_ADVERSE_EVENT_SECTION__EOCL_QRY = helper.createQuery(GET_PERSONNEL_ADVERSE_EVENT_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2580,15 +2541,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSProtocolSection getProtocolSection(PatientCareReport patientCareReport) {
+
+	public static EMSProtocolSection getProtocolSection(PatientCareReport patientCareReport) {
 		if (GET_PROTOCOL_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(336));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(336));
 			try {
 				GET_PROTOCOL_SECTION__EOCL_QRY = helper.createQuery(GET_PROTOCOL_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2621,15 +2583,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSResponseSection getResponseSection(PatientCareReport patientCareReport) {
+
+	public static EMSResponseSection getResponseSection(PatientCareReport patientCareReport) {
 		if (GET_RESPONSE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(337));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(337));
 			try {
 				GET_RESPONSE_SECTION__EOCL_QRY = helper.createQuery(GET_RESPONSE_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2662,15 +2625,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSSituationSection getSituationSection(PatientCareReport patientCareReport) {
+
+	public static EMSSituationSection getSituationSection(PatientCareReport patientCareReport) {
 		if (GET_SITUATION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(338));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(338));
 			try {
 				GET_SITUATION_SECTION__EOCL_QRY = helper.createQuery(GET_SITUATION_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2703,15 +2667,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  TimesSection getTimesSection(PatientCareReport patientCareReport) {
+
+	public static TimesSection getTimesSection(PatientCareReport patientCareReport) {
 		if (GET_TIMES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(339));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(339));
 			try {
 				GET_TIMES_SECTION__EOCL_QRY = helper.createQuery(GET_TIMES_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2744,15 +2709,16 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSVitalSignsSection getVitalSignsSection(PatientCareReport patientCareReport) {
+
+	public static EMSVitalSignsSection getVitalSignsSection(PatientCareReport patientCareReport) {
 		if (GET_VITAL_SIGNS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(340));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(340));
 			try {
 				GET_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2785,15 +2751,17 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EMSInjuryIncidentDescriptionSection getInjuryIncidentDescriptionSection(PatientCareReport patientCareReport) {
+
+	public static EMSInjuryIncidentDescriptionSection getInjuryIncidentDescriptionSection(
+			PatientCareReport patientCareReport) {
 		if (GET_INJURY_INCIDENT_DESCRIPTION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(341));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(341));
 			try {
 				GET_INJURY_INCIDENT_DESCRIPTION_SECTION__EOCL_QRY = helper.createQuery(GET_INJURY_INCIDENT_DESCRIPTION_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2819,9 +2787,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2833,30 +2800,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGeneralHeaderConstraintsTemplateId(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGeneralHeaderConstraintsTemplateId(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2880,9 +2846,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2894,30 +2859,28 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGeneralHeaderConstraintsId(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGeneralHeaderConstraintsId(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_ID,
-						 EmspcrPlugin.INSTANCE.getString("GeneralHeaderConstraintsId"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_ID,
+					EmspcrPlugin.INSTANCE.getString("GeneralHeaderConstraintsId"), new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2941,9 +2904,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2955,30 +2917,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGeneralHeaderConstraintsTitle(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGeneralHeaderConstraintsTitle(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_TITLE,
-						 EmspcrPlugin.INSTANCE.getString("GeneralHeaderConstraintsTitle"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_TITLE,
+					EmspcrPlugin.INSTANCE.getString("GeneralHeaderConstraintsTitle"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -3002,9 +2963,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3016,30 +2976,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGeneralHeaderConstraintsVersionNumber(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGeneralHeaderConstraintsVersionNumber(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER,
-						 EmspcrPlugin.INSTANCE.getString("GeneralHeaderConstraintsVersionNumber"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER,
+					EmspcrPlugin.INSTANCE.getString("GeneralHeaderConstraintsVersionNumber"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -3063,9 +3022,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3077,30 +3035,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGeneralHeaderConstraintsComponentOf(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGeneralHeaderConstraintsComponentOf(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF,
-						 EmspcrPlugin.INSTANCE.getString("GeneralHeaderConstraintsComponentOf"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF,
+					EmspcrPlugin.INSTANCE.getString("GeneralHeaderConstraintsComponentOf"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -3124,9 +3081,8 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3138,30 +3094,29 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGeneralHeaderConstraintsCustodian(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateGeneralHeaderConstraintsCustodian(PatientCareReport patientCareReport,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientCareReport)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_CUSTODIAN,
-						 EmspcrPlugin.INSTANCE.getString("GeneralHeaderConstraintsCustodian"),
-						 new Object [] { patientCareReport }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_CUSTODIAN,
+					EmspcrPlugin.INSTANCE.getString("GeneralHeaderConstraintsCustodian"),
+					new Object[] { patientCareReport }));
 			}
-			 
+
 			return false;
 		}
 		return true;

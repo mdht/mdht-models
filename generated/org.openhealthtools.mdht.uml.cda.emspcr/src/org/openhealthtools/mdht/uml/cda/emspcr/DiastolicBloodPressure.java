@@ -83,10 +83,11 @@ public interface DiastolicBloodPressure extends VitalSignObservation {
 	 * @generated
 	 */
 	public DiastolicBloodPressure init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DiastolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DiastolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DiastolicBloodPressure

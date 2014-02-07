@@ -65,7 +65,8 @@ public class EMSPhysicalAssessmentSectionImpl extends PhysicalExamSectionImpl im
 	 * @generated
 	 */
 	public boolean validateEMSPhysicalAssessmentSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionCodeP(this, diagnostics, context);
+		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -74,7 +75,8 @@ public class EMSPhysicalAssessmentSectionImpl extends PhysicalExamSectionImpl im
 	 * @generated
 	 */
 	public boolean validateEMSPhysicalAssessmentSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionCode(this, diagnostics, context);
+		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -83,7 +85,8 @@ public class EMSPhysicalAssessmentSectionImpl extends PhysicalExamSectionImpl im
 	 * @generated
 	 */
 	public boolean validateEMSPhysicalAssessmentSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionTitle(this, diagnostics, context);
+		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -92,7 +95,8 @@ public class EMSPhysicalAssessmentSectionImpl extends PhysicalExamSectionImpl im
 	 * @generated
 	 */
 	public boolean validateEMSPhysicalAssessmentSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionText(this, diagnostics, context);
+		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +104,10 @@ public class EMSPhysicalAssessmentSectionImpl extends PhysicalExamSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(this, diagnostics, context);
+	public boolean validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -109,8 +115,10 @@ public class EMSPhysicalAssessmentSectionImpl extends PhysicalExamSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPhysicalAssessmentSectionPatientPregnancy(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionPatientPregnancy(this, diagnostics, context);
+	public boolean validateEMSPhysicalAssessmentSectionPatientPregnancy(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionPatientPregnancy(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +126,10 @@ public class EMSPhysicalAssessmentSectionImpl extends PhysicalExamSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPhysicalAssessmentSectionLastOralIntake(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionLastOralIntake(this, diagnostics, context);
+	public boolean validateEMSPhysicalAssessmentSectionLastOralIntake(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionLastOralIntake(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -127,8 +137,10 @@ public class EMSPhysicalAssessmentSectionImpl extends PhysicalExamSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPhysicalAssessmentSectionPatientAge(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionPatientAge(this, diagnostics, context);
+	public boolean validateEMSPhysicalAssessmentSectionPatientAge(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionPatientAge(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -136,8 +148,10 @@ public class EMSPhysicalAssessmentSectionImpl extends PhysicalExamSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPhysicalAssessmentSectionThrombolyticContraindications(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionThrombolyticContraindications(this, diagnostics, context);
+	public boolean validateEMSPhysicalAssessmentSectionThrombolyticContraindications(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionThrombolyticContraindications(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -145,8 +159,10 @@ public class EMSPhysicalAssessmentSectionImpl extends PhysicalExamSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPhysicalAssessmentSectionBarriersToPatientCare(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionBarriersToPatientCare(this, diagnostics, context);
+	public boolean validateEMSPhysicalAssessmentSectionBarriersToPatientCare(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionBarriersToPatientCare(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -218,16 +234,19 @@ public class EMSPhysicalAssessmentSectionImpl extends PhysicalExamSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EMSPhysicalAssessmentSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EMSPhysicalAssessmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //EMSPhysicalAssessmentSectionImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EMSPhysicalAssessmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // EMSPhysicalAssessmentSectionImpl

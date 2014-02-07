@@ -70,9 +70,8 @@ public class TraumaCenterCriteriaOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TRAUMA_CENTER_CRITERIA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,30 +83,29 @@ public class TraumaCenterCriteriaOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTraumaCenterCriteriaTemplateId(TraumaCenterCriteria traumaCenterCriteria, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTraumaCenterCriteriaTemplateId(TraumaCenterCriteria traumaCenterCriteria,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_TRAUMA_CENTER_CRITERIA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRAUMA_CENTER_CRITERIA);
 			try {
 				VALIDATE_TRAUMA_CENTER_CRITERIA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRAUMA_CENTER_CRITERIA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRAUMA_CENTER_CRITERIA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(traumaCenterCriteria)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TRAUMA_CENTER_CRITERIA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			traumaCenterCriteria)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TRAUMA_CENTER_CRITERIA__TRAUMA_CENTER_CRITERIA_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("TraumaCenterCriteriaTemplateId"),
-						 new Object [] { traumaCenterCriteria }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TRAUMA_CENTER_CRITERIA__TRAUMA_CENTER_CRITERIA_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("TraumaCenterCriteriaTemplateId"),
+					new Object[] { traumaCenterCriteria }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -131,9 +129,8 @@ public class TraumaCenterCriteriaOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TRAUMA_CENTER_CRITERIA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,30 +142,29 @@ public class TraumaCenterCriteriaOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTraumaCenterCriteriaMoodCode(TraumaCenterCriteria traumaCenterCriteria, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTraumaCenterCriteriaMoodCode(TraumaCenterCriteria traumaCenterCriteria,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_TRAUMA_CENTER_CRITERIA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRAUMA_CENTER_CRITERIA);
 			try {
 				VALIDATE_TRAUMA_CENTER_CRITERIA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRAUMA_CENTER_CRITERIA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRAUMA_CENTER_CRITERIA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(traumaCenterCriteria)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TRAUMA_CENTER_CRITERIA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			traumaCenterCriteria)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TRAUMA_CENTER_CRITERIA__TRAUMA_CENTER_CRITERIA_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("TraumaCenterCriteriaMoodCode"),
-						 new Object [] { traumaCenterCriteria }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TRAUMA_CENTER_CRITERIA__TRAUMA_CENTER_CRITERIA_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("TraumaCenterCriteriaMoodCode"),
+					new Object[] { traumaCenterCriteria }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -182,9 +178,9 @@ public class TraumaCenterCriteriaOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRAUMA_CENTER_CRITERIA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67495-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_TRAUMA_CENTER_CRITERIA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67495-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTraumaCenterCriteriaCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Code</em>}' invariant operation.
@@ -194,9 +190,8 @@ public class TraumaCenterCriteriaOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TRAUMA_CENTER_CRITERIA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +203,28 @@ public class TraumaCenterCriteriaOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTraumaCenterCriteriaCode(TraumaCenterCriteria traumaCenterCriteria, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTraumaCenterCriteriaCode(TraumaCenterCriteria traumaCenterCriteria,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_TRAUMA_CENTER_CRITERIA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRAUMA_CENTER_CRITERIA);
 			try {
 				VALIDATE_TRAUMA_CENTER_CRITERIA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRAUMA_CENTER_CRITERIA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRAUMA_CENTER_CRITERIA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(traumaCenterCriteria)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TRAUMA_CENTER_CRITERIA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			traumaCenterCriteria)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TRAUMA_CENTER_CRITERIA__TRAUMA_CENTER_CRITERIA_CODE,
-						 EmspcrPlugin.INSTANCE.getString("TraumaCenterCriteriaCode"),
-						 new Object [] { traumaCenterCriteria }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TRAUMA_CENTER_CRITERIA__TRAUMA_CENTER_CRITERIA_CODE,
+					EmspcrPlugin.INSTANCE.getString("TraumaCenterCriteriaCode"), new Object[] { traumaCenterCriteria }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -245,9 +238,9 @@ public class TraumaCenterCriteriaOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRAUMA_CENTER_CRITERIA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17337-9' or value.code = 'LA17338-7' or value.code = 'LA17339-5' or value.code = 'LA17340-3' or value.code = 'LA17341-1' or value.code = 'LA17342-9' or value.code = 'LA17343-7' or value.code = 'LA17344-5' or value.code = 'LA17345-2' or value.code = 'LA17346-0' or value.code = 'LA17347-8')))";
+	protected static final String VALIDATE_TRAUMA_CENTER_CRITERIA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17337-9' or value.code = 'LA17338-7' or value.code = 'LA17339-5' or value.code = 'LA17340-3' or value.code = 'LA17341-1' or value.code = 'LA17342-9' or value.code = 'LA17343-7' or value.code = 'LA17344-5' or value.code = 'LA17345-2' or value.code = 'LA17346-0' or value.code = 'LA17347-8')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTraumaCenterCriteriaValue(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Value</em>}' invariant operation.
@@ -257,9 +250,8 @@ public class TraumaCenterCriteriaOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_TRAUMA_CENTER_CRITERIA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,30 +263,28 @@ public class TraumaCenterCriteriaOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateTraumaCenterCriteriaValue(TraumaCenterCriteria traumaCenterCriteria, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateTraumaCenterCriteriaValue(TraumaCenterCriteria traumaCenterCriteria,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_TRAUMA_CENTER_CRITERIA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRAUMA_CENTER_CRITERIA);
 			try {
 				VALIDATE_TRAUMA_CENTER_CRITERIA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRAUMA_CENTER_CRITERIA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRAUMA_CENTER_CRITERIA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(traumaCenterCriteria)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TRAUMA_CENTER_CRITERIA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			traumaCenterCriteria)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.TRAUMA_CENTER_CRITERIA__TRAUMA_CENTER_CRITERIA_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("TraumaCenterCriteriaValue"),
-						 new Object [] { traumaCenterCriteria }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.TRAUMA_CENTER_CRITERIA__TRAUMA_CENTER_CRITERIA_VALUE,
+					EmspcrPlugin.INSTANCE.getString("TraumaCenterCriteriaValue"), new Object[] { traumaCenterCriteria }));
 			}
-			 
+
 			return false;
 		}
 		return true;

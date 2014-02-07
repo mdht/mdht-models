@@ -143,10 +143,11 @@ public interface EyeAssessment extends Observation {
 	 * @generated
 	 */
 	public EyeAssessment init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EyeAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EyeAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EyeAssessment

@@ -107,10 +107,11 @@ public interface SkinAssessment extends Observation {
 	 * @generated
 	 */
 	public SkinAssessment init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SkinAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SkinAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SkinAssessment

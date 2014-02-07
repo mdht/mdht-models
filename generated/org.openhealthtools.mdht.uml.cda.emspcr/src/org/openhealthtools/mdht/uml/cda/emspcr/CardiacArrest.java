@@ -96,7 +96,8 @@ public interface CardiacArrest extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateCardiacArrestSpontaneousCirculationRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCardiacArrestSpontaneousCirculationRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -200,10 +201,11 @@ public interface CardiacArrest extends Observation {
 	 * @generated
 	 */
 	public CardiacArrest init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CardiacArrest init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CardiacArrest init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CardiacArrest

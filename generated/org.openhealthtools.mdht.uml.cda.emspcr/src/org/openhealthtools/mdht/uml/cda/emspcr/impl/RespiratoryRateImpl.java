@@ -104,16 +104,19 @@ public class RespiratoryRateImpl extends VitalSignObservationImpl implements Res
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public RespiratoryRate init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public RespiratoryRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //RespiratoryRateImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RespiratoryRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // RespiratoryRateImpl

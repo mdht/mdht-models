@@ -73,9 +73,8 @@ public class ResponseDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_RESPONSE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,30 +86,28 @@ public class ResponseDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseDelayTemplateId(ResponseDelay responseDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateResponseDelayTemplateId(ResponseDelay responseDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_RESPONSE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_DELAY);
 			try {
 				VALIDATE_RESPONSE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(responseDelay)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			responseDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.RESPONSE_DELAY__RESPONSE_DELAY_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("ResponseDelayTemplateId"),
-						 new Object [] { responseDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.RESPONSE_DELAY__RESPONSE_DELAY_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("ResponseDelayTemplateId"), new Object[] { responseDelay }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -134,9 +131,8 @@ public class ResponseDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_RESPONSE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,30 +144,28 @@ public class ResponseDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseDelayMoodCode(ResponseDelay responseDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateResponseDelayMoodCode(ResponseDelay responseDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_RESPONSE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_DELAY);
 			try {
 				VALIDATE_RESPONSE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(responseDelay)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			responseDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.RESPONSE_DELAY__RESPONSE_DELAY_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ResponseDelayMoodCode"),
-						 new Object [] { responseDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.RESPONSE_DELAY__RESPONSE_DELAY_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("ResponseDelayMoodCode"), new Object[] { responseDelay }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -195,9 +189,8 @@ public class ResponseDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_RESPONSE_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,30 +202,27 @@ public class ResponseDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseDelayCodeP(ResponseDelay responseDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateResponseDelayCodeP(ResponseDelay responseDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_RESPONSE_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_DELAY);
 			try {
 				VALIDATE_RESPONSE_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(responseDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.RESPONSE_DELAY__RESPONSE_DELAY_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("ResponseDelayCodeP"),
-						 new Object [] { responseDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.RESPONSE_DELAY__RESPONSE_DELAY_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("ResponseDelayCodeP"), new Object[] { responseDelay }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -244,7 +234,7 @@ public class ResponseDelayOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(responseDelay);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -258,9 +248,9 @@ public class ResponseDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RESPONSE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67557-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_RESPONSE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67557-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateResponseDelayCode(ResponseDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Delay Code</em>}' invariant operation.
@@ -270,9 +260,8 @@ public class ResponseDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_RESPONSE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,36 +273,35 @@ public class ResponseDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseDelayCode(ResponseDelay responseDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.ResponseDelayCodeP");
+
+	public static boolean validateResponseDelayCode(ResponseDelay responseDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.ResponseDelayCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(responseDelay)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_RESPONSE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_DELAY);
 			try {
 				VALIDATE_RESPONSE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(responseDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.RESPONSE_DELAY__RESPONSE_DELAY_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ResponseDelayCode"),
-						 new Object [] { responseDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.RESPONSE_DELAY__RESPONSE_DELAY_CODE,
+					EmspcrPlugin.INSTANCE.getString("ResponseDelayCode"), new Object[] { responseDelay }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -327,9 +315,9 @@ public class ResponseDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RESPONSE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA17583-8' or value.code = 'LA17585-3' or value.code = 'LA17586-1' or value.code = 'LA17587-9' or value.code = 'LA17588-7' or value.code = 'LA17590-3' or value.code = 'LA17591-1' or value.code = 'LA17592-9' or value.code = 'LA17593-7' or value.code = 'LA17594-5' or value.code = 'LA18081-2' or value.code = 'LA18270-1' or value.code = 'LA18271-9' or value.code = 'LA18301-4')))";
+	protected static final String VALIDATE_RESPONSE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA17583-8' or value.code = 'LA17585-3' or value.code = 'LA17586-1' or value.code = 'LA17587-9' or value.code = 'LA17588-7' or value.code = 'LA17590-3' or value.code = 'LA17591-1' or value.code = 'LA17592-9' or value.code = 'LA17593-7' or value.code = 'LA17594-5' or value.code = 'LA18081-2' or value.code = 'LA18270-1' or value.code = 'LA18271-9' or value.code = 'LA18301-4')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateResponseDelayValue(ResponseDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Delay Value</em>}' invariant operation.
@@ -339,9 +327,8 @@ public class ResponseDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_RESPONSE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -353,30 +340,27 @@ public class ResponseDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseDelayValue(ResponseDelay responseDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateResponseDelayValue(ResponseDelay responseDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_RESPONSE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_DELAY);
 			try {
 				VALIDATE_RESPONSE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(responseDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.RESPONSE_DELAY__RESPONSE_DELAY_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("ResponseDelayValue"),
-						 new Object [] { responseDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.RESPONSE_DELAY__RESPONSE_DELAY_VALUE,
+					EmspcrPlugin.INSTANCE.getString("ResponseDelayValue"), new Object[] { responseDelay }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -400,9 +384,8 @@ public class ResponseDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_RESPONSE_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,30 +397,27 @@ public class ResponseDelayOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseDelayValueP(ResponseDelay responseDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateResponseDelayValueP(ResponseDelay responseDelay, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_RESPONSE_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_DELAY);
 			try {
 				VALIDATE_RESPONSE_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(responseDelay)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.RESPONSE_DELAY__RESPONSE_DELAY_VALUE_P,
-						 EmspcrPlugin.INSTANCE.getString("ResponseDelayValueP"),
-						 new Object [] { responseDelay }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.RESPONSE_DELAY__RESPONSE_DELAY_VALUE_P,
+					EmspcrPlugin.INSTANCE.getString("ResponseDelayValueP"), new Object[] { responseDelay }));
 			}
-			 
+
 			return false;
 		}
 		return true;

@@ -131,10 +131,11 @@ public interface ExtremitiesAssessment extends Observation {
 	 * @generated
 	 */
 	public ExtremitiesAssessment init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ExtremitiesAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExtremitiesAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ExtremitiesAssessment

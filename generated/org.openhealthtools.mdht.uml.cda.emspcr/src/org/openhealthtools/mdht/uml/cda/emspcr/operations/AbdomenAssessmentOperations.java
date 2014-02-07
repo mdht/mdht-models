@@ -72,9 +72,8 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ABDOMEN_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,30 +85,28 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAbdomenAssessmentTemplateId(AbdomenAssessment abdomenAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAbdomenAssessmentTemplateId(AbdomenAssessment abdomenAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ABDOMEN_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ABDOMEN_ASSESSMENT);
 			try {
 				VALIDATE_ABDOMEN_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABDOMEN_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABDOMEN_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(abdomenAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ABDOMEN_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			abdomenAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ABDOMEN_ASSESSMENT__ABDOMEN_ASSESSMENT_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("AbdomenAssessmentTemplateId"),
-						 new Object [] { abdomenAssessment }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ABDOMEN_ASSESSMENT__ABDOMEN_ASSESSMENT_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("AbdomenAssessmentTemplateId"), new Object[] { abdomenAssessment }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -133,9 +130,8 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ABDOMEN_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,30 +143,28 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAbdomenAssessmentMoodCode(AbdomenAssessment abdomenAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAbdomenAssessmentMoodCode(AbdomenAssessment abdomenAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ABDOMEN_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ABDOMEN_ASSESSMENT);
 			try {
 				VALIDATE_ABDOMEN_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABDOMEN_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABDOMEN_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(abdomenAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ABDOMEN_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			abdomenAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ABDOMEN_ASSESSMENT__ABDOMEN_ASSESSMENT_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("AbdomenAssessmentMoodCode"),
-						 new Object [] { abdomenAssessment }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ABDOMEN_ASSESSMENT__ABDOMEN_ASSESSMENT_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("AbdomenAssessmentMoodCode"), new Object[] { abdomenAssessment }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -184,9 +178,9 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ABDOMEN_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67530-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_ABDOMEN_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67530-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAbdomenAssessmentCode(AbdomenAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Abdomen Assessment Code</em>}' invariant operation.
@@ -196,9 +190,8 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ABDOMEN_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,30 +203,28 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAbdomenAssessmentCode(AbdomenAssessment abdomenAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAbdomenAssessmentCode(AbdomenAssessment abdomenAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ABDOMEN_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ABDOMEN_ASSESSMENT);
 			try {
 				VALIDATE_ABDOMEN_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABDOMEN_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABDOMEN_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(abdomenAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ABDOMEN_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			abdomenAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ABDOMEN_ASSESSMENT__ABDOMEN_ASSESSMENT_CODE,
-						 EmspcrPlugin.INSTANCE.getString("AbdomenAssessmentCode"),
-						 new Object [] { abdomenAssessment }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ABDOMEN_ASSESSMENT__ABDOMEN_ASSESSMENT_CODE,
+					EmspcrPlugin.INSTANCE.getString("AbdomenAssessmentCode"), new Object[] { abdomenAssessment }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -257,9 +248,8 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ABDOMEN_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,30 +261,29 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAbdomenAssessmentEffectiveTime(AbdomenAssessment abdomenAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAbdomenAssessmentEffectiveTime(AbdomenAssessment abdomenAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ABDOMEN_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ABDOMEN_ASSESSMENT);
 			try {
 				VALIDATE_ABDOMEN_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABDOMEN_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABDOMEN_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(abdomenAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ABDOMEN_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			abdomenAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ABDOMEN_ASSESSMENT__ABDOMEN_ASSESSMENT_EFFECTIVE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("AbdomenAssessmentEffectiveTime"),
-						 new Object [] { abdomenAssessment }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ABDOMEN_ASSESSMENT__ABDOMEN_ASSESSMENT_EFFECTIVE_TIME,
+					EmspcrPlugin.INSTANCE.getString("AbdomenAssessmentEffectiveTime"),
+					new Object[] { abdomenAssessment }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -308,9 +297,9 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ABDOMEN_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17208-2' or value.code = 'LA17209-0' or value.code = 'LA17213-2' or value.code = 'LA17214-0' or value.code = 'LA17215-7' or value.code = 'LA17220-7' or value.code = 'LA17242-1' or value.code = 'LA17243-9' or value.code = 'LA17244-7' or value.code = 'LA17245-4' or value.code = 'LA17246-2' or value.code = 'LA17247-0' or value.code = 'LA17709-9' or value.code = 'LA18220-6' or value.code = 'LA18221-4' or value.code = 'LA18222-2' or value.code = 'LA18223-0' or value.code = 'LA18224-8' or value.code = 'LA18226-3' or value.code = 'LA18247-9' or value.code = 'LA18248-7' or value.code = 'LA6626-1' or value.code = 'LA6630-3' or value.code = 'LA7410-9' or value.code = 'LA7452-1' or value.code = 'LA7460-4')))";
+	protected static final String VALIDATE_ABDOMEN_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17208-2' or value.code = 'LA17209-0' or value.code = 'LA17213-2' or value.code = 'LA17214-0' or value.code = 'LA17215-7' or value.code = 'LA17220-7' or value.code = 'LA17242-1' or value.code = 'LA17243-9' or value.code = 'LA17244-7' or value.code = 'LA17245-4' or value.code = 'LA17246-2' or value.code = 'LA17247-0' or value.code = 'LA17709-9' or value.code = 'LA18220-6' or value.code = 'LA18221-4' or value.code = 'LA18222-2' or value.code = 'LA18223-0' or value.code = 'LA18224-8' or value.code = 'LA18226-3' or value.code = 'LA18247-9' or value.code = 'LA18248-7' or value.code = 'LA6626-1' or value.code = 'LA6630-3' or value.code = 'LA7410-9' or value.code = 'LA7452-1' or value.code = 'LA7460-4')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAbdomenAssessmentValue(AbdomenAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Abdomen Assessment Value</em>}' invariant operation.
@@ -320,9 +309,8 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ABDOMEN_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -334,30 +322,28 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAbdomenAssessmentValue(AbdomenAssessment abdomenAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAbdomenAssessmentValue(AbdomenAssessment abdomenAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ABDOMEN_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ABDOMEN_ASSESSMENT);
 			try {
 				VALIDATE_ABDOMEN_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABDOMEN_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABDOMEN_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(abdomenAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ABDOMEN_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			abdomenAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ABDOMEN_ASSESSMENT__ABDOMEN_ASSESSMENT_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("AbdomenAssessmentValue"),
-						 new Object [] { abdomenAssessment }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ABDOMEN_ASSESSMENT__ABDOMEN_ASSESSMENT_VALUE,
+					EmspcrPlugin.INSTANCE.getString("AbdomenAssessmentValue"), new Object[] { abdomenAssessment }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -371,9 +357,9 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ABDOMEN_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->size() = 1 and self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA12698-9' or value.code = 'LA18721-3' or value.code = 'LA18722-1' or value.code = 'LA18723-9' or value.code = 'LA18724-7' or value.code = 'LA18725-4')))";
+	protected static final String VALIDATE_ABDOMEN_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->size() = 1 and self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA12698-9' or value.code = 'LA18721-3' or value.code = 'LA18722-1' or value.code = 'LA18723-9' or value.code = 'LA18724-7' or value.code = 'LA18725-4')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAbdomenAssessmentTargetSiteCode(AbdomenAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Abdomen Assessment Target Site Code</em>}' invariant operation.
@@ -383,9 +369,8 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ABDOMEN_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -397,30 +382,29 @@ public class AbdomenAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAbdomenAssessmentTargetSiteCode(AbdomenAssessment abdomenAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAbdomenAssessmentTargetSiteCode(AbdomenAssessment abdomenAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ABDOMEN_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ABDOMEN_ASSESSMENT);
 			try {
 				VALIDATE_ABDOMEN_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABDOMEN_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABDOMEN_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(abdomenAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ABDOMEN_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			abdomenAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ABDOMEN_ASSESSMENT__ABDOMEN_ASSESSMENT_TARGET_SITE_CODE,
-						 EmspcrPlugin.INSTANCE.getString("AbdomenAssessmentTargetSiteCode"),
-						 new Object [] { abdomenAssessment }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ABDOMEN_ASSESSMENT__ABDOMEN_ASSESSMENT_TARGET_SITE_CODE,
+					EmspcrPlugin.INSTANCE.getString("AbdomenAssessmentTargetSiteCode"),
+					new Object[] { abdomenAssessment }));
 			}
-			 
+
 			return false;
 		}
 		return true;

@@ -39,7 +39,8 @@ public interface EMSAllergiesAndAdverseReactionsSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.17.3.10.1.13\')'"
 	 * @generated
 	 */
-	boolean validateEMSAllergiesAndAdverseReactionsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSAllergiesAndAdverseReactionsSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,7 +88,8 @@ public interface EMSAllergiesAndAdverseReactionsSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::ExistenceOfDrugAllergyObservation))'"
 	 * @generated
 	 */
-	boolean validateEMSAllergiesAndAdverseReactionsSectionObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSAllergiesAndAdverseReactionsSectionObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -99,7 +101,8 @@ public interface EMSAllergiesAndAdverseReactionsSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(emspcr::DrugAllergy) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	 * @generated
 	 */
-	boolean validateEMSAllergiesAndAdverseReactionsSectionDrugAllergyProblemAct(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSAllergiesAndAdverseReactionsSectionDrugAllergyProblemAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -111,7 +114,8 @@ public interface EMSAllergiesAndAdverseReactionsSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(emspcr::NonDrugAllergyOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	 * @generated
 	 */
-	boolean validateEMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -146,10 +150,11 @@ public interface EMSAllergiesAndAdverseReactionsSection extends Section {
 	 * @generated
 	 */
 	public EMSAllergiesAndAdverseReactionsSection init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EMSAllergiesAndAdverseReactionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EMSAllergiesAndAdverseReactionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSAllergiesAndAdverseReactionsSection

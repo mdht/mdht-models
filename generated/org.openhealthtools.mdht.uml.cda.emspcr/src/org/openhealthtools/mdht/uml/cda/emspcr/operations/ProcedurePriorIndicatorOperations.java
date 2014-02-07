@@ -72,9 +72,8 @@ public class ProcedurePriorIndicatorOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROCEDURE_PRIOR_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,30 +85,29 @@ public class ProcedurePriorIndicatorOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedurePriorIndicatorTemplateId(ProcedurePriorIndicator procedurePriorIndicator, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProcedurePriorIndicatorTemplateId(ProcedurePriorIndicator procedurePriorIndicator,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_PRIOR_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PRIOR_INDICATOR);
 			try {
 				VALIDATE_PROCEDURE_PRIOR_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PRIOR_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PRIOR_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedurePriorIndicator)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PRIOR_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedurePriorIndicator)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_PRIOR_INDICATOR__PROCEDURE_PRIOR_INDICATOR_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("ProcedurePriorIndicatorTemplateId"),
-						 new Object [] { procedurePriorIndicator }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_PRIOR_INDICATOR__PROCEDURE_PRIOR_INDICATOR_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("ProcedurePriorIndicatorTemplateId"),
+					new Object[] { procedurePriorIndicator }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -133,9 +131,8 @@ public class ProcedurePriorIndicatorOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROCEDURE_PRIOR_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,30 +144,29 @@ public class ProcedurePriorIndicatorOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedurePriorIndicatorMoodCode(ProcedurePriorIndicator procedurePriorIndicator, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProcedurePriorIndicatorMoodCode(ProcedurePriorIndicator procedurePriorIndicator,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_PRIOR_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PRIOR_INDICATOR);
 			try {
 				VALIDATE_PROCEDURE_PRIOR_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PRIOR_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PRIOR_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedurePriorIndicator)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PRIOR_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedurePriorIndicator)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_PRIOR_INDICATOR__PROCEDURE_PRIOR_INDICATOR_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ProcedurePriorIndicatorMoodCode"),
-						 new Object [] { procedurePriorIndicator }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_PRIOR_INDICATOR__PROCEDURE_PRIOR_INDICATOR_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("ProcedurePriorIndicatorMoodCode"),
+					new Object[] { procedurePriorIndicator }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -194,9 +190,8 @@ public class ProcedurePriorIndicatorOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROCEDURE_PRIOR_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +203,29 @@ public class ProcedurePriorIndicatorOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedurePriorIndicatorCodeP(ProcedurePriorIndicator procedurePriorIndicator, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProcedurePriorIndicatorCodeP(ProcedurePriorIndicator procedurePriorIndicator,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_PRIOR_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PRIOR_INDICATOR);
 			try {
 				VALIDATE_PROCEDURE_PRIOR_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PRIOR_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PRIOR_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedurePriorIndicator)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PRIOR_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedurePriorIndicator)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_PRIOR_INDICATOR__PROCEDURE_PRIOR_INDICATOR_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("ProcedurePriorIndicatorCodeP"),
-						 new Object [] { procedurePriorIndicator }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_PRIOR_INDICATOR__PROCEDURE_PRIOR_INDICATOR_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("ProcedurePriorIndicatorCodeP"),
+					new Object[] { procedurePriorIndicator }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -243,7 +237,7 @@ public class ProcedurePriorIndicatorOperations extends ClinicalStatementOperatio
 				}
 				passToken.add(procedurePriorIndicator);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -257,9 +251,9 @@ public class ProcedurePriorIndicatorOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_PRIOR_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67542-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PROCEDURE_PRIOR_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67542-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedurePriorIndicatorCode(ProcedurePriorIndicator, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Prior Indicator Code</em>}' invariant operation.
@@ -269,9 +263,8 @@ public class ProcedurePriorIndicatorOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROCEDURE_PRIOR_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -283,36 +276,37 @@ public class ProcedurePriorIndicatorOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedurePriorIndicatorCode(ProcedurePriorIndicator procedurePriorIndicator, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.ProcedurePriorIndicatorCodeP");
+
+	public static boolean validateProcedurePriorIndicatorCode(ProcedurePriorIndicator procedurePriorIndicator,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.ProcedurePriorIndicatorCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(procedurePriorIndicator)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_PROCEDURE_PRIOR_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PRIOR_INDICATOR);
 			try {
 				VALIDATE_PROCEDURE_PRIOR_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PRIOR_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PRIOR_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedurePriorIndicator)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PRIOR_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedurePriorIndicator)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_PRIOR_INDICATOR__PROCEDURE_PRIOR_INDICATOR_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ProcedurePriorIndicatorCode"),
-						 new Object [] { procedurePriorIndicator }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_PRIOR_INDICATOR__PROCEDURE_PRIOR_INDICATOR_CODE,
+					EmspcrPlugin.INSTANCE.getString("ProcedurePriorIndicatorCode"),
+					new Object[] { procedurePriorIndicator }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -336,9 +330,8 @@ public class ProcedurePriorIndicatorOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROCEDURE_PRIOR_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -350,30 +343,29 @@ public class ProcedurePriorIndicatorOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedurePriorIndicatorValue(ProcedurePriorIndicator procedurePriorIndicator, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProcedurePriorIndicatorValue(ProcedurePriorIndicator procedurePriorIndicator,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_PRIOR_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PRIOR_INDICATOR);
 			try {
 				VALIDATE_PROCEDURE_PRIOR_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PRIOR_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PRIOR_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedurePriorIndicator)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PRIOR_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedurePriorIndicator)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_PRIOR_INDICATOR__PROCEDURE_PRIOR_INDICATOR_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("ProcedurePriorIndicatorValue"),
-						 new Object [] { procedurePriorIndicator }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_PRIOR_INDICATOR__PROCEDURE_PRIOR_INDICATOR_VALUE,
+					EmspcrPlugin.INSTANCE.getString("ProcedurePriorIndicatorValue"),
+					new Object[] { procedurePriorIndicator }));
 			}
-			 
+
 			return false;
 		}
 		return true;

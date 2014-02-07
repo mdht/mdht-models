@@ -58,8 +58,10 @@ public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReturnOfSpontaneousCirculationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationTemplateId(this, diagnostics, context);
+	public boolean validateReturnOfSpontaneousCirculationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +69,10 @@ public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReturnOfSpontaneousCirculationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationMoodCode(this, diagnostics, context);
+	public boolean validateReturnOfSpontaneousCirculationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +81,8 @@ public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateReturnOfSpontaneousCirculationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationCode(this, diagnostics, context);
+		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,7 +91,8 @@ public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateReturnOfSpontaneousCirculationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationValue(this, diagnostics, context);
+		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,7 +101,8 @@ public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateReturnOfSpontaneousCirculationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationValueP(this, diagnostics, context);
+		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationValueP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -104,15 +111,16 @@ public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public ReturnOfSpontaneousCirculation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ReturnOfSpontaneousCirculation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ReturnOfSpontaneousCirculationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReturnOfSpontaneousCirculation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ReturnOfSpontaneousCirculationImpl

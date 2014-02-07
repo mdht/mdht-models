@@ -83,10 +83,11 @@ public interface TraumaCenterCriteria extends Observation {
 	 * @generated
 	 */
 	public TraumaCenterCriteria init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TraumaCenterCriteria init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TraumaCenterCriteria init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TraumaCenterCriteria

@@ -95,10 +95,11 @@ public interface GlasgowTotal extends Observation {
 	 * @generated
 	 */
 	public GlasgowTotal init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public GlasgowTotal init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GlasgowTotal init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GlasgowTotal

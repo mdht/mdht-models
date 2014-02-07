@@ -83,10 +83,11 @@ public interface CardiacArrestWithTiming extends Observation {
 	 * @generated
 	 */
 	public CardiacArrestWithTiming init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CardiacArrestWithTiming init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CardiacArrestWithTiming init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CardiacArrestWithTiming

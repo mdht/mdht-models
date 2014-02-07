@@ -96,9 +96,8 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -110,30 +109,29 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSDispositionSectionTemplateId(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSDispositionSectionTemplateId(EMSDispositionSection emsDispositionSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_DISPOSITION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
 			try {
 				VALIDATE_EMS_DISPOSITION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsDispositionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionTemplateId"),
-						 new Object [] { emsDispositionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionTemplateId"),
+					new Object[] { emsDispositionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -147,9 +145,9 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMS_DISPOSITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '67661-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EMS_DISPOSITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '67661-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEMSDispositionSectionCode(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Code</em>}' invariant operation.
@@ -159,9 +157,8 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,30 +170,29 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSDispositionSectionCode(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSDispositionSectionCode(EMSDispositionSection emsDispositionSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_DISPOSITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
 			try {
 				VALIDATE_EMS_DISPOSITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsDispositionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_CODE,
-						 EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionCode"),
-						 new Object [] { emsDispositionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_CODE,
+					EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionCode"),
+					new Object[] { emsDispositionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -220,9 +216,8 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -234,30 +229,29 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSDispositionSectionCodeP(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSDispositionSectionCodeP(EMSDispositionSection emsDispositionSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_DISPOSITION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
 			try {
 				VALIDATE_EMS_DISPOSITION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsDispositionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionCodeP"),
-						 new Object [] { emsDispositionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionCodeP"),
+					new Object[] { emsDispositionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -281,9 +275,8 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -295,30 +288,29 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSDispositionSectionTitle(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSDispositionSectionTitle(EMSDispositionSection emsDispositionSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_DISPOSITION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
 			try {
 				VALIDATE_EMS_DISPOSITION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsDispositionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_TITLE,
-						 EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionTitle"),
-						 new Object [] { emsDispositionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_TITLE,
+					EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionTitle"),
+					new Object[] { emsDispositionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -342,9 +334,8 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -356,30 +347,29 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSDispositionSectionText(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSDispositionSectionText(EMSDispositionSection emsDispositionSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_DISPOSITION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
 			try {
 				VALIDATE_EMS_DISPOSITION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsDispositionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_TEXT,
-						 EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionText"),
-						 new Object [] { emsDispositionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_TEXT,
+					EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionText"),
+					new Object[] { emsDispositionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -403,9 +393,8 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_NUMBER_OF_PATIENTS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -417,30 +406,30 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSDispositionSectionNumberOfPatientsObservation(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSDispositionSectionNumberOfPatientsObservation(
+			EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_DISPOSITION_SECTION_NUMBER_OF_PATIENTS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
 			try {
 				VALIDATE_EMS_DISPOSITION_SECTION_NUMBER_OF_PATIENTS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_NUMBER_OF_PATIENTS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_NUMBER_OF_PATIENTS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_EMS_DISPOSITION_SECTION_NUMBER_OF_PATIENTS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsDispositionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_NUMBER_OF_PATIENTS_OBSERVATION,
-						 EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionNumberOfPatientsObservation"),
-						 new Object [] { emsDispositionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_NUMBER_OF_PATIENTS_OBSERVATION,
+					EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionNumberOfPatientsObservation"),
+					new Object[] { emsDispositionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -464,9 +453,8 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_INCIDENT_DISPOSITION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -478,30 +466,30 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSDispositionSectionIncidentDispositionObservation(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSDispositionSectionIncidentDispositionObservation(
+			EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_DISPOSITION_SECTION_INCIDENT_DISPOSITION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
 			try {
 				VALIDATE_EMS_DISPOSITION_SECTION_INCIDENT_DISPOSITION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_INCIDENT_DISPOSITION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_INCIDENT_DISPOSITION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_EMS_DISPOSITION_SECTION_INCIDENT_DISPOSITION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsDispositionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_INCIDENT_DISPOSITION_OBSERVATION,
-						 EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionIncidentDispositionObservation"),
-						 new Object [] { emsDispositionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_INCIDENT_DISPOSITION_OBSERVATION,
+					EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionIncidentDispositionObservation"),
+					new Object[] { emsDispositionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -525,9 +513,8 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_TRANSPORT_MODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -539,30 +526,30 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSDispositionSectionTransportModeObservation(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSDispositionSectionTransportModeObservation(
+			EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_DISPOSITION_SECTION_TRANSPORT_MODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
 			try {
 				VALIDATE_EMS_DISPOSITION_SECTION_TRANSPORT_MODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_TRANSPORT_MODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_TRANSPORT_MODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_EMS_DISPOSITION_SECTION_TRANSPORT_MODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsDispositionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_TRANSPORT_MODE_OBSERVATION,
-						 EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionTransportModeObservation"),
-						 new Object [] { emsDispositionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_TRANSPORT_MODE_OBSERVATION,
+					EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionTransportModeObservation"),
+					new Object[] { emsDispositionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -586,9 +573,8 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_TRANSPORT_METHOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -600,30 +586,30 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSDispositionSectionTransportMethodObservation(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSDispositionSectionTransportMethodObservation(
+			EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_DISPOSITION_SECTION_TRANSPORT_METHOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
 			try {
 				VALIDATE_EMS_DISPOSITION_SECTION_TRANSPORT_METHOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_TRANSPORT_METHOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_TRANSPORT_METHOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_EMS_DISPOSITION_SECTION_TRANSPORT_METHOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsDispositionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_TRANSPORT_METHOD_OBSERVATION,
-						 EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionTransportMethodObservation"),
-						 new Object [] { emsDispositionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_TRANSPORT_METHOD_OBSERVATION,
+					EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionTransportMethodObservation"),
+					new Object[] { emsDispositionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -647,9 +633,8 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_REASON_FOR_CHOOSING_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -661,30 +646,31 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSDispositionSectionReasonForChoosingDestinationObservation(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSDispositionSectionReasonForChoosingDestinationObservation(
+			EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_DISPOSITION_SECTION_REASON_FOR_CHOOSING_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
 			try {
 				VALIDATE_EMS_DISPOSITION_SECTION_REASON_FOR_CHOOSING_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_REASON_FOR_CHOOSING_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_REASON_FOR_CHOOSING_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_EMS_DISPOSITION_SECTION_REASON_FOR_CHOOSING_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsDispositionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_REASON_FOR_CHOOSING_DESTINATION_OBSERVATION,
-						 EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionReasonForChoosingDestinationObservation"),
-						 new Object [] { emsDispositionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_REASON_FOR_CHOOSING_DESTINATION_OBSERVATION,
+					EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionReasonForChoosingDestinationObservation"),
+					new Object[] { emsDispositionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -708,9 +694,8 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_PREARRIVAL_ACTIVATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -722,30 +707,30 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSDispositionSectionPrearrivalActivationObservation(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSDispositionSectionPrearrivalActivationObservation(
+			EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_DISPOSITION_SECTION_PREARRIVAL_ACTIVATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
 			try {
 				VALIDATE_EMS_DISPOSITION_SECTION_PREARRIVAL_ACTIVATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_PREARRIVAL_ACTIVATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_PREARRIVAL_ACTIVATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_EMS_DISPOSITION_SECTION_PREARRIVAL_ACTIVATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsDispositionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_PREARRIVAL_ACTIVATION_OBSERVATION,
-						 EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionPrearrivalActivationObservation"),
-						 new Object [] { emsDispositionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_PREARRIVAL_ACTIVATION_OBSERVATION,
+					EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionPrearrivalActivationObservation"),
+					new Object[] { emsDispositionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -769,9 +754,8 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -783,30 +767,31 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateEMSDispositionSectionPatientConditionChangeAtDestinationObservation(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateEMSDispositionSectionPatientConditionChangeAtDestinationObservation(
+			EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EMS_DISPOSITION_SECTION_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
 			try {
 				VALIDATE_EMS_DISPOSITION_SECTION_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_EMS_DISPOSITION_SECTION_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsDispositionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION,
-						 EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionPatientConditionChangeAtDestinationObservation"),
-						 new Object [] { emsDispositionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION,
+					EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionPatientConditionChangeAtDestinationObservation"),
+					new Object[] { emsDispositionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -837,15 +822,17 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  NumberOfPatientsTransportedObservation getNumberOfPatientsObservation(EMSDispositionSection emsDispositionSection) {
+
+	public static NumberOfPatientsTransportedObservation getNumberOfPatientsObservation(
+			EMSDispositionSection emsDispositionSection) {
 		if (GET_NUMBER_OF_PATIENTS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION, EmspcrPackage.Literals.EMS_DISPOSITION_SECTION.getEAllOperations().get(67));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.EMS_DISPOSITION_SECTION,
+				EmspcrPackage.Literals.EMS_DISPOSITION_SECTION.getEAllOperations().get(67));
 			try {
 				GET_NUMBER_OF_PATIENTS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_NUMBER_OF_PATIENTS_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -878,15 +865,17 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  IncidentDispositionObservation getIncidentDispositionObservation(EMSDispositionSection emsDispositionSection) {
+
+	public static IncidentDispositionObservation getIncidentDispositionObservation(
+			EMSDispositionSection emsDispositionSection) {
 		if (GET_INCIDENT_DISPOSITION_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION, EmspcrPackage.Literals.EMS_DISPOSITION_SECTION.getEAllOperations().get(68));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.EMS_DISPOSITION_SECTION,
+				EmspcrPackage.Literals.EMS_DISPOSITION_SECTION.getEAllOperations().get(68));
 			try {
 				GET_INCIDENT_DISPOSITION_OBSERVATION__EOCL_QRY = helper.createQuery(GET_INCIDENT_DISPOSITION_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -919,15 +908,16 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  TransportModeObservation getTransportModeObservation(EMSDispositionSection emsDispositionSection) {
+
+	public static TransportModeObservation getTransportModeObservation(EMSDispositionSection emsDispositionSection) {
 		if (GET_TRANSPORT_MODE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION, EmspcrPackage.Literals.EMS_DISPOSITION_SECTION.getEAllOperations().get(69));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.EMS_DISPOSITION_SECTION,
+				EmspcrPackage.Literals.EMS_DISPOSITION_SECTION.getEAllOperations().get(69));
 			try {
 				GET_TRANSPORT_MODE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_TRANSPORT_MODE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -960,15 +950,16 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  TransportMethodObservation getTransportMethodObservation(EMSDispositionSection emsDispositionSection) {
+
+	public static TransportMethodObservation getTransportMethodObservation(EMSDispositionSection emsDispositionSection) {
 		if (GET_TRANSPORT_METHOD_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION, EmspcrPackage.Literals.EMS_DISPOSITION_SECTION.getEAllOperations().get(70));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.EMS_DISPOSITION_SECTION,
+				EmspcrPackage.Literals.EMS_DISPOSITION_SECTION.getEAllOperations().get(70));
 			try {
 				GET_TRANSPORT_METHOD_OBSERVATION__EOCL_QRY = helper.createQuery(GET_TRANSPORT_METHOD_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1001,15 +992,17 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  ReasonForChoosingDestinationObservation getReasonForChoosingDestinationObservation(EMSDispositionSection emsDispositionSection) {
+
+	public static ReasonForChoosingDestinationObservation getReasonForChoosingDestinationObservation(
+			EMSDispositionSection emsDispositionSection) {
 		if (GET_REASON_FOR_CHOOSING_DESTINATION_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION, EmspcrPackage.Literals.EMS_DISPOSITION_SECTION.getEAllOperations().get(71));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.EMS_DISPOSITION_SECTION,
+				EmspcrPackage.Literals.EMS_DISPOSITION_SECTION.getEAllOperations().get(71));
 			try {
 				GET_REASON_FOR_CHOOSING_DESTINATION_OBSERVATION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_CHOOSING_DESTINATION_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1042,15 +1035,17 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  PrearrivalActivationObservation getPrearrivalActivationObservation(EMSDispositionSection emsDispositionSection) {
+
+	public static PrearrivalActivationObservation getPrearrivalActivationObservation(
+			EMSDispositionSection emsDispositionSection) {
 		if (GET_PREARRIVAL_ACTIVATION_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION, EmspcrPackage.Literals.EMS_DISPOSITION_SECTION.getEAllOperations().get(72));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.EMS_DISPOSITION_SECTION,
+				EmspcrPackage.Literals.EMS_DISPOSITION_SECTION.getEAllOperations().get(72));
 			try {
 				GET_PREARRIVAL_ACTIVATION_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PREARRIVAL_ACTIVATION_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1083,15 +1078,17 @@ public class EMSDispositionSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  PatientConditionChangeAtDestinationObservation getPatientConditionChangeAtDestinationObservation(EMSDispositionSection emsDispositionSection) {
+
+	public static PatientConditionChangeAtDestinationObservation getPatientConditionChangeAtDestinationObservation(
+			EMSDispositionSection emsDispositionSection) {
 		if (GET_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION, EmspcrPackage.Literals.EMS_DISPOSITION_SECTION.getEAllOperations().get(73));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.EMS_DISPOSITION_SECTION,
+				EmspcrPackage.Literals.EMS_DISPOSITION_SECTION.getEAllOperations().get(73));
 			try {
 				GET_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

@@ -71,9 +71,8 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,30 +84,30 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdvanceDirectiveObservationTemplateId(AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdvanceDirectiveObservationTemplateId(
+			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
 			try {
 				VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(advanceDirectiveObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("AdvanceDirectiveObservationTemplateId"),
-						 new Object [] { advanceDirectiveObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("AdvanceDirectiveObservationTemplateId"),
+					new Object[] { advanceDirectiveObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -132,9 +131,8 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -146,30 +144,30 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdvanceDirectiveObservationMoodCode(AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdvanceDirectiveObservationMoodCode(
+			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
 			try {
 				VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(advanceDirectiveObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("AdvanceDirectiveObservationMoodCode"),
-						 new Object [] { advanceDirectiveObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("AdvanceDirectiveObservationMoodCode"),
+					new Object[] { advanceDirectiveObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -183,9 +181,9 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67516-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67516-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveObservationCode(AdvanceDirectiveObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Code</em>}' invariant operation.
@@ -195,9 +193,8 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,30 +206,30 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdvanceDirectiveObservationCode(AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdvanceDirectiveObservationCode(
+			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
 			try {
 				VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(advanceDirectiveObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CODE,
-						 EmspcrPlugin.INSTANCE.getString("AdvanceDirectiveObservationCode"),
-						 new Object [] { advanceDirectiveObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CODE,
+					EmspcrPlugin.INSTANCE.getString("AdvanceDirectiveObservationCode"),
+					new Object[] { advanceDirectiveObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -246,9 +243,9 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA137-2' or value.code = 'LA17059-9' or value.code = 'LA17319-7' or value.code = 'LA17320-5' or value.code = 'LA17321-3' or value.code = 'LA17322-1')))";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA137-2' or value.code = 'LA17059-9' or value.code = 'LA17319-7' or value.code = 'LA17320-5' or value.code = 'LA17321-3' or value.code = 'LA17322-1')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveObservationValue(AdvanceDirectiveObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Value</em>}' invariant operation.
@@ -258,9 +255,8 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -272,30 +268,30 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdvanceDirectiveObservationValue(AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdvanceDirectiveObservationValue(
+			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
 			try {
 				VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(advanceDirectiveObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("AdvanceDirectiveObservationValue"),
-						 new Object [] { advanceDirectiveObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VALUE,
+					EmspcrPlugin.INSTANCE.getString("AdvanceDirectiveObservationValue"),
+					new Object[] { advanceDirectiveObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -319,9 +315,8 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -333,30 +328,30 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateAdvanceDirectiveObservationValueP(AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateAdvanceDirectiveObservationValueP(
+			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
 			try {
 				VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(advanceDirectiveObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			advanceDirectiveObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VALUE_P,
-						 EmspcrPlugin.INSTANCE.getString("AdvanceDirectiveObservationValueP"),
-						 new Object [] { advanceDirectiveObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VALUE_P,
+					EmspcrPlugin.INSTANCE.getString("AdvanceDirectiveObservationValueP"),
+					new Object[] { advanceDirectiveObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;

@@ -33,7 +33,8 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  *
  * @generated
  */
-public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl implements ProcedureNumberOfAttemptsObservation {
+public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl implements
+		ProcedureNumberOfAttemptsObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58,8 +59,10 @@ public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureNumberOfAttemptsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationTemplateId(this, diagnostics, context);
+	public boolean validateProcedureNumberOfAttemptsObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +70,10 @@ public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureNumberOfAttemptsObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationMoodCode(this, diagnostics, context);
+	public boolean validateProcedureNumberOfAttemptsObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -76,8 +81,10 @@ public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureNumberOfAttemptsObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationCodeP(this, diagnostics, context);
+	public boolean validateProcedureNumberOfAttemptsObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,8 +92,10 @@ public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureNumberOfAttemptsObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationCode(this, diagnostics, context);
+	public boolean validateProcedureNumberOfAttemptsObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +103,10 @@ public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureNumberOfAttemptsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationValue(this, diagnostics, context);
+	public boolean validateProcedureNumberOfAttemptsObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -104,15 +115,16 @@ public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl im
 	 * @generated
 	 */
 	public ProcedureNumberOfAttemptsObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProcedureNumberOfAttemptsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ProcedureNumberOfAttemptsObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureNumberOfAttemptsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ProcedureNumberOfAttemptsObservationImpl

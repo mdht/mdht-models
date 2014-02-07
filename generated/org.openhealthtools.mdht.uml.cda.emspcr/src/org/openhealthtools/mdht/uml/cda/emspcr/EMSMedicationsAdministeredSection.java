@@ -88,7 +88,8 @@ public interface EMSMedicationsAdministeredSection extends MedicationsAdminister
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(emspcr::MedicationAdministered) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	 * @generated
 	 */
-	boolean validateEMSMedicationsAdministeredSectionMedicationAdministered(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSMedicationsAdministeredSectionMedicationAdministered(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,10 +106,11 @@ public interface EMSMedicationsAdministeredSection extends MedicationsAdminister
 	 * @generated
 	 */
 	public EMSMedicationsAdministeredSection init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EMSMedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EMSMedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSMedicationsAdministeredSection

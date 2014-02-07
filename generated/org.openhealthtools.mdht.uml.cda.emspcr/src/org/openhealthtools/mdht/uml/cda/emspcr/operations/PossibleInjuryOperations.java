@@ -72,9 +72,8 @@ public class PossibleInjuryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_POSSIBLE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,30 +85,28 @@ public class PossibleInjuryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePossibleInjuryTemplateId(PossibleInjury possibleInjury, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePossibleInjuryTemplateId(PossibleInjury possibleInjury, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_POSSIBLE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.POSSIBLE_INJURY);
 			try {
 				VALIDATE_POSSIBLE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSSIBLE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POSSIBLE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(possibleInjury)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_POSSIBLE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			possibleInjury)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.POSSIBLE_INJURY__POSSIBLE_INJURY_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("PossibleInjuryTemplateId"),
-						 new Object [] { possibleInjury }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.POSSIBLE_INJURY__POSSIBLE_INJURY_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("PossibleInjuryTemplateId"), new Object[] { possibleInjury }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -133,9 +130,8 @@ public class PossibleInjuryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_POSSIBLE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,30 +143,28 @@ public class PossibleInjuryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePossibleInjuryMoodCode(PossibleInjury possibleInjury, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePossibleInjuryMoodCode(PossibleInjury possibleInjury, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_POSSIBLE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.POSSIBLE_INJURY);
 			try {
 				VALIDATE_POSSIBLE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSSIBLE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POSSIBLE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(possibleInjury)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_POSSIBLE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			possibleInjury)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.POSSIBLE_INJURY__POSSIBLE_INJURY_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("PossibleInjuryMoodCode"),
-						 new Object [] { possibleInjury }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.POSSIBLE_INJURY__POSSIBLE_INJURY_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("PossibleInjuryMoodCode"), new Object[] { possibleInjury }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -194,9 +188,8 @@ public class PossibleInjuryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_POSSIBLE_INJURY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +201,27 @@ public class PossibleInjuryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePossibleInjuryCodeP(PossibleInjury possibleInjury, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePossibleInjuryCodeP(PossibleInjury possibleInjury, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_POSSIBLE_INJURY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.POSSIBLE_INJURY);
 			try {
 				VALIDATE_POSSIBLE_INJURY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSSIBLE_INJURY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_POSSIBLE_INJURY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(possibleInjury)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.POSSIBLE_INJURY__POSSIBLE_INJURY_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("PossibleInjuryCodeP"),
-						 new Object [] { possibleInjury }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.POSSIBLE_INJURY__POSSIBLE_INJURY_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("PossibleInjuryCodeP"), new Object[] { possibleInjury }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -243,7 +233,7 @@ public class PossibleInjuryOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(possibleInjury);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -257,9 +247,9 @@ public class PossibleInjuryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_POSSIBLE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '69467-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_POSSIBLE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '69467-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePossibleInjuryCode(PossibleInjury, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Possible Injury Code</em>}' invariant operation.
@@ -269,9 +259,8 @@ public class PossibleInjuryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_POSSIBLE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -283,36 +272,35 @@ public class PossibleInjuryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePossibleInjuryCode(PossibleInjury possibleInjury, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.PossibleInjuryCodeP");
+
+	public static boolean validatePossibleInjuryCode(PossibleInjury possibleInjury, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.PossibleInjuryCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(possibleInjury)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_POSSIBLE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.POSSIBLE_INJURY);
 			try {
 				VALIDATE_POSSIBLE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSSIBLE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_POSSIBLE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(possibleInjury)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.POSSIBLE_INJURY__POSSIBLE_INJURY_CODE,
-						 EmspcrPlugin.INSTANCE.getString("PossibleInjuryCode"),
-						 new Object [] { possibleInjury }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.POSSIBLE_INJURY__POSSIBLE_INJURY_CODE,
+					EmspcrPlugin.INSTANCE.getString("PossibleInjuryCode"), new Object[] { possibleInjury }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -336,9 +324,8 @@ public class PossibleInjuryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_POSSIBLE_INJURY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -350,30 +337,27 @@ public class PossibleInjuryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePossibleInjuryValue(PossibleInjury possibleInjury, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validatePossibleInjuryValue(PossibleInjury possibleInjury, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_POSSIBLE_INJURY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.POSSIBLE_INJURY);
 			try {
 				VALIDATE_POSSIBLE_INJURY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSSIBLE_INJURY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_POSSIBLE_INJURY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(possibleInjury)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.POSSIBLE_INJURY__POSSIBLE_INJURY_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("PossibleInjuryValue"),
-						 new Object [] { possibleInjury }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.POSSIBLE_INJURY__POSSIBLE_INJURY_VALUE,
+					EmspcrPlugin.INSTANCE.getString("PossibleInjuryValue"), new Object[] { possibleInjury }));
 			}
-			 
+
 			return false;
 		}
 		return true;

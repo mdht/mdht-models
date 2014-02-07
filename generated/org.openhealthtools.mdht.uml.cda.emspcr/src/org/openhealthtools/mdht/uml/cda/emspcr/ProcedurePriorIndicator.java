@@ -95,10 +95,11 @@ public interface ProcedurePriorIndicator extends Observation {
 	 * @generated
 	 */
 	public ProcedurePriorIndicator init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProcedurePriorIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedurePriorIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedurePriorIndicator

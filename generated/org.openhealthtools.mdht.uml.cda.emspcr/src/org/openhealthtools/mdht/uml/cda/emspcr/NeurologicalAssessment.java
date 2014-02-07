@@ -107,10 +107,11 @@ public interface NeurologicalAssessment extends Observation {
 	 * @generated
 	 */
 	public NeurologicalAssessment init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public NeurologicalAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NeurologicalAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // NeurologicalAssessment

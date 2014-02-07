@@ -107,10 +107,11 @@ public interface TurnaroundDelay extends Observation {
 	 * @generated
 	 */
 	public TurnaroundDelay init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TurnaroundDelay init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TurnaroundDelay init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TurnaroundDelay

@@ -83,10 +83,11 @@ public interface InjuryRiskFactor extends Observation {
 	 * @generated
 	 */
 	public InjuryRiskFactor init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public InjuryRiskFactor init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InjuryRiskFactor init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InjuryRiskFactor

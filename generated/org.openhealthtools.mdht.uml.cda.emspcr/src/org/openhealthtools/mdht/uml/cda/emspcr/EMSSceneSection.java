@@ -188,10 +188,11 @@ public interface EMSSceneSection extends Section {
 	 * @generated
 	 */
 	public EMSSceneSection init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EMSSceneSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EMSSceneSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSSceneSection

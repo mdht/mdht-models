@@ -73,9 +73,8 @@ public class CandidatePatientRegistryTypeOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,30 +86,30 @@ public class CandidatePatientRegistryTypeOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCandidatePatientRegistryTypeTemplateId(CandidatePatientRegistryType candidatePatientRegistryType, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCandidatePatientRegistryTypeTemplateId(
+			CandidatePatientRegistryType candidatePatientRegistryType, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CANDIDATE_PATIENT_REGISTRY_TYPE);
 			try {
 				VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(candidatePatientRegistryType)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			candidatePatientRegistryType)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CANDIDATE_PATIENT_REGISTRY_TYPE__CANDIDATE_PATIENT_REGISTRY_TYPE_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("CandidatePatientRegistryTypeTemplateId"),
-						 new Object [] { candidatePatientRegistryType }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CANDIDATE_PATIENT_REGISTRY_TYPE__CANDIDATE_PATIENT_REGISTRY_TYPE_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("CandidatePatientRegistryTypeTemplateId"),
+					new Object[] { candidatePatientRegistryType }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -134,9 +133,8 @@ public class CandidatePatientRegistryTypeOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,30 +146,30 @@ public class CandidatePatientRegistryTypeOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCandidatePatientRegistryTypeMoodCode(CandidatePatientRegistryType candidatePatientRegistryType, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCandidatePatientRegistryTypeMoodCode(
+			CandidatePatientRegistryType candidatePatientRegistryType, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CANDIDATE_PATIENT_REGISTRY_TYPE);
 			try {
 				VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(candidatePatientRegistryType)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			candidatePatientRegistryType)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CANDIDATE_PATIENT_REGISTRY_TYPE__CANDIDATE_PATIENT_REGISTRY_TYPE_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("CandidatePatientRegistryTypeMoodCode"),
-						 new Object [] { candidatePatientRegistryType }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CANDIDATE_PATIENT_REGISTRY_TYPE__CANDIDATE_PATIENT_REGISTRY_TYPE_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("CandidatePatientRegistryTypeMoodCode"),
+					new Object[] { candidatePatientRegistryType }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -195,9 +193,8 @@ public class CandidatePatientRegistryTypeOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,30 +206,30 @@ public class CandidatePatientRegistryTypeOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCandidatePatientRegistryTypeCodeP(CandidatePatientRegistryType candidatePatientRegistryType, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCandidatePatientRegistryTypeCodeP(
+			CandidatePatientRegistryType candidatePatientRegistryType, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CANDIDATE_PATIENT_REGISTRY_TYPE);
 			try {
 				VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(candidatePatientRegistryType)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			candidatePatientRegistryType)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CANDIDATE_PATIENT_REGISTRY_TYPE__CANDIDATE_PATIENT_REGISTRY_TYPE_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("CandidatePatientRegistryTypeCodeP"),
-						 new Object [] { candidatePatientRegistryType }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CANDIDATE_PATIENT_REGISTRY_TYPE__CANDIDATE_PATIENT_REGISTRY_TYPE_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("CandidatePatientRegistryTypeCodeP"),
+					new Object[] { candidatePatientRegistryType }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -244,7 +241,7 @@ public class CandidatePatientRegistryTypeOperations extends ClinicalStatementOpe
 				}
 				passToken.add(candidatePatientRegistryType);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -258,9 +255,9 @@ public class CandidatePatientRegistryTypeOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67553-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67553-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCandidatePatientRegistryTypeCode(CandidatePatientRegistryType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Candidate Patient Registry Type Code</em>}' invariant operation.
@@ -270,9 +267,8 @@ public class CandidatePatientRegistryTypeOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,36 +280,38 @@ public class CandidatePatientRegistryTypeOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCandidatePatientRegistryTypeCode(CandidatePatientRegistryType candidatePatientRegistryType, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.CandidatePatientRegistryTypeCodeP");
+
+	public static boolean validateCandidatePatientRegistryTypeCode(
+			CandidatePatientRegistryType candidatePatientRegistryType, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.CandidatePatientRegistryTypeCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(candidatePatientRegistryType)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CANDIDATE_PATIENT_REGISTRY_TYPE);
 			try {
 				VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(candidatePatientRegistryType)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			candidatePatientRegistryType)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CANDIDATE_PATIENT_REGISTRY_TYPE__CANDIDATE_PATIENT_REGISTRY_TYPE_CODE,
-						 EmspcrPlugin.INSTANCE.getString("CandidatePatientRegistryTypeCode"),
-						 new Object [] { candidatePatientRegistryType }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CANDIDATE_PATIENT_REGISTRY_TYPE__CANDIDATE_PATIENT_REGISTRY_TYPE_CODE,
+					EmspcrPlugin.INSTANCE.getString("CandidatePatientRegistryTypeCode"),
+					new Object[] { candidatePatientRegistryType }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -327,9 +325,9 @@ public class CandidatePatientRegistryTypeOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17057-3' or value.code = 'LA17058-1' or value.code = 'LA17059-9' or value.code = 'LA17398-1' or value.code = 'LA17399-9' or value.code = 'LA17400-5' or value.code = 'LA17401-3' or value.code = 'LA7318-4' or value.code = 'LA9535-1' or value.code = 'LA9553-4')))";
+	protected static final String VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17057-3' or value.code = 'LA17058-1' or value.code = 'LA17059-9' or value.code = 'LA17398-1' or value.code = 'LA17399-9' or value.code = 'LA17400-5' or value.code = 'LA17401-3' or value.code = 'LA7318-4' or value.code = 'LA9535-1' or value.code = 'LA9553-4')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCandidatePatientRegistryTypeValue(CandidatePatientRegistryType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Candidate Patient Registry Type Value</em>}' invariant operation.
@@ -339,9 +337,8 @@ public class CandidatePatientRegistryTypeOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -353,30 +350,30 @@ public class CandidatePatientRegistryTypeOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCandidatePatientRegistryTypeValue(CandidatePatientRegistryType candidatePatientRegistryType, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCandidatePatientRegistryTypeValue(
+			CandidatePatientRegistryType candidatePatientRegistryType, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CANDIDATE_PATIENT_REGISTRY_TYPE);
 			try {
 				VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(candidatePatientRegistryType)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			candidatePatientRegistryType)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CANDIDATE_PATIENT_REGISTRY_TYPE__CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("CandidatePatientRegistryTypeValue"),
-						 new Object [] { candidatePatientRegistryType }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CANDIDATE_PATIENT_REGISTRY_TYPE__CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE,
+					EmspcrPlugin.INSTANCE.getString("CandidatePatientRegistryTypeValue"),
+					new Object[] { candidatePatientRegistryType }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -400,9 +397,8 @@ public class CandidatePatientRegistryTypeOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,30 +410,30 @@ public class CandidatePatientRegistryTypeOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCandidatePatientRegistryTypeValueP(CandidatePatientRegistryType candidatePatientRegistryType, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCandidatePatientRegistryTypeValueP(
+			CandidatePatientRegistryType candidatePatientRegistryType, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CANDIDATE_PATIENT_REGISTRY_TYPE);
 			try {
 				VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(candidatePatientRegistryType)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			candidatePatientRegistryType)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CANDIDATE_PATIENT_REGISTRY_TYPE__CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE_P,
-						 EmspcrPlugin.INSTANCE.getString("CandidatePatientRegistryTypeValueP"),
-						 new Object [] { candidatePatientRegistryType }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CANDIDATE_PATIENT_REGISTRY_TYPE__CANDIDATE_PATIENT_REGISTRY_TYPE_VALUE_P,
+					EmspcrPlugin.INSTANCE.getString("CandidatePatientRegistryTypeValueP"),
+					new Object[] { candidatePatientRegistryType }));
 			}
-			 
+
 			return false;
 		}
 		return true;

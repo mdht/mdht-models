@@ -58,8 +58,10 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationTemplateId(this, diagnostics, context);
+	public boolean validateAdvanceDirectiveObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -68,7 +70,8 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationMoodCode(this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,7 +89,8 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationValue(this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,7 +99,8 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationValueP(this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationValueP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -104,15 +109,16 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public AdvanceDirectiveObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AdvanceDirectiveObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //AdvanceDirectiveObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectiveObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // AdvanceDirectiveObservationImpl

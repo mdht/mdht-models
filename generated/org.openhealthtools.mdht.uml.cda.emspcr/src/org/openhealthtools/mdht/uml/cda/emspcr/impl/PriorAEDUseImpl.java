@@ -58,7 +58,8 @@ public class PriorAEDUseImpl extends ObservationImpl implements PriorAEDUse {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePriorAEDUsePriorAEDProviderParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePriorAEDUsePriorAEDProviderParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PriorAEDUseOperations.validatePriorAEDUsePriorAEDProviderParticipation(this, diagnostics, context);
 	}
 
@@ -104,15 +105,16 @@ public class PriorAEDUseImpl extends ObservationImpl implements PriorAEDUse {
 	 * @generated
 	 */
 	public PriorAEDUse init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PriorAEDUse init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //PriorAEDUseImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PriorAEDUse init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // PriorAEDUseImpl

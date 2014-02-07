@@ -95,15 +95,16 @@ public class DispatchLocationLatitudeImpl extends ObservationImpl implements Dis
 	 * @generated
 	 */
 	public DispatchLocationLatitude init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DispatchLocationLatitude init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //DispatchLocationLatitudeImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DispatchLocationLatitude init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // DispatchLocationLatitudeImpl

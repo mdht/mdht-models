@@ -77,16 +77,19 @@ public class DrugAllergyImpl extends AllergyProblemActImpl implements DrugAllerg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DrugAllergy init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //DrugAllergyImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // DrugAllergyImpl

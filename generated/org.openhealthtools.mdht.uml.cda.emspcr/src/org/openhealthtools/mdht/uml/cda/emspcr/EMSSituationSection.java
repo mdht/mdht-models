@@ -124,7 +124,8 @@ public interface EMSSituationSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::ProviderPrimaryImpression) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	 * @generated
 	 */
-	boolean validateEMSSituationSectionProviderPrimaryImpression(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSSituationSectionProviderPrimaryImpression(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -160,7 +161,8 @@ public interface EMSSituationSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::ProviderSecondaryImpressions) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	 * @generated
 	 */
-	boolean validateEMSSituationSectionProviderSecondaryImpressions(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEMSSituationSectionProviderSecondaryImpressions(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -243,10 +245,11 @@ public interface EMSSituationSection extends Section {
 	 * @generated
 	 */
 	public EMSSituationSection init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EMSSituationSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EMSSituationSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSSituationSection

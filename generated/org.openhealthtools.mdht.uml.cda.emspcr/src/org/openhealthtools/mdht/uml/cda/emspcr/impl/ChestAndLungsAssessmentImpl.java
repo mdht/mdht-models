@@ -86,7 +86,8 @@ public class ChestAndLungsAssessmentImpl extends ObservationImpl implements Ches
 	 * @generated
 	 */
 	public boolean validateChestAndLungsAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChestAndLungsAssessmentOperations.validateChestAndLungsAssessmentEffectiveTime(this, diagnostics, context);
+		return ChestAndLungsAssessmentOperations.validateChestAndLungsAssessmentEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -104,15 +105,16 @@ public class ChestAndLungsAssessmentImpl extends ObservationImpl implements Ches
 	 * @generated
 	 */
 	public ChestAndLungsAssessment init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ChestAndLungsAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ChestAndLungsAssessmentImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ChestAndLungsAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ChestAndLungsAssessmentImpl

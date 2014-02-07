@@ -119,10 +119,11 @@ public interface FaceAssessment extends Observation {
 	 * @generated
 	 */
 	public FaceAssessment init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public FaceAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FaceAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FaceAssessment

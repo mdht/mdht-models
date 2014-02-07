@@ -83,10 +83,11 @@ public interface BodyTemperature extends VitalSignObservation {
 	 * @generated
 	 */
 	public BodyTemperature init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public BodyTemperature init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BodyTemperature init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // BodyTemperature

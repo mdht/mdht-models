@@ -72,9 +72,8 @@ public class ProcedureComplicationsObservationOperations extends ClinicalStateme
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,30 +85,32 @@ public class ProcedureComplicationsObservationOperations extends ClinicalStateme
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureComplicationsObservationTemplateId(ProcedureComplicationsObservation procedureComplicationsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProcedureComplicationsObservationTemplateId(
+			ProcedureComplicationsObservation procedureComplicationsObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_COMPLICATIONS_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureComplicationsObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureComplicationsObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_COMPLICATIONS_OBSERVATION__PROCEDURE_COMPLICATIONS_OBSERVATION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("ProcedureComplicationsObservationTemplateId"),
-						 new Object [] { procedureComplicationsObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_COMPLICATIONS_OBSERVATION__PROCEDURE_COMPLICATIONS_OBSERVATION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("ProcedureComplicationsObservationTemplateId"),
+					new Object[] { procedureComplicationsObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -133,9 +134,8 @@ public class ProcedureComplicationsObservationOperations extends ClinicalStateme
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,30 +147,31 @@ public class ProcedureComplicationsObservationOperations extends ClinicalStateme
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureComplicationsObservationMoodCode(ProcedureComplicationsObservation procedureComplicationsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProcedureComplicationsObservationMoodCode(
+			ProcedureComplicationsObservation procedureComplicationsObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_COMPLICATIONS_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureComplicationsObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureComplicationsObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_COMPLICATIONS_OBSERVATION__PROCEDURE_COMPLICATIONS_OBSERVATION_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ProcedureComplicationsObservationMoodCode"),
-						 new Object [] { procedureComplicationsObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_COMPLICATIONS_OBSERVATION__PROCEDURE_COMPLICATIONS_OBSERVATION_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("ProcedureComplicationsObservationMoodCode"),
+					new Object[] { procedureComplicationsObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -194,9 +195,8 @@ public class ProcedureComplicationsObservationOperations extends ClinicalStateme
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +208,30 @@ public class ProcedureComplicationsObservationOperations extends ClinicalStateme
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureComplicationsObservationCodeP(ProcedureComplicationsObservation procedureComplicationsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProcedureComplicationsObservationCodeP(
+			ProcedureComplicationsObservation procedureComplicationsObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_COMPLICATIONS_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureComplicationsObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureComplicationsObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_COMPLICATIONS_OBSERVATION__PROCEDURE_COMPLICATIONS_OBSERVATION_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("ProcedureComplicationsObservationCodeP"),
-						 new Object [] { procedureComplicationsObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_COMPLICATIONS_OBSERVATION__PROCEDURE_COMPLICATIONS_OBSERVATION_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("ProcedureComplicationsObservationCodeP"),
+					new Object[] { procedureComplicationsObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -239,11 +239,12 @@ public class ProcedureComplicationsObservationOperations extends ClinicalStateme
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.emspcr.ProcedureComplicationsObservationCodeP", passToken);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.emspcr.ProcedureComplicationsObservationCodeP", passToken);
 				}
 				passToken.add(procedureComplicationsObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -257,9 +258,9 @@ public class ProcedureComplicationsObservationOperations extends ClinicalStateme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67545-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67545-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureComplicationsObservationCode(ProcedureComplicationsObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Complications Observation Code</em>}' invariant operation.
@@ -269,9 +270,8 @@ public class ProcedureComplicationsObservationOperations extends ClinicalStateme
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -283,36 +283,39 @@ public class ProcedureComplicationsObservationOperations extends ClinicalStateme
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureComplicationsObservationCode(ProcedureComplicationsObservation procedureComplicationsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.ProcedureComplicationsObservationCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(procedureComplicationsObservation)) {
+
+	public static boolean validateProcedureComplicationsObservationCode(
+			ProcedureComplicationsObservation procedureComplicationsObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.ProcedureComplicationsObservationCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(procedureComplicationsObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_COMPLICATIONS_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureComplicationsObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureComplicationsObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_COMPLICATIONS_OBSERVATION__PROCEDURE_COMPLICATIONS_OBSERVATION_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ProcedureComplicationsObservationCode"),
-						 new Object [] { procedureComplicationsObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_COMPLICATIONS_OBSERVATION__PROCEDURE_COMPLICATIONS_OBSERVATION_CODE,
+					EmspcrPlugin.INSTANCE.getString("ProcedureComplicationsObservationCode"),
+					new Object[] { procedureComplicationsObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -326,9 +329,9 @@ public class ProcedureComplicationsObservationOperations extends ClinicalStateme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA137-2' or value.code = 'LA15098-9' or value.code = 'LA15099-7' or value.code = 'LA15424-7' or value.code = 'LA17059-9' or value.code = 'LA17392-4' or value.code = 'LA17393-2' or value.code = 'LA17394-0' or value.code = 'LA17396-5' or value.code = 'TMP-LA17397-3a' or value.code = 'LA17489-8' or value.code = 'LA17490-6' or value.code = 'LA17713-1' or value.code = 'LA17714-9' or value.code = 'LA18267-7' or value.code = 'LA18268-5' or value.code = 'LA7418-2' or value.code = 'LA7434-9' or value.code = 'LA7443-0' or value.code = 'LA7444-8' or value.code = 'LA9540-1' or value.code = 'LA9541-9' or value.code = 'LA9548-4' or value.code = 'TMP-LA17397-3b')))";
+	protected static final String VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA137-2' or value.code = 'LA15098-9' or value.code = 'LA15099-7' or value.code = 'LA15424-7' or value.code = 'LA17059-9' or value.code = 'LA17392-4' or value.code = 'LA17393-2' or value.code = 'LA17394-0' or value.code = 'LA17396-5' or value.code = 'TMP-LA17397-3a' or value.code = 'LA17489-8' or value.code = 'LA17490-6' or value.code = 'LA17713-1' or value.code = 'LA17714-9' or value.code = 'LA18267-7' or value.code = 'LA18268-5' or value.code = 'LA7418-2' or value.code = 'LA7434-9' or value.code = 'LA7443-0' or value.code = 'LA7444-8' or value.code = 'LA9540-1' or value.code = 'LA9541-9' or value.code = 'LA9548-4' or value.code = 'TMP-LA17397-3b')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureComplicationsObservationValue(ProcedureComplicationsObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Complications Observation Value</em>}' invariant operation.
@@ -338,9 +341,8 @@ public class ProcedureComplicationsObservationOperations extends ClinicalStateme
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -352,30 +354,30 @@ public class ProcedureComplicationsObservationOperations extends ClinicalStateme
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProcedureComplicationsObservationValue(ProcedureComplicationsObservation procedureComplicationsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateProcedureComplicationsObservationValue(
+			ProcedureComplicationsObservation procedureComplicationsObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_COMPLICATIONS_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureComplicationsObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_COMPLICATIONS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureComplicationsObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_COMPLICATIONS_OBSERVATION__PROCEDURE_COMPLICATIONS_OBSERVATION_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("ProcedureComplicationsObservationValue"),
-						 new Object [] { procedureComplicationsObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_COMPLICATIONS_OBSERVATION__PROCEDURE_COMPLICATIONS_OBSERVATION_VALUE,
+					EmspcrPlugin.INSTANCE.getString("ProcedureComplicationsObservationValue"),
+					new Object[] { procedureComplicationsObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;

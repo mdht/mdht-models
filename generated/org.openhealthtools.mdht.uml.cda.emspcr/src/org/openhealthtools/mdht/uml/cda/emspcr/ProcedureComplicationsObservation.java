@@ -95,10 +95,11 @@ public interface ProcedureComplicationsObservation extends Observation {
 	 * @generated
 	 */
 	public ProcedureComplicationsObservation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProcedureComplicationsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureComplicationsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureComplicationsObservation

@@ -107,10 +107,11 @@ public interface AbdomenAssessment extends Observation {
 	 * @generated
 	 */
 	public AbdomenAssessment init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AbdomenAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AbdomenAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AbdomenAssessment

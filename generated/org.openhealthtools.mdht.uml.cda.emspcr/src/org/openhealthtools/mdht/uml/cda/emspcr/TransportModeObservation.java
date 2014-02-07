@@ -107,10 +107,11 @@ public interface TransportModeObservation extends Observation {
 	 * @generated
 	 */
 	public TransportModeObservation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TransportModeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TransportModeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TransportModeObservation

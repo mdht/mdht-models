@@ -71,9 +71,8 @@ public class DiastolicBloodPressureOperations extends VitalSignObservationOperat
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_DIASTOLIC_BLOOD_PRESSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,30 +84,29 @@ public class DiastolicBloodPressureOperations extends VitalSignObservationOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDiastolicBloodPressureMoodCode(DiastolicBloodPressure diastolicBloodPressure, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateDiastolicBloodPressureMoodCode(DiastolicBloodPressure diastolicBloodPressure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIASTOLIC_BLOOD_PRESSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DIASTOLIC_BLOOD_PRESSURE);
 			try {
 				VALIDATE_DIASTOLIC_BLOOD_PRESSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIASTOLIC_BLOOD_PRESSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIASTOLIC_BLOOD_PRESSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diastolicBloodPressure)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIASTOLIC_BLOOD_PRESSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			diastolicBloodPressure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("DiastolicBloodPressureMoodCode"),
-						 new Object [] { diastolicBloodPressure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("DiastolicBloodPressureMoodCode"),
+					new Object[] { diastolicBloodPressure }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -122,9 +120,9 @@ public class DiastolicBloodPressureOperations extends VitalSignObservationOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIASTOLIC_BLOOD_PRESSURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '8462-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_DIASTOLIC_BLOOD_PRESSURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '8462-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDiastolicBloodPressureCode(DiastolicBloodPressure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diastolic Blood Pressure Code</em>}' invariant operation.
@@ -134,9 +132,8 @@ public class DiastolicBloodPressureOperations extends VitalSignObservationOperat
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_DIASTOLIC_BLOOD_PRESSURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,30 +145,29 @@ public class DiastolicBloodPressureOperations extends VitalSignObservationOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDiastolicBloodPressureCode(DiastolicBloodPressure diastolicBloodPressure, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateDiastolicBloodPressureCode(DiastolicBloodPressure diastolicBloodPressure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIASTOLIC_BLOOD_PRESSURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DIASTOLIC_BLOOD_PRESSURE);
 			try {
 				VALIDATE_DIASTOLIC_BLOOD_PRESSURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIASTOLIC_BLOOD_PRESSURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIASTOLIC_BLOOD_PRESSURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diastolicBloodPressure)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIASTOLIC_BLOOD_PRESSURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			diastolicBloodPressure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_CODE,
-						 EmspcrPlugin.INSTANCE.getString("DiastolicBloodPressureCode"),
-						 new Object [] { diastolicBloodPressure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_CODE,
+					EmspcrPlugin.INSTANCE.getString("DiastolicBloodPressureCode"),
+					new Object[] { diastolicBloodPressure }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -195,9 +191,8 @@ public class DiastolicBloodPressureOperations extends VitalSignObservationOperat
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_DIASTOLIC_BLOOD_PRESSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,30 +204,29 @@ public class DiastolicBloodPressureOperations extends VitalSignObservationOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDiastolicBloodPressureEffectiveTime(DiastolicBloodPressure diastolicBloodPressure, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateDiastolicBloodPressureEffectiveTime(DiastolicBloodPressure diastolicBloodPressure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIASTOLIC_BLOOD_PRESSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DIASTOLIC_BLOOD_PRESSURE);
 			try {
 				VALIDATE_DIASTOLIC_BLOOD_PRESSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIASTOLIC_BLOOD_PRESSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIASTOLIC_BLOOD_PRESSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diastolicBloodPressure)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIASTOLIC_BLOOD_PRESSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			diastolicBloodPressure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_EFFECTIVE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("DiastolicBloodPressureEffectiveTime"),
-						 new Object [] { diastolicBloodPressure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_EFFECTIVE_TIME,
+					EmspcrPlugin.INSTANCE.getString("DiastolicBloodPressureEffectiveTime"),
+					new Object[] { diastolicBloodPressure }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -256,9 +250,8 @@ public class DiastolicBloodPressureOperations extends VitalSignObservationOperat
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_DIASTOLIC_BLOOD_PRESSURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -270,30 +263,29 @@ public class DiastolicBloodPressureOperations extends VitalSignObservationOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateDiastolicBloodPressureValue(DiastolicBloodPressure diastolicBloodPressure, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateDiastolicBloodPressureValue(DiastolicBloodPressure diastolicBloodPressure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIASTOLIC_BLOOD_PRESSURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DIASTOLIC_BLOOD_PRESSURE);
 			try {
 				VALIDATE_DIASTOLIC_BLOOD_PRESSURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIASTOLIC_BLOOD_PRESSURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIASTOLIC_BLOOD_PRESSURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diastolicBloodPressure)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIASTOLIC_BLOOD_PRESSURE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			diastolicBloodPressure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("DiastolicBloodPressureValue"),
-						 new Object [] { diastolicBloodPressure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_VALUE,
+					EmspcrPlugin.INSTANCE.getString("DiastolicBloodPressureValue"),
+					new Object[] { diastolicBloodPressure }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -317,9 +309,8 @@ public class DiastolicBloodPressureOperations extends VitalSignObservationOperat
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -331,30 +322,29 @@ public class DiastolicBloodPressureOperations extends VitalSignObservationOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateVitalSignObservationTemplateId(DiastolicBloodPressure diastolicBloodPressure, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateVitalSignObservationTemplateId(DiastolicBloodPressure diastolicBloodPressure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DIASTOLIC_BLOOD_PRESSURE);
 			try {
 				VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diastolicBloodPressure)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			diastolicBloodPressure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.DIASTOLIC_BLOOD_PRESSURE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("VitalSignObservationTemplateId"),
-						 new Object [] { diastolicBloodPressure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.DIASTOLIC_BLOOD_PRESSURE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("VitalSignObservationTemplateId"),
+					new Object[] { diastolicBloodPressure }));
 			}
-			 
+
 			return false;
 		}
 		return true;

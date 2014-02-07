@@ -83,10 +83,11 @@ public interface VehicleOccupantSafetyEquipment extends Observation {
 	 * @generated
 	 */
 	public VehicleOccupantSafetyEquipment init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public VehicleOccupantSafetyEquipment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VehicleOccupantSafetyEquipment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VehicleOccupantSafetyEquipment

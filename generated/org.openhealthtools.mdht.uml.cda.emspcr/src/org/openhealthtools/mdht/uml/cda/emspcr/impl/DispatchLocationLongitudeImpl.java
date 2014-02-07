@@ -59,7 +59,8 @@ public class DispatchLocationLongitudeImpl extends ObservationImpl implements Di
 	 * @generated
 	 */
 	public boolean validateDispatchLocationLongitudeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DispatchLocationLongitudeOperations.validateDispatchLocationLongitudeTemplateId(this, diagnostics, context);
+		return DispatchLocationLongitudeOperations.validateDispatchLocationLongitudeTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,15 +96,16 @@ public class DispatchLocationLongitudeImpl extends ObservationImpl implements Di
 	 * @generated
 	 */
 	public DispatchLocationLongitude init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DispatchLocationLongitude init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //DispatchLocationLongitudeImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DispatchLocationLongitude init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // DispatchLocationLongitudeImpl

@@ -73,9 +73,8 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_RESPONSE_MODE_TO_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,30 +86,29 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseModeToSceneTemplateId(ResponseModeToScene responseModeToScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateResponseModeToSceneTemplateId(ResponseModeToScene responseModeToScene,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESPONSE_MODE_TO_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_MODE_TO_SCENE);
 			try {
 				VALIDATE_RESPONSE_MODE_TO_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_MODE_TO_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_MODE_TO_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(responseModeToScene)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_MODE_TO_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			responseModeToScene)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.RESPONSE_MODE_TO_SCENE__RESPONSE_MODE_TO_SCENE_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("ResponseModeToSceneTemplateId"),
-						 new Object [] { responseModeToScene }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.RESPONSE_MODE_TO_SCENE__RESPONSE_MODE_TO_SCENE_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("ResponseModeToSceneTemplateId"),
+					new Object[] { responseModeToScene }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -134,9 +132,8 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_RESPONSE_MODE_TO_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,30 +145,29 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseModeToSceneMoodCode(ResponseModeToScene responseModeToScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateResponseModeToSceneMoodCode(ResponseModeToScene responseModeToScene,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESPONSE_MODE_TO_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_MODE_TO_SCENE);
 			try {
 				VALIDATE_RESPONSE_MODE_TO_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_MODE_TO_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_MODE_TO_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(responseModeToScene)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_MODE_TO_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			responseModeToScene)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.RESPONSE_MODE_TO_SCENE__RESPONSE_MODE_TO_SCENE_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ResponseModeToSceneMoodCode"),
-						 new Object [] { responseModeToScene }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.RESPONSE_MODE_TO_SCENE__RESPONSE_MODE_TO_SCENE_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("ResponseModeToSceneMoodCode"),
+					new Object[] { responseModeToScene }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -195,9 +191,8 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_RESPONSE_MODE_TO_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,30 +204,28 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseModeToSceneCodeP(ResponseModeToScene responseModeToScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateResponseModeToSceneCodeP(ResponseModeToScene responseModeToScene,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESPONSE_MODE_TO_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_MODE_TO_SCENE);
 			try {
 				VALIDATE_RESPONSE_MODE_TO_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_MODE_TO_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_MODE_TO_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(responseModeToScene)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_MODE_TO_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			responseModeToScene)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.RESPONSE_MODE_TO_SCENE__RESPONSE_MODE_TO_SCENE_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("ResponseModeToSceneCodeP"),
-						 new Object [] { responseModeToScene }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.RESPONSE_MODE_TO_SCENE__RESPONSE_MODE_TO_SCENE_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("ResponseModeToSceneCodeP"), new Object[] { responseModeToScene }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -244,7 +237,7 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(responseModeToScene);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -258,9 +251,9 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RESPONSE_MODE_TO_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67482-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_RESPONSE_MODE_TO_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67482-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateResponseModeToSceneCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Code</em>}' invariant operation.
@@ -270,9 +263,8 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_RESPONSE_MODE_TO_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,36 +276,36 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseModeToSceneCode(ResponseModeToScene responseModeToScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.ResponseModeToSceneCodeP");
+
+	public static boolean validateResponseModeToSceneCode(ResponseModeToScene responseModeToScene,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.ResponseModeToSceneCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(responseModeToScene)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_RESPONSE_MODE_TO_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_MODE_TO_SCENE);
 			try {
 				VALIDATE_RESPONSE_MODE_TO_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_MODE_TO_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_MODE_TO_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(responseModeToScene)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_MODE_TO_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			responseModeToScene)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.RESPONSE_MODE_TO_SCENE__RESPONSE_MODE_TO_SCENE_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ResponseModeToSceneCode"),
-						 new Object [] { responseModeToScene }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.RESPONSE_MODE_TO_SCENE__RESPONSE_MODE_TO_SCENE_CODE,
+					EmspcrPlugin.INSTANCE.getString("ResponseModeToSceneCode"), new Object[] { responseModeToScene }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -327,9 +319,9 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17177-9' or value.code = 'LA17178-7' or value.code = 'LA17179-5' or value.code = 'LA17180-3')))";
+	protected static final String VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17177-9' or value.code = 'LA17178-7' or value.code = 'LA17179-5' or value.code = 'LA17180-3')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateResponseModeToSceneValue(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Value</em>}' invariant operation.
@@ -339,9 +331,8 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -353,30 +344,28 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseModeToSceneValue(ResponseModeToScene responseModeToScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateResponseModeToSceneValue(ResponseModeToScene responseModeToScene,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_MODE_TO_SCENE);
 			try {
 				VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(responseModeToScene)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			responseModeToScene)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.RESPONSE_MODE_TO_SCENE__RESPONSE_MODE_TO_SCENE_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("ResponseModeToSceneValue"),
-						 new Object [] { responseModeToScene }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.RESPONSE_MODE_TO_SCENE__RESPONSE_MODE_TO_SCENE_VALUE,
+					EmspcrPlugin.INSTANCE.getString("ResponseModeToSceneValue"), new Object[] { responseModeToScene }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -400,9 +389,8 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,30 +402,28 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateResponseModeToSceneValueP(ResponseModeToScene responseModeToScene, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateResponseModeToSceneValueP(ResponseModeToScene responseModeToScene,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_MODE_TO_SCENE);
 			try {
 				VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(responseModeToScene)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			responseModeToScene)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.RESPONSE_MODE_TO_SCENE__RESPONSE_MODE_TO_SCENE_VALUE_P,
-						 EmspcrPlugin.INSTANCE.getString("ResponseModeToSceneValueP"),
-						 new Object [] { responseModeToScene }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.RESPONSE_MODE_TO_SCENE__RESPONSE_MODE_TO_SCENE_VALUE_P,
+					EmspcrPlugin.INSTANCE.getString("ResponseModeToSceneValueP"), new Object[] { responseModeToScene }));
 			}
-			 
+
 			return false;
 		}
 		return true;

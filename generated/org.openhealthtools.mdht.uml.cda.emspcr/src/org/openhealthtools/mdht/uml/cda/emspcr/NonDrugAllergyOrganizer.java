@@ -40,7 +40,8 @@ public interface NonDrugAllergyOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(emspcr::ExistenceOfNonDrugAllergy))'"
 	 * @generated
 	 */
-	boolean validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -90,10 +91,11 @@ public interface NonDrugAllergyOrganizer extends Organizer {
 	 * @generated
 	 */
 	public NonDrugAllergyOrganizer init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public NonDrugAllergyOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NonDrugAllergyOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // NonDrugAllergyOrganizer

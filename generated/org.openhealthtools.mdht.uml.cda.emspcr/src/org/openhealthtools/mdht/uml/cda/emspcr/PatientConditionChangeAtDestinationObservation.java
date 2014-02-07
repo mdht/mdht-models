@@ -39,7 +39,8 @@ public interface PatientConditionChangeAtDestinationObservation extends Observat
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.1133883.17.3.10.1.37\')'"
 	 * @generated
 	 */
-	boolean validatePatientConditionChangeAtDestinationObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePatientConditionChangeAtDestinationObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -51,7 +52,8 @@ public interface PatientConditionChangeAtDestinationObservation extends Observat
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\')'"
 	 * @generated
 	 */
-	boolean validatePatientConditionChangeAtDestinationObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePatientConditionChangeAtDestinationObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -63,7 +65,8 @@ public interface PatientConditionChangeAtDestinationObservation extends Observat
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validatePatientConditionChangeAtDestinationObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePatientConditionChangeAtDestinationObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -75,7 +78,8 @@ public interface PatientConditionChangeAtDestinationObservation extends Observat
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'67551-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
-	boolean validatePatientConditionChangeAtDestinationObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePatientConditionChangeAtDestinationObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,7 +91,8 @@ public interface PatientConditionChangeAtDestinationObservation extends Observat
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA11011-6\' or value.code = \'LA17181-1\' or value.code = \'LA65-8\')))'"
 	 * @generated
 	 */
-	boolean validatePatientConditionChangeAtDestinationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePatientConditionChangeAtDestinationObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -99,7 +104,8 @@ public interface PatientConditionChangeAtDestinationObservation extends Observat
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
 	 * @generated
 	 */
-	boolean validatePatientConditionChangeAtDestinationObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePatientConditionChangeAtDestinationObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -107,10 +113,12 @@ public interface PatientConditionChangeAtDestinationObservation extends Observat
 	 * @generated
 	 */
 	public PatientConditionChangeAtDestinationObservation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PatientConditionChangeAtDestinationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PatientConditionChangeAtDestinationObservation init(
+			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PatientConditionChangeAtDestinationObservation

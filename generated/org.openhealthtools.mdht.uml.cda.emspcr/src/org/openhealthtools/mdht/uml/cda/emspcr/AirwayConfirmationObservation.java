@@ -131,10 +131,11 @@ public interface AirwayConfirmationObservation extends Observation {
 	 * @generated
 	 */
 	public AirwayConfirmationObservation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AirwayConfirmationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AirwayConfirmationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AirwayConfirmationObservation

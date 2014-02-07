@@ -74,9 +74,8 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_LEVEL_OF_RESPONSIVENESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,30 +87,29 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateLevelOfResponsivenessTemplateId(LevelOfResponsiveness levelOfResponsiveness, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateLevelOfResponsivenessTemplateId(LevelOfResponsiveness levelOfResponsiveness,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_LEVEL_OF_RESPONSIVENESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.LEVEL_OF_RESPONSIVENESS);
 			try {
 				VALIDATE_LEVEL_OF_RESPONSIVENESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LEVEL_OF_RESPONSIVENESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_OF_RESPONSIVENESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(levelOfResponsiveness)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_OF_RESPONSIVENESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			levelOfResponsiveness)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.LEVEL_OF_RESPONSIVENESS__LEVEL_OF_RESPONSIVENESS_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("LevelOfResponsivenessTemplateId"),
-						 new Object [] { levelOfResponsiveness }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.LEVEL_OF_RESPONSIVENESS__LEVEL_OF_RESPONSIVENESS_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("LevelOfResponsivenessTemplateId"),
+					new Object[] { levelOfResponsiveness }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -135,9 +133,8 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_LEVEL_OF_RESPONSIVENESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,30 +146,29 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateLevelOfResponsivenessMoodCode(LevelOfResponsiveness levelOfResponsiveness, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateLevelOfResponsivenessMoodCode(LevelOfResponsiveness levelOfResponsiveness,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_LEVEL_OF_RESPONSIVENESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.LEVEL_OF_RESPONSIVENESS);
 			try {
 				VALIDATE_LEVEL_OF_RESPONSIVENESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LEVEL_OF_RESPONSIVENESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_OF_RESPONSIVENESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(levelOfResponsiveness)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_OF_RESPONSIVENESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			levelOfResponsiveness)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.LEVEL_OF_RESPONSIVENESS__LEVEL_OF_RESPONSIVENESS_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("LevelOfResponsivenessMoodCode"),
-						 new Object [] { levelOfResponsiveness }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.LEVEL_OF_RESPONSIVENESS__LEVEL_OF_RESPONSIVENESS_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("LevelOfResponsivenessMoodCode"),
+					new Object[] { levelOfResponsiveness }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -196,9 +192,8 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,30 +205,29 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateLevelOfResponsivenessCodeP(LevelOfResponsiveness levelOfResponsiveness, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateLevelOfResponsivenessCodeP(LevelOfResponsiveness levelOfResponsiveness,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.LEVEL_OF_RESPONSIVENESS);
 			try {
 				VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(levelOfResponsiveness)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			levelOfResponsiveness)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.LEVEL_OF_RESPONSIVENESS__LEVEL_OF_RESPONSIVENESS_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("LevelOfResponsivenessCodeP"),
-						 new Object [] { levelOfResponsiveness }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.LEVEL_OF_RESPONSIVENESS__LEVEL_OF_RESPONSIVENESS_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("LevelOfResponsivenessCodeP"),
+					new Object[] { levelOfResponsiveness }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -245,7 +239,7 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 				}
 				passToken.add(levelOfResponsiveness);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -259,9 +253,9 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67775-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67775-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLevelOfResponsivenessCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Code</em>}' invariant operation.
@@ -271,9 +265,8 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -285,36 +278,37 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateLevelOfResponsivenessCode(LevelOfResponsiveness levelOfResponsiveness, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.LevelOfResponsivenessCodeP");
+
+	public static boolean validateLevelOfResponsivenessCode(LevelOfResponsiveness levelOfResponsiveness,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.LevelOfResponsivenessCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(levelOfResponsiveness)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.LEVEL_OF_RESPONSIVENESS);
 			try {
 				VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(levelOfResponsiveness)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			levelOfResponsiveness)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.LEVEL_OF_RESPONSIVENESS__LEVEL_OF_RESPONSIVENESS_CODE,
-						 EmspcrPlugin.INSTANCE.getString("LevelOfResponsivenessCode"),
-						 new Object [] { levelOfResponsiveness }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.LEVEL_OF_RESPONSIVENESS__LEVEL_OF_RESPONSIVENESS_CODE,
+					EmspcrPlugin.INSTANCE.getString("LevelOfResponsivenessCode"),
+					new Object[] { levelOfResponsiveness }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -338,9 +332,8 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_LEVEL_OF_RESPONSIVENESS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -352,30 +345,29 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateLevelOfResponsivenessEffectiveTime(LevelOfResponsiveness levelOfResponsiveness, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateLevelOfResponsivenessEffectiveTime(LevelOfResponsiveness levelOfResponsiveness,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_LEVEL_OF_RESPONSIVENESS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.LEVEL_OF_RESPONSIVENESS);
 			try {
 				VALIDATE_LEVEL_OF_RESPONSIVENESS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LEVEL_OF_RESPONSIVENESS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_OF_RESPONSIVENESS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(levelOfResponsiveness)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_OF_RESPONSIVENESS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			levelOfResponsiveness)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.LEVEL_OF_RESPONSIVENESS__LEVEL_OF_RESPONSIVENESS_EFFECTIVE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("LevelOfResponsivenessEffectiveTime"),
-						 new Object [] { levelOfResponsiveness }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.LEVEL_OF_RESPONSIVENESS__LEVEL_OF_RESPONSIVENESS_EFFECTIVE_TIME,
+					EmspcrPlugin.INSTANCE.getString("LevelOfResponsivenessEffectiveTime"),
+					new Object[] { levelOfResponsiveness }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -389,9 +381,9 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17107-6' or value.code = 'LA17108-4' or value.code = 'LA9340-6' or value.code = 'LA9343-0')))";
+	protected static final String VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17107-6' or value.code = 'LA17108-4' or value.code = 'LA9340-6' or value.code = 'LA9343-0')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLevelOfResponsivenessValue(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Value</em>}' invariant operation.
@@ -401,9 +393,8 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -415,30 +406,29 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateLevelOfResponsivenessValue(LevelOfResponsiveness levelOfResponsiveness, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateLevelOfResponsivenessValue(LevelOfResponsiveness levelOfResponsiveness,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.LEVEL_OF_RESPONSIVENESS);
 			try {
 				VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(levelOfResponsiveness)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			levelOfResponsiveness)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.LEVEL_OF_RESPONSIVENESS__LEVEL_OF_RESPONSIVENESS_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("LevelOfResponsivenessValue"),
-						 new Object [] { levelOfResponsiveness }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.LEVEL_OF_RESPONSIVENESS__LEVEL_OF_RESPONSIVENESS_VALUE,
+					EmspcrPlugin.INSTANCE.getString("LevelOfResponsivenessValue"),
+					new Object[] { levelOfResponsiveness }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -462,9 +452,8 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -476,30 +465,29 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateLevelOfResponsivenessValueP(LevelOfResponsiveness levelOfResponsiveness, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateLevelOfResponsivenessValueP(LevelOfResponsiveness levelOfResponsiveness,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.LEVEL_OF_RESPONSIVENESS);
 			try {
 				VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(levelOfResponsiveness)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			levelOfResponsiveness)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.LEVEL_OF_RESPONSIVENESS__LEVEL_OF_RESPONSIVENESS_VALUE_P,
-						 EmspcrPlugin.INSTANCE.getString("LevelOfResponsivenessValueP"),
-						 new Object [] { levelOfResponsiveness }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.LEVEL_OF_RESPONSIVENESS__LEVEL_OF_RESPONSIVENESS_VALUE_P,
+					EmspcrPlugin.INSTANCE.getString("LevelOfResponsivenessValueP"),
+					new Object[] { levelOfResponsiveness }));
 			}
-			 
+
 			return false;
 		}
 		return true;

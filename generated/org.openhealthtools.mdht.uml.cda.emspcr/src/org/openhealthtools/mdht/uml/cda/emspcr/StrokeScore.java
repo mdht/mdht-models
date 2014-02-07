@@ -143,10 +143,11 @@ public interface StrokeScore extends Observation {
 	 * @generated
 	 */
 	public StrokeScore init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public StrokeScore init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StrokeScore init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // StrokeScore

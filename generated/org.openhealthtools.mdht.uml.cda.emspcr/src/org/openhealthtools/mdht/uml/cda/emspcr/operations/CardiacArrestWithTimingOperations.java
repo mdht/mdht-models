@@ -70,9 +70,8 @@ public class CardiacArrestWithTimingOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_WITH_TIMING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,30 +83,29 @@ public class CardiacArrestWithTimingOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestWithTimingTemplateId(CardiacArrestWithTiming cardiacArrestWithTiming, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestWithTimingTemplateId(CardiacArrestWithTiming cardiacArrestWithTiming,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_WITH_TIMING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST_WITH_TIMING);
 			try {
 				VALIDATE_CARDIAC_ARREST_WITH_TIMING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_WITH_TIMING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_WITH_TIMING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrestWithTiming)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_WITH_TIMING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cardiacArrestWithTiming)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST_WITH_TIMING__CARDIAC_ARREST_WITH_TIMING_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestWithTimingTemplateId"),
-						 new Object [] { cardiacArrestWithTiming }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST_WITH_TIMING__CARDIAC_ARREST_WITH_TIMING_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestWithTimingTemplateId"),
+					new Object[] { cardiacArrestWithTiming }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -131,9 +129,8 @@ public class CardiacArrestWithTimingOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_WITH_TIMING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,30 +142,29 @@ public class CardiacArrestWithTimingOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestWithTimingMoodCode(CardiacArrestWithTiming cardiacArrestWithTiming, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestWithTimingMoodCode(CardiacArrestWithTiming cardiacArrestWithTiming,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_WITH_TIMING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST_WITH_TIMING);
 			try {
 				VALIDATE_CARDIAC_ARREST_WITH_TIMING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_WITH_TIMING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_WITH_TIMING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrestWithTiming)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_WITH_TIMING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cardiacArrestWithTiming)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST_WITH_TIMING__CARDIAC_ARREST_WITH_TIMING_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestWithTimingMoodCode"),
-						 new Object [] { cardiacArrestWithTiming }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST_WITH_TIMING__CARDIAC_ARREST_WITH_TIMING_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestWithTimingMoodCode"),
+					new Object[] { cardiacArrestWithTiming }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -182,9 +178,9 @@ public class CardiacArrestWithTimingOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARDIAC_ARREST_WITH_TIMING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67502-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CARDIAC_ARREST_WITH_TIMING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67502-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCardiacArrestWithTimingCode(CardiacArrestWithTiming, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest With Timing Code</em>}' invariant operation.
@@ -194,9 +190,8 @@ public class CardiacArrestWithTimingOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_WITH_TIMING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +203,29 @@ public class CardiacArrestWithTimingOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestWithTimingCode(CardiacArrestWithTiming cardiacArrestWithTiming, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestWithTimingCode(CardiacArrestWithTiming cardiacArrestWithTiming,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_WITH_TIMING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST_WITH_TIMING);
 			try {
 				VALIDATE_CARDIAC_ARREST_WITH_TIMING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_WITH_TIMING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_WITH_TIMING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrestWithTiming)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_WITH_TIMING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cardiacArrestWithTiming)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST_WITH_TIMING__CARDIAC_ARREST_WITH_TIMING_CODE,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestWithTimingCode"),
-						 new Object [] { cardiacArrestWithTiming }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST_WITH_TIMING__CARDIAC_ARREST_WITH_TIMING_CODE,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestWithTimingCode"),
+					new Object[] { cardiacArrestWithTiming }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -245,9 +239,9 @@ public class CardiacArrestWithTimingOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARDIAC_ARREST_WITH_TIMING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17054-0' or value.code = 'LA17055-7')))";
+	protected static final String VALIDATE_CARDIAC_ARREST_WITH_TIMING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17054-0' or value.code = 'LA17055-7')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCardiacArrestWithTimingValue(CardiacArrestWithTiming, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest With Timing Value</em>}' invariant operation.
@@ -257,9 +251,8 @@ public class CardiacArrestWithTimingOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
+
 	protected static Constraint VALIDATE_CARDIAC_ARREST_WITH_TIMING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,30 +264,29 @@ public class CardiacArrestWithTimingOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCardiacArrestWithTimingValue(CardiacArrestWithTiming cardiacArrestWithTiming, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
+	public static boolean validateCardiacArrestWithTimingValue(CardiacArrestWithTiming cardiacArrestWithTiming,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CARDIAC_ARREST_WITH_TIMING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_ARREST_WITH_TIMING);
 			try {
 				VALIDATE_CARDIAC_ARREST_WITH_TIMING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_ARREST_WITH_TIMING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_WITH_TIMING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacArrestWithTiming)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_ARREST_WITH_TIMING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cardiacArrestWithTiming)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARDIAC_ARREST_WITH_TIMING__CARDIAC_ARREST_WITH_TIMING_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("CardiacArrestWithTimingValue"),
-						 new Object [] { cardiacArrestWithTiming }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARDIAC_ARREST_WITH_TIMING__CARDIAC_ARREST_WITH_TIMING_VALUE,
+					EmspcrPlugin.INSTANCE.getString("CardiacArrestWithTimingValue"),
+					new Object[] { cardiacArrestWithTiming }));
 			}
-			 
+
 			return false;
 		}
 		return true;

@@ -107,10 +107,11 @@ public interface IncidentDispositionObservation extends Observation {
 	 * @generated
 	 */
 	public IncidentDispositionObservation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public IncidentDispositionObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IncidentDispositionObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // IncidentDispositionObservation

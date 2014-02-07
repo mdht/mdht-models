@@ -88,8 +88,10 @@ public class EMSVitalSignsSectionImpl extends VitalSignsSectionImpl implements E
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSVitalSignsSectionVitalSignsOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionVitalSignsOrganizer(this, diagnostics, context);
+	public boolean validateEMSVitalSignsSectionVitalSignsOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionVitalSignsOrganizer(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -97,8 +99,10 @@ public class EMSVitalSignsSectionImpl extends VitalSignsSectionImpl implements E
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSVitalSignsSectionAdditionalVitalSignsOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionAdditionalVitalSignsOrganizer(this, diagnostics, context);
+	public boolean validateEMSVitalSignsSectionAdditionalVitalSignsOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionAdditionalVitalSignsOrganizer(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -125,8 +129,10 @@ public class EMSVitalSignsSectionImpl extends VitalSignsSectionImpl implements E
 	 * @generated
 	 */
 	@Override
-	public boolean validateVitalSignsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSVitalSignsSectionOperations.validateVitalSignsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	public boolean validateVitalSignsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EMSVitalSignsSectionOperations.validateVitalSignsSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -134,16 +140,19 @@ public class EMSVitalSignsSectionImpl extends VitalSignsSectionImpl implements E
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EMSVitalSignsSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EMSVitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //EMSVitalSignsSectionImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EMSVitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // EMSVitalSignsSectionImpl
