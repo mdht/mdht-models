@@ -41126,13 +41126,465 @@ public interface ConsolPackage extends EPackage {
 	int HEALTH_CONCERN_ACT_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.InterventionActImpl <em>Intervention Act</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>General Header Constraints</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.InterventionActImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getInterventionAct()
 	 * @generated
 	 */
+	int INTERVENTION_ACT = 184;
+
+	/**
+	   * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__REALM_CODE = CDAPackage.ACT__REALM_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__TYPE_ID = CDAPackage.ACT__TYPE_ID;
+
+	/**
+	   * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
+
+	/**
+	   * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__ID = CDAPackage.ACT__ID;
+
+	/**
+	   * The feature id for the '<em><b>Code</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__CODE = CDAPackage.ACT__CODE;
+
+	/**
+	   * The feature id for the '<em><b>Text</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__TEXT = CDAPackage.ACT__TEXT;
+
+	/**
+	   * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
+
+	/**
+	   * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__SUBJECT = CDAPackage.ACT__SUBJECT;
+
+	/**
+	   * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__SPECIMEN = CDAPackage.ACT__SPECIMEN;
+
+	/**
+	   * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__PERFORMER = CDAPackage.ACT__PERFORMER;
+
+	/**
+	   * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__AUTHOR = CDAPackage.ACT__AUTHOR;
+
+	/**
+	   * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__INFORMANT = CDAPackage.ACT__INFORMANT;
+
+	/**
+	   * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
+
+	/**
+	   * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
+
+	/**
+	   * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__REFERENCE = CDAPackage.ACT__REFERENCE;
+
+	/**
+	   * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__PRECONDITION = CDAPackage.ACT__PRECONDITION;
+
+	/**
+	   * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	   * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
+
+	/**
+	   * The number of structural features of the '<em>Intervention Act</em>' class.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int INTERVENTION_ACT_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
+
+	/**
+	   * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ExternalDocumentReferenceImpl <em>External Document Reference</em>}' class.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @see org.openhealthtools.mdht.uml.cda.consol.impl.ExternalDocumentReferenceImpl
+	   * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getExternalDocumentReference()
+	   * @generated
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE = 185;
+
+	/**
+	   * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__REALM_CODE = CDAPackage.ACT__REALM_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__TYPE_ID = CDAPackage.ACT__TYPE_ID;
+
+	/**
+	   * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
+
+	/**
+	   * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__ID = CDAPackage.ACT__ID;
+
+	/**
+	   * The feature id for the '<em><b>Code</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__CODE = CDAPackage.ACT__CODE;
+
+	/**
+	   * The feature id for the '<em><b>Text</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__TEXT = CDAPackage.ACT__TEXT;
+
+	/**
+	   * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
+
+	/**
+	   * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__SUBJECT = CDAPackage.ACT__SUBJECT;
+
+	/**
+	   * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__SPECIMEN = CDAPackage.ACT__SPECIMEN;
+
+	/**
+	   * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__PERFORMER = CDAPackage.ACT__PERFORMER;
+
+	/**
+	   * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__AUTHOR = CDAPackage.ACT__AUTHOR;
+
+	/**
+	   * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__INFORMANT = CDAPackage.ACT__INFORMANT;
+
+	/**
+	   * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
+
+	/**
+	   * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
+
+	/**
+	   * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__REFERENCE = CDAPackage.ACT__REFERENCE;
+
+	/**
+	   * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__PRECONDITION = CDAPackage.ACT__PRECONDITION;
+
+	/**
+	   * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	   * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
+
+	/**
+	   * The number of structural features of the '<em>External Document Reference</em>' class.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int EXTERNAL_DOCUMENT_REFERENCE_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
+
+	/**
+	   * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @return the meta object for class '<em>General Header Constraints</em>'.
+	   * @see org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints
+	   * @generated
+	   */
 	EClass getGeneralHeaderConstraints();
 
 	/**
@@ -42786,13 +43238,33 @@ public interface ConsolPackage extends EPackage {
 	EClass getHealthConcernAct();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection <em>Medications Administered Section</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct <em>Intervention Act</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Medications Administered Section</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection
+	 * @return the meta object for class '<em>Intervention Act</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.InterventionAct
 	 * @generated
 	 */
+	EClass getInterventionAct();
+
+	/**
+	   * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference <em>External Document Reference</em>}'.
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @return the meta object for class '<em>External Document Reference</em>'.
+	   * @see org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference
+	   * @generated
+	   */
+	EClass getExternalDocumentReference();
+
+	/**
+	   * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection <em>Medications Administered Section</em>}'.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @return the meta object for class '<em>Medications Administered Section</em>'.
+	   * @see org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection
+	   * @generated
+	   */
 	EClass getMedicationsAdministeredSection();
 
 	/**
@@ -44648,13 +45120,33 @@ public interface ConsolPackage extends EPackage {
 		EClass HEALTH_CONCERN_ACT = eINSTANCE.getHealthConcernAct();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationsAdministeredSectionImpl <em>Medications Administered Section</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.InterventionActImpl <em>Intervention Act</em>}' class.
 		 * <!-- begin-user-doc -->
-			 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.MedicationsAdministeredSectionImpl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationsAdministeredSection()
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.InterventionActImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getInterventionAct()
 		 * @generated
 		 */
+		EClass INTERVENTION_ACT = eINSTANCE.getInterventionAct();
+
+		/**
+		     * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ExternalDocumentReferenceImpl <em>External Document Reference</em>}' class.
+		     * <!-- begin-user-doc -->
+		     * <!-- end-user-doc -->
+		     * @see org.openhealthtools.mdht.uml.cda.consol.impl.ExternalDocumentReferenceImpl
+		     * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getExternalDocumentReference()
+		     * @generated
+		     */
+		EClass EXTERNAL_DOCUMENT_REFERENCE = eINSTANCE.getExternalDocumentReference();
+
+		/**
+		     * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationsAdministeredSectionImpl <em>Medications Administered Section</em>}' class.
+		     * <!-- begin-user-doc -->
+				 * <!-- end-user-doc -->
+		     * @see org.openhealthtools.mdht.uml.cda.consol.impl.MedicationsAdministeredSectionImpl
+		     * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getMedicationsAdministeredSection()
+		     * @generated
+		     */
 		EClass MEDICATIONS_ADMINISTERED_SECTION = eINSTANCE.getMedicationsAdministeredSection();
 
 		/**

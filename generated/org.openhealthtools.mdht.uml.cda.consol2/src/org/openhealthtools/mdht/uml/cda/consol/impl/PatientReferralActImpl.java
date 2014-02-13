@@ -36,128 +36,128 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  */
 public class PatientReferralActImpl extends ActImpl implements PatientReferralAct {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PatientReferralActImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PATIENT_REFERRAL_ACT;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActActReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActActReference(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActEntryRelationship(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActEntryRelationshipObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationClassCode(
@@ -165,10 +165,10 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActEntryRelationshipObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationMoodCode(
@@ -176,10 +176,10 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActEntryRelationshipObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationCodeP(
@@ -187,10 +187,10 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActEntryRelationshipObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationCode(
@@ -198,10 +198,10 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActEntryRelationshipObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationStatusCode(
@@ -209,10 +209,10 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActEntryRelationshipObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationStatusCodeP(
@@ -220,10 +220,10 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActEntryRelationshipObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationValue(
@@ -231,10 +231,10 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActEntryRelationshipObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationValueP(
@@ -242,21 +242,10 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientReferralActEntryRelationshipTypeCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipTypeCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipTypeCode(
@@ -264,10 +253,10 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientReferralActEntryRelationshipObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservation(
@@ -275,19 +264,19 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<ActReference> getActReferences() {
 		return PatientReferralActOperations.getActReferences(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PatientReferralAct init() {
 		return Initializer.Util.init(this);
 	}

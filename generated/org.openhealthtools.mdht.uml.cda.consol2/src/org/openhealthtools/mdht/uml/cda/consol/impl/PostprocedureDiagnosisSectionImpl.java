@@ -34,29 +34,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements PostprocedureDiagnosisSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PostprocedureDiagnosisSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePostprocedureDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionTemplateId(
@@ -64,50 +64,50 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePostprocedureDiagnosisSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionCodeP(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePostprocedureDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePostprocedureDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionText(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePostprocedureDiagnosisSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionTitle(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(
@@ -115,19 +115,19 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PostprocedureDiagnosis getPostprocedureDiagnosis() {
 		return PostprocedureDiagnosisSectionOperations.getPostprocedureDiagnosis(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PostprocedureDiagnosisSection init() {
 		return Initializer.Util.init(this);
 	}

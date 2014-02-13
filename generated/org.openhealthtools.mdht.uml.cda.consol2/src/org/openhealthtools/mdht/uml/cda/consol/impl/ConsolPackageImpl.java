@@ -1210,6 +1210,20 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass interventionActEClass = null;
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	private EClass externalDocumentReferenceEClass = null;
+
+	/**
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   */
 	private EClass medicationsAdministeredSectionEClass = null;
 
 	/**
@@ -3571,6 +3585,32 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getInterventionAct() {
+		if (interventionActEClass == null) {
+			interventionActEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				184);
+		}
+		return interventionActEClass;
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public EClass getExternalDocumentReference() {
+		if (externalDocumentReferenceEClass == null) {
+			externalDocumentReferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				185);
+		}
+		return externalDocumentReferenceEClass;
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   */
 	public EClass getMedicationsAdministeredSection() {
 		if (medicationsAdministeredSectionEClass == null) {
 			medicationsAdministeredSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(

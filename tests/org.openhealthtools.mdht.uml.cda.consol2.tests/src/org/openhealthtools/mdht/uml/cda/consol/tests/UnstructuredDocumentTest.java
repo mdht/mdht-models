@@ -38,7 +38,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument#validateUnstructuredDocumentTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument#validateUnstructuredDocumentRecordTarget(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Record Target</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument#validateUnstructuredDocumentAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Author</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument#validateUnstructuredDocumentComponent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Component</em>}</li>
@@ -54,6 +53,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument#validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Custodian Assigned Custodian3 Custodian Organization Telecom</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument#validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Custodian Assigned Custodian3 Custodian Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument#validateUnstructuredDocumentCustodianAssignedCustodian2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Custodian Assigned Custodian2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -61,40 +61,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  */
 
 public class UnstructuredDocumentTest extends CDAValidationTest {
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateUnstructuredDocumentTemplateId() {
-		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentTemplateIdTestCase = new OperationsTestCase<UnstructuredDocument>(
-			"validateUnstructuredDocumentTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(UnstructuredDocument target) {
-
-			}
-
-			@Override
-			protected void updateToPass(UnstructuredDocument target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return UnstructuredDocumentOperations.validateUnstructuredDocumentTemplateId(
-					(UnstructuredDocument) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUnstructuredDocumentTemplateIdTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -696,6 +662,40 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 		};
 
 		validateUnstructuredDocumentCustodianAssignedCustodian2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsTemplateId() {
+		OperationsTestCase<UnstructuredDocument> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<UnstructuredDocument>(
+			"validateGeneralHeaderConstraintsTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(UnstructuredDocument target) {
+
+			}
+
+			@Override
+			protected void updateToPass(UnstructuredDocument target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return UnstructuredDocumentOperations.validateGeneralHeaderConstraintsTemplateId(
+					(UnstructuredDocument) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

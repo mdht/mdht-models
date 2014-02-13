@@ -930,11 +930,9 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:31955</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_exTZkI9LEeOB0eBUISUB4Q" base_Property="_QXkT4I9LEeOB0eBUISUB4Q"/>
-  <CDA:CodeSystemConstraint xmi:id="_uUI1UI9LEeOB0eBUISUB4Q" base_Property="_QXkT4I9LEeOB0eBUISUB4Q">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_f6DvAE6SEeC5ttwajeXVXg"/>
+  <CDA:PropertyValidation xmi:id="_exTZkI9LEeOB0eBUISUB4Q" base_Property="_QXkT4I9LEeOB0eBUISUB4Q">
     <ruleId>CONF:31968</ruleId>
-  </CDA:CodeSystemConstraint>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_bD7eAI9NEeOB0eBUISUB4Q" base_Property="_QZIIMI9NEeOB0eBUISUB4Q">
     <ruleId>CONF:31970</ruleId>
   </CDA:PropertyValidation>

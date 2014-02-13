@@ -490,6 +490,9 @@ Note that there are discrepancies between CCD and the lab domain model, such as 
       <association href="../consol.uml#_Af0_UIz_EeOoMZgUoTghIg"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_X8oA8Iz_EeOoMZgUoTghIg" name="Participant">
+      <ownedComment xmi:id="_T0t64JKmEeOukfQDrfdK2A">
+        <body>INLINE</body>
+      </ownedComment>
       <generalization xmi:id="_X8ooAIz_EeOoMZgUoTghIg">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
       </generalization>
