@@ -572,7 +572,7 @@
       <generalization xmi:id="_UAcA0I7DEeOB0eBUISUB4Q">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_jmOC4I7DEeOB0eBUISUB4Q" name="typeCode" visibility="private">
+      <ownedAttribute xmi:id="_jmOC4I7DEeOB0eBUISUB4Q" name="typeCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_tKf1gI7DEeOB0eBUISUB4Q" value="SUBJ"/>
@@ -652,11 +652,9 @@
     <ruleId>CONF:31636</ruleId>
     <ruleId>CONF:31637</ruleId>
   </CDA:EntryRelationship>
-  <CDA:PropertyValidation xmi:id="_onUlQI7DEeOB0eBUISUB4Q" base_Property="_jmOC4I7DEeOB0eBUISUB4Q"/>
-  <CDA:CodeSystemConstraint xmi:id="_2ll28I7DEeOB0eBUISUB4Q" base_Property="_jmOC4I7DEeOB0eBUISUB4Q">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_f6DvAE6SEeC5ttwajeXVXg"/>
+  <CDA:PropertyValidation xmi:id="_onUlQI7DEeOB0eBUISUB4Q" base_Property="_jmOC4I7DEeOB0eBUISUB4Q">
     <ruleId>CONF:31613</ruleId>
-  </CDA:CodeSystemConstraint>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_lRBs8I7FEeOB0eBUISUB4Q" base_Property="_gGL_wI7FEeOB0eBUISUB4Q">
     <ruleId>CONF:31606</ruleId>
   </CDA:PropertyValidation>
@@ -1040,5 +1038,146 @@ The code on the Health Concern Act is set to differentiate between the two types
     <ruleId>CONF:31549</ruleId>
     <ruleId>CONF:31550</ruleId>
     <ruleId>CONF:31551</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Class xmi:id="_XD5vgJA8EeOZX935IVJfOg" name="InterventionAct">
+    <ownedComment xmi:id="_nULqoJA9EeOZX935IVJfOg">
+      <body>This template represents an Intervention Act. It is a wrapper for intervention-type activities considered to be parts of the same intervention. For example, an activity such as 'elevate head of bed' combined with 'provide humidified O2 per nasal cannula' may be the interventions planned for a health concern of 'respiratory insufficiency' in order to attempt to achieve a goal of 'pulse oximetry greater than 92%.' These intervention activities may be newly described or derived from a variety of sources within an EHR. &#xD;
+Interventions are actions taken to address Health Concerns and increase the likelihood of achieving the patient's or providers' goals. An Intervention Act should contain a reference to a Goal Observation representing the reason for the intervention. &#xD;
+Intervention Acts can be related to each other, (eg. an Intervention Act with moodCode of INT could be related to a series of Intervention Acts with moodCode of EVN each having an effectiveTime containing the time of the intervention.)</body>
+    </ownedComment>
+    <generalization xmi:id="_XENRgJA8EeOZX935IVJfOg">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_pznW8JA8EeOZX935IVJfOg" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_0ZCoEJA9EeOZX935IVJfOg" value="ACT"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_pzpzMJA8EeOZX935IVJfOg" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_pzn-BJA8EeOZX935IVJfOg" name="id" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w7dt8JA9EeOZX935IVJfOg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w7dt8ZA9EeOZX935IVJfOg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_pzn-AJA8EeOZX935IVJfOg" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_pzpzMZA8EeOZX935IVJfOg" name="statusCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xfYTUJA9EeOZX935IVJfOg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xfYTUZA9EeOZX935IVJfOg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_pzn-AZA8EeOZX935IVJfOg" name="effectiveTime" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pzn-ApA8EeOZX935IVJfOg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pzn-A5A8EeOZX935IVJfOg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hbddYEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_kZWUYJBBEeOZX935IVJfOg" name="goalObservation" type="_-miMII9TEeOB0eBUISUB4Q" association="_kZW7cJBBEeOZX935IVJfOg">
+      <ownedComment xmi:id="_62srMJBBEeOZX935IVJfOg">
+        <body>This entryRelationship represents the relationship between an Intervention Act and a Goal Observation (Intervention HAS REASON Goal).</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kZWUYpBBEeOZX935IVJfOg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kZWUYZBBEeOZX935IVJfOg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_E8vuIJBCEeOZX935IVJfOg" name="interventionAct" type="_XD5vgJA8EeOZX935IVJfOg" association="_E8w8QJBCEeOZX935IVJfOg">
+      <ownedComment xmi:id="_OXYckJBCEeOZX935IVJfOg">
+        <body>This entryRelationship represents the relationship between two Intervention Acts (Intervention RELATES TO Intervention).</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E8wVMZBCEeOZX935IVJfOg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E8wVMJBCEeOZX935IVJfOg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_m3DQcJBCEeOZX935IVJfOg" name="nutritionRecommendations" type="_FhAIMI3FEeOB0eBUISUB4Q" association="_m3EekJBCEeOZX935IVJfOg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m3D3gZBCEeOZX935IVJfOg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m3D3gJBCEeOZX935IVJfOg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_5MR7UJBCEeOZX935IVJfOg" name="actReference" association="_5MSiYZBCEeOZX935IVJfOg">
+      <ownedComment xmi:id="_8URnAJBCEeOZX935IVJfOg">
+        <body>Where an Intervention needs to reference another entry already described in the CDA document instance, rather than repeating the full content of the entry, the Act Relationship template may be used to reference this entry.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5MSiYJBCEeOZX935IVJfOg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5MR7UZBCEeOZX935IVJfOg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HBMcsJBDEeOZX935IVJfOg" name="actReference2" association="_HBNq0JBDEeOZX935IVJfOg">
+      <ownedComment xmi:id="_MowiIJBDEeOZX935IVJfOg">
+        <body>Where an Intervention needs to reference a Goal Observation entry already described in the CDA document instance, rather than repeating the full content of the Goal Observation, the Act Relationship template may be used to reference this entry.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HBNDwZBDEeOZX935IVJfOg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HBNDwJBDEeOZX935IVJfOg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_cpHPEJA9EeOZX935IVJfOg" base_Class="_XD5vgJA8EeOZX935IVJfOg" templateId="2.16.840.1.113883.10.20.22.4.131">
+    <ruleId>CONF:30973</ruleId>
+    <ruleId>CONF:30974</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_5UDwkJA9EeOZX935IVJfOg" base_Property="_pznW8JA8EeOZX935IVJfOg">
+    <ruleId>CONF:30971</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_5pvFoJA9EeOZX935IVJfOg" base_Property="_pzpzMJA8EeOZX935IVJfOg">
+    <ruleId>CONF:30972</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_6YbXoJA9EeOZX935IVJfOg" base_Property="_pzn-BJA8EeOZX935IVJfOg">
+    <ruleId>CONF:30975</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_6zzFAJA9EeOZX935IVJfOg" base_Property="_pzn-AJA8EeOZX935IVJfOg">
+    <ruleId>CONF:30976</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_7gqyEJA9EeOZX935IVJfOg" base_Property="_pzpzMZA8EeOZX935IVJfOg">
+    <ruleId>CONF:30979</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_8fdVkJA9EeOZX935IVJfOg" severity="WARNING" base_Property="_pzn-AZA8EeOZX935IVJfOg">
+    <ruleId>CONF:31624</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_WNKp4JA-EeOZX935IVJfOg" code="362956003" displayName="procedure / intervention (navigational concept)" base_Property="_pzn-AJA8EeOZX935IVJfOg">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:30977</ruleId>
+    <ruleId>CONF:30978</ruleId>
+  </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_kZW7cJBBEeOZX935IVJfOg" memberEnd="_kZWUYJBBEeOZX935IVJfOg _kZXigJBBEeOZX935IVJfOg">
+    <ownedEnd xmi:id="_kZXigJBBEeOZX935IVJfOg" type="_XD5vgJA8EeOZX935IVJfOg" association="_kZW7cJBBEeOZX935IVJfOg"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_nnbZ8JBBEeOZX935IVJfOg" severity="WARNING" base_Association="_kZW7cJBBEeOZX935IVJfOg" typeCode="RSON">
+    <ruleId>CONF:30998</ruleId>
+    <ruleId>CONF:30999</ruleId>
+    <ruleId>CONF:31000</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_E8w8QJBCEeOZX935IVJfOg" memberEnd="_E8vuIJBCEeOZX935IVJfOg _E8w8QZBCEeOZX935IVJfOg">
+    <ownedEnd xmi:id="_E8w8QZBCEeOZX935IVJfOg" type="_XD5vgJA8EeOZX935IVJfOg" association="_E8w8QJBCEeOZX935IVJfOg"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_HPWp8JBCEeOZX935IVJfOg" severity="INFO" base_Association="_E8w8QJBCEeOZX935IVJfOg" typeCode="REFR">
+    <ruleId>CONF:31154</ruleId>
+    <ruleId>CONF:31155</ruleId>
+    <ruleId>CONF:31156</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_m3EekJBCEeOZX935IVJfOg" memberEnd="_m3DQcJBCEeOZX935IVJfOg _m3EekZBCEeOZX935IVJfOg">
+    <ownedEnd xmi:id="_m3EekZBCEeOZX935IVJfOg" type="_XD5vgJA8EeOZX935IVJfOg" association="_m3EekJBCEeOZX935IVJfOg"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_o5kh0JBCEeOZX935IVJfOg" severity="INFO" base_Association="_m3EekJBCEeOZX935IVJfOg">
+    <ruleId>CONF:31413</ruleId>
+    <ruleId>CONF:31414</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_5MSiYZBCEeOZX935IVJfOg" memberEnd="_5MR7UJBCEeOZX935IVJfOg _5MTJcJBCEeOZX935IVJfOg">
+    <ownedEnd xmi:id="_5MTJcJBCEeOZX935IVJfOg" type="_XD5vgJA8EeOZX935IVJfOg" association="_5MSiYZBCEeOZX935IVJfOg"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_6ndf4JBCEeOZX935IVJfOg" severity="INFO" base_Association="_5MSiYZBCEeOZX935IVJfOg" typeCode="REFR">
+    <ruleId>CONF:31545</ruleId>
+    <ruleId>CONF:31554</ruleId>
+    <ruleId>CONF:31555</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_HBNq0JBDEeOZX935IVJfOg" memberEnd="_HBMcsJBDEeOZX935IVJfOg _HBNq0ZBDEeOZX935IVJfOg">
+    <ownedEnd xmi:id="_HBNq0ZBDEeOZX935IVJfOg" type="_XD5vgJA8EeOZX935IVJfOg" association="_HBNq0JBDEeOZX935IVJfOg"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_O1h7sJBDEeOZX935IVJfOg" severity="INFO" base_Association="_HBNq0JBDEeOZX935IVJfOg" typeCode="GEVL">
+    <ruleId>CONF:31621</ruleId>
+    <ruleId>CONF:31622</ruleId>
+    <ruleId>CONF:31623</ruleId>
   </CDA:EntryRelationship>
 </xmi:XMI>

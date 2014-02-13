@@ -1454,6 +1454,21 @@ Valueset Source: http://www.health.ny.gov/statistics/sparcs/sysdoc/appp.htm</bod
       <ownedLiteral xmi:id="_2PB0AI9mEeOB0eBUISUB4Q" name="CONC"/>
       <ownedLiteral xmi:id="_7mN7II9mEeOB0eBUISUB4Q" name="281694009"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="__AhusJA-EeOZX935IVJfOg" name="Intervention moodCode">
+      <ownedComment xmi:id="_F8VDMJA_EeOZX935IVJfOg">
+        <body>Contains all the moodCode values it is possible to have for an Intervention. 
+ 
+Specific URL Pending&#xD;
+Valueset Source: http://www.hl7.org/documentcenter/public/standards/vocabulary/vocabulary_tables/infrastructure/vocabulary/vocabulary.html</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_ULq2wJA_EeOZX935IVJfOg" name="APT"/>
+      <ownedLiteral xmi:id="_Xg-lsJA_EeOZX935IVJfOg" name="ARQ"/>
+      <ownedLiteral xmi:id="_aJankJA_EeOZX935IVJfOg" name="EVN"/>
+      <ownedLiteral xmi:id="_cAW7EJA_EeOZX935IVJfOg" name="INT"/>
+      <ownedLiteral xmi:id="_dVrIMJA_EeOZX935IVJfOg" name="PRMS"/>
+      <ownedLiteral xmi:id="_fdABEJA_EeOZX935IVJfOg" name="PRP"/>
+      <ownedLiteral xmi:id="_kfzMkJA_EeOZX935IVJfOg" name="RQO"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -2849,7 +2864,9 @@ Valueset Source: http://www.health.ny.gov/statistics/sparcs/sysdoc/appp.htm</bod
   <term:ValueSetCode xmi:id="_QiMKkY6-EeOB0eBUISUB4Q" conceptName="shared care - hospice and GP (finding)" base_EnumerationLiteral="_QiMKkI6-EeOB0eBUISUB4Q"/>
   <term:ValueSetCode xmi:id="_Sc7Y8Y6-EeOB0eBUISUB4Q" conceptName="shared care: district nurse and GP (finding)" base_EnumerationLiteral="_Sc7Y8I6-EeOB0eBUISUB4Q"/>
   <term:ValueSetCode xmi:id="_Uu9tAI6-EeOB0eBUISUB4Q" conceptName="shared care: practice nurse and GP (finding)" base_EnumerationLiteral="_Uu9F8I6-EeOB0eBUISUB4Q"/>
-  <term:ValueSetVersion xmi:id="_8AS78Y9OEeOB0eBUISUB4Q" identifier="2.16.840.1.114222.4.11.3591" fullName="Source of Payment Typology (PHDSC)" binding="Dynamic" base_Enumeration="_8AS78I9OEeOB0eBUISUB4Q"/>
+  <term:ValueSetVersion xmi:id="_8AS78Y9OEeOB0eBUISUB4Q" identifier="2.16.840.1.114222.4.11.3591" fullName="Source of Payment Typology (PHDSC)" binding="Dynamic" base_Enumeration="_8AS78I9OEeOB0eBUISUB4Q">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_mLN0II9QEeOB0eBUISUB4Q"/>
+  </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_YttrMI9mEeOB0eBUISUB4Q" identifier="2.16.840.1.113883.11.20.9.53" fullName="Health Concern Type" base_Enumeration="_YttEII9mEeOB0eBUISUB4Q">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
   </term:ValueSetVersion>
@@ -2857,4 +2874,14 @@ Valueset Source: http://www.health.ny.gov/statistics/sparcs/sysdoc/appp.htm</bod
   <term:ValueSetCode xmi:id="_7mOiMI9mEeOB0eBUISUB4Q" conceptName="At risk" base_EnumerationLiteral="_7mN7II9mEeOB0eBUISUB4Q">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="__AiVwJA-EeOZX935IVJfOg" identifier="2.16.840.1.113883.11.20.9.54" fullName="Intervention moodCode" base_Enumeration="__AhusJA-EeOZX935IVJfOg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_ULrd0JA_EeOZX935IVJfOg" conceptName="Appointment" base_EnumerationLiteral="_ULq2wJA_EeOZX935IVJfOg"/>
+  <term:ValueSetCode xmi:id="_Xg-lsZA_EeOZX935IVJfOg" conceptName="Appointment Request" base_EnumerationLiteral="_Xg-lsJA_EeOZX935IVJfOg"/>
+  <term:ValueSetCode xmi:id="_aJankZA_EeOZX935IVJfOg" conceptName="Event" base_EnumerationLiteral="_aJankJA_EeOZX935IVJfOg"/>
+  <term:ValueSetCode xmi:id="_cAXiIJA_EeOZX935IVJfOg" conceptName="Intent" base_EnumerationLiteral="_cAW7EJA_EeOZX935IVJfOg"/>
+  <term:ValueSetCode xmi:id="_dVrIMZA_EeOZX935IVJfOg" conceptName="Promise" base_EnumerationLiteral="_dVrIMJA_EeOZX935IVJfOg"/>
+  <term:ValueSetCode xmi:id="_fdABEZA_EeOZX935IVJfOg" conceptName="Proposal" base_EnumerationLiteral="_fdABEJA_EeOZX935IVJfOg"/>
+  <term:ValueSetCode xmi:id="_kfzMkZA_EeOZX935IVJfOg" conceptName="Request" base_EnumerationLiteral="_kfzMkJA_EeOZX935IVJfOg"/>
 </xmi:XMI>

@@ -47,129 +47,129 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  */
 public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HealthConcernActImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.HEALTH_CONCERN_ACT;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActActReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActActReference(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActActReference2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActActReference2(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActAssessmentScaleObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActCognitiveAbilitiesObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActCognitiveAbilitiesObservation(
@@ -177,67 +177,67 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActFamilyHistoryOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActFamilyHistoryOrganizer(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActMentalStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActMentalStatusObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActNutritionAssessment(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActNutritionAssessment(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActNutritionAssessment2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActNutritionAssessment2(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActPregnancyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActPregnancyObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActCaregiverCharacteristics(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActCaregiverCharacteristics(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActCulturalAndReligiousObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActCulturalAndReligiousObservation(
@@ -245,10 +245,10 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActCharacteristicsOfHomeEnvironment(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActCharacteristicsOfHomeEnvironment(
@@ -256,10 +256,10 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActNutritionalStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActNutritionalStatusObservation(
@@ -267,164 +267,164 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActPatientPriorityPreference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActPatientPriorityPreference(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthConcernActActReference3(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernActOperations.validateHealthConcernActActReference3(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<ActReference> getActReferences() {
 		return HealthConcernActOperations.getActReferences(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<ActReference> getActReference2s() {
 		return HealthConcernActOperations.getActReference2s(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return HealthConcernActOperations.getAssessmentScaleObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<CognitiveAbilitiesObservation> getCognitiveAbilitiesObservations() {
 		return HealthConcernActOperations.getCognitiveAbilitiesObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<FamilyHistoryOrganizer> getFamilyHistoryOrganizers() {
 		return HealthConcernActOperations.getFamilyHistoryOrganizers(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<MentalStatusObservation> getMentalStatusObservations() {
 		return HealthConcernActOperations.getMentalStatusObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<NutritionAssessment> getNutritionAssessments() {
 		return HealthConcernActOperations.getNutritionAssessments(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<NutritionAssessment> getNutritionAssessment2s() {
 		return HealthConcernActOperations.getNutritionAssessment2s(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<PregnancyObservation> getPregnancyObservations() {
 		return HealthConcernActOperations.getPregnancyObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<CaregiverCharacteristics> getCaregiverCharacteristicss() {
 		return HealthConcernActOperations.getCaregiverCharacteristicss(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<CulturalAndReligiousObservation> getCulturalAndReligiousObservations() {
 		return HealthConcernActOperations.getCulturalAndReligiousObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<CharacteristicsOfHomeEnvironment> getCharacteristicsOfHomeEnvironments() {
 		return HealthConcernActOperations.getCharacteristicsOfHomeEnvironments(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<NutritionalStatusObservation> getNutritionalStatusObservations() {
 		return HealthConcernActOperations.getNutritionalStatusObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<PatientPriorityPreference> getPatientPriorityPreferences() {
 		return HealthConcernActOperations.getPatientPriorityPreferences(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<ActReference> getActReference3s() {
 		return HealthConcernActOperations.getActReference3s(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HealthConcernAct init() {
 		return Initializer.Util.init(this);
 	}

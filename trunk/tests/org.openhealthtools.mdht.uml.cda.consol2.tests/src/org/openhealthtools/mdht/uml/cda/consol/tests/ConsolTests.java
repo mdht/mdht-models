@@ -17,7 +17,7 @@ import org.junit.runners.Suite;
  * <!-- end-user-doc -->
  * 		
 
- * @generated
+ * @generated NOT
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
@@ -84,7 +84,14 @@ import org.junit.runners.Suite;
 		DiagnosticImagingReportTest.class, PhysicianReadingStudyPerformerTest.class,
 		PhysicianofRecordParticipantTest.class, TextObservationTest.class, QuantityMeasurementObservationTest.class,
 		CodeObservationsTest.class, ProcedureContextTest.class, MedicationUseNoneKnownTest.class,
-		DeceasedObservationTest.class })
+		DeceasedObservationTest.class, ActReferenceTest.class, AdvanceDirectiveOrganizerTest.class,
+		CharacteristicsOfHomeEnvironmentTest.class, CognitiveAbilitiesObservationTest.class,
+		CulturalAndReligiousObservationTest.class, DrugMonitoringActTest.class, ExternalDocumentReferenceTest.class,
+		GoalObservationTest.class, HandoffCommunicationTest.class, HealthConcernActTest.class,
+		InterventionActTest.class, MedicalEquipmentOrganizerTest.class, MentalStatusObservationTest.class,
+		NutritionalStatusObservationTest.class, NutritionAssessmentTest.class, NutritionRecommendationsTest.class,
+		OutcomeObservationTest.class, PatientPriorityPreferenceTest.class, PatientReferralActTest.class,
+		PlannedCoverageTest.class })
 public class ConsolTests {
 
 	/**

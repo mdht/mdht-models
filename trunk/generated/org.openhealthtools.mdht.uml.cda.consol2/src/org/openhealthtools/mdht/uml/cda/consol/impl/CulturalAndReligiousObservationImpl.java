@@ -34,29 +34,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class CulturalAndReligiousObservationImpl extends ObservationImpl implements CulturalAndReligiousObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected CulturalAndReligiousObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.CULTURAL_AND_RELIGIOUS_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCulturalAndReligiousObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationTemplateId(
@@ -64,10 +64,10 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCulturalAndReligiousObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationClassCode(
@@ -75,10 +75,10 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCulturalAndReligiousObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationMoodCode(
@@ -86,40 +86,40 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCulturalAndReligiousObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationId(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCulturalAndReligiousObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationCodeP(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCulturalAndReligiousObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCulturalAndReligiousObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationStatusCode(
@@ -127,10 +127,10 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCulturalAndReligiousObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationStatusCodeP(
@@ -138,20 +138,20 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCulturalAndReligiousObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CulturalAndReligiousObservation init() {
 		return Initializer.Util.init(this);
 	}

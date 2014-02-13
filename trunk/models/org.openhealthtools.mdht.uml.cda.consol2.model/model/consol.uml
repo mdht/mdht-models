@@ -1428,6 +1428,21 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_aqT78I-AEeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_uy4MsI-AEeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Fjh6AI-BEeOB0eBUISUB4Q"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_XD5vgJA8EeOZX935IVJfOg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_kZW7cJBBEeOZX935IVJfOg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_E8w8QJBCEeOZX935IVJfOg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_m3EekJBCEeOZX935IVJfOg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_5MSiYZBCEeOZX935IVJfOg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_HBNq0JBDEeOZX935IVJfOg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_QcUL8JBGEeOZX935IVJfOg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_Z8eBoJBIEeOZX935IVJfOg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_56LUYJBIEeOZX935IVJfOg">
+      <ownedEnd xmi:id="_56LUYZBIEeOZX935IVJfOg" association="_56LUYJBIEeOZX935IVJfOg">
+        <type xmi:type="uml:Class" href=".controlled/consol-other.uml#_zWyf4JBIEeOZX935IVJfOg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/consol-other.uml#_56KtU5BIEeOZX935IVJfOg"/>
+      <memberEnd href="#_56LUYZBIEeOZX935IVJfOg"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
@@ -2935,5 +2950,8 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_5QR9UI9MEeOB0eBUISUB4Q" base_Association="_QXliAI9LEeOB0eBUISUB4Q">
     <ruleId>CONF:31969</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_YEf98JBJEeOZX935IVJfOg" base_Association="_56LUYJBIEeOZX935IVJfOg">
+    <ruleId>CONF:31938</ruleId>
   </CDA:AssociationValidation>
 </xmi:XMI>

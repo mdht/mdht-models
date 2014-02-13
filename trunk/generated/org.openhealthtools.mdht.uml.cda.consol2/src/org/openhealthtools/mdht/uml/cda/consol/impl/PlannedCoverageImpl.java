@@ -34,110 +34,110 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  */
 public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PlannedCoverageImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PLANNED_COVERAGE;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationship(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageEntryRelationshipActClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActClassCode(
@@ -145,23 +145,33 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageEntryRelationshipActMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageEntryRelationshipActId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActId(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validatePlannedCoverageEntryRelationshipActCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -175,10 +185,10 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageEntryRelationshipActStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActStatusCode(
@@ -186,10 +196,10 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageEntryRelationshipActStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActStatusCodeP(
@@ -197,39 +207,29 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipTypeCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedCoverageEntryRelationshipTypeCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipTypeCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedCoverageEntryRelationshipAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipAct(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PlannedCoverage init() {
 		return Initializer.Util.init(this);
 	}

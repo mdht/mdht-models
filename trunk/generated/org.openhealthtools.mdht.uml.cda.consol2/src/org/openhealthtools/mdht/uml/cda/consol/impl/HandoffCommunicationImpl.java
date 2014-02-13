@@ -34,94 +34,114 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  */
 public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunication {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HandoffCommunicationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.HANDOFF_COMMUNICATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHandoffCommunicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHandoffCommunicationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHandoffCommunicationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHandoffCommunicationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHandoffCommunicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHandoffCommunicationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHandoffCommunicationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHandoffCommunicationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HandoffCommunicationOperations.validateHandoffCommunicationEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateHandoffCommunicationParticipant(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HandoffCommunicationOperations.validateHandoffCommunicationParticipant(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateHandoffCommunicationParticipantParticipantRoleCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HandoffCommunicationOperations.validateHandoffCommunicationParticipantParticipantRoleCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -129,8 +149,32 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHandoffCommunicationParticipant(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HandoffCommunicationOperations.validateHandoffCommunicationParticipant(this, diagnostics, context);
+	public boolean validateHandoffCommunicationParticipantParticipantRoleCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HandoffCommunicationOperations.validateHandoffCommunicationParticipantParticipantRoleCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHandoffCommunicationParticipantTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HandoffCommunicationOperations.validateHandoffCommunicationParticipantTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHandoffCommunicationParticipantParticipantRole(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HandoffCommunicationOperations.validateHandoffCommunicationParticipantParticipantRole(
+			this, diagnostics, context);
 	}
 
 	/**
