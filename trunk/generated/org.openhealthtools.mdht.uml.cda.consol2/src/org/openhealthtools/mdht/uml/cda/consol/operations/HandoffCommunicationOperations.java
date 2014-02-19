@@ -59,45 +59,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class HandoffCommunicationOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected HandoffCommunicationOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHandoffCommunicationTemplateId(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHandoffCommunicationTemplateId(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationTemplateId(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationTemplateId(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HANDOFF_COMMUNICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.141')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHandoffCommunicationTemplateId(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationTemplateId(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationTemplateId(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationTemplateId(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_HANDOFF_COMMUNICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateHandoffCommunicationTemplateId(HandoffCommunication handoffCommunication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -127,36 +127,36 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHandoffCommunicationClassCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Class Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHandoffCommunicationClassCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationClassCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationClassCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HANDOFF_COMMUNICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::x_ActClassDocumentEntryAct::ACT";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHandoffCommunicationClassCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Class Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationClassCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationClassCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationClassCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_HANDOFF_COMMUNICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateHandoffCommunicationClassCode(HandoffCommunication handoffCommunication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -186,36 +186,36 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHandoffCommunicationMoodCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHandoffCommunicationMoodCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationMoodCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationMoodCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HANDOFF_COMMUNICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_DocumentActMood::EVN";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHandoffCommunicationMoodCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationMoodCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationMoodCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationMoodCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_HANDOFF_COMMUNICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateHandoffCommunicationMoodCode(HandoffCommunication handoffCommunication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -245,36 +245,36 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHandoffCommunicationCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHandoffCommunicationCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HANDOFF_COMMUNICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHandoffCommunicationCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_HANDOFF_COMMUNICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateHandoffCommunicationCodeP(HandoffCommunication handoffCommunication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -315,38 +315,38 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHandoffCommunicationCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHandoffCommunicationCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HANDOFF_COMMUNICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '432138007' and value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHandoffCommunicationCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_HANDOFF_COMMUNICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateHandoffCommunicationCode(HandoffCommunication handoffCommunication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -383,37 +383,37 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHandoffCommunicationStatusCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Status Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHandoffCommunicationStatusCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Status Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationStatusCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationStatusCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HANDOFF_COMMUNICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
 			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHandoffCommunicationStatusCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Status Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationStatusCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Status Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationStatusCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationStatusCode(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_HANDOFF_COMMUNICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateHandoffCommunicationStatusCode(HandoffCommunication handoffCommunication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -443,36 +443,36 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHandoffCommunicationStatusCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Status Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHandoffCommunicationStatusCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Status Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationStatusCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationStatusCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HANDOFF_COMMUNICATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHandoffCommunicationStatusCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Status Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationStatusCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Status Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationStatusCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationStatusCodeP(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_HANDOFF_COMMUNICATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateHandoffCommunicationStatusCodeP(HandoffCommunication handoffCommunication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -502,36 +502,36 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHandoffCommunicationEffectiveTime(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Effective Time</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHandoffCommunicationEffectiveTime(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Effective Time</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationEffectiveTime(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationEffectiveTime(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HANDOFF_COMMUNICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHandoffCommunicationEffectiveTime(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Effective Time</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationEffectiveTime(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Effective Time</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationEffectiveTime(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationEffectiveTime(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_HANDOFF_COMMUNICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateHandoffCommunicationEffectiveTime(HandoffCommunication handoffCommunication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -561,36 +561,36 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHandoffCommunicationParticipant(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participant</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHandoffCommunicationParticipant(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participant</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationParticipant(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationParticipant(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHandoffCommunicationParticipant(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participant</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationParticipant(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participant</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHandoffCommunicationParticipant(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHandoffCommunicationParticipant(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateHandoffCommunicationParticipant(HandoffCommunication handoffCommunication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

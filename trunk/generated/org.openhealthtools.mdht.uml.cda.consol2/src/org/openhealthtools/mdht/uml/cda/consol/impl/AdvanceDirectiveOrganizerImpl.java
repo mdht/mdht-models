@@ -36,105 +36,105 @@ import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
  */
 public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements AdvanceDirectiveOrganizer {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AdvanceDirectiveOrganizerImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdvanceDirectiveOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerTemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdvanceDirectiveOrganizerClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerClassCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdvanceDirectiveOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdvanceDirectiveOrganizerId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdvanceDirectiveOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdvanceDirectiveOrganizerCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdvanceDirectiveOrganizerStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerStatusCodeP(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdvanceDirectiveOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerStatusCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(
@@ -142,19 +142,19 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<AdvanceDirectiveObservation> getAdvanceDirectiveObservations() {
 		return AdvanceDirectiveOrganizerOperations.getAdvanceDirectiveObservations(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AdvanceDirectiveOrganizer init() {
 		return Initializer.Util.init(this);
 	}

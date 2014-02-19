@@ -36,29 +36,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class CognitiveAbilitiesObservationImpl extends ObservationImpl implements CognitiveAbilitiesObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CognitiveAbilitiesObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.COGNITIVE_ABILITIES_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveAbilitiesObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationTemplateId(
@@ -66,10 +66,10 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveAbilitiesObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationClassCode(
@@ -77,10 +77,10 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveAbilitiesObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationMoodCode(
@@ -88,50 +88,50 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveAbilitiesObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveAbilitiesObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationCodeP(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveAbilitiesObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveAbilitiesObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationText(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveAbilitiesObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationStatusCode(
@@ -139,10 +139,10 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveAbilitiesObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationStatusCodeP(
@@ -150,10 +150,10 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveAbilitiesObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationEffectiveTime(
@@ -161,30 +161,30 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveAbilitiesObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveAbilitiesObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationValueP(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveAbilitiesObservationAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationAssessmentScaleObservation(
@@ -192,19 +192,19 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return CognitiveAbilitiesObservationOperations.getAssessmentScaleObservations(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CognitiveAbilitiesObservation init() {
 		return Initializer.Util.init(this);
 	}

@@ -36,129 +36,129 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class MentalStatusObservationImpl extends ObservationImpl implements MentalStatusObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected MentalStatusObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMentalStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMentalStatusObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMentalStatusObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMentalStatusObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMentalStatusObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMentalStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMentalStatusObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMentalStatusObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMentalStatusObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationEffectiveTime(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMentalStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMentalStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationValueP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMentalStatusObservationAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationAssessmentScaleObservation(
@@ -166,19 +166,19 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return MentalStatusObservationOperations.getAssessmentScaleObservations(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MentalStatusObservation init() {
 		return Initializer.Util.init(this);
 	}

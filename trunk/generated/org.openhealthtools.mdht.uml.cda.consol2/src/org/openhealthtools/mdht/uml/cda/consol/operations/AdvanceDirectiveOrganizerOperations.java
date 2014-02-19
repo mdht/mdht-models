@@ -58,45 +58,45 @@ import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
  */
 public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AdvanceDirectiveOrganizerOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerTemplateId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerTemplateId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerTemplateId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerTemplateId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.108')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerTemplateId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerTemplateId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerTemplateId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerTemplateId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAdvanceDirectiveOrganizerTemplateId(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
@@ -127,36 +127,36 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerClassCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Class Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerClassCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerClassCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerClassCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::x_ActClassDocumentEntryOrganizer::CLUSTER";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerClassCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Class Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerClassCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerClassCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerClassCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAdvanceDirectiveOrganizerClassCode(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
@@ -187,36 +187,36 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerMoodCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerMoodCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerMoodCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerMoodCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::ActMood::EVN";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerMoodCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerMoodCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerMoodCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerMoodCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAdvanceDirectiveOrganizerMoodCode(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
@@ -247,36 +247,36 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerId(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAdvanceDirectiveOrganizerId(AdvanceDirectiveOrganizer advanceDirectiveOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -306,38 +306,38 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '310301000' and value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAdvanceDirectiveOrganizerCode(AdvanceDirectiveOrganizer advanceDirectiveOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -367,36 +367,36 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAdvanceDirectiveOrganizerCodeP(AdvanceDirectiveOrganizer advanceDirectiveOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -426,36 +426,36 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerStatusCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerStatusCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerStatusCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerStatusCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerStatusCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerStatusCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerStatusCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerStatusCodeP(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAdvanceDirectiveOrganizerStatusCodeP(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
@@ -499,37 +499,37 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerStatusCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerStatusCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerStatusCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerStatusCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
 			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerStatusCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerStatusCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerStatusCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerStatusCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAdvanceDirectiveOrganizerStatusCode(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
@@ -568,36 +568,36 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Advance Directive Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Advance Directive Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::AdvanceDirectiveObservation))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Advance Directive Observation</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Advance Directive Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param advanceDirectiveOrganizer The receiving '<em><b>Advance Directive Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
@@ -630,30 +630,30 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getAdvanceDirectiveObservations(AdvanceDirectiveOrganizer) <em>Get Advance Directive Observations</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getAdvanceDirectiveObservations(AdvanceDirectiveOrganizer) <em>Get Advance Directive Observations</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getAdvanceDirectiveObservations(AdvanceDirectiveOrganizer)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getAdvanceDirectiveObservations(AdvanceDirectiveOrganizer)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation)).oclAsType(consol::AdvanceDirectiveObservation)";
 
 	/**
-	* The cached OCL query for the '{@link #getAdvanceDirectiveObservations(AdvanceDirectiveOrganizer) <em>Get Advance Directive Observations</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getAdvanceDirectiveObservations(AdvanceDirectiveOrganizer) <em>Get Advance Directive Observations</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getAdvanceDirectiveObservations(AdvanceDirectiveOrganizer)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getAdvanceDirectiveObservations(AdvanceDirectiveOrganizer)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static EList<AdvanceDirectiveObservation> getAdvanceDirectiveObservations(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer) {

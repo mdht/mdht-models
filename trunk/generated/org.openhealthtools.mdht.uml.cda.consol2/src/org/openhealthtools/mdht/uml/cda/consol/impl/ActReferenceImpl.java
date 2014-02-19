@@ -34,110 +34,110 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  */
 public class ActReferenceImpl extends ActImpl implements ActReference {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ActReferenceImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ACT_REFERENCE;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateActReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateActReferenceClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateActReferenceMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateActReferenceId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateActReferenceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateActReferenceStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateActReferenceStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateActReferenceCDNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceCDNullFlavor(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateActReferenceCDNullFlavorP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ActReferenceOperations.validateActReferenceCDNullFlavorP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ActReference init() {
 		return Initializer.Util.init(this);
 	}

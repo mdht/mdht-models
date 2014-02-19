@@ -34,85 +34,85 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PatientPriorityPreferenceImpl extends ObservationImpl implements PatientPriorityPreference {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PatientPriorityPreferenceImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PATIENT_PRIORITY_PREFERENCE;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientPriorityPreferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientPriorityPreferenceOperations.validatePatientPriorityPreferenceTemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientPriorityPreferenceClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientPriorityPreferenceOperations.validatePatientPriorityPreferenceClassCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientPriorityPreferenceMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientPriorityPreferenceOperations.validatePatientPriorityPreferenceMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientPriorityPreferenceId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientPriorityPreferenceOperations.validatePatientPriorityPreferenceId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientPriorityPreferenceCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientPriorityPreferenceOperations.validatePatientPriorityPreferenceCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientPriorityPreferenceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientPriorityPreferenceOperations.validatePatientPriorityPreferenceCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientPriorityPreferencePriorityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientPriorityPreferenceOperations.validatePatientPriorityPreferencePriorityCodeP(
@@ -120,10 +120,10 @@ public class PatientPriorityPreferenceImpl extends ObservationImpl implements Pa
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientPriorityPreferencePriorityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientPriorityPreferenceOperations.validatePatientPriorityPreferencePriorityCode(
@@ -131,28 +131,28 @@ public class PatientPriorityPreferenceImpl extends ObservationImpl implements Pa
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientPriorityPreferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientPriorityPreferenceOperations.validatePatientPriorityPreferenceValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientPriorityPreferenceValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientPriorityPreferenceOperations.validatePatientPriorityPreferenceValueP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientPriorityPreferenceCDCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientPriorityPreferenceOperations.validatePatientPriorityPreferenceCDCodeSystem(
@@ -160,10 +160,10 @@ public class PatientPriorityPreferenceImpl extends ObservationImpl implements Pa
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PatientPriorityPreference init() {
 		return Initializer.Util.init(this);
 	}
