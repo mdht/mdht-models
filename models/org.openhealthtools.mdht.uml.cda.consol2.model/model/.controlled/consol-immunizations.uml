@@ -700,4 +700,165 @@
   <CDA:ConstraintValidation xmi:id="_O-2o0OMtEeGfv4R-kzpM0g" severity="WARNING" base_Constraint="_K-9EwOMtEeGfv4R-kzpM0g">
     <ruleId>CONF:15556</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_KRcPwJXFEeOgXcDbh8Igkw" name="PlannedImmunizationActivity">
+    <ownedComment xmi:id="_tvCUUJXGEeOgXcDbh8Igkw">
+      <body>This template represents planned immunizations. Planned Immunization Activity is very similar to Planned Medication Activity with some key differences, for example, the drug code system is constrained to CVX codes. &#xD;
+The priority of the immunization activity to the patient and provider is communicated through Patient Priority Preference and Provider Priority Preference. The effectiveTime indicates the time when the immunization activity is intended to take place and authorTime indicates when the documentation of the plan occurred.</body>
+    </ownedComment>
+    <generalization xmi:id="_KResAJXFEeOgXcDbh8Igkw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_nazskEbuEd6besF9iFIJkQ"/>
+    </generalization>
+    <ownedAttribute xmi:id="_roqTIJXFEeOgXcDbh8Igkw" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_dTy38Eb8Ed6besF9iFIJkQ"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_roqTIZXFEeOgXcDbh8Igkw" name="SBADM">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdc0DcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rorhQJXFEeOgXcDbh8Igkw" name="moodCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_roq6MJXFEeOgXcDbh8Igkw" name="id" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MKZDgJXHEeOgXcDbh8Igkw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MKZqkJXHEeOgXcDbh8Igkw" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fBT4oErsEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rosIUJXFEeOgXcDbh8Igkw" name="statusCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NdIdwJXHEeOgXcDbh8Igkw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NdIdwZXHEeOgXcDbh8Igkw" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_sDU9cErsEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_roqTJZXFEeOgXcDbh8Igkw" name="effectiveTime" visibility="private" aggregation="composite">
+      <ownedComment xmi:id="_R2-g8JXJEeOgXcDbh8Igkw">
+        <body>The effectiveTime in a planned immunization activity represents the time that the immunization activity should occur.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_kSZ5QD5_Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_roqTJpXFEeOgXcDbh8Igkw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_roqTJ5XFEeOgXcDbh8Igkw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_u37zEErsEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rorhQZXFEeOgXcDbh8Igkw" name="repeatNumber" visibility="private" aggregation="composite">
+      <ownedComment xmi:id="_VWDP4JXJEeOgXcDbh8Igkw">
+        <body>In a Planned Immunization Activity, repeatNumber defines the number of allowed administrations. For example, a repeatNumber of &quot;3&quot; means that the substance can be administered up to 3 times.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_wDsPEEo9Ed6c3qsAxlFHaQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rorhQpXFEeOgXcDbh8Igkw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rorhQ5XFEeOgXcDbh8Igkw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6z6c4ErsEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rorhRJXFEeOgXcDbh8Igkw" name="routeCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rorhRZXFEeOgXcDbh8Igkw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rorhRpXFEeOgXcDbh8Igkw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9hNwoErsEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_romowJXFEeOgXcDbh8Igkw" name="approachSiteCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_romowZXFEeOgXcDbh8Igkw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_romowpXFEeOgXcDbh8Igkw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ATlKkErtEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_roqTIpXFEeOgXcDbh8Igkw" name="doseQuantity" visibility="private" type="_5NpTYJXLEeOgXcDbh8Igkw" aggregation="composite">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_roqTI5XFEeOgXcDbh8Igkw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_roqTJJXFEeOgXcDbh8Igkw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_D1VaEErtEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_n2ItoJXOEeOgXcDbh8Igkw" name="performer" association="_n2J7wJXOEeOgXcDbh8Igkw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n2JUsZXOEeOgXcDbh8Igkw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n2JUsJXOEeOgXcDbh8Igkw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_o-_WoJXPEeOgXcDbh8Igkw" name="patientPriorityPreference" association="_o-_9sJXPEeOgXcDbh8Igkw">
+      <type xmi:type="uml:Class" href="consol-planofcare.uml#_UqXAAI6hEeOB0eBUISUB4Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o-_WopXPEeOgXcDbh8Igkw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o-_WoZXPEeOgXcDbh8Igkw"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_5NpTYJXLEeOgXcDbh8Igkw" name="IVLPQ">
+      <ownedRule xmi:id="_GSOkAJXMEeOgXcDbh8Igkw" name="unitTerminology" constrainedElement="_8MbYsJXLEeOgXcDbh8Igkw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TtaWwJXMEeOgXcDbh8Igkw">
+          <language>Analysis</language>
+          <body>The doseQuantity/@unit SHALL be selected from ValueSet UnitsOfMeasureCaseSensitive 2.16.840.1.113883.1.11.12839 DYNAMIC</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_5Np6cJXLEeOgXcDbh8Igkw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_1VHHUErrEd6FXKclYGEDCw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_8MbYsJXLEeOgXcDbh8Igkw" name="unit" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8MbYsZXLEeOgXcDbh8Igkw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8MbYspXLEeOgXcDbh8Igkw"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_8uEo0D59Ed6cla2oXsPtlA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_8MbYs5XLEeOgXcDbh8Igkw" value="1"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_xKmcQJXGEeOgXcDbh8Igkw" base_Class="_KRcPwJXFEeOgXcDbh8Igkw" templateId="2.16.840.1.113883.10.20.22.4.120">
+    <ruleId>CONF:32098</ruleId>
+    <ruleId>CONF:32099</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_AxDMsJXHEeOgXcDbh8Igkw" base_Property="_roqTIJXFEeOgXcDbh8Igkw">
+    <ruleId>CONF:32091</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_CYcBQJXHEeOgXcDbh8Igkw" base_Property="_roq6MJXFEeOgXcDbh8Igkw">
+    <ruleId>CONF:32100</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_C6nhQJXHEeOgXcDbh8Igkw" base_Property="_rosIUJXFEeOgXcDbh8Igkw">
+    <ruleId>CONF:32101</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_DpmuMJXHEeOgXcDbh8Igkw" severity="INFO" base_Property="_roqTJZXFEeOgXcDbh8Igkw">
+    <ruleId>CONF:32103</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_EcarMJXHEeOgXcDbh8Igkw" severity="INFO" base_Property="_rorhQZXFEeOgXcDbh8Igkw">
+    <ruleId>CONF:32126</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_FCzVwJXHEeOgXcDbh8Igkw" severity="INFO" base_Property="_rorhRJXFEeOgXcDbh8Igkw"/>
+  <CDA:PropertyValidation xmi:id="_GUJB0JXHEeOgXcDbh8Igkw" base_Property="_romowJXFEeOgXcDbh8Igkw"/>
+  <CDA:PropertyValidation xmi:id="_HYCHwJXHEeOgXcDbh8Igkw" severity="INFO" base_Property="_roqTIpXFEeOgXcDbh8Igkw">
+    <ruleId>CONF:32129</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_Hq8KwJXJEeOgXcDbh8Igkw" code="active" displayName="Active" base_Property="_rosIUJXFEeOgXcDbh8Igkw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:32102</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_jioDUJXJEeOgXcDbh8Igkw" base_Property="_rorhRJXFEeOgXcDbh8Igkw">
+    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:32127</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_-P-2wJXJEeOgXcDbh8Igkw" base_Property="_romowJXFEeOgXcDbh8Igkw">
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:32128</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_-OtZgJXLEeOgXcDbh8Igkw" severity="WARNING" base_Property="_8MbYsJXLEeOgXcDbh8Igkw">
+    <ruleId>CONF:32130</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_Mdt14JXMEeOgXcDbh8Igkw" base_Constraint="_GSOkAJXMEeOgXcDbh8Igkw">
+    <ruleId>CONF:32130</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_n2J7wJXOEeOgXcDbh8Igkw" memberEnd="_n2ItoJXOEeOgXcDbh8Igkw _n2J7wZXOEeOgXcDbh8Igkw">
+    <ownedComment xmi:id="_Wd6oIJXPEeOgXcDbh8Igkw">
+      <body>The clinician who is expected to perform the planned immunization activity could be identified using substanceAdministration/performer.</body>
+    </ownedComment>
+    <ownedEnd xmi:id="_n2J7wZXOEeOgXcDbh8Igkw" type="_KRcPwJXFEeOgXcDbh8Igkw" association="_n2J7wJXOEeOgXcDbh8Igkw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_rWP-YJXOEeOgXcDbh8Igkw" severity="INFO" base_Association="_n2J7wJXOEeOgXcDbh8Igkw">
+    <ruleId>CONF:32104</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_o-_9sJXPEeOgXcDbh8Igkw" memberEnd="_o-_WoJXPEeOgXcDbh8Igkw _o-_9sZXPEeOgXcDbh8Igkw">
+    <ownedComment xmi:id="_8rn5UJXPEeOgXcDbh8Igkw">
+      <body>This entryRelationship represents the priority that a patient places on the immunization activity.</body>
+    </ownedComment>
+    <ownedEnd xmi:id="_o-_9sZXPEeOgXcDbh8Igkw" type="_KRcPwJXFEeOgXcDbh8Igkw" association="_o-_9sJXPEeOgXcDbh8Igkw"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_xN4DoJXPEeOgXcDbh8Igkw" severity="INFO" base_Association="_o-_9sJXPEeOgXcDbh8Igkw" typeCode="REFR">
+    <ruleId>CONF:32108</ruleId>
+    <ruleId>CONF:32109</ruleId>
+    <ruleId>CONF:32110</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:ValueSetConstraint xmi:id="_lbBQsJgsEeOgXcDbh8Igkw" base_Property="_rorhQJXFEeOgXcDbh8Igkw">
+    <reference href="../consol-vocab.uml#_u3o3AG1HEeGCevFpokwODw"/>
+    <ruleId>CONF:32097</ruleId>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>

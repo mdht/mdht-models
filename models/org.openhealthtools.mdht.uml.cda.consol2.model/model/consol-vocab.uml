@@ -1087,7 +1087,10 @@ http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;
       <ownedLiteral xmi:id="_yuQuUPwVEeGXDIdcQJhgtg" name="PRP"/>
       <ownedLiteral xmi:id="_0FHMgPwVEeGXDIdcQJhgtg" name="RQO"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_u3oP8G1HEeGCevFpokwODw" name="Plan of Care moodCode (SubstanceAdministration/Supply)">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_u3oP8G1HEeGCevFpokwODw" name="Planned moodCode (SubstanceAdministration/Supply)">
+      <ownedComment xmi:id="_Ni81EJXLEeOgXcDbh8Igkw">
+        <body>These value set is used to restrict the moodCode on a substance administration or a supply to future moods.</body>
+      </ownedComment>
       <ownedLiteral xmi:id="_3saDUPwVEeGXDIdcQJhgtg" name="INT"/>
       <ownedLiteral xmi:id="_4zqmUPwVEeGXDIdcQJhgtg" name="PRMS"/>
       <ownedLiteral xmi:id="_5rtBkPwVEeGXDIdcQJhgtg" name="PRP"/>
@@ -1520,10 +1523,10 @@ Valueset Source: http://www.hl7.org/documentcenter/public/standards/vocabulary/v
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_2HoecBSVEeGGzu7fmW9pXw" conceptName="Aborted" usageNote="ActStatus" base_EnumerationLiteral="_2HnQVBSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2HpFgBSVEeGGzu7fmW9pXw" conceptName="Completed" usageNote="ActStatus" base_EnumerationLiteral="_2HnQVRSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetVersion xmi:id="_2H150RSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.7" version="1" fullName="Medication Route FDA Value Set" definition="Route of Administration value set is based upon FDA Drug Registration and Listing Database (FDA Orange Book) which are used in FDA structured product and labelling (SPL)." revisionDate="07/07/2009" base_Enumeration="_2H150BSVEeGGzu7fmW9pXw">
+  <term:ValueSetVersion xmi:id="_2H150RSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.7" version="1" fullName="Medication Route FDA Value Set" definition="Route of Administration value set is based upon FDA Drug Registration and Listing Database (FDA Orange Book) which are used in FDA structured product and labelling (SPL)." revisionDate="07/07/2009" binding="Dynamic" base_Enumeration="_2H150BSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_2H3vABSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.9" version="2" fullName="Body Site Value Set" definition="Body site value set is based upon the concepts descending from the SNOMED CT Anatomical Structure (91723000) hierarchy." revisionDate="07/07/2009" base_Enumeration="_2H3H8RSVEeGGzu7fmW9pXw">
+  <term:ValueSetVersion xmi:id="_2H3vABSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.9" version="2" fullName="Body Site Value Set" definition="Body site value set is based upon the concepts descending from the SNOMED CT Anatomical Structure (91723000) hierarchy." revisionDate="07/07/2009" binding="Dynamic" base_Enumeration="_2H3H8RSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2H49IRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.11" version="1" fullName="Medication Product Form Value Set" definition="This is the physical form of the product as presented to the individual. For example: tablet, capsule, liquid or ointment. NCI concept code for pharmaceutical dosage form: C42636" revisionDate="07/23/2009" base_Enumeration="_2H49IBSVEeGGzu7fmW9pXw">
@@ -1852,7 +1855,7 @@ Valueset Source: http://www.hl7.org/documentcenter/public/standards/vocabulary/v
   <term:ValueSetVersion xmi:id="_rCM2gG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.25" base_Enumeration="_rCMPcG1HEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_u3o3AG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.24" base_Enumeration="_u3oP8G1HEeGCevFpokwODw">
+  <term:ValueSetVersion xmi:id="_u3o3AG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.24" fullName="Planned moodCode (SubstanceAdministration/Supply)" base_Enumeration="_u3oP8G1HEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_x6zGAG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.10637" base_Enumeration="_x6ye8G1HEeGCevFpokwODw">
