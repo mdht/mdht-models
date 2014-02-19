@@ -10189,5 +10189,72 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ExternalDocumentReference/ExternalDocumentReferenceReferenceExternalDocument/context"/>
       </genOperations>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PlannedImmunizationActivity">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityRepeatNumber">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityRepeatNumber/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityRepeatNumber/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityRouteCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityRouteCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityRouteCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityRouteCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityRouteCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityRouteCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityApproachSiteCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityApproachSiteCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityApproachSiteCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityApproachSiteCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityApproachSiteCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityApproachSiteCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityDoseQuantity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityDoseQuantity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityDoseQuantity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityPerformer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityPerformer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityPerformer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityPatientPriorityPreference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityPatientPriorityPreference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityPatientPriorityPreference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityIVLPQUnit">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityIVLPQUnit/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedImmunizationActivity/PlannedImmunizationActivityIVLPQUnit/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedImmunizationActivity/getPatientPriorityPreferences"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

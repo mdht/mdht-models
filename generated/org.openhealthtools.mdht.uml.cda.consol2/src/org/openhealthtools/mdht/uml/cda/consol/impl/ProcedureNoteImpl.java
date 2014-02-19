@@ -60,29 +60,29 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureNoteOperation
  */
 public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements ProcedureNote {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ProcedureNoteImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PROCEDURE_NOTE;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
@@ -90,10 +90,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
@@ -101,10 +101,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
@@ -112,132 +112,132 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteSectionTitles(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteSectionTitles(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateGeneralHeaderConstraintsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateGeneralHeaderConstraintsCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComponentOf(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteAssessmentSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteAssessmentSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNotePlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNotePlanOfCareSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteAssessmentAndPlanSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteAssessmentAndPlanSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteComplicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComplicationsSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNotePostprocedureDiagnosisSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNotePostprocedureDiagnosisSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteProcedureDescriptionSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteProcedureDescriptionSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteProcedureIndicationsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteProcedureIndicationsSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteAllergiesSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteAllergiesSectionEntriesOptional(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteAnesthesiaSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteAnesthesiaSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteChiefComplaintSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteChiefComplaintSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteChiefComplaintAndReasonForVisitSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteChiefComplaintAndReasonForVisitSection(
@@ -245,48 +245,48 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteFamilyHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteFamilyHistorySection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteHistoryOfPastIllnessSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteHistoryOfPastIllnessSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteHistoryOfPresentIllnessSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteHistoryOfPresentIllnessSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteMedicalHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteMedicalHistorySection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteMedicationsSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteMedicationsSectionEntriesOptional(
@@ -294,48 +294,48 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteMedicationsAdministeredSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteMedicationsAdministeredSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNotePhysicalExamSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNotePhysicalExamSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNotePlannedProcedureSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNotePlannedProcedureSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteProcedureDispositionSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteProcedureDispositionSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteProcedureEstimatedBloodLossSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteProcedureEstimatedBloodLossSection(
@@ -343,95 +343,95 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteProcedureFindingsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteProcedureFindingsSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteProcedureImplantsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteProcedureImplantsSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteProcedureSpecimensTakenSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteProcedureSpecimensTakenSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteProceduresSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteProceduresSectionEntriesOptional(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteReasonForVisitSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteReasonForVisitSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteReviewOfSystemsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteReviewOfSystemsSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteSocialHistorySection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteParticipant1(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteParticipant1(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOf(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId(
@@ -439,10 +439,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility(
@@ -450,10 +450,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode(
@@ -461,10 +461,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5Code(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5Code(
@@ -472,10 +472,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5Location(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5Location(
@@ -483,10 +483,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant(
@@ -494,10 +494,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5(
@@ -505,10 +505,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP(
@@ -516,10 +516,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode(
@@ -527,10 +527,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode(
@@ -538,10 +538,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity(
@@ -549,10 +549,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1ProcedureCodes(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1ProcedureCodes(
@@ -560,10 +560,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow(
@@ -571,10 +571,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth(
@@ -582,10 +582,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth(
@@ -593,10 +593,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheDay(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheDay(
@@ -604,10 +604,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheMinute(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheMinute(
@@ -615,10 +615,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheSecond(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PreciseToTheSecond(
@@ -626,10 +626,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1IfMorePreciseThanDayIncludeTimeZoneOffset(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1IfMorePreciseThanDayIncludeTimeZoneOffset(
@@ -637,20 +637,20 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1Code(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1Code(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1EffectiveTime(
@@ -658,10 +658,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer(
@@ -669,272 +669,272 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AssessmentSection getAssessmentSection() {
 		return ProcedureNoteOperations.getAssessmentSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PlanOfCareSection getPlanOfCareSection() {
 		return ProcedureNoteOperations.getPlanOfCareSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AssessmentAndPlanSection getAssessmentAndPlanSection() {
 		return ProcedureNoteOperations.getAssessmentAndPlanSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ComplicationsSection getComplicationsSection() {
 		return ProcedureNoteOperations.getComplicationsSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PostprocedureDiagnosisSection getPostprocedureDiagnosisSection() {
 		return ProcedureNoteOperations.getPostprocedureDiagnosisSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProcedureDescriptionSection getProcedureDescriptionSection() {
 		return ProcedureNoteOperations.getProcedureDescriptionSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProcedureIndicationsSection getProcedureIndicationsSection() {
 		return ProcedureNoteOperations.getProcedureIndicationsSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional() {
 		return ProcedureNoteOperations.getAllergiesSectionEntriesOptional(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AnesthesiaSection getAnesthesiaSection() {
 		return ProcedureNoteOperations.getAnesthesiaSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ChiefComplaintSection getChiefComplaintSection() {
 		return ProcedureNoteOperations.getChiefComplaintSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection() {
 		return ProcedureNoteOperations.getChiefComplaintAndReasonForVisitSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public FamilyHistorySection getFamilyHistorySection() {
 		return ProcedureNoteOperations.getFamilyHistorySection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public HistoryOfPastIllnessSection getHistoryOfPastIllnessSection() {
 		return ProcedureNoteOperations.getHistoryOfPastIllnessSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public HistoryOfPresentIllnessSection getHistoryOfPresentIllnessSection() {
 		return ProcedureNoteOperations.getHistoryOfPresentIllnessSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicalHistorySection getMedicalHistorySection() {
 		return ProcedureNoteOperations.getMedicalHistorySection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationsSectionEntriesOptional getMedicationsSectionEntriesOptional() {
 		return ProcedureNoteOperations.getMedicationsSectionEntriesOptional(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationsAdministeredSection getMedicationsAdministeredSection() {
 		return ProcedureNoteOperations.getMedicationsAdministeredSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PhysicalExamSection getPhysicalExamSection() {
 		return ProcedureNoteOperations.getPhysicalExamSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PlannedProcedureSection getPlannedProcedureSection() {
 		return ProcedureNoteOperations.getPlannedProcedureSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProcedureDispositionSection getProcedureDispositionSection() {
 		return ProcedureNoteOperations.getProcedureDispositionSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProcedureEstimatedBloodLossSection getProcedureEstimatedBloodLossSection() {
 		return ProcedureNoteOperations.getProcedureEstimatedBloodLossSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProcedureFindingsSection getProcedureFindingsSection() {
 		return ProcedureNoteOperations.getProcedureFindingsSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProcedureImplantsSection getProcedureImplantsSection() {
 		return ProcedureNoteOperations.getProcedureImplantsSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProcedureSpecimensTakenSection getProcedureSpecimensTakenSection() {
 		return ProcedureNoteOperations.getProcedureSpecimensTakenSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProceduresSectionEntriesOptional getProceduresSectionEntriesOptional() {
 		return ProcedureNoteOperations.getProceduresSectionEntriesOptional(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ReasonForVisitSection getReasonForVisitSection() {
 		return ProcedureNoteOperations.getReasonForVisitSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ReviewOfSystemsSection getReviewOfSystemsSection() {
 		return ProcedureNoteOperations.getReviewOfSystemsSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public SocialHistorySection getSocialHistorySection() {
 		return ProcedureNoteOperations.getSocialHistorySection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
@@ -951,10 +951,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public ProcedureNote init() {
 		return Initializer.Util.init(this);

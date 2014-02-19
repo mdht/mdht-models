@@ -33,74 +33,74 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class DischargeDietSectionImpl extends SectionImpl implements DischargeDietSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DischargeDietSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.DISCHARGE_DIET_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeDietSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeDietSectionOperations.validateDischargeDietSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeDietSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeDietSectionOperations.validateDischargeDietSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeDietSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeDietSectionOperations.validateDischargeDietSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeDietSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeDietSectionOperations.validateDischargeDietSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeDietSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeDietSectionOperations.validateDischargeDietSectionText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public DischargeDietSection init() {
 		return Initializer.Util.init(this);
 	}

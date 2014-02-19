@@ -1213,17 +1213,24 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	private EClass interventionActEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass externalDocumentReferenceEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
+	private EClass plannedImmunizationActivityEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicationsAdministeredSectionEClass = null;
 
 	/**
@@ -3594,10 +3601,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getExternalDocumentReference() {
 		if (externalDocumentReferenceEClass == null) {
 			externalDocumentReferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
@@ -3607,10 +3614,23 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
+	public EClass getPlannedImmunizationActivity() {
+		if (plannedImmunizationActivityEClass == null) {
+			plannedImmunizationActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				186);
+		}
+		return plannedImmunizationActivityEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getMedicationsAdministeredSection() {
 		if (medicationsAdministeredSectionEClass == null) {
 			medicationsAdministeredSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(

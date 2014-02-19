@@ -36,48 +36,48 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProceduresSectionOpera
  */
 public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl implements ProceduresSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ProceduresSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PROCEDURES_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProceduresSectionHasProcedureActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionHasProcedureActivity(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProceduresSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProceduresSectionProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityProcedure(
@@ -85,10 +85,10 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProceduresSectionProcedureActivityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityObservation(
@@ -96,47 +96,47 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProceduresSectionProcedureActivityAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityAct(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<ProcedureActivityProcedure> getConsolProcedureActivityProcedures() {
 		return ProceduresSectionOperations.getConsolProcedureActivityProcedures(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<ProcedureActivityObservation> getProcedureActivityObservations() {
 		return ProceduresSectionOperations.getProcedureActivityObservations(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<ProcedureActivityAct> getConsolProcedureActivityActs() {
 		return ProceduresSectionOperations.getConsolProcedureActivityActs(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -145,10 +145,10 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public boolean validateProceduresSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -156,30 +156,30 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public boolean validateProceduresSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public ProceduresSection init() {
 		return Initializer.Util.init(this);

@@ -34,29 +34,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implements CharacteristicsOfHomeEnvironment {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CharacteristicsOfHomeEnvironmentImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.CHARACTERISTICS_OF_HOME_ENVIRONMENT;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentTemplateId(
@@ -64,10 +64,10 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentClassCode(
@@ -75,10 +75,10 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentMoodCode(
@@ -86,20 +86,20 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentCodeP(
@@ -107,20 +107,20 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentStatusCode(
@@ -128,10 +128,10 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentStatusCodeP(
@@ -139,10 +139,10 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentValue(
@@ -150,10 +150,10 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CharacteristicsOfHomeEnvironment init() {
 		return Initializer.Util.init(this);
 	}

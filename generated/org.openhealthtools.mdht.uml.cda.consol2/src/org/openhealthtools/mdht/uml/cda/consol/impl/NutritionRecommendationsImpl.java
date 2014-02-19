@@ -34,102 +34,102 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  */
 public class NutritionRecommendationsImpl extends ActImpl implements NutritionRecommendations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected NutritionRecommendationsImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.NUTRITION_RECOMMENDATIONS;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNutritionRecommendationsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNutritionRecommendationsClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNutritionRecommendationsMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsMoodCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNutritionRecommendationsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNutritionRecommendationsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNutritionRecommendationsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNutritionRecommendationsStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNutritionRecommendationsStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsStatusCodeP(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNutritionRecommendationsEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NutritionRecommendationsOperations.validateNutritionRecommendationsEffectiveTime(
@@ -137,10 +137,10 @@ public class NutritionRecommendationsImpl extends ActImpl implements NutritionRe
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public NutritionRecommendations init() {
 		return Initializer.Util.init(this);
 	}

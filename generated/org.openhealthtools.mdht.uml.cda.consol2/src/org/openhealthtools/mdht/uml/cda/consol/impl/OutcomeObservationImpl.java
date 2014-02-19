@@ -36,101 +36,101 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class OutcomeObservationImpl extends ObservationImpl implements OutcomeObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected OutcomeObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.OUTCOME_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateOutcomeObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OutcomeObservationOperations.validateOutcomeObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateOutcomeObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OutcomeObservationOperations.validateOutcomeObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateOutcomeObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OutcomeObservationOperations.validateOutcomeObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateOutcomeObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OutcomeObservationOperations.validateOutcomeObservationId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateOutcomeObservationActReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OutcomeObservationOperations.validateOutcomeObservationActReference(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateOutcomeObservationActReference2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OutcomeObservationOperations.validateOutcomeObservationActReference2(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<ActReference> getActReferences() {
 		return OutcomeObservationOperations.getActReferences(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<ActReference> getActReference2s() {
 		return OutcomeObservationOperations.getActReference2s(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public OutcomeObservation init() {
 		return Initializer.Util.init(this);
 	}

@@ -35,93 +35,93 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class ComplicationsSectionImpl extends SectionImpl implements ComplicationsSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ComplicationsSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.COMPLICATIONS_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateComplicationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ComplicationsSectionOperations.validateComplicationsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateComplicationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ComplicationsSectionOperations.validateComplicationsSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateComplicationsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ComplicationsSectionOperations.validateComplicationsSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateComplicationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ComplicationsSectionOperations.validateComplicationsSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateComplicationsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ComplicationsSectionOperations.validateComplicationsSectionText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateComplicationsSectionProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ComplicationsSectionOperations.validateComplicationsSectionProblemObservation(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<ProblemObservation> getProblemObservations() {
 		return ComplicationsSectionOperations.getProblemObservations(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ComplicationsSection init() {
 		return Initializer.Util.init(this);
 	}

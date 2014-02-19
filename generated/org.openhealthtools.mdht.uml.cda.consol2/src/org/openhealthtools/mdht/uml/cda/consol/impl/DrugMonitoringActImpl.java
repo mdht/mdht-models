@@ -34,110 +34,110 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  */
 public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DrugMonitoringActImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.DRUG_MONITORING_ACT;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActParticipant(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipant(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(
@@ -145,10 +145,10 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityName(
@@ -156,10 +156,10 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActParticipantParticipantRoleClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRoleClassCode(
@@ -167,10 +167,10 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActParticipantParticipantRoleId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRoleId(
@@ -178,10 +178,10 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntity(
@@ -189,19 +189,19 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActParticipantTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantTypeCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRole(
@@ -209,10 +209,10 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public DrugMonitoringAct init() {
 		return Initializer.Util.init(this);
 	}

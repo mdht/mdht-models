@@ -50,45 +50,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class CulturalAndReligiousObservationOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CulturalAndReligiousObservationOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationTemplateId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationTemplateId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationTemplateId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationTemplateId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.111')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationTemplateId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationTemplateId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationTemplateId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationTemplateId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCulturalAndReligiousObservationTemplateId(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
@@ -120,36 +120,36 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationClassCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Class Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationClassCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationClassCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationClassCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::ActClassObservation::OBS";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationClassCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Class Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationClassCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationClassCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationClassCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCulturalAndReligiousObservationClassCode(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
@@ -181,36 +181,36 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationMoodCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationMoodCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationMoodCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationMoodCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_ActMoodDocumentObservation::EVN";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationMoodCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationMoodCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationMoodCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationMoodCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCulturalAndReligiousObservationMoodCode(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
@@ -241,36 +241,36 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCulturalAndReligiousObservationId(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
@@ -301,36 +301,36 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCulturalAndReligiousObservationCodeP(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
@@ -374,38 +374,38 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '406198009' and value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCulturalAndReligiousObservationCode(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
@@ -445,37 +445,37 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationStatusCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Status Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationStatusCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Status Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationStatusCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationStatusCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
 			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationStatusCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Status Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationStatusCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Status Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationStatusCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationStatusCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCulturalAndReligiousObservationStatusCode(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
@@ -507,36 +507,36 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationStatusCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Status Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationStatusCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Status Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationStatusCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationStatusCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationStatusCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Status Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationStatusCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Status Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationStatusCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationStatusCodeP(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCulturalAndReligiousObservationStatusCodeP(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
@@ -569,36 +569,36 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationValue(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCulturalAndReligiousObservationValue(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationValue(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationValue(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationValue(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationValue(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCulturalAndReligiousObservationValue(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCulturalAndReligiousObservationValue(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param culturalAndReligiousObservation The receiving '<em><b>Cultural And Religious Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCulturalAndReligiousObservationValue(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
