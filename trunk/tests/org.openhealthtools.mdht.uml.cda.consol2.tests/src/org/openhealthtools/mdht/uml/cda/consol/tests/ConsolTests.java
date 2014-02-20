@@ -91,7 +91,9 @@ import org.junit.runners.Suite;
 		InterventionActTest.class, MedicalEquipmentOrganizerTest.class, MentalStatusObservationTest.class,
 		NutritionalStatusObservationTest.class, NutritionAssessmentTest.class, NutritionRecommendationsTest.class,
 		OutcomeObservationTest.class, PatientPriorityPreferenceTest.class, PatientReferralActTest.class,
-		PlannedCoverageTest.class, PlannedImmunizationActivityTest.class })
+		PlannedCoverageTest.class, PlannedImmunizationActivityTest.class, PrognosisObservationTest.class,
+		ProgressTowardGoalObservationTest.class, ProviderPriorityPreferenceTest.class, SelfCareActivitiesTest.class,
+		SensoryAndSpeechStatusTest.class })
 public class ConsolTests {
 
 	/**
