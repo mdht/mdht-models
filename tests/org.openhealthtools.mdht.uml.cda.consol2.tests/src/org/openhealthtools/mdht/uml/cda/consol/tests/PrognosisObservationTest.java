@@ -189,7 +189,7 @@ public class PrognosisObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidatePrognosisObservationCode() {
@@ -200,16 +200,15 @@ public class PrognosisObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PrognosisObservation target) {
-
+				target.init();
+				CD code = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(code);
 			}
 
 			@Override
 			protected void updateToPass(PrognosisObservation target) {
-				target.init();
-
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
-
+				CD code = DatatypesFactory.eINSTANCE.createCD("170967006", SNOMEDCT_ID);
+				target.setCode(code);
 			}
 
 			@Override
