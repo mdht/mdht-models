@@ -1472,6 +1472,52 @@ Valueset Source: http://www.hl7.org/documentcenter/public/standards/vocabulary/v
       <ownedLiteral xmi:id="_fdABEJA_EeOZX935IVJfOg" name="PRP"/>
       <ownedLiteral xmi:id="_kfzMkJA_EeOZX935IVJfOg" name="RQO"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_oosMoJmXEeOLJeQez13EkQ" name="Goal Achievement">
+      <ownedComment xmi:id="_wRH9oJmXEeOLJeQez13EkQ">
+        <body>The Goal Achievement value set contains concepts that describe a patient's progression (or lack thereof) toward a goal.&#xD;
+Specific URL Pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_4CqAQJmXEeOLJeQez13EkQ" name="390802008"/>
+      <ownedLiteral xmi:id="_61uk0JmXEeOLJeQez13EkQ" name="390801001"/>
+      <ownedLiteral xmi:id="_8DnUQJmXEeOLJeQez13EkQ" name="260388006"/>
+      <ownedLiteral xmi:id="_9PDMoJmXEeOLJeQez13EkQ" name="385634002"/>
+      <ownedLiteral xmi:id="_-R1fUJmXEeOLJeQez13EkQ" name="385633008"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_BciakJm1EeOLJeQez13EkQ" name="Ability Value Set">
+      <ownedComment xmi:id="_LNFHkJm1EeOLJeQez13EkQ">
+        <body>A value set containing SNOMED-CT codes for level of dependence.&#xD;
+Specific URL Pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_Q81fsJm1EeOLJeQez13EkQ" name="371153006"/>
+      <ownedLiteral xmi:id="_Taz-AJm1EeOLJeQez13EkQ" name="371154000"/>
+      <ownedLiteral xmi:id="_Vr_9gJm1EeOLJeQez13EkQ" name="371152001"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dxy_8Jm1EeOLJeQez13EkQ" name="ADL Result Type">
+      <ownedComment xmi:id="_lSETcJm1EeOLJeQez13EkQ">
+        <body>This value set includes Basic ADL and IADL activities.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_pUHzoJm1EeOLJeQez13EkQ" name="46008-9"/>
+      <ownedLiteral xmi:id="_tQoFcJm1EeOLJeQez13EkQ" name="28409-1"/>
+      <ownedLiteral xmi:id="_wE5j4Jm1EeOLJeQez13EkQ" name="28408-3"/>
+      <ownedLiteral xmi:id="_yNDjMJm1EeOLJeQez13EkQ" name="46484-2"/>
+      <ownedLiteral xmi:id="_1L0aYJm1EeOLJeQez13EkQ" name="46482-6"/>
+      <ownedLiteral xmi:id="_3YDBYJm1EeOLJeQez13EkQ" name="28413-3"/>
+      <ownedLiteral xmi:id="_5qdI4Jm1EeOLJeQez13EkQ" name="45618-6"/>
+      <ownedLiteral xmi:id="_8AwR4Jm1EeOLJeQez13EkQ" name="45619-4"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Sv4_cJm6EeOLJeQez13EkQ" name="Sensory and Speech Problem Type">
+      <ownedComment xmi:id="_brZh4Jm6EeOLJeQez13EkQ">
+        <body>A value set of SNOMED-CT observable codes to identify sensory and speech problems. Specific URL Pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_exbesJm6EeOLJeQez13EkQ" name="47078008"/>
+      <ownedLiteral xmi:id="_nkcMcJm6EeOLJeQez13EkQ" name="405183003"/>
+      <ownedLiteral xmi:id="_twe38Jm6EeOLJeQez13EkQ" name="373713005"/>
+      <ownedLiteral xmi:id="_wUIgcJm6EeOLJeQez13EkQ" name="397627001"/>
+      <ownedLiteral xmi:id="_ylF2cJm6EeOLJeQez13EkQ" name="397686008"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -2887,4 +2933,37 @@ Valueset Source: http://www.hl7.org/documentcenter/public/standards/vocabulary/v
   <term:ValueSetCode xmi:id="_dVrIMZA_EeOZX935IVJfOg" conceptName="Promise" base_EnumerationLiteral="_dVrIMJA_EeOZX935IVJfOg"/>
   <term:ValueSetCode xmi:id="_fdABEZA_EeOZX935IVJfOg" conceptName="Proposal" base_EnumerationLiteral="_fdABEJA_EeOZX935IVJfOg"/>
   <term:ValueSetCode xmi:id="_kfzMkZA_EeOZX935IVJfOg" conceptName="Request" base_EnumerationLiteral="_kfzMkJA_EeOZX935IVJfOg"/>
+  <term:ValueSetVersion xmi:id="_ooszsJmXEeOLJeQez13EkQ" identifier="2.16.840.1.113883.11.20.9.55" fullName="Goal Achievement" base_Enumeration="_oosMoJmXEeOLJeQez13EkQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_4CqnUJmXEeOLJeQez13EkQ" conceptName="Goal achieved" base_EnumerationLiteral="_4CqAQJmXEeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_61uk0ZmXEeOLJeQez13EkQ" conceptName="Goal not achieved" base_EnumerationLiteral="_61uk0JmXEeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_8DnUQZmXEeOLJeQez13EkQ" conceptName="No change" base_EnumerationLiteral="_8DnUQJmXEeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_9PDMoZmXEeOLJeQez13EkQ" conceptName="Decreasing" base_EnumerationLiteral="_9PDMoJmXEeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_-R2GYJmXEeOLJeQez13EkQ" conceptName="Improving" base_EnumerationLiteral="_-R1fUJmXEeOLJeQez13EkQ"/>
+  <term:ValueSetVersion xmi:id="_BciakZm1EeOLJeQez13EkQ" identifier="2.16.840.1.113883.11.20.9.46" fullName="Ability Value Set" base_Enumeration="_BciakJm1EeOLJeQez13EkQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_Q81fsZm1EeOLJeQez13EkQ" conceptName="Independent" base_EnumerationLiteral="_Q81fsJm1EeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_Taz-AZm1EeOLJeQez13EkQ" conceptName="Dependent" base_EnumerationLiteral="_Taz-AJm1EeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_Vr_9gZm1EeOLJeQez13EkQ" conceptName="Assisted" base_EnumerationLiteral="_Vr_9gJm1EeOLJeQez13EkQ"/>
+  <term:ValueSetVersion xmi:id="_dxy_8Zm1EeOLJeQez13EkQ" identifier="2.16.840.1.113883.11.20.9.47" fullName="ADL Result Type" binding="Dynamic" base_Enumeration="_dxy_8Jm1EeOLJeQez13EkQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_pUHzoZm1EeOLJeQez13EkQ" conceptName="Bathing" base_EnumerationLiteral="_pUHzoJm1EeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_tQoFcZm1EeOLJeQez13EkQ" conceptName="Dressing" base_EnumerationLiteral="_tQoFcJm1EeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_wE6K8Jm1EeOLJeQez13EkQ" conceptName="Toileting" base_EnumerationLiteral="_wE5j4Jm1EeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_yNDjMZm1EeOLJeQez13EkQ" conceptName="Feeding or Eating" base_EnumerationLiteral="_yNDjMJm1EeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_1L0aYZm1EeOLJeQez13EkQ" conceptName="Transferring" base_EnumerationLiteral="_1L0aYJm1EeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_3YDocJm1EeOLJeQez13EkQ" conceptName="Ambulation" base_EnumerationLiteral="_3YDBYJm1EeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_5qdv8Jm1EeOLJeQez13EkQ" conceptName="Bowel continence" base_EnumerationLiteral="_5qdI4Jm1EeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_8AwR4Zm1EeOLJeQez13EkQ" conceptName="Bladder continence" base_EnumerationLiteral="_8AwR4Jm1EeOLJeQez13EkQ"/>
+  <term:ValueSetVersion xmi:id="_Sv4_cZm6EeOLJeQez13EkQ" identifier="2.16.840.1.113883.11.20.9.50" fullName="Sensory and Speech Problem Type" binding="Dynamic" base_Enumeration="_Sv4_cJm6EeOLJeQez13EkQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_excFwJm6EeOLJeQez13EkQ" conceptName="Hearing" base_EnumerationLiteral="_exbesJm6EeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_nkcMcZm6EeOLJeQez13EkQ" conceptName="Sensory function status: vision" base_EnumerationLiteral="_nkcMcJm6EeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_twe38Zm6EeOLJeQez13EkQ" conceptName="Sensory perception" base_EnumerationLiteral="_twe38Jm6EeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_wUIgcZm6EeOLJeQez13EkQ" conceptName="Taste, function" base_EnumerationLiteral="_wUIgcJm6EeOLJeQez13EkQ"/>
+  <term:ValueSetCode xmi:id="_ylF2cZm6EeOLJeQez13EkQ" conceptName="Sense of smell, function" base_EnumerationLiteral="_ylF2cJm6EeOLJeQez13EkQ"/>
 </xmi:XMI>

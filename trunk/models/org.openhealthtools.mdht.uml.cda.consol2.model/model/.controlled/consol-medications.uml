@@ -1293,17 +1293,21 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:ConstraintValidation xmi:id="_w4S0QEFiEeG2TLeVPbv7pg" base_Constraint="_ukkeIEFiEeG2TLeVPbv7pg">
     <ruleId>CONF:15979</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_tP3_QEFmEeG2TLeVPbv7pg" base_Constraint="_6ODpwEFiEeG2TLeVPbv7pg"/>
-  <CDA:ConstraintValidation xmi:id="_t6RnIEFmEeG2TLeVPbv7pg" base_Constraint="_4CqJMEFiEeG2TLeVPbv7pg"/>
+  <CDA:ConstraintValidation xmi:id="_tP3_QEFmEeG2TLeVPbv7pg" base_Constraint="_6ODpwEFiEeG2TLeVPbv7pg">
+    <ruleId>CONF:7512</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_t6RnIEFmEeG2TLeVPbv7pg" base_Constraint="_4CqJMEFiEeG2TLeVPbv7pg">
+    <ruleId>CONF:7511</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_Wrf3gEIjEeG4bZAl2IGXmQ" base_Constraint="_5BnBgEIiEeG4bZAl2IGXmQ">
     <ruleId>CONF:7508</ruleId>
-    <ruleId>CONF:9104</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_bBg1gEIjEeG4bZAl2IGXmQ" severity="WARNING" base_Constraint="_0bGJYEIiEeG4bZAl2IGXmQ">
     <ruleId>CONF:7513</ruleId>
     <ruleId>CONF:9105</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_do-nAEIjEeG4bZAl2IGXmQ" base_Constraint="_Ldxa0EIjEeG4bZAl2IGXmQ">
+    <ruleId>CONF:7513</ruleId>
     <ruleId>CONF:9106</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_s5m7oEInEeG4bZAl2IGXmQ" severity="WARNING" base_Constraint="_cWfuoEInEeG4bZAl2IGXmQ">

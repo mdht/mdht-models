@@ -2326,4 +2326,52 @@ Devices applied to, or placed in, the patient are represented with the Procedure
   <CDA:ConstraintValidation xmi:id="_zQ6XsJQ1EeO19_VQDD6jXw" base_Constraint="_v_SO4JQ1EeO19_VQDD6jXw">
     <ruleId>CONF:31931</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_nC0xUJmzEeOLJeQez13EkQ" name="SelfCareActivities">
+    <ownedComment xmi:id="_LAG4AJm0EeOLJeQez13EkQ">
+      <body>This template represents an adult patient's daily self-care ability. These activities are called Activities of Daily Living (ADL) and Instrumental Activities of Daily Living (IADL).  ADLs involve caring for and moving of the body (e.g. dressing, bathing, eating). IADLs support an independent life style (e.g. cooking, managing medications, driving, shopping).</body>
+    </ownedComment>
+    <generalization xmi:id="_nC1YYJmzEeOLJeQez13EkQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_rBipoJmzEeOLJeQez13EkQ" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_k5QAQJm0EeOLJeQez13EkQ" value="OBS"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rBjQsZmzEeOLJeQez13EkQ" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_mPFKwJm0EeOLJeQez13EkQ" value="EVN"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rBjQsJmzEeOLJeQez13EkQ" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rBjQspmzEeOLJeQez13EkQ" name="value" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c3meAJm0EeOLJeQez13EkQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c3nFEJm0EeOLJeQez13EkQ" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_ORkBsJm0EeOLJeQez13EkQ" base_Class="_nC0xUJmzEeOLJeQez13EkQ" templateId="2.16.840.1.113883.10.20.22.4.128">
+    <ruleId>CONF:28190</ruleId>
+    <ruleId>CONF:28457</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_dIVosJm0EeOLJeQez13EkQ" base_Property="_rBjQspmzEeOLJeQez13EkQ"/>
+  <CDA:PropertyValidation xmi:id="_d0DfMJm0EeOLJeQez13EkQ" base_Property="_rBjQsJmzEeOLJeQez13EkQ"/>
+  <CDA:PropertyValidation xmi:id="_ekWTsJm0EeOLJeQez13EkQ" base_Property="_rBjQsZmzEeOLJeQez13EkQ">
+    <ruleId>CONF:31390</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_fBuzQJm0EeOLJeQez13EkQ" base_Property="_rBipoJmzEeOLJeQez13EkQ">
+    <ruleId>CONF:31389</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_4QZJMJm2EeOLJeQez13EkQ" base_Property="_rBjQsJmzEeOLJeQez13EkQ">
+    <reference href="../consol-vocab.uml#_dxy_8Zm1EeOLJeQez13EkQ"/>
+    <ruleId>CONF:28153</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="__ImXIJm2EeOLJeQez13EkQ" base_Property="_rBjQspmzEeOLJeQez13EkQ">
+    <reference href="../consol-vocab.uml#_BciakZm1EeOLJeQez13EkQ"/>
+    <ruleId>CONF:28042</ruleId>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>
