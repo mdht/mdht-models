@@ -1551,6 +1551,51 @@ public interface ConsolFactory extends EFactory {
 	PlannedImmunizationActivity createPlannedImmunizationActivity();
 
 	/**
+	 * Returns a new object of class '<em>Prognosis Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Prognosis Observation</em>'.
+	 * @generated
+	 */
+	PrognosisObservation createPrognosisObservation();
+
+	/**
+	 * Returns a new object of class '<em>Progress Toward Goal Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Progress Toward Goal Observation</em>'.
+	 * @generated
+	 */
+	ProgressTowardGoalObservation createProgressTowardGoalObservation();
+
+	/**
+	 * Returns a new object of class '<em>Provider Priority Preference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Provider Priority Preference</em>'.
+	 * @generated
+	 */
+	ProviderPriorityPreference createProviderPriorityPreference();
+
+	/**
+	 * Returns a new object of class '<em>Self Care Activities</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Self Care Activities</em>'.
+	 * @generated
+	 */
+	SelfCareActivities createSelfCareActivities();
+
+	/**
+	 * Returns a new object of class '<em>Sensory And Speech Status</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sensory And Speech Status</em>'.
+	 * @generated
+	 */
+	SensoryAndSpeechStatus createSensoryAndSpeechStatus();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

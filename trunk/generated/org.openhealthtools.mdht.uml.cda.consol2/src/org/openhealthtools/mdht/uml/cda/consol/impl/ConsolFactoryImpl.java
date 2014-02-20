@@ -434,6 +434,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createExternalDocumentReference();
 			case ConsolPackage.PLANNED_IMMUNIZATION_ACTIVITY:
 				return createPlannedImmunizationActivity();
+			case ConsolPackage.PROGNOSIS_OBSERVATION:
+				return createPrognosisObservation();
+			case ConsolPackage.PROGRESS_TOWARD_GOAL_OBSERVATION:
+				return createProgressTowardGoalObservation();
+			case ConsolPackage.PROVIDER_PRIORITY_PREFERENCE:
+				return createProviderPriorityPreference();
+			case ConsolPackage.SELF_CARE_ACTIVITIES:
+				return createSelfCareActivities();
+			case ConsolPackage.SENSORY_AND_SPEECH_STATUS:
+				return createSensoryAndSpeechStatus();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2127,6 +2137,56 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public PlannedImmunizationActivity createPlannedImmunizationActivity() {
 		PlannedImmunizationActivityImpl plannedImmunizationActivity = new PlannedImmunizationActivityImpl();
 		return plannedImmunizationActivity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrognosisObservation createPrognosisObservation() {
+		PrognosisObservationImpl prognosisObservation = new PrognosisObservationImpl();
+		return prognosisObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProgressTowardGoalObservation createProgressTowardGoalObservation() {
+		ProgressTowardGoalObservationImpl progressTowardGoalObservation = new ProgressTowardGoalObservationImpl();
+		return progressTowardGoalObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProviderPriorityPreference createProviderPriorityPreference() {
+		ProviderPriorityPreferenceImpl providerPriorityPreference = new ProviderPriorityPreferenceImpl();
+		return providerPriorityPreference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SelfCareActivities createSelfCareActivities() {
+		SelfCareActivitiesImpl selfCareActivities = new SelfCareActivitiesImpl();
+		return selfCareActivities;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SensoryAndSpeechStatus createSensoryAndSpeechStatus() {
+		SensoryAndSpeechStatusImpl sensoryAndSpeechStatus = new SensoryAndSpeechStatusImpl();
+		return sensoryAndSpeechStatus;
 	}
 
 	/**
