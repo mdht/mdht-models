@@ -3657,6 +3657,106 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.PROGNOSIS_OBSERVATION: {
+				PrognosisObservation prognosisObservation = (PrognosisObservation) theEObject;
+				T result = casePrognosisObservation(prognosisObservation);
+				if (result == null) {
+					result = caseObservation(prognosisObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(prognosisObservation);
+				}
+				if (result == null) {
+					result = caseAct(prognosisObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(prognosisObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROGRESS_TOWARD_GOAL_OBSERVATION: {
+				ProgressTowardGoalObservation progressTowardGoalObservation = (ProgressTowardGoalObservation) theEObject;
+				T result = caseProgressTowardGoalObservation(progressTowardGoalObservation);
+				if (result == null) {
+					result = caseObservation(progressTowardGoalObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(progressTowardGoalObservation);
+				}
+				if (result == null) {
+					result = caseAct(progressTowardGoalObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(progressTowardGoalObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROVIDER_PRIORITY_PREFERENCE: {
+				ProviderPriorityPreference providerPriorityPreference = (ProviderPriorityPreference) theEObject;
+				T result = caseProviderPriorityPreference(providerPriorityPreference);
+				if (result == null) {
+					result = caseObservation(providerPriorityPreference);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(providerPriorityPreference);
+				}
+				if (result == null) {
+					result = caseAct(providerPriorityPreference);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(providerPriorityPreference);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.SELF_CARE_ACTIVITIES: {
+				SelfCareActivities selfCareActivities = (SelfCareActivities) theEObject;
+				T result = caseSelfCareActivities(selfCareActivities);
+				if (result == null) {
+					result = caseObservation(selfCareActivities);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(selfCareActivities);
+				}
+				if (result == null) {
+					result = caseAct(selfCareActivities);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(selfCareActivities);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.SENSORY_AND_SPEECH_STATUS: {
+				SensoryAndSpeechStatus sensoryAndSpeechStatus = (SensoryAndSpeechStatus) theEObject;
+				T result = caseSensoryAndSpeechStatus(sensoryAndSpeechStatus);
+				if (result == null) {
+					result = caseObservation(sensoryAndSpeechStatus);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(sensoryAndSpeechStatus);
+				}
+				if (result == null) {
+					result = caseAct(sensoryAndSpeechStatus);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(sensoryAndSpeechStatus);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -6706,6 +6806,81 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T casePlannedImmunizationActivity(PlannedImmunizationActivity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Prognosis Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Prognosis Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePrognosisObservation(PrognosisObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Progress Toward Goal Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Progress Toward Goal Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProgressTowardGoalObservation(ProgressTowardGoalObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Provider Priority Preference</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Provider Priority Preference</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProviderPriorityPreference(ProviderPriorityPreference object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Self Care Activities</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Self Care Activities</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSelfCareActivities(SelfCareActivities object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sensory And Speech Status</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sensory And Speech Status</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSensoryAndSpeechStatus(SensoryAndSpeechStatus object) {
 		return null;
 	}
 

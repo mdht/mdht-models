@@ -1231,6 +1231,41 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass prognosisObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass progressTowardGoalObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass providerPriorityPreferenceEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass selfCareActivitiesEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sensoryAndSpeechStatusEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicationsAdministeredSectionEClass = null;
 
 	/**
@@ -3624,6 +3659,71 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				186);
 		}
 		return plannedImmunizationActivityEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPrognosisObservation() {
+		if (prognosisObservationEClass == null) {
+			prognosisObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				187);
+		}
+		return prognosisObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProgressTowardGoalObservation() {
+		if (progressTowardGoalObservationEClass == null) {
+			progressTowardGoalObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				188);
+		}
+		return progressTowardGoalObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProviderPriorityPreference() {
+		if (providerPriorityPreferenceEClass == null) {
+			providerPriorityPreferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				189);
+		}
+		return providerPriorityPreferenceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSelfCareActivities() {
+		if (selfCareActivitiesEClass == null) {
+			selfCareActivitiesEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				190);
+		}
+		return selfCareActivitiesEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSensoryAndSpeechStatus() {
+		if (sensoryAndSpeechStatusEClass == null) {
+			sensoryAndSpeechStatusEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				191);
+		}
+		return sensoryAndSpeechStatusEClass;
 	}
 
 	/**

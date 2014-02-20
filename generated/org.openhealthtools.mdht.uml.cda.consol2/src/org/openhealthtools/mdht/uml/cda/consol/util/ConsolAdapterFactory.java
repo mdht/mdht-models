@@ -1030,6 +1030,31 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter casePrognosisObservation(PrognosisObservation object) {
+			return createPrognosisObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseProgressTowardGoalObservation(ProgressTowardGoalObservation object) {
+			return createProgressTowardGoalObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseProviderPriorityPreference(ProviderPriorityPreference object) {
+			return createProviderPriorityPreferenceAdapter();
+		}
+
+		@Override
+		public Adapter caseSelfCareActivities(SelfCareActivities object) {
+			return createSelfCareActivitiesAdapter();
+		}
+
+		@Override
+		public Adapter caseSensoryAndSpeechStatus(SensoryAndSpeechStatus object) {
+			return createSensoryAndSpeechStatusAdapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -3997,6 +4022,76 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPlannedImmunizationActivityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PrognosisObservation <em>Prognosis Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PrognosisObservation
+	 * @generated
+	 */
+	public Adapter createPrognosisObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProgressTowardGoalObservation <em>Progress Toward Goal Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProgressTowardGoalObservation
+	 * @generated
+	 */
+	public Adapter createProgressTowardGoalObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference <em>Provider Priority Preference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference
+	 * @generated
+	 */
+	public Adapter createProviderPriorityPreferenceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities <em>Self Care Activities</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities
+	 * @generated
+	 */
+	public Adapter createSelfCareActivitiesAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.SensoryAndSpeechStatus <em>Sensory And Speech Status</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SensoryAndSpeechStatus
+	 * @generated
+	 */
+	public Adapter createSensoryAndSpeechStatusAdapter() {
 		return null;
 	}
 
