@@ -17,6 +17,8 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
+import org.openhealthtools.mdht.uml.cda.CDAFactory;
+import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.SensoryAndSpeechStatus;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SensoryAndSpeechStatusOperations;
@@ -25,6 +27,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
+import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -194,7 +197,7 @@ public class SensoryAndSpeechStatusTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateSensoryAndSpeechStatusCode() {
@@ -205,16 +208,15 @@ public class SensoryAndSpeechStatusTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(SensoryAndSpeechStatus target) {
-
+				target.init();
+				CD code = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(code);
 			}
 
 			@Override
 			protected void updateToPass(SensoryAndSpeechStatus target) {
-				target.init();
-
-				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
-				target.setStatusCode(cs);
-
+				CD code = DatatypesFactory.eINSTANCE.createCD("47078008", SNOMEDCT_ID);
+				target.setCode(code);
 			}
 
 			@Override
@@ -346,7 +348,7 @@ public class SensoryAndSpeechStatusTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateSensoryAndSpeechStatusValue() {
@@ -357,16 +359,15 @@ public class SensoryAndSpeechStatusTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(SensoryAndSpeechStatus target) {
-
+				CD val = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(val);
 			}
 
 			@Override
 			protected void updateToPass(SensoryAndSpeechStatus target) {
-				target.init();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
-
+				target.getValues().clear();
+				CD val = DatatypesFactory.eINSTANCE.createCD("11163003", SNOMEDCT_ID);
+				target.getValues().add(val);
 			}
 
 			@Override
@@ -383,7 +384,7 @@ public class SensoryAndSpeechStatusTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateSensoryAndSpeechStatusValueP() {
@@ -400,7 +401,8 @@ public class SensoryAndSpeechStatusTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(SensoryAndSpeechStatus target) {
 				target.init();
-
+				CD val = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(val);
 			}
 
 			@Override
@@ -417,7 +419,7 @@ public class SensoryAndSpeechStatusTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateSensoryAndSpeechStatusAuthor() {
@@ -434,7 +436,7 @@ public class SensoryAndSpeechStatusTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(SensoryAndSpeechStatus target) {
 				target.init();
-
+				target.getAuthors().add(CDAFactory.eINSTANCE.createAuthor());
 			}
 
 			@Override
@@ -451,7 +453,7 @@ public class SensoryAndSpeechStatusTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateSensoryAndSpeechStatusAssessmentScaleObservation() {
@@ -462,13 +464,15 @@ public class SensoryAndSpeechStatusTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(SensoryAndSpeechStatus target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(SensoryAndSpeechStatus target) {
-				target.init();
-
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
+				er.setObservation(ConsolFactory.eINSTANCE.createAssessmentScaleObservation().init());
+				target.getEntryRelationships().add(er);
 			}
 
 			@Override
@@ -485,7 +489,7 @@ public class SensoryAndSpeechStatusTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateSensoryAndSpeechStatusAuthorTime() {
@@ -496,13 +500,13 @@ public class SensoryAndSpeechStatusTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(SensoryAndSpeechStatus target) {
-
+				target.init();
+				target.getAuthors().add(CDAFactory.eINSTANCE.createAuthor());
 			}
 
 			@Override
 			protected void updateToPass(SensoryAndSpeechStatus target) {
-				target.init();
-
+				target.getAuthors().get(0).setTime(DatatypesFactory.eINSTANCE.createTS());
 			}
 
 			@Override

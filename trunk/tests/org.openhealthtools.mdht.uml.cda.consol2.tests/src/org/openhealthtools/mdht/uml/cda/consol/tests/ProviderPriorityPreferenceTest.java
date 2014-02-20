@@ -22,7 +22,9 @@ import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProviderPriorityPreferenceOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
 /**
  * <!-- begin-user-doc -->
@@ -154,7 +156,7 @@ public class ProviderPriorityPreferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateProviderPriorityPreferenceId() {
@@ -171,7 +173,8 @@ public class ProviderPriorityPreferenceTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ProviderPriorityPreference target) {
 				target.init();
-
+				II id = DatatypesFactory.eINSTANCE.createII();
+				target.getIds().add(id);
 			}
 
 			@Override
@@ -297,7 +300,7 @@ public class ProviderPriorityPreferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateProviderPriorityPreferencePriorityCode() {
@@ -308,13 +311,15 @@ public class ProviderPriorityPreferenceTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ProviderPriorityPreference target) {
-
+				target.init();
+				CE pc = DatatypesFactory.eINSTANCE.createCE();
+				target.setPriorityCode(pc);
 			}
 
 			@Override
 			protected void updateToPass(ProviderPriorityPreference target) {
-				target.init();
-
+				target.getPriorityCode().setCode("255216001");
+				target.getPriorityCode().setCodeSystem(SNOMEDCT_ID);
 			}
 
 			@Override
@@ -338,7 +343,7 @@ public class ProviderPriorityPreferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateProviderPriorityPreferenceValue() {
@@ -349,16 +354,16 @@ public class ProviderPriorityPreferenceTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ProviderPriorityPreference target) {
-
+				target.init();
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 			}
 
 			@Override
 			protected void updateToPass(ProviderPriorityPreference target) {
-				target.init();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().clear();
+				CD value = DatatypesFactory.eINSTANCE.createCD("394849002", SNOMEDCT_ID);
 				target.getValues().add(value);
-
 			}
 
 			@Override
@@ -375,7 +380,7 @@ public class ProviderPriorityPreferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateProviderPriorityPreferenceValueP() {
@@ -392,7 +397,8 @@ public class ProviderPriorityPreferenceTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ProviderPriorityPreference target) {
 				target.init();
-
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 			}
 
 			@Override

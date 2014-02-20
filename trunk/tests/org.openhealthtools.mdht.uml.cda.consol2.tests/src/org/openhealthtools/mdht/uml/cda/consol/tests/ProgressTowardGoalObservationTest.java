@@ -227,7 +227,7 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateProgressTowardGoalObservationCode() {
@@ -238,16 +238,15 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ProgressTowardGoalObservation target) {
-
+				target.init();
+				CD code = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(code);
 			}
 
 			@Override
 			protected void updateToPass(ProgressTowardGoalObservation target) {
-				target.init();
-
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
-
+				CD code = DatatypesFactory.eINSTANCE.createCD("ASSERTION", "2.16.840.1.113883.5.4");
+				target.setCode(code);
 			}
 
 			@Override
@@ -342,7 +341,7 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateProgressTowardGoalObservationValue() {
@@ -353,16 +352,16 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ProgressTowardGoalObservation target) {
-
+				target.init();
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 			}
 
 			@Override
 			protected void updateToPass(ProgressTowardGoalObservation target) {
-				target.init();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().clear();
+				CD value = DatatypesFactory.eINSTANCE.createCD("390802008", SNOMEDCT_ID);
 				target.getValues().add(value);
-
 			}
 
 			@Override
@@ -379,7 +378,7 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateProgressTowardGoalObservationValueP() {
@@ -390,13 +389,13 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ProgressTowardGoalObservation target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(ProgressTowardGoalObservation target) {
-				target.init();
-
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 			}
 
 			@Override
