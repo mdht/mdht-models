@@ -20371,12 +20371,412 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int SENSORY_AND_SPEECH_STATUS__SENSORY_AND_SPEECH_STATUS_AUTHOR_TIME = 2542;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Administered Act Template Id' of 'Substance Administered Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_TEMPLATE_ID = 2543;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Administered Act Class Code' of 'Substance Administered Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_CLASS_CODE = 2544;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Administered Act Mood Code' of 'Substance Administered Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_MOOD_CODE = 2545;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Administered Act Id' of 'Substance Administered Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_ID = 2546;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Administered Act Code P' of 'Substance Administered Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_CODE_P = 2547;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Administered Act Code' of 'Substance Administered Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_CODE = 2548;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Administered Act Status Code' of 'Substance Administered Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE = 2549;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Administered Act Status Code P' of 'Substance Administered Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE_P = 2550;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Administered Act Effective Time' of 'Substance Administered Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_EFFECTIVE_TIME = 2551;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Characteristics Template Id' of 'Wound Characteristics'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_TEMPLATE_ID = 2552;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Characteristics Class Code' of 'Wound Characteristics'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_CLASS_CODE = 2553;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Characteristics Mood Code' of 'Wound Characteristics'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_MOOD_CODE = 2554;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Characteristics Id' of 'Wound Characteristics'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_ID = 2555;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Characteristics Code P' of 'Wound Characteristics'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_CODE_P = 2556;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Characteristics Code' of 'Wound Characteristics'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_CODE = 2557;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Characteristics Status Code' of 'Wound Characteristics'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_STATUS_CODE = 2558;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Characteristics Status Code P' of 'Wound Characteristics'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_STATUS_CODE_P = 2559;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Characteristics Effective Time' of 'Wound Characteristics'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_EFFECTIVE_TIME = 2560;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Characteristics Value' of 'Wound Characteristics'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_VALUE = 2561;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Characteristics Value P' of 'Wound Characteristics'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_VALUE_P = 2562;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Characteristics CD Code System' of 'Wound Characteristics'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_CHARACTERISTICS__WOUND_CHARACTERISTICS_CD_CODE_SYSTEM = 2563;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Measurement Observation Template Id' of 'Wound Measurement Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_TEMPLATE_ID = 2564;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Measurement Observation Class Code' of 'Wound Measurement Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_CLASS_CODE = 2565;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Measurement Observation Mood Code' of 'Wound Measurement Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_MOOD_CODE = 2566;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Measurement Observation Id' of 'Wound Measurement Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_ID = 2567;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Measurement Observation Code P' of 'Wound Measurement Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_CODE_P = 2568;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Measurement Observation Code' of 'Wound Measurement Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_CODE = 2569;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Measurement Observation Status Code' of 'Wound Measurement Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_STATUS_CODE = 2570;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Measurement Observation Status Code P' of 'Wound Measurement Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_STATUS_CODE_P = 2571;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Measurement Observation Effective Time' of 'Wound Measurement Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME = 2572;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Measurement Observation Value' of 'Wound Measurement Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_VALUE = 2573;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation Template Id' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_TEMPLATE_ID = 2574;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation Class Code' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_CLASS_CODE = 2575;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation Mood Code' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_MOOD_CODE = 2576;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation Code P' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_CODE_P = 2577;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation Code' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_CODE = 2578;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation Value' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_VALUE = 2579;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation Value P' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_VALUE_P = 2580;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation Target Site Code P' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_TARGET_SITE_CODE_P = 2581;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation Target Site Code' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_TARGET_SITE_CODE = 2582;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation Wound Measurement Observation' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_WOUND_MEASUREMENT_OBSERVATION = 2583;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation Wound Characteristics' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_WOUND_CHARACTERISTICS = 2584;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation Highest Pressure Ulcer Stage' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_HIGHEST_PRESSURE_ULCER_STAGE = 2585;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation Act Reference CD Null Flavor' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR = 2586;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation Act Reference CD Null Flavor P' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR_P = 2587;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation CDCRCD Code' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_CDCRCD_CODE = 2588;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation CDCR Name' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_CDCR_NAME = 2589;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation CDCR Name P' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_CDCR_NAME_P = 2590;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation CDCR Value' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_CDCR_VALUE = 2591;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Wound Observation CD Qualifier' of 'Wound Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_CD_QUALIFIER = 2592;
+
+	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 2542;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 2592;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -20854,6 +21254,14 @@ public class ConsolValidator extends EObjectValidator {
 				return validateSelfCareActivities((SelfCareActivities) value, diagnostics, context);
 			case ConsolPackage.SENSORY_AND_SPEECH_STATUS:
 				return validateSensoryAndSpeechStatus((SensoryAndSpeechStatus) value, diagnostics, context);
+			case ConsolPackage.SUBSTANCE_ADMINISTERED_ACT:
+				return validateSubstanceAdministeredAct((SubstanceAdministeredAct) value, diagnostics, context);
+			case ConsolPackage.WOUND_CHARACTERISTICS:
+				return validateWoundCharacteristics((WoundCharacteristics) value, diagnostics, context);
+			case ConsolPackage.WOUND_MEASUREMENT_OBSERVATION:
+				return validateWoundMeasurementObservation((WoundMeasurementObservation) value, diagnostics, context);
+			case ConsolPackage.WOUND_OBSERVATION:
+				return validateWoundObservation((WoundObservation) value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -76618,6 +77026,885 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateSensoryAndSpeechStatus_validateSensoryAndSpeechStatusAuthorTime(
 			SensoryAndSpeechStatus sensoryAndSpeechStatus, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return sensoryAndSpeechStatus.validateSensoryAndSpeechStatusAuthorTime(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceAdministeredAct(SubstanceAdministeredAct substanceAdministeredAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(substanceAdministeredAct, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(substanceAdministeredAct, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(substanceAdministeredAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(substanceAdministeredAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(substanceAdministeredAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(substanceAdministeredAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(substanceAdministeredAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(substanceAdministeredAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceAdministeredAct_validateSubstanceAdministeredActTemplateId(
+				substanceAdministeredAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceAdministeredAct_validateSubstanceAdministeredActClassCode(
+				substanceAdministeredAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceAdministeredAct_validateSubstanceAdministeredActMoodCode(
+				substanceAdministeredAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceAdministeredAct_validateSubstanceAdministeredActId(
+				substanceAdministeredAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceAdministeredAct_validateSubstanceAdministeredActCodeP(
+				substanceAdministeredAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceAdministeredAct_validateSubstanceAdministeredActCode(
+				substanceAdministeredAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceAdministeredAct_validateSubstanceAdministeredActStatusCode(
+				substanceAdministeredAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceAdministeredAct_validateSubstanceAdministeredActStatusCodeP(
+				substanceAdministeredAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceAdministeredAct_validateSubstanceAdministeredActEffectiveTime(
+				substanceAdministeredAct, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateSubstanceAdministeredActTemplateId constraint of '<em>Substance Administered Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceAdministeredAct_validateSubstanceAdministeredActTemplateId(
+			SubstanceAdministeredAct substanceAdministeredAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return substanceAdministeredAct.validateSubstanceAdministeredActTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceAdministeredActClassCode constraint of '<em>Substance Administered Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceAdministeredAct_validateSubstanceAdministeredActClassCode(
+			SubstanceAdministeredAct substanceAdministeredAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return substanceAdministeredAct.validateSubstanceAdministeredActClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceAdministeredActMoodCode constraint of '<em>Substance Administered Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceAdministeredAct_validateSubstanceAdministeredActMoodCode(
+			SubstanceAdministeredAct substanceAdministeredAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return substanceAdministeredAct.validateSubstanceAdministeredActMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceAdministeredActId constraint of '<em>Substance Administered Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceAdministeredAct_validateSubstanceAdministeredActId(
+			SubstanceAdministeredAct substanceAdministeredAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return substanceAdministeredAct.validateSubstanceAdministeredActId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceAdministeredActCodeP constraint of '<em>Substance Administered Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceAdministeredAct_validateSubstanceAdministeredActCodeP(
+			SubstanceAdministeredAct substanceAdministeredAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return substanceAdministeredAct.validateSubstanceAdministeredActCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceAdministeredActCode constraint of '<em>Substance Administered Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceAdministeredAct_validateSubstanceAdministeredActCode(
+			SubstanceAdministeredAct substanceAdministeredAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return substanceAdministeredAct.validateSubstanceAdministeredActCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceAdministeredActStatusCode constraint of '<em>Substance Administered Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceAdministeredAct_validateSubstanceAdministeredActStatusCode(
+			SubstanceAdministeredAct substanceAdministeredAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return substanceAdministeredAct.validateSubstanceAdministeredActStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceAdministeredActStatusCodeP constraint of '<em>Substance Administered Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceAdministeredAct_validateSubstanceAdministeredActStatusCodeP(
+			SubstanceAdministeredAct substanceAdministeredAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return substanceAdministeredAct.validateSubstanceAdministeredActStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceAdministeredActEffectiveTime constraint of '<em>Substance Administered Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceAdministeredAct_validateSubstanceAdministeredActEffectiveTime(
+			SubstanceAdministeredAct substanceAdministeredAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return substanceAdministeredAct.validateSubstanceAdministeredActEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundCharacteristics(WoundCharacteristics woundCharacteristics, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(woundCharacteristics, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(woundCharacteristics, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundCharacteristics_validateWoundCharacteristicsTemplateId(
+				woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundCharacteristics_validateWoundCharacteristicsClassCode(
+				woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundCharacteristics_validateWoundCharacteristicsMoodCode(
+				woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundCharacteristics_validateWoundCharacteristicsId(
+				woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundCharacteristics_validateWoundCharacteristicsCodeP(
+				woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundCharacteristics_validateWoundCharacteristicsCode(
+				woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundCharacteristics_validateWoundCharacteristicsStatusCode(
+				woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundCharacteristics_validateWoundCharacteristicsStatusCodeP(
+				woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundCharacteristics_validateWoundCharacteristicsEffectiveTime(
+				woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundCharacteristics_validateWoundCharacteristicsValue(
+				woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundCharacteristics_validateWoundCharacteristicsValueP(
+				woundCharacteristics, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundCharacteristics_validateWoundCharacteristicsCDCodeSystem(
+				woundCharacteristics, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateWoundCharacteristicsTemplateId constraint of '<em>Wound Characteristics</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundCharacteristics_validateWoundCharacteristicsTemplateId(
+			WoundCharacteristics woundCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundCharacteristics.validateWoundCharacteristicsTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundCharacteristicsClassCode constraint of '<em>Wound Characteristics</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundCharacteristics_validateWoundCharacteristicsClassCode(
+			WoundCharacteristics woundCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundCharacteristics.validateWoundCharacteristicsClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundCharacteristicsMoodCode constraint of '<em>Wound Characteristics</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundCharacteristics_validateWoundCharacteristicsMoodCode(
+			WoundCharacteristics woundCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundCharacteristics.validateWoundCharacteristicsMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundCharacteristicsId constraint of '<em>Wound Characteristics</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundCharacteristics_validateWoundCharacteristicsId(
+			WoundCharacteristics woundCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundCharacteristics.validateWoundCharacteristicsId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundCharacteristicsCodeP constraint of '<em>Wound Characteristics</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundCharacteristics_validateWoundCharacteristicsCodeP(
+			WoundCharacteristics woundCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundCharacteristics.validateWoundCharacteristicsCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundCharacteristicsCode constraint of '<em>Wound Characteristics</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundCharacteristics_validateWoundCharacteristicsCode(
+			WoundCharacteristics woundCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundCharacteristics.validateWoundCharacteristicsCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundCharacteristicsStatusCode constraint of '<em>Wound Characteristics</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundCharacteristics_validateWoundCharacteristicsStatusCode(
+			WoundCharacteristics woundCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundCharacteristics.validateWoundCharacteristicsStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundCharacteristicsStatusCodeP constraint of '<em>Wound Characteristics</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundCharacteristics_validateWoundCharacteristicsStatusCodeP(
+			WoundCharacteristics woundCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundCharacteristics.validateWoundCharacteristicsStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundCharacteristicsEffectiveTime constraint of '<em>Wound Characteristics</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundCharacteristics_validateWoundCharacteristicsEffectiveTime(
+			WoundCharacteristics woundCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundCharacteristics.validateWoundCharacteristicsEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundCharacteristicsValue constraint of '<em>Wound Characteristics</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundCharacteristics_validateWoundCharacteristicsValue(
+			WoundCharacteristics woundCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundCharacteristics.validateWoundCharacteristicsValue(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundCharacteristicsValueP constraint of '<em>Wound Characteristics</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundCharacteristics_validateWoundCharacteristicsValueP(
+			WoundCharacteristics woundCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundCharacteristics.validateWoundCharacteristicsValueP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundCharacteristicsCDCodeSystem constraint of '<em>Wound Characteristics</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundCharacteristics_validateWoundCharacteristicsCDCodeSystem(
+			WoundCharacteristics woundCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundCharacteristics.validateWoundCharacteristicsCDCodeSystem(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundMeasurementObservation(WoundMeasurementObservation woundMeasurementObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(woundMeasurementObservation, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(woundMeasurementObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(woundMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(woundMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(woundMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(woundMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(woundMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(woundMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundMeasurementObservation_validateWoundMeasurementObservationTemplateId(
+				woundMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundMeasurementObservation_validateWoundMeasurementObservationClassCode(
+				woundMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundMeasurementObservation_validateWoundMeasurementObservationMoodCode(
+				woundMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundMeasurementObservation_validateWoundMeasurementObservationId(
+				woundMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundMeasurementObservation_validateWoundMeasurementObservationCodeP(
+				woundMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundMeasurementObservation_validateWoundMeasurementObservationCode(
+				woundMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundMeasurementObservation_validateWoundMeasurementObservationStatusCode(
+				woundMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundMeasurementObservation_validateWoundMeasurementObservationStatusCodeP(
+				woundMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundMeasurementObservation_validateWoundMeasurementObservationEffectiveTime(
+				woundMeasurementObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundMeasurementObservation_validateWoundMeasurementObservationValue(
+				woundMeasurementObservation, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateWoundMeasurementObservationTemplateId constraint of '<em>Wound Measurement Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundMeasurementObservation_validateWoundMeasurementObservationTemplateId(
+			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return woundMeasurementObservation.validateWoundMeasurementObservationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundMeasurementObservationClassCode constraint of '<em>Wound Measurement Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundMeasurementObservation_validateWoundMeasurementObservationClassCode(
+			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return woundMeasurementObservation.validateWoundMeasurementObservationClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundMeasurementObservationMoodCode constraint of '<em>Wound Measurement Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundMeasurementObservation_validateWoundMeasurementObservationMoodCode(
+			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return woundMeasurementObservation.validateWoundMeasurementObservationMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundMeasurementObservationId constraint of '<em>Wound Measurement Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundMeasurementObservation_validateWoundMeasurementObservationId(
+			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return woundMeasurementObservation.validateWoundMeasurementObservationId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundMeasurementObservationCodeP constraint of '<em>Wound Measurement Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundMeasurementObservation_validateWoundMeasurementObservationCodeP(
+			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return woundMeasurementObservation.validateWoundMeasurementObservationCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundMeasurementObservationCode constraint of '<em>Wound Measurement Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundMeasurementObservation_validateWoundMeasurementObservationCode(
+			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return woundMeasurementObservation.validateWoundMeasurementObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundMeasurementObservationStatusCode constraint of '<em>Wound Measurement Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundMeasurementObservation_validateWoundMeasurementObservationStatusCode(
+			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return woundMeasurementObservation.validateWoundMeasurementObservationStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundMeasurementObservationStatusCodeP constraint of '<em>Wound Measurement Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundMeasurementObservation_validateWoundMeasurementObservationStatusCodeP(
+			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return woundMeasurementObservation.validateWoundMeasurementObservationStatusCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundMeasurementObservationEffectiveTime constraint of '<em>Wound Measurement Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundMeasurementObservation_validateWoundMeasurementObservationEffectiveTime(
+			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return woundMeasurementObservation.validateWoundMeasurementObservationEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundMeasurementObservationValue constraint of '<em>Wound Measurement Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundMeasurementObservation_validateWoundMeasurementObservationValue(
+			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return woundMeasurementObservation.validateWoundMeasurementObservationValue(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation(WoundObservation woundObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(woundObservation, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(woundObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationTemplateId(
+				woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationClassCode(woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationMoodCode(woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationCodeP(woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationCode(woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationValue(woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationValueP(woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationTargetSiteCodeP(
+				woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationTargetSiteCode(
+				woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationWoundMeasurementObservation(
+				woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationWoundCharacteristics(
+				woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationHighestPressureUlcerStage(
+				woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationActReferenceCDNullFlavor(
+				woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationActReferenceCDNullFlavorP(
+				woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationCDCRCDCode(
+				woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationCDCRName(woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationCDCRNameP(woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationCDCRValue(woundObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateWoundObservation_validateWoundObservationCDQualifier(
+				woundObservation, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateWoundObservationTemplateId constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationTemplateId(WoundObservation woundObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationClassCode constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationClassCode(WoundObservation woundObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationMoodCode constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationMoodCode(WoundObservation woundObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationCodeP constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationCodeP(WoundObservation woundObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationCode constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationCode(WoundObservation woundObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationValue constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationValue(WoundObservation woundObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationValue(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationValueP constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationValueP(WoundObservation woundObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationValueP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationTargetSiteCodeP constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationTargetSiteCodeP(WoundObservation woundObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationTargetSiteCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationTargetSiteCode constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationTargetSiteCode(WoundObservation woundObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationTargetSiteCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationWoundMeasurementObservation constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationWoundMeasurementObservation(
+			WoundObservation woundObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationWoundMeasurementObservation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationWoundCharacteristics constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationWoundCharacteristics(
+			WoundObservation woundObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationWoundCharacteristics(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationHighestPressureUlcerStage constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationHighestPressureUlcerStage(
+			WoundObservation woundObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationHighestPressureUlcerStage(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationActReferenceCDNullFlavor constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationActReferenceCDNullFlavor(
+			WoundObservation woundObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationActReferenceCDNullFlavor(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationActReferenceCDNullFlavorP constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationActReferenceCDNullFlavorP(
+			WoundObservation woundObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationActReferenceCDNullFlavorP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationCDCRCDCode constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationCDCRCDCode(WoundObservation woundObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationCDCRCDCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationCDCRName constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationCDCRName(WoundObservation woundObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationCDCRName(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationCDCRNameP constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationCDCRNameP(WoundObservation woundObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationCDCRNameP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationCDCRValue constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationCDCRValue(WoundObservation woundObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationCDCRValue(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateWoundObservationCDQualifier constraint of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateWoundObservation_validateWoundObservationCDQualifier(WoundObservation woundObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return woundObservation.validateWoundObservationCDQualifier(diagnostics, context);
 	}
 
 	/**

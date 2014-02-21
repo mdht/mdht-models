@@ -1055,6 +1055,26 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseSubstanceAdministeredAct(SubstanceAdministeredAct object) {
+			return createSubstanceAdministeredActAdapter();
+		}
+
+		@Override
+		public Adapter caseWoundCharacteristics(WoundCharacteristics object) {
+			return createWoundCharacteristicsAdapter();
+		}
+
+		@Override
+		public Adapter caseWoundMeasurementObservation(WoundMeasurementObservation object) {
+			return createWoundMeasurementObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseWoundObservation(WoundObservation object) {
+			return createWoundObservationAdapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -4092,6 +4112,62 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSensoryAndSpeechStatusAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceAdministeredAct <em>Substance Administered Act</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SubstanceAdministeredAct
+	 * @generated
+	 */
+	public Adapter createSubstanceAdministeredActAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.WoundCharacteristics <em>Wound Characteristics</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.WoundCharacteristics
+	 * @generated
+	 */
+	public Adapter createWoundCharacteristicsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.WoundMeasurementObservation <em>Wound Measurement Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.WoundMeasurementObservation
+	 * @generated
+	 */
+	public Adapter createWoundMeasurementObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation <em>Wound Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.WoundObservation
+	 * @generated
+	 */
+	public Adapter createWoundObservationAdapter() {
 		return null;
 	}
 
