@@ -295,7 +295,6 @@ public class ActReferenceTest extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
-	* Note: Inline datatype issue
 	*/
 	@Test
 	public void testValidateActReferenceCDNullFlavor() {
@@ -307,19 +306,15 @@ public class ActReferenceTest extends CDAValidationTest {
 			@Override
 			protected void updateToFail(ActReference target) {
 				target.init();
-				CD codeCD = DatatypesFactory.eINSTANCE.createCD();
-				// For this test, a specific code of NP is required
-				codeCD.setNullFlavor(NullFlavor.ASKU);
-				target.setCode(codeCD);
+				CD code = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(code);
+				target.setNullFlavor(NullFlavor.ASKU);
 			}
 
 			@Override
 			protected void updateToPass(ActReference target) {
-				target.init();
-				CD codeCD = DatatypesFactory.eINSTANCE.createCD();
-				// For this test, a specific code of NP is required
-				codeCD.setNullFlavor(NullFlavor.NP);
-				target.setCode(codeCD);
+				// A specific code of NP is required
+				target.getCode().setNullFlavor(NullFlavor.NP);
 			}
 
 			@Override
@@ -337,7 +332,6 @@ public class ActReferenceTest extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
-	* Note: Inline datatype issue
 	*/
 	@Test
 	public void testValidateActReferenceCDNullFlavorP() {
@@ -349,16 +343,15 @@ public class ActReferenceTest extends CDAValidationTest {
 			@Override
 			protected void updateToFail(ActReference target) {
 				target.init();
+				CD code = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(code);
 			}
 
 			@Override
 			protected void updateToPass(ActReference target) {
-				target.init();
-				CD codeCD = DatatypesFactory.eINSTANCE.createCD();
 				// For this test, a specific code is not required, only that nullFlavor exists.
 				// This is why we are checking ASKU instead of NP as it should still pass
-				codeCD.setNullFlavor(NullFlavor.ASKU);
-				target.setCode(codeCD);
+				target.getCode().setNullFlavor(NullFlavor.ASKU);
 			}
 
 			@Override

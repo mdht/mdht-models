@@ -418,7 +418,6 @@ public class PatientPriorityPreferenceTest extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
-	* Inline datatype related issue
 	*/
 	@Test
 	public void testValidatePatientPriorityPreferenceCDCodeSystem() {
@@ -429,12 +428,11 @@ public class PatientPriorityPreferenceTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PatientPriorityPreference target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(PatientPriorityPreference target) {
-				target.init();
 				CD code = DatatypesFactory.eINSTANCE.createCD();
 				code.setCodeSystem(""); // terminology will need 2.16.840.1.113883.5.8 but this check only needs the element to exist
 				target.setCode(code);

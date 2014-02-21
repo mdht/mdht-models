@@ -93,7 +93,8 @@ import org.junit.runners.Suite;
 		OutcomeObservationTest.class, PatientPriorityPreferenceTest.class, PatientReferralActTest.class,
 		PlannedCoverageTest.class, PlannedImmunizationActivityTest.class, PrognosisObservationTest.class,
 		ProgressTowardGoalObservationTest.class, ProviderPriorityPreferenceTest.class, SelfCareActivitiesTest.class,
-		SensoryAndSpeechStatusTest.class })
+		SensoryAndSpeechStatusTest.class, SubstanceAdministeredActTest.class, WoundCharacteristicsTest.class,
+		WoundMeasurementObservationTest.class, WoundObservationTest.class })
 public class ConsolTests {
 
 	/**

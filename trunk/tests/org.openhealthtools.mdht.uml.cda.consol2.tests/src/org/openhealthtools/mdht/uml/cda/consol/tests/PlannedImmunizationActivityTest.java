@@ -623,13 +623,13 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PlannedImmunizationActivity target) {
-
+				target.init();
+				target.setDoseQuantity(DatatypesFactory.eINSTANCE.createIVL_PQ());
 			}
 
 			@Override
 			protected void updateToPass(PlannedImmunizationActivity target) {
-				target.init();
-
+				target.getDoseQuantity().setUnit("HasAUnitAttributeSet");
 			}
 
 			@Override
