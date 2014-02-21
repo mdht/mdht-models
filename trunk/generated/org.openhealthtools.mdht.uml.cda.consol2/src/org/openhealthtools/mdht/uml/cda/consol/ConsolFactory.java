@@ -1596,6 +1596,42 @@ public interface ConsolFactory extends EFactory {
 	SensoryAndSpeechStatus createSensoryAndSpeechStatus();
 
 	/**
+	 * Returns a new object of class '<em>Substance Administered Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Substance Administered Act</em>'.
+	 * @generated
+	 */
+	SubstanceAdministeredAct createSubstanceAdministeredAct();
+
+	/**
+	 * Returns a new object of class '<em>Wound Characteristics</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Wound Characteristics</em>'.
+	 * @generated
+	 */
+	WoundCharacteristics createWoundCharacteristics();
+
+	/**
+	 * Returns a new object of class '<em>Wound Measurement Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Wound Measurement Observation</em>'.
+	 * @generated
+	 */
+	WoundMeasurementObservation createWoundMeasurementObservation();
+
+	/**
+	 * Returns a new object of class '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Wound Observation</em>'.
+	 * @generated
+	 */
+	WoundObservation createWoundObservation();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

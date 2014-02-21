@@ -3757,6 +3757,86 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.SUBSTANCE_ADMINISTERED_ACT: {
+				SubstanceAdministeredAct substanceAdministeredAct = (SubstanceAdministeredAct) theEObject;
+				T result = caseSubstanceAdministeredAct(substanceAdministeredAct);
+				if (result == null) {
+					result = caseCDA_Act(substanceAdministeredAct);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(substanceAdministeredAct);
+				}
+				if (result == null) {
+					result = caseAct(substanceAdministeredAct);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(substanceAdministeredAct);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.WOUND_CHARACTERISTICS: {
+				WoundCharacteristics woundCharacteristics = (WoundCharacteristics) theEObject;
+				T result = caseWoundCharacteristics(woundCharacteristics);
+				if (result == null) {
+					result = caseObservation(woundCharacteristics);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(woundCharacteristics);
+				}
+				if (result == null) {
+					result = caseAct(woundCharacteristics);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(woundCharacteristics);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.WOUND_MEASUREMENT_OBSERVATION: {
+				WoundMeasurementObservation woundMeasurementObservation = (WoundMeasurementObservation) theEObject;
+				T result = caseWoundMeasurementObservation(woundMeasurementObservation);
+				if (result == null) {
+					result = caseObservation(woundMeasurementObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(woundMeasurementObservation);
+				}
+				if (result == null) {
+					result = caseAct(woundMeasurementObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(woundMeasurementObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.WOUND_OBSERVATION: {
+				WoundObservation woundObservation = (WoundObservation) theEObject;
+				T result = caseWoundObservation(woundObservation);
+				if (result == null) {
+					result = caseObservation(woundObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(woundObservation);
+				}
+				if (result == null) {
+					result = caseAct(woundObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(woundObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -6881,6 +6961,66 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseSensoryAndSpeechStatus(SensoryAndSpeechStatus object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Substance Administered Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Substance Administered Act</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSubstanceAdministeredAct(SubstanceAdministeredAct object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Wound Characteristics</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Wound Characteristics</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseWoundCharacteristics(WoundCharacteristics object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Wound Measurement Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Wound Measurement Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseWoundMeasurementObservation(WoundMeasurementObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Wound Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Wound Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseWoundObservation(WoundObservation object) {
 		return null;
 	}
 

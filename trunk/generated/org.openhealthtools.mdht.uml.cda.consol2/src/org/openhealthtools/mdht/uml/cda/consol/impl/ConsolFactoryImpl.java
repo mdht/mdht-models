@@ -444,6 +444,14 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createSelfCareActivities();
 			case ConsolPackage.SENSORY_AND_SPEECH_STATUS:
 				return createSensoryAndSpeechStatus();
+			case ConsolPackage.SUBSTANCE_ADMINISTERED_ACT:
+				return createSubstanceAdministeredAct();
+			case ConsolPackage.WOUND_CHARACTERISTICS:
+				return createWoundCharacteristics();
+			case ConsolPackage.WOUND_MEASUREMENT_OBSERVATION:
+				return createWoundMeasurementObservation();
+			case ConsolPackage.WOUND_OBSERVATION:
+				return createWoundObservation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2187,6 +2195,46 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public SensoryAndSpeechStatus createSensoryAndSpeechStatus() {
 		SensoryAndSpeechStatusImpl sensoryAndSpeechStatus = new SensoryAndSpeechStatusImpl();
 		return sensoryAndSpeechStatus;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SubstanceAdministeredAct createSubstanceAdministeredAct() {
+		SubstanceAdministeredActImpl substanceAdministeredAct = new SubstanceAdministeredActImpl();
+		return substanceAdministeredAct;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WoundCharacteristics createWoundCharacteristics() {
+		WoundCharacteristicsImpl woundCharacteristics = new WoundCharacteristicsImpl();
+		return woundCharacteristics;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WoundMeasurementObservation createWoundMeasurementObservation() {
+		WoundMeasurementObservationImpl woundMeasurementObservation = new WoundMeasurementObservationImpl();
+		return woundMeasurementObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WoundObservation createWoundObservation() {
+		WoundObservationImpl woundObservation = new WoundObservationImpl();
+		return woundObservation;
 	}
 
 	/**
