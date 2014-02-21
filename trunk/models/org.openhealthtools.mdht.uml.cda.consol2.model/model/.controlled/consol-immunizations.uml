@@ -777,6 +777,9 @@ The priority of the immunization activity to the patient and provider is communi
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o-_WoZXPEeOgXcDbh8Igkw"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_5NpTYJXLEeOgXcDbh8Igkw" name="IVLPQ">
+      <ownedComment xmi:id="_DTlwwJs_EeO4UfbpzV0RLg">
+        <body>INLINE</body>
+      </ownedComment>
       <ownedRule xmi:id="_GSOkAJXMEeOgXcDbh8Igkw" name="unitTerminology" constrainedElement="_8MbYsJXLEeOgXcDbh8Igkw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_TtaWwJXMEeOgXcDbh8Igkw">
           <language>Analysis</language>

@@ -1518,6 +1518,30 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
       <ownedLiteral xmi:id="_wUIgcJm6EeOLJeQez13EkQ" name="397627001"/>
       <ownedLiteral xmi:id="_ylF2cJm6EeOLJeQez13EkQ" name="397686008"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_LH7ekJp1EeOK6dzbL4VoTA" name="Wound Characteristic">
+      <ownedComment xmi:id="_SzZ8gJp1EeOK6dzbL4VoTA">
+        <body>A value set of SNOMED-CT codes primarily selected from codes  descending from 225552003 &quot;Wound finding&quot;.&#xD;
+Specific URL Pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_gEooYJp9EeOK6dzbL4VoTA" name="Wound Measurements">
+      <ownedComment xmi:id="_tJiCEJp9EeOK6dzbL4VoTA">
+        <body>A value set of SNOMED-CT codes to capture the dimensions of a wound.&#xD;
+Specific URL Pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_uz8VcJp9EeOK6dzbL4VoTA" name="401239006"/>
+      <ownedLiteral xmi:id="_xEElAJp9EeOK6dzbL4VoTA" name="401238003"/>
+      <ownedLiteral xmi:id="_zkViUJp9EeOK6dzbL4VoTA" name="425094009"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_1Vl9MJqAEeOK6dzbL4VoTA" name="Wound Type">
+      <ownedComment xmi:id="_7uJasJqAEeOK6dzbL4VoTA">
+        <body>A value set of SNOMED-CT high level wound codes terms commonly used in long term care.&#xD;
+Specific URL Pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -2966,4 +2990,16 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_twe38Zm6EeOLJeQez13EkQ" conceptName="Sensory perception" base_EnumerationLiteral="_twe38Jm6EeOLJeQez13EkQ"/>
   <term:ValueSetCode xmi:id="_wUIgcZm6EeOLJeQez13EkQ" conceptName="Taste, function" base_EnumerationLiteral="_wUIgcJm6EeOLJeQez13EkQ"/>
   <term:ValueSetCode xmi:id="_ylF2cZm6EeOLJeQez13EkQ" conceptName="Sense of smell, function" base_EnumerationLiteral="_ylF2cJm6EeOLJeQez13EkQ"/>
+  <term:ValueSetVersion xmi:id="_LH7ekZp1EeOK6dzbL4VoTA" identifier="2.16.840.1.113883.11.20.9.58" fullName="Wound Characteristic" binding="Dynamic" base_Enumeration="_LH7ekJp1EeOK6dzbL4VoTA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_gEooYZp9EeOK6dzbL4VoTA" identifier="2.16.840.1.113883.1.11.20.2.5" fullName="Wound Measurements" binding="Dynamic" base_Enumeration="_gEooYJp9EeOK6dzbL4VoTA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_uz8VcZp9EeOK6dzbL4VoTA" conceptName="width of wound (observable entity)" base_EnumerationLiteral="_uz8VcJp9EeOK6dzbL4VoTA"/>
+  <term:ValueSetCode xmi:id="_xEElAZp9EeOK6dzbL4VoTA" conceptName="length of wound (observable entity)" base_EnumerationLiteral="_xEElAJp9EeOK6dzbL4VoTA"/>
+  <term:ValueSetCode xmi:id="_zkViUZp9EeOK6dzbL4VoTA" conceptName="depth of wound (observable entity)" base_EnumerationLiteral="_zkViUJp9EeOK6dzbL4VoTA"/>
+  <term:ValueSetVersion xmi:id="_1Vl9MZqAEeOK6dzbL4VoTA" identifier="2.16.840.1.113883.1.11.20.2.6" fullName="Wound Type" binding="Dynamic" base_Enumeration="_1Vl9MJqAEeOK6dzbL4VoTA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
 </xmi:XMI>
