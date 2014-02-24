@@ -452,6 +452,18 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createWoundMeasurementObservation();
 			case ConsolPackage.WOUND_OBSERVATION:
 				return createWoundObservation();
+			case ConsolPackage.GOALS_SECTION:
+				return createGoalsSection();
+			case ConsolPackage.HEALTH_CONCERNS_SECTION:
+				return createHealthConcernsSection();
+			case ConsolPackage.HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION:
+				return createHealthStatusEvaluationsOutcomesSection();
+			case ConsolPackage.MENTAL_STATUS_SECTION:
+				return createMentalStatusSection();
+			case ConsolPackage.NUTRITION_SECTION:
+				return createNutritionSection();
+			case ConsolPackage.PHYSICAL_FINDINGS_OF_SKIN_SECTION:
+				return createPhysicalFindingsOfSkinSection();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2235,6 +2247,66 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public WoundObservation createWoundObservation() {
 		WoundObservationImpl woundObservation = new WoundObservationImpl();
 		return woundObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GoalsSection createGoalsSection() {
+		GoalsSectionImpl goalsSection = new GoalsSectionImpl();
+		return goalsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HealthConcernsSection createHealthConcernsSection() {
+		HealthConcernsSectionImpl healthConcernsSection = new HealthConcernsSectionImpl();
+		return healthConcernsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HealthStatusEvaluationsOutcomesSection createHealthStatusEvaluationsOutcomesSection() {
+		HealthStatusEvaluationsOutcomesSectionImpl healthStatusEvaluationsOutcomesSection = new HealthStatusEvaluationsOutcomesSectionImpl();
+		return healthStatusEvaluationsOutcomesSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MentalStatusSection createMentalStatusSection() {
+		MentalStatusSectionImpl mentalStatusSection = new MentalStatusSectionImpl();
+		return mentalStatusSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NutritionSection createNutritionSection() {
+		NutritionSectionImpl nutritionSection = new NutritionSectionImpl();
+		return nutritionSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PhysicalFindingsOfSkinSection createPhysicalFindingsOfSkinSection() {
+		PhysicalFindingsOfSkinSectionImpl physicalFindingsOfSkinSection = new PhysicalFindingsOfSkinSectionImpl();
+		return physicalFindingsOfSkinSection;
 	}
 
 	/**

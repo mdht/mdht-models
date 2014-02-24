@@ -3837,6 +3837,108 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.GOALS_SECTION: {
+				GoalsSection goalsSection = (GoalsSection) theEObject;
+				T result = caseGoalsSection(goalsSection);
+				if (result == null) {
+					result = caseSection(goalsSection);
+				}
+				if (result == null) {
+					result = caseAct(goalsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(goalsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HEALTH_CONCERNS_SECTION: {
+				HealthConcernsSection healthConcernsSection = (HealthConcernsSection) theEObject;
+				T result = caseHealthConcernsSection(healthConcernsSection);
+				if (result == null) {
+					result = caseSection(healthConcernsSection);
+				}
+				if (result == null) {
+					result = caseAct(healthConcernsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(healthConcernsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION: {
+				HealthStatusEvaluationsOutcomesSection healthStatusEvaluationsOutcomesSection = (HealthStatusEvaluationsOutcomesSection) theEObject;
+				T result = caseHealthStatusEvaluationsOutcomesSection(healthStatusEvaluationsOutcomesSection);
+				if (result == null) {
+					result = caseSection(healthStatusEvaluationsOutcomesSection);
+				}
+				if (result == null) {
+					result = caseAct(healthStatusEvaluationsOutcomesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(healthStatusEvaluationsOutcomesSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.MENTAL_STATUS_SECTION: {
+				MentalStatusSection mentalStatusSection = (MentalStatusSection) theEObject;
+				T result = caseMentalStatusSection(mentalStatusSection);
+				if (result == null) {
+					result = caseSection(mentalStatusSection);
+				}
+				if (result == null) {
+					result = caseAct(mentalStatusSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(mentalStatusSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.NUTRITION_SECTION: {
+				NutritionSection nutritionSection = (NutritionSection) theEObject;
+				T result = caseNutritionSection(nutritionSection);
+				if (result == null) {
+					result = caseSection(nutritionSection);
+				}
+				if (result == null) {
+					result = caseAct(nutritionSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(nutritionSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PHYSICAL_FINDINGS_OF_SKIN_SECTION: {
+				PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection = (PhysicalFindingsOfSkinSection) theEObject;
+				T result = casePhysicalFindingsOfSkinSection(physicalFindingsOfSkinSection);
+				if (result == null) {
+					result = caseSection(physicalFindingsOfSkinSection);
+				}
+				if (result == null) {
+					result = caseAct(physicalFindingsOfSkinSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(physicalFindingsOfSkinSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -7021,6 +7123,96 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseWoundObservation(WoundObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Goals Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Goals Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGoalsSection(GoalsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Health Concerns Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Health Concerns Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHealthConcernsSection(HealthConcernsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Health Status Evaluations Outcomes Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Health Status Evaluations Outcomes Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHealthStatusEvaluationsOutcomesSection(HealthStatusEvaluationsOutcomesSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Mental Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Mental Status Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMentalStatusSection(MentalStatusSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Nutrition Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Nutrition Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNutritionSection(NutritionSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Physical Findings Of Skin Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Physical Findings Of Skin Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePhysicalFindingsOfSkinSection(PhysicalFindingsOfSkinSection object) {
 		return null;
 	}
 

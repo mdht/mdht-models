@@ -1632,6 +1632,60 @@ public interface ConsolFactory extends EFactory {
 	WoundObservation createWoundObservation();
 
 	/**
+	 * Returns a new object of class '<em>Goals Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Goals Section</em>'.
+	 * @generated
+	 */
+	GoalsSection createGoalsSection();
+
+	/**
+	 * Returns a new object of class '<em>Health Concerns Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Health Concerns Section</em>'.
+	 * @generated
+	 */
+	HealthConcernsSection createHealthConcernsSection();
+
+	/**
+	 * Returns a new object of class '<em>Health Status Evaluations Outcomes Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Health Status Evaluations Outcomes Section</em>'.
+	 * @generated
+	 */
+	HealthStatusEvaluationsOutcomesSection createHealthStatusEvaluationsOutcomesSection();
+
+	/**
+	 * Returns a new object of class '<em>Mental Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mental Status Section</em>'.
+	 * @generated
+	 */
+	MentalStatusSection createMentalStatusSection();
+
+	/**
+	 * Returns a new object of class '<em>Nutrition Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Nutrition Section</em>'.
+	 * @generated
+	 */
+	NutritionSection createNutritionSection();
+
+	/**
+	 * Returns a new object of class '<em>Physical Findings Of Skin Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Physical Findings Of Skin Section</em>'.
+	 * @generated
+	 */
+	PhysicalFindingsOfSkinSection createPhysicalFindingsOfSkinSection();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
