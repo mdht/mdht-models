@@ -20771,12 +20771,324 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int WOUND_OBSERVATION__WOUND_OBSERVATION_CD_QUALIFIER = 2592;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Goals Section Template Id' of 'Goals Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int GOALS_SECTION__GOALS_SECTION_TEMPLATE_ID = 2593;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Goals Section Code' of 'Goals Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int GOALS_SECTION__GOALS_SECTION_CODE = 2594;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Goals Section Code P' of 'Goals Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int GOALS_SECTION__GOALS_SECTION_CODE_P = 2595;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Goals Section Title' of 'Goals Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int GOALS_SECTION__GOALS_SECTION_TITLE = 2596;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Goals Section Text' of 'Goals Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int GOALS_SECTION__GOALS_SECTION_TEXT = 2597;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Goals Section Goal Observation' of 'Goals Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int GOALS_SECTION__GOALS_SECTION_GOAL_OBSERVATION = 2598;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concerns Section Template Id' of 'Health Concerns Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_TEMPLATE_ID = 2599;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concerns Section Code' of 'Health Concerns Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_CODE = 2600;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concerns Section Code P' of 'Health Concerns Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_CODE_P = 2601;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concerns Section Title' of 'Health Concerns Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_TITLE = 2602;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concerns Section Text' of 'Health Concerns Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_TEXT = 2603;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Concerns Section Health Concern Act' of 'Health Concerns Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_HEALTH_CONCERN_ACT = 2604;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Evaluations Outcomes Section Template Id' of 'Health Status Evaluations Outcomes Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION_TEMPLATE_ID = 2605;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Evaluations Outcomes Section Code' of 'Health Status Evaluations Outcomes Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION_CODE = 2606;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Evaluations Outcomes Section Code P' of 'Health Status Evaluations Outcomes Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION_CODE_P = 2607;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Evaluations Outcomes Section Title' of 'Health Status Evaluations Outcomes Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION_TITLE = 2608;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Evaluations Outcomes Section Text' of 'Health Status Evaluations Outcomes Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION_TEXT = 2609;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Health Status Evaluations Outcomes Section Outcome Observation' of 'Health Status Evaluations Outcomes Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION_OUTCOME_OBSERVATION = 2610;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Section Template Id' of 'Mental Status Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_TEMPLATE_ID = 2611;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Section Code' of 'Mental Status Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_CODE = 2612;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Section Code P' of 'Mental Status Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_CODE_P = 2613;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Section Title' of 'Mental Status Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_TITLE = 2614;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Section Text' of 'Mental Status Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_TEXT = 2615;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Section Caregiver Characteristics' of 'Mental Status Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_CAREGIVER_CHARACTERISTICS = 2616;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Section Assessment Scale Observation' of 'Mental Status Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_ASSESSMENT_SCALE_OBSERVATION = 2617;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Section Cognitive Abilities Observation' of 'Mental Status Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_COGNITIVE_ABILITIES_OBSERVATION = 2618;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mental Status Section Mental Status Observation' of 'Mental Status Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_MENTAL_STATUS_OBSERVATION = 2619;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Section Template Id' of 'Nutrition Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_SECTION__NUTRITION_SECTION_TEMPLATE_ID = 2620;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Section Code' of 'Nutrition Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_SECTION__NUTRITION_SECTION_CODE = 2621;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Section Code P' of 'Nutrition Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_SECTION__NUTRITION_SECTION_CODE_P = 2622;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Section Title' of 'Nutrition Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_SECTION__NUTRITION_SECTION_TITLE = 2623;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Section Text' of 'Nutrition Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_SECTION__NUTRITION_SECTION_TEXT = 2624;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Nutrition Section Nutritional Status Observation' of 'Nutrition Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int NUTRITION_SECTION__NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION = 2625;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Physical Findings Of Skin Section Template Id' of 'Physical Findings Of Skin Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEMPLATE_ID = 2626;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Physical Findings Of Skin Section Code' of 'Physical Findings Of Skin Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE = 2627;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Physical Findings Of Skin Section Code P' of 'Physical Findings Of Skin Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE_P = 2628;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Physical Findings Of Skin Section Title' of 'Physical Findings Of Skin Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_TITLE = 2629;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Physical Findings Of Skin Section Text' of 'Physical Findings Of Skin Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEXT = 2630;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Physical Findings Of Skin Section Wound Observation' of 'Physical Findings Of Skin Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_WOUND_OBSERVATION = 2631;
+
+	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 2592;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 2631;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -21262,6 +21574,20 @@ public class ConsolValidator extends EObjectValidator {
 				return validateWoundMeasurementObservation((WoundMeasurementObservation) value, diagnostics, context);
 			case ConsolPackage.WOUND_OBSERVATION:
 				return validateWoundObservation((WoundObservation) value, diagnostics, context);
+			case ConsolPackage.GOALS_SECTION:
+				return validateGoalsSection((GoalsSection) value, diagnostics, context);
+			case ConsolPackage.HEALTH_CONCERNS_SECTION:
+				return validateHealthConcernsSection((HealthConcernsSection) value, diagnostics, context);
+			case ConsolPackage.HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION:
+				return validateHealthStatusEvaluationsOutcomesSection(
+					(HealthStatusEvaluationsOutcomesSection) value, diagnostics, context);
+			case ConsolPackage.MENTAL_STATUS_SECTION:
+				return validateMentalStatusSection((MentalStatusSection) value, diagnostics, context);
+			case ConsolPackage.NUTRITION_SECTION:
+				return validateNutritionSection((NutritionSection) value, diagnostics, context);
+			case ConsolPackage.PHYSICAL_FINDINGS_OF_SKIN_SECTION:
+				return validatePhysicalFindingsOfSkinSection(
+					(PhysicalFindingsOfSkinSection) value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -77905,6 +78231,832 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateWoundObservation_validateWoundObservationCDQualifier(WoundObservation woundObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return woundObservation.validateWoundObservationCDQualifier(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalsSection(GoalsSection goalsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(goalsSection, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(goalsSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(goalsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(goalsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(goalsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(goalsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(goalsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(goalsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(goalsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(goalsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGoalsSection_validateGoalsSectionTemplateId(goalsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGoalsSection_validateGoalsSectionCode(goalsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGoalsSection_validateGoalsSectionCodeP(goalsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGoalsSection_validateGoalsSectionTitle(goalsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGoalsSection_validateGoalsSectionText(goalsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGoalsSection_validateGoalsSectionGoalObservation(goalsSection, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateGoalsSectionTemplateId constraint of '<em>Goals Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalsSection_validateGoalsSectionTemplateId(GoalsSection goalsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return goalsSection.validateGoalsSectionTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGoalsSectionCode constraint of '<em>Goals Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalsSection_validateGoalsSectionCode(GoalsSection goalsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return goalsSection.validateGoalsSectionCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGoalsSectionCodeP constraint of '<em>Goals Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalsSection_validateGoalsSectionCodeP(GoalsSection goalsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return goalsSection.validateGoalsSectionCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGoalsSectionTitle constraint of '<em>Goals Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalsSection_validateGoalsSectionTitle(GoalsSection goalsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return goalsSection.validateGoalsSectionTitle(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGoalsSectionText constraint of '<em>Goals Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalsSection_validateGoalsSectionText(GoalsSection goalsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return goalsSection.validateGoalsSectionText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGoalsSectionGoalObservation constraint of '<em>Goals Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalsSection_validateGoalsSectionGoalObservation(GoalsSection goalsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return goalsSection.validateGoalsSectionGoalObservation(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernsSection(HealthConcernsSection healthConcernsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(healthConcernsSection, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(healthConcernsSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(healthConcernsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(healthConcernsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(healthConcernsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(healthConcernsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(healthConcernsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(healthConcernsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(healthConcernsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(healthConcernsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernsSection_validateHealthConcernsSectionTemplateId(
+				healthConcernsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernsSection_validateHealthConcernsSectionCode(
+				healthConcernsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernsSection_validateHealthConcernsSectionCodeP(
+				healthConcernsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernsSection_validateHealthConcernsSectionTitle(
+				healthConcernsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernsSection_validateHealthConcernsSectionText(
+				healthConcernsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthConcernsSection_validateHealthConcernsSectionHealthConcernAct(
+				healthConcernsSection, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateHealthConcernsSectionTemplateId constraint of '<em>Health Concerns Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernsSection_validateHealthConcernsSectionTemplateId(
+			HealthConcernsSection healthConcernsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernsSection.validateHealthConcernsSectionTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernsSectionCode constraint of '<em>Health Concerns Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernsSection_validateHealthConcernsSectionCode(
+			HealthConcernsSection healthConcernsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernsSection.validateHealthConcernsSectionCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernsSectionCodeP constraint of '<em>Health Concerns Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernsSection_validateHealthConcernsSectionCodeP(
+			HealthConcernsSection healthConcernsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernsSection.validateHealthConcernsSectionCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernsSectionTitle constraint of '<em>Health Concerns Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernsSection_validateHealthConcernsSectionTitle(
+			HealthConcernsSection healthConcernsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernsSection.validateHealthConcernsSectionTitle(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernsSectionText constraint of '<em>Health Concerns Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernsSection_validateHealthConcernsSectionText(
+			HealthConcernsSection healthConcernsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernsSection.validateHealthConcernsSectionText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthConcernsSectionHealthConcernAct constraint of '<em>Health Concerns Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernsSection_validateHealthConcernsSectionHealthConcernAct(
+			HealthConcernsSection healthConcernsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return healthConcernsSection.validateHealthConcernsSectionHealthConcernAct(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthStatusEvaluationsOutcomesSection(
+			HealthStatusEvaluationsOutcomesSection healthStatusEvaluationsOutcomesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(healthStatusEvaluationsOutcomesSection, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(
+			healthStatusEvaluationsOutcomesSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(healthStatusEvaluationsOutcomesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(healthStatusEvaluationsOutcomesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(healthStatusEvaluationsOutcomesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(healthStatusEvaluationsOutcomesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(healthStatusEvaluationsOutcomesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(healthStatusEvaluationsOutcomesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(
+				healthStatusEvaluationsOutcomesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(
+				healthStatusEvaluationsOutcomesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthStatusEvaluationsOutcomesSection_validateHealthStatusEvaluationsOutcomesSectionTemplateId(
+				healthStatusEvaluationsOutcomesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthStatusEvaluationsOutcomesSection_validateHealthStatusEvaluationsOutcomesSectionCode(
+				healthStatusEvaluationsOutcomesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthStatusEvaluationsOutcomesSection_validateHealthStatusEvaluationsOutcomesSectionCodeP(
+				healthStatusEvaluationsOutcomesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthStatusEvaluationsOutcomesSection_validateHealthStatusEvaluationsOutcomesSectionTitle(
+				healthStatusEvaluationsOutcomesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthStatusEvaluationsOutcomesSection_validateHealthStatusEvaluationsOutcomesSectionText(
+				healthStatusEvaluationsOutcomesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthStatusEvaluationsOutcomesSection_validateHealthStatusEvaluationsOutcomesSectionOutcomeObservation(
+				healthStatusEvaluationsOutcomesSection, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateHealthStatusEvaluationsOutcomesSectionTemplateId constraint of '<em>Health Status Evaluations Outcomes Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthStatusEvaluationsOutcomesSection_validateHealthStatusEvaluationsOutcomesSectionTemplateId(
+			HealthStatusEvaluationsOutcomesSection healthStatusEvaluationsOutcomesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return healthStatusEvaluationsOutcomesSection.validateHealthStatusEvaluationsOutcomesSectionTemplateId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthStatusEvaluationsOutcomesSectionCode constraint of '<em>Health Status Evaluations Outcomes Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthStatusEvaluationsOutcomesSection_validateHealthStatusEvaluationsOutcomesSectionCode(
+			HealthStatusEvaluationsOutcomesSection healthStatusEvaluationsOutcomesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return healthStatusEvaluationsOutcomesSection.validateHealthStatusEvaluationsOutcomesSectionCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthStatusEvaluationsOutcomesSectionCodeP constraint of '<em>Health Status Evaluations Outcomes Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthStatusEvaluationsOutcomesSection_validateHealthStatusEvaluationsOutcomesSectionCodeP(
+			HealthStatusEvaluationsOutcomesSection healthStatusEvaluationsOutcomesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return healthStatusEvaluationsOutcomesSection.validateHealthStatusEvaluationsOutcomesSectionCodeP(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthStatusEvaluationsOutcomesSectionTitle constraint of '<em>Health Status Evaluations Outcomes Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthStatusEvaluationsOutcomesSection_validateHealthStatusEvaluationsOutcomesSectionTitle(
+			HealthStatusEvaluationsOutcomesSection healthStatusEvaluationsOutcomesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return healthStatusEvaluationsOutcomesSection.validateHealthStatusEvaluationsOutcomesSectionTitle(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthStatusEvaluationsOutcomesSectionText constraint of '<em>Health Status Evaluations Outcomes Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthStatusEvaluationsOutcomesSection_validateHealthStatusEvaluationsOutcomesSectionText(
+			HealthStatusEvaluationsOutcomesSection healthStatusEvaluationsOutcomesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return healthStatusEvaluationsOutcomesSection.validateHealthStatusEvaluationsOutcomesSectionText(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHealthStatusEvaluationsOutcomesSectionOutcomeObservation constraint of '<em>Health Status Evaluations Outcomes Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthStatusEvaluationsOutcomesSection_validateHealthStatusEvaluationsOutcomesSectionOutcomeObservation(
+			HealthStatusEvaluationsOutcomesSection healthStatusEvaluationsOutcomesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return healthStatusEvaluationsOutcomesSection.validateHealthStatusEvaluationsOutcomesSectionOutcomeObservation(
+			diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusSection(MentalStatusSection mentalStatusSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(mentalStatusSection, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(mentalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusSection_validateMentalStatusSectionTemplateId(
+				mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusSection_validateMentalStatusSectionCode(
+				mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusSection_validateMentalStatusSectionCodeP(
+				mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusSection_validateMentalStatusSectionTitle(
+				mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusSection_validateMentalStatusSectionText(
+				mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusSection_validateMentalStatusSectionCaregiverCharacteristics(
+				mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusSection_validateMentalStatusSectionAssessmentScaleObservation(
+				mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusSection_validateMentalStatusSectionCognitiveAbilitiesObservation(
+				mentalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMentalStatusSection_validateMentalStatusSectionMentalStatusObservation(
+				mentalStatusSection, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateMentalStatusSectionTemplateId constraint of '<em>Mental Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusSection_validateMentalStatusSectionTemplateId(
+			MentalStatusSection mentalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusSection.validateMentalStatusSectionTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusSectionCode constraint of '<em>Mental Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusSection_validateMentalStatusSectionCode(MentalStatusSection mentalStatusSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusSection.validateMentalStatusSectionCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusSectionCodeP constraint of '<em>Mental Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusSection_validateMentalStatusSectionCodeP(
+			MentalStatusSection mentalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusSection.validateMentalStatusSectionCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusSectionTitle constraint of '<em>Mental Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusSection_validateMentalStatusSectionTitle(
+			MentalStatusSection mentalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusSection.validateMentalStatusSectionTitle(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusSectionText constraint of '<em>Mental Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusSection_validateMentalStatusSectionText(MentalStatusSection mentalStatusSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusSection.validateMentalStatusSectionText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusSectionCaregiverCharacteristics constraint of '<em>Mental Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusSection_validateMentalStatusSectionCaregiverCharacteristics(
+			MentalStatusSection mentalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusSection.validateMentalStatusSectionCaregiverCharacteristics(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusSectionAssessmentScaleObservation constraint of '<em>Mental Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusSection_validateMentalStatusSectionAssessmentScaleObservation(
+			MentalStatusSection mentalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusSection.validateMentalStatusSectionAssessmentScaleObservation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusSectionCognitiveAbilitiesObservation constraint of '<em>Mental Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusSection_validateMentalStatusSectionCognitiveAbilitiesObservation(
+			MentalStatusSection mentalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusSection.validateMentalStatusSectionCognitiveAbilitiesObservation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMentalStatusSectionMentalStatusObservation constraint of '<em>Mental Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusSection_validateMentalStatusSectionMentalStatusObservation(
+			MentalStatusSection mentalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mentalStatusSection.validateMentalStatusSectionMentalStatusObservation(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionSection(NutritionSection nutritionSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(nutritionSection, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(nutritionSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(nutritionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(nutritionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(nutritionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(nutritionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(nutritionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(nutritionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(nutritionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(nutritionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionSection_validateNutritionSectionTemplateId(
+				nutritionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionSection_validateNutritionSectionCode(nutritionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionSection_validateNutritionSectionCodeP(nutritionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionSection_validateNutritionSectionTitle(nutritionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionSection_validateNutritionSectionText(nutritionSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateNutritionSection_validateNutritionSectionNutritionalStatusObservation(
+				nutritionSection, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateNutritionSectionTemplateId constraint of '<em>Nutrition Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionSection_validateNutritionSectionTemplateId(NutritionSection nutritionSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionSection.validateNutritionSectionTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionSectionCode constraint of '<em>Nutrition Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionSection_validateNutritionSectionCode(NutritionSection nutritionSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionSection.validateNutritionSectionCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionSectionCodeP constraint of '<em>Nutrition Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionSection_validateNutritionSectionCodeP(NutritionSection nutritionSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionSection.validateNutritionSectionCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionSectionTitle constraint of '<em>Nutrition Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionSection_validateNutritionSectionTitle(NutritionSection nutritionSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionSection.validateNutritionSectionTitle(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionSectionText constraint of '<em>Nutrition Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionSection_validateNutritionSectionText(NutritionSection nutritionSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionSection.validateNutritionSectionText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateNutritionSectionNutritionalStatusObservation constraint of '<em>Nutrition Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionSection_validateNutritionSectionNutritionalStatusObservation(
+			NutritionSection nutritionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return nutritionSection.validateNutritionSectionNutritionalStatusObservation(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhysicalFindingsOfSkinSection(PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(physicalFindingsOfSkinSection, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(physicalFindingsOfSkinSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(physicalFindingsOfSkinSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(physicalFindingsOfSkinSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(physicalFindingsOfSkinSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(physicalFindingsOfSkinSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(physicalFindingsOfSkinSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(physicalFindingsOfSkinSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(
+				physicalFindingsOfSkinSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(physicalFindingsOfSkinSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePhysicalFindingsOfSkinSection_validatePhysicalFindingsOfSkinSectionTemplateId(
+				physicalFindingsOfSkinSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePhysicalFindingsOfSkinSection_validatePhysicalFindingsOfSkinSectionCode(
+				physicalFindingsOfSkinSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePhysicalFindingsOfSkinSection_validatePhysicalFindingsOfSkinSectionCodeP(
+				physicalFindingsOfSkinSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePhysicalFindingsOfSkinSection_validatePhysicalFindingsOfSkinSectionTitle(
+				physicalFindingsOfSkinSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePhysicalFindingsOfSkinSection_validatePhysicalFindingsOfSkinSectionText(
+				physicalFindingsOfSkinSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePhysicalFindingsOfSkinSection_validatePhysicalFindingsOfSkinSectionWoundObservation(
+				physicalFindingsOfSkinSection, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validatePhysicalFindingsOfSkinSectionTemplateId constraint of '<em>Physical Findings Of Skin Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhysicalFindingsOfSkinSection_validatePhysicalFindingsOfSkinSectionTemplateId(
+			PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return physicalFindingsOfSkinSection.validatePhysicalFindingsOfSkinSectionTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePhysicalFindingsOfSkinSectionCode constraint of '<em>Physical Findings Of Skin Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhysicalFindingsOfSkinSection_validatePhysicalFindingsOfSkinSectionCode(
+			PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return physicalFindingsOfSkinSection.validatePhysicalFindingsOfSkinSectionCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePhysicalFindingsOfSkinSectionCodeP constraint of '<em>Physical Findings Of Skin Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhysicalFindingsOfSkinSection_validatePhysicalFindingsOfSkinSectionCodeP(
+			PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return physicalFindingsOfSkinSection.validatePhysicalFindingsOfSkinSectionCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePhysicalFindingsOfSkinSectionTitle constraint of '<em>Physical Findings Of Skin Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhysicalFindingsOfSkinSection_validatePhysicalFindingsOfSkinSectionTitle(
+			PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return physicalFindingsOfSkinSection.validatePhysicalFindingsOfSkinSectionTitle(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePhysicalFindingsOfSkinSectionText constraint of '<em>Physical Findings Of Skin Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhysicalFindingsOfSkinSection_validatePhysicalFindingsOfSkinSectionText(
+			PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return physicalFindingsOfSkinSection.validatePhysicalFindingsOfSkinSectionText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePhysicalFindingsOfSkinSectionWoundObservation constraint of '<em>Physical Findings Of Skin Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhysicalFindingsOfSkinSection_validatePhysicalFindingsOfSkinSectionWoundObservation(
+			PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return physicalFindingsOfSkinSection.validatePhysicalFindingsOfSkinSectionWoundObservation(diagnostics, context);
 	}
 
 	/**
