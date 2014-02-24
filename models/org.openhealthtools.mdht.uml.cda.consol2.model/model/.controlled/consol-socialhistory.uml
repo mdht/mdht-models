@@ -805,4 +805,60 @@ The smoking status value set includes a special code to communicate if the smoki
     <ruleId>CONF:30335</ruleId>
     <ruleId>CONF:30336</ruleId>
   </CDA:EntryRelationship>
+  <uml:Class xmi:id="_MlM4IJ2GEeORR8_YW0n_jQ" name="NutritionSection">
+    <ownedComment xmi:id="_bshckJ2GEeORR8_YW0n_jQ">
+      <body>The Nutrition Section represents diet and nutrition information including special diet requirements and restrictions (e.g. soft mechanical diet, liquids only, enteral feeding). It also represents the overall nutritional status of the patient, nutrition assessment findings, and diet recommendations.&#xD;
+USE THIS SECTION INSTEAD OF DISCHARGE DIET SECTION (DEPRECATED) template id:1.3.6.1.4.1.19376.1.5.3.1.3.33.2</body>
+    </ownedComment>
+    <generalization xmi:id="_MlM4IZ2GEeORR8_YW0n_jQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_O75pwJ2GEeORR8_YW0n_jQ" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t0jY8J2GEeORR8_YW0n_jQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t0kAAJ2GEeORR8_YW0n_jQ" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_O75pxp2GEeORR8_YW0n_jQ" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uTmscJ2GEeORR8_YW0n_jQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uTmscZ2GEeORR8_YW0n_jQ" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_O75pw52GEeORR8_YW0n_jQ" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vHGl8J2GEeORR8_YW0n_jQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vHHNAJ2GEeORR8_YW0n_jQ" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Ej0mMJ2HEeORR8_YW0n_jQ" name="nutritionalStatusObservation" type="_T1dcwI37EeOB0eBUISUB4Q" association="_Ej1NQJ2HEeORR8_YW0n_jQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ej0mMp2HEeORR8_YW0n_jQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ej0mMZ2HEeORR8_YW0n_jQ"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_hAyLgJ2GEeORR8_YW0n_jQ" base_Class="_MlM4IJ2GEeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.57">
+    <ruleId>CONF:30477</ruleId>
+    <ruleId>CONF:30478</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_qwqxMJ2GEeORR8_YW0n_jQ" base_Property="_O75pwJ2GEeORR8_YW0n_jQ">
+    <ruleId>CONF:30318</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_rHgj4J2GEeORR8_YW0n_jQ" base_Property="_O75pxp2GEeORR8_YW0n_jQ">
+    <ruleId>CONF:31042</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_rjlb4J2GEeORR8_YW0n_jQ" base_Property="_O75pw52GEeORR8_YW0n_jQ">
+    <ruleId>CONF:31043</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_0WajcJ2GEeORR8_YW0n_jQ" code="61144-2" displayName="Diet and nutrition" base_Property="_O75pwJ2GEeORR8_YW0n_jQ">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:30319</ruleId>
+    <ruleId>CONF:30320</ruleId>
+  </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_Ej1NQJ2HEeORR8_YW0n_jQ" memberEnd="_Ej0mMJ2HEeORR8_YW0n_jQ _Ej10UJ2HEeORR8_YW0n_jQ">
+    <ownedEnd xmi:id="_Ej10UJ2HEeORR8_YW0n_jQ" type="_MlM4IJ2GEeORR8_YW0n_jQ" association="_Ej1NQJ2HEeORR8_YW0n_jQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_FUgcQJ2HEeORR8_YW0n_jQ" severity="WARNING" base_Association="_Ej1NQJ2HEeORR8_YW0n_jQ">
+    <ruleId>CONF:30321</ruleId>
+    <ruleId>CONF:30322</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

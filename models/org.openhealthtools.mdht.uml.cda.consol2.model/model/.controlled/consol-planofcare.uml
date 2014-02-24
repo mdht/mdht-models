@@ -1324,4 +1324,58 @@ Intervention Acts can be related to each other, (eg. an Intervention Act with mo
     <reference href="../consol-vocab.uml#_TIYvkY6kEeOB0eBUISUB4Q"/>
     <ruleId>CONF:30957</ruleId>
   </CDA:ValueSetConstraint>
+  <uml:Class xmi:id="_YPOXoJ14EeORR8_YW0n_jQ" name="GoalsSection">
+    <ownedComment xmi:id="_k_kdoJ14EeORR8_YW0n_jQ">
+      <body>This template represents patient Goals.  A goal is a defined outcome or condition to be achieved in the process of patient care. Goals include patient-defined goals (e.g., alleviation of health concerns, positive outcomes from interventions, longevity, function, symptom management, comfort) and clinician-specific goals to achieve desired and agreed upon outcomes.</body>
+    </ownedComment>
+    <generalization xmi:id="_YPQM0J14EeORR8_YW0n_jQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_dPsn4J14EeORR8_YW0n_jQ" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tseG4J15EeORR8_YW0n_jQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tseG4Z15EeORR8_YW0n_jQ" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dPudEJ14EeORR8_YW0n_jQ" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uLbTwJ15EeORR8_YW0n_jQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uLbTwZ15EeORR8_YW0n_jQ" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dPt2AJ14EeORR8_YW0n_jQ" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uqt30J15EeORR8_YW0n_jQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uqt30Z15EeORR8_YW0n_jQ" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WQa2sJ16EeORR8_YW0n_jQ" name="goalObservation" type="_-miMII9TEeOB0eBUISUB4Q" association="_WQbdwJ16EeORR8_YW0n_jQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZtpLgJ16EeORR8_YW0n_jQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZtpLgZ16EeORR8_YW0n_jQ" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_ng1ggJ14EeORR8_YW0n_jQ" base_Class="_YPOXoJ14EeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.60">
+    <ruleId>CONF:29584</ruleId>
+    <ruleId>CONF:29585</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_pCS2wJ15EeORR8_YW0n_jQ" base_Property="_dPsn4J14EeORR8_YW0n_jQ">
+    <ruleId>CONF:29586</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_vUIoQJ15EeORR8_YW0n_jQ" base_Property="_dPudEJ14EeORR8_YW0n_jQ">
+    <ruleId>CONF:30721</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_v2FewJ15EeORR8_YW0n_jQ" base_Property="_dPt2AJ14EeORR8_YW0n_jQ">
+    <ruleId>CONF:30722</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_WQbdwJ16EeORR8_YW0n_jQ" memberEnd="_WQa2sJ16EeORR8_YW0n_jQ _WQbdwZ16EeORR8_YW0n_jQ">
+    <ownedEnd xmi:id="_WQbdwZ16EeORR8_YW0n_jQ" type="_YPOXoJ14EeORR8_YW0n_jQ" association="_WQbdwJ16EeORR8_YW0n_jQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_aQidMJ16EeORR8_YW0n_jQ" base_Association="_WQbdwJ16EeORR8_YW0n_jQ">
+    <ruleId>CONF:30719</ruleId>
+    <ruleId>CONF:30720</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CodeSystemConstraint xmi:id="_fir20J17EeORR8_YW0n_jQ" code="61146-7" displayName="Goals" base_Property="_dPsn4J14EeORR8_YW0n_jQ">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:29588</ruleId>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>
