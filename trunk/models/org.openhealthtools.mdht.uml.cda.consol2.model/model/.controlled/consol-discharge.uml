@@ -626,4 +626,59 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
     <ruleId>CONF:31689</ruleId>
     <ruleId>CONF:31690</ruleId>
   </CDA:EntryRelationship>
+  <uml:Class xmi:id="_EHgh0J2AEeORR8_YW0n_jQ" name="HealthStatusEvaluationsOutcomesSection">
+    <ownedComment xmi:id="_1oCLEJ2AEeORR8_YW0n_jQ">
+      <body>This template represents observations regarding the outcome of care from the interventions used to treat the patient. These observations represent status, at points in time, related to established care plan goals and/or interventions.</body>
+    </ownedComment>
+    <generalization xmi:id="_EHgh0Z2AEeORR8_YW0n_jQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_HeP0IJ2AEeORR8_YW0n_jQ" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_883DkJ2AEeORR8_YW0n_jQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_883qoJ2AEeORR8_YW0n_jQ" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HeQbM52AEeORR8_YW0n_jQ" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9Ve-8J2AEeORR8_YW0n_jQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9Ve-8Z2AEeORR8_YW0n_jQ" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HeQbMJ2AEeORR8_YW0n_jQ" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_911S8J2AEeORR8_YW0n_jQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_911S8Z2AEeORR8_YW0n_jQ" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UCC2cJ2BEeORR8_YW0n_jQ" name="outcomeObservation" type="_ihaWkI55EeOB0eBUISUB4Q" association="_UCEroJ2BEeORR8_YW0n_jQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X1y04J2BEeORR8_YW0n_jQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X1y04Z2BEeORR8_YW0n_jQ" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_KNWesJ2AEeORR8_YW0n_jQ" base_Class="_EHgh0J2AEeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.61">
+    <ruleId>CONF:29578</ruleId>
+    <ruleId>CONF:29579</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_5rG-8J2AEeORR8_YW0n_jQ" base_Property="_HeP0IJ2AEeORR8_YW0n_jQ">
+    <ruleId>CONF:29580</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_7DJI4J2AEeORR8_YW0n_jQ" base_Property="_HeQbM52AEeORR8_YW0n_jQ">
+    <ruleId>CONF:29589</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_7YCa0J2AEeORR8_YW0n_jQ" base_Property="_HeQbMJ2AEeORR8_YW0n_jQ">
+    <ruleId>CONF:29590</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_DtEMEJ2BEeORR8_YW0n_jQ" code="11383-7" displayName="Patient Problem Outcome" base_Property="_HeP0IJ2AEeORR8_YW0n_jQ">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:29581</ruleId>
+    <ruleId>CONF:29582</ruleId>
+  </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_UCEroJ2BEeORR8_YW0n_jQ" memberEnd="_UCC2cJ2BEeORR8_YW0n_jQ _UCEroZ2BEeORR8_YW0n_jQ">
+    <ownedEnd xmi:id="_UCEroZ2BEeORR8_YW0n_jQ" type="_EHgh0J2AEeORR8_YW0n_jQ" association="_UCEroJ2BEeORR8_YW0n_jQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_U4vN4J2BEeORR8_YW0n_jQ" base_Association="_UCEroJ2BEeORR8_YW0n_jQ">
+    <ruleId>CONF:31227</ruleId>
+    <ruleId>CONF:31228</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

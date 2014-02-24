@@ -1460,6 +1460,21 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-exams.uml#_YQqmsJqGEeOK6dzbL4VoTA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-exams.uml#_IJ6JEJqHEeOK6dzbL4VoTA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-exams.uml#_mSNZYJqHEeOK6dzbL4VoTA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_YPOXoJ14EeORR8_YW0n_jQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_WQbdwJ16EeORR8_YW0n_jQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_2umuYJ18EeORR8_YW0n_jQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_YUzzgJ1-EeORR8_YW0n_jQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-discharge.uml#_EHgh0J2AEeORR8_YW0n_jQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-discharge.uml#_UCEroJ2BEeORR8_YW0n_jQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-cognitive.uml#_4tfOMJ2CEeORR8_YW0n_jQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_yrYFUJ2DEeORR8_YW0n_jQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_A4xYIJ2EEeORR8_YW0n_jQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_K9QU0J2EEeORR8_YW0n_jQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_VjU7oJ2EEeORR8_YW0n_jQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_MlM4IJ2GEeORR8_YW0n_jQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-socialhistory.uml#_Ej1NQJ2HEeORR8_YW0n_jQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-exams.uml#_CDn9gJ2LEeORR8_YW0n_jQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-exams.uml#_EOJe4J2MEeORR8_YW0n_jQ"/>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>

@@ -613,4 +613,59 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
   <CDA:ConstraintValidation xmi:id="_TOYUYJqNEeOK6dzbL4VoTA" severity="WARNING" base_Constraint="_HnkpUJqNEeOK6dzbL4VoTA">
     <ruleId>CONF:29494</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_CDn9gJ2LEeORR8_YW0n_jQ" name="PhysicalFindingsOfSkinSection">
+    <ownedComment xmi:id="_VjDKoJ2LEeORR8_YW0n_jQ">
+      <body>The Skin Physical Exam section includes direct observations made by the clinician. This section includes only observations made by the examining clinician using inspection and palpation; it does not include laboratory or imaging findings. The examination may be reported as a collection of random clinical statements or it may be reported categorically.</body>
+    </ownedComment>
+    <generalization xmi:id="_CDn9gZ2LEeORR8_YW0n_jQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_HoxBEJ2LEeORR8_YW0n_jQ" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_emycAJ2LEeORR8_YW0n_jQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_emycAZ2LEeORR8_YW0n_jQ" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HoxoIJ2LEeORR8_YW0n_jQ" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e7PCAJ2LEeORR8_YW0n_jQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e7PpEJ2LEeORR8_YW0n_jQ" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HoxBE52LEeORR8_YW0n_jQ" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fQOakJ2LEeORR8_YW0n_jQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fQPBoJ2LEeORR8_YW0n_jQ" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_EOIQwJ2MEeORR8_YW0n_jQ" name="woundObservation" type="_09uFMJp_EeOK6dzbL4VoTA" association="_EOJe4J2MEeORR8_YW0n_jQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOIQwp2MEeORR8_YW0n_jQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EOIQwZ2MEeORR8_YW0n_jQ"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_Mci5IJ2LEeORR8_YW0n_jQ" base_Class="_CDn9gJ2LEeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.62">
+    <ruleId>CONF:29899</ruleId>
+    <ruleId>CONF:29901</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_fr6RAJ2LEeORR8_YW0n_jQ" base_Property="_HoxBEJ2LEeORR8_YW0n_jQ">
+    <ruleId>CONF:29901</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_gHlgYJ2LEeORR8_YW0n_jQ" base_Property="_HoxoIJ2LEeORR8_YW0n_jQ">
+    <ruleId>CONF:29903</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_gosCUJ2LEeORR8_YW0n_jQ" base_Property="_HoxBE52LEeORR8_YW0n_jQ">
+    <ruleId>CONF:29904</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_kEc-kJ2LEeORR8_YW0n_jQ" code="10206-1" displayName="Physical findings of Skin Narrative" base_Property="_HoxBEJ2LEeORR8_YW0n_jQ">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:29902</ruleId>
+    <ruleId>CONF:32150</ruleId>
+  </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_EOJe4J2MEeORR8_YW0n_jQ" memberEnd="_EOIQwJ2MEeORR8_YW0n_jQ _EOJe4Z2MEeORR8_YW0n_jQ">
+    <ownedEnd xmi:id="_EOJe4Z2MEeORR8_YW0n_jQ" type="_CDn9gJ2LEeORR8_YW0n_jQ" association="_EOJe4J2MEeORR8_YW0n_jQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_EzXr0J2MEeORR8_YW0n_jQ" severity="INFO" base_Association="_EOJe4J2MEeORR8_YW0n_jQ">
+    <ruleId>CONF:29905</ruleId>
+    <ruleId>CONF:29906</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>
