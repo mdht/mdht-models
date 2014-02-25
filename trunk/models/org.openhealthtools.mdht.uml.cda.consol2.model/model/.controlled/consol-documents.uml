@@ -5798,4 +5798,15 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:ConformsTo xmi:id="_HtrosJAWEeOBqfnqAvqk7Q" base_Generalization="_R_oggDssEeGvzMYhXuqAEA"/>
   <CDA:ConformsTo xmi:id="_JGLFoJAWEeOBqfnqAvqk7Q" base_Generalization="_2PQJchSVEeGGzu7fmW9pXw"/>
   <CDA:ConformsTo xmi:id="_LfhioJAWEeOBqfnqAvqk7Q" base_Generalization="_2U6FfBSVEeGGzu7fmW9pXw"/>
+  <uml:Class xmi:id="_dduXkJ5OEeOr4eM3k36wAg" name="USRealmHeader2">
+    <ownedComment xmi:id="_B-WxAJ5REeOr4eM3k36wAg">
+      <body>This template defines constraints that represent common administrative and demographic concepts for US Realm CDA documents. Further specification, such as documentCode, are provided in document templates that conform to this template.</body>
+    </ownedComment>
+    <generalization xmi:id="_ddxa4J5OEeOr4eM3k36wAg" general="_2DNRcBSVEeGGzu7fmW9pXw"/>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_vsuMsJ5QEeOr4eM3k36wAg" base_Class="_dduXkJ5OEeOr4eM3k36wAg" templateId="2.16.840.1.113883.10.20.22.1.1.2">
+    <ruleId>CONF:5252</ruleId>
+    <ruleId>CONF:10036</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_KDKU8J5REeOr4eM3k36wAg" base_Generalization="_ddxa4J5OEeOr4eM3k36wAg"/>
 </xmi:XMI>
