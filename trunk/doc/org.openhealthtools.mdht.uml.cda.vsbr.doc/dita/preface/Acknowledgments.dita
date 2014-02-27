@@ -4,27 +4,34 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>Acknowledgments</title>
 	<body>
-				<p>This document contains specifications for using HL7's Clinical Document Architecture for reporting
-		birth and fetal death information to vital records.</p>
+				
+		
+				<p>This guide was developed and produced under the guidance of the Centers for Disease
+				 Control and Prevention/National Center for Health Statistics (CDC/NCHS) through the
+				  collaboration of the CDC/NCHS/Division of Vital Statistics (DVS); CDC/NCHS/Classifications
+				   and Public Health Data Standards Staff (CPHDSS). Vital records stakeholders from the
+				    National Association for Public Health Statistics and Information Systems (NAPHSIS)
+				     and representatives from states Departments of Health Vital Records offices
+				      provided subject matter expertise and technical review.</p>
 
-		<p>The content defined within this implementation guide is drawn from the US Standard
-		Certificate of Live Birth, and from the US Standard
-		Report of Fetal Death as revised November 2003. </p>
+		<p>The editors appreciate the support and sponsorship of the Health Level Seven (HL7) HL7 Public Health
+		 and Emergency Response Work Group (PHER WG) and the Structured Documents Work Group (SDWG). </p>
+		 
+		 <p>This material contains content from SNOMED CT&#174; (http://www.ihtsdo.org/snomed-ct/). SNOMED CT
+		  is a registered trademark of the International Health Terminology Standard Development Organisation (IHTSDO).</p>
 		
 		<p>This material contains content from LOINC&#174; (http://loinc.org). The LOINC table, LOINC codes, and
 		LOINC panels and forms file are copyright &#169; 1995-2010, Regenstrief Institute, Inc. and the Logical
 		Observation Identifiers Names and Codes (LOINC) Committee and available at no cost under the
 		license at http://loinc.org/terms-of-use .</p>
-
-		<p>The templates and content provided within this Implementation Guide have been checked against those
-		defined within the Implementation Guide for CDA Release 2.0, Consolidated CDA Templates, December 2011.</p>
 			
 			<p>
-Copyright © 2013 Health Level Seven International ® ALL RIGHTS RESERVED. The reproduction of this material
+Copyright &#169; 2013 Health Level Seven International &#174; ALL RIGHTS RESERVED. The reproduction of this material
  in any form is strictly forbidden without the written permission of the publisher.  HL7 and Health Level
   Seven are registered trademarks of Health Level Seven International. Reg. U.S. Pat &amp; TM Off.
 </p>
 <p>Use of this material is governed by HL7's IP Compliance Policy
 			</p>
+	
 	</body>
 </topic>

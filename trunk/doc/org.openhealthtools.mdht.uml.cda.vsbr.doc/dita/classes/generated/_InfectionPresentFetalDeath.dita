@@ -19,9 +19,9 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:237)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:235)<tt><b>/@code</b>="73769-2" </tt><i>Infections present and or treated during this pregnancy for fetal death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:235)<tt><b>/@code</b>="73769-2" </tt><i>Infections present and or treated during this pregnancy for fetal death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:469)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records nature of the infection about which information is provided.  For fetal death reporting refer to the value set: Fetal Death Reporting - Infections Present.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:238), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/InfectionsPresentTreatedFetalDeathNCHS.dita">Infections Present Treated: Fetal Death (NCHS)</xref> 2.16.840.1.114222.4.11.7135</tt><b> STATIC</b> December 1, 2013
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:238), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/InfectionsPresentTreatedFetalDeathNCHS.dita">Infections Present Treated: Fetal Death (NCHS)</xref> 2.16.840.1.114222.4.11.7135</tt><b> STATIC</b> December 1, 2013 (CONF:471)
 <ul><li><p><lines><i>The content of the observation will be drawn from the appropriate value set: Birth Reporting - Infections Present, or Fetal Death Reporting - Infections persent.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -29,9 +29,9 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:237)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:235)<tt><b>/@code</b>="73769-2" </tt><i>Infections present and or treated during this pregnancy for fetal death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:235)<tt><b>/@code</b>="73769-2" </tt><i>Infections present and or treated during this pregnancy for fetal death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:469)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records nature of the infection about which information is provided.  For fetal death reporting refer to the value set: Fetal Death Reporting - Infections Present.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:238), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/InfectionsPresentTreatedFetalDeathNCHS.dita">Infections Present Treated: Fetal Death (NCHS)</xref> 2.16.840.1.114222.4.11.7135</tt><b> STATIC</b> December 1, 2013
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:238), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/InfectionsPresentTreatedFetalDeathNCHS.dita">Infections Present Treated: Fetal Death (NCHS)</xref> 2.16.840.1.114222.4.11.7135</tt><b> STATIC</b> December 1, 2013 (CONF:471)
 <ul><li><p><lines><i>The content of the observation will be drawn from the appropriate value set: Birth Reporting - Infections Present, or Fetal Death Reporting - Infections persent.</i></lines></p></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

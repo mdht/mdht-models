@@ -20,7 +20,14 @@
 <p audience="Examples"><b>Infant Breastfed example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_InfantBreastfed.dita#classId/example">
+<codeblock>
+<![CDATA[<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.27"/>
+							<code code="73756-9" displayName="Infant is being breastfed at discharge" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="BL" value="true"/>
+						</observation>
+					</entry>]]>
 </codeblock>
 </body>
 </topic>

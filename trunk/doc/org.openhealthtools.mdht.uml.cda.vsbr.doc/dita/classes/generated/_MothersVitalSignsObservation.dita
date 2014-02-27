@@ -21,7 +21,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:337)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:335), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MaternalVitalSignNCHS.dita">Maternal Vital Sign (NCHS)</xref> 2.16.840.1.114222.4.11.7209</tt><b> STATIC</b> December 1, 2013
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:335), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MaternalVitalSignNCHS.dita">Maternal Vital Sign (NCHS)</xref> 2.16.840.1.114222.4.11.7209</tt><b> STATIC</b> December 1, 2013 (CONF:541)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation.   The value is drawn from the Maternal Vital Signs value set.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:339)
 <ul><li><p><lines><i>The measured vital sign amount.  The meaning of the observation is dependent on the value of observation code.</i></lines></p></li></ul></li>
@@ -31,7 +31,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:337)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:335), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MaternalVitalSignNCHS.dita">Maternal Vital Sign (NCHS)</xref> 2.16.840.1.114222.4.11.7209</tt><b> STATIC</b> December 1, 2013
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:335), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MaternalVitalSignNCHS.dita">Maternal Vital Sign (NCHS)</xref> 2.16.840.1.114222.4.11.7209</tt><b> STATIC</b> December 1, 2013 (CONF:541)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation.   The value is drawn from the Maternal Vital Signs value set.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:339)
 <ul><li><p><lines><i>The measured vital sign amount.  The meaning of the observation is dependent on the value of observation code.</i></lines></p></li></ul></li>

@@ -19,7 +19,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:396)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:395)<tt><b>/@code</b>="73765-0" </tt><i>Planned to delivery at home</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:395)<tt><b>/@code</b>="73765-0" </tt><i>Planned to deliver at home</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:520)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records whether the parents planned to deliver at home.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:397)
 <ul><li><p><lines><i>A Boolean value to indicate whether the mother planned to deliver at home.</i></lines></p></li></ul></li>
@@ -29,7 +29,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:396)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:395)<tt><b>/@code</b>="73765-0" </tt><i>Planned to delivery at home</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:395)<tt><b>/@code</b>="73765-0" </tt><i>Planned to deliver at home</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:520)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records whether the parents planned to deliver at home.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:397)
 <ul><li><p><lines><i>A Boolean value to indicate whether the mother planned to deliver at home.</i></lines></p></li></ul></li>

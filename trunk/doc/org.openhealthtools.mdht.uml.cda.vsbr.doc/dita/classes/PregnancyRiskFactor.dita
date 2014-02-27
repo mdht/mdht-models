@@ -22,7 +22,21 @@
 <p audience="Examples"><b>Pregnancy Risk Factor example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_PregnancyRiskFactor.dita#classId/example">
+<codeblock>
+<![CDATA[							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.44"/>
+									<code code="73775-9" displayName="Risk factors in this pregnancy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="200144004" displayName="Deliveries by cesarean" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="68497-7" displayName="Previous cesarean deliveries" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+											<value xsi:type="INT" value="1"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+]]>
 </codeblock>
 </body>
 </topic>

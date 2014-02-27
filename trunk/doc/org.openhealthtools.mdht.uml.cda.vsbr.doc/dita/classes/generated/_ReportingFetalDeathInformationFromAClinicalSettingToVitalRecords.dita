@@ -67,7 +67,7 @@ information.  Within the II data type, use the root to record the identifying OI
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:158)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PriorPregnancyHistorySection.dita">Prior Pregnancy History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.12</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:459)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../HistoryOfInfectionFetalDeathSection.dita">History of Infection: Fetal Death Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.48</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:155)
@@ -115,7 +115,7 @@ information.  Within the II data type, use the root to record the identifying OI
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:158)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PriorPregnancyHistorySection.dita">Prior Pregnancy History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.12</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:459)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../HistoryOfInfectionFetalDeathSection.dita">History of Infection: Fetal Death Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.48</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:155)

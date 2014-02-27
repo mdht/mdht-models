@@ -22,7 +22,57 @@
 <p audience="Examples"><b>Fetal Delivery Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_FetalDeliverySection.dita#classId/example">
+<codeblock>
+<![CDATA[<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.26.4"/>
+					<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="xxxx" displayName="Fetal delivery"/>
+					<text>
+                     ...
+					</text>
+					<subject typeCode="SBJ">
+						<relatedSubject classCode="PRS">
+							<subject classCode="PSN" determinerCode="INSTANCE">
+								<name>
+									<family>Ronald</family>
+									<given>MGovern</given>
+								</name>
+								<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+							</subject>
+						</relatedSubject>
+					</subject>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.41"/>
+                             ...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.15"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.22"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.19"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.23"/>
+							...
+						</observation>
+					</entry>
+				</section>
+			</component>]]>
 </codeblock>
 </body>
 </topic>

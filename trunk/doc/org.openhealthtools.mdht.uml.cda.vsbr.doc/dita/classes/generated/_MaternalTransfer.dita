@@ -19,7 +19,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:422)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:421)<tt><b>/@code</b>="73763-5" </tt><i>Mother was transferred for maternal medical or fetal indications for delivery</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:421)<tt><b>/@code</b>="73763-5" </tt><i>Mother was transferred for maternal medical or fetal indications for delivery</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:527)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it refers to the transfer of the mother to the facility prior to delivery.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:423)
 <ul><li><p><lines><i>A Boolean value to indicate whether or not the mother was transferred to the facility prior to delivery.</i></lines></p></li></ul></li>
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:422)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:421)<tt><b>/@code</b>="73763-5" </tt><i>Mother was transferred for maternal medical or fetal indications for delivery</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:421)<tt><b>/@code</b>="73763-5" </tt><i>Mother was transferred for maternal medical or fetal indications for delivery</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:527)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it refers to the transfer of the mother to the facility prior to delivery.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:423)
 <ul><li><p><lines><i>A Boolean value to indicate whether or not the mother was transferred to the facility prior to delivery.</i></lines></p></li></ul></li>

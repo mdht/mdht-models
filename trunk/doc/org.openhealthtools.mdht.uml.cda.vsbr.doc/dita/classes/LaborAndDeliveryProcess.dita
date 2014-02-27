@@ -22,7 +22,105 @@
 <p audience="Examples"><b>Labor and Delivery Process example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_LaborAndDeliveryProcess.dita#classId/example">
+<codeblock>
+<![CDATA[					<entry>
+						<act classCode="SPCTRT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.31"/>
+							<code code="57074-7" displayName="Labor and delivery process" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<performer typeCode="PRF">
+								<assignedEntity>
+									<id root="2.16.840.1.113883.4.6" extension="8044590788"/>
+									<!-- Attender's NPI.  It is possible to provide a local state ID as well. -->
+									<code code="76231001" displayName="Osteopath" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+									<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+										<name>
+											<prefix>Dr.</prefix>
+											<family>Smith</family>
+											<given>Joseph</given>
+										</name>
+									</assignedPerson>
+								</assignedEntity>
+							</performer>
+							<participant typeCode="LOC">
+								<participantRole classCode="BIRTHPL">
+									<id root="2.16.840.1.113883.4.6" extension="1244497890"/>
+									<!-- Delivery Facility NPI.  -->
+									<code code="22232009" displayName="Hospital" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+									<addr>
+										<city>Metropolis</city>
+										<!--"City, Town or Location of birth".  -->
+										<county>Metropolitan</county>
+									</addr>
+									<playingEntity classCode="PLC" determinerCode="INSTANCE">
+										<name>Include the name of Facility where delivery occurred</name>
+										<desc nullFlavor="NI"/>
+									</playingEntity>
+								</participantRole>
+							</participant>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.35"/>
+									<code code="73763-5" displayName="Mother was transferred for maternal medical or fetal indications for delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="BL" value="false"/>
+								</observation>
+							</entryRelationship>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.18"/>
+									<code code="73813-8" displayName="Characteristics of labor and delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="237001001" displayName="Augmentation of labor" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+								</observation>
+							</entryRelationship>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.18"/>
+									<code code="73813-8" displayName="Characteristics of labor and delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="130955003" displayName="Fetal distress" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+								</observation>
+							</entryRelationship>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.34"/>
+									<code code="73781-7" displayName="Maternal morbidity" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="260413007" displayName="None" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+								</observation>
+							</entryRelationship>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.44"/>
+									<code code="73775-9" displayName="Risk factors in this pregnancy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="73211009" displayName="Diabetes mellitus" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+								</observation>
+							</entryRelationship>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.44"/>
+									<code code="73775-9" displayName="Risk factors in this pregnancy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="38341003" displayName="Hypertensive disorder, systemic arterial" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+								</observation>
+							</entryRelationship>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.44"/>
+									<code code="73775-9" displayName="Risk factors in this pregnancy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="65046005" displayName="Pregnancy resulted from infertility treatment" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+								</observation>
+							</entryRelationship>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.44"/>
+									<code code="73775-9" displayName="Risk factors in this pregnancy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="63487001" displayName="Assisted fertilization" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+								</observation>
+							</entryRelationship>
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="68461-3" displayName="Source of Payment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="CD" code="ZZZ" displayName="Unknown" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>]]>
 </codeblock>
 </body>
 </topic>

@@ -20,7 +20,14 @@
 <p audience="Examples"><b>Date of Last Live Birth example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_DateOfLastLiveBirth.dita#classId/example">
+<codeblock>
+<![CDATA[					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.20"/>
+							<code code="68499-3" displayName="Date last live birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="TS" value="20101125"/>
+						</observation>
+					</entry>]]>
 </codeblock>
 </body>
 </topic>

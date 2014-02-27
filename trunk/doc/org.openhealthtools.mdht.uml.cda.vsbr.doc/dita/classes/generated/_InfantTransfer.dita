@@ -19,7 +19,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:434)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:433)<tt><b>/@code</b>="73758-5" </tt><i>Infant was transferred within 24 hours of delivery</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:433)<tt><b>/@code</b>="73758-5" </tt><i>Infant was transferred within 24 hours of delivery</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:528)
 <ul><li><p><lines><i>The code value indicates the observation refers to the transfer of an infant.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:435)
 <ul><li><p><lines><i>A Boolean value to indicate whether or not the infant was transferred within 24 hours of delivery.</i></lines></p></li></ul></li>
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:434)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:433)<tt><b>/@code</b>="73758-5" </tt><i>Infant was transferred within 24 hours of delivery</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:433)<tt><b>/@code</b>="73758-5" </tt><i>Infant was transferred within 24 hours of delivery</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:528)
 <ul><li><p><lines><i>The code value indicates the observation refers to the transfer of an infant.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:435)
 <ul><li><p><lines><i>A Boolean value to indicate whether or not the infant was transferred within 24 hours of delivery.</i></lines></p></li></ul></li>

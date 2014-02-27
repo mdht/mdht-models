@@ -20,7 +20,14 @@
 <p audience="Examples"><b>Number of Infants Born Alive example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_NumberOfInfantsBornAlive.dita#classId/example">
+<codeblock>
+<![CDATA[<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.37"/>
+							<code code="73773-4" displayName="Number of infants in this delivery born alive" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="INT" value="2"/>
+						</observation>
+					</entry>]]>
 </codeblock>
 </body>
 </topic>

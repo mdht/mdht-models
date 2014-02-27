@@ -2,10 +2,11 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="BirthReportIGforPublish">
 	<booktitle>
-		<booklibrary>Implementation Guide for CDA Release 2:</booklibrary>
-		<mainbooktitle>Birth and Fetal Death Report, Release 1</mainbooktitle>
+		<booklibrary>HL7 Draft Standard for Trial Use</booklibrary>
+		<mainbooktitle>Implementation Guide for CDA Release 2:</mainbooktitle>
+		<booktitlealt>Birth and Fetal Death Report, Release 1</booktitlealt>
 		<booktitlealt id="image"><image href="images/hl7logo.gif"/></booktitlealt>
-		<booktitlealt>HL7 Draft Standard for Trial Use</booktitlealt>
+		
 		<booktitlealt>Implementation guide: US Realm</booktitlealt>
 		<booktitlealt audience="developer">(Consolidated Developer Documentation)</booktitlealt>	
 	</booktitle>
@@ -13,7 +14,7 @@
 	   <bookmeta>
     	<author>Public Health and Emergency Response Work Group</author>
     	<prodinfo>
-			<prodname>CDAR2_BAFDRPT</prodname>
+			<prodname>CDAR2L3_IG_RDIVR_R1_N1_2014JAN</prodname>
 			<vrmlist>
 				<vrm release="R1" version="2014JAN" ></vrm>
 			</vrmlist>
@@ -40,9 +41,6 @@
             </bookowner>
         </bookrights>
     </bookmeta>
-	
-	
-    
 	
 	<frontmatter>
 		<preface>

@@ -22,7 +22,15 @@
 <p audience="Examples"><b>Mother's Vital Signs Observation example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_MothersVitalSignsObservation.dita#classId/example">
+<codeblock>
+<![CDATA[							<entry>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.46"/>
+									<code code="69461-2" displayName="Body weight mother -- at delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="PQ" value="175" unit="lb"/>
+								</observation>
+							</entry>
+]]>
 </codeblock>
 </body>
 </topic>
