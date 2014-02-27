@@ -464,6 +464,10 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createNutritionSection();
 			case ConsolPackage.PHYSICAL_FINDINGS_OF_SKIN_SECTION:
 				return createPhysicalFindingsOfSkinSection();
+			case ConsolPackage.US_REALM_HEADER2:
+				return createUSRealmHeader2();
+			case ConsolPackage.CARE_PLAN:
+				return createCarePlan();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2307,6 +2311,26 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public PhysicalFindingsOfSkinSection createPhysicalFindingsOfSkinSection() {
 		PhysicalFindingsOfSkinSectionImpl physicalFindingsOfSkinSection = new PhysicalFindingsOfSkinSectionImpl();
 		return physicalFindingsOfSkinSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public USRealmHeader2 createUSRealmHeader2() {
+		USRealmHeader2Impl usRealmHeader2 = new USRealmHeader2Impl();
+		return usRealmHeader2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CarePlan createCarePlan() {
+		CarePlanImpl carePlan = new CarePlanImpl();
+		return carePlan;
 	}
 
 	/**

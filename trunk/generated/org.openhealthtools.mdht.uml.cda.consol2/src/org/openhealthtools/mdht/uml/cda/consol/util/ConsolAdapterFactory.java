@@ -1105,6 +1105,16 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseUSRealmHeader2(USRealmHeader2 object) {
+			return createUSRealmHeader2Adapter();
+		}
+
+		@Override
+		public Adapter caseCarePlan(CarePlan object) {
+			return createCarePlanAdapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -4282,6 +4292,34 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPhysicalFindingsOfSkinSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2 <em>US Realm Header2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2
+	 * @generated
+	 */
+	public Adapter createUSRealmHeader2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan <em>Care Plan</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.CarePlan
+	 * @generated
+	 */
+	public Adapter createCarePlanAdapter() {
 		return null;
 	}
 

@@ -3939,6 +3939,49 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.US_REALM_HEADER2: {
+				USRealmHeader2 usRealmHeader2 = (USRealmHeader2) theEObject;
+				T result = caseUSRealmHeader2(usRealmHeader2);
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(usRealmHeader2);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(usRealmHeader2);
+				}
+				if (result == null) {
+					result = caseAct(usRealmHeader2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(usRealmHeader2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.CARE_PLAN: {
+				CarePlan carePlan = (CarePlan) theEObject;
+				T result = caseCarePlan(carePlan);
+				if (result == null) {
+					result = caseUSRealmHeader2(carePlan);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(carePlan);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(carePlan);
+				}
+				if (result == null) {
+					result = caseAct(carePlan);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(carePlan);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -7213,6 +7256,36 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T casePhysicalFindingsOfSkinSection(PhysicalFindingsOfSkinSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>US Realm Header2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>US Realm Header2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUSRealmHeader2(USRealmHeader2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Care Plan</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Care Plan</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCarePlan(CarePlan object) {
 		return null;
 	}
 
