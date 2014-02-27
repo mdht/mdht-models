@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Package xmi:id="_tH2HMEuDEeGs8afU5hU7bA" name="vsdr-vocab">
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_o7MOoEuFEeGCUrfdtxCbHg" name="Manner Of Death">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_o7MOoEuFEeGCUrfdtxCbHg" name="Manner Of Death (NCHS)">
       <ownedComment xmi:id="_L3boMG7qEeGducFY2S5l3A">
         <body>The value set includes all members of the Manners of Death coding system.</body>
       </ownedComment>
@@ -16,7 +16,7 @@
         </ownedComment>
       </ownedLiteral>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_lJB4sEuSEeGCUrfdtxCbHg" name="Contributory Tobacco Use">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_lJB4sEuSEeGCUrfdtxCbHg" name="Contributory Tobacco Use (NCHS)">
       <ownedComment xmi:id="_x90wcG7qEeGducFY2S5l3A">
         <body>The value set contains the set of codes used to describe.  Note, the concept &quot;other&quot; is supported using the HL7 null flavor &quot;OTH&quot;.</body>
       </ownedComment>
@@ -37,7 +37,7 @@
       </ownedLiteral>
       <ownedLiteral xmi:id="_437sQEuSEeGCUrfdtxCbHg" name="NOC"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dMGeUExWEeGCUrfdtxCbHg" name="Death CertifierTitles">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dMGeUExWEeGCUrfdtxCbHg" name="Death CertifierTitles (NCHS)">
       <ownedComment xmi:id="_zAvbcG7pEeGducFY2S5l3A">
         <body>The value set collects all the codes defined within the Certifier Types coding system.</body>
       </ownedComment>
@@ -45,7 +45,7 @@
       <ownedLiteral xmi:id="_ytYOcExWEeGCUrfdtxCbHg" name="PCP"/>
       <ownedLiteral xmi:id="_1WJngExWEeGCUrfdtxCbHg" name="CP"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_AmdeIExXEeGCUrfdtxCbHg" name="Pregnancy Status">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_AmdeIExXEeGCUrfdtxCbHg" name="Pregnancy Status (NCHS)">
       <ownedComment xmi:id="_hdr-8G7qEeGducFY2S5l3A">
         <body>The value set includes all the values from the Prenancy Statuses coding system.</body>
       </ownedComment>
@@ -57,7 +57,7 @@
       <ownedLiteral xmi:id="_aSf-gExXEeGCUrfdtxCbHg" name="PS8"/>
       <ownedLiteral xmi:id="_cRZUIExXEeGCUrfdtxCbHg" name="NOC"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tJkLIExXEeGCUrfdtxCbHg" name="Decedent Transportation Relationship">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tJkLIExXEeGCUrfdtxCbHg" name="Decedent Transportation Relationship (NCHS)">
       <ownedComment xmi:id="_Em_D8G7rEeGducFY2S5l3A">
         <body>The value set contains the set of codes used to indicate the role played by the decedent with reference to a vehicle involved with a transportation injury.  Note, the concept &quot;other&quot; is supported using the HL7 null flavor &quot;OTH&quot;.</body>
       </ownedComment>
@@ -65,7 +65,7 @@
       <ownedLiteral xmi:id="_16vF0ExXEeGCUrfdtxCbHg" name="257500003"/>
       <ownedLiteral xmi:id="_33a08ExXEeGCUrfdtxCbHg" name="257518000"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_o_ybAG-FEeGducFY2S5l3A" name="Death Location Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_o_ybAG-FEeGducFY2S5l3A" name="Death Location Type (NCHS)">
       <ownedLiteral xmi:id="_vOKo0G-FEeGducFY2S5l3A" name="H-IN"/>
       <ownedLiteral xmi:id="_2u-u4G-FEeGducFY2S5l3A" name="H-ER/OP"/>
       <ownedLiteral xmi:id="_8YptIG-FEeGducFY2S5l3A" name="H-DOA"/>
@@ -151,7 +151,7 @@
   <term:ValueSetCode xmi:id="_A9FhoW-GEeGducFY2S5l3A" conceptName="Residence" base_EnumerationLiteral="_A9FhoG-GEeGducFY2S5l3A"/>
   <term:ValueSetCode xmi:id="_CkrKgG-GEeGducFY2S5l3A" conceptName="Other" base_EnumerationLiteral="_CkqjcG-GEeGducFY2S5l3A"/>
   <term:CodeSystemVersion xmi:id="_3lODsF66EeOAc4EMZ20xKQ" identifier="2.16.840.1.113883.12.136" fullName="HL70136 Yes/No Indicator" base_Enumeration="_3jsZsF66EeOAc4EMZ20xKQ"/>
-  <term:CodeSystemVersion xmi:id="_lWbowGEPEeOucruFG1usrQ" identifier="2.16.840.1.113883.6.96" fullName="International Health Terminology Standards Development Organisation (IHTSDO) Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT)" source="National Library of Medicine – UMLS" url="http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" base_Enumeration="_lWDOQGEPEeOucruFG1usrQ"/>
-  <term:CodeSystemVersion xmi:id="_IvbWomEQEeOucruFG1usrQ" identifier="2.16.840.1.113883.6.1" fullName="Logical Observation Identifiers Names and Codes (LOINC)" source="Regenstrief Institute, Inc" url="http://loinc.org" base_Enumeration="_IvbWoGEQEeOucruFG1usrQ"/>
+  <term:CodeSystemVersion xmi:id="_lWbowGEPEeOucruFG1usrQ" identifier="2.16.840.1.113883.6.96" version="2013_09_01" fullName="International Health Terminology Standards Development Organisation (IHTSDO) Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT)" source="National Library of Medicine – UMLS" url="http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" releaseDate="2013-09-01" base_Enumeration="_lWDOQGEPEeOucruFG1usrQ"/>
+  <term:CodeSystemVersion xmi:id="_IvbWomEQEeOucruFG1usrQ" identifier="2.16.840.1.113883.6.1" version="2.46" fullName="Logical Observation Identifiers Names and Codes (LOINC)" source="Regenstrief Institute, Inc" url="http://loinc.org" releaseDate="2013-12-26" base_Enumeration="_IvbWoGEQEeOucruFG1usrQ"/>
   <term:CodeSystemVersion xmi:id="_QoTXYWEQEeOucruFG1usrQ" identifier="2.16.840.1.114222.4.5.274" version="20100308" source="CDCPHINVS" base_Enumeration="_QoTXYGEQEeOucruFG1usrQ"/>
 </xmi:XMI>
