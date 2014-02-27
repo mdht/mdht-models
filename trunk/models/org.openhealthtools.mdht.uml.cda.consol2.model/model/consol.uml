@@ -1476,6 +1476,29 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-exams.uml#_CDn9gJ2LEeORR8_YW0n_jQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-exams.uml#_EOJe4J2MEeORR8_YW0n_jQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-documents.uml#_dduXkJ5OEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-documents.uml#_2jWfwJ5wEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2aBAwJ50EeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_StfLgJ53EeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_wIEkwJ54EeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_6g-c0J55EeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_Vg-qAJ57EeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_WLYnAJ59EeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_dbZJkJ6AEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_yqa2oJ6BEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_DRp78J8BEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_kU3owJ8CEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_jdyk4J8EEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#__jk48J8GEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_gR37IJ8HEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_CORrAJ8PEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_AsHp0J8REeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2eAlIJ8SEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_zfXX0J8UEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_bXDekJ8VEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_rb2icJ8WEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_zdH_UJ8YEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_KDiWEJ8aEeOr4eM3k36wAg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_woUDcJ8aEeOr4eM3k36wAg"/>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
