@@ -15,23 +15,23 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.1.14"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:99)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:100)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69443-0" </tt><i>Tobacco Use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69443-0" </tt><i>Tobacco Use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:101)
 <ul><li><p><lines><i>A coded indication of the extent of the person's use of tobacco.  The data is captured if tobacco use may have contributed to their death.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:102), where the @code <b>SHALL</b> be selected from (CONF:103)
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:99)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:100)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69443-0" </tt><i>Tobacco Use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69443-0" </tt><i>Tobacco Use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:101)
 <ul><li><p><lines><i>A coded indication of the extent of the person's use of tobacco.  The data is captured if tobacco use may have contributed to their death.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:102), where the @code <b>SHALL</b> be selected from (CONF:103)
 </li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

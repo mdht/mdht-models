@@ -15,24 +15,24 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.1.12"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:93)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:94)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69442-2" </tt><i>Timing of recent pregancy related to death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:95)<tt><b>/@code</b>="69442-2" </tt><i>Timing of recent pregancy related to death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:96)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PregnancyStatusNCHS.dita">Pregnancy Status (NCHS)</xref> 2.16.840.1.114222.4.11.6003</tt><b> STATIC</b>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:97), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PregnancyStatusNCHS.dita">Pregnancy Status (NCHS)</xref> 2.16.840.1.114222.4.11.6003</tt><b> STATIC</b> (CONF:98)
 <ul><li><p><lines><i>A code that provides information regarding whether or not the person was pregnant at the time of her death, or whether she was pregnant around the time of death.
 Required if the person is female and in the age range 5 to 75 years.</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:93)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:94)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69442-2" </tt><i>Timing of recent pregancy related to death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:95)<tt><b>/@code</b>="69442-2" </tt><i>Timing of recent pregancy related to death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:96)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PregnancyStatusNCHS.dita">Pregnancy Status (NCHS)</xref> 2.16.840.1.114222.4.11.6003</tt><b> STATIC</b>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:97), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PregnancyStatusNCHS.dita">Pregnancy Status (NCHS)</xref> 2.16.840.1.114222.4.11.6003</tt><b> STATIC</b> (CONF:98)
 <ul><li><p><lines><i>A code that provides information regarding whether or not the person was pregnant at the time of her death, or whether she was pregnant around the time of death.
 Required if the person is female and in the age range 5 to 75 years.</i></lines></p></li></ul></li>
 </ol>

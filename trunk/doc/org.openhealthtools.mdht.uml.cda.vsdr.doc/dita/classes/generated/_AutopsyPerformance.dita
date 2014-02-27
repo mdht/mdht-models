@@ -15,31 +15,31 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.1.2"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:186)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:187)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="21986-5" </tt><i>Autopsy Status</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:188)<tt><b>/@code</b>="21986-5" </tt><i>Autopsy Status</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:189)
 <ul><li><p><lines><i>The code value notes that autopsy status information is provided.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:190)
 <ul><li><p><lines><i>If an autopsy is performed, this field is valued with the date and time the autopsy was begun and completed.  Start date/time for the autopsy is recorded using the low property of the interval data type, while the completion date and time are recorded using the high property of the data type.  Note, normally only the completion date and time will be provided.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:191)
 <ul><li><p><lines><i>An indicator that tells whether an autopsy was performed.</i></lines></p></li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>performer</b></tt> <ol><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt></li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ASSIGNED" </tt></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> <ol><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt></li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt><p><lines><i>This field is valued with the name of the person who performed the autopsy.</i></lines></p></li></ol> </li></ol> </li></ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>performer</b></tt> (CONF:192) <ol><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt> (CONF:193)</li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:194) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ASSIGNED" </tt> (CONF:195)</li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> (CONF:196) <ol><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:197)</li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:198)</li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:199)<p><lines><i>This field is valued with the name of the person who performed the autopsy.</i></lines></p></li></ol> </li></ol> </li></ol>
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:186)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:187)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="21986-5" </tt><i>Autopsy Status</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:188)<tt><b>/@code</b>="21986-5" </tt><i>Autopsy Status</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:189)
 <ul><li><p><lines><i>The code value notes that autopsy status information is provided.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:190)
 <ul><li><p><lines><i>If an autopsy is performed, this field is valued with the date and time the autopsy was begun and completed.  Start date/time for the autopsy is recorded using the low property of the interval data type, while the completion date and time are recorded using the high property of the data type.  Note, normally only the completion date and time will be provided.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:191)
 <ul><li><p><lines><i>An indicator that tells whether an autopsy was performed.</i></lines></p></li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>performer</b></tt> <ol><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt></li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ASSIGNED" </tt></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> <ol><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt></li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt><p><lines><i>This field is valued with the name of the person who performed the autopsy.</i></lines></p></li></ol> </li></ol> </li></ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>performer</b></tt> (CONF:192) <ol><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt> (CONF:193)</li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:194) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ASSIGNED" </tt> (CONF:195)</li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> (CONF:196) <ol><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:197)</li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:198)</li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:199)<p><lines><i>This field is valued with the name of the person who performed the autopsy.</i></lines></p></li></ol> </li></ol> </li></ol>
 </li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
