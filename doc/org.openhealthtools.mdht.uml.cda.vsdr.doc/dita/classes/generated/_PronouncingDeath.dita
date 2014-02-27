@@ -18,28 +18,28 @@ Note, information on the pronouncing physician is only provided when the pronoun
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.26.1.15"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt> (CONF:236)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt> (CONF:237)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Death Pronouncer</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Death Pronouncer</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:238)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:239)
 <ul><li><p><lines><i>Provide the date and time at which the decedent was pronounced dead.</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>performer</b></tt> <ol><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt></li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ASSIGNED" </tt></li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt><p><lines><i>One or more identifiers for the pronouncing clinician.  The state license number is required.  Provider NPI may be added as well.  The element is required if the pronouncing and certifying physicians are different persons.</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> <ol><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt></li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt><p><lines><i>This field is valued with the name of the person who pronounced death.  The full name is required. 
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>performer</b></tt> (CONF:240) <ol><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt> (CONF:241)</li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:242) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ASSIGNED" </tt> (CONF:243)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:244)<p><lines><i>One or more identifiers for the pronouncing clinician.  The state license number is required.  Provider NPI may be added as well.  The element is required if the pronouncing and certifying physicians are different persons.</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> (CONF:245) <ol><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:246)</li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:247)</li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:248)<p><lines><i>This field is valued with the name of the person who pronounced death.  The full name is required. 
 The element is required if the pronouncing and certifying physicians are different persons.</i></lines></p></li></ol> </li></ol> </li></ol>
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt> (CONF:236)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt> (CONF:237)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Death Pronouncer</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Death Pronouncer</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:238)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:239)
 <ul><li><p><lines><i>Provide the date and time at which the decedent was pronounced dead.</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>performer</b></tt> <ol><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt></li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ASSIGNED" </tt></li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt><p><lines><i>One or more identifiers for the pronouncing clinician.  The state license number is required.  Provider NPI may be added as well.  The element is required if the pronouncing and certifying physicians are different persons.</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> <ol><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt></li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt><p><lines><i>This field is valued with the name of the person who pronounced death.  The full name is required. 
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>performer</b></tt> (CONF:240) <ol><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt> (CONF:241)</li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:242) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ASSIGNED" </tt> (CONF:243)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:244)<p><lines><i>One or more identifiers for the pronouncing clinician.  The state license number is required.  Provider NPI may be added as well.  The element is required if the pronouncing and certifying physicians are different persons.</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> (CONF:245) <ol><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt> (CONF:246)</li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:247)</li><li> This assignedPerson <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:248)<p><lines><i>This field is valued with the name of the person who pronounced death.  The full name is required. 
 The element is required if the pronouncing and certifying physicians are different persons.</i></lines></p></li></ol> </li></ol> </li></ol>
 </li>
 </ol>
