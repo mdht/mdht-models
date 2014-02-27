@@ -1686,6 +1686,24 @@ public interface ConsolFactory extends EFactory {
 	PhysicalFindingsOfSkinSection createPhysicalFindingsOfSkinSection();
 
 	/**
+	 * Returns a new object of class '<em>US Realm Header2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>US Realm Header2</em>'.
+	 * @generated
+	 */
+	USRealmHeader2 createUSRealmHeader2();
+
+	/**
+	 * Returns a new object of class '<em>Care Plan</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Care Plan</em>'.
+	 * @generated
+	 */
+	CarePlan createCarePlan();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
