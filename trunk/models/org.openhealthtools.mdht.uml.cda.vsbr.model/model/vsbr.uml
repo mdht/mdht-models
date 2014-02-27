@@ -1932,7 +1932,7 @@ information.  Within the II data type, use the root to record the identifying OI
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_73zEgL7yEeGdruZFgBKbQw" name="Characteristic of Labor and Delivery">
       <ownedComment xmi:id="_73zEgb7yEeGdruZFgBKbQw">
-        <body>Information on whether the mother experienced one or more of a set of defined characteristics of labor and delivery.</body>
+        <body>The template contains nformation on whether the mother experienced one or more of a set of defined characteristics of labor and delivery.</body>
       </ownedComment>
       <generalization xmi:id="_73zEgr7yEeGdruZFgBKbQw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -1986,7 +1986,7 @@ information.  Within the II data type, use the root to record the identifying OI
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_P1wnwL7zEeGdruZFgBKbQw" name="Abnormal Condition of the Newborn">
       <ownedComment xmi:id="_P1wnwb7zEeGdruZFgBKbQw">
-        <body>Information on one or more disorders or significant morbidities experienced by the newborn.</body>
+        <body>The template contains information on one or more disorders or significant morbidities experienced by the newborn.</body>
       </ownedComment>
       <generalization xmi:id="_P1wnwr7zEeGdruZFgBKbQw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -2449,7 +2449,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Vf53QMCMEeGP5fduNvI1Qw" name="Birth Order">
       <ownedComment xmi:id="_n5SpYMCMEeGP5fduNvI1Qw">
-        <body>The order in which the newborn or fetus was delivered in the pregnancy.  All live births and fetal losses resulting from the pregnancy should be included.</body>
+        <body>The Birth Order templated records the order in which the newborn or fetus was delivered in the pregnancy.  All live births and fetal losses resulting from the pregnancy should be included.</body>
       </ownedComment>
       <generalization xmi:id="_Vf53QcCMEeGP5fduNvI1Qw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -2542,6 +2542,15 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WIBrAB_LEeOYe8LVX7HMMw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WIBrAR_LEeOYe8LVX7HMMw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_j23Y4InfEeOjsvDGfNd5dw" name="title" visibility="private" isReadOnly="true" aggregation="composite">
+        <ownedComment xmi:id="_z0cP4InfEeOjsvDGfNd5dw">
+          <body>Presence of a title corresponds to the requirements of Consolidated CDA.  The expected value is &quot;Assessment&quot;</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYBP4InfEeOjsvDGfNd5dw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oYBP4YnfEeOjsvDGfNd5dw" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_9bzboNAOEeGEP4RKA70UUQ" name="Prior Pregnancy History Section">
@@ -2822,7 +2831,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ow01ANBIEeGg_uUX7hH4lg" name="Autopsy Performance">
       <ownedComment xmi:id="_xd1ocNBIEeGg_uUX7hH4lg">
-        <body>Information on whether or not an autopsy was  planned or performed, and if the findings of a performed autopsy were&#xD;
+        <body>The template contains information on whether or not an autopsy was  planned or performed, and if the findings of a performed autopsy were&#xD;
 used in completing the medical portion of the fetal death report.</body>
       </ownedComment>
       <generalization xmi:id="_ow01AdBIEeGg_uUX7hH4lg">
@@ -4321,7 +4330,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
     <ruleId>CONF:60</ruleId>
   </CDA:Entry>
   <CDA:CDATemplate xmi:id="_nSgzcMEfEeGP5fduNvI1Qw" base_Class="_P1wnwL7zEeGdruZFgBKbQw" templateId="2.16.840.1.113883.10.20.26.13"/>
-  <CDA:CDATemplate xmi:id="_t1L2QMEfEeGP5fduNvI1Qw" base_Class="_JLjREMCJEeGP5fduNvI1Qw" templateId="2.16.840.1.113883.10.20.26.46"/>
+  <CDA:CDATemplate xmi:id="_t1L2QMEfEeGP5fduNvI1Qw" base_Class="_JLjREMCJEeGP5fduNvI1Qw" templateId="2.16.840.1.113883.10.20.26.50"/>
   <CDA:CDATemplate xmi:id="_FpXdIMEgEeGP5fduNvI1Qw" base_Class="_Vf53QMCMEeGP5fduNvI1Qw" templateId="2.16.840.1.113883.10.20.26.16"/>
   <CDA:CDATemplate xmi:id="_NH3PAMEgEeGP5fduNvI1Qw" base_Class="_73zEgL7yEeGdruZFgBKbQw" templateId="2.16.840.1.113883.10.20.26.18"/>
   <CDA:CDATemplate xmi:id="_WS2-8MEgEeGP5fduNvI1Qw" base_Class="_U6FdQL7zEeGdruZFgBKbQw" templateId="2.16.840.1.113883.10.20.26.19"/>
@@ -4828,139 +4837,207 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_OgEPsAXjEeO_frVhN2419A" code="68493-6" displayName="Prenatal visits for this pregnancy" base_Property="_yMaAQb7REeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:461</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_d6YBkAXjEeO_frVhN2419A" code="57073-9" displayName="Prenatal events" base_Property="__EPZFNAOEeGEP4RKA70UUQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:515</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_P9gMIAXlEeO_frVhN2419A" code="68499-3" displayName="Date last live birth" base_Property="_zMAUs77UEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:463</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_pd1y0AXlEeO_frVhN2419A" code="8665-2" displayName="Date last menstrual period" base_Property="_2x2aA77UEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:466</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_EFJooAXmEeO_frVhN2419A" code="11638-4" displayName="Births still living" base_Property="_yy3b877UEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:462</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_TTeM8AXmEeO_frVhN2419A" code="68496-9" displayName="Live births now dead" base_Property="_zlcvc77UEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:464</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_c8lcQAXmEeO_frVhN2419A" code="69043-8" displayName="Other pregnancy outcomes" base_Property="_1Try477UEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:465</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_yTghEAXnEeO_frVhN2419A" code="11884-4" displayName="Gestational age Estimated" base_Property="_H3pZNcCJEeGP5fduNvI1Qw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:510</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_23BdoAXpEeO_frVhN2419A" code="73769-2" displayName="Infections present and or treated during this pregnancy for fetal death" base_Property="_nuPVRb7yEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:469</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_lhvsgAXsEeO_frVhN2419A" code="57722-1" displayName="Birth plurality" base_Property="_6BNi9cCKEeGP5fduNvI1Qw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:512</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_urKvIAXsEeO_frVhN2419A" code="73773-4" displayName="Number of infants in this delivery born alive" base_Property="_6b2QhcCKEeGP5fduNvI1Qw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:513</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_APTUQAXtEeO_frVhN2419A" code="73812-0" displayName="Abnormal conditions of the newborn" base_Property="_P1wnxb7zEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:479</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_9OuCsAXtEeO_frVhN2419A" code="73780-9" displayName="Congenital anomalies of the newborn" base_Property="_U6FdRb7zEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:481</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_WxmAAAXuEeO_frVhN2419A" code="73758-5" displayName="Infant was transferred within 24 hours of delivery" base_Property="_X_iMVsCVEeGP5fduNvI1Qw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:528</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_juG5wAXuEeO_frVhN2419A" code="73757-7" displayName="Infant living at time of report" base_Property="_1m13fdBDEeGjwMhvOnViSg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:519</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Xz3FIAZ5EeOFRrPYPAmKMQ" code="57074-7" displayName="Labor and delivery process" base_Property="_EdBkQbvaEeGkEvM80TFRNQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:455</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_RuGyYAZ6EeOFRrPYPAmKMQ" code="73813-8" displayName="Characteristics of labor and delivery" base_Property="_73zEhb7yEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:475</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Pb634AZ7EeOFRrPYPAmKMQ" code="73781-7" displayName="Maternal morbidity" base_Property="_DHhalb7zEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:477</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_ii-SMAaEEeOFRrPYPAmKMQ" code="73775-9" displayName="Risk factors in this pregnancy" base_Property="_30MFJb7yEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:472</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_5RhiMAaOEeOFRrPYPAmKMQ" code="73762-7" displayName="Final route and method of delivery" base_Property="_oC6zxVqNEeKUiPQlmqLrLg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:504</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_6DHsUAaQEeOFRrPYPAmKMQ" code="73761-9" displayName="Fetal presentation at birth" base_Property="_kFeWdb8AEeGhc-Kl_MVNcg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:509</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_PASCwAaREeOFRrPYPAmKMQ" code="73760-1" displayName="If cesarean, a trial of labor was attempted" base_Property="_oC6z21qNEeKUiPQlmqLrLg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:507</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_kLnlkAmmEeOSQLMpSugQSQ" base_Property="_73zEib7yEeGdruZFgBKbQw">
     <reference href="vsbr-vocab.uml#_94as4b78EeGdruZFgBKbQw"/>
+    <ruleId>CONF:476</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_rcYdcAmmEeOSQLMpSugQSQ" base_Property="_U6FdSb7zEeGdruZFgBKbQw">
     <reference href="vsbr-vocab.uml#_Wodv4cCOEeGP5fduNvI1Qw"/>
+    <ruleId>CONF:482</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_-TlM8AmmEeOSQLMpSugQSQ" code="73811-2" displayName="Estimated time of fetal death" base_Property="_NBR55NBKEeGg_uUX7hH4lg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:526</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_xrVdkAmnEeOSQLMpSugQSQ" code="11778-8" displayName="Delivery date for patient selected by practitioner using all pertinent information" base_Property="_5uCrZVnBEeKYlswSBPrhfQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:529</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_LShTIAmoEeOSQLMpSugQSQ" code="73765-0" displayName="Planned to delivery at home" base_Property="_sJSq1LyuEeGUNfs_q_VvNQ">
+  <CDA:CodeSystemConstraint xmi:id="_LShTIAmoEeOSQLMpSugQSQ" code="73765-0" displayName="Planned to deliver at home" base_Property="_sJSq1LyuEeGUNfs_q_VvNQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:520</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Q6bhYAmpEeOSQLMpSugQSQ" code="68461-3" displayName="Payment source" base_Property="_iFHv0byxEeGUNfs_q_VvNQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:457</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_ZQOusAmpEeOSQLMpSugQSQ" base_Property="_iFIW4LyxEeGUNfs_q_VvNQ">
     <reference href="vsbr-vocab.uml#_WfZfUbywEeGUNfs_q_VvNQ"/>
+    <ruleId>CONF:458</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_thiZ0AmrEeOSQLMpSugQSQ" base_Property="_DHhamb7zEeGdruZFgBKbQw">
     <reference href="vsbr-vocab.uml#_Uv_ZML8LEeGJd49YTXcCkg"/>
+    <ruleId>CONF:478</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_NSoXcAmtEeOSQLMpSugQSQ" code="73759-3" displayName="Hysterotomy or hysterectomy was performed at delivery" base_Property="_OHGgGlqPEeKUiPQlmqLrLg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:508</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_vK0Z4AmtEeOSQLMpSugQSQ" code="73774-2" displayName="Onset of labor" base_Property="_mOR-Zb7yEeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:467</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_zG_UgAmtEeOSQLMpSugQSQ" base_Property="_mOR-ab7yEeGdruZFgBKbQw">
     <reference href="vsbr-vocab.uml#_m4J2Qb78EeGdruZFgBKbQw"/>
+    <ruleId>CONF:468</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_8Fs78AmtEeOSQLMpSugQSQ" base_Property="_30MFKb7yEeGdruZFgBKbQw">
     <reference href="vsbr-vocab.uml#_NzhKkb7wEeGdruZFgBKbQw"/>
+    <ruleId>CONF:473</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Sxun8AmuEeOSQLMpSugQSQ" code="68497-7" displayName="Previous cesarean deliveries" base_Property="_pPIOUb70EeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:474</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_HGXI0Am1EeOSQLMpSugQSQ" base_Property="_P1wnyb7zEeGdruZFgBKbQw">
     <reference href="vsbr-vocab.uml#_ROHnEcCOEeGP5fduNvI1Qw"/>
+    <ruleId>CONF:480</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:AssociationValidation xmi:id="_wBmiAAnbEeOSQLMpSugQSQ" severity="INFO" base_Association="_pukdsgnbEeOSQLMpSugQSQ"/>
-  <CDA:PropertyValidation xmi:id="_Jq3bMAncEeOSQLMpSugQSQ" base_Property="_YDjNcAnbEeOSQLMpSugQSQ"/>
-  <CDA:AssociationValidation xmi:id="_PUPegAncEeOSQLMpSugQSQ" base_Association="_rxpIsgnbEeOSQLMpSugQSQ"/>
-  <CDA:PropertyValidation xmi:id="_RHioIAncEeOSQLMpSugQSQ" base_Property="_joVfQAnbEeOSQLMpSugQSQ"/>
-  <CDA:PropertyValidation xmi:id="_UlWy0AncEeOSQLMpSugQSQ" base_Property="_joVfQQnbEeOSQLMpSugQSQ"/>
+  <CDA:AssociationValidation xmi:id="_wBmiAAnbEeOSQLMpSugQSQ" severity="INFO" base_Association="_pukdsgnbEeOSQLMpSugQSQ">
+    <ruleId>CONF:483</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_Jq3bMAncEeOSQLMpSugQSQ" base_Property="_YDjNcAnbEeOSQLMpSugQSQ">
+    <ruleId>CONF:485</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_PUPegAncEeOSQLMpSugQSQ" base_Association="_rxpIsgnbEeOSQLMpSugQSQ">
+    <ruleId>CONF:486</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_RHioIAncEeOSQLMpSugQSQ" base_Property="_joVfQAnbEeOSQLMpSugQSQ">
+    <ruleId>CONF:487</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_UlWy0AncEeOSQLMpSugQSQ" base_Property="_joVfQQnbEeOSQLMpSugQSQ">
+    <ruleId>CONF:488</ruleId>
+  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_XTudkAncEeOSQLMpSugQSQ" code="73779-1" displayName="Down syndrome karyotype status" base_Property="_joVfQQnbEeOSQLMpSugQSQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:489</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ActRelationship xmi:id="_ASJi4AndEeOSQLMpSugQSQ" base_Association="_2ZwqUtAQEeGEP4RKA70UUQ"/>
-  <CDA:PropertyValidation xmi:id="_XpVEsAndEeOSQLMpSugQSQ" base_Property="_joVfQgnbEeOSQLMpSugQSQ"/>
-  <CDA:PropertyValidation xmi:id="_adyJUAndEeOSQLMpSugQSQ" base_Property="_joVfQwnbEeOSQLMpSugQSQ"/>
+  <CDA:PropertyValidation xmi:id="_XpVEsAndEeOSQLMpSugQSQ" base_Property="_joVfQgnbEeOSQLMpSugQSQ">
+    <ruleId>CONF:490</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_adyJUAndEeOSQLMpSugQSQ" base_Property="_joVfQwnbEeOSQLMpSugQSQ">
+    <ruleId>CONF:491</ruleId>
+  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_chdRQAndEeOSQLMpSugQSQ" base_Property="_joVfQwnbEeOSQLMpSugQSQ">
     <reference href="vsbr-vocab.uml#_f9MfsQnaEeOSQLMpSugQSQ"/>
+    <ruleId>CONF:492</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_5-fhoQneEeOSQLMpSugQSQ" base_Property="_5-fhkgneEeOSQLMpSugQSQ"/>
-  <CDA:PropertyValidation xmi:id="_5-fhogneEeOSQLMpSugQSQ" base_Property="_5-fhmQneEeOSQLMpSugQSQ"/>
-  <CDA:PropertyValidation xmi:id="_5-fhowneEeOSQLMpSugQSQ" base_Property="_5-fhmwneEeOSQLMpSugQSQ"/>
+  <CDA:PropertyValidation xmi:id="_5-fhoQneEeOSQLMpSugQSQ" base_Property="_5-fhkgneEeOSQLMpSugQSQ">
+    <ruleId>CONF:493</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_5-fhogneEeOSQLMpSugQSQ" base_Property="_5-fhmQneEeOSQLMpSugQSQ">
+    <ruleId>CONF:495</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_5-fhowneEeOSQLMpSugQSQ" base_Property="_5-fhmwneEeOSQLMpSugQSQ">
+    <ruleId>CONF:496</ruleId>
+  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_5-fhpAneEeOSQLMpSugQSQ" code="73778-3" displayName="Suspected chromosomal disorder karyotype status" base_Property="_5-fhmwneEeOSQLMpSugQSQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:497</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_5-fhpQneEeOSQLMpSugQSQ" base_Property="_5-fhnAneEeOSQLMpSugQSQ"/>
-  <CDA:PropertyValidation xmi:id="_5-fhpgneEeOSQLMpSugQSQ" base_Property="_5-fhngneEeOSQLMpSugQSQ"/>
+  <CDA:PropertyValidation xmi:id="_5-fhpQneEeOSQLMpSugQSQ" base_Property="_5-fhnAneEeOSQLMpSugQSQ">
+    <ruleId>CONF:498</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_5-fhpgneEeOSQLMpSugQSQ" base_Property="_5-fhngneEeOSQLMpSugQSQ">
+    <ruleId>CONF:499</ruleId>
+  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_5-fhpwneEeOSQLMpSugQSQ" base_Property="_5-fhngneEeOSQLMpSugQSQ">
     <reference href="vsbr-vocab.uml#_y1_KoQnaEeOSQLMpSugQSQ"/>
+    <ruleId>CONF:500</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:AssociationValidation xmi:id="_gBKncAnfEeOSQLMpSugQSQ" severity="INFO" base_Association="_FRrtEgnfEeOSQLMpSugQSQ"/>
-  <CDA:AssociationValidation xmi:id="_XFVtMAnlEeOx_LkBbAGgnw" base_Association="_VA7lcgnlEeOx_LkBbAGgnw"/>
+  <CDA:AssociationValidation xmi:id="_gBKncAnfEeOSQLMpSugQSQ" severity="INFO" base_Association="_FRrtEgnfEeOSQLMpSugQSQ">
+    <ruleId>CONF:484</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_XFVtMAnlEeOx_LkBbAGgnw" base_Association="_VA7lcgnlEeOx_LkBbAGgnw">
+    <ruleId>CONF:494</ruleId>
+  </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_jHvDYBAMEeO6h_Vgn8UHWQ" base_Property="_jHcvgxAMEeO6h_Vgn8UHWQ">
     <ruleId>CONF:65</ruleId>
   </CDA:PropertyValidation>
@@ -4983,14 +5060,22 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_VXEOQCF_Ed-M3adQxwHq4g"/>
     <ruleId>CONF:74</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_svN7ABAMEeO6h_Vgn8UHWQ" base_Association="_py4swRAMEeO6h_Vgn8UHWQ"/>
-  <CDA:AssociationValidation xmi:id="_V-BlsBANEeO6h_Vgn8UHWQ" base_Association="_UrFXIRANEeO6h_Vgn8UHWQ"/>
-  <CDA:AssociationValidation xmi:id="_2S40MBANEeO6h_Vgn8UHWQ" base_Association="_0nYUoRANEeO6h_Vgn8UHWQ"/>
+  <CDA:AssociationValidation xmi:id="_svN7ABAMEeO6h_Vgn8UHWQ" base_Association="_py4swRAMEeO6h_Vgn8UHWQ">
+    <ruleId>CONF:452</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_V-BlsBANEeO6h_Vgn8UHWQ" base_Association="_UrFXIRANEeO6h_Vgn8UHWQ">
+    <ruleId>CONF:453</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_2S40MBANEeO6h_Vgn8UHWQ" base_Association="_0nYUoRANEeO6h_Vgn8UHWQ">
+    <ruleId>CONF:454</ruleId>
+  </CDA:AssociationValidation>
   <CDA:CodeSystemConstraint xmi:id="_7pd6gBAREeO6h_Vgn8UHWQ" code="73763-5" displayName="Mother was transferred for maternal medical or fetal indications for delivery" base_Property="_QKJyRNXPEeGb1t7PnGJ-bA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:527</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_EIevoBlREeOO3qDQPTfvZw" code="CHILD" base_Property="_B3bTABlREeOO3qDQPTfvZw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
+    <ruleId>CONF:451</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_Fx8WAB8eEeOZzJzWV51ZDg" base_Class="_FxzMEB8eEeOZzJzWV51ZDg" templateId="2.16.840.1.113883.10.20.26.48"/>
   <CDA:CDATemplate xmi:id="_Uog_wNBEEeGjwMhvOnViSg" base_Class="_p0Edl8CYEeGP5fduNvI1Qw" templateId="2.16.840.1.113883.10.20.26.27"/>
@@ -5005,6 +5090,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2cLicAXuEeO_frVhN2419A" code="73756-9" displayName="Infant is being breastfed at discharge" base_Property="_p0Edm8CYEeGP5fduNvI1Qw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:535</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_p0Edp8CYEeGP5fduNvI1Qw" base_Property="_p0Edn8CYEeGP5fduNvI1Qw">
     <ruleId>CONF:393</ruleId>
@@ -5021,13 +5107,18 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_iGAooR8eEeOZzJzWV51ZDg" code="72519-2" displayName="InfeInfections present and or treated during this pregnancy for live birth" base_Property="_iGAolx8eEeOZzJzWV51ZDg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:536</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_iGAooh8eEeOZzJzWV51ZDg" base_Property="_iGAomR8eEeOZzJzWV51ZDg">
     <ruleId>CONF:238</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_S6jgIB8gEeOZzJzWV51ZDg" base_Association="_P7OoQh8gEeOZzJzWV51ZDg"/>
-  <CDA:AssociationValidation xmi:id="_m2SOwB8gEeOZzJzWV51ZDg" base_Association="_lCZPQh8gEeOZzJzWV51ZDg"/>
-  <CDA:CDATemplate xmi:id="_GVcnQB_EEeOYe8LVX7HMMw" base_Class="_GVS2QB_EEeOYe8LVX7HMMw" templateId="2.16.840.1.113883.10.20.26.9"/>
+  <CDA:AssociationValidation xmi:id="_S6jgIB8gEeOZzJzWV51ZDg" base_Association="_P7OoQh8gEeOZzJzWV51ZDg">
+    <ruleId>CONF:447</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_m2SOwB8gEeOZzJzWV51ZDg" base_Association="_lCZPQh8gEeOZzJzWV51ZDg">
+    <ruleId>CONF:459</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CDATemplate xmi:id="_GVcnQB_EEeOYe8LVX7HMMw" base_Class="_GVS2QB_EEeOYe8LVX7HMMw" templateId="2.16.840.1.113883.10.20.26.14"/>
   <CDA:PropertyValidation xmi:id="_GVcnQR_EEeOYe8LVX7HMMw" base_Property="_GVS2Qx_EEeOYe8LVX7HMMw">
     <ruleId>CONF:360</ruleId>
   </CDA:PropertyValidation>
@@ -5072,43 +5163,81 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_D6WrkB_JEeOYe8LVX7HMMw" base_Property="_JLjRFcCJEeGP5fduNvI1Qw">
     <reference href="vsbr-vocab.uml#_SRJgEQnSEeOSQLMpSugQSQ"/>
+    <ruleId>CONF:511</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:AssociationValidation xmi:id="_hlcbcB_JEeOYe8LVX7HMMw" base_Association="_e6DzQh_JEeOYe8LVX7HMMw"/>
+  <CDA:AssociationValidation xmi:id="_hlcbcB_JEeOYe8LVX7HMMw" base_Association="_e6DzQh_JEeOYe8LVX7HMMw">
+    <ruleId>CONF:539</ruleId>
+  </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_19AKcB_JEeOYe8LVX7HMMw" base_Property="_b1dEtx_HEeOYe8LVX7HMMw">
     <reference href="vsbr-vocab.uml#_p8ODsAnREeOSQLMpSugQSQ"/>
+    <ruleId>CONF:541</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:AssociationValidation xmi:id="_9SrXgB_JEeOYe8LVX7HMMw" base_Association="_1Jc4gh_HEeOYe8LVX7HMMw"/>
-  <CDA:AssociationValidation xmi:id="_aisU8B_KEeOYe8LVX7HMMw" base_Association="_TmAPoh_KEeOYe8LVX7HMMw"/>
-  <CDA:AssociationValidation xmi:id="_WqF2QB_LEeOYe8LVX7HMMw" base_Association="_UudQAB_LEeOYe8LVX7HMMw"/>
+  <CDA:AssociationValidation xmi:id="_9SrXgB_JEeOYe8LVX7HMMw" base_Association="_1Jc4gh_HEeOYe8LVX7HMMw">
+    <ruleId>CONF:460</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_aisU8B_KEeOYe8LVX7HMMw" base_Association="_TmAPoh_KEeOYe8LVX7HMMw">
+    <ruleId>CONF:450</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_WqF2QB_LEeOYe8LVX7HMMw" base_Association="_UudQAB_LEeOYe8LVX7HMMw">
+    <ruleId>CONF:514</ruleId>
+  </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_vkxLIB_LEeOYe8LVX7HMMw" base_Property="_XG_45x_EEeOYe8LVX7HMMw">
     <reference href="vsbr-vocab.uml#_6YDEVR_HEeOYe8LVX7HMMw"/>
+    <ruleId>CONF:540</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:AssociationValidation xmi:id="_ZBpKMB_QEeOYe8LVX7HMMw" base_Association="_TT0Esh_QEeOYe8LVX7HMMw"/>
-  <CDA:AssociationValidation xmi:id="_e4jTMB_QEeOYe8LVX7HMMw" base_Association="_cnDxsh_QEeOYe8LVX7HMMw"/>
+  <CDA:AssociationValidation xmi:id="_ZBpKMB_QEeOYe8LVX7HMMw" base_Association="_TT0Esh_QEeOYe8LVX7HMMw">
+    <ruleId>CONF:534</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_e4jTMB_QEeOYe8LVX7HMMw" base_Association="_cnDxsh_QEeOYe8LVX7HMMw">
+    <ruleId>CONF:517</ruleId>
+  </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_pZBBQB_QEeOYe8LVX7HMMw" base_Property="_nuPVRb7yEeGdruZFgBKbQw">
     <reference href="vsbr-vocab.uml#_RV75t772EeGdruZFgBKbQw"/>
+    <ruleId>CONF:470</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_vugjsB_QEeOYe8LVX7HMMw" base_Property="_iGAolx8eEeOZzJzWV51ZDg">
     <reference href="vsbr-vocab.uml#_0MnaIb71EeGdruZFgBKbQw"/>
+    <ruleId>CONF:537</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:AssociationValidation xmi:id="_OpKDgDgmEeOMp6Ft_mQoHw" base_Association="_MrD_IDgmEeOMp6Ft_mQoHw"/>
+  <CDA:AssociationValidation xmi:id="_OpKDgDgmEeOMp6Ft_mQoHw" base_Association="_MrD_IDgmEeOMp6Ft_mQoHw">
+    <ruleId>CONF:456</ruleId>
+  </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_nHt4kDgwEeOMp6Ft_mQoHw" base_Property="_nuPVSb7yEeGdruZFgBKbQw">
     <reference href="vsbr-vocab.uml#_RV75t772EeGdruZFgBKbQw"/>
+    <ruleId>CONF:471</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_tmFDIDgwEeOMp6Ft_mQoHw" base_Property="_iGAomR8eEeOZzJzWV51ZDg">
     <reference href="vsbr-vocab.uml#_0MnaIb71EeGdruZFgBKbQw"/>
+    <ruleId>CONF:538</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:AssociationValidation xmi:id="_kp9x0DgyEeOMp6Ft_mQoHw" base_Association="_ieRWUjgyEeOMp6Ft_mQoHw"/>
+  <CDA:AssociationValidation xmi:id="_kp9x0DgyEeOMp6Ft_mQoHw" base_Association="_ieRWUjgyEeOMp6Ft_mQoHw">
+    <ruleId>CONF:506</ruleId>
+  </CDA:AssociationValidation>
   <CDA:CodeSystemConstraint xmi:id="_f09wgDtNEeOC5d2nIW7v7g" code="71459-2" displayName="Infection Panel" base_Property="_FxzMGx8eEeOZzJzWV51ZDg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:533</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_kPolADtNEeOC5d2nIW7v7g" name="LOINC" code="71459-2" displayName="Infection panel" base_Property="_gqqWENAPEeGEP4RKA70UUQ"/>
-  <CDA:AssociationValidation xmi:id="_umuowDtaEeOC5d2nIW7v7g" base_Association="_sfyKYjtaEeOC5d2nIW7v7g"/>
-  <CDA:AssociationValidation xmi:id="_3kvREDwUEeOIbpmkAR-aPA" base_Association="_ydV5cDwUEeOIbpmkAR-aPA"/>
-  <CDA:AssociationValidation xmi:id="_6Eeo8DwfEeOIbpmkAR-aPA" base_Association="_3tgxkjwfEeOIbpmkAR-aPA"/>
-  <CDA:AssociationValidation xmi:id="_AsAWkDwgEeOIbpmkAR-aPA" base_Association="_-sf88jwfEeOIbpmkAR-aPA"/>
-  <CDA:AssociationValidation xmi:id="_OVMwIDwgEeOIbpmkAR-aPA" base_Association="_E8FrsDwgEeOIbpmkAR-aPA"/>
-  <CDA:AssociationValidation xmi:id="_I5uUADwiEeOIbpmkAR-aPA" severity="INFO" base_Association="_Es4gIjwiEeOIbpmkAR-aPA"/>
+  <CDA:CodeSystemConstraint xmi:id="_kPolADtNEeOC5d2nIW7v7g" name="LOINC" code="71459-2" displayName="Infection panel" base_Property="_gqqWENAPEeGEP4RKA70UUQ">
+    <ruleId>CONF:516</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_umuowDtaEeOC5d2nIW7v7g" base_Association="_sfyKYjtaEeOC5d2nIW7v7g">
+    <ruleId>CONF:523</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_3kvREDwUEeOIbpmkAR-aPA" base_Association="_ydV5cDwUEeOIbpmkAR-aPA">
+    <ruleId>CONF:449</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_6Eeo8DwfEeOIbpmkAR-aPA" base_Association="_3tgxkjwfEeOIbpmkAR-aPA">
+    <ruleId>CONF:502</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_AsAWkDwgEeOIbpmkAR-aPA" base_Association="_-sf88jwfEeOIbpmkAR-aPA">
+    <ruleId>CONF:501</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_OVMwIDwgEeOIbpmkAR-aPA" base_Association="_E8FrsDwgEeOIbpmkAR-aPA">
+    <ruleId>CONF:503</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_I5uUADwiEeOIbpmkAR-aPA" severity="INFO" base_Association="_Es4gIjwiEeOIbpmkAR-aPA">
+    <ruleId>CONF:505</ruleId>
+  </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_ANWTUDzeEeOrqIZ_r1za7g" base_Property="_ANQMtjzeEeOrqIZ_r1za7g">
     <ruleId>CONF:118</ruleId>
   </CDA:PropertyValidation>
@@ -5140,9 +5269,15 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
   <CDA:PropertyValidation xmi:id="_ANWTWTzeEeOrqIZ_r1za7g" severity="INFO" base_Property="_ANQM2zzeEeOrqIZ_r1za7g">
     <ruleId>CONF:125</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_fPNB0DzeEeOrqIZ_r1za7g" base_Association="_dYkQUjzeEeOrqIZ_r1za7g"/>
-  <CDA:AssociationValidation xmi:id="_xWnLwDzhEeOrqIZ_r1za7g" base_Association="_uqYPAjzhEeOrqIZ_r1za7g"/>
-  <CDA:AssociationValidation xmi:id="_L7u-UDzkEeOrqIZ_r1za7g" base_Association="_KAI0UjzkEeOrqIZ_r1za7g"/>
+  <CDA:AssociationValidation xmi:id="_fPNB0DzeEeOrqIZ_r1za7g" base_Association="_dYkQUjzeEeOrqIZ_r1za7g">
+    <ruleId>CONF:530</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_xWnLwDzhEeOrqIZ_r1za7g" base_Association="_uqYPAjzhEeOrqIZ_r1za7g">
+    <ruleId>CONF:531</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_L7u-UDzkEeOrqIZ_r1za7g" base_Association="_KAI0UjzkEeOrqIZ_r1za7g">
+    <ruleId>CONF:532</ruleId>
+  </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_YqK4PkJoEeO_G8MQAkZusQ" base_Property="_YqK4MkJoEeO_G8MQAkZusQ">
     <ruleId>CONF:410</ruleId>
   </CDA:PropertyValidation>
@@ -5158,14 +5293,26 @@ The consolidated CDA Vital Signs Observation template has been used.  The value 
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_hmHqEEJpEeO_G8MQAkZusQ" base_Property="_YqK4OkJoEeO_G8MQAkZusQ">
     <reference href="vsbr-vocab.uml#_iexXFUJuEeOTOraTCBgKoQ"/>
+    <ruleId>CONF:525</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_lXTcsEJpEeO_G8MQAkZusQ" base_Property="_ow01CNBIEeGg_uUX7hH4lg">
     <reference href="vsbr-vocab.uml#_3SBnwEJnEeO_G8MQAkZusQ"/>
+    <ruleId>CONF:521</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:AssociationValidation xmi:id="_tzMD4EJpEeO_G8MQAkZusQ" base_Association="_rk_uAkJpEeO_G8MQAkZusQ"/>
-  <CDA:AssociationValidation xmi:id="_zGODwEJpEeO_G8MQAkZusQ" base_Association="_xhCOokJpEeO_G8MQAkZusQ"/>
-  <CDA:PropertyValidation xmi:id="_az_nkGgcEeO4b538Qqy2nw" base_Property="_YTlgUGgcEeO4b538Qqy2nw"/>
+  <CDA:AssociationValidation xmi:id="_tzMD4EJpEeO_G8MQAkZusQ" base_Association="_rk_uAkJpEeO_G8MQAkZusQ">
+    <ruleId>CONF:522</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_zGODwEJpEeO_G8MQAkZusQ" base_Association="_xhCOokJpEeO_G8MQAkZusQ">
+    <ruleId>CONF:524</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_az_nkGgcEeO4b538Qqy2nw" base_Property="_YTlgUGgcEeO4b538Qqy2nw">
+    <ruleId>CONF:448</ruleId>
+  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_vGijQG85EeOHZpWUIKutHQ" code="29300-1" displayName="Procedure" base_Property="_k4Kb0NAQEeGEP4RKA70UUQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:518</ruleId>
   </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_pNnbIInfEeOjsvDGfNd5dw" base_Property="_j23Y4InfEeOjsvDGfNd5dw">
+    <ruleId>CONF:540</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
