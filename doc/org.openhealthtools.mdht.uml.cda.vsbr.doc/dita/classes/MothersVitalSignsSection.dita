@@ -22,7 +22,36 @@
 <p audience="Examples"><b>Mother's Vital Signs Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_MothersVitalSignsSection.dita#classId/example">
+<codeblock>
+<![CDATA[<component>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.14"/>
+							<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="8716-3" displayName="Vital Signs"/>
+							<text>
+								...
+							</text>
+							<entry>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.46"/>
+									...
+								</observation>
+							</entry>
+							<entry>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.46"/>
+									...
+								</observation>
+							</entry>
+							<entry>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.46"/>
+									...
+								</observation>
+							</entry>
+						</section>
+					</component>
+				</section>
+			</component>]]>
 </codeblock>
 </body>
 </topic>

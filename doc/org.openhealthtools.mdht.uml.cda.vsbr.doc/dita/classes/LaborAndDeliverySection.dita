@@ -20,7 +20,48 @@
 <p audience="Examples"><b>Labor and Delivery Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_LaborAndDeliverySection.dita#classId/example">
+<codeblock>
+<![CDATA[		<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.26.8"/>
+					<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34079-4" displayName="Labor and delivery section"/>
+					<text>
+						...
+					</text>
+					<entry>
+						<act classCode="SPCTRT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.31"/>
+							...
+						</act>
+					</entry>
+					<entry typeCode="COMP">
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.32"/>
+							...
+						</observation>
+					</entry>
+					<!--
+********************************************************
+Labor and Delivery Procedure Section
+********************************************************
+-->
+					<component>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.7"/>
+							...
+						</section>
+					</component>
+					<!--
+********************************************************
+Mother's Vital Signs Section
+********************************************************
+-->
+					<component>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.14"/>
+							...
+				</section>
+			</component>]]>
 </codeblock>
 </body>
 </topic>

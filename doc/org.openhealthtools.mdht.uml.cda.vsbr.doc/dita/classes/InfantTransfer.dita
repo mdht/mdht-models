@@ -20,7 +20,14 @@
 <p audience="Examples"><b>infant Transfer example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_InfantTransfer.dita#classId/example">
+<codeblock>
+<![CDATA[<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.29"/>
+							<code code="73758-5" displayName="Infant was transferred within 24 hours of delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="BL" value="false"/>
+						</observation>
+					</entry>]]>
 </codeblock>
 </body>
 </topic>

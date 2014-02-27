@@ -32,9 +32,9 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:50)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryProcedureSection.dita">Labor and Delivery Procedure Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.7</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:449)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../MothersVitalSignsSection.dita">Mothers Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.9</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../MothersVitalSignsSection.dita">Mothers Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.14</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:43)
@@ -54,9 +54,9 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:50)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LaborAndDeliveryProcedureSection.dita">Labor and Delivery Procedure Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.7</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:449)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../MothersVitalSignsSection.dita">Mothers Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.9</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../MothersVitalSignsSection.dita">Mothers Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.14</tt>)</li></ol></li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">

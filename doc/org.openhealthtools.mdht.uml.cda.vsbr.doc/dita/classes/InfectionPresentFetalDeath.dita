@@ -22,7 +22,14 @@
 <p audience="Examples"><b>Infection Present - Fetal Death example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_InfectionPresentFetalDeath.dita#classId/example">
+<codeblock>
+<![CDATA[	<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.49"/>
+							<code code="73769-2" displayName="Infections present and or treated during this pregnancy for fetal death" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="CD" code="4241002" displayName="Listeriosis" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+						</observation>
+					</entry>]]>
 </codeblock>
 </body>
 </topic>

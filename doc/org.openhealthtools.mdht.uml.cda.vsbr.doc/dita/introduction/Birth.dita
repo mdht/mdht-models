@@ -32,9 +32,9 @@
 	<languageCode code="en-US"/>
 	<!--LanguageCode example with language and country-->
 	<!--	
-	*****************************************************
+	********************************************************
     CDA Header: Participants
-    *****************************************************
+    ********************************************************
 -->
 	<recordTarget typeCode="RCT">
 		<!--The record target includes information regarding the mother.-->
@@ -116,8 +116,8 @@ Prenatal Testing and Surveillance Section
 						</list>
 					</text>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.42"/>
 						<act classCode="ACT" moodCode="EVN" negationInd="true">
+							<templateId root="2.16.840.1.113883.10.20.26.42"/>
 							<code code="73776-7" displayName="No Prenatal Care" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<effectiveTime>
 								<low value="20120521"/>
@@ -194,44 +194,44 @@ Prior Pregnancy History Section
 						</list>
 					</text>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.20"/>
 						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.20"/>
 							<code code="68499-3" displayName="Date last live birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<value xsi:type="TS" value="20101125"/>
 						</observation>
 					</entry>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.33"/>
 						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.33"/>
 							<code code="8665-2" displayName="Last menstrual period date" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<value xsi:type="TS" value="20120401"/>
 						</observation>
 					</entry>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.36"/>
 						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.36"/>
 							<code code="11638-4" displayName="Number of births now living" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<value xsi:type="INT" value="2"/>
 						</observation>
 					</entry>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.38"/>
 						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.38"/>
 							<code code="68496-9" displayName="Number of live births now dead" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<value xsi:type="INT" value="0"/>
 						</observation>
 					</entry>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.40"/>
 						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.40"/>
 							<code code="69043-8" displayName="Other pregnancy outcomes" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<effectiveTime nullFlavor="NA"/>
 							<value xsi:type="INT" value="0"/>
 						</observation>
 					</entry>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.21"/>
 						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.21"/>
 							<code code="11884-4" displayName="Gestational age" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<value xsi:type="PQ" value="39" unit="wk"/>
 						</observation>
@@ -257,8 +257,8 @@ History of Infection Section
 						</list>
 					</text>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.30"/>
 						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.30"/>
 							<code code="72519-2" displayName="Infections present and or treated during this pregnancy for live birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<value xsi:type="CD" code="260413007" displayName="None" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
 						</observation>
@@ -369,8 +369,8 @@ Labor and Delivery Section
 						</list>
 					</text>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.31"/>
 						<act classCode="SPCTRT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.31"/>
 							<code code="57074-7" displayName="Labor and delivery process" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<performer typeCode="PRF">
 								<assignedEntity>
@@ -507,14 +507,14 @@ Labor and Delivery Procedure Section
 								</list>
 							</text>
 							<entry>
-								<templateId root="2.16.840.1.113883.10.20.26.39"/>
 								<procedure classCode="PROC" moodCode="EVN" negationInd="false">
+									<templateId root="2.16.840.1.113883.10.20.26.39"/>
 									<code code="240278000" displayName="External cephalic version" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
 								</procedure>
 							</entry>
 							<entry>
-								<templateId root="2.16.840.1.113883.10.20.26.45"/>
 								<procedure classCode="PROC" moodCode="EVN" negationInd="false">
+									<templateId root="2.16.840.1.113883.10.20.26.45"/>
 									<code code="72149-8" displayName="Delivery method" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<entryRelationship typeCode="COMP">
 										<observation classCode="OBS" moodCode="EVN">
@@ -570,22 +570,22 @@ Mother's Vital Signs Section
 								</list>
 							</text>
 							<entry>
-								<templateId root="2.16.840.1.113883.10.20.26.46"/>
 								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.46"/>
 									<code code="69461-2" displayName="Body weight -- pre current pregnancy" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<value xsi:type="PQ" value="145" unit="lb"/>
 								</observation>
 							</entry>
 							<entry>
-								<templateId root="2.16.840.1.113883.10.20.26.46"/>
 								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.46"/>
 									<code code="3137-7" displayName="Body height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<value xsi:type="PQ" value="66" unit="in"/>
 								</observation>
 							</entry>
 							<entry>
-								<templateId root="2.16.840.1.113883.10.20.26.46"/>
 								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.46"/>
 									<code code="69461-2" displayName="Body weight mother -- at delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<value xsi:type="PQ" value="175" unit="lb"/>
 								</observation>
@@ -677,50 +677,50 @@ Newborn Delivery Section
 						</relatedSubject>
 					</subject>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.41"/>
 						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.41"/>
 							<code code="57722-1" displayName="Birth plurality" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<value xsi:type="INT" value="1"/>
 						</observation>
 					</entry>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.13"/>
 						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.13"/>
 							<code code="73812-0" displayName="Abnormal conditions of the newborn" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<value xsi:type="CD" code="405269005" displayName="Neonatal intensive care unit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
 						</observation>
 					</entry>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.13"/>
 						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.13"/>
 							<code code="73812-0" displayName="Abnormal conditions of the newborn" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<value xsi:type="CD" code="634641000124112" displayName="Antibiotics for suspected neonatal sepsis" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
 						</observation>
 					</entry>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.19"/>
 						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.19"/>
 							<code code="73780-9" displayName="Congenital anomalies of the newborn" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<value xsi:type="CD" code="17190001" displayName="Congenital diaphragmatic hernia" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
 						</observation>
 					</entry>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.29"/>
 						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.29"/>
 							<code code="73758-5" displayName="Infant was transferred within 24 hours of delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<value xsi:type="BL" value="false"/>
 						</observation>
 					</entry>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.28"/>
 						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.28"/>
 							<code code="73757-7" displayName="Infant living at time of report" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<value xsi:type="BL" value="true"/>
 						</observation>
 					</entry>
 					<entry>
-						<templateId root="2.16.840.1.113883.10.20.26.27"/>
 						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.27"/>
 							<code code="73756-9" displayName="Infant is being breastfed at discharge" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<value xsi:type="BL" value="true"/>
 						</observation>
@@ -744,8 +744,8 @@ Newborn's Vital Signs Section
 								</list>
 							</text>
 							<entry>
-								<templateId root="2.16.840.1.113883.10.20.26.46"/>
 								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.46"/>
 									<code code="8339-4" displayName="Body weight at birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<value xsi:type="PQ" value="2980" unit="g"/>
 								</observation>
@@ -776,15 +776,15 @@ Assessment Section
 								</list>
 							</text>
 							<entry>
-								<templateId root="2.16.840.1.113883.10.20.26.46"/>
 								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.46"/>
 									<code code="9274-2" displayName="Score^5M post birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<value xsi:type="INT" value="5"/>
 								</observation>
 							</entry>
 							<entry>
-								<templateId root="2.16.840.1.113883.10.20.26.14"/>
 								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.14"/>
 									<code code="9271-8" displayName="Score^10M post birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<effectiveTime>
 										<width value="10" unit="min"/>
@@ -793,12 +793,13 @@ Assessment Section
 								</observation>
 							</entry>
 						</section>
-					</component> 
+					</component>
 				</section>
 			</component>
 		</structuredBody>
 	</component>
-</ClinicalDocument>]]>
+</ClinicalDocument>
+		]]>
 		</codeblock>
 		
 	</body>

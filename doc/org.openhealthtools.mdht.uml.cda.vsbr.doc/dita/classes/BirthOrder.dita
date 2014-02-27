@@ -20,7 +20,14 @@
 <p audience="Examples"><b>Birth Order example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_BirthOrder.dita#classId/example">
+<codeblock>
+<![CDATA[<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.16"/>
+							<code code="73771-8" displayName="Birth order" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="INT" value="2"/>
+						</observation>
+					</entry>]]>
 </codeblock>
 </body>
 </topic>

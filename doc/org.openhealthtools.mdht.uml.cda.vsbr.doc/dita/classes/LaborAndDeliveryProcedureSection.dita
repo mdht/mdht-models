@@ -22,7 +22,29 @@
 <p audience="Examples"><b>Labor and Delivery Procedure Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_LaborAndDeliveryProcedureSection.dita#classId/example">
+<codeblock>
+<![CDATA[	<component>
+						<section classCode="DOCSECT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.7"/>
+							<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="xxxxxx" displayName="Labor and Delivery Procedure Section"/>
+							<text>
+								...
+								</list>
+							</text>
+							<entry>
+								<procedure classCode="PROC" moodCode="EVN" negationInd="false">
+									<templateId root="2.16.840.1.113883.10.20.26.39"/>
+									...
+								</procedure>
+							</entry>
+							<entry>
+								<procedure classCode="PROC" moodCode="EVN" negationInd="false">
+									<templateId root="2.16.840.1.113883.10.20.26.45"/>
+									,,,
+								</procedure>
+							</entry>
+						</section>
+					</component>]]>
 </codeblock>
 </body>
 </topic>

@@ -19,7 +19,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:217)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:216)<tt><b>/@code</b>="68496-9" </tt><i>Live births now dead</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:216)<tt><b>/@code</b>="68496-9" </tt><i>Live births now dead</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:464)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records the total number of previous live-born infants now dead.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT (CONF:218)
 <ul><li><p><lines><i>The total number of previous live-born infants now dead.  The entry is a non-negative integer within the range from zero to 30.</i></lines></p></li></ul></li>
@@ -29,7 +29,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:217)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:216)<tt><b>/@code</b>="68496-9" </tt><i>Live births now dead</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:216)<tt><b>/@code</b>="68496-9" </tt><i>Live births now dead</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:464)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records the total number of previous live-born infants now dead.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT (CONF:218)
 <ul><li><p><lines><i>The total number of previous live-born infants now dead.  The entry is a non-negative integer within the range from zero to 30.</i></lines></p></li></ul></li>

@@ -23,9 +23,11 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:364)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:514)
 <ul><li><p><lines><i>Apgar scores are recorded to assess the condition of the newborn.  In those cases in which the 5 minute Apgar score is less than 6, the 10 minute Apgar score is to be recorded, .</i></lines></p></li></ul><ol>
 <li>Contains exactly one [1..1] <xref href="../AssessmentObservation.dita">Assessment Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.47</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:540)
+<ul><li><p><lines><i>Presence of a title corresponds to the requirements of Consolidated CDA.  The expected value is "Assessment"</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:360)
@@ -34,9 +36,11 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:362)<tt><b>/@code</b>="51848-0" </tt><i>Assessment Note</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:361)
 </li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:540)
+<ul><li><p><lines><i>Presence of a title corresponds to the requirements of Consolidated CDA.  The expected value is "Assessment"</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:364)
 <ul><li><p><lines><i>The text entry is drawn from the structured content contained within the entries of this section.  Text is required to provide human readible content.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:514)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AssessmentObservation.dita">Assessment Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.47</tt>)</li></ol><ul><li><p><lines><i>Apgar scores are recorded to assess the condition of the newborn.  In those cases in which the 5 minute Apgar score is less than 6, the 10 minute Apgar score is to be recorded, .</i></lines></p></li></ul></li>
 </ol>

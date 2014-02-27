@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Extending CDA R2</title>
+	<body>
+		<p>Where there is a need to communicate information for which there is no suitable
+		 representation in CDA R2, extensions to CDA R2 have been developed. 
+		 
+		 This section serves to summarize the
+		  extensions to provide implementation guidance. 
+		 
+		 
+		 Elements containing
+		 extensions are documented within the template where they are used. 
+		 
+		 Note, it has not been necessary to define
+		  extensions beyond those already created by the HL7 Structured Documents Work Group.
+		 
+		  In order to take advantage of these features, it is helpful to use the schemas, SDTC.xsd,
+		   CDA_SDTC.xsd, and POCD_MT000040_SDTC, that have been distributed as part
+        of the Consolidated CDA distribution.  It will also be necessary to declare the "sdtc" 
+        namespace that is used for this extension.
+		 </p>
+		  
+		  <p>Extensions used within this implmentation guide include:</p>
+		  <ul>
+		  <li><b>sdtc:id</b> CDA R2 does not include an identifier for the subject of a section.  The
+		  identifier has been added to allow the medicl record number assigned to a newborn to be 
+		  recorded.</li>
+		  </ul>
+		  
+	</body>
+
+</topic>

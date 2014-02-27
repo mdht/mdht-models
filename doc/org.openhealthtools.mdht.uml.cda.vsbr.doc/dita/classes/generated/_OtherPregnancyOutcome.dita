@@ -19,7 +19,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:221)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:220)<tt><b>/@code</b>="69043-8" </tt><i>Other pregnancy outcomes</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:220)<tt><b>/@code</b>="69043-8" </tt><i>Other pregnancy outcomes</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:465)
 <ul><li><p><lines><i>A code to indicate the observation contains information on the total number of other pregnancy outcomes that did not result in a live birth.</i></lines></p></li></ul></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:223)
 <ul><li><p><lines><i>The date that the last pregnancy that did not result in a live birth ended.    The effective time for the other pregnancy outcomes is the interval between the first such outcome and the latest.  Value the high property of the interval data type.</i></lines></p></li></ul></li>
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:221)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:220)<tt><b>/@code</b>="69043-8" </tt><i>Other pregnancy outcomes</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:220)<tt><b>/@code</b>="69043-8" </tt><i>Other pregnancy outcomes</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:465)
 <ul><li><p><lines><i>A code to indicate the observation contains information on the total number of other pregnancy outcomes that did not result in a live birth.</i></lines></p></li></ul></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:223)
 <ul><li><p><lines><i>The date that the last pregnancy that did not result in a live birth ended.    The effective time for the other pregnancy outcomes is the interval between the first such outcome and the latest.  Value the high property of the interval data type.</i></lines></p></li></ul></li>

@@ -19,7 +19,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:332)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:331)<tt><b>/@code</b>="11884-4" </tt><i>Gestational age Estimated</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:331)<tt><b>/@code</b>="11884-4" </tt><i>Gestational age Estimated</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:510)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - that it records the birth attendant's estimate of gestation.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:333)
 <ul><li><p><lines><i>The final estimate of gestation based on all perinatal factors and assessments, but  not the neonatal exam.  The value is to be provided as a number of completed weeks.</i></lines></p></li></ul></li>
@@ -29,7 +29,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:332)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:331)<tt><b>/@code</b>="11884-4" </tt><i>Gestational age Estimated</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:331)<tt><b>/@code</b>="11884-4" </tt><i>Gestational age Estimated</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:510)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - that it records the birth attendant's estimate of gestation.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:333)
 <ul><li><p><lines><i>The final estimate of gestation based on all perinatal factors and assessments, but  not the neonatal exam.  The value is to be provided as a number of completed weeks.</i></lines></p></li></ul></li>

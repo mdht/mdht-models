@@ -20,7 +20,14 @@
 <p audience="Examples"><b>Estimate of Gestation example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_EstimateOfGestation.dita#classId/example">
-</codeblock>
+<codeblock>
+<![CDATA[					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.21"/>
+							<code code="11884-4" displayName="Gestational age" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="PQ" value="39" unit="wk"/>
+						</observation>
+					</entry>]]>
+					</codeblock>
 </body>
 </topic>

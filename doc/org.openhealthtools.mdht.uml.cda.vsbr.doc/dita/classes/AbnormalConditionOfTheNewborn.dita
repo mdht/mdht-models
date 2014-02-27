@@ -22,7 +22,14 @@
 <p audience="Examples"><b>Abnormal Condition of the Newborn example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_AbnormalConditionOfTheNewborn.dita#classId/example">
+<codeblock>
+<![CDATA[<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.13"/>
+							<code code="73812-0" displayName="Abnormal conditions of the newborn" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="CD" code="405269005" displayName="Neonatal intensive care unit" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+						</observation>
+					</entry>]]>
 </codeblock>
 </body>
 </topic>

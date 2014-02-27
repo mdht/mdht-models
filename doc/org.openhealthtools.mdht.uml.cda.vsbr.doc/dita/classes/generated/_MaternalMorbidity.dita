@@ -19,9 +19,9 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:264)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:262)<tt><b>/@code</b>="73781-7" </tt><i>Maternal morbidity</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:262)<tt><b>/@code</b>="73781-7" </tt><i>Maternal morbidity</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:477)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records the nature of the maternal morbidity about which information is provided.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:265), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MaternalMorbidityNCHS.dita">Maternal Morbidity (NCHS)</xref> 2.16.840.1.114222.4.11.7119</tt><b> STATIC</b> December 1, 2013
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:265), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MaternalMorbidityNCHS.dita">Maternal Morbidity (NCHS)</xref> 2.16.840.1.114222.4.11.7119</tt><b> STATIC</b> December 1, 2013 (CONF:478)
 </li>
 </ol>
 <ol id="aggregate">
@@ -29,9 +29,9 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:264)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:262)<tt><b>/@code</b>="73781-7" </tt><i>Maternal morbidity</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:262)<tt><b>/@code</b>="73781-7" </tt><i>Maternal morbidity</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:477)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it records the nature of the maternal morbidity about which information is provided.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:265), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MaternalMorbidityNCHS.dita">Maternal Morbidity (NCHS)</xref> 2.16.840.1.114222.4.11.7119</tt><b> STATIC</b> December 1, 2013
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:265), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MaternalMorbidityNCHS.dita">Maternal Morbidity (NCHS)</xref> 2.16.840.1.114222.4.11.7119</tt><b> STATIC</b> December 1, 2013 (CONF:478)
 </li>
 </ol>
 <codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>

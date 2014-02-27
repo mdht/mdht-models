@@ -20,7 +20,14 @@
 <p audience="Examples"><b>Last Menstrual Period Date example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_LastMenstrualPeriodDate.dita#classId/example">
+<codeblock>
+<![CDATA[<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.33"/>
+							<code code="8665-2" displayName="Date last menstrual period" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="TS" value="20120401"/>
+						</observation>
+					</entry>]]>
 </codeblock>
 </body>
 </topic>

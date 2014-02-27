@@ -22,7 +22,14 @@
 <p audience="Examples"><b>Onset of Labor example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_OnsetOfLabor.dita#classId/example">
+<codeblock>
+<![CDATA[					<entry typeCode="COMP">
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.32"/>
+							<code code="73774-2" displayName="Onset of Labor" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="CD" code="260413007" displayName="None" codeSystem="2.16.840.1.113883.221.5" codeSystemName="HL70064"/>
+						</observation>
+					</entry>]]>
 </codeblock>
 </body>
 </topic>

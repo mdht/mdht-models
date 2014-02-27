@@ -22,7 +22,43 @@
 <p audience="Examples"><b>Method of Delivery example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_MethodOfDelivery.dita#classId/example">
+<codeblock>
+<![CDATA[<entry>
+								<procedure classCode="PROC" moodCode="EVN" negationInd="false">
+									<templateId root="2.16.840.1.113883.10.20.26.45"/>
+									<code code="72149-8" displayName="Delivery method" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="73761-9" displayName="Fetal presentation at birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+											<value xsi:type="CD" code="70028003" displayName="Vertex presentation" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="73762-7" displayName="Final route and method of delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+											<value xsi:type="CD" code="200144004" displayName="Deliveries by cesarean" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+											<entryRelationship typeCode="COMP">
+												<observation classCode="OBS" moodCode="EVN">
+													<code code="73760-1" displayName="If cesarean, a trial of labor was attempted" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+													<value xsi:type="BL" value="true"/>
+												</observation>
+											</entryRelationship>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="73762-7" displayName="Final route and method of delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+											<value xsi:type="CD" code="200144004" displayName="Deliveries by cesarean" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+											<entryRelationship typeCode="COMP">
+												<observation classCode="OBS" moodCode="EVN">
+													<code code="73759-3" displayName="Hysterotomy or hysterectomy was performed at delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+													<value xsi:type="BL" value="false"/>
+												</observation>
+											</entryRelationship>
+										</observation>
+									</entryRelationship>
+								</procedure>
+							</entry>]]>
 </codeblock>
 </body>
 </topic>

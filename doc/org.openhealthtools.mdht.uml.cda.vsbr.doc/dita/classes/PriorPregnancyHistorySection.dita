@@ -22,7 +22,52 @@
 <p audience="Examples"><b>Prior Pregnancy History Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_PriorPregnancyHistorySection.dita#classId/example">
+<codeblock>
+<![CDATA[<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.26.12"/>
+					<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="57073-9" displayName="Prenatal events"/>
+					<text>
+						...
+					</text>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.20"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.33"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.36"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.38"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.40"/>
+							...
+						</observation>
+					</entry>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.21"/>
+							...
+						</observation>
+					</entry>
+				</section>
+			</component>]]>
 </codeblock>
 </body>
 </topic>

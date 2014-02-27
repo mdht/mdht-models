@@ -20,7 +20,14 @@
 <p audience="Examples"><b>Maternal Transfer example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_MaternalTransfer.dita#classId/example">
+<codeblock>
+<![CDATA[							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.26.35"/>
+									<code code="73763-5" displayName="Mother was transferred for maternal medical or fetal indications for delivery" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<value xsi:type="BL" value="false"/>
+								</observation>
+							</entryRelationship>]]>
 </codeblock>
 </body>
 </topic>

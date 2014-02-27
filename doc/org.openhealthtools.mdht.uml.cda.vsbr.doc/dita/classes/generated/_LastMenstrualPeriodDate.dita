@@ -19,7 +19,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:226)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:225)<tt><b>/@code</b>="8665-2" </tt><i>Date last menstrual period</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:225)<tt><b>/@code</b>="8665-2" </tt><i>Date last menstrual period</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:466)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it contains the date of the last menstrual period.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:227)
 <ul><li><p><lines><i>The date the mother's last normal menstrual period began. (month, day and year.)</i></lines></p></li></ul></li>
@@ -29,7 +29,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:226)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:225)<tt><b>/@code</b>="8665-2" </tt><i>Date last menstrual period</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:225)<tt><b>/@code</b>="8665-2" </tt><i>Date last menstrual period</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:466)
 <ul><li><p><lines><i>A code value that indicates the nature of the observation - it contains the date of the last menstrual period.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:227)
 <ul><li><p><lines><i>The date the mother's last normal menstrual period began. (month, day and year.)</i></lines></p></li></ul></li>

@@ -22,7 +22,28 @@
 <p audience="Examples"><b>Fetal Delivery Time example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="Examples" conref="generated/_FetalDeliveryTime.dita#classId/example">
+<codeblock>
+<![CDATA[<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.23"/>
+							<code code="11778-8" displayName="Delivery date for patient selected by practitioner using all pertinent information" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<value xsi:type="TS" value="201301312330"/>
+							<participant typeCode="LOC">
+								<participantRole classCode="SDLOC">
+									<id root="2.16.840.1.113883.4.6" extension="6789012345"/>
+									<!-- In a normal instance, ID will be valued for birth in the hospital, but street address will not be provided.  In a home birth, there will be no
+										identifier, but street adddress is expected. -->
+									<code code="169813005" displayName="Home birth" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+									<addr>
+										<streetAddressLine>124 Main St</streetAddressLine>
+										<city>Anywhere</city>
+										<county>Metropolitan</county>
+										<postalCode>12345</postalCode>
+									</addr>
+								</participantRole>
+							</participant>
+						</observation>
+					</entry>]]>
 </codeblock>
 </body>
 </topic>
