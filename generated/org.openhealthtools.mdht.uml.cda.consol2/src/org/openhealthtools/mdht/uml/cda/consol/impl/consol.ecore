@@ -29191,4 +29191,336 @@
     <eOperations name="getHealthStatusEvaluationsOutcomesSection" ordered="false"
         lowerBound="1" eType="#//HealthStatusEvaluationsOutcomesSection"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReferralNote" eSuperTypes="#//USRealmHeader2">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ReferralNoteCode ReferralNoteCodeP ReferralNoteTitle ReferralNoteInformationRecipient ReferralNoteChiefComplaintAndReasonForVisitSection ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven ReferralNoteInformationRecipientIntendedRecipient ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP ReferralNoteParticipantCaregiverAssociatedEntityClassCode ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson ReferralNoteParticipantCaregiverNullFlavor ReferralNoteParticipantCaregiverAssociatedEntity ReferralNoteParticipantCallbackContactAssociatedEntityId ReferralNoteParticipantCallbackContactAssociatedEntityTelecom ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson ReferralNoteParticipantCallbackContactTypeCode ReferralNoteParticipantCallbackContactAssociatedEntity"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.14"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="code.codeSystemName" value="LOINC"/>
+      <details key="constraints.validation.dependOn.ReferralNoteCode" value="ReferralNoteCodeP"/>
+      <details key="constraints.validation.warning" value="ReferralNoteParticipantCaregiver ReferralNoteParticipantCallbackContact ReferralNoteInformationRecipientIntendedRecipientAddr ReferralNoteParticipantCallbackContactAssociatedEntityAddr"/>
+      <details key="constraints.validation.info" value="ReferralNoteChiefComplaintSection ReferralNoteInformationRecipientIntendedRecipientTelecom ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName ReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization"/>
+      <details key="constraints.validation.query" value="ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven ReferralNoteInformationRecipientIntendedRecipientAddr ReferralNoteInformationRecipientIntendedRecipientTelecom ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization ReferralNoteInformationRecipientIntendedRecipient ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP ReferralNoteParticipantCaregiverAssociatedEntityClassCode ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson ReferralNoteParticipantCaregiverNullFlavor ReferralNoteParticipantCaregiverAssociatedEntity ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName ReferralNoteParticipantCallbackContactAssociatedEntityId ReferralNoteParticipantCallbackContactAssociatedEntityAddr ReferralNoteParticipantCallbackContactAssociatedEntityTelecom ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson ReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization ReferralNoteParticipantCallbackContactTypeCode ReferralNoteParticipantCallbackContactAssociatedEntity"/>
+      <details key="constraints.validation.dependOn.ReferralNoteParticipantCaregiverAssociatedEntityClassCode"
+          value="ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipient">
+      <details key="constraints.validation.error" value="ReferralNoteInformationRecipientIntendedRecipient"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipientIntendedRecipient">
+      <details key="constraints.validation.warning" value="ReferralNoteInformationRecipientIntendedRecipientAddr"/>
+      <details key="constraints.validation.info" value="ReferralNoteInformationRecipientIntendedRecipientTelecom ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipientIntendedRecipientInformationRecipient2">
+      <details key="constraints.validation.error" value="ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven"/>
+      <details key="constraints.validation.query" value="ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ON">
+      <details key="constraints.validation.error" value="ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteParticipantCaregiver">
+      <details key="constraints.validation.error" value="ReferralNoteParticipantCaregiverNullFlavor ReferralNoteParticipantCaregiverAssociatedEntity"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteParticipantCaregiverAssociatedEntity">
+      <details key="constraints.validation.error" value="ReferralNoteParticipantCaregiverAssociatedEntityClassCode ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson"/>
+      <details key="constraints.validation.dependOn.ReferralNoteParticipantCaregiverAssociatedEntityClassCode"
+          value="ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson">
+      <details key="constraints.validation.error" value="ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteParticipantCallbackContact">
+      <details key="typeCode" value="CALLBCK"/>
+      <details key="constraints.validation.error" value="ReferralNoteParticipantCallbackContactTypeCode ReferralNoteParticipantCallbackContactAssociatedEntity"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteParticipantCallbackContactAssociatedEntity">
+      <details key="constraints.validation.error" value="ReferralNoteParticipantCallbackContactAssociatedEntityId ReferralNoteParticipantCallbackContactAssociatedEntityTelecom ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson"/>
+      <details key="constraints.validation.warning" value="ReferralNoteParticipantCallbackContactAssociatedEntityAddr"/>
+      <details key="constraints.validation.info" value="ReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson">
+      <details key="constraints.validation.info" value="ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName"/>
+    </eAnnotations>
+    <eAnnotations source="duplicates">
+      <contents xsi:type="ecore:EOperation" name="GeneralHeaderConstraintsTemplateId"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="redefines" references="#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId #//USRealmHeader2/%duplicates%/GeneralHeaderConstraintsTemplateId"/>
+        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+        <eParameters name="context">
+          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+      </contents>
+    </eAnnotations>
+    <eOperations name="ReferralNoteCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteTitle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteInformationRecipient" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCaregiver" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCallbackContact" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteChiefComplaintSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteChiefComplaintAndReasonForVisitSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteInformationRecipientIntendedRecipientAddr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteInformationRecipientIntendedRecipientTelecom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteInformationRecipientIntendedRecipient" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCaregiverAssociatedEntityClassCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCaregiverNullFlavor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCaregiverAssociatedEntity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCallbackContactAssociatedEntityId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCallbackContactAssociatedEntityAddr"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCallbackContactAssociatedEntityTelecom"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCallbackContactTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteParticipantCallbackContactAssociatedEntity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="getChiefComplaintSections" ordered="false" lowerBound="1" upperBound="-1"
+        eType="#//ChiefComplaintSection"/>
+    <eOperations name="getChiefComplaintAndReasonForVisitSection" ordered="false"
+        lowerBound="1" eType="#//ChiefComplaintAndReasonForVisitSection"/>
+  </eClassifiers>
 </ecore:EPackage>

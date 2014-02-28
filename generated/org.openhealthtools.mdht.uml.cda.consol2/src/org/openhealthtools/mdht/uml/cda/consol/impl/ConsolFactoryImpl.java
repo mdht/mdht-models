@@ -468,6 +468,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createUSRealmHeader2();
 			case ConsolPackage.CARE_PLAN:
 				return createCarePlan();
+			case ConsolPackage.REFERRAL_NOTE:
+				return createReferralNote();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2331,6 +2333,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public CarePlan createCarePlan() {
 		CarePlanImpl carePlan = new CarePlanImpl();
 		return carePlan;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReferralNote createReferralNote() {
+		ReferralNoteImpl referralNote = new ReferralNoteImpl();
+		return referralNote;
 	}
 
 	/**

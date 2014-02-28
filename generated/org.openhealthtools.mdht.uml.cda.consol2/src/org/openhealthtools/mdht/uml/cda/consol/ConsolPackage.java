@@ -46069,6 +46069,295 @@ public interface ConsolPackage extends EPackage {
 	int CARE_PLAN_FEATURE_COUNT = US_REALM_HEADER2_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ReferralNoteImpl <em>Referral Note</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ReferralNoteImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getReferralNote()
+	 * @generated
+	 */
+	int REFERRAL_NOTE = 204;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__REALM_CODE = US_REALM_HEADER2__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__TYPE_ID = US_REALM_HEADER2__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__TEMPLATE_ID = US_REALM_HEADER2__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__ID = US_REALM_HEADER2__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__CODE = US_REALM_HEADER2__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__TITLE = US_REALM_HEADER2__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__EFFECTIVE_TIME = US_REALM_HEADER2__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__CONFIDENTIALITY_CODE = US_REALM_HEADER2__CONFIDENTIALITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__LANGUAGE_CODE = US_REALM_HEADER2__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Set Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__SET_ID = US_REALM_HEADER2__SET_ID;
+
+	/**
+	 * The feature id for the '<em><b>Version Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__VERSION_NUMBER = US_REALM_HEADER2__VERSION_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Copy Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__COPY_TIME = US_REALM_HEADER2__COPY_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Record Target</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__RECORD_TARGET = US_REALM_HEADER2__RECORD_TARGET;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__AUTHOR = US_REALM_HEADER2__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Data Enterer</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__DATA_ENTERER = US_REALM_HEADER2__DATA_ENTERER;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__INFORMANT = US_REALM_HEADER2__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Custodian</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__CUSTODIAN = US_REALM_HEADER2__CUSTODIAN;
+
+	/**
+	 * The feature id for the '<em><b>Information Recipient</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__INFORMATION_RECIPIENT = US_REALM_HEADER2__INFORMATION_RECIPIENT;
+
+	/**
+	 * The feature id for the '<em><b>Legal Authenticator</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__LEGAL_AUTHENTICATOR = US_REALM_HEADER2__LEGAL_AUTHENTICATOR;
+
+	/**
+	 * The feature id for the '<em><b>Authenticator</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__AUTHENTICATOR = US_REALM_HEADER2__AUTHENTICATOR;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__PARTICIPANT = US_REALM_HEADER2__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__IN_FULFILLMENT_OF = US_REALM_HEADER2__IN_FULFILLMENT_OF;
+
+	/**
+	 * The feature id for the '<em><b>Documentation Of</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__DOCUMENTATION_OF = US_REALM_HEADER2__DOCUMENTATION_OF;
+
+	/**
+	 * The feature id for the '<em><b>Related Document</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__RELATED_DOCUMENT = US_REALM_HEADER2__RELATED_DOCUMENT;
+
+	/**
+	 * The feature id for the '<em><b>Authorization</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__AUTHORIZATION = US_REALM_HEADER2__AUTHORIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Component Of</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__COMPONENT_OF = US_REALM_HEADER2__COMPONENT_OF;
+
+	/**
+	 * The feature id for the '<em><b>Component</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__COMPONENT = US_REALM_HEADER2__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__NULL_FLAVOR = US_REALM_HEADER2__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__CLASS_CODE = US_REALM_HEADER2__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__MOOD_CODE = US_REALM_HEADER2__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Referral Note</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE_FEATURE_COUNT = US_REALM_HEADER2_FEATURE_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -47927,6 +48216,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getCarePlan();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote <em>Referral Note</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Referral Note</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ReferralNote
+	 * @generated
+	 */
+	EClass getReferralNote();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection <em>Medications Administered Section</em>}'.
@@ -49989,6 +50288,16 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass CARE_PLAN = eINSTANCE.getCarePlan();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ReferralNoteImpl <em>Referral Note</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ReferralNoteImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getReferralNote()
+		 * @generated
+		 */
+		EClass REFERRAL_NOTE = eINSTANCE.getReferralNote();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationsAdministeredSectionImpl <em>Medications Administered Section</em>}' class.
