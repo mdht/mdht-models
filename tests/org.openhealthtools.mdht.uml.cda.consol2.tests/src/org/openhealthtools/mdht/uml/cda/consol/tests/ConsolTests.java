@@ -96,7 +96,8 @@ import org.junit.runners.Suite;
 		SensoryAndSpeechStatusTest.class, SubstanceAdministeredActTest.class, WoundCharacteristicsTest.class,
 		WoundMeasurementObservationTest.class, WoundObservationTest.class, GoalsSectionTest.class,
 		HealthConcernsSectionTest.class, HealthStatusEvaluationsOutcomesSectionTest.class,
-		MentalStatusSectionTest.class, NutritionSectionTest.class, PhysicalFindingsOfSkinSectionTest.class })
+		MentalStatusSectionTest.class, NutritionSectionTest.class, PhysicalFindingsOfSkinSectionTest.class,
+		CarePlanTest.class, ReferralNoteTest.class })
 public class ConsolTests {
 
 	/**
