@@ -1561,6 +1561,12 @@ Valueset Source: http://www.hl7.org/documentcenter/public/standards/vocabulary/v
       <ownedLiteral xmi:id="_1gleIJ8TEeOr4eM3k36wAg" name="APND"/>
       <ownedLiteral xmi:id="_3ySbAJ8TEeOr4eM3k36wAg" name="RPLC"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_lIHr8KAFEeOQs7VC4HptuQ" name="ReferralDocumentType">
+      <ownedComment xmi:id="_tTDtEKAFEeOQs7VC4HptuQ">
+        <body>A referral note provides a consulting physician specified patient information about the patient referred. Specific URL Pending&#xD;
+Valueset Source: http://www.loinc.org/</body>
+      </ownedComment>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3029,4 +3035,7 @@ Valueset Source: http://www.hl7.org/documentcenter/public/standards/vocabulary/v
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_1gleIZ8TEeOr4eM3k36wAg" conceptName="Append" base_EnumerationLiteral="_1gleIJ8TEeOr4eM3k36wAg"/>
   <term:ValueSetCode xmi:id="_3ySbAZ8TEeOr4eM3k36wAg" conceptName="Replace" base_EnumerationLiteral="_3ySbAJ8TEeOr4eM3k36wAg"/>
+  <term:ValueSetVersion xmi:id="_lIHr8aAFEeOQs7VC4HptuQ" identifier="2.16.840.1.113883.1.11.20.2.3" fullName="ReferralDocumentType" binding="Dynamic" base_Enumeration="_lIHr8KAFEeOQs7VC4HptuQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
 </xmi:XMI>
