@@ -1704,6 +1704,15 @@ public interface ConsolFactory extends EFactory {
 	CarePlan createCarePlan();
 
 	/**
+	 * Returns a new object of class '<em>Referral Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Referral Note</em>'.
+	 * @generated
+	 */
+	ReferralNote createReferralNote();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

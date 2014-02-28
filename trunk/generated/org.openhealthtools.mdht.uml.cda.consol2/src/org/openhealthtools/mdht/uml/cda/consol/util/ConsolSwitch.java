@@ -3982,6 +3982,29 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.REFERRAL_NOTE: {
+				ReferralNote referralNote = (ReferralNote) theEObject;
+				T result = caseReferralNote(referralNote);
+				if (result == null) {
+					result = caseUSRealmHeader2(referralNote);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(referralNote);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(referralNote);
+				}
+				if (result == null) {
+					result = caseAct(referralNote);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(referralNote);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -7286,6 +7309,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseCarePlan(CarePlan object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Referral Note</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Referral Note</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReferralNote(ReferralNote object) {
 		return null;
 	}
 
