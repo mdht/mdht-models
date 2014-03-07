@@ -11177,5 +11177,131 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ReferralNote/getChiefComplaintSections"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ReferralNote/getChiefComplaintAndReasonForVisitSection"/>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//TransferSummary">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantSupport">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantSupport/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantSupport/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContact">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContact/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContact/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryDocumentationOf">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOf/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOf/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryIIRoot">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryIIRoot/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryIIRoot/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportAssociatedEntityClassCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportAssociatedEntityClassCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportAssociatedEntityClassCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportAssociatedEntityClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportAssociatedEntityClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportAssociatedEntityClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportAssociatedEntityAssociatedPerson">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportAssociatedEntityAssociatedPerson/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportAssociatedEntityAssociatedPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportAssociatedEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportAssociatedEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantSupportAssociatedEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityAddr">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityAddr/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityAddr/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityTelecom">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityTelecom/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityTelecom/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryParticipantCallbackContactAssociatedEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventPerformerAssignedEntityId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventPerformerAssignedEntityId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventPerformerAssignedEntityId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventPerformerAssignedEntityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventPerformerAssignedEntityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventPerformerAssignedEntityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventPerformerTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventPerformerTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventPerformerTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventPerformerAssignedEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventPerformerAssignedEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventPerformerAssignedEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventPerformer1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventPerformer1/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEventPerformer1/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEvent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEvent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEvent/context"/>
+      </genOperations>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

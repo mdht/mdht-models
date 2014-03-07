@@ -4005,6 +4005,29 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.TRANSFER_SUMMARY: {
+				TransferSummary transferSummary = (TransferSummary) theEObject;
+				T result = caseTransferSummary(transferSummary);
+				if (result == null) {
+					result = caseUSRealmHeader2(transferSummary);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(transferSummary);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(transferSummary);
+				}
+				if (result == null) {
+					result = caseAct(transferSummary);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(transferSummary);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -7324,6 +7347,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseReferralNote(ReferralNote object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Transfer Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Transfer Summary</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTransferSummary(TransferSummary object) {
 		return null;
 	}
 

@@ -1357,6 +1357,13 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass transferSummaryEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicationsAdministeredSectionEClass = null;
 
 	/**
@@ -3984,6 +3991,19 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				204);
 		}
 		return referralNoteEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getTransferSummary() {
+		if (transferSummaryEClass == null) {
+			transferSummaryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				205);
+		}
+		return transferSummaryEClass;
 	}
 
 	/**
