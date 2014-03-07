@@ -470,6 +470,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createCarePlan();
 			case ConsolPackage.REFERRAL_NOTE:
 				return createReferralNote();
+			case ConsolPackage.TRANSFER_SUMMARY:
+				return createTransferSummary();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2343,6 +2345,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ReferralNote createReferralNote() {
 		ReferralNoteImpl referralNote = new ReferralNoteImpl();
 		return referralNote;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TransferSummary createTransferSummary() {
+		TransferSummaryImpl transferSummary = new TransferSummaryImpl();
+		return transferSummary;
 	}
 
 	/**

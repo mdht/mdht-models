@@ -1713,6 +1713,15 @@ public interface ConsolFactory extends EFactory {
 	ReferralNote createReferralNote();
 
 	/**
+	 * Returns a new object of class '<em>Transfer Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Transfer Summary</em>'.
+	 * @generated
+	 */
+	TransferSummary createTransferSummary();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
