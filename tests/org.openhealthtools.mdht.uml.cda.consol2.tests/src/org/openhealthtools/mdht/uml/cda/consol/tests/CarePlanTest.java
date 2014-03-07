@@ -620,7 +620,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getId().setRoot("idElementMustExistOnly");
+				target.getId().setRoot("HasARoot");
 			}
 
 			@Override
