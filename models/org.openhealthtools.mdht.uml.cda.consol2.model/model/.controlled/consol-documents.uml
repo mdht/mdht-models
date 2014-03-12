@@ -7288,4 +7288,942 @@ The performer(s) represents the healthcare providers involved in the current or 
   <CDA:ConstraintValidation xmi:id="_NoqdAKWZEeOPqKnBFQcY_A" base_Constraint="_NBehMKWZEeOPqKnBFQcY_A">
     <ruleId>CONF:31583</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_OA1xkKi8EeOTwZftO6CV5g" name="USRealmHeaderPatientGeneratedDocument">
+    <ownedComment xmi:id="_YjwhQKi9EeOTwZftO6CV5g">
+      <body>The US Realm Patient Generated Document header template must conform to the Universal Realm Patient Generated Document header template. This template is designed to be used in conjunction with the US C-CDA General Header. It includes additional conformances which further constrain the US C-CDA General Header.</body>
+    </ownedComment>
+    <generalization xmi:id="_OA2_sKi8EeOTwZftO6CV5g" general="_dduXkJ5OEeOr4eM3k36wAg"/>
+    <ownedAttribute xmi:id="_JSH7EKk9EeOTwZftO6CV5g" name="recordTarget" type="_ctd5cKk9EeOTwZftO6CV5g" association="_JSJwQKk9EeOTwZftO6CV5g">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lv0skKk9EeOTwZftO6CV5g" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lv1ToKk9EeOTwZftO6CV5g" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NI1KQKlmEeO4L-NdFOGFPw" name="author" type="_VlzWkKlmEeO4L-NdFOGFPw" association="_NI2_cKlmEeO4L-NdFOGFPw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PdxoYKlmEeO4L-NdFOGFPw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PdxoYalmEeO4L-NdFOGFPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WhLAYKlrEeO4L-NdFOGFPw" name="dataEnterer" type="_iLNloKlrEeO4L-NdFOGFPw" association="_WhMOgKlrEeO4L-NdFOGFPw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X8HUYKlrEeO4L-NdFOGFPw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X8H7cKlrEeO4L-NdFOGFPw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Gf0KsKltEeO4L-NdFOGFPw" name="informant" type="_jpSbQKltEeO4L-NdFOGFPw" association="_Gf1_4KltEeO4L-NdFOGFPw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TJuRgKltEeO4L-NdFOGFPw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TJu4kKltEeO4L-NdFOGFPw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MoCbQKlvEeO4L-NdFOGFPw" name="custodian" type="_aXueYKlvEeO4L-NdFOGFPw" association="_MoDpYKlvEeO4L-NdFOGFPw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OdtjcKlvEeO4L-NdFOGFPw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OdtjcalvEeO4L-NdFOGFPw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_W0C4EKl2EeO4L-NdFOGFPw" name="informationRecipient" type="_dKD-8Kl2EeO4L-NdFOGFPw" association="_W0EtQKl2EeO4L-NdFOGFPw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W0C4Eql2EeO4L-NdFOGFPw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W0C4Eal2EeO4L-NdFOGFPw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vJs-4Kl3EeO4L-NdFOGFPw" name="legalAuthenticator" type="_3qgiUKl3EeO4L-NdFOGFPw" association="_vJu0EKl3EeO4L-NdFOGFPw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtg7AKl3EeO4L-NdFOGFPw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wthiEKl3EeO4L-NdFOGFPw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NZYXoKl6EeO4L-NdFOGFPw" name="authenticator" type="_TN57AKl6EeO4L-NdFOGFPw" association="_NZaM0Kl6EeO4L-NdFOGFPw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NZY-sKl6EeO4L-NdFOGFPw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NZYXoal6EeO4L-NdFOGFPw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_4E5W0Kn8EeO4L-NdFOGFPw" name="participant" type="_Q7gEAKn9EeO4L-NdFOGFPw" association="_4E7zEKn8EeO4L-NdFOGFPw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4E6k8an8EeO4L-NdFOGFPw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4E6k8Kn8EeO4L-NdFOGFPw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_cT0fwKoAEeO4L-NdFOGFPw" name="inFulfillmentOf" type="_jQUX0KoAEeO4L-NdFOGFPw" association="_cT2U8KoAEeO4L-NdFOGFPw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cT1G0KoAEeO4L-NdFOGFPw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cT0fwaoAEeO4L-NdFOGFPw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_to_J4KoCEeO4L-NdFOGFPw" name="documentationOf" type="_0f1s8KoCEeO4L-NdFOGFPw" association="_tpA_EKoCEeO4L-NdFOGFPw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_to_w8aoCEeO4L-NdFOGFPw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_to_w8KoCEeO4L-NdFOGFPw"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_ctd5cKk9EeOTwZftO6CV5g" name="RecordTarget">
+      <ownedComment xmi:id="_fOBKoKk9EeOTwZftO6CV5g">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedComment xmi:id="_hP7_EKk9EeOTwZftO6CV5g">
+        <body>recordTarget&#xD;
+The recordTarget records the patient whose health information is described by the clinical document; each recordTarget must contain at least one patientRole element. If the document receiver is interested in setting up a translator for the encounter with the patient, the receiver of the document will have to infer the need for a translator, based upon the language skills identified for the patient, the patients language of preference and the predominant language used by the organization receiving the CDA.&#xD;
+The patient MAY include 0..] guardian(s). When that role is present, it SHOULD include a code element. The guardian/code element encodes the relationship between the person in the role of guardian and the patient.&#xD;
+Does the patient/guardian role refer to legal guardian?  &#xD;
+HL7 Vocabulary simply describes guardian as a relationship to a ward.  This need not be a formal legal relationship. &#xD;
+If legal guardian exists for the patient, should it be included or only if they are &quot;present&quot; for the generation of the PGD? &#xD;
+When a guardian relationship exists for the patient, it may be represented, regardless of who is present at the time the document is generated. &#xD;
+Examples for the use of the patient/guardian role:&#xD;
+A child's parent MAY be represented in the guardian role.  In this case, the guardian/code element would encode the personal relationship of &quot;mother&quot; for the child's mom or &quot;father&quot; for the child's dad.&#xD;
+An elderly person's child MAY be represented in the guardian role. In this case, the guardian/code element would encode the personal relationship of &quot;daughter&quot; or &quot;son&quot;, or if a legal relationship existed, the relationship of &quot;legal guardian&quot; could be encoded.</body>
+      </ownedComment>
+      <generalization xmi:id="_cteggKk9EeOTwZftO6CV5g">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CVzT8EALEd6wZe6nFLrjsw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_rO90AKk9EeOTwZftO6CV5g" name="patientRole" type="_zjgdEKk9EeOTwZftO6CV5g" association="_rO_pMKk9EeOTwZftO6CV5g">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tbiZQKk9EeOTwZftO6CV5g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tbiZQak9EeOTwZftO6CV5g" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_zjgdEKk9EeOTwZftO6CV5g" name="PatientRole">
+        <generalization xmi:id="_zjgdEak9EeOTwZftO6CV5g">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_OApKcEALEd6wZe6nFLrjsw"/>
+        </generalization>
+        <ownedAttribute xmi:id="_1G2fIKk9EeOTwZftO6CV5g" name="id" visibility="private" type="_NIXXYKk-EeOTwZftO6CV5g" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1G2fIak9EeOTwZftO6CV5g" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1G2fIqk9EeOTwZftO6CV5g" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_detJUErfEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_LVPy8KlJEeOTwZftO6CV5g" name="patient" type="_lQMSAKlJEeOTwZftO6CV5g" association="_LVRBEKlJEeOTwZftO6CV5g">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OswhUKlJEeOTwZftO6CV5g" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OsxIYKlJEeOTwZftO6CV5g" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_8cVNMKlkEeO4L-NdFOGFPw" name="providerOrganization" association="_8cXCYKlkEeO4L-NdFOGFPw">
+          <ownedComment xmi:id="_nfNdkKllEeO4L-NdFOGFPw">
+            <body>If present, this organization represents the provider organization where the person is claiming to be a patient.&#xD;
+Note: If present, this organization represents the provider organization where the person is claiming to be a patient.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zjKW8EcZEd6besF9iFIJkQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AxpnoKllEeO4L-NdFOGFPw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AxpnoallEeO4L-NdFOGFPw"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_NIXXYKk-EeOTwZftO6CV5g" name="II">
+          <ownedComment xmi:id="_RzxWkKk-EeOTwZftO6CV5g">
+            <body>The combination of the @root and @extension attributes record the person's identity in a secure, trusted, and unique way.</body>
+          </ownedComment>
+          <generalization xmi:id="_NIX-cKk-EeOTwZftO6CV5g">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          </generalization>
+          <ownedAttribute xmi:id="_Ps8M86k-EeOTwZftO6CV5g" name="root" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y0XEcKk-EeOTwZftO6CV5g" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y0XrgKk-EeOTwZftO6CV5g" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_hVUykDxaEd6JwqSGecoePg"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Ps8M8Kk-EeOTwZftO6CV5g" name="extension" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_d4N5sEQ3EeCldOpAaJlPmA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ps8M8ak-EeOTwZftO6CV5g" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ps8M8qk-EeOTwZftO6CV5g"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iX7fEDxaEd6JwqSGecoePg"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_lQMSAKlJEeOTwZftO6CV5g" name="Patient">
+          <generalization xmi:id="_lQM5EKlJEeOTwZftO6CV5g">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mxsCMEALEd6wZe6nFLrjsw"/>
+          </generalization>
+          <ownedAttribute xmi:id="_qbOzgKlJEeOTwZftO6CV5g" name="guardian" type="_zuZA8KlJEeOTwZftO6CV5g" association="_qbR20KlJEeOTwZftO6CV5g">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qbOzgqlJEeOTwZftO6CV5g" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qbOzgalJEeOTwZftO6CV5g"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_avlGEKlhEeO4L-NdFOGFPw" name="languageCommunication" type="_l_etAKlhEeO4L-NdFOGFPw" association="_avto8KlhEeO4L-NdFOGFPw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_avrzwKlhEeO4L-NdFOGFPw" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_avrMsKlhEeO4L-NdFOGFPw"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_zuZA8KlJEeOTwZftO6CV5g" name="Guardian">
+            <generalization xmi:id="_zuZA8alJEeOTwZftO6CV5g">
+              <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_liVJMEcIEd6besF9iFIJkQ"/>
+            </generalization>
+            <ownedAttribute xmi:id="_1TWMkKlJEeOTwZftO6CV5g" name="id" visibility="private" type="_Jd4zQKlKEeOTwZftO6CV5g" aggregation="composite">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1TWMkalJEeOTwZftO6CV5g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1TWMkqlJEeOTwZftO6CV5g"/>
+              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ncAPQEo3Ed6c3qsAxlFHaQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_sGMrEKlKEeOTwZftO6CV5g" name="code" visibility="private" aggregation="composite">
+              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sGMrEalKEeOTwZftO6CV5g" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sGMrEqlKEeOTwZftO6CV5g"/>
+              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_pgeocEo3Ed6c3qsAxlFHaQ"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_Jd4zQKlKEeOTwZftO6CV5g" name="II">
+              <ownedComment xmi:id="_UR8LsKlKEeOTwZftO6CV5g">
+                <body>The combination of the @root and @extension attributes record the person's identity in a secure, trusted, and unique way.</body>
+              </ownedComment>
+              <generalization xmi:id="_Jd5aUKlKEeOTwZftO6CV5g">
+                <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+              </generalization>
+              <ownedAttribute xmi:id="_Lk3G0KlKEeOTwZftO6CV5g" name="root" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_adJJsKlKEeOTwZftO6CV5g" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_adJJsalKEeOTwZftO6CV5g" value="1"/>
+                <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_hVUykDxaEd6JwqSGecoePg"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Lk2fwKlKEeOTwZftO6CV5g" name="extension" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_d4N5sEQ3EeCldOpAaJlPmA"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lk2fwalKEeOTwZftO6CV5g" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lk2fwqlKEeOTwZftO6CV5g"/>
+                <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iX7fEDxaEd6JwqSGecoePg"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_l_etAKlhEeO4L-NdFOGFPw" name="LanguageCommunication">
+            <ownedRule xmi:id="_OqdccKljEeO4L-NdFOGFPw" name="ifMoreThanOneLangComm" constrainedElement="_l_etAKlhEeO4L-NdFOGFPw">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_VGnAgKljEeO4L-NdFOGFPw">
+                <language>Analysis</language>
+                <body>If more than one languageCommunication is present, only one languageCommunication element SHALL have a preferenceInd with a value of 1</body>
+              </specification>
+            </ownedRule>
+            <generalization xmi:id="_l_fUEKlhEeO4L-NdFOGFPw">
+              <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cHD44EcZEd6besF9iFIJkQ"/>
+            </generalization>
+            <ownedAttribute xmi:id="_nt1FMKlhEeO4L-NdFOGFPw" name="preferenceInd" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_xMR8oKlhEeO4L-NdFOGFPw">
+                <body>Note: Indicates a preference for information about care delivery and treatments be communicated (or translated if needed) into this language.</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nt1FMalhEeO4L-NdFOGFPw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nt1FMqlhEeO4L-NdFOGFPw"/>
+              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_pFayMEo5Ed6c3qsAxlFHaQ"/>
+            </ownedAttribute>
+          </nestedClassifier>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_VlzWkKlmEeO4L-NdFOGFPw" name="Author">
+      <ownedComment xmi:id="_YYij8KlmEeO4L-NdFOGFPw">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedComment xmi:id="_aKzLwKlmEeO4L-NdFOGFPw">
+        <body>author&#xD;
+The author element represents the creator of the clinical document.  The author may be a device, or a person. The person is the patient or the patient's advocate.</body>
+      </ownedComment>
+      <generalization xmi:id="_Vlz9oKlmEeO4L-NdFOGFPw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_qKrv4KlmEeO4L-NdFOGFPw" name="assignedAuthor" type="_wcg6UKlmEeO4L-NdFOGFPw" association="_qKtlEKlmEeO4L-NdFOGFPw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t3s0MKlmEeO4L-NdFOGFPw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t3s0MalmEeO4L-NdFOGFPw" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_wcg6UKlmEeO4L-NdFOGFPw" name="AssignedAuthor">
+        <generalization xmi:id="_wchhYKlmEeO4L-NdFOGFPw">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_z2vcQEcDEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_zsyYQKlmEeO4L-NdFOGFPw" name="id" visibility="private" type="__Wat0KlmEeO4L-NdFOGFPw" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zsyYQalmEeO4L-NdFOGFPw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zsyYQqlmEeO4L-NdFOGFPw" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_IccloEodEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_zsxxMKlmEeO4L-NdFOGFPw" name="code" visibility="private" type="_lC1aYKloEeO4L-NdFOGFPw" aggregation="composite">
+          <ownedComment xmi:id="_Pi9N4KlnEeO4L-NdFOGFPw">
+            <body>When the author is a person who is not acting in the role of a clinician, this code encodes the personal or legal relationship between author and the patient.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Toe40KlnEeO4L-NdFOGFPw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Toe40alnEeO4L-NdFOGFPw" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_LGBP8EodEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="__Wat0KlmEeO4L-NdFOGFPw" name="II">
+          <ownedComment xmi:id="_JbbO8KlnEeO4L-NdFOGFPw">
+            <body>The combination of the @root and @extension attributes record the person's identity in a secure, trusted, and unique way.</body>
+          </ownedComment>
+          <generalization xmi:id="__Wat0almEeO4L-NdFOGFPw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          </generalization>
+          <ownedAttribute xmi:id="__2HhkKlmEeO4L-NdFOGFPw" name="root" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__2HhkalmEeO4L-NdFOGFPw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__2HhkqlmEeO4L-NdFOGFPw"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_hVUykDxaEd6JwqSGecoePg"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_lC1aYKloEeO4L-NdFOGFPw" name="CE">
+          <ownedRule xmi:id="_6jDakKloEeO4L-NdFOGFPw" name="codeSystemAndTerminology" constrainedElement="_lC1aYKloEeO4L-NdFOGFPw">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_RmPpYKlpEeO4L-NdFOGFPw">
+              <language>Analysis</language>
+              <body>The code/@code SHOULD be selected from ValueSet Personal And Legal Relationship Role Type 2.16.840.1.113883.11.20.12.1</body>
+            </specification>
+          </ownedRule>
+          <generalization xmi:id="_lC2BcKloEeO4L-NdFOGFPw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          </generalization>
+          <ownedAttribute xmi:id="_sY3z0KloEeO4L-NdFOGFPw" name="code" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y2QG8KloEeO4L-NdFOGFPw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y2QG8aloEeO4L-NdFOGFPw" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_iLNloKlrEeO4L-NdFOGFPw" name="DataEnterer">
+      <ownedComment xmi:id="_kfR6AKlrEeO4L-NdFOGFPw">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedComment xmi:id="_lcHVsKlrEeO4L-NdFOGFPw">
+        <body>dataEnterer&#xD;
+The dataEnterer element represents the person who transferred the content, written or dictated by someone else, into the clinical document. The guiding rule of thumb is that an author provides the content found within the header or body of the document, subject to their own interpretation, and the dataEnterer adds that information to the electronic system. In other words, a dataEnterer transfers information from one source to another (e.g., transcription from paper form to electronic system). If the DataEnterer is missing, this role is assumed to be played by the Author.</body>
+      </ownedComment>
+      <generalization xmi:id="_iLNloalrEeO4L-NdFOGFPw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_twqZYEcEEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_0yaKQKlrEeO4L-NdFOGFPw" name="assignedEntity" type="_ARVEoKlsEeO4L-NdFOGFPw" association="_0yb_cKlrEeO4L-NdFOGFPw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2IfzcKlrEeO4L-NdFOGFPw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2IfzcalrEeO4L-NdFOGFPw" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_ARVEoKlsEeO4L-NdFOGFPw" name="AssignedEntity">
+        <generalization xmi:id="_ARVrsKlsEeO4L-NdFOGFPw">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_BP93IKlsEeO4L-NdFOGFPw" name="code" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BP93IalsEeO4L-NdFOGFPw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BP93IqlsEeO4L-NdFOGFPw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_jpSbQKltEeO4L-NdFOGFPw" name="Informant">
+      <ownedComment xmi:id="_nJaTEKltEeO4L-NdFOGFPw">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedComment xmi:id="_onc-YKltEeO4L-NdFOGFPw">
+        <body>informant&#xD;
+The informant element describes the source of the information in a medical document.&#xD;
+&#xD;
+Assigned health care providers may be a source of information when a document is created. (e.g., a nurse's aide who provides information about a recent significant health care event that occurred within an acute care facility.) In these cases, the assignedEntity element is used.&#xD;
+&#xD;
+When the informant is a personal relation, that informant is represented in the relatedEntity element, even if the personal relation is medical professional.  The code element of the relatedEntity describes the relationship between the informant and the patient. The relationship between the informant and the patient  needs to be described to help the receiver of the clinical document understand the information in the document.</body>
+      </ownedComment>
+      <generalization xmi:id="_jpTpYKltEeO4L-NdFOGFPw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_GUBDUEcZEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_x5r-wKltEeO4L-NdFOGFPw" name="relatedEntity" type="__9G2MKltEeO4L-NdFOGFPw" association="_x5tz8KltEeO4L-NdFOGFPw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z5kL0KltEeO4L-NdFOGFPw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z5ky4KltEeO4L-NdFOGFPw" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="__9G2MKltEeO4L-NdFOGFPw" name="RelatedEntity">
+        <ownedComment xmi:id="_Bc6cEKluEeO4L-NdFOGFPw">
+          <body>Note: Each informant can be either an assignedEntity (a clinician serving the patient) OR a relatedEntity (a person with a personal or legal relationship with the patient).</body>
+        </ownedComment>
+        <generalization xmi:id="__9HdQKltEeO4L-NdFOGFPw">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_e-h_0EcaEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_Abai0KluEeO4L-NdFOGFPw" name="code" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Abai0aluEeO4L-NdFOGFPw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Abai0qluEeO4L-NdFOGFPw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FfqSEErmEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_aXueYKlvEeO4L-NdFOGFPw" name="Custodian">
+      <ownedComment xmi:id="_cZ2uMKlvEeO4L-NdFOGFPw">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedComment xmi:id="_df_24KlvEeO4L-NdFOGFPw">
+        <body>custodian&#xD;
+The custodian element represents the organization or person that is in charge of maintaining the document. The custodian is the steward that is entrusted with the care of the document. Every CDA document has exactly one custodian. The custodian participation satisfies the CDA definition of Stewardship. Because CDA is an exchange standard and may not represent the original form of the authenticated document (e.g., CDA could include scanned copy of original), the custodian represents the steward of the original source document. The custodian may be the document originator, a health information exchange, or other responsible party. Also, the custodian may be the patient or an organization acting on behalf of the patient, such as a PHR organization.</body>
+      </ownedComment>
+      <generalization xmi:id="_aXvFcKlvEeO4L-NdFOGFPw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mMYIkEcEEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_kqAmgKlvEeO4L-NdFOGFPw" name="assignedCustodian" type="_wry9YKlvEeO4L-NdFOGFPw" association="_kqB0oKlvEeO4L-NdFOGFPw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nA6zgKlvEeO4L-NdFOGFPw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nA7akKlvEeO4L-NdFOGFPw" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_wry9YKlvEeO4L-NdFOGFPw" name="AssignedCustodian">
+        <generalization xmi:id="_wrzkcKlvEeO4L-NdFOGFPw">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1G6DoEcDEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_WERPsKlwEeO4L-NdFOGFPw" name="representedCustodianOrganization" type="_o9IzIKlwEeO4L-NdFOGFPw" association="_WETE4KlwEeO4L-NdFOGFPw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aLEF8KlwEeO4L-NdFOGFPw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aLEF8alwEeO4L-NdFOGFPw" value="1"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_o9IzIKlwEeO4L-NdFOGFPw" name="RepresentedCustodianOrganization">
+          <ownedComment xmi:id="_zJzbcKlwEeO4L-NdFOGFPw">
+            <body>The representedCustodianOrganization may be the person when the document is not maintained by an organization.</body>
+          </ownedComment>
+          <generalization xmi:id="_o9JaMKlwEeO4L-NdFOGFPw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_nNMFUEcEEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_tQ6VcKlwEeO4L-NdFOGFPw" name="id" visibility="private" type="_QOy0oKlxEeO4L-NdFOGFPw" aggregation="composite">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EBWAUKlxEeO4L-NdFOGFPw" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EBWAUalxEeO4L-NdFOGFPw" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BmgG4EowEd6c3qsAxlFHaQ"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_QOy0oKlxEeO4L-NdFOGFPw" name="II">
+            <ownedComment xmi:id="_YwlPgKlxEeO4L-NdFOGFPw">
+              <body>The combined @root and @extension attributes record the custodian organization's identity in a secure, trusted, and unique way.</body>
+            </ownedComment>
+            <generalization xmi:id="_QO0CwKlxEeO4L-NdFOGFPw">
+              <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+            </generalization>
+            <ownedAttribute xmi:id="_Qs5s8KlxEeO4L-NdFOGFPw" name="root" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Usd50KlxEeO4L-NdFOGFPw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Usd50alxEeO4L-NdFOGFPw" value="1"/>
+              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_hVUykDxaEd6JwqSGecoePg"/>
+            </ownedAttribute>
+          </nestedClassifier>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_dKD-8Kl2EeO4L-NdFOGFPw" name="InformationRecipient">
+      <ownedComment xmi:id="_ferF4Kl2EeO4L-NdFOGFPw">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedComment xmi:id="_h5gJkKl2EeO4L-NdFOGFPw">
+        <body>informationRecipient&#xD;
+The informationRecipient element records the intended recipient of the information at the time the document is created. For example, in cases where the intended recipient of the document is the patient's health chart, set the receivedOrganization to be the scoping organization for that chart.</body>
+      </ownedComment>
+      <generalization xmi:id="_dKEmAKl2EeO4L-NdFOGFPw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_I5t6QEcZEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_mH3ncKl2EeO4L-NdFOGFPw" name="intendedRecipient" type="_uYcWgKl2EeO4L-NdFOGFPw" association="_mH5coKl2EeO4L-NdFOGFPw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ni2-wKl2EeO4L-NdFOGFPw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ni3l0Kl2EeO4L-NdFOGFPw" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_uYcWgKl2EeO4L-NdFOGFPw" name="IntendedRecipient">
+        <generalization xmi:id="_uYc9kKl2EeO4L-NdFOGFPw">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_TWL5IEcZEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_vOlUUKl2EeO4L-NdFOGFPw" name="id" visibility="private" type="_EYRD0Kl3EeO4L-NdFOGFPw" aggregation="composite">
+          <ownedComment xmi:id="_-XAE8Kl2EeO4L-NdFOGFPw">
+            <body>The combined @root and @extension attributes to record the information recipient's identity in a secure, trusted, and unique way.</body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vOlUUal2EeO4L-NdFOGFPw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vOlUUql2EeO4L-NdFOGFPw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__7V2gEo4Ed6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_EYRD0Kl3EeO4L-NdFOGFPw" name="II">
+          <ownedComment xmi:id="_S3GE4Kl3EeO4L-NdFOGFPw">
+            <body>For a provider, the id/@root =&quot;2.16.840.1.113883.4.6&quot; indicates the National Provider Identifier where id/@extension is the NPI number for the provider.&#xD;
+The ids MAY reference the id of a person or organization entity specified elsewhere in the document.</body>
+          </ownedComment>
+          <generalization xmi:id="_EYSR8Kl3EeO4L-NdFOGFPw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          </generalization>
+          <ownedAttribute xmi:id="_FGXf8Kl3EeO4L-NdFOGFPw" name="root" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FGXf8al3EeO4L-NdFOGFPw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FGXf8ql3EeO4L-NdFOGFPw"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_hVUykDxaEd6JwqSGecoePg"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_3qgiUKl3EeO4L-NdFOGFPw" name="LegalAuthenticator">
+      <ownedComment xmi:id="_6M6NoKl3EeO4L-NdFOGFPw">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedComment xmi:id="_7SFtAKl3EeO4L-NdFOGFPw">
+        <body>legalAuthenticator&#xD;
+In a patient authored document, the legalAuthenticator identifies the single person legally responsible for the document and must be present if the document has been legally authenticated. (Note that per the following section, there may also be one or more document authenticators.) &#xD;
+Based on local practice, patient authored documents may be provided without legal authentication. This implies that a patient authored document that does not contain this element has not been legally authenticated.&#xD;
+The act of legal authentication requires a certain privilege be granted to the legal authenticator depending upon local policy. All patient documents have the potential for legal authentication, given the appropriate legal authority.&#xD;
+Local policies MAY choose to delegate the function of legal authentication to a device or system that generates the document. In these cases, the legal authenticator is the person accepting responsibility for the document, not the generating device or system.&#xD;
+Note that the legal authenticator, if present, must be a person.</body>
+      </ownedComment>
+      <generalization xmi:id="_3qhJYKl3EeO4L-NdFOGFPw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fcTWYEcZEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_D5UokKl4EeO4L-NdFOGFPw" name="assignedEntity" type="_L8M54Kl4EeO4L-NdFOGFPw" association="_D5VPoKl4EeO4L-NdFOGFPw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fy2WAKl4EeO4L-NdFOGFPw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fy2WAal4EeO4L-NdFOGFPw" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_L8M54Kl4EeO4L-NdFOGFPw" name="AssignedEntity">
+        <generalization xmi:id="_L8OIAKl4EeO4L-NdFOGFPw">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_NYPaEKl4EeO4L-NdFOGFPw" name="id" visibility="private" aggregation="composite">
+          <ownedComment xmi:id="_c4TOoKl4EeO4L-NdFOGFPw">
+            <body>The combined @root and @extension  attributes to record the information recipient's identity in a secure, trusted, and unique way.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NYPaEal4EeO4L-NdFOGFPw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NYPaEql4EeO4L-NdFOGFPw" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_NYOzAKl4EeO4L-NdFOGFPw" name="code" visibility="private" type="_j8secKl4EeO4L-NdFOGFPw" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NYOzAal4EeO4L-NdFOGFPw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NYOzAql4EeO4L-NdFOGFPw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_j8secKl4EeO4L-NdFOGFPw" name="CE">
+          <ownedRule xmi:id="_w1FGIKl4EeO4L-NdFOGFPw" name="codeSystemAndTerminology" constrainedElement="_j8secKl4EeO4L-NdFOGFPw">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_2vi5cKl4EeO4L-NdFOGFPw">
+              <language>Analysis</language>
+              <body>The code/@code SHOULD be selected from ValueSet Personal And Legal Relationship Role Type 2.16.840.1.113883.11.20.12.1</body>
+            </specification>
+          </ownedRule>
+          <generalization xmi:id="_j8tFgKl4EeO4L-NdFOGFPw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          </generalization>
+          <ownedAttribute xmi:id="_oCUQAKl4EeO4L-NdFOGFPw" name="code" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oCUQAal4EeO4L-NdFOGFPw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oCUQAql4EeO4L-NdFOGFPw"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_TN57AKl6EeO4L-NdFOGFPw" name="Authenticator">
+      <ownedComment xmi:id="_VKXAoKl6EeO4L-NdFOGFPw">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedComment xmi:id="_WkcZAKl6EeO4L-NdFOGFPw">
+        <body>authenticator</body>
+      </ownedComment>
+      <generalization xmi:id="_TN6iEKl6EeO4L-NdFOGFPw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BkHyQEcEEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_a_ox8Kl6EeO4L-NdFOGFPw" name="assignedEntity" type="_0u7aoKl6EeO4L-NdFOGFPw" association="_a_qnIKl6EeO4L-NdFOGFPw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cGdQEKl6EeO4L-NdFOGFPw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cGd3IKl6EeO4L-NdFOGFPw" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_0u7aoKl6EeO4L-NdFOGFPw" name="AssignedEntity">
+        <generalization xmi:id="_0u8owKl6EeO4L-NdFOGFPw">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_2K3NI6l6EeO4L-NdFOGFPw" name="id" visibility="private" aggregation="composite">
+          <ownedComment xmi:id="_CT-UAKl7EeO4L-NdFOGFPw">
+            <body>The combined @root and @extension  attributes to record the authenticator's identity in a secure, trusted, and unique way.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2K3NJKl6EeO4L-NdFOGFPw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2K3NJal6EeO4L-NdFOGFPw" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_2K3NIKl6EeO4L-NdFOGFPw" name="code" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2K3NIal6EeO4L-NdFOGFPw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2K3NIql6EeO4L-NdFOGFPw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_Q7gEAKn9EeO4L-NdFOGFPw" name="Participant">
+      <ownedComment xmi:id="_UIGi4Kn9EeO4L-NdFOGFPw">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedComment xmi:id="_d3c9EKn9EeO4L-NdFOGFPw">
+        <body>participant&#xD;
+The participant element identifies other supporting participants, including parents, relatives, caregivers, insurance policyholders, guarantors, and other participants related in some way to the patient. &#xD;
+A supporting person or organization is an individual or an organization with a relationship to the patient. A supporting person who is playing multiple roles would be recorded in multiple participants (e.g., emergency contact and next-of-kin)</body>
+      </ownedComment>
+      <ownedRule xmi:id="_0B3UUKn-EeO4L-NdFOGFPw" name="ifTypeCodeINDThenAEClassCodeFromINDRoleclassCodes" constrainedElement="_Q7gEAKn9EeO4L-NdFOGFPw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_OUy1kKn_EeO4L-NdFOGFPw">
+          <language>Analysis</language>
+          <body>Unless otherwise specified by the document specific header constraints, when participant/@typeCode is IND, associatedEntity/@classCode SHALL be selected from ValueSet 2.16.840.1.113883.11.20.9.33 INDRoleclassCodes STATIC 2011-09-30</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_Q7grEKn9EeO4L-NdFOGFPw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_4_GbMEcZEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_SMoUsKn9EeO4L-NdFOGFPw" name="typeCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bmsJsErdEd6FXKclYGEDCw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_v-uEcKn9EeO4L-NdFOGFPw" name="associatedEntity" type="_A-NEYKn-EeO4L-NdFOGFPw" association="_v-v5oKn9EeO4L-NdFOGFPw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9rqVkKn9EeO4L-NdFOGFPw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9rq8oKn9EeO4L-NdFOGFPw" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_A-NEYKn-EeO4L-NdFOGFPw" name="AssociatedEntity">
+        <generalization xmi:id="_A-OSgKn-EeO4L-NdFOGFPw">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_8OcHAEcDEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_BdoLUKn-EeO4L-NdFOGFPw" name="code" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BdoLUan-EeO4L-NdFOGFPw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BdoLUqn-EeO4L-NdFOGFPw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9XNrsEoeEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_jQUX0KoAEeO4L-NdFOGFPw" name="InFulfillmentOf">
+      <ownedComment xmi:id="_lYHKwKoAEeO4L-NdFOGFPw">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedComment xmi:id="_mWs58KoAEeO4L-NdFOGFPw">
+        <body>inFulfillmentOf</body>
+      </ownedComment>
+      <generalization xmi:id="_jQVl8KoAEeO4L-NdFOGFPw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Li14oEcZEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_q5kBIKoAEeO4L-NdFOGFPw" name="order" type="_KAD_EKoBEeO4L-NdFOGFPw" association="_q5l2UKoAEeO4L-NdFOGFPw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t54XgKoAEeO4L-NdFOGFPw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t56MsKoAEeO4L-NdFOGFPw" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_KAD_EKoBEeO4L-NdFOGFPw" name="Order">
+        <generalization xmi:id="_KAFNMKoBEeO4L-NdFOGFPw">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vgekoEcZEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_KSmgkKoBEeO4L-NdFOGFPw" name="id" visibility="private" aggregation="composite">
+          <ownedComment xmi:id="_a1RBoKoBEeO4L-NdFOGFPw">
+            <body>A scheduled appointment or service event in a practice management system may be represented using this id element.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KSmgkaoBEeO4L-NdFOGFPw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KSmgkqoBEeO4L-NdFOGFPw" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_XKImMEraEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_0f1s8KoCEeO4L-NdFOGFPw" name="DocumentationOf">
+      <ownedComment xmi:id="_4hsY0KoCEeO4L-NdFOGFPw">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_0f2UAKoCEeO4L-NdFOGFPw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1fhigEcEEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_8FAukKoCEeO4L-NdFOGFPw" name="serviceEvent" type="_ECzrkKoDEeO4L-NdFOGFPw" association="_8FB8sKoCEeO4L-NdFOGFPw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-PUqAKoCEeO4L-NdFOGFPw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-PVREKoCEeO4L-NdFOGFPw" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_ECzrkKoDEeO4L-NdFOGFPw" name="ServiceEvent">
+        <ownedComment xmi:id="_Vtm5YKoDEeO4L-NdFOGFPw">
+          <body>serviceEvent</body>
+        </ownedComment>
+        <generalization xmi:id="_EC05sKoDEeO4L-NdFOGFPw">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_lriDUEcaEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_ElQ4YKoDEeO4L-NdFOGFPw" name="code" visibility="private" aggregation="composite">
+          <ownedComment xmi:id="_qNyY4KoDEeO4L-NdFOGFPw">
+            <body>The code should be selected from a value set established by the document-level template for a specific type of Patient Generated Document.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ElQ4YaoDEeO4L-NdFOGFPw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ElQ4YqoDEeO4L-NdFOGFPw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_I4F7kEroEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_YkqJkKoEEeO4L-NdFOGFPw" name="performer" type="_qTzr4KoEEeO4L-NdFOGFPw" association="_Ykr-wKoEEeO4L-NdFOGFPw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YkqwoaoEEeO4L-NdFOGFPw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YkqwoKoEEeO4L-NdFOGFPw"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_qTzr4KoEEeO4L-NdFOGFPw" name="Performer">
+          <ownedComment xmi:id="_0OH_8KoEEeO4L-NdFOGFPw">
+            <body>performer&#xD;
+serviceEvent/performer represents the healthcare providers, allied health professionals or other individuals involved in the current or pertinent historical care of the patient during the time span covered by the document.</body>
+          </ownedComment>
+          <generalization xmi:id="_qT06AKoEEeO4L-NdFOGFPw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_ruikgKoEEeO4L-NdFOGFPw" name="functionCode" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_n81YAKoFEeO4L-NdFOGFPw">
+              <body>The functionCode SHALL be selected from value set ParticipationType 2.16.840.1.113883.1.11.10901&#xD;
+When indicating the performer was the primary care physician the functionCode shall be =&quot;PCP&quot;</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ruikgaoEEeO4L-NdFOGFPw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ruikgqoEEeO4L-NdFOGFPw"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_xEWTMErfEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_w8Nt0KoFEeO4L-NdFOGFPw" name="assignedEntity" type="_81NVEKoFEeO4L-NdFOGFPw" association="_w8PjAKoFEeO4L-NdFOGFPw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0lmPUKoFEeO4L-NdFOGFPw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0lm2YKoFEeO4L-NdFOGFPw" value="1"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_81NVEKoFEeO4L-NdFOGFPw" name="AssignedEntity">
+            <generalization xmi:id="_81OjMKoFEeO4L-NdFOGFPw">
+              <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
+            </generalization>
+            <ownedAttribute xmi:id="_-x8Hg6oFEeO4L-NdFOGFPw" name="id" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_GDtE8KoGEeO4L-NdFOGFPw">
+                <body>The combined @root and @extension attributes record the performer's identity in a secure, trusted, and unique way.</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-x8HhKoFEeO4L-NdFOGFPw" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-x8HhaoFEeO4L-NdFOGFPw" value="1"/>
+              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_-x8HgKoFEeO4L-NdFOGFPw" name="code" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_cfD3sKoGEeO4L-NdFOGFPw">
+                <body>If the assignedEntity is an individual, the code SHOULD be selected from value set PersonalandLegalRelationshipRoleType value set</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-x8HgaoFEeO4L-NdFOGFPw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-x8HgqoFEeO4L-NdFOGFPw"/>
+              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
+            </ownedAttribute>
+          </nestedClassifier>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_wTVxcKi8EeOTwZftO6CV5g" base_Class="_OA1xkKi8EeOTwZftO6CV5g" templateId="2.16.840.1.113883.10.20.29.1">
+    <ruleId>CONF:28458</ruleId>
+    <ruleId>CONF:28459</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="__XcCwKi8EeOTwZftO6CV5g" base_Generalization="_OA2_sKi8EeOTwZftO6CV5g"/>
+  <uml:Association xmi:id="_JSJwQKk9EeOTwZftO6CV5g" memberEnd="_JSH7EKk9EeOTwZftO6CV5g _JSKXUKk9EeOTwZftO6CV5g">
+    <ownedEnd xmi:id="_JSKXUKk9EeOTwZftO6CV5g" type="_OA1xkKi8EeOTwZftO6CV5g" association="_JSJwQKk9EeOTwZftO6CV5g"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_MMR_EKk9EeOTwZftO6CV5g" base_Association="_JSJwQKk9EeOTwZftO6CV5g">
+    <ruleId>CONF:28460</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_rO_pMKk9EeOTwZftO6CV5g" memberEnd="_rO90AKk9EeOTwZftO6CV5g _rPAQQKk9EeOTwZftO6CV5g">
+    <ownedEnd xmi:id="_rPAQQKk9EeOTwZftO6CV5g" type="_ctd5cKk9EeOTwZftO6CV5g" association="_rO_pMKk9EeOTwZftO6CV5g"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_sChX4Kk9EeOTwZftO6CV5g" base_Association="_rO_pMKk9EeOTwZftO6CV5g">
+    <ruleId>CONF:28461</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_3O6-4Kk9EeOTwZftO6CV5g" base_Property="_1G2fIKk9EeOTwZftO6CV5g">
+    <ruleId>CONF:28462</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_V8zogKk-EeOTwZftO6CV5g" severity="WARNING" base_Property="_Ps8M8Kk-EeOTwZftO6CV5g">
+    <ruleId>CONF:28464</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_XRrJsKk-EeOTwZftO6CV5g" base_Property="_Ps8M86k-EeOTwZftO6CV5g">
+    <ruleId>CONF:28463</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_LVRBEKlJEeOTwZftO6CV5g" memberEnd="_LVPy8KlJEeOTwZftO6CV5g _LVRBEalJEeOTwZftO6CV5g">
+    <ownedEnd xmi:id="_LVRBEalJEeOTwZftO6CV5g" type="_zjgdEKk9EeOTwZftO6CV5g" association="_LVRBEKlJEeOTwZftO6CV5g"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_NbH6UKlJEeOTwZftO6CV5g" base_Association="_LVRBEKlJEeOTwZftO6CV5g">
+    <ruleId>CONF:28465</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_qbR20KlJEeOTwZftO6CV5g" memberEnd="_qbOzgKlJEeOTwZftO6CV5g _qbSd4KlJEeOTwZftO6CV5g">
+    <ownedEnd xmi:id="_qbSd4KlJEeOTwZftO6CV5g" type="_lQMSAKlJEeOTwZftO6CV5g" association="_qbR20KlJEeOTwZftO6CV5g"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_sP2y0KlJEeOTwZftO6CV5g" severity="INFO" base_Association="_qbR20KlJEeOTwZftO6CV5g">
+    <ruleId>CONF:28469</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_43C80KlJEeOTwZftO6CV5g" severity="WARNING" base_Property="_1TWMkKlJEeOTwZftO6CV5g">
+    <ruleId>CONF:28470</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_awwCMKlKEeOTwZftO6CV5g" base_Property="_Lk3G0KlKEeOTwZftO6CV5g">
+    <ruleId>CONF:28471</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_jz42oKlKEeOTwZftO6CV5g" severity="WARNING" base_Property="_Lk2fwKlKEeOTwZftO6CV5g">
+    <ruleId>CONF:28472</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_tCAMAKlKEeOTwZftO6CV5g" severity="WARNING" base_Property="_sGMrEKlKEeOTwZftO6CV5g"/>
+  <CDA:ValueSetConstraint xmi:id="_xheoAKlKEeOTwZftO6CV5g" base_Property="_sGMrEKlKEeOTwZftO6CV5g">
+    <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+    <ruleId>CONF:28473</ruleId>
+  </CDA:ValueSetConstraint>
+  <uml:Association xmi:id="_avto8KlhEeO4L-NdFOGFPw" memberEnd="_avlGEKlhEeO4L-NdFOGFPw _avto8alhEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_avto8alhEeO4L-NdFOGFPw" type="_lQMSAKlJEeOTwZftO6CV5g" association="_avto8KlhEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_cHpFMKlhEeO4L-NdFOGFPw" severity="WARNING" base_Association="_avto8KlhEeO4L-NdFOGFPw">
+    <ruleId>CONF:28474</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_pIK8QKlhEeO4L-NdFOGFPw" severity="INFO" base_Property="_nt1FMKlhEeO4L-NdFOGFPw">
+    <ruleId>CONF:28475</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_QdcdAKljEeO4L-NdFOGFPw" base_Constraint="_OqdccKljEeO4L-NdFOGFPw"/>
+  <uml:Association xmi:id="_8cXCYKlkEeO4L-NdFOGFPw" memberEnd="_8cVNMKlkEeO4L-NdFOGFPw _8cXCYalkEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_8cXCYalkEeO4L-NdFOGFPw" type="_zjgdEKk9EeOTwZftO6CV5g" association="_8cXCYKlkEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_CmXGgKllEeO4L-NdFOGFPw" severity="INFO" base_Association="_8cXCYKlkEeO4L-NdFOGFPw">
+    <ruleId>CONF:28476</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_NI2_cKlmEeO4L-NdFOGFPw" memberEnd="_NI1KQKlmEeO4L-NdFOGFPw _NI2_calmEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_NI2_calmEeO4L-NdFOGFPw" type="_OA1xkKi8EeOTwZftO6CV5g" association="_NI2_cKlmEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_NsaYcKlmEeO4L-NdFOGFPw" base_Association="_NI2_cKlmEeO4L-NdFOGFPw">
+    <ruleId>CONF:28477</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_qKtlEKlmEeO4L-NdFOGFPw" memberEnd="_qKrv4KlmEeO4L-NdFOGFPw _qKtlEalmEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_qKtlEalmEeO4L-NdFOGFPw" type="_VlzWkKlmEeO4L-NdFOGFPw" association="_qKtlEKlmEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_scy8cKlmEeO4L-NdFOGFPw" base_Association="_qKtlEKlmEeO4L-NdFOGFPw">
+    <ruleId>CONF:28478</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_35r2gKlmEeO4L-NdFOGFPw" base_Property="_zsyYQKlmEeO4L-NdFOGFPw">
+    <ruleId>CONF:28479</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_By-P0KlnEeO4L-NdFOGFPw" severity="WARNING" base_Property="__2HhkKlmEeO4L-NdFOGFPw">
+    <ruleId>CONF:28480</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_S6oUUKlnEeO4L-NdFOGFPw" base_Property="_zsxxMKlmEeO4L-NdFOGFPw">
+    <ruleId>CONF:28481</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_xp8r4KloEeO4L-NdFOGFPw" base_Property="_sY3z0KloEeO4L-NdFOGFPw">
+    <ruleId>CONF:28676</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_7aQvYKloEeO4L-NdFOGFPw" severity="WARNING" base_Constraint="_6jDakKloEeO4L-NdFOGFPw">
+    <ruleId>CONF:28676</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_WhMOgKlrEeO4L-NdFOGFPw" memberEnd="_WhLAYKlrEeO4L-NdFOGFPw _WhMOgalrEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_WhMOgalrEeO4L-NdFOGFPw" type="_OA1xkKi8EeOTwZftO6CV5g" association="_WhMOgKlrEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_YUJZ4KlrEeO4L-NdFOGFPw" severity="INFO" base_Association="_WhMOgKlrEeO4L-NdFOGFPw">
+    <ruleId>CONF:28678</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_0yb_cKlrEeO4L-NdFOGFPw" memberEnd="_0yaKQKlrEeO4L-NdFOGFPw _0yb_calrEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_0yb_calrEeO4L-NdFOGFPw" type="_iLNloKlrEeO4L-NdFOGFPw" association="_0yb_cKlrEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_1TgFIKlrEeO4L-NdFOGFPw" base_Association="_0yb_cKlrEeO4L-NdFOGFPw">
+    <ruleId>CONF:28679</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_CrjEUKlsEeO4L-NdFOGFPw" severity="INFO" base_Property="_BP93IKlsEeO4L-NdFOGFPw"/>
+  <CDA:ValueSetConstraint xmi:id="_DrQ04KlsEeO4L-NdFOGFPw" base_Property="_BP93IKlsEeO4L-NdFOGFPw" severity="WARNING">
+    <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+    <ruleId>CONF:28680</ruleId>
+  </CDA:ValueSetConstraint>
+  <uml:Association xmi:id="_Gf1_4KltEeO4L-NdFOGFPw" memberEnd="_Gf0KsKltEeO4L-NdFOGFPw _Gf1_4altEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_Gf1_4altEeO4L-NdFOGFPw" type="_OA1xkKi8EeOTwZftO6CV5g" association="_Gf1_4KltEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_NYFDAKltEeO4L-NdFOGFPw" severity="INFO" base_Association="_Gf1_4KltEeO4L-NdFOGFPw">
+    <ruleId>CONF:28681</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_x5tz8KltEeO4L-NdFOGFPw" memberEnd="_x5r-wKltEeO4L-NdFOGFPw _x5tz8altEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_x5tz8altEeO4L-NdFOGFPw" type="_jpSbQKltEeO4L-NdFOGFPw" association="_x5tz8KltEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_yobUEKltEeO4L-NdFOGFPw" base_Association="_x5tz8KltEeO4L-NdFOGFPw">
+    <ruleId>CONF:28682</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_Kz2WQKluEeO4L-NdFOGFPw" severity="INFO" base_Property="_Abai0KluEeO4L-NdFOGFPw">
+    <ruleId>CONF:28683</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_OdG78KluEeO4L-NdFOGFPw" base_Property="_Abai0KluEeO4L-NdFOGFPw" severity="WARNING">
+    <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+    <ruleId>CONF:28684</ruleId>
+  </CDA:ValueSetConstraint>
+  <uml:Association xmi:id="_MoDpYKlvEeO4L-NdFOGFPw" memberEnd="_MoCbQKlvEeO4L-NdFOGFPw _MoEQcKlvEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_MoEQcKlvEeO4L-NdFOGFPw" type="_OA1xkKi8EeOTwZftO6CV5g" association="_MoDpYKlvEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_NN0B0KlvEeO4L-NdFOGFPw" base_Association="_MoDpYKlvEeO4L-NdFOGFPw">
+    <ruleId>CONF:28685</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_kqB0oKlvEeO4L-NdFOGFPw" memberEnd="_kqAmgKlvEeO4L-NdFOGFPw _kqCbsKlvEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_kqCbsKlvEeO4L-NdFOGFPw" type="_aXueYKlvEeO4L-NdFOGFPw" association="_kqB0oKlvEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_lOsA4KlvEeO4L-NdFOGFPw" base_Association="_kqB0oKlvEeO4L-NdFOGFPw">
+    <ruleId>CONF:28686</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_WETE4KlwEeO4L-NdFOGFPw" memberEnd="_WERPsKlwEeO4L-NdFOGFPw _WETE4alwEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_WETE4alwEeO4L-NdFOGFPw" type="_wry9YKlvEeO4L-NdFOGFPw" association="_WETE4KlwEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_XfKgYKlwEeO4L-NdFOGFPw" base_Association="_WETE4KlwEeO4L-NdFOGFPw">
+    <ruleId>CONF:28687</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_4P2vQKlwEeO4L-NdFOGFPw" base_Property="_tQ6VcKlwEeO4L-NdFOGFPw">
+    <ruleId>CONF:28688</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_TpnVsKlxEeO4L-NdFOGFPw" base_Property="_Qs5s8KlxEeO4L-NdFOGFPw">
+    <ruleId>CONF:28689</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_W0EtQKl2EeO4L-NdFOGFPw" memberEnd="_W0C4EKl2EeO4L-NdFOGFPw _W0EtQal2EeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_W0EtQal2EeO4L-NdFOGFPw" type="_OA1xkKi8EeOTwZftO6CV5g" association="_W0EtQKl2EeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_XbiV4Kl2EeO4L-NdFOGFPw" severity="INFO" base_Association="_W0EtQKl2EeO4L-NdFOGFPw">
+    <ruleId>CONF:28690</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_mH5coKl2EeO4L-NdFOGFPw" memberEnd="_mH3ncKl2EeO4L-NdFOGFPw _mH6DsKl2EeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_mH6DsKl2EeO4L-NdFOGFPw" type="_dKD-8Kl2EeO4L-NdFOGFPw" association="_mH5coKl2EeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_m3Fd4Kl2EeO4L-NdFOGFPw" base_Association="_mH5coKl2EeO4L-NdFOGFPw">
+    <ruleId>CONF:28691</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_wKAawKl2EeO4L-NdFOGFPw" severity="WARNING" base_Property="_vOlUUKl2EeO4L-NdFOGFPw">
+    <ruleId>CONF:28692</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_GE5kwKl3EeO4L-NdFOGFPw" severity="WARNING" base_Property="_FGXf8Kl3EeO4L-NdFOGFPw">
+    <ruleId>CONF:28693</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_vJu0EKl3EeO4L-NdFOGFPw" memberEnd="_vJs-4Kl3EeO4L-NdFOGFPw _vJu0Eal3EeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_vJu0Eal3EeO4L-NdFOGFPw" type="_OA1xkKi8EeOTwZftO6CV5g" association="_vJu0EKl3EeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_vrT3IKl3EeO4L-NdFOGFPw" severity="INFO" base_Association="_vJu0EKl3EeO4L-NdFOGFPw">
+    <ruleId>CONF:28694</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_D5VPoKl4EeO4L-NdFOGFPw" memberEnd="_D5UokKl4EeO4L-NdFOGFPw _D5V2sKl4EeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_D5V2sKl4EeO4L-NdFOGFPw" type="_3qgiUKl3EeO4L-NdFOGFPw" association="_D5VPoKl4EeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_E1QsYKl4EeO4L-NdFOGFPw" base_Association="_D5VPoKl4EeO4L-NdFOGFPw">
+    <ruleId>CONF:28695</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_RmT9AKl4EeO4L-NdFOGFPw" base_Property="_NYPaEKl4EeO4L-NdFOGFPw">
+    <ruleId>CONF:28696</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_VwA9UKl4EeO4L-NdFOGFPw" severity="INFO" base_Property="_NYOzAKl4EeO4L-NdFOGFPw">
+    <ruleId>CONF:28697</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_pakcYKl4EeO4L-NdFOGFPw" severity="INFO" base_Property="_oCUQAKl4EeO4L-NdFOGFPw">
+    <ruleId>CONF:28698</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_xbCS4Kl4EeO4L-NdFOGFPw" severity="WARNING" base_Constraint="_w1FGIKl4EeO4L-NdFOGFPw">
+    <ruleId>CONF:28698</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_NZaM0Kl6EeO4L-NdFOGFPw" memberEnd="_NZYXoKl6EeO4L-NdFOGFPw _NZaM0al6EeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_NZaM0al6EeO4L-NdFOGFPw" type="_OA1xkKi8EeOTwZftO6CV5g" association="_NZaM0Kl6EeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_OfbZsKl6EeO4L-NdFOGFPw" severity="INFO" base_Association="_NZaM0Kl6EeO4L-NdFOGFPw">
+    <ruleId>CONF:28699</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_a_qnIKl6EeO4L-NdFOGFPw" memberEnd="_a_ox8Kl6EeO4L-NdFOGFPw _a_rOMKl6EeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_a_rOMKl6EeO4L-NdFOGFPw" type="_TN57AKl6EeO4L-NdFOGFPw" association="_a_qnIKl6EeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_cXadMKl6EeO4L-NdFOGFPw" base_Association="_a_qnIKl6EeO4L-NdFOGFPw">
+    <ruleId>CONF:28700</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_4c4TEKl6EeO4L-NdFOGFPw" base_Property="_2K3NI6l6EeO4L-NdFOGFPw">
+    <ruleId>CONF:28701</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_50qlYKl6EeO4L-NdFOGFPw" severity="WARNING" base_Property="_2K3NIKl6EeO4L-NdFOGFPw"/>
+  <CDA:ValueSetConstraint xmi:id="_GupIgKl7EeO4L-NdFOGFPw" base_Property="_2K3NIKl6EeO4L-NdFOGFPw" severity="WARNING">
+    <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+    <ruleId>CONF:28702</ruleId>
+  </CDA:ValueSetConstraint>
+  <uml:Association xmi:id="_4E7zEKn8EeO4L-NdFOGFPw" memberEnd="_4E5W0Kn8EeO4L-NdFOGFPw _4E7zEan8EeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_4E7zEan8EeO4L-NdFOGFPw" type="_OA1xkKi8EeOTwZftO6CV5g" association="_4E7zEKn8EeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_6Hrt8Kn8EeO4L-NdFOGFPw" severity="INFO" base_Association="_4E7zEKn8EeO4L-NdFOGFPw">
+    <ruleId>CONF:28703</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_jJISEKn9EeO4L-NdFOGFPw" base_Property="_SMoUsKn9EeO4L-NdFOGFPw">
+    <ruleId>CONF:28704</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_v-v5oKn9EeO4L-NdFOGFPw" memberEnd="_v-uEcKn9EeO4L-NdFOGFPw _v-v5oan9EeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_v-v5oan9EeO4L-NdFOGFPw" type="_Q7gEAKn9EeO4L-NdFOGFPw" association="_v-v5oKn9EeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_6MAX0Kn9EeO4L-NdFOGFPw" base_Association="_v-v5oKn9EeO4L-NdFOGFPw">
+    <ruleId>CONF:28705</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_DXJRsKn-EeO4L-NdFOGFPw" severity="WARNING" base_Property="_BdoLUKn-EeO4L-NdFOGFPw"/>
+  <CDA:ValueSetConstraint xmi:id="_IySEsKn-EeO4L-NdFOGFPw" base_Property="_BdoLUKn-EeO4L-NdFOGFPw" severity="WARNING">
+    <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+    <ruleId>CONF:28706</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ConstraintValidation xmi:id="_O2OHoKn_EeO4L-NdFOGFPw" base_Constraint="_0B3UUKn-EeO4L-NdFOGFPw"/>
+  <uml:Association xmi:id="_cT2U8KoAEeO4L-NdFOGFPw" memberEnd="_cT0fwKoAEeO4L-NdFOGFPw _cT2U8aoAEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_cT2U8aoAEeO4L-NdFOGFPw" type="_OA1xkKi8EeOTwZftO6CV5g" association="_cT2U8KoAEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_c_ZMUKoAEeO4L-NdFOGFPw" severity="INFO" base_Association="_cT2U8KoAEeO4L-NdFOGFPw">
+    <ruleId>CONF:28707</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_q5l2UKoAEeO4L-NdFOGFPw" memberEnd="_q5kBIKoAEeO4L-NdFOGFPw _q5l2UaoAEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_q5l2UaoAEeO4L-NdFOGFPw" type="_jQUX0KoAEeO4L-NdFOGFPw" association="_q5l2UKoAEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_s_6poKoAEeO4L-NdFOGFPw" base_Association="_q5l2UKoAEeO4L-NdFOGFPw">
+    <ruleId>CONF:28708</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_MNZZUKoBEeO4L-NdFOGFPw" base_Property="_KSmgkKoBEeO4L-NdFOGFPw">
+    <ruleId>CONF:28709</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_tpA_EKoCEeO4L-NdFOGFPw" memberEnd="_to_J4KoCEeO4L-NdFOGFPw _tpBmIKoCEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_tpBmIKoCEeO4L-NdFOGFPw" type="_OA1xkKi8EeOTwZftO6CV5g" association="_tpA_EKoCEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_uX7TgKoCEeO4L-NdFOGFPw" severity="INFO" base_Association="_tpA_EKoCEeO4L-NdFOGFPw">
+    <ruleId>CONF:28710</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_8FB8sKoCEeO4L-NdFOGFPw" memberEnd="_8FAukKoCEeO4L-NdFOGFPw _8FCjwKoCEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_8FCjwKoCEeO4L-NdFOGFPw" type="_0f1s8KoCEeO4L-NdFOGFPw" association="_8FB8sKoCEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_8_tcQKoCEeO4L-NdFOGFPw" base_Association="_8FB8sKoCEeO4L-NdFOGFPw">
+    <ruleId>CONF:28711</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_F5CNYKoDEeO4L-NdFOGFPw" severity="WARNING" base_Property="_ElQ4YKoDEeO4L-NdFOGFPw">
+    <ruleId>CONF:28712</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_Ykr-wKoEEeO4L-NdFOGFPw" memberEnd="_YkqJkKoEEeO4L-NdFOGFPw _Ykr-waoEEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_Ykr-waoEEeO4L-NdFOGFPw" type="_ECzrkKoDEeO4L-NdFOGFPw" association="_Ykr-wKoEEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_bSS0gKoEEeO4L-NdFOGFPw" severity="WARNING" base_Association="_Ykr-wKoEEeO4L-NdFOGFPw">
+    <ruleId>CONF:28713</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_tcTG0KoEEeO4L-NdFOGFPw" severity="INFO" base_Property="_ruikgKoEEeO4L-NdFOGFPw"/>
+  <uml:Association xmi:id="_w8PjAKoFEeO4L-NdFOGFPw" memberEnd="_w8Nt0KoFEeO4L-NdFOGFPw _w8PjAaoFEeO4L-NdFOGFPw">
+    <ownedEnd xmi:id="_w8PjAaoFEeO4L-NdFOGFPw" type="_qTzr4KoEEeO4L-NdFOGFPw" association="_w8PjAKoFEeO4L-NdFOGFPw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_xscQ4KoFEeO4L-NdFOGFPw" base_Association="_w8PjAKoFEeO4L-NdFOGFPw">
+    <ruleId>CONF:28715</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_Bdw0kKoGEeO4L-NdFOGFPw" base_Property="_-x8Hg6oFEeO4L-NdFOGFPw">
+    <ruleId>CONF:28716</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_PXchMKoGEeO4L-NdFOGFPw" severity="INFO" base_Property="_-x8HgKoFEeO4L-NdFOGFPw"/>
+  <CDA:ValueSetConstraint xmi:id="_Ri1asKoGEeO4L-NdFOGFPw" base_Property="_-x8HgKoFEeO4L-NdFOGFPw" severity="WARNING">
+    <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+    <ruleId>CONF:28718</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_uJKakKoJEeO4L-NdFOGFPw" base_Property="_ruikgKoEEeO4L-NdFOGFPw">
+    <reference href="../consol-vocab.uml#_uGfWgKoIEeO4L-NdFOGFPw"/>
+    <ruleId>CONF:28714</ruleId>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>
