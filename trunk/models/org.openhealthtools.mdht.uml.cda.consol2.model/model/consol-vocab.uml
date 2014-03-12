@@ -1573,6 +1573,7 @@ Valueset Source: http://www.loinc.org/</body>
 Valueset Source: http://www.loinc.org/</body>
       </ownedComment>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_uGevcKoIEeO4L-NdFOGFPw" name="ParticipationType"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3033,7 +3034,7 @@ Valueset Source: http://www.loinc.org/</body>
   <term:ValueSetVersion xmi:id="_1Vl9MZqAEeOK6dzbL4VoTA" identifier="2.16.840.1.113883.1.11.20.2.6" fullName="Wound Type" binding="Dynamic" base_Enumeration="_1Vl9MJqAEeOK6dzbL4VoTA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_x4P9YZ6CEeOr4eM3k36wAg" identifier="2.16.840.1.113883.11.20.12.1" fullName="Personal And Legal Relationship Role Type" base_Enumeration="_x4P9YJ6CEeOr4eM3k36wAg">
+  <term:ValueSetVersion xmi:id="_x4P9YZ6CEeOr4eM3k36wAg" identifier="2.16.840.1.113883.11.20.12.1" fullName="Personal And Legal Relationship Role Type" binding="Dynamic" base_Enumeration="_x4P9YJ6CEeOr4eM3k36wAg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_pucs0J8TEeOr4eM3k36wAg" identifier="2.16.840.1.113883.11.20.9.62" fullName="Related Document (append/replace)" base_Enumeration="_pucFwJ8TEeOr4eM3k36wAg">
@@ -3046,5 +3047,8 @@ Valueset Source: http://www.loinc.org/</body>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2hwCcKDPEeOPqKnBFQcY_A" identifier="2.16.840.1.113883.1.11.20.2.4" fullName="TransferDocumentType" binding="Dynamic" base_Enumeration="_2htmMKDPEeOPqKnBFQcY_A">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_uGfWgKoIEeO4L-NdFOGFPw" identifier="2.16.840.1.113883.1.11.10901" fullName="ParticipationType" base_Enumeration="_uGevcKoIEeO4L-NdFOGFPw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Z0Bk4E6SEeC5ttwajeXVXg"/>
   </term:ValueSetVersion>
 </xmi:XMI>
