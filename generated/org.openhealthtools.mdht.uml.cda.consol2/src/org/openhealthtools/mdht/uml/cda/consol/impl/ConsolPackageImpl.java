@@ -1364,6 +1364,13 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass usRealmHeaderPatientGeneratedDocumentEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicationsAdministeredSectionEClass = null;
 
 	/**
@@ -4004,6 +4011,19 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				205);
 		}
 		return transferSummaryEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getUSRealmHeaderPatientGeneratedDocument() {
+		if (usRealmHeaderPatientGeneratedDocumentEClass == null) {
+			usRealmHeaderPatientGeneratedDocumentEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(206);
+		}
+		return usRealmHeaderPatientGeneratedDocumentEClass;
 	}
 
 	/**

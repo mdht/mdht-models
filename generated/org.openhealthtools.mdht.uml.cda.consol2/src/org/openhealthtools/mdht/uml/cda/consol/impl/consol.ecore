@@ -29889,4 +29889,843 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="USRealmHeaderPatientGeneratedDocument"
+      eSuperTypes="#//USRealmHeader2">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId USRealmHeaderPatientGeneratedDocumentRecordTarget USRealmHeaderPatientGeneratedDocumentAuthor USRealmHeaderPatientGeneratedDocumentCustodian USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity USRealmHeaderPatientGeneratedDocumentInformantRelatedEntity USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity USRealmHeaderPatientGeneratedDocumentParticipantTypeCode USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity USRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId USRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.29.1"/>
+      <details key="constraints.validation.info" value="USRealmHeaderPatientGeneratedDocumentDataEnterer USRealmHeaderPatientGeneratedDocumentInformant USRealmHeaderPatientGeneratedDocumentInformationRecipient USRealmHeaderPatientGeneratedDocumentLegalAuthenticator USRealmHeaderPatientGeneratedDocumentAuthenticator USRealmHeaderPatientGeneratedDocumentParticipant USRealmHeaderPatientGeneratedDocumentInFulfillmentOf USRealmHeaderPatientGeneratedDocumentDocumentationOf USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP"/>
+      <details key="constraints.validation.query" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode USRealmHeaderPatientGeneratedDocumentInformantRelatedEntity USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode USRealmHeaderPatientGeneratedDocumentParticipantTypeCode USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity USRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId USRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent"/>
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer"/>
+      <details key="constraints.validation.dependOn.USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode"
+          value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP"/>
+      <details key="constraints.validation.dependOn.USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode"
+          value="USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP"/>
+      <details key="constraints.validation.dependOn.USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode"
+          value="USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP"/>
+      <details key="constraints.validation.dependOn.USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode"
+          value="USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP"/>
+      <details key="constraints.validation.dependOn.USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode"
+          value="USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP"/>
+      <details key="constraints.validation.dependOn.USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode"
+          value="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP"/>
+      <details key="constraints.validation.dependOn.USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode"
+          value="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentRecordTarget">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot"/>
+      <details key="constraints.validation.info" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization"/>
+      <details key="constraints.validation.query" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension"/>
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleII">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot"/>
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient">
+      <details key="constraints.validation.info" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian"/>
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian">
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.5.111"/>
+      <details key="code.codeSystemName" value="RoleCode"/>
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot"/>
+      <details key="constraints.validation.dependOn.USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode"
+          value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP"/>
+      <details key="constraints.validation.query" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianII">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot"/>
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication">
+      <details key="constraints.validation.info" value="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentAuthor">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode"/>
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot"/>
+      <details key="constraints.validation.query" value="USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorII">
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCE">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentDataEnterer">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity">
+      <details key="code.codeSystem" value="2.16.840.1.113883.5.111"/>
+      <details key="code.codeSystemName" value="RoleCode"/>
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode"/>
+      <details key="constraints.validation.info" value="USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP"/>
+      <details key="constraints.validation.dependOn.USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode"
+          value="USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentInformant">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentInformantRelatedEntity"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntity">
+      <details key="code.codeSystem" value="2.16.840.1.113883.5.111"/>
+      <details key="code.codeSystemName" value="RoleCode"/>
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode"/>
+      <details key="constraints.validation.info" value="USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP"/>
+      <details key="constraints.validation.dependOn.USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode"
+          value="USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentCustodian">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot"/>
+      <details key="constraints.validation.query" value="USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationII">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentInformationRecipient">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient">
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot"/>
+      <details key="constraints.validation.query" value="USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientII">
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentLegalAuthenticator">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId"/>
+      <details key="constraints.validation.info" value="USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode"/>
+      <details key="constraints.validation.query" value="USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCE">
+      <details key="constraints.validation.info" value="USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentAuthenticator">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.5.111"/>
+      <details key="code.codeSystemName" value="RoleCode"/>
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP"/>
+      <details key="constraints.validation.dependOn.USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode"
+          value="USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentParticipant">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentParticipantTypeCode USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity">
+      <details key="code.codeSystem" value="2.16.840.1.113883.5.111"/>
+      <details key="code.codeSystemName" value="RoleCode"/>
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP"/>
+      <details key="constraints.validation.dependOn.USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode"
+          value="USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentInFulfillmentOf">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentDocumentationOf">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent">
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer">
+      <details key="functionCode.codeSystem" value="2.16.840.1.113883.5.90"/>
+      <details key="functionCode.codeSystemName" value="HL7ParticipationType"/>
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity"/>
+      <details key="constraints.validation.info" value="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP"/>
+      <details key="constraints.validation.dependOn.USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode"
+          value="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity">
+      <details key="constraints.validation.error" value="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.5.111"/>
+      <details key="code.codeSystemName" value="RoleCode"/>
+      <details key="constraints.validation.warning" value="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode"/>
+      <details key="constraints.validation.info" value="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP"/>
+      <details key="constraints.validation.dependOn.USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode"
+          value="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP"/>
+    </eAnnotations>
+    <eAnnotations source="duplicates">
+      <contents xsi:type="ecore:EOperation" name="GeneralHeaderConstraintsTemplateId"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="redefines" references="#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId #//USRealmHeader2/%duplicates%/GeneralHeaderConstraintsTemplateId"/>
+        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+        <eParameters name="context">
+          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+      </contents>
+    </eAnnotations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentRecordTarget" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentAuthor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentDataEnterer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentInformant" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentCustodian" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentInformationRecipient"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentLegalAuthenticator" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentAuthenticator" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentParticipant" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentInFulfillmentOf" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentDocumentationOf" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentInformantRelatedEntity"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentParticipantTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+  </eClassifiers>
 </ecore:EPackage>
