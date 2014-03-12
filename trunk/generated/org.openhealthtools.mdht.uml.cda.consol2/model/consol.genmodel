@@ -11303,5 +11303,271 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TransferSummary/TransferSummaryDocumentationOfServiceEvent/context"/>
       </genOperations>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//USRealmHeaderPatientGeneratedDocument">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTarget">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTarget/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTarget/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDataEnterer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDataEnterer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDataEnterer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformant">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformant/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformant/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentCustodian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentCustodian/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentCustodian/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformationRecipient">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformationRecipient/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformationRecipient/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentLegalAuthenticator">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentLegalAuthenticator/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentLegalAuthenticator/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthenticator">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthenticator/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthenticator/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipant">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipant/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipant/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInFulfillmentOf">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInFulfillmentOf/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInFulfillmentOf/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOf">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOf/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOf/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantRelatedEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantRelatedEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantRelatedEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent/context"/>
+      </genOperations>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

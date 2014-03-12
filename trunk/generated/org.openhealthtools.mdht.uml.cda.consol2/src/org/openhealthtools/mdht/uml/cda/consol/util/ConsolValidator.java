@@ -21995,12 +21995,548 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int TRANSFER_SUMMARY__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 2745;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Record Target' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET = 2746;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Author' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR = 2747;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Data Enterer' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER = 2748;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Informant' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT = 2749;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Custodian' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN = 2750;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Information Recipient' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT = 2751;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Legal Authenticator' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR = 2752;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Authenticator' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR = 2753;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Participant' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT = 2754;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document In Fulfillment Of' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_IN_FULFILLMENT_OF = 2755;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Documentation Of' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF = 2756;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Record Target Patient Role II Root' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_ROOT = 2757;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Record Target Patient Role II Extension' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_II_EXTENSION = 2758;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian II Root' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_ROOT = 2759;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian II Extension' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_II_EXTENSION = 2760;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian Id' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_ID = 2761;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian Code P' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P = 2762;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian Code' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE = 2763;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Language Communication Preference Ind' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_PREFERENCE_IND = 2764;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN = 2765;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Language Communication' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION = 2766;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Record Target Patient Role Id' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_ID = 2767;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Record Target Patient Role Patient' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT = 2768;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Record Target Patient Role Provider Organization' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION = 2769;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Record Target Patient Role' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE = 2770;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Author Assigned Author II Root' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_II_ROOT = 2771;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Author Assigned Author CE Code' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE = 2772;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Author Assigned Author Id' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_ID = 2773;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Author Assigned Author Code' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CODE = 2774;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Author Assigned Author' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR = 2775;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Data Enterer Assigned Entity Code P' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER_ASSIGNED_ENTITY_CODE_P = 2776;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Data Enterer Assigned Entity Code' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER_ASSIGNED_ENTITY_CODE = 2777;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Data Enterer Assigned Entity' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER_ASSIGNED_ENTITY = 2778;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Informant Related Entity Code P' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_RELATED_ENTITY_CODE_P = 2779;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Informant Related Entity Code' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_RELATED_ENTITY_CODE = 2780;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Informant Related Entity' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_RELATED_ENTITY = 2781;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Custodian Assigned Custodian Represented Custodian Organization II Root' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION_II_ROOT = 2782;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Custodian Assigned Custodian Represented Custodian Organization Id' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION_ID = 2783;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Custodian Assigned Custodian Represented Custodian Organization' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION = 2784;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Custodian Assigned Custodian' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN = 2785;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Information Recipient Intended Recipient II Root' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_II_ROOT = 2786;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Information Recipient Intended Recipient Id' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ID = 2787;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Information Recipient Intended Recipient' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT = 2788;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Legal Authenticator Assigned Entity CE Code' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE = 2789;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Legal Authenticator Assigned Entity Id' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ID = 2790;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Legal Authenticator Assigned Entity Code' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CODE = 2791;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Legal Authenticator Assigned Entity' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY = 2792;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Authenticator Assigned Entity Id' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY_ID = 2793;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Authenticator Assigned Entity Code P' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY_CODE_P = 2794;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Authenticator Assigned Entity Code' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY_CODE = 2795;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Authenticator Assigned Entity' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY = 2796;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Participant Associated Entity Code P' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_ASSOCIATED_ENTITY_CODE_P = 2797;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Participant Associated Entity Code' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_ASSOCIATED_ENTITY_CODE = 2798;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Participant Type Code' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_TYPE_CODE = 2799;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Participant Associated Entity' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_ASSOCIATED_ENTITY = 2800;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document In Fulfillment Of Order Id' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_IN_FULFILLMENT_OF_ORDER_ID = 2801;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document In Fulfillment Of Order' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_IN_FULFILLMENT_OF_ORDER = 2802;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Documentation Of Service Event Performer Assigned Entity Id' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID = 2803;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Documentation Of Service Event Performer Assigned Entity Code P' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P = 2804;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Documentation Of Service Event Performer Assigned Entity Code' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE = 2805;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Documentation Of Service Event Performer Function Code P' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P = 2806;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Documentation Of Service Event Performer Function Code' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE = 2807;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Documentation Of Service Event Performer Assigned Entity' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY = 2808;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Documentation Of Service Event Code' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_CODE = 2809;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Documentation Of Service Event Performer' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER = 2810;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate US Realm Header Patient Generated Document Documentation Of Service Event' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT = 2811;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Template Id' of 'US Realm Header Patient Generated Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 2812;
+
+	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 2745;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 2812;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -22508,6 +23044,9 @@ public class ConsolValidator extends EObjectValidator {
 				return validateReferralNote((ReferralNote) value, diagnostics, context);
 			case ConsolPackage.TRANSFER_SUMMARY:
 				return validateTransferSummary((TransferSummary) value, diagnostics, context);
+			case ConsolPackage.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT:
+				return validateUSRealmHeaderPatientGeneratedDocument(
+					(USRealmHeaderPatientGeneratedDocument) value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -86010,6 +86549,2233 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateTransferSummary_validateGeneralHeaderConstraintsTemplateId(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return transferSummary.validateGeneralHeaderConstraintsTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(usRealmHeaderPatientGeneratedDocument, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdVersionNumber(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumberSetId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateGeneralHeaderConstraintsTemplateId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipient(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticator(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSupportParticipant(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressCity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressCountry(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressState(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUseP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleTELUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUSRealmPatientNameMixedContent(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameFamily(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameGiven(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNamePrefix(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameSuffix(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUseP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressCity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressCountry(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressState(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUseP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientIfSdtcEnforceRaceCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressCity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressCountry(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressState(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUseP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTELUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleTelecom(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganization(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTELUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonName(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasOneAssignedPersonOrOneAssignedAuthoringDevice(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorIfHasAssignedPersonEnforceId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAddr(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthor(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityTELUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonName(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAddr(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityTelecom(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressCity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressCountry(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressState(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUseP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTELUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodian(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonName(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTELUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonName(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorTime(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTELUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAddr(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAssignedPerson(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorTime(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorSignatureCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityPersonName(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityAddr(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityAssignedPerson(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressState(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsInformantAssignedEntityPersonName(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityAddr(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityPerson(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportTime(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrderId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrder(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityHasNationalProviderIdentifier(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1TypeCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTimeLow(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTime(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEvent(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentStatusCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentStatusCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsent(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTarget(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthor(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDataEnterer(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformant(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentCustodian(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformationRecipient(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticator(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthenticator(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentParticipant(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOf(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOf(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentParticipantTypeCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent(
+				usRealmHeaderPatientGeneratedDocument, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentRecordTarget constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTarget(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentRecordTarget(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentAuthor constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthor(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentAuthor(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentDataEnterer constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDataEnterer(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentDataEnterer(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentInformant constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformant(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentInformant(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentCustodian constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentCustodian(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentCustodian(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentInformationRecipient constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformationRecipient(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentInformationRecipient(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticator constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticator(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticator(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentAuthenticator constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthenticator(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentAuthenticator(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentParticipant constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentParticipant(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentParticipant(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOf constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOf(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOf(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentDocumentationOf constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOf(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOf(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIRoot(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIIExtension(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIRoot(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIIExtension(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIIRoot(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntity constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntity(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntity(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIIRoot(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentParticipantTypeCode constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentParticipantTypeCode(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentParticipantTypeCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGeneralHeaderConstraintsTemplateId constraint of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocument_validateGeneralHeaderConstraintsTemplateId(
+			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return usRealmHeaderPatientGeneratedDocument.validateGeneralHeaderConstraintsTemplateId(diagnostics, context);
 	}
 
 	/**

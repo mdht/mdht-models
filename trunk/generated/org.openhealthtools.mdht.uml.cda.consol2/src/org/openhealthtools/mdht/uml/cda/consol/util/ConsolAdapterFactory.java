@@ -1125,6 +1125,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseUSRealmHeaderPatientGeneratedDocument(USRealmHeaderPatientGeneratedDocument object) {
+			return createUSRealmHeaderPatientGeneratedDocumentAdapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -4358,6 +4363,20 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createTransferSummaryAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument <em>US Realm Header Patient Generated Document</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument
+	 * @generated
+	 */
+	public Adapter createUSRealmHeaderPatientGeneratedDocumentAdapter() {
 		return null;
 	}
 

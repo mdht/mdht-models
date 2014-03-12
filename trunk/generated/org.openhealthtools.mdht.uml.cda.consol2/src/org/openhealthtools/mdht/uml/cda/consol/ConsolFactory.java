@@ -1722,6 +1722,15 @@ public interface ConsolFactory extends EFactory {
 	TransferSummary createTransferSummary();
 
 	/**
+	 * Returns a new object of class '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>US Realm Header Patient Generated Document</em>'.
+	 * @generated
+	 */
+	USRealmHeaderPatientGeneratedDocument createUSRealmHeaderPatientGeneratedDocument();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

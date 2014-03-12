@@ -4028,6 +4028,29 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT: {
+				USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument = (USRealmHeaderPatientGeneratedDocument) theEObject;
+				T result = caseUSRealmHeaderPatientGeneratedDocument(usRealmHeaderPatientGeneratedDocument);
+				if (result == null) {
+					result = caseUSRealmHeader2(usRealmHeaderPatientGeneratedDocument);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(usRealmHeaderPatientGeneratedDocument);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(usRealmHeaderPatientGeneratedDocument);
+				}
+				if (result == null) {
+					result = caseAct(usRealmHeaderPatientGeneratedDocument);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(usRealmHeaderPatientGeneratedDocument);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -7362,6 +7385,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseTransferSummary(TransferSummary object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>US Realm Header Patient Generated Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>US Realm Header Patient Generated Document</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUSRealmHeaderPatientGeneratedDocument(USRealmHeaderPatientGeneratedDocument object) {
 		return null;
 	}
 

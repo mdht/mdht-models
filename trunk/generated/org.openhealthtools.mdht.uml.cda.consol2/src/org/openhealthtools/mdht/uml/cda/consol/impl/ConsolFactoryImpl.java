@@ -472,6 +472,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createReferralNote();
 			case ConsolPackage.TRANSFER_SUMMARY:
 				return createTransferSummary();
+			case ConsolPackage.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT:
+				return createUSRealmHeaderPatientGeneratedDocument();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2355,6 +2357,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public TransferSummary createTransferSummary() {
 		TransferSummaryImpl transferSummary = new TransferSummaryImpl();
 		return transferSummary;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public USRealmHeaderPatientGeneratedDocument createUSRealmHeaderPatientGeneratedDocument() {
+		USRealmHeaderPatientGeneratedDocumentImpl usRealmHeaderPatientGeneratedDocument = new USRealmHeaderPatientGeneratedDocumentImpl();
+		return usRealmHeaderPatientGeneratedDocument;
 	}
 
 	/**
