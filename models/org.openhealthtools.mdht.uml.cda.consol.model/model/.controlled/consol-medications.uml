@@ -1414,8 +1414,6 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>CONF:9333</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_tJOF8DsiEeKK96MV1iYPgQ" base_Constraint="_tJNe4DsiEeKK96MV1iYPgQ">
-    <ruleId>CONF:16093</ruleId>
-    <ruleId>CONF:16094</ruleId>
     <ruleId>CONF:16870</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_-UVZMAXoEeOc4J5a9hlM-Q" base_Constraint="_0EuxoAXoEeOc4J5a9hlM-Q">
