@@ -1731,6 +1731,15 @@ public interface ConsolFactory extends EFactory {
 	USRealmHeaderPatientGeneratedDocument createUSRealmHeaderPatientGeneratedDocument();
 
 	/**
+	 * Returns a new object of class '<em>Author Participation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Author Participation</em>'.
+	 * @generated
+	 */
+	AuthorParticipation createAuthorParticipation();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

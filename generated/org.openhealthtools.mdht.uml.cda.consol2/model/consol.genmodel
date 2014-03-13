@@ -11569,5 +11569,63 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent/context"/>
       </genOperations>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//AuthorParticipation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorAssignedPersonName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorAssignedPersonName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorAssignedPersonName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationTelecom">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationTelecom/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationTelecom/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationAddr">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationAddr/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationAddr/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorAssignedPerson">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorAssignedPerson/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorAssignedPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganization/context"/>
+      </genOperations>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

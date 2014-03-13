@@ -4051,6 +4051,23 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.AUTHOR_PARTICIPATION: {
+				AuthorParticipation authorParticipation = (AuthorParticipation) theEObject;
+				T result = caseAuthorParticipation(authorParticipation);
+				if (result == null) {
+					result = caseAuthor(authorParticipation);
+				}
+				if (result == null) {
+					result = caseParticipation(authorParticipation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(authorParticipation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -7400,6 +7417,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseUSRealmHeaderPatientGeneratedDocument(USRealmHeaderPatientGeneratedDocument object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Author Participation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Author Participation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAuthorParticipation(AuthorParticipation object) {
 		return null;
 	}
 

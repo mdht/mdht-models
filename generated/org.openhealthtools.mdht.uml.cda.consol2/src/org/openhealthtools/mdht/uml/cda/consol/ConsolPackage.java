@@ -46936,6 +46936,106 @@ public interface ConsolPackage extends EPackage {
 	int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_FEATURE_COUNT = US_REALM_HEADER2_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AuthorParticipationImpl <em>Author Participation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.AuthorParticipationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAuthorParticipation()
+	 * @generated
+	 */
+	int AUTHOR_PARTICIPATION = 207;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_PARTICIPATION__REALM_CODE = CDAPackage.AUTHOR__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_PARTICIPATION__TYPE_ID = CDAPackage.AUTHOR__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_PARTICIPATION__TEMPLATE_ID = CDAPackage.AUTHOR__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Function Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_PARTICIPATION__FUNCTION_CODE = CDAPackage.AUTHOR__FUNCTION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_PARTICIPATION__TIME = CDAPackage.AUTHOR__TIME;
+
+	/**
+	 * The feature id for the '<em><b>Assigned Author</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_PARTICIPATION__ASSIGNED_AUTHOR = CDAPackage.AUTHOR__ASSIGNED_AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_PARTICIPATION__NULL_FLAVOR = CDAPackage.AUTHOR__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Type Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_PARTICIPATION__TYPE_CODE = CDAPackage.AUTHOR__TYPE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Context Control Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_PARTICIPATION__CONTEXT_CONTROL_CODE = CDAPackage.AUTHOR__CONTEXT_CONTROL_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Author Participation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHOR_PARTICIPATION_FEATURE_COUNT = CDAPackage.AUTHOR_FEATURE_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -48824,6 +48924,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getUSRealmHeaderPatientGeneratedDocument();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation <em>Author Participation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Author Participation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation
+	 * @generated
+	 */
+	EClass getAuthorParticipation();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection <em>Medications Administered Section</em>}'.
@@ -50916,6 +51026,16 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT = eINSTANCE.getUSRealmHeaderPatientGeneratedDocument();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.AuthorParticipationImpl <em>Author Participation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.AuthorParticipationImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getAuthorParticipation()
+		 * @generated
+		 */
+		EClass AUTHOR_PARTICIPATION = eINSTANCE.getAuthorParticipation();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationsAdministeredSectionImpl <em>Medications Administered Section</em>}' class.
