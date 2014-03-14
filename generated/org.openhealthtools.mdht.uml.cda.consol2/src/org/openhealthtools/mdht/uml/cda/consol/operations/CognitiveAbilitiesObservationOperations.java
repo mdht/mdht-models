@@ -54,6 +54,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation#validateCognitiveAbilitiesObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Abilities Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation#validateCognitiveAbilitiesObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Abilities Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation#validateCognitiveAbilitiesObservationAssessmentScaleObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Abilities Observation Assessment Scale Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation#validateCognitiveAbilitiesObservationAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Abilities Observation Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation#getAssessmentScaleObservations() <em>Get Assessment Scale Observations</em>}</li>
  * </ul>
  * </p>
@@ -880,6 +881,68 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateCognitiveAbilitiesObservationAuthorParticipation(CognitiveAbilitiesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Abilities Observation Author Participation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCognitiveAbilitiesObservationAuthorParticipation(CognitiveAbilitiesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCognitiveAbilitiesObservationAuthorParticipation(CognitiveAbilitiesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Abilities Observation Author Participation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCognitiveAbilitiesObservationAuthorParticipation(CognitiveAbilitiesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param cognitiveAbilitiesObservation The receiving '<em><b>Cognitive Abilities Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateCognitiveAbilitiesObservationAuthorParticipation(
+			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.COGNITIVE_ABILITIES_OBSERVATION);
+			try {
+				VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cognitiveAbilitiesObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.COGNITIVE_ABILITIES_OBSERVATION__COGNITIVE_ABILITIES_OBSERVATION_AUTHOR_PARTICIPATION,
+					ConsolPlugin.INSTANCE.getString("CognitiveAbilitiesObservationAuthorParticipation"),
+					new Object[] { cognitiveAbilitiesObservation }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getAssessmentScaleObservations(CognitiveAbilitiesObservation) <em>Get Assessment Scale Observations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -911,7 +974,7 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.COGNITIVE_ABILITIES_OBSERVATION,
-				ConsolPackage.Literals.COGNITIVE_ABILITIES_OBSERVATION.getEAllOperations().get(64));
+				ConsolPackage.Literals.COGNITIVE_ABILITIES_OBSERVATION.getEAllOperations().get(65));
 			try {
 				GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

@@ -428,18 +428,18 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createGoalObservation();
 			case ConsolPackage.HEALTH_CONCERN_ACT:
 				return createHealthConcernAct();
-			case ConsolPackage.INTERVENTION_ACT:
-				return createInterventionAct();
+			case ConsolPackage.PROVIDER_PRIORITY_PREFERENCE:
+				return createProviderPriorityPreference();
 			case ConsolPackage.EXTERNAL_DOCUMENT_REFERENCE:
 				return createExternalDocumentReference();
+			case ConsolPackage.INTERVENTION_ACT:
+				return createInterventionAct();
 			case ConsolPackage.PLANNED_IMMUNIZATION_ACTIVITY:
 				return createPlannedImmunizationActivity();
 			case ConsolPackage.PROGNOSIS_OBSERVATION:
 				return createPrognosisObservation();
 			case ConsolPackage.PROGRESS_TOWARD_GOAL_OBSERVATION:
 				return createProgressTowardGoalObservation();
-			case ConsolPackage.PROVIDER_PRIORITY_PREFERENCE:
-				return createProviderPriorityPreference();
 			case ConsolPackage.SELF_CARE_ACTIVITIES:
 				return createSelfCareActivities();
 			case ConsolPackage.SENSORY_AND_SPEECH_STATUS:

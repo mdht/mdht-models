@@ -3742,7 +3742,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getInterventionAct() {
 		if (interventionActEClass == null) {
 			interventionActEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				184);
+				186);
 		}
 		return interventionActEClass;
 	}
@@ -3768,7 +3768,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getPlannedImmunizationActivity() {
 		if (plannedImmunizationActivityEClass == null) {
 			plannedImmunizationActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				186);
+				187);
 		}
 		return plannedImmunizationActivityEClass;
 	}
@@ -3781,7 +3781,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getPrognosisObservation() {
 		if (prognosisObservationEClass == null) {
 			prognosisObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				187);
+				188);
 		}
 		return prognosisObservationEClass;
 	}
@@ -3794,7 +3794,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProgressTowardGoalObservation() {
 		if (progressTowardGoalObservationEClass == null) {
 			progressTowardGoalObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				188);
+				189);
 		}
 		return progressTowardGoalObservationEClass;
 	}
@@ -3807,7 +3807,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProviderPriorityPreference() {
 		if (providerPriorityPreferenceEClass == null) {
 			providerPriorityPreferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				189);
+				184);
 		}
 		return providerPriorityPreferenceEClass;
 	}
