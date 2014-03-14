@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.GoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.GoalObservationOperations;
@@ -41,9 +42,16 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPatientPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Patient Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationActReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Act Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Author Participation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationHealthConcernAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Health Concern Act</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationProviderPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Provider Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation External Document Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPatientPriorityPreference() <em>Get Patient Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getGoalObservations() <em>Get Goal Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getActReferences() <em>Get Act References</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getHealthConcernActs() <em>Get Health Concern Acts</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getExternalDocumentReferences() <em>Get External Document References</em>}</li>
  * </ul>
  * </p>
  *
@@ -302,6 +310,154 @@ public class GoalObservationTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGoalObservationAuthorParticipation() {
+		OperationsTestCase<GoalObservation> validateGoalObservationAuthorParticipationTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationAuthorParticipation",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GoalObservation target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(GoalObservation target) {
+				AuthorParticipation ap = ConsolFactory.eINSTANCE.createAuthorParticipation().init();
+				target.getAuthors().add(ap);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GoalObservationOperations.validateGoalObservationAuthorParticipation(
+					(GoalObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGoalObservationAuthorParticipationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGoalObservationHealthConcernAct() {
+		OperationsTestCase<GoalObservation> validateGoalObservationHealthConcernActTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationHealthConcernAct",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_HEALTH_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GoalObservation target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected void updateToPass(GoalObservation target) {
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				er.setAct(ConsolFactory.eINSTANCE.createHealthConcernAct().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GoalObservationOperations.validateGoalObservationHealthConcernAct(
+					(GoalObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGoalObservationHealthConcernActTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGoalObservationProviderPriorityPreference() {
+		OperationsTestCase<GoalObservation> validateGoalObservationProviderPriorityPreferenceTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationProviderPriorityPreference",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GoalObservation target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(GoalObservation target) {
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
+				er.setObservation(ConsolFactory.eINSTANCE.createProviderPriorityPreference().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GoalObservationOperations.validateGoalObservationProviderPriorityPreference(
+					(GoalObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGoalObservationProviderPriorityPreferenceTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGoalObservationExternalDocumentReference() {
+		OperationsTestCase<GoalObservation> validateGoalObservationExternalDocumentReferenceTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationExternalDocumentReference",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GoalObservation target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected void updateToPass(GoalObservation target) {
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				er.setAct(ConsolFactory.eINSTANCE.createExternalDocumentReference().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GoalObservationOperations.validateGoalObservationExternalDocumentReference(
+					(GoalObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGoalObservationExternalDocumentReferenceTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated
 	*/
 	@Test
@@ -333,6 +489,42 @@ public class GoalObservationTest extends CDAValidationTest {
 
 		GoalObservation target = objectFactory.create();
 		target.getActReferences();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetHealthConcernActs() {
+
+		GoalObservation target = objectFactory.create();
+		target.getHealthConcernActs();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetProviderPriorityPreferences() {
+
+		GoalObservation target = objectFactory.create();
+		target.getProviderPriorityPreferences();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetExternalDocumentReferences() {
+
+		GoalObservation target = objectFactory.create();
+		target.getExternalDocumentReferences();
 
 	}
 

@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CognitiveAbilitiesObservationOperations;
@@ -52,6 +53,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation#validateCognitiveAbilitiesObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Abilities Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation#validateCognitiveAbilitiesObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Abilities Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation#validateCognitiveAbilitiesObservationAssessmentScaleObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Abilities Observation Assessment Scale Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation#validateCognitiveAbilitiesObservationAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Abilities Observation Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation#getAssessmentScaleObservations() <em>Get Assessment Scale Observations</em>}</li>
  * </ul>
  * </p>
@@ -530,6 +532,40 @@ public class CognitiveAbilitiesObservationTest extends CDAValidationTest {
 		};
 
 		validateCognitiveAbilitiesObservationAssessmentScaleObservationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCognitiveAbilitiesObservationAuthorParticipation() {
+		OperationsTestCase<CognitiveAbilitiesObservation> validateCognitiveAbilitiesObservationAuthorParticipationTestCase = new OperationsTestCase<CognitiveAbilitiesObservation>(
+			"validateCognitiveAbilitiesObservationAuthorParticipation",
+			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CognitiveAbilitiesObservation target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(CognitiveAbilitiesObservation target) {
+				AuthorParticipation ap = ConsolFactory.eINSTANCE.createAuthorParticipation().init();
+				target.getAuthors().add(ap);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationAuthorParticipation(
+					(CognitiveAbilitiesObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCognitiveAbilitiesObservationAuthorParticipationTestCase.doValidationTest();
 	}
 
 	/**
