@@ -134,9 +134,9 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily(
+	public boolean validateReferralNoteInformationRecipientIntendedRecipientPersonPNFamily(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientPersonPNFamily(
 			this, diagnostics, context);
 	}
 
@@ -145,9 +145,20 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven(
+	public boolean validateReferralNoteInformationRecipientIntendedRecipientPersonPNGiven(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientPersonPNGiven(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReferralNoteInformationRecipientIntendedRecipientPersonName(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientPersonName(
 			this, diagnostics, context);
 	}
 
@@ -181,6 +192,17 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	public boolean validateReferralNoteInformationRecipientIntendedRecipientReceivedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientReceivedOrganization(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient(
 			this, diagnostics, context);
 	}
 

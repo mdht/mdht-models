@@ -29193,14 +29193,14 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ReferralNote" eSuperTypes="#//USRealmHeader2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ReferralNoteCode ReferralNoteCodeP ReferralNoteTitle ReferralNoteInformationRecipient ReferralNoteChiefComplaintAndReasonForVisitSection ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven ReferralNoteInformationRecipientIntendedRecipient ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP ReferralNoteParticipantCaregiverAssociatedEntityClassCode ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson ReferralNoteParticipantCaregiverNullFlavor ReferralNoteParticipantCaregiverAssociatedEntity ReferralNoteParticipantCallbackContactAssociatedEntityId ReferralNoteParticipantCallbackContactAssociatedEntityTelecom ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson ReferralNoteParticipantCallbackContactTypeCode ReferralNoteParticipantCallbackContactAssociatedEntity"/>
+      <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId ReferralNoteCode ReferralNoteCodeP ReferralNoteTitle ReferralNoteInformationRecipient ReferralNoteChiefComplaintAndReasonForVisitSection ReferralNoteInformationRecipientIntendedRecipientPersonPNFamily ReferralNoteInformationRecipientIntendedRecipientPersonPNGiven ReferralNoteInformationRecipientIntendedRecipientPersonName ReferralNoteInformationRecipientIntendedRecipientInformationRecipient ReferralNoteInformationRecipientIntendedRecipient ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP ReferralNoteParticipantCaregiverAssociatedEntityClassCode ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson ReferralNoteParticipantCaregiverNullFlavor ReferralNoteParticipantCaregiverAssociatedEntity ReferralNoteParticipantCallbackContactAssociatedEntityId ReferralNoteParticipantCallbackContactAssociatedEntityTelecom ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson ReferralNoteParticipantCallbackContactTypeCode ReferralNoteParticipantCallbackContactAssociatedEntity"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.14"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.ReferralNoteCode" value="ReferralNoteCodeP"/>
       <details key="constraints.validation.warning" value="ReferralNoteParticipantCaregiver ReferralNoteParticipantCallbackContact ReferralNoteInformationRecipientIntendedRecipientAddr ReferralNoteParticipantCallbackContactAssociatedEntityAddr"/>
       <details key="constraints.validation.info" value="ReferralNoteChiefComplaintSection ReferralNoteInformationRecipientIntendedRecipientTelecom ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName ReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization"/>
-      <details key="constraints.validation.query" value="ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven ReferralNoteInformationRecipientIntendedRecipientAddr ReferralNoteInformationRecipientIntendedRecipientTelecom ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization ReferralNoteInformationRecipientIntendedRecipient ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP ReferralNoteParticipantCaregiverAssociatedEntityClassCode ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson ReferralNoteParticipantCaregiverNullFlavor ReferralNoteParticipantCaregiverAssociatedEntity ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName ReferralNoteParticipantCallbackContactAssociatedEntityId ReferralNoteParticipantCallbackContactAssociatedEntityAddr ReferralNoteParticipantCallbackContactAssociatedEntityTelecom ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson ReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization ReferralNoteParticipantCallbackContactTypeCode ReferralNoteParticipantCallbackContactAssociatedEntity"/>
+      <details key="constraints.validation.query" value="ReferralNoteInformationRecipientIntendedRecipientPersonPNFamily ReferralNoteInformationRecipientIntendedRecipientPersonPNGiven ReferralNoteInformationRecipientIntendedRecipientPersonName ReferralNoteInformationRecipientIntendedRecipientAddr ReferralNoteInformationRecipientIntendedRecipientTelecom ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization ReferralNoteInformationRecipientIntendedRecipientInformationRecipient ReferralNoteInformationRecipientIntendedRecipient ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP ReferralNoteParticipantCaregiverAssociatedEntityClassCode ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson ReferralNoteParticipantCaregiverNullFlavor ReferralNoteParticipantCaregiverAssociatedEntity ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName ReferralNoteParticipantCallbackContactAssociatedEntityId ReferralNoteParticipantCallbackContactAssociatedEntityAddr ReferralNoteParticipantCallbackContactAssociatedEntityTelecom ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson ReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization ReferralNoteParticipantCallbackContactTypeCode ReferralNoteParticipantCallbackContactAssociatedEntity"/>
       <details key="constraints.validation.dependOn.ReferralNoteParticipantCaregiverAssociatedEntityClassCode"
           value="ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP"/>
     </eAnnotations>
@@ -29210,13 +29210,14 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipientIntendedRecipient">
       <details key="constraints.validation.warning" value="ReferralNoteInformationRecipientIntendedRecipientAddr"/>
       <details key="constraints.validation.info" value="ReferralNoteInformationRecipientIntendedRecipientTelecom ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization"/>
+      <details key="constraints.validation.error" value="ReferralNoteInformationRecipientIntendedRecipientInformationRecipient"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipientIntendedRecipientInformationRecipient2">
-      <details key="constraints.validation.error" value="ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven"/>
-      <details key="constraints.validation.query" value="ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven"/>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipientIntendedRecipientPerson">
+      <details key="constraints.validation.error" value="ReferralNoteInformationRecipientIntendedRecipientPersonName ReferralNoteInformationRecipientIntendedRecipientPersonPNFamily ReferralNoteInformationRecipientIntendedRecipientPersonPNGiven"/>
+      <details key="constraints.validation.query" value="ReferralNoteInformationRecipientIntendedRecipientPersonPNFamily ReferralNoteInformationRecipientIntendedRecipientPersonPNGiven"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ON">
-      <details key="constraints.validation.error" value="ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven"/>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipientIntendedRecipientPersonPN">
+      <details key="constraints.validation.error" value="ReferralNoteInformationRecipientIntendedRecipientPersonPNFamily ReferralNoteInformationRecipientIntendedRecipientPersonPNGiven"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteParticipantCaregiver">
       <details key="constraints.validation.error" value="ReferralNoteParticipantCaregiverNullFlavor ReferralNoteParticipantCaregiverAssociatedEntity"/>
@@ -29326,7 +29327,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily"
+    <eOperations name="ReferralNoteInformationRecipientIntendedRecipientPersonPNFamily"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -29336,7 +29337,17 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven"
+    <eOperations name="ReferralNoteInformationRecipientIntendedRecipientPersonPNGiven"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteInformationRecipientIntendedRecipientPersonName"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -29365,6 +29376,16 @@
       </eParameters>
     </eOperations>
     <eOperations name="ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="ReferralNoteInformationRecipientIntendedRecipientInformationRecipient"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
