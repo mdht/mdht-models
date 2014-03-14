@@ -1053,6 +1053,11 @@ A cognitive problem observation is a finding or medical condition. This is diffe
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__7dhsYoDEeOoMZgUoTghIg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_7sls8KvCEeOEkquDecUlEw" name="authorParticipation" association="_7sqlcKvCEeOEkquDecUlEw">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7sowQavCEeOEkquDecUlEw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7sowQKvCEeOEkquDecUlEw"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_DkTwUIoHEeOoMZgUoTghIg" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_DkUXYIoHEeOoMZgUoTghIg">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DkTwUooHEeOoMZgUoTghIg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DkTwUYoHEeOoMZgUoTghIg"/>
@@ -1387,5 +1392,11 @@ A cognitive problem observation is a finding or medical condition. This is diffe
   <CDA:AssociationValidation xmi:id="_W5e2QJ2EEeORR8_YW0n_jQ" severity="INFO" base_Association="_VjU7oJ2EEeORR8_YW0n_jQ">
     <ruleId>CONF:28325</ruleId>
     <ruleId>CONF:28326</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_7sqlcKvCEeOEkquDecUlEw" memberEnd="_7sls8KvCEeOEkquDecUlEw _7sqlcavCEeOEkquDecUlEw">
+    <ownedEnd xmi:id="_7sqlcavCEeOEkquDecUlEw" type="_Y_oGkIoAEeOoMZgUoTghIg" association="_7sqlcKvCEeOEkquDecUlEw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="__l3roKvCEeOEkquDecUlEw" severity="WARNING" base_Association="_7sqlcKvCEeOEkquDecUlEw">
+    <ruleId>CONF:31923</ruleId>
   </CDA:AssociationValidation>
 </xmi:XMI>

@@ -705,12 +705,34 @@ A goal may have components consisting of other goals (milestones), these milesto
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_xWLA0KvEEeOEkquDecUlEw" name="authorParticipation" association="_xWMO8KvEEeOEkquDecUlEw">
+      <ownedComment xmi:id="_NxlmoKvHEeOEkquDecUlEw">
+        <body>If the author is set to the recordTarget (patient), this is a patient goal.  If the author is set to a provider, this is a provider goal. If both patient and provider are set as authors, this is a negotiated goal.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zZu0AKvEEeOEkquDecUlEw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zZu0AavEEeOEkquDecUlEw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ULjEQKvFEeOEkquDecUlEw" name="healthConcernAct" type="_An8P8I9kEeOB0eBUISUB4Q" association="_ULjrUKvFEeOEkquDecUlEw">
+      <ownedComment xmi:id="_QU8UMKvHEeOEkquDecUlEw">
+        <body>This entryRelationship represents the relationship between a Goal Observation and a Health Concern Act (Goal Observation REFERS TO Health Concern Act).</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ULjEQqvFEeOEkquDecUlEw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ULjEQavFEeOEkquDecUlEw"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_nM9g0I9XEeOB0eBUISUB4Q" name="patientPriorityPreference" type="_UqXAAI6hEeOB0eBUISUB4Q" association="_nM-u8I9XEeOB0eBUISUB4Q">
       <ownedComment xmi:id="__YURkI9XEeOB0eBUISUB4Q">
         <body>This entryRelationship represents the priority that the patient puts on the goal.</body>
       </ownedComment>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1OTUoI9XEeOB0eBUISUB4Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1OUiwI9XEeOB0eBUISUB4Q"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_pYoQkKvGEeOEkquDecUlEw" name="providerPriorityPreference" type="_ncafYJmaEeOLJeQez13EkQ" association="_pYqFwKvGEeOEkquDecUlEw">
+      <ownedComment xmi:id="_S8BEIKvHEeOEkquDecUlEw">
+        <body>This entryRelationship represents the priority that a provider puts on the goal.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pYo3oKvGEeOEkquDecUlEw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pYoQkavGEeOEkquDecUlEw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Jvm74I9gEeOB0eBUISUB4Q" name="goalObservation" type="_-miMII9TEeOB0eBUISUB4Q" association="_JvoKAY9gEeOB0eBUISUB4Q">
       <ownedComment xmi:id="_fsLg4I9gEeOB0eBUISUB4Q">
@@ -726,6 +748,14 @@ A goal may have components consisting of other goals (milestones), these milesto
       <type xmi:type="uml:Class" href="consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oquwQY9gEeOB0eBUISUB4Q" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oquwQI9gEeOB0eBUISUB4Q"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Xnzd0KvHEeOEkquDecUlEw" name="externalDocumentReference" association="_Xn1TAKvHEeOEkquDecUlEw">
+      <ownedComment xmi:id="_i9tmIKvHEeOEkquDecUlEw">
+        <body>Where it is necessary to reference an external clinical document such a Referral document, Discharge Summary document etc., the External Document Reference template can be used to reference this document.  However, if this Care Plan document is replacing or appending another Care Plan document in the same set, that relationship is set in the header, using ClinicalDocument/relatedDocument.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="consol-other.uml#_QcUL8JBGEeOZX935IVJfOg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xn0E4avHEeOEkquDecUlEw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xn0E4KvHEeOEkquDecUlEw"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_W7EuEI9UEeOB0eBUISUB4Q" base_Class="_-miMII9TEeOB0eBUISUB4Q" templateId="2.16.840.1.113883.10.20.22.4.121">
@@ -1378,4 +1408,34 @@ Intervention Acts can be related to each other, (eg. an Intervention Act with mo
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:29588</ruleId>
   </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_xWMO8KvEEeOEkquDecUlEw" memberEnd="_xWLA0KvEEeOEkquDecUlEw _xWMO8avEEeOEkquDecUlEw">
+    <ownedEnd xmi:id="_xWMO8avEEeOEkquDecUlEw" type="_-miMII9TEeOB0eBUISUB4Q" association="_xWMO8KvEEeOEkquDecUlEw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_yZYxUKvEEeOEkquDecUlEw" base_Association="_xWMO8KvEEeOEkquDecUlEw">
+    <ruleId>CONF:30995</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_ULjrUKvFEeOEkquDecUlEw" memberEnd="_ULjEQKvFEeOEkquDecUlEw _ULkSYKvFEeOEkquDecUlEw">
+    <ownedEnd xmi:id="_ULkSYKvFEeOEkquDecUlEw" type="_-miMII9TEeOB0eBUISUB4Q" association="_ULjrUKvFEeOEkquDecUlEw"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_hN0AsKvFEeOEkquDecUlEw" severity="WARNING" base_Association="_ULjrUKvFEeOEkquDecUlEw" typeCode="REFR">
+    <ruleId>CONF:30701</ruleId>
+    <ruleId>CONF:30702</ruleId>
+    <ruleId>CONF:30703</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_pYqFwKvGEeOEkquDecUlEw" memberEnd="_pYoQkKvGEeOEkquDecUlEw _pYqFwavGEeOEkquDecUlEw">
+    <ownedEnd xmi:id="_pYqFwavGEeOEkquDecUlEw" type="_-miMII9TEeOB0eBUISUB4Q" association="_pYqFwKvGEeOEkquDecUlEw"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_q6cooKvGEeOEkquDecUlEw" severity="WARNING" base_Association="_pYqFwKvGEeOEkquDecUlEw" typeCode="RSON">
+    <ruleId>CONF:30788</ruleId>
+    <ruleId>CONF:30789</ruleId>
+    <ruleId>CONF:30790</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_Xn1TAKvHEeOEkquDecUlEw" memberEnd="_Xnzd0KvHEeOEkquDecUlEw _Xn1TAavHEeOEkquDecUlEw">
+    <ownedEnd xmi:id="_Xn1TAavHEeOEkquDecUlEw" type="_-miMII9TEeOB0eBUISUB4Q" association="_Xn1TAKvHEeOEkquDecUlEw"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_ZaXnoKvHEeOEkquDecUlEw" severity="INFO" base_Association="_Xn1TAKvHEeOEkquDecUlEw" typeCode="REFR">
+    <ruleId>CONF:31949</ruleId>
+    <ruleId>CONF:31956</ruleId>
+    <ruleId>CONF:31957</ruleId>
+  </CDA:EntryRelationship>
 </xmi:XMI>
