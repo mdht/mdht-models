@@ -24,11 +24,11 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getReferralNote()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId ReferralNoteCode ReferralNoteCodeP ReferralNoteTitle ReferralNoteInformationRecipient ReferralNoteChiefComplaintAndReasonForVisitSection ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven ReferralNoteInformationRecipientIntendedRecipient ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP ReferralNoteParticipantCaregiverAssociatedEntityClassCode ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson ReferralNoteParticipantCaregiverNullFlavor ReferralNoteParticipantCaregiverAssociatedEntity ReferralNoteParticipantCallbackContactAssociatedEntityId ReferralNoteParticipantCallbackContactAssociatedEntityTelecom ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson ReferralNoteParticipantCallbackContactTypeCode ReferralNoteParticipantCallbackContactAssociatedEntity' templateId.root='2.16.840.1.113883.10.20.22.1.14' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ReferralNoteCode='ReferralNoteCodeP' constraints.validation.warning='ReferralNoteParticipantCaregiver ReferralNoteParticipantCallbackContact ReferralNoteInformationRecipientIntendedRecipientAddr ReferralNoteParticipantCallbackContactAssociatedEntityAddr' constraints.validation.info='ReferralNoteChiefComplaintSection ReferralNoteInformationRecipientIntendedRecipientTelecom ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName ReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization' constraints.validation.query='ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven ReferralNoteInformationRecipientIntendedRecipientAddr ReferralNoteInformationRecipientIntendedRecipientTelecom ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization ReferralNoteInformationRecipientIntendedRecipient ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP ReferralNoteParticipantCaregiverAssociatedEntityClassCode ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson ReferralNoteParticipantCaregiverNullFlavor ReferralNoteParticipantCaregiverAssociatedEntity ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName ReferralNoteParticipantCallbackContactAssociatedEntityId ReferralNoteParticipantCallbackContactAssociatedEntityAddr ReferralNoteParticipantCallbackContactAssociatedEntityTelecom ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson ReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization ReferralNoteParticipantCallbackContactTypeCode ReferralNoteParticipantCallbackContactAssociatedEntity' constraints.validation.dependOn.ReferralNoteParticipantCaregiverAssociatedEntityClassCode='ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId ReferralNoteCode ReferralNoteCodeP ReferralNoteTitle ReferralNoteInformationRecipient ReferralNoteChiefComplaintAndReasonForVisitSection ReferralNoteInformationRecipientIntendedRecipientPersonPNFamily ReferralNoteInformationRecipientIntendedRecipientPersonPNGiven ReferralNoteInformationRecipientIntendedRecipientPersonName ReferralNoteInformationRecipientIntendedRecipientInformationRecipient ReferralNoteInformationRecipientIntendedRecipient ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP ReferralNoteParticipantCaregiverAssociatedEntityClassCode ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson ReferralNoteParticipantCaregiverNullFlavor ReferralNoteParticipantCaregiverAssociatedEntity ReferralNoteParticipantCallbackContactAssociatedEntityId ReferralNoteParticipantCallbackContactAssociatedEntityTelecom ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson ReferralNoteParticipantCallbackContactTypeCode ReferralNoteParticipantCallbackContactAssociatedEntity' templateId.root='2.16.840.1.113883.10.20.22.1.14' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ReferralNoteCode='ReferralNoteCodeP' constraints.validation.warning='ReferralNoteParticipantCaregiver ReferralNoteParticipantCallbackContact ReferralNoteInformationRecipientIntendedRecipientAddr ReferralNoteParticipantCallbackContactAssociatedEntityAddr' constraints.validation.info='ReferralNoteChiefComplaintSection ReferralNoteInformationRecipientIntendedRecipientTelecom ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName ReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization' constraints.validation.query='ReferralNoteInformationRecipientIntendedRecipientPersonPNFamily ReferralNoteInformationRecipientIntendedRecipientPersonPNGiven ReferralNoteInformationRecipientIntendedRecipientPersonName ReferralNoteInformationRecipientIntendedRecipientAddr ReferralNoteInformationRecipientIntendedRecipientTelecom ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization ReferralNoteInformationRecipientIntendedRecipientInformationRecipient ReferralNoteInformationRecipientIntendedRecipient ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP ReferralNoteParticipantCaregiverAssociatedEntityClassCode ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson ReferralNoteParticipantCaregiverNullFlavor ReferralNoteParticipantCaregiverAssociatedEntity ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName ReferralNoteParticipantCallbackContactAssociatedEntityId ReferralNoteParticipantCallbackContactAssociatedEntityAddr ReferralNoteParticipantCallbackContactAssociatedEntityTelecom ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson ReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization ReferralNoteParticipantCallbackContactTypeCode ReferralNoteParticipantCallbackContactAssociatedEntity' constraints.validation.dependOn.ReferralNoteParticipantCaregiverAssociatedEntityClassCode='ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipient constraints.validation.error='ReferralNoteInformationRecipientIntendedRecipient'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipientIntendedRecipient constraints.validation.warning='ReferralNoteInformationRecipientIntendedRecipientAddr' constraints.validation.info='ReferralNoteInformationRecipientIntendedRecipientTelecom ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipientIntendedRecipientInformationRecipient2 constraints.validation.error='ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven' constraints.validation.query='ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ON constraints.validation.error='ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipientIntendedRecipient constraints.validation.warning='ReferralNoteInformationRecipientIntendedRecipientAddr' constraints.validation.info='ReferralNoteInformationRecipientIntendedRecipientTelecom ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization' constraints.validation.error='ReferralNoteInformationRecipientIntendedRecipientInformationRecipient'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipientIntendedRecipientPerson constraints.validation.error='ReferralNoteInformationRecipientIntendedRecipientPersonName ReferralNoteInformationRecipientIntendedRecipientPersonPNFamily ReferralNoteInformationRecipientIntendedRecipientPersonPNGiven' constraints.validation.query='ReferralNoteInformationRecipientIntendedRecipientPersonPNFamily ReferralNoteInformationRecipientIntendedRecipientPersonPNGiven'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteInformationRecipientIntendedRecipientPersonPN constraints.validation.error='ReferralNoteInformationRecipientIntendedRecipientPersonPNFamily ReferralNoteInformationRecipientIntendedRecipientPersonPNGiven'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteParticipantCaregiver constraints.validation.error='ReferralNoteParticipantCaregiverNullFlavor ReferralNoteParticipantCaregiverAssociatedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteParticipantCaregiverAssociatedEntity constraints.validation.error='ReferralNoteParticipantCaregiverAssociatedEntityClassCode ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson' constraints.validation.dependOn.ReferralNoteParticipantCaregiverAssociatedEntityClassCode='ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson constraints.validation.error='ReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName'"
@@ -142,11 +142,11 @@ public interface ReferralNote extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.informationRecipient->excluding(null).intendedRecipient->excluding(null)..->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((family->isEmpty() or family->exists(element | element.isNullFlavorUndefined())) implies (family->size() = 1) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.informationRecipient->excluding(null).intendedRecipient->excluding(null).informationRecipient->excluding(null).name->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((family->isEmpty() or family->exists(element | element.isNullFlavorUndefined())) implies (family->size() = 1) )))'"
 	 * @generated
 	 */
-	boolean validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateReferralNoteInformationRecipientIntendedRecipientPersonPNFamily(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -155,11 +155,24 @@ public interface ReferralNote extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.informationRecipient->excluding(null).intendedRecipient->excluding(null)..->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((given->isEmpty() or given->exists(element | element.isNullFlavorUndefined())) implies (given->size() = 1) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.informationRecipient->excluding(null).intendedRecipient->excluding(null).informationRecipient->excluding(null).name->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((given->isEmpty() or given->exists(element | element.isNullFlavorUndefined())) implies (given->size() = 1) )))'"
 	 * @generated
 	 */
-	boolean validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateReferralNoteInformationRecipientIntendedRecipientPersonPNGiven(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.informationRecipient->excluding(null).intendedRecipient->excluding(null).informationRecipient->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (name->size() = 1))'"
+	 * @generated
+	 */
+	boolean validateReferralNoteInformationRecipientIntendedRecipientPersonName(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -194,10 +207,23 @@ public interface ReferralNote extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.informationRecipient->excluding(null).intendedRecipient->excluding(null)->reject(receivedOrganization->exists(receivedOrganization : cda::Organization | not receivedOrganization.oclIsUndefined() and receivedOrganization.oclIsKindOf(rim::Entity)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.informationRecipient->excluding(null).intendedRecipient->excluding(null)->reject(receivedOrganization->one(receivedOrganization : cda::Organization | not receivedOrganization.oclIsUndefined() and receivedOrganization.oclIsKindOf(rim::Entity)))'"
 	 * @generated
 	 */
 	boolean validateReferralNoteInformationRecipientIntendedRecipientReceivedOrganization(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.informationRecipient->excluding(null).intendedRecipient->excluding(null)->reject(informationRecipient->one(informationRecipient : cda::Person | not informationRecipient.oclIsUndefined() and informationRecipient.oclIsKindOf(cda::Person)))'"
+	 * @generated
+	 */
+	boolean validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**

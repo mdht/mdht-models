@@ -11094,13 +11094,17 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteChiefComplaintAndReasonForVisitSection/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteChiefComplaintAndReasonForVisitSection/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientPersonPNFamily">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientPersonPNFamily/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientPersonPNFamily/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientPersonPNGiven">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientPersonPNGiven/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientPersonPNGiven/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientPersonName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientPersonName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientPersonName/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientAddr/diagnostics"/>
@@ -11113,6 +11117,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientReceivedOrganization/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientInformationRecipient">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientInformationRecipient/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipientInformationRecipient/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipient">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReferralNote/ReferralNoteInformationRecipientIntendedRecipient/diagnostics"/>
