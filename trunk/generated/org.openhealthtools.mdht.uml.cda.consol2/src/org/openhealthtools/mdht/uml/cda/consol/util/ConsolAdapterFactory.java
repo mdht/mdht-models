@@ -1015,13 +1015,18 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseInterventionAct(InterventionAct object) {
-			return createInterventionActAdapter();
+		public Adapter caseProviderPriorityPreference(ProviderPriorityPreference object) {
+			return createProviderPriorityPreferenceAdapter();
 		}
 
 		@Override
 		public Adapter caseExternalDocumentReference(ExternalDocumentReference object) {
 			return createExternalDocumentReferenceAdapter();
+		}
+
+		@Override
+		public Adapter caseInterventionAct(InterventionAct object) {
+			return createInterventionActAdapter();
 		}
 
 		@Override
@@ -1037,11 +1042,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseProgressTowardGoalObservation(ProgressTowardGoalObservation object) {
 			return createProgressTowardGoalObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseProviderPriorityPreference(ProviderPriorityPreference object) {
-			return createProviderPriorityPreferenceAdapter();
 		}
 
 		@Override

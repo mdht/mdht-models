@@ -196,6 +196,17 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCognitiveAbilitiesObservationAuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationAuthorParticipation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return CognitiveAbilitiesObservationOperations.getAssessmentScaleObservations(this);
 	}

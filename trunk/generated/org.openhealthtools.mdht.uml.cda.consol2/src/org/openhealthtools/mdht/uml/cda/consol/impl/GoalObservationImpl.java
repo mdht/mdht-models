@@ -20,9 +20,12 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.ActReference;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
 import org.openhealthtools.mdht.uml.cda.consol.GoalObservation;
+import org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
 
+import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.operations.GoalObservationOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
@@ -124,6 +127,44 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateGoalObservationAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GoalObservationOperations.validateGoalObservationAuthorParticipation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservationHealthConcernAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GoalObservationOperations.validateGoalObservationHealthConcernAct(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservationProviderPriorityPreference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return GoalObservationOperations.validateGoalObservationProviderPriorityPreference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGoalObservationExternalDocumentReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return GoalObservationOperations.validateGoalObservationExternalDocumentReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PatientPriorityPreference getPatientPriorityPreference() {
 		return GoalObservationOperations.getPatientPriorityPreference(this);
 	}
@@ -144,6 +185,33 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 */
 	public EList<ActReference> getActReferences() {
 		return GoalObservationOperations.getActReferences(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<HealthConcernAct> getHealthConcernActs() {
+		return GoalObservationOperations.getHealthConcernActs(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
+		return GoalObservationOperations.getProviderPriorityPreferences(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ExternalDocumentReference> getExternalDocumentReferences() {
+		return GoalObservationOperations.getExternalDocumentReferences(this);
 	}
 
 	/**
