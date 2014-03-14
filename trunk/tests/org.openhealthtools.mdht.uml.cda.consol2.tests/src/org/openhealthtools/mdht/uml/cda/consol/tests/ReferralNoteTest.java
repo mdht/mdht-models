@@ -31,6 +31,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ReferralNote;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ReferralNoteOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.openhealthtools.mdht.uml.hl7.datatypes.PN;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
 import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
@@ -52,11 +53,13 @@ import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteParticipantCallbackContact(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Participant Callback Contact</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteChiefComplaintSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Chief Complaint Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteChiefComplaintAndReasonForVisitSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Chief Complaint And Reason For Visit Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Information Recipient Intended Recipient Information Recipient2 ON Family</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Information Recipient Intended Recipient Information Recipient2 ON Given</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteInformationRecipientIntendedRecipientPersonPNFamily(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Information Recipient Intended Recipient Person PN Family</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteInformationRecipientIntendedRecipientPersonPNGiven(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Information Recipient Intended Recipient Person PN Given</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteInformationRecipientIntendedRecipientPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Information Recipient Intended Recipient Person Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteInformationRecipientIntendedRecipientAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Information Recipient Intended Recipient Addr</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteInformationRecipientIntendedRecipientTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Information Recipient Intended Recipient Telecom</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteInformationRecipientIntendedRecipientReceivedOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Information Recipient Intended Recipient Received Organization</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Information Recipient Intended Recipient Information Recipient</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteInformationRecipientIntendedRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Information Recipient Intended Recipient</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Participant Caregiver Associated Entity Associated Person Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteParticipantCaregiverAssociatedEntityClassCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Participant Caregiver Associated Entity Class Code P</em>}</li>
@@ -375,70 +378,126 @@ public class ReferralNoteTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
-	public void testValidateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily() {
-		OperationsTestCase<ReferralNote> validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamilyTestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT2_ON_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateReferralNoteInformationRecipientIntendedRecipientPersonPNFamily() {
+		OperationsTestCase<ReferralNote> validateReferralNoteInformationRecipientIntendedRecipientPersonPNFamilyTestCase = new OperationsTestCase<ReferralNote>(
+			"validateReferralNoteInformationRecipientIntendedRecipientPersonPNFamily",
+			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_PN_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ReferralNote target) {
-
+				target.init();
+				InformationRecipient infoRec = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(infoRec);
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				infoRec.setIntendedRecipient(intendedRec);
+				Person infoRecPerson = CDAFactory.eINSTANCE.createPerson();
+				intendedRec.setInformationRecipient(infoRecPerson);
+				PN name = DatatypesFactory.eINSTANCE.createPN();
+				infoRecPerson.getNames().add(name);
 			}
 
 			@Override
 			protected void updateToPass(ReferralNote target) {
-				target.init();
-
+				target.getInformationRecipients().get(0).getIntendedRecipient().getInformationRecipient().getNames().get(
+					0).addFamily("Doe");
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamily(
+				return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientPersonPNFamily(
 					(ReferralNote) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONFamilyTestCase.doValidationTest();
+		validateReferralNoteInformationRecipientIntendedRecipientPersonPNFamilyTestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
-	public void testValidateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven() {
-		OperationsTestCase<ReferralNote> validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGivenTestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT2_ON_GIVEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateReferralNoteInformationRecipientIntendedRecipientPersonPNGiven() {
+		OperationsTestCase<ReferralNote> validateReferralNoteInformationRecipientIntendedRecipientPersonPNGivenTestCase = new OperationsTestCase<ReferralNote>(
+			"validateReferralNoteInformationRecipientIntendedRecipientPersonPNGiven",
+			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_PN_GIVEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ReferralNote target) {
-
+				target.init();
+				InformationRecipient infoRec = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(infoRec);
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				infoRec.setIntendedRecipient(intendedRec);
+				Person infoRecPerson = CDAFactory.eINSTANCE.createPerson();
+				intendedRec.setInformationRecipient(infoRecPerson);
+				PN name = DatatypesFactory.eINSTANCE.createPN();
+				infoRecPerson.getNames().add(name);
 			}
 
 			@Override
 			protected void updateToPass(ReferralNote target) {
-				target.init();
-
+				target.getInformationRecipients().get(0).getIntendedRecipient().getInformationRecipient().getNames().get(
+					0).addGiven("John");
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGiven(
+				return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientPersonPNGiven(
 					(ReferralNote) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient2ONGivenTestCase.doValidationTest();
+		validateReferralNoteInformationRecipientIntendedRecipientPersonPNGivenTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateReferralNoteInformationRecipientIntendedRecipientPersonName() {
+		OperationsTestCase<ReferralNote> validateReferralNoteInformationRecipientIntendedRecipientPersonNameTestCase = new OperationsTestCase<ReferralNote>(
+			"validateReferralNoteInformationRecipientIntendedRecipientPersonName",
+			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ReferralNote target) {
+				target.init();
+				InformationRecipient infoRec = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(infoRec);
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				infoRec.setIntendedRecipient(intendedRec);
+				Person infoRecPerson = CDAFactory.eINSTANCE.createPerson();
+				intendedRec.setInformationRecipient(infoRecPerson);
+			}
+
+			@Override
+			protected void updateToPass(ReferralNote target) {
+				target.getInformationRecipients().get(0).getIntendedRecipient().getInformationRecipient().getNames().add(
+					DatatypesFactory.eINSTANCE.createPN());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientPersonName(
+					(ReferralNote) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateReferralNoteInformationRecipientIntendedRecipientPersonNameTestCase.doValidationTest();
 	}
 
 	/**
@@ -556,6 +615,44 @@ public class ReferralNoteTest extends CDAValidationTest {
 		};
 
 		validateReferralNoteInformationRecipientIntendedRecipientReceivedOrganizationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateReferralNoteInformationRecipientIntendedRecipientInformationRecipient() {
+		OperationsTestCase<ReferralNote> validateReferralNoteInformationRecipientIntendedRecipientInformationRecipientTestCase = new OperationsTestCase<ReferralNote>(
+			"validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient",
+			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ReferralNote target) {
+				target.init();
+				InformationRecipient infoRec = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(infoRec);
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				infoRec.setIntendedRecipient(intendedRec);
+			}
+
+			@Override
+			protected void updateToPass(ReferralNote target) {
+				Person infoRecPerson = CDAFactory.eINSTANCE.createPerson();
+				target.getInformationRecipients().get(0).getIntendedRecipient().setInformationRecipient(infoRecPerson);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ReferralNoteOperations.validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient(
+					(ReferralNote) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateReferralNoteInformationRecipientIntendedRecipientInformationRecipientTestCase.doValidationTest();
 	}
 
 	/**
