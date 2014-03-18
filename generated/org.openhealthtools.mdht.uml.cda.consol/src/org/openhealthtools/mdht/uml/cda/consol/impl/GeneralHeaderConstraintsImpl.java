@@ -1909,9 +1909,9 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization(
+	public boolean validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientReceivedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization(
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientReceivedOrganization(
 			this, diagnostics, context);
 	}
 

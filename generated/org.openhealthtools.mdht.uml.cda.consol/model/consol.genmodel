@@ -714,9 +714,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformationRecipientIntendedRecipientReceivedOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformationRecipientIntendedRecipientReceivedOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformationRecipientIntendedRecipientReceivedOrganization/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformationRecipientIntendedRecipient">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsInformationRecipientIntendedRecipient/diagnostics"/>
