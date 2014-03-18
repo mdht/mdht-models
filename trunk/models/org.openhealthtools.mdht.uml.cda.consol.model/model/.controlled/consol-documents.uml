@@ -497,8 +497,8 @@ value.codeSystem = '2.16.840.1.113883.5.111' and (value.code = 'ADOPT' or value.
             </generalization>
             <ownedAttribute xmi:id="_xqTkYOxmEeG7k4bbVdXbXw" name="use" visibility="private">
               <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zFEA0DcEd6xYZuu1VKCVw"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ymf0sPIkEeGu1M-cCXg0Dg" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YmgbwPIkEeGu1M-cCXg0Dg" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BrVk4K6YEeOuo5Ady-cEBA" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BrVk4a6YEeOuo5Ady-cEBA"/>
               <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_5iTUkD52Ed6cla2oXsPtlA"/>
             </ownedAttribute>
           </nestedClassifier>
@@ -844,7 +844,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
         <ownedAttribute xmi:id="_gTqdoCzEEeGMXrZ0DiQwGg" name="informationRecipient" type="_HcPMsCymEeGMXrZ0DiQwGg" association="_gTqdoizEEeGMXrZ0DiQwGg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gTqdoSzEEeGMXrZ0DiQwGg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_26kZECzEEeGMXrZ0DiQwGg" name="recievedOrganization" type="_subVMCzEEeGMXrZ0DiQwGg" association="_26kZEizEEeGMXrZ0DiQwGg">
+        <ownedAttribute xmi:id="_26kZECzEEeGMXrZ0DiQwGg" name="receivedOrganization" type="_subVMCzEEeGMXrZ0DiQwGg" association="_26kZEizEEeGMXrZ0DiQwGg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_26kZESzEEeGMXrZ0DiQwGg"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_subVMCzEEeGMXrZ0DiQwGg" name="Organization">
