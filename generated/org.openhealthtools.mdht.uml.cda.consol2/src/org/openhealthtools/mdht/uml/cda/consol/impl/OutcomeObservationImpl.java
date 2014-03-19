@@ -20,8 +20,12 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.ActReference;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
+import org.openhealthtools.mdht.uml.cda.consol.GoalObservation;
+import org.openhealthtools.mdht.uml.cda.consol.InterventionAct;
 import org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation;
 
+import org.openhealthtools.mdht.uml.cda.consol.ProgressTowardGoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.OutcomeObservationOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
@@ -113,6 +117,56 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateOutcomeObservationAuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OutcomeObservationOperations.validateOutcomeObservationAuthorParticipation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservationGoalObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OutcomeObservationOperations.validateOutcomeObservationGoalObservation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservationProgressTowardGoalObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OutcomeObservationOperations.validateOutcomeObservationProgressTowardGoalObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservationInterventionAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OutcomeObservationOperations.validateOutcomeObservationInterventionAct(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservationExternalDocumentReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OutcomeObservationOperations.validateOutcomeObservationExternalDocumentReference(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<ActReference> getActReferences() {
 		return OutcomeObservationOperations.getActReferences(this);
 	}
@@ -124,6 +178,42 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 */
 	public EList<ActReference> getActReference2s() {
 		return OutcomeObservationOperations.getActReference2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<GoalObservation> getGoalObservations() {
+		return OutcomeObservationOperations.getGoalObservations(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProgressTowardGoalObservation getProgressTowardGoalObservation() {
+		return OutcomeObservationOperations.getProgressTowardGoalObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<InterventionAct> getInterventionActs() {
+		return OutcomeObservationOperations.getInterventionActs(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ExternalDocumentReference> getExternalDocumentReferences() {
+		return OutcomeObservationOperations.getExternalDocumentReferences(this);
 	}
 
 	/**

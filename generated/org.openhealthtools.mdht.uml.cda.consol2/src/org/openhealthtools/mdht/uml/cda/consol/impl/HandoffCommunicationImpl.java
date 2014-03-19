@@ -135,6 +135,17 @@ public class HandoffCommunicationImpl extends ActImpl implements HandoffCommunic
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHandoffCommunicationAuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HandoffCommunicationOperations.validateHandoffCommunicationAuthorParticipation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
 	 * @generated
 	 */

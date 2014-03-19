@@ -3497,66 +3497,6 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.PATIENT_PRIORITY_PREFERENCE: {
-				PatientPriorityPreference patientPriorityPreference = (PatientPriorityPreference) theEObject;
-				T result = casePatientPriorityPreference(patientPriorityPreference);
-				if (result == null) {
-					result = caseObservation(patientPriorityPreference);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(patientPriorityPreference);
-				}
-				if (result == null) {
-					result = caseAct(patientPriorityPreference);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(patientPriorityPreference);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PATIENT_REFERRAL_ACT: {
-				PatientReferralAct patientReferralAct = (PatientReferralAct) theEObject;
-				T result = casePatientReferralAct(patientReferralAct);
-				if (result == null) {
-					result = caseCDA_Act(patientReferralAct);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(patientReferralAct);
-				}
-				if (result == null) {
-					result = caseAct(patientReferralAct);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(patientReferralAct);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PLANNED_COVERAGE: {
-				PlannedCoverage plannedCoverage = (PlannedCoverage) theEObject;
-				T result = casePlannedCoverage(plannedCoverage);
-				if (result == null) {
-					result = caseCDA_Act(plannedCoverage);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(plannedCoverage);
-				}
-				if (result == null) {
-					result = caseAct(plannedCoverage);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(plannedCoverage);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case ConsolPackage.GOAL_OBSERVATION: {
 				GoalObservation goalObservation = (GoalObservation) theEObject;
 				T result = caseGoalObservation(goalObservation);
@@ -3577,6 +3517,26 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.PATIENT_PRIORITY_PREFERENCE: {
+				PatientPriorityPreference patientPriorityPreference = (PatientPriorityPreference) theEObject;
+				T result = casePatientPriorityPreference(patientPriorityPreference);
+				if (result == null) {
+					result = caseObservation(patientPriorityPreference);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(patientPriorityPreference);
+				}
+				if (result == null) {
+					result = caseAct(patientPriorityPreference);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(patientPriorityPreference);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.HEALTH_CONCERN_ACT: {
 				HealthConcernAct healthConcernAct = (HealthConcernAct) theEObject;
 				T result = caseHealthConcernAct(healthConcernAct);
@@ -3591,126 +3551,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(healthConcernAct);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PROVIDER_PRIORITY_PREFERENCE: {
-				ProviderPriorityPreference providerPriorityPreference = (ProviderPriorityPreference) theEObject;
-				T result = caseProviderPriorityPreference(providerPriorityPreference);
-				if (result == null) {
-					result = caseObservation(providerPriorityPreference);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(providerPriorityPreference);
-				}
-				if (result == null) {
-					result = caseAct(providerPriorityPreference);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(providerPriorityPreference);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.EXTERNAL_DOCUMENT_REFERENCE: {
-				ExternalDocumentReference externalDocumentReference = (ExternalDocumentReference) theEObject;
-				T result = caseExternalDocumentReference(externalDocumentReference);
-				if (result == null) {
-					result = caseCDA_Act(externalDocumentReference);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(externalDocumentReference);
-				}
-				if (result == null) {
-					result = caseAct(externalDocumentReference);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(externalDocumentReference);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.INTERVENTION_ACT: {
-				InterventionAct interventionAct = (InterventionAct) theEObject;
-				T result = caseInterventionAct(interventionAct);
-				if (result == null) {
-					result = caseCDA_Act(interventionAct);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(interventionAct);
-				}
-				if (result == null) {
-					result = caseAct(interventionAct);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(interventionAct);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PLANNED_IMMUNIZATION_ACTIVITY: {
-				PlannedImmunizationActivity plannedImmunizationActivity = (PlannedImmunizationActivity) theEObject;
-				T result = casePlannedImmunizationActivity(plannedImmunizationActivity);
-				if (result == null) {
-					result = caseSubstanceAdministration(plannedImmunizationActivity);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(plannedImmunizationActivity);
-				}
-				if (result == null) {
-					result = caseAct(plannedImmunizationActivity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(plannedImmunizationActivity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PROGNOSIS_OBSERVATION: {
-				PrognosisObservation prognosisObservation = (PrognosisObservation) theEObject;
-				T result = casePrognosisObservation(prognosisObservation);
-				if (result == null) {
-					result = caseObservation(prognosisObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(prognosisObservation);
-				}
-				if (result == null) {
-					result = caseAct(prognosisObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(prognosisObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.PROGRESS_TOWARD_GOAL_OBSERVATION: {
-				ProgressTowardGoalObservation progressTowardGoalObservation = (ProgressTowardGoalObservation) theEObject;
-				T result = caseProgressTowardGoalObservation(progressTowardGoalObservation);
-				if (result == null) {
-					result = caseObservation(progressTowardGoalObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(progressTowardGoalObservation);
-				}
-				if (result == null) {
-					result = caseAct(progressTowardGoalObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(progressTowardGoalObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -3757,40 +3597,20 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.SUBSTANCE_ADMINISTERED_ACT: {
-				SubstanceAdministeredAct substanceAdministeredAct = (SubstanceAdministeredAct) theEObject;
-				T result = caseSubstanceAdministeredAct(substanceAdministeredAct);
+			case ConsolPackage.WOUND_OBSERVATION: {
+				WoundObservation woundObservation = (WoundObservation) theEObject;
+				T result = caseWoundObservation(woundObservation);
 				if (result == null) {
-					result = caseCDA_Act(substanceAdministeredAct);
+					result = caseObservation(woundObservation);
 				}
 				if (result == null) {
-					result = caseClinicalStatement(substanceAdministeredAct);
+					result = caseClinicalStatement(woundObservation);
 				}
 				if (result == null) {
-					result = caseAct(substanceAdministeredAct);
+					result = caseAct(woundObservation);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(substanceAdministeredAct);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.WOUND_CHARACTERISTICS: {
-				WoundCharacteristics woundCharacteristics = (WoundCharacteristics) theEObject;
-				T result = caseWoundCharacteristics(woundCharacteristics);
-				if (result == null) {
-					result = caseObservation(woundCharacteristics);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(woundCharacteristics);
-				}
-				if (result == null) {
-					result = caseAct(woundCharacteristics);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(woundCharacteristics);
+					result = caseInfrastructureRoot(woundObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -3817,20 +3637,200 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.WOUND_OBSERVATION: {
-				WoundObservation woundObservation = (WoundObservation) theEObject;
-				T result = caseWoundObservation(woundObservation);
+			case ConsolPackage.WOUND_CHARACTERISTICS: {
+				WoundCharacteristics woundCharacteristics = (WoundCharacteristics) theEObject;
+				T result = caseWoundCharacteristics(woundCharacteristics);
 				if (result == null) {
-					result = caseObservation(woundObservation);
+					result = caseObservation(woundCharacteristics);
 				}
 				if (result == null) {
-					result = caseClinicalStatement(woundObservation);
+					result = caseClinicalStatement(woundCharacteristics);
 				}
 				if (result == null) {
-					result = caseAct(woundObservation);
+					result = caseAct(woundCharacteristics);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(woundObservation);
+					result = caseInfrastructureRoot(woundCharacteristics);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROVIDER_PRIORITY_PREFERENCE: {
+				ProviderPriorityPreference providerPriorityPreference = (ProviderPriorityPreference) theEObject;
+				T result = caseProviderPriorityPreference(providerPriorityPreference);
+				if (result == null) {
+					result = caseObservation(providerPriorityPreference);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(providerPriorityPreference);
+				}
+				if (result == null) {
+					result = caseAct(providerPriorityPreference);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(providerPriorityPreference);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.EXTERNAL_DOCUMENT_REFERENCE: {
+				ExternalDocumentReference externalDocumentReference = (ExternalDocumentReference) theEObject;
+				T result = caseExternalDocumentReference(externalDocumentReference);
+				if (result == null) {
+					result = caseCDA_Act(externalDocumentReference);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(externalDocumentReference);
+				}
+				if (result == null) {
+					result = caseAct(externalDocumentReference);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(externalDocumentReference);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROGRESS_TOWARD_GOAL_OBSERVATION: {
+				ProgressTowardGoalObservation progressTowardGoalObservation = (ProgressTowardGoalObservation) theEObject;
+				T result = caseProgressTowardGoalObservation(progressTowardGoalObservation);
+				if (result == null) {
+					result = caseObservation(progressTowardGoalObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(progressTowardGoalObservation);
+				}
+				if (result == null) {
+					result = caseAct(progressTowardGoalObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(progressTowardGoalObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.INTERVENTION_ACT: {
+				InterventionAct interventionAct = (InterventionAct) theEObject;
+				T result = caseInterventionAct(interventionAct);
+				if (result == null) {
+					result = caseCDA_Act(interventionAct);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(interventionAct);
+				}
+				if (result == null) {
+					result = caseAct(interventionAct);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(interventionAct);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PATIENT_REFERRAL_ACT: {
+				PatientReferralAct patientReferralAct = (PatientReferralAct) theEObject;
+				T result = casePatientReferralAct(patientReferralAct);
+				if (result == null) {
+					result = caseCDA_Act(patientReferralAct);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(patientReferralAct);
+				}
+				if (result == null) {
+					result = caseAct(patientReferralAct);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(patientReferralAct);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PLANNED_COVERAGE: {
+				PlannedCoverage plannedCoverage = (PlannedCoverage) theEObject;
+				T result = casePlannedCoverage(plannedCoverage);
+				if (result == null) {
+					result = caseCDA_Act(plannedCoverage);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(plannedCoverage);
+				}
+				if (result == null) {
+					result = caseAct(plannedCoverage);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(plannedCoverage);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PLANNED_IMMUNIZATION_ACTIVITY: {
+				PlannedImmunizationActivity plannedImmunizationActivity = (PlannedImmunizationActivity) theEObject;
+				T result = casePlannedImmunizationActivity(plannedImmunizationActivity);
+				if (result == null) {
+					result = caseSubstanceAdministration(plannedImmunizationActivity);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(plannedImmunizationActivity);
+				}
+				if (result == null) {
+					result = caseAct(plannedImmunizationActivity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(plannedImmunizationActivity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROGNOSIS_OBSERVATION: {
+				PrognosisObservation prognosisObservation = (PrognosisObservation) theEObject;
+				T result = casePrognosisObservation(prognosisObservation);
+				if (result == null) {
+					result = caseObservation(prognosisObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(prognosisObservation);
+				}
+				if (result == null) {
+					result = caseAct(prognosisObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(prognosisObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.SUBSTANCE_ADMINISTERED_ACT: {
+				SubstanceAdministeredAct substanceAdministeredAct = (SubstanceAdministeredAct) theEObject;
+				T result = caseSubstanceAdministeredAct(substanceAdministeredAct);
+				if (result == null) {
+					result = caseCDA_Act(substanceAdministeredAct);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(substanceAdministeredAct);
+				}
+				if (result == null) {
+					result = caseAct(substanceAdministeredAct);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(substanceAdministeredAct);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);

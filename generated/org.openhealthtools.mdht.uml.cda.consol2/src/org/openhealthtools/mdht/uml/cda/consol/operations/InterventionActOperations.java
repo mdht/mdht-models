@@ -27,6 +27,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ActReference;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
+import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
 import org.openhealthtools.mdht.uml.cda.consol.GoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionAct;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendations;
@@ -45,6 +46,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActMoodCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Mood Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Code P</em>}</li>
@@ -56,11 +58,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActNutritionRecommendations(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Nutrition Recommendations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActActReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Act Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActActReference2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Act Reference2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Author Participation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act External Document Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getGoalObservations() <em>Get Goal Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getInterventionActs() <em>Get Intervention Acts</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getNutritionRecommendationss() <em>Get Nutrition Recommendationss</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getActReferences() <em>Get Act References</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getActReference2s() <em>Get Act Reference2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getExternalDocumentReferences() <em>Get External Document References</em>}</li>
  * </ul>
  * </p>
  *
@@ -193,6 +198,76 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateInterventionActMoodCodeP(InterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Mood Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateInterventionActMoodCodeP(InterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateInterventionActMoodCodeP(InterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Mood Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateInterventionActMoodCodeP(InterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param interventionAct The receiving '<em><b>Intervention Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateInterventionActMoodCodeP(InterventionAct interventionAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.INTERVENTION_ACT);
+			try {
+				VALIDATE_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			interventionAct)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INTERVENTION_ACT__INTERVENTION_ACT_MOOD_CODE_P,
+					ConsolPlugin.INSTANCE.getString("InterventionActMoodCodeP"), new Object[] { interventionAct }));
+			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.InterventionActMoodCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.InterventionActMoodCodeP", passToken);
+				}
+				passToken.add(interventionAct);
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateInterventionActMoodCode(InterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Mood Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -200,7 +275,9 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INTERVENTION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
+	protected static final String VALIDATE_INTERVENTION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentActMood) and "
+			+ "let value : vocab::x_DocumentActMood = self.moodCode.oclAsType(vocab::x_DocumentActMood) in "
+			+ "value = vocab::x_DocumentActMood::APT or value = vocab::x_DocumentActMood::ARQ or value = vocab::x_DocumentActMood::EVN or value = vocab::x_DocumentActMood::INT or value = vocab::x_DocumentActMood::PRMS or value = vocab::x_DocumentActMood::PRP or value = vocab::x_DocumentActMood::RQO";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInterventionActMoodCode(InterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Mood Code</em>}' invariant operation.
@@ -226,6 +303,14 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInterventionActMoodCode(InterventionAct interventionAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.InterventionActMoodCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(interventionAct)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
 
 		if (VALIDATE_INTERVENTION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -851,6 +936,124 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateInterventionActAuthorParticipation(InterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Author Participation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateInterventionActAuthorParticipation(InterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateInterventionActAuthorParticipation(InterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Author Participation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateInterventionActAuthorParticipation(InterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param interventionAct The receiving '<em><b>Intervention Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateInterventionActAuthorParticipation(InterventionAct interventionAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.INTERVENTION_ACT);
+			try {
+				VALIDATE_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			interventionAct)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INTERVENTION_ACT__INTERVENTION_ACT_AUTHOR_PARTICIPATION,
+					ConsolPlugin.INSTANCE.getString("InterventionActAuthorParticipation"),
+					new Object[] { interventionAct }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateInterventionActExternalDocumentReference(InterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act External Document Reference</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateInterventionActExternalDocumentReference(InterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_INTERVENTION_ACT_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::ExternalDocumentReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateInterventionActExternalDocumentReference(InterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act External Document Reference</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateInterventionActExternalDocumentReference(InterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_INTERVENTION_ACT_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param interventionAct The receiving '<em><b>Intervention Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateInterventionActExternalDocumentReference(InterventionAct interventionAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_INTERVENTION_ACT_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.INTERVENTION_ACT);
+			try {
+				VALIDATE_INTERVENTION_ACT_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERVENTION_ACT_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_INTERVENTION_ACT_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			interventionAct)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.INTERVENTION_ACT__INTERVENTION_ACT_EXTERNAL_DOCUMENT_REFERENCE,
+					ConsolPlugin.INSTANCE.getString("InterventionActExternalDocumentReference"),
+					new Object[] { interventionAct }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getGoalObservations(InterventionAct) <em>Get Goal Observations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -881,7 +1084,7 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.INTERVENTION_ACT,
-				ConsolPackage.Literals.INTERVENTION_ACT.getEAllOperations().get(64));
+				ConsolPackage.Literals.INTERVENTION_ACT.getEAllOperations().get(67));
 			try {
 				GET_GOAL_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_GOAL_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -925,7 +1128,7 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.INTERVENTION_ACT,
-				ConsolPackage.Literals.INTERVENTION_ACT.getEAllOperations().get(65));
+				ConsolPackage.Literals.INTERVENTION_ACT.getEAllOperations().get(68));
 			try {
 				GET_INTERVENTION_ACTS__EOCL_QRY = helper.createQuery(GET_INTERVENTION_ACTS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -969,7 +1172,7 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.INTERVENTION_ACT,
-				ConsolPackage.Literals.INTERVENTION_ACT.getEAllOperations().get(66));
+				ConsolPackage.Literals.INTERVENTION_ACT.getEAllOperations().get(69));
 			try {
 				GET_NUTRITION_RECOMMENDATIONSS__EOCL_QRY = helper.createQuery(GET_NUTRITION_RECOMMENDATIONSS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1013,7 +1216,7 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.INTERVENTION_ACT,
-				ConsolPackage.Literals.INTERVENTION_ACT.getEAllOperations().get(67));
+				ConsolPackage.Literals.INTERVENTION_ACT.getEAllOperations().get(70));
 			try {
 				GET_ACT_REFERENCES__EOCL_QRY = helper.createQuery(GET_ACT_REFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1057,7 +1260,7 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.INTERVENTION_ACT,
-				ConsolPackage.Literals.INTERVENTION_ACT.getEAllOperations().get(68));
+				ConsolPackage.Literals.INTERVENTION_ACT.getEAllOperations().get(71));
 			try {
 				GET_ACT_REFERENCE2S__EOCL_QRY = helper.createQuery(GET_ACT_REFERENCE2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1068,6 +1271,50 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<ActReference> result = (Collection<ActReference>) query.evaluate(interventionAct);
 		return new BasicEList.UnmodifiableEList<ActReference>(result.size(), result.toArray());
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getExternalDocumentReferences(InterventionAct) <em>Get External Document References</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getExternalDocumentReferences(InterventionAct)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_EXTERNAL_DOCUMENT_REFERENCES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ExternalDocumentReference)).oclAsType(consol::ExternalDocumentReference)";
+
+	/**
+	 * The cached OCL query for the '{@link #getExternalDocumentReferences(InterventionAct) <em>Get External Document References</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getExternalDocumentReferences(InterventionAct)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_EXTERNAL_DOCUMENT_REFERENCES__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+
+	public static EList<ExternalDocumentReference> getExternalDocumentReferences(InterventionAct interventionAct) {
+		if (GET_EXTERNAL_DOCUMENT_REFERENCES__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.INTERVENTION_ACT,
+				ConsolPackage.Literals.INTERVENTION_ACT.getEAllOperations().get(72));
+			try {
+				GET_EXTERNAL_DOCUMENT_REFERENCES__EOCL_QRY = helper.createQuery(GET_EXTERNAL_DOCUMENT_REFERENCES__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_EXTERNAL_DOCUMENT_REFERENCES__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<ExternalDocumentReference> result = (Collection<ExternalDocumentReference>) query.evaluate(interventionAct);
+		return new BasicEList.UnmodifiableEList<ExternalDocumentReference>(result.size(), result.toArray());
 	}
 
 } // InterventionActOperations

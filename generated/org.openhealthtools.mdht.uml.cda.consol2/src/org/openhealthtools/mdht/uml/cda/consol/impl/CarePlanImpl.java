@@ -367,6 +367,17 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CarePlanOperations.validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateCarePlanParticipantCaregiverAssociatedEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CarePlanOperations.validateCarePlanParticipantCaregiverAssociatedEntityClassCode(
@@ -504,6 +515,15 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	public boolean validateCarePlanRelatedDocumentParentDocumentVersionNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CarePlanOperations.validateCarePlanRelatedDocumentParentDocumentVersionNumber(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCarePlanRelatedDocumentTypeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CarePlanOperations.validateCarePlanRelatedDocumentTypeCodeP(this, diagnostics, context);
 	}
 
 	/**

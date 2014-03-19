@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHealthConcernAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HealthConcernActTemplateId HealthConcernActClassCode HealthConcernActMoodCode HealthConcernActId HealthConcernActCode HealthConcernActCodeP HealthConcernActStatusCode' templateId.root='2.16.840.1.113883.10.20.22.4.132' classCode='ACT' moodCode='EVN' code.codeSystem='2.16.840.1.113883.5.6' code.codeSystemName='HL7ActClass' constraints.validation.dependOn.HealthConcernActCode='HealthConcernActCodeP' constraints.validation.info='HealthConcernActEffectiveTime HealthConcernActActReference HealthConcernActActReference2 HealthConcernActAssessmentScaleObservation HealthConcernActCognitiveAbilitiesObservation HealthConcernActFamilyHistoryOrganizer HealthConcernActMentalStatusObservation HealthConcernActNutritionAssessment HealthConcernActNutritionAssessment2 HealthConcernActPregnancyObservation HealthConcernActCaregiverCharacteristics HealthConcernActCulturalAndReligiousObservation HealthConcernActCharacteristicsOfHomeEnvironment HealthConcernActNutritionalStatusObservation HealthConcernActPatientPriorityPreference HealthConcernActActReference3'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HealthConcernActTemplateId HealthConcernActClassCode HealthConcernActMoodCode HealthConcernActId HealthConcernActCode HealthConcernActCodeP HealthConcernActStatusCode' templateId.root='2.16.840.1.113883.10.20.22.4.132' classCode='ACT' moodCode='EVN' code.codeSystem='2.16.840.1.113883.5.6' code.codeSystemName='HL7ActClass' constraints.validation.dependOn.HealthConcernActCode='HealthConcernActCodeP' constraints.validation.info='HealthConcernActEffectiveTime HealthConcernActActReference HealthConcernActActReference2 HealthConcernActAssessmentScaleObservation HealthConcernActCognitiveAbilitiesObservation HealthConcernActFamilyHistoryOrganizer HealthConcernActMentalStatusObservation HealthConcernActNutritionAssessment HealthConcernActNutritionAssessment2 HealthConcernActPregnancyObservation HealthConcernActCaregiverCharacteristics HealthConcernActCulturalAndReligiousObservation HealthConcernActCharacteristicsOfHomeEnvironment HealthConcernActNutritionalStatusObservation HealthConcernActPatientPriorityPreference HealthConcernActActReference3 HealthConcernActSelfCareActivities HealthConcernActSensoryAndSpeechStatus HealthConcernActWoundObservation HealthConcernActProviderPriorityPreference HealthConcernActExternalDocumentReference' constraints.validation.warning='HealthConcernActAuthorParticipation'"
  * @generated
  */
 public interface HealthConcernAct extends Act {
@@ -313,6 +313,78 @@ public interface HealthConcernAct extends Act {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
+	 * @generated
+	 */
+	boolean validateHealthConcernActAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SelfCareActivities) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @generated
+	 */
+	boolean validateHealthConcernActSelfCareActivities(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SensoryAndSpeechStatus) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @generated
+	 */
+	boolean validateHealthConcernActSensoryAndSpeechStatus(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::WoundObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @generated
+	 */
+	boolean validateHealthConcernActWoundObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @generated
+	 */
+	boolean validateHealthConcernActProviderPriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::ExternalDocumentReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @generated
+	 */
+	boolean validateHealthConcernActExternalDocumentReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ActReference)).oclAsType(consol::ActReference)'"
 	 * @generated
@@ -444,6 +516,51 @@ public interface HealthConcernAct extends Act {
 	 * @generated
 	 */
 	EList<ActReference> getActReference3s();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SelfCareActivities)).oclAsType(consol::SelfCareActivities)'"
+	 * @generated
+	 */
+	EList<SelfCareActivities> getSelfCareActivitiess();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SensoryAndSpeechStatus)).oclAsType(consol::SensoryAndSpeechStatus)'"
+	 * @generated
+	 */
+	EList<SensoryAndSpeechStatus> getSensoryAndSpeechStatuss();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::WoundObservation)).oclAsType(consol::WoundObservation)'"
+	 * @generated
+	 */
+	EList<WoundObservation> getWoundObservations();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)'"
+	 * @generated
+	 */
+	EList<ProviderPriorityPreference> getProviderPriorityPreferences();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ExternalDocumentReference)).oclAsType(consol::ExternalDocumentReference)'"
+	 * @generated
+	 */
+	EList<ExternalDocumentReference> getExternalDocumentReferences();
 
 	/**
 	 * <!-- begin-user-doc -->

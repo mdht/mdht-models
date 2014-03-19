@@ -170,6 +170,17 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMentalStatusObservationAuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MentalStatusObservationOperations.validateMentalStatusObservationAuthorParticipation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return MentalStatusObservationOperations.getAssessmentScaleObservations(this);
 	}

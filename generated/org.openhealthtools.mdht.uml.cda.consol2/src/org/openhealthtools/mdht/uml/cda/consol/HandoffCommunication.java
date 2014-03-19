@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHandoffCommunication()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HandoffCommunicationTemplateId HandoffCommunicationClassCode HandoffCommunicationMoodCode HandoffCommunicationCode HandoffCommunicationCodeP HandoffCommunicationStatusCode HandoffCommunicationStatusCodeP HandoffCommunicationEffectiveTime HandoffCommunicationParticipant HandoffCommunicationParticipantTypeCode HandoffCommunicationParticipantParticipantRole' templateId.root='2.16.840.1.113883.10.20.22.4.141' classCode='ACT' moodCode='EVN' code.code='432138007' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='handoff communication (procedure)' constraints.validation.dependOn.HandoffCommunicationCode='HandoffCommunicationCodeP' statusCode.code='completed' constraints.validation.warning='HandoffCommunicationParticipantParticipantRoleCodeP HandoffCommunicationParticipantParticipantRoleCode' constraints.validation.query='HandoffCommunicationParticipantParticipantRoleCodeP HandoffCommunicationParticipantParticipantRoleCode HandoffCommunicationParticipantTypeCode HandoffCommunicationParticipantParticipantRole' constraints.validation.dependOn.HandoffCommunicationParticipantParticipantRoleCode='HandoffCommunicationParticipantParticipantRoleCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HandoffCommunicationTemplateId HandoffCommunicationClassCode HandoffCommunicationMoodCode HandoffCommunicationCode HandoffCommunicationCodeP HandoffCommunicationStatusCode HandoffCommunicationStatusCodeP HandoffCommunicationEffectiveTime HandoffCommunicationParticipant HandoffCommunicationAuthorParticipation HandoffCommunicationParticipantTypeCode HandoffCommunicationParticipantParticipantRole' templateId.root='2.16.840.1.113883.10.20.22.4.141' classCode='ACT' moodCode='EVN' code.code='432138007' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='handoff communication (procedure)' constraints.validation.dependOn.HandoffCommunicationCode='HandoffCommunicationCodeP' statusCode.code='completed' constraints.validation.warning='HandoffCommunicationParticipantParticipantRoleCodeP HandoffCommunicationParticipantParticipantRoleCode' constraints.validation.query='HandoffCommunicationParticipantParticipantRoleCodeP HandoffCommunicationParticipantParticipantRoleCode HandoffCommunicationParticipantTypeCode HandoffCommunicationParticipantParticipantRole' constraints.validation.dependOn.HandoffCommunicationParticipantParticipantRoleCode='HandoffCommunicationParticipantParticipantRoleCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHandoffCommunicationParticipant typeCode='IRCP' constraints.validation.error='HandoffCommunicationParticipantTypeCode HandoffCommunicationParticipantParticipantRole'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHandoffCommunicationParticipantParticipantRole code.codeSystem='2.16.840.1.113883.6.101' code.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.warning='HandoffCommunicationParticipantParticipantRoleCode HandoffCommunicationParticipantParticipantRoleCodeP' constraints.validation.dependOn.HandoffCommunicationParticipantParticipantRoleCode='HandoffCommunicationParticipantParticipantRoleCodeP'"
  * @generated
@@ -138,6 +138,18 @@ public interface HandoffCommunication extends Act {
 	 * @generated
 	 */
 	boolean validateHandoffCommunicationParticipant(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
+	 * @generated
+	 */
+	boolean validateHandoffCommunicationAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

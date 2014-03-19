@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProviderPriorityPreference()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProviderPriorityPreferenceTemplateId ProviderPriorityPreferenceClassCode ProviderPriorityPreferenceMoodCode ProviderPriorityPreferenceId ProviderPriorityPreferenceCode ProviderPriorityPreferenceCodeP ProviderPriorityPreferenceValue ProviderPriorityPreferenceValueP' templateId.root='2.16.840.1.113883.10.20.22.4.143' classCode='OBS' moodCode='EVN' code.code='103323008' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Provider preference' constraints.validation.dependOn.ProviderPriorityPreferenceCode='ProviderPriorityPreferenceCodeP' priorityCode.codeSystem='2.16.840.1.113883.6.96' priorityCode.codeSystemName='SNOMEDCT' constraints.validation.warning='ProviderPriorityPreferencePriorityCode ProviderPriorityPreferencePriorityCodeP' constraints.validation.dependOn.ProviderPriorityPreferencePriorityCode='ProviderPriorityPreferencePriorityCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProviderPriorityPreferenceTemplateId ProviderPriorityPreferenceClassCode ProviderPriorityPreferenceMoodCode ProviderPriorityPreferenceId ProviderPriorityPreferenceCode ProviderPriorityPreferenceCodeP ProviderPriorityPreferenceValue ProviderPriorityPreferenceValueP' templateId.root='2.16.840.1.113883.10.20.22.4.143' classCode='OBS' moodCode='EVN' code.code='103323008' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Provider preference' constraints.validation.dependOn.ProviderPriorityPreferenceCode='ProviderPriorityPreferenceCodeP' priorityCode.codeSystem='2.16.840.1.113883.6.96' priorityCode.codeSystemName='SNOMEDCT' constraints.validation.warning='ProviderPriorityPreferencePriorityCode ProviderPriorityPreferencePriorityCodeP ProviderPriorityPreferenceAuthorParticipation' constraints.validation.dependOn.ProviderPriorityPreferencePriorityCode='ProviderPriorityPreferencePriorityCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
  * @generated
  */
 public interface ProviderPriorityPreference extends Observation {
@@ -148,6 +148,19 @@ public interface ProviderPriorityPreference extends Observation {
 	 * @generated
 	 */
 	boolean validateProviderPriorityPreferenceValueP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
+	 * @generated
+	 */
+	boolean validateProviderPriorityPreferenceAuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

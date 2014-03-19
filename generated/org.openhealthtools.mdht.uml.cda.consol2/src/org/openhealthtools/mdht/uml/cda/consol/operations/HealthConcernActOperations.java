@@ -32,6 +32,7 @@ import org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservation;
+import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation;
@@ -40,6 +41,10 @@ import org.openhealthtools.mdht.uml.cda.consol.NutritionalStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation;
 
+import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
+import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
+import org.openhealthtools.mdht.uml.cda.consol.SensoryAndSpeechStatus;
+import org.openhealthtools.mdht.uml.cda.consol.WoundObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
@@ -75,6 +80,12 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActNutritionalStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Nutritional Status Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActPatientPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Patient Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActActReference3(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Act Reference3</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Author Participation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActSelfCareActivities(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Self Care Activities</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActSensoryAndSpeechStatus(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Sensory And Speech Status</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActWoundObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Wound Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActProviderPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Provider Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act External Document Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getActReferences() <em>Get Act References</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getActReference2s() <em>Get Act Reference2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getAssessmentScaleObservations() <em>Get Assessment Scale Observations</em>}</li>
@@ -90,6 +101,11 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getNutritionalStatusObservations() <em>Get Nutritional Status Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getPatientPriorityPreferences() <em>Get Patient Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getActReference3s() <em>Get Act Reference3s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getSelfCareActivitiess() <em>Get Self Care Activitiess</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getSensoryAndSpeechStatuss() <em>Get Sensory And Speech Statuss</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getWoundObservations() <em>Get Wound Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getExternalDocumentReferences() <em>Get External Document References</em>}</li>
  * </ul>
  * </p>
  *
@@ -1480,6 +1496,362 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateHealthConcernActAuthorParticipation(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Author Participation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernActAuthorParticipation(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_HEALTH_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateHealthConcernActAuthorParticipation(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Author Participation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernActAuthorParticipation(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_HEALTH_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param healthConcernAct The receiving '<em><b>Health Concern Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateHealthConcernActAuthorParticipation(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_HEALTH_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERN_ACT);
+			try {
+				VALIDATE_HEALTH_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			healthConcernAct)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_AUTHOR_PARTICIPATION,
+					ConsolPlugin.INSTANCE.getString("HealthConcernActAuthorParticipation"),
+					new Object[] { healthConcernAct }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateHealthConcernActSelfCareActivities(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Self Care Activities</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernActSelfCareActivities(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_HEALTH_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SelfCareActivities) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateHealthConcernActSelfCareActivities(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Self Care Activities</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernActSelfCareActivities(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_HEALTH_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param healthConcernAct The receiving '<em><b>Health Concern Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateHealthConcernActSelfCareActivities(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_HEALTH_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERN_ACT);
+			try {
+				VALIDATE_HEALTH_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			healthConcernAct)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_SELF_CARE_ACTIVITIES,
+					ConsolPlugin.INSTANCE.getString("HealthConcernActSelfCareActivities"),
+					new Object[] { healthConcernAct }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateHealthConcernActSensoryAndSpeechStatus(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Sensory And Speech Status</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernActSensoryAndSpeechStatus(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_HEALTH_CONCERN_ACT_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SensoryAndSpeechStatus) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateHealthConcernActSensoryAndSpeechStatus(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Sensory And Speech Status</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernActSensoryAndSpeechStatus(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_HEALTH_CONCERN_ACT_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param healthConcernAct The receiving '<em><b>Health Concern Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateHealthConcernActSensoryAndSpeechStatus(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_HEALTH_CONCERN_ACT_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERN_ACT);
+			try {
+				VALIDATE_HEALTH_CONCERN_ACT_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERN_ACT_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_CONCERN_ACT_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			healthConcernAct)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_SENSORY_AND_SPEECH_STATUS,
+					ConsolPlugin.INSTANCE.getString("HealthConcernActSensoryAndSpeechStatus"),
+					new Object[] { healthConcernAct }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateHealthConcernActWoundObservation(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Wound Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernActWoundObservation(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_HEALTH_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::WoundObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateHealthConcernActWoundObservation(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Wound Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernActWoundObservation(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_HEALTH_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param healthConcernAct The receiving '<em><b>Health Concern Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateHealthConcernActWoundObservation(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_HEALTH_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERN_ACT);
+			try {
+				VALIDATE_HEALTH_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			healthConcernAct)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_WOUND_OBSERVATION,
+					ConsolPlugin.INSTANCE.getString("HealthConcernActWoundObservation"),
+					new Object[] { healthConcernAct }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateHealthConcernActProviderPriorityPreference(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Provider Priority Preference</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernActProviderPriorityPreference(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_HEALTH_CONCERN_ACT_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateHealthConcernActProviderPriorityPreference(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Provider Priority Preference</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernActProviderPriorityPreference(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_HEALTH_CONCERN_ACT_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param healthConcernAct The receiving '<em><b>Health Concern Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateHealthConcernActProviderPriorityPreference(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_HEALTH_CONCERN_ACT_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERN_ACT);
+			try {
+				VALIDATE_HEALTH_CONCERN_ACT_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERN_ACT_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HEALTH_CONCERN_ACT_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			healthConcernAct)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PROVIDER_PRIORITY_PREFERENCE,
+					ConsolPlugin.INSTANCE.getString("HealthConcernActProviderPriorityPreference"),
+					new Object[] { healthConcernAct }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateHealthConcernActExternalDocumentReference(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act External Document Reference</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernActExternalDocumentReference(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_HEALTH_CONCERN_ACT_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::ExternalDocumentReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateHealthConcernActExternalDocumentReference(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act External Document Reference</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHealthConcernActExternalDocumentReference(HealthConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_HEALTH_CONCERN_ACT_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param healthConcernAct The receiving '<em><b>Health Concern Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateHealthConcernActExternalDocumentReference(HealthConcernAct healthConcernAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_HEALTH_CONCERN_ACT_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERN_ACT);
+			try {
+				VALIDATE_HEALTH_CONCERN_ACT_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERN_ACT_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HEALTH_CONCERN_ACT_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			healthConcernAct)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_EXTERNAL_DOCUMENT_REFERENCE,
+					ConsolPlugin.INSTANCE.getString("HealthConcernActExternalDocumentReference"),
+					new Object[] { healthConcernAct }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getActReferences(HealthConcernAct) <em>Get Act References</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1510,7 +1882,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
-				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(74));
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(80));
 			try {
 				GET_ACT_REFERENCES__EOCL_QRY = helper.createQuery(GET_ACT_REFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1554,7 +1926,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
-				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(75));
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(81));
 			try {
 				GET_ACT_REFERENCE2S__EOCL_QRY = helper.createQuery(GET_ACT_REFERENCE2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1598,7 +1970,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
-				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(76));
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(82));
 			try {
 				GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1643,7 +2015,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
-				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(77));
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(83));
 			try {
 				GET_COGNITIVE_ABILITIES_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_COGNITIVE_ABILITIES_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1687,7 +2059,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
-				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(78));
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(84));
 			try {
 				GET_FAMILY_HISTORY_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_ORGANIZERS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1731,7 +2103,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
-				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(79));
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(85));
 			try {
 				GET_MENTAL_STATUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_MENTAL_STATUS_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1775,7 +2147,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
-				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(80));
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(86));
 			try {
 				GET_NUTRITION_ASSESSMENTS__EOCL_QRY = helper.createQuery(GET_NUTRITION_ASSESSMENTS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1819,7 +2191,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
-				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(81));
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(87));
 			try {
 				GET_NUTRITION_ASSESSMENT2S__EOCL_QRY = helper.createQuery(GET_NUTRITION_ASSESSMENT2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1863,7 +2235,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
-				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(82));
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(88));
 			try {
 				GET_PREGNANCY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PREGNANCY_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1907,7 +2279,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
-				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(83));
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(89));
 			try {
 				GET_CAREGIVER_CHARACTERISTICSS__EOCL_QRY = helper.createQuery(GET_CAREGIVER_CHARACTERISTICSS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1952,7 +2324,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
-				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(84));
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(90));
 			try {
 				GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1997,7 +2369,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
-				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(85));
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(91));
 			try {
 				GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_QRY = helper.createQuery(GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2041,7 +2413,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
-				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(86));
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(92));
 			try {
 				GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2085,7 +2457,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
-				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(87));
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(93));
 			try {
 				GET_PATIENT_PRIORITY_PREFERENCES__EOCL_QRY = helper.createQuery(GET_PATIENT_PRIORITY_PREFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2129,7 +2501,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
-				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(88));
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(94));
 			try {
 				GET_ACT_REFERENCE3S__EOCL_QRY = helper.createQuery(GET_ACT_REFERENCE3S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2140,6 +2512,226 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<ActReference> result = (Collection<ActReference>) query.evaluate(healthConcernAct);
 		return new BasicEList.UnmodifiableEList<ActReference>(result.size(), result.toArray());
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getSelfCareActivitiess(HealthConcernAct) <em>Get Self Care Activitiess</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSelfCareActivitiess(HealthConcernAct)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_SELF_CARE_ACTIVITIESS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SelfCareActivities)).oclAsType(consol::SelfCareActivities)";
+
+	/**
+	 * The cached OCL query for the '{@link #getSelfCareActivitiess(HealthConcernAct) <em>Get Self Care Activitiess</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSelfCareActivitiess(HealthConcernAct)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_SELF_CARE_ACTIVITIESS__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+
+	public static EList<SelfCareActivities> getSelfCareActivitiess(HealthConcernAct healthConcernAct) {
+		if (GET_SELF_CARE_ACTIVITIESS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(95));
+			try {
+				GET_SELF_CARE_ACTIVITIESS__EOCL_QRY = helper.createQuery(GET_SELF_CARE_ACTIVITIESS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_SELF_CARE_ACTIVITIESS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<SelfCareActivities> result = (Collection<SelfCareActivities>) query.evaluate(healthConcernAct);
+		return new BasicEList.UnmodifiableEList<SelfCareActivities>(result.size(), result.toArray());
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getSensoryAndSpeechStatuss(HealthConcernAct) <em>Get Sensory And Speech Statuss</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSensoryAndSpeechStatuss(HealthConcernAct)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_SENSORY_AND_SPEECH_STATUSS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SensoryAndSpeechStatus)).oclAsType(consol::SensoryAndSpeechStatus)";
+
+	/**
+	 * The cached OCL query for the '{@link #getSensoryAndSpeechStatuss(HealthConcernAct) <em>Get Sensory And Speech Statuss</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSensoryAndSpeechStatuss(HealthConcernAct)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_SENSORY_AND_SPEECH_STATUSS__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+
+	public static EList<SensoryAndSpeechStatus> getSensoryAndSpeechStatuss(HealthConcernAct healthConcernAct) {
+		if (GET_SENSORY_AND_SPEECH_STATUSS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(96));
+			try {
+				GET_SENSORY_AND_SPEECH_STATUSS__EOCL_QRY = helper.createQuery(GET_SENSORY_AND_SPEECH_STATUSS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_SENSORY_AND_SPEECH_STATUSS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<SensoryAndSpeechStatus> result = (Collection<SensoryAndSpeechStatus>) query.evaluate(healthConcernAct);
+		return new BasicEList.UnmodifiableEList<SensoryAndSpeechStatus>(result.size(), result.toArray());
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getWoundObservations(HealthConcernAct) <em>Get Wound Observations</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWoundObservations(HealthConcernAct)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_WOUND_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::WoundObservation)).oclAsType(consol::WoundObservation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getWoundObservations(HealthConcernAct) <em>Get Wound Observations</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWoundObservations(HealthConcernAct)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_WOUND_OBSERVATIONS__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+
+	public static EList<WoundObservation> getWoundObservations(HealthConcernAct healthConcernAct) {
+		if (GET_WOUND_OBSERVATIONS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(97));
+			try {
+				GET_WOUND_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_WOUND_OBSERVATIONS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_WOUND_OBSERVATIONS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<WoundObservation> result = (Collection<WoundObservation>) query.evaluate(healthConcernAct);
+		return new BasicEList.UnmodifiableEList<WoundObservation>(result.size(), result.toArray());
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getProviderPriorityPreferences(HealthConcernAct) <em>Get Provider Priority Preferences</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProviderPriorityPreferences(HealthConcernAct)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)";
+
+	/**
+	 * The cached OCL query for the '{@link #getProviderPriorityPreferences(HealthConcernAct) <em>Get Provider Priority Preferences</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProviderPriorityPreferences(HealthConcernAct)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+
+	public static EList<ProviderPriorityPreference> getProviderPriorityPreferences(HealthConcernAct healthConcernAct) {
+		if (GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(98));
+			try {
+				GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY = helper.createQuery(GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<ProviderPriorityPreference> result = (Collection<ProviderPriorityPreference>) query.evaluate(healthConcernAct);
+		return new BasicEList.UnmodifiableEList<ProviderPriorityPreference>(result.size(), result.toArray());
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getExternalDocumentReferences(HealthConcernAct) <em>Get External Document References</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getExternalDocumentReferences(HealthConcernAct)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_EXTERNAL_DOCUMENT_REFERENCES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ExternalDocumentReference)).oclAsType(consol::ExternalDocumentReference)";
+
+	/**
+	 * The cached OCL query for the '{@link #getExternalDocumentReferences(HealthConcernAct) <em>Get External Document References</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getExternalDocumentReferences(HealthConcernAct)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_EXTERNAL_DOCUMENT_REFERENCES__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+
+	public static EList<ExternalDocumentReference> getExternalDocumentReferences(HealthConcernAct healthConcernAct) {
+		if (GET_EXTERNAL_DOCUMENT_REFERENCES__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT,
+				ConsolPackage.Literals.HEALTH_CONCERN_ACT.getEAllOperations().get(99));
+			try {
+				GET_EXTERNAL_DOCUMENT_REFERENCES__EOCL_QRY = helper.createQuery(GET_EXTERNAL_DOCUMENT_REFERENCES__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_EXTERNAL_DOCUMENT_REFERENCES__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<ExternalDocumentReference> result = (Collection<ExternalDocumentReference>) query.evaluate(healthConcernAct);
+		return new BasicEList.UnmodifiableEList<ExternalDocumentReference>(result.size(), result.toArray());
 	}
 
 } // HealthConcernActOperations

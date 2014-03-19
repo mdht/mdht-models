@@ -173,19 +173,8 @@ public class WoundObservationImpl extends ObservationImpl implements WoundObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateWoundObservationActReferenceCDNullFlavor(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return WoundObservationOperations.validateWoundObservationActReferenceCDNullFlavor(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateWoundObservationActReferenceCDNullFlavorP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return WoundObservationOperations.validateWoundObservationActReferenceCDNullFlavorP(this, diagnostics, context);
+	public boolean validateWoundObservationAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return WoundObservationOperations.validateWoundObservationAuthorParticipation(this, diagnostics, context);
 	}
 
 	/**

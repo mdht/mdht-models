@@ -53,6 +53,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#validateMentalStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#validateMentalStatusObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#validateMentalStatusObservationAssessmentScaleObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Assessment Scale Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#validateMentalStatusObservationAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#getAssessmentScaleObservations() <em>Get Assessment Scale Observations</em>}</li>
  * </ul>
  * </p>
@@ -804,6 +805,66 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateMentalStatusObservationAuthorParticipation(MentalStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Author Participation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMentalStatusObservationAuthorParticipation(MentalStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateMentalStatusObservationAuthorParticipation(MentalStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Author Participation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMentalStatusObservationAuthorParticipation(MentalStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param mentalStatusObservation The receiving '<em><b>Mental Status Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateMentalStatusObservationAuthorParticipation(
+			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION);
+			try {
+				VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			mentalStatusObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION,
+					ConsolPlugin.INSTANCE.getString("MentalStatusObservationAuthorParticipation"),
+					new Object[] { mentalStatusObservation }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getAssessmentScaleObservations(MentalStatusObservation) <em>Get Assessment Scale Observations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -835,7 +896,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION,
-				ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION.getEAllOperations().get(63));
+				ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION.getEAllOperations().get(64));
 			try {
 				GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

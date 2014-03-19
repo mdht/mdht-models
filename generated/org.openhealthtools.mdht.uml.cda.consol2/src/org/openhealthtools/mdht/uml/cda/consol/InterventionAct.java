@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getInterventionAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InterventionActTemplateId InterventionActClassCode InterventionActMoodCode InterventionActId InterventionActCode InterventionActCodeP InterventionActStatusCode' templateId.root='2.16.840.1.113883.10.20.22.4.131' classCode='ACT' code.code='362956003' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='procedure / intervention (navigational concept)' constraints.validation.dependOn.InterventionActCode='InterventionActCodeP' constraints.validation.warning='InterventionActEffectiveTime InterventionActGoalObservation' constraints.validation.info='InterventionAct InterventionActNutritionRecommendations InterventionActActReference InterventionActActReference2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InterventionActTemplateId InterventionActClassCode InterventionActMoodCode InterventionActMoodCodeP InterventionActId InterventionActCode InterventionActCodeP InterventionActStatusCode' templateId.root='2.16.840.1.113883.10.20.22.4.131' classCode='ACT' constraints.validation.dependOn.InterventionActMoodCode='InterventionActMoodCodeP' code.code='362956003' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='procedure / intervention (navigational concept)' constraints.validation.dependOn.InterventionActCode='InterventionActCodeP' constraints.validation.warning='InterventionActEffectiveTime InterventionActGoalObservation InterventionActAuthorParticipation' constraints.validation.info='InterventionAct InterventionActNutritionRecommendations InterventionActActReference InterventionActActReference2 InterventionActExternalDocumentReference'"
  * @generated
  */
 public interface InterventionAct extends Act {
@@ -62,6 +62,18 @@ public interface InterventionAct extends Act {
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\')'"
+	 * @generated
+	 */
+	boolean validateInterventionActMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentActMood) and \r\nlet value : vocab::x_DocumentActMood = self.moodCode.oclAsType(vocab::x_DocumentActMood) in \r\nvalue = vocab::x_DocumentActMood::APT or value = vocab::x_DocumentActMood::ARQ or value = vocab::x_DocumentActMood::EVN or value = vocab::x_DocumentActMood::INT or value = vocab::x_DocumentActMood::PRMS or value = vocab::x_DocumentActMood::PRP or value = vocab::x_DocumentActMood::RQO'"
 	 * @generated
 	 */
 	boolean validateInterventionActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -189,6 +201,30 @@ public interface InterventionAct extends Act {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
+	 * @generated
+	 */
+	boolean validateInterventionActAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::ExternalDocumentReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @generated
+	 */
+	boolean validateInterventionActExternalDocumentReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::GoalObservation)).oclAsType(consol::GoalObservation)'"
 	 * @generated
@@ -230,6 +266,15 @@ public interface InterventionAct extends Act {
 	 * @generated
 	 */
 	EList<ActReference> getActReference2s();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ExternalDocumentReference)).oclAsType(consol::ExternalDocumentReference)'"
+	 * @generated
+	 */
+	EList<ExternalDocumentReference> getExternalDocumentReferences();
 
 	/**
 	 * <!-- begin-user-doc -->
