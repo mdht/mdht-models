@@ -771,10 +771,26 @@ The priority of the immunization activity to the patient and provider is communi
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n2JUsZXOEeOgXcDbh8Igkw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n2JUsJXOEeOgXcDbh8Igkw"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_F4W6IK70EeORf5eJaKt1KQ" name="authorParticipation" association="_F4Z9cK70EeORf5eJaKt1KQ">
+      <ownedComment xmi:id="_RRmDQK70EeORf5eJaKt1KQ">
+        <body>The author in a planned immunization activity represents the clinician who is requesting or planning the immunization activity.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F4YvUa70EeORf5eJaKt1KQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F4YvUK70EeORf5eJaKt1KQ"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_o-_WoJXPEeOgXcDbh8Igkw" name="patientPriorityPreference" association="_o-_9sJXPEeOgXcDbh8Igkw">
       <type xmi:type="uml:Class" href="consol-planofcare.uml#_UqXAAI6hEeOB0eBUISUB4Q"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o-_WopXPEeOgXcDbh8Igkw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o-_WoZXPEeOgXcDbh8Igkw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_cityMK70EeORf5eJaKt1KQ" name="providerPriorityPreference" association="_civnYK70EeORf5eJaKt1KQ">
+      <ownedComment xmi:id="_OQsBkK71EeORf5eJaKt1KQ">
+        <body>This entryRelationship represents the priority that a provider places on the immunization activity.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="consol-planofcare.uml#_ncafYJmaEeOLJeQez13EkQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cityMq70EeORf5eJaKt1KQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cityMa70EeORf5eJaKt1KQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_5NpTYJXLEeOgXcDbh8Igkw" name="IVLPQ">
       <ownedComment xmi:id="_DTlwwJs_EeO4UfbpzV0RLg">
@@ -864,4 +880,19 @@ The priority of the immunization activity to the patient and provider is communi
     <reference href="../consol-vocab.uml#_u3o3AG1HEeGCevFpokwODw"/>
     <ruleId>CONF:32097</ruleId>
   </CDA:ValueSetConstraint>
+  <uml:Association xmi:id="_F4Z9cK70EeORf5eJaKt1KQ" memberEnd="_F4W6IK70EeORf5eJaKt1KQ _F4akgK70EeORf5eJaKt1KQ">
+    <ownedEnd xmi:id="_F4akgK70EeORf5eJaKt1KQ" type="_KRcPwJXFEeOgXcDbh8Igkw" association="_F4Z9cK70EeORf5eJaKt1KQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_GdUoYK70EeORf5eJaKt1KQ" severity="INFO" base_Association="_F4Z9cK70EeORf5eJaKt1KQ">
+    <ruleId>CONF:32105</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_civnYK70EeORf5eJaKt1KQ" memberEnd="_cityMK70EeORf5eJaKt1KQ _civnYa70EeORf5eJaKt1KQ">
+    <ownedEnd xmi:id="_civnYa70EeORf5eJaKt1KQ" type="_KRcPwJXFEeOgXcDbh8Igkw" association="_civnYK70EeORf5eJaKt1KQ"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_4peBgK70EeORf5eJaKt1KQ" severity="INFO" base_Association="_civnYK70EeORf5eJaKt1KQ" typeCode="REFR">
+    <ruleId>CONF:32111</ruleId>
+    <ruleId>CONF:32112</ruleId>
+    <ruleId>CONF:32113</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:PropertyValidation xmi:id="_Y1-IwK72EeORf5eJaKt1KQ" base_Property="_rorhQJXFEeOgXcDbh8Igkw"/>
 </xmi:XMI>

@@ -8227,4 +8227,6 @@ When indicating the performer was the primary care physician the functionCode sh
   <CDA:PropertyValidation xmi:id="_SlxcQKukEeOhqMhzpJF7Fw" base_Property="_L1gpYKukEeOhqMhzpJF7Fw">
     <ruleId>CONF:31596</ruleId>
   </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_M1oy4K-EEeORf5eJaKt1KQ" base_Property="_v3kP4J8CEeOr4eM3k36wAg"/>
+  <CDA:PropertyValidation xmi:id="_dWRToK-EEeORf5eJaKt1KQ" base_Property="_Pj-kAJ8TEeOr4eM3k36wAg"/>
 </xmi:XMI>

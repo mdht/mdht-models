@@ -679,6 +679,11 @@ The smoking status value set includes a special code to communicate if the smoki
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gVPP4Y06EeOB0eBUISUB4Q" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_cgyA8K4iEeORf5eJaKt1KQ" name="authorParticipation" association="_cg0dMK4iEeORf5eJaKt1KQ">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cgyoAa4iEeORf5eJaKt1KQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cgyoAK4iEeORf5eJaKt1KQ"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:PropertyValidation xmi:id="_myXg0I05EeOB0eBUISUB4Q" base_Property="_TlD-cI05EeOB0eBUISUB4Q">
     <ruleId>CONF:30328</ruleId>
@@ -860,5 +865,11 @@ USE THIS SECTION INSTEAD OF DISCHARGE DIET SECTION (DEPRECATED) template id:1.3.
   <CDA:AssociationValidation xmi:id="_FUgcQJ2HEeORR8_YW0n_jQ" severity="WARNING" base_Association="_Ej1NQJ2HEeORR8_YW0n_jQ">
     <ruleId>CONF:30321</ruleId>
     <ruleId>CONF:30322</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_cg0dMK4iEeORf5eJaKt1KQ" memberEnd="_cgyA8K4iEeORf5eJaKt1KQ _cg0dMa4iEeORf5eJaKt1KQ">
+    <ownedEnd xmi:id="_cg0dMa4iEeORf5eJaKt1KQ" type="_NP5zMI05EeOB0eBUISUB4Q" association="_cg0dMK4iEeORf5eJaKt1KQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_dFAvYK4iEeORf5eJaKt1KQ" severity="WARNING" base_Association="_cg0dMK4iEeORf5eJaKt1KQ">
+    <ruleId>CONF:31667</ruleId>
   </CDA:AssociationValidation>
 </xmi:XMI>
