@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.WoundObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.WoundObservationOperations;
@@ -49,8 +50,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationWoundMeasurementObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Wound Measurement Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationWoundCharacteristics(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Wound Characteristics</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationHighestPressureUlcerStage(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Highest Pressure Ulcer Stage</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationActReferenceCDNullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Act Reference CD Null Flavor</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationActReferenceCDNullFlavorP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Act Reference CD Null Flavor P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationCDCRCDCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation CDCRCD Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationCDCRName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation CDCR Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationCDCRNameP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation CDCR Name P</em>}</li>
@@ -500,70 +500,36 @@ public class WoundObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
-	public void testValidateWoundObservationActReferenceCDNullFlavor() {
-		OperationsTestCase<WoundObservation> validateWoundObservationActReferenceCDNullFlavorTestCase = new OperationsTestCase<WoundObservation>(
-			"validateWoundObservationActReferenceCDNullFlavor",
-			operationsForOCL.getOCLValue("VALIDATE_WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateWoundObservationAuthorParticipation() {
+		OperationsTestCase<WoundObservation> validateWoundObservationAuthorParticipationTestCase = new OperationsTestCase<WoundObservation>(
+			"validateWoundObservationAuthorParticipation",
+			operationsForOCL.getOCLValue("VALIDATE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(WoundObservation target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(WoundObservation target) {
-				target.init();
-
+				AuthorParticipation ap = ConsolFactory.eINSTANCE.createAuthorParticipation().init();
+				target.getAuthors().add(ap);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return WoundObservationOperations.validateWoundObservationActReferenceCDNullFlavor(
+				return WoundObservationOperations.validateWoundObservationAuthorParticipation(
 					(WoundObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateWoundObservationActReferenceCDNullFlavorTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateWoundObservationActReferenceCDNullFlavorP() {
-		OperationsTestCase<WoundObservation> validateWoundObservationActReferenceCDNullFlavorPTestCase = new OperationsTestCase<WoundObservation>(
-			"validateWoundObservationActReferenceCDNullFlavorP",
-			operationsForOCL.getOCLValue("VALIDATE_WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(WoundObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(WoundObservation target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return WoundObservationOperations.validateWoundObservationActReferenceCDNullFlavorP(
-					(WoundObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateWoundObservationActReferenceCDNullFlavorPTestCase.doValidationTest();
+		validateWoundObservationAuthorParticipationTestCase.doValidationTest();
 	}
 
 	/**

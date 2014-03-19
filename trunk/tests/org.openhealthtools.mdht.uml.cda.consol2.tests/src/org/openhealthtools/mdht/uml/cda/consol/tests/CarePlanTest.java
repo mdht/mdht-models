@@ -75,6 +75,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCarePlanReviewTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Care Plan Review Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCarePlanReviewAssociatedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Care Plan Review Associated Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Associated Entity Associated Person Name</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Associated Entity Class Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCaregiverAssociatedEntityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Associated Entity Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPerson(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Associated Entity Associated Person</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCaregiverTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Type Code</em>}</li>
@@ -89,6 +90,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEvent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentParentDocumentSetId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Parent Document Set Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentParentDocumentVersionNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Parent Document Version Number</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentTypeCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Type Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentParentDocument(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Parent Document</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentOfEncompassingEncounterCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Of Encompassing Encounter Code</em>}</li>
@@ -1242,6 +1244,42 @@ public class CarePlanTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidateCarePlanParticipantCaregiverAssociatedEntityClassCodeP() {
+		OperationsTestCase<CarePlan> validateCarePlanParticipantCaregiverAssociatedEntityClassCodePTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+				target.init();
+				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				// classCode's value is not checked in this test, only that the attribute exists
+				target.getParticipants().get(0).getAssociatedEntity().setClassCode(RoleClassAssociative.ACCESS);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanParticipantCaregiverAssociatedEntityClassCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidateCarePlanParticipantCaregiverAssociatedEntityClassCode() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCaregiverAssociatedEntityClassCodeTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanParticipantCaregiverAssociatedEntityClassCode",
@@ -1742,6 +1780,40 @@ public class CarePlanTest extends CDAValidationTest {
 		};
 
 		validateCarePlanRelatedDocumentParentDocumentVersionNumberTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCarePlanRelatedDocumentTypeCodeP() {
+		OperationsTestCase<CarePlan> validateCarePlanRelatedDocumentTypeCodePTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanRelatedDocumentTypeCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+				target.init();
+				target.getRelatedDocuments().add(CDAFactory.eINSTANCE.createRelatedDocument());
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.getRelatedDocuments().get(0).setTypeCode(x_ActRelationshipDocument.XFRM);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanRelatedDocumentTypeCodeP(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanRelatedDocumentTypeCodePTestCase.doValidationTest();
 	}
 
 	/**

@@ -50,6 +50,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#validateMentalStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#validateMentalStatusObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#validateMentalStatusObservationAssessmentScaleObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Assessment Scale Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#validateMentalStatusObservationAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#getAssessmentScaleObservations() <em>Get Assessment Scale Observations</em>}</li>
  * </ul>
  * </p>
@@ -490,6 +491,39 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 		};
 
 		validateMentalStatusObservationAssessmentScaleObservationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateMentalStatusObservationAuthorParticipation() {
+		OperationsTestCase<MentalStatusObservation> validateMentalStatusObservationAuthorParticipationTestCase = new OperationsTestCase<MentalStatusObservation>(
+			"validateMentalStatusObservationAuthorParticipation",
+			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MentalStatusObservation target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(MentalStatusObservation target) {
+				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MentalStatusObservationOperations.validateMentalStatusObservationAuthorParticipation(
+					(MentalStatusObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMentalStatusObservationAuthorParticipationTestCase.doValidationTest();
 	}
 
 	/**

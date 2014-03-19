@@ -61,6 +61,12 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActNutritionalStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Nutritional Status Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActPatientPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Patient Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActActReference3(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Act Reference3</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Author Participation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActSelfCareActivities(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Self Care Activities</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActSensoryAndSpeechStatus(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Sensory And Speech Status</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActWoundObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Wound Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActProviderPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Provider Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act External Document Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getActReferences() <em>Get Act References</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getActReference2s() <em>Get Act Reference2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getAssessmentScaleObservations() <em>Get Assessment Scale Observations</em>}</li>
@@ -76,6 +82,11 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getNutritionalStatusObservations() <em>Get Nutritional Status Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getPatientPriorityPreferences() <em>Get Patient Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getActReference3s() <em>Get Act Reference3s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getSelfCareActivitiess() <em>Get Self Care Activitiess</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getSensoryAndSpeechStatuss() <em>Get Sensory And Speech Statuss</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getWoundObservations() <em>Get Wound Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getExternalDocumentReferences() <em>Get External Document References</em>}</li>
  * </ul>
  * </p>
  *
@@ -931,6 +942,220 @@ public class HealthConcernActTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHealthConcernActAuthorParticipation() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActAuthorParticipationTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActAuthorParticipation",
+			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HealthConcernAct target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(HealthConcernAct target) {
+				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HealthConcernActOperations.validateHealthConcernActAuthorParticipation(
+					(HealthConcernAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHealthConcernActAuthorParticipationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHealthConcernActSelfCareActivities() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActSelfCareActivitiesTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActSelfCareActivities",
+			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HealthConcernAct target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(HealthConcernAct target) {
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				er.setObservation(ConsolFactory.eINSTANCE.createSelfCareActivities().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HealthConcernActOperations.validateHealthConcernActSelfCareActivities(
+					(HealthConcernAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHealthConcernActSelfCareActivitiesTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHealthConcernActSensoryAndSpeechStatus() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActSensoryAndSpeechStatusTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActSensoryAndSpeechStatus",
+			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HealthConcernAct target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(HealthConcernAct target) {
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				er.setObservation(ConsolFactory.eINSTANCE.createSensoryAndSpeechStatus());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HealthConcernActOperations.validateHealthConcernActSensoryAndSpeechStatus(
+					(HealthConcernAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHealthConcernActSensoryAndSpeechStatusTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHealthConcernActWoundObservation() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActWoundObservationTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActWoundObservation",
+			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HealthConcernAct target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(HealthConcernAct target) {
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				er.setObservation(ConsolFactory.eINSTANCE.createWoundObservation().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HealthConcernActOperations.validateHealthConcernActWoundObservation(
+					(HealthConcernAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHealthConcernActWoundObservationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHealthConcernActProviderPriorityPreference() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActProviderPriorityPreferenceTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActProviderPriorityPreference",
+			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HealthConcernAct target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(HealthConcernAct target) {
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				er.setObservation(ConsolFactory.eINSTANCE.createProviderPriorityPreference().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HealthConcernActOperations.validateHealthConcernActProviderPriorityPreference(
+					(HealthConcernAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHealthConcernActProviderPriorityPreferenceTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHealthConcernActExternalDocumentReference() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActExternalDocumentReferenceTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActExternalDocumentReference",
+			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HealthConcernAct target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected void updateToPass(HealthConcernAct target) {
+				target.getEntryRelationships().get(0).setAct(
+					ConsolFactory.eINSTANCE.createExternalDocumentReference().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HealthConcernActOperations.validateHealthConcernActExternalDocumentReference(
+					(HealthConcernAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHealthConcernActExternalDocumentReferenceTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated
 	*/
 	@Test
@@ -1106,6 +1331,66 @@ public class HealthConcernActTest extends CDAValidationTest {
 
 		HealthConcernAct target = objectFactory.create();
 		target.getActReference3s();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetSelfCareActivitiess() {
+
+		HealthConcernAct target = objectFactory.create();
+		target.getSelfCareActivitiess();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetSensoryAndSpeechStatuss() {
+
+		HealthConcernAct target = objectFactory.create();
+		target.getSensoryAndSpeechStatuss();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetWoundObservations() {
+
+		HealthConcernAct target = objectFactory.create();
+		target.getWoundObservations();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetProviderPriorityPreferences() {
+
+		HealthConcernAct target = objectFactory.create();
+		target.getProviderPriorityPreferences();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetExternalDocumentReferences() {
+
+		HealthConcernAct target = objectFactory.create();
+		target.getExternalDocumentReferences();
 
 	}
 
