@@ -40,8 +40,17 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationActReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Act Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationActReference2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Act Reference2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Author Participation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationGoalObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Goal Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationProgressTowardGoalObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Progress Toward Goal Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationInterventionAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Intervention Act</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation External Document Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#getActReferences() <em>Get Act References</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#getActReference2s() <em>Get Act Reference2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#getGoalObservations() <em>Get Goal Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#getProgressTowardGoalObservation() <em>Get Progress Toward Goal Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#getInterventionActs() <em>Get Intervention Acts</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#getExternalDocumentReferences() <em>Get External Document References</em>}</li>
  * </ul>
  * </p>
  *
@@ -265,6 +274,183 @@ public class OutcomeObservationTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateOutcomeObservationAuthorParticipation() {
+		OperationsTestCase<OutcomeObservation> validateOutcomeObservationAuthorParticipationTestCase = new OperationsTestCase<OutcomeObservation>(
+			"validateOutcomeObservationAuthorParticipation",
+			operationsForOCL.getOCLValue("VALIDATE_OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(OutcomeObservation target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(OutcomeObservation target) {
+				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return OutcomeObservationOperations.validateOutcomeObservationAuthorParticipation(
+					(OutcomeObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateOutcomeObservationAuthorParticipationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateOutcomeObservationGoalObservation() {
+		OperationsTestCase<OutcomeObservation> validateOutcomeObservationGoalObservationTestCase = new OperationsTestCase<OutcomeObservation>(
+			"validateOutcomeObservationGoalObservation",
+			operationsForOCL.getOCLValue("VALIDATE_OUTCOME_OBSERVATION_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(OutcomeObservation target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(OutcomeObservation target) {
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.GEVL);
+				er.setObservation(ConsolFactory.eINSTANCE.createGoalObservation().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return OutcomeObservationOperations.validateOutcomeObservationGoalObservation(
+					(OutcomeObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateOutcomeObservationGoalObservationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateOutcomeObservationProgressTowardGoalObservation() {
+		OperationsTestCase<OutcomeObservation> validateOutcomeObservationProgressTowardGoalObservationTestCase = new OperationsTestCase<OutcomeObservation>(
+			"validateOutcomeObservationProgressTowardGoalObservation",
+			operationsForOCL.getOCLValue("VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(OutcomeObservation target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(OutcomeObservation target) {
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.SPRT);
+				er.setObservation(ConsolFactory.eINSTANCE.createProgressTowardGoalObservation().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return OutcomeObservationOperations.validateOutcomeObservationProgressTowardGoalObservation(
+					(OutcomeObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateOutcomeObservationProgressTowardGoalObservationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateOutcomeObservationInterventionAct() {
+		OperationsTestCase<OutcomeObservation> validateOutcomeObservationInterventionActTestCase = new OperationsTestCase<OutcomeObservation>(
+			"validateOutcomeObservationInterventionAct",
+			operationsForOCL.getOCLValue("VALIDATE_OUTCOME_OBSERVATION_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(OutcomeObservation target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(OutcomeObservation target) {
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
+				er.setAct(ConsolFactory.eINSTANCE.createInterventionAct().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return OutcomeObservationOperations.validateOutcomeObservationInterventionAct(
+					(OutcomeObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateOutcomeObservationInterventionActTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateOutcomeObservationExternalDocumentReference() {
+		OperationsTestCase<OutcomeObservation> validateOutcomeObservationExternalDocumentReferenceTestCase = new OperationsTestCase<OutcomeObservation>(
+			"validateOutcomeObservationExternalDocumentReference",
+			operationsForOCL.getOCLValue("VALIDATE_OUTCOME_OBSERVATION_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(OutcomeObservation target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(OutcomeObservation target) {
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				er.setAct(ConsolFactory.eINSTANCE.createExternalDocumentReference().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return OutcomeObservationOperations.validateOutcomeObservationExternalDocumentReference(
+					(OutcomeObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateOutcomeObservationExternalDocumentReferenceTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated
 	*/
 	@Test
@@ -284,6 +470,54 @@ public class OutcomeObservationTest extends CDAValidationTest {
 
 		OutcomeObservation target = objectFactory.create();
 		target.getActReference2s();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetGoalObservations() {
+
+		OutcomeObservation target = objectFactory.create();
+		target.getGoalObservations();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetProgressTowardGoalObservation() {
+
+		OutcomeObservation target = objectFactory.create();
+		target.getProgressTowardGoalObservation();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetInterventionActs() {
+
+		OutcomeObservation target = objectFactory.create();
+		target.getInterventionActs();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetExternalDocumentReferences() {
+
+		OutcomeObservation target = objectFactory.create();
+		target.getExternalDocumentReferences();
 
 	}
 

@@ -27,6 +27,7 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.vocab.ActClassDocument;
 import org.openhealthtools.mdht.uml.hl7.vocab.ActMood;
+import org.openhealthtools.mdht.uml.hl7.vocab.x_ActClassDocumentEntryAct;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference;
 
 /**
@@ -95,7 +96,7 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateExternalDocumentReferenceClassCode() {
@@ -106,13 +107,13 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ExternalDocumentReference target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(ExternalDocumentReference target) {
-				target.init();
-
+				// only checking that classCode exists, not its value
+				target.setClassCode(x_ActClassDocumentEntryAct.ACCM);
 			}
 
 			@Override

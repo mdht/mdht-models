@@ -45,6 +45,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment#validateNutritionAssessmentStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment#validateNutritionAssessmentEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment#validateNutritionAssessmentValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment#validateNutritionAssessmentAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Author Participation</em>}</li>
  * </ul>
  * </p>
  *
@@ -411,6 +412,39 @@ public class NutritionAssessmentTest extends CDAValidationTest {
 		};
 
 		validateNutritionAssessmentValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateNutritionAssessmentAuthorParticipation() {
+		OperationsTestCase<NutritionAssessment> validateNutritionAssessmentAuthorParticipationTestCase = new OperationsTestCase<NutritionAssessment>(
+			"validateNutritionAssessmentAuthorParticipation",
+			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(NutritionAssessment target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(NutritionAssessment target) {
+				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NutritionAssessmentOperations.validateNutritionAssessmentAuthorParticipation(
+					(NutritionAssessment) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNutritionAssessmentAuthorParticipationTestCase.doValidationTest();
 	}
 
 	/**

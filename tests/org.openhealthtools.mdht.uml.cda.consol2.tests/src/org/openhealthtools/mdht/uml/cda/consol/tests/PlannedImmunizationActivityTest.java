@@ -46,6 +46,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityMoodCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Mood Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Status Code</em>}</li>
@@ -59,8 +60,11 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityDoseQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Dose Quantity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityPerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityPatientPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Patient Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Author Participation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityProviderPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Provider Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityIVLPQUnit(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity IVLPQ Unit</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#getPatientPriorityPreferences() <em>Get Patient Priority Preferences</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
  * </ul>
  * </p>
  *
@@ -135,6 +139,39 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 		};
 
 		validatePlannedImmunizationActivityClassCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedImmunizationActivityMoodCodeP() {
+		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityMoodCodePTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
+			"validatePlannedImmunizationActivityMoodCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedImmunizationActivity target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PlannedImmunizationActivity target) {
+				target.setMoodCode(x_DocumentSubstanceMood.EVN);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityMoodCodeP(
+					(PlannedImmunizationActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedImmunizationActivityMoodCodePTestCase.doValidationTest();
 	}
 
 	/**
@@ -615,6 +652,77 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidatePlannedImmunizationActivityAuthorParticipation() {
+		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityAuthorParticipationTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
+			"validatePlannedImmunizationActivityAuthorParticipation",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedImmunizationActivity target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PlannedImmunizationActivity target) {
+				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityAuthorParticipation(
+					(PlannedImmunizationActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedImmunizationActivityAuthorParticipationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedImmunizationActivityProviderPriorityPreference() {
+		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityProviderPriorityPreferenceTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
+			"validatePlannedImmunizationActivityProviderPriorityPreference",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedImmunizationActivity target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PlannedImmunizationActivity target) {
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				er.setObservation(ConsolFactory.eINSTANCE.createProviderPriorityPreference().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityProviderPriorityPreference(
+					(PlannedImmunizationActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedImmunizationActivityProviderPriorityPreferenceTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* modified VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_IVLPQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP 
+	* due to inline datatype OCL generation issue
+	*/
+	@Test
 	public void testValidatePlannedImmunizationActivityIVLPQUnit() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityIVLPQUnitTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
 			"validatePlannedImmunizationActivityIVLPQUnit",
@@ -653,6 +761,18 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 
 		PlannedImmunizationActivity target = objectFactory.create();
 		target.getPatientPriorityPreferences();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetProviderPriorityPreferences() {
+
+		PlannedImmunizationActivity target = objectFactory.create();
+		target.getProviderPriorityPreferences();
 
 	}
 

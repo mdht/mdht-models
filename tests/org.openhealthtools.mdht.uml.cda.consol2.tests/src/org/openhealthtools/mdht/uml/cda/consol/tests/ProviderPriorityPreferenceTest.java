@@ -44,6 +44,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.II;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference#validateProviderPriorityPreferencePriorityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Priority Preference Priority Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference#validateProviderPriorityPreferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Priority Preference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference#validateProviderPriorityPreferenceValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Priority Preference Value P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference#validateProviderPriorityPreferenceAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Priority Preference Author Participation</em>}</li>
  * </ul>
  * </p>
  *
@@ -411,6 +412,39 @@ public class ProviderPriorityPreferenceTest extends CDAValidationTest {
 		};
 
 		validateProviderPriorityPreferenceValuePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateProviderPriorityPreferenceAuthorParticipation() {
+		OperationsTestCase<ProviderPriorityPreference> validateProviderPriorityPreferenceAuthorParticipationTestCase = new OperationsTestCase<ProviderPriorityPreference>(
+			"validateProviderPriorityPreferenceAuthorParticipation",
+			operationsForOCL.getOCLValue("VALIDATE_PROVIDER_PRIORITY_PREFERENCE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProviderPriorityPreference target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(ProviderPriorityPreference target) {
+				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProviderPriorityPreferenceOperations.validateProviderPriorityPreferenceAuthorParticipation(
+					(ProviderPriorityPreference) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProviderPriorityPreferenceAuthorParticipationTestCase.doValidationTest();
 	}
 
 	/**

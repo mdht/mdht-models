@@ -47,6 +47,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication#validateHandoffCommunicationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication#validateHandoffCommunicationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication#validateHandoffCommunicationParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participant</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication#validateHandoffCommunicationAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication#validateHandoffCommunicationParticipantParticipantRoleCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participant Participant Role Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication#validateHandoffCommunicationParticipantParticipantRoleCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participant Participant Role Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication#validateHandoffCommunicationParticipantTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participant Type Code</em>}</li>
@@ -377,6 +378,39 @@ public class HandoffCommunicationTest extends CDAValidationTest {
 		};
 
 		validateHandoffCommunicationParticipantTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHandoffCommunicationAuthorParticipation() {
+		OperationsTestCase<HandoffCommunication> validateHandoffCommunicationAuthorParticipationTestCase = new OperationsTestCase<HandoffCommunication>(
+			"validateHandoffCommunicationAuthorParticipation",
+			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HandoffCommunication target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(HandoffCommunication target) {
+				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HandoffCommunicationOperations.validateHandoffCommunicationAuthorParticipation(
+					(HandoffCommunication) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHandoffCommunicationAuthorParticipationTestCase.doValidationTest();
 	}
 
 	/**
