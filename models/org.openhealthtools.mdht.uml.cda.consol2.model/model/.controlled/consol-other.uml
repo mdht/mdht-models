@@ -2188,19 +2188,18 @@ Devices applied to, or placed in, the patient are represented with the Procedure
     <ownedComment xmi:id="_v3YrsJBGEeOZX935IVJfOg">
       <body>Where it is necessary to reference an external clinical document, the External Document Reference template can be used to reference this external document.Â Â However, if the containing document is replacing or appending to another document in the same set, that relationship is set in the header, using ClinicalDocument/relatedDocument.</body>
     </ownedComment>
-    <ownedRule xmi:id="_v_SO4JQ1EeO19_VQDD6jXw" name="classCodeTerminology" constrainedElement="_a_6GgJBGEeOZX935IVJfOg">
+    <ownedRule xmi:id="_v_SO4JQ1EeO19_VQDD6jXw" name="classCodeTerminology" constrainedElement="_J1uXYK4fEeORf5eJaKt1KQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_BRevcJQ2EeO19_VQDD6jXw">
         <language>Analysis</language>
-        <body>The @classCode SHALL = &quot;ACT&quot; and SHALL be selected from (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType)</body>
+        <body>The @classCode SHALL=&quot;ACT&quot; and SHALL be selected from (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_QcUL8ZBGEeOZX935IVJfOg">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
-    <ownedAttribute xmi:id="_a_6GgJBGEeOZX935IVJfOg" name="classCode" visibility="private" isReadOnly="true">
+    <ownedAttribute xmi:id="_J1uXYK4fEeORf5eJaKt1KQ" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_yJIr4JBGEeOZX935IVJfOg" value="ACT"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_a_6tkJBGEeOZX935IVJfOg" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
@@ -2281,9 +2280,6 @@ Devices applied to, or placed in, the patient are represented with the Procedure
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:PropertyValidation xmi:id="_0_l7oJBGEeOZX935IVJfOg" base_Property="_a_6GgJBGEeOZX935IVJfOg">
-    <ruleId>CONF:31931</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_1aWlAJBGEeOZX935IVJfOg" base_Property="_a_6tkJBGEeOZX935IVJfOg">
     <ruleId>CONF:31932</ruleId>
   </CDA:PropertyValidation>
@@ -2590,5 +2586,8 @@ Devices applied to, or placed in, the patient are represented with the Procedure
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Q0DdsKr5EeOxqJAXCMXUYg" severity="INFO" base_Property="_X2UcAKr4EeOxqJAXCMXUYg">
     <ruleId>CONF:31481</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Rq7ZEK4fEeORf5eJaKt1KQ" base_Property="_J1uXYK4fEeORf5eJaKt1KQ">
+    <ruleId>CONF:31931</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>

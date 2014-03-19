@@ -465,7 +465,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_D3_FEJqAEeOK6dzbL4VoTA" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="consol-other.uml#_hKw8EIk8EeOJGtGyq_dBbA"/>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XDWmYJqDEeOK6dzbL4VoTA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDWmYZqDEeOK6dzbL4VoTA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
@@ -474,6 +474,11 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YhyTQJqDEeOK6dzbL4VoTA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YhyTQZqDEeOK6dzbL4VoTA"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_b7VP0K75EeORf5eJaKt1KQ" name="authorParticipation" association="_b7XsEK75EeORf5eJaKt1KQ">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b7Wd8K75EeORf5eJaKt1KQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b7V24K75EeORf5eJaKt1KQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_YQpYkJqGEeOK6dzbL4VoTA" name="woundMeasurementObservation" type="_94MpsJp7EeOK6dzbL4VoTA" association="_YQqmsJqGEeOK6dzbL4VoTA">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YQp_oZqGEeOK6dzbL4VoTA" value="*"/>
@@ -561,7 +566,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <ruleId>CONF:29477</ruleId>
     <ruleId>CONF:31010</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_lfiGoJqEEeOK6dzbL4VoTA" base_Property="_D3_FEJqAEeOK6dzbL4VoTA">
+  <CDA:ValueSetConstraint xmi:id="_lfiGoJqEEeOK6dzbL4VoTA" base_Property="_D3_FEJqAEeOK6dzbL4VoTA" severity="WARNING">
     <reference href="../consol-vocab.uml#_1Vl9MZqAEeOK6dzbL4VoTA"/>
     <ruleId>CONF:29485</ruleId>
   </CDA:ValueSetConstraint>
@@ -667,5 +672,11 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
   <CDA:AssociationValidation xmi:id="_EzXr0J2MEeORR8_YW0n_jQ" severity="INFO" base_Association="_EOJe4J2MEeORR8_YW0n_jQ">
     <ruleId>CONF:29905</ruleId>
     <ruleId>CONF:29906</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_b7XsEK75EeORf5eJaKt1KQ" memberEnd="_b7VP0K75EeORf5eJaKt1KQ _b7XsEa75EeORf5eJaKt1KQ">
+    <ownedEnd xmi:id="_b7XsEa75EeORf5eJaKt1KQ" type="_09uFMJp_EeOK6dzbL4VoTA" association="_b7XsEK75EeORf5eJaKt1KQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_cpIJ8K75EeORf5eJaKt1KQ" severity="WARNING" base_Association="_b7XsEK75EeORf5eJaKt1KQ">
+    <ruleId>CONF:31542</ruleId>
   </CDA:AssociationValidation>
 </xmi:XMI>
