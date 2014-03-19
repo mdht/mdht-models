@@ -643,7 +643,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 	 */
 	protected static final String VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '371597004' or value.code = '284670008' or value.code = '248325000' or value.code = '248324001' or value.code = '75051000' or value.code = '414285001' or value.code = '414915002' or value.code = '288939007' or value.code = '175130015' or value.code = '2647146015')))";
+			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNutritionalStatusObservationValue(NutritionalStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutritional Status Observation Value</em>}' invariant operation.

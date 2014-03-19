@@ -25,6 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservation;
+import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation;
@@ -33,6 +34,10 @@ import org.openhealthtools.mdht.uml.cda.consol.NutritionalStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation;
 
+import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
+import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
+import org.openhealthtools.mdht.uml.cda.consol.SensoryAndSpeechStatus;
+import org.openhealthtools.mdht.uml.cda.consol.WoundObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HealthConcernActOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
@@ -290,6 +295,63 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateHealthConcernActAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActAuthorParticipation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernActSelfCareActivities(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActSelfCareActivities(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernActSensoryAndSpeechStatus(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActSensoryAndSpeechStatus(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernActWoundObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActWoundObservation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernActProviderPriorityPreference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActProviderPriorityPreference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthConcernActExternalDocumentReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActExternalDocumentReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<ActReference> getActReferences() {
 		return HealthConcernActOperations.getActReferences(this);
 	}
@@ -418,6 +480,51 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 */
 	public EList<ActReference> getActReference3s() {
 		return HealthConcernActOperations.getActReference3s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<SelfCareActivities> getSelfCareActivitiess() {
+		return HealthConcernActOperations.getSelfCareActivitiess(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<SensoryAndSpeechStatus> getSensoryAndSpeechStatuss() {
+		return HealthConcernActOperations.getSensoryAndSpeechStatuss(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<WoundObservation> getWoundObservations() {
+		return HealthConcernActOperations.getWoundObservations(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
+		return HealthConcernActOperations.getProviderPriorityPreferences(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ExternalDocumentReference> getExternalDocumentReferences() {
+		return HealthConcernActOperations.getExternalDocumentReferences(this);
 	}
 
 	/**

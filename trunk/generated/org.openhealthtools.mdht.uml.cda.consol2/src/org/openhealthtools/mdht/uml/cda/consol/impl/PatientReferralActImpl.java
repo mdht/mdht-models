@@ -158,6 +158,16 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePatientReferralActAuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PatientReferralActOperations.validatePatientReferralActAuthorParticipation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePatientReferralActEntryRelationshipObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationClassCode(

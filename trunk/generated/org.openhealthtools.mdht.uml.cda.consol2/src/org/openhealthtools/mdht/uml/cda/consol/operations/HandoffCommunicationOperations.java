@@ -48,6 +48,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication#validateHandoffCommunicationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication#validateHandoffCommunicationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication#validateHandoffCommunicationParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participant</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication#validateHandoffCommunicationAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication#validateHandoffCommunicationParticipantParticipantRoleCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participant Participant Role Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication#validateHandoffCommunicationParticipantParticipantRoleCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participant Participant Role Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HandoffCommunication#validateHandoffCommunicationParticipantTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participant Type Code</em>}</li>
@@ -611,6 +612,65 @@ public class HandoffCommunicationOperations extends ClinicalStatementOperations 
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_PARTICIPANT,
 					ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipant"),
+					new Object[] { handoffCommunication }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateHandoffCommunicationAuthorParticipation(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Author Participation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHandoffCommunicationAuthorParticipation(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_HANDOFF_COMMUNICATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationAuthorParticipation(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Author Participation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHandoffCommunicationAuthorParticipation(HandoffCommunication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_HANDOFF_COMMUNICATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param handoffCommunication The receiving '<em><b>Handoff Communication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateHandoffCommunicationAuthorParticipation(HandoffCommunication handoffCommunication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_HANDOFF_COMMUNICATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION);
+			try {
+				VALIDATE_HANDOFF_COMMUNICATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HANDOFF_COMMUNICATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_HANDOFF_COMMUNICATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			handoffCommunication)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.HANDOFF_COMMUNICATION__HANDOFF_COMMUNICATION_AUTHOR_PARTICIPATION,
+					ConsolPlugin.INSTANCE.getString("HandoffCommunicationAuthorParticipation"),
 					new Object[] { handoffCommunication }));
 			}
 

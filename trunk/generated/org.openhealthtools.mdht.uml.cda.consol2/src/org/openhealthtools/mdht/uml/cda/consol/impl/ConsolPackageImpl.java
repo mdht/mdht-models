@@ -3677,7 +3677,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getPatientPriorityPreference() {
 		if (patientPriorityPreferenceEClass == null) {
 			patientPriorityPreferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				179);
+				180);
 		}
 		return patientPriorityPreferenceEClass;
 	}
@@ -3690,7 +3690,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getPatientReferralAct() {
 		if (patientReferralActEClass == null) {
 			patientReferralActEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				180);
+				191);
 		}
 		return patientReferralActEClass;
 	}
@@ -3703,7 +3703,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getPlannedCoverage() {
 		if (plannedCoverageEClass == null) {
 			plannedCoverageEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				181);
+				192);
 		}
 		return plannedCoverageEClass;
 	}
@@ -3716,7 +3716,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getGoalObservation() {
 		if (goalObservationEClass == null) {
 			goalObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				182);
+				179);
 		}
 		return goalObservationEClass;
 	}
@@ -3729,7 +3729,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getHealthConcernAct() {
 		if (healthConcernActEClass == null) {
 			healthConcernActEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				183);
+				181);
 		}
 		return healthConcernActEClass;
 	}
@@ -3742,7 +3742,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getInterventionAct() {
 		if (interventionActEClass == null) {
 			interventionActEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				186);
+				190);
 		}
 		return interventionActEClass;
 	}
@@ -3755,7 +3755,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getExternalDocumentReference() {
 		if (externalDocumentReferenceEClass == null) {
 			externalDocumentReferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				185);
+				188);
 		}
 		return externalDocumentReferenceEClass;
 	}
@@ -3768,7 +3768,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getPlannedImmunizationActivity() {
 		if (plannedImmunizationActivityEClass == null) {
 			plannedImmunizationActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				187);
+				193);
 		}
 		return plannedImmunizationActivityEClass;
 	}
@@ -3781,7 +3781,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getPrognosisObservation() {
 		if (prognosisObservationEClass == null) {
 			prognosisObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				188);
+				194);
 		}
 		return prognosisObservationEClass;
 	}
@@ -3807,7 +3807,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getProviderPriorityPreference() {
 		if (providerPriorityPreferenceEClass == null) {
 			providerPriorityPreferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				184);
+				187);
 		}
 		return providerPriorityPreferenceEClass;
 	}
@@ -3820,7 +3820,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getSelfCareActivities() {
 		if (selfCareActivitiesEClass == null) {
 			selfCareActivitiesEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				190);
+				182);
 		}
 		return selfCareActivitiesEClass;
 	}
@@ -3833,7 +3833,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getSensoryAndSpeechStatus() {
 		if (sensoryAndSpeechStatusEClass == null) {
 			sensoryAndSpeechStatusEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				191);
+				183);
 		}
 		return sensoryAndSpeechStatusEClass;
 	}
@@ -3846,7 +3846,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getSubstanceAdministeredAct() {
 		if (substanceAdministeredActEClass == null) {
 			substanceAdministeredActEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				192);
+				195);
 		}
 		return substanceAdministeredActEClass;
 	}
@@ -3859,7 +3859,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getWoundCharacteristics() {
 		if (woundCharacteristicsEClass == null) {
 			woundCharacteristicsEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				193);
+				186);
 		}
 		return woundCharacteristicsEClass;
 	}
@@ -3872,7 +3872,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getWoundMeasurementObservation() {
 		if (woundMeasurementObservationEClass == null) {
 			woundMeasurementObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				194);
+				185);
 		}
 		return woundMeasurementObservationEClass;
 	}
@@ -3885,7 +3885,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	public EClass getWoundObservation() {
 		if (woundObservationEClass == null) {
 			woundObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
-				195);
+				184);
 		}
 		return woundObservationEClass;
 	}

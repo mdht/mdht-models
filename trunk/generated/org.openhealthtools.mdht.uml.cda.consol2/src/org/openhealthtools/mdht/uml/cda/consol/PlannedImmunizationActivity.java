@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedImmunizationActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedImmunizationActivityTemplateId PlannedImmunizationActivityClassCode PlannedImmunizationActivityMoodCode PlannedImmunizationActivityId PlannedImmunizationActivityStatusCode PlannedImmunizationActivityStatusCodeP PlannedImmunizationActivityRouteCode PlannedImmunizationActivityApproachSiteCode PlannedImmunizationActivityApproachSiteCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.120' classCode='SBADM' statusCode.code='active' constraints.validation.info='PlannedImmunizationActivityEffectiveTime PlannedImmunizationActivityRepeatNumber PlannedImmunizationActivityRouteCodeP PlannedImmunizationActivityDoseQuantity PlannedImmunizationActivityPerformer PlannedImmunizationActivityPatientPriorityPreference' routeCode.codeSystem='2.16.840.1.113883.3.26.1.1' routeCode.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.PlannedImmunizationActivityRouteCode='PlannedImmunizationActivityRouteCodeP' approachSiteCode.codeSystem='2.16.840.1.113883.6.96' approachSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PlannedImmunizationActivityApproachSiteCode='PlannedImmunizationActivityApproachSiteCodeP' constraints.validation.warning='PlannedImmunizationActivityIVLPQUnit' constraints.validation.query='PlannedImmunizationActivityIVLPQUnit'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedImmunizationActivityTemplateId PlannedImmunizationActivityClassCode PlannedImmunizationActivityMoodCode PlannedImmunizationActivityMoodCodeP PlannedImmunizationActivityId PlannedImmunizationActivityStatusCode PlannedImmunizationActivityStatusCodeP PlannedImmunizationActivityRouteCode PlannedImmunizationActivityApproachSiteCode PlannedImmunizationActivityApproachSiteCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.120' classCode='SBADM' constraints.validation.dependOn.PlannedImmunizationActivityMoodCode='PlannedImmunizationActivityMoodCodeP' statusCode.code='active' constraints.validation.info='PlannedImmunizationActivityEffectiveTime PlannedImmunizationActivityRepeatNumber PlannedImmunizationActivityRouteCodeP PlannedImmunizationActivityDoseQuantity PlannedImmunizationActivityPerformer PlannedImmunizationActivityPatientPriorityPreference PlannedImmunizationActivityAuthorParticipation PlannedImmunizationActivityProviderPriorityPreference' routeCode.codeSystem='2.16.840.1.113883.3.26.1.1' routeCode.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.PlannedImmunizationActivityRouteCode='PlannedImmunizationActivityRouteCodeP' approachSiteCode.codeSystem='2.16.840.1.113883.6.96' approachSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PlannedImmunizationActivityApproachSiteCode='PlannedImmunizationActivityApproachSiteCodeP' constraints.validation.warning='PlannedImmunizationActivityIVLPQUnit' constraints.validation.query='PlannedImmunizationActivityIVLPQUnit'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedImmunizationActivityIVLPQ unit='1' constraints.validation.warning='PlannedImmunizationActivityIVLPQUnit'"
  * @generated
  */
@@ -54,6 +54,18 @@ public interface PlannedImmunizationActivity extends SubstanceAdministration {
 	 * @generated
 	 */
 	boolean validatePlannedImmunizationActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\')'"
+	 * @generated
+	 */
+	boolean validatePlannedImmunizationActivityMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -220,6 +232,32 @@ public interface PlannedImmunizationActivity extends SubstanceAdministration {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
+	 * @generated
+	 */
+	boolean validatePlannedImmunizationActivityAuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @generated
+	 */
+	boolean validatePlannedImmunizationActivityProviderPriorityPreference(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.doseQuantity->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not unit.oclIsUndefined() )))'"
 	 * @generated
 	 */
@@ -233,6 +271,15 @@ public interface PlannedImmunizationActivity extends SubstanceAdministration {
 	 * @generated
 	 */
 	EList<PatientPriorityPreference> getPatientPriorityPreferences();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)'"
+	 * @generated
+	 */
+	EList<ProviderPriorityPreference> getProviderPriorityPreferences();
 
 	/**
 	 * <!-- begin-user-doc -->

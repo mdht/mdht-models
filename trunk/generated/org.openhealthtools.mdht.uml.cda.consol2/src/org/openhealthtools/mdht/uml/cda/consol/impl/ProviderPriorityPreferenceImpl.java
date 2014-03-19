@@ -155,6 +155,17 @@ public class ProviderPriorityPreferenceImpl extends ObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProviderPriorityPreferenceAuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProviderPriorityPreferenceOperations.validateProviderPriorityPreferenceAuthorParticipation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProviderPriorityPreference init() {
 		return Initializer.Util.init(this);
 	}

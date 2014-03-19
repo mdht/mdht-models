@@ -57,8 +57,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationWoundMeasurementObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Wound Measurement Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationWoundCharacteristics(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Wound Characteristics</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationHighestPressureUlcerStage(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Highest Pressure Ulcer Stage</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationActReferenceCDNullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Act Reference CD Null Flavor</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationActReferenceCDNullFlavorP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Act Reference CD Null Flavor P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationCDCRCDCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation CDCRCD Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationCDCRName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation CDCR Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.WoundObservation#validateWoundObservationCDCRNameP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation CDCR Name P</em>}</li>
@@ -444,7 +443,7 @@ public class WoundObservationOperations extends ClinicalStatementOperations {
 			woundObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.WOUND_OBSERVATION__WOUND_OBSERVATION_VALUE,
 					ConsolPlugin.INSTANCE.getString("WoundObservationValue"), new Object[] { woundObservation }));
 			}
@@ -832,27 +831,25 @@ public class WoundObservationOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateWoundObservationActReferenceCDNullFlavor(WoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Act Reference CD Null Flavor</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateWoundObservationAuthorParticipation(WoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Author Participation</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateWoundObservationActReferenceCDNullFlavor(WoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateWoundObservationAuthorParticipation(WoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.value->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not nullFlavor.oclIsUndefined() and nullFlavor.oclIsKindOf(vocab::NullFlavor) and "
-			+ "let value : vocab::NullFlavor = nullFlavor.oclAsType(vocab::NullFlavor) in "
-			+ "value = vocab::NullFlavor::NP )))";
+	protected static final String VALIDATE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateWoundObservationActReferenceCDNullFlavor(WoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Act Reference CD Null Flavor</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateWoundObservationAuthorParticipation(WoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Author Participation</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateWoundObservationActReferenceCDNullFlavor(WoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateWoundObservationAuthorParticipation(WoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Query<?, ?, ?> VALIDATE_WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+	protected static Constraint VALIDATE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -864,99 +861,30 @@ public class WoundObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateWoundObservationActReferenceCDNullFlavor(WoundObservation woundObservation,
+
+	public static boolean validateWoundObservationAuthorParticipation(WoundObservation woundObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+		if (VALIDATE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.WOUND_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(woundObservation);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			woundObservation)) {
 			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.WOUND_OBSERVATION__WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR,
-						ConsolPlugin.INSTANCE.getString("WoundObservationActReferenceCDNullFlavor"),
-						new Object[] { eObject }));
-				}
-
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.WOUND_OBSERVATION__WOUND_OBSERVATION_AUTHOR_PARTICIPATION,
+					ConsolPlugin.INSTANCE.getString("WoundObservationAuthorParticipation"),
+					new Object[] { woundObservation }));
 			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
 
-	/**
-	 * The cached OCL expression body for the '{@link #validateWoundObservationActReferenceCDNullFlavorP(WoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Act Reference CD Null Flavor P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateWoundObservationActReferenceCDNullFlavorP(WoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.value->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (isDefined('nullFlavor') )))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateWoundObservationActReferenceCDNullFlavorP(WoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Observation Act Reference CD Null Flavor P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateWoundObservationActReferenceCDNullFlavorP(WoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param woundObservation The receiving '<em><b>Wound Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateWoundObservationActReferenceCDNullFlavorP(WoundObservation woundObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.WOUND_OBSERVATION);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(woundObservation);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.WOUND_OBSERVATION__WOUND_OBSERVATION_ACT_REFERENCE_CD_NULL_FLAVOR_P,
-						ConsolPlugin.INSTANCE.getString("WoundObservationActReferenceCDNullFlavorP"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
+			return false;
 		}
 		return true;
 	}
@@ -1309,7 +1237,7 @@ public class WoundObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.WOUND_OBSERVATION,
-				ConsolPackage.Literals.WOUND_OBSERVATION.getEAllOperations().get(70));
+				ConsolPackage.Literals.WOUND_OBSERVATION.getEAllOperations().get(69));
 			try {
 				GET_WOUND_MEASUREMENT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_WOUND_MEASUREMENT_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1353,7 +1281,7 @@ public class WoundObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.WOUND_OBSERVATION,
-				ConsolPackage.Literals.WOUND_OBSERVATION.getEAllOperations().get(71));
+				ConsolPackage.Literals.WOUND_OBSERVATION.getEAllOperations().get(70));
 			try {
 				GET_WOUND_CHARACTERISTICSS__EOCL_QRY = helper.createQuery(GET_WOUND_CHARACTERISTICSS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1397,7 +1325,7 @@ public class WoundObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.WOUND_OBSERVATION,
-				ConsolPackage.Literals.WOUND_OBSERVATION.getEAllOperations().get(72));
+				ConsolPackage.Literals.WOUND_OBSERVATION.getEAllOperations().get(71));
 			try {
 				GET_HIGHEST_PRESSURE_ULCER_STAGE__EOCL_QRY = helper.createQuery(GET_HIGHEST_PRESSURE_ULCER_STAGE__EOCL_EXP);
 			} catch (ParserException pe) {

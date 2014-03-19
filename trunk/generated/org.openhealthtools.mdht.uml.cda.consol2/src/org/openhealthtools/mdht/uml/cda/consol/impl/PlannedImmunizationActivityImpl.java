@@ -22,6 +22,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity;
 
+import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedImmunizationActivityOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
@@ -73,6 +74,16 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	public boolean validatePlannedImmunizationActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityClassCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedImmunizationActivityMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityMoodCodeP(
 			this, diagnostics, context);
 	}
 
@@ -219,6 +230,28 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedImmunizationActivityAuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityAuthorParticipation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedImmunizationActivityProviderPriorityPreference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityProviderPriorityPreference(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePlannedImmunizationActivityIVLPQUnit(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityIVLPQUnit(
 			this, diagnostics, context);
@@ -231,6 +264,15 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	public EList<PatientPriorityPreference> getPatientPriorityPreferences() {
 		return PlannedImmunizationActivityOperations.getPatientPriorityPreferences(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
+		return PlannedImmunizationActivityOperations.getProviderPriorityPreferences(this);
 	}
 
 	/**

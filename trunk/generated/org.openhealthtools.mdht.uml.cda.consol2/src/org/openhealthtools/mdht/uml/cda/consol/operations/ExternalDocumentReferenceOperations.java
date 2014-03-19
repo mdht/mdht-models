@@ -137,7 +137,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::x_ActClassDocumentEntryAct::ACT";
+	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('classCode')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceClassCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Class Code</em>}' invariant operation.

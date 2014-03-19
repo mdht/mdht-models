@@ -73,6 +73,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCarePlanReviewTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Care Plan Review Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCarePlanReviewAssociatedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Care Plan Review Associated Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Associated Entity Associated Person Name</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Associated Entity Class Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCaregiverAssociatedEntityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Associated Entity Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPerson(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Associated Entity Associated Person</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCaregiverTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Type Code</em>}</li>
@@ -87,6 +88,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEvent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentParentDocumentSetId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Parent Document Set Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentParentDocumentVersionNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Parent Document Version Number</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentTypeCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Type Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentParentDocument(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Parent Document</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentOfEncompassingEncounterCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Of Encompassing Encounter Code</em>}</li>
@@ -2112,6 +2114,83 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Associated Entity Class Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject(isDefined('classCode'))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Associated Entity Class Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param carePlan The receiving '<em><b>Care Plan</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP(CarePlan carePlan,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.CARE_PLAN);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(carePlan);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("CarePlanParticipantCaregiverAssociatedEntityClassCodeP"),
+						new Object[] { eObject }));
+				}
+
+				if (context != null) {
+					// generate a pass token for my dependent constraints to short-circuit or filter results
+					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.CarePlanParticipantCaregiverAssociatedEntityClassCodeP");
+					if (passToken == null) {
+						// anticipate a reasonably healthy model
+						passToken = new java.util.ArrayList<Object>(3);
+						context.put(
+							"org.openhealthtools.mdht.uml.cda.consol.CarePlanParticipantCaregiverAssociatedEntityClassCodeP",
+							passToken);
+					}
+					passToken.addAll(oclResultSet);
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateCarePlanParticipantCaregiverAssociatedEntityClassCode(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Associated Entity Class Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2161,6 +2240,15 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 		Object oclResult = VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(carePlan);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			Object passFilter = (context == null)
+					? null
+					: context.get("org.openhealthtools.mdht.uml.cda.consol.CarePlanParticipantCaregiverAssociatedEntityClassCodeP");
+			if (passFilter instanceof Collection<?>) {
+				// filter my query results
+				oclResultSet = new ArrayList<EObject>(oclResultSet);
+				oclResultSet.removeAll((Collection<?>) passFilter);
+			}
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
@@ -3013,6 +3101,81 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateCarePlanRelatedDocumentTypeCodeP(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Type Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCarePlanRelatedDocumentTypeCodeP(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.relatedDocument->excluding(null)->reject(isDefined('typeCode'))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCarePlanRelatedDocumentTypeCodeP(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Type Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCarePlanRelatedDocumentTypeCodeP(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param carePlan The receiving '<em><b>Care Plan</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateCarePlanRelatedDocumentTypeCodeP(CarePlan carePlan, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.CARE_PLAN);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(carePlan);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CARE_PLAN__CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE_P,
+						ConsolPlugin.INSTANCE.getString("CarePlanRelatedDocumentTypeCodeP"), new Object[] { eObject }));
+				}
+
+				if (context != null) {
+					// generate a pass token for my dependent constraints to short-circuit or filter results
+					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.CarePlanRelatedDocumentTypeCodeP");
+					if (passToken == null) {
+						// anticipate a reasonably healthy model
+						passToken = new java.util.ArrayList<Object>(3);
+						context.put(
+							"org.openhealthtools.mdht.uml.cda.consol.CarePlanRelatedDocumentTypeCodeP", passToken);
+					}
+					passToken.addAll(oclResultSet);
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateCarePlanRelatedDocumentTypeCode(CarePlan, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Type Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3062,6 +3225,15 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 		Object oclResult = VALIDATE_CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(carePlan);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			Object passFilter = (context == null)
+					? null
+					: context.get("org.openhealthtools.mdht.uml.cda.consol.CarePlanRelatedDocumentTypeCodeP");
+			if (passFilter instanceof Collection<?>) {
+				// filter my query results
+				oclResultSet = new ArrayList<EObject>(oclResultSet);
+				oclResultSet.removeAll((Collection<?>) passFilter);
+			}
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
@@ -3363,7 +3535,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 		if (GET_HEALTH_CONCERNS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.CARE_PLAN, ConsolPackage.Literals.CARE_PLAN.getEAllOperations().get(343));
+				ConsolPackage.Literals.CARE_PLAN, ConsolPackage.Literals.CARE_PLAN.getEAllOperations().get(345));
 			try {
 				GET_HEALTH_CONCERNS_SECTION__EOCL_QRY = helper.createQuery(GET_HEALTH_CONCERNS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3404,7 +3576,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 		if (GET_GOALS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.CARE_PLAN, ConsolPackage.Literals.CARE_PLAN.getEAllOperations().get(344));
+				ConsolPackage.Literals.CARE_PLAN, ConsolPackage.Literals.CARE_PLAN.getEAllOperations().get(346));
 			try {
 				GET_GOALS_SECTION__EOCL_QRY = helper.createQuery(GET_GOALS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3445,7 +3617,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 		if (GET_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.CARE_PLAN, ConsolPackage.Literals.CARE_PLAN.getEAllOperations().get(345));
+				ConsolPackage.Literals.CARE_PLAN, ConsolPackage.Literals.CARE_PLAN.getEAllOperations().get(347));
 			try {
 				GET_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__EOCL_QRY = helper.createQuery(GET_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {

@@ -44,6 +44,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment#validateNutritionAssessmentStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment#validateNutritionAssessmentEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment#validateNutritionAssessmentValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment#validateNutritionAssessmentAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Author Participation</em>}</li>
  * </ul>
  * </p>
  *
@@ -374,7 +375,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_NUTRITION_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '364395008' or value.code = '364394007' or value.code = '230125005' or value.code = '288929001' or value.code = '288987002'))";
+			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNutritionAssessmentCode(NutritionAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Code</em>}' invariant operation.
@@ -661,6 +662,65 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_VALUE,
 					ConsolPlugin.INSTANCE.getString("NutritionAssessmentValue"), new Object[] { nutritionAssessment }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateNutritionAssessmentAuthorParticipation(NutritionAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Author Participation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateNutritionAssessmentAuthorParticipation(NutritionAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateNutritionAssessmentAuthorParticipation(NutritionAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Author Participation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateNutritionAssessmentAuthorParticipation(NutritionAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param nutritionAssessment The receiving '<em><b>Nutrition Assessment</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateNutritionAssessmentAuthorParticipation(NutritionAssessment nutritionAssessment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.NUTRITION_ASSESSMENT);
+			try {
+				VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			nutritionAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION,
+					ConsolPlugin.INSTANCE.getString("NutritionAssessmentAuthorParticipation"),
+					new Object[] { nutritionAssessment }));
 			}
 
 			return false;

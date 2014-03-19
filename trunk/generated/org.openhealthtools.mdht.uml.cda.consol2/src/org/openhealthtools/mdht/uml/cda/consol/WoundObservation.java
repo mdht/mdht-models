@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getWoundObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='WoundObservationTemplateId WoundObservationClassCode WoundObservationMoodCode WoundObservationCode WoundObservationCodeP WoundObservationValue WoundObservationValueP WoundObservationActReferenceCDNullFlavor WoundObservationActReferenceCDNullFlavorP WoundObservationCDCRCDCode WoundObservationCDCRName WoundObservationCDCRNameP WoundObservationCDCRValue' templateId.root='2.16.840.1.113883.10.20.22.4.114' classCode='OBS' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='assertion' constraints.validation.dependOn.WoundObservationCode='WoundObservationCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.warning='WoundObservationTargetSiteCode WoundObservationTargetSiteCodeP WoundObservationWoundMeasurementObservation WoundObservationWoundCharacteristics WoundObservationHighestPressureUlcerStage' constraints.validation.dependOn.WoundObservationTargetSiteCode='WoundObservationTargetSiteCodeP' constraints.validation.query='WoundObservationActReferenceCDNullFlavor WoundObservationActReferenceCDNullFlavorP WoundObservationCDCRCDCode WoundObservationCDCRName WoundObservationCDCRNameP WoundObservationCDCRValue WoundObservationCDQualifier' constraints.validation.info='WoundObservationCDQualifier'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='WoundObservationTemplateId WoundObservationClassCode WoundObservationMoodCode WoundObservationCode WoundObservationCodeP WoundObservationValueP WoundObservationCDCRCDCode WoundObservationCDCRName WoundObservationCDCRNameP WoundObservationCDCRValue' templateId.root='2.16.840.1.113883.10.20.22.4.114' classCode='OBS' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='assertion' constraints.validation.dependOn.WoundObservationCode='WoundObservationCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='WoundObservationValue WoundObservationTargetSiteCode WoundObservationTargetSiteCodeP WoundObservationWoundMeasurementObservation WoundObservationWoundCharacteristics WoundObservationHighestPressureUlcerStage WoundObservationAuthorParticipation' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.WoundObservationTargetSiteCode='WoundObservationTargetSiteCodeP' constraints.validation.query='WoundObservationCDCRCDCode WoundObservationCDCRName WoundObservationCDCRNameP WoundObservationCDCRValue WoundObservationCDQualifier' constraints.validation.info='WoundObservationCDQualifier'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolWoundObservationCD constraints.validation.info='WoundObservationCDQualifier' constraints.validation.error='WoundObservationCDCRCDCode WoundObservationCDCRName WoundObservationCDCRNameP WoundObservationCDCRValue' constraints.validation.query='WoundObservationCDCRCDCode WoundObservationCDCRName WoundObservationCDCRNameP WoundObservationCDCRValue'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolWoundObservationCDCR name.code='272741003' name.codeSystem='2.16.840.1.113883.6.96' name.codeSystemName='SNOMEDCT' name.displayName='laterality' constraints.validation.error='WoundObservationCDCRName WoundObservationCDCRNameP WoundObservationCDCRValue WoundObservationCDCRCDCode' constraints.validation.query='WoundObservationCDCRCDCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolWoundObservationCDCRCD constraints.validation.error='WoundObservationCDCRCDCode'"
@@ -184,22 +184,10 @@ public interface WoundObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.value->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not nullFlavor.oclIsUndefined() and nullFlavor.oclIsKindOf(vocab::NullFlavor) and \r\nlet value : vocab::NullFlavor = nullFlavor.oclAsType(vocab::NullFlavor) in \r\nvalue = vocab::NullFlavor::NP )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
 	 * @generated
 	 */
-	boolean validateWoundObservationActReferenceCDNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.value->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (isDefined(\'nullFlavor\') )))'"
-	 * @generated
-	 */
-	boolean validateWoundObservationActReferenceCDNullFlavorP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateWoundObservationAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

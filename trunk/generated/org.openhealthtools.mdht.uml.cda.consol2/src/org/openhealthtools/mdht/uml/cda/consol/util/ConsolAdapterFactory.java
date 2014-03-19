@@ -990,58 +990,18 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter casePatientPriorityPreference(PatientPriorityPreference object) {
-			return createPatientPriorityPreferenceAdapter();
-		}
-
-		@Override
-		public Adapter casePatientReferralAct(PatientReferralAct object) {
-			return createPatientReferralActAdapter();
-		}
-
-		@Override
-		public Adapter casePlannedCoverage(PlannedCoverage object) {
-			return createPlannedCoverageAdapter();
-		}
-
-		@Override
 		public Adapter caseGoalObservation(GoalObservation object) {
 			return createGoalObservationAdapter();
 		}
 
 		@Override
+		public Adapter casePatientPriorityPreference(PatientPriorityPreference object) {
+			return createPatientPriorityPreferenceAdapter();
+		}
+
+		@Override
 		public Adapter caseHealthConcernAct(HealthConcernAct object) {
 			return createHealthConcernActAdapter();
-		}
-
-		@Override
-		public Adapter caseProviderPriorityPreference(ProviderPriorityPreference object) {
-			return createProviderPriorityPreferenceAdapter();
-		}
-
-		@Override
-		public Adapter caseExternalDocumentReference(ExternalDocumentReference object) {
-			return createExternalDocumentReferenceAdapter();
-		}
-
-		@Override
-		public Adapter caseInterventionAct(InterventionAct object) {
-			return createInterventionActAdapter();
-		}
-
-		@Override
-		public Adapter casePlannedImmunizationActivity(PlannedImmunizationActivity object) {
-			return createPlannedImmunizationActivityAdapter();
-		}
-
-		@Override
-		public Adapter casePrognosisObservation(PrognosisObservation object) {
-			return createPrognosisObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseProgressTowardGoalObservation(ProgressTowardGoalObservation object) {
-			return createProgressTowardGoalObservationAdapter();
 		}
 
 		@Override
@@ -1055,13 +1015,8 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseSubstanceAdministeredAct(SubstanceAdministeredAct object) {
-			return createSubstanceAdministeredActAdapter();
-		}
-
-		@Override
-		public Adapter caseWoundCharacteristics(WoundCharacteristics object) {
-			return createWoundCharacteristicsAdapter();
+		public Adapter caseWoundObservation(WoundObservation object) {
+			return createWoundObservationAdapter();
 		}
 
 		@Override
@@ -1070,8 +1025,53 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseWoundObservation(WoundObservation object) {
-			return createWoundObservationAdapter();
+		public Adapter caseWoundCharacteristics(WoundCharacteristics object) {
+			return createWoundCharacteristicsAdapter();
+		}
+
+		@Override
+		public Adapter caseProviderPriorityPreference(ProviderPriorityPreference object) {
+			return createProviderPriorityPreferenceAdapter();
+		}
+
+		@Override
+		public Adapter caseExternalDocumentReference(ExternalDocumentReference object) {
+			return createExternalDocumentReferenceAdapter();
+		}
+
+		@Override
+		public Adapter caseProgressTowardGoalObservation(ProgressTowardGoalObservation object) {
+			return createProgressTowardGoalObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseInterventionAct(InterventionAct object) {
+			return createInterventionActAdapter();
+		}
+
+		@Override
+		public Adapter casePatientReferralAct(PatientReferralAct object) {
+			return createPatientReferralActAdapter();
+		}
+
+		@Override
+		public Adapter casePlannedCoverage(PlannedCoverage object) {
+			return createPlannedCoverageAdapter();
+		}
+
+		@Override
+		public Adapter casePlannedImmunizationActivity(PlannedImmunizationActivity object) {
+			return createPlannedImmunizationActivityAdapter();
+		}
+
+		@Override
+		public Adapter casePrognosisObservation(PrognosisObservation object) {
+			return createPrognosisObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseSubstanceAdministeredAct(SubstanceAdministeredAct object) {
+			return createSubstanceAdministeredActAdapter();
 		}
 
 		@Override

@@ -44,6 +44,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference#validateProviderPriorityPreferencePriorityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Priority Preference Priority Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference#validateProviderPriorityPreferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Priority Preference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference#validateProviderPriorityPreferenceValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Priority Preference Value P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference#validateProviderPriorityPreferenceAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Priority Preference Author Participation</em>}</li>
  * </ul>
  * </p>
  *
@@ -696,6 +697,67 @@ public class ProviderPriorityPreferenceOperations extends ClinicalStatementOpera
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROVIDER_PRIORITY_PREFERENCE__PROVIDER_PRIORITY_PREFERENCE_VALUE_P,
 					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceValueP"),
+					new Object[] { providerPriorityPreference }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProviderPriorityPreferenceAuthorParticipation(ProviderPriorityPreference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Priority Preference Author Participation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProviderPriorityPreferenceAuthorParticipation(ProviderPriorityPreference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROVIDER_PRIORITY_PREFERENCE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProviderPriorityPreferenceAuthorParticipation(ProviderPriorityPreference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Priority Preference Author Participation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProviderPriorityPreferenceAuthorParticipation(ProviderPriorityPreference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_PROVIDER_PRIORITY_PREFERENCE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param providerPriorityPreference The receiving '<em><b>Provider Priority Preference</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateProviderPriorityPreferenceAuthorParticipation(
+			ProviderPriorityPreference providerPriorityPreference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_PROVIDER_PRIORITY_PREFERENCE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROVIDER_PRIORITY_PREFERENCE);
+			try {
+				VALIDATE_PROVIDER_PRIORITY_PREFERENCE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROVIDER_PRIORITY_PREFERENCE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROVIDER_PRIORITY_PREFERENCE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			providerPriorityPreference)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROVIDER_PRIORITY_PREFERENCE__PROVIDER_PRIORITY_PREFERENCE_AUTHOR_PARTICIPATION,
+					ConsolPlugin.INSTANCE.getString("ProviderPriorityPreferenceAuthorParticipation"),
 					new Object[] { providerPriorityPreference }));
 			}
 

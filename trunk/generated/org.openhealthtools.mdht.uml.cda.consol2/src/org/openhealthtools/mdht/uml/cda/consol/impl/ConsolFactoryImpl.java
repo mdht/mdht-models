@@ -418,40 +418,40 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createNutritionalStatusObservation();
 			case ConsolPackage.OUTCOME_OBSERVATION:
 				return createOutcomeObservation();
-			case ConsolPackage.PATIENT_PRIORITY_PREFERENCE:
-				return createPatientPriorityPreference();
-			case ConsolPackage.PATIENT_REFERRAL_ACT:
-				return createPatientReferralAct();
-			case ConsolPackage.PLANNED_COVERAGE:
-				return createPlannedCoverage();
 			case ConsolPackage.GOAL_OBSERVATION:
 				return createGoalObservation();
+			case ConsolPackage.PATIENT_PRIORITY_PREFERENCE:
+				return createPatientPriorityPreference();
 			case ConsolPackage.HEALTH_CONCERN_ACT:
 				return createHealthConcernAct();
-			case ConsolPackage.PROVIDER_PRIORITY_PREFERENCE:
-				return createProviderPriorityPreference();
-			case ConsolPackage.EXTERNAL_DOCUMENT_REFERENCE:
-				return createExternalDocumentReference();
-			case ConsolPackage.INTERVENTION_ACT:
-				return createInterventionAct();
-			case ConsolPackage.PLANNED_IMMUNIZATION_ACTIVITY:
-				return createPlannedImmunizationActivity();
-			case ConsolPackage.PROGNOSIS_OBSERVATION:
-				return createPrognosisObservation();
-			case ConsolPackage.PROGRESS_TOWARD_GOAL_OBSERVATION:
-				return createProgressTowardGoalObservation();
 			case ConsolPackage.SELF_CARE_ACTIVITIES:
 				return createSelfCareActivities();
 			case ConsolPackage.SENSORY_AND_SPEECH_STATUS:
 				return createSensoryAndSpeechStatus();
-			case ConsolPackage.SUBSTANCE_ADMINISTERED_ACT:
-				return createSubstanceAdministeredAct();
-			case ConsolPackage.WOUND_CHARACTERISTICS:
-				return createWoundCharacteristics();
-			case ConsolPackage.WOUND_MEASUREMENT_OBSERVATION:
-				return createWoundMeasurementObservation();
 			case ConsolPackage.WOUND_OBSERVATION:
 				return createWoundObservation();
+			case ConsolPackage.WOUND_MEASUREMENT_OBSERVATION:
+				return createWoundMeasurementObservation();
+			case ConsolPackage.WOUND_CHARACTERISTICS:
+				return createWoundCharacteristics();
+			case ConsolPackage.PROVIDER_PRIORITY_PREFERENCE:
+				return createProviderPriorityPreference();
+			case ConsolPackage.EXTERNAL_DOCUMENT_REFERENCE:
+				return createExternalDocumentReference();
+			case ConsolPackage.PROGRESS_TOWARD_GOAL_OBSERVATION:
+				return createProgressTowardGoalObservation();
+			case ConsolPackage.INTERVENTION_ACT:
+				return createInterventionAct();
+			case ConsolPackage.PATIENT_REFERRAL_ACT:
+				return createPatientReferralAct();
+			case ConsolPackage.PLANNED_COVERAGE:
+				return createPlannedCoverage();
+			case ConsolPackage.PLANNED_IMMUNIZATION_ACTIVITY:
+				return createPlannedImmunizationActivity();
+			case ConsolPackage.PROGNOSIS_OBSERVATION:
+				return createPrognosisObservation();
+			case ConsolPackage.SUBSTANCE_ADMINISTERED_ACT:
+				return createSubstanceAdministeredAct();
 			case ConsolPackage.GOALS_SECTION:
 				return createGoalsSection();
 			case ConsolPackage.HEALTH_CONCERNS_SECTION:

@@ -147,6 +147,16 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateNutritionAssessmentAuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NutritionAssessmentOperations.validateNutritionAssessmentAuthorParticipation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public NutritionAssessment init() {
 		return Initializer.Util.init(this);
 	}

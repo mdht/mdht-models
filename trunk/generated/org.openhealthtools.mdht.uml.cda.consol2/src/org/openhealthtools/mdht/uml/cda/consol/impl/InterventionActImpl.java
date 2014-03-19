@@ -20,6 +20,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.ActReference;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
 import org.openhealthtools.mdht.uml.cda.consol.GoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionAct;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendations;
@@ -73,6 +74,15 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 */
 	public boolean validateInterventionActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInterventionActMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InterventionActOperations.validateInterventionActMoodCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -180,6 +190,25 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateInterventionActAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InterventionActOperations.validateInterventionActAuthorParticipation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInterventionActExternalDocumentReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InterventionActOperations.validateInterventionActExternalDocumentReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<GoalObservation> getGoalObservations() {
 		return InterventionActOperations.getGoalObservations(this);
 	}
@@ -218,6 +247,15 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 */
 	public EList<ActReference> getActReference2s() {
 		return InterventionActOperations.getActReference2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ExternalDocumentReference> getExternalDocumentReferences() {
+		return InterventionActOperations.getExternalDocumentReferences(this);
 	}
 
 	/**
