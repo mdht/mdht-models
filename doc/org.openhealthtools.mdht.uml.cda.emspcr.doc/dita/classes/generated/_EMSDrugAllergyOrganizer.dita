@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Drug Allergy Organizer - conformance rules</title>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Organizer</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>=""</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt>, where its type is <xref href="../EMSDrugAllergy.dita">EMS Drug Allergy</xref> (CONF:11323)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EMSDrugAllergy.dita">EMS Drug Allergy</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.48</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../ExistenceOfDrugAllergyObservation.dita">Existence Of Drug Allergy Observation</xref> (CONF:11324)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ExistenceOfDrugAllergyObservation.dita">Existence Of Drug Allergy Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.102</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type x_ActClassDocumentEntryOrganizer
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with data type ActMood
+</li>
+<li>Contains exactly one [1..1] <tt><b>statusCode</b></tt> with data type CS
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt>, where its type is <xref href="../EMSDrugAllergy.dita">EMS Drug Allergy</xref> (CONF:11323)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EMSDrugAllergy.dita">EMS Drug Allergy</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.48</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../ExistenceOfDrugAllergyObservation.dita">Existence Of Drug Allergy Observation</xref> (CONF:11324)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ExistenceOfDrugAllergyObservation.dita">Existence Of Drug Allergy Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.102</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSDrugAllergyOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>eMSDrugAllergy</entry><entry>eMSDrugAllergy</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>EMSDrugAllergy</entry><entry>CONF:11323</entry><entry> </entry></row> 
+<row><entry>eMSDrugAllergyOrganizer</entry><entry>eMSDrugAllergyOrganizer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSDrugAllergyOrganizer</entry><entry>CONF:11319</entry><entry> </entry></row> 
+<row><entry>existenceOfDrugAllergyObservation</entry><entry>existenceOfDrugAllergyObservation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ExistenceOfDrugAllergyObservation</entry><entry>CONF:11324</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<organizer xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1396603008"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2014"/>
+    <high value="2014"/>
+  </effectiveTime>
+  <component>
+    <act>
+      <templateId root="2.16.840.1.1133883.17.3.10.1.48"/>
+      <id root="MDHT" extension="2048702516"/>
+      <code code="1330701020"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+      <participant>
+        <participantRole/>
+      </participant>
+    </act>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.102"/>
+      <id root="MDHT" extension="1879041014"/>
+      <code code="67794-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Does the patient have any medication allergies NEMSIS"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </component>
+</organizer>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">EMS Drug Allergy Organizer</ph></p>
+<p id="shortdesc">[Organizer: templateId <tt>null</tt>]</p>
+</body>
+</topic>

@@ -80,7 +80,119 @@ For any observation within the organizer, if the NEMSIS value is "Refused," the 
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PriorAidVitals.dita">Prior Aid Vitals</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.29</tt>)</li></ol></li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::VitalSignsOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.26]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:10257</entry><entry> </entry></row> 
+<row><entry>BodyTemperatureComponent</entry><entry>BodyTemperatureComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>BodyTemperatureComponent</entry><entry>CONF:11086</entry><entry> </entry></row> 
+<row><entry>DiastolicBloodPressureComponent</entry><entry>DiastolicBloodPressureComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>DiastolicBloodPressureComponent</entry><entry>CONF:11080</entry><entry> </entry></row> 
+<row><entry>HeartRateComponent</entry><entry>HeartRateComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>HeartRateComponent</entry><entry>CONF:11082</entry><entry> </entry></row> 
+<row><entry>OxygenSaturationComponent</entry><entry>OxygenSaturationComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>OxygenSaturationComponent</entry><entry>CONF:11090</entry><entry> </entry></row> 
+<row><entry>priorAidVitals</entry><entry>priorAidVitals</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>PriorAidVitals</entry><entry></entry><entry> </entry></row> 
+<row><entry>RespiratoryRateComponent</entry><entry>RespiratoryRateComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>RespiratoryRateComponent</entry><entry>CONF:11084</entry><entry> </entry></row> 
+<row><entry>SystolicBloodPressureComponent</entry><entry>SystolicBloodPressureComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>SystolicBloodPressureComponent</entry><entry>CONF:11078</entry><entry> </entry></row> 
+<row><entry>vitalSignsOrganizer</entry><entry>vitalSignsOrganizer</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>VitalSignsOrganizer</entry><entry>CONF:10970</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.28"/>
+  <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+  <id root="MDHT" extension="1794976390"/>
+  <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2014"/>
+    <high value="2014"/>
+  </effectiveTime>
+  <component>
+    <observation>
+      <id root="MDHT" extension="127395319"/>
+      <code code="1330633186"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+      <value xsi:type="PQ"/>
+      <interpretationCode code="1554609206"/>
+      <methodCode code="1843530643"/>
+      <targetSiteCode code="1462111566"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <id root="MDHT" extension="1380169446"/>
+      <code code="1235187685"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+      <value xsi:type="PQ"/>
+      <interpretationCode code="495117407"/>
+      <methodCode code="1072960200"/>
+      <targetSiteCode code="3287187"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <id root="MDHT" extension="588361509"/>
+      <code code="1434654229"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+      <value xsi:type="PQ"/>
+      <interpretationCode code="1186967195"/>
+      <methodCode code="1848316460"/>
+      <targetSiteCode code="1462668572"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <id root="MDHT" extension="1689954197"/>
+      <code code="1814234288"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+      <value xsi:type="PQ"/>
+      <interpretationCode code="939083380"/>
+      <methodCode code="1675744128"/>
+      <targetSiteCode code="1292851947"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <id root="MDHT" extension="1060893622"/>
+      <code code="1940303692"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+      <value xsi:type="PQ"/>
+      <interpretationCode code="1956443336"/>
+      <methodCode code="145306924"/>
+      <targetSiteCode code="142965750"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1974575373"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.29"/>
+      <id root="MDHT" extension="1348607702"/>
+      <code code="67518-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Obtained prior to units EMS care NEMSIS"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </component>
+</organizer>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Vital Signs Organizer</ph></p>

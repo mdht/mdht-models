@@ -36,7 +36,20 @@
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with data type CD, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MentalStatusFinding.dita">MentalStatusFinding</xref> 2.16.840.1.113883.17.3.11.84</tt><b> DYNAMIC</b> (CONF:10412)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.19</i></lines></p></li></ul></li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::MentalStatusAssessment</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.122]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:11244</entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10410</entry><entry>LOINC 2.16.840.1.113883.6.1 67535-5</entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10412</entry><entry> </entry></row> 
+<row><entry>observation</entry><entry>observation</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>MentalStatusAssessment</entry><entry>CONF:11124</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<observation xmlns="urn:hl7-org:v3" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.122"/>
+  <id root="MDHT" extension="324730644"/>
+  <code code="67535-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Mental status assessment NEMSIS"/>
+  <effectiveTime>
+    <low value="2014"/>
+    <high value="2014"/>
+  </effectiveTime>
+</observation>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Mental Status Assessment</ph></p>

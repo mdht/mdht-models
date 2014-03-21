@@ -47,10 +47,9 @@
           </row>
           <row>
             <entry>R1 D6</entry>
-            <entry>January 2014</entry>
+            <entry>March 2014</entry>
             <entry>Jay Lyle</entry>
             <entry>Normative version</entry>
-          </row>
         </tbody>
       </tgroup>
     </table>
@@ -293,6 +292,12 @@
           <entry>JLyle</entry>
           <entry>Nov-13</entry>
         </row>
+        <row>
+          <entry>38</entry>
+          <entry>resolved conflicts with consolidated templates</entry>
+          <entry>JLyle</entry>
+          <entry>Feb-14</entry>
+        </row>        
     </tbody>
     </tgroup>
     </table>

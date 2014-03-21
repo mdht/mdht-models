@@ -81,7 +81,7 @@ This nulled notional class is parallel to the explicit question "patient on medi
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">consumable</strong></tt> (CONF:10235) <ol class="ol" type="a"><li class="li"> This consumable <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manufacturedProduct</strong></tt> (CONF:10236) <ol class="ol" type="i"><li class="li"> This manufacturedProduct <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationInformation.html">Consol Medication Information</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.23</tt>)</li>
-<li class="li"> This manufacturedProduct <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manufacturedMaterial</strong></tt> (CONF:10237) <ol class="ol"><li class="li"> This manufacturedMaterial <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.88 RxNorm</tt>)</li>
+<li class="li"> This manufacturedProduct <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manufacturedMaterial</strong></tt> (CONF:10237) <ol class="ol"><li class="li"> This manufacturedMaterial <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:11191), which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:11190)</li>
 </ol>
 </li>
 </ol>
@@ -95,11 +95,9 @@ This nulled notional class is parallel to the explicit question "patient on medi
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Current Medication example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 
