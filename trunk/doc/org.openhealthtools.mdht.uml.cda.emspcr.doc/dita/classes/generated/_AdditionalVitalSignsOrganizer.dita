@@ -78,7 +78,175 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../GlasgowComaScoreOrganizer.dita">Glasgow Coma Score Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.170</tt>)</li></ol></li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::AdditionalVitalSignsOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.30]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:11133</entry><entry> APT</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:11134</entry><entry> </entry></row> 
+<row><entry>additionalVitalSignsOrganizer</entry><entry>additionalVitalSignsOrganizer</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AdditionalVitalSignsOrganizer</entry><entry>CONF:10972</entry><entry> </entry></row> 
+<row><entry>BloodGlucoseComponent</entry><entry>BloodGlucoseComponent</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>BloodGlucose</entry><entry>CONF:11094</entry><entry> </entry></row> 
+<row><entry>CarbonDioxideComponent</entry><entry>CarbonDioxideComponent</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CarbonDioxide</entry><entry>CONF:11096</entry><entry> </entry></row> 
+<row><entry>CarbonMonoxideComponent</entry><entry>CarbonMonoxideComponent</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CarbonMonoxide</entry><entry>CONF:11095</entry><entry> </entry></row> 
+<row><entry>CardiacRhythmComponent</entry><entry>CardiacRhythmComponent</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CardiacRhythm</entry><entry>CONF:11097</entry><entry> </entry></row> 
+<row><entry>glasgowComaScoreOrganizer</entry><entry>glasgowComaScoreOrganizer</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>GlasgowComaScoreOrganizer</entry><entry>CONF:11135</entry><entry> </entry></row> 
+<row><entry>LevelOfResponsivenessComponent</entry><entry>LevelOfResponsivenessComponent</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>LevelOfResponsiveness</entry><entry>CONF:11093</entry><entry> </entry></row> 
+<row><entry>PainScoreComponent</entry><entry>PainScoreComponent</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PainScore</entry><entry>CONF:11092</entry><entry> </entry></row> 
+<row><entry>StrokeScoreComponent</entry><entry>StrokeScoreComponent</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>StrokeScore</entry><entry>CONF:11091</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<organizer xmlns="urn:hl7-org:v3" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.30"/>
+  <id root="MDHT" extension="1320627944"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2014"/>
+    <high value="2014"/>
+  </effectiveTime>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.163"/>
+      <id root="MDHT" extension="1882486197"/>
+      <code code="67520-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stroke scale overall interpretation NEMSIS"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+      <methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.164"/>
+      <id root="MDHT" extension="2086066048"/>
+      <code code="56840-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pain severity verbal numeric scale"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.165"/>
+      <id root="MDHT" extension="771865877"/>
+      <code code="67775-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Level of responsiveness NEMSIS"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.166"/>
+      <id root="MDHT" extension="159647492"/>
+      <code code="2339-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glucose [Mass/?volume] in Blood"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.167"/>
+      <id root="MDHT" extension="802700084"/>
+      <code code="20563-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carboxyhemoglobin/?Hemoglobin.total in Blood"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.168"/>
+      <id root="MDHT" extension="1592125706"/>
+      <code code="19889-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carbon dioxide/Gas.total.at end expiration in Exhaled gas"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.169"/>
+      <id root="MDHT" extension="885410565"/>
+      <code code="67519-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac rhythm NEMSIS"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+      <methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <participant>
+        <participantRole/>
+      </participant>
+    </observation>
+  </component>
+  <component>
+    <organizer>
+      <templateId root="2.16.840.1.1133883.17.3.10.1.170"/>
+      <id root="MDHT" extension="1164909320"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.160"/>
+          <id root="MDHT" extension="617610728"/>
+          <code code="9267-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.eye opening"/>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.176"/>
+          <id root="MDHT" extension="907981505"/>
+          <code code="9268-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.motor"/>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.159"/>
+          <id root="MDHT" extension="660773192"/>
+          <code code="55285-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score special circumstances"/>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.158"/>
+          <id root="MDHT" extension="589643201"/>
+          <code code="9269-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.total"/>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.162"/>
+          <id root="MDHT" extension="1754033681"/>
+          <code code="9270-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.verbal"/>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+        </observation>
+      </component>
+    </organizer>
+  </component>
+</organizer>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Additional Vital Signs Organizer</ph></p>

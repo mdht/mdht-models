@@ -84,7 +84,7 @@
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">recordTarget</strong></tt> (CONF:10004) <ol class="ol" type="a"><li class="li"> This recordTarget <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/RecordTarget.html">Consol Record Target</a></li>
-<li class="li"> This recordTarget <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patientRole</strong></tt> <ol class="ol" type="i"><li class="li"> This patientRole <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PatientRole.html">Consol Patient Role</a></li>
+<li class="li"> This recordTarget <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patientRole</strong></tt> (CONF:10870) <ol class="ol" type="i"><li class="li"> This patientRole <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PatientRole.html">Consol Patient Role</a></li>
 <li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:10031)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace<br/>
 EPatient.05 . . . /PatientRole/addr/streetAddressLine<br/>
 EPatient.06 . . . /PatientRole/addr/city<br/>
@@ -94,7 +94,7 @@ Paatient.09 . . . /PatientRole/addr/postalCode<br/>
 EPatient.10 . . . /PatientRole/addr/country</em></p>
 </div>
 </li>
-<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace<br/>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:10871)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace<br/>
 EPatient.01: root= the OID for the generating EMS agency, or "NI"<br/>
 EPatient.12: root=" 2.16.840.1.113883.3.184" (Social Security Administration)<br/>
 EPatient.20 and EPatient.21: root= the OID for the state department of motor<br/>
@@ -105,15 +105,15 @@ appendix A.</em></p>
 <li class="li"> This patientRole Contains zero or more [0..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EPatient.18</em></p>
 </div>
 </li>
-<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patient</strong></tt> <ol class="ol"><li class="li"> This patient <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Patient.html">Consol Patient</a></li>
-<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">birthTime</strong></tt><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace<br/>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patient</strong></tt> (CONF:10872) <ol class="ol"><li class="li"> This patient <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Patient.html">Consol Patient</a></li>
+<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">birthTime</strong></tt> (CONF:10873)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace<br/>
 EPatient.17</em></p>
 </div>
 </li>
-<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">ethnicGroupCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/EthnicityGroup.html">Ethnicity Group</a> 2.16.840.1.114222.4.11.837</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10032)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EPatient.14</em></p>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">ethnicGroupCode</strong></tt> (CONF:10874), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/EthnicityGroup.html">Ethnicity Group</a> 2.16.840.1.114222.4.11.837</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10032)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EPatient.14</em></p>
 </div>
 </li>
-<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">name</strong></tt><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace<br/>
+<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:10875)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace<br/>
 EPatient.02 . . . /PatientRole/Patient/name/family<br/>
 EPatient.03 . . . /PatientRole/Patient/name/given<br/>
 EPatient.04 . . . /PatientRole/Patient/name/given<br/>
@@ -121,15 +121,15 @@ Name sub-elements SHOULD be in the following order: family, given, middle (also 
 For names from cultures not following the order assumed above, the "family" name SHOULD be populated with whatever name component should be used to sort by. E.g., for a person with a single name, "family" should be used.</em></p>
 </div>
 </li>
-<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">raceCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/RaceCategory.html">RaceCategory</a> 2.16.840.1.114222.4.11.836</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10033)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EPatient.14<br/>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">raceCode</strong></tt> (CONF:10876), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/RaceCategory.html">RaceCategory</a> 2.16.840.1.114222.4.11.836</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10033)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EPatient.14<br/>
 NEMSIS collects race and ethnicity in the one-question format (see guidance at http://www.whitehouse.gov/omb/fedreg_1997standards), but the HL7 RIM and, therefore, the CDA schema contain separate elements. It is necessary to populate both CDA fields based on the values<br/>
 selected for the NEMSIS question. Further, the CDA model includes a single race code. In order to support multiple race codes as required by OMB, we adopt a second race code entry from the HL7 SDWG namespace. All documents with a race code must populate the CDA race code; if more than one race code is recorded, then the SDWG element may also be populated. No semantic priority is implied by the element selection.</em></p>
 </div>
 </li>
-<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">sDTCRaceCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/RaceCategory.html">RaceCategory</a> 2.16.840.1.114222.4.11.836</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10034)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EPatient.14</em></p>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">sDTCRaceCode</strong></tt> (CONF:10877), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/RaceCategory.html">RaceCategory</a> 2.16.840.1.114222.4.11.836</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10034)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EPatient.14</em></p>
 </div>
 </li>
-<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">administrativeGenderCode</strong></tt> (CONF:10035), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AdministrativeGenderExcludingNulls.html">Administrative Gender Excluding Nulls</a></tt><strong class="ph b"> DYNAMIC</strong><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EPatient.13</em></p>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">administrativeGenderCode</strong></tt> (CONF:10035), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AdministrativeGenderExcludingNulls.html">Administrative Gender Excluding Nulls</a></tt><strong class="ph b"> DYNAMIC</strong> (CONF:10878)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EPatient.13</em></p>
 </div>
 </li>
 </ol>
@@ -141,7 +141,7 @@ selected for the NEMSIS question. Further, the CDA model includes a single race 
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">author</strong></tt> (CONF:10027) <ol class="ol" type="a"><li class="li"> Such authors <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Author.html">Consol Author</a></li>
-<li class="li"> Such authors <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedAuthor</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AssignedAuthor.html">Consol Assigned Author</a></li>
+<li class="li"> Such authors <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedAuthor</strong></tt> (CONF:10879) <ol class="ol" type="i"><li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AssignedAuthor.html">Consol Assigned Author</a></li>
 <li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:10039)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EOther.08 for human author; may be null for a software device</em></p>
 </div>
 </li>
@@ -158,7 +158,7 @@ DPersonnel.08. . . / AssignedAuthor/addr/country</em></p>
 NEMSIS Trace: DPersonnel.09</em></p>
 </div>
 </li>
-<li class="li"> This assignedAuthor <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Person.html">Consol Person</a></li>
+<li class="li"> This assignedAuthor <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> (CONF:10880) <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Person.html">Consol Person</a></li>
 <li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5470)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace<br/>
 DPersonnel.01 . . . Person/name/family<br/>
 DPersonnel.02 . . . Person/name/given<br/>
@@ -167,7 +167,7 @@ DPersonnel.03 . . . Person/name/given</em></p>
 </li>
 </ol>
  </li>
-<li class="li"> This assignedAuthor <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedAuthoringDevice</strong></tt> <div class="p"><p class="lines"><em class="ph i">One authoring device is required for the document.</em></p>
+<li class="li"> This assignedAuthor <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedAuthoringDevice</strong></tt> (CONF:10881) <div class="p"><p class="lines"><em class="ph i">One authoring device is required for the document.</em></p>
 </div>
 <ol class="ol"><li class="li"> This assignedAuthoringDevice <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AuthoringDevice.html">Consol Authoring Device</a></li>
 <li class="li"> This assignedAuthoringDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manufacturerModelName</strong></tt> (CONF:9936)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ERecord.02</em></p>
@@ -186,8 +186,8 @@ DPersonnel.03 . . . Person/name/given</em></p>
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">custodian</strong></tt> (iv., CONF:5519) <ol class="ol" type="a"><li class="li"> This custodian <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Custodian.html">Consol Custodian</a></li>
-<li class="li"> This custodian <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedCustodian</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedCustodian <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">representedCustodianOrganization</strong></tt> <ol class="ol"><li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace<br/>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">custodian</strong></tt> (CONF:5519) <ol class="ol" type="a"><li class="li"> This custodian <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Custodian.html">Consol Custodian</a></li>
+<li class="li"> This custodian <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedCustodian</strong></tt> (CONF:10884) <ol class="ol" type="i"><li class="li"> This assignedCustodian <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">representedCustodianOrganization</strong></tt> (CONF:10885) <ol class="ol"><li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:10886)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace<br/>
 DContact.05. . . / representedCustodianOrganization/addr/streetAddressLine<br/>
 DContact.06 . . . / representedCustodianOrganization/addr/city<br/>
 DContact.07. . . / representedCustodianOrganization/addr/county<br/>
@@ -196,11 +196,11 @@ DContact.09. . . / representedCustodianOrganization/addr/postalCode<br/>
 DContact.10. . . / representedCustodianOrganization/addr/country</em></p>
 </div>
 </li>
-<li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EResponse.01<br/>
+<li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:10887)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EResponse.01<br/>
 @extension is the Agency identifier; @root, if included, the OID of the assigning body</em></p>
 </div>
 </li>
-<li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EResponse.02</em></p>
+<li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:10888)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EResponse.02</em></p>
 </div>
 </li>
 </ol>
@@ -212,7 +212,7 @@ DContact.10. . . / representedCustodianOrganization/addr/country</em></p>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:10030) <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="DST" </tt> (CONF:10054)</li>
-<li class="li"> This participant Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">associatedEntity</strong></tt> <ol class="ol" type="i"><li class="li"> This associatedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="SDLOC" </tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"/><strong class="ph b"> STATIC</strong></li>
+<li class="li"> This participant Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">associatedEntity</strong></tt> <ol class="ol" type="i"><li class="li"> This associatedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="SDLOC" </tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"/><strong class="ph b"> STATIC</strong> (CONF:10901)</li>
 <li class="li"> This associatedEntity <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:10055)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EDisposition.03-07</em></p>
 </div>
 </li>
@@ -230,23 +230,23 @@ DContact.10. . . / representedCustodianOrganization/addr/country</em></p>
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">documentationOf</strong></tt> (CONF:10028) <ol class="ol" type="a"><li class="li"> This documentationOf <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">serviceEvent</strong></tt> <ol class="ol" type="i"><li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ServiceType.html">ServiceType</a> 2.16.840.1.113883.17.3.11.79</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10051)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EResponse.05, type of service requested</em></p>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">documentationOf</strong></tt> (CONF:10028) <ol class="ol" type="a"><li class="li"> This documentationOf <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">serviceEvent</strong></tt> (CONF:10889) <ol class="ol" type="i"><li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ServiceType.html">ServiceType</a> 2.16.840.1.113883.17.3.11.79</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10051)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EResponse.05, type of service requested</em></p>
 </div>
 </li>
-<li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EReponse.03<br/>
+<li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:10890)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EReponse.03<br/>
 id/@extension is the incident number assigned by the 911 Dispatch System, where the id/@root SHOULD be the OID of the dispatching organization</em></p>
 </div>
 </li>
-<li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">performer</strong></tt> <ol class="ol"><li class="li"> Such performers <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">functionCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProviderResponseRole.html">ProviderResponseRole</a> 2.16.840.1.113883.17.3.11.80</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10052)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ECrew.03</em></p>
+<li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF:10891) <ol class="ol"><li class="li"> Such performers <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">functionCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProviderResponseRole.html">ProviderResponseRole</a> 2.16.840.1.113883.17.3.11.80</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10052)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ECrew.03</em></p>
 </div>
 </li>
-<li class="li"> Such performers <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> <ol class="ol" type="a"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProviderRoleLevel.html">ProviderRoleLevel</a> 2.16.840.1.113883.17.3.11.81</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10053)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ECrew.02</em></p>
+<li class="li"> Such performers <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:10892) <ol class="ol" type="a"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10893), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProviderRoleLevel.html">ProviderRoleLevel</a> 2.16.840.1.113883.17.3.11.81</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10053)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ECrew.02</em></p>
 </div>
 </li>
-<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ECrew.01</em></p>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:10894)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ECrew.01</em></p>
 </div>
 </li>
-<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace<br/>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:10895)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace<br/>
 DPersonnel.04 . . . / assignedentity /addr/streetAddressLine<br/>
 DPersonnel.05. . . / assignedentity /addr/city<br/>
 DPersonnel.06 . . . / assignedentity /addr/state<br/>
@@ -254,10 +254,10 @@ DPersonnel.07 . . . / assignedentity /addr/postalCode<br/>
 DPersonnel.08 . . . / assignedentity /addr/country</em></p>
 </div>
 </li>
-<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">telecom</strong></tt><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: DPersonnel.09</em></p>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> (CONF:10896)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: DPersonnel.09</em></p>
 </div>
 </li>
-<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace<br/>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> (CONF:10897) <ol class="ol" type="i"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:10898)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace<br/>
 DPersonnel.01 Last: @ENXP="FAM"<br/>
 DPersonnel.02 First: @ENXP="GIV"<br/>
 DPersonnel.03 Middle: @ENXP="GIV"</em></p>
@@ -276,7 +276,7 @@ DPersonnel.03 Middle: @ENXP="GIV"</em></p>
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">relatedDocument</strong></tt> (CONF:10029) <ol class="ol" type="a"><li class="li"> This relatedDocument Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="RPLC" </tt></li>
-<li class="li"> This relatedDocument <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">parentDocument</strong></tt> <ol class="ol" type="i"><li class="li"> This parentDocument <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ERecord.01</em></p>
+<li class="li"> This relatedDocument <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">parentDocument</strong></tt> (CONF:10899) <ol class="ol" type="i"><li class="li"> This parentDocument <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:10900)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ERecord.01</em></p>
 </div>
 </li>
 </ol>
@@ -286,10 +286,10 @@ DPersonnel.03 Middle: @ENXP="GIV"</em></p>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">componentOf</strong></tt> (CONF:9955) <ol class="ol" type="a"><li class="li"> This componentOf <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt> (CONF:10042)</li>
-<li class="li"> This componentOf <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">encompassingEncounter</strong></tt> <ol class="ol" type="i"><li class="li"> This encompassingEncounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:10043)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ETimes.03, the date the responding unit was notified by dispatch</em></p>
+<li class="li"> This componentOf <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">encompassingEncounter</strong></tt> (CONF:10882) <ol class="ol" type="i"><li class="li"> This encompassingEncounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:10043)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ETimes.03, the date the responding unit was notified by dispatch</em></p>
 </div>
 </li>
-<li class="li"> This encompassingEncounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">location</strong></tt> <ol class="ol"><li class="li"> This location <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">healthCareFacility</strong></tt> (CONF:10044) <ol class="ol" type="a"><li class="li"> This healthCareFacility <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:10045)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EResponse.04</em></p>
+<li class="li"> This encompassingEncounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">location</strong></tt> (CONF:10883) <ol class="ol"><li class="li"> This location <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">healthCareFacility</strong></tt> (CONF:10044) <ol class="ol" type="a"><li class="li"> This healthCareFacility <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:10045)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EResponse.04</em></p>
 </div>
 </li>
 <li class="li"> This healthCareFacility <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">location</strong></tt> (CONF:10046) <ol class="ol" type="i"><li class="li"> This location <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PLC" </tt> (CONF:10050)</li>
@@ -316,103 +316,103 @@ DPersonnel.03 Middle: @ENXP="GIV"</em></p>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10008)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="CurrentMedicationSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.15]">Current Medication Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.15</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSCurrentMedicationSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.15]">EMS Current Medication Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.15</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10009)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="CardiacArrestEventSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.14]">Cardiac Arrest Event Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.14</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSCardiacArrestEventSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.14]">EMS Cardiac Arrest Event Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.14</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10010)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="AdvanceDirectivesSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.12]">Advance Directives Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.12</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSAdvanceDirectivesSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.12]">EMS Advance Directives Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.12</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10011)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="AllergiesAndAdverseReactionsSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.13]">Allergies And Adverse Reactions Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.13</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSAllergiesAndAdverseReactionsSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.13]">EMS Allergies And Adverse Reactions Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.13</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10012)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="PastMedicalHistorySection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.19]">Past Medical History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.19</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSPastMedicalHistorySection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.19]">EMS Past Medical History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.19</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10013)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="SocialHistorySection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.22]">Social History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.22</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSSocialHistorySection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.22]">EMS Social History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.22</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10014)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="PhysicalAssessmentSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.20]">Physical Assessment Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.20</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSPhysicalAssessmentSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.20]">EMS Physical Assessment Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.20</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10015)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationsAdministeredSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.18]">Medications Administered Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.18</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSMedicationsAdministeredSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.18]">EMS Medications Administered Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.18</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10016)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="ProceduresPerformedSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.21]">Procedures Performed Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.21</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSProceduresPerformedSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.21]">EMS Procedures Performed Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.21</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10017)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="PatientCareNarrativeSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.1]">Patient Care Narrative Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.1</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSPatientCareNarrativeSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.1]">EMS Patient Care Narrative Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.1</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10018)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="SceneSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.8]">Scene Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.8</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSSceneSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.8]">EMS Scene Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.8</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10019)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="DispatchSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.2]">Dispatch Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.2</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSDispatchSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.2]">EMS Dispatch Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.2</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10020)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="DispositionSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.4]">Disposition Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.4</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSDispositionSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.4]">EMS Disposition Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.4</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10021)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="PersonnelAdverseEventSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.6]">Personnel Adverse Event Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.6</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSPersonnelAdverseEventSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.6]">EMS Personnel Adverse Event Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.6</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10022)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="ProtocolSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.7]">Protocol Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.7</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSProtocolSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.7]">EMS Protocol Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.7</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10023)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="ResponseSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.3]">Response Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.3</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSResponseSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.3]">EMS Response Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.3</tt>)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10024)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="SituationSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.9]">Situation Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.9</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSSituationSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.9]">EMS Situation Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.9</tt>)</li>
 </ol>
 </li>
 
@@ -424,13 +424,13 @@ DPersonnel.03 Middle: @ENXP="GIV"</em></p>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10026)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="VitalSignsSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.23]">Vital Signs Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.23</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSVitalSignsSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.23]">EMS Vital Signs Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.23</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10869)
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="InjuryIncidentDescriptionSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.17]">Injury Incident Description Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.17</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSInjuryIncidentDescriptionSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.17]">EMS Injury Incident Description Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.17</tt>)</li>
 </ol>
 </li>
 
@@ -439,11 +439,9 @@ DPersonnel.03 Middle: @ENXP="GIV"</em></p>
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Patient Care Report example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

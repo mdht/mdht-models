@@ -35,7 +35,7 @@
 
 
 <div class="section">
-<div class="p"><p class="lines"><em class="ph i">Indication of whether an automated electronic defibrillator was used on the patient prior to EMS arrival</em></p>
+<div class="p"><p class="lines"><em class="ph i">Indication of whether an automated external defibrillator was used on the patient prior to EMS arrival</em></p>
 </div>
 
 </div>
@@ -47,7 +47,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11249)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67508-2" </tt><em class="ph i">AED use prior to EMS arrival NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10171)
@@ -60,7 +60,7 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:10173) <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="RESP" </tt></li>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:10173) <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="RESP" </tt> (CONF:11250)</li>
 <li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> (CONF:10174) <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PriorCareProviderRole.html">PriorCareProviderRole</a> 2.16.840.1.113883.17.3.11.12</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10175)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EArrest.08</em></p>
 </div>
 </li>
@@ -75,11 +75,9 @@
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Prior AED Use example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

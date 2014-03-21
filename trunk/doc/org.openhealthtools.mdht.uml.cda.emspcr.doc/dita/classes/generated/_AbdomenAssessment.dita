@@ -40,7 +40,23 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AbdominalFindingLocation.dita">AbdominalFindingLocation</xref> 2.16.840.1.113883.17.3.11.32</tt><b> DYNAMIC</b> (CONF:10389)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.10</i></lines></p></li></ul></li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::AbdomenAssessment</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.117]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:11234</entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10387</entry><entry>LOINC 2.16.840.1.113883.6.1 67530-6</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:11235</entry><entry> </entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10389</entry><entry> null</entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10388</entry><entry> </entry></row> 
+<row><entry>observation</entry><entry>observation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>AbdomenAssessment</entry><entry>CONF:11114</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<observation xmlns="urn:hl7-org:v3" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.117"/>
+  <id root="MDHT" extension="1710642074"/>
+  <code code="67530-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Physical findings of Abdomen NEMSIS"/>
+  <effectiveTime>
+    <low value="2014"/>
+    <high value="2014"/>
+  </effectiveTime>
+  <targetSiteCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+</observation>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Abdomen Assessment</ph></p>

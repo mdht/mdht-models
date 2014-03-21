@@ -42,7 +42,44 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../HistoryOfCondition.dita">History Of Condition</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.61</tt>)</li></ol></li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSPastMedicalHistorySection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.19]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10058</entry><entry>LOINC 2.16.840.1.113883.6.1 67842-5</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10060</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>existenceOfHistoryOfCondition</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.60]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ExistenceOfHistoryOfCondition</entry><entry>CONF:10903</entry><entry> </entry></row> 
+<row><entry>historyOfCondition</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.61]</entry><entry>0..*</entry><entry>SHALL</entry><entry>YES</entry><entry>HistoryOfCondition</entry><entry>CONF:10905</entry><entry> </entry></row> 
+<row><entry>PastMedicalHistorySection</entry><entry>PastMedicalHistorySection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSPastMedicalHistorySection</entry><entry>CONF:10012</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10902</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.19"/>
+  <id root="MDHT" extension="1385780027"/>
+  <code code="67842-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS past medical history Narrative NEMSIS"/>
+  <title>EMS Past Medical History</title>
+  <text/>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.60"/>
+      <id root="MDHT" extension="305693790"/>
+      <code code="67793-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Has the patient had any significant medical conditions NEMSIS"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.61"/>
+      <id root="MDHT" extension="1156635267"/>
+      <code code="68487-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medical - surgical history - ICD-9 and 10 codes"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Past Medical History Section</ph></p>

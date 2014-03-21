@@ -47,13 +47,13 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11262)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67504-1" </tt><em class="ph i">Reason resuscitation not attempted NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67504-1" </tt><em class="ph i">Reason resuscitation not attempted NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11263)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ReasonProcedureNotPerformedSuperset.html">Reason Procedure not Performed Superset</a> 2.16.840.1.113883.17.3.11.100</tt><strong class="ph b"> DYNAMIC</strong>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:11264), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ReasonProcedureNotPerformedSuperset.html">Reason Procedure not Performed Superset</a> 2.16.840.1.113883.17.3.11.100</tt><strong class="ph b"> DYNAMIC</strong> (CONF:11265)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EProcedures.03 pertinent negatives, EArrest.03 negative values<br/>
 This is a superset of both value sets: the question is the same, even if the .90 values are appropriate only for CPR and the .95 for all other procedures.<br/>
 Note: CPR procedures have appropriate values "Not Attempted-Considered Futile," "Not Attempted-DNR Orders." "Not Attempted-Signs of Circulation"; other procedures have values "Contraindication Noted," "Denied By Order," "Refused," "Unable to Complete"</em></p>
@@ -67,11 +67,9 @@ Note: CPR procedures have appropriate values "Not Attempted-Considered Futile," 
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Reason Procedure Not Attempted Observation example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

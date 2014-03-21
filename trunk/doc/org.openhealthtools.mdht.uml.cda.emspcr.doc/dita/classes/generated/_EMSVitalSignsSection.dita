@@ -15,7 +15,6 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.23"</li></ol></li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsSection.html">Consol Vital Signs Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.4.1</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>Vital Signs</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10252)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Vital Signs" (CONF:10254)
@@ -30,8 +29,6 @@
 <li>Contains exactly one [1..1] <xref href="../AdditionalVitalSignsOrganizer.dita">Additional Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.30</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsSectionEntriesOptional.html">Consol Vital Signs Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.4</tt>)</li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsSection.html">Consol Vital Signs Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.4.1</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>Vital Signs</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10252)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Vital Signs" (CONF:10254)
@@ -45,7 +42,202 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AdditionalVitalSignsOrganizer.dita">Additional Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.30</tt>)</li></ol></li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSVitalSignsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.23]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10252</entry><entry>LOINC 2.16.840.1.113883.6.1 8716-3</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10253</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>additionalVitalSignsOrganizer</entry><entry>cda:entry/cda:organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.30]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AdditionalVitalSignsOrganizer</entry><entry>CONF:10972</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10969</entry><entry> </entry></row> 
+<row><entry>vitalSignsOrganizer</entry><entry>cda:entry/cda:organizer[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.26]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>VitalSignsOrganizer</entry><entry>CONF:10970</entry><entry> </entry></row> 
+<row><entry>VitalSignsSection</entry><entry>VitalSignsSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSVitalSignsSection</entry><entry>CONF:10026</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.23"/>
+  <id root="MDHT" extension="452566979"/>
+  <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital Signs"/>
+  <title>EMS Vital Signs</title>
+  <text/>
+  <entry>
+    <organizer classCode="CLUSTER" moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.28"/>
+      <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+      <id root="MDHT" extension="868152871"/>
+      <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.29"/>
+          <id root="MDHT" extension="1573207244"/>
+          <code code="67518-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Obtained prior to units EMS care NEMSIS"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+        </observation>
+      </component>
+    </organizer>
+  </entry>
+  <entry>
+    <organizer moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.30"/>
+      <id root="MDHT" extension="303382136"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2014"/>
+        <high value="2014"/>
+      </effectiveTime>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.163"/>
+          <id root="MDHT" extension="892598959"/>
+          <code code="67520-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stroke scale overall interpretation NEMSIS"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+          <methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.164"/>
+          <id root="MDHT" extension="11800299"/>
+          <code code="56840-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pain severity verbal numeric scale"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.165"/>
+          <id root="MDHT" extension="636527517"/>
+          <code code="67775-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Level of responsiveness NEMSIS"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.166"/>
+          <id root="MDHT" extension="1767219676"/>
+          <code code="2339-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glucose [Mass/?volume] in Blood"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.167"/>
+          <id root="MDHT" extension="1197418980"/>
+          <code code="20563-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carboxyhemoglobin/?Hemoglobin.total in Blood"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.168"/>
+          <id root="MDHT" extension="1633214087"/>
+          <code code="19889-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carbon dioxide/Gas.total.at end expiration in Exhaled gas"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.169"/>
+          <id root="MDHT" extension="1351790944"/>
+          <code code="67519-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac rhythm NEMSIS"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+          <methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <participant/>
+        </observation>
+      </component>
+      <component>
+        <organizer>
+          <templateId root="2.16.840.1.1133883.17.3.10.1.170"/>
+          <id root="MDHT" extension="1726315107"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2014"/>
+            <high value="2014"/>
+          </effectiveTime>
+          <component>
+            <observation moodCode="EVN">
+              <templateId root="2.16.840.1.1133883.17.3.10.1.160"/>
+              <code code="9267-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.eye opening"/>
+            </observation>
+          </component>
+          <component>
+            <observation moodCode="EVN">
+              <templateId root="2.16.840.1.1133883.17.3.10.1.176"/>
+              <code code="9268-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.motor"/>
+            </observation>
+          </component>
+          <component>
+            <observation moodCode="EVN">
+              <templateId root="2.16.840.1.1133883.17.3.10.1.159"/>
+              <code code="55285-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score special circumstances"/>
+            </observation>
+          </component>
+          <component>
+            <observation moodCode="EVN">
+              <templateId root="2.16.840.1.1133883.17.3.10.1.158"/>
+              <code code="9269-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.total"/>
+            </observation>
+          </component>
+          <component>
+            <observation moodCode="EVN">
+              <templateId root="2.16.840.1.1133883.17.3.10.1.162"/>
+              <code code="9270-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.verbal"/>
+            </observation>
+          </component>
+        </organizer>
+      </component>
+    </organizer>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Vital Signs Section</ph></p>

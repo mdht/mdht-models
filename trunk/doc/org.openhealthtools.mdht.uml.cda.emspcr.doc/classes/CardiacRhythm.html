@@ -47,13 +47,13 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11309)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10275)<tt class="ph tt"><strong class="ph b">/@code</strong>="67519-9" </tt><em class="ph i">Cardiac rhythm NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10274)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:11310)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.01</em></p>
 </div>
 </li>
@@ -74,7 +74,7 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">playingDevice</strong></tt> <ol class="ol"><li class="li"> This playingDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ECGType.html">ECGType</a> 2.16.840.1.113883.17.3.11.19</tt><strong class="ph b"> DYNAMIC</strong><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.04</em></p>
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:11127) <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> (CONF:11128) <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">playingDevice</strong></tt> (CONF:11129) <ol class="ol"><li class="li"> This playingDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:11311), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ECGType.html">ECGType</a> 2.16.840.1.113883.17.3.11.19</tt><strong class="ph b"> DYNAMIC</strong> (CONF:11312)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.04</em></p>
 </div>
 </li>
 </ol>
@@ -90,11 +90,9 @@
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Cardiac Rhythm example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 

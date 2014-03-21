@@ -54,7 +54,52 @@
 <li>Contains exactly one [1..1] <xref href="../TurnaroundDelay.dita">Turnaround Delay</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.157</tt>)</li></ol></li></ol>
 </li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::DelayOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.95]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>delayOrganizer</entry><entry>delayOrganizer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DelayOrganizer</entry><entry>CONF:10995</entry><entry> </entry></row> 
+<row><entry>DispatchDelayRelationship</entry><entry>DispatchDelayRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DispatchDelayRelationship</entry><entry>CONF:10583</entry><entry> </entry></row> 
+<row><entry>ResponseDelayRelationship</entry><entry>ResponseDelayRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ResponseDelayRelationship</entry><entry>CONF:10584</entry><entry> </entry></row> 
+<row><entry>SceneDelayRelationship</entry><entry>SceneDelayRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>SceneDelayRelationship</entry><entry>CONF:10585</entry><entry> </entry></row> 
+<row><entry>TransportDelayRelationship</entry><entry>TransportDelayRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>TransportDelayRelationship</entry><entry>CONF:10586</entry><entry> </entry></row> 
+<row><entry>TurnaoundDelayRelationship</entry><entry>TurnaoundDelayRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>TurnaoundDelayRelationship</entry><entry>CONF:10587</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.95"/>
+  <id root="MDHT" extension="2087453177"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2014"/>
+    <high value="2014"/>
+  </effectiveTime>
+  <component>
+    <observation>
+      <code code="1836617251"/>
+      <value xsi:type="CD" code="1443524688"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1181325979"/>
+      <value xsi:type="CD" code="132520196"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="695363718"/>
+      <value xsi:type="CD" code="1394261217"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="536285107"/>
+      <value xsi:type="CD" code="1562991465"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="422285865"/>
+      <value xsi:type="CD" code="1014195908"/>
+    </observation>
+  </component>
+</organizer>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Delay Organizer</ph></p>

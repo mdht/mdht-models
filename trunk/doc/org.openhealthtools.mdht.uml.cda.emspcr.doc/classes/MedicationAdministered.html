@@ -154,7 +154,7 @@ Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list 
 
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">approachSiteCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="15562006" </tt><em class="ph i">structure of respiratory region of nose</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">approachSiteCode</strong></tt> (CONF:11180)<tt class="ph tt"><strong class="ph b">/@code</strong>="15562006" </tt><em class="ph i">structure of respiratory region of nose</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:11181)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">If route is "endotracheal," to be used to specify nasal approach for "nasotracheal tube"</em></p>
 </div>
 </li>
@@ -169,9 +169,9 @@ Note: rate values should be recorded in rateQuantity, not doseQuantity</em></p>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="DEV" </tt></li>
-<li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="MANU" </tt></li>
-<li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">playingDevice</strong></tt> <ol class="ol"><li class="li"> This playingDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)<div class="p"><p class="lines"><em class="ph i">For NEMSIS route codes that imply devices:<br/>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:11074) <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="DEV" </tt> (CONF:11182)</li>
+<li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> (CONF:11075) <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="MANU" </tt> (CONF:11183)</li>
+<li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">playingDevice</strong></tt> (CONF:11076) <ol class="ol"><li class="li"> This playingDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:11184), which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:11185)<div class="p"><p class="lines"><em class="ph i">For NEMSIS route codes that imply devices:<br/>
 @ value = "39849001" @codeSystem = "2.16.840.1.113883.6.5" @displayName="nasal oxygen cannula"<br/>
 @ value = "427591007" @codeSystem = "2.16.840.1.113883.6.5" @displayName="nonrebreather oxygen mask"<br/>
 @ value = "425926003" @codeSystem = "2.16.840.1.113883.6.5" @displayName="partial rebreather oxygen mask"<br/>
@@ -199,11 +199,9 @@ Note: rate values should be recorded in rateQuantity, not doseQuantity</em></p>
 
 <p class="p"> </p>
 
-<p class="p"><strong class="ph b">Medication Administered example</strong></p>
 
 
 
-<pre class="pre codeblock">Error: Missing Runtime Class</pre>
 
 </div>
 
