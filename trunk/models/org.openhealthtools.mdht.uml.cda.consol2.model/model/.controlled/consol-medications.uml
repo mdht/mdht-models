@@ -1568,4 +1568,27 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:PropertyValidation xmi:id="_3HD6IIzzEeOoMZgUoTghIg" base_Property="_nv0DUIzzEeOoMZgUoTghIg">
     <ruleId>CONF:28669</ruleId>
   </CDA:PropertyValidation>
+  <uml:Class xmi:id="_ZQpEwK-1EeO8duI_7f6kZw" name="AdmissionMedication2" clientDependency="_z821MLBkEeOtlapy2HWYww">
+    <ownedComment xmi:id="_qsCkoK-1EeO8duI_7f6kZw">
+      <body>This template represents the medications taken by the patient prior to and at the time of admission.</body>
+    </ownedComment>
+    <generalization xmi:id="_ZQxAkK-1EeO8duI_7f6kZw" general="_LNP08EFGEeGorO80f-Cppg"/>
+    <substitution xmi:id="_z821MLBkEeOtlapy2HWYww" name="AdmissionMedication" supplier="_LNP08EFGEeGorO80f-Cppg" client="_ZQpEwK-1EeO8duI_7f6kZw" contract="_LNP08EFGEeGorO80f-Cppg"/>
+    <ownedAttribute xmi:id="_aab0gLN9EeOtlapy2HWYww" name="code" visibility="private" aggregation="composite" redefinedProperty="_OJAbcUFGEeGorO80f-Cppg">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_hNuQEK-1EeO8duI_7f6kZw" base_Class="_ZQpEwK-1EeO8duI_7f6kZw" templateId="2.16.840.1.113883.10.20.22.4.36.2">
+    <ruleId>CONF:16758</ruleId>
+    <ruleId>CONF:16759</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_yc9jQK-1EeO8duI_7f6kZw" base_Generalization="_ZQxAkK-1EeO8duI_7f6kZw"/>
+  <CDA:CodeSystemConstraint xmi:id="_aacbkLN9EeOtlapy2HWYww" code="42346-7" displayName="Medications on Admission" base_Property="_aab0gLN9EeOtlapy2HWYww">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15519</ruleId>
+    <ruleId>CONF:32152</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_aaeQwLN9EeOtlapy2HWYww" base_Property="_aab0gLN9EeOtlapy2HWYww">
+    <ruleId>CONF:15518</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

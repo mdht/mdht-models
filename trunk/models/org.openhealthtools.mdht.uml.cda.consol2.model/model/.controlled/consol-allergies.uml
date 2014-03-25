@@ -415,14 +415,14 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         <language>OCL</language>
         <language>Analysis</language>
         <body>(self.statusCode.code = 'active') implies not self.effectiveTime.low.oclIsUndefined()</body>
-        <body>If statusCode = &quot;active&quot; Active, then effectiveTime SHALL contain [1..1] low (CONF:7504).</body>
+        <body>If statusCode = &quot;active&quot; Active, then effectiveTime SHALL contain [1..1] low</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2F-RkBSVEeGGzu7fmW9pXw" name="effectiveTimeHigh">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F-RkRSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>If statusCode = &quot;completed&quot; Completed, then effectiveTime SHALL contain  high [1..1] (CONF:10085).</body>
+        <body>If statusCode = &quot;completed&quot; Completed, then effectiveTime SHALL contain  high [1..1]</body>
         <body>(self.statusCode.code = 'completed') implies not self.effectiveTime.high.oclIsUndefined()</body>
       </specification>
     </ownedRule>
@@ -1054,4 +1054,77 @@ historical purposes.&#xD;
     <ruleId>CONF:10083</ruleId>
     <ruleId>CONF:10084</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_uCiIYLNwEeOtlapy2HWYww" name="AllergyConcernAct2" clientDependency="_0f27sLNxEeOtlapy2HWYww">
+    <ownedComment xmi:id="_kWCYcLNxEeOtlapy2HWYww">
+      <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives). At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
+    </ownedComment>
+    <generalization xmi:id="_uCivcLNwEeOtlapy2HWYww" general="_2EAisBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_0f27sLNxEeOtlapy2HWYww" name="AllergyProblemAct" supplier="_2EAisBSVEeGGzu7fmW9pXw" client="_uCiIYLNwEeOtlapy2HWYww" contract="_2EAisBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_lUlkALN0EeOtlapy2HWYww" name="authorParticipation" association="_lUnZMLN0EeOtlapy2HWYww">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lUlkArN0EeOtlapy2HWYww" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lUlkAbN0EeOtlapy2HWYww"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_I2s_YLN6EeOtlapy2HWYww" name="code" visibility="private" redefinedProperty="_2EMv9BSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aMz6ILN7EeOtlapy2HWYww" name="effectiveTime" visibility="private" type="_dOdGMLN7EeOtlapy2HWYww" aggregation="composite" redefinedProperty="_2EPMMBSVEeGGzu7fmW9pXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aMz6IbN7EeOtlapy2HWYww" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aMz6IrN7EeOtlapy2HWYww" value="1"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_dOdGMLN7EeOtlapy2HWYww" name="IVLTS">
+      <ownedComment xmi:id="_lufNkLN7EeOtlapy2HWYww">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_dOeUULN7EeOtlapy2HWYww">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      </generalization>
+      <ownedAttribute xmi:id="_eKyyoLN7EeOtlapy2HWYww" name="low" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_rcZyoLN7EeOtlapy2HWYww">
+          <body>Note: The effectiveTime/low asserts when the allergy was noted. This equates to the time the allergy was authored in the patient's chart.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hCQvALN7EeOtlapy2HWYww" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hCSkMLN7EeOtlapy2HWYww" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_eKyLkLN7EeOtlapy2HWYww" name="high" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_tY-0ELN7EeOtlapy2HWYww">
+          <body>Note: It is clinically rare for an allergy to be &quot;resolved&quot;, even for patients undergoing allergy desensitization. As a result, effectiveTime/high will generally not be present.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eKyLkbN7EeOtlapy2HWYww" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eKyLkrN7EeOtlapy2HWYww"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_ePScoLNxEeOtlapy2HWYww" base_Class="_uCiIYLNwEeOtlapy2HWYww" templateId="2.16.840.1.113883.10.20.22.2.6.2">
+    <ruleId>CONF:7800</ruleId>
+    <ruleId>CONF:10378</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_ptgzcLNxEeOtlapy2HWYww" base_Generalization="_uCivcLNwEeOtlapy2HWYww"/>
+  <uml:Association xmi:id="_lUnZMLN0EeOtlapy2HWYww" memberEnd="_lUlkALN0EeOtlapy2HWYww _lUnZMbN0EeOtlapy2HWYww">
+    <ownedEnd xmi:id="_lUnZMbN0EeOtlapy2HWYww" type="_uCiIYLNwEeOtlapy2HWYww" association="_lUnZMLN0EeOtlapy2HWYww"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_r8PNcLN0EeOtlapy2HWYww" severity="WARNING" base_Association="_lUnZMLN0EeOtlapy2HWYww">
+    <ruleId>CONF:31145</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CodeSystemConstraint xmi:id="_I2tmcLN6EeOtlapy2HWYww" code="CONC" displayName="Concern" base_Property="_I2s_YLN6EeOtlapy2HWYww">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
+    <ruleId>CONF:19158</ruleId>
+    <ruleId>CONF:32154</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_PVWd0LN6EeOtlapy2HWYww" base_Property="_I2s_YLN6EeOtlapy2HWYww">
+    <ruleId>CONF:7477</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_aMz6I7N7EeOtlapy2HWYww" base_Property="_aMz6ILN7EeOtlapy2HWYww">
+    <ruleId>CONF:7498</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_gOK_oLN7EeOtlapy2HWYww" base_Property="_eKyyoLN7EeOtlapy2HWYww">
+    <ruleId>CONF:31534</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_iUUMwLN7EeOtlapy2HWYww" severity="INFO" base_Property="_eKyLkLN7EeOtlapy2HWYww">
+    <ruleId>CONF:31535</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
