@@ -1528,6 +1528,14 @@ Valueset Source: http://www.loinc.org/</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_uGevcKoIEeO4L-NdFOGFPw" name="ParticipationType"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_I2mLsLFLEeOtlapy2HWYww" name="Healthcare Agent Qualifier Value Set">
+      <ownedComment xmi:id="_P46-8LFLEeOtlapy2HWYww">
+        <body>A value set SNOMED-CT qualifier codes for representing principal and secondary.&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_WaWEkLFLEeOtlapy2HWYww" name="63161005"/>
+      <ownedLiteral xmi:id="_ZPklQLFLEeOtlapy2HWYww" name="2603003"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -1599,7 +1607,7 @@ Valueset Source: http://www.loinc.org/</body>
   <term:ValueSetCode xmi:id="_2JmNURSVEeGGzu7fmW9pXw" conceptName="Nutritional observable" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKBhSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2Jm0YBSVEeGGzu7fmW9pXw" conceptName="Tobacco use and exposure" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKBxSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2JnbcBSVEeGGzu7fmW9pXw" conceptName="Toxic exposure status" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKCBSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetVersion xmi:id="_2LHQRxSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.20.2" version="1" fullName="Advance Directive Type Value Set" definition="This identifies the type of the Advance Directive. Uses the AdvanceDirectiveTypeCode vocabulary defined by CCD." revisionDate="07/23/2009" base_Enumeration="_2LHQQBSVEeGGzu7fmW9pXw">
+  <term:ValueSetVersion xmi:id="_2LHQRxSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.20.2" version="1" fullName="Advance Directive Type Value Set" definition="This identifies the type of the Advance Directive. Uses the AdvanceDirectiveTypeCode vocabulary defined by CCD." revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_2LHQQBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_2LIeYBSVEeGGzu7fmW9pXw" conceptName="Antibiotics" usageNote="SNOMED-CT" base_EnumerationLiteral="_2LHQQRSVEeGGzu7fmW9pXw"/>
@@ -2959,4 +2967,9 @@ Valueset Source: http://www.loinc.org/</body>
   <term:ValueSetVersion xmi:id="_uGfWgKoIEeO4L-NdFOGFPw" identifier="2.16.840.1.113883.1.11.10901" fullName="ParticipationType" base_Enumeration="_uGevcKoIEeO4L-NdFOGFPw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Z0Bk4E6SEeC5ttwajeXVXg"/>
   </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_I2mywLFLEeOtlapy2HWYww" identifier="2.16.840.1.113883.11.20.9.51" fullName="Healthcare Agent Qualifier Value Set" binding="Dynamic" base_Enumeration="_I2mLsLFLEeOtlapy2HWYww">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_WaWroLFLEeOtlapy2HWYww" conceptName="Principal" base_EnumerationLiteral="_WaWEkLFLEeOtlapy2HWYww"/>
+  <term:ValueSetCode xmi:id="_ZPklQbFLEeOtlapy2HWYww" conceptName="Secondary" base_EnumerationLiteral="_ZPklQLFLEeOtlapy2HWYww"/>
 </xmi:XMI>

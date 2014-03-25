@@ -918,7 +918,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
   <CDA:PropertyValidation xmi:id="_02yjoI9DEeOB0eBUISUB4Q" base_Property="_XfFCwI9DEeOB0eBUISUB4Q">
     <ruleId>CONF:31951</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_1PuoEI9DEeOB0eBUISUB4Q" base_Property="_XfEbsI9DEeOB0eBUISUB4Q">
+  <CDA:PropertyValidation xmi:id="_1PuoEI9DEeOB0eBUISUB4Q" message="Consol Planned Coverage SHALL contain exactly one [1..1] @classCode=&quot;ACT&quot; Act (CodeSystem: 2.16.840.1.113883.5.4 ActCode) (CONF:31945)" base_Property="_XfEbsI9DEeOB0eBUISUB4Q">
     <ruleId>CONF:31945</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_BzotMI9HEeOB0eBUISUB4Q" code="48768-6" displayName="Payment Sources" base_Property="_XfFCwI9DEeOB0eBUISUB4Q">
@@ -930,7 +930,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:31955</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_exTZkI9LEeOB0eBUISUB4Q" base_Property="_QXkT4I9LEeOB0eBUISUB4Q">
+  <CDA:PropertyValidation xmi:id="_exTZkI9LEeOB0eBUISUB4Q" message="Consol Entry Relationship SHALL contain exactly one [1..1] @typeCode=&quot;COMP&quot; , which SHALL be selected from (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) (CONF:31968)" base_Property="_QXkT4I9LEeOB0eBUISUB4Q">
     <ruleId>CONF:31968</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_bD7eAI9NEeOB0eBUISUB4Q" base_Property="_QZIIMI9NEeOB0eBUISUB4Q">
