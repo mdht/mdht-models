@@ -98,7 +98,8 @@ import org.junit.runners.Suite;
 		HealthConcernsSectionTest.class, HealthStatusEvaluationsOutcomesSectionTest.class,
 		MentalStatusSectionTest.class, NutritionSectionTest.class, PhysicalFindingsOfSkinSectionTest.class,
 		CarePlanTest.class, ReferralNoteTest.class, TransferSummaryTest.class,
-		USRealmHeaderPatientGeneratedDocumentTest.class, AuthorParticipationTest.class })
+		USRealmHeaderPatientGeneratedDocumentTest.class, AuthorParticipationTest.class, AdmissionMedication2Test.class,
+		AdvanceDirectiveObservation2Test.class, AllergyConcernAct2Test.class })
 public class ConsolTests {
 
 	/**
