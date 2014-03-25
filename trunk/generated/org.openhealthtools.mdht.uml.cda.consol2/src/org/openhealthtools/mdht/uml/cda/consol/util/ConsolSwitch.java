@@ -4068,6 +4068,75 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.ADMISSION_MEDICATION2: {
+				AdmissionMedication2 admissionMedication2 = (AdmissionMedication2) theEObject;
+				T result = caseAdmissionMedication2(admissionMedication2);
+				if (result == null) {
+					result = caseAdmissionMedication(admissionMedication2);
+				}
+				if (result == null) {
+					result = caseCDA_Act(admissionMedication2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(admissionMedication2);
+				}
+				if (result == null) {
+					result = caseAct(admissionMedication2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(admissionMedication2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION2: {
+				AdvanceDirectiveObservation2 advanceDirectiveObservation2 = (AdvanceDirectiveObservation2) theEObject;
+				T result = caseAdvanceDirectiveObservation2(advanceDirectiveObservation2);
+				if (result == null) {
+					result = caseAdvanceDirectiveObservation(advanceDirectiveObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(advanceDirectiveObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(advanceDirectiveObservation2);
+				}
+				if (result == null) {
+					result = caseAct(advanceDirectiveObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectiveObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ALLERGY_CONCERN_ACT2: {
+				AllergyConcernAct2 allergyConcernAct2 = (AllergyConcernAct2) theEObject;
+				T result = caseAllergyConcernAct2(allergyConcernAct2);
+				if (result == null) {
+					result = caseAllergyProblemAct(allergyConcernAct2);
+				}
+				if (result == null) {
+					result = caseCDA_Act(allergyConcernAct2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(allergyConcernAct2);
+				}
+				if (result == null) {
+					result = caseAct(allergyConcernAct2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(allergyConcernAct2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -7432,6 +7501,51 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseAuthorParticipation(AuthorParticipation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Admission Medication2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Admission Medication2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAdmissionMedication2(AdmissionMedication2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAdvanceDirectiveObservation2(AdvanceDirectiveObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Allergy Concern Act2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Allergy Concern Act2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAllergyConcernAct2(AllergyConcernAct2 object) {
 		return null;
 	}
 
