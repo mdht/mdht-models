@@ -476,6 +476,12 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createUSRealmHeaderPatientGeneratedDocument();
 			case ConsolPackage.AUTHOR_PARTICIPATION:
 				return createAuthorParticipation();
+			case ConsolPackage.ADMISSION_MEDICATION2:
+				return createAdmissionMedication2();
+			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION2:
+				return createAdvanceDirectiveObservation2();
+			case ConsolPackage.ALLERGY_CONCERN_ACT2:
+				return createAllergyConcernAct2();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2379,6 +2385,36 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public AuthorParticipation createAuthorParticipation() {
 		AuthorParticipationImpl authorParticipation = new AuthorParticipationImpl();
 		return authorParticipation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdmissionMedication2 createAdmissionMedication2() {
+		AdmissionMedication2Impl admissionMedication2 = new AdmissionMedication2Impl();
+		return admissionMedication2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectiveObservation2 createAdvanceDirectiveObservation2() {
+		AdvanceDirectiveObservation2Impl advanceDirectiveObservation2 = new AdvanceDirectiveObservation2Impl();
+		return advanceDirectiveObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AllergyConcernAct2 createAllergyConcernAct2() {
+		AllergyConcernAct2Impl allergyConcernAct2 = new AllergyConcernAct2Impl();
+		return allergyConcernAct2;
 	}
 
 	/**

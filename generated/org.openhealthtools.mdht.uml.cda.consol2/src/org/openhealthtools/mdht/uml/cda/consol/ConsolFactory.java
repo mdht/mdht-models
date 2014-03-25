@@ -1740,6 +1740,33 @@ public interface ConsolFactory extends EFactory {
 	AuthorParticipation createAuthorParticipation();
 
 	/**
+	 * Returns a new object of class '<em>Admission Medication2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Admission Medication2</em>'.
+	 * @generated
+	 */
+	AdmissionMedication2 createAdmissionMedication2();
+
+	/**
+	 * Returns a new object of class '<em>Advance Directive Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directive Observation2</em>'.
+	 * @generated
+	 */
+	AdvanceDirectiveObservation2 createAdvanceDirectiveObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Allergy Concern Act2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Allergy Concern Act2</em>'.
+	 * @generated
+	 */
+	AllergyConcernAct2 createAllergyConcernAct2();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
