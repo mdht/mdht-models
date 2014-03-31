@@ -1058,6 +1058,22 @@ historical purposes.&#xD;
     <ownedComment xmi:id="_kWCYcLNxEeOtlapy2HWYww">
       <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives). At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
     </ownedComment>
+    <ownedRule xmi:id="_a4EoULbWEeOohfENwVAdzg" name="effectiveTimeLow" constrainedElement="_2EAisBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_a4EoUbbWEeOohfENwVAdzg">
+        <language>OCL</language>
+        <language>Analysis</language>
+        <body>true</body>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_cA2OQLbWEeOohfENwVAdzg" name="effectiveTimeHigh">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cA2OQbbWEeOohfENwVAdzg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_uCivcLNwEeOtlapy2HWYww" general="_2EAisBSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_0f27sLNxEeOtlapy2HWYww" name="AllergyProblemAct" supplier="_2EAisBSVEeGGzu7fmW9pXw" client="_uCiIYLNwEeOtlapy2HWYww" contract="_2EAisBSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_lUlkALN0EeOtlapy2HWYww" name="authorParticipation" association="_lUnZMLN0EeOtlapy2HWYww">
