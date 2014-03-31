@@ -56,6 +56,24 @@ public class AllergyConcernAct2Impl extends AllergyProblemActImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergyConcernAct2EffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyConcernAct2Operations.validateAllergyConcernAct2EffectiveTimeLow(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyConcernAct2EffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyConcernAct2Operations.validateAllergyConcernAct2EffectiveTimeHigh(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAllergyProblemActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyConcernAct2Operations.validateAllergyProblemActCodeP(this, diagnostics, context);
 	}
