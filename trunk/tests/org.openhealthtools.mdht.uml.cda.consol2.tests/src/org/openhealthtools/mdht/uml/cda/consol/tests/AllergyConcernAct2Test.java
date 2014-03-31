@@ -16,6 +16,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
@@ -33,6 +34,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyConcernAct2EffectiveTimeLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Concern Act2 Effective Time Low</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyConcernAct2EffectiveTimeHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Concern Act2 Effective Time High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyConcernAct2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Concern Act2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyConcernAct2IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Concern Act2 IVLTS Low</em>}</li>
@@ -47,6 +50,26 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
  */
 
 public class AllergyConcernAct2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateAllergyConcernAct2EffectiveTimeLow() {
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateAllergyConcernAct2EffectiveTimeHigh() {
+	}
 
 	/**
 	*
