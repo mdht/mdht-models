@@ -87,28 +87,36 @@ Medication timing is complex. This template requires that there be a substanceAd
         <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_5BnBgEIiEeG4bZAl2IGXmQ" name="effectiveTimeIVLTS" constrainedElement="_4CqJMEFiEeG2TLeVPbv7pg">
+    <ownedRule xmi:id="_5BnBgEIiEeG4bZAl2IGXmQ" name="effectiveTimeIVLTSorTS" constrainedElement="_4CqJMEFiEeG2TLeVPbv7pg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_BbXhwEIjEeG4bZAl2IGXmQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>SHALL contain exactly one [1..1] effectiveTime such that it SHALL contain exactly one [1..1] @xsi:type = &quot;IVL_TS&quot;</body>
-        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->size() = 1</body>
+        <body>SHALL contain exactly one [1..1] effectiveTime such that it SHALL contain exactly one [1..1] @xsi:type=&quot;IVL_TS&quot; or contain exactly one [1..1] @xsi:type=&quot;TS&quot;</body>
+        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->size() = 1 xor self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::SXCM_TS))->size() = 1</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_4CqJMEFiEeG2TLeVPbv7pg" name="effectiveTimeLow" constrainedElement="_ukkeIEFiEeG2TLeVPbv7pg">
+    <ownedRule xmi:id="_4CqJMEFiEeG2TLeVPbv7pg" name="effectiveTimeIVLTSLow" constrainedElement="_ukkeIEFiEeG2TLeVPbv7pg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_pwzXsEFjEeG2TLeVPbv7pg">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>effectiveTime with @xsi:type=&quot;IVL_TS&quot; SHALL contain exactly one [1..1] low</body>
+        <body>If effectiveTime @xsi:type=&quot;IVL_TS&quot;, SHALL contain exactly one [1..1] low</body>
         <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).low->size() = 1)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_6ODpwEFiEeG2TLeVPbv7pg" name="effectiveTimeHigh" constrainedElement="_4CqJMEFiEeG2TLeVPbv7pg">
+    <ownedRule xmi:id="_6ODpwEFiEeG2TLeVPbv7pg" name="effectiveTimeIVLTSHigh " constrainedElement="_4CqJMEFiEeG2TLeVPbv7pg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_6jRPUEFjEeG2TLeVPbv7pg">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>effectiveTime with @xsi:type=&quot;IVL_TS&quot; SHALL contain exactly one [1..1] high</body>
+        <body>If effectiveTime @xsi:type=&quot;IVL_TS&quot;, SHALL contain exactly one [1..1] high</body>
         <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).high->size() = 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_okkuILUhEeObs6U79mvBaw" name="effectiveTimeTSValue" constrainedElement="_2GHbgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V9nkoLUiEeObs6U79mvBaw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>If effectiveTime @xsi:type=&quot;TS&quot;, SHALL contain exactly one [1..1] @value</body>
+        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes:: SXCM_TS))->forAll( eff | eff.oclAsType(datatypes:: SXCM_TS).value->size() = 1 or eff.oclAsType(datatypes:: SXCM_TS).isNullFlavorDefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0bGJYEIiEeG4bZAl2IGXmQ" name="effectiveTimePIVLTS" constrainedElement="_6ODpwEFiEeG2TLeVPbv7pg">
@@ -1418,5 +1426,8 @@ The UDI should be sent in the participantRole/id.</body>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_-UVZMAXoEeOc4J5a9hlM-Q" base_Constraint="_0EuxoAXoEeOc4J5a9hlM-Q">
     <ruleId>CONF:7525</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_qP948LUhEeObs6U79mvBaw" base_Constraint="_okkuILUhEeObs6U79mvBaw">
+    <ruleId>CONF:NEW</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>
