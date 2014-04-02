@@ -1410,4 +1410,26 @@ A cognitive problem observation is a finding or medical condition. This is diffe
   <CDA:AssociationValidation xmi:id="_7slLEK4hEeORf5eJaKt1KQ" severity="WARNING" base_Association="_6pOQoK4hEeORf5eJaKt1KQ">
     <ruleId>CONF:31435</ruleId>
   </CDA:AssociationValidation>
+  <uml:Class xmi:id="_6LYrULkoEeODDJAC5t5vpw" name="CognitiveStatusOrganizer2" clientDependency="_dfDNQLkpEeODDJAC5t5vpw">
+    <ownedComment xmi:id="_XgdH4LkpEeODDJAC5t5vpw">
+      <body>This template groups related cognitive status observations into categories. This organizer template may be used to group questions in a Patient Health Questionnaire (PHQ).</body>
+    </ownedComment>
+    <generalization xmi:id="_6LYrUbkoEeODDJAC5t5vpw" general="_jfoCUOZbEeGINOJ_SD9_dA"/>
+    <substitution xmi:id="_dfDNQLkpEeODDJAC5t5vpw" name="CognitiveStatusResultOrganizer" supplier="_jfoCUOZbEeGINOJ_SD9_dA" client="_6LYrULkoEeODDJAC5t5vpw" contract="_jfoCUOZbEeGINOJ_SD9_dA"/>
+    <ownedAttribute xmi:id="_AAy_gLkpEeODDJAC5t5vpw" name="code" visibility="private" aggregation="composite" redefinedProperty="_Dku5YuZjEeGINOJ_SD9_dA">
+      <ownedComment xmi:id="_oyR1ALkpEeODDJAC5t5vpw">
+        <body>The code selected should indicate the category that groups the contained cognitive status observations (e.g. communication,learning and applying knowledge).</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AAy_gbkpEeODDJAC5t5vpw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AAy_grkpEeODDJAC5t5vpw" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:PropertyValidation xmi:id="_AAzmkLkpEeODDJAC5t5vpw" base_Property="_AAy_gLkpEeODDJAC5t5vpw">
+    <ruleId>CONF:14378</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_E6468LkpEeODDJAC5t5vpw" base_Class="_6LYrULkoEeODDJAC5t5vpw" templateId="2.16.840.1.113883.10.20.22.4.75.2">
+    <ruleId>CONF:14375</ruleId>
+    <ruleId>CONF:14376</ruleId>
+  </CDA:CDATemplate>
 </xmi:XMI>
