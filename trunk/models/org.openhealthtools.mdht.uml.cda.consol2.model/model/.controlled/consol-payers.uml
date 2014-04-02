@@ -954,4 +954,27 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     <reference href="../consol-vocab.uml#_8AS78Y9OEeOB0eBUISUB4Q"/>
     <ruleId>CONF:31973</ruleId>
   </CDA:ValueSetConstraint>
+  <uml:Class xmi:id="_aJr6ULkxEeODDJAC5t5vpw" name="CoverageActivity2" clientDependency="_wiqHcLkxEeODDJAC5t5vpw">
+    <ownedComment xmi:id="_-FQw0LkxEeODDJAC5t5vpw">
+      <body>A Coverage Activity groups the policy and authorization acts within a Payers Section to order the payment sources. A Coverage Activity contains one or more policy activities, each of which contains zero or more authorization activities. The Coverage Activity id is the Id from the patient's insurance card.  The sequenceNumber/@value shows the policy order of preference.</body>
+    </ownedComment>
+    <generalization xmi:id="_aJr6UbkxEeODDJAC5t5vpw" general="_Cg3pkBUmEeGvPruliC3crg"/>
+    <substitution xmi:id="_wiqHcLkxEeODDJAC5t5vpw" name="CoverageActivity" supplier="_Cg3pkBUmEeGvPruliC3crg" client="_aJr6ULkxEeODDJAC5t5vpw" contract="_Cg3pkBUmEeGvPruliC3crg"/>
+    <ownedAttribute xmi:id="_nD4f4LkxEeODDJAC5t5vpw" name="code" visibility="private" aggregation="composite" redefinedProperty="_FVBzQhUmEeGvPruliC3crg">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CodeSystemConstraint xmi:id="_nD4f4bkxEeODDJAC5t5vpw" code="48768-6" displayName="Payment Sources" base_Property="_nD4f4LkxEeODDJAC5t5vpw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:19160</ruleId>
+    <ruleId>CONF:32156</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_sazhQLkxEeODDJAC5t5vpw" base_Class="_aJr6ULkxEeODDJAC5t5vpw" templateId="2.16.840.1.113883.10.20.22.4.60.2">
+    <ruleId>CONF:8897</ruleId>
+    <ruleId>CONF:10492</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_HsH9YLkyEeODDJAC5t5vpw" base_Property="_nD4f4LkxEeODDJAC5t5vpw">
+    <ruleId>CONF:8876</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConformsTo xmi:id="_d3rHoLk0EeODDJAC5t5vpw" base_Generalization="_aJr6UbkxEeODDJAC5t5vpw"/>
 </xmi:XMI>

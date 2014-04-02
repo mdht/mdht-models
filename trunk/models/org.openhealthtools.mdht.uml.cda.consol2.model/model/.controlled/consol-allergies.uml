@@ -1143,4 +1143,188 @@ historical purposes.&#xD;
   <CDA:PropertyValidation xmi:id="_iUUMwLN7EeOtlapy2HWYww" severity="INFO" base_Property="_eKyLkLN7EeOtlapy2HWYww">
     <ruleId>CONF:31535</ruleId>
   </CDA:PropertyValidation>
+  <uml:Class xmi:id="_uVJogLj5EeODDJAC5t5vpw" name="AllergyObservation2" clientDependency="_Oapv4Lj7EeODDJAC5t5vpw">
+    <ownedComment xmi:id="_d2V3QLj6EeODDJAC5t5vpw">
+      <body>This template reflects a discrete observation about a patient's allergy or intolerance. Because it is a discrete observation, it will have a statusCode of &quot;completed&quot;. The effectiveTime, also referred to as the &quot;biologically relevant time&quot; is the time at which the observation holds for the patient. For a provider seeing a patient in the clinic today, observing a history of penicillin allergy that developed five years ago, the effectiveTime is five years ago. &#xD;
+The effectiveTime of the Allergy - Intolerance Observation is the definitive indication of whether or not the underlying allergy/intolerance is resolved. If known to be resolved, then an effectiveTime/high would be present. If the date of resolution is not known, then effectiveTime/high will be present with a nullFlavor of &quot;UNK&quot;.&#xD;
+NOTE: The agent responsible for an allergy or adverse reaction is not always a manufactured material (for example, food allergies), nor is it necessarily consumed. The following constraints reflect limitations in the base CDA R2 specification, and should be used to represent any type of responsible agent.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_8hmjULj9EeODDJAC5t5vpw" name="textReferenceValuePointsToNarrative" constrainedElement="_uVJogLj5EeODDJAC5t5vpw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WjBd0Lj-EeODDJAC5t5vpw">
+        <language>Analysis</language>
+        <body>The text reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_OMO6kLkVEeODDJAC5t5vpw" name="valueOriginalText" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_OMO6kbkVEeODDJAC5t5vpw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_okdgoLkXEeODDJAC5t5vpw" name="originalTextReference" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_okdgobkXEeODDJAC5t5vpw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_E9i2ELkYEeODDJAC5t5vpw" name="originalTextReferenceValue" constrainedElement="_cf38gCFLEeG9m6LRl9ardQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_E9i2EbkYEeODDJAC5t5vpw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_dwX2gLkYEeODDJAC5t5vpw" name="referenceValue" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_dwX2gbkYEeODDJAC5t5vpw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_uVNS4Lj5EeODDJAC5t5vpw" general="_2EaLUBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_Oapv4Lj7EeODDJAC5t5vpw" name="AllergyObservation" supplier="_2EaLUBSVEeGGzu7fmW9pXw" client="_uVJogLj5EeODDJAC5t5vpw" contract="_2EaLUBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_GwfEELj8EeODDJAC5t5vpw" name="authorParticipation" association="_Gwg5QLj8EeODDJAC5t5vpw">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GwfrIbj8EeODDJAC5t5vpw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GwfrILj8EeODDJAC5t5vpw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Xu9-cLj8EeODDJAC5t5vpw" name="negationInd" visibility="private">
+      <ownedComment xmi:id="_h08I4Lj8EeODDJAC5t5vpw">
+        <body>Note: Use negationInd=&quot;true&quot; to indicate that the allergy was not observed.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xu9-cbj8EeODDJAC5t5vpw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xu9-crj8EeODDJAC5t5vpw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_LYVyAExtEd6h-an5IXo-DA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oT_3ALj8EeODDJAC5t5vpw" name="text" visibility="private" type="_76eHULj8EeODDJAC5t5vpw" aggregation="composite">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oT_3Abj8EeODDJAC5t5vpw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oT_3Arj8EeODDJAC5t5vpw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_PWM_4LkAEeODDJAC5t5vpw" name="code" visibility="private" redefinedProperty="_2EaLdBSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_3bHDQLkAEeODDJAC5t5vpw" name="value" visibility="private" redefinedProperty="_2EaLdhSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_YroBsLkBEeODDJAC5t5vpw">
+        <body>Note: The consumable participant points to the precise allergen or substance of intolerance. Because the consumable and the reaction are more clinically relevant than a categorization of the allergy/adverse event type, many systems will simply assign a fixed value here (e.g. &quot;allergy to substance&quot;).</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_QjUYoLkTEeODDJAC5t5vpw" name="effectiveTime" visibility="private" type="_wqODoLkTEeODDJAC5t5vpw" aggregation="composite" redefinedProperty="_2Epb4BSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_atg7wLkTEeODDJAC5t5vpw">
+        <body>Note: If the allergy/intolerance is known to be resolved, but the date of resolution is not known, then the high element SHALL be present, and the nullFlavor attribute SHALL be set to 'UNK'.</body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QjUYobkTEeODDJAC5t5vpw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QjUYorkTEeODDJAC5t5vpw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_FNs1ILkcEeODDJAC5t5vpw" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" redefinedProperty="_-xkhwBUvEeGbmN_W114JUw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q5V84LkcEeODDJAC5t5vpw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q5Wj8LkcEeODDJAC5t5vpw"/>
+      <association href="../consol.uml#_FNuDQLkcEeODDJAC5t5vpw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Axi2ELkgEeODDJAC5t5vpw" name="participant" type="_0HgNkDJAEeG6R8Pb5FT2Ow" redefinedProperty="_FQD_EDJDEeG6R8Pb5FT2Ow">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Axi2EbkgEeODDJAC5t5vpw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Axi2ErkgEeODDJAC5t5vpw" value="1"/>
+      <association href="../consol.uml#_AxkEMLkgEeODDJAC5t5vpw"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_76eHULj8EeODDJAC5t5vpw" name="ED">
+      <generalization xmi:id="_76eHUbj8EeODDJAC5t5vpw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="__JBuALj8EeODDJAC5t5vpw" name="reference" visibility="private" type="_IBarALj9EeODDJAC5t5vpw" isOrdered="true" isDerived="true" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__JBuAbj8EeODDJAC5t5vpw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__JBuArj8EeODDJAC5t5vpw"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_PIRiAD54Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_IBarALj9EeODDJAC5t5vpw" name="TEL">
+        <generalization xmi:id="_IBarAbj9EeODDJAC5t5vpw">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_JpDXMLj9EeODDJAC5t5vpw" name="value" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lk6m8Lj9EeODDJAC5t5vpw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lk6m8bj9EeODDJAC5t5vpw" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_TBfLED5_Ed6cla2oXsPtlA"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wqODoLkTEeODDJAC5t5vpw" name="IVLTS">
+      <generalization xmi:id="_wqOqsLkTEeODDJAC5t5vpw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      </generalization>
+      <ownedAttribute xmi:id="_xrzccLkTEeODDJAC5t5vpw" name="low" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_DOJR0LkUEeODDJAC5t5vpw">
+          <body>Note: The effectiveTime/low (a.k.a. &quot;onset date&quot;) asserts when the allergy/intolerance became biologically active.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4l_nYLkTEeODDJAC5t5vpw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4mAOcLkTEeODDJAC5t5vpw" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_xry1YLkTEeODDJAC5t5vpw" name="high" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_FuJwcLkUEeODDJAC5t5vpw">
+          <body>Note: The effectiveTime/high (a.k.a. &quot;resolution date&quot;) asserts when the allergy/intolerance became biologically resolved.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xry1YbkTEeODDJAC5t5vpw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xry1YrkTEeODDJAC5t5vpw"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_HX1C0Lj6EeODDJAC5t5vpw" base_Class="_uVJogLj5EeODDJAC5t5vpw" templateId="2.16.840.1.113883.10.20.22.4.7.2">
+    <ruleId>CONF:7381</ruleId>
+    <ruleId>CONF:10488</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_2XNlALj6EeODDJAC5t5vpw" base_Generalization="_uVNS4Lj5EeODDJAC5t5vpw"/>
+  <uml:Association xmi:id="_Gwg5QLj8EeODDJAC5t5vpw" memberEnd="_GwfEELj8EeODDJAC5t5vpw _GwhgULj8EeODDJAC5t5vpw">
+    <ownedEnd xmi:id="_GwhgULj8EeODDJAC5t5vpw" type="_uVJogLj5EeODDJAC5t5vpw" association="_Gwg5QLj8EeODDJAC5t5vpw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_LxPBILj8EeODDJAC5t5vpw" severity="WARNING" base_Association="_Gwg5QLj8EeODDJAC5t5vpw">
+    <ruleId>CONF:31143</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_ZN-6ILj8EeODDJAC5t5vpw" severity="INFO" base_Property="_Xu9-cLj8EeODDJAC5t5vpw">
+    <ruleId>CONF:31526</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_pFCSYLj8EeODDJAC5t5vpw" severity="WARNING" base_Property="_oT_3ALj8EeODDJAC5t5vpw">
+    <ruleId>CONF:31527</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_AA2t4Lj9EeODDJAC5t5vpw" severity="WARNING" base_Property="__JBuALj8EeODDJAC5t5vpw">
+    <ruleId>CONF:31528</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Kpx0YLj9EeODDJAC5t5vpw" base_Property="_JpDXMLj9EeODDJAC5t5vpw">
+    <ruleId>CONF:31529</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_X7rS0Lj-EeODDJAC5t5vpw" base_Constraint="_8hmjULj9EeODDJAC5t5vpw">
+    <ruleId>CONF:31530</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CodeSystemConstraint xmi:id="_PWNm8LkAEeODDJAC5t5vpw" code="ASSERTION" base_Property="_PWM_4LkAEeODDJAC5t5vpw" severity="INFO">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15948</ruleId>
+    <ruleId>CONF:32153</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_PWQDMLkAEeODDJAC5t5vpw" base_Property="_PWM_4LkAEeODDJAC5t5vpw">
+    <ruleId>CONF:15947</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_3bHDQbkAEeODDJAC5t5vpw" base_Property="_3bHDQLkAEeODDJAC5t5vpw">
+    <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
+    <ruleId>CONF:7390</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_8aRr8LkAEeODDJAC5t5vpw" base_Property="_3bHDQLkAEeODDJAC5t5vpw"/>
+  <CDA:PropertyValidation xmi:id="_QjUYo7kTEeODDJAC5t5vpw" base_Property="_QjUYoLkTEeODDJAC5t5vpw">
+    <ruleId>CONF:7387</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_y0WY4LkTEeODDJAC5t5vpw" severity="INFO" base_Property="_xry1YLkTEeODDJAC5t5vpw">
+    <ruleId>CONF:31539</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_1c2sMLkTEeODDJAC5t5vpw" base_Property="_xrzccLkTEeODDJAC5t5vpw">
+    <ruleId>CONF:31538</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
