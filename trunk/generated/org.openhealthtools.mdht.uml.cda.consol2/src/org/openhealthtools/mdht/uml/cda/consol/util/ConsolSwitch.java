@@ -4137,6 +4137,104 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.ALLERGY_OBSERVATION2: {
+				AllergyObservation2 allergyObservation2 = (AllergyObservation2) theEObject;
+				T result = caseAllergyObservation2(allergyObservation2);
+				if (result == null) {
+					result = caseAllergyObservation(allergyObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(allergyObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(allergyObservation2);
+				}
+				if (result == null) {
+					result = caseAct(allergyObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(allergyObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COGNITIVE_STATUS_ORGANIZER2: {
+				CognitiveStatusOrganizer2 cognitiveStatusOrganizer2 = (CognitiveStatusOrganizer2) theEObject;
+				T result = caseCognitiveStatusOrganizer2(cognitiveStatusOrganizer2);
+				if (result == null) {
+					result = caseCognitiveStatusResultOrganizer(cognitiveStatusOrganizer2);
+				}
+				if (result == null) {
+					result = caseResultOrganizer(cognitiveStatusOrganizer2);
+				}
+				if (result == null) {
+					result = caseOrganizer(cognitiveStatusOrganizer2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(cognitiveStatusOrganizer2);
+				}
+				if (result == null) {
+					result = caseAct(cognitiveStatusOrganizer2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(cognitiveStatusOrganizer2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COVERAGE_ACTIVITY2: {
+				CoverageActivity2 coverageActivity2 = (CoverageActivity2) theEObject;
+				T result = caseCoverageActivity2(coverageActivity2);
+				if (result == null) {
+					result = caseCoverageActivity(coverageActivity2);
+				}
+				if (result == null) {
+					result = caseCDA_Act(coverageActivity2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(coverageActivity2);
+				}
+				if (result == null) {
+					result = caseAct(coverageActivity2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(coverageActivity2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.CURRENT_SMOKING_STATUS2: {
+				CurrentSmokingStatus2 currentSmokingStatus2 = (CurrentSmokingStatus2) theEObject;
+				T result = caseCurrentSmokingStatus2(currentSmokingStatus2);
+				if (result == null) {
+					result = caseSmokingStatusObservation(currentSmokingStatus2);
+				}
+				if (result == null) {
+					result = caseTobaccoUse(currentSmokingStatus2);
+				}
+				if (result == null) {
+					result = caseObservation(currentSmokingStatus2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(currentSmokingStatus2);
+				}
+				if (result == null) {
+					result = caseAct(currentSmokingStatus2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(currentSmokingStatus2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -7546,6 +7644,66 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseAllergyConcernAct2(AllergyConcernAct2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Allergy Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Allergy Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAllergyObservation2(AllergyObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cognitive Status Organizer2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cognitive Status Organizer2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCognitiveStatusOrganizer2(CognitiveStatusOrganizer2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Coverage Activity2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Coverage Activity2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCoverageActivity2(CoverageActivity2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Current Smoking Status2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Current Smoking Status2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCurrentSmokingStatus2(CurrentSmokingStatus2 object) {
 		return null;
 	}
 
