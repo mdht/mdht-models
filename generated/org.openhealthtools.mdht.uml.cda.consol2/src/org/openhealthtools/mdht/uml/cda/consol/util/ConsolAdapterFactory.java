@@ -1150,6 +1150,26 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseAllergyObservation2(AllergyObservation2 object) {
+			return createAllergyObservation2Adapter();
+		}
+
+		@Override
+		public Adapter caseCognitiveStatusOrganizer2(CognitiveStatusOrganizer2 object) {
+			return createCognitiveStatusOrganizer2Adapter();
+		}
+
+		@Override
+		public Adapter caseCoverageActivity2(CoverageActivity2 object) {
+			return createCoverageActivity2Adapter();
+		}
+
+		@Override
+		public Adapter caseCurrentSmokingStatus2(CurrentSmokingStatus2 object) {
+			return createCurrentSmokingStatus2Adapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -4453,6 +4473,62 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAllergyConcernAct2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2 <em>Allergy Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2
+	 * @generated
+	 */
+	public Adapter createAllergyObservation2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusOrganizer2 <em>Cognitive Status Organizer2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusOrganizer2
+	 * @generated
+	 */
+	public Adapter createCognitiveStatusOrganizer2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2 <em>Coverage Activity2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2
+	 * @generated
+	 */
+	public Adapter createCoverageActivity2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.CurrentSmokingStatus2 <em>Current Smoking Status2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.CurrentSmokingStatus2
+	 * @generated
+	 */
+	public Adapter createCurrentSmokingStatus2Adapter() {
 		return null;
 	}
 

@@ -1767,6 +1767,42 @@ public interface ConsolFactory extends EFactory {
 	AllergyConcernAct2 createAllergyConcernAct2();
 
 	/**
+	 * Returns a new object of class '<em>Allergy Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Allergy Observation2</em>'.
+	 * @generated
+	 */
+	AllergyObservation2 createAllergyObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Cognitive Status Organizer2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cognitive Status Organizer2</em>'.
+	 * @generated
+	 */
+	CognitiveStatusOrganizer2 createCognitiveStatusOrganizer2();
+
+	/**
+	 * Returns a new object of class '<em>Coverage Activity2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coverage Activity2</em>'.
+	 * @generated
+	 */
+	CoverageActivity2 createCoverageActivity2();
+
+	/**
+	 * Returns a new object of class '<em>Current Smoking Status2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Current Smoking Status2</em>'.
+	 * @generated
+	 */
+	CurrentSmokingStatus2 createCurrentSmokingStatus2();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

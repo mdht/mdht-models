@@ -482,6 +482,14 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createAdvanceDirectiveObservation2();
 			case ConsolPackage.ALLERGY_CONCERN_ACT2:
 				return createAllergyConcernAct2();
+			case ConsolPackage.ALLERGY_OBSERVATION2:
+				return createAllergyObservation2();
+			case ConsolPackage.COGNITIVE_STATUS_ORGANIZER2:
+				return createCognitiveStatusOrganizer2();
+			case ConsolPackage.COVERAGE_ACTIVITY2:
+				return createCoverageActivity2();
+			case ConsolPackage.CURRENT_SMOKING_STATUS2:
+				return createCurrentSmokingStatus2();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2415,6 +2423,46 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public AllergyConcernAct2 createAllergyConcernAct2() {
 		AllergyConcernAct2Impl allergyConcernAct2 = new AllergyConcernAct2Impl();
 		return allergyConcernAct2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AllergyObservation2 createAllergyObservation2() {
+		AllergyObservation2Impl allergyObservation2 = new AllergyObservation2Impl();
+		return allergyObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CognitiveStatusOrganizer2 createCognitiveStatusOrganizer2() {
+		CognitiveStatusOrganizer2Impl cognitiveStatusOrganizer2 = new CognitiveStatusOrganizer2Impl();
+		return cognitiveStatusOrganizer2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CoverageActivity2 createCoverageActivity2() {
+		CoverageActivity2Impl coverageActivity2 = new CoverageActivity2Impl();
+		return coverageActivity2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CurrentSmokingStatus2 createCurrentSmokingStatus2() {
+		CurrentSmokingStatus2Impl currentSmokingStatus2 = new CurrentSmokingStatus2Impl();
+		return currentSmokingStatus2;
 	}
 
 	/**
