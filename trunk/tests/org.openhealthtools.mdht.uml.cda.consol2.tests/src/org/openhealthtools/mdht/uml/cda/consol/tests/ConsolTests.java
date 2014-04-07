@@ -99,7 +99,8 @@ import org.junit.runners.Suite;
 		MentalStatusSectionTest.class, NutritionSectionTest.class, PhysicalFindingsOfSkinSectionTest.class,
 		CarePlanTest.class, ReferralNoteTest.class, TransferSummaryTest.class,
 		USRealmHeaderPatientGeneratedDocumentTest.class, AuthorParticipationTest.class, AdmissionMedication2Test.class,
-		AdvanceDirectiveObservation2Test.class, AllergyConcernAct2Test.class })
+		AdvanceDirectiveObservation2Test.class, AllergyConcernAct2Test.class, AllergyObservation2Test.class,
+		CognitiveStatusOrganizer2Test.class, CoverageActivity2Test.class, CurrentSmokingStatus2Test.class })
 public class ConsolTests {
 
 	/**
