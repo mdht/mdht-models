@@ -1803,6 +1803,15 @@ public interface ConsolFactory extends EFactory {
 	CurrentSmokingStatus2 createCurrentSmokingStatus2();
 
 	/**
+	 * Returns a new object of class '<em>Deceased Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Deceased Observation2</em>'.
+	 * @generated
+	 */
+	DeceasedObservation2 createDeceasedObservation2();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

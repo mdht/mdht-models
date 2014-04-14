@@ -490,6 +490,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createCoverageActivity2();
 			case ConsolPackage.CURRENT_SMOKING_STATUS2:
 				return createCurrentSmokingStatus2();
+			case ConsolPackage.DECEASED_OBSERVATION2:
+				return createDeceasedObservation2();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2463,6 +2465,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public CurrentSmokingStatus2 createCurrentSmokingStatus2() {
 		CurrentSmokingStatus2Impl currentSmokingStatus2 = new CurrentSmokingStatus2Impl();
 		return currentSmokingStatus2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DeceasedObservation2 createDeceasedObservation2() {
+		DeceasedObservation2Impl deceasedObservation2 = new DeceasedObservation2Impl();
+		return deceasedObservation2;
 	}
 
 	/**

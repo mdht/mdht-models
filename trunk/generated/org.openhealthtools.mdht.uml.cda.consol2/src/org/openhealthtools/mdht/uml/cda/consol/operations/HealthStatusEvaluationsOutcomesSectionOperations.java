@@ -383,7 +383,7 @@ public class HealthStatusEvaluationsOutcomesSectionOperations extends SectionOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION_OUTCOME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::OutcomeObservation))";
+	protected static final String VALIDATE_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION_OUTCOME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::OutcomeObservation))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHealthStatusEvaluationsOutcomesSectionOutcomeObservation(HealthStatusEvaluationsOutcomesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Evaluations Outcomes Section Outcome Observation</em>}' invariant operation.

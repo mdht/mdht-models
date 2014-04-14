@@ -1427,6 +1427,13 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass deceasedObservation2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicationsAdministeredSectionEClass = null;
 
 	/**
@@ -4184,6 +4191,19 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				214);
 		}
 		return currentSmokingStatus2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDeceasedObservation2() {
+		if (deceasedObservation2EClass == null) {
+			deceasedObservation2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				215);
+		}
+		return deceasedObservation2EClass;
 	}
 
 	/**
