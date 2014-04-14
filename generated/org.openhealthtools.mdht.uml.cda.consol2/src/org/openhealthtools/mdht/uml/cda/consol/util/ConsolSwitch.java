@@ -4235,6 +4235,29 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.DECEASED_OBSERVATION2: {
+				DeceasedObservation2 deceasedObservation2 = (DeceasedObservation2) theEObject;
+				T result = caseDeceasedObservation2(deceasedObservation2);
+				if (result == null) {
+					result = caseDeceasedObservation(deceasedObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(deceasedObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(deceasedObservation2);
+				}
+				if (result == null) {
+					result = caseAct(deceasedObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(deceasedObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -7704,6 +7727,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseCurrentSmokingStatus2(CurrentSmokingStatus2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Deceased Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Deceased Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDeceasedObservation2(DeceasedObservation2 object) {
 		return null;
 	}
 

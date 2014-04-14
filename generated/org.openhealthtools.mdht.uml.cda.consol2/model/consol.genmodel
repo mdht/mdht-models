@@ -11954,5 +11954,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CurrentSmokingStatus2/CurrentSmokingStatus2AuthorParticipation/context"/>
       </genOperations>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//DeceasedObservation2"/>
   </genPackages>
 </genmodel:GenModel>
