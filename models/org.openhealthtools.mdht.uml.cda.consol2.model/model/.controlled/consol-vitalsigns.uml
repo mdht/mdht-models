@@ -400,4 +400,33 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:ConstraintValidation xmi:id="_pIQzAOJvEeG3cO7ebC3QuA" base_Constraint="_cfXY0OJvEeG3cO7ebC3QuA">
     <ruleId>CONF:15945</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_4iF6IL86EeOS5KuvmCHHew" name="DeceasedObservation2" clientDependency="_PvyIwL87EeOS5KuvmCHHew">
+    <ownedComment xmi:id="_A79IEL87EeOS5KuvmCHHew">
+      <body>This template represents the observation that a patient has died. It also represents the cause of death, indicated by an entryRelationship type of 'CAUS'. This template allows for more specific representation of data than is available with the use of dischargeDispositionCode.</body>
+    </ownedComment>
+    <generalization xmi:id="_4iIWYL86EeOS5KuvmCHHew">
+      <general xmi:type="uml:Class" href="../consol.uml#_lm3boOZbEeGINOJ_SD9_dA"/>
+    </generalization>
+    <substitution xmi:id="_PvyIwL87EeOS5KuvmCHHew" name="DeceasedObservation" client="_4iF6IL86EeOS5KuvmCHHew">
+      <supplier xmi:type="uml:Class" href="../consol.uml#_lm3boOZbEeGINOJ_SD9_dA"/>
+      <contract xmi:type="uml:Class" href="../consol.uml#_lm3boOZbEeGINOJ_SD9_dA"/>
+    </substitution>
+    <ownedAttribute xmi:id="_tcTcAL87EeOS5KuvmCHHew" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="../consol.uml#_f4E9weZkEeGINOJ_SD9_dA"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="__AT6wL86EeOS5KuvmCHHew" base_Class="_4iF6IL86EeOS5KuvmCHHew" templateId="2.16.840.1.113883.10.20.22.4.79.2">
+    <ruleId>CONF:14871</ruleId>
+    <ruleId>CONF:14872</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_JY_l0L87EeOS5KuvmCHHew" base_Generalization="_4iIWYL86EeOS5KuvmCHHew"/>
+  <CDA:CodeSystemConstraint xmi:id="_tcUDEL87EeOS5KuvmCHHew" code="ASSERTION" displayName="Assertion" base_Property="_tcTcAL87EeOS5KuvmCHHew">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:19135</ruleId>
+    <ruleId>CONF:32158</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_tcWfUL87EeOS5KuvmCHHew" base_Property="_tcTcAL87EeOS5KuvmCHHew">
+    <ruleId>CONF:14853</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
