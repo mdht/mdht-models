@@ -30,7 +30,8 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyProblemAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActEffectiveTimeLow AllergyProblemActEffectiveTimeHigh AllergyProblemActClassCode AllergyProblemActMoodCode AllergyProblemActId AllergyProblemActCode AllergyProblemActStatusCode AllergyProblemActEffectiveTime AllergyProblemActAllergyObservation' templateId.root='2.16.840.1.113883.10.20.22.4.30' classCode='ACT' moodCode='EVN' code.code='48765-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Allergies, adverse reactions, alerts'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActEffectiveTimeLow AllergyProblemActEffectiveTimeHigh AllergyProblemActClassCode AllergyProblemActMoodCode AllergyProblemActId AllergyProblemActCode AllergyProblemActStatusCode AllergyProblemActEffectiveTime AllergyProblemActAllergyObservation AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem' templateId.root='2.16.840.1.113883.10.20.22.4.30' classCode='ACT' moodCode='EVN' constraints.validation.query='AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyProblemActCD constraints.validation.error='AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem'"
  *        annotation="uml2.alias Allergies\040and\040Drug\040Sensitivities='null' Allergy\040and\040Drug\040Sensitivity='null'"
  * @generated
  */
@@ -114,7 +115,7 @@ public interface AllergyProblemAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'48765-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -154,6 +155,42 @@ public interface AllergyProblemAct extends Act {
 	 * @generated
 	 */
 	boolean validateAllergyProblemActAllergyObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject(code = \'CONC\' and codeSystem = \'2.16.840.1.113883.5.6\' xor code = \'48765-2\' and codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @generated
+	 */
+	boolean validateAllergyProblemActCDCodeAndCodeSystemValues(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not code.oclIsUndefined() )))'"
+	 * @generated
+	 */
+	boolean validateAllergyProblemActCDCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not codeSystem.oclIsUndefined() )))'"
+	 * @generated
+	 */
+	boolean validateAllergyProblemActCDCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
