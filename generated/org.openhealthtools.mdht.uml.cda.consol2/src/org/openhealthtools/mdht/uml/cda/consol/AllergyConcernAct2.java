@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyConcernAct2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActCode AllergyProblemActCodeP AllergyProblemActEffectiveTime AllergyConcernAct2IVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.2.6.2' code.code='CONC' code.codeSystem='2.16.840.1.113883.5.6' code.codeSystemName='HL7ActClass' code.displayName='Concern' constraints.validation.dependOn.AllergyProblemActCode='AllergyProblemActCodeP' constraints.validation.warning='AllergyConcernAct2AuthorParticipation' constraints.validation.query='AllergyConcernAct2IVLTSLow AllergyConcernAct2IVLTSHigh' constraints.validation.info='AllergyConcernAct2IVLTSHigh'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActEffectiveTime AllergyConcernAct2IVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.2.6.2' constraints.validation.warning='AllergyConcernAct2AuthorParticipation' constraints.validation.query='AllergyConcernAct2IVLTSLow AllergyConcernAct2IVLTSHigh' constraints.validation.info='AllergyConcernAct2IVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyConcernAct2IVLTS constraints.validation.error='AllergyConcernAct2IVLTSLow' constraints.validation.info='AllergyConcernAct2IVLTSHigh'"
  * @generated
  */
@@ -51,18 +51,6 @@ public interface AllergyConcernAct2 extends AllergyProblemAct {
 	 * @generated
 	 */
 	boolean validateAllergyConcernAct2EffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateAllergyProblemActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

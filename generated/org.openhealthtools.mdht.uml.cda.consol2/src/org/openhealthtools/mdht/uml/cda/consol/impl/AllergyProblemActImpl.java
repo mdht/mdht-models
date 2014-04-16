@@ -148,6 +148,35 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergyProblemActCDCodeAndCodeSystemValues(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyProblemActOperations.validateAllergyProblemActCDCodeAndCodeSystemValues(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyProblemActCDCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyProblemActOperations.validateAllergyProblemActCDCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyProblemActCDCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyProblemActOperations.validateAllergyProblemActCDCodeSystem(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<AllergyObservation> getAllergyObservations() {
 		return AllergyProblemActOperations.getAllergyObservations(this);
 	}
