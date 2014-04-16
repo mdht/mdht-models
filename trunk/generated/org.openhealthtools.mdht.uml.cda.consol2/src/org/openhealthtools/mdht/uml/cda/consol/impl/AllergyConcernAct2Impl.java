@@ -74,15 +74,6 @@ public class AllergyConcernAct2Impl extends AllergyProblemActImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyProblemActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyConcernAct2Operations.validateAllergyProblemActCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateAllergyConcernAct2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyConcernAct2Operations.validateAllergyConcernAct2AuthorParticipation(this, diagnostics, context);
@@ -114,16 +105,6 @@ public class AllergyConcernAct2Impl extends AllergyProblemActImpl implements All
 	@Override
 	public boolean validateAllergyProblemActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyConcernAct2Operations.validateAllergyProblemActTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyProblemActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyConcernAct2Operations.validateAllergyProblemActCode(this, diagnostics, context);
 	}
 
 	/**
