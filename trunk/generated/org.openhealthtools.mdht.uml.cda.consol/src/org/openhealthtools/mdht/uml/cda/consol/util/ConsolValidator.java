@@ -14552,7 +14552,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int POSTPROCEDURE_DIAGNOSIS_SECTION__POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P = 1815;
+	public static final int POSTPROCEDURE_DIAGNOSIS_SECTION__POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P = 1816;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Postprocedure Diagnosis Section Code' of 'Postprocedure Diagnosis Section'.
@@ -14560,7 +14560,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int POSTPROCEDURE_DIAGNOSIS_SECTION__POSTPROCEDURE_DIAGNOSIS_SECTION_CODE = 1816;
+	public static final int POSTPROCEDURE_DIAGNOSIS_SECTION__POSTPROCEDURE_DIAGNOSIS_SECTION_CODE = 1815;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Postprocedure Diagnosis Section Text' of 'Postprocedure Diagnosis Section'.
@@ -54835,11 +54835,11 @@ public class ConsolValidator extends EObjectValidator {
 				postprocedureDiagnosisSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validatePostprocedureDiagnosisSection_validatePostprocedureDiagnosisSectionCodeP(
+			result &= validatePostprocedureDiagnosisSection_validatePostprocedureDiagnosisSectionCode(
 				postprocedureDiagnosisSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validatePostprocedureDiagnosisSection_validatePostprocedureDiagnosisSectionCode(
+			result &= validatePostprocedureDiagnosisSection_validatePostprocedureDiagnosisSectionCodeP(
 				postprocedureDiagnosisSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
