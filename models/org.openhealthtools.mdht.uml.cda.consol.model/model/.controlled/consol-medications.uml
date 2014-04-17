@@ -752,8 +752,8 @@ This section requires that there be either an entry indicating the subject is no
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bfgEYXgPEeOWV4WyBjS-AA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2HVjgBSVEeGGzu7fmW9pXw" name="productInstance" type="_2G2bUxSVEeGGzu7fmW9pXw" association="_2HVjgxSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cp52IDv8EeGtp7JtQeULVw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cp52ITv8EeGtp7JtQeULVw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fJ7xIMZjEeOZyeUSQqClgg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fJ7xIcZjEeOZyeUSQqClgg" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2HVjgxSVEeGGzu7fmW9pXw" memberEnd="_2HVjgBSVEeGGzu7fmW9pXw _2HVjhBSVEeGGzu7fmW9pXw">

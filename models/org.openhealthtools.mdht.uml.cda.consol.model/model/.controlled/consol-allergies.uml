@@ -214,8 +214,8 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-xkhwRUvEeGbmN_W114JUw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_FQD_EDJDEeG6R8Pb5FT2Ow" name="participant" type="_0HgNkDJAEeG6R8Pb5FT2Ow" association="_FQD_EjJDEeG6R8Pb5FT2Ow">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ToPtMHhuEeGJtvg2iiStYg" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ToPtMXhuEeGJtvg2iiStYg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dLH7EMZjEeOZyeUSQqClgg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dLIiIMZjEeOZyeUSQqClgg"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_0HgNkDJAEeG6R8Pb5FT2Ow" name="AllergyObservationParticipant">
       <ownedComment xmi:id="_UJ7XoM-GEeG0zqUqBXbhpA">
@@ -1085,4 +1085,5 @@ historical purposes.&#xD;
   <CDA:ConstraintValidation xmi:id="_X24PoMS1EeOJR7uiM6mfhA" base_Constraint="_pSm8IMS0EeOJR7uiM6mfhA">
     <ruleId>CONF:NEW</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:Unimplementable xmi:id="_6vBd0MZjEeOZyeUSQqClgg" base_Constraint="_UYE8gDJCEeG6R8Pb5FT2Ow"/>
 </xmi:XMI>

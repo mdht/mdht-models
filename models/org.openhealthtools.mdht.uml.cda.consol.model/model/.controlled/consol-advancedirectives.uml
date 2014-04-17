@@ -61,8 +61,8 @@ ii. If the Advance Directive does not have a specified ending time, the &lt;high
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-zdskesKEeKDusM4GJHmkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_PGnCECsfEeGQ5rkpDKAt8A" name="custodian" type="_xSLI8CseEeGQ5rkpDKAt8A" association="_PGnpICsfEeGQ5rkpDKAt8A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fOEN0CsfEeGQ5rkpDKAt8A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fOEN0SsfEeGQ5rkpDKAt8A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VfzOIMZjEeOZyeUSQqClgg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VfzOIcZjEeOZyeUSQqClgg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GTt-MCshEeGQ5rkpDKAt8A" name="reference" type="_N9j54CsgEeGQ5rkpDKAt8A" association="_GTulQCshEeGQ5rkpDKAt8A">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YzOIQOsNEeKDusM4GJHmkQ" value="*"/>
@@ -143,8 +143,8 @@ b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element 
         </generalization>
         <ownedAttribute xmi:id="_7kDBYCseEeGQ5rkpDKAt8A" name="addr" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LV2OoHhtEeGJtvg2iiStYg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LV21sHhtEeGJtvg2iiStYg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OyGAAMZjEeOZyeUSQqClgg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OyGnEMZjEeOZyeUSQqClgg"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_TCqdsEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_7kDocCseEeGQ5rkpDKAt8A" name="classCode" visibility="private" isReadOnly="true">
@@ -156,8 +156,8 @@ b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element 
         </ownedAttribute>
         <ownedAttribute xmi:id="_7kEPgSseEeGQ5rkpDKAt8A" name="telecom" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MblHoHhtEeGJtvg2iiStYg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MblHoXhtEeGJtvg2iiStYg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lqmBwMZjEeOZyeUSQqClgg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lqmo0MZjEeOZyeUSQqClgg"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_VObxsEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Kn5bECsfEeGQ5rkpDKAt8A" name="playingEntity" type="__8j5wCseEeGQ5rkpDKAt8A">

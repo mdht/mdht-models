@@ -156,8 +156,8 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2IpyIhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_R9eiANc4EeGfQ6frO0B-Jg" name="subject" visibility="private" type="_Yq3AANc4EeGfQ6frO0B-Jg" aggregation="composite">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R9eiAdc4EeGfQ6frO0B-Jg" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R9eiAtc4EeGfQ6frO0B-Jg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jAZFUMZjEeOZyeUSQqClgg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jAZFUcZjEeOZyeUSQqClgg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_RDpr0UxpEd6h-an5IXo-DA"/>
       <association href="../consol.uml#_R9fwINc4EeGfQ6frO0B-Jg"/>
     </ownedAttribute>
@@ -180,8 +180,8 @@
         </generalization>
         <ownedAttribute xmi:id="_uHs8ENc4EeGfQ6frO0B-Jg" name="classCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpv0DcEd6xYZuu1VKCVw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uHs8Edc4EeGfQ6frO0B-Jg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uHs8Etc4EeGfQ6frO0B-Jg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S02DwMZjEeOZyeUSQqClgg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S02DwcZjEeOZyeUSQqClgg" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hCnQwErmEd6FXKclYGEDCw"/>
           <defaultValue xmi:type="uml:InstanceValue" xmi:id="_uHs8E9c4EeGfQ6frO0B-Jg" name="PRS">
             <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpv0DcEd6xYZuu1VKCVw"/>
