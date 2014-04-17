@@ -19692,8 +19692,6 @@
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.displayName" value="Postprocedure Diagnosis"/>
-      <details key="constraints.validation.dependOn.PostprocedureDiagnosisSectionCode"
-          value="PostprocedureDiagnosisSectionCodeP"/>
       <details key="constraints.validation.warning" value="PostprocedureDiagnosisSectionPostprocedureDiagnosis"/>
     </eAnnotations>
     <eOperations name="PostprocedureDiagnosisSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -19705,7 +19703,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="PostprocedureDiagnosisSectionCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="PostprocedureDiagnosisSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -19714,7 +19712,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="PostprocedureDiagnosisSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="PostprocedureDiagnosisSectionCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
