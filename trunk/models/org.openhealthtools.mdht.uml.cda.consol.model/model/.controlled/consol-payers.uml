@@ -207,6 +207,8 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
       </generalization>
       <ownedAttribute xmi:id="_HMWMAF15EeGt2doqSDULjA" name="time">
         <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_onVfsMZjEeOZyeUSQqClgg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_onWGwMZjEeOZyeUSQqClgg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_hHSrEF15EeGt2doqSDULjA" name="guarantorAssignedEntity" type="_NgEewF13EeGt2doqSDULjA" association="_hHSrEl15EeGt2doqSDULjA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ji5x4F15EeGt2doqSDULjA" value="1"/>
@@ -214,6 +216,8 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
       </ownedAttribute>
       <ownedAttribute xmi:id="_Wg5iQG7fEeGO5JJTinolhw" name="typeCode" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BIEDcEd6xYZuu1VKCVw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sBEboMZjEeOZyeUSQqClgg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sBFCsMZjEeOZyeUSQqClgg"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_orts4G7fEeGO5JJTinolhw" value="PRF"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_NgEewF13EeGt2doqSDULjA" name="GuarantorAssignedEntity">

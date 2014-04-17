@@ -1500,20 +1500,20 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_SQVUoEEvEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SQVUoUEvEeGdmoWy_aLP0Q" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SQVUokEvEeGdmoWy_aLP0Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UffAoMZjEeOZyeUSQqClgg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UffAocZjEeOZyeUSQqClgg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_SQVUo0EvEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SQVUpEEvEeGdmoWy_aLP0Q" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SQVUpUEvEeGdmoWy_aLP0Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nbcUUMZjEeOZyeUSQqClgg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nbcUUcZjEeOZyeUSQqClgg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_SQVUpkEvEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SQVUp0EvEeGdmoWy_aLP0Q" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SQVUqEEvEeGdmoWy_aLP0Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p1J9sMZjEeOZyeUSQqClgg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p1J9scZjEeOZyeUSQqClgg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_eZUDMEEwEeGdmoWy_aLP0Q" name="postprocedureDiagnosis" type="_0fjXAEEvEeGdmoWy_aLP0Q" association="_eZUDMkEwEeGdmoWy_aLP0Q">

@@ -759,7 +759,8 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Njf0cEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ZpQE8ErdEeGJpZWiuxRVIw" name="seriesAct" type="_N2wscEb6EeGp67IkyTw1fg" association="_ZpQE8krdEeGJpZWiuxRVIw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZpQE8UrdEeGJpZWiuxRVIw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hVeboMZjEeOZyeUSQqClgg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hVebocZjEeOZyeUSQqClgg" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_xF17QEb4EeGp67IkyTw1fg" base_Class="_vjf-wEb4EeGp67IkyTw1fg" templateId="2.16.840.1.113883.10.20.6.2.6">
