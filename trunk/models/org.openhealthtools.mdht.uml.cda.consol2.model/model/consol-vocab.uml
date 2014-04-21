@@ -500,6 +500,7 @@
       <ownedLiteral xmi:id="_m60ihRMsEeK4go_VqYg1Bw" name="117"/>
       <ownedLiteral xmi:id="_m61JkRMsEeK4go_VqYg1Bw" name="37"/>
       <ownedLiteral xmi:id="_m61JkxMsEeK4go_VqYg1Bw" name="121"/>
+      <ownedLiteral xmi:id="_NbVZoMmeEeOr5NJDZPPjZA" name="155"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2O3u6RSVEeGGzu7fmW9pXw" name="HITSP Vital Sign Result Type">
       <ownedLiteral xmi:id="_2O3u8hSVEeGGzu7fmW9pXw" name="9279-1"/>
@@ -2997,4 +2998,5 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_322vkbm6EeOgPNzo_e4B9A" conceptName="Unknown if ever smoked" base_EnumerationLiteral="_322vkLm6EeOgPNzo_e4B9A"/>
   <term:ValueSetCode xmi:id="_4nDdcbm6EeOgPNzo_e4B9A" conceptName="Heavy tobacco smoker" base_EnumerationLiteral="_4nDdcLm6EeOgPNzo_e4B9A"/>
   <term:ValueSetCode xmi:id="_54GOkbm6EeOgPNzo_e4B9A" conceptName="Light tobacco smoker" base_EnumerationLiteral="_54GOkLm6EeOgPNzo_e4B9A"/>
+  <term:ValueSetCode xmi:id="_NbXO0MmeEeOr5NJDZPPjZA" conceptName="influenza, recombinant, injectable, preservative free" base_EnumerationLiteral="_NbVZoMmeEeOr5NJDZPPjZA"/>
 </xmi:XMI>

@@ -569,6 +569,9 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_1GS6sCymEeGMXrZ0DiQwGg" name="time" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_H0md8MWpEeOgR58te6lEvw">
+          <body>The content SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4) (CONF:16866).</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_t59eEEofEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
@@ -589,16 +592,8 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_BEoOQTVVEeGIw7CntkyPQw">
             <language>Analysis</language>
             <language>OCL</language>
-            <body>The id SHALL contain exactly one root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier</body>
-            <body>(not assignedPerson.oclIsUndefined() and id->size() >= 1) implies self.id->exists(id | id.isNullFlavorDefined() or id.root='2.16.840.1.113883.4.6')</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_OBYPYCoQEeO5Yocx1OgZJg" name="ifHasAssignedPersonEnforceId" constrainedElement="_344-ICymEeGMXrZ0DiQwGg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_bGbaECoQEeO5Yocx1OgZJg">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>not assignedPerson.oclIsUndefined() implies self.id->size() &lt;= 1</body>
-            <body>If this assignedAuthor is an assignedPerson, the assignedAuthor SHOULD contain zero to one [0..1] id</body>
+            <body>If this assignedAuthor is an assignedPerson, the assignedAuthor SHOULD contain zero to one [0..1] id such that it SHALL contain exactly one [1..1] @root=&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier</body>
+            <body>(not assignedPerson.oclIsUndefined() and not id->isEmpty()) implies id->exists(id | (id.isNullFlavorDefined() and id.extension->isEmpty() and id.root->isEmpty()) or (id.isNullFlavorDefined() and id.root='2.16.840.1.113883.4.6') or (id.root='2.16.840.1.113883.4.6' and id.extension->size() = 1))</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_345lMCymEeGMXrZ0DiQwGg">
@@ -5281,8 +5276,9 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_fgoHwHT9EeGB7fSw5LjeyA" base_Property="_tzLskDzEEeGMk58Mp9-wVA">
     <ruleId>CONF:8476</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="_j5wYsMUhEeGigaKyc-jgFA" base_Constraint="_BEoOQDVVEeGIw7CntkyPQw">
-    <ruleId>CONF:16786</ruleId>
+  <CDA:ConstraintValidation xmi:id="_j5wYsMUhEeGigaKyc-jgFA" severity="WARNING" base_Constraint="_BEoOQDVVEeGIw7CntkyPQw">
+    <ruleId>CONF:31135</ruleId>
+    <ruleId>CONF:31694</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_v79mUMUhEeGigaKyc-jgFA" severity="INFO" base_Constraint="_nlqjwTVYEeGIw7CntkyPQw">
     <ruleId>CONF:16823</ruleId>
@@ -5650,9 +5646,6 @@ OIDs SHALL be no more than 64 characters in length..</body>
     <ruleId>CONF:5300</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_u3sMYNUREeK3Pt43o0baHw" base_Property="_2DNR6RSVEeGGzu7fmW9pXw"/>
-  <CDA:ConstraintValidation xmi:id="_1i8VICoQEeO5Yocx1OgZJg" severity="WARNING" base_Constraint="_OBYPYCoQEeO5Yocx1OgZJg">
-    <ruleId>CONF:19521</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_zK6iQDsxEeOukK1fJiZHOA" base_Constraint="_2G-bEDp-EeOpivxgTh7oFg">
     <ruleId>CONF:5326</ruleId>
   </CDA:ConstraintValidation>
