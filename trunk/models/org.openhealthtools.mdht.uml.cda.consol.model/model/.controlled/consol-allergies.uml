@@ -482,6 +482,9 @@ historical purposes.&#xD;
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EZkQhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_3a3swMSzEeOJR7uiM6mfhA" name="CD">
+      <ownedComment xmi:id="_bwC3wMTwEeOPmPJ_yoTVzg">
+        <body>INLINE</body>
+      </ownedComment>
       <ownedRule xmi:id="_pSm8IMS0EeOJR7uiM6mfhA" name="codeAndCodeSystemValues" constrainedElement="_3a3swMSzEeOJR7uiM6mfhA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_3cPwUMS0EeOJR7uiM6mfhA">
           <language>Analysis</language>
