@@ -132,9 +132,10 @@ b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element 
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_x61O8CsfEeGQ5rkpDKAt8A" value="CST"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_HG0hACsfEeGQ5rkpDKAt8A" name="advanceDirectiveObservationCustodianRole" type="_4vBVACseEeGQ5rkpDKAt8A">
+      <ownedAttribute xmi:id="_HG0hACsfEeGQ5rkpDKAt8A" name="advanceDirectiveObservationCustodianRole" type="_4vBVACseEeGQ5rkpDKAt8A" aggregation="composite">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K16KUHhtEeGJtvg2iiStYg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K16KUXhtEeGJtvg2iiStYg" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_uuZlAUoaEd6c3qsAxlFHaQ"/>
         <association href="consol-documents.uml#_HG1IECsfEeGQ5rkpDKAt8A"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_4vBVACseEeGQ5rkpDKAt8A" name="CustodianRole">

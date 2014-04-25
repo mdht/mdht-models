@@ -681,7 +681,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
       <generalization xmi:id="_BArpESynEeGMXrZ0DiQwGg">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_twqZYEcEEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_jXhNACzAEeGMXrZ0DiQwGg" name="assignedEntity" type="_HOG0oCynEeGMXrZ0DiQwGg" association="_jXh0ECzAEeGMXrZ0DiQwGg">
+      <ownedAttribute xmi:id="_jXhNACzAEeGMXrZ0DiQwGg" name="assignedEntity" type="_HOG0oCynEeGMXrZ0DiQwGg" aggregation="composite" association="_jXh0ECzAEeGMXrZ0DiQwGg">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UXCGAFjWEeGKdMKWzrgL_Q" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UXCGAVjWEeGKdMKWzrgL_Q" value="1"/>
       </ownedAttribute>
@@ -978,7 +978,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
         <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_QjONkEofEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_lwJK0DTPEeGuZq9ndAdRXA" name="assignedEntity" type="_GEiMYCzGEeGMXrZ0DiQwGg" association="_lwJK0jTPEeGuZq9ndAdRXA">
+      <ownedAttribute xmi:id="_lwJK0DTPEeGuZq9ndAdRXA" name="assignedEntity" type="_GEiMYCzGEeGMXrZ0DiQwGg" aggregation="composite" association="_lwJK0jTPEeGuZq9ndAdRXA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m-nBYPIyEeGu1M-cCXg0Dg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m-nBYfIyEeGu1M-cCXg0Dg" value="1"/>
       </ownedAttribute>
@@ -1071,8 +1071,9 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
       <ownedAttribute xmi:id="_z9sQkDCbEeGKv64oQf5fow" name="assignedEntity" type="_NmVGsCzCEeGMXrZ0DiQwGg" association="_z9s3oTCbEeGKv64oQf5fow">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z9s3oDCbEeGKv64oQf5fow"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_5sn0ADVWEeGIw7CntkyPQw" name="relatedEntity" type="_ou68wDVWEeGIw7CntkyPQw" association="_5sn0AjVWEeGIw7CntkyPQw">
+      <ownedAttribute xmi:id="_5sn0ADVWEeGIw7CntkyPQw" name="relatedEntity" type="_ou68wDVWEeGIw7CntkyPQw" aggregation="composite" association="_5sn0AjVWEeGIw7CntkyPQw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5sn0ATVWEeGIw7CntkyPQw"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AXbnwUcnEd6besF9iFIJkQ"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_NmVGsCzCEeGMXrZ0DiQwGg" name="AssignedEntity">
         <ownedRule xmi:id="_JKUtkDVWEeGIw7CntkyPQw" name="hasNationalProviderIdentifier" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
@@ -1130,9 +1131,10 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sVcXgjVWEeGIw7CntkyPQw"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JIRXgErmEd6FXKclYGEDCw"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_H_GbIDVXEeGIw7CntkyPQw" name="person" type="_gidjkOxvEeG7k4bbVdXbXw" association="_H_GbIjVXEeGIw7CntkyPQw">
+        <ownedAttribute xmi:id="_H_GbIDVXEeGIw7CntkyPQw" name="person" type="_gidjkOxvEeG7k4bbVdXbXw" aggregation="composite" association="_H_GbIjVXEeGIw7CntkyPQw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eMq3oMZjEeOZyeUSQqClgg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eMresMZjEeOZyeUSQqClgg" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_RIw28UcnEd6besF9iFIJkQ"/>
         </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
@@ -2051,9 +2053,10 @@ For conformance with both specifications, please review the appendix on XDS-SD a
       <generalization xmi:id="_Nm_-oEBWEeGXKr6TcG1UOQ">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CVzT8EALEd6wZe6nFLrjsw"/>
       </generalization>
-      <ownedAttribute xmi:id="_HLdCEEBXEeGXKr6TcG1UOQ" name="patientRole2" type="_JoL_sEBWEeGXKr6TcG1UOQ" association="_HLdCEkBXEeGXKr6TcG1UOQ">
+      <ownedAttribute xmi:id="_HLdCEEBXEeGXKr6TcG1UOQ" name="patientRole2" type="_JoL_sEBWEeGXKr6TcG1UOQ" aggregation="composite" association="_HLdCEkBXEeGXKr6TcG1UOQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uO8V0PK-EeGFUPBL8qS7yQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uO8V0fK-EeGFUPBL8qS7yQ" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_P7bcIUALEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_JoL_sEBWEeGXKr6TcG1UOQ" name="PatientRole2">
         <generalization xmi:id="_P0jbUEBWEeGXKr6TcG1UOQ">
@@ -2074,9 +2077,10 @@ For conformance with both specifications, please review the appendix on XDS-SD a
       <generalization xmi:id="_ti1pIEBWEeGXKr6TcG1UOQ">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_FfIDIEBXEeGXKr6TcG1UOQ" name="assignedAuthor2" type="_umfegEBWEeGXKr6TcG1UOQ" association="_FfR0IUBXEeGXKr6TcG1UOQ">
+      <ownedAttribute xmi:id="_FfIDIEBXEeGXKr6TcG1UOQ" name="assignedAuthor2" type="_umfegEBWEeGXKr6TcG1UOQ" aggregation="composite" association="_FfR0IUBXEeGXKr6TcG1UOQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w3noQPK-EeGFUPBL8qS7yQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w3noQfK-EeGFUPBL8qS7yQ" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ieYjIUcgEd6besF9iFIJkQ"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_umfegEBWEeGXKr6TcG1UOQ" name="AssignedAuthor2">
         <generalization xmi:id="_w4OQkEBWEeGXKr6TcG1UOQ">
@@ -2103,17 +2107,19 @@ For conformance with both specifications, please review the appendix on XDS-SD a
       <generalization xmi:id="_QIZu8EBXEeGXKr6TcG1UOQ">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mMYIkEcEEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_gssHMECEEeGXKr6TcG1UOQ" name="assignedCustodian2" type="_RRHqgEBXEeGXKr6TcG1UOQ" association="_gssHMkCEEeGXKr6TcG1UOQ">
+      <ownedAttribute xmi:id="_gssHMECEEeGXKr6TcG1UOQ" name="assignedCustodian2" type="_RRHqgEBXEeGXKr6TcG1UOQ" aggregation="composite" association="_gssHMkCEEeGXKr6TcG1UOQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1ZYjQPK-EeGFUPBL8qS7yQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1ZYjQfK-EeGFUPBL8qS7yQ" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_8lINEUchEd6besF9iFIJkQ"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_RRHqgEBXEeGXKr6TcG1UOQ" name="AssignedCustodian3">
         <generalization xmi:id="_U1QfoEBXEeGXKr6TcG1UOQ">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1G6DoEcDEd6besF9iFIJkQ"/>
         </generalization>
-        <ownedAttribute xmi:id="_jjvvsECLEeGELr7uj3LK_Q" name="custodianOrganization" type="_wSDq0ECKEeGELr7uj3LK_Q" association="_jjvvskCLEeGELr7uj3LK_Q">
+        <ownedAttribute xmi:id="_jjvvsECLEeGELr7uj3LK_Q" name="custodianOrganization" type="_wSDq0ECKEeGELr7uj3LK_Q" aggregation="composite" association="_jjvvskCLEeGELr7uj3LK_Q">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2TA58PK-EeGFUPBL8qS7yQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2TA58fK-EeGFUPBL8qS7yQ" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_GNl8IEciEd6besF9iFIJkQ"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_wSDq0ECKEeGELr7uj3LK_Q" name="CustodianOrganization">
           <generalization xmi:id="_1SllcECKEeGELr7uj3LK_Q">
@@ -2608,7 +2614,7 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
           <generalization xmi:id="_Q4cAMDsyEeGvzMYhXuqAEA">
             <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_5t1WAEcEEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_vZAiYDs5EeGXW8k29waQGA" name="assignedEntity" association="_vZAiYjs5EeGXW8k29waQGA">
+          <ownedAttribute xmi:id="_vZAiYDs5EeGXW8k29waQGA" name="assignedEntity" aggregation="composite" association="_vZAiYjs5EeGXW8k29waQGA">
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ROWnEMZjEeOZyeUSQqClgg" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ROWnEcZjEeOZyeUSQqClgg" value="1"/>
@@ -3481,9 +3487,10 @@ A History and Physical Examination is required upon hospital admission as well a
         <generalization xmi:id="_6IsNMD4jEeGhnL_c4sBHGg">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_lriDUEcaEd6besF9iFIJkQ"/>
         </generalization>
-        <ownedAttribute xmi:id="_L7gHgD4kEeGhnL_c4sBHGg" name="primaryPerformer" type="_CNfxID4kEeGhnL_c4sBHGg" association="_L7gukD4kEeGhnL_c4sBHGg">
+        <ownedAttribute xmi:id="_L7gHgD4kEeGhnL_c4sBHGg" name="primaryPerformer" type="_CNfxID4kEeGhnL_c4sBHGg" aggregation="composite" association="_L7gukD4kEeGhnL_c4sBHGg">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8kuz0PK3EeGFUPBL8qS7yQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8kuz0fK3EeGFUPBL8qS7yQ" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6MIl4EoVEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_hRyvoD4kEeGhnL_c4sBHGg" name="code" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
@@ -3799,16 +3806,18 @@ A History and Physical Examination is required upon hospital admission as well a
       <generalization xmi:id="_DkNqMD7ZEeGvOdejHZ7dYg">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_NWHRoEAJEd6wZe6nFLrjsw"/>
       </generalization>
-      <ownedAttribute xmi:id="_0WAi8D-OEeGvOdejHZ7dYg" name="encompassingEncounter5" type="_6-yFcD7YEeGvOdejHZ7dYg" association="_0WBKAT-OEeGvOdejHZ7dYg">
+      <ownedAttribute xmi:id="_0WAi8D-OEeGvOdejHZ7dYg" name="encompassingEncounter5" type="_6-yFcD7YEeGvOdejHZ7dYg" aggregation="composite" association="_0WBKAT-OEeGvOdejHZ7dYg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0WBKAD-OEeGvOdejHZ7dYg"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_4f5bQUAJEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_6-yFcD7YEeGvOdejHZ7dYg" name="EncompassingEncounter5">
         <generalization xmi:id="_GARc8D7ZEeGvOdejHZ7dYg">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_j5JZsEAJEd6wZe6nFLrjsw"/>
         </generalization>
-        <ownedAttribute xmi:id="_2cqQ8D-PEeGvOdejHZ7dYg" name="location" type="_IVODYD-PEeGvOdejHZ7dYg" association="_2cq4AT-PEeGvOdejHZ7dYg">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UC9yAD-REeGvOdejHZ7dYg" value="*"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UC9yAT-REeGvOdejHZ7dYg" value="1"/>
+        <ownedAttribute xmi:id="_2cqQ8D-PEeGvOdejHZ7dYg" name="location" type="_IVODYD-PEeGvOdejHZ7dYg" aggregation="composite" association="_2cq4AT-PEeGvOdejHZ7dYg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L9fLQMzCEeOaUZ-dOvOTcQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L9fLQczCEeOaUZ-dOvOTcQ" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Ry_F8UoXEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_6l2ecD-QEeGvOdejHZ7dYg" name="encounterParticipant" type="_VK6jcD-PEeGvOdejHZ7dYg" association="_6l3FgD-QEeGvOdejHZ7dYg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6l2ecT-QEeGvOdejHZ7dYg"/>
@@ -3823,9 +3832,10 @@ A History and Physical Examination is required upon hospital admission as well a
           <generalization xmi:id="_Ka8ZwD-PEeGvOdejHZ7dYg">
             <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_il6LoEcZEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_6439kD-PEeGvOdejHZ7dYg" name="HealthCareFacility" type="_MHwg4D-PEeGvOdejHZ7dYg" association="_644koT-PEeGvOdejHZ7dYg">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DTZOwPK5EeGFUPBL8qS7yQ" value="*"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DTZOwfK5EeGFUPBL8qS7yQ" value="1"/>
+          <ownedAttribute xmi:id="_6439kD-PEeGvOdejHZ7dYg" name="HealthCareFacility" type="_MHwg4D-PEeGvOdejHZ7dYg" aggregation="composite" association="_644koT-PEeGvOdejHZ7dYg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IAct8MzCEeOaUZ-dOvOTcQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IAct8czCEeOaUZ-dOvOTcQ" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Sh7PkEoXEd6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_MHwg4D-PEeGvOdejHZ7dYg" name="HealthCareFacility">
             <generalization xmi:id="_O8i8sD-PEeGvOdejHZ7dYg">
@@ -3861,9 +3871,10 @@ A History and Physical Examination is required upon hospital admission as well a
       <generalization xmi:id="_gQbigD-TEeGvOdejHZ7dYg">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1fhigEcEEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_pBcqUPLLEeGy2Nzop7b_3Q" name="serviceEvent1" type="_ifn98D-TEeGvOdejHZ7dYg" association="_pBd4cPLLEeGy2Nzop7b_3Q">
+      <ownedAttribute xmi:id="_pBcqUPLLEeGy2Nzop7b_3Q" name="serviceEvent1" type="_ifn98D-TEeGvOdejHZ7dYg" aggregation="composite" association="_pBd4cPLLEeGy2Nzop7b_3Q">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qsEZEPLLEeGy2Nzop7b_3Q" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qsEZEfLLEeGy2Nzop7b_3Q" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_5Z6ewUoVEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_ifn98D-TEeGvOdejHZ7dYg" name="ServiceEvent1">
         <ownedRule xmi:id="_1M1D8D-TEeGvOdejHZ7dYg" name="procedureCodes" constrainedElement="_1mJ2ID4jEeGhnL_c4sBHGg">
@@ -3951,9 +3962,10 @@ A History and Physical Examination is required upon hospital admission as well a
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zelK0PK7EeGFUPBL8qS7yQ" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_OYDkMEroEd6FXKclYGEDCw"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_fFeJYPLLEeGy2Nzop7b_3Q" name="primaryPerformer" type="_TtkpcD-UEeGvOdejHZ7dYg" association="_fFleIPLLEeGy2Nzop7b_3Q">
+        <ownedAttribute xmi:id="_fFeJYPLLEeGy2Nzop7b_3Q" name="primaryPerformer" type="_TtkpcD-UEeGvOdejHZ7dYg" aggregation="composite" association="_fFleIPLLEeGy2Nzop7b_3Q">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f7DGgPLLEeGy2Nzop7b_3Q" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f7DtkPLLEeGy2Nzop7b_3Q" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6MIl4EoVEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_TtkpcD-UEeGvOdejHZ7dYg" name="PrimaryPerformer">
           <ownedComment xmi:id="_TtkpcT-UEeGvOdejHZ7dYg">
@@ -4331,9 +4343,10 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
       <generalization xmi:id="_jl-yID_MEeGXieeKs7NJjA">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1fhigEcEEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_CR-nkD_cEeGnev0fONNFyw" name="serviceEvent2" type="_sfqx0D_bEeGnev0fONNFyw" association="_CR-nkj_cEeGnev0fONNFyw">
+      <ownedAttribute xmi:id="_CR-nkD_cEeGnev0fONNFyw" name="serviceEvent2" type="_sfqx0D_bEeGnev0fONNFyw" aggregation="composite" association="_CR-nkj_cEeGnev0fONNFyw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wG9c0PK9EeGFUPBL8qS7yQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wG9c0fK9EeGFUPBL8qS7yQ" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_5Z6ewUoVEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_sfqx0D_bEeGnev0fONNFyw" name="ServiceEvent2">
         <ownedRule xmi:id="_9PpxYPK9EeGFUPBL8qS7yQ" name="effectiveTimeLow" constrainedElement="_sfqx0D_bEeGnev0fONNFyw">
@@ -4409,9 +4422,10 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
       <generalization xmi:id="_1tcGwD_MEeGXieeKs7NJjA">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_NWHRoEAJEd6wZe6nFLrjsw"/>
       </generalization>
-      <ownedAttribute xmi:id="_WBsUcD_REeGXieeKs7NJjA" name="encompassingEncounter6" type="_gtLcMD_QEeGXieeKs7NJjA" association="_WBsUcj_REeGXieeKs7NJjA">
+      <ownedAttribute xmi:id="_WBsUcD_REeGXieeKs7NJjA" name="encompassingEncounter6" type="_gtLcMD_QEeGXieeKs7NJjA" aggregation="composite" association="_WBsUcj_REeGXieeKs7NJjA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bANQEPK-EeGFUPBL8qS7yQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bANQEfK-EeGFUPBL8qS7yQ" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_4f5bQUAJEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_gtLcMD_QEeGXieeKs7NJjA" name="EncompassingEncounter6">
         <ownedRule xmi:id="_8uBsEGd3EeO8u4bjJ5HCCg" name="preciseToTheDay" constrainedElement="_gtLcMD_QEeGXieeKs7NJjA">
@@ -4954,9 +4968,10 @@ The effectiveTime for the serviceEvent covers the duration of the imaging proced
       <generalization xmi:id="_01DuAEVCEeGAh_iQGJvI5w">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1fhigEcEEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_Hgkx8EVDEeGAh_iQGJvI5w" name="serviceEvent3" type="_45OuEEVCEeGAh_iQGJvI5w">
+      <ownedAttribute xmi:id="_Hgkx8EVDEeGAh_iQGJvI5w" name="serviceEvent3" type="_45OuEEVCEeGAh_iQGJvI5w" aggregation="composite">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s_g4oEVDEeGAh_iQGJvI5w" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s_g4oUVDEeGAh_iQGJvI5w" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_5Z6ewUoVEd6c3qsAxlFHaQ"/>
         <association href="consol-dicom.uml#_Hgkx8kVDEeGAh_iQGJvI5w"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_45OuEEVCEeGAh_iQGJvI5w" name="ServiceEvent4">
@@ -4988,10 +5003,11 @@ The effectiveTime for the serviceEvent covers the duration of the imaging proced
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cAc3sMZjEeOZyeUSQqClgg"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_2UUeYErnEd6FXKclYGEDCw"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_WvYhoEVHEeGAh_iQGJvI5w" name="physicianReadingStudyPerformer">
+        <ownedAttribute xmi:id="_WvYhoEVHEeGAh_iQGJvI5w" name="physicianReadingStudyPerformer" aggregation="composite">
           <type xmi:type="uml:Class" href="consol-dicom.uml#_H1UdcEVEEeGAh_iQGJvI5w"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PgYbsErWEeGJpZWiuxRVIw" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PgYbsUrWEeGJpZWiuxRVIw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6MIl4EoVEd6c3qsAxlFHaQ"/>
           <association href="consol-dicom.uml#_WvYhokVHEeGAh_iQGJvI5w"/>
         </ownedAttribute>
       </nestedClassifier>
@@ -5079,9 +5095,10 @@ OIDs SHALL be no more than 64 characters in length..</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bl-0cfKvEeGFUPBL8qS7yQ" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_kfYp8EozEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_v99YEEb2EeGp67IkyTw1fg" name="physicianofRecordParticipant">
+        <ownedAttribute xmi:id="_v99YEEb2EeGp67IkyTw1fg" name="physicianofRecordParticipant" aggregation="composite">
           <type xmi:type="uml:Class" href="consol-dicom.uml#_H_izsEb1EeGp67IkyTw1fg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v99YEUb2EeGp67IkyTw1fg"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_I_4RkUoXEd6c3qsAxlFHaQ"/>
           <association href="consol-dicom.uml#_v-GiAEb2EeGp67IkyTw1fg"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_HfEbMErXEeGJpZWiuxRVIw" name="responsibleParty" type="_SYZ6YEb0EeGp67IkyTw1fg">

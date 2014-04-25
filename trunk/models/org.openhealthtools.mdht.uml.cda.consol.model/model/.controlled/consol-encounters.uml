@@ -178,9 +178,10 @@
       <generalization xmi:id="_D5azMSwXEeGKLc4ckmfDag">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_-WBScG65EeGeVrQbtyMiPg" name="encounterPerformerAssignedEntity" type="_I1LikCwXEeGKLc4ckmfDag" association="_-WDHoG65EeGeVrQbtyMiPg">
+      <ownedAttribute xmi:id="_-WBScG65EeGeVrQbtyMiPg" name="encounterPerformerAssignedEntity" type="_I1LikCwXEeGKLc4ckmfDag" aggregation="composite" association="_-WDHoG65EeGeVrQbtyMiPg">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F7UP4G66EeGeVrQbtyMiPg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F7UP4W66EeGeVrQbtyMiPg" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_toc7gUoYEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_I1LikCwXEeGKLc4ckmfDag" name="EncounterPerformerAssignedEntity">
         <generalization xmi:id="_I1LikSwXEeGKLc4ckmfDag">
