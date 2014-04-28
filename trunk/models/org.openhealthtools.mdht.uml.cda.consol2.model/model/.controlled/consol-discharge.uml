@@ -776,4 +776,27 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
   <CDA:ConstraintValidation xmi:id="_3jVusK4qEeORf5eJaKt1KQ" base_Constraint="_vn4UAK4qEeORf5eJaKt1KQ">
     <ruleId>CONF:31429</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_EIeu8MyjEeO93sHu8pHB2g" name="DischargeMedication2" clientDependency="_bl_s0MykEeO93sHu8pHB2g">
+    <ownedComment xmi:id="_QIz30MykEeO93sHu8pHB2g">
+      <body>This template represents medications that the patient is intended to take (or stop) after discharge.</body>
+    </ownedComment>
+    <generalization xmi:id="_EIhLMMyjEeO93sHu8pHB2g" general="_hD-z0CUPEeGiOPpZVnfEJA"/>
+    <substitution xmi:id="_bl_s0MykEeO93sHu8pHB2g" name="DischargeMedication" supplier="_hD-z0CUPEeGiOPpZVnfEJA" client="_EIeu8MyjEeO93sHu8pHB2g" contract="_hD-z0CUPEeGiOPpZVnfEJA"/>
+    <ownedAttribute xmi:id="_0SZ7MMyvEeO93sHu8pHB2g" name="code" visibility="private" aggregation="composite" redefinedProperty="_iYcFUCUPEeGiOPpZVnfEJA">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_DU_AAMykEeO93sHu8pHB2g" base_Class="_EIeu8MyjEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.35.2">
+    <ruleId>CONF:16760</ruleId>
+    <ruleId>CONF:16761</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_UCOZYMykEeO93sHu8pHB2g" base_Generalization="_EIhLMMyjEeO93sHu8pHB2g"/>
+  <CDA:CodeSystemConstraint xmi:id="_0SZ7McyvEeO93sHu8pHB2g" code="10183-2" displayName="Discharge Medication" base_Property="_0SZ7MMyvEeO93sHu8pHB2g">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:19161</ruleId>
+    <ruleId>CONF:32159</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_2XxsQMyvEeO93sHu8pHB2g" base_Property="_0SZ7MMyvEeO93sHu8pHB2g">
+    <ruleId>CONF:7691</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
