@@ -2590,4 +2590,106 @@ Devices applied to, or placed in, the patient are represented with the Procedure
   <CDA:PropertyValidation xmi:id="_Rq7ZEK4fEeORf5eJaKt1KQ" base_Property="_J1uXYK4fEeORf5eJaKt1KQ">
     <ruleId>CONF:31931</ruleId>
   </CDA:PropertyValidation>
+  <uml:Class xmi:id="_3WqogMzSEeO93sHu8pHB2g" name="FunctionalStatusObservation2" clientDependency="_UB0lYMzTEeO93sHu8pHB2g">
+    <ownedComment xmi:id="_OemNYMzTEeO93sHu8pHB2g">
+      <body>This template represents the patient's physical function (e.g., mobility status, activities of daily living, self-care status) and problems that limit function (dyspnea, dysphagia). The template may include assessment scale observations, identify supporting caregivers, and provide information about non-medicinal supplies. This template is used to represent physical or developmental function of all patient populations and is not limited to the long-term care population.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_2gS-oM7qEeO6qNoyVDglCA" name="textReference">
+      <constrainedElement xmi:type="uml:Property" href="consol-results.uml#_JTUuoByWEeGaOZtrEokzNQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2gS-oc7qEeO6qNoyVDglCA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_fU5ZkM7rEeO6qNoyVDglCA" name="textReferenceValue">
+      <constrainedElement xmi:type="uml:Constraint" href="consol-results.uml#_tjUmsB7rEeGaOZtrEokzNQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_fU5Zkc7rEeO6qNoyVDglCA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_3WqogczSEeO93sHu8pHB2g" general="_viRU0OZbEeGINOJ_SD9_dA"/>
+    <substitution xmi:id="_UB0lYMzTEeO93sHu8pHB2g" name="FunctionalStatusResultObservation" supplier="_viRU0OZbEeGINOJ_SD9_dA" client="_3WqogMzSEeO93sHu8pHB2g" contract="_viRU0OZbEeGINOJ_SD9_dA"/>
+    <ownedAttribute xmi:id="_wts7AMzTEeO93sHu8pHB2g" name="code" visibility="private" redefinedProperty="_nm5Ig-bxEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_VxsVoMzVEeO93sHu8pHB2g" name="referenceRange" type="_5WqncM7tEeO6qNoyVDglCA" redefinedProperty="_lvDLMObzEeGINOJ_SD9_dA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VxsVoczVEeO93sHu8pHB2g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VxsVoszVEeO93sHu8pHB2g"/>
+      <association href="../consol.uml#_VxuK0MzVEeO93sHu8pHB2g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_BJU9YM7sEeO6qNoyVDglCA" name="interpretationCode" visibility="private" aggregation="composite" redefinedProperty="_nm5IjebxEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BJU9Yc7sEeO6qNoyVDglCA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BJU9Ys7sEeO6qNoyVDglCA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_cmHCoM7sEeO6qNoyVDglCA" name="methodCode" visibility="private" aggregation="composite" redefinedProperty="_nm5IkebxEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cmHCoc7sEeO6qNoyVDglCA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cmHCos7sEeO6qNoyVDglCA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iOvfEM7sEeO6qNoyVDglCA" name="targetSiteCode" visibility="private" aggregation="composite" redefinedProperty="_nnC5gubxEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iOwGIM7sEeO6qNoyVDglCA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iOwGIc7sEeO6qNoyVDglCA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_M3E2kM7vEeO6qNoyVDglCA" name="author" visibility="private" aggregation="composite" redefinedProperty="_nnC5jObxEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M3E2kc7vEeO6qNoyVDglCA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M3E2ks7vEeO6qNoyVDglCA"/>
+      <association href="../consol.uml#_M3GEsM7vEeO6qNoyVDglCA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ezW18M7vEeO6qNoyVDglCA" name="authorParticipation" type="_7jqj4KrlEeOxqJAXCMXUYg" association="_ezYEEM7vEeO6qNoyVDglCA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ezXdAM7vEeO6qNoyVDglCA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ezW18c7vEeO6qNoyVDglCA"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_5WqncM7tEeO6qNoyVDglCA" name="ReferenceRange">
+      <ownedComment xmi:id="_-wz78M7tEeO6qNoyVDglCA">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_5Wqncc7tEeO6qNoyVDglCA" general="_mjnbsObzEeGINOJ_SD9_dA"/>
+      <ownedAttribute xmi:id="_7chgsM7tEeO6qNoyVDglCA" name="observationRange" visibility="private" type="_GB15kM7uEeO6qNoyVDglCA" aggregation="composite" redefinedProperty="_m65TQObzEeGINOJ_SD9_dA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7chgsc7tEeO6qNoyVDglCA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7chgss7tEeO6qNoyVDglCA" value="1"/>
+        <association href="../consol.uml#_7ciu0M7tEeO6qNoyVDglCA"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_GB15kM7uEeO6qNoyVDglCA" name="ObservationRange">
+        <ownedRule xmi:id="_MOBH8M7uEeO6qNoyVDglCA" name="noCode" constrainedElement="_r-P4YObzEeGINOJ_SD9_dA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_MOBH8c7uEeO6qNoyVDglCA">
+            <language>Analysis</language>
+            <language>OCL</language>
+            <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+            <body>true</body>
+          </specification>
+        </ownedRule>
+        <generalization xmi:id="_GB2goM7uEeO6qNoyVDglCA" general="_r-P4YObzEeGINOJ_SD9_dA"/>
+      </nestedClassifier>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_BcRmkMzTEeO93sHu8pHB2g" base_Class="_3WqogMzSEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.67.2">
+    <ruleId>CONF:13889</ruleId>
+    <ruleId>CONF:13890</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_QrmQcMzTEeO93sHu8pHB2g" base_Generalization="_3WqogczSEeO93sHu8pHB2g"/>
+  <CDA:PropertyValidation xmi:id="_wttiEMzTEeO93sHu8pHB2g" base_Property="_wts7AMzTEeO93sHu8pHB2g">
+    <ruleId>CONF:13908</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_wtuJIMzTEeO93sHu8pHB2g" code="364644000" displayName="functional observable" base_Property="_wts7AMzTEeO93sHu8pHB2g">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:31522</ruleId>
+    <ruleId>CONF:31523</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_3YPq88zUEeO93sHu8pHB2g">
+    <ruleId>CONF:13930</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_ezYEEM7vEeO6qNoyVDglCA" memberEnd="_ezW18M7vEeO6qNoyVDglCA _ezYEEc7vEeO6qNoyVDglCA">
+    <ownedEnd xmi:id="_ezYEEc7vEeO6qNoyVDglCA" type="_3WqogMzSEeO93sHu8pHB2g" association="_ezYEEM7vEeO6qNoyVDglCA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_h0WhwM7vEeO6qNoyVDglCA" severity="WARNING" base_Association="_ezYEEM7vEeO6qNoyVDglCA">
+    <ruleId>CONF:13936</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

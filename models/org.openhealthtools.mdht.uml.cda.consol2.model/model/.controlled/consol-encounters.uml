@@ -362,4 +362,61 @@
     <reference href="../consol-vocab.uml#_2L5TYhSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:9929</ruleId>
   </CDA:ValueSetConstraint>
+  <uml:Class xmi:id="_RGU34MzDEeO93sHu8pHB2g" name="EncounterActivity2" clientDependency="_M21jMMzEEeO93sHu8pHB2g">
+    <ownedComment xmi:id="_3BOh0MzDEeO93sHu8pHB2g">
+      <body>This clinical statement describes an interaction between a patient and clinician. Interactions may include in-person encounters, telephone conversations, and email exchanges.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_tMxrkMzLEeO93sHu8pHB2g" name="sdtcDDCFromNUBCOrDD" constrainedElement="_RGU34MzDEeO93sHu8pHB2g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_DnY3cMzMEeO93sHu8pHB2g">
+        <language>Analysis</language>
+        <body>If sdtc:dischargeDispositionCode is present SHALL be selected from ValueSet 2.16.840.1.113883.3.88.12.80.33 NUBC UB-04 FL17-Patient Status (code system 2.16.840.1.113883.6.301.5) DYNAMIC or, if access to NUBC is unavailable, from CodeSystem 2.16.840.1.113883.12.112 HL7 Discharge Disposition</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_RGVe8MzDEeO93sHu8pHB2g" general="_2LayQBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_M21jMMzEEeO93sHu8pHB2g" name="EncounterActivities" supplier="_2LayQBSVEeGGzu7fmW9pXw" client="_RGU34MzDEeO93sHu8pHB2g" contract="_2LayQBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_bj5_IMzFEeO93sHu8pHB2g" name="sDTCDischargeDispositionCode" visibility="private" aggregation="composite" redefinedProperty="_0IhGsJAOEeKDcJPVSJHobw">
+      <ownedComment xmi:id="_El3j0MzKEeO93sHu8pHB2g">
+        <body>Note: The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the dischargeDispositionCode element.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bj5_IczFEeO93sHu8pHB2g" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bj5_IszFEeO93sHu8pHB2g"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_WBACIMzDEeO93sHu8pHB2g" base_Class="_RGU34MzDEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.49.2">
+    <ruleId>CONF:8712</ruleId>
+    <ruleId>CONF:26353</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_IkqjYMzEEeO93sHu8pHB2g" base_Generalization="_RGVe8MzDEeO93sHu8pHB2g"/>
+  <CDA:PropertyValidation xmi:id="_bj6mMMzFEeO93sHu8pHB2g" severity="INFO" base_Property="_bj5_IMzFEeO93sHu8pHB2g"/>
+  <CDA:ValueSetConstraint xmi:id="_bj7NQMzFEeO93sHu8pHB2g" base_Property="_bj5_IMzFEeO93sHu8pHB2g">
+    <reference href="../consol-vocab.uml#_2L5TYhSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:9929</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ConstraintValidation xmi:id="_tpYvEMzLEeO93sHu8pHB2g" base_Constraint="_tMxrkMzLEeO93sHu8pHB2g">
+    <ruleId>CONF:9929</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_jH6CcMzNEeO93sHu8pHB2g" name="EncounterDiagnosis2" clientDependency="_O_CaQMzOEeO93sHu8pHB2g">
+    <ownedComment xmi:id="_JPYv0MzOEeO93sHu8pHB2g">
+      <body>This template wraps relevant problems or diagnoses at the close of a visit or that need to be followed after the visit. If the encounter is associated with a Hospital Discharge, the Hospital Discharge Diagnosis must be used. This entry requires at least one Problem Observation entry.</body>
+    </ownedComment>
+    <generalization xmi:id="_jH6CcczNEeO93sHu8pHB2g" general="_Ker6MOM2EeGfv4R-kzpM0g"/>
+    <substitution xmi:id="_O_CaQMzOEeO93sHu8pHB2g" name="EncounterDiagnosis" supplier="_Ker6MOM2EeGfv4R-kzpM0g" client="_jH6CcMzNEeO93sHu8pHB2g" contract="_Ker6MOM2EeGfv4R-kzpM0g"/>
+    <ownedAttribute xmi:id="_xa_4IMzOEeO93sHu8pHB2g" name="code" visibility="private" aggregation="composite" redefinedProperty="_NEkXUOM2EeGfv4R-kzpM0g">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_wJ4rAMzNEeO93sHu8pHB2g" base_Class="_jH6CcMzNEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.80.2">
+    <ruleId>CONF:14895</ruleId>
+    <ruleId>CONF:14896</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_K3ogAMzOEeO93sHu8pHB2g" base_Generalization="_jH6CcczNEeO93sHu8pHB2g"/>
+  <CDA:PropertyValidation xmi:id="_xbAfMMzOEeO93sHu8pHB2g" base_Property="_xa_4IMzOEeO93sHu8pHB2g">
+    <ruleId>CONF:19182</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_xbAfMczOEeO93sHu8pHB2g" code="29308-4" displayName="Diagnosis" base_Property="_xa_4IMzOEeO93sHu8pHB2g">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:19183</ruleId>
+    <ruleId>CONF:32160</ruleId>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>
