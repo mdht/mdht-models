@@ -303,9 +303,10 @@ Medication timing is complex. This template requires that there be a substanceAd
       <generalization xmi:id="_rMAUoG65EeGeVrQbtyMiPg">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_gRI5MEcEEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_Feu6EHK2EeGig5KF4CgPyw" name="medicationInformation" type="_2T9DQBSVEeGGzu7fmW9pXw" association="_FewvQHK2EeGig5KF4CgPyw">
+      <ownedAttribute xmi:id="_Feu6EHK2EeGig5KF4CgPyw" name="medicationInformation" type="_2T9DQBSVEeGGzu7fmW9pXw" aggregation="composite" association="_FewvQHK2EeGig5KF4CgPyw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GvSjAHK2EeGig5KF4CgPyw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GvSjAXK2EeGig5KF4CgPyw" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_MvGqcEoZEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
@@ -468,9 +469,10 @@ Medication timing is complex. This template requires that there be a substanceAd
       <generalization xmi:id="_W308AOATEeGlGcipF_0y2A">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_eix1gOATEeGlGcipF_0y2A" name="medicationDispenseAssignedEntity" type="_M7xhgEIxEeG4bZAl2IGXmQ" association="_ei0RwOATEeGlGcipF_0y2A">
+      <ownedAttribute xmi:id="_eix1gOATEeGlGcipF_0y2A" name="medicationDispenseAssignedEntity" type="_M7xhgEIxEeG4bZAl2IGXmQ" aggregation="composite" association="_ei0RwOATEeGlGcipF_0y2A">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fqu8EOATEeGlGcipF_0y2A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fqu8EeATEeGlGcipF_0y2A" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_toc7gUoYEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_M7xhgEIxEeG4bZAl2IGXmQ" name="MedicationDispenseAssignedEntity">
         <generalization xmi:id="_M7xhgUIxEeG4bZAl2IGXmQ">
