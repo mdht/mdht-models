@@ -61,8 +61,8 @@ ii. If the Advance Directive does not have a specified ending time, the &lt;high
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-zdskesKEeKDusM4GJHmkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_PGnCECsfEeGQ5rkpDKAt8A" name="custodian" type="_xSLI8CseEeGQ5rkpDKAt8A" association="_PGnpICsfEeGQ5rkpDKAt8A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fOEN0CsfEeGQ5rkpDKAt8A" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fOEN0SsfEeGQ5rkpDKAt8A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-YSEIM_SEeOGjf7FaidRGw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-YSEIc_SEeOGjf7FaidRGw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GTt-MCshEeGQ5rkpDKAt8A" name="reference" type="_N9j54CsgEeGQ5rkpDKAt8A" association="_GTulQCshEeGQ5rkpDKAt8A">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YzOIQOsNEeKDusM4GJHmkQ" value="*"/>
@@ -483,8 +483,8 @@ The general category of the patient's directive is documented in the observation
       <association href="../consol.uml#_e8gNgLE4EeOtlapy2HWYww"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_TOL9gLE-EeOtlapy2HWYww" name="reference" type="_N9j54CsgEeGQ5rkpDKAt8A" redefinedProperty="_GTt-MCshEeGQ5rkpDKAt8A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lCu9MLE-EeOtlapy2HWYww" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lCu9MbE-EeOtlapy2HWYww" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wlM5UM_TEeOGjf7FaidRGw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wlM5Uc_TEeOGjf7FaidRGw" value="1"/>
       <association href="../consol.uml#_TOPA0LE-EeOtlapy2HWYww"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_9grOYLEgEeOtlapy2HWYww" name="IVLTS">
