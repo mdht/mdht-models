@@ -451,8 +451,8 @@ value.codeSystem = '2.16.840.1.113883.5.111' and (value.code = 'ADOPT' or value.
             </generalization>
             <ownedAttribute xmi:id="_yINn0J4wEeKLDuYB2cFreQ" name="value" visibility="private">
               <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CWZPMEWyEeC7E8_5Rmjcog"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yINn0Z4wEeKLDuYB2cFreQ" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yINn0p4wEeKLDuYB2cFreQ"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NI5YwM_TEeOGjf7FaidRGw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NI5Ywc_TEeOGjf7FaidRGw" value="1"/>
               <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_HXr2YD5_Ed6cla2oXsPtlA"/>
             </ownedAttribute>
           </nestedClassifier>
@@ -497,8 +497,8 @@ value.codeSystem = '2.16.840.1.113883.5.111' and (value.code = 'ADOPT' or value.
             </generalization>
             <ownedAttribute xmi:id="_xqTkYOxmEeG7k4bbVdXbXw" name="use" visibility="private">
               <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zFEA0DcEd6xYZuu1VKCVw"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ymf0sPIkEeGu1M-cCXg0Dg" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YmgbwPIkEeGu1M-cCXg0Dg" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O6y0MM_TEeOGjf7FaidRGw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O6zbQM_TEeOGjf7FaidRGw"/>
               <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_5iTUkD52Ed6cla2oXsPtlA"/>
             </ownedAttribute>
           </nestedClassifier>
@@ -768,7 +768,8 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1G6DoEcDEd6besF9iFIJkQ"/>
         </generalization>
         <ownedAttribute xmi:id="_yffKUCzDEeGMXrZ0DiQwGg" name="representedCustodianOrganization" type="_yEoEACynEeGMXrZ0DiQwGg" association="_yffxYSzDEeGMXrZ0DiQwGg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yffxYCzDEeGMXrZ0DiQwGg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LJYYEM_TEeOGjf7FaidRGw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LJYYEc_TEeOGjf7FaidRGw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_yEoEACynEeGMXrZ0DiQwGg" name="CustodianOrganization">
           <ownedRule xmi:id="__ERYsDVXEeGIw7CntkyPQw" name="hasNationalProviderIdentifier" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
@@ -1130,7 +1131,8 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JIRXgErmEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_H_GbIDVXEeGIw7CntkyPQw" name="person" type="_gidjkOxvEeG7k4bbVdXbXw" association="_H_GbIjVXEeGIw7CntkyPQw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H_GbITVXEeGIw7CntkyPQw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L992sM_TEeOGjf7FaidRGw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L992sc_TEeOGjf7FaidRGw" value="1"/>
         </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
@@ -1509,8 +1511,8 @@ The type of consent (e.g., a consent to perform the related serviceEvent) is con
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxlhSVEeGGzu7fmW9pXw" name="hospitalAdmissionMedicationsSectionEntriesOptional" association="_2UnxyxSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-medications.uml#_2Poj5BSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxlxSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxmBSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IV4VsM_TEeOGjf7FaidRGw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IV4Vsc_TEeOGjf7FaidRGw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxmRSVEeGGzu7fmW9pXw" name="hospitalAdmissionDiagnosisSection" association="_2UnxzhSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-other.uml#_2PidQhSVEeGGzu7fmW9pXw"/>
@@ -1537,8 +1539,8 @@ The type of consent (e.g., a consent to perform the related serviceEvent) is con
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxrRSVEeGGzu7fmW9pXw" name="historyOfPresentIllnessSection" association="_2Ut4PhSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-other.uml#_2PcWsRSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxrhSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxrxSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G0mJIM_TEeOGjf7FaidRGw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G0mJIc_TEeOGjf7FaidRGw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxsBSVEeGGzu7fmW9pXw" name="hospitalCourseSection" association="_2Ut4QRSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-discharge.uml#_2RqkOxSVEeGGzu7fmW9pXw"/>
@@ -1552,8 +1554,8 @@ The type of consent (e.g., a consent to perform the related serviceEvent) is con
     </ownedAttribute>
     <ownedAttribute xmi:id="_2UnxuxSVEeGGzu7fmW9pXw" name="historyOfPastIllnessSection" association="_2Uz-0xSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-other.uml#_2PQJcxSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxvBSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxvRSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FvdtEM_TEeOGjf7FaidRGw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FvdtEc_TEeOGjf7FaidRGw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_F6UhIDzEEeGMk58Mp9-wVA" name="componentOf" type="_7G6B4DzDEeGMk58Mp9-wVA" association="_F6UhIjzEEeGMk58Mp9-wVA">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Izr68DzEEeGMk58Mp9-wVA" value="1"/>
@@ -2590,7 +2592,8 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
           </generalization>
           <ownedAttribute xmi:id="_GyJiIDsxEeGvzMYhXuqAEA" name="assignedEntity" association="_GySsEDsxEeGvzMYhXuqAEA">
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GyJiITsxEeGvzMYhXuqAEA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DYyJkM_TEeOGjf7FaidRGw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DYyJkc_TEeOGjf7FaidRGw" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_Or7FUDsyEeGvzMYhXuqAEA" name="EncounterParticipant">
@@ -2607,7 +2610,8 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
           </generalization>
           <ownedAttribute xmi:id="_vZAiYDs5EeGXW8k29waQGA" name="assignedEntity" association="_vZAiYjs5EeGXW8k29waQGA">
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vZAiYTs5EeGXW8k29waQGA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BTMWEM_TEeOGjf7FaidRGw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BTMWEc_TEeOGjf7FaidRGw" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
@@ -3025,7 +3029,8 @@ A History and Physical Examination is required upon hospital admission as well a
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_NWHRoEAJEd6wZe6nFLrjsw"/>
       </generalization>
       <ownedAttribute xmi:id="_SuJt0D1lEeG3tde5scYNWA" name="encompassingEncounter" type="_PThaAD1lEeG3tde5scYNWA" association="_SuJt0j1lEeG3tde5scYNWA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SuJt0T1lEeG3tde5scYNWA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QRdsMM_TEeOGjf7FaidRGw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QRdsMc_TEeOGjf7FaidRGw" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_PThaAD1lEeG3tde5scYNWA" name="EncompassingEncounter4">
         <ownedRule xmi:id="_OLqQUGdnEeO8u4bjJ5HCCg" name="preciseToTheDay" constrainedElement="_PThaAD1lEeG3tde5scYNWA">
@@ -4979,8 +4984,8 @@ The effectiveTime for the serviceEvent covers the duration of the imaging proced
         </ownedAttribute>
         <ownedAttribute xmi:id="_WrF0V0VDEeGAh_iQGJvI5w" name="id" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fPJgEEVDEeGAh_iQGJvI5w" value="*"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fPJgEUVDEeGAh_iQGJvI5w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EjkhsM_TEeOGjf7FaidRGw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EjlIwM_TEeOGjf7FaidRGw"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_2UUeYErnEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_WvYhoEVHEeGAh_iQGJvI5w" name="physicianReadingStudyPerformer">
@@ -6745,8 +6750,8 @@ This participant represents the clinician to contact for questions about the ref
           </generalization>
           <ownedAttribute xmi:id="_tNSJUKASEeOQs7VC4HptuQ" name="name" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wHc0YKASEeOQs7VC4HptuQ" value="*"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wHeCgKASEeOQs7VC4HptuQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cH-AIM_TEeOGjf7FaidRGw" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cH-nMM_TEeOGjf7FaidRGw"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
           </ownedAttribute>
         </nestedClassifier>
@@ -7117,8 +7122,8 @@ The performer(s) represents the healthcare providers involved in the current or 
             </generalization>
             <ownedAttribute xmi:id="_vwUmM6WWEeOPqKnBFQcY_A" name="id" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vwUmNKWWEeOPqKnBFQcY_A" value="*"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vwUmNaWWEeOPqKnBFQcY_A" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e0LHsM_TEeOGjf7FaidRGw" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e0LHsc_TEeOGjf7FaidRGw"/>
               <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_vwUmMKWWEeOPqKnBFQcY_A" name="code" visibility="private" aggregation="composite">

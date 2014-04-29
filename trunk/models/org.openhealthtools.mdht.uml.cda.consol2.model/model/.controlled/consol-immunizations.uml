@@ -757,8 +757,8 @@ The priority of the immunization activity to the patient and provider is communi
     </ownedAttribute>
     <ownedAttribute xmi:id="_romowJXFEeOgXcDbh8Igkw" name="approachSiteCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_romowZXFEeOgXcDbh8Igkw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_romowpXFEeOgXcDbh8Igkw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T--fwM_TEeOGjf7FaidRGw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T-_G0M_TEeOGjf7FaidRGw" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ATlKkErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_roqTIpXFEeOgXcDbh8Igkw" name="doseQuantity" visibility="private" type="_5NpTYJXLEeOgXcDbh8Igkw" aggregation="composite">
