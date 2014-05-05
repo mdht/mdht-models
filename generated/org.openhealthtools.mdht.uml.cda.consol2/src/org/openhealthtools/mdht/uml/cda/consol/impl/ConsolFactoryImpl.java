@@ -66,6 +66,10 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createAllergyProblemAct();
 			case ConsolPackage.ALLERGY_OBSERVATION:
 				return createAllergyObservation();
+			case ConsolPackage.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION:
+				return createSubstanceOrDeviceAllergyObservation();
+			case ConsolPackage.ALLERGY_STATUS_OBSERVATION:
+				return createAllergyStatusObservation();
 			case ConsolPackage.REACTION_OBSERVATION:
 				return createReactionObservation();
 			case ConsolPackage.SEVERITY_OBSERVATION:
@@ -88,8 +92,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createDrugVehicle();
 			case ConsolPackage.PRODUCT_INSTANCE:
 				return createProductInstance();
-			case ConsolPackage.ALLERGY_STATUS_OBSERVATION:
-				return createAllergyStatusObservation();
 			case ConsolPackage.AGE_OBSERVATION:
 				return createAgeObservation();
 			case ConsolPackage.HEALTH_STATUS_OBSERVATION:
@@ -492,6 +494,14 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createCurrentSmokingStatus2();
 			case ConsolPackage.DECEASED_OBSERVATION2:
 				return createDeceasedObservation2();
+			case ConsolPackage.DISCHARGE_MEDICATION2:
+				return createDischargeMedication2();
+			case ConsolPackage.ENCOUNTER_ACTIVITY2:
+				return createEncounterActivity2();
+			case ConsolPackage.ENCOUNTER_DIAGNOSIS2:
+				return createEncounterDiagnosis2();
+			case ConsolPackage.FUNCTIONAL_STATUS_OBSERVATION2:
+				return createFunctionalStatusObservation2();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -525,6 +535,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public AllergyObservation createAllergyObservation() {
 		AllergyObservationImpl allergyObservation = new AllergyObservationImpl();
 		return allergyObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SubstanceOrDeviceAllergyObservation createSubstanceOrDeviceAllergyObservation() {
+		SubstanceOrDeviceAllergyObservationImpl substanceOrDeviceAllergyObservation = new SubstanceOrDeviceAllergyObservationImpl();
+		return substanceOrDeviceAllergyObservation;
 	}
 
 	/**
@@ -2475,6 +2495,46 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public DeceasedObservation2 createDeceasedObservation2() {
 		DeceasedObservation2Impl deceasedObservation2 = new DeceasedObservation2Impl();
 		return deceasedObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DischargeMedication2 createDischargeMedication2() {
+		DischargeMedication2Impl dischargeMedication2 = new DischargeMedication2Impl();
+		return dischargeMedication2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncounterActivity2 createEncounterActivity2() {
+		EncounterActivity2Impl encounterActivity2 = new EncounterActivity2Impl();
+		return encounterActivity2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncounterDiagnosis2 createEncounterDiagnosis2() {
+		EncounterDiagnosis2Impl encounterDiagnosis2 = new EncounterDiagnosis2Impl();
+		return encounterDiagnosis2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FunctionalStatusObservation2 createFunctionalStatusObservation2() {
+		FunctionalStatusObservation2Impl functionalStatusObservation2 = new FunctionalStatusObservation2Impl();
+		return functionalStatusObservation2;
 	}
 
 	/**

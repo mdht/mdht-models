@@ -150,6 +150,9 @@ public class ConsolSwitch<T> {
 				AllergyObservation allergyObservation = (AllergyObservation) theEObject;
 				T result = caseAllergyObservation(allergyObservation);
 				if (result == null) {
+					result = caseSubstanceOrDeviceAllergyObservation(allergyObservation);
+				}
+				if (result == null) {
 					result = caseObservation(allergyObservation);
 				}
 				if (result == null) {
@@ -160,6 +163,46 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(allergyObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION: {
+				SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation = (SubstanceOrDeviceAllergyObservation) theEObject;
+				T result = caseSubstanceOrDeviceAllergyObservation(substanceOrDeviceAllergyObservation);
+				if (result == null) {
+					result = caseObservation(substanceOrDeviceAllergyObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(substanceOrDeviceAllergyObservation);
+				}
+				if (result == null) {
+					result = caseAct(substanceOrDeviceAllergyObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(substanceOrDeviceAllergyObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ALLERGY_STATUS_OBSERVATION: {
+				AllergyStatusObservation allergyStatusObservation = (AllergyStatusObservation) theEObject;
+				T result = caseAllergyStatusObservation(allergyStatusObservation);
+				if (result == null) {
+					result = caseObservation(allergyStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(allergyStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(allergyStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(allergyStatusObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -371,26 +414,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(productInstance);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ALLERGY_STATUS_OBSERVATION: {
-				AllergyStatusObservation allergyStatusObservation = (AllergyStatusObservation) theEObject;
-				T result = caseAllergyStatusObservation(allergyStatusObservation);
-				if (result == null) {
-					result = caseObservation(allergyStatusObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(allergyStatusObservation);
-				}
-				if (result == null) {
-					result = caseAct(allergyStatusObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(allergyStatusObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -4144,6 +4167,9 @@ public class ConsolSwitch<T> {
 					result = caseAllergyObservation(allergyObservation2);
 				}
 				if (result == null) {
+					result = caseSubstanceOrDeviceAllergyObservation(allergyObservation2);
+				}
+				if (result == null) {
 					result = caseObservation(allergyObservation2);
 				}
 				if (result == null) {
@@ -4258,6 +4284,101 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.DISCHARGE_MEDICATION2: {
+				DischargeMedication2 dischargeMedication2 = (DischargeMedication2) theEObject;
+				T result = caseDischargeMedication2(dischargeMedication2);
+				if (result == null) {
+					result = caseDischargeMedication(dischargeMedication2);
+				}
+				if (result == null) {
+					result = caseCDA_Act(dischargeMedication2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(dischargeMedication2);
+				}
+				if (result == null) {
+					result = caseAct(dischargeMedication2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(dischargeMedication2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ENCOUNTER_ACTIVITY2: {
+				EncounterActivity2 encounterActivity2 = (EncounterActivity2) theEObject;
+				T result = caseEncounterActivity2(encounterActivity2);
+				if (result == null) {
+					result = caseEncounterActivities(encounterActivity2);
+				}
+				if (result == null) {
+					result = caseEncounter(encounterActivity2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(encounterActivity2);
+				}
+				if (result == null) {
+					result = caseAct(encounterActivity2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encounterActivity2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ENCOUNTER_DIAGNOSIS2: {
+				EncounterDiagnosis2 encounterDiagnosis2 = (EncounterDiagnosis2) theEObject;
+				T result = caseEncounterDiagnosis2(encounterDiagnosis2);
+				if (result == null) {
+					result = caseEncounterDiagnosis(encounterDiagnosis2);
+				}
+				if (result == null) {
+					result = caseCDA_Act(encounterDiagnosis2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(encounterDiagnosis2);
+				}
+				if (result == null) {
+					result = caseAct(encounterDiagnosis2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encounterDiagnosis2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.FUNCTIONAL_STATUS_OBSERVATION2: {
+				FunctionalStatusObservation2 functionalStatusObservation2 = (FunctionalStatusObservation2) theEObject;
+				T result = caseFunctionalStatusObservation2(functionalStatusObservation2);
+				if (result == null) {
+					result = caseFunctionalStatusResultObservation(functionalStatusObservation2);
+				}
+				if (result == null) {
+					result = caseResultObservation(functionalStatusObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(functionalStatusObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(functionalStatusObservation2);
+				}
+				if (result == null) {
+					result = caseAct(functionalStatusObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(functionalStatusObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -4305,6 +4426,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseAllergyObservation(AllergyObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Substance Or Device Allergy Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSubstanceOrDeviceAllergyObservation(SubstanceOrDeviceAllergyObservation object) {
 		return null;
 	}
 
@@ -7742,6 +7878,66 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseDeceasedObservation2(DeceasedObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Discharge Medication2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Discharge Medication2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDischargeMedication2(DischargeMedication2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Encounter Activity2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Encounter Activity2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEncounterActivity2(EncounterActivity2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Encounter Diagnosis2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Encounter Diagnosis2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEncounterDiagnosis2(EncounterDiagnosis2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Functional Status Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFunctionalStatusObservation2(FunctionalStatusObservation2 object) {
 		return null;
 	}
 

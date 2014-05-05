@@ -57,6 +57,15 @@ public interface ConsolFactory extends EFactory {
 	AllergyObservation createAllergyObservation();
 
 	/**
+	 * Returns a new object of class '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Substance Or Device Allergy Observation</em>'.
+	 * @generated
+	 */
+	SubstanceOrDeviceAllergyObservation createSubstanceOrDeviceAllergyObservation();
+
+	/**
 	 * Returns a new object of class '<em>Reaction Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1810,6 +1819,42 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	DeceasedObservation2 createDeceasedObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Discharge Medication2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Discharge Medication2</em>'.
+	 * @generated
+	 */
+	DischargeMedication2 createDischargeMedication2();
+
+	/**
+	 * Returns a new object of class '<em>Encounter Activity2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encounter Activity2</em>'.
+	 * @generated
+	 */
+	EncounterActivity2 createEncounterActivity2();
+
+	/**
+	 * Returns a new object of class '<em>Encounter Diagnosis2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encounter Diagnosis2</em>'.
+	 * @generated
+	 */
+	EncounterDiagnosis2 createEncounterDiagnosis2();
+
+	/**
+	 * Returns a new object of class '<em>Functional Status Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Functional Status Observation2</em>'.
+	 * @generated
+	 */
+	FunctionalStatusObservation2 createFunctionalStatusObservation2();
 
 	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
