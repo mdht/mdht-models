@@ -108,6 +108,16 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseSubstanceOrDeviceAllergyObservation(SubstanceOrDeviceAllergyObservation object) {
+			return createSubstanceOrDeviceAllergyObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseAllergyStatusObservation(AllergyStatusObservation object) {
+			return createAllergyStatusObservationAdapter();
+		}
+
+		@Override
 		public Adapter caseReactionObservation(ReactionObservation object) {
 			return createReactionObservationAdapter();
 		}
@@ -160,11 +170,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseProductInstance(ProductInstance object) {
 			return createProductInstanceAdapter();
-		}
-
-		@Override
-		public Adapter caseAllergyStatusObservation(AllergyStatusObservation object) {
-			return createAllergyStatusObservationAdapter();
 		}
 
 		@Override
@@ -1175,6 +1180,26 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseDischargeMedication2(DischargeMedication2 object) {
+			return createDischargeMedication2Adapter();
+		}
+
+		@Override
+		public Adapter caseEncounterActivity2(EncounterActivity2 object) {
+			return createEncounterActivity2Adapter();
+		}
+
+		@Override
+		public Adapter caseEncounterDiagnosis2(EncounterDiagnosis2 object) {
+			return createEncounterDiagnosis2Adapter();
+		}
+
+		@Override
+		public Adapter caseFunctionalStatusObservation2(FunctionalStatusObservation2 object) {
+			return createFunctionalStatusObservation2Adapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -1342,6 +1367,20 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAllergyObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation <em>Substance Or Device Allergy Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation
+	 * @generated
+	 */
+	public Adapter createSubstanceOrDeviceAllergyObservationAdapter() {
 		return null;
 	}
 
@@ -4548,6 +4587,62 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDeceasedObservation2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2 <em>Discharge Medication2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2
+	 * @generated
+	 */
+	public Adapter createDischargeMedication2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2 <em>Encounter Activity2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2
+	 * @generated
+	 */
+	public Adapter createEncounterActivity2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2 <em>Encounter Diagnosis2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2
+	 * @generated
+	 */
+	public Adapter createEncounterDiagnosis2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2 <em>Functional Status Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2
+	 * @generated
+	 */
+	public Adapter createFunctionalStatusObservation2Adapter() {
 		return null;
 	}
 
