@@ -203,11 +203,11 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
     <ownedAttribute xmi:id="_-xkhwBUvEeGbmN_W114JUw" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" association="_-xkhwhUvEeGbmN_W114JUw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-xkhwRUvEeGbmN_W114JUw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2EaLeBSVEeGGzu7fmW9pXw" name="problemEntryReactionObservationContainer" type="_2E_aIRSVEeGGzu7fmW9pXw" association="_2Ej8URSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_2EaLeBSVEeGGzu7fmW9pXw" name="reactionObservation" type="_2E_aIRSVEeGGzu7fmW9pXw" association="_2Ej8URSVEeGGzu7fmW9pXw">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0W64EOJUEeG3cO7ebC3QuA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0W64EeJUEeG3cO7ebC3QuA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2EaLexSVEeGGzu7fmW9pXw" name="severity" type="_2FGu4hSVEeGGzu7fmW9pXw" association="_2EkjYBSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_2EaLexSVEeGGzu7fmW9pXw" name="severityObservation" type="_2FGu4hSVEeGGzu7fmW9pXw" association="_2EkjYBSVEeGGzu7fmW9pXw">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_90gz4OJUEeG3cO7ebC3QuA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_90gz4eJUEeG3cO7ebC3QuA"/>
     </ownedAttribute>
@@ -215,7 +215,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_APAVMM_TEeOGjf7FaidRGw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_APAVMc_TEeOGjf7FaidRGw"/>
     </ownedAttribute>
-    <nestedClassifier xmi:type="uml:Class" xmi:id="_0HgNkDJAEeG6R8Pb5FT2Ow" name="AllergyObservationParticipant">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_0HgNkDJAEeG6R8Pb5FT2Ow" name="Participant">
       <ownedComment xmi:id="_UJ7XoM-GEeG0zqUqBXbhpA">
         <body>INLINE</body>
       </ownedComment>
@@ -230,7 +230,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tJrDUDJBEeG6R8Pb5FT2Ow" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tJrDUTJBEeG6R8Pb5FT2Ow" value="1"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_4Lj44DJAEeG6R8Pb5FT2Ow" name="AllergyObservationParticipantRole">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_4Lj44DJAEeG6R8Pb5FT2Ow" name="ParticipantRole">
         <generalization xmi:id="_4Lj44TJAEeG6R8Pb5FT2Ow">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
         </generalization>
@@ -244,7 +244,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tvKWADJBEeG6R8Pb5FT2Ow" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tvKWATJBEeG6R8Pb5FT2Ow" value="1"/>
         </ownedAttribute>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_E1B60DJBEeG6R8Pb5FT2Ow" name="AllergyObservationPlayingEntity">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_E1B60DJBEeG6R8Pb5FT2Ow" name="PlayingEntity">
           <ownedRule xmi:id="_c0knsDJCEeG6R8Pb5FT2Ow" name="originalTextReferenceValue" constrainedElement="_aK9hIDJCEeG6R8Pb5FT2Ow">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_ol9LEDJCEeG6R8Pb5FT2Ow">
               <language>Analysis</language>
@@ -275,7 +275,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_af_oQOJSEeG3cO7ebC3QuA">
               <language>Analysis</language>
               <language>OCL</language>
-              <body>reference, if present, SHOULD contain zero or one [0..1] @value (CONF:15952)</body>
+              <body>reference, if present, SHOULD contain zero or one [0..1] @value</body>
               <body>not self.code.originalText.reference.oclIsUndefined() implies self.code.originalText.reference.value->size() = 1</body>
             </specification>
           </ownedRule>
