@@ -925,6 +925,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseSubstanceOrDeviceAllergyObservation(SubstanceOrDeviceAllergyObservation object) {
+			return createSubstanceOrDeviceAllergyObservationAdapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -3598,6 +3603,20 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createObserverContextAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation <em>Substance Or Device Allergy Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation
+	 * @generated
+	 */
+	public Adapter createSubstanceOrDeviceAllergyObservationAdapter() {
 		return null;
 	}
 

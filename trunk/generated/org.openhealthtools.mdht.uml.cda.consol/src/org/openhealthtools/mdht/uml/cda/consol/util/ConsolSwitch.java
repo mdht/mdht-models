@@ -3237,6 +3237,26 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION: {
+				SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation = (SubstanceOrDeviceAllergyObservation) theEObject;
+				T result = caseSubstanceOrDeviceAllergyObservation(substanceOrDeviceAllergyObservation);
+				if (result == null) {
+					result = caseObservation(substanceOrDeviceAllergyObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(substanceOrDeviceAllergyObservation);
+				}
+				if (result == null) {
+					result = caseAct(substanceOrDeviceAllergyObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(substanceOrDeviceAllergyObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -5971,6 +5991,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseObserverContext(ObserverContext object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Substance Or Device Allergy Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSubstanceOrDeviceAllergyObservation(SubstanceOrDeviceAllergyObservation object) {
 		return null;
 	}
 

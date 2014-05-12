@@ -392,6 +392,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createFetusSubjectContext();
 			case ConsolPackage.OBSERVER_CONTEXT:
 				return createObserverContext();
+			case ConsolPackage.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION:
+				return createSubstanceOrDeviceAllergyObservation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1875,6 +1877,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ObserverContext createObserverContext() {
 		ObserverContextImpl observerContext = new ObserverContextImpl();
 		return observerContext;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SubstanceOrDeviceAllergyObservation createSubstanceOrDeviceAllergyObservation() {
+		SubstanceOrDeviceAllergyObservationImpl substanceOrDeviceAllergyObservation = new SubstanceOrDeviceAllergyObservationImpl();
+		return substanceOrDeviceAllergyObservation;
 	}
 
 	/**

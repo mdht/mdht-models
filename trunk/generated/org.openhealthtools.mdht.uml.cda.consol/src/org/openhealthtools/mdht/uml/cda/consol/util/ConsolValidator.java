@@ -2371,20 +2371,20 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_VALUE = 292;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Problem Entry Reaction Observation Container' of 'Allergy Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Reaction Observation' of 'Allergy Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER = 293;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_REACTION_OBSERVATION = 293;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Severity' of 'Allergy Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Severity Observation' of 'Allergy Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_SEVERITY = 294;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_SEVERITY_OBSERVATION = 294;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Allergy Status Observation' of 'Allergy Observation'.
@@ -2403,92 +2403,92 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT = 296;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Allergy Observation Participant Allergy Observation Participant Role Allergy Observation Playing Entity Code Original Text' of 'Allergy Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Playing Entity CE Original Text' of 'Allergy Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE_ORIGINAL_TEXT = 297;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_ORIGINAL_TEXT = 297;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Allergy Observation Participant Allergy Observation Participant Role Allergy Observation Playing Entity Original Text Reference' of 'Allergy Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Playing Entity CE Translation' of 'Allergy Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_ALLERGY_OBSERVATION_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE = 298;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_TRANSLATION = 298;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Allergy Observation Participant Allergy Observation Participant Role Allergy Observation Playing Entity Reference Value' of 'Allergy Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Playing Entity Original Text Reference Value' of 'Allergy Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_ALLERGY_OBSERVATION_PLAYING_ENTITY_REFERENCE_VALUE = 299;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE_VALUE = 299;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Allergy Observation Participant Allergy Observation Participant Role Allergy Observation Playing Entity Original Text Reference Value' of 'Allergy Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Playing Entity Reference Value' of 'Allergy Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_ALLERGY_OBSERVATION_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE_VALUE = 300;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_REFERENCE_VALUE = 300;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Allergy Observation Participant Allergy Observation Participant Role Allergy Observation Playing Entity Code Translation' of 'Allergy Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Playing Entity Original Text Reference' of 'Allergy Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE_TRANSLATION = 301;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE = 301;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Allergy Observation Participant Allergy Observation Participant Role Allergy Observation Playing Entity Class Code' of 'Allergy Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Playing Entity Class Code' of 'Allergy Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CLASS_CODE = 302;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CLASS_CODE = 302;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Allergy Observation Participant Allergy Observation Participant Role Allergy Observation Playing Entity Code' of 'Allergy Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Playing Entity Code' of 'Allergy Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE = 303;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE = 303;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Allergy Observation Participant Allergy Observation Participant Role Class Code' of 'Allergy Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Class Code' of 'Allergy Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_CLASS_CODE = 304;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE = 304;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Allergy Observation Participant Allergy Observation Participant Role Playing Entity' of 'Allergy Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role Playing Entity' of 'Allergy Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_PLAYING_ENTITY = 305;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY = 305;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Allergy Observation Participant Type Code' of 'Allergy Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Type Code' of 'Allergy Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_TYPE_CODE = 306;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_TYPE_CODE = 306;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Allergy Observation Participant Participant Role' of 'Allergy Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Allergy Observation Participant Participant Role' of 'Allergy Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE = 307;
+	public static final int ALLERGY_OBSERVATION__ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE = 307;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reaction Observation Text Reference' of 'Reaction Observation'.
@@ -17923,12 +17923,244 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int OBSERVER_CONTEXT__OBSERVER_CONTEXT_ASSIGNED_AUTHOR = 2236;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Allergy Status Inversion Indicator' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_ALLERGY_STATUS_INVERSION_INDICATOR = 2237;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Reaction Inversion Indicator' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_REACTION_INVERSION_INDICATOR = 2238;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Severity Inversion Indicator' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_SEVERITY_INVERSION_INDICATOR = 2239;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Template Id' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_TEMPLATE_ID = 2240;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Class Code' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_CLASS_CODE = 2241;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Mood Code' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_MOOD_CODE = 2242;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Id' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_ID = 2243;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Code P' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_CODE_P = 2244;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Code' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_CODE = 2245;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Status Code' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_STATUS_CODE = 2246;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Status Code P' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_STATUS_CODE_P = 2247;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Effective Time' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_EFFECTIVE_TIME = 2248;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Value' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE = 2249;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Value P' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE_P = 2250;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Allergy Status Observation' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_ALLERGY_STATUS_OBSERVATION = 2251;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Reaction Observation' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_REACTION_OBSERVATION = 2252;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Severity Observation' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION = 2253;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT = 2254;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity CE Original Text' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_ORIGINAL_TEXT = 2255;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity CE Translation' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_TRANSLATION = 2256;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Original Text Reference Value' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE_VALUE = 2257;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Reference Value' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_REFERENCE_VALUE = 2258;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Original Text Reference' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE = 2259;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Class Code' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CLASS_CODE = 2260;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Code' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE = 2261;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Class Code' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE = 2262;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY = 2263;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Type Code' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_TYPE_CODE = 2264;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Substance Or Device Allergy Observation Participant Participant Role' of 'Substance Or Device Allergy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE = 2265;
+
+	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 2236;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 2265;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -18350,6 +18582,9 @@ public class ConsolValidator extends EObjectValidator {
 				return validateFetusSubjectContext((FetusSubjectContext) value, diagnostics, context);
 			case ConsolPackage.OBSERVER_CONTEXT:
 				return validateObserverContext((ObserverContext) value, diagnostics, context);
+			case ConsolPackage.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION:
+				return validateSubstanceOrDeviceAllergyObservation(
+					(SubstanceOrDeviceAllergyObservation) value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -22855,11 +23090,11 @@ public class ConsolValidator extends EObjectValidator {
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyObservation_validateAllergyObservationProblemEntryReactionObservationContainer(
+			result &= validateAllergyObservation_validateAllergyObservationReactionObservation(
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyObservation_validateAllergyObservationSeverity(
+			result &= validateAllergyObservation_validateAllergyObservationSeverityObservation(
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -22871,47 +23106,47 @@ public class ConsolValidator extends EObjectValidator {
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeOriginalText(
+			result &= validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference(
+			result &= validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue(
+			result &= validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue(
+			result &= validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTranslation(
+			result &= validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode(
+			result &= validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityClassCode(
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode(
+			result &= validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityCode(
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode(
+			result &= validateAllergyObservation_validateAllergyObservationParticipantParticipantRoleClassCode(
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity(
+			result &= validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntity(
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantTypeCode(
+			result &= validateAllergyObservation_validateAllergyObservationParticipantTypeCode(
 				allergyObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantParticipantRole(
+			result &= validateAllergyObservation_validateAllergyObservationParticipantParticipantRole(
 				allergyObservation, diagnostics, context);
 		}
 		return result;
@@ -23105,26 +23340,25 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateAllergyObservationProblemEntryReactionObservationContainer constraint of '<em>Allergy Observation</em>'.
+	 * Validates the validateAllergyObservationReactionObservation constraint of '<em>Allergy Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservation_validateAllergyObservationProblemEntryReactionObservationContainer(
+	public boolean validateAllergyObservation_validateAllergyObservationReactionObservation(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyObservation.validateAllergyObservationProblemEntryReactionObservationContainer(
-			diagnostics, context);
+		return allergyObservation.validateAllergyObservationReactionObservation(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateAllergyObservationSeverity constraint of '<em>Allergy Observation</em>'.
+	 * Validates the validateAllergyObservationSeverityObservation constraint of '<em>Allergy Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservation_validateAllergyObservationSeverity(AllergyObservation allergyObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyObservation.validateAllergyObservationSeverity(diagnostics, context);
+	public boolean validateAllergyObservation_validateAllergyObservationSeverityObservation(
+			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return allergyObservation.validateAllergyObservationSeverityObservation(diagnostics, context);
 	}
 
 	/**
@@ -23150,134 +23384,132 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeOriginalText constraint of '<em>Allergy Observation</em>'.
+	 * Validates the validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText constraint of '<em>Allergy Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeOriginalText(
+	public boolean validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyObservation.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeOriginalText(
+		return allergyObservation.validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference constraint of '<em>Allergy Observation</em>'.
+	 * Validates the validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation constraint of '<em>Allergy Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference(
+	public boolean validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyObservation.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference(
+		return allergyObservation.validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue constraint of '<em>Allergy Observation</em>'.
+	 * Validates the validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue constraint of '<em>Allergy Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue(
+	public boolean validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyObservation.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue(
+		return allergyObservation.validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue constraint of '<em>Allergy Observation</em>'.
+	 * Validates the validateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue constraint of '<em>Allergy Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue(
+	public boolean validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyObservation.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue(
+		return allergyObservation.validateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTranslation constraint of '<em>Allergy Observation</em>'.
+	 * Validates the validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference constraint of '<em>Allergy Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTranslation(
+	public boolean validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyObservation.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTranslation(
+		return allergyObservation.validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode constraint of '<em>Allergy Observation</em>'.
+	 * Validates the validateAllergyObservationParticipantParticipantRolePlayingEntityClassCode constraint of '<em>Allergy Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode(
+	public boolean validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityClassCode(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyObservation.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode(
+		return allergyObservation.validateAllergyObservationParticipantParticipantRolePlayingEntityClassCode(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode constraint of '<em>Allergy Observation</em>'.
+	 * Validates the validateAllergyObservationParticipantParticipantRolePlayingEntityCode constraint of '<em>Allergy Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode(
+	public boolean validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntityCode(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyObservation.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode(
+		return allergyObservation.validateAllergyObservationParticipantParticipantRolePlayingEntityCode(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode constraint of '<em>Allergy Observation</em>'.
+	 * Validates the validateAllergyObservationParticipantParticipantRoleClassCode constraint of '<em>Allergy Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode(
+	public boolean validateAllergyObservation_validateAllergyObservationParticipantParticipantRoleClassCode(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyObservation.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode(
+		return allergyObservation.validateAllergyObservationParticipantParticipantRoleClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAllergyObservationParticipantParticipantRolePlayingEntity constraint of '<em>Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservation_validateAllergyObservationParticipantParticipantRolePlayingEntity(
+			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return allergyObservation.validateAllergyObservationParticipantParticipantRolePlayingEntity(
 			diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity constraint of '<em>Allergy Observation</em>'.
+	 * Validates the validateAllergyObservationParticipantTypeCode constraint of '<em>Allergy Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity(
+	public boolean validateAllergyObservation_validateAllergyObservationParticipantTypeCode(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyObservation.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity(
-			diagnostics, context);
+		return allergyObservation.validateAllergyObservationParticipantTypeCode(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateAllergyObservationAllergyObservationParticipantTypeCode constraint of '<em>Allergy Observation</em>'.
+	 * Validates the validateAllergyObservationParticipantParticipantRole constraint of '<em>Allergy Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantTypeCode(
+	public boolean validateAllergyObservation_validateAllergyObservationParticipantParticipantRole(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyObservation.validateAllergyObservationAllergyObservationParticipantTypeCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateAllergyObservationAllergyObservationParticipantParticipantRole constraint of '<em>Allergy Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateAllergyObservation_validateAllergyObservationAllergyObservationParticipantParticipantRole(
-			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergyObservation.validateAllergyObservationAllergyObservationParticipantParticipantRole(
-			diagnostics, context);
+		return allergyObservation.validateAllergyObservationParticipantParticipantRole(diagnostics, context);
 	}
 
 	/**
@@ -68575,6 +68807,530 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateObserverContext_validateObserverContextAssignedAuthor(ObserverContext observerContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return observerContext.validateObserverContextAssignedAuthor(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(substanceOrDeviceAllergyObservation, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(substanceOrDeviceAllergyObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationReactionInversionIndicator(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationSeverityInversionIndicator(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationTemplateId(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationClassCode(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationMoodCode(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationId(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationCodeP(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationCode(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationStatusCode(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationStatusCodeP(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationEffectiveTime(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationValue(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationValueP(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationAllergyStatusObservation(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationReactionObservation(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationSeverityObservation(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipant(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityClassCode(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRoleClassCode(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantTypeCode(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRole(
+				substanceOrDeviceAllergyObservation, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationReactionInversionIndicator constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationReactionInversionIndicator(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationReactionInversionIndicator(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationSeverityInversionIndicator constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationSeverityInversionIndicator(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationSeverityInversionIndicator(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationTemplateId constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationTemplateId(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationTemplateId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationClassCode constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationClassCode(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationClassCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationMoodCode constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationMoodCode(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationMoodCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationId constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationId(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationCodeP constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationCodeP(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationCodeP(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationCode constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationCode(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationStatusCode constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationStatusCode(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationStatusCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationStatusCodeP constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationStatusCodeP(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationStatusCodeP(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationEffectiveTime constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationEffectiveTime(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationEffectiveTime(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationValue constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationValue(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationValue(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationValueP constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationValueP(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationValueP(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationAllergyStatusObservation constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationAllergyStatusObservation(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationAllergyStatusObservation(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationReactionObservation constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationReactionObservation(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationReactionObservation(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationSeverityObservation constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationSeverityObservation(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationSeverityObservation(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationParticipant constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipant(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationParticipant(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityClassCode constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityClassCode(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityClassCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationParticipantParticipantRoleClassCode constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRoleClassCode(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRoleClassCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationParticipantTypeCode constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantTypeCode(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationParticipantTypeCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSubstanceOrDeviceAllergyObservationParticipantParticipantRole constraint of '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation_validateSubstanceOrDeviceAllergyObservationParticipantParticipantRole(
+			SubstanceOrDeviceAllergyObservation substanceOrDeviceAllergyObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return substanceOrDeviceAllergyObservation.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRole(
+			diagnostics, context);
 	}
 
 	/**

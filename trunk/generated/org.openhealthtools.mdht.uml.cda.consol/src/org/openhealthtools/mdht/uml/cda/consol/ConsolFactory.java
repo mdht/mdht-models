@@ -1362,6 +1362,15 @@ public interface ConsolFactory extends EFactory {
 	ObserverContext createObserverContext();
 
 	/**
+	 * Returns a new object of class '<em>Substance Or Device Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Substance Or Device Allergy Observation</em>'.
+	 * @generated
+	 */
+	SubstanceOrDeviceAllergyObservation createSubstanceOrDeviceAllergyObservation();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

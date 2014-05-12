@@ -1084,6 +1084,13 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass substanceOrDeviceAllergyObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicationsAdministeredSectionEClass = null;
 
 	/**
@@ -3204,6 +3211,19 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				165);
 		}
 		return observerContextEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSubstanceOrDeviceAllergyObservation() {
+		if (substanceOrDeviceAllergyObservationEClass == null) {
+			substanceOrDeviceAllergyObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(166);
+		}
+		return substanceOrDeviceAllergyObservationEClass;
 	}
 
 	/**
