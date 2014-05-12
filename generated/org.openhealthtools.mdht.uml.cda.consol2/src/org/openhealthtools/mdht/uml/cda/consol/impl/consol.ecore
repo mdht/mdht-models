@@ -3049,9 +3049,9 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AllergyObservation" eSuperTypes="#//SubstanceOrDeviceAllergyObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="SubstanceOrDeviceAllergyObservationTemplateId AllergyObservationReferenceValue AllergyObservationAllergyStatusInversionIndicator AllergyObservationReactionInversionIndicator AllergyObservationSeverityInversionIndicator AllergyObservationAllergyPlayingEntityCodeSystems AllergyObservationClassCode AllergyObservationMoodCode AllergyObservationId AllergyObservationCode AllergyObservationCodeP AllergyObservationStatusCode AllergyObservationEffectiveTime AllergyObservationValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity AllergyObservationAllergyObservationParticipantTypeCode AllergyObservationAllergyObservationParticipantParticipantRole"/>
+      <details key="constraints.validation.error" value="SubstanceOrDeviceAllergyObservationTemplateId AllergyObservationReferenceValue AllergyObservationAllergyStatusInversionIndicator AllergyObservationReactionInversionIndicator AllergyObservationSeverityInversionIndicator AllergyObservationAllergyPlayingEntityCodeSystems AllergyObservationClassCode AllergyObservationMoodCode AllergyObservationId AllergyObservationCode AllergyObservationCodeP AllergyObservationStatusCode AllergyObservationEffectiveTime AllergyObservationValue AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityClassCode AllergyObservationParticipantParticipantRolePlayingEntityCode AllergyObservationParticipantParticipantRoleClassCode AllergyObservationParticipantParticipantRolePlayingEntity AllergyObservationParticipantTypeCode AllergyObservationParticipantParticipantRole"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.7"/>
-      <details key="constraints.validation.warning" value="AllergyObservationValueOriginalText AllergyObservationOriginalTextReference AllergyObservationOriginalTextReferenceValue AllergyObservationProblemEntryReactionObservationContainer AllergyObservationParticipant AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCEOriginalText AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference"/>
+      <details key="constraints.validation.warning" value="AllergyObservationValueOriginalText AllergyObservationOriginalTextReference AllergyObservationOriginalTextReferenceValue AllergyObservationReactionObservation AllergyObservationParticipant AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText AllergyObservationParticipantParticipantRolePlayingEntityReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
       <details key="code.code" value="ASSERTION"/>
@@ -3061,27 +3061,27 @@
       <details key="statusCode.code" value="completed"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="value.codeSystemName" value="SNOMEDCT"/>
-      <details key="constraints.validation.info" value="AllergyObservationSeverity AllergyObservationAllergyStatusObservation AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCETranslation"/>
-      <details key="constraints.validation.query" value="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCEOriginalText AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCETranslation AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity AllergyObservationAllergyObservationParticipantTypeCode AllergyObservationAllergyObservationParticipantParticipantRole"/>
+      <details key="constraints.validation.info" value="AllergyObservationSeverityObservation AllergyObservationAllergyStatusObservation AllergyObservationParticipantParticipantRolePlayingEntityCETranslation"/>
+      <details key="constraints.validation.query" value="AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText AllergyObservationParticipantParticipantRolePlayingEntityCETranslation AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference AllergyObservationParticipantParticipantRolePlayingEntityClassCode AllergyObservationParticipantParticipantRolePlayingEntityCode AllergyObservationParticipantParticipantRoleClassCode AllergyObservationParticipantParticipantRolePlayingEntity AllergyObservationParticipantTypeCode AllergyObservationParticipantParticipantRole"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationAllergyObservationParticipant">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationParticipant">
       <details key="typeCode" value="CSM"/>
-      <details key="constraints.validation.error" value="AllergyObservationAllergyObservationParticipantTypeCode AllergyObservationAllergyObservationParticipantParticipantRole"/>
+      <details key="constraints.validation.error" value="AllergyObservationParticipantTypeCode AllergyObservationParticipantParticipantRole"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRole">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationParticipantParticipantRole">
       <details key="classCode" value="MANU"/>
-      <details key="constraints.validation.error" value="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity"/>
+      <details key="constraints.validation.error" value="AllergyObservationParticipantParticipantRoleClassCode AllergyObservationParticipantParticipantRolePlayingEntity"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntity">
-      <details key="constraints.validation.error" value="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode"/>
-      <details key="constraints.validation.warning" value="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCEOriginalText"/>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationParticipantParticipantRolePlayingEntity">
+      <details key="constraints.validation.error" value="AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityClassCode AllergyObservationParticipantParticipantRolePlayingEntityCode"/>
+      <details key="constraints.validation.warning" value="AllergyObservationParticipantParticipantRolePlayingEntityReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText"/>
       <details key="classCode" value="MMAT"/>
-      <details key="constraints.validation.query" value="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCEOriginalText AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCETranslation"/>
-      <details key="constraints.validation.info" value="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCETranslation"/>
+      <details key="constraints.validation.query" value="AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText AllergyObservationParticipantParticipantRolePlayingEntityCETranslation"/>
+      <details key="constraints.validation.info" value="AllergyObservationParticipantParticipantRolePlayingEntityCETranslation"/>
     </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCE">
-      <details key="constraints.validation.warning" value="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCEOriginalText"/>
-      <details key="constraints.validation.info" value="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCETranslation"/>
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationParticipantParticipantRolePlayingEntityCE">
+      <details key="constraints.validation.warning" value="AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText"/>
+      <details key="constraints.validation.info" value="AllergyObservationParticipantParticipantRolePlayingEntityCETranslation"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="SubstanceOrDeviceAllergyObservationTemplateId"
@@ -3243,8 +3243,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservationProblemEntryReactionObservationContainer"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AllergyObservationReactionObservation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -3253,7 +3252,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservationSeverity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AllergyObservationSeverityObservation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -3280,7 +3279,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCEOriginalText"
+    <eOperations name="AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -3290,7 +3289,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCETranslation"
+    <eOperations name="AllergyObservationParticipantParticipantRolePlayingEntityCETranslation"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -3300,7 +3299,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue"
+    <eOperations name="AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -3310,7 +3309,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue"
+    <eOperations name="AllergyObservationParticipantParticipantRolePlayingEntityReferenceValue"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -3320,7 +3319,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference"
+    <eOperations name="AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -3330,7 +3329,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode"
+    <eOperations name="AllergyObservationParticipantParticipantRolePlayingEntityClassCode"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -3340,7 +3339,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode"
+    <eOperations name="AllergyObservationParticipantParticipantRolePlayingEntityCode"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -3350,7 +3349,16 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode"
+    <eOperations name="AllergyObservationParticipantParticipantRoleClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="AllergyObservationParticipantParticipantRolePlayingEntity"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -3360,8 +3368,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AllergyObservationParticipantTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -3370,7 +3377,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservationAllergyObservationParticipantTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AllergyObservationParticipantParticipantRole" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -3379,19 +3386,10 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservationAllergyObservationParticipantParticipantRole"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="getProblemEntryReactionObservationContainers" ordered="false"
-        lowerBound="1" upperBound="-1" eType="#//ReactionObservation"/>
-    <eOperations name="getSeverity" ordered="false" lowerBound="1" eType="#//SeverityObservation"/>
+    <eOperations name="getConsolReactionObservations" ordered="false" lowerBound="1"
+        upperBound="-1" eType="#//ReactionObservation"/>
+    <eOperations name="getConsolSeverityObservation" ordered="false" lowerBound="1"
+        eType="#//SeverityObservation"/>
     <eOperations name="getConsolAllergyStatusObservation" ordered="false" lowerBound="1"
         eType="#//AllergyStatusObservation"/>
   </eClassifiers>
@@ -32066,10 +32064,10 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AllergyObservation2" eSuperTypes="#//AllergyObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="SubstanceOrDeviceAllergyObservationTemplateId AllergyObservationCodeP AllergyObservationValue AllergyObservationValueP AllergyObservationEffectiveTime AllergyObservationParticipant AllergyObservation2EDTELValue AllergyObservation2IVLTSLow AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity AllergyObservation2AllergyObservationAllergyObservationParticipantTypeCode AllergyObservation2AllergyObservationAllergyObservationParticipantParticipantRole"/>
+      <details key="constraints.validation.error" value="SubstanceOrDeviceAllergyObservationTemplateId AllergyObservationCodeP AllergyObservationValue AllergyObservationValueP AllergyObservationEffectiveTime AllergyObservationParticipant AllergyObservation2EDTELValue AllergyObservation2IVLTSLow AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityClassCode AllergyObservationParticipantParticipantRolePlayingEntityCode AllergyObservationParticipantParticipantRoleClassCode AllergyObservationParticipantParticipantRolePlayingEntity AllergyObservation2AllergyObservationParticipantTypeCode AllergyObservation2AllergyObservationParticipantParticipantRole"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.7.2"/>
-      <details key="constraints.validation.info" value="AllergyObservation2NegationInd AllergyObservationCode AllergyObservation2IVLTSHigh AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCETranslation"/>
-      <details key="constraints.validation.warning" value="AllergyObservation2Text AllergyObservation2AuthorParticipation AllergyObservation2EDReference AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCEOriginalText AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference"/>
+      <details key="constraints.validation.info" value="AllergyObservation2NegationInd AllergyObservationCode AllergyObservation2IVLTSHigh AllergyObservationParticipantParticipantRolePlayingEntityCETranslation"/>
+      <details key="constraints.validation.warning" value="AllergyObservation2Text AllergyObservation2AuthorParticipation AllergyObservation2EDReference AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText AllergyObservationParticipantParticipantRolePlayingEntityReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference"/>
       <details key="code.code" value="ASSERTION"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.5.4"/>
       <details key="code.codeSystemName" value="HL7ActCode"/>
@@ -32077,7 +32075,7 @@
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="value.codeSystemName" value="SNOMEDCT"/>
       <details key="constraints.validation.dependOn.AllergyObservationValue" value="AllergyObservationValueP"/>
-      <details key="constraints.validation.query" value="AllergyObservation2EDTELValue AllergyObservation2EDReference AllergyObservation2IVLTSLow AllergyObservation2IVLTSHigh AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCEOriginalText AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCETranslation AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity AllergyObservation2AllergyObservationAllergyObservationParticipantTypeCode AllergyObservation2AllergyObservationAllergyObservationParticipantParticipantRole"/>
+      <details key="constraints.validation.query" value="AllergyObservation2EDTELValue AllergyObservation2EDReference AllergyObservation2IVLTSLow AllergyObservation2IVLTSHigh AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText AllergyObservationParticipantParticipantRolePlayingEntityCETranslation AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference AllergyObservationParticipantParticipantRolePlayingEntityClassCode AllergyObservationParticipantParticipantRolePlayingEntityCode AllergyObservationParticipantParticipantRoleClassCode AllergyObservationParticipantParticipantRolePlayingEntity AllergyObservation2AllergyObservationParticipantTypeCode AllergyObservation2AllergyObservationParticipantParticipantRole"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservation2ED">
       <details key="constraints.validation.warning" value="AllergyObservation2EDReference"/>
@@ -32154,9 +32152,9 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCEOriginalText"
+      <contents xsi:type="ecore:EOperation" name="AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCEOriginalText"/>
+        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
         <eParameters name="context">
           <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -32165,9 +32163,9 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCETranslation"
+      <contents xsi:type="ecore:EOperation" name="AllergyObservationParticipantParticipantRolePlayingEntityCETranslation"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCETranslation"/>
+        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntityCETranslation"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
         <eParameters name="context">
           <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -32176,9 +32174,9 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue"
+      <contents xsi:type="ecore:EOperation" name="AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue"/>
+        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
         <eParameters name="context">
           <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -32187,9 +32185,9 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue"
+      <contents xsi:type="ecore:EOperation" name="AllergyObservationParticipantParticipantRolePlayingEntityReferenceValue"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue"/>
+        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntityReferenceValue"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
         <eParameters name="context">
           <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -32198,9 +32196,9 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference"
+      <contents xsi:type="ecore:EOperation" name="AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference"/>
+        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
         <eParameters name="context">
           <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -32209,9 +32207,9 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode"
+      <contents xsi:type="ecore:EOperation" name="AllergyObservationParticipantParticipantRolePlayingEntityClassCode"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode"/>
+        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntityClassCode"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
         <eParameters name="context">
           <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -32220,9 +32218,9 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode"
+      <contents xsi:type="ecore:EOperation" name="AllergyObservationParticipantParticipantRolePlayingEntityCode"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode"/>
+        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntityCode"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
         <eParameters name="context">
           <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -32231,9 +32229,9 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode"
+      <contents xsi:type="ecore:EOperation" name="AllergyObservationParticipantParticipantRoleClassCode"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode"/>
+        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationParticipantParticipantRoleClassCode"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
         <eParameters name="context">
           <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -32242,9 +32240,9 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity"
+      <contents xsi:type="ecore:EOperation" name="AllergyObservationParticipantParticipantRolePlayingEntity"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity"/>
+        <eAnnotations source="redefines" references="#//AllergyObservation/AllergyObservationParticipantParticipantRolePlayingEntity"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
         <eParameters name="context">
           <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -32362,8 +32360,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservation2AllergyObservationAllergyObservationParticipantTypeCode"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AllergyObservation2AllergyObservationParticipantTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -32372,7 +32369,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservation2AllergyObservationAllergyObservationParticipantParticipantRole"
+    <eOperations name="AllergyObservation2AllergyObservationParticipantParticipantRole"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
