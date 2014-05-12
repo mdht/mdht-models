@@ -907,13 +907,13 @@ public class AllergyObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
-	public void testValidateAllergyObservationProblemEntryReactionObservationContainer() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationProblemEntryReactionObservationContainerTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationProblemEntryReactionObservationContainer",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAllergyObservationReactionObservation() {
+		OperationsTestCase<AllergyObservation> validateAllergyObservationReactionObservationTestCase = new OperationsTestCase<AllergyObservation>(
+			"validateAllergyObservationReactionObservation",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -935,13 +935,52 @@ public class AllergyObservationTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AllergyObservationOperations.validateAllergyObservationProblemEntryReactionObservationContainer(
+				return AllergyObservationOperations.validateAllergyObservationReactionObservation(
 					(AllergyObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAllergyObservationProblemEntryReactionObservationContainerTestCase.doValidationTest();
+		validateAllergyObservationReactionObservationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT 
+	*/
+	@Test
+	public void testValidateAllergyObservationSeverityObservation() {
+		OperationsTestCase<AllergyObservation> validateAllergyObservationSeverityObservationTestCase = new OperationsTestCase<AllergyObservation>(
+			"validateAllergyObservationSeverityObservation",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergyObservation target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(AllergyObservation target) {
+				target.init();
+				SeverityObservation observation = ConsolFactory.eINSTANCE.createSeverityObservation().init();
+				target.addObservation(observation);
+				for (org.openhealthtools.mdht.uml.cda.EntryRelationship er : target.getEntryRelationships()) {
+					er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
+				}
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyObservationOperations.validateAllergyObservationSeverityObservation(
+					(AllergyObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyObservationSeverityObservationTestCase.doValidationTest();
 	}
 
 	// /**
@@ -983,45 +1022,6 @@ public class AllergyObservationTest extends CDAValidationTest {
 	//
 	// validateAllergyObservationProblemEntryReactionObservationContainerTestCase.doValidationTest();
 	// }
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAllergyObservationSeverity() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationSeverityTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationSeverity",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyObservation target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(AllergyObservation target) {
-				target.init();
-				SeverityObservation observation = ConsolFactory.eINSTANCE.createSeverityObservation().init();
-				target.addObservation(observation);
-				for (org.openhealthtools.mdht.uml.cda.EntryRelationship er : target.getEntryRelationships()) {
-					er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				}
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyObservationOperations.validateAllergyObservationSeverity(
-					(AllergyObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyObservationSeverityTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -1101,10 +1101,10 @@ public class AllergyObservationTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCEOriginalText() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCEOriginalTextTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCEOriginalText",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText() {
+		OperationsTestCase<AllergyObservation> validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalTextTestCase = new OperationsTestCase<AllergyObservation>(
+			"validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1124,6 +1124,7 @@ public class AllergyObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AllergyObservation target) {
 				target.getParticipants().clear();
+
 				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
 				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
 				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
@@ -1134,19 +1135,18 @@ public class AllergyObservationTest extends CDAValidationTest {
 				pr.setPlayingEntity(pe);
 				par.setParticipantRole(pr);
 				target.getParticipants().add(par);
-
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCEOriginalText(
+				return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(
 					(AllergyObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCEOriginalTextTestCase.doValidationTest();
+		validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalTextTestCase.doValidationTest();
 	}
 
 	/**
@@ -1154,10 +1154,10 @@ public class AllergyObservationTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCETranslation() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCETranslationTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCETranslation",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation() {
+		OperationsTestCase<AllergyObservation> validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslationTestCase = new OperationsTestCase<AllergyObservation>(
+			"validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1193,139 +1193,24 @@ public class AllergyObservationTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCETranslation(
+				return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(
 					(AllergyObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCETranslationTestCase.doValidationTest();
+		validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslationTestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
-	public void testValidateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_ALLERGY_OBSERVATION_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyObservation target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-
-				CE code = DatatypesFactory.eINSTANCE.createCE();
-				ED ot = DatatypesFactory.eINSTANCE.createED();
-				code.setOriginalText(ot);
-				pe.setCode(code);
-				pr.setPlayingEntity(pe);
-				par.setParticipantRole(pr);
-				target.getParticipants().add(par);
-			}
-
-			@Override
-			protected void updateToPass(AllergyObservation target) {
-				target.getParticipants().clear();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-
-				CE code = DatatypesFactory.eINSTANCE.createCE();
-				ED ot = DatatypesFactory.eINSTANCE.createED();
-				ot.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				code.setOriginalText(ot);
-				pe.setCode(code);
-				pr.setPlayingEntity(pe);
-				par.setParticipantRole(pr);
-				target.getParticipants().add(par);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference(
-					(AllergyObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValueTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_ALLERGY_OBSERVATION_PLAYING_ENTITY_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyObservation target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-
-				CE code = DatatypesFactory.eINSTANCE.createCE();
-				ED ot = DatatypesFactory.eINSTANCE.createED();
-				ot.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				code.setOriginalText(ot);
-				pe.setCode(code);
-				pr.setPlayingEntity(pe);
-				par.setParticipantRole(pr);
-				target.getParticipants().add(par);
-			}
-
-			@Override
-			protected void updateToPass(AllergyObservation target) {
-				target.getParticipants().clear();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-
-				CE code = DatatypesFactory.eINSTANCE.createCE();
-				ED ot = DatatypesFactory.eINSTANCE.createED();
-				ot.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
-				code.setOriginalText(ot);
-				pe.setCode(code);
-				pr.setPlayingEntity(pe);
-				par.setParticipantRole(pr);
-				target.getParticipants().add(par);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue(
-					(AllergyObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValueTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValueTestCase = new NarrativeReferenceTestCase<AllergyObservation>(
-			"validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_ALLERGY_OBSERVATION_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue() {
+		OperationsTestCase<AllergyObservation> validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValueTestCase = new NarrativeReferenceTestCase<AllergyObservation>(
+			"validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1364,24 +1249,138 @@ public class AllergyObservationTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue(
+				return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
 					(AllergyObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValueTestCase.doValidationTest();
+		validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValueTestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
-	public void testValidateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCodeTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue() {
+		OperationsTestCase<AllergyObservation> validateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValueTestCase = new OperationsTestCase<AllergyObservation>(
+			"validateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergyObservation target) {
+				target.init();
+				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
+
+				CE code = DatatypesFactory.eINSTANCE.createCE();
+				ED ot = DatatypesFactory.eINSTANCE.createED();
+				ot.setReference(DatatypesFactory.eINSTANCE.createTEL());
+				code.setOriginalText(ot);
+				pe.setCode(code);
+				pr.setPlayingEntity(pe);
+				par.setParticipantRole(pr);
+				target.getParticipants().add(par);
+			}
+
+			@Override
+			protected void updateToPass(AllergyObservation target) {
+				target.getParticipants().clear();
+				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
+
+				CE code = DatatypesFactory.eINSTANCE.createCE();
+				ED ot = DatatypesFactory.eINSTANCE.createED();
+				ot.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
+				code.setOriginalText(ot);
+				pe.setCode(code);
+				pr.setPlayingEntity(pe);
+				par.setParticipantRole(pr);
+				target.getParticipants().add(par);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(
+					(AllergyObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference() {
+		OperationsTestCase<AllergyObservation> validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceTestCase = new OperationsTestCase<AllergyObservation>(
+			"validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergyObservation target) {
+				target.init();
+				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
+
+				CE code = DatatypesFactory.eINSTANCE.createCE();
+				ED ot = DatatypesFactory.eINSTANCE.createED();
+				code.setOriginalText(ot);
+				pe.setCode(code);
+				pr.setPlayingEntity(pe);
+				par.setParticipantRole(pr);
+				target.getParticipants().add(par);
+			}
+
+			@Override
+			protected void updateToPass(AllergyObservation target) {
+				target.getParticipants().clear();
+				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
+
+				CE code = DatatypesFactory.eINSTANCE.createCE();
+				ED ot = DatatypesFactory.eINSTANCE.createED();
+				ot.setReference(DatatypesFactory.eINSTANCE.createTEL());
+				code.setOriginalText(ot);
+				pe.setCode(code);
+				pr.setPlayingEntity(pe);
+				par.setParticipantRole(pr);
+				target.getParticipants().add(par);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
+					(AllergyObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityClassCode() {
+		OperationsTestCase<AllergyObservation> validateAllergyObservationParticipantParticipantRolePlayingEntityClassCodeTestCase = new OperationsTestCase<AllergyObservation>(
+			"validateAllergyObservationParticipantParticipantRolePlayingEntityClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1416,24 +1415,24 @@ public class AllergyObservationTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode(
+				return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntityClassCode(
 					(AllergyObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCodeTestCase.doValidationTest();
+		validateAllergyObservationParticipantParticipantRolePlayingEntityClassCodeTestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
-	public void testValidateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_ALLERGY_OBSERVATION_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityCode() {
+		OperationsTestCase<AllergyObservation> validateAllergyObservationParticipantParticipantRolePlayingEntityCodeTestCase = new OperationsTestCase<AllergyObservation>(
+			"validateAllergyObservationParticipantParticipantRolePlayingEntityCode",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1466,70 +1465,60 @@ public class AllergyObservationTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode(
+				return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntityCode(
 					(AllergyObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTestCase.doValidationTest();
+		validateAllergyObservationParticipantParticipantRolePlayingEntityCodeTestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
-	public void testValidateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCodeTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAllergyObservationParticipantParticipantRoleClassCode() {
+		OperationsTestCase<AllergyObservation> validateAllergyObservationParticipantParticipantRoleClassCodeTestCase = new OperationsTestCase<AllergyObservation>(
+			"validateAllergyObservationParticipantParticipantRoleClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AllergyObservation target) {
 				target.init();
 				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-
-				par.setParticipantRole(pr);
+				par.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
 				target.getParticipants().add(par);
 			}
 
 			@Override
 			protected void updateToPass(AllergyObservation target) {
-				target.getParticipants().clear();
-
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				pr.setClassCode(RoleClassRoot.MANU);
-
-				par.setParticipantRole(pr);
-				target.getParticipants().add(par);
-
+				target.getParticipants().get(0).getParticipantRole().setClassCode(RoleClassRoot.MANU);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode(
+				return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRoleClassCode(
 					(AllergyObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCodeTestCase.doValidationTest();
+		validateAllergyObservationParticipantParticipantRoleClassCodeTestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
-	public void testValidateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntityTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_ALLERGY_OBSERVATION_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntity() {
+		OperationsTestCase<AllergyObservation> validateAllergyObservationParticipantParticipantRolePlayingEntityTestCase = new OperationsTestCase<AllergyObservation>(
+			"validateAllergyObservationParticipantParticipantRolePlayingEntity",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1559,32 +1548,25 @@ public class AllergyObservationTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity(
+				return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntity(
 					(AllergyObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntityTestCase.doValidationTest();
+		validateAllergyObservationParticipantParticipantRolePlayingEntityTestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
-	public void testValidateAllergyObservationAllergyObservationParticipantTypeCode() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationAllergyObservationParticipantTypeCodeTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationAllergyObservationParticipantTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAllergyObservationParticipantTypeCode() {
+		OperationsTestCase<AllergyObservation> validateAllergyObservationParticipantTypeCodeTestCase = new OperationsTestCase<AllergyObservation>(
+			"validateAllergyObservationParticipantTypeCode",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantTypeCode(
-					(AllergyObservation) objectToTest, diagnostician, map);
-			}
 
 			@Override
 			protected void updateToFail(AllergyObservation target) {
@@ -1603,28 +1585,28 @@ public class AllergyObservationTest extends CDAValidationTest {
 
 			}
 
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyObservationOperations.validateAllergyObservationParticipantTypeCode(
+					(AllergyObservation) objectToTest, diagnostician, map);
+			}
+
 		};
 
-		validateAllergyObservationAllergyObservationParticipantTypeCodeTestCase.doValidationTest();
+		validateAllergyObservationParticipantTypeCodeTestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
-	public void testValidateAllergyObservationAllergyObservationParticipantParticipantRole() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationAllergyObservationParticipantParticipantRoleTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationAllergyObservationParticipantParticipantRole",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAllergyObservationParticipantParticipantRole() {
+		OperationsTestCase<AllergyObservation> validateAllergyObservationParticipantParticipantRoleTestCase = new OperationsTestCase<AllergyObservation>(
+			"validateAllergyObservationParticipantParticipantRole",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantParticipantRole(
-					(AllergyObservation) objectToTest, diagnostician, map);
-			}
 
 			@Override
 			protected void updateToFail(AllergyObservation target) {
@@ -1632,23 +1614,28 @@ public class AllergyObservationTest extends CDAValidationTest {
 				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
 
 				target.getParticipants().add(par);
-
 			}
 
 			@Override
 			protected void updateToPass(AllergyObservation target) {
 				target.getParticipants().clear();
-
 				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-
-				par.setParticipantRole(pr);
+				par.setTypeCode(ParticipationType.CSM);
 				target.getParticipants().add(par);
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+				par.setParticipantRole(pr);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRole(
+					(AllergyObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAllergyObservationAllergyObservationParticipantParticipantRoleTestCase.doValidationTest();
+		validateAllergyObservationParticipantParticipantRoleTestCase.doValidationTest();
 	}
 
 	/**
@@ -1656,10 +1643,10 @@ public class AllergyObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProblemEntryReactionObservationContainers() {
+	public void testGetConsolReactionObservations() {
 
 		AllergyObservation target = objectFactory.create();
-		target.getProblemEntryReactionObservationContainers();
+		target.getConsolReactionObservations();
 
 	}
 
@@ -1668,10 +1655,10 @@ public class AllergyObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetSeverity() {
+	public void testGetConsolSeverityObservation() {
 
 		AllergyObservation target = objectFactory.create();
-		target.getSeverity();
+		target.getConsolSeverityObservation();
 
 	}
 
