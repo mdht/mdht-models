@@ -84,7 +84,7 @@ import org.junit.runners.Suite;
 		DiagnosticImagingReportTest.class, PhysicianReadingStudyPerformerTest.class,
 		PhysicianofRecordParticipantTest.class, TextObservationTest.class, QuantityMeasurementObservationTest.class,
 		CodeObservationsTest.class, ProcedureContextTest.class, MedicationUseNoneKnownTest.class,
-		DeceasedObservationTest.class })
+		DeceasedObservationTest.class, SubstanceOrDeviceAllergyObservationTest.class })
 public class ConsolTests {
 
 	/**
