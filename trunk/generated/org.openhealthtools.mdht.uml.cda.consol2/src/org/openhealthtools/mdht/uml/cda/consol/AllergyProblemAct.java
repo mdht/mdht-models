@@ -163,7 +163,7 @@ public interface AllergyProblemAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject(code = \'CONC\' and codeSystem = \'2.16.840.1.113883.5.6\' xor code = \'48765-2\' and codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject((code = \'CONC\' and codeSystem = \'2.16.840.1.113883.5.6\') or (code = \'48765-2\' and codeSystem = \'2.16.840.1.113883.6.1\'))'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActCDCodeAndCodeSystemValues(DiagnosticChain diagnostics, Map<Object, Object> context);
