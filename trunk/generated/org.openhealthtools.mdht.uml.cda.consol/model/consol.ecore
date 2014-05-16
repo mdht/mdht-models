@@ -5745,7 +5745,7 @@
     </eOperations>
     <eOperations name="AllergyProblemActCDCodeAndCodeSystemValues" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.code->excluding(null)->select(isNullFlavorUndefined())->reject(code = 'CONC' and codeSystem = '2.16.840.1.113883.5.6' xor code = '48765-2' and codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="self.code->excluding(null)->select(isNullFlavorUndefined())->reject((code = 'CONC' and codeSystem = '2.16.840.1.113883.5.6') or (code = '48765-2' and codeSystem = '2.16.840.1.113883.6.1'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
