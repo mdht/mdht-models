@@ -490,7 +490,7 @@ historical purposes.&#xD;
           <language>Analysis</language>
           <language>OCL</language>
           <body>/@code SHALL=&quot;CONC&quot; Concern (CodeSystem: HL7ActClass 2.16.840.1.113883.5.6) or code/@code SHALL=&quot;48765-2&quot; Allergies, adverse reactions, alerts (CodeSystem: LOINC 2.16.840.1.113883.6.1 STATIC)</body>
-          <body>code = 'CONC' and codeSystem = '2.16.840.1.113883.5.6' xor code = '48765-2' and codeSystem = '2.16.840.1.113883.6.1'</body>
+          <body>(code = 'CONC' and codeSystem = '2.16.840.1.113883.5.6') or (code = '48765-2' and codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_3a3swcSzEeOJR7uiM6mfhA">
