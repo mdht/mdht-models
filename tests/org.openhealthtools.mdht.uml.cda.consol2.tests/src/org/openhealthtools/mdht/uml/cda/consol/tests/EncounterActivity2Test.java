@@ -111,7 +111,7 @@ public class EncounterActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateEncounterActivitiesSDTCDischargeDispositionCode() {
@@ -122,13 +122,14 @@ public class EncounterActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(EncounterActivity2 target) {
-
+				target.init();
+				target.getSDTCDischargeDispositionCodes().remove(1); // why are there two in init()?
 			}
 
 			@Override
 			protected void updateToPass(EncounterActivity2 target) {
-				target.init();
-
+				target.getSDTCDischargeDispositionCodes().get(0).setCode("hasACode");
+				target.getSDTCDischargeDispositionCodes().get(0).setCodeSystem("2.16.840.1.113883.12.112");
 			}
 
 			@Override
