@@ -77,7 +77,7 @@ public class AllergyObservation2Test extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
-	* This constraint is being overridden as it has been removed in v2 and should never fire
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
 	@Ignore

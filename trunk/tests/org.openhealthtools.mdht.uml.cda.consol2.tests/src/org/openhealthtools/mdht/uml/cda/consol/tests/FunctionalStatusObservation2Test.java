@@ -16,7 +16,9 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.junit.Ignore;
 import org.junit.Test;
+import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusObservation2Operations;
@@ -50,9 +52,11 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
 	*/
-	@Test
+	@Ignore
 	public void testValidateFunctionalStatusObservation2TextReference() {
 		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusObservation2TextReferenceTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
 			"validateFunctionalStatusObservation2TextReference",
@@ -84,9 +88,11 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
 	*/
-	@Test
+	@Ignore
 	public void testValidateFunctionalStatusObservation2TextReferenceValue() {
 		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusObservation2TextReferenceValueTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
 			"validateFunctionalStatusObservation2TextReferenceValue",
@@ -121,7 +127,7 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateFunctionalStatusObservation2AuthorParticipation() {
@@ -132,12 +138,12 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(FunctionalStatusObservation2 target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(FunctionalStatusObservation2 target) {
-				target.init();
+				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
 
 			}
 
@@ -155,9 +161,11 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
 	*/
-	@Test
+	@Ignore
 	public void testValidateFunctionalStatusObservation2ReferenceRangeObservationRangeNoCode() {
 		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusObservation2ReferenceRangeObservationRangeNoCodeTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
 			"validateFunctionalStatusObservation2ReferenceRangeObservationRangeNoCode",
@@ -257,7 +265,7 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateResultObservationCode() {
@@ -268,16 +276,15 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(FunctionalStatusObservation2 target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(FunctionalStatusObservation2 target) {
-				target.init();
-
 				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				cd.setCode("364644000");
+				cd.setCodeSystem(CDAValidationTest.SNOMEDCT_ID);
 				target.setCode(cd);
-
 			}
 
 			@Override
@@ -301,7 +308,7 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateFunctionalStatusResultObservationReferenceRange() {
@@ -312,13 +319,12 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(FunctionalStatusObservation2 target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(FunctionalStatusObservation2 target) {
-				target.init();
-
+				target.getReferenceRanges().add(CDAFactory.eINSTANCE.createReferenceRange());
 			}
 
 			@Override
