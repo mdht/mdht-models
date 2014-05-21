@@ -102,7 +102,9 @@ import org.junit.runners.Suite;
 		AdvanceDirectiveObservation2Test.class, AllergyConcernAct2Test.class, AllergyObservation2Test.class,
 		CognitiveStatusOrganizer2Test.class, CoverageActivity2Test.class, CurrentSmokingStatus2Test.class,
 		DeceasedObservation2Test.class, SubstanceOrDeviceAllergyObservationTest.class, DischargeMedication2Test.class,
-		EncounterActivity2Test.class, EncounterDiagnosis2Test.class, FunctionalStatusObservation2Test.class })
+		EncounterActivity2Test.class, EncounterDiagnosis2Test.class, FunctionalStatusObservation2Test.class,
+		FunctionalStatusOrganizer2Test.class, HealthStatusObservation2Test.class,
+		HospitalAdmissionDiagnosis2Test.class, HospitalDischargeDiagnosis2Test.class })
 public class ConsolTests {
 
 	/**
