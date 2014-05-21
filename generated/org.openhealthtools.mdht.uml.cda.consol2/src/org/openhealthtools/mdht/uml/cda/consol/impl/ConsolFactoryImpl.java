@@ -502,6 +502,14 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createEncounterDiagnosis2();
 			case ConsolPackage.FUNCTIONAL_STATUS_OBSERVATION2:
 				return createFunctionalStatusObservation2();
+			case ConsolPackage.FUNCTIONAL_STATUS_ORGANIZER2:
+				return createFunctionalStatusOrganizer2();
+			case ConsolPackage.HEALTH_STATUS_OBSERVATION2:
+				return createHealthStatusObservation2();
+			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS2:
+				return createHospitalAdmissionDiagnosis2();
+			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS2:
+				return createHospitalDischargeDiagnosis2();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2535,6 +2543,46 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public FunctionalStatusObservation2 createFunctionalStatusObservation2() {
 		FunctionalStatusObservation2Impl functionalStatusObservation2 = new FunctionalStatusObservation2Impl();
 		return functionalStatusObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FunctionalStatusOrganizer2 createFunctionalStatusOrganizer2() {
+		FunctionalStatusOrganizer2Impl functionalStatusOrganizer2 = new FunctionalStatusOrganizer2Impl();
+		return functionalStatusOrganizer2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HealthStatusObservation2 createHealthStatusObservation2() {
+		HealthStatusObservation2Impl healthStatusObservation2 = new HealthStatusObservation2Impl();
+		return healthStatusObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalAdmissionDiagnosis2 createHospitalAdmissionDiagnosis2() {
+		HospitalAdmissionDiagnosis2Impl hospitalAdmissionDiagnosis2 = new HospitalAdmissionDiagnosis2Impl();
+		return hospitalAdmissionDiagnosis2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalDischargeDiagnosis2 createHospitalDischargeDiagnosis2() {
+		HospitalDischargeDiagnosis2Impl hospitalDischargeDiagnosis2 = new HospitalDischargeDiagnosis2Impl();
+		return hospitalDischargeDiagnosis2;
 	}
 
 	/**
