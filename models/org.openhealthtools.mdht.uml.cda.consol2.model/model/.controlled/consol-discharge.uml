@@ -799,4 +799,27 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
   <CDA:PropertyValidation xmi:id="_2XxsQMyvEeO93sHu8pHB2g" base_Property="_0SZ7MMyvEeO93sHu8pHB2g">
     <ruleId>CONF:7691</ruleId>
   </CDA:PropertyValidation>
+  <uml:Class xmi:id="_Trd1cOEMEeOmBMTtnrPqww" name="HospitalDischargeDiagnosis2" clientDependency="_sVxMAOEMEeOmBMTtnrPqww">
+    <ownedComment xmi:id="_ao5hoOEMEeOmBMTtnrPqww">
+      <body>This template represents problems or diagnoses present at the time of discharge which occurred during the hospitalization or need to be monitored after hospitalization. It requires at least one Problem Observation entry.</body>
+    </ownedComment>
+    <generalization xmi:id="_Trd1ceEMEeOmBMTtnrPqww" general="_KtwVgCULEeGiOPpZVnfEJA"/>
+    <substitution xmi:id="_sVxMAOEMEeOmBMTtnrPqww" name="HospitalDischargeDiagnosis" supplier="_KtwVgCULEeGiOPpZVnfEJA" client="_Trd1cOEMEeOmBMTtnrPqww" contract="_KtwVgCULEeGiOPpZVnfEJA"/>
+    <ownedAttribute xmi:id="_Ly9LoOENEeOmBMTtnrPqww" name="code" visibility="private" aggregation="composite" redefinedProperty="_MwOjkCULEeGiOPpZVnfEJA">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_ex9owOEMEeOmBMTtnrPqww" base_Class="_Trd1cOEMEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.33.2">
+    <ruleId>CONF:16764</ruleId>
+    <ruleId>CONF:16765</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_oGRswOEMEeOmBMTtnrPqww" base_Generalization="_Trd1ceEMEeOmBMTtnrPqww"/>
+  <CDA:CodeSystemConstraint xmi:id="_Ly9LoeENEeOmBMTtnrPqww" code="11535-2" displayName="Hospital discharge diagnosis" base_Property="_Ly9LoOENEeOmBMTtnrPqww">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:19148</ruleId>
+    <ruleId>CONF:32163</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_M2LjMOENEeOmBMTtnrPqww" base_Property="_Ly9LoOENEeOmBMTtnrPqww">
+    <ruleId>CONF:19147</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

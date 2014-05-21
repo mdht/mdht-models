@@ -969,4 +969,27 @@ The effectiveTime represents the clinically relevant time of the observation. Th
     <ruleId>CONF:30768</ruleId>
     <ruleId>CONF:30769</ruleId>
   </CDA:AssociationValidation>
+  <uml:Class xmi:id="_DMvdYOEFEeOmBMTtnrPqww" name="HealthStatusObservation2" clientDependency="_ItZpkOEFEeOmBMTtnrPqww">
+    <ownedComment xmi:id="_3pdyAOEFEeOmBMTtnrPqww">
+      <body>This template represents  information about the overall health status of the patient. To represent the impact of a specific problem or concern related to the patient's expected health outcome use the Prognosis Observation Template 2.16.840.1.113883.10.20.22.4.113.</body>
+    </ownedComment>
+    <generalization xmi:id="_DMwEcOEFEeOmBMTtnrPqww" general="_2ExXsBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_ItZpkOEFEeOmBMTtnrPqww" name="HealthStatusObservation" supplier="_2ExXsBSVEeGGzu7fmW9pXw" client="_DMvdYOEFEeOmBMTtnrPqww" contract="_2ExXsBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_gszMgOEGEeOmBMTtnrPqww" name="code" visibility="private" redefinedProperty="_2E1CERSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:ConformsTo xmi:id="_JanU4OEFEeOmBMTtnrPqww" base_Generalization="_DMwEcOEFEeOmBMTtnrPqww"/>
+  <CDA:CDATemplate xmi:id="_QRxZ8OEFEeOmBMTtnrPqww" base_Class="_DMvdYOEFEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.5.2">
+    <ruleId>CONF:16756</ruleId>
+    <ruleId>CONF:16757</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_gszzkOEGEeOmBMTtnrPqww" code="11323-3" displayName="Health status" base_Property="_gszMgOEGEeOmBMTtnrPqww">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:19144</ruleId>
+    <ruleId>CONF:32161</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_ia8wYOEGEeOmBMTtnrPqww" base_Property="_gszMgOEGEeOmBMTtnrPqww">
+    <ruleId>CONF:19143</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
