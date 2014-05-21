@@ -4379,6 +4379,101 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.FUNCTIONAL_STATUS_ORGANIZER2: {
+				FunctionalStatusOrganizer2 functionalStatusOrganizer2 = (FunctionalStatusOrganizer2) theEObject;
+				T result = caseFunctionalStatusOrganizer2(functionalStatusOrganizer2);
+				if (result == null) {
+					result = caseFunctionalStatusResultOrganizer(functionalStatusOrganizer2);
+				}
+				if (result == null) {
+					result = caseResultOrganizer(functionalStatusOrganizer2);
+				}
+				if (result == null) {
+					result = caseOrganizer(functionalStatusOrganizer2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(functionalStatusOrganizer2);
+				}
+				if (result == null) {
+					result = caseAct(functionalStatusOrganizer2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(functionalStatusOrganizer2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HEALTH_STATUS_OBSERVATION2: {
+				HealthStatusObservation2 healthStatusObservation2 = (HealthStatusObservation2) theEObject;
+				T result = caseHealthStatusObservation2(healthStatusObservation2);
+				if (result == null) {
+					result = caseHealthStatusObservation(healthStatusObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(healthStatusObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(healthStatusObservation2);
+				}
+				if (result == null) {
+					result = caseAct(healthStatusObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(healthStatusObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS2: {
+				HospitalAdmissionDiagnosis2 hospitalAdmissionDiagnosis2 = (HospitalAdmissionDiagnosis2) theEObject;
+				T result = caseHospitalAdmissionDiagnosis2(hospitalAdmissionDiagnosis2);
+				if (result == null) {
+					result = caseHospitalAdmissionDiagnosis(hospitalAdmissionDiagnosis2);
+				}
+				if (result == null) {
+					result = caseCDA_Act(hospitalAdmissionDiagnosis2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(hospitalAdmissionDiagnosis2);
+				}
+				if (result == null) {
+					result = caseAct(hospitalAdmissionDiagnosis2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalAdmissionDiagnosis2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS2: {
+				HospitalDischargeDiagnosis2 hospitalDischargeDiagnosis2 = (HospitalDischargeDiagnosis2) theEObject;
+				T result = caseHospitalDischargeDiagnosis2(hospitalDischargeDiagnosis2);
+				if (result == null) {
+					result = caseHospitalDischargeDiagnosis(hospitalDischargeDiagnosis2);
+				}
+				if (result == null) {
+					result = caseCDA_Act(hospitalDischargeDiagnosis2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(hospitalDischargeDiagnosis2);
+				}
+				if (result == null) {
+					result = caseAct(hospitalDischargeDiagnosis2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalDischargeDiagnosis2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -7938,6 +8033,66 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseFunctionalStatusObservation2(FunctionalStatusObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Organizer2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Functional Status Organizer2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFunctionalStatusOrganizer2(FunctionalStatusOrganizer2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Health Status Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Health Status Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHealthStatusObservation2(HealthStatusObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Hospital Admission Diagnosis2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hospital Admission Diagnosis2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHospitalAdmissionDiagnosis2(HospitalAdmissionDiagnosis2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Hospital Discharge Diagnosis2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hospital Discharge Diagnosis2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHospitalDischargeDiagnosis2(HospitalDischargeDiagnosis2 object) {
 		return null;
 	}
 

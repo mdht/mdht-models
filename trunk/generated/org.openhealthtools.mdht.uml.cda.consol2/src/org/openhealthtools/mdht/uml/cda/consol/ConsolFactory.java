@@ -1857,6 +1857,42 @@ public interface ConsolFactory extends EFactory {
 	FunctionalStatusObservation2 createFunctionalStatusObservation2();
 
 	/**
+	 * Returns a new object of class '<em>Functional Status Organizer2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Functional Status Organizer2</em>'.
+	 * @generated
+	 */
+	FunctionalStatusOrganizer2 createFunctionalStatusOrganizer2();
+
+	/**
+	 * Returns a new object of class '<em>Health Status Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Health Status Observation2</em>'.
+	 * @generated
+	 */
+	HealthStatusObservation2 createHealthStatusObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Hospital Admission Diagnosis2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Admission Diagnosis2</em>'.
+	 * @generated
+	 */
+	HospitalAdmissionDiagnosis2 createHospitalAdmissionDiagnosis2();
+
+	/**
+	 * Returns a new object of class '<em>Hospital Discharge Diagnosis2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Discharge Diagnosis2</em>'.
+	 * @generated
+	 */
+	HospitalDischargeDiagnosis2 createHospitalDischargeDiagnosis2();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

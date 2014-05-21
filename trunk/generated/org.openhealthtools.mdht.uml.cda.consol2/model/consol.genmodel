@@ -12102,5 +12102,43 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusObservation2/FunctionalStatusObservation2ReferenceRangeObservationRangeNoCode/context"/>
       </genOperations>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//FunctionalStatusOrganizer2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusOrganizer2/FunctionalStatusOrganizer2CodeCodeSystem">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusOrganizer2/FunctionalStatusOrganizer2CodeCodeSystem/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusOrganizer2/FunctionalStatusOrganizer2CodeCodeSystem/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusOrganizer2/FunctionalStatusResultOrganizerFunctionalStatusObservation2">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusOrganizer2/FunctionalStatusResultOrganizerFunctionalStatusObservation2/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusOrganizer2/FunctionalStatusResultOrganizerFunctionalStatusObservation2/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusOrganizer2/FunctionalStatusOrganizer2SelfCareActivities">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusOrganizer2/FunctionalStatusOrganizer2SelfCareActivities/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusOrganizer2/FunctionalStatusOrganizer2SelfCareActivities/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusOrganizer2/FunctionalStatusOrganizer2AuthorParticipation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusOrganizer2/FunctionalStatusOrganizer2AuthorParticipation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusOrganizer2/FunctionalStatusOrganizer2AuthorParticipation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusOrganizer2/getConsolFunctionalStatusObservation2s"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusOrganizer2/getSelfCareActivitiess"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//HealthStatusObservation2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HealthStatusObservation2/HealthStatusObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation2/HealthStatusObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation2/HealthStatusObservationCodeP/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//HospitalAdmissionDiagnosis2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HospitalAdmissionDiagnosis2/HospitalAdmissionDiagnosisCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HospitalAdmissionDiagnosis2/HospitalAdmissionDiagnosisCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HospitalAdmissionDiagnosis2/HospitalAdmissionDiagnosisCodeP/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//HospitalDischargeDiagnosis2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HospitalDischargeDiagnosis2/HospitalDischargeDiagnosisCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HospitalDischargeDiagnosis2/HospitalDischargeDiagnosisCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HospitalDischargeDiagnosis2/HospitalDischargeDiagnosisCodeP/context"/>
+      </genOperations>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

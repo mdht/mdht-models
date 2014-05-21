@@ -1469,6 +1469,34 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass functionalStatusOrganizer2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass healthStatusObservation2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass hospitalAdmissionDiagnosis2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass hospitalDischargeDiagnosis2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicationsAdministeredSectionEClass = null;
 
 	/**
@@ -4304,6 +4332,58 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				220);
 		}
 		return functionalStatusObservation2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getFunctionalStatusOrganizer2() {
+		if (functionalStatusOrganizer2EClass == null) {
+			functionalStatusOrganizer2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				221);
+		}
+		return functionalStatusOrganizer2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHealthStatusObservation2() {
+		if (healthStatusObservation2EClass == null) {
+			healthStatusObservation2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				222);
+		}
+		return healthStatusObservation2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHospitalAdmissionDiagnosis2() {
+		if (hospitalAdmissionDiagnosis2EClass == null) {
+			hospitalAdmissionDiagnosis2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				223);
+		}
+		return hospitalAdmissionDiagnosis2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHospitalDischargeDiagnosis2() {
+		if (hospitalDischargeDiagnosis2EClass == null) {
+			hospitalDischargeDiagnosis2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				224);
+		}
+		return hospitalDischargeDiagnosis2EClass;
 	}
 
 	/**
