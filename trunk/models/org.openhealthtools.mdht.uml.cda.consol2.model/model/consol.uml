@@ -1695,6 +1695,13 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-allergies.uml#_CAWowNIdEeO-TcA3qYv-cw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-allergies.uml#_FB4qoNIeEeO-TcA3qYv-cw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-allergies.uml#_chjaENIeEeO-TcA3qYv-cw"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_yU2tgOD0EeOmBMTtnrPqww"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_MSrvMOD6EeOmBMTtnrPqww"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_vXYEMOD-EeOmBMTtnrPqww"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_xJoPgOD_EeOmBMTtnrPqww"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_DMvdYOEFEeOmBMTtnrPqww"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_GM6icOEIEeOmBMTtnrPqww"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-discharge.uml#_Trd1cOEMEeOmBMTtnrPqww"/>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
