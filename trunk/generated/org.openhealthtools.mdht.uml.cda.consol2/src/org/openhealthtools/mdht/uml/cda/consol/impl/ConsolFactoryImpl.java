@@ -510,6 +510,14 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createHospitalAdmissionDiagnosis2();
 			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS2:
 				return createHospitalDischargeDiagnosis2();
+			case ConsolPackage.IMMUNIZATION_ACTIVITY2:
+				return createImmunizationActivity2();
+			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION2:
+				return createImmunizationMedicationInformation2();
+			case ConsolPackage.INDICATION2:
+				return createIndication2();
+			case ConsolPackage.INSTRUCTION2:
+				return createInstruction2();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2583,6 +2591,46 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public HospitalDischargeDiagnosis2 createHospitalDischargeDiagnosis2() {
 		HospitalDischargeDiagnosis2Impl hospitalDischargeDiagnosis2 = new HospitalDischargeDiagnosis2Impl();
 		return hospitalDischargeDiagnosis2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ImmunizationActivity2 createImmunizationActivity2() {
+		ImmunizationActivity2Impl immunizationActivity2 = new ImmunizationActivity2Impl();
+		return immunizationActivity2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ImmunizationMedicationInformation2 createImmunizationMedicationInformation2() {
+		ImmunizationMedicationInformation2Impl immunizationMedicationInformation2 = new ImmunizationMedicationInformation2Impl();
+		return immunizationMedicationInformation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Indication2 createIndication2() {
+		Indication2Impl indication2 = new Indication2Impl();
+		return indication2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Instruction2 createInstruction2() {
+		Instruction2Impl instruction2 = new Instruction2Impl();
+		return instruction2;
 	}
 
 	/**

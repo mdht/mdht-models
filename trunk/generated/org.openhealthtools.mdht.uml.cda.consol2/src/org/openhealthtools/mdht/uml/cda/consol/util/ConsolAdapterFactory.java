@@ -1220,6 +1220,26 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseImmunizationActivity2(ImmunizationActivity2 object) {
+			return createImmunizationActivity2Adapter();
+		}
+
+		@Override
+		public Adapter caseImmunizationMedicationInformation2(ImmunizationMedicationInformation2 object) {
+			return createImmunizationMedicationInformation2Adapter();
+		}
+
+		@Override
+		public Adapter caseIndication2(Indication2 object) {
+			return createIndication2Adapter();
+		}
+
+		@Override
+		public Adapter caseInstruction2(Instruction2 object) {
+			return createInstruction2Adapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -4719,6 +4739,62 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createHospitalDischargeDiagnosis2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2 <em>Immunization Activity2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2
+	 * @generated
+	 */
+	public Adapter createImmunizationActivity2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation2 <em>Immunization Medication Information2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation2
+	 * @generated
+	 */
+	public Adapter createImmunizationMedicationInformation2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.Indication2 <em>Indication2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Indication2
+	 * @generated
+	 */
+	public Adapter createIndication2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.Instruction2 <em>Instruction2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.Instruction2
+	 * @generated
+	 */
+	public Adapter createInstruction2Adapter() {
 		return null;
 	}
 
