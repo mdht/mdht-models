@@ -1551,6 +1551,44 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
       <ownedLiteral xmi:id="_4nDdcLm6EeOgPNzo_e4B9A" name="428071000124103"/>
       <ownedLiteral xmi:id="_54GOkLm6EeOgPNzo_e4B9A" name="428061000124105"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_SdFiQOHGEeO04sHNODkHmQ" name="ActStatus">
+      <ownedComment xmi:id="_c94ngOHGEeO04sHNODkHmQ">
+        <body>Contains the names (codes) for each of the states in the state-machine of the RIM Act class.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_RpsEgOHIEeO04sHNODkHmQ" name="normal"/>
+      <ownedLiteral xmi:id="_YADwsOHIEeO04sHNODkHmQ" name="aborted"/>
+      <ownedLiteral xmi:id="_Y6LPkOHIEeO04sHNODkHmQ" name="active"/>
+      <ownedLiteral xmi:id="_adfccOHIEeO04sHNODkHmQ" name="cancelled"/>
+      <ownedLiteral xmi:id="_cPatEOHIEeO04sHNODkHmQ" name="completed"/>
+      <ownedLiteral xmi:id="_dVSwAOHIEeO04sHNODkHmQ" name="held"/>
+      <ownedLiteral xmi:id="_ek4IkOHIEeO04sHNODkHmQ" name="new"/>
+      <ownedLiteral xmi:id="_fY0uAOHIEeO04sHNODkHmQ" name="suspended"/>
+      <ownedLiteral xmi:id="_hDbOoOHIEeO04sHNODkHmQ" name="nullified"/>
+      <ownedLiteral xmi:id="_iiyIkOHIEeO04sHNODkHmQ" name="obsolete"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_maiLUOHKEeO04sHNODkHmQ" name="AdministrableDrugForm">
+      <ownedComment xmi:id="_u0sUMOHKEeO04sHNODkHmQ">
+        <body>Indicates the form in which the drug product should be administered.&#xD;
+Valueset Source: http://www.hl7.org/documentcenter/public/standards/vocabulary/vocabulary_tables/infrastructure/vocabulary/vocabulary.html</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_IzL2gOHLEeO04sHNODkHmQ" name="APPFUL"/>
+      <ownedLiteral xmi:id="_KXilMOHLEeO04sHNODkHmQ" name="DROP"/>
+      <ownedLiteral xmi:id="_3P5wgOHLEeO04sHNODkHmQ" name="NDROP"/>
+      <ownedLiteral xmi:id="_7Qi7cOHLEeO04sHNODkHmQ" name="OPDROP"/>
+      <ownedLiteral xmi:id="_9IAzYOHLEeO04sHNODkHmQ" name="ORDROP"/>
+      <ownedLiteral xmi:id="_AcbKcOHMEeO04sHNODkHmQ" name="OTDROP"/>
+      <ownedLiteral xmi:id="_7wHo0OHKEeO04sHNODkHmQ" name="PUFF"/>
+      <ownedLiteral xmi:id="_-MUlgOHKEeO04sHNODkHmQ" name="SCOOP"/>
+      <ownedLiteral xmi:id="__kKiMOHKEeO04sHNODkHmQ" name="SPRY"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_UMJcYOHXEeO04sHNODkHmQ" name="CVX Vaccines Administered - Vaccine Set">
+      <ownedComment xmi:id="_a1UIwOHXEeO04sHNODkHmQ">
+        <body>CVX vaccine concepts that represent actual vaccines types. This does not include the identifiers for CVX codes that do not represent vaccines. 
+Value set intensionally defined from CVX (OID: 2.16.840.1.113883.12.292) 
+FilterOnProperty(nonvaccine,FALSE).&#xD;
+Valueset Source: https://vsac.nlm.nih.gov/</body>
+      </ownedComment>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -2999,4 +3037,32 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_4nDdcbm6EeOgPNzo_e4B9A" conceptName="Heavy tobacco smoker" base_EnumerationLiteral="_4nDdcLm6EeOgPNzo_e4B9A"/>
   <term:ValueSetCode xmi:id="_54GOkbm6EeOgPNzo_e4B9A" conceptName="Light tobacco smoker" base_EnumerationLiteral="_54GOkLm6EeOgPNzo_e4B9A"/>
   <term:ValueSetCode xmi:id="_NbXO0MmeEeOr5NJDZPPjZA" conceptName="influenza, recombinant, injectable, preservative free" base_EnumerationLiteral="_NbVZoMmeEeOr5NJDZPPjZA"/>
+  <term:ValueSetVersion xmi:id="_SdFiQeHGEeO04sHNODkHmQ" identifier="2.16.840.1.113883.1.11.159331" fullName="ActStatus" binding="Dynamic" base_Enumeration="_SdFiQOHGEeO04sHNODkHmQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_RpsEgeHIEeO04sHNODkHmQ" conceptName="normal" base_EnumerationLiteral="_RpsEgOHIEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_YADwseHIEeO04sHNODkHmQ" conceptName="aborted" base_EnumerationLiteral="_YADwsOHIEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_Y6L2oOHIEeO04sHNODkHmQ" conceptName="active" base_EnumerationLiteral="_Y6LPkOHIEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_adgDgOHIEeO04sHNODkHmQ" conceptName="cancelled" base_EnumerationLiteral="_adfccOHIEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_cPatEeHIEeO04sHNODkHmQ" conceptName="completed" base_EnumerationLiteral="_cPatEOHIEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_dVTXEOHIEeO04sHNODkHmQ" conceptName="held" base_EnumerationLiteral="_dVSwAOHIEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_ek4IkeHIEeO04sHNODkHmQ" conceptName="new" base_EnumerationLiteral="_ek4IkOHIEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_fY1VEOHIEeO04sHNODkHmQ" conceptName="suspended" base_EnumerationLiteral="_fY0uAOHIEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_hDbOoeHIEeO04sHNODkHmQ" conceptName="nullified" base_EnumerationLiteral="_hDbOoOHIEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_iiyIkeHIEeO04sHNODkHmQ" conceptName="obsolete" base_EnumerationLiteral="_iiyIkOHIEeO04sHNODkHmQ"/>
+  <term:ValueSetVersion xmi:id="_maiyYOHKEeO04sHNODkHmQ" identifier="2.16.840.1.113883.1.11.14570" fullName="AdministrableDrugForm" binding="Dynamic" base_Enumeration="_maiLUOHKEeO04sHNODkHmQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_WsbMUeHNEeO04sHNODkHmQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_7wHo0eHKEeO04sHNODkHmQ" conceptName="Puff" base_EnumerationLiteral="_7wHo0OHKEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_-MUlgeHKEeO04sHNODkHmQ" conceptName="Scoops" base_EnumerationLiteral="_-MUlgOHKEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="__kLJQOHKEeO04sHNODkHmQ" conceptName="Sprays" base_EnumerationLiteral="__kKiMOHKEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_IzMdkOHLEeO04sHNODkHmQ" conceptName="Applicatorful" base_EnumerationLiteral="_IzL2gOHLEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_KXilMeHLEeO04sHNODkHmQ" conceptName="Drops" base_EnumerationLiteral="_KXilMOHLEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_3P5wgeHLEeO04sHNODkHmQ" conceptName="Nasal Drops" base_EnumerationLiteral="_3P5wgOHLEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_7Qi7ceHLEeO04sHNODkHmQ" conceptName="Ophthalmic Drops" base_EnumerationLiteral="_7Qi7cOHLEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_9IAzYeHLEeO04sHNODkHmQ" conceptName="Oral Drops" base_EnumerationLiteral="_9IAzYOHLEeO04sHNODkHmQ"/>
+  <term:ValueSetCode xmi:id="_AcbKceHMEeO04sHNODkHmQ" conceptName="Otic Drops" base_EnumerationLiteral="_AcbKcOHMEeO04sHNODkHmQ"/>
+  <term:ValueSetVersion xmi:id="_UMJcYeHXEeO04sHNODkHmQ" identifier="2.16.840.1.113762.1.4.1010.6" fullName="CVX Vaccines Administered - Vaccine Set" binding="Dynamic" base_Enumeration="_UMJcYOHXEeO04sHNODkHmQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_iloDYeHXEeO04sHNODkHmQ"/>
+  </term:ValueSetVersion>
 </xmi:XMI>
