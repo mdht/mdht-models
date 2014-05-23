@@ -1893,6 +1893,42 @@ public interface ConsolFactory extends EFactory {
 	HospitalDischargeDiagnosis2 createHospitalDischargeDiagnosis2();
 
 	/**
+	 * Returns a new object of class '<em>Immunization Activity2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immunization Activity2</em>'.
+	 * @generated
+	 */
+	ImmunizationActivity2 createImmunizationActivity2();
+
+	/**
+	 * Returns a new object of class '<em>Immunization Medication Information2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immunization Medication Information2</em>'.
+	 * @generated
+	 */
+	ImmunizationMedicationInformation2 createImmunizationMedicationInformation2();
+
+	/**
+	 * Returns a new object of class '<em>Indication2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Indication2</em>'.
+	 * @generated
+	 */
+	Indication2 createIndication2();
+
+	/**
+	 * Returns a new object of class '<em>Instruction2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Instruction2</em>'.
+	 * @generated
+	 */
+	Instruction2 createInstruction2();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

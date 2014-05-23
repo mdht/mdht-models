@@ -4474,6 +4474,95 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.IMMUNIZATION_ACTIVITY2: {
+				ImmunizationActivity2 immunizationActivity2 = (ImmunizationActivity2) theEObject;
+				T result = caseImmunizationActivity2(immunizationActivity2);
+				if (result == null) {
+					result = caseImmunizationActivity(immunizationActivity2);
+				}
+				if (result == null) {
+					result = caseSubstanceAdministration(immunizationActivity2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(immunizationActivity2);
+				}
+				if (result == null) {
+					result = caseAct(immunizationActivity2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(immunizationActivity2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION2: {
+				ImmunizationMedicationInformation2 immunizationMedicationInformation2 = (ImmunizationMedicationInformation2) theEObject;
+				T result = caseImmunizationMedicationInformation2(immunizationMedicationInformation2);
+				if (result == null) {
+					result = caseImmunizationMedicationInformation(immunizationMedicationInformation2);
+				}
+				if (result == null) {
+					result = caseManufacturedProduct(immunizationMedicationInformation2);
+				}
+				if (result == null) {
+					result = caseRole(immunizationMedicationInformation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(immunizationMedicationInformation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.INDICATION2: {
+				Indication2 indication2 = (Indication2) theEObject;
+				T result = caseIndication2(indication2);
+				if (result == null) {
+					result = caseIndication(indication2);
+				}
+				if (result == null) {
+					result = caseObservation(indication2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(indication2);
+				}
+				if (result == null) {
+					result = caseAct(indication2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(indication2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.INSTRUCTION2: {
+				Instruction2 instruction2 = (Instruction2) theEObject;
+				T result = caseInstruction2(instruction2);
+				if (result == null) {
+					result = caseInstructions(instruction2);
+				}
+				if (result == null) {
+					result = caseCDA_Act(instruction2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(instruction2);
+				}
+				if (result == null) {
+					result = caseAct(instruction2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(instruction2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -8093,6 +8182,66 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseHospitalDischargeDiagnosis2(HospitalDischargeDiagnosis2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Immunization Activity2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Immunization Activity2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseImmunizationActivity2(ImmunizationActivity2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Immunization Medication Information2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Immunization Medication Information2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseImmunizationMedicationInformation2(ImmunizationMedicationInformation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Indication2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Indication2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIndication2(Indication2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Instruction2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Instruction2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInstruction2(Instruction2 object) {
 		return null;
 	}
 

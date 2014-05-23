@@ -12140,5 +12140,71 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HospitalDischargeDiagnosis2/HospitalDischargeDiagnosisCodeP/context"/>
       </genOperations>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ImmunizationActivity2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity2/ImmunizationActivityStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity2/ImmunizationActivityStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity2/ImmunizationActivityStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity2/ImmunizationActivity2AuthorParticipation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity2/ImmunizationActivity2AuthorParticipation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity2/ImmunizationActivity2AuthorParticipation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity2/ImmunizationActivity2SubstanceAdministeredAct">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity2/ImmunizationActivity2SubstanceAdministeredAct/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationActivity2/ImmunizationActivity2SubstanceAdministeredAct/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity2/getSubstanceAdministeredActs"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity2/getConsolDrugVehicles"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationActivity2/getConsolInstructions"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ImmunizationMedicationInformation2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialTextReferenceValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialTextReferenceValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialTextReferenceValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialOriginalTextReferenceValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialOriginalTextReferenceValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialOriginalTextReferenceValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCodeTranslation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCodeTranslation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCodeTranslation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformation2/ImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//Indication2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Indication2/Indication2ProblemIndication">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Indication2/Indication2ProblemIndication/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Indication2/Indication2ProblemIndication/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Indication2/Indication2CodeNullFlavor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Indication2/Indication2CodeNullFlavor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Indication2/Indication2CodeNullFlavor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Indication2/Indication2CodeNullFlavorValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Indication2/Indication2CodeNullFlavorValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Indication2/Indication2CodeNullFlavorValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Indication2/Indication2Text">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Indication2/Indication2Text/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Indication2/Indication2Text/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//Instruction2"/>
   </genPackages>
 </genmodel:GenModel>
