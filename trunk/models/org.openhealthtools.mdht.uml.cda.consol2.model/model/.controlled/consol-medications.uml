@@ -1604,4 +1604,480 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:ConstraintValidation xmi:id="_OTQ4wL59EeO8lb9TgnhnOQ" base_Constraint="_MI3dwL59EeO8lb9TgnhnOQ">
     <ruleId>CONF:NEW</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_WnSCMOLAEeOc7-TVP7Wi6w" name="MedicationActivity2" clientDependency="_C9_R8OLBEeOc7-TVP7Wi6w">
+    <ownedComment xmi:id="_oiDlsOLAEeOc7-TVP7Wi6w">
+      <body>A medication activity describes substance administrations that have actually occurred (e.g. pills ingested or injections given) or are intended to occur (e.g. &quot;take 2 tablets twice a day for the next 10 days&quot;). Medication activities in &quot;INT&quot; mood are reflections of what a clinician intends a patient to be taking. For example, a clinician may intend for a  patient to be administered Lisinopril  20 mg PO for blood pressure control.  However, what was actually administered was Lisinopril 10 mg.  In the latter case, the Medication activities in the &quot;EVN&quot; mood would reflect actual use.&#xD;
+At a minimum, a medication activity shall include an effectiveTime indicating the duration of the administration. Ambulatory medication lists generally provide a summary of use for a given medication over time - a medication activity in event mood with the duration reflecting when the medication started and stopped. Ongoing medications will not have a stop date (or a stop date with a suitable NULL value). Ambulatory medication lists will generally also have a frequency (e.g. a medication is being taken twice a day). Inpatient medications generally record each administration as a separate act.&#xD;
+The dose (doseQuantity) represents how many of the consumables are to be administered at each administration event. As a result, the dose is always relative to the consumable and the interval of administration. Thus, a patient consuming a single &quot;metoprolol 25mg tablet&quot; per administration will have a doseQuantity of &quot;1&quot;, whereas a patient consuming &quot;metoprolol&quot; will have a dose of &quot;25 mg&quot;.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_dSgcsOLDEeOc7-TVP7Wi6w" name="instructionsInversionInd">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_dSgcseLDEeOc7-TVP7Wi6w">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry Instruction2 SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::Instruction2))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_S4xW0OLFEeOc7-TVP7Wi6w" name="doseQuantityorrateQuantity" constrainedElement="_2GHbgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4xW0eLFEeOc7-TVP7Wi6w">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>Medication Activity SHOULD include doseQuantity OR rateQuantity</body>
+        <body>self.doseQuantity->size() = 1 or self.rateQuantity->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_NeWDkOLHEeOc7-TVP7Wi6w" name="substanceAdministeredActInversionInd" constrainedElement="_WnSCMOLAEeOc7-TVP7Wi6w">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VwguEOLHEeOc7-TVP7Wi6w">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry Substance Administered Act SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::SubstanceAdministeredAct))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_J94YEOLIEeOc7-TVP7Wi6w" name="substanceAdministeredActSequenceNumber" constrainedElement="_WnSCMOLAEeOc7-TVP7Wi6w">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cqmV4OLIEeOc7-TVP7Wi6w">
+        <language>Analysis</language>
+        <body>entryRelationship with target entry Substance Administered Act MAY contain zero or one [0..1] sequenceNumber</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_8MCz4OW8EeOkFcFJ9uzEEw" name="effectiveTimeIVLTSHigh" constrainedElement="_4CqJMEFiEeG2TLeVPbv7pg">
+      <ownedComment xmi:id="_MbmLsOW9EeOkFcFJ9uzEEw">
+        <body>Note: A medication that is no longer active will have an effectiveTime/high. If no longer active, and the stop date is unknown, then include effectiveTime/high with a suitable nullFlavor (e.g. &quot;UNK&quot;).</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_8MCz4eW8EeOkFcFJ9uzEEw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>If effectiveTime @xsi:type=&quot;IVL_TS&quot;, MAY contain zero or one [0..1] high</body>
+        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).high->size() = 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_0pBccOW-EeOkFcFJ9uzEEw" name="effectiveTimePIVLTS" constrainedElement="_6ODpwEFiEeG2TLeVPbv7pg">
+      <ownedComment xmi:id="_xOtdcOXZEeOkFcFJ9uzEEw">
+        <body>Note: This effectiveTime represents the medication frequency (e.g. administration times per day).</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_0pBcceW-EeOkFcFJ9uzEEw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHOULD contain zero or one [0..1] effectiveTime such that it SHALL contain exactly one [1..1] @xsi:type = &quot;PIVL_TS&quot; or &quot;EIVL_TS&quot;</body>
+        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::PIVL_TS) or ef.oclIsTypeOf(datatypes::EIVL_TS))->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_GsKcUOXAEeOkFcFJ9uzEEw" name="effectiveTimeIVLTSorTS" constrainedElement="_4CqJMEFiEeG2TLeVPbv7pg">
+      <ownedComment xmi:id="_JqDw0OXAEeOkFcFJ9uzEEw">
+        <body>The substance administration effectiveTime field can repeat, in order to represent varying levels of complex dosing. effectiveTime can be used to represent the duration of administration (e.g. &quot;10 days&quot;), the frequency of administration (e.g. &quot;every 8 hours&quot;), and more. Here, we require that there SHALL be an effectiveTime documentation of the duration, and that there SHOULD be an effectiveTime documentation of the frequency. Other timing nuances, supported by the base CDA R2 standard, may also be included.</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_GsKcUeXAEeOkFcFJ9uzEEw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL contain exactly one [1..1] effectiveTime such that it SHALL contain exactly one [1..1] @xsi:type=&quot;IVL_TS&quot; or contain exactly one [1..1] @xsi:type=&quot;TS&quot;</body>
+        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->size() = 1 xor self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::SXCM_TS))->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_WnVFgOLAEeOc7-TVP7Wi6w" general="_2GHbgBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_C9_R8OLBEeOc7-TVP7Wi6w" name="MedicationActivity" supplier="_2GHbgBSVEeGGzu7fmW9pXw" client="_WnSCMOLAEeOc7-TVP7Wi6w" contract="_2GHbgBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_cF1gIOLBEeOc7-TVP7Wi6w" name="drugMonitoringAct" type="_MbKs8IqvEeOoMZgUoTghIg" association="_cF3VUOLBEeOc7-TVP7Wi6w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gVDSkOLBEeOc7-TVP7Wi6w" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gVDSkeLBEeOc7-TVP7Wi6w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Uct9MOLCEeOc7-TVP7Wi6w" name="instruction2" redefinedProperty="_2G8h8hSVEeGGzu7fmW9pXw" association="_UcvyYOLCEeOc7-TVP7Wi6w">
+      <type xmi:type="uml:Class" href="consol-other.uml#_D62NwOH7EeO04sHNODkHmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XYrYAOLCEeOc7-TVP7Wi6w" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XYrYAeLCEeOc7-TVP7Wi6w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ju8CsOLFEeOc7-TVP7Wi6w" name="authorParticipation" association="_ju9Q0OLFEeOc7-TVP7Wi6w">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ju8CsuLFEeOc7-TVP7Wi6w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ju8CseLFEeOc7-TVP7Wi6w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_15BYEOLGEeOc7-TVP7Wi6w" name="substanceAdministeredAct" association="_15B_IOLGEeOc7-TVP7Wi6w">
+      <type xmi:type="uml:Class" href="consol-other.uml#_KTrEAJpdEeOK6dzbL4VoTA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_15BYEuLGEeOc7-TVP7Wi6w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_15BYEeLGEeOc7-TVP7Wi6w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_5VihQOLREeOc7-TVP7Wi6w" name="repeatNumber" visibility="private" aggregation="composite" redefinedProperty="_0gGEIB-yEeGKirKJsFylGA">
+      <ownedComment xmi:id="_6OTVQOLREeOc7-TVP7Wi6w">
+        <body>Note: In &quot;INT&quot; (intent) mood, the repeatNumber defines the number of allowed administrations. For example, a repeatNumber of &quot;3&quot; means that the substance can be administered up to 3 times.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_wDsPEEo9Ed6c3qsAxlFHaQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5VihQeLREeOc7-TVP7Wi6w" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5VihQuLREeOc7-TVP7Wi6w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rX5FMOLSEeOc7-TVP7Wi6w" name="code" visibility="private" aggregation="composite" redefinedProperty="_2GHb0hSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_vpTQAOLSEeOc7-TVP7Wi6w">
+        <body>Note: SubstanceAdministration.code is an optional field. Per HL7 Pharmacy Committee, &quot;this is intended to further specify the nature of the substance administration act. To date the committee has made no use of this attribute&quot;. Because the type of substance administration is generally implicit in the routeCode, in the consumable participant, etc, the field is generally not used, and there is no defined value set.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rX5FMeLSEeOc7-TVP7Wi6w" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rX5FMuLSEeOc7-TVP7Wi6w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="__4L5cOLSEeOc7-TVP7Wi6w" name="statusCode" visibility="private" redefinedProperty="_2GlVkBSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__4L5ceLSEeOc7-TVP7Wi6w" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__4L5cuLSEeOc7-TVP7Wi6w" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_6PKzwOLYEeOc7-TVP7Wi6w" name="administrationUnitCode" visibility="private" aggregation="composite" redefinedProperty="_2GHbxhSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6PKzweLYEeOc7-TVP7Wi6w" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6PKzwuLYEeOc7-TVP7Wi6w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OvC70OLaEeOc7-TVP7Wi6w" name="indication2" redefinedProperty="_7USBsBUSEeG6PvUxSTZnaw" association="_OvExAOLaEeOc7-TVP7Wi6w">
+      <type xmi:type="uml:Class" href="consol-other.uml#_PrEOIOHoEeO04sHNODkHmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OvC70uLaEeOc7-TVP7Wi6w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OvC70eLaEeOc7-TVP7Wi6w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_090HgOLbEeOc7-TVP7Wi6w" name="doseQuantity" visibility="private" aggregation="composite" redefinedProperty="_2GHbwhSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_2C-YwOLbEeOc7-TVP7Wi6w">
+        <body>&lt;p>b. Pre-coordinated consumable: If the consumable code is a pre-coordinated unit dose (e.g. &quot;metoprolol 25mg tablet&quot;) then doseQuantity is a unitless number that indicates the number of products given per administration (e.g. &quot;2&quot;, meaning 2 x &quot;metoprolol 25mg tablet&quot; per administration) (CONF:16878).&#xD;
+&lt;/p>&#xD;
+&lt;p>c. Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e.g. is simply &quot;metoprolol&quot;), then doseQuantity must represent a physical quantity with @unit, e.g. &quot;25&quot; and &quot;mg&quot;, specifying the amount of product given per administration (CONF:16879).&#xD;
+&lt;/p></body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_1VHHUErrEd6FXKclYGEDCw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_090HgeLbEeOc7-TVP7Wi6w" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_090HguLbEeOc7-TVP7Wi6w"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_iMX2AOLAEeOc7-TVP7Wi6w" base_Class="_WnSCMOLAEeOc7-TVP7Wi6w" templateId="2.16.840.1.113883.10.20.22.4.16.2">
+    <ruleId>CONF:7499</ruleId>
+    <ruleId>CONF:10504</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_86348OLAEeOc7-TVP7Wi6w" base_Generalization="_WnVFgOLAEeOc7-TVP7Wi6w"/>
+  <uml:Association xmi:id="_cF3VUOLBEeOc7-TVP7Wi6w" memberEnd="_cF1gIOLBEeOc7-TVP7Wi6w _cF38YOLBEeOc7-TVP7Wi6w">
+    <ownedEnd xmi:id="_cF38YOLBEeOc7-TVP7Wi6w" type="_WnSCMOLAEeOc7-TVP7Wi6w" association="_cF3VUOLBEeOc7-TVP7Wi6w"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_jNzBUOLBEeOc7-TVP7Wi6w" severity="INFO" base_Association="_cF3VUOLBEeOc7-TVP7Wi6w" typeCode="COMP">
+    <ruleId>CONF:30820</ruleId>
+    <ruleId>CONF:30821</ruleId>
+    <ruleId>CONF:30822</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_UcvyYOLCEeOc7-TVP7Wi6w" memberEnd="_Uct9MOLCEeOc7-TVP7Wi6w _UcvyYeLCEeOc7-TVP7Wi6w">
+    <ownedEnd xmi:id="_UcvyYeLCEeOc7-TVP7Wi6w" type="_WnSCMOLAEeOc7-TVP7Wi6w" association="_UcvyYOLCEeOc7-TVP7Wi6w"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_YgiX8OLCEeOc7-TVP7Wi6w" severity="INFO" base_Association="_UcvyYOLCEeOc7-TVP7Wi6w" typeCode="SUBJ">
+    <ruleId>CONF:7539</ruleId>
+    <ruleId>CONF:7540</ruleId>
+    <ruleId>CONF:31387</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:ConstraintValidation xmi:id="_dSgcsuLDEeOc7-TVP7Wi6w" base_Constraint="_dSgcsOLDEeOc7-TVP7Wi6w">
+    <ruleId>CONF:7542</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_S4xW0uLFEeOc7-TVP7Wi6w" severity="WARNING" base_Constraint="_S4xW0OLFEeOc7-TVP7Wi6w">
+    <ruleId>CONF:30800</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_ju9Q0OLFEeOc7-TVP7Wi6w" memberEnd="_ju8CsOLFEeOc7-TVP7Wi6w _ju9Q0eLFEeOc7-TVP7Wi6w">
+    <ownedEnd xmi:id="_ju9Q0eLFEeOc7-TVP7Wi6w" type="_WnSCMOLAEeOc7-TVP7Wi6w" association="_ju9Q0OLFEeOc7-TVP7Wi6w"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_kzZwYOLFEeOc7-TVP7Wi6w" severity="WARNING" base_Association="_ju9Q0OLFEeOc7-TVP7Wi6w">
+    <ruleId>CONF:31150</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_15B_IOLGEeOc7-TVP7Wi6w" memberEnd="_15BYEOLGEeOc7-TVP7Wi6w _15CmMOLGEeOc7-TVP7Wi6w">
+    <ownedComment xmi:id="__cc2IOLGEeOc7-TVP7Wi6w">
+      <body>Note: This entryRelationship is used to indicate a given medication's ordering in a series. The nested Substance Administration Act identifies the entire course of all administrations in the series. The entryRelationship/sequenceNumber shows the order of this particular administration in that series.</body>
+    </ownedComment>
+    <ownedEnd xmi:id="_15CmMOLGEeOc7-TVP7Wi6w" type="_WnSCMOLAEeOc7-TVP7Wi6w" association="_15B_IOLGEeOc7-TVP7Wi6w"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_4ewrQOLGEeOc7-TVP7Wi6w" severity="INFO" base_Association="_15B_IOLGEeOc7-TVP7Wi6w" typeCode="COMP">
+    <ruleId>CONF:31515</ruleId>
+    <ruleId>CONF:31516</ruleId>
+    <ruleId>CONF:31519</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:ConstraintValidation xmi:id="_dHUjkOLHEeOc7-TVP7Wi6w" base_Constraint="_NeWDkOLHEeOc7-TVP7Wi6w">
+    <ruleId>CONF:31517</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_XNP8YOLIEeOc7-TVP7Wi6w" severity="INFO" base_Constraint="_J94YEOLIEeOc7-TVP7Wi6w">
+    <ruleId>CONF:31518</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_5VihQ-LREeOc7-TVP7Wi6w" severity="INFO" base_Property="_5VihQOLREeOc7-TVP7Wi6w">
+    <ruleId>CONF:7555</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_rX5FM-LSEeOc7-TVP7Wi6w" severity="INFO" base_Property="_rX5FMOLSEeOc7-TVP7Wi6w">
+    <ruleId>CONF:7506</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="__4L5c-LSEeOc7-TVP7Wi6w" base_Property="__4L5cOLSEeOc7-TVP7Wi6w"/>
+  <CDA:ValueSetConstraint xmi:id="_DyKbsOLTEeOc7-TVP7Wi6w" base_Property="__4L5cOLSEeOc7-TVP7Wi6w">
+    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
+    <ruleId>CONF:7507</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_6PKzw-LYEeOc7-TVP7Wi6w" base_Property="_6PKzwOLYEeOc7-TVP7Wi6w">
+    <reference href="../consol-vocab.uml#_maiyYOHKEeO04sHNODkHmQ"/>
+    <ruleId>CONF:7519</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_N3hTYOLZEeOc7-TVP7Wi6w" severity="INFO" base_Property="_6PKzwOLYEeOc7-TVP7Wi6w"/>
+  <uml:Association xmi:id="_OvExAOLaEeOc7-TVP7Wi6w" memberEnd="_OvC70OLaEeOc7-TVP7Wi6w _OvFYEOLaEeOc7-TVP7Wi6w">
+    <ownedEnd xmi:id="_OvFYEOLaEeOc7-TVP7Wi6w" type="_WnSCMOLAEeOc7-TVP7Wi6w" association="_OvExAOLaEeOc7-TVP7Wi6w"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_cbQ0MOLaEeOc7-TVP7Wi6w" severity="INFO" base_Association="_OvExAOLaEeOc7-TVP7Wi6w" typeCode="RSON">
+    <ruleId>CONF:7536</ruleId>
+    <ruleId>CONF:7537</ruleId>
+    <ruleId>CONF:16087</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:PropertyValidation xmi:id="_090Hg-LbEeOc7-TVP7Wi6w" severity="WARNING" base_Property="_090HgOLbEeOc7-TVP7Wi6w">
+    <ruleId>CONF:7516</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_8MFQIOW8EeOkFcFJ9uzEEw" severity="INFO" base_Constraint="_8MCz4OW8EeOkFcFJ9uzEEw">
+    <ruleId>CONF:7512</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_0pCDgOW-EeOkFcFJ9uzEEw" severity="WARNING" base_Constraint="_0pBccOW-EeOkFcFJ9uzEEw">
+    <ruleId>CONF:7513</ruleId>
+    <ruleId>CONF:28499</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_GsKcUuXAEeOkFcFJ9uzEEw" base_Constraint="_GsKcUOXAEeOkFcFJ9uzEEw">
+    <ruleId>CONF:7508</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_qH-ckOXfEeOkFcFJ9uzEEw" name="MedicationDispense2" clientDependency="_31L-AOXgEeOkFcFJ9uzEEw">
+    <ownedComment xmi:id="_zoMZIOXgEeOkFcFJ9uzEEw">
+      <body>This template records the act of supplying medications (i.e., dispensing).</body>
+    </ownedComment>
+    <ownedRule xmi:id="_oloRUOXlEeOkFcFJ9uzEEw" name="containsMedicationInformation2" constrainedElement="_qH-ckOXfEeOkFcFJ9uzEEw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_3f6fUOXlEeOkFcFJ9uzEEw">
+        <language>OCL</language>
+        <language>Analysis</language>
+        <body>self.product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2)</body>
+        <body>MAY contain zero or one [0..1] product such that it SHALL contain exactly one [1..1] Medication Information (V2) (templateId:2.16.840.1.113883.10.20.22.4.23.2)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_joXtIOXlEeOkFcFJ9uzEEw" name="containsImmunizationMedicationInformation2" constrainedElement="_qH-ckOXfEeOkFcFJ9uzEEw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_QgwGkOXmEeOkFcFJ9uzEEw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>MAY contain zero or one [0..1] product such that it SHALL contain exactly one [1..1] Immunization Medication Information (V2) (templateId:2.16.840.1.113883.10.20.22.4.54.2)</body>
+        <body>self.product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_VWi7YOXnEeOkFcFJ9uzEEw" name="containsMedicationOrImmunization" constrainedElement="_iZPioB7lEeGEaLkc3UAsAg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VWi7YeXnEeOkFcFJ9uzEEw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>supply act SHALL contain one product/Medication Information (V2) or one product/Immunization Medication Information (V2) template</body>
+        <body>self.product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2) xor self.product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2)</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_qH_DoOXfEeOkFcFJ9uzEEw" general="_DpoGkBUUEeG6PvUxSTZnaw"/>
+    <substitution xmi:id="_31L-AOXgEeOkFcFJ9uzEEw" name="MedicationDispense" supplier="_DpoGkBUUEeG6PvUxSTZnaw" client="_qH-ckOXfEeOkFcFJ9uzEEw" contract="_DpoGkBUUEeG6PvUxSTZnaw"/>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_vPdTwOXfEeOkFcFJ9uzEEw" base_Class="_qH-ckOXfEeOkFcFJ9uzEEw" templateId="2.16.840.1.113883.10.20.22.4.18.2">
+    <ruleId>CONF:7453</ruleId>
+    <ruleId>CONF:10505</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_11pvMOXgEeOkFcFJ9uzEEw" base_Generalization="_qH_DoOXfEeOkFcFJ9uzEEw"/>
+  <CDA:ConstraintValidation xmi:id="_AUfTUOXmEeOkFcFJ9uzEEw" severity="INFO" base_Constraint="_oloRUOXlEeOkFcFJ9uzEEw">
+    <ruleId>CONF:7459</ruleId>
+    <ruleId>CONF:15607</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_KGkRYOXmEeOkFcFJ9uzEEw" severity="INFO" base_Constraint="_joXtIOXlEeOkFcFJ9uzEEw">
+    <ruleId>CONF:9331</ruleId>
+    <ruleId>CONF:31696</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_VWi7YuXnEeOkFcFJ9uzEEw" base_Constraint="_VWi7YOXnEeOkFcFJ9uzEEw">
+    <ruleId>CONF:9333</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_Hz__kOXrEeOkFcFJ9uzEEw" name="MedicationInformation2" clientDependency="_L3zMMOXrEeOkFcFJ9uzEEw">
+    <ownedComment xmi:id="_RV3XYOXrEeOkFcFJ9uzEEw">
+      <body>A medication should be recorded as a pre-coordinated ingredient + strength + dose form (e.g., &quot;metoprolol 25mg tablet&quot;, &quot;amoxicillin 400mg/5mL suspension&quot;) where possible. This includes RxNorm codes whose Term Type is SCD (semantic clinical drug), SBD (semantic brand drug), GPCK (generic pack), BPCK (brand pack).&#xD;
+NOTE: The dose (doseQuantity) represents how many of the consumables are to be administered at each administration event. As a result, the dose is always relative to the consumable. Thus, a patient consuming a single &quot;metoprolol 25mg tablet&quot; per administration will have a doseQuantity of &quot;1&quot;, whereas a patient consuming &quot;metoprolol&quot; will have a dose of &quot;25 mg&quot;.</body>
+    </ownedComment>
+    <generalization xmi:id="_H0AmoOXrEeOkFcFJ9uzEEw" general="_2T9DQBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_L3zMMOXrEeOkFcFJ9uzEEw" name="MedicationInformation" supplier="_2T9DQBSVEeGGzu7fmW9pXw" client="_Hz__kOXrEeOkFcFJ9uzEEw" contract="_2T9DQBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_h3ogkOXrEeOkFcFJ9uzEEw" name="manufacturedMaterial" type="_Fn10kOXsEeOkFcFJ9uzEEw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h3ogkeXrEeOkFcFJ9uzEEw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h3ogkuXrEeOkFcFJ9uzEEw" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_6Ti0YEIrEeG4bZAl2IGXmQ"/>
+      <association href="../consol.uml#_h3pusOXrEeOkFcFJ9uzEEw"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_Fn10kOXsEeOkFcFJ9uzEEw" name="MedicationInformationManufacturedMaterial">
+      <ownedComment xmi:id="_LEfDcOXsEeOkFcFJ9uzEEw">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_so0iEOZ2EeO97uF_XMEmeg" name="codeOriginalText" constrainedElement="_WONKoCANEeGKirKJsFylGA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_so0iEeZ2EeO97uF_XMEmeg">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+          <body>true</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_cKGQYOZ3EeO97uF_XMEmeg" name="codeTranslation" constrainedElement="__WUM4CAMEeGKirKJsFylGA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cKGQYuZ3EeO97uF_XMEmeg">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+          <body>true</body>
+          <body>code MAY contain zero or more [0..*] translation</body>
+          <body>self.code->size() = 1 implies self.code.translation->size() > 0</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SbDiwOZ4EeO97uF_XMEmeg" name="reference" constrainedElement="__WUM4CAMEeGKirKJsFylGA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SbDiweZ4EeO97uF_XMEmeg">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+          <body>true</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vz_LoOZ4EeO97uF_XMEmeg" name="originalTextReferenceValue" constrainedElement="_WONKoCANEeGKirKJsFylGA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vz_LoeZ4EeO97uF_XMEmeg">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+          <body>true</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_7PkeIOZ4EeO97uF_XMEmeg" name="referenceValue" constrainedElement="_WONKoCANEeGKirKJsFylGA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_7PkeIeZ4EeO97uF_XMEmeg">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+          <body>true</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_Fn2boOXsEeOkFcFJ9uzEEw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#__WUM4CAMEeGKirKJsFylGA"/>
+      </generalization>
+      <ownedAttribute xmi:id="_MeXngOXsEeOkFcFJ9uzEEw" name="code" visibility="private" type="_co0gEOXwEeOkFcFJ9uzEEw" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MeXngeXsEeOkFcFJ9uzEEw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MeXnguXsEeOkFcFJ9uzEEw" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_Dh74wCANEeGKirKJsFylGA"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_co0gEOXwEeOkFcFJ9uzEEw" name="CE">
+        <ownedRule xmi:id="_4LnGsOXwEeOkFcFJ9uzEEw" name="codeTranslationTerminology" constrainedElement="_co0gEOXwEeOkFcFJ9uzEEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QaXJsOXxEeOkFcFJ9uzEEw">
+            <language>Analysis</language>
+            <body>translation MAY be selected from ValueSet Clinical Substance 2.16.840.1.113762.1.4.1010.2 DYNAMIC</body>
+          </specification>
+        </ownedRule>
+        <generalization xmi:id="_co0gEeXwEeOkFcFJ9uzEEw">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        </generalization>
+        <ownedAttribute xmi:id="_dVFJIOXwEeOkFcFJ9uzEEw" name="translation" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dVFJIeXwEeOkFcFJ9uzEEw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dVFJIuXwEeOkFcFJ9uzEEw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:ConformsTo xmi:id="_MhZi0OXrEeOkFcFJ9uzEEw" base_Generalization="_H0AmoOXrEeOkFcFJ9uzEEw"/>
+  <CDA:CDATemplate xmi:id="_NVU6IOXrEeOkFcFJ9uzEEw" base_Class="_Hz__kOXrEeOkFcFJ9uzEEw" templateId="2.16.840.1.113883.10.20.22.4.23.2">
+    <ruleId>CONF:7409</ruleId>
+    <ruleId>CONF:10506</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ValueSetConstraint xmi:id="_MeYOkOXsEeOkFcFJ9uzEEw" base_Property="_MeXngOXsEeOkFcFJ9uzEEw">
+    <reference href="../consol-vocab.uml#_0_S4geXsEeOkFcFJ9uzEEw"/>
+    <ruleId>CONF:7412</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_QyMNIOXsEeOkFcFJ9uzEEw" base_Property="_MeXngOXsEeOkFcFJ9uzEEw"/>
+  <CDA:PropertyValidation xmi:id="_eEksYOXwEeOkFcFJ9uzEEw" severity="INFO" base_Property="_dVFJIOXwEeOkFcFJ9uzEEw">
+    <ruleId>CONF:31884</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_5CwxIOXwEeOkFcFJ9uzEEw" severity="INFO" base_Constraint="_4LnGsOXwEeOkFcFJ9uzEEw">
+    <ruleId>CONF:31884</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_InVpIOZ8EeOmzetP5oaH3A" name="MedicationSupplyOrder2" clientDependency="_azwWQOZ8EeOmzetP5oaH3A">
+    <ownedComment xmi:id="_SYVCEOZ8EeOmzetP5oaH3A">
+      <body>This template records the intent to supply a patient with medications.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_acGj4OZ_EeOmzetP5oaH3A" name="containsMedicationInformation2">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_acGj4eZ_EeOmzetP5oaH3A">
+        <language>OCL</language>
+        <language>Analysis</language>
+        <body>self.product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2)</body>
+        <body>MAY contain zero or one [0..1] product such that it SHALL contain exactly one [1..1] Medication Information (V2) (templateId:2.16.840.1.113883.10.20.22.4.23.2)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_brcr4OZ_EeOmzetP5oaH3A" name="containsImmunizationMedicationInformation2">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_brcr4eZ_EeOmzetP5oaH3A">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>MAY contain zero or one [0..1] product such that it SHALL contain exactly one [1..1] Immunization Medication Information (V2) (templateId:2.16.840.1.113883.10.20.22.4.54.2)</body>
+        <body>self.product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_sPjCQOZ9EeOmzetP5oaH3A" name="containsMedicationOrImmunization" constrainedElement="_iZPioB7lEeGEaLkc3UAsAg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_sPjCQeZ9EeOmzetP5oaH3A">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>A supply act SHALL contain one product/Medication Information (V2) or one product/Immunization Medication Information (V2) template</body>
+        <body>self.product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2) xor self.product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_PA3aMOaAEeOmzetP5oaH3A" name="instructionInversionInd" constrainedElement="_j3aTQBrTEeGo461UQq-B1g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_PA3aMeaAEeOmzetP5oaH3A">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry Instruction2 if present, SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::Instruction2))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_InVpIeZ8EeOmzetP5oaH3A" general="_j3aTQBrTEeGo461UQq-B1g"/>
+    <substitution xmi:id="_azwWQOZ8EeOmzetP5oaH3A" name="MedicationSupplyOrder" supplier="_j3aTQBrTEeGo461UQq-B1g" client="_InVpIOZ8EeOmzetP5oaH3A" contract="_j3aTQBrTEeGo461UQq-B1g"/>
+    <ownedAttribute xmi:id="_d36G8OaAEeOmzetP5oaH3A" name="instruction2" redefinedProperty="_PrKm8BrUEeGo461UQq-B1g" association="_d37VEOaAEeOmzetP5oaH3A">
+      <type xmi:type="uml:Class" href="consol-other.uml#_D62NwOH7EeO04sHNODkHmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wVxJYOaAEeOmzetP5oaH3A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wVxJYeaAEeOmzetP5oaH3A"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_MPdmYOZ8EeOmzetP5oaH3A" base_Class="_InVpIOZ8EeOmzetP5oaH3A" templateId="2.16.840.1.113883.10.20.22.4.17.2">
+    <ruleId>CONF:7429</ruleId>
+    <ruleId>CONF:10507</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_YbSDAOZ8EeOmzetP5oaH3A" base_Generalization="_InVpIeZ8EeOmzetP5oaH3A"/>
+  <CDA:ConstraintValidation xmi:id="_sPjCQuZ9EeOmzetP5oaH3A" base_Constraint="_sPjCQOZ9EeOmzetP5oaH3A">
+    <ruleId>CONF:16870</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_acHK8OZ_EeOmzetP5oaH3A" severity="INFO" base_Constraint="_acGj4OZ_EeOmzetP5oaH3A">
+    <ruleId>CONF:7439</ruleId>
+    <ruleId>CONF:16093</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_brcr4uZ_EeOmzetP5oaH3A" severity="INFO" base_Constraint="_brcr4OZ_EeOmzetP5oaH3A">
+    <ruleId>CONF:9334</ruleId>
+    <ruleId>CONF:31695</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_PA4BQOaAEeOmzetP5oaH3A" base_Constraint="_PA3aMOaAEeOmzetP5oaH3A">
+    <ruleId>CONF:7445</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_d37VEOaAEeOmzetP5oaH3A" memberEnd="_d36G8OaAEeOmzetP5oaH3A _d37VEeaAEeOmzetP5oaH3A">
+    <ownedEnd xmi:id="_d37VEeaAEeOmzetP5oaH3A" type="_InVpIOZ8EeOmzetP5oaH3A" association="_d37VEOaAEeOmzetP5oaH3A"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_hiKyMOaAEeOmzetP5oaH3A" severity="INFO" base_Association="_d37VEOaAEeOmzetP5oaH3A" typeCode="SUBJ">
+    <ruleId>CONF:7442</ruleId>
+    <ruleId>CONF:7444</ruleId>
+    <ruleId>CONF:31391</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Class xmi:id="_k_C20OaCEeOmzetP5oaH3A" name="NonMedicinalSupplyActivity2" clientDependency="_RKlYYOaDEeOmzetP5oaH3A">
+    <ownedComment xmi:id="_vkE70OaCEeOmzetP5oaH3A">
+      <body>This template represents equipment supplied to the patient (e.g. pumps, inhalers, wheelchairs). Devices applied to, or placed in, the patient are represented with the Procedure Activity Procedure (V2) (templateId: 2.16.840.1.113883.10.20.22.4.14.2.)</body>
+    </ownedComment>
+    <ownedRule xmi:id="_1qtQ8OaEEeOmzetP5oaH3A" name="instruction2InversionInd" constrainedElement="_k_C20OaCEeOmzetP5oaH3A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_-3Oq4OaEEeOmzetP5oaH3A">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry Instruction2 if present, SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::Instruction2))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_k_C20eaCEeOmzetP5oaH3A" general="_2HIvMBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_RKlYYOaDEeOmzetP5oaH3A" name="NonMedicinalSupplyActivity" supplier="_2HIvMBSVEeGGzu7fmW9pXw" client="_k_C20OaCEeOmzetP5oaH3A" contract="_2HIvMBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_fbsREOaEEeOmzetP5oaH3A" name="instruction2" association="_fbtfMOaEEeOmzetP5oaH3A">
+      <type xmi:type="uml:Class" href="consol-other.uml#_D62NwOH7EeO04sHNODkHmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hj_aUOaEEeOmzetP5oaH3A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hj_aUeaEEeOmzetP5oaH3A"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_nMp94OaCEeOmzetP5oaH3A" base_Class="_k_C20OaCEeOmzetP5oaH3A" templateId="2.16.840.1.113883.10.20.22.4.50.2">
+    <ruleId>CONF:8747</ruleId>
+    <ruleId>CONF:10509</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_OdUg4OaDEeOmzetP5oaH3A" base_Generalization="_k_C20eaCEeOmzetP5oaH3A"/>
+  <uml:Association xmi:id="_fbtfMOaEEeOmzetP5oaH3A" memberEnd="_fbsREOaEEeOmzetP5oaH3A _fbtfMeaEEeOmzetP5oaH3A">
+    <ownedEnd xmi:id="_fbtfMeaEEeOmzetP5oaH3A" type="_k_C20OaCEeOmzetP5oaH3A" association="_fbtfMOaEEeOmzetP5oaH3A"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_ikbjoOaEEeOmzetP5oaH3A" severity="INFO" base_Association="_fbtfMOaEEeOmzetP5oaH3A" typeCode="SUBJ">
+    <ruleId>CONF:30277</ruleId>
+    <ruleId>CONF:30278</ruleId>
+    <ruleId>CONF:31393</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:ConstraintValidation xmi:id="_RC5KEOaFEeOmzetP5oaH3A" base_Constraint="_1qtQ8OaEEeOmzetP5oaH3A">
+    <ruleId>CONF:30279</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

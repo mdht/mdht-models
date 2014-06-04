@@ -1352,4 +1352,80 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:PropertyValidation xmi:id="_-FQOgGQmEeOD5bEp3nNX5w" base_Property="_wUxhMGQmEeOD5bEp3nNX5w">
     <ruleId>CONF:Pending</ruleId>
   </CDA:PropertyValidation>
+  <uml:Class xmi:id="_Ao2HkOaHEeOmzetP5oaH3A" name="PhysicianofRecordParticipant2" clientDependency="_qGW8oOaHEeOmzetP5oaH3A">
+    <ownedComment xmi:id="_Yh-f4OaHEeOmzetP5oaH3A">
+      <body>This encounterParticipant is the attending physician and is usually different from the Physician Reading Study Performer defined in documentationOf/serviceEvent.</body>
+    </ownedComment>
+    <generalization xmi:id="_Ao2HkeaHEeOmzetP5oaH3A" general="_H_izsEb1EeGp67IkyTw1fg"/>
+    <substitution xmi:id="_qGW8oOaHEeOmzetP5oaH3A" name="PhysicianofRecordParticipant" supplier="_H_izsEb1EeGp67IkyTw1fg" client="_Ao2HkOaHEeOmzetP5oaH3A" contract="_H_izsEb1EeGp67IkyTw1fg"/>
+    <ownedAttribute xmi:id="_vp7uYOaREeOmzetP5oaH3A" name="assignedEntity" type="_yuz0oOaREeOmzetP5oaH3A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vp7uYeaREeOmzetP5oaH3A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vp7uYuaREeOmzetP5oaH3A" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_QLNPcErYEeGJpZWiuxRVIw"/>
+      <association href="../consol.uml#_vp88gOaREeOmzetP5oaH3A"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_yuz0oOaREeOmzetP5oaH3A" name="AssignedEntity">
+      <ownedComment xmi:id="_3L4c4OaREeOmzetP5oaH3A">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_Lzh2UOaSEeOmzetP5oaH3A" name="hasNationalProviderId" constrainedElement="_kAWv0EVEEeGAh_iQGJvI5w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Lzh2UeaSEeOmzetP5oaH3A">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier</body>
+          <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_yuz0oeaREeOmzetP5oaH3A">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_lCnhUEb1EeGp67IkyTw1fg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_1DqMIOaREeOmzetP5oaH3A" name="assignedPerson" type="_yGtn8OaTEeOmzetP5oaH3A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1DqMIeaREeOmzetP5oaH3A"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_g5aSIErYEeGJpZWiuxRVIw"/>
+        <association href="../consol.uml#_1DqzMOaREeOmzetP5oaH3A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_GNihYOaWEeOmzetP5oaH3A" name="representedOrganization" visibility="private" type="_TglEwOaWEeOmzetP5oaH3A" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L8wuAOaWEeOmzetP5oaH3A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L8wuAeaWEeOmzetP5oaH3A"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_EsyYEUcfEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_GNjvgOaWEeOmzetP5oaH3A"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_yGtn8OaTEeOmzetP5oaH3A" name="AssignedPerson">
+        <generalization xmi:id="_yGtn8eaTEeOmzetP5oaH3A">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_eq8_MEb2EeGp67IkyTw1fg"/>
+        </generalization>
+        <ownedAttribute xmi:id="_y1dkUOaTEeOmzetP5oaH3A" name="name" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Oq_gwOaUEeOmzetP5oaH3A" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oq_gweaUEeOmzetP5oaH3A" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_ir_ywEb2EeGp67IkyTw1fg"/>
+        </ownedAttribute>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_TglEwOaWEeOmzetP5oaH3A" name="RepresentedOrganization">
+        <generalization xmi:id="_Tglr0OaWEeOmzetP5oaH3A">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zjKW8EcZEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_T-xcoOaWEeOmzetP5oaH3A" name="name" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_yQ9xwD5yEd6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_asl_gOaWEeOmzetP5oaH3A" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_asl_geaWEeOmzetP5oaH3A"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BicPkErbEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_U1uQkOaHEeOmzetP5oaH3A" base_Class="_Ao2HkOaHEeOmzetP5oaH3A" templateId="2.16.840.1.113883.10.20.6.2.2.2">
+    <ruleId>CONF:16072</ruleId>
+    <ruleId>CONF:16073</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_oFKg8OaHEeOmzetP5oaH3A" base_Generalization="_Ao2HkeaHEeOmzetP5oaH3A"/>
+  <CDA:ConstraintValidation xmi:id="_LzidYOaSEeOmzetP5oaH3A" severity="WARNING" base_Constraint="_Lzh2UOaSEeOmzetP5oaH3A">
+    <ruleId>CONF:31203</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_y1eLYOaTEeOmzetP5oaH3A" message="Consol Assigned Person, if present, SHALL contain exactly one [1..1] US Realm Person Name (PN.US.FIELDED) (templateId:2.16.840.1.113883.10.20.22.5.1.1) (CONF:30929)" base_Property="_y1dkUOaTEeOmzetP5oaH3A">
+    <ruleId>CONF:30929</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_YLzdwOaWEeOmzetP5oaH3A" severity="WARNING" base_Property="_T-xcoOaWEeOmzetP5oaH3A">
+    <ruleId>CONF:16075</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

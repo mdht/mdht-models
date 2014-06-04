@@ -610,7 +610,7 @@ http://phinvads.cdc.gov/vads/ViewValueSet.action?id=229BEF3E-971C-DF11-B334-0015
 http://phinvads.cdc.gov/vads/ViewValueSet.action?id=77FDBFB5-A277-DE11-9B52-0015173D1785</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dSQDEKDqEd-dVeaMP0XXQw" name="Medication Clinical Drug">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dSQDEKDqEd-dVeaMP0XXQw" name="Medication Clinical Drug Name Value Set">
       <ownedComment xmi:id="_AI7q0CXaEeGD8_EQPvfzIQ">
         <body>Clinical drug names&#xD;
 http://phinvads.cdc.gov/vads/ViewValueSet.action?id=239BEF3E-971C-DF11-B334-0015173D1785</body>
@@ -1587,6 +1587,29 @@ Valueset Source: http://www.hl7.org/documentcenter/public/standards/vocabulary/v
 Value set intensionally defined from CVX (OID: 2.16.840.1.113883.12.292) 
 FilterOnProperty(nonvaccine,FALSE).&#xD;
 Valueset Source: https://vsac.nlm.nih.gov/</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0_S4gOXsEeOkFcFJ9uzEEw" name="Medication Clinical Drug">
+      <ownedComment xmi:id="_8N6bUOXsEeOkFcFJ9uzEEw">
+        <body>All prescribable medication formulations represented using  either a &quot;generic&quot; or &quot;brand-specific&quot; concept. This includes RxNorm codes whose Term Type is SCD (semantic clinical drug), SBD (semantic brand drug), GPCK (generic pack), BPCK (brand pack), SCDG (semantic clinical drug group), SBDG (semantic brand drug group), SCDF (semantic clinical drug form), or SBDF (semantic brand drug form). 
+ Value set intensionally defined as a GROUPING made up of: Value Set: Medication Clinical General Drug (2.16.840.1.113883.3.88.12.80.17) (RxNorm Generic Drugs); Value Set: Medication Clinical Brand-specific Drug (2.16.840.1.113762.1.4.1010.5) (RxNorm Branded Drugs). 
+&#xD;
+Valueset Source: https://vsac.nlm.nih.gov/</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_t8c_EOZ0EeO97uF_XMEmeg" name="Clinical Substance">
+      <ownedComment xmi:id="_1lkFgOZ0EeO97uF_XMEmeg">
+        <body>All substances that may need to be represented in the context of health care related activities.  This value set is quite broad in coverage and includes concepts that may never be needed in a health care activity event, particularly the included SNOMED CT concepts. The code system-specific value sets in this grouping value set are intended to provide broad coverage of all kinds of agents, but the expectation for use is that the chosen concept identifier for a substance should be appropriately specific and drawn from the appropriate code system as noted: prescribable medications should use RXNORM concepts, more specific drugs and chemicals should be represented using UNII concepts, and any substances not found in either of those two code systems, should use the appropriate SNOMED CT concept. This overarching grouping value set is intended to support identification of prescribable medications, foods, general substances and environmental entities.  
+Value set intensionally defined as a GROUPING made up of: Value Set: Medication Clinical Drug (2.16.840.1.113762.1.4.1010.4) (RxNorm generic and brand codes); Value Set: Unique Ingredient Identifier - Complete Set (2.16.840.1.113883.3.88.12.80.20) (UNII codes); Value Set: Substance Other Than Clinical Drug (2.16.840.1.113762.1.4.1010.9) (SNOMED CT codes).&#xD;
+Valueset Source: https://vsac.nlm.nih.gov/</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_eLcPcOdbEeOqBOMhgDlycQ" name="Encounter Planned or Requested">
+      <ownedComment xmi:id="_sDkc4OdbEeOqBOMhgDlycQ">
+        <body>A value set of SNOMED-CT codes descending from  &quot;308335008&quot; patient encounter procedure (procedure).&#xD;
+&#xD;
+Specific URL Pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
       </ownedComment>
     </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
@@ -3064,5 +3087,14 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_AcbKceHMEeO04sHNODkHmQ" conceptName="Otic Drops" base_EnumerationLiteral="_AcbKcOHMEeO04sHNODkHmQ"/>
   <term:ValueSetVersion xmi:id="_UMJcYeHXEeO04sHNODkHmQ" identifier="2.16.840.1.113762.1.4.1010.6" fullName="CVX Vaccines Administered - Vaccine Set" binding="Dynamic" base_Enumeration="_UMJcYOHXEeO04sHNODkHmQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_iloDYeHXEeO04sHNODkHmQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_0_S4geXsEeOkFcFJ9uzEEw" identifier="2.16.840.1.113762.1.4.1010.4" binding="Dynamic" base_Enumeration="_0_S4gOXsEeOkFcFJ9uzEEw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_t8fbUOZ0EeO97uF_XMEmeg" identifier="2.16.840.1.113762.1.4.1010.2" binding="Dynamic" base_Enumeration="_t8c_EOZ0EeO97uF_XMEmeg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_eLc2gOdbEeOqBOMhgDlycQ" identifier="2.16.840.1.113883.11.20.9.52" base_Enumeration="_eLcPcOdbEeOqBOMhgDlycQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
 </xmi:XMI>
