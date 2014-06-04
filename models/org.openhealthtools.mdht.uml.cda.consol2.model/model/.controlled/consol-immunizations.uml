@@ -844,11 +844,11 @@ The priority of the immunization activity to the patient and provider is communi
     <ruleId>CONF:32102</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_jioDUJXJEeOgXcDbh8Igkw" base_Property="_rorhRJXFEeOgXcDbh8Igkw">
-    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:32127</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_-P-2wJXJEeOgXcDbh8Igkw" base_Property="_romowJXFEeOgXcDbh8Igkw">
-    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:32128</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_-OtZgJXLEeOgXcDbh8Igkw" severity="WARNING" base_Property="_8MbYsJXLEeOgXcDbh8Igkw">
