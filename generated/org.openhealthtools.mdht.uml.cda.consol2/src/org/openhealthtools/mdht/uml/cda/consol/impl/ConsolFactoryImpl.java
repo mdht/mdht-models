@@ -518,6 +518,30 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createIndication2();
 			case ConsolPackage.INSTRUCTION2:
 				return createInstruction2();
+			case ConsolPackage.MEDICATION_ACTIVITY2:
+				return createMedicationActivity2();
+			case ConsolPackage.MEDICATION_DISPENSE2:
+				return createMedicationDispense2();
+			case ConsolPackage.MEDICATION_INFORMATION2:
+				return createMedicationInformation2();
+			case ConsolPackage.MEDICATION_SUPPLY_ORDER2:
+				return createMedicationSupplyOrder2();
+			case ConsolPackage.NON_MEDICINAL_SUPPLY_ACTIVITY2:
+				return createNonMedicinalSupplyActivity2();
+			case ConsolPackage.PHYSICIANOF_RECORD_PARTICIPANT2:
+				return createPhysicianofRecordParticipant2();
+			case ConsolPackage.PLANNED_ACT2:
+				return createPlannedAct2();
+			case ConsolPackage.PLANNED_ENCOUNTER2:
+				return createPlannedEncounter2();
+			case ConsolPackage.PLANNED_OBSERVATION2:
+				return createPlannedObservation2();
+			case ConsolPackage.PLANNED_PROCEDURE2:
+				return createPlannedProcedure2();
+			case ConsolPackage.PLANNED_MEDICATION_ACTIVITY2:
+				return createPlannedMedicationActivity2();
+			case ConsolPackage.PLANNED_SUPPLY2:
+				return createPlannedSupply2();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2631,6 +2655,126 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public Instruction2 createInstruction2() {
 		Instruction2Impl instruction2 = new Instruction2Impl();
 		return instruction2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationActivity2 createMedicationActivity2() {
+		MedicationActivity2Impl medicationActivity2 = new MedicationActivity2Impl();
+		return medicationActivity2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationDispense2 createMedicationDispense2() {
+		MedicationDispense2Impl medicationDispense2 = new MedicationDispense2Impl();
+		return medicationDispense2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationInformation2 createMedicationInformation2() {
+		MedicationInformation2Impl medicationInformation2 = new MedicationInformation2Impl();
+		return medicationInformation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationSupplyOrder2 createMedicationSupplyOrder2() {
+		MedicationSupplyOrder2Impl medicationSupplyOrder2 = new MedicationSupplyOrder2Impl();
+		return medicationSupplyOrder2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NonMedicinalSupplyActivity2 createNonMedicinalSupplyActivity2() {
+		NonMedicinalSupplyActivity2Impl nonMedicinalSupplyActivity2 = new NonMedicinalSupplyActivity2Impl();
+		return nonMedicinalSupplyActivity2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PhysicianofRecordParticipant2 createPhysicianofRecordParticipant2() {
+		PhysicianofRecordParticipant2Impl physicianofRecordParticipant2 = new PhysicianofRecordParticipant2Impl();
+		return physicianofRecordParticipant2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlannedAct2 createPlannedAct2() {
+		PlannedAct2Impl plannedAct2 = new PlannedAct2Impl();
+		return plannedAct2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlannedEncounter2 createPlannedEncounter2() {
+		PlannedEncounter2Impl plannedEncounter2 = new PlannedEncounter2Impl();
+		return plannedEncounter2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlannedObservation2 createPlannedObservation2() {
+		PlannedObservation2Impl plannedObservation2 = new PlannedObservation2Impl();
+		return plannedObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlannedProcedure2 createPlannedProcedure2() {
+		PlannedProcedure2Impl plannedProcedure2 = new PlannedProcedure2Impl();
+		return plannedProcedure2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlannedMedicationActivity2 createPlannedMedicationActivity2() {
+		PlannedMedicationActivity2Impl plannedMedicationActivity2 = new PlannedMedicationActivity2Impl();
+		return plannedMedicationActivity2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlannedSupply2 createPlannedSupply2() {
+		PlannedSupply2Impl plannedSupply2 = new PlannedSupply2Impl();
+		return plannedSupply2;
 	}
 
 	/**

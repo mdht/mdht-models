@@ -1929,6 +1929,114 @@ public interface ConsolFactory extends EFactory {
 	Instruction2 createInstruction2();
 
 	/**
+	 * Returns a new object of class '<em>Medication Activity2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Activity2</em>'.
+	 * @generated
+	 */
+	MedicationActivity2 createMedicationActivity2();
+
+	/**
+	 * Returns a new object of class '<em>Medication Dispense2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Dispense2</em>'.
+	 * @generated
+	 */
+	MedicationDispense2 createMedicationDispense2();
+
+	/**
+	 * Returns a new object of class '<em>Medication Information2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Information2</em>'.
+	 * @generated
+	 */
+	MedicationInformation2 createMedicationInformation2();
+
+	/**
+	 * Returns a new object of class '<em>Medication Supply Order2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Supply Order2</em>'.
+	 * @generated
+	 */
+	MedicationSupplyOrder2 createMedicationSupplyOrder2();
+
+	/**
+	 * Returns a new object of class '<em>Non Medicinal Supply Activity2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Non Medicinal Supply Activity2</em>'.
+	 * @generated
+	 */
+	NonMedicinalSupplyActivity2 createNonMedicinalSupplyActivity2();
+
+	/**
+	 * Returns a new object of class '<em>Physicianof Record Participant2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Physicianof Record Participant2</em>'.
+	 * @generated
+	 */
+	PhysicianofRecordParticipant2 createPhysicianofRecordParticipant2();
+
+	/**
+	 * Returns a new object of class '<em>Planned Act2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Planned Act2</em>'.
+	 * @generated
+	 */
+	PlannedAct2 createPlannedAct2();
+
+	/**
+	 * Returns a new object of class '<em>Planned Encounter2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Planned Encounter2</em>'.
+	 * @generated
+	 */
+	PlannedEncounter2 createPlannedEncounter2();
+
+	/**
+	 * Returns a new object of class '<em>Planned Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Planned Observation2</em>'.
+	 * @generated
+	 */
+	PlannedObservation2 createPlannedObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Planned Procedure2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Planned Procedure2</em>'.
+	 * @generated
+	 */
+	PlannedProcedure2 createPlannedProcedure2();
+
+	/**
+	 * Returns a new object of class '<em>Planned Medication Activity2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Planned Medication Activity2</em>'.
+	 * @generated
+	 */
+	PlannedMedicationActivity2 createPlannedMedicationActivity2();
+
+	/**
+	 * Returns a new object of class '<em>Planned Supply2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Planned Supply2</em>'.
+	 * @generated
+	 */
+	PlannedSupply2 createPlannedSupply2();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
