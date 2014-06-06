@@ -6075,76 +6075,76 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP = 755;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Id' of 'Procedure Activity Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ID = 756;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Name' of 'Procedure Activity Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_NAME = 757;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Telecom' of 'Procedure Activity Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_TELECOM = 758;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Addr' of 'Procedure Activity Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ADDR = 759;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Id' of 'Procedure Activity Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ID = 760;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Addr' of 'Procedure Activity Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ADDR = 761;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Telecom' of 'Procedure Activity Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_TELECOM = 762;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Represented Organization' of 'Procedure Activity Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION = 763;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity' of 'Procedure Activity Act'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY = 756;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Id' of 'Procedure Activity Act'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ID = 757;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Addr' of 'Procedure Activity Act'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ADDR = 758;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Telecom' of 'Procedure Activity Act'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_TELECOM = 759;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org' of 'Procedure Activity Act'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG = 760;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Id' of 'Procedure Activity Act'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ID = 761;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Name' of 'Procedure Activity Act'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_NAME = 762;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Addr' of 'Procedure Activity Act'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ADDR = 763;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Telecom' of 'Procedure Activity Act'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_TELECOM = 764;
+	public static final int PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY = 764;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Class Code' of 'Procedure Activity Act'.
@@ -32260,39 +32260,39 @@ public class ConsolValidator extends EObjectValidator {
 				procedureActivityAct, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(
+				procedureActivityAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(
+				procedureActivityAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(
+				procedureActivityAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(
+				procedureActivityAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(
+				procedureActivityAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(
+				procedureActivityAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(
+				procedureActivityAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(
+				procedureActivityAct, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntity(
-				procedureActivityAct, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityId(
-				procedureActivityAct, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(
-				procedureActivityAct, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(
-				procedureActivityAct, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(
-				procedureActivityAct, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(
-				procedureActivityAct, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(
-				procedureActivityAct, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(
-				procedureActivityAct, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(
 				procedureActivityAct, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -32576,6 +32576,102 @@ public class ConsolValidator extends EObjectValidator {
 	}
 
 	/**
+	 * Validates the validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId constraint of '<em>Procedure Activity Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName constraint of '<em>Procedure Activity Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom constraint of '<em>Procedure Activity Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr constraint of '<em>Procedure Activity Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId constraint of '<em>Procedure Activity Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr constraint of '<em>Procedure Activity Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom constraint of '<em>Procedure Activity Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization constraint of '<em>Procedure Activity Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(
+			diagnostics, context);
+	}
+
+	/**
 	 * Validates the validateProcedureActivityActProcedureActPerformerAssignedEntity constraint of '<em>Procedure Activity Act</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -32584,102 +32680,6 @@ public class ConsolValidator extends EObjectValidator {
 	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntity(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerAssignedEntity(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProcedureActivityActProcedureActPerformerAssignedEntityId constraint of '<em>Procedure Activity Act</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityId(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerAssignedEntityId(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProcedureActivityActProcedureActPerformerAssignedEntityAddr constraint of '<em>Procedure Activity Act</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom constraint of '<em>Procedure Activity Act</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg constraint of '<em>Procedure Activity Act</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId constraint of '<em>Procedure Activity Act</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName constraint of '<em>Procedure Activity Act</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr constraint of '<em>Procedure Activity Act</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom constraint of '<em>Procedure Activity Act</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityAct_validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return procedureActivityAct.validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(
 			diagnostics, context);
 	}
 

@@ -66,15 +66,15 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActIndication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Indication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActMedicationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Medication Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActEntryRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Name</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Telecom</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Addr</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Addr</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Telecom</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Represented Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerAssignedEntityId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Addr</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Telecom</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Name</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Addr</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Telecom</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct#validateProcedureActivityActEntryRelationshipProcedureActEncounterId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Id</em>}</li>
@@ -1487,6 +1487,526 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null).assignedEntity->excluding(null).representedOrganization->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ID,
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Name</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null).assignedEntity->excluding(null).representedOrganization->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (not name->isEmpty()))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Name</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.INFO,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_NAME,
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Telecom</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null).assignedEntity->excluding(null).representedOrganization->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (telecom->size() = 1))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Telecom</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_TELECOM,
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Addr</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null).assignedEntity->excluding(null).representedOrganization->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() = 1))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Procedure Act Represented Organization Addr</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ADDR,
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null).assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ID,
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Addr</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null).assignedEntity->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() = 1))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Addr</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ADDR,
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Telecom</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null).assignedEntity->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (telecom->size() = 1))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Telecom</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_TELECOM,
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Represented Organization</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null).assignedEntity->excluding(null)->reject(representedOrganization->one(representedOrganization : cda::Organization | not representedOrganization.oclIsUndefined() and representedOrganization.oclIsKindOf(cda::Organization)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Procedure Act Assigned Entity Represented Organization</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(
+			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION,
+						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntity(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity</em>}' operation.
 	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
@@ -1494,7 +2014,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity->size() = 1)";
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntity(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity</em>}' invariant operation.
@@ -1542,526 +2062,6 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY,
 						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerAssignedEntity"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.id->size() >= 1)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityId(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ID,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerAssignedEntityId"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Addr</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.addr->size() = 1)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Addr</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ADDR,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerAssignedEntityAddr"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Telecom</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.telecom->size() = 1)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Telecom</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_TELECOM,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerAssignedEntityTelecom"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.representedOrganization->size() = 1)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerAssignedEntityRepOrg"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.representedOrganization.id->size() > 0)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ID,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Name</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.representedOrganization.name->size() > 0)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Name</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_NAME,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Addr</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.representedOrganization.addr->size() = 1)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Addr</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ADDR,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Telecom</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.representedOrganization.telecom->size() = 1)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Telecom</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(
-			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureActivityAct);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_TELECOM,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom"),
 						new Object[] { eObject }));
 				}
 
