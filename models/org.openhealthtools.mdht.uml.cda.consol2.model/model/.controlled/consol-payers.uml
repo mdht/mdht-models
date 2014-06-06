@@ -639,7 +639,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     <ruleId>CONF:10481</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_DASncF0aEeGt2doqSDULjA" severity="INFO" base_Property="_87mhIF0ZEeGt2doqSDULjA">
-    <ruleId>CONF:8910</ruleId>
+    <ruleId>CONF:8911</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_IYe-sF0bEeGt2doqSDULjA" severity="WARNING" base_Property="_CCqsIF0bEeGt2doqSDULjA">
     <ruleId>CONF:8913</ruleId>
@@ -987,4 +987,166 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     <ruleId>CONF:8876</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConformsTo xmi:id="_d3rHoLk0EeODDJAC5t5vpw" base_Generalization="_aJr6UbkxEeODDJAC5t5vpw"/>
+  <uml:Class xmi:id="_Q0ODkOwlEeOqa975IP2wug" name="PolicyActivity2" clientDependency="_of2ycOwlEeOqa975IP2wug">
+    <ownedComment xmi:id="_eTN_UOwlEeOqa975IP2wug">
+      <body>A policy activity represents the policy or program providing the coverage. The person for whom payment is being provided (i.e., the patient) is the covered party. The subscriber of the policy or program is represented as a participant that is the holder the coverage. The payer is represented as the performer of the policy activity.</body>
+    </ownedComment>
+    <generalization xmi:id="_Q0P4wOwlEeOqa975IP2wug">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_PZBdMBUlEeGvPruliC3crg"/>
+    </generalization>
+    <substitution xmi:id="_of2ycOwlEeOqa975IP2wug" name="PolicyActivity" supplier="_PZBdMBUlEeGvPruliC3crg" client="_Q0ODkOwlEeOqa975IP2wug" contract="_PZBdMBUlEeGvPruliC3crg"/>
+    <ownedAttribute xmi:id="_qxGxcOwnEeOqa975IP2wug" name="payer" type="_vx38oOwnEeOqa975IP2wug">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qxGxcewnEeOqa975IP2wug" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qxGxcuwnEeOqa975IP2wug" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_sLvNAFzWEeGt2doqSDULjA"/>
+      <association href="../consol.uml#_qxJNsOwnEeOqa975IP2wug"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HDEVwOwpEeOqa975IP2wug" name="guarantor" type="_IAlt8OwpEeOqa975IP2wug">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HDEVwewpEeOqa975IP2wug"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_e-rqsF13EeGt2doqSDULjA"/>
+      <association href="../consol.uml#_HDFj4OwpEeOqa975IP2wug"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_xCE44OwqEeOqa975IP2wug" name="coverage" type="_xzqt4OwqEeOqa975IP2wug">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xCE44ewqEeOqa975IP2wug" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xCE44uwqEeOqa975IP2wug" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_UI0LoF-sEeGt2doqSDULjA"/>
+      <association href="../consol.uml#_xCGHAOwqEeOqa975IP2wug"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_vx38oOwnEeOqa975IP2wug" name="Payer">
+      <ownedComment xmi:id="_8Obj8OwnEeOqa975IP2wug">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_vx4jsOwnEeOqa975IP2wug">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_ddyK0FzWEeGt2doqSDULjA"/>
+      </generalization>
+      <ownedAttribute xmi:id="_0IXbwOwnEeOqa975IP2wug" name="payerAssignedEntity" type="_5YlYMOwnEeOqa975IP2wug" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0IXbwewnEeOqa975IP2wug" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0IXbwuwnEeOqa975IP2wug" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_uHcp8F0REeGt2doqSDULjA"/>
+        <association href="../consol.uml#_0IYp4OwnEeOqa975IP2wug"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_5YlYMOwnEeOqa975IP2wug" name="PayerAssignedEntity">
+        <generalization xmi:id="_5Yl_QOwnEeOqa975IP2wug">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_deYl8F0REeGt2doqSDULjA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_PI30sOwoEeOqa975IP2wug" name="telecom">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S10nkOwoEeOqa975IP2wug" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S10nkewoEeOqa975IP2wug"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_87mhIF0ZEeGt2doqSDULjA"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_IAlt8OwpEeOqa975IP2wug" name="Guarantor">
+      <ownedComment xmi:id="_Lz-gAOwpEeOqa975IP2wug">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_IAmVAOwpEeOqa975IP2wug">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_GX8lgF13EeGt2doqSDULjA"/>
+      </generalization>
+      <ownedAttribute xmi:id="_JVrRkOwpEeOqa975IP2wug" name="guarantorAssignedEntity" type="_PzSOMOwpEeOqa975IP2wug" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JVrRkewpEeOqa975IP2wug" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JVrRkuwpEeOqa975IP2wug" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_hHSrEF15EeGt2doqSDULjA"/>
+        <association href="../consol.uml#_JVsfsOwpEeOqa975IP2wug"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_PzSOMOwpEeOqa975IP2wug" name="GuarantorAssignedEntity">
+        <generalization xmi:id="_PzSOMewpEeOqa975IP2wug">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_NgEewF13EeGt2doqSDULjA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_QtvEQOwpEeOqa975IP2wug" name="telecom">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TLPBcOwpEeOqa975IP2wug" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TLPBcewpEeOqa975IP2wug"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_XTYEgF16EeGt2doqSDULjA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_20Be0OwpEeOqa975IP2wug" name="code">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_20Be0ewpEeOqa975IP2wug" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_20Be0uwpEeOqa975IP2wug" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_pRByUF15EeGt2doqSDULjA"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_xzqt4OwqEeOqa975IP2wug" name="Coverage">
+      <ownedComment xmi:id="_0XPd4OwqEeOqa975IP2wug">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_xzqt4ewqEeOqa975IP2wug">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_G5CNEF-rEeGt2doqSDULjA"/>
+      </generalization>
+      <ownedAttribute xmi:id="_y8xrAOwqEeOqa975IP2wug" name="coverageRole" type="_23vrwOwqEeOqa975IP2wug" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y8xrAewqEeOqa975IP2wug" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y8xrAuwqEeOqa975IP2wug" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_EsHiMF-uEeGt2doqSDULjA"/>
+        <association href="../consol.uml#_y8y5IOwqEeOqa975IP2wug"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_23vrwOwqEeOqa975IP2wug" name="CoverageRole">
+        <generalization xmi:id="_23vrwewqEeOqa975IP2wug">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_0rzgQF-tEeGt2doqSDULjA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_34QtkOwqEeOqa975IP2wug" name="coveragePlayingEntity" type="_51YhkOwqEeOqa975IP2wug" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_34QtkewqEeOqa975IP2wug"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_O3tMAGAoEeGt2doqSDULjA"/>
+          <association href="../consol.uml#_34R7sOwqEeOqa975IP2wug"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_51YhkOwqEeOqa975IP2wug" name="CoveragePlayingEntity">
+          <ownedRule xmi:id="_FskyAOwrEeOqa975IP2wug" name="DateOfBirthInSDTCbirthTime">
+            <ownedComment xmi:id="_FskyAewrEeOqa975IP2wug">
+              <body>UNIMPLEMENTABLE</body>
+            </ownedComment>
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_FskyAuwrEeOqa975IP2wug">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+              <body>true</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_l--F4OwsEeOqa975IP2wug" name="sDTCBoundToHL7Namespace">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_w2EyUOwsEeOqa975IP2wug">
+              <language>Analysis</language>
+              <body>sDTCBirthTime: The prefix sdtc: SHALL be bound to the namespace “urn:hl7-org:sdtc”. The use of the namespace provides a necessary extension to CDA R2 for the use of the birthTime element.</body>
+            </specification>
+          </ownedRule>
+          <generalization xmi:id="_51YhkewqEeOqa975IP2wug">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_NHNUMGAnEeGt2doqSDULjA"/>
+          </generalization>
+          <ownedAttribute xmi:id="_Upub4OwtEeOqa975IP2wug" name="sDTCBirthTime" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_XFesoOwtEeOqa975IP2wug">
+              <body>If the covered party's date of birth is recorded differently in the health plan and in the registration/medication summary, use the date of birth as it is recorded in the health plan.</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WVahoOwtEeOqa975IP2wug" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WVbIsOwtEeOqa975IP2wug" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UbzwoICaEd-tCqqhK7qkow"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_Vf2sQOwlEeOqa975IP2wug" base_Class="_Q0ODkOwlEeOqa975IP2wug" templateId="2.16.840.1.113883.10.20.22.4.61.2">
+    <ruleId>CONF:8900</ruleId>
+    <ruleId>CONF:10516</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_mUegAOwlEeOqa975IP2wug" base_Generalization="_Q0P4wOwlEeOqa975IP2wug"/>
+  <CDA:PropertyValidation xmi:id="_PI4bwOwoEeOqa975IP2wug" severity="INFO" base_Property="_PI30sOwoEeOqa975IP2wug">
+    <ruleId>CONF:8911</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_QtvEQ-wpEeOqa975IP2wug" severity="WARNING" base_Property="_QtvEQOwpEeOqa975IP2wug">
+    <ruleId>CONF:8965</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_20CF4OwpEeOqa975IP2wug" code="GUAR" displayName="Guarantor" base_Property="_20Be0OwpEeOqa975IP2wug">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
+    <ruleId>CONF:16096</ruleId>
+    <ruleId>CONF:32165</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_20DUAOwpEeOqa975IP2wug" base_Property="_20Be0OwpEeOqa975IP2wug">
+    <ruleId>CONF:8968</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_VX4iYOwtEeOqa975IP2wug" base_Property="_Upub4OwtEeOqa975IP2wug">
+    <ruleId>CONF:31344</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_gfVX8OwtEeOqa975IP2wug" base_Constraint="_l--F4OwsEeOqa975IP2wug">
+    <ruleId>CONF:31345</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

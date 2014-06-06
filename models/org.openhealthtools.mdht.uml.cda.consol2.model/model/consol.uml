@@ -1818,8 +1818,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_xKOzoOgqEeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_QsQ3AOgrEeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_yWkRoOgvEeO-iJTuAv7BKQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_r0WFUOgwEeO-iJTuAv7BKQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_05d2wOgwEeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_vEd1cOg0EeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_sKI4sOg8EeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_OSp2IOg9EeO-iJTuAv7BKQ"/>
@@ -1831,6 +1829,62 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_w-_3AOp6EeOfFtFITOHUWA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Opg_IOp7EeOfFtFITOHUWA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_wQlcYOp7EeOfFtFITOHUWA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-payers.uml#_Q0ODkOwlEeOqa975IP2wug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qxJNsOwnEeOqa975IP2wug">
+      <ownedEnd xmi:id="_qxJNsewnEeOqa975IP2wug" association="_qxJNsOwnEeOqa975IP2wug">
+        <type xmi:type="uml:Class" href=".controlled/consol-payers.uml#_Q0ODkOwlEeOqa975IP2wug"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/consol-payers.uml#_qxGxcOwnEeOqa975IP2wug"/>
+      <memberEnd href="#_qxJNsewnEeOqa975IP2wug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_0IYp4OwnEeOqa975IP2wug">
+      <ownedEnd xmi:id="_0IYp4ewnEeOqa975IP2wug" association="_0IYp4OwnEeOqa975IP2wug">
+        <type xmi:type="uml:Class" href=".controlled/consol-payers.uml#_vx38oOwnEeOqa975IP2wug"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/consol-payers.uml#_0IXbwOwnEeOqa975IP2wug"/>
+      <memberEnd href="#_0IYp4ewnEeOqa975IP2wug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_HDFj4OwpEeOqa975IP2wug">
+      <ownedEnd xmi:id="_HDFj4ewpEeOqa975IP2wug" association="_HDFj4OwpEeOqa975IP2wug">
+        <type xmi:type="uml:Class" href=".controlled/consol-payers.uml#_Q0ODkOwlEeOqa975IP2wug"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/consol-payers.uml#_HDEVwOwpEeOqa975IP2wug"/>
+      <memberEnd href="#_HDFj4ewpEeOqa975IP2wug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JVsfsOwpEeOqa975IP2wug">
+      <ownedEnd xmi:id="_JVtGwOwpEeOqa975IP2wug" association="_JVsfsOwpEeOqa975IP2wug">
+        <type xmi:type="uml:Class" href=".controlled/consol-payers.uml#_IAlt8OwpEeOqa975IP2wug"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/consol-payers.uml#_JVrRkOwpEeOqa975IP2wug"/>
+      <memberEnd href="#_JVtGwOwpEeOqa975IP2wug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xCGHAOwqEeOqa975IP2wug">
+      <ownedEnd xmi:id="_xCGuEOwqEeOqa975IP2wug" association="_xCGHAOwqEeOqa975IP2wug">
+        <type xmi:type="uml:Class" href=".controlled/consol-payers.uml#_Q0ODkOwlEeOqa975IP2wug"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/consol-payers.uml#_xCE44OwqEeOqa975IP2wug"/>
+      <memberEnd href="#_xCGuEOwqEeOqa975IP2wug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_y8y5IOwqEeOqa975IP2wug">
+      <ownedEnd xmi:id="_y8zgMOwqEeOqa975IP2wug" association="_y8y5IOwqEeOqa975IP2wug">
+        <type xmi:type="uml:Class" href=".controlled/consol-payers.uml#_xzqt4OwqEeOqa975IP2wug"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/consol-payers.uml#_y8xrAOwqEeOqa975IP2wug"/>
+      <memberEnd href="#_y8zgMOwqEeOqa975IP2wug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_34R7sOwqEeOqa975IP2wug">
+      <ownedEnd xmi:id="_34R7sewqEeOqa975IP2wug" association="_34R7sOwqEeOqa975IP2wug">
+        <type xmi:type="uml:Class" href=".controlled/consol-payers.uml#_23vrwOwqEeOqa975IP2wug"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/consol-payers.uml#_34QtkOwqEeOqa975IP2wug"/>
+      <memberEnd href="#_34R7sewqEeOqa975IP2wug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-procedures.uml#__SgUwOwuEeOqa975IP2wug"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_5l3g0OzYEeOnE-G4kptBiw"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_y5C8IOzbEeOnE-G4kptBiw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_S_gp0Oz-EeOnE-G4kptBiw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_WnadQO0BEeOnE-G4kptBiw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_mgnKkO0BEeOnE-G4kptBiw"/>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
@@ -3390,5 +3444,26 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_zVkjgOdeEeOqBOMhgDlycQ" base_Association="_vu1GUOdeEeOqBOMhgDlycQ">
     <ruleId>CONF:31874</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_qxJ0wOwnEeOqa975IP2wug" base_Association="_qxJNsOwnEeOqa975IP2wug">
+    <ruleId>CONF:8906</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_0IYp4uwnEeOqa975IP2wug" base_Association="_0IYp4OwnEeOqa975IP2wug">
+    <ruleId>CONF:8908</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_HDFj4uwpEeOqa975IP2wug" severity="WARNING" base_Association="_HDFj4OwpEeOqa975IP2wug">
+    <ruleId>CONF:8961</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_JVtGwewpEeOqa975IP2wug" base_Association="_JVsfsOwpEeOqa975IP2wug">
+    <ruleId>CONF:8962</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_xCGuEewqEeOqa975IP2wug" base_Association="_xCGHAOwqEeOqa975IP2wug">
+    <ruleId>CONF:8916</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_y8zgMewqEeOqa975IP2wug" base_Association="_y8y5IOwqEeOqa975IP2wug">
+    <ruleId>CONF:8921</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_34SiwOwqEeOqa975IP2wug" severity="WARNING" base_Association="_34R7sOwqEeOqa975IP2wug">
+    <ruleId>CONF:8932</ruleId>
   </CDA:AssociationValidation>
 </xmi:XMI>

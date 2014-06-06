@@ -992,4 +992,110 @@ The effectiveTime represents the clinically relevant time of the observation. Th
   <CDA:PropertyValidation xmi:id="_ia8wYOEGEeOmBMTtnrPqww" base_Property="_gszMgOEGEeOmBMTtnrPqww">
     <ruleId>CONF:19143</ruleId>
   </CDA:PropertyValidation>
+  <uml:Class xmi:id="_y5C8IOzbEeOnE-G4kptBiw" name="ProblemConcernAct2" clientDependency="_SmciAOzcEeOnE-G4kptBiw">
+    <ownedComment xmi:id="_-7idoOzbEeOnE-G4kptBiw">
+      <body>This template reflects an ongoing concern on behalf of the provider that placed the concern on a patient's problem list. So long as the underlying condition is of concern to the provider (i.e. so long as the condition, whether active or resolved, is of ongoing concern and interest to the provider), the statusCode is &quot;active&quot;. Only when the underlying condition is no longer of concern is the statusCode set to &quot;completed&quot;. The effectiveTime reflects the time that the underlying condition was felt to be a concern – it may or may not correspond to the effectiveTime of the condition (e.g. even five years later, the clinician may remain concerned about a prior heart attack).&#xD;
+The statusCode of the Problem Concern Act (Condition) is the definitive indication of the status of the concern, whereas the effectiveTime of the nested Problem Observation is the definitive indication of whether or not the underlying condition is resolved.&#xD;
+The effectiveTime/low of the Problem Concern Act (Condition) asserts when the concern became active. This equates to the time the concern was authored in the patient's chart. The effectiveTime/high asserts when the concern was completed (e.g. when the clinician deemed there is no longer any need to track the underlying condition).&#xD;
+A Problem Concern Act (Condition) can contain many Problem Observations (templateId 2.16.840.1.113883.10.20.22.4.4.2). Each Problem Observation is a discrete observation of a condition, and therefore will have a statusCode of &quot;completed&quot;. The many Problem Observations nested under a Problem Concern Act (Condition) reflect the change in the clinical understanding of a condition over time. For instance, a Concern may initially contain a Problem Observation of &quot;chest pain&quot;:&#xD;
+ - Problem Concern 1&#xD;
+   --- Problem Observation: Chest Pain &#xD;
+Later, a new Problem Observation of &quot;esophagitis&quot; will be added, reflecting a better understanding of the nature of the chest pain. The later problem observation will have a more recent author time stamp. &#xD;
+ - Problem Concern 1&#xD;
+   --- Problem Observation (author/time Jan 3, 2012): Chest Pain &#xD;
+   --- Problem Observation (author/time Jan 6, 2012): Esophagitis&#xD;
+Many systems display the nested Problem Observation with the most recent author time stamp, and provide a mechanism for viewing prior observations.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_cNUOQOzfEeOnE-G4kptBiw" name="effectiveTimeLow">
+      <ownedComment xmi:id="_yLR6YOzfEeOnE-G4kptBiw">
+        <body>Note: The effectiveTime/low asserts when the concern became active. This equates to the time the concern was authored in the patient's chart.</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cNUOQezfEeOnE-G4kptBiw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>effectiveTime SHALL contain exactly one [1..1] low</body>
+        <body>not self.effectiveTime.low.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_cnoLsOzfEeOnE-G4kptBiw" name="effectiveTimeHigh">
+      <ownedComment xmi:id="_vLAnUOzfEeOnE-G4kptBiw">
+        <body>Note: The effectiveTime/high asserts when the concern was completed (e.g. when the clinician deemed there is no longer any need to track the underlying condition).</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cnoLsezfEeOnE-G4kptBiw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>effectiveTime MAY contain zero or one [0..1] high</body>
+        <body>not self.effectiveTime.high.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_y5C8IezbEeOnE-G4kptBiw" general="_2H6yUBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_SmciAOzcEeOnE-G4kptBiw" name="ProblemConcernAct" supplier="_2H6yUBSVEeGGzu7fmW9pXw" client="_y5C8IOzbEeOnE-G4kptBiw" contract="_2H6yUBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_zYX1EOzeEeOnE-G4kptBiw" name="statusCode" visibility="private" aggregation="composite" redefinedProperty="_2H_q0BSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zYX1EezeEeOnE-G4kptBiw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zYX1EuzeEeOnE-G4kptBiw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_EZInYOzfEeOnE-G4kptBiw" name="effectiveTime" visibility="private" aggregation="composite" redefinedProperty="_2IBgABSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_RArWsOzfEeOnE-G4kptBiw"/>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EZInYezfEeOnE-G4kptBiw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EZInYuzfEeOnE-G4kptBiw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_maLn4O0AEeOnE-G4kptBiw" name="code" visibility="private" redefinedProperty="_2H_DwRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WnYoEO0BEeOnE-G4kptBiw" name="authorParticipation" association="_WnadQO0BEeOnE-G4kptBiw">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WnZPIO0BEeOnE-G4kptBiw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WnYoEe0BEeOnE-G4kptBiw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_mgl8cO0BEeOnE-G4kptBiw" name="providerPriorityPreference" association="_mgnKkO0BEeOnE-G4kptBiw">
+      <type xmi:type="uml:Class" href="consol-planofcare.uml#_ncafYJmaEeOLJeQez13EkQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mgl8cu0BEeOnE-G4kptBiw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mgl8ce0BEeOnE-G4kptBiw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_1-Y8cOzbEeOnE-G4kptBiw" base_Class="_y5C8IOzbEeOnE-G4kptBiw" templateId="2.16.840.1.113883.10.20.22.4.3.2">
+    <ruleId>CONF:16772</ruleId>
+    <ruleId>CONF:16773</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_QaoKsOzcEeOnE-G4kptBiw" base_Generalization="_y5C8IezbEeOnE-G4kptBiw"/>
+  <CDA:ValueSetConstraint xmi:id="_zYX1E-zeEeOnE-G4kptBiw" base_Property="_zYX1EOzeEeOnE-G4kptBiw">
+    <reference href="../consol-vocab.uml#_2GDxJhSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:31525</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_9UT5wOzeEeOnE-G4kptBiw" base_Property="_zYX1EOzeEeOnE-G4kptBiw">
+    <ruleId>CONF:9029</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_EZInY-zfEeOnE-G4kptBiw" base_Property="_EZInYOzfEeOnE-G4kptBiw">
+    <ruleId>CONF:9030</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_cNUOQuzfEeOnE-G4kptBiw" base_Constraint="_cNUOQOzfEeOnE-G4kptBiw">
+    <ruleId>CONF:9032</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_cnoLsuzfEeOnE-G4kptBiw" severity="INFO" base_Constraint="_cnoLsOzfEeOnE-G4kptBiw">
+    <ruleId>CONF:9033</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CodeSystemConstraint xmi:id="_maLn4e0AEeOnE-G4kptBiw" code="CONC" displayName="Concern" base_Property="_maLn4O0AEeOnE-G4kptBiw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
+    <ruleId>CONF:19184</ruleId>
+    <ruleId>CONF:32168</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_maM2AO0AEeOnE-G4kptBiw" base_Property="_maLn4O0AEeOnE-G4kptBiw">
+    <ruleId>CONF:9027</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_WnadQO0BEeOnE-G4kptBiw" memberEnd="_WnYoEO0BEeOnE-G4kptBiw _WnadQe0BEeOnE-G4kptBiw">
+    <ownedEnd xmi:id="_WnadQe0BEeOnE-G4kptBiw" type="_y5C8IOzbEeOnE-G4kptBiw" association="_WnadQO0BEeOnE-G4kptBiw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_YWnKAO0BEeOnE-G4kptBiw" severity="WARNING" base_Association="_WnadQO0BEeOnE-G4kptBiw">
+    <ruleId>CONF:31146</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_mgnKkO0BEeOnE-G4kptBiw" memberEnd="_mgl8cO0BEeOnE-G4kptBiw _mgnKke0BEeOnE-G4kptBiw">
+    <ownedEnd xmi:id="_mgnKke0BEeOnE-G4kptBiw" type="_y5C8IOzbEeOnE-G4kptBiw" association="_mgnKkO0BEeOnE-G4kptBiw"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_o8XbUO0BEeOnE-G4kptBiw" severity="INFO" base_Association="_mgnKkO0BEeOnE-G4kptBiw" typeCode="REFR">
+    <ruleId>CONF:31638</ruleId>
+    <ruleId>CONF:31639</ruleId>
+    <ruleId>CONF:31640</ruleId>
+  </CDA:EntryRelationship>
 </xmi:XMI>
