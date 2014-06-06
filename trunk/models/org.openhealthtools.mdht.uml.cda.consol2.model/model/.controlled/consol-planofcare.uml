@@ -2428,20 +2428,11 @@ The Planned Observation template may also indicate the potential insurance cover
       <generalization xmi:id="_YaWKwOgwEeO-iJTuAv7BKQ">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_gRI5MEcEEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_r0TCAOgwEeO-iJTuAv7BKQ" name="manufacturedProduct" type="_xOjEMOgwEeO-iJTuAv7BKQ" association="_r0WFUOgwEeO-iJTuAv7BKQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HDRfUOgyEeO-iJTuAv7BKQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HDTUgOgyEeO-iJTuAv7BKQ" value="1"/>
+      <ownedAttribute xmi:id="_S_e0oOz-EeOnE-G4kptBiw" name="medicationInformation2" association="_S_gp0Oz-EeOnE-G4kptBiw">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_Hz__kOXrEeOkFcFJ9uzEEw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bcD_YOz-EeOnE-G4kptBiw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bcD_Yez-EeOnE-G4kptBiw" value="1"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_xOjEMOgwEeO-iJTuAv7BKQ" name="ManufacturedProduct">
-        <generalization xmi:id="_xOlgcOgwEeO-iJTuAv7BKQ">
-          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_p6Zs8EcZEd6besF9iFIJkQ"/>
-        </generalization>
-        <ownedAttribute xmi:id="_05azcOgwEeO-iJTuAv7BKQ" name="medicationInformation2" association="_05d2wOgwEeO-iJTuAv7BKQ">
-          <type xmi:type="uml:Class" href="consol-medications.uml#_Hz__kOXrEeOkFcFJ9uzEEw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3OsowOgwEeO-iJTuAv7BKQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3Oud8OgwEeO-iJTuAv7BKQ" value="1"/>
-        </ownedAttribute>
-      </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_e9gG0OgREeO-iJTuAv7BKQ" base_Class="_Yj45YOgREeO-iJTuAv7BKQ" templateId="2.16.840.1.113883.10.20.22.4.42.2">
@@ -2565,15 +2556,6 @@ The Planned Observation template may also indicate the potential insurance cover
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_0YWjMOgvEeO-iJTuAv7BKQ" base_Association="_yWkRoOgvEeO-iJTuAv7BKQ">
     <ruleId>CONF:32082</ruleId>
-  </CDA:AssociationValidation>
-  <uml:Association xmi:id="_r0WFUOgwEeO-iJTuAv7BKQ" memberEnd="_r0TCAOgwEeO-iJTuAv7BKQ _r0WFUegwEeO-iJTuAv7BKQ">
-    <ownedEnd xmi:id="_r0WFUegwEeO-iJTuAv7BKQ" type="_YaTugOgwEeO-iJTuAv7BKQ" association="_r0WFUOgwEeO-iJTuAv7BKQ"/>
-  </uml:Association>
-  <uml:Association xmi:id="_05d2wOgwEeO-iJTuAv7BKQ" memberEnd="_05azcOgwEeO-iJTuAv7BKQ _05d2wegwEeO-iJTuAv7BKQ">
-    <ownedEnd xmi:id="_05d2wegwEeO-iJTuAv7BKQ" type="_xOjEMOgwEeO-iJTuAv7BKQ" association="_05d2wOgwEeO-iJTuAv7BKQ"/>
-  </uml:Association>
-  <CDA:AssociationValidation xmi:id="_2F3YcOgwEeO-iJTuAv7BKQ" base_Association="_05d2wOgwEeO-iJTuAv7BKQ">
-    <ruleId>CONF:32083</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_vEd1cOg0EeO-iJTuAv7BKQ" name="PlannedSupply2" clientDependency="_PYldEOg1EeO-iJTuAv7BKQ">
     <ownedComment xmi:id="_GOfFAOg1EeO-iJTuAv7BKQ">
@@ -2827,4 +2809,10 @@ Depending on the type of supply, the product or participant will be either a Med
     <ruleId>CONF:32061</ruleId>
     <ruleId>CONF:32062</ruleId>
   </CDA:EntryRelationship>
+  <uml:Association xmi:id="_S_gp0Oz-EeOnE-G4kptBiw" memberEnd="_S_e0oOz-EeOnE-G4kptBiw _S_gp0ez-EeOnE-G4kptBiw">
+    <ownedEnd xmi:id="_S_gp0ez-EeOnE-G4kptBiw" type="_YaTugOgwEeO-iJTuAv7BKQ" association="_S_gp0Oz-EeOnE-G4kptBiw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_ZU7TwOz-EeOnE-G4kptBiw" message="Consol Consumable SHALL contain exactly one [1..1] Medication Information (V2) (templateId:2.16.840.1.113883.10.20.22.4.23.2) (CONF:32083)" base_Association="_S_gp0Oz-EeOnE-G4kptBiw">
+    <ruleId>CONF:32083</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

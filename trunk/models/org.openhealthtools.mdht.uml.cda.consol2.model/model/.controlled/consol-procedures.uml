@@ -2056,7 +2056,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:PropertyValidation xmi:id="_3j-74EEwEeGdmoWy_aLP0Q" base_Property="_2Q1R8EEwEeGdmoWy_aLP0Q">
     <ruleId>CONF:10090</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_F-zmsEExEeGdmoWy_aLP0Q" code="10219-4" base_Property="_2Q1R8UEwEeGdmoWy_aLP0Q">
+  <CDA:CodeSystemConstraint xmi:id="_F-zmsEExEeGdmoWy_aLP0Q" code="10219-4" displayName="Preoperative Diagnosis" base_Property="_2Q1R8UEwEeGdmoWy_aLP0Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:10092</ruleId>
   </CDA:CodeSystemConstraint>
@@ -2445,5 +2445,51 @@ This clinical statement represents procedures whose immediate and primary outcom
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_qxfmYMMmEeKhp9meU6hZdQ" base_Property="_ibioEMMmEeKhp9meU6hZdQ">
     <ruleId>CONF:7736</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="__SgUwOwuEeOqa975IP2wug" name="PostprocedureDiagnosis2" clientDependency="_Yau9cOwvEeOqa975IP2wug">
+    <ownedComment xmi:id="_Lz0gQOwvEeOqa975IP2wug">
+      <body>This template represents the diagnosis or diagnoses discovered or confirmed during the procedure. They may be the same as preprocedure diagnoses or indications.</body>
+    </ownedComment>
+    <generalization xmi:id="__SgUwewuEeOqa975IP2wug" general="_0fjXAEEvEeGdmoWy_aLP0Q"/>
+    <substitution xmi:id="_Yau9cOwvEeOqa975IP2wug" name="PostprocedureDiagnosis" supplier="_0fjXAEEvEeGdmoWy_aLP0Q" client="__SgUwOwuEeOqa975IP2wug" contract="_0fjXAEEvEeGdmoWy_aLP0Q"/>
+    <ownedAttribute xmi:id="_O-pjoOzWEeOnE-G4kptBiw" name="code" visibility="private" aggregation="composite" redefinedProperty="_2HQ7sUEvEeGdmoWy_aLP0Q">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_EebnEOwvEeOqa975IP2wug" base_Class="__SgUwOwuEeOqa975IP2wug" templateId="2.16.840.1.113883.10.20.22.4.51.2">
+    <ruleId>CONF:16766</ruleId>
+    <ruleId>CONF:16767</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_VIJyYOwvEeOqa975IP2wug" base_Generalization="__SgUwewuEeOqa975IP2wug"/>
+  <CDA:CodeSystemConstraint xmi:id="_O-40MOzWEeOnE-G4kptBiw" code="59769-0" displayName="Postprocedure Diagnosis" base_Property="_O-pjoOzWEeOnE-G4kptBiw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:19152</ruleId>
+    <ruleId>CONF:32166</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_QAn-AOzWEeOnE-G4kptBiw" base_Property="_O-pjoOzWEeOnE-G4kptBiw">
+    <ruleId>CONF:19151</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="_5l3g0OzYEeOnE-G4kptBiw" name="PreoperativeDiagnosis2" clientDependency="_GMiQ8OzaEeOnE-G4kptBiw">
+    <ownedComment xmi:id="_JXHzEOzZEeOnE-G4kptBiw">
+      <body>This template represents the surgical diagnosis or diagnoses assigned to the patient before the surgical procedure and is the reason for the surgery. The preoperative diagnosis is, in the opinion of the surgeon, the diagnosis that will be confirmed during surgery.</body>
+    </ownedComment>
+    <generalization xmi:id="_5l4H4OzYEeOnE-G4kptBiw" general="_0baBYEEwEeGdmoWy_aLP0Q"/>
+    <substitution xmi:id="_GMiQ8OzaEeOnE-G4kptBiw" name="PreoperativeDiagnosis" supplier="_0baBYEEwEeGdmoWy_aLP0Q" client="_5l3g0OzYEeOnE-G4kptBiw" contract="_0baBYEEwEeGdmoWy_aLP0Q"/>
+    <ownedAttribute xmi:id="_RUT2oOzaEeOnE-G4kptBiw" name="code" visibility="private" aggregation="composite" redefinedProperty="_2Q1R8UEwEeGdmoWy_aLP0Q">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_CPNVMOzZEeOnE-G4kptBiw" base_Class="_5l3g0OzYEeOnE-G4kptBiw" templateId="2.16.840.1.113883.10.20.22.4.65.2">
+    <ruleId>CONF:16770</ruleId>
+    <ruleId>CONF:16771</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_EpHWYOzaEeOnE-G4kptBiw" base_Generalization="_5l4H4OzYEeOnE-G4kptBiw"/>
+  <CDA:CodeSystemConstraint xmi:id="_RUUdsOzaEeOnE-G4kptBiw" code="10219-4" displayName="Preoperative Diagnosis" base_Property="_RUT2oOzaEeOnE-G4kptBiw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:19156</ruleId>
+    <ruleId>CONF:32167</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_TSEj0OzaEeOnE-G4kptBiw" base_Property="_RUT2oOzaEeOnE-G4kptBiw">
+    <ruleId>CONF:19155</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>
