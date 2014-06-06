@@ -991,9 +991,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     <ownedComment xmi:id="_eTN_UOwlEeOqa975IP2wug">
       <body>A policy activity represents the policy or program providing the coverage. The person for whom payment is being provided (i.e., the patient) is the covered party. The subscriber of the policy or program is represented as a participant that is the holder the coverage. The payer is represented as the performer of the policy activity.</body>
     </ownedComment>
-    <generalization xmi:id="_Q0P4wOwlEeOqa975IP2wug">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_PZBdMBUlEeGvPruliC3crg"/>
-    </generalization>
+    <generalization xmi:id="_Q0P4wOwlEeOqa975IP2wug" general="_PZBdMBUlEeGvPruliC3crg"/>
     <substitution xmi:id="_of2ycOwlEeOqa975IP2wug" name="PolicyActivity" supplier="_PZBdMBUlEeGvPruliC3crg" client="_Q0ODkOwlEeOqa975IP2wug" contract="_PZBdMBUlEeGvPruliC3crg"/>
     <ownedAttribute xmi:id="_qxGxcOwnEeOqa975IP2wug" name="payer" type="_vx38oOwnEeOqa975IP2wug">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qxGxcewnEeOqa975IP2wug" value="1"/>
