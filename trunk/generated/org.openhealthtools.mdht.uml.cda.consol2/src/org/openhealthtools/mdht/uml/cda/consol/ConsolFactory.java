@@ -2037,6 +2037,42 @@ public interface ConsolFactory extends EFactory {
 	PlannedSupply2 createPlannedSupply2();
 
 	/**
+	 * Returns a new object of class '<em>Policy Activity2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Policy Activity2</em>'.
+	 * @generated
+	 */
+	PolicyActivity2 createPolicyActivity2();
+
+	/**
+	 * Returns a new object of class '<em>Postprocedure Diagnosis2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Postprocedure Diagnosis2</em>'.
+	 * @generated
+	 */
+	PostprocedureDiagnosis2 createPostprocedureDiagnosis2();
+
+	/**
+	 * Returns a new object of class '<em>Preoperative Diagnosis2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Preoperative Diagnosis2</em>'.
+	 * @generated
+	 */
+	PreoperativeDiagnosis2 createPreoperativeDiagnosis2();
+
+	/**
+	 * Returns a new object of class '<em>Problem Concern Act2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Problem Concern Act2</em>'.
+	 * @generated
+	 */
+	ProblemConcernAct2 createProblemConcernAct2();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

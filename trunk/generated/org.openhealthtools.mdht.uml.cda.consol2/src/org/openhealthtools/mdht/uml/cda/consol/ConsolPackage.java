@@ -54899,6 +54899,910 @@ public interface ConsolPackage extends EPackage {
 	int PLANNED_SUPPLY2_FEATURE_COUNT = PLAN_OF_CARE_ACTIVITY_SUPPLY_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PolicyActivity2Impl <em>Policy Activity2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.PolicyActivity2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPolicyActivity2()
+	 * @generated
+	 */
+	int POLICY_ACTIVITY2 = 241;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__REALM_CODE = POLICY_ACTIVITY__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__TYPE_ID = POLICY_ACTIVITY__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__TEMPLATE_ID = POLICY_ACTIVITY__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__ID = POLICY_ACTIVITY__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__CODE = POLICY_ACTIVITY__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__TEXT = POLICY_ACTIVITY__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__STATUS_CODE = POLICY_ACTIVITY__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__EFFECTIVE_TIME = POLICY_ACTIVITY__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__PRIORITY_CODE = POLICY_ACTIVITY__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__LANGUAGE_CODE = POLICY_ACTIVITY__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__SUBJECT = POLICY_ACTIVITY__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__SPECIMEN = POLICY_ACTIVITY__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__PERFORMER = POLICY_ACTIVITY__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__AUTHOR = POLICY_ACTIVITY__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__INFORMANT = POLICY_ACTIVITY__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__PARTICIPANT = POLICY_ACTIVITY__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__ENTRY_RELATIONSHIP = POLICY_ACTIVITY__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__REFERENCE = POLICY_ACTIVITY__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__PRECONDITION = POLICY_ACTIVITY__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__NULL_FLAVOR = POLICY_ACTIVITY__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__CLASS_CODE = POLICY_ACTIVITY__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__MOOD_CODE = POLICY_ACTIVITY__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__NEGATION_IND = POLICY_ACTIVITY__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Policy Activity2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2_FEATURE_COUNT = POLICY_ACTIVITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PostprocedureDiagnosis2Impl <em>Postprocedure Diagnosis2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.PostprocedureDiagnosis2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPostprocedureDiagnosis2()
+	 * @generated
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2 = 242;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__REALM_CODE = POSTPROCEDURE_DIAGNOSIS__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__TYPE_ID = POSTPROCEDURE_DIAGNOSIS__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__TEMPLATE_ID = POSTPROCEDURE_DIAGNOSIS__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__ID = POSTPROCEDURE_DIAGNOSIS__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__CODE = POSTPROCEDURE_DIAGNOSIS__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__TEXT = POSTPROCEDURE_DIAGNOSIS__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__STATUS_CODE = POSTPROCEDURE_DIAGNOSIS__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__EFFECTIVE_TIME = POSTPROCEDURE_DIAGNOSIS__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__PRIORITY_CODE = POSTPROCEDURE_DIAGNOSIS__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__LANGUAGE_CODE = POSTPROCEDURE_DIAGNOSIS__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__SUBJECT = POSTPROCEDURE_DIAGNOSIS__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__SPECIMEN = POSTPROCEDURE_DIAGNOSIS__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__PERFORMER = POSTPROCEDURE_DIAGNOSIS__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__AUTHOR = POSTPROCEDURE_DIAGNOSIS__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__INFORMANT = POSTPROCEDURE_DIAGNOSIS__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__PARTICIPANT = POSTPROCEDURE_DIAGNOSIS__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__ENTRY_RELATIONSHIP = POSTPROCEDURE_DIAGNOSIS__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__REFERENCE = POSTPROCEDURE_DIAGNOSIS__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__PRECONDITION = POSTPROCEDURE_DIAGNOSIS__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__NULL_FLAVOR = POSTPROCEDURE_DIAGNOSIS__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__CLASS_CODE = POSTPROCEDURE_DIAGNOSIS__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__MOOD_CODE = POSTPROCEDURE_DIAGNOSIS__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__NEGATION_IND = POSTPROCEDURE_DIAGNOSIS__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Postprocedure Diagnosis2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2_FEATURE_COUNT = POSTPROCEDURE_DIAGNOSIS_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PreoperativeDiagnosis2Impl <em>Preoperative Diagnosis2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.PreoperativeDiagnosis2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPreoperativeDiagnosis2()
+	 * @generated
+	 */
+	int PREOPERATIVE_DIAGNOSIS2 = 243;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__REALM_CODE = PREOPERATIVE_DIAGNOSIS__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__TYPE_ID = PREOPERATIVE_DIAGNOSIS__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__TEMPLATE_ID = PREOPERATIVE_DIAGNOSIS__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__ID = PREOPERATIVE_DIAGNOSIS__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__CODE = PREOPERATIVE_DIAGNOSIS__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__TEXT = PREOPERATIVE_DIAGNOSIS__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__STATUS_CODE = PREOPERATIVE_DIAGNOSIS__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__EFFECTIVE_TIME = PREOPERATIVE_DIAGNOSIS__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__PRIORITY_CODE = PREOPERATIVE_DIAGNOSIS__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__LANGUAGE_CODE = PREOPERATIVE_DIAGNOSIS__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__SUBJECT = PREOPERATIVE_DIAGNOSIS__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__SPECIMEN = PREOPERATIVE_DIAGNOSIS__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__PERFORMER = PREOPERATIVE_DIAGNOSIS__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__AUTHOR = PREOPERATIVE_DIAGNOSIS__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__INFORMANT = PREOPERATIVE_DIAGNOSIS__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__PARTICIPANT = PREOPERATIVE_DIAGNOSIS__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__ENTRY_RELATIONSHIP = PREOPERATIVE_DIAGNOSIS__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__REFERENCE = PREOPERATIVE_DIAGNOSIS__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__PRECONDITION = PREOPERATIVE_DIAGNOSIS__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__NULL_FLAVOR = PREOPERATIVE_DIAGNOSIS__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__CLASS_CODE = PREOPERATIVE_DIAGNOSIS__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__MOOD_CODE = PREOPERATIVE_DIAGNOSIS__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__NEGATION_IND = PREOPERATIVE_DIAGNOSIS__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Preoperative Diagnosis2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2_FEATURE_COUNT = PREOPERATIVE_DIAGNOSIS_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProblemConcernAct2Impl <em>Problem Concern Act2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProblemConcernAct2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProblemConcernAct2()
+	 * @generated
+	 */
+	int PROBLEM_CONCERN_ACT2 = 244;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__REALM_CODE = PROBLEM_CONCERN_ACT__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__TYPE_ID = PROBLEM_CONCERN_ACT__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__TEMPLATE_ID = PROBLEM_CONCERN_ACT__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__ID = PROBLEM_CONCERN_ACT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__CODE = PROBLEM_CONCERN_ACT__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__TEXT = PROBLEM_CONCERN_ACT__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__STATUS_CODE = PROBLEM_CONCERN_ACT__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__EFFECTIVE_TIME = PROBLEM_CONCERN_ACT__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__PRIORITY_CODE = PROBLEM_CONCERN_ACT__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__LANGUAGE_CODE = PROBLEM_CONCERN_ACT__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__SUBJECT = PROBLEM_CONCERN_ACT__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__SPECIMEN = PROBLEM_CONCERN_ACT__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__PERFORMER = PROBLEM_CONCERN_ACT__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__AUTHOR = PROBLEM_CONCERN_ACT__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__INFORMANT = PROBLEM_CONCERN_ACT__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__PARTICIPANT = PROBLEM_CONCERN_ACT__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__ENTRY_RELATIONSHIP = PROBLEM_CONCERN_ACT__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__REFERENCE = PROBLEM_CONCERN_ACT__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__PRECONDITION = PROBLEM_CONCERN_ACT__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__NULL_FLAVOR = PROBLEM_CONCERN_ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__CLASS_CODE = PROBLEM_CONCERN_ACT__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__MOOD_CODE = PROBLEM_CONCERN_ACT__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__NEGATION_IND = PROBLEM_CONCERN_ACT__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Problem Concern Act2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2_FEATURE_COUNT = PROBLEM_CONCERN_ACT_FEATURE_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -57127,6 +58031,46 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getPlannedSupply2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2 <em>Policy Activity2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Policy Activity2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2
+	 * @generated
+	 */
+	EClass getPolicyActivity2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis2 <em>Postprocedure Diagnosis2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Postprocedure Diagnosis2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis2
+	 * @generated
+	 */
+	EClass getPostprocedureDiagnosis2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis2 <em>Preoperative Diagnosis2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Preoperative Diagnosis2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis2
+	 * @generated
+	 */
+	EClass getPreoperativeDiagnosis2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2 <em>Problem Concern Act2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Problem Concern Act2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2
+	 * @generated
+	 */
+	EClass getProblemConcernAct2();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection <em>Medications Administered Section</em>}'.
@@ -59559,6 +60503,46 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass PLANNED_SUPPLY2 = eINSTANCE.getPlannedSupply2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PolicyActivity2Impl <em>Policy Activity2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.PolicyActivity2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPolicyActivity2()
+		 * @generated
+		 */
+		EClass POLICY_ACTIVITY2 = eINSTANCE.getPolicyActivity2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PostprocedureDiagnosis2Impl <em>Postprocedure Diagnosis2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.PostprocedureDiagnosis2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPostprocedureDiagnosis2()
+		 * @generated
+		 */
+		EClass POSTPROCEDURE_DIAGNOSIS2 = eINSTANCE.getPostprocedureDiagnosis2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.PreoperativeDiagnosis2Impl <em>Preoperative Diagnosis2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.PreoperativeDiagnosis2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getPreoperativeDiagnosis2()
+		 * @generated
+		 */
+		EClass PREOPERATIVE_DIAGNOSIS2 = eINSTANCE.getPreoperativeDiagnosis2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProblemConcernAct2Impl <em>Problem Concern Act2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProblemConcernAct2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProblemConcernAct2()
+		 * @generated
+		 */
+		EClass PROBLEM_CONCERN_ACT2 = eINSTANCE.getProblemConcernAct2();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationsAdministeredSectionImpl <em>Medications Administered Section</em>}' class.

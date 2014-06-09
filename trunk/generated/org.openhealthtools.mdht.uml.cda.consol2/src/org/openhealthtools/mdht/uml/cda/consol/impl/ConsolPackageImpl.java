@@ -1609,6 +1609,34 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass policyActivity2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass postprocedureDiagnosis2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass preoperativeDiagnosis2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass problemConcernAct2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicationsAdministeredSectionEClass = null;
 
 	/**
@@ -4704,6 +4732,58 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				240);
 		}
 		return plannedSupply2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPolicyActivity2() {
+		if (policyActivity2EClass == null) {
+			policyActivity2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				241);
+		}
+		return policyActivity2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPostprocedureDiagnosis2() {
+		if (postprocedureDiagnosis2EClass == null) {
+			postprocedureDiagnosis2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				242);
+		}
+		return postprocedureDiagnosis2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPreoperativeDiagnosis2() {
+		if (preoperativeDiagnosis2EClass == null) {
+			preoperativeDiagnosis2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				243);
+		}
+		return preoperativeDiagnosis2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProblemConcernAct2() {
+		if (problemConcernAct2EClass == null) {
+			problemConcernAct2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
+				244);
+		}
+		return problemConcernAct2EClass;
 	}
 
 	/**

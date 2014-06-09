@@ -4833,6 +4833,98 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.POLICY_ACTIVITY2: {
+				PolicyActivity2 policyActivity2 = (PolicyActivity2) theEObject;
+				T result = casePolicyActivity2(policyActivity2);
+				if (result == null) {
+					result = casePolicyActivity(policyActivity2);
+				}
+				if (result == null) {
+					result = caseCDA_Act(policyActivity2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(policyActivity2);
+				}
+				if (result == null) {
+					result = caseAct(policyActivity2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(policyActivity2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.POSTPROCEDURE_DIAGNOSIS2: {
+				PostprocedureDiagnosis2 postprocedureDiagnosis2 = (PostprocedureDiagnosis2) theEObject;
+				T result = casePostprocedureDiagnosis2(postprocedureDiagnosis2);
+				if (result == null) {
+					result = casePostprocedureDiagnosis(postprocedureDiagnosis2);
+				}
+				if (result == null) {
+					result = caseCDA_Act(postprocedureDiagnosis2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(postprocedureDiagnosis2);
+				}
+				if (result == null) {
+					result = caseAct(postprocedureDiagnosis2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(postprocedureDiagnosis2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PREOPERATIVE_DIAGNOSIS2: {
+				PreoperativeDiagnosis2 preoperativeDiagnosis2 = (PreoperativeDiagnosis2) theEObject;
+				T result = casePreoperativeDiagnosis2(preoperativeDiagnosis2);
+				if (result == null) {
+					result = casePreoperativeDiagnosis(preoperativeDiagnosis2);
+				}
+				if (result == null) {
+					result = caseCDA_Act(preoperativeDiagnosis2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(preoperativeDiagnosis2);
+				}
+				if (result == null) {
+					result = caseAct(preoperativeDiagnosis2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(preoperativeDiagnosis2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROBLEM_CONCERN_ACT2: {
+				ProblemConcernAct2 problemConcernAct2 = (ProblemConcernAct2) theEObject;
+				T result = caseProblemConcernAct2(problemConcernAct2);
+				if (result == null) {
+					result = caseProblemConcernAct(problemConcernAct2);
+				}
+				if (result == null) {
+					result = caseCDA_Act(problemConcernAct2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemConcernAct2);
+				}
+				if (result == null) {
+					result = caseAct(problemConcernAct2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemConcernAct2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -8692,6 +8784,66 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T casePlannedSupply2(PlannedSupply2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Policy Activity2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Policy Activity2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePolicyActivity2(PolicyActivity2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Postprocedure Diagnosis2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Postprocedure Diagnosis2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePostprocedureDiagnosis2(PostprocedureDiagnosis2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Preoperative Diagnosis2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Preoperative Diagnosis2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePreoperativeDiagnosis2(PreoperativeDiagnosis2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Problem Concern Act2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Problem Concern Act2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProblemConcernAct2(ProblemConcernAct2 object) {
 		return null;
 	}
 

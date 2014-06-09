@@ -1300,6 +1300,26 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter casePolicyActivity2(PolicyActivity2 object) {
+			return createPolicyActivity2Adapter();
+		}
+
+		@Override
+		public Adapter casePostprocedureDiagnosis2(PostprocedureDiagnosis2 object) {
+			return createPostprocedureDiagnosis2Adapter();
+		}
+
+		@Override
+		public Adapter casePreoperativeDiagnosis2(PreoperativeDiagnosis2 object) {
+			return createPreoperativeDiagnosis2Adapter();
+		}
+
+		@Override
+		public Adapter caseProblemConcernAct2(ProblemConcernAct2 object) {
+			return createProblemConcernAct2Adapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -5023,6 +5043,62 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPlannedSupply2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2 <em>Policy Activity2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2
+	 * @generated
+	 */
+	public Adapter createPolicyActivity2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis2 <em>Postprocedure Diagnosis2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis2
+	 * @generated
+	 */
+	public Adapter createPostprocedureDiagnosis2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis2 <em>Preoperative Diagnosis2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis2
+	 * @generated
+	 */
+	public Adapter createPreoperativeDiagnosis2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2 <em>Problem Concern Act2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2
+	 * @generated
+	 */
+	public Adapter createProblemConcernAct2Adapter() {
 		return null;
 	}
 
