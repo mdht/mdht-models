@@ -542,6 +542,14 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPlannedMedicationActivity2();
 			case ConsolPackage.PLANNED_SUPPLY2:
 				return createPlannedSupply2();
+			case ConsolPackage.POLICY_ACTIVITY2:
+				return createPolicyActivity2();
+			case ConsolPackage.POSTPROCEDURE_DIAGNOSIS2:
+				return createPostprocedureDiagnosis2();
+			case ConsolPackage.PREOPERATIVE_DIAGNOSIS2:
+				return createPreoperativeDiagnosis2();
+			case ConsolPackage.PROBLEM_CONCERN_ACT2:
+				return createProblemConcernAct2();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2775,6 +2783,46 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public PlannedSupply2 createPlannedSupply2() {
 		PlannedSupply2Impl plannedSupply2 = new PlannedSupply2Impl();
 		return plannedSupply2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PolicyActivity2 createPolicyActivity2() {
+		PolicyActivity2Impl policyActivity2 = new PolicyActivity2Impl();
+		return policyActivity2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PostprocedureDiagnosis2 createPostprocedureDiagnosis2() {
+		PostprocedureDiagnosis2Impl postprocedureDiagnosis2 = new PostprocedureDiagnosis2Impl();
+		return postprocedureDiagnosis2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PreoperativeDiagnosis2 createPreoperativeDiagnosis2() {
+		PreoperativeDiagnosis2Impl preoperativeDiagnosis2 = new PreoperativeDiagnosis2Impl();
+		return preoperativeDiagnosis2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemConcernAct2 createProblemConcernAct2() {
+		ProblemConcernAct2Impl problemConcernAct2 = new ProblemConcernAct2Impl();
+		return problemConcernAct2;
 	}
 
 	/**

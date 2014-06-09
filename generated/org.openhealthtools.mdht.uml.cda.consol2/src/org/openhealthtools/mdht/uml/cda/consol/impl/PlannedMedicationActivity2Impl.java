@@ -299,6 +299,17 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedMedicationActivity2ConsumableMedicationInformation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2ConsumableMedicationInformation2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<PatientPriorityPreference> getPatientPriorityPreferences() {
 		return PlannedMedicationActivity2Operations.getPatientPriorityPreferences(this);
 	}

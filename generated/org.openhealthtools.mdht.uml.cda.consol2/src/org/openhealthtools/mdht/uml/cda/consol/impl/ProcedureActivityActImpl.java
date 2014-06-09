@@ -278,100 +278,100 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntity(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(
 			this, diagnostics, context);
 	}
 

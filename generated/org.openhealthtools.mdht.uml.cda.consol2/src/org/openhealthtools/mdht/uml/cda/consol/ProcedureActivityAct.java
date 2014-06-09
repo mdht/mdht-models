@@ -26,8 +26,10 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureActivityAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureActivityActTemplateId ProcedureActivityActReferenceValue ProcedureActivityActEncounterInversion ProcedureActivityActServiceDeliveryLocationTypeCode ProcedureActivityActInstructionsInversion ProcedureActivityActClassCode ProcedureActivityActMoodCode ProcedureActivityActId ProcedureActivityActCode ProcedureActivityActStatusCode ProcedureActivityActPriorityCode ProcedureActivityActProcedureActPerformerAssignedEntity ProcedureActivityActProcedureActPerformerAssignedEntityId ProcedureActivityActProcedureActPerformerAssignedEntityAddr ProcedureActivityActProcedureActPerformerAssignedEntityTelecom ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom ProcedureActivityActEntryRelationshipProcedureActEncounterClassCode ProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode ProcedureActivityActEntryRelationshipProcedureActEncounterId ProcedureActivityActEntryRelationshipInversionInd ProcedureActivityActEntryRelationshipTypeCode ProcedureActivityActEntryRelationshipProcedureActEncounter' templateId.root='2.16.840.1.113883.10.20.22.4.12' constraints.validation.warning='ProcedureActivityActCodeCodeSystems ProcedureActivityActCodeOriginalText ProcedureActivityActOriginalTextReference ProcedureActivityActEffectiveTime ProcedureActivityActPerformer ProcedureActivityActProcedureActPerformerAssignedEntityRepOrg ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId' constraints.validation.info='ProcedureActivityActOriginalTextReferenceValue ProcedureActivityActPriorityCodeP ProcedureActivityActServiceDeliveryLocation ProcedureActivityActInstructions ProcedureActivityActIndication ProcedureActivityActMedicationActivity ProcedureActivityActEntryRelationship ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName' classCode='ACT' priorityCode.codeSystem='2.16.840.1.113883.5.7' priorityCode.codeSystemName='ActPriority' constraints.validation.dependOn.ProcedureActivityActPriorityCode='ProcedureActivityActPriorityCodeP' constraints.validation.query='ProcedureActivityActProcedureActPerformerAssignedEntity ProcedureActivityActProcedureActPerformerAssignedEntityId ProcedureActivityActProcedureActPerformerAssignedEntityAddr ProcedureActivityActProcedureActPerformerAssignedEntityTelecom ProcedureActivityActProcedureActPerformerAssignedEntityRepOrg ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom ProcedureActivityActEntryRelationshipProcedureActEncounterClassCode ProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode ProcedureActivityActEntryRelationshipProcedureActEncounterId ProcedureActivityActEntryRelationshipInversionInd ProcedureActivityActEntryRelationshipTypeCode ProcedureActivityActEntryRelationshipProcedureActEncounter'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityActProcedureActPerformer constraints.validation.error='ProcedureActivityActProcedureActPerformerAssignedEntity ProcedureActivityActProcedureActPerformerAssignedEntityId ProcedureActivityActProcedureActPerformerAssignedEntityAddr ProcedureActivityActProcedureActPerformerAssignedEntityTelecom ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom' constraints.validation.warning='ProcedureActivityActProcedureActPerformerAssignedEntityRepOrg ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId' constraints.validation.info='ProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureActivityActTemplateId ProcedureActivityActReferenceValue ProcedureActivityActEncounterInversion ProcedureActivityActServiceDeliveryLocationTypeCode ProcedureActivityActInstructionsInversion ProcedureActivityActClassCode ProcedureActivityActMoodCode ProcedureActivityActId ProcedureActivityActCode ProcedureActivityActStatusCode ProcedureActivityActPriorityCode ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom ProcedureActivityActProcedureActPerformerAssignedEntity ProcedureActivityActEntryRelationshipProcedureActEncounterClassCode ProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode ProcedureActivityActEntryRelationshipProcedureActEncounterId ProcedureActivityActEntryRelationshipInversionInd ProcedureActivityActEntryRelationshipTypeCode ProcedureActivityActEntryRelationshipProcedureActEncounter' templateId.root='2.16.840.1.113883.10.20.22.4.12' constraints.validation.warning='ProcedureActivityActCodeCodeSystems ProcedureActivityActCodeOriginalText ProcedureActivityActOriginalTextReference ProcedureActivityActEffectiveTime ProcedureActivityActPerformer ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization' constraints.validation.info='ProcedureActivityActOriginalTextReferenceValue ProcedureActivityActPriorityCodeP ProcedureActivityActServiceDeliveryLocation ProcedureActivityActInstructions ProcedureActivityActIndication ProcedureActivityActMedicationActivity ProcedureActivityActEntryRelationship ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName' classCode='ACT' priorityCode.codeSystem='2.16.840.1.113883.5.7' priorityCode.codeSystemName='ActPriority' constraints.validation.dependOn.ProcedureActivityActPriorityCode='ProcedureActivityActPriorityCodeP' constraints.validation.query='ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization ProcedureActivityActProcedureActPerformerAssignedEntity ProcedureActivityActEntryRelationshipProcedureActEncounterClassCode ProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode ProcedureActivityActEntryRelationshipProcedureActEncounterId ProcedureActivityActEntryRelationshipInversionInd ProcedureActivityActEntryRelationshipTypeCode ProcedureActivityActEntryRelationshipProcedureActEncounter'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityActProcedureActPerformer constraints.validation.error='ProcedureActivityActProcedureActPerformerAssignedEntity'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityActProcedureActPerformerProcedureActAssignedEntity constraints.validation.error='ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom' constraints.validation.warning='ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganization constraints.validation.warning='ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId' constraints.validation.info='ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName' constraints.validation.error='ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityActEntryRelationship inversionInd='true' constraints.validation.error='ProcedureActivityActEntryRelationshipInversionInd ProcedureActivityActEntryRelationshipTypeCode ProcedureActivityActEntryRelationshipProcedureActEncounter' typeCode='COMP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityActEntryRelationshipProcedureActEncounter classCode='ENC' constraints.validation.error='ProcedureActivityActEntryRelationshipProcedureActEncounterClassCode ProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode ProcedureActivityActEntryRelationshipProcedureActEncounterId' moodCode='EVN'"
  * @generated
@@ -313,119 +315,119 @@ public interface ProcedureActivityAct extends Act {
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).representedOrganization->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).representedOrganization->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (not name->isEmpty()))'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).representedOrganization->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (telecom->size() = 1))'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).representedOrganization->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() = 1))'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() = 1))'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (telecom->size() = 1))'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null)->reject(representedOrganization->one(representedOrganization : cda::Organization | not representedOrganization.oclIsUndefined() and representedOrganization.oclIsKindOf(cda::Organization)))'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->reject(assignedEntity->size() = 1)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))'"
 	 * @generated
 	 */
 	boolean validateProcedureActivityActProcedureActPerformerAssignedEntity(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->reject(assignedEntity.id->size() >= 1)'"
-	 * @generated
-	 */
-	boolean validateProcedureActivityActProcedureActPerformerAssignedEntityId(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->reject(assignedEntity.addr->size() = 1)'"
-	 * @generated
-	 */
-	boolean validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->reject(assignedEntity.telecom->size() = 1)'"
-	 * @generated
-	 */
-	boolean validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->reject(assignedEntity.representedOrganization->size() = 1)'"
-	 * @generated
-	 */
-	boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->reject(assignedEntity.representedOrganization.id->size() > 0)'"
-	 * @generated
-	 */
-	boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->reject(assignedEntity.representedOrganization.name->size() > 0)'"
-	 * @generated
-	 */
-	boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->reject(assignedEntity.representedOrganization.addr->size() = 1)'"
-	 * @generated
-	 */
-	boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->reject(assignedEntity.representedOrganization.telecom->size() = 1)'"
-	 * @generated
-	 */
-	boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**

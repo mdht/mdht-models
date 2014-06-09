@@ -67,6 +67,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2Consumable(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Consumable</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2IVLPQdoseQuantityUnit(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 IVLP Qdose Quantity Unit</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2IVLPQrateQuantityUnit(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 IVLP Qrate Quantity Unit</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2ConsumableMedicationInformation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Consumable Medication Information2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#getPatientPriorityPreferences() <em>Get Patient Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#getIndication2s() <em>Get Indication2s</em>}</li>
@@ -1504,6 +1505,72 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validatePlannedMedicationActivity2ConsumableMedicationInformation2(PlannedMedicationActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Consumable Medication Information2</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePlannedMedicationActivity2ConsumableMedicationInformation2(PlannedMedicationActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PLANNED_MEDICATION_ACTIVITY2_CONSUMABLE_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.consumable->excluding(null)->reject(manufacturedProduct->one(manufacturedProduct : cda::ManufacturedProduct | not manufacturedProduct.oclIsUndefined() and manufacturedProduct.oclIsKindOf(consol::MedicationInformation2)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePlannedMedicationActivity2ConsumableMedicationInformation2(PlannedMedicationActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Consumable Medication Information2</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePlannedMedicationActivity2ConsumableMedicationInformation2(PlannedMedicationActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_PLANNED_MEDICATION_ACTIVITY2_CONSUMABLE_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param plannedMedicationActivity2 The receiving '<em><b>Planned Medication Activity2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validatePlannedMedicationActivity2ConsumableMedicationInformation2(
+			PlannedMedicationActivity2 plannedMedicationActivity2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_PLANNED_MEDICATION_ACTIVITY2_CONSUMABLE_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PLANNED_MEDICATION_ACTIVITY2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_MEDICATION_ACTIVITY2_CONSUMABLE_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_MEDICATION_ACTIVITY2_CONSUMABLE_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PLANNED_MEDICATION_ACTIVITY2_CONSUMABLE_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedMedicationActivity2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_MEDICATION_ACTIVITY2__PLANNED_MEDICATION_ACTIVITY2_CONSUMABLE_MEDICATION_INFORMATION2,
+						ConsolPlugin.INSTANCE.getString("PlannedMedicationActivity2ConsumableMedicationInformation2"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getPatientPriorityPreferences(PlannedMedicationActivity2) <em>Get Patient Priority Preferences</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1535,7 +1602,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_MEDICATION_ACTIVITY2,
-				ConsolPackage.Literals.PLANNED_MEDICATION_ACTIVITY2.getEAllOperations().get(78));
+				ConsolPackage.Literals.PLANNED_MEDICATION_ACTIVITY2.getEAllOperations().get(79));
 			try {
 				GET_PATIENT_PRIORITY_PREFERENCES__EOCL_QRY = helper.createQuery(GET_PATIENT_PRIORITY_PREFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1580,7 +1647,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_MEDICATION_ACTIVITY2,
-				ConsolPackage.Literals.PLANNED_MEDICATION_ACTIVITY2.getEAllOperations().get(79));
+				ConsolPackage.Literals.PLANNED_MEDICATION_ACTIVITY2.getEAllOperations().get(80));
 			try {
 				GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_QRY = helper.createQuery(GET_PROVIDER_PRIORITY_PREFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1624,7 +1691,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_MEDICATION_ACTIVITY2,
-				ConsolPackage.Literals.PLANNED_MEDICATION_ACTIVITY2.getEAllOperations().get(80));
+				ConsolPackage.Literals.PLANNED_MEDICATION_ACTIVITY2.getEAllOperations().get(81));
 			try {
 				GET_INDICATION2S__EOCL_QRY = helper.createQuery(GET_INDICATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1668,7 +1735,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_MEDICATION_ACTIVITY2,
-				ConsolPackage.Literals.PLANNED_MEDICATION_ACTIVITY2.getEAllOperations().get(81));
+				ConsolPackage.Literals.PLANNED_MEDICATION_ACTIVITY2.getEAllOperations().get(82));
 			try {
 				GET_INSTRUCTION2S__EOCL_QRY = helper.createQuery(GET_INSTRUCTION2S__EOCL_EXP);
 			} catch (ParserException pe) {
