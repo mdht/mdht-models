@@ -110,7 +110,8 @@ import org.junit.runners.Suite;
 		MedicationSupplyOrder2Test.class, NonMedicinalSupplyActivity2Test.class,
 		PhysicianofRecordParticipant2Test.class, PlannedAct2Test.class, PlannedEncounter2Test.class,
 		PlannedMedicationActivity2Test.class, PlannedObservation2Test.class, PlannedProcedure2Test.class,
-		PlannedSupply2Test.class })
+		PlannedSupply2Test.class, PolicyActivity2Test.class, PostprocedureDiagnosis2Test.class,
+		PreoperativeDiagnosis2Test.class, ProblemConcernAct2Test.class })
 public class ConsolTests {
 
 	/**
