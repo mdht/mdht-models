@@ -1098,4 +1098,179 @@ Many systems display the nested Problem Observation with the most recent author 
     <ruleId>CONF:31639</ruleId>
     <ruleId>CONF:31640</ruleId>
   </CDA:EntryRelationship>
+  <uml:Class xmi:id="_prDAkPDCEeOKPKE9au0oug" name="ProblemObservation2" clientDependency="_3P7scPDDEeOKPKE9au0oug">
+    <ownedComment xmi:id="_xAdH4PDCEeOKPKE9au0oug">
+      <body>This template reflects a discrete observation about a patient's problem. Because it is a discrete observation, it will have a statusCode of &quot;completed&quot;. The effectiveTime, also referred to as the &quot;biologically relevant time&quot; is the time at which the observation holds for the patient. For a provider seeing a patient in the clinic today, observing a history of heart attack that occurred five years ago, the effectiveTime is five years ago. &#xD;
+The effectiveTime of the Problem Observation is the definitive indication of whether or not the underlying condition is resolved. If the problem is known to be resolved, then an effectiveTime/high would be present. If the date of resolution is not known, then effectiveTime/high will be present with a nullFlavor of &quot;UNK&quot;.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_8_sPIPDEEeOKPKE9au0oug" name="hasOnsetDate">
+      <ownedComment xmi:id="_8_sPIfDEEeOKPKE9au0oug">
+        <body>Note: The effectiveTime/low (a.k.a. &quot;onset date&quot;) asserts when the condition became biologically active.</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_8_sPIvDEEeOKPKE9au0oug">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>effectiveTime, if present, SHALL contain exactly one [1..1] low</body>
+        <body>not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.low.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_9fzSkPDEEeOKPKE9au0oug" name="hasResolutionDate">
+      <ownedComment xmi:id="_9fzSkfDEEeOKPKE9au0oug">
+        <body>Note: The effectiveTime/high (a.k.a. &quot;resolution date&quot;) asserts when the condition became biologically resolved.</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_9fzSkvDEEeOKPKE9au0oug">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>effectiveTime, if present, MAY contain zero or one [0..1] high</body>
+        <body>not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.high.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_eMSAwPDOEeOKPKE9au0oug" name="valueNullFlavor">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_eMSAwfDOEeOKPKE9au0oug">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_3n3DQPDOEeOKPKE9au0oug" name="valueNullFlavorUnknown">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_3n3DQvDOEeOKPKE9au0oug">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_prGD4PDCEeOKPKE9au0oug" general="_5Ha7ABUyEeGbmN_W114JUw"/>
+    <substitution xmi:id="_3P7scPDDEeOKPKE9au0oug" name="ProblemObservation" supplier="_5Ha7ABUyEeGbmN_W114JUw" client="_prDAkPDCEeOKPKE9au0oug" contract="_5Ha7ABUyEeGbmN_W114JUw"/>
+    <ownedAttribute xmi:id="_dJUTcPDEEeOKPKE9au0oug" name="negationInd" visibility="private" redefinedProperty="_qzvdsCAtEeGetMjKLkqR8g">
+      <ownedComment xmi:id="_d-9iAPDEEeOKPKE9au0oug">
+        <body>Note: The negationInd is used to indicate the absence of the condition in observation/value. A negationInd of &quot;true&quot; coupled with an observation/value of SNOMED code 64572001 &quot;Disease (disorder)&quot; indicates that the patient has no known conditions.</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dJUTcfDEEeOKPKE9au0oug" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dJUTcvDEEeOKPKE9au0oug"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_LLteYPDEEeOKPKE9au0oug" name="effectiveTime" visibility="private" aggregation="composite" redefinedProperty="_zGapECAuEeGetMjKLkqR8g">
+      <ownedComment xmi:id="_SPwI4PDEEeOKPKE9au0oug">
+        <body>Note: If the problem is known to be resolved, but the date of resolution is not known, then the high element SHALL be present, and the nullFlavor attribute SHALL be set to 'UNK'. Therefore, the existence of an high element within a problem does indicate that the problem has been resolved.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ns0JMPDEEeOKPKE9au0oug" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ns0JMfDEEeOKPKE9au0oug" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_40Ps8PDFEeOKPKE9au0oug" name="patientPriorityPreference" association="_40SJMPDFEeOKPKE9au0oug">
+      <type xmi:type="uml:Class" href="consol-planofcare.uml#_UqXAAI6hEeOB0eBUISUB4Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_40QUAfDFEeOKPKE9au0oug" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_40QUAPDFEeOKPKE9au0oug"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="__YZhAPDGEeOKPKE9au0oug" name="prognosisObservation" type="_GXlxYJmLEeOeSLwbllPCyw" association="__YbWMPDGEeOKPKE9au0oug">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Bfg-gPDHEeOKPKE9au0oug" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bfg-gfDHEeOKPKE9au0oug"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_5Y78IPDKEeOKPKE9au0oug" name="providerPriorityPreference" association="_5Y9xUPDKEeOKPKE9au0oug">
+      <type xmi:type="uml:Class" href="consol-planofcare.uml#_ncafYJmaEeOLJeQez13EkQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5Y78IvDKEeOKPKE9au0oug" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5Y78IfDKEeOKPKE9au0oug"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UxHOMPDLEeOKPKE9au0oug" name="authorParticipation" association="_UxJqcPDLEeOKPKE9au0oug">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UxH1QfDLEeOKPKE9au0oug" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UxH1QPDLEeOKPKE9au0oug"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_bZJcsPDMEeOKPKE9au0oug" name="value" visibility="private" type="_hNARsPDMEeOKPKE9au0oug" aggregation="composite" redefinedProperty="_zGb3MSAuEeGetMjKLkqR8g">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bZJcsfDMEeOKPKE9au0oug" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bZJcsvDMEeOKPKE9au0oug" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_p3ZZgPDNEeOKPKE9au0oug" name="problemStatus" type="_SjN_8BUzEeGbmN_W114JUw" redefinedProperty="_c6LMsBUzEeGbmN_W114JUw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p3ZZgfDNEeOKPKE9au0oug"/>
+      <association href="../consol.uml#_p3bOsPDNEeOKPKE9au0oug"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OWRKUPDOEeOKPKE9au0oug" name="healthStatusObservation" type="_2ExXsBSVEeGGzu7fmW9pXw" redefinedProperty="_NoqKcBUzEeGbmN_W114JUw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OWRKUfDOEeOKPKE9au0oug"/>
+      <association href="../consol.uml#_OWS_gPDOEeOKPKE9au0oug"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_hNARsPDMEeOKPKE9au0oug" name="CD">
+      <generalization xmi:id="_hNA4wPDMEeOKPKE9au0oug">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_hztFUPDMEeOKPKE9au0oug" name="qualifier" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_pRbbIPDMEeOKPKE9au0oug">
+          <body>Note: The observation/value and all the qualifiers together (often referred to as a post-coordinated expression) make up one concept. Qualifiers constrain the meaning of the primary code, and cannot negate it or change its meaning.  Qualifiers can only be used according to well-defined rules of post-coordination and only if the underlying code system defines the use of such qualifiers or if there is a third code system that specifies how other code systems may be combined.    
+For example, SNOMED CT allows constructing concepts as a combination of multiple codes. SNOMED CT defines a concept &quot;pneumonia (disorder)&quot; (233604007) an attribute &quot;finding site&quot; (363698007) and another concept &quot;left lower lobe of lung (body structure)&quot; (41224006). SNOMED CT allows one to combine these codes in a code phrase, as shown in the sample XML.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_gokTgD55Ed6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hztFUfDMEeOKPKE9au0oug" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hztFUvDMEeOKPKE9au0oug"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__CseMD56Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_9k3fIPDMEeOKPKE9au0oug" name="code" visibility="private">
+        <ownedComment xmi:id="_CeKJUPDNEeOKPKE9au0oug">
+          <body>Note: A negationInd of &quot;true&quot; coupled with an observation/value/@code of SNOMED code 64572001 &quot;Disease (disorder)&quot; indicates that the patient has no known conditions.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9k3fIfDMEeOKPKE9au0oug" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9k3fIvDMEeOKPKE9au0oug"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_tIFIIPDCEeOKPKE9au0oug" base_Class="_prDAkPDCEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.4.2">
+    <ruleId>CONF:14926</ruleId>
+    <ruleId>CONF:14927</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_zgiCgPDDEeOKPKE9au0oug" base_Generalization="_prGD4PDCEeOKPKE9au0oug"/>
+  <CDA:PropertyValidation xmi:id="_LLteY_DEEeOKPKE9au0oug" base_Property="_LLteYPDEEeOKPKE9au0oug">
+    <ruleId>CONF:9050</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_dJUTc_DEEeOKPKE9au0oug" severity="INFO" base_Property="_dJUTcPDEEeOKPKE9au0oug">
+    <ruleId>CONF:10139</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_8_sPI_DEEeOKPKE9au0oug" base_Constraint="_8_sPIPDEEeOKPKE9au0oug">
+    <ruleId>CONF:15603</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_9fzSk_DEEeOKPKE9au0oug" severity="INFO" base_Constraint="_9fzSkPDEEeOKPKE9au0oug">
+    <ruleId>CONF:15604</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_40SJMPDFEeOKPKE9au0oug" memberEnd="_40Ps8PDFEeOKPKE9au0oug _40SJMfDFEeOKPKE9au0oug">
+    <ownedEnd xmi:id="_40SJMfDFEeOKPKE9au0oug" type="_prDAkPDCEeOKPKE9au0oug" association="_40SJMPDFEeOKPKE9au0oug"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_66irEPDFEeOKPKE9au0oug" severity="INFO" base_Association="_40SJMPDFEeOKPKE9au0oug" typeCode="REFR">
+    <ruleId>CONF:31063</ruleId>
+    <ruleId>CONF:31532</ruleId>
+    <ruleId>CONF:31064</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="__YbWMPDGEeOKPKE9au0oug" memberEnd="__YZhAPDGEeOKPKE9au0oug __Yb9QPDGEeOKPKE9au0oug">
+    <ownedEnd xmi:id="__Yb9QPDGEeOKPKE9au0oug" type="_prDAkPDCEeOKPKE9au0oug" association="__YbWMPDGEeOKPKE9au0oug"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_E5kqkPDHEeOKPKE9au0oug" severity="INFO" base_Association="__YbWMPDGEeOKPKE9au0oug" typeCode="REFR">
+    <ruleId>CONF:29951</ruleId>
+    <ruleId>CONF:31531</ruleId>
+    <ruleId>CONF:29952</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_5Y9xUPDKEeOKPKE9au0oug" memberEnd="_5Y78IPDKEeOKPKE9au0oug _5Y9xUfDKEeOKPKE9au0oug">
+    <ownedEnd xmi:id="_5Y9xUfDKEeOKPKE9au0oug" type="_prDAkPDCEeOKPKE9au0oug" association="_5Y9xUPDKEeOKPKE9au0oug"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_DUJBAPDLEeOKPKE9au0oug" severity="INFO" base_Association="_5Y9xUPDKEeOKPKE9au0oug" typeCode="REFR">
+    <ruleId>CONF:31065</ruleId>
+    <ruleId>CONF:31533</ruleId>
+    <ruleId>CONF:31066</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_UxJqcPDLEeOKPKE9au0oug" memberEnd="_UxHOMPDLEeOKPKE9au0oug _UxJqcfDLEeOKPKE9au0oug">
+    <ownedEnd xmi:id="_UxJqcfDLEeOKPKE9au0oug" type="_prDAkPDCEeOKPKE9au0oug" association="_UxJqcPDLEeOKPKE9au0oug"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_VckmAPDLEeOKPKE9au0oug" severity="WARNING" base_Association="_UxJqcPDLEeOKPKE9au0oug">
+    <ruleId>CONF:31147</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ValueSetConstraint xmi:id="_bZKDwPDMEeOKPKE9au0oug" base_Property="_bZJcsPDMEeOKPKE9au0oug" severity="WARNING">
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:9058</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_bZL48PDMEeOKPKE9au0oug" base_Property="_bZJcsPDMEeOKPKE9au0oug"/>
+  <CDA:PropertyValidation xmi:id="_kTm2QPDMEeOKPKE9au0oug" severity="INFO" base_Property="_hztFUPDMEeOKPKE9au0oug">
+    <ruleId>CONF:31870</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_-Q4QkPDMEeOKPKE9au0oug" severity="INFO" base_Property="_9k3fIPDMEeOKPKE9au0oug">
+    <ruleId>CONF:31871</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
