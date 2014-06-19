@@ -111,7 +111,12 @@ import org.junit.runners.Suite;
 		PhysicianofRecordParticipant2Test.class, PlannedAct2Test.class, PlannedEncounter2Test.class,
 		PlannedMedicationActivity2Test.class, PlannedObservation2Test.class, PlannedProcedure2Test.class,
 		PlannedSupply2Test.class, PolicyActivity2Test.class, PostprocedureDiagnosis2Test.class,
-		PreoperativeDiagnosis2Test.class, ProblemConcernAct2Test.class })
+		PreoperativeDiagnosis2Test.class, ProblemConcernAct2Test.class, ProblemObservation2Test.class,
+		ProcedureActivityAct2Test.class, ProcedureActivityObservation2Test.class,
+		ProcedureActivityProcedure2Test.class, ReactionObservation2Test.class, ResultObservation2Test.class,
+		ResultOrganizer2Test.class, SeverityObservation2Test.class, SocialHistoryObservation2Test.class,
+		SubstanceOrDeviceAllergyObservation2Test.class, TobaccoUse2Test.class, VitalSignObservation2Test.class,
+		VitalSignsOrganizer2Test.class })
 public class ConsolTests {
 
 	/**
