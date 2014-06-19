@@ -1320,6 +1320,71 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseProblemObservation2(ProblemObservation2 object) {
+			return createProblemObservation2Adapter();
+		}
+
+		@Override
+		public Adapter caseProcedureActivityAct2(ProcedureActivityAct2 object) {
+			return createProcedureActivityAct2Adapter();
+		}
+
+		@Override
+		public Adapter caseProcedureActivityObservation2(ProcedureActivityObservation2 object) {
+			return createProcedureActivityObservation2Adapter();
+		}
+
+		@Override
+		public Adapter caseProcedureActivityProcedure2(ProcedureActivityProcedure2 object) {
+			return createProcedureActivityProcedure2Adapter();
+		}
+
+		@Override
+		public Adapter caseReactionObservation2(ReactionObservation2 object) {
+			return createReactionObservation2Adapter();
+		}
+
+		@Override
+		public Adapter caseResultObservation2(ResultObservation2 object) {
+			return createResultObservation2Adapter();
+		}
+
+		@Override
+		public Adapter caseResultOrganizer2(ResultOrganizer2 object) {
+			return createResultOrganizer2Adapter();
+		}
+
+		@Override
+		public Adapter caseSeverityObservation2(SeverityObservation2 object) {
+			return createSeverityObservation2Adapter();
+		}
+
+		@Override
+		public Adapter caseSocialHistoryObservation2(SocialHistoryObservation2 object) {
+			return createSocialHistoryObservation2Adapter();
+		}
+
+		@Override
+		public Adapter caseSubstanceOrDeviceAllergyObservation2(SubstanceOrDeviceAllergyObservation2 object) {
+			return createSubstanceOrDeviceAllergyObservation2Adapter();
+		}
+
+		@Override
+		public Adapter caseTobaccoUse2(TobaccoUse2 object) {
+			return createTobaccoUse2Adapter();
+		}
+
+		@Override
+		public Adapter caseVitalSignObservation2(VitalSignObservation2 object) {
+			return createVitalSignObservation2Adapter();
+		}
+
+		@Override
+		public Adapter caseVitalSignsOrganizer2(VitalSignsOrganizer2 object) {
+			return createVitalSignsOrganizer2Adapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -5099,6 +5164,188 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createProblemConcernAct2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2 <em>Problem Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2
+	 * @generated
+	 */
+	public Adapter createProblemObservation2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct2 <em>Procedure Activity Act2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct2
+	 * @generated
+	 */
+	public Adapter createProcedureActivityAct2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2 <em>Procedure Activity Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2
+	 * @generated
+	 */
+	public Adapter createProcedureActivityObservation2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2 <em>Procedure Activity Procedure2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2
+	 * @generated
+	 */
+	public Adapter createProcedureActivityProcedure2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2 <em>Reaction Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2
+	 * @generated
+	 */
+	public Adapter createReactionObservation2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2 <em>Result Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ResultObservation2
+	 * @generated
+	 */
+	public Adapter createResultObservation2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2 <em>Result Organizer2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2
+	 * @generated
+	 */
+	public Adapter createResultOrganizer2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2 <em>Severity Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2
+	 * @generated
+	 */
+	public Adapter createSeverityObservation2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2 <em>Social History Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2
+	 * @generated
+	 */
+	public Adapter createSocialHistoryObservation2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2 <em>Substance Or Device Allergy Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2
+	 * @generated
+	 */
+	public Adapter createSubstanceOrDeviceAllergyObservation2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2 <em>Tobacco Use2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2
+	 * @generated
+	 */
+	public Adapter createTobaccoUse2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2 <em>Vital Sign Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2
+	 * @generated
+	 */
+	public Adapter createVitalSignObservation2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2 <em>Vital Signs Organizer2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2
+	 * @generated
+	 */
+	public Adapter createVitalSignsOrganizer2Adapter() {
 		return null;
 	}
 

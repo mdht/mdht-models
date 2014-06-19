@@ -550,6 +550,32 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPreoperativeDiagnosis2();
 			case ConsolPackage.PROBLEM_CONCERN_ACT2:
 				return createProblemConcernAct2();
+			case ConsolPackage.PROBLEM_OBSERVATION2:
+				return createProblemObservation2();
+			case ConsolPackage.PROCEDURE_ACTIVITY_ACT2:
+				return createProcedureActivityAct2();
+			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION2:
+				return createProcedureActivityObservation2();
+			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE2:
+				return createProcedureActivityProcedure2();
+			case ConsolPackage.REACTION_OBSERVATION2:
+				return createReactionObservation2();
+			case ConsolPackage.RESULT_OBSERVATION2:
+				return createResultObservation2();
+			case ConsolPackage.RESULT_ORGANIZER2:
+				return createResultOrganizer2();
+			case ConsolPackage.SEVERITY_OBSERVATION2:
+				return createSeverityObservation2();
+			case ConsolPackage.SOCIAL_HISTORY_OBSERVATION2:
+				return createSocialHistoryObservation2();
+			case ConsolPackage.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2:
+				return createSubstanceOrDeviceAllergyObservation2();
+			case ConsolPackage.TOBACCO_USE2:
+				return createTobaccoUse2();
+			case ConsolPackage.VITAL_SIGN_OBSERVATION2:
+				return createVitalSignObservation2();
+			case ConsolPackage.VITAL_SIGNS_ORGANIZER2:
+				return createVitalSignsOrganizer2();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2823,6 +2849,136 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ProblemConcernAct2 createProblemConcernAct2() {
 		ProblemConcernAct2Impl problemConcernAct2 = new ProblemConcernAct2Impl();
 		return problemConcernAct2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemObservation2 createProblemObservation2() {
+		ProblemObservation2Impl problemObservation2 = new ProblemObservation2Impl();
+		return problemObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureActivityAct2 createProcedureActivityAct2() {
+		ProcedureActivityAct2Impl procedureActivityAct2 = new ProcedureActivityAct2Impl();
+		return procedureActivityAct2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureActivityObservation2 createProcedureActivityObservation2() {
+		ProcedureActivityObservation2Impl procedureActivityObservation2 = new ProcedureActivityObservation2Impl();
+		return procedureActivityObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureActivityProcedure2 createProcedureActivityProcedure2() {
+		ProcedureActivityProcedure2Impl procedureActivityProcedure2 = new ProcedureActivityProcedure2Impl();
+		return procedureActivityProcedure2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReactionObservation2 createReactionObservation2() {
+		ReactionObservation2Impl reactionObservation2 = new ReactionObservation2Impl();
+		return reactionObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultObservation2 createResultObservation2() {
+		ResultObservation2Impl resultObservation2 = new ResultObservation2Impl();
+		return resultObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultOrganizer2 createResultOrganizer2() {
+		ResultOrganizer2Impl resultOrganizer2 = new ResultOrganizer2Impl();
+		return resultOrganizer2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SeverityObservation2 createSeverityObservation2() {
+		SeverityObservation2Impl severityObservation2 = new SeverityObservation2Impl();
+		return severityObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SocialHistoryObservation2 createSocialHistoryObservation2() {
+		SocialHistoryObservation2Impl socialHistoryObservation2 = new SocialHistoryObservation2Impl();
+		return socialHistoryObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SubstanceOrDeviceAllergyObservation2 createSubstanceOrDeviceAllergyObservation2() {
+		SubstanceOrDeviceAllergyObservation2Impl substanceOrDeviceAllergyObservation2 = new SubstanceOrDeviceAllergyObservation2Impl();
+		return substanceOrDeviceAllergyObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TobaccoUse2 createTobaccoUse2() {
+		TobaccoUse2Impl tobaccoUse2 = new TobaccoUse2Impl();
+		return tobaccoUse2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VitalSignObservation2 createVitalSignObservation2() {
+		VitalSignObservation2Impl vitalSignObservation2 = new VitalSignObservation2Impl();
+		return vitalSignObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VitalSignsOrganizer2 createVitalSignsOrganizer2() {
+		VitalSignsOrganizer2Impl vitalSignsOrganizer2 = new VitalSignsOrganizer2Impl();
+		return vitalSignsOrganizer2;
 	}
 
 	/**
