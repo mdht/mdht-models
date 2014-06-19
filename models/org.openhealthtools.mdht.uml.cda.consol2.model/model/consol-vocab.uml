@@ -318,7 +318,16 @@
       <ownedLiteral xmi:id="_iqt_QBMsEeK4go_VqYg1Bw" name="C43002"/>
       <ownedLiteral xmi:id="_iqt_QhMsEeK4go_VqYg1Bw" name="C43003"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2JjKABSVEeGGzu7fmW9pXw" name="Social History Type Set Definition">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2JjKABSVEeGGzu7fmW9pXw" name="Social History Type Value Set">
+      <ownedComment xmi:id="_3IFV4PJhEeO2NaSiicarcg">
+        <body>A value set of SNOMED-CT observable entity codes containing common social history observables. Though Tobacco Use and Exposure exists in this value set, it is recommended to use the Current Smoking Status template or the Tobacco Use template to represent smoking or tobacco habits.&#xD;
+
+Specific URL Pending 
+ 
+ 
+&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
       <ownedLiteral xmi:id="_2JjKBxSVEeGGzu7fmW9pXw" name="229819007"/>
       <ownedLiteral xmi:id="_2JjKBBSVEeGGzu7fmW9pXw" name="256235009"/>
       <ownedLiteral xmi:id="_2JjKARSVEeGGzu7fmW9pXw" name="160573003"/>
@@ -328,6 +337,12 @@
       <ownedLiteral xmi:id="_2JjKAhSVEeGGzu7fmW9pXw" name="363908000"/>
       <ownedLiteral xmi:id="_2JjKBRSVEeGGzu7fmW9pXw" name="228272008"/>
       <ownedLiteral xmi:id="_hO0CoPwaEeGXDIdcQJhgtg" name="105421008"/>
+      <ownedLiteral xmi:id="_ihf28PJiEeO2NaSiicarcg" name="302160007"/>
+      <ownedLiteral xmi:id="_li6ZgPJiEeO2NaSiicarcg" name="423514004"/>
+      <ownedLiteral xmi:id="_n-hgUPJiEeO2NaSiicarcg" name="102487004"/>
+      <ownedLiteral xmi:id="_p_5iMPJiEeO2NaSiicarcg" name="424483007"/>
+      <ownedLiteral xmi:id="_sFkOMPJiEeO2NaSiicarcg" name="442133001"/>
+      <ownedLiteral xmi:id="_t_SI4PJiEeO2NaSiicarcg" name="446996006"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2LHQQBSVEeGGzu7fmW9pXw" name="Advance Directive Type Code">
       <ownedLiteral xmi:id="_2LHQQRSVEeGGzu7fmW9pXw" name="281789004"/>
@@ -1612,6 +1627,14 @@ Specific URL Pending&#xD;
 Valueset Source: http://vtsl.vetmed.vt.edu/</body>
       </ownedComment>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_hO2TUPMSEeOrR8IF-aqVyQ" name="Substance-Reactant for Intolerance">
+      <ownedComment xmi:id="_x9HncPMSEeOrR8IF-aqVyQ">
+        <body>A substance or other type of agent (eg. Sunshine) that may be associated with an intolerance reaction event or a propensity to such an event. These concepts are expected to be at a more general level of abstraction (ingredients versus more specific formulations). This value set is quite general and includes concepts that may never cause an adverse event, particularly the included SNOMED CT concepts. The code system-specific value sets in this grouping value set are intended to provide broad coverage of all kinds of agents, but the expectation for use is that the chosen concept identifier for a substance should be appropriately specific and drawn from the available code systems in the following priority order: NDFRT, then RXNORM, then UNII, then SNOMEDCT. This overarching grouping value set is intended to support identification of drug classes, individual medication ingredients, foods, general substances and environmental entities.  &#xD;
+Value set intensionally defined as a GROUPING made up of:  &#xD;
+Value Set: Medication Drug Class (2.16.840.1.113883.3.88.12.80.18) (NDFRT drug class codes); Value Set: Clinical Drug Ingredient (2.16.840.1.113762.1.4.1010.7) (RxNORM ingredient codes); Value Set: Unique Ingredient Identifier - Complete Set (2.16.840.1.113883.3.88.12.80.20) (UNII ingredient codes); Value Set: Substance Other Than Clinical Drug (2.16.840.1.113762.1.4.1010.9) (SNOMED CT substance codes).&#xD;&#xD;
+Valueset Source: https://vsac.nlm.nih.gov/</body>
+      </ownedComment>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -1672,7 +1695,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetVersion xmi:id="_2H49IRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.11" version="1" fullName="Medication Product Form Value Set" definition="This is the physical form of the product as presented to the individual. For example: tablet, capsule, liquid or ointment. NCI concept code for pharmaceutical dosage form: C42636" revisionDate="07/23/2009" base_Enumeration="_2H49IBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_2JjKCRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.60" version="1" fullName="Social History Type Value Set" definition="This indicates the type of social history observation" revisionDate="07/23/2009" base_Enumeration="_2JjKABSVEeGGzu7fmW9pXw">
+  <term:ValueSetVersion xmi:id="_2JjKCRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.60" version="1" fullName="Social History Type Value Set" definition="This indicates the type of social history observation" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_2JjKABSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_2JkYIBSVEeGGzu7fmW9pXw" conceptName="Alcohol intake" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKARSVEeGGzu7fmW9pXw"/>
@@ -2012,7 +2035,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_lC2TwGSiEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_d-UUAG1IEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.12839" base_Enumeration="_d-Ts8G1IEeGCevFpokwODw"/>
-  <term:ValueSetVersion xmi:id="_NOFzsOJaEeG3cO7ebC3QuA" identifier="2.16.840.1.113883.11.20.9.39" version="2012-04-27" definition="This value set indicates the status of the results observation or organizer" base_Enumeration="_NOFMoOJaEeG3cO7ebC3QuA">
+  <term:ValueSetVersion xmi:id="_NOFzsOJaEeG3cO7ebC3QuA" identifier="2.16.840.1.113883.11.20.9.39" version="2013-08-09" definition="This value set indicates the status of the results observation or organizer" base_Enumeration="_NOFMoOJaEeG3cO7ebC3QuA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_bTHNoOJaEeG3cO7ebC3QuA" conceptName="aborted" base_EnumerationLiteral="_bTGmkOJaEeG3cO7ebC3QuA"/>
@@ -3096,5 +3119,14 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_eLc2gOdbEeOqBOMhgDlycQ" identifier="2.16.840.1.113883.11.20.9.52" base_Enumeration="_eLcPcOdbEeOqBOMhgDlycQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_ihf28fJiEeO2NaSiicarcg" conceptName="Household, family and support network detail (observable entity)" base_EnumerationLiteral="_ihf28PJiEeO2NaSiicarcg"/>
+  <term:ValueSetCode xmi:id="_li6ZgfJiEeO2NaSiicarcg" conceptName="Community resource details (observable entity)" base_EnumerationLiteral="_li6ZgPJiEeO2NaSiicarcg"/>
+  <term:ValueSetCode xmi:id="_n-hgUfJiEeO2NaSiicarcg" conceptName="Environmental risk factor (observable entity)" base_EnumerationLiteral="_n-hgUPJiEeO2NaSiicarcg"/>
+  <term:ValueSetCode xmi:id="_p_5iMfJiEeO2NaSiicarcg" conceptName="transportation details (observable entity)" base_EnumerationLiteral="_p_5iMPJiEeO2NaSiicarcg"/>
+  <term:ValueSetCode xmi:id="_sFk1QPJiEeO2NaSiicarcg" conceptName="Housing history (observable entity)" base_EnumerationLiteral="_sFkOMPJiEeO2NaSiicarcg"/>
+  <term:ValueSetCode xmi:id="_t_SI4fJiEeO2NaSiicarcg" conceptName="Dosage of radiation exposure (observable entity)" base_EnumerationLiteral="_t_SI4PJiEeO2NaSiicarcg"/>
+  <term:ValueSetVersion xmi:id="_hO26YPMSEeOrR8IF-aqVyQ" identifier="2.16.840.1.113762.1.4.1010.1" binding="Dynamic" base_Enumeration="_hO2TUPMSEeOrR8IF-aqVyQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
 </xmi:XMI>
