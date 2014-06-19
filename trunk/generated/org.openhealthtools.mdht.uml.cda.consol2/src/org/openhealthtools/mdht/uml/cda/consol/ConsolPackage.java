@@ -55803,6 +55803,3466 @@ public interface ConsolPackage extends EPackage {
 	int PROBLEM_CONCERN_ACT2_FEATURE_COUNT = PROBLEM_CONCERN_ACT_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProblemObservation2Impl <em>Problem Observation2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProblemObservation2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProblemObservation2()
+	 * @generated
+	 */
+	int PROBLEM_OBSERVATION2 = 245;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__REALM_CODE = PROBLEM_OBSERVATION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__TYPE_ID = PROBLEM_OBSERVATION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__TEMPLATE_ID = PROBLEM_OBSERVATION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__ID = PROBLEM_OBSERVATION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__CODE = PROBLEM_OBSERVATION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__DERIVATION_EXPR = PROBLEM_OBSERVATION__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__TEXT = PROBLEM_OBSERVATION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__STATUS_CODE = PROBLEM_OBSERVATION__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__EFFECTIVE_TIME = PROBLEM_OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__PRIORITY_CODE = PROBLEM_OBSERVATION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__REPEAT_NUMBER = PROBLEM_OBSERVATION__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__LANGUAGE_CODE = PROBLEM_OBSERVATION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__VALUE = PROBLEM_OBSERVATION__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__INTERPRETATION_CODE = PROBLEM_OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__METHOD_CODE = PROBLEM_OBSERVATION__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__TARGET_SITE_CODE = PROBLEM_OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__SUBJECT = PROBLEM_OBSERVATION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__SPECIMEN = PROBLEM_OBSERVATION__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__PERFORMER = PROBLEM_OBSERVATION__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__AUTHOR = PROBLEM_OBSERVATION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__INFORMANT = PROBLEM_OBSERVATION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__PARTICIPANT = PROBLEM_OBSERVATION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__ENTRY_RELATIONSHIP = PROBLEM_OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__REFERENCE = PROBLEM_OBSERVATION__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__PRECONDITION = PROBLEM_OBSERVATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__REFERENCE_RANGE = PROBLEM_OBSERVATION__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__NULL_FLAVOR = PROBLEM_OBSERVATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__CLASS_CODE = PROBLEM_OBSERVATION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__MOOD_CODE = PROBLEM_OBSERVATION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__NEGATION_IND = PROBLEM_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Problem Observation2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2_FEATURE_COUNT = PROBLEM_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityAct2Impl <em>Procedure Activity Act2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityAct2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureActivityAct2()
+	 * @generated
+	 */
+	int PROCEDURE_ACTIVITY_ACT2 = 246;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__REALM_CODE = PROCEDURE_ACTIVITY_ACT__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__TYPE_ID = PROCEDURE_ACTIVITY_ACT__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__TEMPLATE_ID = PROCEDURE_ACTIVITY_ACT__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__ID = PROCEDURE_ACTIVITY_ACT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__CODE = PROCEDURE_ACTIVITY_ACT__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__TEXT = PROCEDURE_ACTIVITY_ACT__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__STATUS_CODE = PROCEDURE_ACTIVITY_ACT__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__EFFECTIVE_TIME = PROCEDURE_ACTIVITY_ACT__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__PRIORITY_CODE = PROCEDURE_ACTIVITY_ACT__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__LANGUAGE_CODE = PROCEDURE_ACTIVITY_ACT__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__SUBJECT = PROCEDURE_ACTIVITY_ACT__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__SPECIMEN = PROCEDURE_ACTIVITY_ACT__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__PERFORMER = PROCEDURE_ACTIVITY_ACT__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__AUTHOR = PROCEDURE_ACTIVITY_ACT__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__INFORMANT = PROCEDURE_ACTIVITY_ACT__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__PARTICIPANT = PROCEDURE_ACTIVITY_ACT__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__ENTRY_RELATIONSHIP = PROCEDURE_ACTIVITY_ACT__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__REFERENCE = PROCEDURE_ACTIVITY_ACT__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__PRECONDITION = PROCEDURE_ACTIVITY_ACT__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__NULL_FLAVOR = PROCEDURE_ACTIVITY_ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__CLASS_CODE = PROCEDURE_ACTIVITY_ACT__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__MOOD_CODE = PROCEDURE_ACTIVITY_ACT__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__NEGATION_IND = PROCEDURE_ACTIVITY_ACT__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Procedure Activity Act2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2_FEATURE_COUNT = PROCEDURE_ACTIVITY_ACT_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityObservation2Impl <em>Procedure Activity Observation2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityObservation2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureActivityObservation2()
+	 * @generated
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2 = 247;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__REALM_CODE = PROCEDURE_ACTIVITY_OBSERVATION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__TYPE_ID = PROCEDURE_ACTIVITY_OBSERVATION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__TEMPLATE_ID = PROCEDURE_ACTIVITY_OBSERVATION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__ID = PROCEDURE_ACTIVITY_OBSERVATION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__CODE = PROCEDURE_ACTIVITY_OBSERVATION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__DERIVATION_EXPR = PROCEDURE_ACTIVITY_OBSERVATION__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__TEXT = PROCEDURE_ACTIVITY_OBSERVATION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__STATUS_CODE = PROCEDURE_ACTIVITY_OBSERVATION__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__EFFECTIVE_TIME = PROCEDURE_ACTIVITY_OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__PRIORITY_CODE = PROCEDURE_ACTIVITY_OBSERVATION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__REPEAT_NUMBER = PROCEDURE_ACTIVITY_OBSERVATION__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__LANGUAGE_CODE = PROCEDURE_ACTIVITY_OBSERVATION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__VALUE = PROCEDURE_ACTIVITY_OBSERVATION__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__INTERPRETATION_CODE = PROCEDURE_ACTIVITY_OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__METHOD_CODE = PROCEDURE_ACTIVITY_OBSERVATION__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__TARGET_SITE_CODE = PROCEDURE_ACTIVITY_OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__SUBJECT = PROCEDURE_ACTIVITY_OBSERVATION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__SPECIMEN = PROCEDURE_ACTIVITY_OBSERVATION__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__PERFORMER = PROCEDURE_ACTIVITY_OBSERVATION__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__AUTHOR = PROCEDURE_ACTIVITY_OBSERVATION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__INFORMANT = PROCEDURE_ACTIVITY_OBSERVATION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__PARTICIPANT = PROCEDURE_ACTIVITY_OBSERVATION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__ENTRY_RELATIONSHIP = PROCEDURE_ACTIVITY_OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__REFERENCE = PROCEDURE_ACTIVITY_OBSERVATION__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__PRECONDITION = PROCEDURE_ACTIVITY_OBSERVATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__REFERENCE_RANGE = PROCEDURE_ACTIVITY_OBSERVATION__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__NULL_FLAVOR = PROCEDURE_ACTIVITY_OBSERVATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__CLASS_CODE = PROCEDURE_ACTIVITY_OBSERVATION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__MOOD_CODE = PROCEDURE_ACTIVITY_OBSERVATION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__NEGATION_IND = PROCEDURE_ACTIVITY_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Procedure Activity Observation2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2_FEATURE_COUNT = PROCEDURE_ACTIVITY_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityProcedure2Impl <em>Procedure Activity Procedure2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityProcedure2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureActivityProcedure2()
+	 * @generated
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2 = 248;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__REALM_CODE = PROCEDURE_ACTIVITY_PROCEDURE__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__TYPE_ID = PROCEDURE_ACTIVITY_PROCEDURE__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__TEMPLATE_ID = PROCEDURE_ACTIVITY_PROCEDURE__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__ID = PROCEDURE_ACTIVITY_PROCEDURE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__CODE = PROCEDURE_ACTIVITY_PROCEDURE__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__TEXT = PROCEDURE_ACTIVITY_PROCEDURE__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__STATUS_CODE = PROCEDURE_ACTIVITY_PROCEDURE__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__EFFECTIVE_TIME = PROCEDURE_ACTIVITY_PROCEDURE__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__PRIORITY_CODE = PROCEDURE_ACTIVITY_PROCEDURE__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__LANGUAGE_CODE = PROCEDURE_ACTIVITY_PROCEDURE__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__METHOD_CODE = PROCEDURE_ACTIVITY_PROCEDURE__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Approach Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__APPROACH_SITE_CODE = PROCEDURE_ACTIVITY_PROCEDURE__APPROACH_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__TARGET_SITE_CODE = PROCEDURE_ACTIVITY_PROCEDURE__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__SUBJECT = PROCEDURE_ACTIVITY_PROCEDURE__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__SPECIMEN = PROCEDURE_ACTIVITY_PROCEDURE__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__PERFORMER = PROCEDURE_ACTIVITY_PROCEDURE__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__AUTHOR = PROCEDURE_ACTIVITY_PROCEDURE__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__INFORMANT = PROCEDURE_ACTIVITY_PROCEDURE__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__PARTICIPANT = PROCEDURE_ACTIVITY_PROCEDURE__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__ENTRY_RELATIONSHIP = PROCEDURE_ACTIVITY_PROCEDURE__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__REFERENCE = PROCEDURE_ACTIVITY_PROCEDURE__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__PRECONDITION = PROCEDURE_ACTIVITY_PROCEDURE__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__NULL_FLAVOR = PROCEDURE_ACTIVITY_PROCEDURE__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__CLASS_CODE = PROCEDURE_ACTIVITY_PROCEDURE__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__MOOD_CODE = PROCEDURE_ACTIVITY_PROCEDURE__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__NEGATION_IND = PROCEDURE_ACTIVITY_PROCEDURE__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Procedure Activity Procedure2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2_FEATURE_COUNT = PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ReactionObservation2Impl <em>Reaction Observation2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ReactionObservation2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getReactionObservation2()
+	 * @generated
+	 */
+	int REACTION_OBSERVATION2 = 249;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__REALM_CODE = REACTION_OBSERVATION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__TYPE_ID = REACTION_OBSERVATION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__TEMPLATE_ID = REACTION_OBSERVATION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__ID = REACTION_OBSERVATION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__CODE = REACTION_OBSERVATION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__DERIVATION_EXPR = REACTION_OBSERVATION__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__TEXT = REACTION_OBSERVATION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__STATUS_CODE = REACTION_OBSERVATION__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__EFFECTIVE_TIME = REACTION_OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__PRIORITY_CODE = REACTION_OBSERVATION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__REPEAT_NUMBER = REACTION_OBSERVATION__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__LANGUAGE_CODE = REACTION_OBSERVATION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__VALUE = REACTION_OBSERVATION__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__INTERPRETATION_CODE = REACTION_OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__METHOD_CODE = REACTION_OBSERVATION__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__TARGET_SITE_CODE = REACTION_OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__SUBJECT = REACTION_OBSERVATION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__SPECIMEN = REACTION_OBSERVATION__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__PERFORMER = REACTION_OBSERVATION__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__AUTHOR = REACTION_OBSERVATION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__INFORMANT = REACTION_OBSERVATION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__PARTICIPANT = REACTION_OBSERVATION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__ENTRY_RELATIONSHIP = REACTION_OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__REFERENCE = REACTION_OBSERVATION__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__PRECONDITION = REACTION_OBSERVATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__REFERENCE_RANGE = REACTION_OBSERVATION__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__NULL_FLAVOR = REACTION_OBSERVATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__CLASS_CODE = REACTION_OBSERVATION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__MOOD_CODE = REACTION_OBSERVATION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__NEGATION_IND = REACTION_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Reaction Observation2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2_FEATURE_COUNT = REACTION_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ResultObservation2Impl <em>Result Observation2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ResultObservation2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getResultObservation2()
+	 * @generated
+	 */
+	int RESULT_OBSERVATION2 = 250;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__REALM_CODE = RESULT_OBSERVATION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__TYPE_ID = RESULT_OBSERVATION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__TEMPLATE_ID = RESULT_OBSERVATION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__ID = RESULT_OBSERVATION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__CODE = RESULT_OBSERVATION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__DERIVATION_EXPR = RESULT_OBSERVATION__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__TEXT = RESULT_OBSERVATION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__STATUS_CODE = RESULT_OBSERVATION__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__EFFECTIVE_TIME = RESULT_OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__PRIORITY_CODE = RESULT_OBSERVATION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__REPEAT_NUMBER = RESULT_OBSERVATION__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__LANGUAGE_CODE = RESULT_OBSERVATION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__VALUE = RESULT_OBSERVATION__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__INTERPRETATION_CODE = RESULT_OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__METHOD_CODE = RESULT_OBSERVATION__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__TARGET_SITE_CODE = RESULT_OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__SUBJECT = RESULT_OBSERVATION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__SPECIMEN = RESULT_OBSERVATION__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__PERFORMER = RESULT_OBSERVATION__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__AUTHOR = RESULT_OBSERVATION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__INFORMANT = RESULT_OBSERVATION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__PARTICIPANT = RESULT_OBSERVATION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__ENTRY_RELATIONSHIP = RESULT_OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__REFERENCE = RESULT_OBSERVATION__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__PRECONDITION = RESULT_OBSERVATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__REFERENCE_RANGE = RESULT_OBSERVATION__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__NULL_FLAVOR = RESULT_OBSERVATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__CLASS_CODE = RESULT_OBSERVATION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__MOOD_CODE = RESULT_OBSERVATION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__NEGATION_IND = RESULT_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Result Observation2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2_FEATURE_COUNT = RESULT_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ResultOrganizer2Impl <em>Result Organizer2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ResultOrganizer2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getResultOrganizer2()
+	 * @generated
+	 */
+	int RESULT_ORGANIZER2 = 251;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__REALM_CODE = RESULT_ORGANIZER__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__TYPE_ID = RESULT_ORGANIZER__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__TEMPLATE_ID = RESULT_ORGANIZER__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__ID = RESULT_ORGANIZER__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__CODE = RESULT_ORGANIZER__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__STATUS_CODE = RESULT_ORGANIZER__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__EFFECTIVE_TIME = RESULT_ORGANIZER__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__SUBJECT = RESULT_ORGANIZER__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__SPECIMEN = RESULT_ORGANIZER__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__PERFORMER = RESULT_ORGANIZER__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__AUTHOR = RESULT_ORGANIZER__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__INFORMANT = RESULT_ORGANIZER__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__PARTICIPANT = RESULT_ORGANIZER__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__REFERENCE = RESULT_ORGANIZER__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__PRECONDITION = RESULT_ORGANIZER__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__COMPONENT = RESULT_ORGANIZER__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__NULL_FLAVOR = RESULT_ORGANIZER__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__CLASS_CODE = RESULT_ORGANIZER__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__MOOD_CODE = RESULT_ORGANIZER__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Result Organizer2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2_FEATURE_COUNT = RESULT_ORGANIZER_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SeverityObservation2Impl <em>Severity Observation2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.SeverityObservation2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSeverityObservation2()
+	 * @generated
+	 */
+	int SEVERITY_OBSERVATION2 = 252;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__REALM_CODE = SEVERITY_OBSERVATION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__TYPE_ID = SEVERITY_OBSERVATION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__TEMPLATE_ID = SEVERITY_OBSERVATION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__ID = SEVERITY_OBSERVATION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__CODE = SEVERITY_OBSERVATION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__DERIVATION_EXPR = SEVERITY_OBSERVATION__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__TEXT = SEVERITY_OBSERVATION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__STATUS_CODE = SEVERITY_OBSERVATION__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__EFFECTIVE_TIME = SEVERITY_OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__PRIORITY_CODE = SEVERITY_OBSERVATION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__REPEAT_NUMBER = SEVERITY_OBSERVATION__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__LANGUAGE_CODE = SEVERITY_OBSERVATION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__VALUE = SEVERITY_OBSERVATION__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__INTERPRETATION_CODE = SEVERITY_OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__METHOD_CODE = SEVERITY_OBSERVATION__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__TARGET_SITE_CODE = SEVERITY_OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__SUBJECT = SEVERITY_OBSERVATION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__SPECIMEN = SEVERITY_OBSERVATION__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__PERFORMER = SEVERITY_OBSERVATION__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__AUTHOR = SEVERITY_OBSERVATION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__INFORMANT = SEVERITY_OBSERVATION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__PARTICIPANT = SEVERITY_OBSERVATION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__ENTRY_RELATIONSHIP = SEVERITY_OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__REFERENCE = SEVERITY_OBSERVATION__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__PRECONDITION = SEVERITY_OBSERVATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__REFERENCE_RANGE = SEVERITY_OBSERVATION__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__NULL_FLAVOR = SEVERITY_OBSERVATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__CLASS_CODE = SEVERITY_OBSERVATION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__MOOD_CODE = SEVERITY_OBSERVATION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__NEGATION_IND = SEVERITY_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Severity Observation2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2_FEATURE_COUNT = SEVERITY_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistoryObservation2Impl <em>Social History Observation2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistoryObservation2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSocialHistoryObservation2()
+	 * @generated
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2 = 253;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__REALM_CODE = SOCIAL_HISTORY_OBSERVATION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__TYPE_ID = SOCIAL_HISTORY_OBSERVATION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__TEMPLATE_ID = SOCIAL_HISTORY_OBSERVATION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__ID = SOCIAL_HISTORY_OBSERVATION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__CODE = SOCIAL_HISTORY_OBSERVATION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__DERIVATION_EXPR = SOCIAL_HISTORY_OBSERVATION__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__TEXT = SOCIAL_HISTORY_OBSERVATION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__STATUS_CODE = SOCIAL_HISTORY_OBSERVATION__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__EFFECTIVE_TIME = SOCIAL_HISTORY_OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__PRIORITY_CODE = SOCIAL_HISTORY_OBSERVATION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__REPEAT_NUMBER = SOCIAL_HISTORY_OBSERVATION__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__LANGUAGE_CODE = SOCIAL_HISTORY_OBSERVATION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__VALUE = SOCIAL_HISTORY_OBSERVATION__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__INTERPRETATION_CODE = SOCIAL_HISTORY_OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__METHOD_CODE = SOCIAL_HISTORY_OBSERVATION__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__TARGET_SITE_CODE = SOCIAL_HISTORY_OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__SUBJECT = SOCIAL_HISTORY_OBSERVATION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__SPECIMEN = SOCIAL_HISTORY_OBSERVATION__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__PERFORMER = SOCIAL_HISTORY_OBSERVATION__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__AUTHOR = SOCIAL_HISTORY_OBSERVATION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__INFORMANT = SOCIAL_HISTORY_OBSERVATION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__PARTICIPANT = SOCIAL_HISTORY_OBSERVATION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__ENTRY_RELATIONSHIP = SOCIAL_HISTORY_OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__REFERENCE = SOCIAL_HISTORY_OBSERVATION__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__PRECONDITION = SOCIAL_HISTORY_OBSERVATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__REFERENCE_RANGE = SOCIAL_HISTORY_OBSERVATION__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__NULL_FLAVOR = SOCIAL_HISTORY_OBSERVATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__CLASS_CODE = SOCIAL_HISTORY_OBSERVATION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__MOOD_CODE = SOCIAL_HISTORY_OBSERVATION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__NEGATION_IND = SOCIAL_HISTORY_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Social History Observation2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2_FEATURE_COUNT = SOCIAL_HISTORY_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SubstanceOrDeviceAllergyObservation2Impl <em>Substance Or Device Allergy Observation2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.SubstanceOrDeviceAllergyObservation2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSubstanceOrDeviceAllergyObservation2()
+	 * @generated
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2 = 254;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__REALM_CODE = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__TYPE_ID = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__TEMPLATE_ID = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__ID = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__CODE = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DERIVATION_EXPR = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__TEXT = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__STATUS_CODE = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__EFFECTIVE_TIME = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__PRIORITY_CODE = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__REPEAT_NUMBER = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__LANGUAGE_CODE = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__VALUE = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__INTERPRETATION_CODE = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__METHOD_CODE = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__TARGET_SITE_CODE = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__SUBJECT = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__SPECIMEN = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__PERFORMER = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__AUTHOR = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__INFORMANT = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__PARTICIPANT = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__ENTRY_RELATIONSHIP = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__REFERENCE = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__PRECONDITION = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__REFERENCE_RANGE = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__NULL_FLAVOR = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__CLASS_CODE = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__MOOD_CODE = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__NEGATION_IND = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Substance Or Device Allergy Observation2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_FEATURE_COUNT = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.TobaccoUse2Impl <em>Tobacco Use2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.TobaccoUse2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getTobaccoUse2()
+	 * @generated
+	 */
+	int TOBACCO_USE2 = 255;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__REALM_CODE = TOBACCO_USE__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__TYPE_ID = TOBACCO_USE__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__TEMPLATE_ID = TOBACCO_USE__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__ID = TOBACCO_USE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__CODE = TOBACCO_USE__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__DERIVATION_EXPR = TOBACCO_USE__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__TEXT = TOBACCO_USE__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__STATUS_CODE = TOBACCO_USE__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__EFFECTIVE_TIME = TOBACCO_USE__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__PRIORITY_CODE = TOBACCO_USE__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__REPEAT_NUMBER = TOBACCO_USE__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__LANGUAGE_CODE = TOBACCO_USE__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__VALUE = TOBACCO_USE__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__INTERPRETATION_CODE = TOBACCO_USE__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__METHOD_CODE = TOBACCO_USE__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__TARGET_SITE_CODE = TOBACCO_USE__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__SUBJECT = TOBACCO_USE__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__SPECIMEN = TOBACCO_USE__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__PERFORMER = TOBACCO_USE__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__AUTHOR = TOBACCO_USE__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__INFORMANT = TOBACCO_USE__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__PARTICIPANT = TOBACCO_USE__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__ENTRY_RELATIONSHIP = TOBACCO_USE__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__REFERENCE = TOBACCO_USE__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__PRECONDITION = TOBACCO_USE__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__REFERENCE_RANGE = TOBACCO_USE__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__NULL_FLAVOR = TOBACCO_USE__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__CLASS_CODE = TOBACCO_USE__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__MOOD_CODE = TOBACCO_USE__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__NEGATION_IND = TOBACCO_USE__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Tobacco Use2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2_FEATURE_COUNT = TOBACCO_USE_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignObservation2Impl <em>Vital Sign Observation2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignObservation2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getVitalSignObservation2()
+	 * @generated
+	 */
+	int VITAL_SIGN_OBSERVATION2 = 256;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__REALM_CODE = VITAL_SIGN_OBSERVATION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__TYPE_ID = VITAL_SIGN_OBSERVATION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__TEMPLATE_ID = VITAL_SIGN_OBSERVATION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__ID = VITAL_SIGN_OBSERVATION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__CODE = VITAL_SIGN_OBSERVATION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__DERIVATION_EXPR = VITAL_SIGN_OBSERVATION__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__TEXT = VITAL_SIGN_OBSERVATION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__STATUS_CODE = VITAL_SIGN_OBSERVATION__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__EFFECTIVE_TIME = VITAL_SIGN_OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__PRIORITY_CODE = VITAL_SIGN_OBSERVATION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__REPEAT_NUMBER = VITAL_SIGN_OBSERVATION__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__LANGUAGE_CODE = VITAL_SIGN_OBSERVATION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__VALUE = VITAL_SIGN_OBSERVATION__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__INTERPRETATION_CODE = VITAL_SIGN_OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__METHOD_CODE = VITAL_SIGN_OBSERVATION__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__TARGET_SITE_CODE = VITAL_SIGN_OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__SUBJECT = VITAL_SIGN_OBSERVATION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__SPECIMEN = VITAL_SIGN_OBSERVATION__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__PERFORMER = VITAL_SIGN_OBSERVATION__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__AUTHOR = VITAL_SIGN_OBSERVATION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__INFORMANT = VITAL_SIGN_OBSERVATION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__PARTICIPANT = VITAL_SIGN_OBSERVATION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__ENTRY_RELATIONSHIP = VITAL_SIGN_OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__REFERENCE = VITAL_SIGN_OBSERVATION__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__PRECONDITION = VITAL_SIGN_OBSERVATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__REFERENCE_RANGE = VITAL_SIGN_OBSERVATION__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__NULL_FLAVOR = VITAL_SIGN_OBSERVATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__CLASS_CODE = VITAL_SIGN_OBSERVATION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__MOOD_CODE = VITAL_SIGN_OBSERVATION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__NEGATION_IND = VITAL_SIGN_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Vital Sign Observation2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2_FEATURE_COUNT = VITAL_SIGN_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignsOrganizer2Impl <em>Vital Signs Organizer2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignsOrganizer2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getVitalSignsOrganizer2()
+	 * @generated
+	 */
+	int VITAL_SIGNS_ORGANIZER2 = 257;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__REALM_CODE = VITAL_SIGNS_ORGANIZER__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__TYPE_ID = VITAL_SIGNS_ORGANIZER__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__TEMPLATE_ID = VITAL_SIGNS_ORGANIZER__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__ID = VITAL_SIGNS_ORGANIZER__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__CODE = VITAL_SIGNS_ORGANIZER__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__STATUS_CODE = VITAL_SIGNS_ORGANIZER__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__EFFECTIVE_TIME = VITAL_SIGNS_ORGANIZER__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__SUBJECT = VITAL_SIGNS_ORGANIZER__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__SPECIMEN = VITAL_SIGNS_ORGANIZER__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__PERFORMER = VITAL_SIGNS_ORGANIZER__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__AUTHOR = VITAL_SIGNS_ORGANIZER__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__INFORMANT = VITAL_SIGNS_ORGANIZER__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__PARTICIPANT = VITAL_SIGNS_ORGANIZER__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__REFERENCE = VITAL_SIGNS_ORGANIZER__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__PRECONDITION = VITAL_SIGNS_ORGANIZER__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__COMPONENT = VITAL_SIGNS_ORGANIZER__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__NULL_FLAVOR = VITAL_SIGNS_ORGANIZER__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__CLASS_CODE = VITAL_SIGNS_ORGANIZER__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__MOOD_CODE = VITAL_SIGNS_ORGANIZER__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Vital Signs Organizer2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2_FEATURE_COUNT = VITAL_SIGNS_ORGANIZER_FEATURE_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58071,6 +61531,136 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getProblemConcernAct2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2 <em>Problem Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Problem Observation2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2
+	 * @generated
+	 */
+	EClass getProblemObservation2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct2 <em>Procedure Activity Act2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Procedure Activity Act2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct2
+	 * @generated
+	 */
+	EClass getProcedureActivityAct2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2 <em>Procedure Activity Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Procedure Activity Observation2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2
+	 * @generated
+	 */
+	EClass getProcedureActivityObservation2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2 <em>Procedure Activity Procedure2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Procedure Activity Procedure2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2
+	 * @generated
+	 */
+	EClass getProcedureActivityProcedure2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2 <em>Reaction Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Reaction Observation2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2
+	 * @generated
+	 */
+	EClass getReactionObservation2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2 <em>Result Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Result Observation2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ResultObservation2
+	 * @generated
+	 */
+	EClass getResultObservation2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2 <em>Result Organizer2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Result Organizer2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2
+	 * @generated
+	 */
+	EClass getResultOrganizer2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2 <em>Severity Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Severity Observation2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2
+	 * @generated
+	 */
+	EClass getSeverityObservation2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2 <em>Social History Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Social History Observation2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2
+	 * @generated
+	 */
+	EClass getSocialHistoryObservation2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2 <em>Substance Or Device Allergy Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Substance Or Device Allergy Observation2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2
+	 * @generated
+	 */
+	EClass getSubstanceOrDeviceAllergyObservation2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2 <em>Tobacco Use2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Tobacco Use2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2
+	 * @generated
+	 */
+	EClass getTobaccoUse2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2 <em>Vital Sign Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Vital Sign Observation2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2
+	 * @generated
+	 */
+	EClass getVitalSignObservation2();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2 <em>Vital Signs Organizer2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Vital Signs Organizer2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2
+	 * @generated
+	 */
+	EClass getVitalSignsOrganizer2();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection <em>Medications Administered Section</em>}'.
@@ -60543,6 +64133,136 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass PROBLEM_CONCERN_ACT2 = eINSTANCE.getProblemConcernAct2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProblemObservation2Impl <em>Problem Observation2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProblemObservation2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProblemObservation2()
+		 * @generated
+		 */
+		EClass PROBLEM_OBSERVATION2 = eINSTANCE.getProblemObservation2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityAct2Impl <em>Procedure Activity Act2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityAct2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureActivityAct2()
+		 * @generated
+		 */
+		EClass PROCEDURE_ACTIVITY_ACT2 = eINSTANCE.getProcedureActivityAct2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityObservation2Impl <em>Procedure Activity Observation2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityObservation2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureActivityObservation2()
+		 * @generated
+		 */
+		EClass PROCEDURE_ACTIVITY_OBSERVATION2 = eINSTANCE.getProcedureActivityObservation2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityProcedure2Impl <em>Procedure Activity Procedure2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityProcedure2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProcedureActivityProcedure2()
+		 * @generated
+		 */
+		EClass PROCEDURE_ACTIVITY_PROCEDURE2 = eINSTANCE.getProcedureActivityProcedure2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ReactionObservation2Impl <em>Reaction Observation2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ReactionObservation2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getReactionObservation2()
+		 * @generated
+		 */
+		EClass REACTION_OBSERVATION2 = eINSTANCE.getReactionObservation2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ResultObservation2Impl <em>Result Observation2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ResultObservation2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getResultObservation2()
+		 * @generated
+		 */
+		EClass RESULT_OBSERVATION2 = eINSTANCE.getResultObservation2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ResultOrganizer2Impl <em>Result Organizer2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ResultOrganizer2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getResultOrganizer2()
+		 * @generated
+		 */
+		EClass RESULT_ORGANIZER2 = eINSTANCE.getResultOrganizer2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SeverityObservation2Impl <em>Severity Observation2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.SeverityObservation2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSeverityObservation2()
+		 * @generated
+		 */
+		EClass SEVERITY_OBSERVATION2 = eINSTANCE.getSeverityObservation2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistoryObservation2Impl <em>Social History Observation2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistoryObservation2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSocialHistoryObservation2()
+		 * @generated
+		 */
+		EClass SOCIAL_HISTORY_OBSERVATION2 = eINSTANCE.getSocialHistoryObservation2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SubstanceOrDeviceAllergyObservation2Impl <em>Substance Or Device Allergy Observation2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.SubstanceOrDeviceAllergyObservation2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getSubstanceOrDeviceAllergyObservation2()
+		 * @generated
+		 */
+		EClass SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2 = eINSTANCE.getSubstanceOrDeviceAllergyObservation2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.TobaccoUse2Impl <em>Tobacco Use2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.TobaccoUse2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getTobaccoUse2()
+		 * @generated
+		 */
+		EClass TOBACCO_USE2 = eINSTANCE.getTobaccoUse2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignObservation2Impl <em>Vital Sign Observation2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignObservation2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getVitalSignObservation2()
+		 * @generated
+		 */
+		EClass VITAL_SIGN_OBSERVATION2 = eINSTANCE.getVitalSignObservation2();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignsOrganizer2Impl <em>Vital Signs Organizer2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignsOrganizer2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getVitalSignsOrganizer2()
+		 * @generated
+		 */
+		EClass VITAL_SIGNS_ORGANIZER2 = eINSTANCE.getVitalSignsOrganizer2();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.MedicationsAdministeredSectionImpl <em>Medications Administered Section</em>}' class.

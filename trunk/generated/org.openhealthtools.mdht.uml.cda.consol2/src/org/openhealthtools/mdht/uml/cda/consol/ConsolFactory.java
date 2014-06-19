@@ -2073,6 +2073,123 @@ public interface ConsolFactory extends EFactory {
 	ProblemConcernAct2 createProblemConcernAct2();
 
 	/**
+	 * Returns a new object of class '<em>Problem Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Problem Observation2</em>'.
+	 * @generated
+	 */
+	ProblemObservation2 createProblemObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Activity Act2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Activity Act2</em>'.
+	 * @generated
+	 */
+	ProcedureActivityAct2 createProcedureActivityAct2();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Activity Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Activity Observation2</em>'.
+	 * @generated
+	 */
+	ProcedureActivityObservation2 createProcedureActivityObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Activity Procedure2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Activity Procedure2</em>'.
+	 * @generated
+	 */
+	ProcedureActivityProcedure2 createProcedureActivityProcedure2();
+
+	/**
+	 * Returns a new object of class '<em>Reaction Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Reaction Observation2</em>'.
+	 * @generated
+	 */
+	ReactionObservation2 createReactionObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Result Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Observation2</em>'.
+	 * @generated
+	 */
+	ResultObservation2 createResultObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Result Organizer2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Organizer2</em>'.
+	 * @generated
+	 */
+	ResultOrganizer2 createResultOrganizer2();
+
+	/**
+	 * Returns a new object of class '<em>Severity Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Severity Observation2</em>'.
+	 * @generated
+	 */
+	SeverityObservation2 createSeverityObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Social History Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Social History Observation2</em>'.
+	 * @generated
+	 */
+	SocialHistoryObservation2 createSocialHistoryObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Substance Or Device Allergy Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Substance Or Device Allergy Observation2</em>'.
+	 * @generated
+	 */
+	SubstanceOrDeviceAllergyObservation2 createSubstanceOrDeviceAllergyObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Tobacco Use2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Tobacco Use2</em>'.
+	 * @generated
+	 */
+	TobaccoUse2 createTobaccoUse2();
+
+	/**
+	 * Returns a new object of class '<em>Vital Sign Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vital Sign Observation2</em>'.
+	 * @generated
+	 */
+	VitalSignObservation2 createVitalSignObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Vital Signs Organizer2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vital Signs Organizer2</em>'.
+	 * @generated
+	 */
+	VitalSignsOrganizer2 createVitalSignsOrganizer2();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

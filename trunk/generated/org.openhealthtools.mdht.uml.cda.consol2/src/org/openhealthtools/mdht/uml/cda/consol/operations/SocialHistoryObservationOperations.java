@@ -553,7 +553,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '229819007' or value.code = '256235009' or value.code = '160573003' or value.code = '364393001' or value.code = '364703007' or value.code = '425400000' or value.code = '363908000' or value.code = '228272008' or value.code = '105421008'))";
+			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '229819007' or value.code = '256235009' or value.code = '160573003' or value.code = '364393001' or value.code = '364703007' or value.code = '425400000' or value.code = '363908000' or value.code = '228272008' or value.code = '105421008' or value.code = '302160007' or value.code = '423514004' or value.code = '102487004' or value.code = '424483007' or value.code = '442133001' or value.code = '446996006'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservationCode(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Code</em>}' invariant operation.

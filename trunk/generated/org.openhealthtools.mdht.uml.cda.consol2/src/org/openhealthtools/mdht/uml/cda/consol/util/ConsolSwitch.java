@@ -4925,6 +4925,305 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.PROBLEM_OBSERVATION2: {
+				ProblemObservation2 problemObservation2 = (ProblemObservation2) theEObject;
+				T result = caseProblemObservation2(problemObservation2);
+				if (result == null) {
+					result = caseProblemObservation(problemObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(problemObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemObservation2);
+				}
+				if (result == null) {
+					result = caseAct(problemObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_ACTIVITY_ACT2: {
+				ProcedureActivityAct2 procedureActivityAct2 = (ProcedureActivityAct2) theEObject;
+				T result = caseProcedureActivityAct2(procedureActivityAct2);
+				if (result == null) {
+					result = caseProcedureActivityAct(procedureActivityAct2);
+				}
+				if (result == null) {
+					result = caseCDA_Act(procedureActivityAct2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureActivityAct2);
+				}
+				if (result == null) {
+					result = caseAct(procedureActivityAct2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureActivityAct2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION2: {
+				ProcedureActivityObservation2 procedureActivityObservation2 = (ProcedureActivityObservation2) theEObject;
+				T result = caseProcedureActivityObservation2(procedureActivityObservation2);
+				if (result == null) {
+					result = caseProcedureActivityObservation(procedureActivityObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(procedureActivityObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureActivityObservation2);
+				}
+				if (result == null) {
+					result = caseAct(procedureActivityObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureActivityObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE2: {
+				ProcedureActivityProcedure2 procedureActivityProcedure2 = (ProcedureActivityProcedure2) theEObject;
+				T result = caseProcedureActivityProcedure2(procedureActivityProcedure2);
+				if (result == null) {
+					result = caseProcedureActivityProcedure(procedureActivityProcedure2);
+				}
+				if (result == null) {
+					result = caseProcedure(procedureActivityProcedure2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureActivityProcedure2);
+				}
+				if (result == null) {
+					result = caseAct(procedureActivityProcedure2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureActivityProcedure2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.REACTION_OBSERVATION2: {
+				ReactionObservation2 reactionObservation2 = (ReactionObservation2) theEObject;
+				T result = caseReactionObservation2(reactionObservation2);
+				if (result == null) {
+					result = caseReactionObservation(reactionObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(reactionObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(reactionObservation2);
+				}
+				if (result == null) {
+					result = caseAct(reactionObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reactionObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.RESULT_OBSERVATION2: {
+				ResultObservation2 resultObservation2 = (ResultObservation2) theEObject;
+				T result = caseResultObservation2(resultObservation2);
+				if (result == null) {
+					result = caseResultObservation(resultObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(resultObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(resultObservation2);
+				}
+				if (result == null) {
+					result = caseAct(resultObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(resultObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.RESULT_ORGANIZER2: {
+				ResultOrganizer2 resultOrganizer2 = (ResultOrganizer2) theEObject;
+				T result = caseResultOrganizer2(resultOrganizer2);
+				if (result == null) {
+					result = caseResultOrganizer(resultOrganizer2);
+				}
+				if (result == null) {
+					result = caseOrganizer(resultOrganizer2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(resultOrganizer2);
+				}
+				if (result == null) {
+					result = caseAct(resultOrganizer2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(resultOrganizer2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.SEVERITY_OBSERVATION2: {
+				SeverityObservation2 severityObservation2 = (SeverityObservation2) theEObject;
+				T result = caseSeverityObservation2(severityObservation2);
+				if (result == null) {
+					result = caseSeverityObservation(severityObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(severityObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(severityObservation2);
+				}
+				if (result == null) {
+					result = caseAct(severityObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(severityObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.SOCIAL_HISTORY_OBSERVATION2: {
+				SocialHistoryObservation2 socialHistoryObservation2 = (SocialHistoryObservation2) theEObject;
+				T result = caseSocialHistoryObservation2(socialHistoryObservation2);
+				if (result == null) {
+					result = caseSocialHistoryObservation(socialHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(socialHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(socialHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseAct(socialHistoryObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(socialHistoryObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2: {
+				SubstanceOrDeviceAllergyObservation2 substanceOrDeviceAllergyObservation2 = (SubstanceOrDeviceAllergyObservation2) theEObject;
+				T result = caseSubstanceOrDeviceAllergyObservation2(substanceOrDeviceAllergyObservation2);
+				if (result == null) {
+					result = caseSubstanceOrDeviceAllergyObservation(substanceOrDeviceAllergyObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(substanceOrDeviceAllergyObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(substanceOrDeviceAllergyObservation2);
+				}
+				if (result == null) {
+					result = caseAct(substanceOrDeviceAllergyObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(substanceOrDeviceAllergyObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.TOBACCO_USE2: {
+				TobaccoUse2 tobaccoUse2 = (TobaccoUse2) theEObject;
+				T result = caseTobaccoUse2(tobaccoUse2);
+				if (result == null) {
+					result = caseTobaccoUse(tobaccoUse2);
+				}
+				if (result == null) {
+					result = caseObservation(tobaccoUse2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(tobaccoUse2);
+				}
+				if (result == null) {
+					result = caseAct(tobaccoUse2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(tobaccoUse2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.VITAL_SIGN_OBSERVATION2: {
+				VitalSignObservation2 vitalSignObservation2 = (VitalSignObservation2) theEObject;
+				T result = caseVitalSignObservation2(vitalSignObservation2);
+				if (result == null) {
+					result = caseVitalSignObservation(vitalSignObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(vitalSignObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(vitalSignObservation2);
+				}
+				if (result == null) {
+					result = caseAct(vitalSignObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(vitalSignObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.VITAL_SIGNS_ORGANIZER2: {
+				VitalSignsOrganizer2 vitalSignsOrganizer2 = (VitalSignsOrganizer2) theEObject;
+				T result = caseVitalSignsOrganizer2(vitalSignsOrganizer2);
+				if (result == null) {
+					result = caseVitalSignsOrganizer(vitalSignsOrganizer2);
+				}
+				if (result == null) {
+					result = caseOrganizer(vitalSignsOrganizer2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(vitalSignsOrganizer2);
+				}
+				if (result == null) {
+					result = caseAct(vitalSignsOrganizer2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(vitalSignsOrganizer2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -8844,6 +9143,201 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseProblemConcernAct2(ProblemConcernAct2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Problem Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Problem Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProblemObservation2(ProblemObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity Act2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Activity Act2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureActivityAct2(ProcedureActivityAct2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Activity Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureActivityObservation2(ProcedureActivityObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity Procedure2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Activity Procedure2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureActivityProcedure2(ProcedureActivityProcedure2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Reaction Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Reaction Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReactionObservation2(ReactionObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Result Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Result Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResultObservation2(ResultObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Result Organizer2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Result Organizer2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResultOrganizer2(ResultOrganizer2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Severity Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Severity Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSeverityObservation2(SeverityObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Social History Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Social History Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSocialHistoryObservation2(SocialHistoryObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Substance Or Device Allergy Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Substance Or Device Allergy Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSubstanceOrDeviceAllergyObservation2(SubstanceOrDeviceAllergyObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Tobacco Use2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Tobacco Use2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTobaccoUse2(TobaccoUse2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Vital Sign Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Vital Sign Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVitalSignObservation2(VitalSignObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Vital Signs Organizer2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Vital Signs Organizer2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVitalSignsOrganizer2(VitalSignsOrganizer2 object) {
 		return null;
 	}
 
