@@ -12,11 +12,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
+import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
@@ -50,6 +52,26 @@ public class CognitiveStatusOrganizer2Impl extends CognitiveStatusResultOrganize
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.COGNITIVE_STATUS_ORGANIZER2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultOrganizerCognitiveStatusObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CognitiveStatusOrganizer2Operations.validateCognitiveStatusResultOrganizerCognitiveStatusObservation2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<CognitiveStatusObservation2> getConsolCognitiveStatusObservation2s() {
+		return CognitiveStatusOrganizer2Operations.getConsolCognitiveStatusObservation2s(this);
 	}
 
 	/**

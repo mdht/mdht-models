@@ -20,6 +20,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation2;
 
+import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DeceasedObservation2Operations;
 
 /**
@@ -49,6 +50,25 @@ public class DeceasedObservation2Impl extends DeceasedObservationImpl implements
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.DECEASED_OBSERVATION2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDeceasedObservationProblemObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DeceasedObservation2Operations.validateDeceasedObservationProblemObservation2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemObservation2 getConsolProblemObservation2() {
+		return DeceasedObservation2Operations.getConsolProblemObservation2(this);
 	}
 
 	/**

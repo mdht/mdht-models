@@ -12,12 +12,14 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2;
+import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyConcernAct2Operations;
@@ -84,6 +86,15 @@ public class AllergyConcernAct2Impl extends AllergyProblemActImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergyProblemActAllergyObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyConcernAct2Operations.validateAllergyProblemActAllergyObservation2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAllergyConcernAct2IVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyConcernAct2Operations.validateAllergyConcernAct2IVLTSLow(this, diagnostics, context);
 	}
@@ -95,6 +106,15 @@ public class AllergyConcernAct2Impl extends AllergyProblemActImpl implements All
 	 */
 	public boolean validateAllergyConcernAct2IVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyConcernAct2Operations.validateAllergyConcernAct2IVLTSHigh(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<AllergyObservation2> getConsolAllergyObservation2s() {
+		return AllergyConcernAct2Operations.getConsolAllergyObservation2s(this);
 	}
 
 	/**

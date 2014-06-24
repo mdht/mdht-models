@@ -20,6 +20,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense2;
 
+import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationDispense2Operations;
 
 /**
@@ -82,6 +83,26 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 			Map<Object, Object> context) {
 		return MedicationDispense2Operations.validateMedicationDispense2ContainsMedicationOrImmunization(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationDispenseMedicationSupplyOrder2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationDispense2Operations.validateMedicationDispenseMedicationSupplyOrder2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationSupplyOrder2 getConsolMedicationSupplyOrder2() {
+		return MedicationDispense2Operations.getConsolMedicationSupplyOrder2(this);
 	}
 
 	/**

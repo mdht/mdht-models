@@ -20,6 +20,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
 
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemConcernAct2Operations;
@@ -106,8 +107,26 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProblemConcernActProblemObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernAct2Operations.validateProblemConcernActProblemObservation2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
 		return ProblemConcernAct2Operations.getProviderPriorityPreferences(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ProblemObservation2> getConsolProblemObservation2s() {
+		return ProblemConcernAct2Operations.getConsolProblemObservation2s(this);
 	}
 
 	/**
