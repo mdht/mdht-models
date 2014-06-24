@@ -2647,6 +2647,11 @@ Devices applied to, or placed in, the patient are represented with the Procedure
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ezXdAM7vEeO6qNoyVDglCA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ezW18c7vEeO6qNoyVDglCA"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_xWN3IPgCEeOYeZoWJF5yyQ" name="nonMedicinalSupplyActivity2" redefinedProperty="_VMc7kObzEeGINOJ_SD9_dA" association="_xWPsUPgCEeOYeZoWJF5yyQ">
+      <type xmi:type="uml:Class" href="consol-medications.uml#_k_C20OaCEeOmzetP5oaH3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3gHNkPgCEeOYeZoWJF5yyQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3gH0oPgCEeOYeZoWJF5yyQ"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_5WqncM7tEeO6qNoyVDglCA" name="ReferenceRange">
       <ownedComment xmi:id="_-wz78M7tEeO6qNoyVDglCA">
         <body>INLINE</body>
@@ -2777,6 +2782,11 @@ Devices applied to, or placed in, the patient are represented with the Procedure
     <ownedAttribute xmi:id="_QFF2kOEKEeOmBMTtnrPqww" name="code" visibility="private" aggregation="composite" redefinedProperty="_7tCkgUFHEeGorO80f-Cppg">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_rHIpQPgDEeOYeZoWJF5yyQ" name="problemObservation2" redefinedProperty="_SgUIAEFIEeGorO80f-Cppg" association="_rHJ3YPgDEeOYeZoWJF5yyQ">
+      <type xmi:type="uml:Class" href="consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_stp7IPgDEeOYeZoWJF5yyQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_stp7IfgDEeOYeZoWJF5yyQ" value="1"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_O0QywOEIEeOmBMTtnrPqww" base_Class="_GM6icOEIEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.34.2">
     <ruleId>CONF:16767</ruleId>
@@ -2898,4 +2908,20 @@ Devices applied to, or placed in, the patient are represented with the Procedure
     <ruleId>CONF:10503</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_-rcUMOH7EeO04sHNODkHmQ" base_Generalization="_D62NweH7EeO04sHNODkHmQ"/>
+  <uml:Association xmi:id="_xWPsUPgCEeOYeZoWJF5yyQ" memberEnd="_xWN3IPgCEeOYeZoWJF5yyQ _xWPsUfgCEeOYeZoWJF5yyQ">
+    <ownedEnd xmi:id="_xWPsUfgCEeOYeZoWJF5yyQ" type="_3WqogMzSEeO93sHu8pHB2g" association="_xWPsUPgCEeOYeZoWJF5yyQ"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_145YIPgCEeOYeZoWJF5yyQ" severity="INFO" base_Association="_xWPsUPgCEeOYeZoWJF5yyQ" typeCode="REFR">
+    <ruleId>CONF:13892</ruleId>
+    <ruleId>CONF:14596</ruleId>
+    <ruleId>CONF:14218</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_rHJ3YPgDEeOYeZoWJF5yyQ" memberEnd="_rHIpQPgDEeOYeZoWJF5yyQ _rHKecPgDEeOYeZoWJF5yyQ">
+    <ownedEnd xmi:id="_rHKecPgDEeOYeZoWJF5yyQ" type="_GM6icOEIEeOmBMTtnrPqww" association="_rHJ3YPgDEeOYeZoWJF5yyQ"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_tu3ggPgDEeOYeZoWJF5yyQ" base_Association="_rHJ3YPgDEeOYeZoWJF5yyQ" typeCode="SUBJ">
+    <ruleId>CONF:7674</ruleId>
+    <ruleId>CONF:7675</ruleId>
+    <ruleId>CONF:15535</ruleId>
+  </CDA:EntryRelationship>
 </xmi:XMI>

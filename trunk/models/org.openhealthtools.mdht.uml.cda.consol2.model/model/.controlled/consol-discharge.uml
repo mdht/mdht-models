@@ -785,6 +785,11 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
     <ownedAttribute xmi:id="_0SZ7MMyvEeO93sHu8pHB2g" name="code" visibility="private" aggregation="composite" redefinedProperty="_iYcFUCUPEeGiOPpZVnfEJA">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="__fREMPf8EeOYeZoWJF5yyQ" name="medicationActivity2" redefinedProperty="_3ImhkCUPEeGiOPpZVnfEJA" association="__fTgcPf8EeOYeZoWJF5yyQ">
+      <type xmi:type="uml:Class" href="consol-medications.uml#_WnSCMOLAEeOc7-TVP7Wi6w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CWGHYPf9EeOYeZoWJF5yyQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CWGHYff9EeOYeZoWJF5yyQ" value="1"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_DU_AAMykEeO93sHu8pHB2g" base_Class="_EIeu8MyjEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.35.2">
     <ruleId>CONF:16760</ruleId>
@@ -808,6 +813,11 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
     <ownedAttribute xmi:id="_Ly9LoOENEeOmBMTtnrPqww" name="code" visibility="private" aggregation="composite" redefinedProperty="_MwOjkCULEeGiOPpZVnfEJA">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_IZODQPgEEeOYeZoWJF5yyQ" name="problemObservation2" redefinedProperty="_uH2PkCULEeGiOPpZVnfEJA" association="_IZP4cPgEEeOYeZoWJF5yyQ">
+      <type xmi:type="uml:Class" href="consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K8ZxsPgEEeOYeZoWJF5yyQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K8aYwPgEEeOYeZoWJF5yyQ" value="1"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_ex9owOEMEeOmBMTtnrPqww" base_Class="_Trd1cOEMEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.33.2">
     <ruleId>CONF:16764</ruleId>
@@ -822,4 +832,20 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
   <CDA:PropertyValidation xmi:id="_M2LjMOENEeOmBMTtnrPqww" base_Property="_Ly9LoOENEeOmBMTtnrPqww">
     <ruleId>CONF:19147</ruleId>
   </CDA:PropertyValidation>
+  <uml:Association xmi:id="__fTgcPf8EeOYeZoWJF5yyQ" memberEnd="__fREMPf8EeOYeZoWJF5yyQ __fTgcff8EeOYeZoWJF5yyQ">
+    <ownedEnd xmi:id="__fTgcff8EeOYeZoWJF5yyQ" type="_EIeu8MyjEeO93sHu8pHB2g" association="__fTgcPf8EeOYeZoWJF5yyQ"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_EPbAgPf9EeOYeZoWJF5yyQ" base_Association="__fTgcPf8EeOYeZoWJF5yyQ" typeCode="SUBJ">
+    <ruleId>CONF:7692</ruleId>
+    <ruleId>CONF:7693</ruleId>
+    <ruleId>CONF:15525</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_IZP4cPgEEeOYeZoWJF5yyQ" memberEnd="_IZODQPgEEeOYeZoWJF5yyQ _IZP4cfgEEeOYeZoWJF5yyQ">
+    <ownedEnd xmi:id="_IZP4cfgEEeOYeZoWJF5yyQ" type="_Trd1cOEMEeOmBMTtnrPqww" association="_IZP4cPgEEeOYeZoWJF5yyQ"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_LLxDYPgEEeOYeZoWJF5yyQ" base_Association="_IZP4cPgEEeOYeZoWJF5yyQ" typeCode="SUBJ">
+    <ruleId>CONF:7666</ruleId>
+    <ruleId>CONF:7667</ruleId>
+    <ruleId>CONF:15536</ruleId>
+  </CDA:EntryRelationship>
 </xmi:XMI>

@@ -415,6 +415,12 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="../consol.uml#_f4E9weZkEeGINOJ_SD9_dA"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_AnfjcPfwEeO297ryy8ptVg" name="problemObservation2" association="_AngxkPfwEeO297ryy8ptVg">
+      <type xmi:type="uml:Class" href="consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H7UWYPfwEeO297ryy8ptVg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H7UWYffwEeO297ryy8ptVg"/>
+      <redefinedProperty href="../consol.uml#_U5AysOZlEeGINOJ_SD9_dA"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="__AT6wL86EeOS5KuvmCHHew" base_Class="_4iF6IL86EeOS5KuvmCHHew" templateId="2.16.840.1.113883.10.20.22.4.79.2">
     <ruleId>CONF:14871</ruleId>
@@ -545,4 +551,12 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:AssociationValidation xmi:id="_QlZHYPV7EeONioZkBKP8eQ" severity="WARNING" base_Association="_QGEuIPV7EeONioZkBKP8eQ">
     <ruleId>CONF:31153</ruleId>
   </CDA:AssociationValidation>
+  <uml:Association xmi:id="_AngxkPfwEeO297ryy8ptVg" memberEnd="_AnfjcPfwEeO297ryy8ptVg _AngxkffwEeO297ryy8ptVg">
+    <ownedEnd xmi:id="_AngxkffwEeO297ryy8ptVg" type="_4iF6IL86EeOS5KuvmCHHew" association="_AngxkPfwEeO297ryy8ptVg"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_D-WxkPfwEeO297ryy8ptVg" severity="WARNING" base_Association="_AngxkPfwEeO297ryy8ptVg">
+    <ruleId>CONF:14868</ruleId>
+    <ruleId>CONF:14875</ruleId>
+    <ruleId>CONF:14870</ruleId>
+  </CDA:EntryRelationship>
 </xmi:XMI>

@@ -1587,6 +1587,10 @@ The UDI should be sent in the participantRole/id.</body>
     <ownedAttribute xmi:id="_aab0gLN9EeOtlapy2HWYww" name="code" visibility="private" aggregation="composite" redefinedProperty="_OJAbcUFGEeGorO80f-Cppg">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_CyjAYPfdEeO297ryy8ptVg" name="medicationActivity2" type="_WnSCMOLAEeOc7-TVP7Wi6w" redefinedProperty="_lThaQEFGEeGorO80f-Cppg" association="_CymqwPfdEeO297ryy8ptVg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J9PsgPfdEeO297ryy8ptVg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J9PsgffdEeO297ryy8ptVg" value="1"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_hNuQEK-1EeO8duI_7f6kZw" base_Class="_ZQpEwK-1EeO8duI_7f6kZw" templateId="2.16.840.1.113883.10.20.22.4.36.2">
     <ruleId>CONF:16758</ruleId>
@@ -1736,6 +1740,33 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_090HgeLbEeOc7-TVP7Wi6w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_090HguLbEeOc7-TVP7Wi6w"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_94MnMPiVEeOXlK95I8tUew" name="consumable" type="_NeRkMPiWEeOXlK95I8tUew" redefinedProperty="_abT0MEOvEeG2teg5w9C5Rg" association="_94Q4oPiVEeOXlK95I8tUew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FR7N0PiWEeOXlK95I8tUew" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FR7N0fiWEeOXlK95I8tUew" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_mFk0oPiXEeOXlK95I8tUew" name="medicationSupplyOrder2" type="_InVpIOZ8EeOmzetP5oaH3A" redefinedProperty="_2GHb2BSVEeGGzu7fmW9pXw" association="_mFmp0PiXEeOXlK95I8tUew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rjgc8PiXEeOXlK95I8tUew" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rjgc8fiXEeOXlK95I8tUew"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_FAMSsPiYEeOXlK95I8tUew" name="medicationDispense2" type="_qH-ckOXfEeOkFcFJ9uzEEw" redefinedProperty="_H7DfgBUUEeG6PvUxSTZnaw" association="_FAOH4PiYEeOXlK95I8tUew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FAM5wfiYEeOXlK95I8tUew" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FAM5wPiYEeOXlK95I8tUew"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_VkytcPiYEeOXlK95I8tUew" name="reactionObservation2" redefinedProperty="_2GHb2xSVEeGGzu7fmW9pXw" association="_Vkz7kPiYEeOXlK95I8tUew">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_U3yosPDxEeOKPKE9au0oug"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aJfnsPiYEeOXlK95I8tUew" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aJfnsfiYEeOXlK95I8tUew"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_NeRkMPiWEeOXlK95I8tUew" name="Consumable">
+      <ownedComment xmi:id="_bYElkPiWEeOXlK95I8tUew">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_NeRkMfiWEeOXlK95I8tUew" general="_ou3j0G65EeGeVrQbtyMiPg"/>
+      <ownedAttribute xmi:id="_pER24PiWEeOXlK95I8tUew" name="medicationInformation2" type="_Hz__kOXrEeOkFcFJ9uzEEw" redefinedProperty="_Feu6EHK2EeGig5KF4CgPyw" association="_pETsEPiWEeOXlK95I8tUew">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yq1hcPiWEeOXlK95I8tUew" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yq2IgPiWEeOXlK95I8tUew" value="1"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_iMX2AOLAEeOc7-TVP7Wi6w" base_Class="_WnSCMOLAEeOc7-TVP7Wi6w" templateId="2.16.840.1.113883.10.20.22.4.16.2">
     <ruleId>CONF:7499</ruleId>
@@ -1854,6 +1885,10 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
     </ownedRule>
     <generalization xmi:id="_qH_DoOXfEeOkFcFJ9uzEEw" general="_DpoGkBUUEeG6PvUxSTZnaw"/>
     <substitution xmi:id="_31L-AOXgEeOkFcFJ9uzEEw" name="MedicationDispense" supplier="_DpoGkBUUEeG6PvUxSTZnaw" client="_qH-ckOXfEeOkFcFJ9uzEEw" contract="_DpoGkBUUEeG6PvUxSTZnaw"/>
+    <ownedAttribute xmi:id="_QRadYPiaEeOXlK95I8tUew" name="medicationSupplyOrder2" type="_InVpIOZ8EeOmzetP5oaH3A" redefinedProperty="_3-zGABrYEeGo461UQq-B1g" association="_QRbrgPiaEeOXlK95I8tUew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SmNKgPiaEeOXlK95I8tUew" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SmNxkPiaEeOXlK95I8tUew"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_vPdTwOXfEeOkFcFJ9uzEEw" base_Class="_qH-ckOXfEeOkFcFJ9uzEEw" templateId="2.16.840.1.113883.10.20.22.4.18.2">
     <ruleId>CONF:7453</ruleId>
@@ -2080,4 +2115,56 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
   <CDA:ConstraintValidation xmi:id="_RC5KEOaFEeOmzetP5oaH3A" base_Constraint="_1qtQ8OaEEeOmzetP5oaH3A">
     <ruleId>CONF:30279</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_CymqwPfdEeO297ryy8ptVg" memberEnd="_CyjAYPfdEeO297ryy8ptVg _CymqwffdEeO297ryy8ptVg">
+    <ownedEnd xmi:id="_CymqwffdEeO297ryy8ptVg" type="_ZQpEwK-1EeO8duI_7f6kZw" association="_CymqwPfdEeO297ryy8ptVg"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_FxNw8PfdEeO297ryy8ptVg" base_Association="_CymqwPfdEeO297ryy8ptVg" typeCode="SUBJ">
+    <ruleId>CONF:7701</ruleId>
+    <ruleId>CONF:7702</ruleId>
+    <ruleId>CONF:15520</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_94Q4oPiVEeOXlK95I8tUew" memberEnd="_94MnMPiVEeOXlK95I8tUew _94RfsPiVEeOXlK95I8tUew">
+    <ownedEnd xmi:id="_94RfsPiVEeOXlK95I8tUew" type="_WnSCMOLAEeOc7-TVP7Wi6w" association="_94Q4oPiVEeOXlK95I8tUew"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_EN5lAPiWEeOXlK95I8tUew" base_Association="_94Q4oPiVEeOXlK95I8tUew">
+    <ruleId>CONF:7520</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_pETsEPiWEeOXlK95I8tUew" memberEnd="_pER24PiWEeOXlK95I8tUew _pETsEfiWEeOXlK95I8tUew">
+    <ownedEnd xmi:id="_pETsEfiWEeOXlK95I8tUew" type="_NeRkMPiWEeOXlK95I8tUew" association="_pETsEPiWEeOXlK95I8tUew"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_rvaAYPiWEeOXlK95I8tUew" base_Association="_pETsEPiWEeOXlK95I8tUew">
+    <ruleId>CONF:16085</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_mFmp0PiXEeOXlK95I8tUew" memberEnd="_mFk0oPiXEeOXlK95I8tUew _mFmp0fiXEeOXlK95I8tUew">
+    <ownedEnd xmi:id="_mFmp0fiXEeOXlK95I8tUew" type="_WnSCMOLAEeOc7-TVP7Wi6w" association="_mFmp0PiXEeOXlK95I8tUew"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_qiJGkPiXEeOXlK95I8tUew" severity="INFO" base_Association="_mFmp0PiXEeOXlK95I8tUew" typeCode="REFR">
+    <ruleId>CONF:7543</ruleId>
+    <ruleId>CONF:7547</ruleId>
+    <ruleId>CONF:16089</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_FAOH4PiYEeOXlK95I8tUew" memberEnd="_FAMSsPiYEeOXlK95I8tUew _FAOH4fiYEeOXlK95I8tUew">
+    <ownedEnd xmi:id="_FAOH4fiYEeOXlK95I8tUew" type="_WnSCMOLAEeOc7-TVP7Wi6w" association="_FAOH4PiYEeOXlK95I8tUew"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_FvkhMPiYEeOXlK95I8tUew" severity="INFO" base_Association="_FAOH4PiYEeOXlK95I8tUew" typeCode="REFR">
+    <ruleId>CONF:7549</ruleId>
+    <ruleId>CONF:7553</ruleId>
+    <ruleId>CONF:16090</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_Vkz7kPiYEeOXlK95I8tUew" memberEnd="_VkytcPiYEeOXlK95I8tUew _Vkz7kfiYEeOXlK95I8tUew">
+    <ownedEnd xmi:id="_Vkz7kfiYEeOXlK95I8tUew" type="_WnSCMOLAEeOc7-TVP7Wi6w" association="_Vkz7kPiYEeOXlK95I8tUew"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_af7KsPiYEeOXlK95I8tUew" severity="INFO" base_Association="_Vkz7kPiYEeOXlK95I8tUew">
+    <ruleId>CONF:7552</ruleId>
+    <ruleId>CONF:7544</ruleId>
+    <ruleId>CONF:16091</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_QRbrgPiaEeOXlK95I8tUew" memberEnd="_QRadYPiaEeOXlK95I8tUew _QRbrgfiaEeOXlK95I8tUew">
+    <ownedEnd xmi:id="_QRbrgfiaEeOXlK95I8tUew" type="_qH-ckOXfEeOkFcFJ9uzEEw" association="_QRbrgPiaEeOXlK95I8tUew"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_UBpNwPiaEeOXlK95I8tUew" severity="INFO" base_Association="_QRbrgPiaEeOXlK95I8tUew" typeCode="REFR">
+    <ruleId>CONF:7473</ruleId>
+    <ruleId>CONF:7474</ruleId>
+    <ruleId>CONF:15606</ruleId>
+  </CDA:EntryRelationship>
 </xmi:XMI>

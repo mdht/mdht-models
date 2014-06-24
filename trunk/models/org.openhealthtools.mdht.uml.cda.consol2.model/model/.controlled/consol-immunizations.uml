@@ -974,11 +974,45 @@ This information should be included in an Immunization Activity when available. 
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EyrcMeHQEeO04sHNODkHmQ"/>
       <association href="../consol.uml#_xbTX0OHPEeO04sHNODkHmQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_zcuLEOHREeO04sHNODkHmQ" name="instructions" redefinedProperty="_fhFZABU9EeGbmN_W114JUw">
-      <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zcuLEeHREeO04sHNODkHmQ"/>
-      <association href="../consol.uml#_zcuyIOHREeO04sHNODkHmQ"/>
+    <ownedAttribute xmi:id="_XyHDYPgFEeOYeZoWJF5yyQ" name="indication2" redefinedProperty="_cqsasBU9EeGbmN_W114JUw" association="_XyKGsPgFEeOYeZoWJF5yyQ">
+      <type xmi:type="uml:Class" href="consol-other.uml#_PrEOIOHoEeO04sHNODkHmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XyHDYvgFEeOYeZoWJF5yyQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XyHDYfgFEeOYeZoWJF5yyQ"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_1hak4PgFEeOYeZoWJF5yyQ" name="medicationSupplyOrder2" redefinedProperty="_nYXNEBt5EeGnMahsPjlwOw" association="_1hcaEPgFEeOYeZoWJF5yyQ">
+      <type xmi:type="uml:Class" href="consol-medications.uml#_InVpIOZ8EeOmzetP5oaH3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4JwgIPgFEeOYeZoWJF5yyQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4JxHMPgFEeOYeZoWJF5yyQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_I4r7kPgGEeOYeZoWJF5yyQ" name="medicationDispense2" redefinedProperty="_m131QBU9EeGbmN_W114JUw" association="_I4uX0PgGEeOYeZoWJF5yyQ">
+      <type xmi:type="uml:Class" href="consol-medications.uml#_qH-ckOXfEeOkFcFJ9uzEEw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NeqoMPgGEeOYeZoWJF5yyQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NerPQPgGEeOYeZoWJF5yyQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Z6srEPgGEeOYeZoWJF5yyQ" name="reactionObservation2" redefinedProperty="_pdW04BU9EeGbmN_W114JUw" association="_Z6t5MPgGEeOYeZoWJF5yyQ">
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_U3yosPDxEeOKPKE9au0oug"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kCR_EPgGEeOYeZoWJF5yyQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kCR_EfgGEeOYeZoWJF5yyQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_3FiisPgIEeOYeZoWJF5yyQ" name="instruction2" redefinedProperty="_fhFZABU9EeGbmN_W114JUw" association="_3Fk-8PgIEeOYeZoWJF5yyQ">
+      <type xmi:type="uml:Class" href="consol-other.uml#_D62NwOH7EeO04sHNODkHmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P1WrYPgJEeOYeZoWJF5yyQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P1XScPgJEeOYeZoWJF5yyQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_3ZAmYPgKEeOYeZoWJF5yyQ" name="consumable" type="_Bpk3QPgLEeOYeZoWJF5yyQ" redefinedProperty="_o-v9kBVOEeGbmN_W114JUw" association="_3ZCbkPgKEeOYeZoWJF5yyQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_88uGkPgKEeOYeZoWJF5yyQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_88utoPgKEeOYeZoWJF5yyQ" value="1"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_Bpk3QPgLEeOYeZoWJF5yyQ" name="Consumable">
+      <ownedComment xmi:id="_dCZZYPiWEeOXlK95I8tUew">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_BpmFYPgLEeOYeZoWJF5yyQ" general="_VboYkG65EeGeVrQbtyMiPg"/>
+      <ownedAttribute xmi:id="_Vqyi0PgLEeOYeZoWJF5yyQ" name="immunizationMedicationInformation2" type="_Rx8LIOHUEeO04sHNODkHmQ" redefinedProperty="_efdJgG65EeGeVrQbtyMiPg" association="_Vq0YAPgLEeOYeZoWJF5yyQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fqXxYPgLEeOYeZoWJF5yyQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fqYYcPgLEeOYeZoWJF5yyQ" value="1"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_GXjukOE8EeOTq9XEMvvkWw" base_Class="_zI6vcOE7EeOTq9XEMvvkWw" templateId="2.16.840.1.113883.10.20.22.4.52.2">
     <ruleId>CONF:8828</ruleId>
@@ -1120,4 +1154,56 @@ This information should be included in an Immunization Activity when available. 
     <ruleId>CONF:31543</ruleId>
     <ruleId>CONF:31881</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_XyKGsPgFEeOYeZoWJF5yyQ" memberEnd="_XyHDYPgFEeOYeZoWJF5yyQ _XyKGsfgFEeOYeZoWJF5yyQ">
+    <ownedEnd xmi:id="_XyKGsfgFEeOYeZoWJF5yyQ" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_XyKGsPgFEeOYeZoWJF5yyQ"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_afcMUPgFEeOYeZoWJF5yyQ" severity="INFO" base_Association="_XyKGsPgFEeOYeZoWJF5yyQ" typeCode="RSON">
+    <ruleId>CONF:8853</ruleId>
+    <ruleId>CONF:8854</ruleId>
+    <ruleId>CONF:15537</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_1hcaEPgFEeOYeZoWJF5yyQ" memberEnd="_1hak4PgFEeOYeZoWJF5yyQ _1hcaEfgFEeOYeZoWJF5yyQ">
+    <ownedEnd xmi:id="_1hcaEfgFEeOYeZoWJF5yyQ" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_1hcaEPgFEeOYeZoWJF5yyQ"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_4zeykPgFEeOYeZoWJF5yyQ" severity="INFO" base_Association="_1hcaEPgFEeOYeZoWJF5yyQ" typeCode="REFR">
+    <ruleId>CONF:8860</ruleId>
+    <ruleId>CONF:8861</ruleId>
+    <ruleId>CONF:15539</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_I4uX0PgGEeOYeZoWJF5yyQ" memberEnd="_I4r7kPgGEeOYeZoWJF5yyQ _I4uX0fgGEeOYeZoWJF5yyQ">
+    <ownedEnd xmi:id="_I4uX0fgGEeOYeZoWJF5yyQ" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_I4uX0PgGEeOYeZoWJF5yyQ"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_MUbpsPgGEeOYeZoWJF5yyQ" severity="INFO" base_Association="_I4uX0PgGEeOYeZoWJF5yyQ" typeCode="REFR">
+    <ruleId>CONF:8863</ruleId>
+    <ruleId>CONF:8864</ruleId>
+    <ruleId>CONF:15540</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_Z6t5MPgGEeOYeZoWJF5yyQ" memberEnd="_Z6srEPgGEeOYeZoWJF5yyQ _Z6t5MfgGEeOYeZoWJF5yyQ">
+    <ownedEnd xmi:id="_Z6t5MfgGEeOYeZoWJF5yyQ" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_Z6t5MPgGEeOYeZoWJF5yyQ"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_ewXZgPgGEeOYeZoWJF5yyQ" severity="INFO" base_Association="_Z6t5MPgGEeOYeZoWJF5yyQ">
+    <ruleId>CONF:8866</ruleId>
+    <ruleId>CONF:8867</ruleId>
+    <ruleId>CONF:15541</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_3Fk-8PgIEeOYeZoWJF5yyQ" memberEnd="_3FiisPgIEeOYeZoWJF5yyQ _3FlmAPgIEeOYeZoWJF5yyQ">
+    <ownedEnd xmi:id="_3FlmAPgIEeOYeZoWJF5yyQ" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_3Fk-8PgIEeOYeZoWJF5yyQ"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_TFke8PgJEeOYeZoWJF5yyQ" severity="INFO" base_Association="_3Fk-8PgIEeOYeZoWJF5yyQ" typeCode="SUBJ">
+    <ruleId>CONF:8856</ruleId>
+    <ruleId>CONF:8857</ruleId>
+    <ruleId>CONF:31392</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_3ZCbkPgKEeOYeZoWJF5yyQ" memberEnd="_3ZAmYPgKEeOYeZoWJF5yyQ _3ZCbkfgKEeOYeZoWJF5yyQ">
+    <ownedEnd xmi:id="_3ZCbkfgKEeOYeZoWJF5yyQ" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_3ZCbkPgKEeOYeZoWJF5yyQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_9NvlIPgKEeOYeZoWJF5yyQ" base_Association="_3ZCbkPgKEeOYeZoWJF5yyQ">
+    <ruleId>CONF:8847</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_Vq0YAPgLEeOYeZoWJF5yyQ" memberEnd="_Vqyi0PgLEeOYeZoWJF5yyQ _Vq0YAfgLEeOYeZoWJF5yyQ">
+    <ownedEnd xmi:id="_Vq0YAfgLEeOYeZoWJF5yyQ" type="_Bpk3QPgLEeOYeZoWJF5yyQ" association="_Vq0YAPgLEeOYeZoWJF5yyQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_ejvggPgLEeOYeZoWJF5yyQ" base_Association="_Vq0YAPgLEeOYeZoWJF5yyQ">
+    <ruleId>CONF:15546</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

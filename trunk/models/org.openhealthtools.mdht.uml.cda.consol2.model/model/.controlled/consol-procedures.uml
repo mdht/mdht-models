@@ -2420,6 +2420,11 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ownedAttribute xmi:id="_O-pjoOzWEeOnE-G4kptBiw" name="code" visibility="private" aggregation="composite" redefinedProperty="_2HQ7sUEvEeGdmoWy_aLP0Q">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_RH0kIPieEeOXlK95I8tUew" name="problemObservation2" redefinedProperty="_IiPpQEEwEeGdmoWy_aLP0Q" association="_RH2ZUPieEeOXlK95I8tUew">
+      <type xmi:type="uml:Class" href="consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UwQqcPieEeOXlK95I8tUew" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UwQqcfieEeOXlK95I8tUew" value="1"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_EebnEOwvEeOqa975IP2wug" base_Class="__SgUwOwuEeOqa975IP2wug" templateId="2.16.840.1.113883.10.20.22.4.51.2">
     <ruleId>CONF:16766</ruleId>
@@ -2442,6 +2447,11 @@ This clinical statement represents procedures whose immediate and primary outcom
     <substitution xmi:id="_GMiQ8OzaEeOnE-G4kptBiw" name="PreoperativeDiagnosis" supplier="_0baBYEEwEeGdmoWy_aLP0Q" client="_5l3g0OzYEeOnE-G4kptBiw" contract="_0baBYEEwEeGdmoWy_aLP0Q"/>
     <ownedAttribute xmi:id="_RUT2oOzaEeOnE-G4kptBiw" name="code" visibility="private" aggregation="composite" redefinedProperty="_2Q1R8UEwEeGdmoWy_aLP0Q">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_3HFwsPieEeOXlK95I8tUew" name="problemObservation2" redefinedProperty="_NaJ98EExEeGdmoWy_aLP0Q" association="_3HIM8PieEeOXlK95I8tUew">
+      <type xmi:type="uml:Class" href="consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5AcfAPieEeOXlK95I8tUew" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5AdGEPieEeOXlK95I8tUew" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_CPNVMOzZEeOnE-G4kptBiw" base_Class="_5l3g0OzYEeOnE-G4kptBiw" templateId="2.16.840.1.113883.10.20.22.4.65.2">
@@ -2720,4 +2730,20 @@ This template can be used with a contained Product Instance template to represen
   <CDA:ConstraintValidation xmi:id="_iN09E_DuEeOKPKE9au0oug" severity="WARNING" base_Constraint="_iN09EPDuEeOKPKE9au0oug">
     <ruleId>CONF:29744</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_RH2ZUPieEeOXlK95I8tUew" memberEnd="_RH0kIPieEeOXlK95I8tUew _RH3AYPieEeOXlK95I8tUew">
+    <ownedEnd xmi:id="_RH3AYPieEeOXlK95I8tUew" type="__SgUwOwuEeOqa975IP2wug" association="_RH2ZUPieEeOXlK95I8tUew"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_TPLSMPieEeOXlK95I8tUew" base_Association="_RH2ZUPieEeOXlK95I8tUew" typeCode="SUBJ">
+    <ruleId>CONF:8759</ruleId>
+    <ruleId>CONF:8760</ruleId>
+    <ruleId>CONF:15583</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_3HIM8PieEeOXlK95I8tUew" memberEnd="_3HFwsPieEeOXlK95I8tUew _3HIM8fieEeOXlK95I8tUew">
+    <ownedEnd xmi:id="_3HIM8fieEeOXlK95I8tUew" type="_5l3g0OzYEeOnE-G4kptBiw" association="_3HIM8PieEeOXlK95I8tUew"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_9ODu8PieEeOXlK95I8tUew" base_Association="_3HIM8PieEeOXlK95I8tUew" typeCode="SUBJ">
+    <ruleId>CONF:10093</ruleId>
+    <ruleId>CONF:10094</ruleId>
+    <ruleId>CONF:15605</ruleId>
+  </CDA:EntryRelationship>
 </xmi:XMI>
