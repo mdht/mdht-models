@@ -41,7 +41,9 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernAct2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernAct2ProviderPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Provider Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActProblemObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Problem Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#getConsolProblemObservation2s() <em>Get Consol Problem Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Effective Time</em>}</li>
@@ -235,6 +237,43 @@ public class ProblemConcernAct2Test extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateProblemConcernActProblemObservation2() {
+		OperationsTestCase<ProblemConcernAct2> validateProblemConcernActProblemObservation2TestCase = new OperationsTestCase<ProblemConcernAct2>(
+			"validateProblemConcernActProblemObservation2",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProblemConcernAct2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProblemConcernAct2 target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
+				er.setObservation(ConsolFactory.eINSTANCE.createProblemObservation2().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProblemConcernAct2Operations.validateProblemConcernActProblemObservation2(
+					(ProblemConcernAct2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemConcernActProblemObservation2TestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated
 	*/
 	@Test
@@ -242,6 +281,18 @@ public class ProblemConcernAct2Test extends CDAValidationTest {
 
 		ProblemConcernAct2 target = objectFactory.create();
 		target.getProviderPriorityPreferences();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolProblemObservation2s() {
+
+		ProblemConcernAct2 target = objectFactory.create();
+		target.getConsolProblemObservation2s();
 
 	}
 

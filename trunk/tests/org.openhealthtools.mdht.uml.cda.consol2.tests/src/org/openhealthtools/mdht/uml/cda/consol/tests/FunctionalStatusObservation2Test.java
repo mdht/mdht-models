@@ -19,12 +19,14 @@ import org.eclipse.emf.ecore.EObject;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
+import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusObservation2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +39,9 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusObservation2TextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Observation2 Text Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusObservation2TextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Observation2 Text Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Observation2 Author Participation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusResultObservationNonMedicinalSupplyActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Non Medicinal Supply Activity2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusObservation2ReferenceRangeObservationRangeNoCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Observation2 Reference Range Observation Range No Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#getConsolNonMedicinalSupplyActivity2() <em>Get Consol Non Medicinal Supply Activity2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateResultObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateResultObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateResultObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code</em>}</li>
@@ -162,6 +166,43 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
+	*/
+	@Test
+	public void testValidateFunctionalStatusResultObservationNonMedicinalSupplyActivity2() {
+		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusResultObservationNonMedicinalSupplyActivity2TestCase = new OperationsTestCase<FunctionalStatusObservation2>(
+			"validateFunctionalStatusResultObservationNonMedicinalSupplyActivity2",
+			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusObservation2 target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				er.setSupply(ConsolFactory.eINSTANCE.createNonMedicinalSupplyActivity2().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationNonMedicinalSupplyActivity2(
+					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFunctionalStatusResultObservationNonMedicinalSupplyActivity2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
@@ -193,6 +234,18 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 		};
 
 		validateFunctionalStatusObservation2ReferenceRangeObservationRangeNoCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolNonMedicinalSupplyActivity2() {
+
+		FunctionalStatusObservation2 target = objectFactory.create();
+		target.getConsolNonMedicinalSupplyActivity2();
+
 	}
 
 	/**
