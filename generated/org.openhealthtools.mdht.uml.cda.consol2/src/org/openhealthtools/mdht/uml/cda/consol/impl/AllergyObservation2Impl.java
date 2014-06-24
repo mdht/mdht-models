@@ -22,6 +22,8 @@ import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
+import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
+import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyObservation2Operations;
 
 /**
@@ -98,6 +100,28 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergyObservation2ReactionInversionIndicator(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservation2ReactionInversionIndicator(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservation2SeverityInversionIndicator(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservation2SeverityInversionIndicator(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAllergyObservation2NegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservation2NegationInd(this, diagnostics, context);
 	}
@@ -125,9 +149,38 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergyObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservationStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAllergyObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservation2AuthorParticipation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservationReactionObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservationReactionObservation2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservation2SeverityObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservation2SeverityObservation2(this, diagnostics, context);
 	}
 
 	/**
@@ -171,9 +224,97 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservation2AllergyObservationParticipantTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservation2AllergyObservationParticipantTypeCode(
+	public boolean validateAllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReference(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReference(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservation2ParticipantParticipantRolePlayingEntityAllergyClassMedication(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservation2ParticipantParticipantRolePlayingEntityAllergyClassMedication(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservation2ParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservation2ParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservation2ParticipantParticipantRolePlayingEntityReferenceValue(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservation2ParticipantParticipantRolePlayingEntityReferenceValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservation2ParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservation2ParticipantParticipantRolePlayingEntityAllergySpecificMedication(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservation2ParticipantParticipantRolePlayingEntityAllergySpecificMedication(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCodeP(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservation2ParticipantParticipantRoleAllergyObservationParticipantParticipantRolePlayingEntityCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservation2ParticipantAllergyObservationParticipantParticipantRolePlayingEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservation2ParticipantAllergyObservationParticipantParticipantRolePlayingEntity(
 			this, diagnostics, context);
 	}
 
@@ -195,6 +336,24 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 */
 	public EList<AllergyStatusObservation> getConsolAllergyStatusObservations() {
 		return AllergyObservation2Operations.getConsolAllergyStatusObservations(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ReactionObservation2> getConsolReactionObservation2s() {
+		return AllergyObservation2Operations.getConsolReactionObservation2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SeverityObservation2 getSeverityObservation2() {
+		return AllergyObservation2Operations.getSeverityObservation2(this);
 	}
 
 	/**
@@ -245,6 +404,16 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * @generated
 	 */
 	@Override
+	public boolean validateAllergyObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateAllergyObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservationEffectiveTime(this, diagnostics, context);
 	}
@@ -257,114 +426,6 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	@Override
 	public boolean validateAllergyObservationParticipant(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservationParticipant(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntityClassCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservationParticipantParticipantRolePlayingEntityClassCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntityCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservationParticipantParticipantRolePlayingEntityCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyObservationParticipantParticipantRoleClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservationParticipantParticipantRoleClassCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservationParticipantParticipantRolePlayingEntity(
-			this, diagnostics, context);
 	}
 
 	/**

@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 
+import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ReactionObservation2Operations;
 
 /**
@@ -90,6 +91,17 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateReactionObservation2SeverityObservationInversionInd(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservation2SeverityObservationInversionInd(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateReactionObservation2CodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReactionObservation2Operations.validateReactionObservation2CodeP(this, diagnostics, context);
 	}
@@ -130,6 +142,17 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateReactionObservationSeverityObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservationSeverityObservation2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<ProcedureActivityProcedure2> getProcedureActivityProcedure2s() {
 		return ReactionObservation2Operations.getProcedureActivityProcedure2s(this);
 	}
@@ -141,6 +164,15 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 */
 	public EList<MedicationActivity2> getMedicationActivity2s() {
 		return ReactionObservation2Operations.getMedicationActivity2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SeverityObservation2 getConsolSeverityObservation2() {
+		return ReactionObservation2Operations.getConsolSeverityObservation2(this);
 	}
 
 	/**

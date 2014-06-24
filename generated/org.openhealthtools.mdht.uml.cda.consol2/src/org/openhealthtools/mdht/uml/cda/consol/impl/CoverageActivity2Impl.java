@@ -12,6 +12,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
@@ -20,6 +21,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2;
 
+import org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CoverageActivity2Operations;
 
 /**
@@ -56,8 +58,37 @@ public class CoverageActivity2Impl extends CoverageActivityImpl implements Cover
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCoverageActivity2CoverageActivityRelationshipSequenceNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CoverageActivity2Operations.validateCoverageActivity2CoverageActivityRelationshipSequenceNumber(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateCoverageActivityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoverageActivity2Operations.validateCoverageActivityCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCoverageActivityPolicyActivity2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CoverageActivity2Operations.validateCoverageActivityPolicyActivity2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<PolicyActivity2> getConsolPolicyActivity2s() {
+		return CoverageActivity2Operations.getConsolPolicyActivity2s(this);
 	}
 
 	/**

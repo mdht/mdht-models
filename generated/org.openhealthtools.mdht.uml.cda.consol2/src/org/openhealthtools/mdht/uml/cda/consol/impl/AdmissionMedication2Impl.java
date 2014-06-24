@@ -12,6 +12,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
@@ -20,6 +21,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
+import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdmissionMedication2Operations;
 
 /**
@@ -49,6 +51,25 @@ public class AdmissionMedication2Impl extends AdmissionMedicationImpl implements
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ADMISSION_MEDICATION2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdmissionMedicationMedicationActivity2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdmissionMedication2Operations.validateAdmissionMedicationMedicationActivity2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
+		return AdmissionMedication2Operations.getConsolMedicationActivity2s(this);
 	}
 
 	/**

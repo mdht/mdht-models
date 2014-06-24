@@ -1794,6 +1794,15 @@ public interface ConsolFactory extends EFactory {
 	CognitiveStatusOrganizer2 createCognitiveStatusOrganizer2();
 
 	/**
+	 * Returns a new object of class '<em>Cognitive Status Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cognitive Status Observation2</em>'.
+	 * @generated
+	 */
+	CognitiveStatusObservation2 createCognitiveStatusObservation2();
+
+	/**
 	 * Returns a new object of class '<em>Coverage Activity2</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

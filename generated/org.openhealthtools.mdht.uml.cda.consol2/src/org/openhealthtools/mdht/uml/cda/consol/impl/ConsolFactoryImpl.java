@@ -480,6 +480,22 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createAuthorParticipation();
 			case ConsolPackage.ADMISSION_MEDICATION2:
 				return createAdmissionMedication2();
+			case ConsolPackage.MEDICATION_ACTIVITY2:
+				return createMedicationActivity2();
+			case ConsolPackage.INSTRUCTION2:
+				return createInstruction2();
+			case ConsolPackage.INDICATION2:
+				return createIndication2();
+			case ConsolPackage.MEDICATION_SUPPLY_ORDER2:
+				return createMedicationSupplyOrder2();
+			case ConsolPackage.MEDICATION_DISPENSE2:
+				return createMedicationDispense2();
+			case ConsolPackage.REACTION_OBSERVATION2:
+				return createReactionObservation2();
+			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE2:
+				return createProcedureActivityProcedure2();
+			case ConsolPackage.SEVERITY_OBSERVATION2:
+				return createSeverityObservation2();
 			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION2:
 				return createAdvanceDirectiveObservation2();
 			case ConsolPackage.ALLERGY_CONCERN_ACT2:
@@ -488,12 +504,20 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createAllergyObservation2();
 			case ConsolPackage.COGNITIVE_STATUS_ORGANIZER2:
 				return createCognitiveStatusOrganizer2();
+			case ConsolPackage.COGNITIVE_STATUS_OBSERVATION2:
+				return createCognitiveStatusObservation2();
+			case ConsolPackage.NON_MEDICINAL_SUPPLY_ACTIVITY2:
+				return createNonMedicinalSupplyActivity2();
 			case ConsolPackage.COVERAGE_ACTIVITY2:
 				return createCoverageActivity2();
+			case ConsolPackage.POLICY_ACTIVITY2:
+				return createPolicyActivity2();
 			case ConsolPackage.CURRENT_SMOKING_STATUS2:
 				return createCurrentSmokingStatus2();
 			case ConsolPackage.DECEASED_OBSERVATION2:
 				return createDeceasedObservation2();
+			case ConsolPackage.PROBLEM_OBSERVATION2:
+				return createProblemObservation2();
 			case ConsolPackage.DISCHARGE_MEDICATION2:
 				return createDischargeMedication2();
 			case ConsolPackage.ENCOUNTER_ACTIVITY2:
@@ -514,20 +538,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createImmunizationActivity2();
 			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION2:
 				return createImmunizationMedicationInformation2();
-			case ConsolPackage.INDICATION2:
-				return createIndication2();
-			case ConsolPackage.INSTRUCTION2:
-				return createInstruction2();
-			case ConsolPackage.MEDICATION_ACTIVITY2:
-				return createMedicationActivity2();
-			case ConsolPackage.MEDICATION_DISPENSE2:
-				return createMedicationDispense2();
 			case ConsolPackage.MEDICATION_INFORMATION2:
 				return createMedicationInformation2();
-			case ConsolPackage.MEDICATION_SUPPLY_ORDER2:
-				return createMedicationSupplyOrder2();
-			case ConsolPackage.NON_MEDICINAL_SUPPLY_ACTIVITY2:
-				return createNonMedicinalSupplyActivity2();
 			case ConsolPackage.PHYSICIANOF_RECORD_PARTICIPANT2:
 				return createPhysicianofRecordParticipant2();
 			case ConsolPackage.PLANNED_ACT2:
@@ -542,30 +554,20 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPlannedMedicationActivity2();
 			case ConsolPackage.PLANNED_SUPPLY2:
 				return createPlannedSupply2();
-			case ConsolPackage.POLICY_ACTIVITY2:
-				return createPolicyActivity2();
 			case ConsolPackage.POSTPROCEDURE_DIAGNOSIS2:
 				return createPostprocedureDiagnosis2();
 			case ConsolPackage.PREOPERATIVE_DIAGNOSIS2:
 				return createPreoperativeDiagnosis2();
 			case ConsolPackage.PROBLEM_CONCERN_ACT2:
 				return createProblemConcernAct2();
-			case ConsolPackage.PROBLEM_OBSERVATION2:
-				return createProblemObservation2();
 			case ConsolPackage.PROCEDURE_ACTIVITY_ACT2:
 				return createProcedureActivityAct2();
 			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION2:
 				return createProcedureActivityObservation2();
-			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE2:
-				return createProcedureActivityProcedure2();
-			case ConsolPackage.REACTION_OBSERVATION2:
-				return createReactionObservation2();
 			case ConsolPackage.RESULT_OBSERVATION2:
 				return createResultObservation2();
 			case ConsolPackage.RESULT_ORGANIZER2:
 				return createResultOrganizer2();
-			case ConsolPackage.SEVERITY_OBSERVATION2:
-				return createSeverityObservation2();
 			case ConsolPackage.SOCIAL_HISTORY_OBSERVATION2:
 				return createSocialHistoryObservation2();
 			case ConsolPackage.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2:
@@ -2539,6 +2541,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public CognitiveStatusOrganizer2 createCognitiveStatusOrganizer2() {
 		CognitiveStatusOrganizer2Impl cognitiveStatusOrganizer2 = new CognitiveStatusOrganizer2Impl();
 		return cognitiveStatusOrganizer2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CognitiveStatusObservation2 createCognitiveStatusObservation2() {
+		CognitiveStatusObservation2Impl cognitiveStatusObservation2 = new CognitiveStatusObservation2Impl();
+		return cognitiveStatusObservation2;
 	}
 
 	/**

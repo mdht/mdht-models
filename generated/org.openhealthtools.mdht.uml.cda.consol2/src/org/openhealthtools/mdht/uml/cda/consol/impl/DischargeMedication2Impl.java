@@ -12,6 +12,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
@@ -20,6 +21,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2;
 
+import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeMedication2Operations;
 
 /**
@@ -58,6 +60,25 @@ public class DischargeMedication2Impl extends DischargeMedicationImpl implements
 	 */
 	public boolean validateDischargeMedicationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeMedication2Operations.validateDischargeMedicationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeMedicationMedicationActivity2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeMedication2Operations.validateDischargeMedicationMedicationActivity2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
+		return DischargeMedication2Operations.getConsolMedicationActivity2s(this);
 	}
 
 	/**

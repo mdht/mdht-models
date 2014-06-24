@@ -12,6 +12,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
@@ -20,6 +21,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2;
 
+import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalAdmissionDiagnosis2Operations;
 
 /**
@@ -59,6 +61,26 @@ public class HospitalAdmissionDiagnosis2Impl extends HospitalAdmissionDiagnosisI
 	 */
 	public boolean validateHospitalAdmissionDiagnosisCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosisCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalAdmissionDiagnosisProblemObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosisProblemObservation2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ProblemObservation2> getConsolProblemObservation2s() {
+		return HospitalAdmissionDiagnosis2Operations.getConsolProblemObservation2s(this);
 	}
 
 	/**

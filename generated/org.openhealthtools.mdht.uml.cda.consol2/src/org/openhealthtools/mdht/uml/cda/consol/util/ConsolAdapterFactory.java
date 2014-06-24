@@ -1145,6 +1145,46 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseMedicationActivity2(MedicationActivity2 object) {
+			return createMedicationActivity2Adapter();
+		}
+
+		@Override
+		public Adapter caseInstruction2(Instruction2 object) {
+			return createInstruction2Adapter();
+		}
+
+		@Override
+		public Adapter caseIndication2(Indication2 object) {
+			return createIndication2Adapter();
+		}
+
+		@Override
+		public Adapter caseMedicationSupplyOrder2(MedicationSupplyOrder2 object) {
+			return createMedicationSupplyOrder2Adapter();
+		}
+
+		@Override
+		public Adapter caseMedicationDispense2(MedicationDispense2 object) {
+			return createMedicationDispense2Adapter();
+		}
+
+		@Override
+		public Adapter caseReactionObservation2(ReactionObservation2 object) {
+			return createReactionObservation2Adapter();
+		}
+
+		@Override
+		public Adapter caseProcedureActivityProcedure2(ProcedureActivityProcedure2 object) {
+			return createProcedureActivityProcedure2Adapter();
+		}
+
+		@Override
+		public Adapter caseSeverityObservation2(SeverityObservation2 object) {
+			return createSeverityObservation2Adapter();
+		}
+
+		@Override
 		public Adapter caseAdvanceDirectiveObservation2(AdvanceDirectiveObservation2 object) {
 			return createAdvanceDirectiveObservation2Adapter();
 		}
@@ -1165,8 +1205,23 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseCognitiveStatusObservation2(CognitiveStatusObservation2 object) {
+			return createCognitiveStatusObservation2Adapter();
+		}
+
+		@Override
+		public Adapter caseNonMedicinalSupplyActivity2(NonMedicinalSupplyActivity2 object) {
+			return createNonMedicinalSupplyActivity2Adapter();
+		}
+
+		@Override
 		public Adapter caseCoverageActivity2(CoverageActivity2 object) {
 			return createCoverageActivity2Adapter();
+		}
+
+		@Override
+		public Adapter casePolicyActivity2(PolicyActivity2 object) {
+			return createPolicyActivity2Adapter();
 		}
 
 		@Override
@@ -1177,6 +1232,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseDeceasedObservation2(DeceasedObservation2 object) {
 			return createDeceasedObservation2Adapter();
+		}
+
+		@Override
+		public Adapter caseProblemObservation2(ProblemObservation2 object) {
+			return createProblemObservation2Adapter();
 		}
 
 		@Override
@@ -1230,38 +1290,8 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseIndication2(Indication2 object) {
-			return createIndication2Adapter();
-		}
-
-		@Override
-		public Adapter caseInstruction2(Instruction2 object) {
-			return createInstruction2Adapter();
-		}
-
-		@Override
-		public Adapter caseMedicationActivity2(MedicationActivity2 object) {
-			return createMedicationActivity2Adapter();
-		}
-
-		@Override
-		public Adapter caseMedicationDispense2(MedicationDispense2 object) {
-			return createMedicationDispense2Adapter();
-		}
-
-		@Override
 		public Adapter caseMedicationInformation2(MedicationInformation2 object) {
 			return createMedicationInformation2Adapter();
-		}
-
-		@Override
-		public Adapter caseMedicationSupplyOrder2(MedicationSupplyOrder2 object) {
-			return createMedicationSupplyOrder2Adapter();
-		}
-
-		@Override
-		public Adapter caseNonMedicinalSupplyActivity2(NonMedicinalSupplyActivity2 object) {
-			return createNonMedicinalSupplyActivity2Adapter();
 		}
 
 		@Override
@@ -1300,11 +1330,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter casePolicyActivity2(PolicyActivity2 object) {
-			return createPolicyActivity2Adapter();
-		}
-
-		@Override
 		public Adapter casePostprocedureDiagnosis2(PostprocedureDiagnosis2 object) {
 			return createPostprocedureDiagnosis2Adapter();
 		}
@@ -1320,11 +1345,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseProblemObservation2(ProblemObservation2 object) {
-			return createProblemObservation2Adapter();
-		}
-
-		@Override
 		public Adapter caseProcedureActivityAct2(ProcedureActivityAct2 object) {
 			return createProcedureActivityAct2Adapter();
 		}
@@ -1335,16 +1355,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseProcedureActivityProcedure2(ProcedureActivityProcedure2 object) {
-			return createProcedureActivityProcedure2Adapter();
-		}
-
-		@Override
-		public Adapter caseReactionObservation2(ReactionObservation2 object) {
-			return createReactionObservation2Adapter();
-		}
-
-		@Override
 		public Adapter caseResultObservation2(ResultObservation2 object) {
 			return createResultObservation2Adapter();
 		}
@@ -1352,11 +1362,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseResultOrganizer2(ResultOrganizer2 object) {
 			return createResultOrganizer2Adapter();
-		}
-
-		@Override
-		public Adapter caseSeverityObservation2(SeverityObservation2 object) {
-			return createSeverityObservation2Adapter();
 		}
 
 		@Override
@@ -4730,6 +4735,20 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createCognitiveStatusOrganizer2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusObservation2 <em>Cognitive Status Observation2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusObservation2
+	 * @generated
+	 */
+	public Adapter createCognitiveStatusObservation2Adapter() {
 		return null;
 	}
 
