@@ -968,10 +968,34 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     <ownedComment xmi:id="_-FQw0LkxEeODDJAC5t5vpw">
       <body>A Coverage Activity groups the policy and authorization acts within a Payers Section to order the payment sources. A Coverage Activity contains one or more policy activities, each of which contains zero or more authorization activities. The Coverage Activity id is the Id from the patient's insurance card.  The sequenceNumber/@value shows the policy order of preference.</body>
     </ownedComment>
+    <ownedRule xmi:id="_reFLoPftEeO297ryy8ptVg" name="coverageActivityRelationshipSequenceNumber">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_reFLofftEeO297ryy8ptVg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_F2dNkPfuEeO297ryy8ptVg" name="PolicyActivity2ERsequenceNumber" constrainedElement="_aJr6ULkxEeODDJAC5t5vpw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_KDnxkPfuEeO297ryy8ptVg">
+        <language>Analysis</language>
+        <body>entryRelationship with target entry Policy Activity (V2) MAY contain zero or one [0..1] sequenceNumber</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_dErAoPfuEeO297ryy8ptVg" name="PolicyActivity2ERsequenceNumberValue" constrainedElement="_aJr6ULkxEeODDJAC5t5vpw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_o3MMcPfuEeO297ryy8ptVg">
+        <language>Analysis</language>
+        <body>entryRelationship with target entry Policy Activity (V2) The sequenceNumber, if present, SHALL contain exactly one [1..1] @value</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_aJr6UbkxEeODDJAC5t5vpw" general="_Cg3pkBUmEeGvPruliC3crg"/>
     <substitution xmi:id="_wiqHcLkxEeODDJAC5t5vpw" name="CoverageActivity" supplier="_Cg3pkBUmEeGvPruliC3crg" client="_aJr6ULkxEeODDJAC5t5vpw" contract="_Cg3pkBUmEeGvPruliC3crg"/>
     <ownedAttribute xmi:id="_nD4f4LkxEeODDJAC5t5vpw" name="code" visibility="private" aggregation="composite" redefinedProperty="_FVBzQhUmEeGvPruliC3crg">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9TsXwPfsEeO297ryy8ptVg" name="policyActivity2" type="_Q0ODkOwlEeOqa975IP2wug" redefinedProperty="_V2ah8BUmEeGvPruliC3crg" association="_9Ttl4PfsEeO297ryy8ptVg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__XpzkPfsEeO297ryy8ptVg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__XpzkffsEeO297ryy8ptVg" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CodeSystemConstraint xmi:id="_nD4f4bkxEeODDJAC5t5vpw" code="48768-6" displayName="Payment Sources" base_Property="_nD4f4LkxEeODDJAC5t5vpw">
@@ -1146,5 +1170,19 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_gfVX8OwtEeOqa975IP2wug" base_Constraint="_l--F4OwsEeOqa975IP2wug">
     <ruleId>CONF:31345</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_9Ttl4PfsEeO297ryy8ptVg" memberEnd="_9TsXwPfsEeO297ryy8ptVg _9TuM8PfsEeO297ryy8ptVg">
+    <ownedEnd xmi:id="_9TuM8PfsEeO297ryy8ptVg" type="_aJr6ULkxEeODDJAC5t5vpw" association="_9Ttl4PfsEeO297ryy8ptVg"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_AYHLAPftEeO297ryy8ptVg" base_Association="_9Ttl4PfsEeO297ryy8ptVg" typeCode="COMP">
+    <ruleId>CONF:8878</ruleId>
+    <ruleId>CONF:8879</ruleId>
+    <ruleId>CONF:15528</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:ConstraintValidation xmi:id="_L6P8APfuEeO297ryy8ptVg" severity="INFO" base_Constraint="_F2dNkPfuEeO297ryy8ptVg">
+    <ruleId>CONF:17174</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_pYDd0PfuEeO297ryy8ptVg" base_Constraint="_dErAoPfuEeO297ryy8ptVg">
+    <ruleId>CONF:17175</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>

@@ -1054,6 +1054,10 @@ Many systems display the nested Problem Observation with the most recent author 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mgl8cu0BEeOnE-G4kptBiw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mgl8ce0BEeOnE-G4kptBiw"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_wON-8PifEeOXlK95I8tUew" name="problemObservation2" type="_prDAkPDCEeOKPKE9au0oug" redefinedProperty="_1CFA0BUzEeGbmN_W114JUw" association="_wOP0IPifEeOXlK95I8tUew">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1zMDYPifEeOXlK95I8tUew" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1zMqcPifEeOXlK95I8tUew" value="1"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_1-Y8cOzbEeOnE-G4kptBiw" base_Class="_y5C8IOzbEeOnE-G4kptBiw" templateId="2.16.840.1.113883.10.20.22.4.3.2">
     <ruleId>CONF:16772</ruleId>
@@ -1273,4 +1277,12 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
   <CDA:PropertyValidation xmi:id="_-Q4QkPDMEeOKPKE9au0oug" severity="INFO" base_Property="_9k3fIPDMEeOKPKE9au0oug">
     <ruleId>CONF:31871</ruleId>
   </CDA:PropertyValidation>
+  <uml:Association xmi:id="_wOP0IPifEeOXlK95I8tUew" memberEnd="_wON-8PifEeOXlK95I8tUew _wOQbMPifEeOXlK95I8tUew">
+    <ownedEnd xmi:id="_wOQbMPifEeOXlK95I8tUew" type="_y5C8IOzbEeOnE-G4kptBiw" association="_wOP0IPifEeOXlK95I8tUew"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_0cXaYPifEeOXlK95I8tUew" base_Association="_wOP0IPifEeOXlK95I8tUew" typeCode="SUBJ">
+    <ruleId>CONF:9034</ruleId>
+    <ruleId>CONF:9035</ruleId>
+    <ruleId>CONF:15980</ruleId>
+  </CDA:EntryRelationship>
 </xmi:XMI>
