@@ -30,6 +30,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusOrganizer2#validateCognitiveStatusResultOrganizerCognitiveStatusObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Organizer Cognitive Status Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusOrganizer2#getConsolCognitiveStatusObservation2s() <em>Get Consol Cognitive Status Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusOrganizer2#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusOrganizer2#validateResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}</li>
  * </ul>
@@ -39,6 +41,52 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  */
 
 public class CognitiveStatusOrganizer2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCognitiveStatusResultOrganizerCognitiveStatusObservation2() {
+		OperationsTestCase<CognitiveStatusOrganizer2> validateCognitiveStatusResultOrganizerCognitiveStatusObservation2TestCase = new OperationsTestCase<CognitiveStatusOrganizer2>(
+			"validateCognitiveStatusResultOrganizerCognitiveStatusObservation2",
+			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CognitiveStatusOrganizer2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CognitiveStatusOrganizer2 target) {
+				target.init();
+				target.addObservation(ConsolFactory.eINSTANCE.createCognitiveStatusObservation2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CognitiveStatusOrganizer2Operations.validateCognitiveStatusResultOrganizerCognitiveStatusObservation2(
+					(CognitiveStatusOrganizer2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCognitiveStatusResultOrganizerCognitiveStatusObservation2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolCognitiveStatusObservation2s() {
+
+		CognitiveStatusOrganizer2 target = objectFactory.create();
+		target.getConsolCognitiveStatusObservation2s();
+
+	}
 
 	/**
 	*

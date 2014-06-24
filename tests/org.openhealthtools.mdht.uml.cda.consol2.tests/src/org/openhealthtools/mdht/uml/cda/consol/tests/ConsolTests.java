@@ -116,7 +116,7 @@ import org.junit.runners.Suite;
 		ProcedureActivityProcedure2Test.class, ReactionObservation2Test.class, ResultObservation2Test.class,
 		ResultOrganizer2Test.class, SeverityObservation2Test.class, SocialHistoryObservation2Test.class,
 		SubstanceOrDeviceAllergyObservation2Test.class, TobaccoUse2Test.class, VitalSignObservation2Test.class,
-		VitalSignsOrganizer2Test.class })
+		VitalSignsOrganizer2Test.class, CognitiveStatusObservation2Test.class })
 public class ConsolTests {
 
 	/**
