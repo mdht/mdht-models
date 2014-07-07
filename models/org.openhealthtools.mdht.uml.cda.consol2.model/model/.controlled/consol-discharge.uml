@@ -848,4 +848,112 @@ Often thought of as an 'actual outcome', the Outcome Observation may be related 
     <ruleId>CONF:7667</ruleId>
     <ruleId>CONF:15536</ruleId>
   </CDA:EntryRelationship>
+  <uml:Class xmi:id="_jfuGYPytEeOmn53IDV99zw" name="HospitalDischargeDiagnosisSection2" clientDependency="_KptZoPyuEeOmn53IDV99zw">
+    <ownedComment xmi:id="_CsRpAPyuEeOmn53IDV99zw">
+      <body>This template represents problems or diagnoses present at the time of discharge which occurred during the hospitalization or need to be monitored after hospitalization. This section includes an optional entry to record patient conditions.</body>
+    </ownedComment>
+    <generalization xmi:id="_jfv7kPytEeOmn53IDV99zw" general="_2PidURSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_KptZoPyuEeOmn53IDV99zw" name="HospitalDischargeDiagnosisSection" supplier="_2PidURSVEeGGzu7fmW9pXw" client="_jfuGYPytEeOmn53IDV99zw" contract="_2PidURSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="__MeE0PyuEeOmn53IDV99zw" name="code" visibility="private" redefinedProperty="_2Poj4BSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JZsRUPywEeOmn53IDV99zw" name="hospitalDischargeDiagnosis2" type="_Trd1cOEMEeOmBMTtnrPqww" redefinedProperty="_fU_8gCqAEeGiFpKeZIy4Pg" association="_JZutkPywEeOmn53IDV99zw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NjQuwPywEeOmn53IDV99zw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjQuwfywEeOmn53IDV99zw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_u9a4wPytEeOmn53IDV99zw" base_Class="_jfuGYPytEeOmn53IDV99zw" templateId="2.16.840.1.113883.10.20.22.2.24.2">
+    <ruleId>CONF:7979</ruleId>
+    <ruleId>CONF:10394</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_FiUpEPyuEeOmn53IDV99zw" base_Generalization="_jfv7kPytEeOmn53IDV99zw"/>
+  <CDA:CodeSystemConstraint xmi:id="__MeE0fyuEeOmn53IDV99zw" code="11535-2" displayName="Hospital Discharge Diagnosis" base_Property="__MeE0PyuEeOmn53IDV99zw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15356</ruleId>
+    <ruleId>CONF:30861</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="__MfS8PyuEeOmn53IDV99zw" base_Property="__MeE0PyuEeOmn53IDV99zw">
+    <ruleId>CONF:15355</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_JZutkPywEeOmn53IDV99zw" memberEnd="_JZsRUPywEeOmn53IDV99zw _JZvUoPywEeOmn53IDV99zw">
+    <ownedEnd xmi:id="_JZvUoPywEeOmn53IDV99zw" type="_jfuGYPytEeOmn53IDV99zw" association="_JZutkPywEeOmn53IDV99zw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_MVLyEPywEeOmn53IDV99zw" severity="WARNING" base_Association="_JZutkPywEeOmn53IDV99zw">
+    <ruleId>CONF:7983</ruleId>
+    <ruleId>CONF:15489</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_HlfBYPyzEeOfAK77IvEBUw" name="HospitalDischargeMedicationsSectionEntriesOptional2" clientDependency="_aFs0QPyzEeOfAK77IvEBUw">
+    <ownedComment xmi:id="_PlPGMPyzEeOfAK77IvEBUw">
+      <body>This section contains the medications the patient is intended to take or stop after discharge. Current, active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list.</body>
+    </ownedComment>
+    <generalization xmi:id="_HlhdoPyzEeOfAK77IvEBUw" general="_2Poj7RSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_aFs0QPyzEeOfAK77IvEBUw" name="HospitalDischargeMedicationsSectionEntriesOptional" supplier="_2Poj7RSVEeGGzu7fmW9pXw" client="_HlfBYPyzEeOfAK77IvEBUw" contract="_2Poj7RSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_nTBUsPy0EeOfAK77IvEBUw" name="dischargeMedication2" type="_EIeu8MyjEeO93sHu8pHB2g" redefinedProperty="_w9kVsCqAEeGiFpKeZIy4Pg" association="_nTDw8Py0EeOfAK77IvEBUw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nTB7wfy0EeOfAK77IvEBUw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nTB7wPy0EeOfAK77IvEBUw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_JxnhwPyzEeOfAK77IvEBUw" base_Class="_HlfBYPyzEeOfAK77IvEBUw" templateId="2.16.840.1.113883.10.20.22.2.11.2">
+    <ruleId>CONF:7816</ruleId>
+    <ruleId>CONF:10396</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_Wmtk4PyzEeOfAK77IvEBUw" base_Generalization="_HlhdoPyzEeOfAK77IvEBUw"/>
+  <uml:Association xmi:id="_nTDw8Py0EeOfAK77IvEBUw" memberEnd="_nTBUsPy0EeOfAK77IvEBUw _nTDw8fy0EeOfAK77IvEBUw">
+    <ownedEnd xmi:id="_nTDw8fy0EeOfAK77IvEBUw" type="_HlfBYPyzEeOfAK77IvEBUw" association="_nTDw8Py0EeOfAK77IvEBUw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_oxVFwPy0EeOfAK77IvEBUw" severity="WARNING" base_Association="_nTDw8Py0EeOfAK77IvEBUw">
+    <ruleId>CONF:7820</ruleId>
+    <ruleId>CONF:15490</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_Jt0moAI0EeSRkrs1G7P_XQ" name="HospitalDischargeMedicationsSection2" clientDependency="_bZ0uUAI0EeSRkrs1G7P_XQ">
+    <ownedComment xmi:id="_RgJTcAI0EeSRkrs1G7P_XQ">
+      <body>This section defines the medications that the patient is intended to take (or stop) after discharge. At a minimum, the currently active medications should be listed, with an entire medication history as an option. &#xD;
+It may also include a patient's prescription history and indicate the source of the medication list, (e.g. a pharmacy system, patient).</body>
+    </ownedComment>
+    <generalization xmi:id="_Jt3p8AI0EeSRkrs1G7P_XQ" general="_HlfBYPyzEeOfAK77IvEBUw"/>
+    <substitution xmi:id="_bZ0uUAI0EeSRkrs1G7P_XQ" name="HospitalDischargeMedicationsSection" supplier="_TytVkCUQEeGiOPpZVnfEJA" client="_Jt0moAI0EeSRkrs1G7P_XQ" contract="_TytVkCUQEeGiOPpZVnfEJA"/>
+    <ownedAttribute xmi:id="_GqrwUAI1EeSRkrs1G7P_XQ" name="code" visibility="private" redefinedProperty="_2Poj-BSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_GxNZoAI2EeSRkrs1G7P_XQ" name="dischargeMedication2" type="_EIeu8MyjEeO93sHu8pHB2g" redefinedProperty="_nTBUsPy0EeOfAK77IvEBUw" association="_GxP14AI2EeSRkrs1G7P_XQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I5n3oAI2EeSRkrs1G7P_XQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I5n3oQI2EeSRkrs1G7P_XQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_e06DMAI2EeSRkrs1G7P_XQ" name="title" visibility="private" aggregation="composite" redefinedProperty="_zaK9cCUOEeGiOPpZVnfEJA">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e06DMQI2EeSRkrs1G7P_XQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e06DMgI2EeSRkrs1G7P_XQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_e05cIAI2EeSRkrs1G7P_XQ" name="text" visibility="private" aggregation="composite" redefinedProperty="_zaJvUCUOEeGiOPpZVnfEJA">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e05cIQI2EeSRkrs1G7P_XQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e05cIgI2EeSRkrs1G7P_XQ" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_Pcn8gAI0EeSRkrs1G7P_XQ" base_Class="_Jt0moAI0EeSRkrs1G7P_XQ" templateId="2.16.840.1.113883.10.20.22.2.11.1.2">
+    <ruleId>CONF:7822</ruleId>
+    <ruleId>CONF:10397</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_Y9iSEAI0EeSRkrs1G7P_XQ" base_Generalization="_Jt3p8AI0EeSRkrs1G7P_XQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_GqsXYAI1EeSRkrs1G7P_XQ" code="10183-2" displayName="Hospital Discharge Medications" base_Property="_GqrwUAI1EeSRkrs1G7P_XQ">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15362</ruleId>
+    <ruleId>CONF:32145</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_Gqs-cAI1EeSRkrs1G7P_XQ" base_Property="_GqrwUAI1EeSRkrs1G7P_XQ">
+    <ruleId>CONF:15361</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_GxP14AI2EeSRkrs1G7P_XQ" memberEnd="_GxNZoAI2EeSRkrs1G7P_XQ _GxQc8AI2EeSRkrs1G7P_XQ">
+    <ownedEnd xmi:id="_GxQc8AI2EeSRkrs1G7P_XQ" type="_Jt0moAI0EeSRkrs1G7P_XQ" association="_GxP14AI2EeSRkrs1G7P_XQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_HkURkAI2EeSRkrs1G7P_XQ" base_Association="_GxP14AI2EeSRkrs1G7P_XQ">
+    <ruleId>CONF:7826</ruleId>
+    <ruleId>CONF:15491</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_e05cIwI2EeSRkrs1G7P_XQ" base_Property="_e05cIAI2EeSRkrs1G7P_XQ">
+    <ruleId>CONF:7825</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_iGRGQAI2EeSRkrs1G7P_XQ" base_Property="_e06DMAI2EeSRkrs1G7P_XQ">
+    <ruleId>CONF:7824</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

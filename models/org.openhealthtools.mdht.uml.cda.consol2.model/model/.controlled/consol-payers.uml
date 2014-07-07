@@ -1185,4 +1185,40 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
   <CDA:ConstraintValidation xmi:id="_pYDd0PfuEeO297ryy8ptVg" base_Constraint="_dErAoPfuEeO297ryy8ptVg">
     <ruleId>CONF:17175</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_twgM0P4lEeOzC5ykp-XCaA" name="PayersSection2" clientDependency="_H268EP4mEeOzC5ykp-XCaA">
+    <ownedComment xmi:id="_1F8wYP4lEeOzC5ykp-XCaA">
+      <body>The Payers section contains data on the patient's payers, whether a 'third party' insurance, self-pay, other payer or guarantor, or some combination of payers, and is used to define which entity is the responsible fiduciary for the financial aspects of a patient's care.&#xD;
+Each unique instance of a payer and all the pertinent data needed to contact, bill to, and collect from that payer should be included. Authorization information that can be used to define pertinent referral, authorization tracking number, procedure, therapy, intervention, device, or similar authorizations for the patient or provider, or both should be included. At a minimum, the patient's pertinent current payment sources should be listed.&#xD;
+The sources of payment are represented as a Coverage Activity, which identifies all of the insurance policies or government or other programs that cover some or all of the patient's healthcare expenses. The policies or programs are sequenced by preference. The Coverage Activity has a sequence number that represents the preference order. Each policy or program identifies the covered party with respect to the payer, so that the identifiers can be recorded.</body>
+    </ownedComment>
+    <generalization xmi:id="_twipEP4lEeOzC5ykp-XCaA" general="_2MV_UBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_H268EP4mEeOzC5ykp-XCaA" name="PayersSection" supplier="_2MV_UBSVEeGGzu7fmW9pXw" client="_twgM0P4lEeOzC5ykp-XCaA" contract="_2MV_UBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_KlFygP4mEeOzC5ykp-XCaA" name="code" visibility="private" redefinedProperty="_2MXNcRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ZcOl4P4mEeOzC5ykp-XCaA" name="coverageActivity2" type="_aJr6ULkxEeODDJAC5t5vpw" redefinedProperty="_eyK8ABUmEeGvPruliC3crg" association="_ZcQbEP4mEeOzC5ykp-XCaA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZcOl4v4mEeOzC5ykp-XCaA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZcOl4f4mEeOzC5ykp-XCaA"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_yGcSUP4lEeOzC5ykp-XCaA" base_Class="_twgM0P4lEeOzC5ykp-XCaA" templateId="2.16.840.1.113883.10.20.22.2.18.2">
+    <ruleId>CONF:7924</ruleId>
+    <ruleId>CONF:10434</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_GQnsoP4mEeOzC5ykp-XCaA" base_Generalization="_twipEP4lEeOzC5ykp-XCaA"/>
+  <CDA:CodeSystemConstraint xmi:id="_KlFygf4mEeOzC5ykp-XCaA" code="48768-6" displayName="Payers" base_Property="_KlFygP4mEeOzC5ykp-XCaA">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15396</ruleId>
+    <ruleId>CONF:32149</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_KlHAoP4mEeOzC5ykp-XCaA" base_Property="_KlFygP4mEeOzC5ykp-XCaA">
+    <ruleId>CONF:15395</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_ZcQbEP4mEeOzC5ykp-XCaA" memberEnd="_ZcOl4P4mEeOzC5ykp-XCaA _ZcRCIP4mEeOzC5ykp-XCaA">
+    <ownedEnd xmi:id="_ZcRCIP4mEeOzC5ykp-XCaA" type="_twgM0P4lEeOzC5ykp-XCaA" association="_ZcQbEP4mEeOzC5ykp-XCaA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_a_NbkP4mEeOzC5ykp-XCaA" severity="WARNING" base_Association="_ZcQbEP4mEeOzC5ykp-XCaA">
+    <ruleId>CONF:7959</ruleId>
+    <ruleId>CONF:15501</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

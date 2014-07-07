@@ -675,4 +675,76 @@ The general category of the patient's directive is documented in the observation
   <CDA:PropertyValidation xmi:id="_W6N2cLFWEeOtlapy2HWYww" severity="INFO" base_Property="_EnlMkLFWEeOtlapy2HWYww">
     <ruleId>CONF:28451</ruleId>
   </CDA:PropertyValidation>
+  <uml:Class xmi:id="_jsKhYAFXEeSLIY0bHb-fFQ" name="AdvanceDirectivesSectionEntriesOptional2" clientDependency="_8GwoAAFXEeSLIY0bHb-fFQ">
+    <ownedComment xmi:id="_pViksAFXEeSLIY0bHb-fFQ">
+      <body>This section contains data defining the patient's advance directives and any reference to supporting documentation, including living wills, healthcare proxies, and CPR and resuscitation status. If the referenced documents are available, they can be included in the exchange package. &#xD;
+The most recent directives are required, if known, and should be listed in as much detail as possible. &#xD;
+This section differentiates between 'advance directives' and 'advance directive documents'. The former is the directions to be followed whereas the latter refers to a legal document containing those directions.</body>
+    </ownedComment>
+    <generalization xmi:id="_jsNksAFXEeSLIY0bHb-fFQ" general="_1RZdIBVdEeGQCvUGzi1kDQ"/>
+    <substitution xmi:id="_8GwoAAFXEeSLIY0bHb-fFQ" name="AdvanceDirectivesSectionEntriesOptional" supplier="_1RZdIBVdEeGQCvUGzi1kDQ" client="_jsKhYAFXEeSLIY0bHb-fFQ" contract="_1RZdIBVdEeGQCvUGzi1kDQ"/>
+    <ownedAttribute xmi:id="_ERTAgAFYEeSLIY0bHb-fFQ" name="code" visibility="private" redefinedProperty="_1RZdJxVdEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RMLikAFYEeSLIY0bHb-fFQ" name="advanceDirectiveOrganizer" type="_Z8VQYIlFEeOJGtGyq_dBbA" redefinedProperty="_m-ey8CsbEeGQ5rkpDKAt8A" association="_RMNXwAFYEeSLIY0bHb-fFQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RMMJoAFYEeSLIY0bHb-fFQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RMLikQFYEeSLIY0bHb-fFQ"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_oceOsAFXEeSLIY0bHb-fFQ" base_Class="_jsKhYAFXEeSLIY0bHb-fFQ" templateId="2.16.840.1.113883.10.20.22.2.21.2">
+    <ruleId>CONF:7928</ruleId>
+    <ruleId>CONF:10376</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_6rSIgAFXEeSLIY0bHb-fFQ" base_Generalization="_jsNksAFXEeSLIY0bHb-fFQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_ERTAgQFYEeSLIY0bHb-fFQ" code="42348-3" displayName="Advance Directives" base_Property="_ERTAgAFYEeSLIY0bHb-fFQ">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15342</ruleId>
+    <ruleId>CONF:30812</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_ERWD0AFYEeSLIY0bHb-fFQ" base_Property="_ERTAgAFYEeSLIY0bHb-fFQ">
+    <ruleId>CONF:15340</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_RMNXwAFYEeSLIY0bHb-fFQ" memberEnd="_RMLikAFYEeSLIY0bHb-fFQ _RMNXwQFYEeSLIY0bHb-fFQ">
+    <ownedEnd xmi:id="_RMNXwQFYEeSLIY0bHb-fFQ" type="_jsKhYAFXEeSLIY0bHb-fFQ" association="_RMNXwAFYEeSLIY0bHb-fFQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_Sl4gcAFYEeSLIY0bHb-fFQ" severity="INFO" base_Association="_RMNXwAFYEeSLIY0bHb-fFQ">
+    <ruleId>CONF:7957</ruleId>
+    <ruleId>CONF:15443</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_ZFbCkAIPEeS-F85KYVlDyA" name="AdvanceDirectivesSection2" clientDependency="_KTbYcAIQEeS-F85KYVlDyA">
+    <ownedComment xmi:id="_z2qQcAIPEeS-F85KYVlDyA">
+      <body>This section contains data defining the patient's advance directives and any reference to supporting documentation, including living wills, healthcare proxies, and CPR and resuscitation status. If the referenced documents are available, they can be included in the exchange package.&#xD;
+The most recent directives are required, if known, and should be listed in as much detail as possible.&#xD;
+This section differentiates between 'advance directives' and 'advance directive documents'. The former is the directions to be followed whereas the latter refers to a legal document containing those directions.</body>
+    </ownedComment>
+    <generalization xmi:id="_ZFc3wAIPEeS-F85KYVlDyA" general="_jsKhYAFXEeSLIY0bHb-fFQ"/>
+    <substitution xmi:id="_KTbYcAIQEeS-F85KYVlDyA" name="AdvanceDirectivesSection" supplier="_2KgzUBSVEeGGzu7fmW9pXw" client="_ZFbCkAIPEeS-F85KYVlDyA" contract="_2KgzUBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_-EDmoAIREeS-F85KYVlDyA" name="advanceDirectiveOrganizer" type="_Z8VQYIlFEeOJGtGyq_dBbA" redefinedProperty="_RMLikAFYEeSLIY0bHb-fFQ" association="_-EE0wAIREeS-F85KYVlDyA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lJDFIAISEeS-F85KYVlDyA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lJDFIQISEeS-F85KYVlDyA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_udqOoAITEeS-F85KYVlDyA" name="code" visibility="private" redefinedProperty="_ERTAgAFYEeSLIY0bHb-fFQ">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_VBvEgAIsEeSr1aKUYorURA" name="text" visibility="private" aggregation="composite" redefinedProperty="_1RZdKRVdEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VBvEgQIsEeSr1aKUYorURA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VBvEggIsEeSr1aKUYorURA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_VBvrkAIsEeSr1aKUYorURA" name="title" visibility="private" redefinedProperty="_1RZdKBVdEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_tbHJUAIPEeS-F85KYVlDyA" base_Class="_ZFbCkAIPEeS-F85KYVlDyA" templateId="2.16.840.1.113883.10.20.22.2.21.1.2">
+    <ruleId>CONF:30227</ruleId>
+    <ruleId>CONF:30228</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_1e-SEAIPEeS-F85KYVlDyA" base_Generalization="_ZFc3wAIPEeS-F85KYVlDyA"/>
+  <uml:Association xmi:id="_-EE0wAIREeS-F85KYVlDyA" memberEnd="_-EDmoAIREeS-F85KYVlDyA _-EE0wQIREeS-F85KYVlDyA">
+    <ownedEnd xmi:id="_-EE0wQIREeS-F85KYVlDyA" type="_ZFbCkAIPEeS-F85KYVlDyA" association="_-EE0wAIREeS-F85KYVlDyA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_-3ZIEAIREeS-F85KYVlDyA" base_Association="_-EE0wAIREeS-F85KYVlDyA">
+    <ruleId>CONF:30235</ruleId>
+    <ruleId>CONF:30236</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>
