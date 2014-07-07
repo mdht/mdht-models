@@ -63,7 +63,7 @@
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_DRdYMBVWEeGbmN_W114JUw" severity="INFO" base_Association="__3ADghVVEeGbmN_W114JUw">
     <ruleId>CONF:9132</ruleId>
-    <ruleId>CONF:9133</ruleId>
+    <ruleId>CONF:14822</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_2JOZ4BSVEeGGzu7fmW9pXw" name="SocialHistoryObservation">
     <ownedComment xmi:id="_fG0UsDyWEeGOm9opnDhYAQ">
@@ -1063,4 +1063,96 @@ The effectiveTime element is used to describe dates associated with the patient'
   <CDA:PropertyValidation xmi:id="_g4MD0PMzEeOUvapeh9bVvQ" severity="INFO" base_Property="_gYPYcPMzEeOUvapeh9bVvQ">
     <ruleId>CONF:31431</ruleId>
   </CDA:PropertyValidation>
+  <uml:Class xmi:id="_wLWZMAFHEeSG_MJH-zNFRw" name="SocialHistorySection2" clientDependency="_-tfM8AFHEeSG_MJH-zNFRw">
+    <ownedComment xmi:id="_4SQ18AFHEeSG_MJH-zNFRw">
+      <body>This section contains social history data that influences a patient's physical, psychological or emotional health (e.g. smoking status, pregnancy). Demographic data, such as marital status, race, ethnicity, and religious affiliation, is captured in the header.</body>
+    </ownedComment>
+    <generalization xmi:id="_wLZcgAFHEeSG_MJH-zNFRw" general="_2JKvgBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_-tfM8AFHEeSG_MJH-zNFRw" name="SocialHistorySection" supplier="_2JKvgBSVEeGGzu7fmW9pXw" client="_wLWZMAFHEeSG_MJH-zNFRw" contract="_2JKvgBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_l7qN4AFOEeSG_MJH-zNFRw" name="code" visibility="private" redefinedProperty="_2JL9oBSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l7qN4QFOEeSG_MJH-zNFRw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l7qN4gFOEeSG_MJH-zNFRw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1B_T0AFOEeSG_MJH-zNFRw" name="socialHistoryObservation2" type="_b_iGIPJfEeO2NaSiicarcg" redefinedProperty="_2JKvgxSVEeGGzu7fmW9pXw" association="_1CAh8AFOEeSG_MJH-zNFRw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1B_T0gFOEeSG_MJH-zNFRw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1B_T0QFOEeSG_MJH-zNFRw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HcXkcAFPEeSG_MJH-zNFRw" name="currentSmokingStatus2" type="_Hl3ScLk0EeODDJAC5t5vpw" redefinedProperty="_VdJ4EOWVEeGKmvzED_He2w" association="_HcZZoAFPEeSG_MJH-zNFRw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NxwZMAFPEeSG_MJH-zNFRw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NxwZMQFPEeSG_MJH-zNFRw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_o-kv0AFPEeSG_MJH-zNFRw" name="tobaccoUse2" type="_qHUXwPMxEeOUvapeh9bVvQ" redefinedProperty="_nxV5wOWYEeGKmvzED_He2w" association="_o-mlAAFPEeSG_MJH-zNFRw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o-kv0gFPEeSG_MJH-zNFRw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o-kv0QFPEeSG_MJH-zNFRw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_TdQuAAFQEeSG_MJH-zNFRw" name="caregiverCharacteristics" association="_TdR8IAFQEeSG_MJH-zNFRw">
+      <type xmi:type="uml:Class" href="consol-cognitive.uml#__pNCUOY-EeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TdQuAgFQEeSG_MJH-zNFRw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TdQuAQFQEeSG_MJH-zNFRw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dlErgAFQEeSG_MJH-zNFRw" name="culturalAndReligiousObservation" type="_H2EzIIqZEeOoMZgUoTghIg" association="_dlF5oAFQEeSG_MJH-zNFRw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dlErggFQEeSG_MJH-zNFRw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dlErgQFQEeSG_MJH-zNFRw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rt0u4AFQEeSG_MJH-zNFRw" name="characteristicsOfHomeEnvironment" type="_O-O-IInUEeOJGtGyq_dBbA" association="_rt2kEAFQEeSG_MJH-zNFRw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rt0u4gFQEeSG_MJH-zNFRw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rt0u4QFQEeSG_MJH-zNFRw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_1kXFQAFHEeSG_MJH-zNFRw" base_Class="_wLWZMAFHEeSG_MJH-zNFRw" templateId="2.16.840.1.113883.10.20.22.2.17.2">
+    <ruleId>CONF:7936</ruleId>
+    <ruleId>CONF:10449</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_9aG5gAFHEeSG_MJH-zNFRw" base_Generalization="_wLZcgAFHEeSG_MJH-zNFRw"/>
+  <CDA:CodeSystemConstraint xmi:id="_l7q08AFOEeSG_MJH-zNFRw" code="29762-2" displayName="Social History" base_Property="_l7qN4AFOEeSG_MJH-zNFRw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:14820</ruleId>
+    <ruleId>CONF:30814</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_l7tRMAFOEeSG_MJH-zNFRw" base_Property="_l7qN4AFOEeSG_MJH-zNFRw">
+    <ruleId>CONF:14819</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_1CAh8AFOEeSG_MJH-zNFRw" memberEnd="_1B_T0AFOEeSG_MJH-zNFRw _1CBJAAFOEeSG_MJH-zNFRw">
+    <ownedEnd xmi:id="_1CBJAAFOEeSG_MJH-zNFRw" type="_wLWZMAFHEeSG_MJH-zNFRw" association="_1CAh8AFOEeSG_MJH-zNFRw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_3ivZUAFOEeSG_MJH-zNFRw" severity="INFO" base_Association="_1CAh8AFOEeSG_MJH-zNFRw">
+    <ruleId>CONF:7953</ruleId>
+    <ruleId>CONF:14821</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_HcZZoAFPEeSG_MJH-zNFRw" memberEnd="_HcXkcAFPEeSG_MJH-zNFRw _HcaAsAFPEeSG_MJH-zNFRw">
+    <ownedEnd xmi:id="_HcaAsAFPEeSG_MJH-zNFRw" type="_wLWZMAFHEeSG_MJH-zNFRw" association="_HcZZoAFPEeSG_MJH-zNFRw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_MiB2sAFPEeSG_MJH-zNFRw" severity="WARNING" base_Association="_HcZZoAFPEeSG_MJH-zNFRw">
+    <ruleId>CONF:14823</ruleId>
+    <ruleId>CONF:14824</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_o-mlAAFPEeSG_MJH-zNFRw" memberEnd="_o-kv0AFPEeSG_MJH-zNFRw _o-mlAQFPEeSG_MJH-zNFRw">
+    <ownedEnd xmi:id="_o-mlAQFPEeSG_MJH-zNFRw" type="_wLWZMAFHEeSG_MJH-zNFRw" association="_o-mlAAFPEeSG_MJH-zNFRw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_qroukAFPEeSG_MJH-zNFRw" severity="INFO" base_Association="_o-mlAAFPEeSG_MJH-zNFRw">
+    <ruleId>CONF:16816</ruleId>
+    <ruleId>CONF:16817</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_TdR8IAFQEeSG_MJH-zNFRw" memberEnd="_TdQuAAFQEeSG_MJH-zNFRw _TdR8IQFQEeSG_MJH-zNFRw">
+    <ownedEnd xmi:id="_TdR8IQFQEeSG_MJH-zNFRw" type="_wLWZMAFHEeSG_MJH-zNFRw" association="_TdR8IAFQEeSG_MJH-zNFRw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_US8_4AFQEeSG_MJH-zNFRw" severity="INFO" base_Association="_TdR8IAFQEeSG_MJH-zNFRw">
+    <ruleId>CONF:28361</ruleId>
+    <ruleId>CONF:28362</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_dlF5oAFQEeSG_MJH-zNFRw" memberEnd="_dlErgAFQEeSG_MJH-zNFRw _dlGgsAFQEeSG_MJH-zNFRw">
+    <ownedEnd xmi:id="_dlGgsAFQEeSG_MJH-zNFRw" type="_wLWZMAFHEeSG_MJH-zNFRw" association="_dlF5oAFQEeSG_MJH-zNFRw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_ezC6gAFQEeSG_MJH-zNFRw" severity="INFO" base_Association="_dlF5oAFQEeSG_MJH-zNFRw">
+    <ruleId>CONF:28366</ruleId>
+    <ruleId>CONF:28367</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_rt2kEAFQEeSG_MJH-zNFRw" memberEnd="_rt0u4AFQEeSG_MJH-zNFRw _rt3LIAFQEeSG_MJH-zNFRw">
+    <ownedEnd xmi:id="_rt3LIAFQEeSG_MJH-zNFRw" type="_wLWZMAFHEeSG_MJH-zNFRw" association="_rt2kEAFQEeSG_MJH-zNFRw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_sVTloAFQEeSG_MJH-zNFRw" severity="INFO" base_Association="_rt2kEAFQEeSG_MJH-zNFRw">
+    <ruleId>CONF:28825</ruleId>
+    <ruleId>CONF:28826</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

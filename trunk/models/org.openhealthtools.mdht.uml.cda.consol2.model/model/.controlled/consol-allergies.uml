@@ -1072,7 +1072,9 @@ historical purposes.&#xD;
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_uCiIYLNwEeOtlapy2HWYww" name="AllergyConcernAct2" clientDependency="_0f27sLNxEeOtlapy2HWYww">
     <ownedComment xmi:id="_kWCYcLNxEeOtlapy2HWYww">
-      <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives). At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
+      <body>This template reflects an ongoing concern on behalf of the provider that placed the allergy on a patient's allergy list. So long as the underlying condition is of concern to the provider (i.e. so long as the allergy, whether active or resolved, is of ongoing concern and interest to the provider), the statusCode is &quot;active&quot;. Only when the underlying allergy is no longer of concern is the statusCode set to &quot;completed&quot;. The effectiveTime reflects the time that the underlying allergy was felt to be a concern.&#xD;
+The statusCode of the Allergy Concern Act is the definitive indication of the status of the concern, whereas the effectiveTime of the nested Allergy - Intolerance Observation is the definitive indication of whether or not the underlying allergy is resolved. &#xD;
+The effectiveTime/low of the Allergy Concern Act asserts when the concern became active. This equates to the time the concern was authored in the patient's chart. The effectiveTime/high asserts when the concern was completed (e.g. when the clinician deemed there is no longer any need to track the underlying condition).</body>
     </ownedComment>
     <ownedRule xmi:id="_a4EoULbWEeOohfENwVAdzg" name="effectiveTimeLow" constrainedElement="_2EAisBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_a4EoUbbWEeOohfENwVAdzg">
@@ -1132,9 +1134,9 @@ historical purposes.&#xD;
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_ePScoLNxEeOtlapy2HWYww" base_Class="_uCiIYLNwEeOtlapy2HWYww" templateId="2.16.840.1.113883.10.20.22.2.6.2">
-    <ruleId>CONF:7800</ruleId>
-    <ruleId>CONF:10378</ruleId>
+  <CDA:CDATemplate xmi:id="_ePScoLNxEeOtlapy2HWYww" base_Class="_uCiIYLNwEeOtlapy2HWYww" templateId="2.16.840.1.113883.10.20.22.4.30.2">
+    <ruleId>CONF:7471</ruleId>
+    <ruleId>CONF:10489</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_ptgzcLNxEeOtlapy2HWYww" base_Generalization="_uCivcLNwEeOtlapy2HWYww"/>
   <uml:Association xmi:id="_lUnZMLN0EeOtlapy2HWYww" memberEnd="_lUlkALN0EeOtlapy2HWYww _lUnZMbN0EeOtlapy2HWYww">
@@ -2239,5 +2241,87 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_L3BwAPr7EeO3D4OxHxUkag" base_Property="_Kgc-oPr7EeO3D4OxHxUkag">
     <ruleId>CONF:19084</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="_nWAcMAIjEeSVzfoPSatgpg" name="AllergiesSectionEntriesOptional2" clientDependency="_DdymQAIkEeSVzfoPSatgpg">
+    <ownedComment xmi:id="_w56bYAIjEeSVzfoPSatgpg">
+      <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives). At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
+    </ownedComment>
+    <generalization xmi:id="_nWC4cAIjEeSVzfoPSatgpg" general="_bGzYgBVdEeGQCvUGzi1kDQ"/>
+    <substitution xmi:id="_DdymQAIkEeSVzfoPSatgpg" name="AllergiesSectionEntriesOptional" supplier="_bGzYgBVdEeGQCvUGzi1kDQ" client="_nWAcMAIjEeSVzfoPSatgpg" contract="_bGzYgBVdEeGQCvUGzi1kDQ"/>
+    <ownedAttribute xmi:id="_UrrOkAIkEeSVzfoPSatgpg" name="code" visibility="private" redefinedProperty="_bGzYihVdEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_j0EKAAIkEeSVzfoPSatgpg" name="allergyConcernAct2" type="_uCiIYLNwEeOtlapy2HWYww" redefinedProperty="_lqJOQB0aEeGGdsHVD60BZA" association="_j0GmQAIkEeSVzfoPSatgpg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j0ExEQIkEeSVzfoPSatgpg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j0ExEAIkEeSVzfoPSatgpg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_uK0X4AIjEeSVzfoPSatgpg" base_Class="_nWAcMAIjEeSVzfoPSatgpg" templateId="2.16.840.1.113883.10.20.22.2.6.2">
+    <ruleId>CONF:7800</ruleId>
+    <ruleId>CONF:10378</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_Bp4_sAIkEeSVzfoPSatgpg" base_Generalization="_nWC4cAIjEeSVzfoPSatgpg"/>
+  <CDA:CodeSystemConstraint xmi:id="_UrrOkQIkEeSVzfoPSatgpg" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_UrrOkAIkEeSVzfoPSatgpg">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15346</ruleId>
+    <ruleId>CONF:32139</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_UrscsAIkEeSVzfoPSatgpg" base_Property="_UrrOkAIkEeSVzfoPSatgpg">
+    <ruleId>CONF:15345</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_j0GmQAIkEeSVzfoPSatgpg" memberEnd="_j0EKAAIkEeSVzfoPSatgpg _j0GmQQIkEeSVzfoPSatgpg">
+    <ownedEnd xmi:id="_j0GmQQIkEeSVzfoPSatgpg" type="_nWAcMAIjEeSVzfoPSatgpg" association="_j0GmQAIkEeSVzfoPSatgpg"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_lrx5kAIkEeSVzfoPSatgpg" severity="WARNING" base_Association="_j0GmQAIkEeSVzfoPSatgpg">
+    <ruleId>CONF:7804</ruleId>
+    <ruleId>CONF:15444</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_EONPMAInEeSr1aKUYorURA" name="AllergiesSection2" clientDependency="_tTejYAInEeSr1aKUYorURA">
+    <ownedComment xmi:id="_MQKTcAInEeSr1aKUYorURA">
+      <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives). At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
+    </ownedComment>
+    <generalization xmi:id="_EOQSgAInEeSr1aKUYorURA" general="_nWAcMAIjEeSVzfoPSatgpg"/>
+    <substitution xmi:id="_tTejYAInEeSr1aKUYorURA" name="AllergiesSection" supplier="_2LMIwBSVEeGGzu7fmW9pXw" client="_EONPMAInEeSr1aKUYorURA" contract="_2LMIwBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_ENCVEAIoEeSr1aKUYorURA" name="code" visibility="private" redefinedProperty="_UrrOkAIkEeSVzfoPSatgpg">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_kAEB0AIoEeSr1aKUYorURA" name="allergyConcernAct2" type="_uCiIYLNwEeOtlapy2HWYww" redefinedProperty="_j0EKAAIkEeSVzfoPSatgpg" association="_kAF3AAIoEeSr1aKUYorURA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vqIm0AIpEeSr1aKUYorURA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vqJN4AIpEeSr1aKUYorURA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_I_93kAIzEeScubSeRE1upQ" name="title" visibility="private" redefinedProperty="_bGzYixVdEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_I_9QgAIzEeScubSeRE1upQ" name="text" visibility="private" aggregation="composite" redefinedProperty="_bGzYjBVdEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I_9QgQIzEeScubSeRE1upQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I_9QggIzEeScubSeRE1upQ" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_LXPHYAInEeSr1aKUYorURA" base_Class="_EONPMAInEeSr1aKUYorURA" templateId="2.16.840.1.113883.10.20.22.2.6.1.2">
+    <ruleId>CONF:7527</ruleId>
+    <ruleId>CONF:10379</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_Z2m7AAInEeSr1aKUYorURA" base_Generalization="_EOQSgAInEeSr1aKUYorURA"/>
+  <CDA:CodeSystemConstraint xmi:id="_ENCVEQIoEeSr1aKUYorURA" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_ENCVEAIoEeSr1aKUYorURA">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15350</ruleId>
+    <ruleId>CONF:32140</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_ENDjMAIoEeSr1aKUYorURA" base_Property="_ENCVEAIoEeSr1aKUYorURA">
+    <ruleId>CONF:15349</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_kAF3AAIoEeSr1aKUYorURA" memberEnd="_kAEB0AIoEeSr1aKUYorURA _kAF3AQIoEeSr1aKUYorURA">
+    <ownedEnd xmi:id="_kAF3AQIoEeSr1aKUYorURA" type="_EONPMAInEeSr1aKUYorURA" association="_kAF3AAIoEeSr1aKUYorURA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_06SuUAIoEeSr1aKUYorURA" base_Association="_kAF3AAIoEeSr1aKUYorURA">
+    <ruleId>CONF:7531</ruleId>
+    <ruleId>CONF:15446</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_I_9QgwIzEeScubSeRE1upQ" base_Property="_I_9QgAIzEeScubSeRE1upQ">
+    <ruleId>CONF:7530</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_NFIWIAIzEeScubSeRE1upQ" base_Property="_I_93kAIzEeScubSeRE1upQ">
+    <ruleId>CONF:7534</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>

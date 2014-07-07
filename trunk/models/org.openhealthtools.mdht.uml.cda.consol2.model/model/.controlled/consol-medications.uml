@@ -2167,4 +2167,232 @@ NOTE: The dose (doseQuantity) represents how many of the consumables are to be a
     <ruleId>CONF:7474</ruleId>
     <ruleId>CONF:15606</ruleId>
   </CDA:EntryRelationship>
+  <uml:Class xmi:id="_ZLY3MPyqEeOlg_Cnc5bODw" name="HospitalAdmissionMedicationsSectionEntriesOptional2" clientDependency="_0HqQYPyqEeOlg_Cnc5bODw">
+    <ownedComment xmi:id="_hnpR0PyqEeOlg_Cnc5bODw">
+      <body>The section contains the medications administered prior to admission to the facility. The currently active medications must also be listed.</body>
+    </ownedComment>
+    <generalization xmi:id="_ZLbTcPyqEeOlg_Cnc5bODw" general="_2Poj5BSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_0HqQYPyqEeOlg_Cnc5bODw" name="HospitalAdmissionMedicationsSectionEntriesOptional" supplier="_2Poj5BSVEeGGzu7fmW9pXw" client="_ZLY3MPyqEeOlg_Cnc5bODw" contract="_2Poj5BSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_3BwqAPyqEeOlg_Cnc5bODw" name="code" visibility="private" redefinedProperty="_2Poj6RSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9ZsnAPyrEeOlg_Cnc5bODw" name="admissionMedication2" type="_ZQpEwK-1EeO8duI_7f6kZw" redefinedProperty="_IfrmAEFHEeGorO80f-Cppg" association="_9ZvqUPyrEeOlg_Cnc5bODw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9ZtOEfyrEeOlg_Cnc5bODw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9ZtOEPyrEeOlg_Cnc5bODw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_dxv-UPyqEeOlg_Cnc5bODw" base_Class="_ZLY3MPyqEeOlg_Cnc5bODw" templateId="2.16.840.1.113883.10.20.22.2.44.2">
+    <ruleId>CONF:10098</ruleId>
+    <ruleId>CONF:10392</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_ydsB4PyqEeOlg_Cnc5bODw" base_Generalization="_ZLbTcPyqEeOlg_Cnc5bODw"/>
+  <CDA:CodeSystemConstraint xmi:id="_3BxREPyqEeOlg_Cnc5bODw" code="42346-7" displayName="Medications on Admission" base_Property="_3BwqAPyqEeOlg_Cnc5bODw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15483</ruleId>
+    <ruleId>CONF:32142</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_3BztUPyqEeOlg_Cnc5bODw" base_Property="_3BwqAPyqEeOlg_Cnc5bODw">
+    <ruleId>CONF:15482</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_9ZvqUPyrEeOlg_Cnc5bODw" memberEnd="_9ZsnAPyrEeOlg_Cnc5bODw _9ZvqUfyrEeOlg_Cnc5bODw">
+    <ownedEnd xmi:id="_9ZvqUfyrEeOlg_Cnc5bODw" type="_ZLY3MPyqEeOlg_Cnc5bODw" association="_9ZvqUPyrEeOlg_Cnc5bODw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_-48zQPyrEeOlg_Cnc5bODw" severity="WARNING" base_Association="_9ZvqUPyrEeOlg_Cnc5bODw">
+    <ruleId>CONF:10102</ruleId>
+    <ruleId>CONF:15484</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_5OKxwP1bEeO5Hq-yrsJSmg" name="MedicalEquipmentSection2" clientDependency="_QpJ1gP1cEeO5Hq-yrsJSmg">
+    <ownedComment xmi:id="_GwZnsP1cEeO5Hq-yrsJSmg">
+      <body>This section defines a patient's implanted and external health and medical devices and equipment. This section lists any pertinent durable medical equipment (DME) used to help maintain the patient's health status. All equipment relevant to the diagnosis, care, or treatment of a patient should be included. &#xD;
+Devices applied to, or placed in, the patient are represented with the Procedure Activity Procedure (V2) template. Equipment supplied to the patient (e.g. pumps, inhalers, wheelchairs) is represented by the Non-Medicinal Supply Activity V2 template.&#xD;
+These devices may be grouped together within a Medical Equipment Organizer. The organizer would probably not be used with devices applied in or on the patient but rather to organize a group of medical supplies the patient has been supplied with.</body>
+    </ownedComment>
+    <generalization xmi:id="_5OOcIP1bEeO5Hq-yrsJSmg" general="_2KEucBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_QpJ1gP1cEeO5Hq-yrsJSmg" name="MedicalEquipmentSection" supplier="_2KEucBSVEeGGzu7fmW9pXw" client="_5OKxwP1bEeO5Hq-yrsJSmg" contract="_2KEucBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_3QXkIP1iEeO5Hq-yrsJSmg" name="code" visibility="private" isReadOnly="true" redefinedProperty="_2KF8kBSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0uwGgP1jEeO5Hq-yrsJSmg" name="medicalEquipmentOrganizer" association="_0uxUoP1jEeO5Hq-yrsJSmg">
+      <type xmi:type="uml:Class" href="consol-other.uml#_RbbCII0dEeOB0eBUISUB4Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0uwtkP1jEeO5Hq-yrsJSmg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0uwGgf1jEeO5Hq-yrsJSmg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Gncb0P1jEeO5Hq-yrsJSmg" name="nonMedicinalSupplyActivity2" type="_k_C20OaCEeOmzetP5oaH3A" redefinedProperty="_2KHxwBSVEeGGzu7fmW9pXw" association="_Gndp8P1jEeO5Hq-yrsJSmg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Gncb0v1jEeO5Hq-yrsJSmg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Gncb0f1jEeO5Hq-yrsJSmg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HN2fEP1kEeO5Hq-yrsJSmg" name="procedureActivityProcedure2" association="_HN47UP1kEeO5Hq-yrsJSmg">
+      <type xmi:type="uml:Class" href="consol-procedures.uml#_fCVOQPDqEeOKPKE9au0oug"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HN2fEv1kEeO5Hq-yrsJSmg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HN2fEf1kEeO5Hq-yrsJSmg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_-QVEEP1bEeO5Hq-yrsJSmg" base_Class="_5OKxwP1bEeO5Hq-yrsJSmg" templateId="2.16.840.1.113883.10.20.22.2.23.2">
+    <ruleId>CONF:7944</ruleId>
+    <ruleId>CONF:10404</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_NUwskP1cEeO5Hq-yrsJSmg" base_Generalization="_5OOcIP1bEeO5Hq-yrsJSmg"/>
+  <CDA:CodeSystemConstraint xmi:id="_3QYLMP1iEeO5Hq-yrsJSmg" code="46264-8" displayName="Medical Equipment" base_Property="_3QXkIP1iEeO5Hq-yrsJSmg">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15382</ruleId>
+    <ruleId>CONF:30828</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_3QancP1iEeO5Hq-yrsJSmg" base_Property="_3QXkIP1iEeO5Hq-yrsJSmg">
+    <ruleId>CONF:15381</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_Gndp8P1jEeO5Hq-yrsJSmg" memberEnd="_Gncb0P1jEeO5Hq-yrsJSmg _GneRAP1jEeO5Hq-yrsJSmg">
+    <ownedEnd xmi:id="_GneRAP1jEeO5Hq-yrsJSmg" type="_5OKxwP1bEeO5Hq-yrsJSmg" association="_Gndp8P1jEeO5Hq-yrsJSmg"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_I3XQAP1jEeO5Hq-yrsJSmg" severity="WARNING" base_Association="_Gndp8P1jEeO5Hq-yrsJSmg">
+    <ruleId>CONF:31125</ruleId>
+    <ruleId>CONF:31861</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_0uxUoP1jEeO5Hq-yrsJSmg" memberEnd="_0uwGgP1jEeO5Hq-yrsJSmg _0ux7sP1jEeO5Hq-yrsJSmg">
+    <ownedEnd xmi:id="_0ux7sP1jEeO5Hq-yrsJSmg" type="_5OKxwP1bEeO5Hq-yrsJSmg" association="_0uxUoP1jEeO5Hq-yrsJSmg"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_1Z1q4P1jEeO5Hq-yrsJSmg" severity="WARNING" base_Association="_0uxUoP1jEeO5Hq-yrsJSmg">
+    <ruleId>CONF:7948</ruleId>
+    <ruleId>CONF:30351</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_HN47UP1kEeO5Hq-yrsJSmg" memberEnd="_HN2fEP1kEeO5Hq-yrsJSmg _HN47Uf1kEeO5Hq-yrsJSmg">
+    <ownedEnd xmi:id="_HN47Uf1kEeO5Hq-yrsJSmg" type="_5OKxwP1bEeO5Hq-yrsJSmg" association="_HN47UP1kEeO5Hq-yrsJSmg"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_IiWM0P1kEeO5Hq-yrsJSmg" severity="WARNING" base_Association="_HN47UP1kEeO5Hq-yrsJSmg">
+    <ruleId>CONF:31885</ruleId>
+    <ruleId>CONF:31886</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_F37nMP4jEeOwFalSp0fRiw" name="MedicationsAdministeredSection2" clientDependency="_iESIMP4jEeOwFalSp0fRiw">
+    <ownedComment xmi:id="_cc_vkP4jEeOwFalSp0fRiw">
+      <body>The Medications Administered Section contains medications and fluids administered during a procedure. The section may also contain the procedure's encounter or other activity, excluding anesthetic medications. This section is not intended for ongoing medications and medication history.</body>
+    </ownedComment>
+    <generalization xmi:id="_F3_RkP4jEeOwFalSp0fRiw" general="_2Poj_BSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_iESIMP4jEeOwFalSp0fRiw" name="MedicationsAdministeredSection" supplier="_2Poj_BSVEeGGzu7fmW9pXw" client="_F37nMP4jEeOwFalSp0fRiw" contract="_2Poj_BSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_yRsK8P4jEeOwFalSp0fRiw" name="code" visibility="private" redefinedProperty="_2PokARSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="__djIQP4jEeOwFalSp0fRiw" name="medicationActivity2" type="_WnSCMOLAEeOc7-TVP7Wi6w" redefinedProperty="_KTZYoFmsEeGRqYkwoeymcA" association="__dlkgP4jEeOwFalSp0fRiw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__djvUf4jEeOwFalSp0fRiw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__djvUP4jEeOwFalSp0fRiw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_XzcKgP4jEeOwFalSp0fRiw" base_Class="_F37nMP4jEeOwFalSp0fRiw" templateId="2.16.840.1.113883.10.20.22.2.38.2">
+    <ruleId>CONF:8152</ruleId>
+    <ruleId>CONF:10405</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_elEPUP4jEeOwFalSp0fRiw" base_Generalization="_F3_RkP4jEeOwFalSp0fRiw"/>
+  <CDA:CodeSystemConstraint xmi:id="_yRsyAP4jEeOwFalSp0fRiw" code="29549-3" displayName="Medications Administered" base_Property="_yRsK8P4jEeOwFalSp0fRiw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15384</ruleId>
+    <ruleId>CONF:30829</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_yRvOQP4jEeOwFalSp0fRiw" base_Property="_yRsK8P4jEeOwFalSp0fRiw">
+    <ruleId>CONF:15383</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="__dlkgP4jEeOwFalSp0fRiw" memberEnd="__djIQP4jEeOwFalSp0fRiw __dmLkP4jEeOwFalSp0fRiw">
+    <ownedEnd xmi:id="__dmLkP4jEeOwFalSp0fRiw" type="_F37nMP4jEeOwFalSp0fRiw" association="__dlkgP4jEeOwFalSp0fRiw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_BbDWwP4kEeOwFalSp0fRiw" severity="INFO" base_Association="__dlkgP4jEeOwFalSp0fRiw">
+    <ruleId>CONF:8156</ruleId>
+    <ruleId>CONF:15499</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_JUvaUAFaEeS0nNJt6oyOyQ" name="MedicationsSectionEntriesOptional2" clientDependency="_f7UloAFaEeS0nNJt6oyOyQ">
+    <ownedComment xmi:id="_R4TW0AFaEeS0nNJt6oyOyQ">
+      <body>The Medications Section contains a patient's current medications and pertinent medication history. At a minimum, the currently active medications are listed. An entire medication history is an option. The section can describe a patient's prescription and dispense history and information about intended drug monitoring.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_GHMuAAFfEeS0nNJt6oyOyQ" name="absenceOfMedications">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_GHMuAgFfEeS0nNJt6oyOyQ">
+        <language>Analysis</language>
+        <body>target entry Medication Activity (V2) if present, MAY contain zero or one [0..1] @nullFlavor</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_JUxPgAFaEeS0nNJt6oyOyQ" general="_iAoXEBVdEeGQCvUGzi1kDQ"/>
+    <substitution xmi:id="_f7UloAFaEeS0nNJt6oyOyQ" name="MedicationsSectionEntriesOptional" supplier="_iAoXEBVdEeGQCvUGzi1kDQ" client="_JUvaUAFaEeS0nNJt6oyOyQ" contract="_iAoXEBVdEeGQCvUGzi1kDQ"/>
+    <ownedAttribute xmi:id="_9cOpUAFbEeS0nNJt6oyOyQ" name="code" visibility="private" redefinedProperty="_iAoXIxVdEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_S7rikAFeEeS0nNJt6oyOyQ" name="medicationActivity2" type="_WnSCMOLAEeOc7-TVP7Wi6w" redefinedProperty="_FsPZUB-uEeGKirKJsFylGA" association="_S7tXwAFeEeS0nNJt6oyOyQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S7rikgFeEeS0nNJt6oyOyQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S7rikQFeEeS0nNJt6oyOyQ"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_N00TQAFaEeS0nNJt6oyOyQ" base_Class="_JUvaUAFaEeS0nNJt6oyOyQ" templateId="2.16.840.1.113883.10.20.22.2.1.2">
+    <ruleId>CONF:7791</ruleId>
+    <ruleId>CONF:10432</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_eOKgQAFaEeS0nNJt6oyOyQ" base_Generalization="_JUxPgAFaEeS0nNJt6oyOyQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_9cOpUQFbEeS0nNJt6oyOyQ" code="10160-0" displayName="History of medication use" base_Property="_9cOpUAFbEeS0nNJt6oyOyQ">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15386</ruleId>
+    <ruleId>CONF:30824</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_DVQ5QAFcEeS0nNJt6oyOyQ" base_Property="_9cOpUAFbEeS0nNJt6oyOyQ">
+    <ruleId>CONF:15385</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_S7tXwAFeEeS0nNJt6oyOyQ" memberEnd="_S7rikAFeEeS0nNJt6oyOyQ _S7tXwQFeEeS0nNJt6oyOyQ">
+    <ownedEnd xmi:id="_S7tXwQFeEeS0nNJt6oyOyQ" type="_JUvaUAFaEeS0nNJt6oyOyQ" association="_S7tXwAFeEeS0nNJt6oyOyQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_UcLsAAFeEeS0nNJt6oyOyQ" severity="WARNING" base_Association="_S7tXwAFeEeS0nNJt6oyOyQ">
+    <ruleId>CONF:7795</ruleId>
+    <ruleId>CONF:10076</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_aUYZAAFfEeS0nNJt6oyOyQ" severity="INFO" base_Constraint="_GHMuAAFfEeS0nNJt6oyOyQ">
+    <ruleId>CONF:15984</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_P2mp4ALQEeS0YMHMf4rRtQ" name="MedicationsSection2" clientDependency="_jpry0ALQEeS0YMHMf4rRtQ">
+    <ownedComment xmi:id="_w0ZgoALQEeS0YMHMf4rRtQ">
+      <body>The Medications Section contains a patient's current medications and pertinent medication history. At a minimum, the currently active medications are listed. An entire medication history is an option. The section can describe a patient's prescription and dispense history and information about intended drug monitoring. &#xD;
+This section requires either an entry indicating the subject is not known to be on any medications or entries summarizing the subject's medications.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_fcsjEALSEeS0YMHMf4rRtQ" name="absenceOfMedications">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_fcsjEQLSEeS0YMHMf4rRtQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_P2ofEALQEeS0YMHMf4rRtQ" general="_JUvaUAFaEeS0nNJt6oyOyQ"/>
+    <substitution xmi:id="_jpry0ALQEeS0YMHMf4rRtQ" name="MedicationsSection" supplier="_2NIpgBSVEeGGzu7fmW9pXw" client="_P2mp4ALQEeS0YMHMf4rRtQ" contract="_2NIpgBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_1zOyIALQEeS0YMHMf4rRtQ" name="code" visibility="private" redefinedProperty="_9cOpUAFbEeS0nNJt6oyOyQ">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_tOrhsALREeS0YMHMf4rRtQ" name="medicationActivity2" type="_WnSCMOLAEeOc7-TVP7Wi6w" redefinedProperty="_S7rikAFeEeS0nNJt6oyOyQ" association="_tOsv0ALREeS0YMHMf4rRtQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wAF5YALREeS0YMHMf4rRtQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wAF5YQLREeS0YMHMf4rRtQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_lq5VQALTEeS0YMHMf4rRtQ" name="title" visibility="private" redefinedProperty="_iAoXJBVdEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_lq4HIALTEeS0YMHMf4rRtQ" name="text" visibility="private" aggregation="composite" redefinedProperty="_iAoXJRVdEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lq4HIQLTEeS0YMHMf4rRtQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lq4HIgLTEeS0YMHMf4rRtQ" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_V7Gi8ALQEeS0YMHMf4rRtQ" base_Class="_P2mp4ALQEeS0YMHMf4rRtQ" templateId="2.16.840.1.113883.10.20.22.2.1.1.2">
+    <ruleId>CONF:7568</ruleId>
+    <ruleId>CONF:10433</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_e1H3oALQEeS0YMHMf4rRtQ" base_Generalization="_P2ofEALQEeS0YMHMf4rRtQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_1zPZMALQEeS0YMHMf4rRtQ" code="10160-0" displayName="History of medication use" base_Property="_1zOyIALQEeS0YMHMf4rRtQ">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15388</ruleId>
+    <ruleId>CONF:30825</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_1zQnUALQEeS0YMHMf4rRtQ" base_Property="_1zOyIALQEeS0YMHMf4rRtQ">
+    <ruleId>CONF:15387</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_tOsv0ALREeS0YMHMf4rRtQ" memberEnd="_tOrhsALREeS0YMHMf4rRtQ _tOtW4ALREeS0YMHMf4rRtQ">
+    <ownedEnd xmi:id="_tOtW4ALREeS0YMHMf4rRtQ" type="_P2mp4ALQEeS0YMHMf4rRtQ" association="_tOsv0ALREeS0YMHMf4rRtQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_vElTYALREeS0YMHMf4rRtQ" base_Association="_tOsv0ALREeS0YMHMf4rRtQ">
+    <ruleId>CONF:7572</ruleId>
+    <ruleId>CONF:10077</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_lq4uMALTEeS0YMHMf4rRtQ" base_Property="_lq4HIALTEeS0YMHMf4rRtQ">
+    <ruleId>CONF:7571</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_qDd4AALTEeS0YMHMf4rRtQ" base_Property="_lq5VQALTEeS0YMHMf4rRtQ">
+    <ruleId>CONF:7570</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

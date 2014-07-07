@@ -2815,4 +2815,136 @@ Depending on the type of supply, the product or participant will be either a Med
   <CDA:AssociationValidation xmi:id="_ZU7TwOz-EeOnE-G4kptBiw" message="Consol Consumable SHALL contain exactly one [1..1] Medication Information (V2) (templateId:2.16.840.1.113883.10.20.22.4.23.2) (CONF:32083)" base_Association="_S_gp0Oz-EeOnE-G4kptBiw">
     <ruleId>CONF:32083</ruleId>
   </CDA:AssociationValidation>
+  <uml:Class xmi:id="_bwml0P4yEeO_Yb9cO8w3bA" name="PlanOfTreatmentSection2" clientDependency="_bmfyIP4zEeO_Yb9cO8w3bA">
+    <ownedComment xmi:id="_7lKjoP4yEeO_Yb9cO8w3bA">
+      <body>This section contains data that defines pending orders, interventions, encounters, services, and procedures for the patient. It is limited to prospective, unfulfilled, or incomplete orders and requests only. These are indicated by the @moodCode of the entries within this section. All active, incomplete, or pending orders, appointments, referrals, procedures, services, or any other pending event of clinical significance to the current care of the patient should be listed.&#xD;
+This section may also contain information about ongoing care of the patient, clinical reminders, patient's values, beliefs, preferences, care expectations, and overarching care goals. &#xD;
+Clinical reminders are placed here to provide prompts for disease prevention and management, patient safety, and health-care quality improvements, including widely accepted performance measures. &#xD;
+Values may include the importance of quality of life over longevity. These values are taken into account when prioritizing all problems and their treatments.&#xD;
+Beliefs may include comfort with dying or the refusal of blood transfusions because of the patient's religious convictions.  &#xD;
+Preferences may include liquid medicines over tablets, or treatment via secure email instead of in person. &#xD;
+Care expectations may range from being treated only by female clinicians, to expecting all calls to be returned within 24 hours. &#xD;
+Overarching goals described in this section are not tied to a specific condition, problem, health concern, or intervention. Examples of overarching goals could be to minimize pain or dependence on others, or to walk a daughter down the aisle for her marriage.  &#xD;
+The plan may also indicate that patient education will be provided.</body>
+    </ownedComment>
+    <generalization xmi:id="_bwppIP4yEeO_Yb9cO8w3bA" general="_2NP-QxSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_bmfyIP4zEeO_Yb9cO8w3bA" name="PlanOfCareSection" supplier="_2NP-QxSVEeGGzu7fmW9pXw" client="_bwml0P4yEeO_Yb9cO8w3bA" contract="_2NP-QxSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_lXUzAP4zEeO_Yb9cO8w3bA" name="code" visibility="private" redefinedProperty="_2NP-XRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UYZ-UP40EeO_Yb9cO8w3bA" name="plannedObservation2" type="_jKZssOdvEeOqBOMhgDlycQ" redefinedProperty="_2NcLixSVEeGGzu7fmW9pXw" association="_UYbMcP40EeO_Yb9cO8w3bA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UYZ-Uv40EeO_Yb9cO8w3bA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UYZ-Uf40EeO_Yb9cO8w3bA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_3Lqh4P40EeO_Yb9cO8w3bA" name="plannedEncounter2" type="_bDPFMOdXEeOqBOMhgDlycQ" redefinedProperty="_2NWFARSVEeGGzu7fmW9pXw" association="_3Ls-IP40EeO_Yb9cO8w3bA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3LrI8f40EeO_Yb9cO8w3bA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3LrI8P40EeO_Yb9cO8w3bA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_boVBUP43EeO_Yb9cO8w3bA" name="plannedAct2" type="_lLnRMOaYEeOmzetP5oaH3A" redefinedProperty="_2NWE5BSVEeGGzu7fmW9pXw" association="_boW2gP43EeO_Yb9cO8w3bA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_boVoYP43EeO_Yb9cO8w3bA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_boVBUf43EeO_Yb9cO8w3bA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ppmjsP43EeO_Yb9cO8w3bA" name="plannedProcedure2" type="_cs0YsOeEEeOqBOMhgDlycQ" redefinedProperty="_2NiSJxSVEeGGzu7fmW9pXw" association="_ppoY4P43EeO_Yb9cO8w3bA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ppmjsv43EeO_Yb9cO8w3bA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ppmjsf43EeO_Yb9cO8w3bA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_VS-zYP44EeO_Yb9cO8w3bA" name="plannedMedicationActivity2" type="_Yj45YOgREeO-iJTuAv7BKQ" redefinedProperty="_2NoYwBSVEeGGzu7fmW9pXw" association="_VTBPoP44EeO_Yb9cO8w3bA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VS-zYv44EeO_Yb9cO8w3bA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VS-zYf44EeO_Yb9cO8w3bA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fvfOgP44EeO_Yb9cO8w3bA" name="plannedSupply2" type="_vEd1cOg0EeO-iJTuAv7BKQ" redefinedProperty="_2NoY4RSVEeGGzu7fmW9pXw" association="_fvhqwP44EeO_Yb9cO8w3bA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fvfOgv44EeO_Yb9cO8w3bA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fvfOgf44EeO_Yb9cO8w3bA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ZQcSAP45EeO_Yb9cO8w3bA" name="instruction2" redefinedProperty="_4g3UoOMzEeGfv4R-kzpM0g" association="_ZQeuQP45EeO_Yb9cO8w3bA">
+      <type xmi:type="uml:Class" href="consol-other.uml#_D62NwOH7EeO04sHNODkHmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZQc5Ef45EeO_Yb9cO8w3bA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZQc5EP45EeO_Yb9cO8w3bA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_nEKgkP45EeO_Yb9cO8w3bA" name="handoffCommunication" association="_nEMVwP45EeO_Yb9cO8w3bA">
+      <type xmi:type="uml:Class" href="consol-discharge.uml#_POfwAIz7EeOoMZgUoTghIg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nEKgkv45EeO_Yb9cO8w3bA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nEKgkf45EeO_Yb9cO8w3bA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_7KbrQP45EeO_Yb9cO8w3bA" name="nutritionRecommendations" type="_FhAIMI3FEeOB0eBUISUB4Q" association="_7Kc5YP45EeO_Yb9cO8w3bA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7KbrQv45EeO_Yb9cO8w3bA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7KbrQf45EeO_Yb9cO8w3bA"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_4RLqYP4yEeO_Yb9cO8w3bA" base_Class="_bwml0P4yEeO_Yb9cO8w3bA" templateId="2.16.840.1.113883.10.20.22.2.10.2">
+    <ruleId>CONF:7723</ruleId>
+    <ruleId>CONF:10435</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_YSzMwP4zEeO_Yb9cO8w3bA" base_Generalization="_bwppIP4yEeO_Yb9cO8w3bA"/>
+  <CDA:CodeSystemConstraint xmi:id="_lXVaEP4zEeO_Yb9cO8w3bA" code="18776-5" displayName="Plan of Treatment" base_Property="_lXUzAP4zEeO_Yb9cO8w3bA">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:14750</ruleId>
+    <ruleId>CONF:30813</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_lXXPQP4zEeO_Yb9cO8w3bA" base_Property="_lXUzAP4zEeO_Yb9cO8w3bA">
+    <ruleId>CONF:14749</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_UYbMcP40EeO_Yb9cO8w3bA" memberEnd="_UYZ-UP40EeO_Yb9cO8w3bA _UYbMcf40EeO_Yb9cO8w3bA">
+    <ownedEnd xmi:id="_UYbMcf40EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_UYbMcP40EeO_Yb9cO8w3bA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_X0zMsP40EeO_Yb9cO8w3bA" severity="INFO" base_Association="_UYbMcP40EeO_Yb9cO8w3bA">
+    <ruleId>CONF:7726</ruleId>
+    <ruleId>CONF:14751</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_3Ls-IP40EeO_Yb9cO8w3bA" memberEnd="_3Lqh4P40EeO_Yb9cO8w3bA _3LtlMP40EeO_Yb9cO8w3bA">
+    <ownedEnd xmi:id="_3LtlMP40EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_3Ls-IP40EeO_Yb9cO8w3bA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_47uKQP40EeO_Yb9cO8w3bA" severity="INFO" base_Association="_3Ls-IP40EeO_Yb9cO8w3bA">
+    <ruleId>CONF:8805</ruleId>
+    <ruleId>CONF:30472</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_boW2gP43EeO_Yb9cO8w3bA" memberEnd="_boVBUP43EeO_Yb9cO8w3bA _boW2gf43EeO_Yb9cO8w3bA">
+    <ownedEnd xmi:id="_boW2gf43EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_boW2gP43EeO_Yb9cO8w3bA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_dwjSEP43EeO_Yb9cO8w3bA" severity="INFO" base_Association="_boW2gP43EeO_Yb9cO8w3bA">
+    <ruleId>CONF:8807</ruleId>
+    <ruleId>CONF:30473</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_ppoY4P43EeO_Yb9cO8w3bA" memberEnd="_ppmjsP43EeO_Yb9cO8w3bA _ppoY4f43EeO_Yb9cO8w3bA">
+    <ownedEnd xmi:id="_ppoY4f43EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_ppoY4P43EeO_Yb9cO8w3bA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_q2ueIP43EeO_Yb9cO8w3bA" severity="INFO" base_Association="_ppoY4P43EeO_Yb9cO8w3bA">
+    <ruleId>CONF:8809</ruleId>
+    <ruleId>CONF:30474</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_VTBPoP44EeO_Yb9cO8w3bA" memberEnd="_VS-zYP44EeO_Yb9cO8w3bA _VTBPof44EeO_Yb9cO8w3bA">
+    <ownedEnd xmi:id="_VTBPof44EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_VTBPoP44EeO_Yb9cO8w3bA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_V02KUP44EeO_Yb9cO8w3bA" severity="INFO" base_Association="_VTBPoP44EeO_Yb9cO8w3bA">
+    <ruleId>CONF:8811</ruleId>
+    <ruleId>CONF:30475</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_fvhqwP44EeO_Yb9cO8w3bA" memberEnd="_fvfOgP44EeO_Yb9cO8w3bA _fvhqwf44EeO_Yb9cO8w3bA">
+    <ownedEnd xmi:id="_fvhqwf44EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_fvhqwP44EeO_Yb9cO8w3bA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_hzS5UP44EeO_Yb9cO8w3bA" severity="INFO" base_Association="_fvhqwP44EeO_Yb9cO8w3bA">
+    <ruleId>CONF:8813</ruleId>
+    <ruleId>CONF:30476</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_ZQeuQP45EeO_Yb9cO8w3bA" memberEnd="_ZQcSAP45EeO_Yb9cO8w3bA _ZQeuQf45EeO_Yb9cO8w3bA">
+    <ownedEnd xmi:id="_ZQeuQf45EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_ZQeuQP45EeO_Yb9cO8w3bA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_aNtLgP45EeO_Yb9cO8w3bA" severity="INFO" base_Association="_ZQeuQP45EeO_Yb9cO8w3bA">
+    <ruleId>CONF:14695</ruleId>
+    <ruleId>CONF:31397</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_nEMVwP45EeO_Yb9cO8w3bA" memberEnd="_nEKgkP45EeO_Yb9cO8w3bA _nEM80P45EeO_Yb9cO8w3bA">
+    <ownedEnd xmi:id="_nEM80P45EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_nEMVwP45EeO_Yb9cO8w3bA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_oSDQAP45EeO_Yb9cO8w3bA" severity="INFO" base_Association="_nEMVwP45EeO_Yb9cO8w3bA">
+    <ruleId>CONF:29621</ruleId>
+    <ruleId>CONF:30868</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_7Kc5YP45EeO_Yb9cO8w3bA" memberEnd="_7KbrQP45EeO_Yb9cO8w3bA _7Kc5Yf45EeO_Yb9cO8w3bA">
+    <ownedEnd xmi:id="_7Kc5Yf45EeO_Yb9cO8w3bA" type="_bwml0P4yEeO_Yb9cO8w3bA" association="_7Kc5YP45EeO_Yb9cO8w3bA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_70y24P45EeO_Yb9cO8w3bA" severity="INFO" base_Association="_7Kc5YP45EeO_Yb9cO8w3bA">
+    <ruleId>CONF:31841</ruleId>
+    <ruleId>CONF:31864</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>
