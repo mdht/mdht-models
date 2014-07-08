@@ -7,6 +7,7 @@
  *
  * Contributors:
  *     Sean Muir (JKM Software) - initial API and implementation
+ *     Dan Brown (Audacious Inquiry) - additional testing code
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
@@ -38,10 +39,10 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional#validateProceduresSectionEntriesOptionalTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional#validateProceduresSectionEntriesOptionalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional#validateProceduresSectionEntriesOptionalProcedureActivityProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Procedure Activity Procedure</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional#validateProceduresSectionEntriesOptionalProcedureAcivityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Procedure Acivity Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional#validateProceduresSectionEntriesOptionalProcedureActivityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Procedure Activity Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional#validateProceduresSectionEntriesOptionalProcedureActivityAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Procedure Activity Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional#getProcedureActivityProcedures() <em>Get Procedure Activity Procedures</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional#getProcedureAcivityObservations() <em>Get Procedure Acivity Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional#getProcedureActivityObservations() <em>Get Procedure Activity Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional#getProcedureActivityActs() <em>Get Procedure Activity Acts</em>}</li>
  * </ul>
  * </p>
@@ -265,10 +266,10 @@ public class ProceduresSectionEntriesOptionalTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateProceduresSectionEntriesOptionalProcedureAcivityObservation() {
-		OperationsTestCase<ProceduresSectionEntriesOptional> validateProceduresSectionEntriesOptionalProcedureAcivityObservationTestCase = new OperationsTestCase<ProceduresSectionEntriesOptional>(
-			"validateProceduresSectionEntriesOptionalProcedureAcivityObservation",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateProceduresSectionEntriesOptionalProcedureActivityObservation() {
+		OperationsTestCase<ProceduresSectionEntriesOptional> validateProceduresSectionEntriesOptionalProcedureActivityObservationTestCase = new OperationsTestCase<ProceduresSectionEntriesOptional>(
+			"validateProceduresSectionEntriesOptionalProcedureActivityObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -285,13 +286,13 @@ public class ProceduresSectionEntriesOptionalTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureAcivityObservation(
+				return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureActivityObservation(
 					(ProceduresSectionEntriesOptional) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateProceduresSectionEntriesOptionalProcedureAcivityObservationTestCase.doValidationTest();
+		validateProceduresSectionEntriesOptionalProcedureActivityObservationTestCase.doValidationTest();
 	}
 
 	/**
@@ -345,10 +346,10 @@ public class ProceduresSectionEntriesOptionalTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProcedureAcivityObservations() {
+	public void testGetProcedureActivityObservations() {
 
 		ProceduresSectionEntriesOptional target = objectFactory.create();
-		target.getProcedureAcivityObservations();
+		target.getProcedureActivityObservations();
 
 	}
 

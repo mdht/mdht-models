@@ -41,7 +41,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionProcedureActivityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Activity Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionProcedureActivityAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Activity Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#getConsolProcedureActivityProcedures() <em>Get Consol Procedure Activity Procedures</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#getProcedureActivityObservations() <em>Get Procedure Activity Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#getConsolProcedureActivityObservations() <em>Get Consol Procedure Activity Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#getConsolProcedureActivityActs() <em>Get Consol Procedure Activity Acts</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Code P</em>}</li>
@@ -329,10 +329,10 @@ public class ProceduresSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProcedureActivityObservations() {
+	public void testGetConsolProcedureActivityObservations() {
 
 		ProceduresSection target = objectFactory.create();
-		target.getProcedureActivityObservations();
+		target.getConsolProcedureActivityObservations();
 
 	}
 
