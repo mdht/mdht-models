@@ -111,7 +111,7 @@ public interface ProceduresSection extends ProceduresSectionEntriesOptional {
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProcedureActivityObservation)).oclAsType(consol::ProcedureActivityObservation)'"
 	 * @generated
 	 */
-	EList<ProcedureActivityObservation> getProcedureActivityObservations();
+	EList<ProcedureActivityObservation> getConsolProcedureActivityObservations();
 
 	/**
 	 * <!-- begin-user-doc -->

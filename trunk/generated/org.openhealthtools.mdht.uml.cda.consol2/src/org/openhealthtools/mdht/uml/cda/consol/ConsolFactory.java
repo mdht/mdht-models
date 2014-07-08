@@ -2199,6 +2199,384 @@ public interface ConsolFactory extends EFactory {
 	VitalSignsOrganizer2 createVitalSignsOrganizer2();
 
 	/**
+	 * Returns a new object of class '<em>Anesthesia Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Anesthesia Section2</em>'.
+	 * @generated
+	 */
+	AnesthesiaSection2 createAnesthesiaSection2();
+
+	/**
+	 * Returns a new object of class '<em>Assessment And Plan Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assessment And Plan Section2</em>'.
+	 * @generated
+	 */
+	AssessmentAndPlanSection2 createAssessmentAndPlanSection2();
+
+	/**
+	 * Returns a new object of class '<em>Complications Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Complications Section2</em>'.
+	 * @generated
+	 */
+	ComplicationsSection2 createComplicationsSection2();
+
+	/**
+	 * Returns a new object of class '<em>Encounters Section Entries Optional2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encounters Section Entries Optional2</em>'.
+	 * @generated
+	 */
+	EncountersSectionEntriesOptional2 createEncountersSectionEntriesOptional2();
+
+	/**
+	 * Returns a new object of class '<em>Functional Status Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Functional Status Section2</em>'.
+	 * @generated
+	 */
+	FunctionalStatusSection2 createFunctionalStatusSection2();
+
+	/**
+	 * Returns a new object of class '<em>History Of Past Illness Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>History Of Past Illness Section2</em>'.
+	 * @generated
+	 */
+	HistoryOfPastIllnessSection2 createHistoryOfPastIllnessSection2();
+
+	/**
+	 * Returns a new object of class '<em>Hospital Admission Diagnosis Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Admission Diagnosis Section2</em>'.
+	 * @generated
+	 */
+	HospitalAdmissionDiagnosisSection2 createHospitalAdmissionDiagnosisSection2();
+
+	/**
+	 * Returns a new object of class '<em>Hospital Admission Medications Section Entries Optional2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Admission Medications Section Entries Optional2</em>'.
+	 * @generated
+	 */
+	HospitalAdmissionMedicationsSectionEntriesOptional2 createHospitalAdmissionMedicationsSectionEntriesOptional2();
+
+	/**
+	 * Returns a new object of class '<em>Hospital Discharge Diagnosis Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Discharge Diagnosis Section2</em>'.
+	 * @generated
+	 */
+	HospitalDischargeDiagnosisSection2 createHospitalDischargeDiagnosisSection2();
+
+	/**
+	 * Returns a new object of class '<em>Hospital Discharge Medications Section Entries Optional2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Discharge Medications Section Entries Optional2</em>'.
+	 * @generated
+	 */
+	HospitalDischargeMedicationsSectionEntriesOptional2 createHospitalDischargeMedicationsSectionEntriesOptional2();
+
+	/**
+	 * Returns a new object of class '<em>Immunizations Section Entries Optional2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immunizations Section Entries Optional2</em>'.
+	 * @generated
+	 */
+	ImmunizationsSectionEntriesOptional2 createImmunizationsSectionEntriesOptional2();
+
+	/**
+	 * Returns a new object of class '<em>Instructions Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Instructions Section2</em>'.
+	 * @generated
+	 */
+	InstructionsSection2 createInstructionsSection2();
+
+	/**
+	 * Returns a new object of class '<em>Interventions Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Interventions Section2</em>'.
+	 * @generated
+	 */
+	InterventionsSection2 createInterventionsSection2();
+
+	/**
+	 * Returns a new object of class '<em>Medical Equipment Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medical Equipment Section2</em>'.
+	 * @generated
+	 */
+	MedicalEquipmentSection2 createMedicalEquipmentSection2();
+
+	/**
+	 * Returns a new object of class '<em>Medications Administered Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medications Administered Section2</em>'.
+	 * @generated
+	 */
+	MedicationsAdministeredSection2 createMedicationsAdministeredSection2();
+
+	/**
+	 * Returns a new object of class '<em>Payers Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Payers Section2</em>'.
+	 * @generated
+	 */
+	PayersSection2 createPayersSection2();
+
+	/**
+	 * Returns a new object of class '<em>Physical Exam Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Physical Exam Section2</em>'.
+	 * @generated
+	 */
+	PhysicalExamSection2 createPhysicalExamSection2();
+
+	/**
+	 * Returns a new object of class '<em>Plan Of Treatment Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Plan Of Treatment Section2</em>'.
+	 * @generated
+	 */
+	PlanOfTreatmentSection2 createPlanOfTreatmentSection2();
+
+	/**
+	 * Returns a new object of class '<em>Planned Procedure Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Planned Procedure Section2</em>'.
+	 * @generated
+	 */
+	PlannedProcedureSection2 createPlannedProcedureSection2();
+
+	/**
+	 * Returns a new object of class '<em>Postprocedure Diagnosis Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Postprocedure Diagnosis Section2</em>'.
+	 * @generated
+	 */
+	PostprocedureDiagnosisSection2 createPostprocedureDiagnosisSection2();
+
+	/**
+	 * Returns a new object of class '<em>Preoperative Diagnosis Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Preoperative Diagnosis Section2</em>'.
+	 * @generated
+	 */
+	PreoperativeDiagnosisSection2 createPreoperativeDiagnosisSection2();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Findings Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Findings Section2</em>'.
+	 * @generated
+	 */
+	ProcedureFindingsSection2 createProcedureFindingsSection2();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Indications Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Indications Section2</em>'.
+	 * @generated
+	 */
+	ProcedureIndicationsSection2 createProcedureIndicationsSection2();
+
+	/**
+	 * Returns a new object of class '<em>Procedures Section Entries Optional2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedures Section Entries Optional2</em>'.
+	 * @generated
+	 */
+	ProceduresSectionEntriesOptional2 createProceduresSectionEntriesOptional2();
+
+	/**
+	 * Returns a new object of class '<em>Reason For Referral Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Reason For Referral Section2</em>'.
+	 * @generated
+	 */
+	ReasonForReferralSection2 createReasonForReferralSection2();
+
+	/**
+	 * Returns a new object of class '<em>Results Section Entries Optional2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Results Section Entries Optional2</em>'.
+	 * @generated
+	 */
+	ResultsSectionEntriesOptional2 createResultsSectionEntriesOptional2();
+
+	/**
+	 * Returns a new object of class '<em>Social History Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Social History Section2</em>'.
+	 * @generated
+	 */
+	SocialHistorySection2 createSocialHistorySection2();
+
+	/**
+	 * Returns a new object of class '<em>Vital Signs Section Entries Optional2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vital Signs Section Entries Optional2</em>'.
+	 * @generated
+	 */
+	VitalSignsSectionEntriesOptional2 createVitalSignsSectionEntriesOptional2();
+
+	/**
+	 * Returns a new object of class '<em>Advance Directives Section Entries Optional2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directives Section Entries Optional2</em>'.
+	 * @generated
+	 */
+	AdvanceDirectivesSectionEntriesOptional2 createAdvanceDirectivesSectionEntriesOptional2();
+
+	/**
+	 * Returns a new object of class '<em>Medications Section Entries Optional2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medications Section Entries Optional2</em>'.
+	 * @generated
+	 */
+	MedicationsSectionEntriesOptional2 createMedicationsSectionEntriesOptional2();
+
+	/**
+	 * Returns a new object of class '<em>Problem Section Entries Optional2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Problem Section Entries Optional2</em>'.
+	 * @generated
+	 */
+	ProblemSectionEntriesOptional2 createProblemSectionEntriesOptional2();
+
+	/**
+	 * Returns a new object of class '<em>Advance Directives Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directives Section2</em>'.
+	 * @generated
+	 */
+	AdvanceDirectivesSection2 createAdvanceDirectivesSection2();
+
+	/**
+	 * Returns a new object of class '<em>Allergies Section Entries Optional2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Allergies Section Entries Optional2</em>'.
+	 * @generated
+	 */
+	AllergiesSectionEntriesOptional2 createAllergiesSectionEntriesOptional2();
+
+	/**
+	 * Returns a new object of class '<em>Allergies Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Allergies Section2</em>'.
+	 * @generated
+	 */
+	AllergiesSection2 createAllergiesSection2();
+
+	/**
+	 * Returns a new object of class '<em>Encounters Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encounters Section2</em>'.
+	 * @generated
+	 */
+	EncountersSection2 createEncountersSection2();
+
+	/**
+	 * Returns a new object of class '<em>Hospital Discharge Medications Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Discharge Medications Section2</em>'.
+	 * @generated
+	 */
+	HospitalDischargeMedicationsSection2 createHospitalDischargeMedicationsSection2();
+
+	/**
+	 * Returns a new object of class '<em>Immunizations Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immunizations Section2</em>'.
+	 * @generated
+	 */
+	ImmunizationsSection2 createImmunizationsSection2();
+
+	/**
+	 * Returns a new object of class '<em>Medications Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medications Section2</em>'.
+	 * @generated
+	 */
+	MedicationsSection2 createMedicationsSection2();
+
+	/**
+	 * Returns a new object of class '<em>Problem Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Problem Section2</em>'.
+	 * @generated
+	 */
+	ProblemSection2 createProblemSection2();
+
+	/**
+	 * Returns a new object of class '<em>Procedures Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedures Section2</em>'.
+	 * @generated
+	 */
+	ProceduresSection2 createProceduresSection2();
+
+	/**
+	 * Returns a new object of class '<em>Results Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Results Section2</em>'.
+	 * @generated
+	 */
+	ResultsSection2 createResultsSection2();
+
+	/**
+	 * Returns a new object of class '<em>Vital Signs Section2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vital Signs Section2</em>'.
+	 * @generated
+	 */
+	VitalSignsSection2 createVitalSignsSection2();
+
+	/**
 	 * Returns a new object of class '<em>Medications Administered Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

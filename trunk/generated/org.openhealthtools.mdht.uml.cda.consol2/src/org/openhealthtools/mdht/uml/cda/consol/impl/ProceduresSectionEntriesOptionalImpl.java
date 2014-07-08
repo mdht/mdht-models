@@ -124,9 +124,9 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProceduresSectionEntriesOptionalProcedureAcivityObservation(DiagnosticChain diagnostics,
+	public boolean validateProceduresSectionEntriesOptionalProcedureActivityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureAcivityObservation(
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureActivityObservation(
 			this, diagnostics, context);
 	}
 
@@ -155,8 +155,8 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProcedureActivityObservation> getProcedureAcivityObservations() {
-		return ProceduresSectionEntriesOptionalOperations.getProcedureAcivityObservations(this);
+	public EList<ProcedureActivityObservation> getProcedureActivityObservations() {
+		return ProceduresSectionEntriesOptionalOperations.getProcedureActivityObservations(this);
 	}
 
 	/**

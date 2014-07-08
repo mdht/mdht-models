@@ -578,6 +578,90 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createVitalSignObservation2();
 			case ConsolPackage.VITAL_SIGNS_ORGANIZER2:
 				return createVitalSignsOrganizer2();
+			case ConsolPackage.ANESTHESIA_SECTION2:
+				return createAnesthesiaSection2();
+			case ConsolPackage.ASSESSMENT_AND_PLAN_SECTION2:
+				return createAssessmentAndPlanSection2();
+			case ConsolPackage.COMPLICATIONS_SECTION2:
+				return createComplicationsSection2();
+			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2:
+				return createEncountersSectionEntriesOptional2();
+			case ConsolPackage.FUNCTIONAL_STATUS_SECTION2:
+				return createFunctionalStatusSection2();
+			case ConsolPackage.HISTORY_OF_PAST_ILLNESS_SECTION2:
+				return createHistoryOfPastIllnessSection2();
+			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION2:
+				return createHospitalAdmissionDiagnosisSection2();
+			case ConsolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2:
+				return createHospitalAdmissionMedicationsSectionEntriesOptional2();
+			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION2:
+				return createHospitalDischargeDiagnosisSection2();
+			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2:
+				return createHospitalDischargeMedicationsSectionEntriesOptional2();
+			case ConsolPackage.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2:
+				return createImmunizationsSectionEntriesOptional2();
+			case ConsolPackage.INSTRUCTIONS_SECTION2:
+				return createInstructionsSection2();
+			case ConsolPackage.INTERVENTIONS_SECTION2:
+				return createInterventionsSection2();
+			case ConsolPackage.MEDICAL_EQUIPMENT_SECTION2:
+				return createMedicalEquipmentSection2();
+			case ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION2:
+				return createMedicationsAdministeredSection2();
+			case ConsolPackage.PAYERS_SECTION2:
+				return createPayersSection2();
+			case ConsolPackage.PHYSICAL_EXAM_SECTION2:
+				return createPhysicalExamSection2();
+			case ConsolPackage.PLAN_OF_TREATMENT_SECTION2:
+				return createPlanOfTreatmentSection2();
+			case ConsolPackage.PLANNED_PROCEDURE_SECTION2:
+				return createPlannedProcedureSection2();
+			case ConsolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION2:
+				return createPostprocedureDiagnosisSection2();
+			case ConsolPackage.PREOPERATIVE_DIAGNOSIS_SECTION2:
+				return createPreoperativeDiagnosisSection2();
+			case ConsolPackage.PROCEDURE_FINDINGS_SECTION2:
+				return createProcedureFindingsSection2();
+			case ConsolPackage.PROCEDURE_INDICATIONS_SECTION2:
+				return createProcedureIndicationsSection2();
+			case ConsolPackage.PROCEDURES_SECTION_ENTRIES_OPTIONAL2:
+				return createProceduresSectionEntriesOptional2();
+			case ConsolPackage.REASON_FOR_REFERRAL_SECTION2:
+				return createReasonForReferralSection2();
+			case ConsolPackage.RESULTS_SECTION_ENTRIES_OPTIONAL2:
+				return createResultsSectionEntriesOptional2();
+			case ConsolPackage.SOCIAL_HISTORY_SECTION2:
+				return createSocialHistorySection2();
+			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2:
+				return createVitalSignsSectionEntriesOptional2();
+			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2:
+				return createAdvanceDirectivesSectionEntriesOptional2();
+			case ConsolPackage.MEDICATIONS_SECTION_ENTRIES_OPTIONAL2:
+				return createMedicationsSectionEntriesOptional2();
+			case ConsolPackage.PROBLEM_SECTION_ENTRIES_OPTIONAL2:
+				return createProblemSectionEntriesOptional2();
+			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION2:
+				return createAdvanceDirectivesSection2();
+			case ConsolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL2:
+				return createAllergiesSectionEntriesOptional2();
+			case ConsolPackage.ALLERGIES_SECTION2:
+				return createAllergiesSection2();
+			case ConsolPackage.ENCOUNTERS_SECTION2:
+				return createEncountersSection2();
+			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION2:
+				return createHospitalDischargeMedicationsSection2();
+			case ConsolPackage.IMMUNIZATIONS_SECTION2:
+				return createImmunizationsSection2();
+			case ConsolPackage.MEDICATIONS_SECTION2:
+				return createMedicationsSection2();
+			case ConsolPackage.PROBLEM_SECTION2:
+				return createProblemSection2();
+			case ConsolPackage.PROCEDURES_SECTION2:
+				return createProceduresSection2();
+			case ConsolPackage.RESULTS_SECTION2:
+				return createResultsSection2();
+			case ConsolPackage.VITAL_SIGNS_SECTION2:
+				return createVitalSignsSection2();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2991,6 +3075,426 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public VitalSignsOrganizer2 createVitalSignsOrganizer2() {
 		VitalSignsOrganizer2Impl vitalSignsOrganizer2 = new VitalSignsOrganizer2Impl();
 		return vitalSignsOrganizer2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AnesthesiaSection2 createAnesthesiaSection2() {
+		AnesthesiaSection2Impl anesthesiaSection2 = new AnesthesiaSection2Impl();
+		return anesthesiaSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssessmentAndPlanSection2 createAssessmentAndPlanSection2() {
+		AssessmentAndPlanSection2Impl assessmentAndPlanSection2 = new AssessmentAndPlanSection2Impl();
+		return assessmentAndPlanSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComplicationsSection2 createComplicationsSection2() {
+		ComplicationsSection2Impl complicationsSection2 = new ComplicationsSection2Impl();
+		return complicationsSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncountersSectionEntriesOptional2 createEncountersSectionEntriesOptional2() {
+		EncountersSectionEntriesOptional2Impl encountersSectionEntriesOptional2 = new EncountersSectionEntriesOptional2Impl();
+		return encountersSectionEntriesOptional2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FunctionalStatusSection2 createFunctionalStatusSection2() {
+		FunctionalStatusSection2Impl functionalStatusSection2 = new FunctionalStatusSection2Impl();
+		return functionalStatusSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HistoryOfPastIllnessSection2 createHistoryOfPastIllnessSection2() {
+		HistoryOfPastIllnessSection2Impl historyOfPastIllnessSection2 = new HistoryOfPastIllnessSection2Impl();
+		return historyOfPastIllnessSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalAdmissionDiagnosisSection2 createHospitalAdmissionDiagnosisSection2() {
+		HospitalAdmissionDiagnosisSection2Impl hospitalAdmissionDiagnosisSection2 = new HospitalAdmissionDiagnosisSection2Impl();
+		return hospitalAdmissionDiagnosisSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalAdmissionMedicationsSectionEntriesOptional2 createHospitalAdmissionMedicationsSectionEntriesOptional2() {
+		HospitalAdmissionMedicationsSectionEntriesOptional2Impl hospitalAdmissionMedicationsSectionEntriesOptional2 = new HospitalAdmissionMedicationsSectionEntriesOptional2Impl();
+		return hospitalAdmissionMedicationsSectionEntriesOptional2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalDischargeDiagnosisSection2 createHospitalDischargeDiagnosisSection2() {
+		HospitalDischargeDiagnosisSection2Impl hospitalDischargeDiagnosisSection2 = new HospitalDischargeDiagnosisSection2Impl();
+		return hospitalDischargeDiagnosisSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalDischargeMedicationsSectionEntriesOptional2 createHospitalDischargeMedicationsSectionEntriesOptional2() {
+		HospitalDischargeMedicationsSectionEntriesOptional2Impl hospitalDischargeMedicationsSectionEntriesOptional2 = new HospitalDischargeMedicationsSectionEntriesOptional2Impl();
+		return hospitalDischargeMedicationsSectionEntriesOptional2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ImmunizationsSectionEntriesOptional2 createImmunizationsSectionEntriesOptional2() {
+		ImmunizationsSectionEntriesOptional2Impl immunizationsSectionEntriesOptional2 = new ImmunizationsSectionEntriesOptional2Impl();
+		return immunizationsSectionEntriesOptional2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InstructionsSection2 createInstructionsSection2() {
+		InstructionsSection2Impl instructionsSection2 = new InstructionsSection2Impl();
+		return instructionsSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InterventionsSection2 createInterventionsSection2() {
+		InterventionsSection2Impl interventionsSection2 = new InterventionsSection2Impl();
+		return interventionsSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicalEquipmentSection2 createMedicalEquipmentSection2() {
+		MedicalEquipmentSection2Impl medicalEquipmentSection2 = new MedicalEquipmentSection2Impl();
+		return medicalEquipmentSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationsAdministeredSection2 createMedicationsAdministeredSection2() {
+		MedicationsAdministeredSection2Impl medicationsAdministeredSection2 = new MedicationsAdministeredSection2Impl();
+		return medicationsAdministeredSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PayersSection2 createPayersSection2() {
+		PayersSection2Impl payersSection2 = new PayersSection2Impl();
+		return payersSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PhysicalExamSection2 createPhysicalExamSection2() {
+		PhysicalExamSection2Impl physicalExamSection2 = new PhysicalExamSection2Impl();
+		return physicalExamSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlanOfTreatmentSection2 createPlanOfTreatmentSection2() {
+		PlanOfTreatmentSection2Impl planOfTreatmentSection2 = new PlanOfTreatmentSection2Impl();
+		return planOfTreatmentSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlannedProcedureSection2 createPlannedProcedureSection2() {
+		PlannedProcedureSection2Impl plannedProcedureSection2 = new PlannedProcedureSection2Impl();
+		return plannedProcedureSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PostprocedureDiagnosisSection2 createPostprocedureDiagnosisSection2() {
+		PostprocedureDiagnosisSection2Impl postprocedureDiagnosisSection2 = new PostprocedureDiagnosisSection2Impl();
+		return postprocedureDiagnosisSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PreoperativeDiagnosisSection2 createPreoperativeDiagnosisSection2() {
+		PreoperativeDiagnosisSection2Impl preoperativeDiagnosisSection2 = new PreoperativeDiagnosisSection2Impl();
+		return preoperativeDiagnosisSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureFindingsSection2 createProcedureFindingsSection2() {
+		ProcedureFindingsSection2Impl procedureFindingsSection2 = new ProcedureFindingsSection2Impl();
+		return procedureFindingsSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureIndicationsSection2 createProcedureIndicationsSection2() {
+		ProcedureIndicationsSection2Impl procedureIndicationsSection2 = new ProcedureIndicationsSection2Impl();
+		return procedureIndicationsSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProceduresSectionEntriesOptional2 createProceduresSectionEntriesOptional2() {
+		ProceduresSectionEntriesOptional2Impl proceduresSectionEntriesOptional2 = new ProceduresSectionEntriesOptional2Impl();
+		return proceduresSectionEntriesOptional2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReasonForReferralSection2 createReasonForReferralSection2() {
+		ReasonForReferralSection2Impl reasonForReferralSection2 = new ReasonForReferralSection2Impl();
+		return reasonForReferralSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultsSectionEntriesOptional2 createResultsSectionEntriesOptional2() {
+		ResultsSectionEntriesOptional2Impl resultsSectionEntriesOptional2 = new ResultsSectionEntriesOptional2Impl();
+		return resultsSectionEntriesOptional2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SocialHistorySection2 createSocialHistorySection2() {
+		SocialHistorySection2Impl socialHistorySection2 = new SocialHistorySection2Impl();
+		return socialHistorySection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VitalSignsSectionEntriesOptional2 createVitalSignsSectionEntriesOptional2() {
+		VitalSignsSectionEntriesOptional2Impl vitalSignsSectionEntriesOptional2 = new VitalSignsSectionEntriesOptional2Impl();
+		return vitalSignsSectionEntriesOptional2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectivesSectionEntriesOptional2 createAdvanceDirectivesSectionEntriesOptional2() {
+		AdvanceDirectivesSectionEntriesOptional2Impl advanceDirectivesSectionEntriesOptional2 = new AdvanceDirectivesSectionEntriesOptional2Impl();
+		return advanceDirectivesSectionEntriesOptional2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationsSectionEntriesOptional2 createMedicationsSectionEntriesOptional2() {
+		MedicationsSectionEntriesOptional2Impl medicationsSectionEntriesOptional2 = new MedicationsSectionEntriesOptional2Impl();
+		return medicationsSectionEntriesOptional2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemSectionEntriesOptional2 createProblemSectionEntriesOptional2() {
+		ProblemSectionEntriesOptional2Impl problemSectionEntriesOptional2 = new ProblemSectionEntriesOptional2Impl();
+		return problemSectionEntriesOptional2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectivesSection2 createAdvanceDirectivesSection2() {
+		AdvanceDirectivesSection2Impl advanceDirectivesSection2 = new AdvanceDirectivesSection2Impl();
+		return advanceDirectivesSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AllergiesSectionEntriesOptional2 createAllergiesSectionEntriesOptional2() {
+		AllergiesSectionEntriesOptional2Impl allergiesSectionEntriesOptional2 = new AllergiesSectionEntriesOptional2Impl();
+		return allergiesSectionEntriesOptional2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AllergiesSection2 createAllergiesSection2() {
+		AllergiesSection2Impl allergiesSection2 = new AllergiesSection2Impl();
+		return allergiesSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncountersSection2 createEncountersSection2() {
+		EncountersSection2Impl encountersSection2 = new EncountersSection2Impl();
+		return encountersSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalDischargeMedicationsSection2 createHospitalDischargeMedicationsSection2() {
+		HospitalDischargeMedicationsSection2Impl hospitalDischargeMedicationsSection2 = new HospitalDischargeMedicationsSection2Impl();
+		return hospitalDischargeMedicationsSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ImmunizationsSection2 createImmunizationsSection2() {
+		ImmunizationsSection2Impl immunizationsSection2 = new ImmunizationsSection2Impl();
+		return immunizationsSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationsSection2 createMedicationsSection2() {
+		MedicationsSection2Impl medicationsSection2 = new MedicationsSection2Impl();
+		return medicationsSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemSection2 createProblemSection2() {
+		ProblemSection2Impl problemSection2 = new ProblemSection2Impl();
+		return problemSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProceduresSection2 createProceduresSection2() {
+		ProceduresSection2Impl proceduresSection2 = new ProceduresSection2Impl();
+		return proceduresSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultsSection2 createResultsSection2() {
+		ResultsSection2Impl resultsSection2 = new ResultsSection2Impl();
+		return resultsSection2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VitalSignsSection2 createVitalSignsSection2() {
+		VitalSignsSection2Impl vitalSignsSection2 = new VitalSignsSection2Impl();
+		return vitalSignsSection2;
 	}
 
 	/**

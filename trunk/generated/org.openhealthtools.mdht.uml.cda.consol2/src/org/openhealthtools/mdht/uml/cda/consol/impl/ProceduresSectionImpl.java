@@ -119,8 +119,8 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProcedureActivityObservation> getProcedureActivityObservations() {
-		return ProceduresSectionOperations.getProcedureActivityObservations(this);
+	public EList<ProcedureActivityObservation> getConsolProcedureActivityObservations() {
+		return ProceduresSectionOperations.getConsolProcedureActivityObservations(this);
 	}
 
 	/**
