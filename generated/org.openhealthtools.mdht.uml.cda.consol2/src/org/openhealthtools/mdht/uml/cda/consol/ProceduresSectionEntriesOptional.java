@@ -31,7 +31,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProceduresSectionEntriesOptional()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProceduresSectionEntriesOptionalTemplateId ProceduresSectionEntriesOptionalCode ProceduresSectionEntriesOptionalCodeP ProceduresSectionEntriesOptionalTitle ProceduresSectionEntriesOptionalText' templateId.root='2.16.840.1.113883.10.20.22.2.7' code.code='47519-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of Procedures' constraints.validation.info='ProceduresSectionEntriesOptionalProcedureActivityProcedure ProceduresSectionEntriesOptionalProcedureAcivityObservation ProceduresSectionEntriesOptionalProcedureActivityAct'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProceduresSectionEntriesOptionalTemplateId ProceduresSectionEntriesOptionalCode ProceduresSectionEntriesOptionalCodeP ProceduresSectionEntriesOptionalTitle ProceduresSectionEntriesOptionalText' templateId.root='2.16.840.1.113883.10.20.22.2.7' code.code='47519-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of Procedures' constraints.validation.info='ProceduresSectionEntriesOptionalProcedureActivityProcedure ProceduresSectionEntriesOptionalProcedureActivityObservation ProceduresSectionEntriesOptionalProcedureActivityAct'"
  * @generated
  */
 public interface ProceduresSectionEntriesOptional extends Section {
@@ -118,7 +118,7 @@ public interface ProceduresSectionEntriesOptional extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProcedureActivityObservation))'"
 	 * @generated
 	 */
-	boolean validateProceduresSectionEntriesOptionalProcedureAcivityObservation(DiagnosticChain diagnostics,
+	boolean validateProceduresSectionEntriesOptionalProcedureActivityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
@@ -150,7 +150,7 @@ public interface ProceduresSectionEntriesOptional extends Section {
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProcedureActivityObservation)).oclAsType(consol::ProcedureActivityObservation)'"
 	 * @generated
 	 */
-	EList<ProcedureActivityObservation> getProcedureAcivityObservations();
+	EList<ProcedureActivityObservation> getProcedureActivityObservations();
 
 	/**
 	 * <!-- begin-user-doc -->

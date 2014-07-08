@@ -45,7 +45,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionProcedureActivityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Activity Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionProcedureActivityAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Activity Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#getConsolProcedureActivityProcedures() <em>Get Consol Procedure Activity Procedures</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#getProcedureActivityObservations() <em>Get Procedure Activity Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#getConsolProcedureActivityObservations() <em>Get Consol Procedure Activity Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#getConsolProcedureActivityActs() <em>Get Consol Procedure Activity Acts</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection#validateProceduresSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Code P</em>}</li>
@@ -408,24 +408,24 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getProcedureActivityObservations(ProceduresSection) <em>Get Procedure Activity Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getConsolProcedureActivityObservations(ProceduresSection) <em>Get Consol Procedure Activity Observations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProcedureActivityObservations(ProceduresSection)
+	 * @see #getConsolProcedureActivityObservations(ProceduresSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROCEDURE_ACTIVITY_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProcedureActivityObservation)).oclAsType(consol::ProcedureActivityObservation)";
+	protected static final String GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProcedureActivityObservation)).oclAsType(consol::ProcedureActivityObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getProcedureActivityObservations(ProceduresSection) <em>Get Procedure Activity Observations</em>}' query operation.
+	 * The cached OCL query for the '{@link #getConsolProcedureActivityObservations(ProceduresSection) <em>Get Consol Procedure Activity Observations</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProcedureActivityObservations(ProceduresSection)
+	 * @see #getConsolProcedureActivityObservations(ProceduresSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PROCEDURE_ACTIVITY_OBSERVATIONS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATIONS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -433,20 +433,20 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 * @generated
 	 */
 
-	public static EList<ProcedureActivityObservation> getProcedureActivityObservations(
+	public static EList<ProcedureActivityObservation> getConsolProcedureActivityObservations(
 			ProceduresSection proceduresSection) {
-		if (GET_PROCEDURE_ACTIVITY_OBSERVATIONS__EOCL_QRY == null) {
+		if (GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURES_SECTION,
 				ConsolPackage.Literals.PROCEDURES_SECTION.getEAllOperations().get(72));
 			try {
-				GET_PROCEDURE_ACTIVITY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITY_OBSERVATIONS__EOCL_EXP);
+				GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ACTIVITY_OBSERVATIONS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProcedureActivityObservation> result = (Collection<ProcedureActivityObservation>) query.evaluate(proceduresSection);
 		return new BasicEList.UnmodifiableEList<ProcedureActivityObservation>(result.size(), result.toArray());
