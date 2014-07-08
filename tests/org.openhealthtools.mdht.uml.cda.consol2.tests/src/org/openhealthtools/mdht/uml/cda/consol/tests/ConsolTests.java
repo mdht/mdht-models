@@ -116,7 +116,24 @@ import org.junit.runners.Suite;
 		ProcedureActivityProcedure2Test.class, ReactionObservation2Test.class, ResultObservation2Test.class,
 		ResultOrganizer2Test.class, SeverityObservation2Test.class, SocialHistoryObservation2Test.class,
 		SubstanceOrDeviceAllergyObservation2Test.class, TobaccoUse2Test.class, VitalSignObservation2Test.class,
-		VitalSignsOrganizer2Test.class, CognitiveStatusObservation2Test.class })
+		VitalSignsOrganizer2Test.class, CognitiveStatusObservation2Test.class, AdvanceDirectivesSection2Test.class,
+		AdvanceDirectivesSectionEntriesOptional2Test.class, AllergiesSection2Test.class,
+		AllergiesSectionEntriesOptional2Test.class, AnesthesiaSection2Test.class, AssessmentAndPlanSection2Test.class,
+		ComplicationsSection2Test.class, EncountersSection2Test.class, EncountersSectionEntriesOptional2Test.class,
+		FunctionalStatusSection2Test.class, HistoryOfPastIllnessSection2Test.class,
+		HospitalAdmissionDiagnosisSection2Test.class, HospitalAdmissionMedicationsSectionEntriesOptional2Test.class,
+		HospitalDischargeDiagnosisSection2Test.class, HospitalDischargeMedicationsSection2Test.class,
+		HospitalDischargeMedicationsSectionEntriesOptional2Test.class, ImmunizationsSection2Test.class,
+		ImmunizationsSectionEntriesOptional2Test.class, InstructionsSection2Test.class,
+		InterventionsSection2Test.class, MedicalEquipmentSection2Test.class, MedicationsAdministeredSection2Test.class,
+		MedicationsSection2Test.class, MedicationsSectionEntriesOptional2Test.class, PayersSection2Test.class,
+		PhysicalExamSection2Test.class, PlannedProcedureSection2Test.class, PlanOfTreatmentSection2Test.class,
+		PostprocedureDiagnosisSection2Test.class, PreoperativeDiagnosisSection2Test.class, ProblemSection2Test.class,
+		ProblemSectionEntriesOptional2Test.class, ProcedureFindingsSection2Test.class,
+		ProcedureIndicationsSection2Test.class, ProceduresSection2Test.class,
+		ProceduresSectionEntriesOptional2Test.class, ReasonForReferralSection2Test.class, ResultsSection2Test.class,
+		ResultsSectionEntriesOptional2Test.class, SocialHistorySection2Test.class, VitalSignsSection2Test.class,
+		VitalSignsSectionEntriesOptional2Test.class })
 public class ConsolTests {
 
 	/**
